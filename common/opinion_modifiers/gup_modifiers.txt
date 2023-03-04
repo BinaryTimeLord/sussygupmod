@@ -1,0 +1,36 @@
+opinion_modifiers = {
+	cht_rejected_alliance = {
+		value = -30
+	}
+	MEN_aid_manchurian_pacification = {
+		value = 25
+	}
+	GER_western_resolve = {
+		value = 50
+	}
+	GER_western_threat = {
+		value = -50
+	}
+	GER_cht_mission = {
+		value = 100
+	}
+	antisovprop_opinion = {
+		value = -40
+	}
+	
+	FIN_diplomatic_accent = {
+	    value = 60
+	}
+	
+	FIN_outranged = {
+		value = -100
+	}
+	
+	FIN_SOV_accept = {
+	    value = 50
+	}
+	
+	FIN_SOV_decline = {
+	    value = -50
+	}
+}

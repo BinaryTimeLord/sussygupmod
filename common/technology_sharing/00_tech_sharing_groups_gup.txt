@@ -1,0 +1,36 @@
+technology_sharing_group = {
+
+	id = kmm_allied_research
+	name = kmm_allied_research_name
+	desc = kmm_allied_research_desc
+	picture = GFX_technology_sharing_default
+	
+	research_sharing_per_country_bonus = 0.1
+
+	available = {
+		is_in_faction_with = GER
+		GER = { 
+			has_government = neutrality
+			has_completed_focus = GER_river_incident
+		}
+	}
+
+}
+
+technology_sharing_group = {
+
+	id = FIN_technical_pact_tech_group
+	name = FIN_technical_pact_g
+	desc = FIN_technical_pact_g_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.2
+
+    available = {
+    	is_in_faction_with = FIN
+    	FIN = {
+    		is_faction_leader = yes
+    		has_completed_focus = FIN_technical_pact
+		}
+    }
+}

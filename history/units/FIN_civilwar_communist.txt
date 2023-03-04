@@ -1,0 +1,89 @@
+division_template = {
+	name = "Revolution brigade"
+	is_locked = no
+	division_names_group = FIN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+
+
+
+
+
+units = {
+	division = {
+		name = "I Revolution brigade"
+		location = 169  
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "II Revolution brigade"
+		location = 32  
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "III Revolution brigade"
+		location = 11172
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "IV Revolution brigade"
+		location = 6163
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "V Revolution brigade"
+		location = 6163
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "VI Revolution brigade"
+		location = 11138
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "VII Revolution brigade"
+		location = 9183
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "VIII Revolution brigade"
+		location = 3061
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "IX Revolution brigade"
+		location = 3083
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "X Revolution brigade"
+		location = 3137
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "XI Revolution brigade"
+		location = 11105
+		division_template = "Revolution brigade"
+	}
+	
+	division = {
+		name = "XII Revolution brigade"
+		location = 11065
+		division_template = "Revolution brigade"
+	}

@@ -1,0 +1,27 @@
+characters={
+	FDR_aki={
+		name="Aki"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_aki.dds"
+			}
+			army={
+				large="gfx/leaders/FDR/Portrait_FDR_Aki1.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AIMO_AALTONEN_DESC"
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ trait_cautious trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+}

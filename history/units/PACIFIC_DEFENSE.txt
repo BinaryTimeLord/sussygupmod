@@ -1,0 +1,542 @@
+﻿###Time to give Chi-Ha-Tan just a tiny chance
+## North used to defend the outer islands
+#  South used to defend Taiwan, Iwo Jima, Okinawa, Kuril, and Sakhalin
+
+division_template = {
+	name = "Fukuda Ryodan"
+	division_names_group = CHT_FRD
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		anti_air_brigade = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		
+		
+	}
+	support = {
+	    engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	##### Pacific Garrisons #####
+
+	### Tokyo Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.86
+
+	}
+	### Sapporo Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10444
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.24
+		start_equipment_factor = 0.8
+
+	}
+	### Sendai Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7169
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.37
+		start_equipment_factor = 0.84
+
+	}
+	### Nagasaki Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.93
+
+	}
+	### Nagoya Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10125
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10125
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10125
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10125
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10125
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10125
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.91
+
+	}
+	### Osaka Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Fukuda Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.91
+
+	}
+}

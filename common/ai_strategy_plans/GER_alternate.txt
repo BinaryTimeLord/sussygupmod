@@ -1,0 +1,197 @@
+German_alternate_kaiser = {
+	name = "German Alternate plan to restore the Kaiser"
+	desc = "Wir wollen unsren Kaiser Wilhelm wiederhaben!"
+
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		OR = {
+			has_country_flag = GER_AI_RANDOM_KAISER
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = KAISER
+			}
+			AND = {
+				has_game_rule = { 
+					rule = GER_ai_behavior
+					option = DEFAULT
+				}
+				has_completed_focus = GER_oppose_hitler #historical mode off, Germany picked oppose Hitler
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GER_river_incident
+		GER_consolidate_power
+		GER_establish_consituition
+		GER_coorinate_the_kaiserin
+		GER_state_control
+		GER_rebuild_nation
+		GER_four_year_plan
+		GER_army_innovation
+		GER_grosraumwirtschaft
+		GER_autarky
+		GER_hermann_goring_werke
+		GER_kdf_wagen
+		GER_extra_tech_slot
+		GER_autobahn
+		GER_bundesrat
+		GER_german_war_economy
+		GER_brain_drain
+		GER_nishizumi
+		GER_naval_rearmament
+		GER_naval_effort
+		GER_weltpolitik
+		GER_eastern_protection
+		GER_bonple_alliance
+		GER_baltic_gurantee
+		GER_anti_pravda_pact
+		GER_disarm_stepone
+		GER_disarm_steptwo
+		GER_disarm_stepthree
+		GER_count_on_me
+		GER_helsinki_gurantee
+		GER_offer_integration_ooarai
+		GER_gregorian_question
+		GER_hungarian_question
+		GER_yugoslavian_role
+		GER_mobilize_the_academy
+		GER_festung_ostland
+		GER_liberalize
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 10
+		heinrich_himmler = 0
+		martin_bormann = 0
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+German_alternate_democratic = {
+	name = "German Alternate plan to restore democracy"
+	desc = "UNITY! JUSTICE! FREEDOM!"
+
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		OR = {
+			has_country_flag = GER_AI_RANDOM_DEMOCRATIC
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = DEMOCRATIC
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GER_river_incident
+		GER_consolidate_power
+		GER_establish_consituition
+		GER_coorinate_the_kaiserin
+		GER_state_control
+		GER_rebuild_nation
+		GER_army_innovation
+		GER_soviet_treaty
+		GER_bundesrat
+		GER_four_year_plan
+		GER_brain_drain
+		GER_grosraumwirtschaft
+		GER_autarky
+		GER_hermann_goring_werke
+		GER_kdf_wagen
+		GER_extra_tech_slot
+		GER_weltpolitik
+		GER_autobahn
+		GER_western_resolve
+		GER_demand_old_territories
+		GER_gloriana_resolution
+		GER_secret_rearmament
+		GER_koume_bills_reintroduced
+		GER_compiegne_agreement
+		GER_german_war_economy
+		GER_west_wall
+		GER_sicilian_defense
+		GER_naval_submission
+		GER_allow_the_ultimatums
+		GER_bonple_concessio
+		GER_count_concession
+		GER_baltic_concession
+		GER_jatkosota_concession
+		GER_kuroreichsarbeitsdienst
+		GER_air_innovation
+		GER_ostwall
+		GER_coal_liquidization
+		GER_armaments_miracle
+		GER_tactical_air_effort
+		GER_air_innovation_2
+		GER_army_innovation_2
+		GER_rocketry_focus
+		GER_wunderwaffe
+		GER_akaboshi_militarism
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 10
+		heinrich_himmler = 0
+		martin_bormann = 0
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

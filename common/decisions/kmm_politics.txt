@@ -1,0 +1,885 @@
+kmm_foreign_aid = {
+	spanish_volunteers = {
+
+		icon = GFX_decision_generic_army_support
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			has_completed_focus = GER_aid_spain
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SPA = {
+				exists = yes
+				has_civil_war = yes
+			}
+		}		
+
+		cost = 50		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			army_experience = 15
+
+			add_opinion_modifier = {
+				target = SPA
+				modifier = medium_increase
+			}
+
+			diplomatic_relation = {
+				country = SPA
+				relation = non_aggression_pact
+				active = yes
+			}
+				
+			hidden_effect = {
+				random_unit_leader = {
+					limit = {
+						has_id = 1008 #GESHIKO
+					}
+				
+					set_nationality = SPA
+				}
+				random_unit_leader = {
+					limit = {
+						has_id = 1009 #SANGOU
+					}
+					
+					set_nationality = SPA
+				}
+				set_country_flag = kmm_spain_supported
+			}
+
+			SPA = {
+				add_war_support = 0.05
+				army_experience = 25
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 300
+		}
+	}
+
+	condor_legion = {
+
+		icon = GFX_decision_generic_air
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			has_country_flag = kmm_spain_supported
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				any_other_country = {
+					original_tag = SPR
+					has_government = fascism
+					has_volunteers_amount_from = {
+						tag = GER
+						count > 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPA = {
+					has_volunteers_amount_from = {
+						tag = GER
+						count > 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			SPA = {
+				exists = yes
+				has_civil_war = yes
+			}
+			has_country_flag = kmm_spain_supported
+		}
+
+		cost = 25		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			air_experience = 150
+
+			add_opinion_modifier = {
+				target = SPA
+				modifier = medium_increase
+			}
+
+			add_tech_bonus = {
+				name = condor_legion
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = condor_legion
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber		
+			}
+			add_tech_bonus = {
+				name = condor_legion
+				bonus = 1.0
+				uses = 1
+				category = battlefield_support_tree
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 150
+		}
+	}
+
+
+	continuation_war = {
+
+		icon = GFX_decision_jatkosota_logo
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			has_war_with = SOV
+			FIN = {
+				exists = yes
+				NOT = { has_war_with = GER has_government = communism }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_war_with = SOV
+			NOT = {
+				OR = {
+					FIN = {
+						has_full_control_of_state = 146
+						has_full_control_of_state = 147
+						has_full_control_of_state = 722
+					}
+				}
+			}
+		}
+
+		cost = 75		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			FIN = {
+				country_event = { id = kmm.32 days = 2 }
+				give_military_access = GER
+			}
+			give_military_access = FIN
+			diplomatic_relation = {
+				country = FIN
+				relation = non_aggression_pact
+				active = yes
+			}
+			hidden_effect = {
+				load_oob = "GER_FINNISH_CORPS"
+				play_song = "sakkijarvenpolkka_ost"
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 300
+		}
+	}
+}
+
+kmm_disarm = {
+	
+	pay_debt1 = {
+		days_remove = 72
+
+		cost = 50
+		
+		visible = {
+			GER = {
+				has_idea = kmm_great_war_debt
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		
+		remove_effect = {
+            GER = {
+				set_country_flag = GER_debt1
+			}
+			swap_ideas = {
+				remove_idea = kmm_great_war_debt
+				add_idea = kmm_great_war_debt1
+			}
+        }
+	}
+	
+	pay_debt2 = {
+		days_remove = 72
+
+		cost = 50
+
+		visible = {
+			GER = {
+				has_idea = kmm_great_war_debt1
+				has_country_flag = GER_debt1
+			}
+		}
+		fire_only_once = yes
+		available ={
+			GER = {
+				has_idea = kmm_great_war_debt1
+			}
+		}
+		
+		remove_effect = {
+            GER = {
+				set_country_flag = GER_debt_paid1
+			}
+			custom_effect_tooltip = GER_debt_decision1
+			swap_ideas = {
+				remove_idea = kmm_great_war_debt1
+				add_idea = kmm_great_war_debt2
+			}
+        }
+	}
+	
+	pay_debt3 = {
+		days_remove = 72
+
+		cost = 50
+
+		visible = {
+			GER = {
+				has_idea = kmm_great_war_debt2
+			}
+		}
+		fire_only_once = yes
+		available ={
+			GER = {
+				has_idea = kmm_great_war_debt2
+			}
+		}
+		
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = kmm_great_war_debt2
+				add_idea = kmm_great_war_debt3
+			}
+		}
+	
+	}
+	
+	pay_debt4 = {
+		days_remove = 72
+		cost = 50
+		visible = {
+			GER = {
+				has_idea = kmm_great_war_debt3
+			}
+		}
+		fire_only_once = yes
+		available ={
+			GER = {
+				has_idea = kmm_great_war_debt3
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = kmm_great_war_debt3
+		}
+	
+	}
+	
+	##DISARMAMENT MISSION
+	
+	disarm = {
+		allowed = {
+			original_tag = GER
+		}
+	
+		available = {
+			has_army_manpower = { size < 100000 }
+		}
+	
+		activation = {
+			GER = {
+				has_country_flag = GER_disarm
+			}
+		}
+	
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+
+		timeout_effect = {
+			custom_effect_tooltip = GER_disarm_tooltip
+			hidden_effect = {
+				FRA = {
+					country_event = { id = kmm.108 days = 1 }
+				}
+			}
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = GER_disarm2
+				clr_country_flag = GER_disarm
+			}
+			add_stability = 0.1
+			add_war_support = -0.05
+		}
+	
+	}
+	
+	##IF GERMANY GETS MORE THAN 100 000 BEFORE SECOND FOCUS
+	
+	disarm2 = {
+		allowed = {
+			original_tag = GER
+		}
+	
+		available = {
+			has_army_manpower = { size < 100000 }
+		}
+		activation = {
+			GER = {
+				has_country_flag = GER_disarm2
+				has_army_manpower = { size > 100000 } 
+			}
+			NOT = {
+				OR = {
+					has_completed_focus = GER_disarm_steptwo
+					has_completed_focus = GER_koume_bills_reintroduced
+				}
+			}
+		}
+
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		
+		timeout_effect = {
+			custom_effect_tooltip = GER_disarm_tooltip
+			hidden_effect = {
+				FRA = {
+					country_event = { id = kmm.108 days = 1 }
+				}
+			}
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = GER_disarm2
+				clr_country_flag = GER_disarm
+			}
+			add_stability = 0.1
+			add_war_support = -0.05
+		}
+	
+	}
+	
+	##IF GERMANY GOES OVER 200 000 AFTER SECOND FOCUS
+	
+	
+	disarm3 = {
+		allowed = {
+			original_tag = GER
+		}
+	
+		available = {
+			has_army_manpower = { size < 200000 }
+		}
+		
+		activation = {
+			GER = {
+				has_country_flag = GER_disarm3
+				has_army_manpower = { size > 200000 } 
+				OR = {
+					has_completed_focus = GER_disarm_steptwo
+					has_completed_focus = GER_koume_bills_reintroduced
+				}
+				OR = {
+					has_completed_focus = GER_disarm_stepthree
+					has_completed_focus = GER_compiegne_agreement
+				}
+			}
+		}
+
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+
+		timeout_effect = {
+			custom_effect_tooltip = GER_disarm_tooltip
+			hidden_effect = {
+				FRA = {
+					country_event = { id = kmm.108 days = 1 }
+				}
+			}
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = GER_disarm3
+				clr_country_flag = GER_disarm2
+			}
+			add_stability = 0.1
+			add_war_support = -0.05
+		}
+	
+	}
+	
+	##FINAL REARMAMENT PROCESS
+	
+	disarm4 = {
+	
+		allowed = {
+			original_tag = GER
+		}
+		fire_only_once = yes
+		available = {
+			has_army_manpower = { size < 200000 }
+		}
+
+		activation = {
+			GER = {
+				OR = {
+					has_completed_focus = GER_disarm_steptwo 
+					has_completed_focus = GER_koume_bills_reintroduced
+				}
+				has_country_flag = GER_disarm3
+			}
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 100
+		is_good = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = GER_peaceful
+			}
+			custom_effect_tooltip = GER_finalbro
+		}
+	}
+
+}
+
+kmm_pravdaist_concessions = {
+	bonple_concessions = {
+		icon = border_war
+	
+		allowed = {
+			original_tag = GER
+		}
+
+		fire_only_once = yes
+
+		available = {
+			SOV = {
+				owns_state = 91
+				owns_state = 93
+				owns_state = 94
+				owns_state = 95
+				owns_state = 96
+				owns_state = 97
+				owns_state = 89
+				owns_state = 784
+			}
+		}
+
+		activation = {
+			has_completed_focus = GER_allow_the_ultimatums
+		}
+
+		highlight_states = {
+ highlight_state_targets = {
+			state = 94
+		} 
+}
+
+
+		selectable_mission = no
+		days_mission_timeout = 56
+		is_good = no
+
+		complete_effect = {
+			complete_national_focus = GER_bonple_concessio
+			add_war_support = 0.1
+			hidden_effect = {
+				activate_mission = count_concession_decision
+			}
+		}
+
+		timeout_effect = {
+			SOV = {
+				transfer_state = 91
+				transfer_state = 93
+				transfer_state = 94
+				transfer_state = 95
+				transfer_state = 96
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 784
+			}
+			hidden_effect = {
+				POL = {
+					add_stability = -0.15
+					add_war_support = 0.3
+					add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+				}
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+	brest_litovsk_conference = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		cost = 25
+
+		visible = {
+			has_active_mission = bonple_concessions
+		}
+
+		fire_only_once = yes
+
+		available = {
+			POL = {
+				has_opinion = { target = ROOT value > 74 }
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				transfer_state = 91
+				transfer_state = 93
+				transfer_state = 94
+				transfer_state = 95
+				transfer_state = 96
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 784
+			}
+			give_guarantee = POL
+			hidden_effect = {
+				news_event = { id = kmm_news.7 hours = 6 }
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+	count_concession_decision = {
+		icon = border_war
+	
+		allowed = {
+			original_tag = GER
+		}
+
+		fire_only_once = yes
+
+		available = {
+			SOV = {
+				owns_state = 80
+				owns_state = 78
+				owns_state = 766
+			}
+		}
+
+		activation = {
+			has_completed_focus = GER_bonple_concessio
+		}
+
+		highlight_states = {
+ highlight_state_targets = {
+			state = 78
+		} 
+}
+
+		selectable_mission = no
+		days_mission_timeout = 56
+		is_good = no
+
+		complete_effect = {
+			complete_national_focus = GER_count_concession
+			add_war_support = 0.05
+			hidden_effect = {
+				activate_mission = baltic_concession_decision
+			}
+		}
+
+		timeout_effect = {
+			SOV = {
+				transfer_state = 80
+				transfer_state = 78
+				transfer_state = 766
+			}
+			hidden_effect = {
+				ROM = {
+					add_stability = -0.15
+					add_war_support = 0.3
+					add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+				} #reset timer
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+	galati_conference = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		cost = 25
+
+		visible = {
+			has_active_mission = count_concession_decision
+		}
+
+		fire_only_once = yes
+
+		available = {
+			ROM = {
+				has_opinion = { target = ROOT value > 74 }
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				transfer_state = 80
+				transfer_state = 78
+				transfer_state = 766
+			}
+			give_guarantee = ROM
+			hidden_effect = {
+				
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+
+	baltic_concession_decision = {
+		icon = border_war
+	
+		allowed = {
+			original_tag = GER
+		}
+
+		fire_only_once = yes
+
+		available = {
+			SOV = {
+				owns_state = 191
+				owns_state = 13
+				owns_state = 12
+				owns_state = 11
+				owns_state = 189
+				owns_state = 190
+				owns_state = 188
+			}
+		}
+
+		activation = {
+			has_completed_focus = GER_count_concession
+		}
+
+		highlight_states = {
+ highlight_state_targets = {
+			state = 12
+		} 
+}
+
+		selectable_mission = no
+		days_mission_timeout = 35
+		is_good = no
+
+		complete_effect = {
+			complete_national_focus = GER_baltic_concession
+			add_war_support = 0.05
+			hidden_effect = {
+				activate_mission = jatkosota_concession_decision
+			}
+		}
+
+		timeout_effect = {
+			SOV = {
+				transfer_state = 191
+				transfer_state = 13
+				transfer_state = 12
+				transfer_state = 11
+				transfer_state = 189
+				transfer_state = 190
+				transfer_state = 188
+			}
+			hidden_effect = {
+				EST = {
+					add_stability = -0.15
+					add_war_support = 0.3
+					add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+				}
+				LAT = {
+					add_stability = -0.15
+					add_war_support = 0.3
+					add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+				}
+				LIT = {
+					add_stability = -0.15
+					add_war_support = 0.3
+					add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+				} #reset timer again
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+	riga_conference = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		cost = 25
+
+		visible = {
+			has_active_mission = baltic_concession_decision
+		}
+
+		fire_only_once = yes
+
+		available = {
+			LAT = {
+				has_opinion = { target = ROOT value > 34 }
+			}
+			LIT = {
+				has_opinion = { target = ROOT value > 34 }
+			}
+			EST = {
+				has_opinion = { target = ROOT value > 34 }
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				transfer_state = 191
+				transfer_state = 13
+				transfer_state = 12
+				transfer_state = 11
+				transfer_state = 189
+				transfer_state = 190
+				transfer_state = 188
+			}
+			give_guarantee = LAT
+			give_guarantee = LIT
+			give_guarantee = EST
+			hidden_effect = {
+				
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+	jatkosota_concession_decision = {
+		icon = border_war
+	
+		allowed = {
+			original_tag = GER
+		}
+
+		fire_only_once = yes
+
+		available = {
+			SOV = {
+				owns_state = 146
+				owns_state = 147
+			}
+		}
+
+		activation = {
+			has_completed_focus = GER_baltic_concession
+		}
+
+		highlight_states = {
+ highlight_state_targets = {
+			state = 111
+		} 
+}
+
+		selectable_mission = no
+		days_mission_timeout = 56
+		is_good = no
+
+		complete_effect = {
+			complete_national_focus = GER_jatkosota_concession
+			add_war_support = 0.05
+		}
+
+		timeout_effect = {
+			SOV = {
+				transfer_state = 146
+				transfer_state = 147
+			}
+			hidden_effect = {
+				FIN = {
+					add_stability = -0.15
+					add_war_support = 0.3
+					add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+				} #reset timer again
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+
+	helsinki_conference = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		cost = 25
+
+		visible = {
+			has_active_mission = jatkosota_concession_decision
+		}
+
+		fire_only_once = yes
+
+		available = {
+			FIN = {
+				has_opinion = { target = ROOT value > 49 }
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				transfer_state = 146
+				transfer_state = 147
+			}
+			give_guarantee = FIN
+			hidden_effect = {
+				
+				set_truce = { target = SOV days = 547 } #1.5 years to avoid cheesers
+			}
+		}
+	}
+}	
+
+	
+	
+	

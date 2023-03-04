@@ -1,0 +1,86 @@
+FIN_historical_plan = {
+	name = "FIN historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = FIN
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FIN_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_game_rule = {
+				rule = FIN_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	
+	ai_national_focuses = {
+	    FIN_lend_lease
+		FIN_foreign_volunteers
+		FIN_moscow_treaty
+	
+	
+		FIN_continue_war_preparation
+		FIN_protection
+		FIN_buy_motor
+		
+		FIN_protect_democraty
+		FIN_finnish_neutrality
+		FIN_eastern_question
+		####################
+		FIN_red_menace
+		FIN_norm_industry
+		FIN_use_invenstors
+		FIN_english
+		FIN_france
+		####################
+		FIN_swedish
+		FIN_germany
+		FIN_ger_airdroms
+		FIN_Mannerheim_doctrine
+		FIN_antitank
+		####################
+		FIN_protect_karelia
+		FIN_antisoviet_propaganda
+		FIN_diversion_form
+		FIN_war_on_independence
+		FIN_white_snipers
+		####################
+		FIN_prepare_for_revenge
+		FIN_retake_east
+		FIN_germany_coop
+		FIN_expand_the_military_budget
+		FIN_salo_line
+		####################
+		FIN_reform_military
+	}
+	
+	research = {
+	
+	}
+
+	ideas = {
+	
+	}
+	
+	traits = {
+		
+	}
+
+	
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

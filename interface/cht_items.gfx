@@ -1,0 +1,217 @@
+spriteTypes = {
+    
+    #IDEAS
+	spriteType = {
+		name = "GFX_idea_ikuyo_fukuda"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ikuyo_fukuda_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_haru_tamada"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_haru_tamada_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_katsumi_nishihara"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_katsumi_nishihara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yukiko_nagura"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_yukiko_nagura.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tomoyo_ikeda"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tomoyo_ikeda_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_natsuko_hosomi"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ritsuko_hamada"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mayuka_teramoto"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mayuka_teramoto_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_akemi_kubota"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_akemi_kubota_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shizuka_tsuruki"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_shizuka_tsuruki.dds"
+	}
+	
+	#EVENTS
+	spriteType = {
+		name = "GFX_report_event_army_law"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_army_law.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_navy_law"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_navy_law.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_nishi_sensha_shidan"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_nishi_sensha_shidan.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cht_treaty_sign"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_cht_treaty_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_saunders_treaty"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_saunders_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_gloriana_treaty"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_gloriana_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_pravda_ultimatum"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_pravda_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_haru_tamada_coup"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_haru_tamada_coup.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_coup_aftermath"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_coup_aftermath.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chihatan_kuromorimine_axis"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_chihatan_kuromorimine_axis.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_first_wave"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_first_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_second_wave"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_second_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_third_wave"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_third_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_marco_polo_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_marco_polo_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_marco_polo_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_marco_polo_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_indochina_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_indochina_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_indochina_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_indochina_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_oryou"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_oryou.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ikeda"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chihatan_pravda_war"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_chihatan_pravda_war.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_border_conflict_victory"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_border_conflict_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_escalate_border_conflict"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_escalate_border_conflict.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chihatan_industry_question"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_chihatan_industry_question.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tokyo_speech"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_tokyo_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_manchurian_project"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_manchurian_project.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tamada_resign"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_tamada_resign.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_news_event_haru_tamada_coup_news"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_haru_tamada_coup_news.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_saunders_chihatan_at_war"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_saunders_chihatan_at_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_cht_treaty_sign"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_cht_treaty_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_marco_polo_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_marco_polo_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_marco_polo_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_marco_polo_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochina_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_indochina_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochina_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_indochina_accepted.dds"
+	}
+	
+	#DECISIONS
+	spriteType = {
+		name = "GFX_category_chihatan_operations"
+		texturefile = "gfx/interface/decisions/Chi-Ha-Tan/GFX_chihatan_operations.dds"
+	}
+
+	#TRAITS
+	spriteType = {
+		name = "GFX_trait_cht_toseiha_symphatizer"
+		texturefile = "gfx/interface/traits/Chi-Ha-Tan/personal/trait_toseiha_symphatizer.png"
+	}
+	spriteType = {
+		name = "GFX_trait_cht_kodoha_symphatizer"
+		texturefile = "gfx/interface/traits/Chi-Ha-Tan/personal/trait_kodoha_symphatizer.png"
+	}
+}

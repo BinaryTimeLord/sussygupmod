@@ -1,0 +1,100 @@
+﻿capital = 611
+
+oob = "MEN_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+
+recruit_character = MEN_mayuka_teramoto
+recruit_character = MEN_teramoto
+
+recruit_character = MEN_prince_demchugdongrub
+recruit_character = MEN_sonin_xiangying
+recruit_character = MEN_zhao_zhanshan
+recruit_character = MEN_songgotu_shangzhi
+recruit_character = MEN_hesehn_tiemei
+recruit_character = MEN_guan_xingde
+recruit_character = MEN_kyoiji_tomonaga
+recruit_character = MEN_deng_linge
+recruit_character = MEN_hung_zhehuang
+recruit_character = MEN_nakajima_kesago
+recruit_character = MEN_yonimitsu_kasahara
+recruit_character = MEN_nalan_kang_an
+recruit_character = MEN_songgotu_zhanshan
+recruit_character = MEN_megata_toshiro
+
+1939.1.1 = {
+
+	add_to_war = {
+		targeted_alliance = JAP
+		enemy = CHI
+		hostility_reason = puppet
+	}
+	
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#all focuses finish on 1939 lmao
+	complete_national_focus = MEN_stabilize_the_country
+	complete_national_focus = MEN_state_visit_to_manchukuo
+	complete_national_focus = MEN_ikeda_in_place
+	complete_national_focus = MEN_manchurian_rapproachement
+	complete_national_focus = MEN_gateway_to_china
+	complete_national_focus = MEN_the_issue_at_hand
+	complete_national_focus = MEN_army_modernization
+	complete_national_focus = MEN_fortress_mengkukuo
+	complete_national_focus = MEN_industrial_buildup
+	complete_national_focus = MEN_south_chahar_air_base
+	complete_national_focus = MEN_militia_training
+	complete_national_focus = MEN_aid_manchurian_pacification
+	complete_national_focus = MEN_lessons_of_pacification
+	complete_national_focus = MEN_agrarian_expansion
+	complete_national_focus = MEN_teramoto_industries
+	complete_national_focus = MEN_reminisce_the_past
+	complete_national_focus = MEN_mobilization
+	complete_national_focus = MEN_research_coordination
+	complete_national_focus = MEN_industrial_development
+	complete_national_focus = MEN_refinery_development
+	complete_national_focus = MEN_joint_airforce_development
+	complete_national_focus = MEN_request_zaibatsu_investment
+	complete_national_focus = MEN_hamasuda_foundation
+	complete_national_focus = MEN_continental_military
+	complete_national_focus = MEN_dockyard_facilities
+	
+	oob = "MEN_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 80
+	neutrality = 20
+}

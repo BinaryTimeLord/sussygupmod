@@ -1,0 +1,39 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ENG = {
+				set_variable = { show_background = 1 }
+			}
+			FRA = {
+				set_variable = { show_background = 2 }
+			}
+			GER = {
+				set_variable = { show_background = 3 }
+			}
+			ITA = {
+				set_variable = { show_background = 4 }
+			}
+			JAP = {
+				set_variable = { show_background = 5 }
+			}
+			SOV = {
+				set_variable = { show_background = 6 }
+			}
+			USA = {
+				set_variable = { show_background = 7 }
+			}
+			AUS = {
+				set_variable = { show_background = 8 }
+			}
+			FIN = {
+				set_variable = { show_background = 9 }
+			}
+			FDR = {
+				set_variable = { show_background = 10 }
+			}
+			MEN = {
+				set_variable = { show_background = 11 }
+			}
+		}
+	}
+}

@@ -1,0 +1,677 @@
+spriteTypes = {
+
+	#GERMAN TRAITS
+	spriteType = {
+		name = "GFX_trait_kmm_waffen_ss"
+		texturefile = "gfx/interface/traits/Kuromorimine/personal/trait_waffen_ss.png"
+	}
+
+	#DECISIONS
+	
+	spriteType = {
+		name = "GFX_decision_category_europe_union"
+		texturefile = "gfx/interface/decisions/decision_picture_eurounion.dds"
+	}
+
+	#GERMAN ADVISORS
+	spriteType = {
+		name = "GFX_idea_ger_koume_akaboushi_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_koume_akaboshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ger_mauko_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_mauko_pol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_mauko_navychief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_mauko_pol.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ger_sangou_airchief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_sangou_airchief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_sangou_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_sangou_airchief.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ger_geshiko_airchief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_geshiko_airchief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_geshiko_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_geshiko_airchief.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ger_maho_armychief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_maho_armychief.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ger_erika_armychief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_erika_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ger_miho_armychief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_miho_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_ger_yukari_akiyama_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_yukari_akiyama_theorist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_emi_kojima_pol"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_emi_kojima_pol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_emi_kojima_navychief"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_emi_kojima_pol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_yukari_akiyama_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_yukari_akiyama_theorist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_riko_matsumoto_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_riko_matsumoto_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_mako_rezei_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_mako_rezei_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_muuton_tsuchiya_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_muuton_tsuchiya_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_azusa_sawa_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_azusa_sawa_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_shinobu_kawanishi_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_shinobu_kawanishi_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_akebi_sasaki_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_akebi_sasaki_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_cutlass_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_cutlass_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_ogin_theorist"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_ogin_theorist.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_takako_suzuki_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_takako_suzuki_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_midoriko_sono_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_midoriko_sono_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_saori_takebe_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_momo_kawashima_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_momo_kawashima_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_anzu_kadotani_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_anzu_kadotani_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_yuuki_utsugi_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_yuuki_utsugi_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_reira_nakajima_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_reira_nakajima_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_rum_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_rum_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_flint_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_flint_high_command.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ger_murakami_high_command"
+		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_murakami_high_command.png"
+	}
+
+	#NEWS EVENTS
+	
+	spriteType = {
+		name = "GFX_news_event_rhineland_peaceful"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_rhineland_peaceful.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_rhineland_war"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_rhineland_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_rhineland_war2"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_rhineland_war2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_bcfreedom_pressure"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_bcfreedom_pressure.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_news_event_nishizumi_unity"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_nishizumi_unity.dds"
+	}
+
+	spriteType = { # <- Reserve photo
+		name = "GFX_news_event_erika_miho_war"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_erika_miho_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_erika_miho_war2"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_erika_miho_war2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_munich_gloriana"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_munich_gloriana.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_munich_bcfreedom"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_munich_bcfreedom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_czech_jabaited"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_czech_jabaited.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_czech_mate"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_czech_mate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_erika_victory"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_erika_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_miho_victory"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_miho_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_erimiho_unity"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_erimiho_unity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_kuro_triggered"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_kuro_triggered.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_danzig_rejected"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_danzig_rejected.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_molly_ribby"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_molly_ribby.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_bonple_funny"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_bonple_funny.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_news_events_kebab"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_events_kebab.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_news_event_anti_pravda_pact"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_anti_pravda_pact.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_news_event_koume_kaiserin"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_koume_kaiserin.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_news_event_anchovy_deposed"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_anchovy_deposed.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_news_event_schwarzburg_crash"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_news_event_schwarzburg_crash.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_news_event_ger_civil_war2"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_ger_civil_war.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_news_event_ger_danzig_war"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_ger_danzig_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_warsaw_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_warsaw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_paris_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_paris.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_london_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_london.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_leningrad_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_leningrad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_kiev_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_kiev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_stalingrad_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_stalingrad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_moscow_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_moscow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_sevastopol_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_sevastopol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_baku_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_baku.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_washington_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_washington.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_new_york_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_newyork.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_gibraltar_kmm_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_gibraltar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_cairo_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_cairo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_singappore_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_singapore.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_pearl_harbor_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_pearl_harbour.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_los_angeles_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_los_angles.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_nanjing_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_nanjing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_vladivostok_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_vladivostok.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hong_kong_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_hong_kong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_manila_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_manila.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_delhi_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_dehili.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_panama_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_panama_canal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_berlin_fall"
+		texturefile = "gfx/event_pictures/Kuromorimine/news_event_berlin.dds"
+	}
+	
+	#COUNTRY EVENTS
+
+	spriteType = {
+		name = "GFX_report_event_kuroland_remilitarize"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_kuroland_remilitarize.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_brit_and_franc"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_brit_and_franc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_franc"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_franc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_erika_malicious"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_erika_malicious.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_nishizumi_unity"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_nishizumi_unity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_maho_resign"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_maho_resign.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_countercoup"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_countercoup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_countercoup2"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_countercoup2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_czechoslovakia_chain"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_czechoslovakia_chain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_czechoslovakia_chain2"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_czechoslovakia_chain2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_mahnoich_gloriana"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_mahnoich_gloriana.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_mahonich_bcfreedom"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_mahonich_bcfreedom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_czech_betrayal"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_czech_betrayal.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_erika_speech"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_erika_speech.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_zaolzie_bonple"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_zaolzie_bonple.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_erika_ultimatum"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_erika_ultimatum.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_erika_london"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_erika_london.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_afrikakorps"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_afrikakorps.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_union"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_union.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_civil_war2"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_civil_war2.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_kaiser"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_kaiser.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_danzig2"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_danzig2.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_danzigV"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_danzigVictory.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_danzigW"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_danzigWar.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_danzigUKY"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_danzigUKY.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_ger_danzigUKN"
+		texturefile = "gfx/event_pictures/Kuromorimine/report_event_ger_danzigUKN.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_molly_ribby"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_molly_ribby.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_molly_ribby_klara"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_molly_ribby_klara.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_molly_ribby_nonna"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_molly_ribby_nonna.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_backstab_pravda"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_backstab_pravda.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_nazbol_gang"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_nazbol_gang.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_mikanium"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_mikanium.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_maho_caught"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_maho_caught.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_pepperoni_pizza"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_pepperoni_pizza.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_anchovy_coup"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_anchovy_coup.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_anchovy_stays"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_anchovy_stays.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_anchovy_finale"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_anchovy_finale.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_miho_plan"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_miho_plan.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_seeteufel"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_seeteufel.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_defeat_bcf"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_defeat_bcf.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_oshida_marechal"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_oshida_marechal.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_KS_troops"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_KS_troops.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_league_senshado"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_league_senshado.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_miho_invite"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_miho_invite.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_peaceful_world"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_peaceful_world.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_retake_lostlands"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_retake_lostlands.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_south_tyrol"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_south_tyrol.dds"
+	}
+
+	#DECISIONS
+	spriteType = {	
+		name = "GFX_decision_jatkosota_logo"
+		texturefile = "gfx/interface/decisions/Kuromorimine/GFX_decision_jatkosota_logo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_eurounion"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_eurounion.dds"
+	}
+
+}

@@ -1,0 +1,159 @@
+leader_traits = {
+
+	##KOUME - CIVIL WAR
+
+	non_nishizumi = {
+		random = no
+		
+		political_power_cost = 0.2
+	}
+
+	akaboshism = {
+		random = no
+		
+		war_support_factor = 0.05
+		army_morale_factor = 0.1
+		experience_gain_army_unit_factor = 0.1
+		land_reinforce_rate = 0.025
+		experience_loss_factor = -0.1
+	}
+	
+	##ERIKA
+	
+	cold_hearted_ruler2 = { ##iron grip on the nation
+		random = no
+		
+		war_support_factor = 0.05
+		political_power_cost = 0.2
+		army_chief_cost_factor = 0.25
+		air_chief_cost_factor = 0.25
+		navy_chief_cost_factor = 0.25
+		high_command_cost_factor = 0.25
+	}
+	
+	inexperienced_panzer_leader = {
+		random = no
+
+		command_power_gain_mult = -0.2
+		army_morale_factor = -0.025
+		land_reinforce_rate = -0.015
+	}
+
+	iron_heart = {
+	
+		random = no
+	
+		war_support_factor  = 0.15
+		resistance_growth_on_our_occupied_states = 0.15
+		ai_focus_aggressive_factor = 0.5
+	
+	}
+
+	##MAHO 1936 start
+
+	experienced_fuhrer = {
+		random = no
+
+		stability_factor = 0.1
+		political_power_factor = 0.25
+	}
+
+	experienced_panzer_leader = {
+		random = no
+
+		command_power_gain_mult = 0.2
+		army_morale_factor = 0.025
+		land_reinforce_rate = 0.015
+		army_attack_factor = 0.035
+	}
+
+	cold_hearted_ruler = { ##iron grip on the nation
+		random = no
+		
+		war_support_factor = 0.05
+		political_power_cost = 0.2
+	}
+	
+	nishizumi_spirit = {
+	
+		random = no
+	
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		compliance_gain = 0.25
+	}
+
+	#KOUME FASCIST & DEMOCRATIC
+
+	reformer = {
+		random = no
+		
+		stability_factor = 0.15
+		consumer_goods_factor = -0.1
+	}
+
+	popular_commander = {
+		random = no
+		
+		stability_weekly = 0.0025
+		max_command_power = 25
+		army_morale_factor = 0.05
+		research_speed_factor = 0.05
+	}
+	
+	##MIHO
+	
+	academys_favorite = {
+		random = no
+		
+		army_core_defence_factor = 0.075
+		army_core_attack_factor = 0.15
+		generate_wargoal_tension = 0.75
+		war_support_factor = 0.1
+	
+	}
+
+	##EMI
+	
+	awkward_communicator = {
+		random = no
+		
+		stability_factor = 0.05
+		political_power_cost = 0.1
+	
+	}
+
+	skilled_commander = {
+		random = no
+		
+		army_armor_attack_factor = 0.05
+
+	}
+	
+	#THE UNION
+	communal_unity = {
+		random = no
+		
+		stability_weekly = 0.005
+		political_power_factor = 0.25
+		war_support_factor = 0.1
+	}
+
+	reigns_of_olden_tactics = {
+		random = no
+		
+		army_attack_factor = 0.15
+		army_defence_factor = 0.1
+		army_speed_factor = 0.05
+	}
+
+	#MISC
+	uniform_designer = {
+		random = no
+	
+		army_infantry_defence_factor = 0.025
+		recon_factor = 0.1
+	}
+	
+	
+}

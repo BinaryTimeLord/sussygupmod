@@ -1,0 +1,100 @@
+division_template = {
+	name = "White Guard"
+	is_locked = no
+	division_names_group = FIN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+
+
+
+
+units = {
+	division = {
+		name = "I White Guard"
+		location = 3122
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "II White Guard"
+		location = 3122 
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "III White Guard"
+		location = 3122
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "IV White Guard"
+		location = 3158
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "V White Guard"
+		location = 9166
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "VI White Guard"
+		location = 9166
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "VII White Guard"
+		location = 158
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "VIII White Guard"
+		location = 162
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "IX White Guard"
+		location = 6076
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "X White Guard"
+		location = 3158
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "XI White Guard"
+		location = 6134
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "XII White Guard"
+		location = 9206
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "XIII White Guard"
+		location = 6183
+		division_template = "White Guard"
+	}
+	
+	division = {
+		name = "XIV White Guard"
+		location = 136
+		division_template = "White Guard"
+	}
+}

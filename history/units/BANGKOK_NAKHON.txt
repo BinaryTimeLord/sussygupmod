@@ -1,0 +1,122 @@
+﻿units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10438
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10438
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10438
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10438
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10438
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10438
+		division_template = "Hamada Hohei Shidan"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.99
+	}
+}

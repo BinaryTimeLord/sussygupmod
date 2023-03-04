@@ -1,0 +1,253 @@
+leader_traits = {
+	###KINUYO###
+		
+	warrior_code = { ### TOTSUGEKI, TOKKAN!
+	    random = no
+
+	    ai_call_ally_desire_factor = -50
+	    ai_join_ally_desire_factor = -50
+
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+
+	warrior_code2 = { ### TOTSUGEKI, TOKKAN! 
+	    random = no
+
+	    ai_call_ally_desire_factor = -100
+	    ai_join_ally_desire_factor = -100
+
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+
+    shintoism = { ### Amaterasu desu
+        random = no
+
+        industry_air_damage_factor = -0.1
+		army_morale_factor = 0.15
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+		
+	totsugeki_sanction = { ### I like Nishisushis
+	    random = no
+
+	    targeted_modifier = {
+		    tag = CHI
+		    generate_wargoal_tension_against = 0.75
+	    }
+		targeted_modifier = {
+			tag = PRC
+			generate_wargoal_tension_against = 0.75
+		}	
+		targeted_modifier = {
+			tag = SHX
+			generate_wargoal_tension_against = 0.75
+		}
+		targeted_modifier = {
+			tag = GXC
+			generate_wargoal_tension_against = 0.75
+		}
+		targeted_modifier = {
+			tag = YUN
+			generate_wargoal_tension_against = 0.75
+		}
+		targeted_modifier = {
+			tag = XSM
+			generate_wargoal_tension_against = 0.75
+		}
+		targeted_modifier = {
+			tag = SIK
+			generate_wargoal_tension_against = 0.75
+
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+		
+	emperor_nishi = { ### Nishi Heika Banzai!
+		random = no
+
+		stability_factor = 0.8 #FOR THE SUKIYAKI
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chrysanthemum_discipline = { ### Nishi stops being ara-ara motherf*ckers
+		random = no
+
+		training_time_army_factor = -0.15 # Div spam gamer move
+		army_org_factor = 0.1
+		org_loss_when_moving = -0.1
+		army_speed_factor = 0.1 # I AM SPEED
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	radiant_commander = { ### Radiant Enlightenment
+		random = no
+
+		war_support_factor = 0.15
+		army_defence_factor = 0.05
+		army_attack_factor = 0.05
+		experience_gain_army_factor = 0.25
+		experience_gain_air_factor = 0.25
+		experience_gain_navy_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###TOMOYO###
+	baroness_of_manchruria = { ### Man and machine and nothing there and between!
+        random = no
+
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		army_morale_factor = 0.12
+
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+	cht_baroness_ikeda = { # A flying circus and a girl from Chiba!
+		sprite = 1
+		air_close_air_support_attack_factor = 0.05
+		air_close_air_support_defence_factor = 0.05
+		air_close_air_support_agility_factor = 0.05
+		air_air_superiority_attack_factor = 0.05
+		air_air_superiority_defence_factor = 0.05
+		air_air_superiority_agility_factor = 0.05
+		air_weather_penalty = -0.1
+		air_ace_generation_chance_factor = 0.15
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	###HARU###
+	cht_reformer = { # Bayan o sarili, pumili ka!
+		sprite = 9
+		stability_factor = -0.05
+		army_defence_factor = 0.12
+		army_org_factor = 0.12
+		army_morale_factor = 0.08
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	###HARU###
+	cht_old_school = { # Hokushin-ron much?
+		sprite = 7
+		war_support_factor = 0.05
+		army_attack_factor = 0.1
+		experience_gain_army_factor = -0.15
+		political_power_factor = 0.1
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	###KATSUMI###
+
+	cht_carrier_proponent = { # planes go brr
+		sprite = 3
+		navy_carrier_air_attack_factor = 0.1
+		navy_carrier_air_targetting_factor = 0.12
+		navy_carrier_air_agility_factor = 0.15
+		sortie_efficiency = 0.2
+		convoy_raiding_efficiency_factor = 0.1
+		navy_submarine_detection_factor = 0.1
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	###YUKIKO###
+
+	cht_battleship_proponent = { # big ships go woooaaaaannnggg
+		sprite = 3
+		navy_capital_ship_attack_factor = 0.1
+		navy_capital_ship_defence_factor = 0.12
+		navy_screen_attack_factor = 0.1
+		navy_screen_defence_factor = 0.12
+		convoy_raiding_efficiency_factor = 0.1
+		navy_submarine_detection_factor = 0.1
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	###RITSUKO###
+	centrist_dem = { # Joe mama Biden
+		random = no
+		stability_factor = 0.6
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###SHIZUKA###
+	mystical_fanaticism = { # She may be insane
+		random = no
+		stability_factor = 0.4
+		war_support_factor = 0.15
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		army_morale_factor = 0.1
+		ai_focus_aggressive_factor = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	princess_of_terror = { # scary grill help
+		sprite = 13
+		resistance_damage_to_garrison = -0.5 
+		foreign_subversive_activites = -0.4
+		non_core_manpower = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###MAYUKA###
+	illusive_lady = { # yukari counterpart
+		random = no
+		sprite = 15
+		operative_slot = 1
+		agency_upgrade_time = -0.15
+	}
+
+	###MISC###
+	conglomerate_cooperation = {
+		random = no
+		
+		army_morale_factor = 0.05
+		land_reinforce_rate = 0.05
+		decryption = 1.5
+		encryption = 2
+		research_speed_factor = 0.025
+	}
+}

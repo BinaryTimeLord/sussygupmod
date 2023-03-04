@@ -1,0 +1,227 @@
+JAP_manchukuo_player_historical_plan = {
+	name = "Historical Japan Plan for Player manchukuo"
+	desc = "Build up manchukuo to help out, otherwise historical"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		is_historical_focus_on = yes
+		MAN = {
+			is_ai = no
+		}
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = DEFAULT
+		}
+	}
+	abort = {
+		MAN = {
+			NOT = { is_subject_of = JAP }
+			NOT = { is_in_faction_with = JAP }
+		}
+	}
+
+	ai_national_focuses = {
+		#1936
+		JAP_waking_the_tiger
+		JAP_purge_the_kodoha_faction 
+		JAP_placate_the_extremeists
+		JAP_chihatan_armed_forces
+		JAP_guide_the_zaibatsus
+		JAP_colonial_mobilization
+		JAP_colonial_development
+		JAP_army_expansion_law
+		JAP_new_naval_estimates 
+		JAP_army_expansion 
+		JAP_liaison_conference
+		JAP_civilian_planning
+		JAP_peninsular_expansion
+		JAP_insular_exapnsion
+		JAP_pacific_assimilation
+		#1937
+		JAP_insular_exapnsion
+		JAP_pacific_assimilation
+		JAP_greater_east_asian_co_prosperity_sphere 
+		JAP_fighter_modernization 
+		JAP_carrier_warfare_experiments 	
+		JAP_national_mobilization_law
+		JAP_nationalize_war_industry
+		JAP_intervene_in_china 
+		JAP_small_arms_modernization
+		JAP_supremacy_of_technology	
+		JAP_national_research_policy	
+		JAP_supremacy_of_will
+		JAP_academy_highways
+		JAP_dockyard_expansion
+		#1938
+		JAP_claims_on_saunders
+		JAP_strategic_engineering
+		JAP_the_manchurian_project
+		JAP_national_exacavations
+		JAP_chihatan_expeditionary_army
+		#1939
+		JAP_coal_liquification
+		JAP_modern_artillery
+		JAP_agility_focus
+		JAP_first_air_fleet
+		JAP_the_zero
+		JAP_unified_fighter_development
+		JAP_ikeda_section_3
+		JAP_tactical_engineering
+		JAP_chihatan_ordinance
+		JAP_colonial_production_strategy
+		JAP_colonial_research
+		JAP_manchukuo_framework
+		JAP_menkukuo_framework
+		JAP_chihatan_theoretical_division
+		JAP_korean_framework
+		JAP_arts_department
+		#1940
+		JAP_expand_the_snlf
+		JAP_cruiser_modernization
+		JAP_long_lance_torpedoes
+		JAP_torpedo_cruisers
+		JAP_modern_escorts
+		JAP_espionage_infiltration
+		JAP_kuromorimine_enigma
+		JAP_sign_tripartite_pact
+		JAP_chihatan_cryptology
+		JAP_japanese_enigma
+		JAP_national_defense_state
+		JAP_revise_the_bushido_code
+		JAP_strike_south_doctrine
+		#1941
+		JAP_anti_tank
+		JAP_anti_air
+		JAP_bicycle_battalions
+		JAP_man_the_guns
+		JAP_alliance_with_siam
+		JAP_bomber_modernization
+		JAP_spiritual_mobilization
+		JAP_non_aggression_pact_with_the_soviet_union
+		JAP_develop_chinese_resources
+		JAP_armored_divisions
+		JAP_nishi_sensha_shidan
+		JAP_warrior_spirit	
+		JAP_tora_tora_tora
+	}
+
+	ai_strategy = {
+		type = support
+		id = "MAN"			
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+JAP_alternate_plan_strike_north = {
+	name = "Neutrality Japan Plan"
+	desc = "Japan pushes north"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		OR = {
+			has_country_flag = JAP_AI_RANDOM_NEUTRALITY
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = NEUTRALITY
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		#1936
+		JAP_waking_the_tiger
+		JAP_chihatan_armed_forces
+		JAP_army_expansion_law
+		JAP_support_the_kodoha_faction 
+		JAP_challenge_the_zaibatsus
+		JAP_small_arms_modernization
+		JAP_army_expansion 
+		JAP_colonial_mobilization
+		JAP_colonial_development 
+		JAP_supremacy_of_technology
+		JAP_supremacy_of_will
+		JAP_national_mobilization_law
+		JAP_national_research_policy
+		JAP_imperial_arsenals
+		JAP_new_naval_estimates
+		#1937
+		JAP_civilian_utilization
+		JAP_chihatan_ordinance
+		JAP_modern_shogunate
+		JAP_national_routes
+		JAP_imperial_resources
+		JAP_join_the_london_naval_treaty
+		JAP_build_up_the_manchurian_army
+		JAP_non_aggression_pact_with_china
+		JAP_create_a_manchurian_imperial_air_force
+		JAP_colonial_production_strategy
+		JAP_the_manchurian_project
+		#1938
+		JAP_insular_exapnsion
+		JAP_pacific_assimilation
+		JAP_ultimatum_for_pacific_islands
+		JAP_oceanian_settlement
+		JAP_colonial_research
+		JAP_manchukuo_framework
+		#1939
+		JAP_menkukuo_framework
+		JAP_korean_framework
+		JAP_fighter_modernization
+		JAP_range_focus
+		JAP_chihatan_expeditionary_army
+		JAP_modern_artillery
+		JAP_bicycle_battalions
+		JAP_chihatan_theoretical_division
+		JAP_ikeda_section_3
+		JAP_espionage_infiltration
+		JAP_kuromorimine_enigma
+		JAP_japanese_enigma
+		JAP_chihatan_cryptology
+		JAP_arts_department
+		#1940
+		JAP_supremacy_of_the_battlefleet
+		JAP_the_ultimate_battleship
+		JAP_modern_escorts
+		JAP_cruiser_modernization
+		JAP_long_lance_torpedoes
+		JAP_professionalism
+		JAP_torpedo_cruisers
+		JAP_national_defense_state
+		JAP_spiritual_mobilization
+		#1941
+		JAP_preserve_the_bushido_code
+		JAP_warrior_spirit
+		JAP_alliance_with_kuro
+		JAP_technological_exchange
+		JAP_preemptive_war
+		###FROM HERE ON IN, CHI-HA-TAN WILL EITHER RISE OR FALL!
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

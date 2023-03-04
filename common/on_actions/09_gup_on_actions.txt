@@ -1,0 +1,133 @@
+on_actions = {
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+			#End of German Civil War --- Miho x Erika
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+						has_government = neutrality
+					}
+					original_tag = GER
+					has_government = fascism
+					has_completed_focus = GER_rhineland
+					has_completed_focus = GER_anschluss #fallback focus
+				}
+				FROM = {
+					every_unit_leader = { #getback all the old generals and stuff
+						set_nationality = GER
+					}
+					set_country_flag = kmm_sudeten_erika
+					set_cosmetic_tag = GER_greater_kuromorimine
+					set_party_name = { 
+						ideology = fascism 
+						long_name = GER_erika_partei
+						name = GER_erika_partei_long 
+					}
+					mark_focus_tree_layout_dirty = yes #doublecheck refresh for focus tree #sixth fallback in case player does events late
+				}
+				hidden_effect = { news_event = { id = kmm_news.2 } }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+						has_government = fascism
+					}
+					original_tag = GER
+					has_government = neutrality
+					has_completed_focus = GER_rhineland
+					has_completed_focus = GER_anschluss #fallback focus
+				}
+				FROM = {
+					every_unit_leader = { #getback all the old generals and stuff
+						set_nationality = GER
+					}
+					set_country_flag = kmm_sudeten_miho
+				}
+				set_politics = { #return to fascism
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_party_name = { ideology = fascism long_name = GER_miho_civil_war name = GER_miho_civil_war }
+				set_party_name = { ideology = neutrality long_name = neutrality name = neutrality } #reset name
+				create_country_leader = {
+					name = "Miho"
+					desc = "POLITICS_MIHO_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism3
+					traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
+						reformer 
+						popular_commander
+					}
+				}
+				mark_focus_tree_layout_dirty = yes #doublecheck refresh for focus tree #seventh fallback in case player does events late
+				hidden_effect = {
+					news_event = { id = kmm_news.3 }
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.2
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.65
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.1
+					}
+				}
+			}
+		}
+	}
+
+
+    on_startup = {
+		effect = {
+		    SOV = { set_country_flag = karjala_demand }
+		}
+	}
+	
+	
+	on_justifying_wargoal_pulse = {
+		random_events = {
+		    1000 = finland.8
+		}	
+	}
+	
+	on_startup = {
+		effect = {
+		    FIN = { set_country_flag = baltic.5_fired }
+		}
+	}
+	
+	
+	on_declare_war = {
+	    effect = {
+		    if = {
+			    limit = {
+				    OR = {
+					    ROOT = { original_tag = FIN }
+						ROOT = { is_in_faction_with = FIN }
+				    	FROM = { original_tag = FIN }
+						FROM = { is_in_faction_with = FIN }
+					}
+					FIN = { NOT = { has_country_flag = FIN_white_guard_f } }
+				}
+				FIN = { country_event = { id = finland.39 days = 1 } }
+				FIN = { set_country_flag = FIN_white_guard_f } 
+			}
+		}
+	}
+	
+}

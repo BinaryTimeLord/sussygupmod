@@ -1,0 +1,1277 @@
+operations = {
+
+	Fin_Ger_lapland_garnison = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			FIN = { controls_state = 148 }
+		} 
+		
+		visible = {
+			FIN = { is_in_faction_with = GER }
+			tag = GER
+			OR = {
+				GER = { has_government = fascism }
+				GER = { has_government = neutrality }
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 20
+	
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		complete_effect = {
+		    set_country_flag = FIN_GER_lapland
+			add_manpower = -30000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -120
+			}
+		}
+	}
+
+}
+
+FIN_foreign_help = {
+
+   	Fin_buy_motor_FRA = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			FRA = { has_capitulated = no is_subject = no }
+			
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+		} 
+		
+		visible = {
+			has_completed_focus = FIN_buy_motor
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 60
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			FRA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 400
+				producer = FRA
+			}
+			FRA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	
+	
+	Fin_buy_motor_ENG = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			ENG = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_buy_motor
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 400
+				producer = ENG
+			}
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	
+	
+	Fin_buy_tanks_FRA = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			FRA = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_buy_tanks
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			FRA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 32
+				producer = FRA
+			}
+			FRA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	Fin_buy_tanks_ENG = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			ENG = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_buy_tanks
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 32
+				producer = ENG
+			}
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	Fin_buy_fighters_HOL = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			HOL = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_licence_fighters
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			HOL = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1
+				amount = 100
+				producer = ITA
+			}
+			HOL = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	Fin_buy_infantry_SOV = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			SOV = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_ussr
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			SOV = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = SOV
+			}
+			SOV = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	Fin_buy_infantry_ENG = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			ENG = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_english
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ENG
+			}
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	Fin_buy_infantry_SWE = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			SWE = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_swedish
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			SWE = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = SWE
+			}
+			SWE = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	Fin_buy_infantry_FRA = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			FRA = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_france
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			FRA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = FRA
+			}
+			FRA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+	
+	Fin_buy_infantry_GER = {
+    
+		icon = generic_prepare_civil_war
+	
+		available = {
+		    is_subject = no
+			NOT = { has_country_flag = FIN_weapons_cooldown }
+			GER = { has_capitulated = no is_subject = no }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_germany
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_weapons_cooldown value = 1 days = 61 }
+			GER = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = GER
+			}
+			GER = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -1
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIN_allies = {
+    
+	Fin_ENG_alliance = {
+	    icon = generic_prepare_civil_war
+		
+		available = {
+		    is_subject = no
+			any_other_country  = { 
+			    has_war_with = ENG 
+				has_war_with = FIN 
+			}
+			FIN = { is_in_faction = no }
+			ENG = { is_faction_leader = yes }
+			NOT = { FIN = { has_war_with = ENG } }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_english
+			FIN = { NOT = {is_in_faction_with = ENG } }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    ENG = {country_event = { id = finland.1 days = 2} }
+		}
+	}
+	
+	
+	
+	Fin_FRA_alliance = {
+	    icon = generic_prepare_civil_war
+		
+		available = {
+		    is_subject = no
+			any_other_country  = { 
+			    has_war_with = FRA 
+				has_war_with = FIN 
+			}
+			FIN = { is_in_faction = no }
+			FRA = { is_faction_leader = yes }
+			
+			NOT = { FIN = { has_war_with = FRA } }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_france
+			FIN = { NOT = {is_in_faction_with = FRA } }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    FRA = {country_event = finland.1}
+		}
+	}
+	
+	
+	
+	Fin_SWE_alliance = {
+	    icon = generic_prepare_civil_war
+		
+		available = {
+		    is_subject = no
+			any_other_country  = { 
+			    has_war_with = SWE 
+				has_war_with = FIN 
+			}
+			OR = {
+			    FIN = { is_in_faction = no }
+				FIN = { is_faction_leader = yes }
+			} 
+			SWE = { is_in_faction = no }
+			NOT = { FIN = { has_war_with = SWE  } }
+		}
+		
+		visible = {
+			has_completed_focus = FIN_swedish
+			FIN = { NOT = {is_in_faction_with = SWE } }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    SWE = {country_event = finland.4}
+		}
+	}
+}
+
+FIN_attack = {
+    Fin_SWE_attack = {
+	    icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			is_subject = no
+			SWE = { is_subject = no }
+			has_war = no
+			OR = {
+			    FIN = { is_in_faction = no }
+				FIN = { is_faction_leader = yes }
+			}
+		}
+		
+		visible = {
+			has_completed_focus = FIN_provoke_sweden
+			FIN = { NOT = {is_in_faction_with = SWE } }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		war_with_on_complete = SWE
+		
+		days_remove = 14
+		
+		remove_effect = {
+		    declare_war_on = {
+				target = SWE
+				type = take_state_focus
+			}
+		}
+	}
+	
+	
+	
+	Fin_NOR_attack = {
+	    icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			is_subject = no
+			NOR = { is_subject = no }
+			has_war = no
+			OR = {
+			    FIN = { is_in_faction = no }
+				FIN = { is_faction_leader = yes }
+			}
+		}
+		
+		visible = {
+			has_completed_focus = FIN_provoke_norway
+			FIN = { NOT = {is_in_faction_with = NOR } }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		war_with_on_complete = NOR
+		
+		days_remove = 14
+		
+		remove_effect = {
+		    declare_war_on = {
+				target = NOR
+				type = take_state_focus
+			}
+		}
+	}
+	
+	
+	
+	
+	Fin_SOV_attack = {
+	    icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			is_subject = no
+			SOV = { is_subject = no }
+			has_war = no
+			GER = { has_war_with = SOV }
+			NOT = { has_war_with = GER }
+		}
+		
+		visible = {
+			FIN = { has_country_flag = FIN_GER_agreement }
+			FIN = { NOT = {is_in_faction_with = SOV } }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		war_with_on_complete = SOV
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    declare_war_on = {
+				target = SOV
+				type = take_state_focus
+				generator = { 213 215 216 } 
+			}
+			GER = { add_to_faction = FIN }
+		}
+	} 
+
+}
+
+
+
+
+
+FIN_SWE_NOR_peace = {
+
+	Fin_SWE_strike_peace = {
+	
+		icon = GFX_decision_eng_puppet_usa
+	
+		available = {
+		    SWE = { 
+			    surrender_progress > 0.1
+			}
+		}
+		
+		visible = {
+		    FIN = { has_completed_focus = FIN_occupy_alands }
+			has_war_with = FIN
+			tag = SWE
+		}
+		cost = 0
+		
+		fire_only_once = yes
+		
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    FIN = { country_event = { id = finland.33 days = 3 } }
+		}
+
+	}
+	
+	
+	
+	
+	Fin_NOR_strike_peace = {
+	
+		icon = GFX_decision_eng_puppet_usa
+	
+		available = {
+		    NOR = { 
+			    surrender_progress > 0.12
+			}
+		}
+		
+		visible = {
+		    FIN = { has_completed_focus = FIN_occupy_alands }
+			has_war_with = FIN
+			tag = NOR
+		}
+		cost = 0
+		
+		fire_only_once = yes
+		
+	
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    FIN = { country_event = { id = finland.35 days = 3 } }
+		}
+
+	}
+	
+}
+
+
+
+FIN_SOV_Return_Territory = {
+
+	FIN_SOV_Return_Territory_decision = {
+	
+		icon = GFX_
+		
+		visible = {
+		    FIN = { is_in_faction_with = SOV }
+			FIN = { has_government = communism }
+			country_exists = FIN
+			SOV = { has_government = communism }
+			SOV = {
+				OR = {
+					controls_state = 145
+					controls_state = 111
+					controls_state = 149
+					controls_state = 150
+					controls_state = 146
+					controls_state = 147
+					controls_state = 148
+					controls_state = 722
+				}
+			}
+		}
+		
+		cost = 0
+		
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    if = {
+				limit = {
+					controls_state = 145
+				}
+				FIN = { transfer_state = 145 }
+			}
+			if = {
+				limit = {
+					controls_state = 111
+				}
+				FIN = { transfer_state = 111 }
+			}
+			if = {
+				limit = {
+					controls_state = 149
+				}
+				FIN = { transfer_state = 149 }
+			}
+			if = {
+				limit = {
+					controls_state = 150
+				}
+				FIN = { transfer_state = 150 }
+			}
+			if = {
+				limit = {
+					controls_state = 146
+				}
+				FIN = { transfer_state = 146 }
+			}
+			if = {
+				limit = {
+					controls_state = 147
+				}
+				FIN = { transfer_state = 147 }
+			}
+			if = {
+				limit = {
+					controls_state = 148
+				}
+				FIN = { transfer_state = 148 }
+			}
+			if = {
+				limit = {
+					controls_state = 722
+				}
+				FIN = { transfer_state = 722 }
+			}
+		}
+	}
+	
+	FDR_SOV_Return_Territory_decision = {
+	
+		icon = GFX_
+		
+		visible = {
+		    FDR = { is_in_faction_with = SOV }
+			FDR = { has_government = communism }
+			country_exists = FDR
+			SOV = { has_government = communism }
+			SOV = {
+				OR = {
+					controls_state = 145
+					controls_state = 111
+					controls_state = 149
+					controls_state = 150
+					controls_state = 146
+					controls_state = 147
+					controls_state = 148
+					controls_state = 722
+				}
+			}
+		}
+		
+		cost = 0
+		
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+		    if = {
+				limit = {
+					controls_state = 145
+				}
+				FDR = { transfer_state = 145 }
+			}
+			if = {
+				limit = {
+					controls_state = 111
+				}
+				FDR = { transfer_state = 111 }
+			}
+			if = {
+				limit = {
+					controls_state = 149
+				}
+				FDR = { transfer_state = 149 }
+			}
+			if = {
+				limit = {
+					controls_state = 150
+				}
+				FDR = { transfer_state = 150 }
+			}
+			if = {
+				limit = {
+					controls_state = 146
+				}
+				FDR = { transfer_state = 146 }
+			}
+			if = {
+				limit = {
+					controls_state = 147
+				}
+				FDR = { transfer_state = 147 }
+			}
+			if = {
+				limit = {
+					controls_state = 148
+				}
+				FDR = { transfer_state = 148 }
+			}
+			if = {
+				limit = {
+					controls_state = 722
+				}
+				FDR = { transfer_state = 722 }
+			}
+		}
+	}
+
+
+}
+
+
+FIN_integrate_eastern_territories = {
+	
+	FIN_integrate_repola = {
+
+		icon = infiltrate_state
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = FIN_integrate_cooldown }
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		days_remove = 80
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifier = {
+			political_power_gain = -0.2
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_integrate_cooldown value = 1 days = 80 }
+		}
+	}
+	
+	FIN_integrate_murmansk = {
+
+		icon = infiltrate_state
+
+		available = {
+			FIN = {
+				controls_state = 213
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = FIN_integrate_cooldown }
+			}
+		}
+		visible = {
+			FIN = {
+				controls_state = 213
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		days_remove = 280
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_integrate_cooldown value = 1 days = 280 }
+		}
+
+		remove_effect = {
+			add_state_core = 213
+		}		
+	}
+	
+	FIN_integrate_onega = {
+
+		icon = infiltrate_state
+
+		available = {
+			FIN = {
+				controls_state = 215
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = FIN_integrate_cooldown }
+			}
+		}
+		visible = {
+			FIN = {
+				controls_state = 215
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		days_remove = 280
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_integrate_cooldown value = 1 days = 280 }
+		}
+
+		remove_effect = {
+			add_state_core = 215
+		}		
+	}
+	
+	FIN_integrate_olonech = {
+
+		icon = infiltrate_state
+
+		available = {
+			FIN = {
+				controls_state = 216
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = FIN_integrate_cooldown }
+			}
+		}
+		visible = {
+			FIN = {
+				controls_state = 216
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		days_remove = 280
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_integrate_cooldown value = 1 days = 280 }
+		}
+
+		remove_effect = {
+			add_state_core = 216
+		}		
+	}
+	
+	FIN_integrate_Finnmark = {
+
+		icon = infiltrate_state
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = FIN_integrate_cooldown }
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		days_remove = 280
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_integrate_cooldown value = 1 days = 280 }
+		}	
+	}
+	
+	FIN_integrate_Turneelven = {
+
+		icon = infiltrate_state
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = FIN_integrate_cooldown }
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		days_remove = 280
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		complete_effect = {
+		    set_country_flag = { flag = FIN_integrate_cooldown value = 1 days = 280 }
+		}
+	}
+}
+
+
+
+
+
+

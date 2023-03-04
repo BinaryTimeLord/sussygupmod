@@ -1,0 +1,45 @@
+division_template = {
+	name = "Red Guard"
+	is_locked = no
+	division_names_group = FIN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+
+
+units = {
+	division = {
+		name = "I Red Guard"
+		location = 11105  
+		division_template = "Red Guard"
+	}
+	
+	division = {
+		name = "II Red Guard"
+		location = 6108  
+		division_template = "Red Guard"
+	}
+	
+	division = {
+		name = "III Red Guard"
+		location = 6144
+		division_template = "Red Guard"
+	}
+	
+	division = {
+		name = "IV Red Guard"
+		location = 9129  
+		division_template = "Red Guard"
+	}
+	
+}

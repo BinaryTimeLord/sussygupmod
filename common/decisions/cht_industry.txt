@@ -1,0 +1,1611 @@
+chihatan_industry = {
+	fate_of_the_zaibatsu = {
+
+		icon = GFX_decision_ger_mefo_bills
+		days_mission_timeout = 168
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			has_completed_focus = JAP_guide_the_zaibatsus
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {
+			custom_effect_tooltip = "IKEDA_VICTORY"
+			set_country_flag = cht_ikeda_chosen
+            set_country_flag = cht_panzer_loop
+		}
+		
+		complete_effect  = {
+			custom_effect_tooltip = "HOSOMI_VICTORY"
+			set_country_flag = cht_hosomi_chosen
+            set_country_flag = cht_panzer_loop
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+
+    manchurian_project = {
+
+		icon = GFX_decision_generic_construction
+		days_mission_timeout = 365
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			has_completed_focus = JAP_the_manchurian_project
+            custom_trigger_tooltip ={
+                tooltip = "CHT_MANCHURIAN_PROJECT_CHECK"
+                has_country_flag = cht_manchurian_project_finished
+            }
+		}
+		
+		fire_only_once = yes
+
+        activation = {
+            has_country_flag = cht_manchurian_project_start
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_start
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {
+			add_stability = -0.12
+            add_war_support = -0.1
+            MAN = {
+                add_stability = 0.2
+                add_war_support = 0.2
+            }
+            custom_effect_tooltip = CHT_NONO_MOMENT
+            hidden_effect = {
+                MAN = {
+                    every_state = {
+                        limit = { is_core_of = CHI }
+                        add_core_of = MAN
+                    }
+                }
+                random_list = {
+                    30 = {
+                        send_equipment = {
+                            target = MAN
+                            equipment = infantry_equipment
+                            amount = 12650
+                            old_prioritised = yes
+                        }
+                        send_equipment = {
+                            target = MAN
+                            equipment = support_equipment
+                            amount = 5045
+                            old_prioritised = yes
+                        }
+                        send_equipment = {
+                            target = MAN
+                            equipment = artillery_equipment
+                            amount = 4075
+                            old_prioritised = yes
+                        }
+                        MAN = {
+                            annex_country = { target = MEN transfer_troops = yes }
+                        }
+                    }
+                    30 = {
+                        OVERLORD = { set_autonomy = { target = MAN autonomy_state = autonomy_free } }
+                        send_equipment = {
+                            target = MAN
+                            equipment = infantry_equipment
+                            amount = 12650
+                            old_prioritised = yes
+                        }
+                        send_equipment = {
+                            target = MAN
+                            equipment = support_equipment
+                            amount = 5045
+                            old_prioritised = yes
+                        }
+                        send_equipment = {
+                            target = MAN
+                            equipment = artillery_equipment
+                            amount = 4075
+                            old_prioritised = yes
+                        }
+                        MAN = {
+                            annex_country = { target = MEN transfer_troops = yes }
+                        }
+                    }
+                    30 = {
+                        transfer_units_fraction = {
+                            target = MAN
+                            size = 0.1
+                            stockpile_ratio = 0.1
+                            army_ratio = 0.06
+                            navy_ratio = 0
+                            air_ratio = 0.1
+                        }
+                        MAN = {
+                            declare_war_on = {
+                                target = JAP
+                                type = annex_everything
+                            }
+                            
+                            MAN = {
+                                annex_country = { target = MEN transfer_troops = yes }
+                            }
+                        }
+                    }
+                    10 = {
+                        
+                    }
+                }
+            }
+		}
+		
+		complete_effect  = {
+            add_stability = 0.1
+            add_war_support = 0.05
+            MAN = {
+                add_stability = 0.2
+                add_war_support = 0.2
+                add_political_power = 300
+                every_state = {
+                    limit = { is_core_of = CHI }
+                    add_core_of = MAN
+                }
+            }
+            remove_ideas = cht_manchurian_project
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_expand_the_showa_steel_works = {
+
+		icon = GFX_decision_steel
+		days_mission_timeout = 35
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_expand_the_showa_steel_works_1
+            716 = { is_fully_controlled_by = MAN }
+			MAN = { is_subject_of = ROOT }
+		}
+		
+		fire_only_once = yes
+        days_remove = 70
+
+        highlight_states = {
+			state = 716
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_start
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_start
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+            609 = { 
+                damage_building = { type = infrastructure damage = 5.0 }
+                damage_building = { type = air_base damage = 5.0 }
+                damage_building = { type = naval_base damage = 5.0 province = 3900 }
+            }
+            745 = { 
+                damage_building = { type = infrastructure damage = 4.0 }
+                damage_building = { type = air_base damage = 4.0 }
+                damage_building = { type = naval_base damage = 4.0 province = 1150 }
+            }
+            612 = { 
+                damage_building = { type = infrastructure damage = 3.0 }
+            }
+            611 = { 
+                damage_building = { type = infrastructure damage = 3.0 }
+            }
+            610 = {
+                damage_building = { type = infrastructure damage = 2.0 }
+            }
+			hidden_effect = {
+                716 = {
+                    if = {
+                        limit = {
+                            MAN = { has_focus_tree = generic_focus }
+                        }
+                        add_resource = {
+                            type = steel
+                            amount = 16
+                        }				
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                    add_resource = {
+                        type = steel
+                        amount = 16
+                    }
+                    add_resource = {
+                        type = aluminium
+                        amount = 12
+                    }
+                }
+                country_event = { id = cht2.15 days = 21 }
+            }
+		}
+		
+		complete_effect  = {
+            716 = {
+				if = {
+					limit = {
+						MAN = { has_focus_tree = generic_focus }
+					}
+					add_resource = {
+						type = steel
+						amount = 16
+					}				
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+            hidden_effect = {
+                country_event = { id = cht2.15 days = 21 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_expand_the_showa_steel_works_1 = {
+
+		icon = GFX_decision_steel
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 40
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+			state = 716
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_start
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_expand_the_showa_steel_works_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    JAP_expand_manchurian_railways = {
+
+		icon = GFX_decision_generic_operation
+		days_mission_timeout = 35
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_expand_manchurian_railways_1
+            MAN = { is_subject_of = ROOT }
+		}
+		
+		fire_only_once = yes
+        days_remove = 70
+
+        highlight_states = {
+            state = 610
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_1
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_1
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+            527 = { 
+                damage_building = { type = infrastructure damage = 6.0 }
+                damage_building = { type = industrial_complex damage = 6.0 }
+            }
+            525 = { 
+                damage_building = { type = infrastructure damage = 6.0 }
+                damage_building = { type = arms_factory damage = 6.0 }
+                damage_building = { type = naval_base damage = 6.0 province = 4056 }
+            }
+			hidden_effect = {
+                716 = {
+                    if = {
+                        limit = {
+                            is_owned_and_controlled_by = MAN
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                610 = {
+                    if = {
+                        limit = {
+                            is_owned_and_controlled_by = MAN
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                611 = {
+                    if = {
+                        limit = {
+                            is_owned_and_controlled_by = MEN
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+                }
+                612 = {
+                    if = {
+                        limit = {
+                            is_owned_and_controlled_by = MEN
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 3
+                            instant_build = yes
+                        }
+                    }
+                }
+                609 = {
+                    if = {
+                        limit = {
+                            OR = {
+                                is_owned_and_controlled_by = MAN
+                                is_owned_and_controlled_by = MEN
+                            }
+                        }
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                country_event = { id = cht2.16 days = 21 }
+            }
+		}
+		
+		complete_effect  = {
+            716 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = MAN
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			610 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = MAN
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			611 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = MEN
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			612 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = MEN
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			609 = {
+				if = {
+					limit = {
+						OR = {
+							is_owned_and_controlled_by = MAN
+							is_owned_and_controlled_by = MEN
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+            hidden_effect = {
+                country_event = { id = cht2.16 days = 21 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_expand_manchurian_railways_1 = {
+
+		icon = GFX_decision_generic_operation
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 50
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+            state = 610
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_1
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_expand_manchurian_railways_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    JAP_zaibtasu_expansion = {
+
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 35
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_zaibtasu_expansion_1
+            MAN = { is_subject_of = ROOT }
+		}
+		
+		fire_only_once = yes
+        days_remove = 70
+
+        highlight_states = {
+            state = 328
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_2
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_2
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+            MAN = {
+                add_autonomy_ratio = {
+                    value = 0.2945
+                    localization = JAP_zaibtasu_expansion
+                }
+            }
+			hidden_effect = {
+                MAN = {
+                    add_ideas = cht_zaibatsu_expansion_manchuria
+                    add_political_power = 200
+                }
+                328 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                714 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                country_event = { id = cht2.17 days = 21 }
+            }
+		}
+		
+		complete_effect  = {
+            MAN = {
+				add_ideas = cht_zaibatsu_expansion_manchuria
+                add_autonomy_ratio = {
+                    value = -0.1660
+                    localization = JAP_zaibtasu_expansion
+                }
+			}
+			328 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			714 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+            hidden_effect = {
+                country_event = { id = cht2.17 days = 21 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_zaibtasu_expansion_1 = {
+
+		icon = GFX_decision_generic_factory
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 60
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+            state = 328
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_2
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_zaibtasu_expansion_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    JAP_light_industry_development = {
+
+		icon = GFX_decision_gre_investment_decisions
+		days_mission_timeout = 70
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_light_industry_development_1
+            MAN = {
+				is_subject_of = ROOT
+				has_full_control_of_state = 716				
+			}
+		}
+		
+		fire_only_once = yes
+        days_remove = 70
+
+        highlight_states = {
+            state = 717
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_3
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_3
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+            MAN = {
+                add_autonomy_ratio = {
+                    value = 0.3923
+                    localization = JAP_zaibtasu_expansion
+                }
+                OVERLORD = { set_autonomy = { target = MAN autonomy_state = autonomy_wtt_imperial_associate } }
+            }
+			hidden_effect = {
+                716 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                717 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                country_event = { id = cht2.18 days = 21 }
+            }
+		}
+		
+		complete_effect  = {
+            716 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+            717 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+            hidden_effect = {
+                country_event = { id = cht2.18 days = 21 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_light_industry_development_1 = {
+
+		icon = GFX_decision_gre_investment_decisions
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 75
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+            state = 717
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_3
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_light_industry_development_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    JAP_heavy_industry_development = {
+
+		icon = GFX_decision_generic_industry
+		days_mission_timeout = 70
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_heavy_industry_development_1
+            MAN = {
+				is_subject_of = ROOT
+				has_full_control_of_state = 716				
+			}
+		}
+		
+		fire_only_once = yes
+        days_remove = 70
+
+        highlight_states = {
+            state = 715
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_4
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_4
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+            MAN = {
+                add_autonomy_ratio = {
+                    value = 0.2809
+                    localization = JAP_zaibtasu_expansion
+                }
+                OVERLORD = { set_autonomy = { target = MAN autonomy_state = autonomy_wtt_imperial_subject } }
+            }
+			hidden_effect = {
+                715 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                717 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                country_event = { id = cht2.19 days = 21 }
+            }
+		}
+		
+		complete_effect  = {
+            715 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+            717 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+            hidden_effect = {
+                country_event = { id = cht2.19 days = 21 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_heavy_industry_development_1 = {
+
+		icon = GFX_decision_generic_industry
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 75
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+            state = 715
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_4
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_heavy_industry_development_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    JAP_japanese_settlement = {
+
+		icon = GFX_decision_eng_blackshirt_march
+		days_mission_timeout = 35
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_japanese_settlement_1
+            MAN = {
+				is_subject_of = ROOT
+				has_full_control_of_state = 715
+				has_full_control_of_state = 610
+				has_full_control_of_state = 328
+			}
+		}
+		
+		fire_only_once = yes
+        days_remove = 35
+
+        highlight_states = {
+            state = 714
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_5
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_5
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+			hidden_effect = {
+                714 = { add_extra_state_shared_building_slots = 2 }
+                761 = { add_extra_state_shared_building_slots = 2 }
+                715 = { add_extra_state_shared_building_slots = 2 }
+                610 = { add_extra_state_shared_building_slots = 2 }
+                328 = { add_extra_state_shared_building_slots = 2 }
+                country_event = { id = cht2.20 days = 21 }
+            }
+		}
+		
+		complete_effect  = {
+            714 = { add_extra_state_shared_building_slots = 3 }
+            761 = { add_extra_state_shared_building_slots = 3 }
+            715 = { add_extra_state_shared_building_slots = 3 }
+			610 = { add_extra_state_shared_building_slots = 3 }
+			328 = { add_extra_state_shared_building_slots = 3 }
+            hidden_effect = {
+                country_event = { id = cht2.20 days = 21 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_japanese_settlement_1 = {
+
+		icon = GFX_decision_eng_blackshirt_march
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 50
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+            state = 714
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_5
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_japanese_settlement_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    JAP_fortify_the_border = {
+
+		icon = GFX_decision_border_war
+		days_mission_timeout = 35
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_decision = JAP_fortify_the_border_1
+            MAN = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		fire_only_once = yes
+        days_remove = 35
+
+        highlight_states = {
+            state = 761
+		}
+
+		activation = {
+            has_country_flag = cht_manchurian_project_6
+        }
+
+		visible = {
+			has_country_flag = cht_manchurian_project_6
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        modifier = {
+            consumer_goods_factor = 0.015
+        }
+
+		timeout_effect = {
+            MAN = {
+                remove_ideas = cht_zaibatsu_expansion_manchuria
+                OVERLORD = { set_autonomy = { target = MAN autonomy_state = autonomy_free } }
+                annex_country = { target = MEN transfer_troops = yes }
+                add_state_core = 612
+                add_state_core = 611
+            } 
+			hidden_effect = {
+                MAN = {
+                    every_owned_state = {
+                        limit = {
+                            is_fully_controlled_by = PREV
+                            any_neighbor_state = {
+                                is_controlled_by = SOV
+                            }
+                        }
+                        set_building_level = {
+                            type = bunker
+                            level = 2
+                            province = {
+                                all_provinces = yes
+                                limit_to_border = yes
+                                level < 2
+                            }
+                        }
+                    }				
+                }
+                country_event = { id = cht2.21 days = 14 }
+            }
+		}
+		
+		complete_effect  = {
+            set_country_flag = cht_manchurian_project_finished
+            MAN = {
+                if = {
+                    limit = {
+                        MAN = { has_country_leader = { ruling_only = yes name = "Tomoyo Ikeda" } }
+                    }
+                    MAN = {
+                        add_country_leader_trait = warrior_code
+                        add_country_leader_trait = baroness_of_manchruria
+                    }
+                }
+            }
+            MAN = {
+				every_owned_state = {
+					limit = {
+						is_fully_controlled_by = PREV
+						any_neighbor_state = {
+							is_controlled_by = SOV
+						}
+					}
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+							level < 3
+						}
+					}
+				}				
+			}
+            hidden_effect = {
+                country_event = { id = cht2.21 days = 14 }
+            }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    JAP_fortify_the_border_1 = {
+
+		icon = GFX_decision_border_war
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 50
+		
+		fire_only_once = yes
+        days_remove = 2
+
+        highlight_states = {
+            state = 761
+		}
+
+		visible = {
+			has_country_flag = cht_manchurian_project_6
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            set_country_flag = cht_JAP_fortify_the_border_1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    academy_bonds = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+		}
+
+        cost = 50
+		
+		fire_only_once = no
+        days_re_enable = 90
+        days_remove = 90
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+		
+		modifier = {
+            consumer_goods_factor = -0.1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    purchase_local_arms = {
+
+		icon = GFX_decision_generic_industry
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 180
+        days_remove = 180
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                50 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = JAP
+			        	amount = 2500
+                    }
+                }
+                25 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = SOV
+			        	amount = 2000
+                    }
+                }
+                15 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = USA
+			        	amount = 1750
+                    }
+                }
+                10 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = ENG
+			        	amount = 1500
+                    }
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    purchase_big_guns = {
+
+		icon = GFX_decision_ger_military_buildup
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 180
+        days_remove = 180
+
+		visible = {
+		    has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                50 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = JAP
+			        	amount = 2000
+                    }
+                }
+                25 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = SOV
+			        	amount = 1750
+                    }
+                }
+                15 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = USA
+			        	amount = 1500
+                    }
+                }
+                10 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = ENG
+			        	amount = 1000
+                    }
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    purchase_anti_air = {
+
+		icon = GFX_decision_ger_military_buildup
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+            JAP = {
+                has_tech = interwar_antiair
+            }
+            SOV = {
+                has_tech = interwar_antiair
+            }
+            USA = {
+                has_tech = interwar_antiair
+            }
+            ENG = {
+                has_tech = interwar_antiair
+            }
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 180
+        days_remove = 180
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                50 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = JAP
+			        	amount = 2000
+                    }
+                }
+                25 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = SOV
+			        	amount = 1750
+                    }
+                }
+                15 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = USA
+			        	amount = 1500
+                    }
+                }
+                10 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = ENG
+			        	amount = 1000
+                    }
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    kuromorimine_panzer_deal = {
+
+		icon = GFX_decision_generic_tank
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            date > 1940.2.14
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 15
+        days_remove = 30
+
+		visible = {
+			OR = {
+                has_country_flag = cht_ikeda_chosen
+                has_country_flag = cht_hosomi_chosen
+            }
+            has_country_flag = cht_panzer_loop
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                80 = {
+                    if = {
+                        limit = {
+                            GER = {
+                                has_tech = basic_medium_tank
+                            }
+                        }
+                        create_production_license = {
+                            target = GER
+                            equipment = {
+                                type = medium_tank_equipment_1
+                            }
+                            cost_factor = 0
+                        }
+                    }
+                    if = {
+                        limit = {
+                            GER = {
+                                has_tech = improved_medium_tank
+                            }
+                        }
+                        GER = {
+                            create_production_license = {
+                                target = JAP
+                                equipment = {
+                                    type = medium_tank_equipment_2
+                                }
+                                cost_factor = 0
+                            }
+                        }
+                    }
+                    clr_country_flag = cht_panzer_loop
+                }
+                20 = {
+                    custom_effect_tooltip = "KURO_LICENSE_REJECTED"
+                    set_country_flag = cht_panzer_loop
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 160
+		}
+	}
+    fighter_production = {
+
+		icon = GFX_decision_generic_air
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 75
+		
+		fire_only_once = yes
+        days_re_enable = 180
+        days_remove = 180
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = aircraft_production
+                days = 180
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+}

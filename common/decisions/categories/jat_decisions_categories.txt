@@ -1,0 +1,49 @@
+
+
+
+
+FIN_foreign_help = {
+    allowed = {
+		original_tag = FIN
+	}
+}
+
+
+FIN_allies = {
+    allowed = {
+		original_tag = FIN
+	}
+}
+
+FIN_attack = {
+    icon = GFX_decision_category_military_operation
+	
+    allowed = {
+		original_tag = FIN
+	}
+}
+
+FIN_SWE_NOR_peace = {
+    icon = GFX_decision_category_generic_foreign_policy
+	
+    allowed = {
+		OR = {
+			original_tag = SWE
+			original_tag = NOR
+		}
+	}
+}
+
+FIN_SOV_Return_Territory = {
+    icon = GFX_decision_category_generic_foreign_policy
+	
+    allowed = {
+		original_tag = SOV
+	}
+}
+
+FIN_integrate_eastern_territories = {
+    allowed = {
+		original_tag = FIN
+	}
+}

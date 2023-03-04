@@ -1,0 +1,280 @@
+spriteTypes = {	
+
+	
+	spriteType = {
+		name = "GFX_idea_fin_sniper"
+		texturefile = "gfx/interface/goals/Jatkosota/fin_sniper.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fin_ski"
+		texturefile = "gfx/interface/goals/Jatkosota/fin_ski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_event_anti_left"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_anti_left.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_FIN_event_civilwar"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_civilwar.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_FIN_event_fascist_arest"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_fascist_arest.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_FIN_event_fascist_coup_vopros"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_fascist_coup_vopros.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_FIN_event_left_protests"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_left_protests.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_FIN_event_mika"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_mika.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_FIN_event_parlament_01"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_parlament_01.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_FIN_event_parlament_02"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_parlament_02.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_FIN_event_SDR"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_event_SDR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_facist_coup"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_facist_coup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_mika_coup"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_mika_coup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FIN_jatkosota_accept"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_jatkosota_accept.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FIN_winter_war"
+		texturefile = "gfx/event_pictures/Jatkosota/FIN_winter_war.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_FIN_defence"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_FIN_defence.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_mika"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_mika.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_mikko"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_mikko.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_aki"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_aki.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_FIN_white_snipers"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_FIN_white_snipers.dds"
+	} 
+	
+	SpriteType = {
+		name = "GFX_focus_FIN_defence_shine"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_FIN_defence.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_FIN_defence.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_FIN_defence.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_mika_shine"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_mika.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_mika.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_mika.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_mikko_shine"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_mikko.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_mikko.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_mikko.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_aki_shine"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_aki.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_aki.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_aki.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+
+	
+	SpriteType = {
+		name = "GFX_focus_FIN_white_snipers_shine"
+		texturefile = "gfx/interface/goals/Jatkosota/focus_FIN_white_snipers.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_FIN_white_snipers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Jatkosota/focus_FIN_white_snipers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	
+}

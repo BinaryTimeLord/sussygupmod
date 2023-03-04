@@ -1,0 +1,1509 @@
+focus_tree = {
+	id = finland_democratic_finland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FDR
+		}
+	}
+
+	default = no
+	
+	continuous_focus_position = { x = 1600 y = 25 }
+	
+	
+	
+	focus = {
+		id = FDR_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		
+		x = 2
+		y = 0
+		
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		    always = no
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = GUP_automatic_focus_tt
+		}
+	}
+	
+	
+	
+	focus = {
+		id = FDR_restore_red_guard
+		icon = GFX_focus_focus_fra_maquis
+		
+		prerequisite = { focus = FDR_revolution }
+		relative_position_id = FDR_revolution
+		
+		x = 1
+		y = 1
+		
+		cost = 5
+		ai_will_do = {
+			factor = 100000
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				load_oob = FIN_civilwar_communist_red_guard
+			}
+			custom_effect_tooltip = FDR_restore_red_guard_tt
+		}
+	}
+	
+	
+	focus = {
+		id = FDR_VCheCa
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		
+		prerequisite = { focus = FDR_restore_red_guard }
+		relative_position_id = FDR_restore_red_guard
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 75
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			add_ideas = FDR_VCheCa_idea
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = FDR_revolt_in_lapland
+		icon = GFX_goal_generic_demand_territory
+		
+		prerequisite = { focus = FDR_revolution }
+		relative_position_id = FDR_revolution
+		
+		x = -1
+		y = 1
+		
+		cost = 5
+		ai_will_do = {
+			factor = 100000
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+			has_war_with = FIN
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				load_oob = FIN_civilwar_communist_lapland
+			}
+			custom_effect_tooltip = FDR_revolt_in_lapland_tt
+		}
+	}
+	
+	focus = {
+		id = FDR_revolt_in_karelia
+		icon = GFX_goal_generic_demand_territory
+		
+		prerequisite = { focus = FDR_revolution }
+		relative_position_id = FDR_revolution
+		
+		x = -3
+		y = 1
+		
+		cost = 5
+		ai_will_do = {
+			factor = 100000
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+			has_war_with = FIN
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				load_oob = FIN_civilwar_communist_karelia
+			}
+			custom_effect_tooltip = FDR_revolt_in_karelia_tt
+		}
+	}
+	
+	
+	
+	
+	
+	 
+	
+	
+	focus = {
+		id = FDR_socialism_reustavration
+		icon = GFX_focus_generic_join_comintern
+		
+		prerequisite = { focus = FDR_revolution }
+		relative_position_id = FDR_revolution
+		
+		x = 3
+		y = 1
+		
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			always = no
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = GUP_automatic_focus_tt
+		}
+	}
+	
+	focus = {
+		id = FDR_peoples_republic
+		icon = GFX_focus_generic_soviet_politics
+		
+		x = 7
+		y = 1
+		
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		    always = no
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = GUP_automatic_focus_tt
+		}
+	}
+	
+	focus = {
+		id = FDR_trird_year_plan
+		icon = GFX_goal_generic_soviet_construction
+		
+		prerequisite = { focus = FDR_socialism_reustavration focus = FDR_peoples_republic}
+		relative_position_id = FDR_socialism_reustavration
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = FDR_third_year_plan_idea days = 1095 } 
+		}
+	}
+	
+	
+	focus = {
+		id = FDR_restore_sovet_system
+		icon = GFX_focus_generic_self_management
+		
+		prerequisite = { focus = FDR_trird_year_plan }
+		relative_position_id = FDR_trird_year_plan
+		
+		x = -5
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	
+	
+	
+	focus = {
+		id = FDR_moderate_collectivization
+		icon = GFX_focus_prc_agrarian_socialism
+		
+		prerequisite = { focus = FDR_restore_sovet_system }
+		relative_position_id = FDR_restore_sovet_system
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = -0.15
+		}
+	}
+	
+	focus = {
+		id = FDR_nationalization
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		
+		prerequisite = { focus = FDR_restore_sovet_system }
+		relative_position_id = FDR_restore_sovet_system
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+			controls_state = 111
+		}
+
+		completion_reward = {
+			111 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = FDR_start_industrialization
+		icon = GFX_focus_generic_industry_3
+		
+		prerequisite = { focus = FDR_moderate_collectivization }
+		prerequisite = { focus = FDR_nationalization }
+		relative_position_id = FDR_moderate_collectivization
+		x = 1
+		y = 1
+		
+		cost = 15
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_light_industry
+		icon = GFX_goal_generic_construct_civilian
+		
+		prerequisite = { focus = FDR_start_industrialization }
+		relative_position_id = FDR_start_industrialization
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+			controls_state = 149
+			controls_state = 111
+		}
+
+		completion_reward = {
+			149 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			111 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_heavy_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		
+		prerequisite = { focus = FDR_start_industrialization }
+		relative_position_id = FDR_start_industrialization
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+			controls_state = 150
+			controls_state = 111
+		}
+
+		completion_reward = {
+			150 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			111 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_prepare_for_war
+		icon = GFX_focus_generic_little_entente
+		
+		prerequisite = { focus = FDR_develop_heavy_industry }
+		relative_position_id = FDR_develop_heavy_industry
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+		    controls_state = 149
+			controls_state = 150
+			controls_state = 111
+		}
+
+		completion_reward = {
+			149 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			150 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			111 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_faraway_regions
+		icon = GFX_focus_generic_industry_1
+		
+		prerequisite = { focus = FDR_start_industrialization }
+		relative_position_id = FDR_start_industrialization
+		x = 0
+		y = 2
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+		    controls_state = 148
+			controls_state = 722
+		}
+
+		completion_reward = {
+			148 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			722 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_north_resourses
+		icon = GFX_goal_generic_construction2
+		
+		prerequisite = { focus = FDR_develop_faraway_regions }
+		relative_position_id = FDR_develop_faraway_regions
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		    controls_state = 722
+		}
+
+		completion_reward = {
+		    722 = {
+				add_resource = {
+					type = steel
+					amount = 14
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_war_research
+		icon = GFX_focus_research
+		
+		prerequisite = { focus = FDR_north_resourses }
+		prerequisite = { focus = FDR_prepare_for_war }
+		relative_position_id = FDR_north_resourses
+		x = 2
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = FDR_restore_red_army
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		
+		prerequisite = { focus = FDR_trird_year_plan }
+		relative_position_id = FDR_trird_year_plan
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = FDR_red_army
+		}
+	}
+	
+	
+	
+	
+	
+	focus = {
+		id = FDR_sov-fin_training
+		icon = GFX_focus_generic_manpower
+		
+		prerequisite = { focus = FDR_restore_red_army }
+		relative_position_id = FDR_restore_red_army
+		
+		x = -3
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_rearmament
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = { focus = FDR_sov-fin_training }
+		relative_position_id = FDR_sov-fin_training
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_artillery
+		icon = GFX_goal_generic_army_artillery2
+		
+		prerequisite = { focus = FDR_rearmament }
+		relative_position_id = FDR_rearmament
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_infantry_weapon
+		icon = GFX_goal_generic_small_arms
+		
+		prerequisite = { focus = FDR_rearmament }
+		relative_position_id = FDR_rearmament
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_defense_strategy
+		icon = GFX_focus_FIN_defence
+		
+		prerequisite = { focus = FDR_develop_artillery }
+		prerequisite = { focus = FDR_infantry_weapon }
+		relative_position_id = FDR_develop_artillery
+		mutually_exclusive = { focus = FDR_attack_strategy }
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_grand_battle_plan
+				category = cat_mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_attack_strategy
+		icon = GFX_goal_generic_major_war
+		
+		prerequisite = { focus = FDR_develop_artillery }
+		prerequisite = { focus = FDR_infantry_weapon }
+		relative_position_id = FDR_develop_artillery
+		mutually_exclusive = { focus = FDR_defense_strategy }
+		
+		x = 4
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_mobile_warfare
+				category = cat_superior_firepower
+			}
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = FDR_north_defense_line
+		icon = GFX_goal_generic_fortify_city
+		
+		prerequisite = { focus = FDR_defense_strategy }
+		prerequisite = { focus = FDR_prepare_for_war }
+		relative_position_id = FDR_defense_strategy
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			controls_state = 148
+			controls_state = 722
+		}
+
+		completion_reward = {
+		    148 = {
+		        add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11164
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 162
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6087
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9189
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6076
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 2992
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6142
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3158
+					instant_build = yes
+				}
+			}
+			722 = {
+		        add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6183
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11142
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_sea_defense_line
+		icon = GFX_goal_generic_fortify_city
+		
+		prerequisite = { focus = FDR_defense_strategy }
+		prerequisite = { focus = FDR_prepare_for_war }
+		relative_position_id = FDR_defense_strategy
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			controls_state = 111
+			controls_state = 146
+			controls_state = 149
+		}
+
+		completion_reward = {
+		    111 = {
+		        add_building_construction = {
+		    		type = coastal_bunker
+		    		level = 3
+		    		province = 11105
+		    		instant_build = yes
+	    		}
+				add_building_construction = {
+		    		type = coastal_bunker
+		    		level = 2
+		    		province = 3083
+		    		instant_build = yes
+	    		}
+				add_building_construction = {
+		    		type = bunker
+		    		level = 4
+		    		province = 11105
+		    		instant_build = yes
+	    		}
+				add_building_construction = {
+		    		type = bunker
+		    		level = 4
+		    		province = 3083
+		    		instant_build = yes
+	    		}
+			}
+			146  = {
+			    add_building_construction = {
+		    		type = coastal_bunker
+		    		level = 3
+		    		province = 9206
+		    		instant_build = yes
+	    		}
+				add_building_construction = {
+		    		type = bunker
+		    		level = 3
+		    		province = 9206
+		    		instant_build = yes
+	    		}
+			}
+			
+			149  = {
+			    add_building_construction = {
+		    		type = coastal_bunker
+		    		level = 3
+		    		province = 3122
+		    		instant_build = yes
+	    		}
+				add_building_construction = {
+		    		type = bunker
+		    		level = 3
+		    		province = 3122
+		    		instant_build = yes
+	    		}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_begin_motoriation
+		icon = GFX_goal_generic_army_motorized
+		
+		prerequisite = { focus = FDR_sov-fin_training }
+		relative_position_id = FDR_sov-fin_training
+		
+		x = 3
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_armor
+		icon = GFX_goal_generic_army_tanks
+		
+		prerequisite = { focus = FDR_begin_motoriation }
+		relative_position_id = FDR_begin_motoriation
+		
+		x = 2
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_finnish_tank_project
+		icon = GFX_focus_generic_tank_production
+		
+		prerequisite = { focus = FDR_develop_armor }
+		prerequisite = { focus = FDR_attack_strategy }
+		relative_position_id = FDR_develop_armor
+		
+		x = 1
+		y = 2
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+			    bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_soviet_mission
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		
+		prerequisite = { focus = FDR_defense_strategy focus = FDR_attack_strategy}
+		relative_position_id = FDR_defense_strategy
+		
+		x = 2
+		y = 2
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			is_in_faction_with = SOV
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_defense_together
+		icon = GFX_goal_generic_defence
+		
+		prerequisite = { focus = FDR_soviet_mission }
+		prerequisite = { focus = FDR_defense_strategy }
+		relative_position_id = FDR_soviet_mission
+		
+		x = -2
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			is_in_faction_with = SOV
+		}
+
+		completion_reward = {
+			add_ideas = FDR_defense_together_idea
+		}
+	}
+	
+	focus = {
+		id = FDR_invite_soviet_engineers
+		icon = GFX_goal_generic_soviet_construction
+		
+		prerequisite = { focus = FDR_soviet_mission }
+		prerequisite = { focus = FDR_attack_strategy }
+		relative_position_id = FDR_soviet_mission
+		
+		x = 2
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			is_in_faction_with = SOV
+		}
+
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_red_sky
+		icon = GFX_goal_generic_build_airforce
+		
+		prerequisite = { focus = FDR_restore_red_army }
+		relative_position_id = FDR_restore_red_army
+		
+		x = 3
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			111 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_fighters
+		icon = GFX_goal_generic_air_fighter
+		
+		prerequisite = { focus = FDR_red_sky }
+		relative_position_id = FDR_red_sky
+		mutually_exclusive = { focus = FDR_develop_bombers }
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_bombers
+		icon = GFX_goal_generic_air_bomber
+		
+		prerequisite = { focus = FDR_red_sky }
+		relative_position_id = FDR_red_sky
+		mutually_exclusive = { focus = FDR_develop_fighters }
+		
+		x = 3
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_aviations
+		icon = GFX_goal_generic_air_doctrine
+		
+		prerequisite = { focus = FDR_develop_bombers focus = FDR_develop_fighters }
+		relative_position_id = FDR_develop_bombers
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_CAS
+		icon = GFX_goal_generic_CAS
+		
+		prerequisite = { focus = FDR_develop_aviations }
+		prerequisite = { focus = FDR_begin_motoriation }
+		relative_position_id = FDR_develop_aviations
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_develop_NAV
+		icon = GFX_goal_generic_occupy_start_war
+		
+		prerequisite = { focus = FDR_develop_aviations }
+		prerequisite = { focus = FDR_red_baltic_protection focus = FDR_red_baltic_domination }
+		relative_position_id = FDR_develop_aviations
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_red_navy
+		icon = GFX_goal_generic_build_navy
+		
+		prerequisite = { focus = FDR_restore_red_army }
+		relative_position_id = FDR_restore_red_army
+		
+		x = 9
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 10
+		    111 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_red_baltic_protection
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		
+		prerequisite = { focus = FDR_red_navy }
+		relative_position_id = FDR_red_navy
+		mutually_exclusive = { focus = FDR_red_baltic_domination }
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = submarine_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_light_ships
+		icon = GFX_goal_generic_navy_cruiser
+		
+		prerequisite = { focus = FDR_red_baltic_protection }
+		relative_position_id = FDR_red_baltic_protection
+		
+		
+		x = 1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_red_baltic_domination
+		icon = GFX_goal_generic_occupy_states_coastal
+		
+		prerequisite = { focus = FDR_red_navy }
+		relative_position_id = FDR_red_navy
+		mutually_exclusive = { focus = FDR_red_baltic_protection }
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		
+		prerequisite = { focus = FDR_red_baltic_domination }
+		relative_position_id = FDR_red_baltic_domination
+		
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		
+		prerequisite = { focus = FDR_red_baltic_protection focus = FDR_red_baltic_domination }
+		relative_position_id = FDR_red_baltic_protection
+		
+		
+		x = -1
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = FDR_submarines
+		icon = GFX_goal_generic_navy_submarine
+		
+		prerequisite = { focus = FDR_destroyers }
+		relative_position_id = FDR_destroyers
+		
+		
+		x = 0
+		y = 1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+}

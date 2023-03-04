@@ -1,0 +1,72 @@
+﻿CHT_FRD = {  # PACIFIC GARRISONS
+	name = "Pacific Garrison Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = no }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Fukuda Ryodan"
+
+	ordered = {
+		1 = { "%d Fukuda Ryodan" }
+	}
+}
+
+CHT_HRD = { # SOUTHEAST ASIAN GARRISONS
+	name = "Southeast Asian Garrison Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = no }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Hamada Ryodan"
+
+	ordered = {
+		1 = { "%d Hamada Ryodan" }
+	}
+}
+
+CHT_HHS = { # SOUTHEAST ASIAN FORCES
+	name = "Southeast Asian Divisions"
+
+	for_countries = { JAP }
+
+	can_use = { always = no }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Hamada Hohei Shidan"
+
+	ordered = {
+		1 = { "%d Hohei Shidan" }
+	}
+}
+
+CHT_NSD = { # SPECIAL STANDARD TANK DIVISIONS
+	name = "Nishi Armored Divisions"
+
+	for_countries = { JAP }
+
+	can_use = { always = no }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "Nishi Sensha Dai-%d Shidan"
+
+	ordered = {
+		1 = { "Nishi Sensha Dai-%d 'Kinuyo' Shidan" }
+		2 = { "Nishi Sensha Dai-%d 'Haru' Shidan" }
+		3 = { "Nishi Sensha Dai-%d 'Natsuko' Shidan" }
+		4 = { "Nishi Sensha Dai-%d 'Ikuyo' Shidan" }
+		5 = { "Nishi Sensha Dai-%d 'Tomoyo' Shidan" }
+		6 = { "Nishi Sensha Dai-%d 'Mayuko' Shidan" }
+		7 = { "Nishi Sensha Dai-%d 'Ritsuko' Shidan" }
+		8 = { "Nishi Sensha Dai-%d 'Yukiko' Shidan" }
+		9 = { "Nishi Sensha Dai-%d 'Akemi' Shidan" }
+		10 = { "Nishi Sensha Dai-%d 'Katsumi' Shidan" }
+	}
+}

@@ -1,0 +1,433 @@
+﻿add_namespace = cht_news
+add_namespace = kmm_news
+
+news_event = { #superevent soon
+	id = kmm_news.1
+	title = kmm_news.1.t
+	desc = kmm_news.1.desc
+	picture = GFX_news_event_erika_miho_war2
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kmm_news.1.a
+		trigger = {
+			original_tag = GER
+			has_government = fascism
+		}
+	}
+	option = {
+		name = kmm_news.1.b
+		trigger = {
+			original_tag = GER
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = kmm_news.1.c
+		trigger = {
+			OR = {
+				original_tag = ENG
+				original_tag = FRA
+				original_tag = ITA
+				original_tag = SOV
+				original_tag = JAP
+				original_tag = USA
+			}
+		}
+	}
+	option = {
+		name = kmm_news.1.d
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = ENG
+					original_tag = FRA
+					original_tag = ITA
+					original_tag = SOV
+					original_tag = JAP
+					original_tag = USA
+				}
+				OR = {
+					AND = {
+						original_tag = GER
+						has_government = fascism
+					}
+					AND = {
+						original_tag = GER
+						has_government = neutrality
+					}
+				}
+			}
+		}
+	}
+}
+
+news_event = { #superevent soon # erika victory
+	id = kmm_news.2
+	title = kmm_news.2.t
+	desc = kmm_news.2.desc
+	picture = GFX_news_event_erika_victory
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kmm_news.2.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = kmm_news.2.b
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #superevent soon # miho victory
+	id = kmm_news.3
+	title = kmm_news.3.t
+	desc = kmm_news.3.desc
+	picture = GFX_news_event_miho_victory
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kmm_news.3.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = kmm_news.3.b
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+}
+
+##DANZIG WAR EVENT
+news_event = { 
+	id = kmm_news.4
+	title = kmm_news.4.t
+	desc = kmm_news.4.d
+	picture = GFX_news_event_ger_danzig_war
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kmm_news.4.a
+		
+	}
+}
+
+news_event = { ##Democracy
+	id = kmm_news.5
+	title = kmm_news.5.t
+	desc = kmm_news.5.d
+	picture = GFX_news_event_koume_kaiserin
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kmm_news.5.a
+		ai_chance = {
+			base = 100
+		}
+		trigger = {
+			original_tag = GER
+		}
+	}
+
+	
+	option = {
+		name = kmm_news.5.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+}
+
+news_event = { 
+	id = kmm_news.6
+	title = kmm_news.6.t
+	desc = kmm_news.6.d
+	picture = GFX_news_event_ger_danzig_war
+	
+	hidden = yes
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		original_tag = GER
+		date < 1936.12.4
+	}
+	
+	option = {
+		name = kmm_news.4.a
+		set_country_flag = big_event_custom_GUP1
+	}
+}
+
+news_event = { 
+	id = kmm_news.7
+	title = kmm_news.7.t
+	desc = kmm_news.7.d
+	picture = GFX_news_event_anti_pravda_pact
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = kmm_news.7.a
+	}
+}
+
+news_event = { #news event for schwarzburg visit to birmingham
+	id = kmm_news.8
+	title = kmm_news.8.t
+	desc = kmm_news.8.d
+	picture = GFX_news_event_hindenburg_intact
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #excellent
+		name = kmm_news.8.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = { #welcome!
+		name = kmm_news.8.b
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = { #a new alliance system?
+		name = kmm_news.8.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+news_event = { #news event for schwarzburg visit to birmingham #crashes
+	id = kmm_news.9
+	title = kmm_news.9.t
+	desc = kmm_news.9.d
+	picture = GFX_news_event_schwarzburg_crash
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #the reich mourns
+		name = kmm_news.9.a
+		trigger = {
+			original_tag = GER
+		}
+		hidden_effect = {
+			kill_country_leader = yes
+			random_army_leader = {
+				limit = {
+					has_id = 1005 # KOUME
+				}
+				set_unit_leader_flag = retired
+				retire = yes
+			}
+			create_country_leader = {
+				name = "Miho"
+				desc = "POLITICS_MIHO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+				expire = "1965.1.1"
+				ideology = german_idealism3
+				traits = {
+					reformer 
+					popular_commander
+					imperial_connections
+				}
+			}
+			4 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			152 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			153 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			AUS = {
+				every_unit_leader = {
+					set_nationality = GER
+				}
+			}
+			annex_country = { target = AUS transfer_troops = yes }
+			add_political_power = 100
+			set_country_flag = AUS_annexed
+			add_war_support = 0.1
+			add_stability = 0.05
+			custom_effect_tooltip = anschluss_mefo_bills_tt
+			hidden_effect = { # Having it appear twice might be confusing
+				GER_mefo_bills_level_down = yes
+			}
+		}
+	}
+	option = { #condolences
+		name = kmm_news.9.b
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = { #die young and live long
+		name = kmm_news.9.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = ENG
+				original_tag = FRA 
+			}
+		}
+	}
+	option = { #cope lmao
+		name = kmm_news.9.e
+		trigger = {
+			original_tag = FRA
+		}
+		set_war_support = 0.9
+		set_stability = 0.8
+	}
+}
+
+news_event = {
+	id = cht_news.1
+	title = cht_news.1.t
+	desc = cht_news.1.desc
+	picture = GFX_news_event_haru_tamada_coup_news
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = cht_news.1.a
+		trigger = {
+			OR = {
+				original_tag = JAP
+				AND = {
+					original_tag = MAN
+					has_government = fascism
+				}
+			}
+		}
+	}
+	option = {
+		name = cht_news.1.b
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = cht_news.1.c
+		trigger = {
+			OR = {
+				original_tag = HOL
+				original_tag = ENG
+				original_tag = USA
+				original_tag = CHI
+				original_tag = AST
+				original_tag = NZL
+				original_tag = RAJ
+			}
+		}
+	}
+	option = {
+		name = cht_news.1.d
+		trigger = {
+			NOT = {
+				original_tag = JAP
+				original_tag = SOV
+				original_tag = HOL
+				original_tag = ENG
+				original_tag = USA
+				original_tag = CHI
+				original_tag = AST
+				original_tag = NZL
+				original_tag = RAJ
+				AND = {
+					original_tag = MAN
+					has_government = fascism
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = cht_news.2
+	title = cht_news.2.t
+	desc = cht_news.2.desc
+	picture = GFX_news_event_saunders_chihatan_at_war
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = cht_news.2.a
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = cht_news.2.b
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = cht_news.2.c
+		trigger = {
+			OR = {
+				original_tag = GER
+				original_tag = ITA
+			}
+		}
+	}
+	option = {
+		name = cht_news.2.d
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = cht_news.2.e
+		trigger = {
+			original_tag = USA
+		}
+	}
+}

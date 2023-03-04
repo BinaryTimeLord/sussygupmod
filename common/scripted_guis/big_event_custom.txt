@@ -1,0 +1,27 @@
+scripted_gui = {	
+
+	second_sino_japanese_war = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "second_sino_japanese_war_window"
+
+		visible = {
+			has_country_flag = cht_sino_japanese_war ### this country flag triggers the #superevent
+		}
+	}
+
+	second_sino_japanese_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "second_sino_japanese_war_custom"
+
+		visible = {
+			has_country_flag = cht_sino_japanese_war
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = cht_sino_japanese_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+## quick command for testing

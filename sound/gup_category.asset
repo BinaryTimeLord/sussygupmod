@@ -1,0 +1,6 @@
+category = {
+ name = "Event Sound"
+ soundeffects = {
+	diewatchamrhien
+	}
+}

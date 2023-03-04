@@ -1,0 +1,48 @@
+FIN_ai_behavior = {
+	name = "FIN_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_OPTION_FIGHT_THE_COMMUNISM_FIN_AI_DESC"
+		allow_achievements = yes
+	}
+	
+	option = {
+		name = SOV_COMPROMISE
+		text = "RULE_OPTION_SOV_COMPROMISE"
+		desc = "RULE_OPTION_SOV_COMPROMISE_FIN_AI_DESC"
+	}
+	
+	option = {
+		name = FIGHT_THE_COMMUNISM
+		text = "RULE_OPTION_FIGHT_THE_COMMUNISM"
+		desc = "RULE_OPTION_FIGHT_THE_COMMUNISM_FIN_AI_DESC"
+	}
+	
+	option = {
+		name = WAR_DICTATORSHIP
+		text = "RULE_OPTION_WAR_DICTATORSHIP"
+		desc = "RULE_OPTION_WAR_DICTATORSHIP_FIN_AI_DESC"
+	}
+	
+	option = {
+		name = FASCISM
+		text = "RULE_OPTION_FASCISM"
+		desc = "RULE_OPTION_FASCISM_FIN_AI_DESC"
+	}
+	
+	option = {
+		name = CIVIL_WAR
+		text = "RULE_OPTION_CIVIL_WAR"
+		desc = "RULE_OPTION_CIVIL_WAR_FIN_AI_DESC"
+	}
+	
+}

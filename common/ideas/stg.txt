@@ -1,0 +1,198 @@
+ideas = {
+	
+	hidden_ideas = { #BC DEBUFFFED WITH ATTACK BUT INDUSTRIAL PROWESS IS SAME #GLORIANA DEBUFFED WITH INDUSTRY BUT ARMY PROWESS IS SAME
+		glo_mobilization_effortI = { #RHINELAND/OPPOSE MAHO
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = bcf_mobilization_effortI # No need for pictures
+
+			modifier = {
+				consumer_goods_factor = -0.015
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.015
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.075
+				industrial_capacity_factory = 0.05
+				conversion_cost_civ_to_mil_factor= -0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+				conscription = 0.01
+				fuel_gain_factor = 0.1
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.05
+			}
+		}
+
+		glo_mobilization_effortII = { #ANSCHLUSS/RETURN OF KAISER
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = bcf_mobilization_effortII # No need for pictures
+
+			modifier = {
+				consumer_goods_factor = -0.025
+				line_change_production_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_max_efficiency_factor = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				production_speed_arms_factory_factor = 0.075
+				industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				conscription = 0.025
+				fuel_gain_factor = 0.15
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.075
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.075
+			}
+		}
+
+		glo_mobilization_effortIII = { #SUDETENLAND/FOCUS ON TRUE ENEMY/EXPATRIATE COMMIES
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = bcf_mobilization_effortIII # No need for pictures
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.15
+				conversion_cost_civ_to_mil_factor= -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+				conscription = 0.05
+				fuel_gain_factor = 0.25
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.1
+			}
+		}
+
+		glo_mobilization_effortIV = { #FATE OF CZECHS/ALLIANCE WITH SHADE/REBUILD HIGH SEAS FLEET 
+		#KEEP THIS IDEA TO MAKE SURE SEALION HARDER WHEN AI GLORIANA - DEACTIVATED WHEN PLAYER/NON-AI
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				is_ai = no
+				POL = {
+					has_capitulated = yes
+				}
+			}
+
+			removal_cost = -1
+
+			picture = glo_mobilization_effortIV # No need for pictures
+
+			modifier = {
+				consumer_goods_factor = -0.075
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.25
+				conversion_cost_civ_to_mil_factor= -0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+				conscription = 0.075
+				fuel_gain_factor = 0.25
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.12
+			}
+		}
+
+		glo_how_many_times_do_we_have_to_teach_you = { #cause fuck you maho
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = bcf_mobilization_effortIII # No need for pictures
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+		}
+	}
+}

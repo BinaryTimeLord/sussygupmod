@@ -1,0 +1,650 @@
+﻿###Time to give Chi-Ha-Tan just a tiny chance (2)
+## Too much too bad so just garrison the everything else except the coastline
+#  Hamada and her plight to the mainland
+
+division_template = {
+	name = "Hamada Ryodan"
+	division_names_group = CHT_HRD
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		anti_air_brigade = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		
+		
+	}
+	support = {
+	    engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+	##### Pacific Garrisons #####
+
+	### Hanoi Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.76
+
+	}
+	### Saigon Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4401
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.09
+		start_equipment_factor = 0.72
+
+	}
+	### Singaporean Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12299
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.69
+
+	}
+	### Manila Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10265
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.67
+
+	}
+	### Batavia Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7381
+		division_template = "Hamada Ryodan"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.62
+
+	}
+}

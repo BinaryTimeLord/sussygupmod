@@ -1,0 +1,503 @@
+
+
+sovstrategy = {
+    
+	enable = {
+		tag = SOV
+		NOT = { has_war_with = GER }
+		NOT = { controls_state = 146 }
+	}
+	
+	abort = {
+		has_war_with = GER
+		controls_state = 146
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+	
+		tag = FIN 
+		
+		value = -70 
+	}
+	
+	ai_strategy = {
+		type = front_control
+	
+		state = 146
+		
+		ordertype = invasion
+		execution_type = rush
+		execute_order = yes
+	}
+	
+	ai_strategy = {
+		type = front_control
+	
+		state = 722
+		state = 148
+		state = 147
+		state = 150
+		
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		manual_attack = no
+	}
+
+}
+
+
+
+
+
+
+
+sovstrategy_1 = {
+
+    enable = {
+		tag = SOV
+		FIN = {
+		    has_completed_focus = FIN_soviet_compromise
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				is_subject = yes
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = befriend
+		
+		id = "FIN"			
+		
+		value = 200
+	}	
+
+}
+
+finstrategy_0 = {
+
+    enable = {
+		tag = FIN
+		FIN = {
+		    has_completed_focus = FIN_soviet_compromise
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = SOV
+			}
+			SOV = {
+				is_subject = yes
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = befriend
+		
+		id = "SOV"			
+		
+		value = 200
+	}	
+
+}
+
+
+sovstrategy_2 = {
+
+    enable = {
+		tag = SOV
+		FIN = {
+		    has_completed_focus = FIN_soviet_protection
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				is_subject = yes
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = protect
+		
+		id = "FIN"			
+		
+		value = 200
+	}	
+
+}
+
+
+sovstrategy_2 = {
+
+    enable = {
+		tag = SOV
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FDR
+			}
+			FDR = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		
+		id = "FDR"			
+		
+		value = 200
+	}	
+	
+	
+	ai_strategy = {
+		type = befriend
+		
+		id = "FDR"			
+		
+		value = 200
+	}	
+
+}
+
+
+
+
+
+sovstrategy_3 = {
+
+    enable = {
+		tag = SOV
+		NOT = { FDR = { has_war_with = FIN } }
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FDR
+			}
+			FDR = {
+				is_subject = yes
+			}
+			FDR = { has_war_with = FIN }
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		
+		id = "FDR"			
+		
+		value = 200
+	}	
+
+}
+
+
+fdrstrategy_1 = {
+
+    enable = {
+		tag = FDR
+		NOT = { FDR = { has_war_with = FIN } }
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FDR
+			}
+			FDR = {
+				is_subject = yes
+			}
+			FDR = { has_war_with = FIN }
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		
+		id = "SOV"			
+		
+		value = 200
+	}	
+
+}
+
+
+
+sovstrategy_4 = {
+
+    enable = {
+		tag = SOV
+		FDR = { has_war_with = FIN }
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FDR
+			}
+			FDR = {
+				is_subject = yes
+			}
+			FDR = { NOT = { has_war_with = FIN } }
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		
+		id = "FDR"			
+		
+		value = -1000
+	}	
+
+}
+
+sovstrategy_5 = {
+
+    enable = {
+		tag = SOV
+		NOT = { has_completed_focus = SOV_claims_on_baltic }
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				is_subject = yes
+			}
+			has_completed_focus = SOV_claims_on_baltic
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		
+		id = "FIN"			
+		
+		value = 200
+	}	
+
+}
+
+
+
+gerstrategy = {
+
+    enable = {
+		tag = GER
+		FIN = { has_government = fascism }
+		NOT = { has_war_with = SOV }
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				is_subject = yes
+			}
+			FIN = { NOT = { has_government = fascism } }
+			has_war_with = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		
+		id = "FIN"			
+		
+		value = 200
+	}	
+	
+	
+	ai_strategy = {
+		type = befriend
+		
+		id = "FIN"			
+		
+		value = 200
+	}	
+	
+	
+	ai_strategy = {
+		type = alliance
+		
+		id = "FIN"			
+		
+		value = -50
+	}	
+
+}
+
+
+
+
+gerstrategy2 = {
+
+    enable = {
+		tag = GER
+		FIN = { has_completed_focus = FIN_germany }
+	}
+	
+	abort = {
+	    OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	
+	ai_strategy = {
+		type = befriend
+		
+		id = "FIN"			
+		
+		value = 100
+	}	
+	
+	
+	ai_strategy = {
+		type = support
+		
+		id = "FIN"			
+		
+		value = 100
+	}	
+
+}
+
+
+
+finstrategy_1 = {
+
+    enable = {
+		tag = FIN
+		num_divisions < 15
+	}
+	
+	abort = {
+	
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+
+}
+
+
+finstrategy_2 = {
+
+    enable = {
+		tag = FIN
+	}
+	
+	abort = {
+	
+	}
+	
+	ai_strategy = {
+        type = front_unit_request
+		
+		state = 146
+		state = 195
+		
+		value = 500
+    }
+	
+	ai_strategy = {
+		type = front_control
+	
+		tag = SOV 
+		
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		manual_attack = no
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+engstrategy = {
+
+    enable = {
+		tag = ENG
+		FIN = { has_government = democratic }
+		NOT = { has_war_with = SOV }
+	}
+	
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				is_subject = yes
+			}
+			FIN = { NOT = { has_government = democratic } }
+			has_war_with = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		
+		id = "FIN"			
+		
+		value = 50
+	}	
+	
+	
+	ai_strategy = {
+		type = alliance
+		
+		id = "FIN"			
+		
+		value = -100
+	}	
+
+}

@@ -1,0 +1,812 @@
+
+add_namespace = jat
+
+country_event = {
+	id = jat.1
+	title = jat.1.t
+	desc = jat.1.d
+	picture = GFX_FIN_event_parlament_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FIN
+		date > 1936.3.1
+		date < 1938.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	
+		option = { 
+			name = jat.1.a
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.2 days = 75 } }
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							is_historical_focus_on = yes
+							has_game_rule = {
+								rule = FIN_ai_behavior
+								option = DEFAULT
+							}
+						}
+						has_game_rule = {
+							rule = FIN_ai_behavior
+							option = HISTORICAL
+						}
+					}
+				}
+			}
+			
+		}
+		
+		option = { 
+			name = jat.1.b
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.12 days = 75 } }
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = SOV_COMPROMISE
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = WAR_DICTATORSHIP
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = FASCISM
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = CIVIL_WAR
+					}
+				}
+			}
+		}
+}
+
+country_event = {
+	id = jat.2
+	title = jat.2.t
+	desc = jat.2.d
+	picture = GFX_FIN_event_SDR
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.2.a
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.3 days = 8 } }
+			}
+		}
+}
+
+country_event = {
+	id = jat.3
+	title = jat.3.t
+	desc = jat.3.d
+	picture = GFX_FIN_event_anti_left
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.3.a
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.4 days = 12 } }
+			}
+		}
+}
+
+country_event = {
+	id = jat.4
+	title = jat.4.t
+	desc = jat.4.d
+	picture = GFX_FIN_event_fascist_coup_vopros
+	
+	is_triggered_only = yes
+	
+		option = { 
+			name = jat.4.a
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.5 days = 7 } }
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = SOV_COMPROMISE
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = FIGHT_THE_COMMUNISM
+					}
+				}
+			}
+		}
+		
+		option = {  
+			name = jat.4.b
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.11 days = 30 } }
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = WAR_DICTATORSHIP
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = FASCISM
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = CIVIL_WAR
+					}
+				}
+			}
+		}
+}
+
+country_event = {
+	id = jat.5
+	title = jat.5.t
+	desc = jat.5.d
+	picture = GFX_FIN_facist_coup
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.5.a
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.6 days = 10 } }
+				FIN = { country_event = { id = jat.9 days = 20 } }
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.12
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+}
+
+country_event = {
+	id = jat.6
+	title = jat.6.t
+	desc = jat.6.d
+	picture = GFX_FIN_event_left_protests
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.6.a
+			add_stability = -0.2
+			add_war_support = -0.2
+		}
+}
+
+country_event = {
+	id = jat.8
+	title = jat.8.t
+	desc = jat.8.d
+	picture = GFX_FIN_event_civilwar
+	
+	is_triggered_only = yes
+	    
+		immediate = {
+		    hidden_effect = {
+				FDR = {
+					transfer_state = 111
+					transfer_state = 145
+					load_oob = FIN_civilwar_communist
+					add_state_core = 111
+					add_state_core = 149
+					add_state_core = 150
+					add_state_core = 148
+					add_state_core = 722
+					add_state_core = 147
+					add_state_core = 146
+					add_state_core = 145
+					inherit_technology = FIN
+				}
+				FIN = { add_ideas = FIN_no_surrender set_country_flag = FIN_civil_war set_country_flag = FIN_white_guard_f }
+				load_oob = FIN_civilwar_white_guard
+				declare_war_on = {
+					target = FDR
+					type = take_state_focus
+					generator = { 111 } 
+				}
+				
+				FDR = {
+		        create_country_leader = {
+			        name = "Aki"
+			        desc = "POLITICS_AKI_DESC"
+			        picture = "gfx/leaders/FDR/Portrait_FDR_Aki1.dds"
+			        expire = "1965.1.1"
+			        ideology = conservatism
+			        traits = {}
+		        }      
+		        }
+				
+				FIN = {
+					set_province_controller = 52
+					set_province_controller = 6186
+					set_province_controller = 6082
+					set_province_controller = 11056
+					set_province_controller = 3117
+					set_province_controller = 3009
+					set_province_controller = 3025
+					set_province_controller = 6047
+					set_province_controller = 9160
+				}
+				
+				FDR = {
+					set_province_controller = 11065
+				}
+				
+				
+				145 = { set_demilitarized_zone = no }
+				FDR = { add_ideas = FIN_no_surrender set_country_flag = FIN_civil_war }
+                FIN = { remove_unit_leader = 5001 }
+			}
+		}
+	
+		option = {  
+			name = jat.8.a
+			
+			hidden_effect = {
+				complete_national_focus = FIN_flames_of_revolution
+				FDR = { complete_national_focus = FDR_revolution }
+			}
+		}
+		
+		option = {  
+			name = jat.8.b
+			FDR = { change_tag_from = ROOT }
+			hidden_effect = {
+				complete_national_focus = FIN_flames_of_revolution
+				FDR = { complete_national_focus = FDR_revolution }
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+}
+
+country_event = {
+	id = jat.9
+	title = jat.9.t
+	desc = jat.9.d
+	picture = GFX_FIN_event_mika
+	
+	is_triggered_only = yes
+	
+		option = {
+			name = jat.9.a
+			custom_effect_tooltip = jat9a_tt
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.10 days = 18 } }
+			}
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = FASCISM
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = CIVIL_WAR
+					}
+				}
+			}
+		}
+		
+		option = { 
+			name = jat.9.b
+			custom_effect_tooltip = jat9b_tt
+			remove_unit_leader = 5000
+			hidden_effect = {
+				FIN = { country_event = { id = jat.8 days = 20 } }
+				set_country_flag = FIN_fascist_rule
+				set_country_flag = FIN_mika_purge
+			}
+			add_stability = -0.05
+			add_war_support = -0.05
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = WAR_DICTATORSHIP
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = FASCISM
+					}
+				}
+			}
+		}
+		
+		option = {
+			name = jat.9.c
+			custom_effect_tooltip = jat9c_tt
+
+			add_stability = 0.1
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.10
+			}
+			
+			hidden_effect = {
+				set_country_flag = FIN_fascist_rule
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = WAR_DICTATORSHIP
+					}
+				}
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = CIVIL_WAR
+					}
+				}
+			}
+			
+		}
+}
+
+country_event = {
+	id = jat.10
+	title = jat.10.t
+	desc = jat.10.d
+	picture = GFX_FIN_mika_coup
+	
+	is_triggered_only = yes
+	
+		option = {
+			name = jat.10.a
+			set_country_flag = FIN_mika_coup
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.10
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FIN_military_long
+				name = FIN_military
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+}
+
+country_event = {
+	id = jat.11
+	title = jat.11.t
+	desc = jat.11.d
+	picture = GFX_FIN_event_fascist_arest
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.11.a
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.20
+			}
+			set_country_flag = FIN_SD_goverment
+			hidden_effect = { FIN = { country_event = { id = jat.20 days = 175 } } }
+		}
+}
+
+country_event = {
+	id = jat.12
+	title = jat.12.t
+	desc = jat.12.d
+	picture = GFX_FIN_event_parlament_02
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.12.a
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.13 days = 8 } }
+			}
+		}
+}
+
+country_event = {
+	id = jat.13
+	title = jat.13.t
+	desc = jat.13.d
+	picture = GFX_FIN_event_parlament_01
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.13.a
+			set_country_flag = FIN_coalition_goverment
+			hidden_effect = {
+			    FIN = { country_event = { id = jat.19 days = 225 } }
+			}
+		}
+}
+
+country_event = {
+	id = jat.14 
+	title = jat.14.t
+	desc = jat.14.d
+	picture = GFX_FIN_event_civilwar
+	
+	fire_only_once = yes
+	
+	    trigger = { 
+			tag = FIN
+			has_government = communism
+		}
+		
+		mean_time_to_happen = {
+			days = 1	
+		}
+	
+		option = {  
+			name = jat.14.a
+			complete_national_focus = FIN_red_reustavration
+			add_ideas = FIN_communism_crisis_idea_IV
+		}
+}
+
+country_event = {
+	id = jat.15
+	title = jat.15.t
+	desc = jat.15.d
+	picture = GFX_FIN_event_parlament_02
+	
+		fire_only_once = yes
+		
+		trigger = {
+			tag = SWE
+			FIN = { has_country_flag = FIN_civil_war }
+			NOT = { country_exists = FDR }
+			FIN = { controls_state = 145 }
+		}
+	
+		option = {
+			name = jat.15.a
+			transfer_state = 145
+			ai_chance = {
+				factor = 100
+			}
+			FIN = { country_event = { id = jat.16 days = 2 } }
+			FDR = { country_event = { id = jat.16 days = 2 } }
+		}
+		
+		option = { 
+			name = jat.15.b
+			ai_chance = {
+				factor = 0
+			}
+		}
+}
+
+country_event = {
+	id = jat.16
+	title = jat.16.t
+	desc = jat.16.d
+	picture = GFX_FIN_event_anti_left
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.16.a 
+		}
+}
+
+country_event = {
+	id = jat.17
+	title = jat.17.t
+	desc = jat.17.d
+	picture = GFX_FIN_event_civilwar
+	
+	fire_only_once = yes
+	
+		trigger = {
+			tag = FDR
+			NOT = { has_war_with = FIN }
+			has_country_flag = FIN_civil_war
+		}
+	
+		option = {  
+			name = jat.17.a 
+			remove_ideas = FIN_no_surrender
+			hidden_effect = {
+			    FIN = { remove_ideas = FIN_no_surrender }
+			}
+			if = {
+				limit = {
+					SOV = {
+						is_faction_leader = yes
+						has_government = communism
+					}
+				}
+			}
+			complete_national_focus = FDR_socialism_reustavration
+		}
+}
+
+country_event = {
+	id = jat.18
+	title = jat.18.t
+	desc = jat.18.d
+	picture = GFX_FIN_event_civilwar
+	
+	fire_only_once = yes
+	
+		trigger = {
+			tag = FIN
+			NOT = { has_war_with = FDR }
+			has_country_flag = FIN_civil_war
+		}
+	
+		option = {  
+			name = jat.18.a 
+			remove_ideas = FIN_no_surrender
+			hidden_effect = {
+			    FDR = { remove_ideas = FIN_no_surrender }
+			}
+		}
+}
+
+country_event = {
+	id = jat.19
+	title = jat.19.t
+	desc = jat.19.d
+	picture = GFX_FIN_event_parlament_02
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_government = democratic
+	}
+	
+		option = {  
+			name = jat.19.a 
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							is_historical_focus_on = yes
+							has_game_rule = {
+								rule = FIN_ai_behavior
+								option = DEFAULT
+							}
+						}
+						has_game_rule = {
+							rule = FIN_ai_behavior
+							option = HISTORICAL
+						}
+					}
+				}
+			}
+		}
+		
+		option = {  
+			name = jat.19.b 
+		        create_country_leader = {
+			        name = "Aki"
+			        desc = "POLITICS_Aki_DESC"
+			        picture = "gfx/leaders/FDR/Portrait_FDR_Aki1.dds"
+			        expire = "1965.1.1"
+			        ideology = conservatism
+			        traits = {}
+		        } 
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_Agrarian_League_long
+				name = FIN_Agrarian_League
+			}
+			FIN = { country_event = { id = jat.21 days = 1370 } }
+			
+			ai_chance = {
+				factor = 10
+			}
+		}
+}
+
+country_event = {
+	id = jat.20
+	title = jat.20.t
+	desc = jat.20.d
+	picture = GFX_FIN_event_parlament_02
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_government = democratic
+	}
+	
+		option = {  
+			name = jat.20.a
+			trigger = { 
+				NOT = { has_country_flag = FIN_SOV_compromise }
+			}
+		    create_country_leader = {
+			        name = "Jouko"
+			        desc = "POLITICS_JOUKO_DESC"
+			        picture = "gfx/leaders/FIN/Portrait_FIN_Youko.dds"
+			        expire = "1965.1.1"
+			        ideology = conservatism
+			        traits = {}
+		        } 
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_SDP_long
+				name = FIN_SDP
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = SOV_COMPROMISE
+					}
+				}
+			}
+		}
+		
+		option = {  
+			name = jat.20.b 
+			trigger = { 
+				NOT = { has_country_flag = FIN_red_menace_flag }
+			}
+ 		    create_country_leader = {
+			        name = "Mikko"
+			        desc = "POLITICS_MIKKO_DESC"
+			        picture = "gfx/leaders/FIN/Portrait_FIN_Mikko.dds"
+			        expire = "1965.1.1"
+			        ideology = conservatism
+			        traits = {}
+		        } 
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_SDP_long
+				name = FIN_SDP
+			}
+			
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = FIN_AI_BEHAVIOR
+						option = FIGHT_THE_COMMUNISM
+					}
+				}
+			}
+		}
+}
+
+country_event = {
+	id = jat.21
+	title = jat.21.t
+	desc = jat.21.d
+	picture = GFX_FIN_event_parlament_02
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_government = democratic
+	}
+		
+		option = {  
+			name = jat.21.a 
+		     create_country_leader = {
+			        name = "Rumi"
+			        desc = "POLITICS_RUMI_DESC"
+			        picture = "gfx/leaders/FIN/Portrait_FIN_Rumi.dds"
+			        expire = "1965.1.1"
+			        ideology = conservatism
+			        traits = {}
+		        } 
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_National_Coalition_long
+				name = FIN_National_Coalition
+			}
+		}
+}
+
+country_event = {
+	id = jat.22
+	title = jat.22.t
+	desc = jat.22.d
+	picture = GFX_FIN_event_mika
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FIN
+		focus_progress = {
+			focus = FIN_moscow_treaty
+			progress > 0.01
+		}
+		has_government = democratic
+	}
+		option = {  
+			name = jat.22.a 
+		        create_country_leader = {
+			        name = "Mika"
+			        desc = "POLITICS_MIKA_DESC"
+			        picture = "gfx/leaders/FIN/Portrait_FIN_Mika1.dds"
+			        expire = "1965.1.1"
+			        ideology = conservatism
+			        traits = {}
+		        } 
+		}
+}
+

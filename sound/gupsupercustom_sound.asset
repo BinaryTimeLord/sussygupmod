@@ -1,0 +1,5 @@
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "second_sino_japanese_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/second_sino_japanese_war.wav" ## location of the sound file
+	always_load = no
+}

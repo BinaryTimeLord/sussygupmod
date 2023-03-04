@@ -1,0 +1,4632 @@
+add_namespace = kmm  #### I HAVE PUT gfx BY EVERY EVENT THAT NEEDS IT ####
+
+##TEMPLATE
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+		#ai_chance = {
+			#base =
+		#}
+
+	#}
+#}
+
+country_event = { ##colonies gfx
+	id = kmm.1
+	title = kmm.1.t
+	desc = kmm.1.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.1.a
+		ai_chance = {
+			base = 10
+			modifier = { #5
+				has_completed_focus = ENG_a_change_in_course
+				factor = 0.5
+			}
+			modifier = { #2.5
+				has_country_leader = { ruling_only = yes name = "Darjeeling" }
+				factor = 0.5
+			}
+		}
+
+		add_stability = -0.2 #what the hell do you think you're doing?
+		add_popularity = { ideology = fascism popularity = 0.15 }
+		add_popularity = { ideology = communism popularity = 0.15 }
+
+		GER = { transfer_state = 546 }
+		GER = { transfer_state = 541 }
+
+		hidden_effect = {
+			GER = {country_event = { days = 1 id = kmm.2 }}
+		}
+	}
+	
+	option = { ##NO
+		name = kmm.1.b
+		ai_chance = { #equal chance if first condition met
+			base = 5
+		}
+		add_political_power = 100
+		GER = {country_event = { days = 1 id = kmm.3 }}
+	}
+}
+
+country_event = { ##BRITISH YES gfx
+	id = kmm.2
+	title = kmm.2.t
+	desc = kmm.2.d
+	picture = GFX_report_event_mahnoich_gloriana
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #said yes
+		name = kmm.2.a
+		ai_chance = {
+			base = 50
+		}
+
+		ENG = {
+			add_to_faction = GER
+		}
+	}
+}
+	 
+country_event = { ##BRITISH NO gfx
+	id = kmm.3
+	title = kmm.3.t
+	desc = kmm.3.d
+	picture = GFX_report_event_mahnoich_gloriana
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #said no
+		name = kmm.3.a
+		ai_chance = {
+			base = 50
+		}
+		
+		add_political_power = -75
+	}
+}	
+	
+country_event = { ##colonies BC gfx
+	id = kmm.4
+	title = kmm.4.t
+	desc = kmm.4.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #YES
+		name = kmm.4.a
+		ai_chance = {
+			base = 10
+			modifier = { #5
+				has_completed_focus = FRA_revive_the_national_bloc
+				factor = 0.5
+			}
+			modifier = { #2.5
+				has_country_leader = { ruling_only = yes name = "Marie" }
+				factor = 0.5
+			}
+		}
+
+		add_stability = -0.1
+		add_popularity = { ideology = communism popularity = 0.15 }
+		if = {
+			limit = { 
+				has_idea = FRA_disjointed_government 
+				NOT = { has_government = communism }
+			}
+			start_civil_war = {
+				ideology = communism
+				size = 0.25
+			}
+		}
+		
+		GER = { transfer_state = 773 }
+		GER = { transfer_state = 777 }
+
+		hidden_effect = {
+			GER = {country_event = { days = 1 id = kmm.5 }}
+		}
+	}
+	
+	option = { ##NO
+		name = kmm.4.b
+		ai_chance = {
+			base = 5
+		}
+		add_political_power = 100
+		add_war_support = 0.05
+		GER = {country_event = { days = 1 id = kmm.6 }}
+	}
+}
+
+country_event = { ##fronch YES gfx
+	id = kmm.5
+	title = kmm.5.t
+	desc = kmm.5.d
+	picture = GFX_report_event_franc
+	
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #said yes
+		name = kmm.5.a
+		ai_chance = {
+			base = 50
+		}
+
+		ENG = { #st. gloriana and bc freedom have unseprable bond
+			add_to_faction = GER
+			add_to_faction = FRA
+		}
+	}
+}
+	
+country_event = { ##fronch NO gfx
+	id = kmm.6
+	title = kmm.6.t
+	desc = kmm.6.d
+	picture = GFX_report_event_franc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #said no
+		name = kmm.6.a
+		ai_chance = {
+			base = 50
+		}
+		
+		add_political_power = -75
+	}
+}
+
+country_event = { ##DIE WATCH AM RHEIN
+	id = kmm.70	
+	title = kmm.70.t
+	desc = kmm.70.d
+	picture = GFX_report_event_switzerland1
+	
+	immediate = {
+		sound_effect = diewatchamrhien
+	}
+	
+	major = yes
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.70
+		ai_chance = {
+			base = 100
+		}
+
+	}
+}
+
+
+##DANZIG WAR SOUNDS
+country_event = { 
+	id = kmm.92
+	title = kmm.92.t
+	desc = kmm.92.d
+	picture = GFX_report_event_switzerland1
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+	
+	sound_effect = danzigwar
+	
+	}
+	option = { ##YES
+		name = kmm.92.a
+		ai_chance = {
+			base = 100
+		}
+
+
+	}
+
+}
+
+##UNION SOUND
+country_event = { 
+	id = kmm.96
+	title = kmm.96.t
+	desc = kmm.96.d
+	picture = GFX_report_event_switzerland1
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		sound_effect = union
+	}
+	option = {
+		name = kmm.96.a
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+
+##TEMPLATE < ----- MOVED FOR EASY ACCESS
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+		#ai_chance = {
+			#base =
+		#}
+
+	#}
+#}
+
+##EUROPEAN UNION## 
+country_event = { ##INVITE ##GFX
+	id = kmm.97
+	title = kmm.97.t
+	desc = kmm.97.d
+	picture =  GFX_report_event_switzerland1
+
+	is_triggered_only = yes
+	option = { 
+		name = kmm.97.a
+		ai_chance = {
+			base = 2
+		}
+		add_ideas = kmm_europe
+	}
+	
+	option = {
+		name = kmm.97.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { ##THE UNION ##GFX ##NEED NEWS
+	id = kmm.98
+	title = kmm.98.t
+	desc = kmm.98.d
+	picture =  GFX_report_event_switzerland1
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.98.a
+		ai_chance = {
+			base = 100
+		}
+		
+		every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			GER = {
+			
+			  annex_country = { target = PREV transfer_troops = yes }
+			
+			}
+			}
+		set_cosmetic_tag = EURO
+	}
+	
+}
+
+country_event = { ##37th easter egg <------------- NEEDS FIXING
+	id = kmm.99
+	title = kmm.99.t
+	desc = kmm.99.d
+	picture =  GFX_report_event_switzerland1
+	
+	fire_only_once = yes
+	trigger = {
+	original_tag = GER
+		GER = {
+			has_civil_war = yes
+			has_completed_focus = GER_river_incident
+			controls_state = 52
+		}
+	}
+	option = { 
+		name = kmm.99.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+		load_oob = GER_thirtyseven
+		}
+		52 = {
+		create_unit = {
+			division = "division_template = \"37th Mixed Brigade\" start_experience_factor = 1" 
+			owner = GER
+			allow_spawning_on_enemy_provs = yes
+			count = 1
+		}
+		}
+		
+	}
+}
+
+##DISARMAMENT	
+	
+country_event = { ##fronch deamnd
+	id = kmm.100
+	title = kmm.100.t
+	desc = kmm.100.d
+	picture =  GFX_report_event_franc
+	
+	trigger = {
+		original_tag = FRA
+		GER = {
+			has_completed_focus = GER_consolidate_power
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = kmm.100.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = 0.05
+		ENG = {
+			country_event = { id = kmm.101 days = 1 }
+		}
+	}
+}
+	
+country_event = { ##british question
+	id = kmm.101
+	title = kmm.101.t
+	desc = kmm.101.d
+	picture =  GFX_report_event_mahnoich_gloriana
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.101.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = GER_disarm_tooltip
+		FRA = {
+			country_event = { id = kmm.102 days = 1 }
+		}
+		add_to_faction = FRA
+	}
+	
+	option = { 
+		name = kmm.101.b
+		ai_chance = {
+			base = 2
+		}
+		FRA = {
+			country_event = { id = kmm.103 days = 1 }
+		}
+		add_stability = -0.05
+		add_political_power = -150
+	}
+}
+	
+country_event = { ##BRITSH TIME
+	id = kmm.102
+	title = kmm.102.t
+	desc = kmm.102.d
+	picture =  GFX_report_event_brit_and_franc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = kmm.102.a
+		ai_chance = {
+			base = 100
+		}
+		GER = {
+			country_event = { id = kmm.104 days = 1 }
+		}
+	}
+}
+	
+country_event = { ##F no brithishdsaf
+	id = kmm.103
+	title = kmm.103.t
+	desc = kmm.103.d
+	picture =  GFX_report_event_mahonich_bcfreedom
+
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.103.a
+		ai_chance = {
+			base = 10
+		}
+		GER = {
+			country_event = { id = kmm.105 days = 1 }
+		}
+	}
+	
+	option = {  
+		name = kmm.103.b
+		ai_chance = {
+			base = 2
+		}
+		FRA = {
+			add_stability = -0.05
+			add_political_power = -150
+			add_war_support = -0.15
+		}
+	}
+}
+	
+country_event = { ##debuff or war
+	id = kmm.104
+	title = kmm.104.t
+	desc = kmm.104.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.104.a
+		ai_chance = {
+			base = 5
+		}
+		add_ideas = kmm_disarmament1
+		add_ideas = kmm_great_war_debt
+		hidden_effect = {
+			set_country_flag = GER_debt_time
+			set_country_flag = GER_disarm
+			set_country_flag = GER_europe2
+		}
+		FRA = {
+			add_stability = 0.1
+			country_event = { id = kmm.106 days = 1 } 
+		}		
+	}
+	
+	option = { 
+		name = kmm.104.b
+		ai_chance = {
+			base = 3 #60 - 40% chance respectively
+		}
+		custom_effect_tooltip = GER_disarm_tooltip
+		hidden_effect = {
+			FRA = {
+				add_stability = 0.1
+				country_event = { id = kmm.107 days = 1 } 
+			}
+		}
+	}
+}
+	
+country_event = { ##debuff or war no british
+	id = kmm.105
+	title = kmm.105.t
+	desc = kmm.105.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.105.a
+		ai_chance = {
+			base = 5
+		}
+		add_ideas = kmm_disarmament1
+		country_lock_all_division_template = yes
+		add_ideas = kmm_great_war_debt
+		hidden_effect = {
+			set_country_flag = GER_debt_time
+			set_country_flag = GER_disarm
+			set_country_flag = GER_europe2
+		}
+		FRA = {
+			add_war_support = 0.1
+			country_event = { id = kmm.106 days = 1 }
+		}	
+	}
+	
+	option = { 
+		name = kmm.105.b
+		ai_chance = {
+			base = 2
+		}
+		custom_effect_tooltip = GER_disarm_tooltip
+		hidden_effect = {
+			FRA = {
+				country_event = { id = kmm.107 days = 1 } 
+			}
+		}
+	}
+}
+	
+country_event = { ##DISARM ##NEED TIMED MISSION TO HAVE AN ARMY LESS THAN 100 000
+	id = kmm.106
+	title = kmm.106.t
+	desc = kmm.106.d
+	picture =  GFX_report_event_cht_treaty_sign
+
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.106.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+	
+country_event = { ##WAR
+	id = kmm.107
+	title = kmm.107.t
+	desc = kmm.107.d
+	picture =  GFX_report_event_molly_ribby
+
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.107.a
+		ai_chance = {
+			base = 5
+		}
+		add_stability = 0.1
+		FRA = {
+	        declare_war_on = {
+		        target = GER
+		        type = annex_everything
+	        }
+		}
+	}
+	option = { 
+		name = kmm.107.b
+		ai_chance = {
+			base = 2
+		}
+		add_stability = 0.1
+		add_war_support = -0.05
+	}
+}
+	
+country_event = { ##DID NOT DISARM
+	id = kmm.108
+	title = kmm.108.t
+	desc = kmm.108.d
+	picture =  GFX_report_event_franc
+
+	is_triggered_only = yes
+	option = { 
+		name = kmm.108.a
+		ai_chance = {
+			base = 100
+		}
+	    declare_war_on = {
+			target = GER
+			type = annex_everything
+	    }
+	}
+}
+
+	
+
+	
+country_event = { ##maho resign
+	id = kmm.8
+	title = kmm.8.t
+	desc = kmm.8.d
+	picture = GFX_report_event_maho_resign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_country_leader = { # jabaited # Erika de jure leader while Miho de facto
+			name = "Fallen Government"
+			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
+			picture = "gfx/leaders/ENG/portrait_eng_fallen_government.dds"
+			expire = "1965.1.1"
+			ideology = german_idealism3 #fascist
+			traits = {
+				cabinet_crisis
+			}
+		}
+	}
+
+	option = { #erika total control
+		name = kmm.8.a
+		ai_chance = {
+			base = 10
+		}
+
+		add_political_power = 150
+		add_stability = -0.1
+		add_war_support = -0.1
+		create_country_leader = {
+			name = "Erika"
+			desc = "POLITICS_ERIKA_DESC"
+			picture = Portrait_GER_Erika1.dds
+			expire = "1965.1.1"
+			ideology = german_idealism3
+			traits = {
+				cold_hearted_ruler2
+				inexperienced_panzer_leader
+			}
+		}
+
+		random_army_leader = {
+			limit = {
+				has_id = 1004 #ERIKA PROMOTED #PEACEFUL
+			}
+			promote_leader = yes
+		}
+
+		hidden_effect = {
+			set_country_flag = kmm_sudeten_erika #unlock erika mob tree
+			set_cosmetic_tag = GER_greater_kuromorimine
+			set_party_name = { 
+			    ideology = fascism 
+			    long_name = GER_erika_partei
+			    name = GER_erika_partei_long 
+			}
+			mark_focus_tree_layout_dirty = yes #doublecheck refresh for focus tree #second fallback in case event-focus dont line up
+			random_list = {
+				99 = {
+					GER = { country_event = { days = 3 id = kmm.11 } }
+				}
+				1 = { #made this marginally smaller because why would maho continue at this point
+					GER = { country_event = { days = 3 id = kmm.12 } }
+				}
+			}
+		}
+	}
+
+	option = { #miho ascends despite erika being next
+		name = kmm.8.b
+                trigger = {
+			has_idea = miho_armychief
+		}
+		ai_chance = {
+			base = 2
+		}
+
+		custom_effect_tooltip = GER_ACTIONS_HAVE_CONSEQUENCES
+
+		create_country_leader = {
+			name = "Miho"
+			desc = "POLITICS_MIHO_DESC"
+			picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+			expire = "1965.1.1"
+			ideology = german_idealism3
+			traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
+				reformer 
+				popular_commander
+			}
+		}
+
+		
+
+		#MIHO ALREADY FIELD MARSHAL
+
+		hidden_effect = {
+			add_political_power = -175
+			add_stability = -0.1
+			add_war_support = -0.05
+			random_list = {
+				25 = { #inverted cause maho chooses to fight for sis
+					GER = { country_event = { days = 3 id = kmm.11 } }
+				}
+				75 = {
+					GER = { country_event = { days = 3 id = kmm.12 } }
+				}
+			}
+			random_list = {
+				50 = {
+					GER = { country_event = { days = 14 id = kmm.9 } }
+					#ERIKA'S COUNTERCOUP #PEACEFUL
+				}
+				40 = {
+					#nothing happens lmfao
+					add_stability = 0.1
+					add_war_support = 0.15
+					set_country_flag = kmm_sudeten_miho #unlock miho mob tree
+					mark_focus_tree_layout_dirty = yes #doublecheck refresh for focus tree #fourth fallback in case player does events in advance
+				}
+				10 = {
+					GER = { country_event = { days = 14 id = kmm.10 } }
+					#ERIKA'S COUNTERCOUP #VIOLENT
+				}
+			}
+		}
+	}
+
+	#option = { #third way #special update maybe where koume tries to take over but three way civil war happens
+	#	name = kmm.9.b
+	#	ai_chance = {
+	#		base = 1
+	#	}
+	#}
+}
+
+country_event = { #ERIKA'S COUNTERCOUP #PEACEFUL
+	id = kmm.9
+	title = kmm.9.t
+	desc = kmm.9.d
+	picture = GFX_report_event_countercoup
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #miho will easily step down # no backsies # tsundere goals
+		name = kmm.9.a
+
+		add_political_power = 75
+		add_stability = 0.15
+		add_war_support = 0.1
+		
+		create_country_leader = {
+			name = "Erika"
+			desc = "POLITICS_ERIKA_DESC"
+			picture = Portrait_GER_Erika1.dds
+			expire = "1965.1.1"
+			ideology = german_idealism3
+			traits = {
+				cold_hearted_ruler2
+				inexperienced_panzer_leader
+			}
+		}
+
+		random_army_leader = { #ERIKA BECOMES FIELD MARSHAL #PEACEFUL COUNTERCOUP
+			limit = {
+				has_id = 1004
+			}
+			promote_leader = yes
+		}
+
+		hidden_effect = {
+			set_country_flag = kmm_sudeten_erika #unlock erika mob tree
+			set_cosmetic_tag = GER_greater_kuromorimine
+			set_party_name = { 
+			    ideology = fascism 
+			    long_name = GER_erika_partei
+			    name = GER_erika_partei_long 
+			}
+			mark_focus_tree_layout_dirty = yes #doublecheck refresh for focus tree #third fallback in case player does events in advance
+		}
+	}
+}
+
+country_event = { #ERIKA'S COUNTERCOUP #VIOLENT	
+	id = kmm.10
+	title = kmm.10.t
+	desc = kmm.10.d
+	picture = GFX_report_event_countercoup2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #uh oh stinky ##he said funny! -lejeff  
+		name = kmm.10.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.5
+                has_idea = miho_armychief
+			}
+		}
+
+		hidden_effect = {
+			set_capital = { state = 810 }
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.5	
+				set_capital = { state = 64 }
+				states = { 64 61 60 65 66 67 68 62 63 5 }
+				keep_unit_leaders = {
+					1004 1007 1008 1009
+				}
+			}
+			set_party_name = { ideology = fascism long_name = GER_fascism_party_civil_war name = GER_fascism_party_civil_war }
+			#load_oob = "GER_German_Civil_War_neutrality"
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = neutrality
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+				set_cosmetic_tag = GER_provisional_gvt
+				#load_oob = "GER_German_Civil_War_fascist"
+				set_party_name = { ideology = neutrality long_name = GER_miho_civil_war name = GER_miho_civil_war }
+				create_country_leader = {
+					name = "Miho"
+					desc = "POLITICS_MIHO_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism4
+					traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
+						reformer 
+						popular_commander
+					}
+				}
+				#MIHO ALREADY FIELD MARSHAL
+			}
+			hidden_effect = { news_event = { id = kmm_news.1 hours = 1 } }
+			
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.65
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}	
+			set_stability = 0.9
+			set_war_support = 0.8
+		}
+		custom_effect_tooltip = GER_fascism_civil_war_tt
+		add_stability = -0.25
+		create_country_leader = {
+			name = "Erika"
+			desc = "POLITICS_ERIKA_DESC"
+			picture = Portrait_GER_Erika1.dds
+			expire = "1965.1.1"
+			ideology = german_idealism3
+			traits = {
+				cold_hearted_ruler2
+				inexperienced_panzer_leader
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = GER
+				has_government = fascism
+			}
+			set_cosmetic_tag = GER_civil_war
+			hidden_effect = { activate_mission = GER_mefo_bills_mission }
+		}
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+			    amount = 10000
+			    producer = GER
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = GER
+			}
+			add_equipment_to_stockpile = {
+			    type = artillery_equipment
+			    amount = 500
+			    producer = GER
+			}
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = GER
+				}
+			}
+			random_army_leader = {
+				limit = {
+					has_id = 1004 #ERIKA FIELD MARSHAL #CIVIL WAR
+				}
+				promote_leader = yes
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_political_power = 150
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = GER
+				}
+			}
+		}
+	}
+
+	option = { #maybe miho was the right one all along
+		name = kmm.10.b
+		ai_chance = {
+			base = 25
+		}
+
+		add_political_power = 75
+		add_stability = 0.2
+		add_war_support = 0.15
+
+		set_country_flag = kmm_sudeten_miho	#unlock miho mob tree
+		mark_focus_tree_layout_dirty = yes #doublecheck refresh for focus tree #fifth fallback in case player does events in advance
+	}
+
+	option = { #enough non-sense
+		name = kmm.10.c
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.5
+				has_completed_focus = GER_demand_sudetenland
+			}
+		}
+
+		hidden_effect = {
+			set_capital = { state = 64 }
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size = 0.5	
+				set_capital = { state = 810 }	
+				states = { 56 58 59 57 51 55 42 54 50 53 52 152 153 4 69 74 810 811 }
+				keep_unit_leaders = { #miho and the gang stay #rest of ooarai splits to escape arrests
+					6969 1003 1005 1006 
+					6974 6971 6972 6973
+				}
+			}
+			set_party_name = { ideology = neutrality long_name = GER_miho_civil_war name = GER_miho_civil_war }
+			#load_oob = "GER_German_Civil_War_neutrality"
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+				set_cosmetic_tag = GER_provisional_gvt
+				#load_oob = "GER_German_Civil_War_fascist"
+				set_party_name = { ideology = fascism long_name = GER_fascism_party_civil_war name = GER_fascism_party_civil_war }
+				create_country_leader = {
+					name = "Erika"
+					desc = "POLITICS_ERIKA_DESC"
+					picture = Portrait_GER_Erika1.dds
+					expire = "1965.1.1"
+					ideology = german_idealism3
+					traits = {
+						cold_hearted_ruler2
+						inexperienced_panzer_leader
+					}
+				}
+				random_army_leader = { #ERIKA BECOMES FIELD MARSHAL #MIHO COUP VIOLENT
+					limit = {
+						has_id = 1004
+					}
+					promote_leader = yes
+				}
+			}
+			hidden_effect = { news_event = { id = kmm_news.1 hours = 1 } }
+			
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.65
+			}	
+			set_stability = 0.9
+			set_war_support = 0.8
+		}
+		custom_effect_tooltip = GER_fascism_civil_war_tt
+		add_stability = -0.25
+		create_country_leader = {
+			name = "Miho"
+			desc = "POLITICS_MIHO_DESC"
+			picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+			expire = "1965.1.1"
+			ideology = german_idealism4
+			traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
+				reformer 
+				popular_commander
+			}
+		}
+		#MIHO ALREADY FIELD MARSHAL
+		random_other_country = {
+			limit = {
+				original_tag = GER
+				has_government = neutrality
+			}
+			set_cosmetic_tag = GER_civil_war
+			hidden_effect = { activate_mission = GER_mefo_bills_mission }
+		}
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+			    amount = 10000
+			    producer = GER
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = GER
+			}
+			add_equipment_to_stockpile = {
+			    type = artillery_equipment
+			    amount = 500
+			    producer = GER
+			}
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = neutrality
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = GER
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_political_power = 150
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = GER
+				}
+			}
+		}
+	}
+}
+
+country_event = { #MAHO'S FIELDSMANSHIP RESIGNATION per chance
+	id = kmm.11
+	title = kmm.11.t
+	desc = kmm.11.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = ger_maho_resign
+	}
+
+	option = { #maho's line
+		name = kmm.11.a
+		trigger = {
+			has_country_leader = { ruling_only = yes name = "Maho" }
+			NOT = {
+				OR = {
+					has_country_leader = { ruling_only = yes name = "Erika" }
+					has_country_leader = { ruling_only = yes name = "Miho" }
+				}
+			}
+		}
+
+		add_stability = -0.1 #nooo why she leave us
+		add_war_support = -0.1
+
+		random_army_leader = {
+			limit = {
+				has_id = 1003 # MAHO
+			}
+			set_unit_leader_flag = retired
+			retire = yes
+		}
+	}
+
+	option = { #erika's line
+		name = kmm.11.b
+		trigger = {
+			has_country_leader = { ruling_only = yes name = "Erika" }
+			NOT = {
+				OR = {
+					has_country_leader = { ruling_only = yes name = "Maho" }
+					has_country_leader = { ruling_only = yes name = "Miho" }
+				}
+			}
+		}
+
+		add_stability = -0.1 #nooo why she leave us
+		add_war_support = -0.1
+
+		random_army_leader = {
+			limit = {
+				has_id = 1003 # MAHO
+			}
+			set_unit_leader_flag = retired
+			retire = yes
+		}
+	}
+
+	option = {
+		name = kmm.11.c
+		trigger = {
+			has_country_leader = { ruling_only = yes name = "Miho" }
+			NOT = {
+				OR = {
+					has_country_leader = { ruling_only = yes name = "Maho" }
+					has_country_leader = { ruling_only = yes name = "Erika" }
+				}
+			}
+		}
+
+		add_stability = -0.1 #nooo why she leave us
+		add_war_support = -0.1
+
+		random_army_leader = {
+			limit = {
+				has_id = 1003 # MAHO
+			}
+			set_unit_leader_flag = retired
+			retire = yes
+		}
+	}
+}
+
+country_event = { #MAHO'S FIELDSMANSHIP RETAINS
+	id = kmm.12
+	title = kmm.12.t
+	desc = kmm.12.d
+	picture = GFX_report_event_maho_resign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.12.a
+
+		add_stability = 0.2 #she stayss yeeeeaaaahhhh
+		add_war_support = 0.2
+	}
+}
+
+country_event = { #MAHO'S FIELDSMANSHIP RESIGNATION b/c offensive war
+	id = kmm.13
+	title = kmm.13.t
+	desc = kmm.13.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_offensive_war = yes
+		has_civil_war = no
+		NOT = {
+			has_completed_focus = GER_river_incident
+			OR = {
+				has_completed_focus = GER_demand_sudetenland
+				focus_progress = { focus = GER_demand_sudetenland progress > 0 }
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = ger_maho_resign
+	}
+
+	option = {
+		name = kmm.13.a
+
+		add_stability = -0.1 #nooo why she leave us
+		add_war_support = -0.15
+
+		random_army_leader = {
+			limit = {
+				has_id = 1003 # MAHO
+			}
+			set_unit_leader_flag = retired
+			retire = yes
+		}
+		retire_country_leader = yes
+		create_country_leader = { #determined succession line during maho's reign #miho has no right
+			name = "Erika"
+			desc = "POLITICS_ERIKA_DESC"
+			picture = Portrait_GER_Erika1.dds
+			expire = "1965.1.1"
+			ideology = german_idealism3
+			traits = {
+				cold_hearted_ruler2
+				inexperienced_panzer_leader
+			}
+		}
+	}
+}
+
+country_event = { ##ooarai student
+	id = kmm.14
+	title = kmm.14.t
+	desc = kmm.14.d
+	picture = GFX_report_event_czechoslovakia_chain
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #transfer
+		name = kmm.14.a
+		ai_chance = {
+			base = 50
+		}
+		
+		create_field_marshal = {
+			name = "Saori"
+			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Saori.dds"
+			traits = { media_personality cavalry_officer }
+			skill = 5
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		
+		create_corps_commander = {
+			name = "Erwin"
+			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Erwin.dds"
+			traits = { desert_fox panzer_leader brilliant_strategist}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		
+		create_corps_commander = {
+			name = "Saemonza"
+			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
+			traits = { swamp_fox }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 6
+		}
+		
+		create_corps_commander = {
+			name = "Noriko"
+			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Noriko.dds"
+			traits = { trait_reckless infantry_officer inflexible_strategist}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		
+		create_corps_commander = {
+			name = "Taeko"
+			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Taeko.dds"
+			traits = { trait_reckless }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		
+		create_corps_commander = {
+			name = "Suzuki"
+			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Suzuki.dds"
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}
+
+country_event = { #kmm.15 does not exist yet so use kmm.16
+	id = kmm.16
+	title = kmm.16.t
+	desc = {
+		text = kmm.16.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+
+	trigger = {
+		GER = {
+			has_war_with = YUG
+		}
+		YUG = {
+			has_capitulated = yes
+		}
+	}
+	
+	option = {
+		name = kmm.16.a   
+		ai_chance = { 
+			factor = 25
+		}
+        CRO = {
+            set_state_controller = 103
+		    set_state_controller = 104
+		    set_state_controller = 109
+		    set_state_controller = 804
+        }
+		if = { limit = { ITA = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT}  } }
+			country_event = kmm.17
+			else = { country_event = kmm.18 }
+		}
+	}
+	option = {
+		name = kmm.16.b   # Anchovy's Wet Dream # binary simp haha laugh
+		ai_chance = { 
+			factor = 16
+			modifier =  { 
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		trigger = { ITA = { exists = yes NOT = { has_capitulated = yes }  }}
+		ITA = {
+		        set_state_controller = 103
+			set_state_controller = 104
+			set_state_controller = 109
+			set_state_controller = 804
+			CRO = {
+					transfer_state = 103
+					transfer_state = 104
+					transfer_state = 109
+					transfer_state = 804
+				}
+				set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+			}
+		country_event = kmm.17
+        ITA = { country_event = kmm.21 } # 7 = 21
+	}
+	option = {
+		name = kmm.16.c 
+		ai_chance = { 
+			factor = 6
+			modifier =  { 
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		if = { limit = { ITA = { exists = yes NOT = { has_capitulated = yes }  } }
+		country_event = kmm.17
+		else = { country_event = kmm.18 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.17
+	title = kmm.17.t
+	desc = {
+		text = kmm.17.d
+	}
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.17.a  
+		ai_chance = { 
+			factor = 25
+			modifier =  { 
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		ITA = {
+			transfer_state = 105
+			set_state_controller = 802
+		}
+		if = { limit = { BUL = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } }
+		country_event = kmm.18
+		else = { country_event = kmm.19 }
+		}
+		ITA = { country_event = kmm.22 }
+	}
+	option = {
+		name = kmm.17.b   
+		ai_chance = { 
+			factor = 15
+		}
+		ITA = {   
+			transfer_state = 105
+			if = { limit = { ITA = { has_war = no } }
+				transfer_state = 802
+			}
+			set_state_controller = 802
+			set_state_controller = 813
+		}
+		if = { limit = { ALB = { is_puppet_of = ITA } }
+			ALB = {
+				set_state_controller = 802
+				set_state_controller = 813
+			}
+		}
+		if = { limit = {  102 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  804 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  803 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  104 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  106 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 45 } }
+		if = { limit = { BUL = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } }
+		country_event = kmm.18
+		else = { country_event = kmm.19 }
+		}
+		ITA = { country_event = kmm.23 }
+	}
+	option = {
+		name = kmm.17.c   
+		ai_chance = { 
+			factor = 10
+			modifier =  { 
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}		
+		if = { limit = {  102 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { or = { is_controlled_by = ITA is_controlled_by = ALB }} }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  804 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  803 = { or = { is_controlled_by = ITA is_controlled_by = ALB } } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  802 = { is_controlled_by = ITA } }
+		GER = {	set_state_controller = 802 } }
+		if = { limit = { BUL = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG } } }
+		country_event = kmm.18
+		else = { country_event = kmm.19 }
+		}
+		ITA = { country_event = kmm.24 }
+		
+	}
+}
+
+country_event = {
+	id = kmm.18
+	title = kmm.18.t
+	desc = {
+		text = kmm.18.d
+	}
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	trigger = { }
+	
+	option = {
+		name = kmm.18.a   
+		trigger = { BUL = { exists = yes NOT = { has_capitulated = yes }  }}
+		ai_chance = { 
+			factor = 25
+		}
+		BUL = {
+			transfer_state = 106
+			transfer_state = 803
+		}
+		if = { limit = { HUN = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } }
+		country_event = kmm.20
+		}
+		BUL = { country_event = kmm.25 } # 10 = 24; 11 = 25
+	}
+	option = {
+		name = kmm.18.b  
+		trigger = { BUL = { exists = yes NOT = { has_capitulated = yes }  }}
+		BUL = {
+		    if = { limit = { BUL = { has_war = no } }
+			    transfer_state = 106 
+				transfer_state = 803
+			}
+			set_state_controller = 106
+			set_state_controller = 803
+		}
+		if = { limit = {  102 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  45 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  107 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  804 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  802 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = { GRE = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } }
+	    	country_event = kmm.19
+		}
+		else_if = { limit = { HUN = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } } 
+	    	country_event = kmm.20
+   		}
+		BUL = { country_event = kmm.26 }
+	}
+	option = {
+		name = kmm.18.c  
+		ai_chance = { 
+			factor = 15
+			modifier =  {
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		if = { limit = {  102 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  804 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  803 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  802 = { is_controlled_by = BUL } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = { GRE = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } }
+	    	country_event = kmm.19
+		}
+		else_if = { limit = { HUN = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG }  } } 
+	    	country_event = kmm.20
+   		}
+		BUL = { country_event = kmm.27 }
+	}
+}
+
+country_event = {
+	id = kmm.19
+	title = kmm.19.t
+	desc = {
+		text = kmm.19.d
+	}
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	trigger = {  }
+	
+	option = {
+		name = kmm.19.a   
+		ai_chance = { 
+			factor = 25
+			modifier =  { 
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		trigger = { GRE = { exists = yes NOT = { has_capitulated = yes } } }
+		GRE = {
+			transfer_state = 106
+		}
+	}
+	option = {
+		name = kmm.19.b  
+		ai_chance = { 
+			factor = 15
+			modifier =  { 
+				factor = 0 
+				
+				OR = {
+				NOT = { is_in_faction_with = GRE }
+				NOT = { GRE = {has_government = fascism } }
+				}
+			}
+			
+		}
+		trigger = { GRE = { exists = yes NOT = { has_capitulated = yes } }}
+		GRE = {
+		    if = { limit = { GRE = { has_war = no } }
+			    transfer_state = 106 
+			}
+			set_state_controller = 106		
+		}
+		if = { limit = {  102 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  45 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  107 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  802 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = { HUN = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG } } }
+		country_event = kmm.20
+		else = { }
+		}
+	}
+	option = {
+		name = kmm.19.c   
+		
+		if = { limit = {  102 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  802 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { is_controlled_by = GRE } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = { HUN = { exists = yes NOT = { has_capitulated = yes } NOT = { has_war_with = ROOT} NOT = { is_in_faction_with = ENG } } }
+		country_event = kmm.20
+		else = {  }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.20
+	title = kmm.20.t
+	desc = {
+		text = kmm.20.d
+	}
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.20.a   
+		trigger = { HUN = { exists = yes NOT = { has_capitulated = yes }  }}
+		HUN = {
+			transfer_state = 45
+		}
+		HUN = { country_event = kmm.28 } # 10 = 24; 15 = 29
+	}
+	option = {
+		name = kmm.20.b   
+		trigger = { HUN = { exists = yes NOT = { has_capitulated = yes }  }}
+		if = { limit = {  102 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  802 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  813 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 813 } }
+		
+		HUN = {
+			set_state_controller = 45
+		}
+		HUN = { country_event = kmm.29 }
+	}
+	option = {
+		name = kmm.20.c  
+		if = { limit = {  102 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  802 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  813 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 813 } }
+		
+		HUN = { country_event = kmm.30 }
+	}
+	
+	option = {
+		name = kmm.20.e  
+		if = { limit = {  102 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  802 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  813 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 813 } }
+		
+		
+		if = { limit = {  102 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE is_controlled_by = CRO } } } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE is_controlled_by = CRO } } } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE is_controlled_by = CRO } } } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  45 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 45 } }
+		
+		if = { limit = {  802 = { NOT = { OR = { is_controlled_by = ALB is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  813 = { NOT = { OR = { is_controlled_by = ALB is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 813 } }
+		
+		HUN = { country_event = kmm.30 }
+	}
+	
+	option = {
+		name = kmm.20.f   
+		if = { limit = {  102 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  802 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  813 = { is_controlled_by = HUN } }
+		GER = {	set_state_controller = 813 } }
+		
+		
+		if = { limit = {  102 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 102 } }
+		
+		if = { limit = {  103 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE is_controlled_by = CRO } } } }
+		GER = {	set_state_controller = 103 } }
+		
+		if = { limit = {  104 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE is_controlled_by = CRO } } } }
+		GER = {	set_state_controller = 104 } }
+		
+		if = { limit = {  105 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 105 } }
+		
+		if = { limit = {  106 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 106 } }
+		
+		if = { limit = {  107 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 107 } }
+		
+		if = { limit = {  108 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 108 } }
+		
+		if = { limit = {  109 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE is_controlled_by = CRO } } } }
+		GER = {	set_state_controller = 109 } }
+		
+		if = { limit = {  764 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 764 } }
+		
+		if = { limit = {  802 = { NOT = { OR = { is_controlled_by = ALB is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 802 } }
+		
+		if = { limit = {  803 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 803 } }
+		
+		if = { limit = {  804 = { NOT = { OR = { is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 804 } }
+		
+		if = { limit = {  813 = { NOT = { OR = { is_controlled_by = ALB is_controlled_by = BUL is_controlled_by = ITA is_controlled_by = GRE } } } }
+		GER = {	set_state_controller = 813 } }
+		
+		HUN = {
+			set_state_controller = 45
+		}
+		HUN = { country_event = kmm.29 }		
+	}
+}
+
+country_event = {
+	id = kmm.21
+	title = kmm.21.t
+	desc = {
+		text = kmm.21.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.21.a   
+		effect_tooltip = {
+		ITA = {
+			set_state_controller = 103
+			set_state_controller = 104
+			set_state_controller = 109
+			set_state_controller = 804
+			CRO = {
+					transfer_state = 103
+					transfer_state = 104
+					transfer_state = 109
+					transfer_state = 804
+					#set_cosmetic_tag = CRO_reichskommissariat
+				}
+				set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = kmm.22
+	title = kmm.22.t
+	desc = {
+		text = kmm.22.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.22.a   
+	}
+}
+
+country_event = {
+	id = kmm.23
+	title = kmm.23.t
+	desc = {
+		text = kmm.23.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.23.a   # Germany gave only Montenegro to Italy
+	}
+}
+
+country_event = {
+	id = kmm.24
+	title = kmm.24.t
+	desc = {
+		text = kmm.24.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.24.a   
+	}
+}
+
+#Events to inform Bulgaria on what Germany decided:
+
+country_event = {
+	id = kmm.25
+	title = kmm.25.t
+	desc = {
+		text = kmm.25.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.25.a 
+	}
+}
+
+country_event = {
+	id = kmm.26
+	title = kmm.26.t
+	desc = {
+		text = kmm.26.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.26.a  
+	}
+}
+
+country_event = {
+	id = kmm.27
+	title = kmm.27.t
+	desc = {
+		text = kmm.27.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.27.a  
+	}
+}
+
+country_event = {
+	id = kmm.28
+	title = kmm.28.t
+	desc = {
+		text = kmm.28.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.28.a   # Germany lets Hungary keep everything it conquered
+	}
+}
+
+country_event = {
+	id = kmm.29
+	title = kmm.29.t
+	desc = {
+		text = kmm.29.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.29.a   
+	}
+}
+
+country_event = {
+	id = kmm.30
+	title = kmm.30.t
+	desc = {
+		text = kmm.30.d
+	}
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kmm.30.a   
+	}
+}
+
+country_event = {
+	id = kmm.31
+	title = kmm.31.t
+	desc = kmm.31.d
+	picture = GFX_report_event_afrikakorps
+
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.31.a
+		ai_chance = { factor = 100 }
+
+		hidden_effect = {
+			load_oob = "GER_Afrikakorps"
+		}
+	}
+	option = {
+		name = kmm.31.b		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { # CONTINUTATION WAR
+	id = kmm.32
+	title = kmm.32.t
+	desc = kmm.32.d
+	picture = GFX_report_event_mikanium
+
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.32.a
+		ai_chance = { factor = 1 }
+
+		declare_war_on = {
+			target = SOV
+			type = take_core_state
+			generator = { 146 147 722 }
+		}
+
+		add_stability = 0.2
+		add_war_support = 0.2
+		
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}
+
+		hidden_effect = {
+			GER = { #insert mika quote here
+				add_ai_strategy = {
+					type = alliance
+					id = FIN
+					value = -1000
+				}
+			}
+
+			ENG = { #tf are jatkosota?
+				add_ai_strategy = {
+					type = alliance
+					id = FIN
+					value = -1000
+				}
+			}
+		}
+	}
+	option = {
+		name = kmm.32.b
+		ai_chance = { factor = 0 }
+
+		add_stability = -0.2
+		add_war_support = -0.15
+
+		add_opinion_modifier = {
+			target = GER
+			modifier = large_decrease
+		}
+
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = no
+		}
+
+		hidden_effect = {
+			GER = { #insert mika quote here
+				add_ai_strategy = {
+					type = alliance
+					id = FIN
+					value = -1000
+				}
+			}
+
+			ENG = { #tf are jatkosota?
+				add_ai_strategy = {
+					type = alliance
+					id = FIN
+					value = -1000
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.33
+	title = kmm.33.t
+	desc = kmm.33.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	hidden = yes
+
+	trigger = {
+		original_tag = GER
+		GER_has_mefo_bills = yes
+		any_other_country = {
+			has_war_with = GER
+			NOT = { original_tag = GER }
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = { #remove MEFO
+		name = kmm.33.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			GER_remove_mefo_bills = yes
+			set_country_flag = mefo_bills_removed_through_war
+		}
+	}
+}
+
+country_event = { #unitary or federal
+	id = kmm.34
+	title = kmm.34.t
+	desc = kmm.34.desc
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		NOT = { has_completed_focus = GER_inaugurate_the_republic }
+		focus_progress = {
+			focus = GER_inaugurate_the_republic
+			progress > 0.2
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = kmm.34.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_ideas = kmm_federal_academy
+	}
+	option = {
+		name = kmm.34.b
+		ai_chance = {
+			base = 1
+		}
+		
+		add_ideas = kmm_unitary_academy
+	}
+}
+
+country_event = { #unicameral or bicameral
+	id = kmm.35
+	title = kmm.35.t
+	desc = kmm.35.desc
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		NOT = { has_completed_focus = GER_inaugurate_the_republic }
+		focus_progress = {
+			focus = GER_inaugurate_the_republic
+			progress > 0.4
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = { #coding hell
+		name = kmm.35.a
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				has_idea = kmm_federal_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_federal_academy
+				add_idea = kmm_federal_unicameral_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_unitary_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_unitary_academy
+				add_idea = kmm_unitary_unicameral_academy
+			}
+		}
+	}
+	option = {
+		name = kmm.35.b
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				has_idea = kmm_federal_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_federal_academy
+				add_idea = kmm_federal_bicameral_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_unitary_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_unitary_academy
+				add_idea = kmm_unitary_bicameral_academy
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.36
+	title = kmm.36.t
+	desc = kmm.36.desc
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		NOT = { has_completed_focus = GER_inaugurate_the_republic }
+		focus_progress = {
+			focus = GER_inaugurate_the_republic
+			progress > 0.6
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = { #coding shitshow
+		name = kmm.36.a
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				has_idea = kmm_federal_unicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_federal_unicameral_academy
+				add_idea = kmm_federal_unicameral_police_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_unitary_unicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_unitary_unicameral_academy
+				add_idea = kmm_unitary_unicameral_police_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_federal_bicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_federal_bicameral_academy
+				add_idea = kmm_federal_bicameral_police_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_unitary_bicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_unitary_bicameral_academy
+				add_idea = kmm_unitary_bicameral_police_academy
+			}
+		}
+	}
+	option = {
+		name = kmm.36.b
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				has_idea = kmm_federal_unicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_federal_unicameral_academy
+				add_idea = kmm_federal_unicameral_morals_committee_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_unitary_unicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_unitary_unicameral_academy
+				add_idea = kmm_unitary_unicameral_morals_committee_academy 
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_federal_bicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_federal_bicameral_academy
+				add_idea = kmm_federal_bicameral_morals_committee_academy
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = kmm_unitary_bicameral_academy
+			}
+			swap_ideas = {
+				remove_idea = kmm_unitary_bicameral_academy
+				add_idea = kmm_unitary_bicameral_morals_committee_academy 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.37
+	title = kmm.37.t
+	desc = kmm.37.desc
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = kmm.37.a
+		ai_chance = {
+			base = 1
+		}
+		complete_national_focus = GER_victory_for_emi
+		set_country_flag = kmm_emi_pres
+	}
+	option = {
+		name = kmm.37.b
+		ai_chance = {
+			base = 1
+		}
+		complete_national_focus = GER_victory_for_miho
+		set_country_flag = kmm_miho_pres
+	}
+	option = {
+		name = kmm.37.c
+		ai_chance = {
+			base = 1
+		}
+		complete_national_focus = GER_victory_for_mauko
+		set_country_flag = kmm_kojima_pres
+	}
+}
+
+country_event = { #Gregorian Question
+	id = kmm.38
+	title = kmm.38.t
+	desc = kmm.38.d
+	picture = GFX_report_event_molly_ribby
+
+	is_triggered_only = yes
+
+	option = { #Alliance
+		name = kmm.38.a
+		ai_chance = { factor = 5 } #basis for balkan resolution
+
+		add_war_support = 0.15
+		add_stability = 0.1
+
+		ENG = {
+			country_event = {
+				id = generic.2
+			}
+		}
+	}
+	option = { #Neutrality - Non Aggression
+		name = kmm.38.b
+		ai_chance = { factor = 3 }
+
+		add_political_power = 100
+		add_popularity = { ideology = democratic popularity = -0.2 }
+
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = yes
+		}
+
+		add_ai_strategy = {
+			type = ignore
+			id = "GER"
+			value = 250
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = -150
+		}
+
+		SOV = {
+			add_opinion_modifier = { target = CZE modifier = small_increase }
+		}
+	}
+	option = { #Neutrality - Don't care. He literally doesnt care chat. Hikaru doesnt care.
+		name = kmm.38.c
+		ai_chance = { factor = 2 }
+
+		add_ai_strategy = {
+			type = ignore
+			id = "GER"
+			value = 500
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = -300
+		}
+
+		GER = {
+			add_opinion_modifier = { target = CZE modifier = medium_decrease }
+		}
+		SOV = {
+			add_opinion_modifier = { target = CZE modifier = medium_increase }
+		}
+	}
+}
+
+country_event = { #Hungarian Question
+	id = kmm.39
+	title = kmm.39.t
+	desc = kmm.39.d
+	picture = GFX_report_event_molly_ribby
+
+	is_triggered_only = yes
+
+	option = { #Alliance
+		name = kmm.39.a
+		ai_chance = { 
+			factor = 5  
+			modifier = {
+				factor = 0.25
+				NOT = {
+					CZE = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+
+		add_war_support = 0.15
+		add_stability = 0.1
+
+		ENG = {
+			country_event = {
+				id = generic.2
+			}
+		}
+	}
+	option = { #Neutrality - Non Aggression
+		name = kmm.39.b
+		ai_chance = {
+			factor = 3 
+			modifier = {
+				factor = 1.5
+				NOT = {
+					CZE = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+
+		add_political_power = 100
+		add_popularity = { ideology = democratic popularity = -0.2 }
+
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = yes
+		}
+
+		add_ai_strategy = {
+			type = ignore
+			id = "GER"
+			value = 250
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = -150
+		}
+
+		SOV = {
+			add_opinion_modifier = { target = HUN modifier = small_increase }
+		}
+	}
+	option = { #Neutrality - Don't care. He literally doesnt care chat. Hikaru doesnt care.
+		name = kmm.39.c
+		ai_chance = { 
+			factor = 2 
+			modifier = {
+				factor = 2
+				is_historical_focus_on = no
+			}
+		}
+
+		add_ai_strategy = {
+			type = ignore
+			id = "GER"
+			value = 500
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = -300
+		}
+
+		GER = {
+			add_opinion_modifier = { target = HUN modifier = medium_decrease }
+		}
+		SOV = {
+			add_opinion_modifier = { target = HUN modifier = medium_increase }
+		}
+	}
+}
+
+country_event = { #Yugoslavian Guise
+	id = kmm.40
+	title = kmm.40.t
+	desc = kmm.40.d
+	picture = GFX_report_event_molly_ribby
+
+	is_triggered_only = yes
+
+	option = { #Alliance
+		name = kmm.40.a
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = {
+					HUN = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					CZE = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+
+		add_war_support = 0.15
+		add_stability = 0.1
+
+		ENG = {
+			country_event = {
+				id = generic.2
+			}
+		}
+	}
+	option = { #lmao f off
+		name = kmm.40.b
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 1.5
+				GER = {
+					has_war = yes
+				}
+			}
+		}
+
+		add_stability = 0.1
+		add_political_power = 120
+		add_popularity = { ideology = communism popularity = 0.15 }
+
+		add_ai_strategy = {
+			type = ignore
+			id = "GER"
+			value = 500
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = -300
+		}
+
+		GER = {
+			add_opinion_modifier = { target = YUG modifier = medium_decrease }
+		}
+		SOV = {
+			add_opinion_modifier = { target = YUG modifier = medium_increase }
+		}
+	}
+}
+
+country_event = { #Miho Plan #No bonuses
+	id = kmm.41
+	title = kmm.41.t
+	desc = kmm.41.d
+	picture = GFX_report_event_miho_plan
+
+	is_triggered_only = yes
+
+	option = { #skim through the ardennes
+		name = kmm.41.a
+		ai_chance = { #histroical ahistorical route
+			factor = 5
+		}
+
+		if = { 
+			limit = {
+				country_exists = BEL
+				NOT = { BEL = { is_in_faction_with = GER } }
+				NOT = { has_war_with = BEL }
+			}
+			declare_war_on = {
+				target = BEL
+				type = puppet_wargoal_focus
+			}
+		}
+		if = {
+			limit = {
+				country_exists = LUX
+				NOT = { LUX = { is_in_faction_with = GER } }
+				NOT = { has_war_with = LUX }
+			}
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}			
+		}
+	}
+
+	option = { #total benelux influx
+		name = kmm.41.b
+		ai_chance = {
+			factor = 3
+		}
+
+		if = { 
+			limit = {
+				country_exists = BEL
+				NOT = { BEL = { is_in_faction_with = GER } }
+				NOT = { has_war_with = BEL }
+			}
+			declare_war_on = {
+				target = BEL
+				type = puppet_wargoal_focus
+			}
+		}
+		if =  {
+			limit = {
+				country_exists = HOL
+				NOT = { HOL = { is_in_faction_with = GER } }
+				NOT = { has_war_with = HOL }
+				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+			}
+			declare_war_on = {
+				target = HOL
+				type = puppet_wargoal_focus
+			}
+		}
+		if =  {
+			limit = {
+				country_exists = HOL
+				NOT = { HOL = { is_in_faction_with = GER } }
+				NOT = { has_war_with = HOL }
+				HOL = { has_completed_focus = HOL_cave_to_the_germans } 
+				NOT = { HOL = { has_completed_focus = HOL_the_netherlands_first } }
+			}
+			HOL = {
+				country_event = { id = mtg_germany.1 hours = 6 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = LUX
+				NOT = { LUX = { is_in_faction_with = GER } }
+				NOT = { has_war_with = LUX }
+			}
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}			
+		}
+	}
+
+	option = { #let gloriana handle them
+		name = kmm.41.c
+		trigger = {
+			is_in_faction_with = ENG
+		}
+		ai_chance = {
+			factor = 3
+		}
+
+		ENG = {
+			if = {
+				limit = {
+					country_exists = FRA
+					NOT = { LUX = { is_in_faction_with = GER } }
+					NOT = { has_war_with = LUX }
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}			
+			}
+		}
+	}
+
+	option = { #behind the maginot
+		name = kmm.41.e
+		ai_chance = {
+			factor = 1
+		}
+
+		complete_national_focus = GER_behind_the_maginot
+	}
+}
+
+country_event = {
+	id = kmm.42
+	title = kmm.42.t
+	desc = kmm.42.d
+	picture = GFX_report_event_molly_ribby
+
+	is_triggered_only = yes
+
+	option = { #Alliance
+		name = kmm.42.a
+		ai_chance = { 
+			factor = 5
+		}
+
+		add_war_support = 0.15
+		add_stability = 0.1
+
+		ENG = {
+			country_event = {
+				id = generic.2
+			}
+		}
+	}
+	option = { #nah
+		name = kmm.42.b
+		ai_chance = {
+			factor = 2
+		}
+
+		add_political_power = -100
+	}
+}
+
+country_event = {
+	id = kmm.43
+	title = kmm.43.t
+	desc = kmm.43.d
+	picture = GFX_report_event_brit_and_franc
+
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.43.a
+	}
+}
+
+country_event = { #kaiserin's tea party
+	id = kmm.44
+	title = kmm.44.t
+	desc = kmm.44.d
+	picture = GFX_report_event_mahnoich_gloriana
+
+	is_triggered_only = yes
+
+	option = { #hold it at frankfurt to antagonize the French more
+		name = kmm.44.a
+		ai_chance = {
+			factor = 5
+		}
+		add_political_power = 25
+		add_stability = -0.05
+		hidden_effect = {
+			FRA = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	option = { #hold it at london and risk a crash but still antagonize the french
+		name = kmm.44.b
+		ai_chance = {
+			factor = 2
+			modifier = {
+				add = 3
+				is_historical_focus_on = no
+			}
+		}
+		add_political_power = -50
+		add_stability = -0.1
+		hidden_effect = {
+			random_list = {
+				70 = {
+					news_event = { id = kmm_news.8 hours = 12 }
+				}
+				30 = {
+					news_event = { id = kmm_news.9 hours = 12 }
+				}
+			}
+			hidden_effect = {
+				FRA = {
+					random_owned_controlled_state = {
+						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.45
+	title = kmm.45.t
+	desc = kmm.45.d
+	picture = GFX_report_event_seeteufel
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_war_with = SOV
+		SOV = {
+			surrender_progress > 0.15
+		}
+		has_country_leader = { ruling_only = yes name = "Erika" }
+	}
+
+	option = {
+		name = kmm.45.a
+
+		custom_effect_tooltip = "Miho and Hana die of their own actions."
+		add_political_power = 200
+
+		hidden_effect = { #secret change of heart
+			every_unit_leader = {
+				limit = {
+					OR = {
+						has_id = 6969
+						has_id = 6971
+					}
+				}
+				retire = yes
+			}
+			set_country_flag = has_died_flag
+			annex_country = { target = SLO transfer_troops = yes }
+			add_stability = 0.2
+			if = {
+				limit = {
+					has_completed_focus = GER_heart_of_iron
+				}
+				remove_country_leader_trait = cold_hearted_ruler2
+				add_country_leader_trait = experienced_fuhrer
+			}
+		}
+	}
+}
+
+country_event = { #erimaho trial
+	id = kmm.46
+	title = kmm.46.t
+	desc = kmm.46.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #death
+		name = kmm.46.a
+		ai_chance = {
+			base = 3
+		}
+		custom_effect_tooltip = ERIMAHO_TRIAL_DEATH
+		add_political_power = 200
+		add_stability = 0.05
+		add_war_support = 0.1
+	}
+	
+	option = { #prison
+		name = kmm.46.b
+		ai_chance = {
+			base = 7
+		}
+		custom_effect_tooltip = ERIMAHO_TRIAL_PRISON
+		add_political_power = -100
+	}
+
+	#option = {  #kuro #gaming
+	#	name = kmm.46.c
+	#	ai_chance = {
+	#		base = 5
+	#	}
+	#	
+	#}
+}
+
+country_event = { #cht alliance
+	id = kmm.47
+	title = kmm.47.t
+	desc = kmm.47.d
+	picture = GFX_report_event_indochina_accepted
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.47.a
+		ai_chance = {
+			base = 10
+		}
+		if = { #fukuda cht joins kmm
+			limit = {
+				is_in_faction = yes
+				GER = {
+					is_faction_leader = yes
+				}
+			}
+			leave_faction = yes
+			GER = {
+				add_to_faction = JAP
+			}
+		}
+		if = { #tamada cht joins kmm or no faction at all yet
+			limit = {
+				GER = {
+					is_faction_leader = yes
+				}
+			}
+			hidden_effect = { #fallback command incase meme shaningans
+				leave_faction = yes
+			}
+			GER = {
+				add_to_faction = JAP
+			}
+		}
+		if = { #cht leads if kmm stands alone
+			limit = {
+				JAP = {
+					is_faction_leader = yes
+				}
+			}
+			JAP = {
+				add_to_faction = GER
+			}
+		}
+		if = { #if neither
+			limit = {
+				GER = {
+					is_faction_leader = no
+				}
+				JAP = {
+					is_faction_leader = no
+				}
+			}
+			GER = {
+				create_faction = EMI_UNION
+				add_to_faction = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = kmm.47.b
+		ai_chance = {
+			base = 5
+		}
+		GER = {
+			country_event = { days = 1 id = kmm.53 }
+		}
+	}
+}
+
+country_event = { #cht union
+	id = kmm.48
+	title = kmm.48.t
+	desc = kmm.48.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.48.a
+		ai_chance = { #never you dumbass lmao
+			base = 1
+		}
+		if = {
+			limit = {
+				MAN = { is_subject_of = ROOT }
+			}
+			set_autonomy = { target = MAN autonomy_state = autonomy_free }
+			MAN = { #cause no
+				transfer_state = 745
+				transfer_state = 609
+				transfer_state = 524
+			}
+		}
+		if = {
+			limit = {
+				MAN = { has_idea = MAN_kwantung_veto }
+			}
+			MAN = { remove_ideas = MAN_kwantung_veto }
+		}
+		if = {
+			limit = {
+				MEN = { is_subject_of = ROOT }
+			}
+			MAN = { puppet = MEN }
+		}
+		if = {
+			limit = {
+				any_state = {
+					is_controlled_by = ROOT
+					is_core_of = KOR
+				}
+			}
+			release = KOR
+			set_autonomy = { target = KOR autonomy_state = autonomy_free }
+		}
+		hidden_effect = {
+			transfer_units_fraction = {
+				target = GER
+				size = 1.0
+				stockpile_ratio = 0.9
+				army_ratio = 0.9 #fukuda army will most likely cooperate
+				navy_ratio = 0.5 #kubota in favor for kmm's surface fleet
+				air_ratio = 1.0 #ikeda is attatched to army with fukuda
+			}
+		}
+		set_country_flag = cht_kmm_union
+		GER = { #kuro #add dumb cht advisors etc
+			set_country_flag = cht_kmm_union
+			hidden_effect = { #im not doing this shit again fuck you pope i will crack your head like an egg
+				add_ideas =	natsuko_hosomi_p
+				remove_ideas = natsuko_hosomi_p
+				add_ideas =	ritsuko_hamada_p
+				remove_ideas =	ritsuko_hamada_p
+				add_ideas =	ikuyo_fukuda_p
+				remove_ideas =	ikuyo_fukuda_p
+				add_ideas =	haru_tamada_p
+				remove_ideas =	haru_tamada_p
+				add_ideas =	shizuka_tsuruki
+				remove_ideas =	shizuka_tsuruki
+				add_ideas =	yukiko_nagura_p
+				remove_ideas =	yukiko_nagura_p
+				add_ideas =	tomoyo_ikeda_p
+				remove_ideas =	tomoyo_ikeda_p
+				add_ideas =	ikuyo_fukuda_t
+				remove_ideas =	ikuyo_fukuda_t
+				add_ideas =	haru_tamada_t
+				remove_ideas =	haru_tamada_t
+				add_ideas =	akemi_kubota_t
+				remove_ideas =	akemi_kubota_t
+				add_ideas =	mayuka_teramoto_t
+				remove_ideas =	mayuka_teramoto_t
+				add_ideas =	tomoyo_ikeda_t
+				remove_ideas =	tomoyo_ikeda_t
+				add_ideas =	ikuyo_fukuda
+				remove_ideas =	ikuyo_fukuda
+				add_ideas =	haru_tamada
+				remove_ideas =	haru_tamada
+				add_ideas =	katsumi_nishihara
+				remove_ideas =	katsumi_nishihara
+				add_ideas =	yukiko_nagura
+				remove_ideas =	yukiko_nagura
+				add_ideas =	tomoyo_ikeda
+				remove_ideas =	tomoyo_ikeda
+				add_ideas =	natsuko_hosomi
+				remove_ideas =	natsuko_hosomi
+				add_ideas =	ritsuko_hamada
+				remove_ideas =	ritsuko_hamada
+				add_ideas =	mayuka_teramoto
+				remove_ideas =	mayuka_teramoto
+				add_ideas =	akemi_kubota
+				remove_ideas =	akemi_kubota
+				add_ideas =	kure_naval_arsenal
+				remove_ideas =	kure_naval_arsenal
+				add_ideas =	yokosuka_naval_arsenal
+				remove_ideas =	yokosuka_naval_arsenal
+				add_ideas =	maizuru_naval_arsenal
+				remove_ideas =	maizuru_naval_arsenal
+				add_ideas =	sasebo_naval_arsenal
+				remove_ideas =	sasebo_naval_arsenal
+				add_ideas =	mitsubishi
+				remove_ideas =	mitsubishi
+				add_ideas =	aichi
+				remove_ideas =	aichi
+				add_ideas =	nakajima
+				remove_ideas =	nakajima
+				add_ideas =	yokosuka
+				remove_ideas =	yokosuka
+				add_ideas =	kawasaki
+				remove_ideas =	kawasaki
+				add_ideas =	sumitomo
+				remove_ideas =	sumitomo
+				add_ideas =	JAP_idemitsu_kosan
+				remove_ideas =	JAP_idemitsu_kosan
+				add_ideas =	cht_interzaibatsu_development
+				remove_ideas =	cht_interzaibatsu_development
+				add_ideas =	tokyo_arsenal
+				remove_ideas =	tokyo_arsenal
+				add_ideas =	nissan
+				remove_ideas =	nissan
+				add_ideas =	osaka_army_arsenal
+				remove_ideas =	osaka_army_arsenal
+			}
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+				add_core_of = GER
+			}
+			inherit_technology = JAP
+			annex_country = {
+				target = JAP
+				transfer_troops = yes
+			}
+			add_ideas = kmm_unification_pains
+		}
+	}
+	
+	option = {
+		name = kmm.48.b
+		ai_chance = {
+			base = 5
+		}
+		add_political_power = 150
+		country_event = { id = kmm.54 }
+	}
+
+	option = {
+		name = kmm.48.c
+		ai_chance = {
+			base = 2
+		}
+		add_political_power = 150
+		country_event = { id = kmm.55 }
+		leave_faction = yes
+	}
+}
+
+country_event = { #miho invite - nakasauga
+	id = kmm.49
+	title = kmm.49.t
+	desc = kmm.49.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes	
+
+	option = {
+		name = kmm.49.a
+		ai_chance = {
+			base = 10
+		}
+		GER = {
+			4 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			152 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			153 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			AUS = {
+				every_unit_leader = {
+					set_nationality = GER
+				}
+			}
+			annex_country = { target = AUS transfer_troops = yes }
+			add_political_power = 75
+			set_country_flag = AUS_annexed
+			add_war_support = 0.05
+			add_stability = 0.05
+			USA = {
+				set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+			}
+			custom_effect_tooltip = anschluss_mefo_bills_tt
+			hidden_effect = { # Having it appear twice might be confusing
+				GER_mefo_bills_level_down = yes
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = -10 }
+			
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+					country_exists = YUG
+					YUG = { has_war = no }
+				}
+				country_event = {
+					id = DOD_yugoslavia.30
+					days = 4
+				}
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.36 }
+			}
+		}
+	}
+	
+	option = {
+		name = kmm.49.b
+		ai_chance = {
+			base = 1
+		}
+		add_stability = -0.05
+		add_political_power = -500
+		GER = {
+			country_event = { id = kmm.56 }
+		}
+	}
+}
+
+country_event = { #sudeten - nakasauga
+	id = kmm.50
+	title = kmm.50.t
+	desc = kmm.50.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.50.a
+		ai_chance = {
+			base = 10
+		}
+		69 = { 
+			add_core_of = GER
+			set_state_name = "Bellwall"
+		}
+		GER = { transfer_state = 69 }
+		74 = { 
+			add_core_of = GER
+			set_state_name = "Eastern Bellwall" 
+		}
+		GER = { transfer_state = 74 }
+	}
+}
+
+country_event = { #danzig - nakasauga
+	id = kmm.51
+	title = kmm.51.t
+	desc = kmm.51.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.51.a
+		ai_chance = {
+			base = 10
+		}
+		85 = { 
+			add_core_of = GER
+		}
+		GER = { transfer_state = 85 }
+		86 = {
+			add_core_of = GER
+			set_state_name = "Posen"
+		}
+		GER = { transfer_state = 86 }
+
+		add_timed_idea = {
+			idea = kmm_gdnask_poznan_pay
+			days = 1095
+		}
+	}
+	
+	option = {
+		name = kmm.51.b
+		ai_chance = {
+			base = 5
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = POL
+			expire = 0
+		}
+		85 = { 
+			add_core_of = GER
+			remove_core_of = POL
+		}
+		86 = {
+			add_core_of = GER
+		}
+		add_political_power = 1000
+	}
+}
+
+country_event = { #kama pact
+	id = kmm.52
+	title = kmm.52.t
+	desc = kmm.52.d
+	picture = GFX_report_event_molly_ribby_nonna
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.52.a
+		ai_chance = {
+			base = 10
+		}
+		if = {
+			limit = {
+				GER = {
+					is_faction_leader = yes
+				}
+				SOV = {
+					is_faction_leader = no
+				}
+			}
+			leave_faction = yes
+			GER = {
+				add_to_faction = SOV
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_medium_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = medium_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = advanced_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_3
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					is_faction_leader = no
+				}
+				SOV = {
+					is_faction_leader = yes
+				}
+			}
+			dismantle_faction = yes
+			GER = {
+				leave_faction = yes
+				create_faction = EMI_UNION
+				add_to_faction = SOV
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_medium_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = medium_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = advanced_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_3
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					is_faction_leader = no
+				}
+				SOV = {
+					is_faction_leader = no
+				}
+			}
+			leave_faction = yes
+			GER = {
+				create_faction = EMI_UNION
+				add_to_faction = SOV
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_medium_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = medium_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = advanced_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_3
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					is_faction_leader = yes
+				}
+				SOV = {
+					is_faction_leader = yes
+				}
+			}
+			dismantle_faction = yes
+			GER = {
+				add_to_faction = SOV
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_medium_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = medium_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = improved_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_2
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_tech = advanced_heavy_tank
+					}
+				}
+				create_production_license = {
+					target = GER
+					equipment = {
+						type = heavy_tank_equipment_3
+						version = 0
+					}
+					cost_factor = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = kmm.52.b
+		ai_chance = {
+			base = 5
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SOV
+			expire = 0
+		}
+	}
+}
+
+country_event = { #chihatan reject advances
+	id = kmm.53
+	title = kmm.53.t
+	desc = kmm.53.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.53.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -25
+	}
+}
+
+country_event = { #chihatan politlely refuses
+	id = kmm.54
+	title = kmm.54.t
+	desc = kmm.54.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.54.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -50
+	}
+}
+
+country_event = { #chihatan refuses
+	id = kmm.55
+	title = kmm.55.t
+	desc = kmm.55.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.55.a
+		ai_chance = {
+			base = 1
+		}
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+	}
+
+	option = {
+		name = kmm.55.b
+		ai_chance = {
+			base = 5
+		}
+		add_political_power = -200
+	}
+}
+
+country_event = { #chihatan refuses
+	id = kmm.56
+	title = kmm.56.t
+	desc = kmm.56.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.56.a
+		ai_chance = {
+			base = 1
+		}
+		declare_war_on = {
+			target = AUS
+			type = annex_everything
+		}
+	}
+}
+
+# ST. GLORIANA - KILIMANJARO EXPEDITION
+country_event = { #tanzanzia mountain visits tea land
+	id = kmm.57
+	title = kmm.57.t
+	desc = kmm.57.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.57.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = KMM_CHAIN_CONTINUE
+		hidden_effect = {
+			country_event = {
+				id = kmm.58
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = kmm.57.b
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = -15
+	}
+}
+
+country_event = { #continue or simp for her
+	id = kmm.58
+	title = kmm.58.t
+	desc = kmm.58.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.58.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = KMM_CHAIN_CONTINUE
+		hidden_effect = {
+			country_event = {
+				id = kmm.59
+				days = 4
+			}
+		}
+	}
+
+	option = {
+		name = kmm.58.b
+		ai_chance = {
+			base = 3
+		}
+		country_event = {
+			id = kmm.61 #unceremonious return
+			days = 4
+		}
+	}
+}
+
+country_event = { #references and some ball game lmfao
+	id = kmm.59
+	title = kmm.59.t
+	desc = kmm.59.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.59.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = KMM_CHAIN_CONTINUE
+		hidden_effect = {
+			country_event = {
+				id = kmm.60
+				days = 4
+			}
+		}
+	}
+
+	option = {
+		name = kmm.59.b
+		ai_chance = {
+			base = 3
+		}
+		country_event = {
+			id = kmm.61 #unceremonious return
+			days = 7
+		}
+	}
+}
+
+country_event = { #fangirl negitations
+	id = kmm.60
+	title = kmm.60.t
+	desc = kmm.60.d
+	picture = GFX_report_event_gloriana_treaty
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.60.a
+		ai_chance = {
+			base = 7
+		}
+		add_political_power = 25
+		ENG = {
+			if = {
+				limit = {
+					GER = {
+						is_faction_leader = yes
+					}
+					ENG = {
+						is_faction_leader = no
+					}
+				}
+				leave_faction = yes
+				GER = {
+					add_to_faction = ENG
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_faction_leader = no
+					}
+					ENG = {
+						is_faction_leader = yes
+					}
+				}
+				dismantle_faction = yes
+				GER = {
+					leave_faction = yes
+					create_faction = EMI_UNION
+					add_to_faction = ENG
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_faction_leader = no
+					}
+					ENG = {
+						is_faction_leader = no
+					}
+				}
+				leave_faction = yes
+				GER = {
+					create_faction = EMI_UNION
+					add_to_faction = ENG
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_faction_leader = yes
+					}
+					ENG = {
+						is_faction_leader = yes
+					}
+				}
+				dismantle_faction = yes
+				GER = {
+					add_to_faction = ENG
+				}
+			}
+		}
+	}
+
+	option = {
+		name = kmm.60.b
+		ai_chance = {
+			base = 7
+		}
+		add_political_power = 100
+		diplomatic_relation = {
+			country = ENG
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+
+	option = {
+		name = kmm.60.c
+		ai_chance = {
+			base = 10
+		}
+		country_event = {
+			id = kmm.61 #unceremonious return
+			days = 7
+		}
+	}
+}
+
+country_event = { #you messed up, so close, so broken beyond mending
+	id = kmm.61
+	title = kmm.61.t
+	desc = kmm.61.d
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.61.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -75
+	}
+}
+
+country_event = { 
+	id = kmm.210
+	title = kmm.210.t
+	desc = kmm.210.d
+	picture = GFX_report_event_miho_invite
+
+	fire_only_once = yes
+	is_triggered_only = yes	
+
+	option = {
+		name = kmm.210.a
+		ai_chance = {
+			base = 10
+		}
+		GER = {
+			4 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			152 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			153 = {
+				if = {
+					limit = { is_owned_by = AUS }
+					add_core_of = GER
+				}
+			}
+			AUS = {
+				every_unit_leader = {
+					set_nationality = GER
+				}
+			}
+			annex_country = { target = AUS transfer_troops = yes }
+			add_political_power = 100
+			set_country_flag = AUS_annexed
+			add_war_support = 0.10
+			add_stability = 0.10
+		}
+	}
+	
+	option = {
+		name = kmm.210.b
+		ai_chance = {
+			base = 1
+		}
+	    add_stability = -0.05
+	    add_political_power = -75
+		AUS = { 
+	        create_country_leader = { 
+			    name = "Anzu Kodatani"
+			    desc = "POLITICS_ANZU_DESC"
+			    picture = "gfx/leaders/AUS/Portrait_AUS_Anzu1.dds"
+			    expire = "1965.1.1"
+			    ideology = german_idealism4
+			    traits = { }
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = kmm.211
+	title = kmm.211.t
+	desc = kmm.211.d
+	picture = GFX_report_event_retake_lostlands
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.211.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = { 
+	id = kmm.212
+	title = kmm.212.t
+	desc = kmm.212.d
+	picture = GFX_report_event_south_tyrol
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.212.a
+		ai_chance = {
+			base = 10
+		}
+		GER = { 
+			transfer_state = 188
+			add_state_core = 188
+		}
+	}
+
+	option = { 
+		name = kmm.212.b
+		ai_chance = {
+			base = 1
+		}
+		GER = { 
+		    create_wargoal = {
+			    type = take_state_focus
+			    target = ITA
+			    generator = { 188 }
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = kmm.213
+	title = kmm.213.t
+	desc = kmm.213.d
+	picture = GFX_report_event_peaceful_world
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.213.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = { 
+	id = kmm.214
+	title = kmm.214.t
+	desc = kmm.214.d
+	picture = GFX_report_event_league_senshado
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.214a
+		ai_chance = {
+			base = 10
+		}
+		GER = { add_to_faction = ROOT }
+	}
+
+	option = { 
+		name = kmm.214.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}

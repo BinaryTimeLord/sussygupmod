@@ -1,0 +1,121 @@
+﻿###Imperial Guard Divisions
+
+division_template = {
+	name = "Nishi Sensha Shidan"
+	division_names_group = CHT_NSD
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+	    engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	##### Imperial Guard #####
+
+	### Tokyo Corps ###
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1182
+		division_template = "Nishi Sensha Shidan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.91
+
+	}
+}

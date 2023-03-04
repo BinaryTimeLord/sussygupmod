@@ -1,0 +1,48 @@
+division_template = {
+	name = "Karelia revolt"
+	is_locked = no
+	division_names_group = FIN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+
+
+
+units = {
+	division = {
+		name = "I Karelia revolt"
+		location = 9176  
+		division_template = "Karelia revolt"
+	}
+	division = {
+		name = "II Karelia revolt"
+		location = 6210  
+		division_template = "Karelia revolt"
+	}
+	division = {
+		name = "III Karelia revolt"
+		location = 6156  
+		division_template = "Karelia revolt"
+	}
+	division = {
+		name = "IV Karelia revolt"
+		location = 9206  
+		division_template = "Karelia revolt"
+	}
+	division = {
+		name = "V Karelia revolt"
+		location = 9206  
+		division_template = "Karelia revolt"
+	}
+	division = {
+		name = "VI Karelia revolt"
+		location = 3060  
+		division_template = "Karelia revolt"
+	}
+	
+	
+}

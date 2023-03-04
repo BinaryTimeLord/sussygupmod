@@ -1,0 +1,86 @@
+﻿capital = 4
+
+oob = "AUS_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "AUS_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+		}
+	else = {
+		set_air_oob = "AUS_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+
+		}
+	}
+}
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	basic_train = 1
+}
+
+recruit_character = AUS_miho
+recruit_character = AUS_miho_nishizumi
+recruit_character = AUS_saori_takebe
+recruit_character = AUS_hana_isuzu
+recruit_character = AUS_yukari_akiyama
+recruit_character = AUS_mako_reizei
+recruit_character = AUS_anzu_kadotani
+recruit_character = AUS_momo_kawashima
+recruit_character = AUS_yuzu_koyama
+recruit_character = AUS_erwin
+recruit_character = AUS_oryou
+recruit_character = AUS_saemonza
+recruit_character = AUS_caesar
+recruit_character = AUS_azusa_sawa
+recruit_character = AUS_ayumi_yamagou
+recruit_character = AUS_aya_oono
+recruit_character = AUS_yuuki_utsugi
+recruit_character = AUS_karina_sakaguchi
+recruit_character = AUS_saki_maruyama
+recruit_character = AUS_noriko_isobe
+recruit_character = AUS_taeko_kondou
+recruit_character = AUS_shinobu_kawanishi
+recruit_character = AUS_akebi_sasaki
+recruit_character = AUS_midoriko_sono
+recruit_character = AUS_moyoko_gotou
+recruit_character = AUS_nozomi_konparu
+recruit_character = AUS_reira_nakajima
+recruit_character = AUS_keiko_hoshino
+recruit_character = AUS_maria_suzuki
+recruit_character = AUS_tsuchiya
+recruit_character = AUS_nekota
+recruit_character = AUS_piyotan
+recruit_character = AUS_momoga
+recruit_character = AUS_ogin
+recruit_character = AUS_murakami
+recruit_character = AUS_cutlass
+recruit_character = AUS_flint
+recruit_character = AUS_rum
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 48
+	fascism = 50
+	democratic = 1
+	communism = 1
+}
+
+set_stability = 0.50
