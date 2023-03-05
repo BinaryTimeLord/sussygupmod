@@ -688,9 +688,9 @@ bookmarks = {
 				FIN_mass_ski_equipment
 			}
 			focuses = {
-				FIN_soviet_compromise
-				FIN_germany_coop
-				FIN_strike_at_lenin_sity
+				FIN_white_snipers
+				FIN_flames_of_revolution
+				FIN_germany
 			}
 		}		
 		effect = {

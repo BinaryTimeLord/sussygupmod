@@ -87,15 +87,27 @@ add_ideas = {
 	add_command_power = 100
 	
 	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	complete_national_focus = FIN_protect_democraty
+	complete_national_focus = FIN_eastern_question
+	complete_national_focus = FIN_red_menace
+	complete_national_focus = FIN_equipment_reform
+	complete_national_focus = FIN_continue_war_preparation
+	complete_national_focus = FIN_protection
+	complete_national_focus = FIN_Finnish_sky
+	complete_national_focus = FIN_Finnish_fleet
+	complete_national_focus = FIN_norm_industry
+	complete_national_focus = FIN_Iron_Roads
+	complete_national_focus = FIN_use_invenstors
+	complete_national_focus = FIN_land_reform
+	complete_national_focus = FIN_industry_innovations
+	complete_national_focus = FIN_Petsamo_resourses
+	complete_national_focus = FIN_swedish
+	complete_national_focus = FIN_finnish_neutrality
+	complete_national_focus = FIN_Mannerheim_doctrine
+	complete_national_focus = FIN_germany
+	complete_national_focus = FIN_english
+	complete_national_focus = FIN_france
+
 	
 	oob = "FIN_1939"
 	if = {

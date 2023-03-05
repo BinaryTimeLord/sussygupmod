@@ -516,6 +516,21 @@ bookmarks = {
 				SWI_closer_ties_with_germany
 			}
 		}
+		"FIN"={
+			minor = yes
+			history = "FINLAND_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				sisu
+				FIN_white_guard
+				FIN_mass_ski_equipment
+			}
+			focuses = {
+				FIN_red_menace
+				FIN_war_on_independence
+				FIN_strike_at_lenin_sity
+			}
+		}		
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
