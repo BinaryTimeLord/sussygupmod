@@ -3971,6 +3971,9 @@ focus_tree = {
 		x = 29
 		y = 0
 		cost = 10
+		allow_branch = {
+			has_country_flag = deez
+		}
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -8423,7 +8426,7 @@ focus_tree = {
 		icon = GFX_goal_river_incident
 		x = 3
 		y = 0
-		cost = 20
+		cost = 0
 		mutually_exclusive = {
 			focus = GER_rhineland
 		}
@@ -8872,8 +8875,8 @@ focus_tree = {
 	focus = {
 		id = GER_inaugurate_the_republic 
 		icon = GFX_goal_kuroooaria
-		prerequisite = { focus = GER_establish_consituition }
-		x = 6
+		prerequisite = {  }
+		x = 10
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -8920,6 +8923,7 @@ focus_tree = {
 			NOT = { has_government = communism }
 			NOT = { is_in_faction_with = SOV }
 		}
+		
 		x = 0
 		y = 2
 		cost = 5
@@ -11716,7 +11720,12 @@ focus_tree = {
 		relative_position_id = GER_disarm_stepone
 		available = {
 			NOT = {
-				has_country_flag = GER_debt1
+				OR = {
+					has_idea = kmm_great_war_debt
+					has_idea = kmm_great_war_debt1
+					has_idea = kmm_great_war_debt2
+					has_idea = kmm_great_war_debt3
+				}
 			}
 		}
 		completion_reward = {
@@ -11808,7 +11817,12 @@ focus_tree = {
 		relative_position_id = GER_secret_rearmament
 		available = {
 			NOT = {
-				has_country_flag = GER_debt1
+				OR = {
+					has_idea = kmm_great_war_debt
+					has_idea = kmm_great_war_debt1
+					has_idea = kmm_great_war_debt2
+					has_idea = kmm_great_war_debt3
+				}
 			}
 		}
 		completion_reward = {
@@ -11866,6 +11880,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 1
+		allow_branch = {
+			has_country_flag = seefd
+		}
 		relative_position_id = GER_inaugurate_the_republic
 		available = { ##HAS EMI
 			has_country_flag = kmm_emi_pres
@@ -12182,6 +12199,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_inaugurate_the_republic
 		}
+		allow_branch = {
+			has_country_flag = seefd
+		}
 		mutually_exclusive = { focus = GER_victory_for_emi focus = GER_victory_for_miho }
 		x = 12
 		y = 1
@@ -12399,6 +12419,9 @@ focus_tree = {
 		icon = GFX_goal_victory_for_miho
 		prerequisite = {
 			focus = GER_inaugurate_the_republic
+		}
+		allow_branch = {
+			has_country_flag = seefd
 		}
 		mutually_exclusive = { focus = GER_victory_for_emi focus = GER_victory_for_mauko }
 		x = 6
@@ -12713,4 +12736,951 @@ focus_tree = {
 	        country_event = { id = kmm.213 }   
 		}
 	}
+	
+	##NEW FOCUSES
+	
+	
+	##ANCHLUSS HAPPENS AS SOON AS ELECTIONS HAPPENS##
+	
+	## ADD IDEA ON DEMOCRATIC VICTORY: DAMAGED REPUBLIC: -15% STABILITY, -15% WAR SUPPORT, -0.5 POLITICAL POWER, -10% TO ALL BUILDINGS ##
+	
+	## 3 BRANCHES ##
+	
+	## MIHO (MIDDLE GROUND) ##
+	
+	## SAORI (REFORMIST) ##
+	
+	## EMI (STATUS QUO) ## 
+	
+	
+	## MIHO PATH ##
+	focus = {
+		id = GER_miho_victory
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = -4
+		y = 1
+		
+		prerequisite = { focus = GER_inaugurate_the_republic }
+		mutually_exclusive = { focus = GER_saori_victory focus = GER_emi_victory }
+		
+		cost = 1
+		
+		completion_reward = {
+				add_stability = 0.05
+				
+		}
+	}
+	
+	focus = {
+		id = GER_repair_republic
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = -4
+		y = 2
+		
+		prerequisite = { focus = GER_miho_victory }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##EVENT
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = GER_a_gentle_touch
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic 
+		
+		x = -5
+		y = 3
+		
+		prerequisite = { focus = GER_repair_republic }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_our_future
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = -3
+		y = 3
+		
+		prerequisite = { focus = GER_repair_republic }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##IDEA: A BRIGHT FUTURE: +5% POLITICAL POWER GAIN, 5% STABILITY
+			
+		}
+	}
+	
+	## SAORI PATH (a funny my mod reference) ##
+	
+		#	░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄
+		#	░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄
+		#	░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█
+		#	░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░█
+		#	░▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░█
+		#	█▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒█
+		#	█▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█
+		#	░█▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█
+		#	░░█░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█
+		#	░░░█░░██░░▀█▄▄▄█▄▄█▄████░█
+		#	░░░░█░░░▀▀▄░█░░░█░███████░█
+		#	░░░░░▀▄░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█
+		#	░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░█
+		#	░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█
+		#	░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░█
+	
+	
+	focus = {
+		id = GER_saori_victory
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = GER_inaugurate_the_republic }
+		mutually_exclusive = { focus = GER_miho_victory focus = GER_emi_victory }
+		
+		cost = 1
+		
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = GER_revive_nationalism
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = GER_saori_victory }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##IDEA: +5% war support 0.25 Conscription
+		
+		}
+	}
+	
+	focus = { ##STARTS THE ANZAI STORY
+		id = GER_a_friend
+		##icon =
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = GER_saori_victory }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##EVENT
+		
+		}
+	}
+	
+	focus = {
+		id = GER_democratic_takebeism_ideals
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = GER_revive_nationalism focus = GER_a_friend }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	## EMI PATH ##
+	
+	focus = {
+		id = GER_emi_victory
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 4
+		y = 1
+		
+		prerequisite = { focus = GER_inaugurate_the_republic }
+		mutually_exclusive = { focus = GER_saori_victory focus = GER_miho_victory }
+		
+		cost = 1
+		
+		completion_reward = {
+			add_stability = 0.02
+			add_war_support = 0.02
+		}
+	}
+	
+	focus = {
+		id = GER_de_nishizmization
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 3
+		y = 2
+		
+		prerequisite = { focus = GER_emi_victory }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##IDEA: DENISHIZUMIZATION -0.05 FASCISM, +0.1 POLITICAL POWER GAIN
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_anti_corruption
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 5
+		y = 2
+		
+		prerequisite = { focus = GER_emi_victory }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##IDEA: +5% STABILITY, 15% LESS RESISTANCE GROWTH, +1% COMPLIANCE GAIN
+		
+		}
+	}
+	
+	focus = {
+		id = GER_forwards
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 4
+		y = 3
+		
+		prerequisite = { focus = GER_de_nishizmization }
+		prerequisite = { focus = GER_anti_corruption }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+			every_controlled_state = {
+				add_state_modifier = {
+					modifier = {
+						production_speed_buildings_factor = 0.05
+					}
+				}
+			}
+		}
+	}
+	
+	##NEXT PART##
+	
+	focus = {
+		id = GER_new_constitution
+		##icon = 
+		relative_position_id = GER_inaugurate_the_republic
+		
+		x = 0
+		y = 4
+		
+		prerequisite = { focus = GER_a_gentle_touch focus = GER_democratic_takebeism_ideals focus = GER_forwards }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = { ##IDEAS DEPENDING ON BRANCH
+			add_stability = 0.05
+		}
+	}
+	
+	##NORMAL FOCUSES
+	
+	##GLORY TO THE ALLIES
+	focus = {
+		id = GER_the_west
+		##icon = 
+		relative_position_id = GER_new_constitution
+		
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = GER_new_constitution }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##EVENT
+		
+		}
+	}
+	
+	focus = {
+		id = GER_negotiate_alliance
+		##icon = 
+		relative_position_id = GER_the_west
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_the_west }
+		mutually_exclusive = { focus = GER_our_own_way }
+		
+		cost = 1
+		
+		completion_reward = { ##JOIN ALLIES
+		
+		}
+	}
+	
+	focus = {
+		id = GER_polish_protection
+		##icon = 
+		relative_position_id = GER_the_west
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = GER_negotiate_alliance }
+		mutually_exclusive = {}
+		
+		cost = 4
+		
+		completion_reward = {
+			give_guarantee  = POL
+			
+			diplomatic_relation = {
+				country = POL
+				relation = non_aggression_pact
+					active = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_against_pravda
+		##icon = 
+		relative_position_id = GER_the_west
+		
+		x = -1
+		y = 3
+		
+		prerequisite = { focus = GER_polish_protection }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = { ##ADD ARMY IDEA TO ALL NATIONS IN ALLIES IDEA: ATTACK + DEFENSE AGAINST RUSSIA +10%, ADD WAR ECONOMY TO GERMANY
+		
+		}
+	}
+	
+	##ALONE WE STAND
+	focus = {
+		id = GER_our_own_way
+		##icon = 
+		relative_position_id = GER_the_west
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_the_west }
+		mutually_exclusive = { focus = GER_negotiate_alliance }
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_expand_fortlines
+		##icon = 
+		relative_position_id = GER_the_west
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = GER_our_own_way }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##ADDS DECISIONS TO BUILD FORTS
+		
+		}
+	}
+	
+	focus = {
+		id = GER_military_industry
+		##icon = 
+		relative_position_id = GER_the_west
+		
+		x = 1
+		y = 3
+		
+		prerequisite = { focus = GER_expand_fortlines }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_internal_security
+		##icon = 
+		relative_position_id = GER_new_constitution
+		
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = GER_new_constitution }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##MAKE SPY AGENCY IF NOT HAVE ONE OTHERWISE ADD 2 SPIES
+		
+		}
+	}
+	
+	focus = {
+		id = GER_repeal_fire_decree
+		##icon = 
+		relative_position_id = GER_internal_security
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_internal_security }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = GER_free_political_prisoners
+		##icon = 
+		relative_position_id = GER_internal_security
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_internal_security }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			
+			add_political_power = 25
+			add_manpower = 5000
+		}
+	}
+	
+	focus = {
+		id = GER_rearm_garrisons
+		##icon = 
+		relative_position_id = GER_internal_security
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = GER_repeal_fire_decree }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_road_building
+		##icon = 
+		relative_position_id = GER_internal_security
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = GER_free_political_prisoners }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = { ##IDEA: INFRASTRUCTURE AND SUPPLY BUILDING BUFFS
+		
+		}
+	}
+	
+	focus = {
+		id = GER_fund_police
+		##icon = 
+		relative_position_id = GER_internal_security
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = GER_road_building focus = GER_rearm_garrisons }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##IDEA LESS RESISTANCE, AND BETTER COMPLIANCE
+		
+		}
+	}
+	
+	
+	##SAORIS PART##
+	
+	focus = {
+		id = GER_reform_wave
+		##icon = 
+		relative_position_id = GER_new_constitution
+	
+		available = {
+			has_completed_focus = GER_saori_victory
+		}
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = GER_new_constitution }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_free_heathcare
+		##icon = 
+		relative_position_id = GER_reform_wave
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_reform_wave }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##IDEA
+		
+		}
+	}
+	
+	focus = {
+		id = GER_political_rights
+		##icon = 
+		relative_position_id = GER_reform_wave
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_reform_wave }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##REDUCE REPUBLIC DEBUFF
+		
+		}
+	}
+	
+	focus = {
+		id = GER_anzai_plan
+		##icon = 
+		relative_position_id = GER_reform_wave
+		
+		available = { ##ANZAI HAS COME 
+		
+		}
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = GER_reform_wave }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_liberalized_dicatorship
+		##icon = 
+		relative_position_id = GER_reform_wave
+		
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = GER_free_heathcare }
+		prerequisite = { focus = GER_political_rights }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = { ##CHANGE TO NEUTRALITY IDEOLOGY, BUT SAORI IN CHARGE, ALL DEMOCRATIC RESTRICTIONS EXCEPT WAR JUSTIFICATION
+		
+		}
+	}
+	
+	focus = {
+		id = GER_social_welfare
+		##icon = 
+		relative_position_id = GER_reform_wave
+		
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = GER_free_heathcare }
+		prerequisite = { focus = GER_political_rights }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	##MIHO PART##
+	
+	focus = {
+		id = GER_free_market
+		##icon = 
+		relative_position_id = GER_new_constitution
+		
+		available = {
+			has_completed_focus = GER_miho_victory
+		}
+		
+		x = -9
+		y = 2
+		
+		prerequisite = { focus = GER_new_constitution }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##MOVE A TRADE LAW UP AND CANT CHANGE IT, ADD IDEA: -5% CONSUMER GOODS AND 5% BUILD SPEED
+		
+		}
+	}
+	
+	focus = {
+		id = GER_liberalize_economy
+		##icon = 
+		relative_position_id = GER_free_market
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_free_market }
+		mutually_exclusive = {}
+		
+		cost = 4
+		
+		completion_reward = { ##ADD MIHO MINISTER (INDUSTIRAL EXPERT)
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+	
+	focus = {
+		id = GER_economy_experts
+		##icon = 
+		relative_position_id = GER_free_market
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_free_market }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { 
+		
+		}
+	}
+	
+	focus = {
+		id = GER_expand_civil_rights
+		##icon =
+		relative_position_id = GER_free_market
+		
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = GER_free_market }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##REDUCE REPUBLIC DEBUFF
+		
+		}
+	}
+	
+	focus = {
+		id = GER_stable_currency
+		##icon = 
+		relative_position_id = GER_free_market
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = GER_liberalize_economy }
+		prerequisite = { focus = GER_expand_civil_rights }
+		prerequisite = { focus = GER_economy_experts }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##IDEA
+		
+		}
+	}	
+	
+	##EMI PART##
+	
+	focus = {
+		id = GER_reach_out
+		##icon = 
+		relative_position_id = GER_new_constitution
+		
+		available = {
+			has_completed_focus = GER_emi_victory
+		}
+		
+		x = 9
+		y = 2
+		
+		prerequisite = { focus = GER_new_constitution }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##EVENT(S)
+		
+		}
+	}	
+	
+	focus = {
+		id = GER_protect_german_products
+		##icon = 
+		relative_position_id = GER_reach_out
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_reach_out }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##IDEA: 5% CONSUMER GOODS, +10% PRODUCTION CAP AND EFFICENTCY
+		
+		}
+	}
+	
+	focus  = {
+		id = GER_cooperative_diplomacy
+		##icon = 
+		relative_position_id = GER_reach_out
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_reach_out }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ##ADD OPINION OF NATIONS TO US
+			add_political_power = 25
+			
+		}
+	}
+	
+	focus = {
+		id = GER_political_connections
+		##icon = 
+		relative_position_id = GER_reach_out
+		
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = GER_reach_out }
+		mutually_exclusive = {}
+		
+		cost = 4
+		
+		completion_reward = { ##REDUCE REPUBLIC DEBUFF
+		
+		}
+	}
+	
+	focus = {
+		id = GER_consitutional_monarchy
+		##icon = 
+		relative_position_id = GER_reach_out
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = GER_protect_german_products }
+		prerequisite = { focus = GER_political_connections }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##IDEA
+		
+		}
+	}
+	
+	##NEXT PART##
+	
+	focus = {
+		id = GER_repaired_republic
+		##icon = 
+		relative_position_id = GER_new_constitution 
+		
+		x = 0
+		y = 5
+		
+		prerequisite = {
+			focus = GER_against_pravda
+			focus = GER_military_industry
+		}
+		
+		prerequisite = { focus = GER_fund_police }
+		
+		prerequisite = { 
+			focus = GER_stable_currency
+			focus = GER_liberalized_dicatorship
+			focus = GER_consitutional_monarchy
+		}
+		
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##REMOVE REPUBLIC DEBUFF
+		
+		}
+	}
+	
 }
