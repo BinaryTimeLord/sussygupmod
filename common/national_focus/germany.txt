@@ -13683,4 +13683,329 @@ focus_tree = {
 		}
 	}
 	
+	##FORIGN AFFAIRS
+	
+	focus = {
+		id = GER_soviet_threat
+		##icon = 
+		relative_position_id = GER_repaired_republic
+		
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = GER_repaired_republic }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = { ##ANTI COMETERN PACT PUT DEMOCRATIC
+		
+		}
+	}
+	
+	focus = {
+		id = GER_protect_baltics
+		##icon = 
+		relative_position_id = GER_soviet_threat
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_soviet_threat }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##PROTECT BALTICS
+		
+		}
+	}
+	
+	focus = {
+		id = GER_protect_poland
+		##icon = 
+		relative_position_id = GER_soviet_threat
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_soviet_threat }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ##PROTECT POLAND
+		
+		}
+	}
+	
+	focus = {
+		id = GER_rally_west
+		##icon = 
+		relative_position_id = GER_soviet_threat
+		
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = GER_protect_baltics focus = GER_protect_poland }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = { ## ADD MODIFIER AGAINST SOVIETS FOR ALL NON ALLIES DEMOCRATIC NATIONS IN THE WEST
+		
+		}
+	}
+	
+	focus = {
+		id = GER_military_buildup
+		##icon = 
+		relative_position_id = GER_soviet_threat
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = GER_protect_baltics focus = GER_protect_poland }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = { ##ADD 5 MILS AND EQUIPMENT
+		
+		}
+	}
+	
+	focus = {
+		id = GER_lend_lease
+		##icon = 
+		relative_position_id = GER_soviet_threat
+		
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = GER_protect_baltics focus = GER_protect_poland }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = { ##SEND EQUIPMENT TO THE EAST
+		
+		}
+	}
+	
+	focus = {
+		id = GER_final_showdown
+		##icon = 
+		relative_position_id = GER_soviet_threat
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = GER_military_buildup }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = { ##ADD BARB BONUS FOR 180 DAYS AND DELCARE WAR ON SOVIETS
+		
+		}
+	}
+	
+	focus = {
+		id = GER_eradicate_nishizumism
+		##icon = 
+		relative_position_id = GER_repaired_republic
+		
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = GER_repaired_republic }
+		
+		cost = 1
+		
+		completion_reward = { ##ANTI FASCISM PATH
+		
+		}
+	}
+	
+	focus = {
+		id = GER_anti_fasisct_prop
+		##icon = 
+		relative_position_id = GER_eradicate_nishizumism
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_eradicate_nishizumism }
+		mutually_exclusive = { focus = GER_prepare_italian_invasion }
+		
+		cost = 3
+		
+		completion_reward = { ##ADD PROPAGANDA IDEA TO ALL FASCIST NATIONS
+		
+		}
+	}
+	
+	focus = {
+		id = GER_prepare_coups
+		##icon =
+		relative_position_id = GER_eradicate_nishizumism
+		
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = GER_anti_fasisct_prop }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = { ## COUP FASCIST MAJOR NATIONS ##
+		
+		}
+	}
+
+	focus = {
+		id = GER_against_tyranny
+		##icon = 
+		relative_position_id = GER_eradicate_nishizumism
+		
+		x = -2
+		y = 3
+		
+		prerequisite = { focus = GER_prepare_coups }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = { ## WAR GOALS ON ALL FASCIST NATIONS ##
+		
+		}
+	}
+	
+	focus = {
+		id = GER_prepare_italian_invasion
+		##icon = 
+		relative_position_id = GER_eradicate_nishizumism 
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_eradicate_nishizumism }
+		mutually_exclusive = { focus = GER_anti_fasisct_prop }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_partition_italy
+		##icon = 
+		relative_position_id = GER_eradicate_nishizumism
+		
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = GER_prepare_italian_invasion }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = { ## PLAN PARITION OF ITALY WITH FRANCE AND YUGOSLAVIA ##
+		
+		}
+	}
+	
+	focus = {
+		id = GER_war_italy
+		##icon = 
+		relative_position_id = GER_eradicate_nishizumism 
+		
+		x = 2
+		y = 3
+		
+		prerequisite = { focus = GER_partition_italy }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_peace_our_time
+		##icon = 
+		relative_position_id = GER_eradicate_nishizumism
+		
+		x = 0
+		y = 4
+		
+		prerequisite = { focus = GER_eradicate_nishizumism }
+		prerequisite = { focus = GER_against_tyranny focus = GER_war_italy }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_unify_germans
+		##icon = 
+		relative_position_id = GER_repaired_republic
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = GER_repaired_republic }
+		
+		cost = 1
+		
+		completion_reward = { ##PEACEFUL UNIFICATION
+		
+		}
+		
+	}
+	
+	focus = {
+		id = GER_sudentendland_ask
+		##icon = 
+		relative_position_id = GER_unify_germans
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = GER_unify_germans }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_danzig_for_industy
+		##icon = 
+		relative_position_id = GER_unify_germans
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GER_unify_germans }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
 }
