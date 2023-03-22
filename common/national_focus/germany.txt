@@ -4472,6 +4472,7 @@ focus_tree = {
 					owns_state = 4
 					owns_state = 152
 					owns_state = 153
+					owns_state = 848 # Austria has 4 core states
 				}
 			}
 		}
@@ -4493,6 +4494,7 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848 # Austria has 4 core states
 						}
 					}
 				}
@@ -4511,6 +4513,7 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848 # Austria has 4 core states
 						}
 					}
 				}
@@ -4588,6 +4591,21 @@ focus_tree = {
 					}
 				}
 				add_state_core = 153
+			}
+			if = {
+				limit = {
+					153 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848 # Austria has 4 core states
 			}
 		}
 	}
@@ -9061,6 +9079,7 @@ focus_tree = {
 					owns_state = 4
 					owns_state = 152
 					owns_state = 153
+					owns_state = 848 # Austria has 4 core states
 				}
 			}
 		}
@@ -9075,6 +9094,7 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848 # Austria has 4 core states
 						}
 					}
 				}
@@ -9093,6 +9113,7 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848 # Austria has 4 core states
 						}
 					}
 				}
@@ -9171,6 +9192,21 @@ focus_tree = {
 					}
 				}
 				add_state_core = 153
+			}
+			if = {
+				limit = {
+					153 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848 # Austria has 4 core states
 			}
 
 			if = {
