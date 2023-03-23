@@ -7,5 +7,5 @@ Version ____
 # Balancing
 
 
-# Bug Fixes
-- Fixed an issue where Kuromine was only coring three of the four states of Ooarai via the Anschluss
+# Bug Fixes and Minor Changes
+- Updated code for Anschluss of Ooarai
