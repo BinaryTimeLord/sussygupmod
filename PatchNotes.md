@@ -2,7 +2,7 @@
 Version ____
 
 # New Content
-
+- Added additional branches democratic and communist paths for Kuromine
 
 # Balancing
 
