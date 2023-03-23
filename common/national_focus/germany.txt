@@ -8928,6 +8928,7 @@ focus_tree = {
 					}
 				}
 			}
+			add_ideas = GER_damaged_republic_1
 		}
 	}
 	
@@ -11716,7 +11717,7 @@ focus_tree = {
 	focus = { ##STEP ONE 
 		id = GER_disarm_stepone
 		icon = GFX_goal_disarm_stepone
-		prerequisite = { focus = GER_coorinate_the_kaiserin focus = GER_inaugurate_the_republic }
+		prerequisite = { focus = GER_inaugurate_the_republic }
 		mutually_exclusive = { focus = GER_secret_rearmament }
 		x = 1
 		y = 2
@@ -11813,7 +11814,7 @@ focus_tree = {
 	focus = { 	
 		id = GER_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = GER_coorinate_the_kaiserin focus = GER_inaugurate_the_republic }
+		prerequisite = { focus = GER_coorinate_the_kaiserin }
 		mutually_exclusive = { focus = GER_disarm_stepone }
 		x = -1
 		y = 2
@@ -12793,29 +12794,28 @@ focus_tree = {
 	focus = {
 		id = GER_miho_victory
 		##icon = 
-		relative_position_id = GER_inaugurate_the_republic
+		relative_position_id = GER_victory_for_miho
 		
-		x = -4
+		x = -3
 		y = 1
 		
-		prerequisite = { focus = GER_inaugurate_the_republic }
-		mutually_exclusive = { focus = GER_saori_victory focus = GER_emi_victory }
+		prerequisite = { focus = GER_victory_for_miho }
+		#mutually_exclusive = { focus = GER_saori_victory focus = GER_emi_victory }
 		
 		cost = 1
 		
 		completion_reward = {
-				add_stability = 0.05
-				
+			add_stability = 0.05
 		}
 	}
 	
 	focus = {
 		id = GER_repair_republic
 		##icon = 
-		relative_position_id = GER_inaugurate_the_republic
+		relative_position_id = GER_miho_victory
 		
-		x = -4
-		y = 2
+		x = 0
+		y = 1
 		
 		prerequisite = { focus = GER_miho_victory }
 		mutually_exclusive = {}
@@ -12824,16 +12824,21 @@ focus_tree = {
 		
 		completion_reward = { ##EVENT
 			add_political_power = 75
+			# Reduce the effect of damaged republic
+			swap_ideas = {
+				remove_idea = GER_damaged_republic_1
+				add_idea = GER_damaged_republic_2
+			}
 		}
 	}
 	
 	focus = {
 		id = GER_a_gentle_touch
 		##icon = 
-		relative_position_id = GER_inaugurate_the_republic 
+		relative_position_id = GER_repair_republic 
 		
-		x = -5
-		y = 3
+		x = 0
+		y = 1
 		
 		prerequisite = { focus = GER_repair_republic }
 		mutually_exclusive = {}
@@ -12841,25 +12846,34 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = {
-		
+			# Reduce effects of damaged republic
+			swap_ideas = {
+				remove_idea = GER_damaged_republic_2
+				add_idea = GER_damaged_republic_3
+			}
 		}
 	}
 	
 	focus = {
 		id = GER_our_future
 		##icon = 
-		relative_position_id = GER_inaugurate_the_republic
+		relative_position_id = GER_a_gentle_touch
 		
-		x = -3
-		y = 3
+		x = 0
+		y = 1
 		
-		prerequisite = { focus = GER_repair_republic }
+		prerequisite = { focus = GER_a_gentle_touch }
 		mutually_exclusive = {}
 		
 		cost = 2
 		
-		completion_reward = { ##IDEA: A BRIGHT FUTURE: +5% POLITICAL POWER GAIN, 5% STABILITY
-			
+		completion_reward = { 
+			# Remove damaged republic
+			##IDEA: A BRIGHT FUTURE: +5% POLITICAL POWER GAIN, 5% STABILITY	
+			swap_ideas = {
+				remove_idea = GER_damaged_republic_3
+				add_idea = GER_bright_future
+			}
 		}
 	}
 	
