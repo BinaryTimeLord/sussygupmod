@@ -769,6 +769,15 @@
  cht2.6.b: "Reject."
  CHT_KURO_AXIS: "Axis" # Generic
  
+ ##DEMOCRATIC GERMANY##
+ kmm.215.t:0 "Miho's Greatest Challange"
+ kmm.215.d:0 "It takes a great deal of courage to stand against your family, it takes even more to publicly denounce your families actions, but Miho had such strength as she appears before the Kuromorimine people. \n \nWhile many of her friends stood besides her as she made her speech she stuttered, and spoke with tears in her eyes as she spoke the bitter words to the world, condemning her family’s horrid actions against not just to its own, but also for their plans for the future. \n \nShe spoke what felt to her like days but only lasted 30 minutes by the end of the transmission she broke down into tears with the small step to rehabilitating Kuromorimine into a more moral school."
+ kmm.215.a:0 "The Hardest Decision"
+ 
+ kmm.216.t:0 "Operation Platzwart"
+ kmm.216.d:0 "With the civil war now over, we must now turn their attention to dealing with the many groups that still hold loyalty to the Nishizumi regime. \n \nClearing them out will require some unsavoury tactics to ensure that they don’t reorganize themselves, but in time these radicals will be brought to justice and Kuromorimine will once again know peace. \n \nFor the next few days and weeks mass police raids and arrests will need to take place to stop any resurgent nishizumi force from plunging our nation back into chaos."
+ kmm.216.a:0 "Wipe this Stain from our Nation!"
+ 
  #####################
  ### NEW DEICSIONS ###
  #####################
@@ -1655,3 +1664,33 @@
  RULE_OPTION_CIVIL_WAR_FIN_AI_DESC:0 ""
  RULE_OPTION_FASCISM:0 "Facism"
  RULE_OPTION_FASCISM_FIN_AI_DESC:0 ""
+ 
+ ##DEMOCRATIC GERMANY##
+ 
+GER_TAKEBEISM_LONG:0 "Democratic Takebeism Party"
+GER_TAKEBEISM:0 "DTP"
+ 
+ GER_miho_victory:0 "Miho's Victory"
+ GER_miho_victory_desc:0 ""
+ GER_repair_republic:0 "Family Choices"
+ GER_repair_republic_desc:0 ""
+ GER_a_gentle_touch:0 "Operation Platzwart"
+ GER_a_gentle_touch_desc:0 ""
+ GER_our_future:0 "Our Future"
+ GER_our_future_desc:0 ""
+ GER_saori_victory:0 "Saori's Victory"
+ GER_saori_victory_desc:0 ""
+ GER_revive_nationalism:0 "Revive Nationalism"
+ GER_revive_nationalism_desc:0 ""
+ GER_a_friend:0 "A Friend in Anzio"
+ GER_a_friend_desc:0 ""
+ GER_democratic_takebeism_ideals:0 "Democratic Takebeism"
+ GER_democratic_takebeism_ideals_desc:0 ""
+ GER_emi_victory:0 "Emi's Victory"
+ GER_emi_victory_desc:0 ""
+ GER_de_nishizumization:0 "De-Nishizumization"
+ GER_de_nishizumization_desc:0 ""
+ GER_anti_corruption:0 "Anti Corruption Policies"
+ GER_anti_corruption_desc:0 ""
+ GER_forwards:0 "Forwards!"
+ GER_forwards_desc:0 ""
