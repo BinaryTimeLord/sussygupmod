@@ -1728,6 +1728,70 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		
+		GER_revived_nationalism = {
+			name = GER_revived_nationalism
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				##IDEA: +5% war support 0.25% Conscription
+				add_war_support = 0.05
+			    conscription = 0.005 # Supposed to be .25%, but HOI4 only allows 3 decimals
+			}
+		}
+		
+		GER_denishizumization = {
+			name = GER_denishizumization
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				##IDEA: DENISHIZUMIZATION -0.05 FASCISM, +0.1 POLITICAL POWER GAIN
+				fascism_drift = -0.05
+			    political_power_gain = 0.1
+			}
+		}
+		
+		GER_anti_corruption_campaign = {
+			name = GER_anti_corruption_campaign
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				##IDEA: +5% STABILITY, 15% LESS RESISTANCE GROWTH, +1% COMPLIANCE GAIN
+				stability_factor = 0.05
+			    resistance_growth = -0.15
+				compliance_growth = 0.01
+			}
+		}
 	}
 
 	# TECHNOLOGY
