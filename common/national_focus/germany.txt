@@ -12776,9 +12776,6 @@ focus_tree = {
 	
 	##NEW FOCUSES
 	
-	
-	##ANCHLUSS HAPPENS AS SOON AS ELECTIONS HAPPENS##
-	
 	## ADD IDEA ON DEMOCRATIC VICTORY: DAMAGED REPUBLIC: -15% STABILITY, -15% WAR SUPPORT, -0.5 POLITICAL POWER, -10% TO ALL BUILDINGS ##
 	
 	## 3 BRANCHES ##
@@ -12929,7 +12926,7 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = { ##IDEA: +5% war support 0.25 Conscription
-		
+			add_ideas = GER_revived_nationalism
 		}
 	}
 	
@@ -13008,6 +13005,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = -1
 			}
+			add_ideas = GER_denishizumization
 		}
 	}
 	
@@ -13025,7 +13023,7 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = { ##IDEA: +5% STABILITY, 15% LESS RESISTANCE GROWTH, +1% COMPLIANCE GAIN
-		
+			add_ideas = GER_anti_corruption_campaign
 		}
 	}
 	
