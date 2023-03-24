@@ -3971,9 +3971,9 @@ focus_tree = {
 		x = 29
 		y = 0
 		cost = 10
-		allow_branch = {
-			has_country_flag = deez
-		}
+		#allow_branch = { ## This is for debugging
+		#	has_country_flag = deez
+		#}
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -8893,7 +8893,7 @@ focus_tree = {
 	focus = {
 		id = GER_inaugurate_the_republic 
 		icon = GFX_goal_kuroooaria
-		prerequisite = {  }
+		prerequisite = { focus = GER_establish_consituition }
 		x = 10
 		y = 1
 		cost = 10
@@ -12791,9 +12791,9 @@ focus_tree = {
 	focus = {
 		id = GER_miho_victory
 		##icon = 
-		relative_position_id = GER_victory_for_miho
+		relative_position_id = GER_inaugurate_the_republic
 		
-		x = -3
+		x = -4
 		y = 1
 		
 		prerequisite = { focus = GER_victory_for_miho }
