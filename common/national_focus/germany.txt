@@ -3971,9 +3971,9 @@ focus_tree = {
 		x = 29
 		y = 0
 		cost = 10
-		#allow_branch = { ## This is for debugging
-		#	has_country_flag = deez
-		#}
+		allow_branch = { ## This is for debugging ## STOP TOUCHING THIS TILL RELEASE ##
+			has_country_flag = deez
+		}
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -8893,7 +8893,7 @@ focus_tree = {
 	focus = {
 		id = GER_inaugurate_the_republic 
 		icon = GFX_goal_kuroooaria
-		prerequisite = { focus = GER_establish_consituition }
+		##prerequisite = { focus = GER_establish_consituition }
 		x = 10
 		y = 1
 		cost = 10
@@ -8928,7 +8928,10 @@ focus_tree = {
 					}
 				}
 			}
-			add_ideas = GER_damaged_republic_1
+			
+			hidden_effect = {
+				add_ideas = GER_damaged_republic_1
+			}
 		}
 	}
 	
@@ -12796,8 +12799,8 @@ focus_tree = {
 		x = -4
 		y = 1
 		
-		prerequisite = { focus = GER_victory_for_miho }
-		#mutually_exclusive = { focus = GER_saori_victory focus = GER_emi_victory }
+		prerequisite = { focus = GER_inaugurate_the_republic }
+		mutually_exclusive = { focus = GER_saori_victory focus = GER_emi_victory }
 		
 		cost = 1
 		
@@ -12821,10 +12824,9 @@ focus_tree = {
 		
 		completion_reward = { ##EVENT
 			add_political_power = 75
-			# Reduce the effect of damaged republic
-			swap_ideas = {
-				remove_idea = GER_damaged_republic_1
-				add_idea = GER_damaged_republic_2
+			country_event = {
+				id = kmm.215
+				days = 5
 			}
 		}
 	}
@@ -12834,7 +12836,7 @@ focus_tree = {
 		##icon = 
 		relative_position_id = GER_repair_republic 
 		
-		x = 0
+		x = -1
 		y = 1
 		
 		prerequisite = { focus = GER_repair_republic }
@@ -12843,10 +12845,9 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = {
-			# Reduce effects of damaged republic
-			swap_ideas = {
-				remove_idea = GER_damaged_republic_2
-				add_idea = GER_damaged_republic_3
+			country_event = {
+				id = kmm.216
+				days = 5
 			}
 		}
 	}
@@ -12854,23 +12855,20 @@ focus_tree = {
 	focus = {
 		id = GER_our_future
 		##icon = 
-		relative_position_id = GER_a_gentle_touch
+		relative_position_id = GER_repair_republic
 		
-		x = 0
+		x = 1
 		y = 1
 		
-		prerequisite = { focus = GER_a_gentle_touch }
+		prerequisite = { focus = GER_repair_republic }
 		mutually_exclusive = {}
 		
 		cost = 2
 		
 		completion_reward = { 
-			# Remove damaged republic
 			##IDEA: A BRIGHT FUTURE: +5% POLITICAL POWER GAIN, 5% STABILITY	
-			swap_ideas = {
-				remove_idea = GER_damaged_republic_3
-				add_idea = GER_bright_future
-			}
+	
+			add_ideas = GER_bright_future
 		}
 	}
 	
@@ -12962,7 +12960,13 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			add_ideas = GER_takebeism
+			
+				set_party_name = { 
+					ideology = neutrality
+					long_name = GER_TAKEBEISM_LONG
+					name = GER_TAKEBEISM
+					}
 		}
 	}
 	
@@ -13003,9 +13007,13 @@ focus_tree = {
 		completion_reward = { ##IDEA: DENISHIZUMIZATION -0.05 FASCISM, +0.1 POLITICAL POWER GAIN
 			add_popularity = {
 				ideology = fascism
-				popularity = -1
+				popularity = -0.35
 			}
-			add_ideas = GER_denishizumization
+			
+			add_timed_idea = {
+				idea = GER_denishizumization1
+				days = 365
+			}
 		}
 	}
 	
@@ -13062,13 +13070,18 @@ focus_tree = {
 		x = 0
 		y = 4
 		
-		prerequisite = { focus = GER_a_gentle_touch focus = GER_democratic_takebeism_ideals focus = GER_forwards }
+		prerequisite = { focus = GER_a_gentle_touch focus = GER_our_future focus = GER_democratic_takebeism_ideals focus = GER_forwards }
 		mutually_exclusive = {}
 		
 		cost = 1
 		
 		completion_reward = { ##IDEAS DEPENDING ON BRANCH
 			add_stability = 0.05
+			
+			swap_ideas = {
+				remove_idea = GER_damaged_republic_1
+				add_idea = GER_damaged_republic_2
+			}
 		}
 	}
 	
@@ -13727,7 +13740,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##REMOVE REPUBLIC DEBUFF
-		
+			remove_ideas = GER_damaged_republic_2
 		}
 	}
 	
