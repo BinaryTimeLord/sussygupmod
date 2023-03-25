@@ -837,6 +837,16 @@
  ### CHIHATAN PACK ###
 
  ##JAPANESE, MENGKUKUO, MANCHURIAN FOCUSES
+ JAP_reignite_the_chinese_civil_war:0 "Reignite the Chinese Civil War"
+ JAP_reignite_the_chinese_civil_war_desc:0 "For too long, the nationalists and other reactionary forces have stood in the way of the Chinese people's liberation!"   
+ JAP_strike_the_old_oppressors:0 "Strike the Old Oppressors"
+ JAP_strike_the_old_oppressors_desc:0 "Saunders held us down for too long with their capitalist and imperialist tyranny; we can not allow this to happen again. We must end this once and for this all!"
+ JAP_liberate_korea:0 "Liberate Korea"
+ JAP_liberate_korea_desc:0 "For too long, the Korean people have suffered under capitalist and imperialist rule; it is our right to free them from this tyranny!"
+ JAP_soviet_technology_sharing:0 "Pravda-Chihatan Technological Exchange"
+ JAP_soviet_technology_sharing_desc:0 "If we are to stay united, we must share our weapons research to deter all threats against us both."
+ JAP_smash_the_imperialists:0 "Smash the Imperialists"
+ JAP_smash_the_imperialists_desc:0 "Using the experience of some of the defectors, we should finally be able to pierce the imperialist lines and mark the triumph of the revolution!"
  JAP_placate_the_extremeists: "Placate the Extremists"
  JAP_placate_the_extremeists_desc: "We must put in place Tamaki Tamada and other so called 'extremists' to prevent them from dousing more gasoline to our already burning structure. One step at a time."
  JAP_civilian_planning: "Civilian Planning"

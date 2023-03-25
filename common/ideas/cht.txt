@@ -1338,23 +1338,28 @@ ideas = {
 				production_speed_dockyard_factor = 0.15
 			}
 		}
-		cht_smash_the_imperialists_idea = {
-			picture = FRA_scw_intervention_republicans_focus
-			#generic_infantry_bonus
+		cht_imperialist = {
+		
 			allowed = {
-				original_tag = JAP
-				has_government = communism
+				original_tag = GER
 			}
-
+		
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
-
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.05
+		
+			picture = spr_crush_the_revolution
+		
+			removal_cost = -1
+		
+			modifier = {
+				
+				fascism_drift = -0.05
+				
 			}
+			
+			
+			
 		}
 	}
 }
