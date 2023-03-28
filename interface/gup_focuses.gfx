@@ -11380,7 +11380,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_JAP_public_works_shine"
-		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_public_works_.dds"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_public_works.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_public_works.dds"
@@ -11417,7 +11417,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_JAP_rebuild_the_civil_service_shine"
-		texturefile = "gfx/interface/goals/Chi-Ha-Tan/.dds"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_rebuild_the_civil_service.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_rebuild_the_civil_service.dds"
@@ -11693,6 +11693,191 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_liberate_korea.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_indian_liberation_army"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_indian_liberation_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_indian_liberation_army_shine"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_indian_liberation_army.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_indian_liberation_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_indian_liberation_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_expand_the_alliance"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_expand_the_alliance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_expand_the_alliance_shine"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_expand_the_alliance.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_expand_the_alliance.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_expand_the_alliance.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_trans_pacific_alliance"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_trans_pacific_alliance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_trans_pacific_alliance_shine"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_trans_pacific_alliance.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_trans_pacific_alliance.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_trans_pacific_alliance.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_finance_the_naval_arsenals"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_finance_the_naval_arsenals.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_finance_the_naval_arsenals_shine"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_finance_the_naval_arsenals.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_finance_the_naval_arsenals.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_finance_the_naval_arsenals.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_crush_chinese_communists"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_crush_chinese_communists.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_JAP_crush_chinese_communists_shine"
+		texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_crush_chinese_communists.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_crush_chinese_communists.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_crush_chinese_communists.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

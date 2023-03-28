@@ -120,7 +120,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
+			legacy_id=1703
 		}
 	}
 	JAP_kubota={
@@ -200,7 +200,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=1702
 		}
 	}
 	JAP_nagura={
