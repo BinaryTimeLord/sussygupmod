@@ -13719,7 +13719,7 @@ focus_tree = {
 		##icon = 
 		relative_position_id = GER_new_constitution 
 		
-		x = 0
+		x = -6
 		y = 5
 		
 		prerequisite = {
@@ -13735,7 +13735,7 @@ focus_tree = {
 			focus = GER_consitutional_monarchy
 		}
 		
-		mutually_exclusive = {}
+		mutually_exclusive = { focus = GER_european_union }
 		
 		cost = 5
 		
@@ -14066,6 +14066,447 @@ focus_tree = {
 		
 		completion_reward = {
 		
+		}
+	}
+	
+	#EUROPEAN UNION 
+	
+		focus = {
+		id = GER_european_union
+		relative_position_id = GER_new_constitution
+		prerequisite = {
+			focus = GER_against_pravda
+			focus = GER_military_industry
+		}
+		
+		prerequisite = { focus = GER_fund_police }
+		
+		prerequisite = { 
+			focus = GER_stable_currency
+			focus = GER_liberalized_dicatorship
+			focus = GER_consitutional_monarchy
+		}
+		mutually_exclusive = { focus = GER_repair_republic }
+		x = 6
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_europe
+		}
+	}
+	
+		focus = {
+		id = GER_invite_benelux
+		relative_position_id = GER_european_union
+		prerequisite = { focus = GER_european_union}
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			BEL = { country_event = { id = kmm.97 } }
+			HOL = { country_event = { id = kmm.97 } }
+			LUX = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+		focus = {
+		id = GER_invite_france
+		relative_position_id = GER_invite_benelux
+		prerequisite = { focus = GER_invite_benelux}
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			FRA = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_iberia
+		relative_position_id = GER_invite_benelux
+		prerequisite = { focus = GER_invite_france}
+		prerequisite = { focus = GER_invite_switzerland }
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			SPR = { country_event = { id = kmm.97 } }
+			POR = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_switzerland
+		relative_position_id = GER_invite_benelux
+		prerequisite = { focus = GER_invite_benelux}
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			SWI = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_british_isles
+		relative_position_id = GER_invite_benelux
+		prerequisite = { focus = GER_invite_iberia}
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			ENG = { country_event = { id = kmm.97 } }
+			IRE = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_anzio1
+		relative_position_id = GER_invite_benelux
+		prerequisite = { focus = GER_invite_british_isles}
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			ITA = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_poland
+		relative_position_id = GER_european_union
+		prerequisite = { focus = GER_european_union}
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			POL= { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_baltics
+		relative_position_id = GER_invite_poland
+		prerequisite = { focus = GER_invite_poland}
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			EST = { country_event = { id = kmm.97 } }
+			LAT = { country_event = { id = kmm.97 } }
+			LIT = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_czech
+		relative_position_id = GER_invite_poland
+		prerequisite = { focus = GER_invite_poland}
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			CZE = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_romania
+		relative_position_id = GER_invite_poland
+		prerequisite = { focus = GER_invite_baltics }
+		prerequisite = { focus = GER_invite_czech}
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			ROM = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_balkans
+		relative_position_id = GER_invite_poland
+		prerequisite = { focus = GER_invite_romania }
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			AUS = { country_event = { id = kmm.97 } }
+			HUN = { country_event = { id = kmm.97 } }
+			YUG = { country_event = { id = kmm.97 } }
+			ALB = { country_event = { id = kmm.97 } }
+			BUL = { country_event = { id = kmm.97 } }
+			GRE = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	focus = {
+		id = GER_invite_northern_gang
+		relative_position_id = GER_invite_poland
+		prerequisite = { focus = GER_invite_balkans }
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			DEN = { country_event = { id = kmm.97 } }
+			NOR = { country_event = { id = kmm.97 } }
+			SWE = { country_event = { id = kmm.97 } }
+			FIN = { country_event = { id = kmm.97 } }
+		}
+	}
+	
+	##UNIFICATION OF EUROPE 
+	
+	##REFERENCE EaW River Republic CODE FOR THIS BRANCH
+	
+	focus = {
+		id = GER_adopt_euro
+		relative_position_id = GER_european_union
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		prerequisite = { focus = GER_invite_northern_gang }
+		prerequisite = { focus = GER_invite_anzio1 }
+		completion_reward = {
+			add_ideas = kmm_euro
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			add_ideas = kmm_euro
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_open_borders
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_adopt_euro }
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			give_military_access = GER
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_free_movement
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_open_borders }
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_free_movement
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			add_ideas = kmm_free_movement
+		}
+		}
+	}
+	
+	focus = {
+		id = GER_economic_collab
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_adopt_euro }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+
+			remove_ideas = kmm_euro
+			add_ideas = kmm_economic_collab 
+			
+			
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+
+			remove_ideas = kmm_euro
+			add_ideas = kmm_economic_collab 
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_centeral_bank
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_economic_collab}
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			remove_ideas =  kmm_economic_collab
+			add_ideas = kmm_central_bank 
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+
+			remove_ideas= kmm_economic_collab
+			add_ideas = kmm_central_bank
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_ethics_group
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_free_movement}
+		prerequisite = { focus = GER_centeral_bank}
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_ethics_group
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+
+			add_ideas = kmm_ethics_group
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_centeral_parlament
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_ethics_group }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_central_parlament
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			
+			add_ideas = kmm_central_parlament
+			
+			
+		}
+		}
+	}
+	
+	focus = {
+		id = GER_united_europe 
+		relative_position_id = GER_adopt_euro
+		prerequisite = { focus = GER_centeral_parlament}
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+			add_ideas = kmm_united_europe
+			GER = { country_event = { id = kmm.98 } }
 		}
 	}
 	

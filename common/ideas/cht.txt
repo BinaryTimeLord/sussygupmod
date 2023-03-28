@@ -1338,5 +1338,28 @@ ideas = {
 				production_speed_dockyard_factor = 0.15
 			}
 		}
+		cht_imperialist = {
+		
+			allowed = {
+				original_tag = GER
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+		
+			picture = spr_crush_the_revolution
+		
+			removal_cost = -1
+		
+			modifier = {
+				
+				fascism_drift = -0.05
+				
+			}
+			
+			
+			
+		}
 	}
 }
