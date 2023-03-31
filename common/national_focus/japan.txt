@@ -21,14 +21,14 @@
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-            has_country_flag = unthinkable_option
+            has_country_flag = cht_unthinkable_option
 		}
 
 		bypass = {
@@ -6720,18 +6720,9 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_relation_modifier = {
-				target = TAN
-				modifier = JAP_pro_mongol_propaganda
-			}
-			add_relation_modifier = {
-				target = MON
-				modifier = JAP_pro_mongol_propaganda
-			}
-			add_relation_modifier = {
-				target = MEN
-				modifier = JAP_pro_mongol_propaganda
-			}
+            add_opinion_modifier = { target = TAN modifier = medium_increase }
+            add_opinion_modifier = { target = MEN modifier = medium_increase }
+			add_opinion_modifier = { target = MON modifier = medium_increase }
 		}
 	}
 
@@ -8673,14 +8664,14 @@
 		y = 0
 		relative_position_id = JAP_support_the_kodoha_faction
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
 		}
 
 		available = {
-
+           has_country_flag = cht_strengthen_government
 		}
 
 		bypass = {
@@ -8695,19 +8686,6 @@
 		completion_reward = {
 			add_political_power = 120
 			add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = kijuro_shidehara
-			hidden_effect = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					mark_focus_tree_layout_dirty = yes
-				}
-			}
 		}
 	}
 
@@ -8965,6 +8943,14 @@
 			MAN = {
 				add_ideas = MAN_militarism #TODO_WTT_CD consider moving to MAN idea file
 			}
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.3
+            }
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
 		}
 	}
 
@@ -9222,9 +9208,8 @@
 			has_capitulated = no
 		}
 		completion_reward = {
-			add_political_power = 50
-			unlock_decision_category_tooltip = JAP_alliance_expansion_plan	
-			news_event = {id = r56.news_event.31 hours = 6 }									
+			add_political_power = 50	
+			news_event = {id = cht_news.3 hours = 6 }									
 		}
 		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
 	}
@@ -9233,8 +9218,8 @@
 		id = JAP_finance_the_naval_arsenals
 		icon = GFX_goal_JAP_finance_the_naval_arsenals
 		prerequisite = { focus = JAP_west_pacific_treaty_organization }
-		x = 0
-		y = 1
+		x = -1
+		y = 2
 		relative_position_id = JAP_west_pacific_treaty_organization
 
 		cost = 10

@@ -431,3 +431,18 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = cht_news.3
+	title = cht_news.3.t
+	desc = cht_news.3.desc
+	picture = GFX_news_event_indochina_accepted
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = cht_news.3.a
+	}
+}
