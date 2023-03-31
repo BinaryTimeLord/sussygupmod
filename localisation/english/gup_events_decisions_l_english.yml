@@ -751,6 +751,10 @@
  cht_news.2.d: "They have only awoken a sleeping giant."
  cht_news.2.e: "A Day of Infamy"
 
+ cht_news.3.t.:0 "[JAP.getAdjective] Diplomatic Mission Opens Foreign Alliance Negotiations"
+ cht_news.3.desc:0 "\nOur intelligence reports an increased activity of [JAP.getAdjective] Foreign Affairs Ministery with their diplomats rising to other countries in what can be seen as an effort to establish friendly relations with some of their potential allies. \n\nHowever, it remains unknown whether those negotiations will be fruitful or not, yet we need to be aware of a developing situation and expect the worst outcome for ourselves."
+ cht_news.3.a:0 "We should stay vigilant"
+
  #CHI-HA-TAN JOINS AXIS
  cht2.3.t: "[JAP.GetName] seeks an/a [GER.GetFactionName] alliance"
  cht2.3.desc: "[JAP.GetLeader] has sent a request to join our faction. A recommendedation that they would like to backstab Pravda from Siberia and that we would attack them whenever they deem fit. \n\nPreparations are said to be underway for the attack. Are we prepared to do this? Better yet, Should we risk such a thing?"
@@ -818,6 +822,8 @@
  february_26_desc: "A plot has now been circulating of a plan of Tamaki Tamada to overthrow Fukuda's stand in the academy. With her pressing insistence on sticking with the olden doctrine, Tamada is now pushing on harm's way for something that could result in to a mess. \n\nWe should act accordingly to prevent that. Choose Wisely."
  protect_fukuda: "Protect Fukuda"
  protect_fukuda_desc: "We must protect Fukuda at all costs. Her precious mind and thought has given us a new hope for us to change. Tamada should have no time to meddle with academical affairs."
+ unthinkable_option: "Unthinkable Option"
+ strengthen_government: "Support Democracy"
  TAMADA_VICTORY: "§RDoing nothing will let Tamada pursue her plan!§!"
  FUKUDA_VICTORY: "§GProtecting Fukuda will spoil Tamada's Plans!§!"
  hokushinron: "Hokushin-ron Achieved"

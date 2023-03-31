@@ -19,7 +19,7 @@ characters={
 		name="Haru Tamada"
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Tamada1.dds"
+				large="gfx/leaders/JAP/Tamada.dds"
 			}
 		}
 		country_leader={
@@ -35,7 +35,7 @@ characters={
 		name="Shizuko Hosomi"
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Hosomi1.dds"
+				large="gfx/leaders/JAP/Hosomi.dds"
 			}
 		}
 		country_leader={
@@ -51,7 +51,7 @@ characters={
 		name="Noriyo Hamada"
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Hamada1.dds"
+				large="gfx/leaders/JAP/Hamada.dds"
 			}
 		}
 		country_leader={
@@ -263,67 +263,6 @@ characters={
 			legacy_id=1701
 		}
 	}
-	JAP_uenishi={
-		name="Uenishi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_uenishi.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Uenishi.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer cht_toseiha_symphatizer panzer_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	JAP_hasegawa={
-		name="Hasegawa"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_hasegawa.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Hasegawa.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer cht_kodoha_symphatizer panzer_leader trait_mountaineer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	JAP_hirai={
-		name="Hirai"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Hirai.dds"
-			}
-		}
-		corps_commander={
-			traits={ cavalry_officer cht_kodoha_symphatizer panzer_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
 	JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
 		portraits={

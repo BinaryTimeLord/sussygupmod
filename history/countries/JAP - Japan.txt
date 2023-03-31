@@ -504,9 +504,6 @@ recruit_character = JAP_hosomi
 recruit_character = JAP_nagura
 recruit_character = JAP_hamada
 recruit_character = JAP_ikeda
-recruit_character = JAP_uenishi
-recruit_character = JAP_hasegawa
-recruit_character = JAP_hirai
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda

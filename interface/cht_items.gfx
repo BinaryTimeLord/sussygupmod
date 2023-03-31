@@ -198,6 +198,22 @@ spriteTypes = {
 		name = "GFX_news_event_indochina_accepted"
 		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_indochina_accepted.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_phillipines"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_phillipines.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_generals"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_generals.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kinuyo_nishi"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_kinuyo_nishi.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hamada"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_hamada.dds"
+	}
 	
 	#DECISIONS
 	spriteType = {

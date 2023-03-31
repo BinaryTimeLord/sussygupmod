@@ -1,4 +1,4 @@
-﻿add_namespace = wtt_japan
+add_namespace = wtt_japan
 
 #Jakob ID 1-100
 #Drikus ID 101-200
@@ -254,7 +254,7 @@ country_event = {
 	id = wtt_japan.21
 	title = wtt_japan.21.t
 	desc = wtt_japan.21.desc
-	picture = GFX_report_event_japanese_officers
+	picture = GFX_report_event_generals
 
 	is_triggered_only = yes
 	
@@ -302,7 +302,7 @@ country_event = {
 	id = wtt_japan.31
 	title = wtt_japan.31.t
 	desc = wtt_japan.31.desc
-	picture = GFX_report_event_jap_imperial_family
+	picture = GFX_report_event_kinuyo_nishi
 
 	is_triggered_only = yes
 	
@@ -559,7 +559,7 @@ country_event = {
 	id = wtt_japan.104
 	title = wtt_japan.104.t
 	desc = wtt_japan.104.desc
-	picture = GFX_report_event_japanese_parade
+	picture = GFX_report_event_phillipines
 
 	is_triggered_only = yes
 	
@@ -901,7 +901,7 @@ country_event = {
 	id = wtt_japan.114
 	title = wtt_japan.114.t
 	desc = wtt_japan.114.desc
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_hamada
 
 	is_triggered_only = yes
 	

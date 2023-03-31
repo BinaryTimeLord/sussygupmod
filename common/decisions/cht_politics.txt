@@ -11,6 +11,10 @@ chihatan_politics = {
 			custom_trigger_tooltip = {
 				tooltip = "has protected Fukuda"
 				has_country_flag = cht_supported_fukuda
+			    NOT = {
+				    has_country_flag = cht_unthinkable_option
+				    has_country_flag = cht_strengthen_government
+			    }		 				
 			}
 		}
 		
@@ -46,7 +50,8 @@ chihatan_politics = {
 		
 		available = {
 			NOT = {
-				has_country_flag = unthinkable_option
+				has_country_flag = cht_unthinkable_option
+				has_country_flag = cht_strengthen_government
 			}		 
 		}
 		
@@ -86,6 +91,7 @@ chihatan_politics = {
 		available = {
 			NOT = {
 				has_country_flag = cht_supported_fukuda
+				has_country_flag = cht_strengthen_government
 			}	 
 		}
 		
@@ -95,13 +101,53 @@ chihatan_politics = {
 			date < 1939.8.13
 		}		
 
-		cost = 75		#The cost to execute the decision, by default its political power.
+		cost = 100		#The cost to execute the decision, by default its political power.
 
 		# EFFECTS OF THIS DECISION/MISSION
 
 		complete_effect = {
-			add_stability = -0.1
+			add_war_support = 0.1
 			set_country_flag = cht_unthinkable_option
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 1
+				tag = JAP
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	strengthen_government = {
+
+		icon = GFX_decision_generic_police_action
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			NOT = {
+				has_country_flag = cht_supported_fukuda
+				has_country_flag = cht_unthinkable_option
+			}	 
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			date < 1939.8.13
+		}		
+
+		cost = 50		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			add_political_power = 100
+			set_country_flag = cht_strengthen_government
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
