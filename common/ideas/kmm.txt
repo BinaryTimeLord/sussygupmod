@@ -2843,5 +2843,60 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+		
+		KMM_joint_anti_pravada_tactics = {
+			picture = ger_the_great_red_menace
+		
+			## NOT TOO SURE IF THIS WOULD CAUSE THE ALLIES TO NOT GET THIS
+			#allowed = {
+			#	original_tag = GER
+			#}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		KMM_Kuro_Internal_Security = {
+			picture = generic_spy_intel
+		
+			allowed = {
+				original_tag = GER
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				operative_slot = 2
+			}
+		}
+
+		KMM_Kuro_Internal_Security_vanilla = {
+			name = KMM_Kuro_Internal_Security_vanilla
+			removal_cost = -1
+
+			picture = generic_spy_intel
+				
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				foreign_subversive_activites = -0.25
+				subversive_activites_upkeep = -0.25
+			}
+		}
 	}
 }
