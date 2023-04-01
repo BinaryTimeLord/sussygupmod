@@ -8658,7 +8658,7 @@
 
 	focus = {
 		id = JAP_strengthen_civilian_government
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_JAP_support_democracy_hamada
 
 		x = 7
 		y = 0

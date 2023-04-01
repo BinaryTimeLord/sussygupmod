@@ -84,7 +84,7 @@ chihatan_politics = {
 	}
 	unthinkable_option = {
 
-		icon = GFX_decision_generic_police_action
+		icon = GFX_decision_SOV_secure_the_administration
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
 		
@@ -124,7 +124,7 @@ chihatan_politics = {
 	}
 	strengthen_government = {
 
-		icon = GFX_decision_generic_police_action
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
 		
