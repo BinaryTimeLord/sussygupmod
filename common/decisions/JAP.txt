@@ -450,7 +450,7 @@ JAP_pacific_guardian = {
 		is_good = no 
 		activation = {
 			#has_completed_focus = JAP_the_korean_question
-			has_country_flag = cht_hamada_update
+			has_country_flag = cht_strengthen_government
 			has_full_control_of_state = 525
 			has_full_control_of_state = 527
 			KOR = { exists = no }
@@ -647,7 +647,7 @@ JAP_colonial_independence = {
 
 		visible = {
 			#has_completed_focus = JAP_liberate_manchuria
-			has_country_flag = cht_hamada_update
+			has_country_flag = cht_strengthen_government
 			609 = {
 				owner = {
 					OR = {

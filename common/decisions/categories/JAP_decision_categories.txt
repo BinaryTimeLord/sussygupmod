@@ -22,7 +22,7 @@ JAP_pacific_guardian = { #nishi
 	visible = {
 		is_puppet = no
 		#has_completed_focus = JAP_pacific_guardian
-		has_country_flag = cht_hamada_update
+		has_country_flag = cht_strengthen_government
 	}
 }
 
@@ -34,7 +34,7 @@ JAP_colonial_independence = { #nishi
 	visible = {
 		is_puppet = no
 		#has_completed_focus = JAP_pacific_guardian
-		has_country_flag = cht_hamada_update
+		has_country_flag = cht_strengthen_government
 	}
 }
 JAP_interservice_rivalry = {

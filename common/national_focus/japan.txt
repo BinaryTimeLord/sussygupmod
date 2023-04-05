@@ -18,7 +18,7 @@
 	focus = {
 		id = JAP_the_unthinkable_option
 		icon = GFX_goal_JAP_the_unthinkable_option
-		x = 3
+		x = -8
 		y = 0
 
 		cost = 5
@@ -833,7 +833,6 @@
 		}
 
 		available = {
-			has_civil_war = no
 		}
 
 		bypass = {
@@ -1024,14 +1023,6 @@
 		icon = GFX_goal_purge_the_kodoha_faction
 		x = 0
 		y = 0
-		offset = {
-			x = 11
-			y = 0
-			trigger = {
-				#NOT = { has_dlc = "Waking the Tiger" }
-				always = yes
-			}
-		}
 
 		cost = 5
 
@@ -2533,9 +2524,7 @@
 		available = {
 			OR = {
 				RAJ = {
-					OVERLORD = {
 						has_war_with = ROOT
-					}
 				}
 				any_country = {
 					original_tag = RAJ
@@ -2552,10 +2541,8 @@
 		completion_reward = {
 			if = {
 				limit = {
-					OVERLORD = {
-						RAJ = {
+					RAJ = {
 							has_war_with = ROOT
-						}
 					}
 				}
 				add_manpower = 50000
@@ -6792,15 +6779,6 @@
 		x = 26
 		y = 0
 		relative_position_id = JAP_support_the_kodoha_faction
-		offset = {
-			x = 0 #-18
-			y = 0
-			trigger = {
-				NOT = {
-					has_country_flag = cht_wtt
-				}
-			}
-		}
  
 		cost = 5
 
@@ -6838,14 +6816,6 @@
 		x = 2 #21
 		y = 0
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -6883,14 +6853,6 @@
 		x = 4 #21
 		y = 0
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -6929,14 +6891,6 @@
 		x = 2 #21
 		y = 1
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -6974,14 +6928,6 @@
 		x = 0 #21
 		y = 1
 		relative_position_id = JAP_nishi_era
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -7019,14 +6965,6 @@
 		x = 2 #21
 		y = 1
 		relative_position_id = JAP_nishi_era
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -9184,7 +9122,7 @@
 				}
 			}						
 		}
-		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -9211,7 +9149,7 @@
 			add_political_power = 50	
 			news_event = {id = cht_news.3 hours = 6 }									
 		}
-		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -9674,7 +9612,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			"PHI" = { OVERLORD = { country_event = { id = wtt_japan.104 days = 1 } } }
+			"PHI" = { country_event = { id = wtt_japan.104 days = 1 } } 
 		}
 	}
 
@@ -9687,13 +9625,6 @@
 		x = 0
 		y = 1
 		relative_position_id = JAP_waking_the_tiger
-		offset = {
-			x = -0
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Waking the Tiger" }
-			}
-		}
 
 		cost = 10
 
@@ -9843,7 +9774,7 @@
 			modifier = {
 				factor = 2
 				#has_completed_focus = JAP_strengthen_civilian_government #nishi
-				has_country_flag = cht_hamada_update
+				has_country_flag = cht_strengthen_government
 			}
 		}
 

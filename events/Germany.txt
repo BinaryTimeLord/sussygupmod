@@ -135,7 +135,7 @@ country_event = {
 				factor = 0
 				tag = JAP
 				#has_completed_focus = JAP_the_unthinkable_option #nishi
-				has_country_flag = cht_hosomi_update
+				has_country_flag = cht_unthinkable_option
 			}
 			modifier = {
 				factor = 0
