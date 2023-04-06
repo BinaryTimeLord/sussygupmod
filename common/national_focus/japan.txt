@@ -41,9 +41,9 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			set_country_flag = cht_hosomi_path
 			add_ideas = JAP_the_unthinkable_option
 			add_political_power = 200
-			activate_advisor = natsuko_hosomi_p
 		}
 	}
 
@@ -251,6 +251,7 @@
 					}
 				}
 			}
+			remove_ideas = cht_extremists
 			remove_ideas = JAP_the_unthinkable_option
 			set_capital = { state = 532 }
 			start_civil_war = {
@@ -820,7 +821,7 @@
 
 	focus = {
 		id = JAP_nationalize_the_zaibatsus
-		icon = GFX_goal_JAP_nationalize_the_zaibatsus
+		icon = GFX_goal_nationalize_the_zaibatsus
 		prerequisite = { focus = JAP_cast_the_die }
 		x = 2
 		y = 1
@@ -2893,6 +2894,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			set_country_flag = cht_hosomi_path
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -3476,6 +3478,7 @@
 			has_completed_focus = JAP_national_research_policy
 			has_completed_focus = JAP_national_mobilization_law
 			has_idea = war_economy
+			has_country_flag = cht_hosomi_path
 		}
 
 		bypass = {
@@ -3865,6 +3868,7 @@
 			has_completed_focus = JAP_national_research_policy
 			has_completed_focus = JAP_national_mobilization_law
 			has_idea = war_economy
+			has_country_flag = cht_hamada_path
 		}
 
 		bypass = {
@@ -4923,6 +4927,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			set_country_flag = cht_ikeda_path
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -5372,7 +5377,7 @@
 			create_country_leader = {
 				name = "Shizuka Tsuruki"
 				desc = "POLITICS_SHIZUKA_TSURUKI_DESC"
-				picture = "Tsuruki1.dds"
+				picture = "Tsuruki.dds"
 				expire = "1965.1.1"
 				ideology = japanese_idealism4
 				traits = {
@@ -8622,6 +8627,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			set_country_flag = cht_ikeda_path
 			add_political_power = 120
 			add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
 		}
@@ -8809,6 +8815,7 @@
 					remove_country_leader_trait = imperial_sanction
 				}
 			}
+			remove_ideas = cht_extremists
 			country_event = { id = wtt_japan.114 }
 			effect_tooltip = {
 				if = {
@@ -8961,6 +8968,7 @@
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_west_pacific_treaty_organization
+			unlock_decision_category_tooltip = JAP_alliance_expansion_plan	
 		}
 	}
 

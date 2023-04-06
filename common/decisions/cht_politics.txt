@@ -1,6 +1,6 @@
 chihatan_politics = {
 	february_26 = {
-
+        priority = 100
 		icon = GFX_decision_generic_speech
 		days_mission_timeout = 29
 		is_good = no
@@ -43,7 +43,7 @@ chihatan_politics = {
 		}
 	}
 	protect_fukuda = {
-
+        priority = 99
 		icon = GFX_decision_generic_police_action
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
@@ -83,7 +83,7 @@ chihatan_politics = {
 		}
 	}
 	unthinkable_option = {
-
+        priority = 98
 		icon = GFX_decision_SOV_secure_the_administration
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
@@ -123,7 +123,7 @@ chihatan_politics = {
 		}
 	}
 	strengthen_government = {
-
+        priority = 97
 		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE

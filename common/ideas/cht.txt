@@ -1348,7 +1348,7 @@ ideas = {
 				always = no
 			}
 		
-			picture = spr_crush_the_revolution
+			picture = generic_japanese_conflict
 		
 			removal_cost = -1
 		
