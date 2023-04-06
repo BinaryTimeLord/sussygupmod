@@ -933,9 +933,9 @@ country_event = {
 			ruling_party = democratic
 			ideology = fascism
 			size = 0.5
-		}
-		keep_unit_leaders = {
+		    keep_unit_leaders = {
 			1704 1701 
+		    }
 		}
 		random_army_leader = {
 			limit = {
