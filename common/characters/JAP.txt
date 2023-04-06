@@ -59,7 +59,7 @@ characters={
 			ideology=japanese_idealism
 			traits={ warrior_code centrist_dem }
 			expire="1989.1.1.1"
-			id=1704
+			id=-1
 		}
 	}
 
@@ -240,7 +240,7 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=-1
+			legacy_id=1704
 		}
 	}
 	JAP_ikeda={
