@@ -59,7 +59,7 @@ characters={
 			ideology=japanese_idealism
 			traits={ warrior_code centrist_dem }
 			expire="1989.1.1.1"
-			id=-1
+			id=1704
 		}
 	}
 
