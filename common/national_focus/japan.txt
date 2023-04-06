@@ -8809,6 +8809,9 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+		keep_unit_leaders = {
+			1704 1701 
+        }
 			hidden_effect = {
 				if = {
 					limit = {
