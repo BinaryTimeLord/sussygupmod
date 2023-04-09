@@ -751,7 +751,7 @@
  cht_news.2.d: "They have only awoken a sleeping giant."
  cht_news.2.e: "A Day of Infamy"
 
- cht_news.3.t.:0 "[JAP.getAdjective] Diplomatic Mission Opens Foreign Alliance Negotiations"
+ cht_news.3.t:0 "[JAP.getAdjective] Diplomatic Mission Opens Foreign Alliance Negotiations"
  cht_news.3.desc:0 "\nOur intelligence reports an increased activity of [JAP.getAdjective] Foreign Affairs Ministery with their diplomats rising to other countries in what can be seen as an effort to establish friendly relations with some of their potential allies. \n\nHowever, it remains unknown whether those negotiations will be fruitful or not, yet we need to be aware of a developing situation and expect the worst outcome for ourselves."
  cht_news.3.a:0 "We should stay vigilant"
 

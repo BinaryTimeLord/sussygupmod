@@ -26,8 +26,8 @@ MAN_historical_plan = {
 			OR = {
 				#has_completed_focus = JAP_strengthen_civilian_government #nishi
 				#has_completed_focus = JAP_the_unthinkable_option #nishi
-				has_country_flag = cht_hamada_update
-				has_country_flag = cht_hosomi_update
+				has_country_flag = cht_strengthen_government
+				has_country_flag = cht_unthinkable_option
 			}
 		}
 	}

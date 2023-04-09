@@ -837,7 +837,9 @@
  ### CHIHATAN PACK ###
 
  ##JAPANESE, MENGKUKUO, MANCHURIAN FOCUSES
- JAP_preemptive_strike_soviet:0 "Pre-emptive strike"
+ JAP_alliance_expansion_plan:0 "Alliance Expansion Plan"
+ JAP_trans_pacific_faction:0 "Trans-Pacific Treaty"
+ JAP_preemptive_strike_soviet:0 "Pre-emptive Strike"
  JAP_indian_liberation_army:0 "Gloriana Liberation Army"
  JAP_indian_liberation_army_desc:0 "We must mobilize Indian nationalists to ensure that they can expel foreigners from India."
  JAP_stimulate_mongol_traditions:0 "Stimulate the Mongol Traditions"
@@ -1194,6 +1196,25 @@
  undying_will: "Fushi no Ishi"
  undying_will_desc: "§RThis academy will stand to its last breath biting tooth and nail to keep invaders out no matter what cost to the limits of human capabilities.§!"
  cht_imperialist: "Smash the Imperialist"
+ cht_unthinkable_option: "Unthinkable Option"
+ cht_strengthen_government: "Strengthen Civilian Government"
+ cht_supported_fukuda: "Supported Fukuda"
+ cht_hosomi_path: "Has chosen Hosomi"
+ cht_hamada_path: "Has chosen Hamada"
+ JAP_invite_malaysia:0 "Invite Malaysia"
+ JAP_invite_malaysia_desc:0 "The sea lanes surrounding Malaysia are the veins for global trade and minerals. An alliance and mutual defense pact with [MAL.GetNameDef] will open up this valuable resource to our markets and gain access to their straits."
+ JAP_invite_indonesia:0 "Invite Indonesia"
+ JAP_invite_indonesia_desc:0 "The Nusantara Archipelago is critical to protecting the route to India and Europe. Befriending them and inviting them to our alliance will mutually benefit all countries involved." 
+ JAP_invite_canada:0 "Invite Canada"
+ JAP_invite_canada_desc:0 "Have you ever tried putting maple syrup on your sushi?"
+ JAP_invite_the_philippines:0 "Invite the Philippines"
+ JAP_invite_the_philippines_desc:0 "Now that the USA has left, it's our responsibility to defend the Philippines from other colonialist powers." 
+ JAP_invite_australia:0 "Invite Australia"
+ JAP_invite_australia_desc:0 "With the Australians in our corner, we can secure peace in our time, away from the Western interventionist powers."  
+ JAP_invite_new_zealand:0 "Invite New Zealand"
+ JAP_invite_new_zealand_desc:0 "We must ally New Zealand! An alliance with New Zealand is the most desirable and effective way of protecting the sea lanes that bind island nations like us."  
+ JAP_invite_the_pacific_states:0 "Invite the Pacific States"
+ JAP_invite_the_pacific_states_desc:0 "Individually, these states are lovely for touring and carousing. Collectively, they are potential jumping-off points for a sea-borne invasion, a hidden knife on the back of Japan itself. We must ally with them at all costs to prevent this from becoming a reality." 
 
  ##CHIHATAN ADVISORS
  JAP_ikuyo_fukuda: "Haru Fukuda"

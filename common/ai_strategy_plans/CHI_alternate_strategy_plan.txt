@@ -18,7 +18,7 @@ CHI_alternate_plan_1 = {
 			AND = {
 				JAP = {
 					#has_completed_focus = JAP_strengthen_civilian_government #nishi
-					has_country_flag = cht_hamada_update
+					has_country_flag = cht_strengthen_government
 				}
 				has_game_rule = {
 					rule = CHI_ai_behavior

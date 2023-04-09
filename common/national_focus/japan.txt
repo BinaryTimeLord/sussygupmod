@@ -18,7 +18,7 @@
 	focus = {
 		id = JAP_the_unthinkable_option
 		icon = GFX_goal_JAP_the_unthinkable_option
-		x = 3
+		x = -8
 		y = 0
 
 		cost = 5
@@ -41,9 +41,9 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			set_country_flag = cht_hosomi_path
 			add_ideas = JAP_the_unthinkable_option
 			add_political_power = 200
-			activate_advisor = natsuko_hosomi_p
 		}
 	}
 
@@ -251,6 +251,7 @@
 					}
 				}
 			}
+			remove_ideas = cht_extremists
 			remove_ideas = JAP_the_unthinkable_option
 			set_capital = { state = 532 }
 			start_civil_war = {
@@ -820,7 +821,7 @@
 
 	focus = {
 		id = JAP_nationalize_the_zaibatsus
-		icon = GFX_goal_JAP_nationalize_the_zaibatsus
+		icon = GFX_goal_nationalize_the_zaibatsus
 		prerequisite = { focus = JAP_cast_the_die }
 		x = 2
 		y = 1
@@ -833,6 +834,7 @@
 		}
 
 		available = {
+			has_government = communism
 			has_civil_war = no
 		}
 
@@ -1024,14 +1026,6 @@
 		icon = GFX_goal_purge_the_kodoha_faction
 		x = 0
 		y = 0
-		offset = {
-			x = 11
-			y = 0
-			trigger = {
-				#NOT = { has_dlc = "Waking the Tiger" }
-				always = yes
-			}
-		}
 
 		cost = 5
 
@@ -2533,9 +2527,7 @@
 		available = {
 			OR = {
 				RAJ = {
-					OVERLORD = {
 						has_war_with = ROOT
-					}
 				}
 				any_country = {
 					original_tag = RAJ
@@ -2552,10 +2544,8 @@
 		completion_reward = {
 			if = {
 				limit = {
-					OVERLORD = {
-						RAJ = {
+					RAJ = {
 							has_war_with = ROOT
-						}
 					}
 				}
 				add_manpower = 50000
@@ -2906,6 +2896,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			set_country_flag = cht_hosomi_path
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -3489,6 +3480,7 @@
 			has_completed_focus = JAP_national_research_policy
 			has_completed_focus = JAP_national_mobilization_law
 			has_idea = war_economy
+			has_country_flag = cht_hosomi_path
 		}
 
 		bypass = {
@@ -3878,6 +3870,7 @@
 			has_completed_focus = JAP_national_research_policy
 			has_completed_focus = JAP_national_mobilization_law
 			has_idea = war_economy
+			has_country_flag = cht_hamada_path
 		}
 
 		bypass = {
@@ -4936,6 +4929,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			set_country_flag = cht_ikeda_path
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -5385,7 +5379,7 @@
 			create_country_leader = {
 				name = "Shizuka Tsuruki"
 				desc = "POLITICS_SHIZUKA_TSURUKI_DESC"
-				picture = "Tsuruki1.dds"
+				picture = "Tsuruki.dds"
 				expire = "1965.1.1"
 				ideology = japanese_idealism4
 				traits = {
@@ -6792,15 +6786,6 @@
 		x = 26
 		y = 0
 		relative_position_id = JAP_support_the_kodoha_faction
-		offset = {
-			x = 0 #-18
-			y = 0
-			trigger = {
-				NOT = {
-					has_country_flag = cht_wtt
-				}
-			}
-		}
  
 		cost = 5
 
@@ -6838,14 +6823,6 @@
 		x = 2 #21
 		y = 0
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -6883,14 +6860,6 @@
 		x = 4 #21
 		y = 0
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -6929,14 +6898,6 @@
 		x = 2 #21
 		y = 1
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -6974,14 +6935,6 @@
 		x = 0 #21
 		y = 1
 		relative_position_id = JAP_nishi_era
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -7019,14 +6972,6 @@
 		x = 2 #21
 		y = 1
 		relative_position_id = JAP_nishi_era
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				#has_dlc = "Waking the Tiger"
-				always = no
-			}
-		}
 
 		cost = 5
 
@@ -8658,7 +8603,7 @@
 
 	focus = {
 		id = JAP_strengthen_civilian_government
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_JAP_support_democracy_hamada
 
 		x = 7
 		y = 0
@@ -8684,6 +8629,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			set_country_flag = cht_ikeda_path
 			add_political_power = 120
 			add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
 		}
@@ -8871,6 +8817,7 @@
 					remove_country_leader_trait = imperial_sanction
 				}
 			}
+			remove_ideas = cht_extremists
 			country_event = { id = wtt_japan.114 }
 			effect_tooltip = {
 				if = {
@@ -9023,6 +8970,7 @@
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_west_pacific_treaty_organization
+			unlock_decision_category_tooltip = JAP_alliance_expansion_plan	
 		}
 	}
 
@@ -9184,7 +9132,7 @@
 				}
 			}						
 		}
-		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -9211,7 +9159,7 @@
 			add_political_power = 50	
 			news_event = {id = cht_news.3 hours = 6 }									
 		}
-		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -9674,7 +9622,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			"PHI" = { OVERLORD = { country_event = { id = wtt_japan.104 days = 1 } } }
+			"PHI" = { country_event = { id = wtt_japan.104 days = 1 } } 
 		}
 	}
 
@@ -9687,13 +9635,6 @@
 		x = 0
 		y = 1
 		relative_position_id = JAP_waking_the_tiger
-		offset = {
-			x = -0
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Waking the Tiger" }
-			}
-		}
 
 		cost = 10
 
@@ -9843,7 +9784,7 @@
 			modifier = {
 				factor = 2
 				#has_completed_focus = JAP_strengthen_civilian_government #nishi
-				has_country_flag = cht_hamada_update
+				has_country_flag = cht_strengthen_government
 			}
 		}
 

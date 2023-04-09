@@ -455,7 +455,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = socialist_science_focus
+			picture = gre_agricultural_communes
 			
 			modifier = {
 				stability_weekly = 0.05

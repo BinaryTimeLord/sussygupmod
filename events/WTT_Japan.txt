@@ -279,7 +279,7 @@ country_event = {
 	id = wtt_japan.22
 	title = wtt_japan.22.t
 	desc = wtt_japan.22.desc
-	picture = GFX_report_event_japanese_officers
+	picture = GFX_report_event_generals
 
 	is_triggered_only = yes
 	
@@ -933,6 +933,15 @@ country_event = {
 			ruling_party = democratic
 			ideology = fascism
 			size = 0.5
+		    keep_unit_leaders = {
+			1704 1701 
+		    }
+		}
+		random_army_leader = {
+			limit = {
+				has_id = 1704
+			}
+			promote_leader = yes
 		}
 		if = {
 			limit = {

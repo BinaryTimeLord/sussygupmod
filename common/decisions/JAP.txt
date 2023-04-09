@@ -450,7 +450,7 @@ JAP_pacific_guardian = {
 		is_good = no 
 		activation = {
 			#has_completed_focus = JAP_the_korean_question
-			has_country_flag = cht_hamada_update
+			has_country_flag = cht_strengthen_government
 			has_full_control_of_state = 525
 			has_full_control_of_state = 527
 			KOR = { exists = no }
@@ -647,7 +647,7 @@ JAP_colonial_independence = {
 
 		visible = {
 			#has_completed_focus = JAP_liberate_manchuria
-			has_country_flag = cht_hamada_update
+			has_country_flag = cht_strengthen_government
 			609 = {
 				owner = {
 					OR = {
@@ -1453,5 +1453,563 @@ prospect_for_resources = {
 			}
 		}	
 	}
+}
 
+JAP_alliance_expansion_plan = {
+	JAP_invite_malaysia = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			MAL = {
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = MAL
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = MAL
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			MAL = {
+				country_event = generic.5
+			}
+		}
+	}
+
+	JAP_invite_canada = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			CAN = {
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_government = democratic
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = CAN
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = CAN
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			CAN = {
+				country_event = generic.5
+			}
+		}
+	}
+
+	JAP_invite_new_zealand = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			NZL = {
+				has_government = democratic
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = NZL
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = NZL
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			NZL = {
+				country_event = generic.5
+			}
+		}
+	}
+
+	JAP_invite_the_philippines = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			PHI = {
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = PHI
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = PHI
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			PHI = {
+				country_event = generic.5
+			}
+		}
+	}
+
+	JAP_invite_indonesia = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			INS = {
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = INS
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = INS
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			INS = {
+				country_event = generic.5
+			}
+		}
+	}
+
+	JAP_invite_australia = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			AST = {
+				has_government = democratic
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = AST
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = AST
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			AST = {
+				country_event = generic.5
+			}
+		}
+	}
+
+	JAP_alliance_with_siam = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			SIA = {
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				exists = yes				
+				NOT = {
+					has_war_with = ROOT
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				is_in_faction_with = SIA
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = SIA
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			SIA = {
+				country_event = generic.5
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "SIA"
+				value = 100
+			}
+		}
+	}
+
+	JAP_invite_the_pacific_states = {
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_faction_leader = yes
+			any_other_country = {
+				OR = {
+					original_tag = PNG
+					original_tag = GUM
+					original_tag = HAW
+					original_tag = SOL
+					original_tag = FSM
+					original_tag = TAH
+					original_tag = SAM
+				}
+				exists = yes
+				is_subject = no
+				has_capitulated = no
+				is_in_faction = no
+				NOT = {
+					has_war_with = ROOT
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			NOT = {
+				has_idea = ROOT_diplomatic_effort
+			}
+		}
+
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			has_completed_focus = JAP_expand_the_alliance
+			NOT = {
+				AND = {
+					is_in_faction_with = PNG
+					is_in_faction_with = GUM
+					is_in_faction_with = HAW
+					is_in_faction_with = SOL
+					is_in_faction_with = FSM
+					is_in_faction_with = TAH
+					is_in_faction_with = SAM
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 60
+
+		complete_effect = {
+			add_ideas = ROOT_diplomatic_effort
+		}
+
+		remove_effect = {
+			remove_ideas = ROOT_diplomatic_effort
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = PNG
+						original_tag = GUM
+						original_tag = HAW
+						original_tag = SOL
+						original_tag = FSM
+						original_tag = TAH
+						original_tag = SAM
+					}
+					exists = yes
+					is_subject = no
+					has_capitulated = no
+					is_in_faction = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				country_event = generic.5
+			}
+		}
+	}
 }
