@@ -13113,6 +13113,10 @@ focus_tree = {
 		
 		x = -1
 		y = 1
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ENG }
+		}
 		
 		prerequisite = { focus = GER_the_west }
 		mutually_exclusive = { focus = GER_our_own_way }
@@ -13120,7 +13124,19 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = { ##JOIN ALLIES
-		
+			ENG = {
+				country_event = { id = generic.2 }
+				add_ai_strategy = {
+					type = befriend
+					id = "GER"			
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"			
+					value = 200
+				}	
+			}
 		}
 	}
 	
@@ -13162,7 +13178,36 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = { ##ADD ARMY IDEA TO ALL NATIONS IN ALLIES IDEA: ATTACK + DEFENSE AGAINST RUSSIA +10%, ADD WAR ECONOMY TO GERMANY
-		
+			# KURO WAR ECONOMY
+			add_ideas = war_economy
+			## ADD ARMY IDEA TO ALL NATIONS IN ALLIES IDEA: ATTACK + DEFENSE AGAINST RUSSIA +10% 
+			add_ideas = KMM_joint_anti_pravada_tactics
+			every_other_country = {
+				limit = {
+					is_in_faction_with = GER
+					#any_country = { is_in_faction_with = GER }
+					NOT = {
+						#tag = ENG
+						has_government = communism
+						has_government = fascism
+					}
+				}
+				add_ideas = KMM_joint_anti_pravada_tactics
+				## PRAVADA WILL OBVIOUSLY NOT BE HAPPY
+				SOV = { 
+					add_opinion_modifier = { target = GER modifier = embargo } 
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = "GER"			
+					value = 200
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = "ENG"			
+					value = -200
+				}
+			}
 		}
 	}
 	
@@ -13222,6 +13267,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		## Currently, the spy agency and the extra two spies are exclusive
 		id = GER_internal_security
 		##icon = 
 		relative_position_id = GER_new_constitution
@@ -13235,7 +13281,29 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ##MAKE SPY AGENCY IF NOT HAVE ONE OTHERWISE ADD 2 SPIES
-		
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				## IF NO AGENCY
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = yes
+				}
+				## IF THERE IS AN AGENCY
+				else_if = {
+					limit = {
+						has_intelligence_agency = yes
+					}
+					add_ideas = KMM_Kuro_Internal_Security
+				}
+				# add_ideas = ITA_servizio_informazione_militare_ns
+			}
+			else = { ##ALTERNATIVE IF PLAYER DOES NOT HAVE LA RESISTANCE
+				add_ideas = KMM_Kuro_Internal_Security_vanilla
+			}
 		}
 	}
 	
@@ -13359,7 +13427,7 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = { ##IDEA: INFRASTRUCTURE AND SUPPLY BUILDING BUFFS
-		
+			add_ideas = KMM_improved_construction_methods
 		}
 	}
 	
@@ -13377,7 +13445,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##IDEA LESS RESISTANCE, AND BETTER COMPLIANCE
-		
+			add_ideas = KMM_well_funded_police
 		}
 	}
 	
@@ -13420,7 +13488,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##IDEA
-		
+			add_ideas = KMM_free_healthcare
 		}
 	}
 	
@@ -13522,7 +13590,9 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ##MOVE A TRADE LAW UP AND CANT CHANGE IT, ADD IDEA: -5% CONSUMER GOODS AND 5% BUILD SPEED
-		
+			add_ideas = export_focus 
+			## NEED A RULE TO PREVENT FROM CHANGING
+			add_ideas = KMM_free_market
 		}
 	}
 	
@@ -13609,8 +13679,8 @@ focus_tree = {
 		
 		cost = 5
 		
-		completion_reward = { ##IDEA
-		
+		completion_reward = { ##ADD IDEA: -5% CONSUMER GOODS, +10% Stability
+			add_ideas = KMM_stable_currency
 		}
 	}	
 	
@@ -13652,7 +13722,7 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ##IDEA: 5% CONSUMER GOODS, +10% PRODUCTION CAP AND EFFICENTCY
-		
+			add_ideas = KMM_unique_kuromorimine_goods
 		}
 	}
 	
