@@ -2312,11 +2312,11 @@ focus_tree = {
 			add_political_power = 75
 			add_war_support = 0.05
 			air_experience = 75
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = air_sup_bonus
-				bonus = 1.0
+				cost_reduction = 0.25
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine # Changed to be more general but less of a cost reduction
 			}
 			every_state = {
 				limit = { has_state_flag = GER_air_innovation_2air }
@@ -2342,11 +2342,11 @@ focus_tree = {
 			air_experience = 75
 			add_war_support = 0.05
 
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = air_sup_bonus
-				bonus = 1.0
+				cost_reduction = 0.25
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 
 			if = {
@@ -2413,7 +2413,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
 		id = GER_tactical_air_effort
 		icon = GFX_goal_tactical_air_effort
 		prerequisite = { focus = GER_air_innovation }
@@ -2430,17 +2430,31 @@ focus_tree = {
 		
 		completion_reward = {
 			air_experience = 200
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = op_dest_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = battlefield_support_tree
 			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber			
+			# Updated for By Blood Alone Tech
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+						name = tac_bomber_bonus
+						bonus = 1.0
+						uses = 1
+						category = medium_air	
+					}
+				else = {
+					add_tech_bonus = {
+						name = cas_bomber_bonus
+						bonus = 1.0
+						uses = 1
+						category = cas_bomber			
+					}
+				}
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ger_sangou_airchief #done
@@ -2753,11 +2767,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_long_range_escorts
-				bonus = 0.5
-				uses = 2
-				category = cat_heavy_fighter
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+						name = GER_long_range_escorts
+						bonus = 0.5
+						uses = 1
+						category = cat_air_engine # Would prefer for bonus to apply to Range Improvements
+					}
+				else = {
+					add_tech_bonus = {
+						name = GER_long_range_escorts
+						bonus = 0.5
+						uses = 2
+						category = cat_heavy_fighter
+					}
+				}
 			}
 		}
 	}
@@ -3104,11 +3131,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_junker_development
-				bonus = 0.5
-				uses = 1
-				category = tactical_bomber		
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = GER_junker_development
+					bonus = 0.5
+					uses = 1
+					category = medium_air
+				}
+				else = {
+					add_tech_bonus = {
+						name = GER_junker_development
+						bonus = 0.5
+						uses = 1
+						category = tactical_bomber		
+					}
+				}
 			}
 		}
 	}
@@ -3129,11 +3169,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = GER_junker_development
+					bonus = 1
+					uses = 1
+					category = medium_air
+				}
+				else = {
+					add_tech_bonus = {
+						name = GER_junker_development
+						bonus = 0.5
+						uses = 1
+						category = tactical_bomber		
+					}
+				}
 			}
 			add_ideas = kmm_tactical_bomber_manufacturing #done
 			if = {
@@ -3199,17 +3252,30 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 125
 			# Balance research bonus for 2 techs in battlefield_support_tree
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = strat_dest_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = strategic_destruction_tree
 			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_focus
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+				else = {
+					add_tech_bonus = {
+						name = bomber_bonus
+						bonus = 1.0
+						uses = 1
+						category = cat_strategic_bomber
+					}
+				}
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ger_geshiko_airchief #done
@@ -3232,6 +3298,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_focus
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+				else = {
+					add_tech_bonus = {
+						name = bomber_bonus
+						bonus = 1.0
+						uses = 1
+						category = cat_strategic_bomber
+					}
+				}
+			}
 			add_ideas = kmm_strategic_bomber_manufacturing #done
 			if = {
 				limit = {
@@ -3293,11 +3378,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_strategic_bomber_research
-				bonus = 0.5
-				uses = 1
-				category = cat_strategic_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_focus
+					bonus = 0.5
+					uses = 1
+					category = heavy_air
+				}
+				else = {
+					add_tech_bonus = {
+						name = bomber_bonus
+						bonus = 0.5
+						uses = 1
+						category = cat_strategic_bomber
+					}
+				}
 			}
 		}
 	}
@@ -3489,9 +3587,9 @@ focus_tree = {
 					add_idea = kmm_improved_staff_2
 				}
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = GER_missiontype_tactics
-				bonus = 1.0
+				cost_reduction = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -3540,9 +3638,9 @@ focus_tree = {
 		
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = GER_kampfgruppen_kuro
-				bonus = 0.5
+				cost_reduction = 0.5
 				uses = 3
 				category = land_doctrine
 			}
@@ -6822,10 +6920,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = kmm_trade_interdiction
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = ti_bonus
 				name = GER_trade_interdiction
-				bonus = 1.0
+				cost_reduction = 1.0
 				uses = 3
 				category = trade_interdiction_tree
 			}
