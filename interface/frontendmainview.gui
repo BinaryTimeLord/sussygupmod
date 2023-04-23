@@ -462,6 +462,22 @@ guiTypes = {
 			web_link = "https://twitter.com/hoi_game"
 		}
 		ButtonType = {
+			name = "instagram_button"
+			position = { x=140 y=0 }
+			quadTextureSprite ="instagram"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_INSTAGRAM"
+			web_link = "https://www.instagram.com/hearts_of_iron_pdx"
+		}
+		ButtonType = {
+			name = "discord_button"
+			position = { x=180 y=0 }
+			quadTextureSprite ="discord"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_DISCORD"
+			web_link = "https://discord.gg/hoi4"
+		}
+		ButtonType = {
 			name = "privacy_policy_button"
 			position = { x=200 y=0 }
 			quadTextureSprite ="privacy"
