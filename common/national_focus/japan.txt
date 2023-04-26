@@ -1973,15 +1973,15 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_strike_south_doctrine
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_strike_south_doctrine
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -5418,9 +5418,9 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_prepare_for_war_with_the_soviet_union
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine	
 			}
@@ -5576,15 +5576,15 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_furui_kyougi
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_furui_kyougi
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -6044,9 +6044,9 @@
 				}
 			}
 			MAN = {
-				add_tech_bonus = {
+				add_doctrine_cost_reduction = {
 					name = JAP_build_up_the_manchurian_army
-					bonus = 1.25
+					cost_reduction = 0.75
 					uses = 2
 					category = land_doctrine	
 				}
@@ -9712,9 +9712,9 @@
 
 		completion_reward = {
 			army_experience = 30
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_army_expansion_law
-				bonus = 1.00
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -10614,9 +10614,9 @@
 			else = {
 				navy_experience = 50
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_new_naval_estimates
-				bonus = 1.00
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -10734,9 +10734,9 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = JAP_carrier_warfare_experiments
-				bonus = 1.00
+				cost_reduction = 0.5
 				uses = 3
 				category = cat_base_strike
 			}
