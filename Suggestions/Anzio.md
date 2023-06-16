@@ -2,6 +2,13 @@
 Just a simple markdown file containing suggestions and general notes for ANZIO's rework
 
 ## FOCUSES
+- Main democratic focus line that splits into two (which we will add more too, one for constitutional monarchy and the other for republicanism which through decision can become a one party democracy or a full blown republic) 
+- communist one which will stay the same.
+- A focus line like the current one based of mussolinis with anchovy with minor changes as well, 
+- pepperonis path through a coup which is alternative fascist with more major changes, 
+- And finally monarchist one with some minor changes
+- Balance of power mechanic will be removed for simplicity
+
 
 ### Industrial
 - More Pizzarias!
