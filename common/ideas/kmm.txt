@@ -2898,5 +2898,66 @@ ideas = {
 				subversive_activites_upkeep = -0.25
 			}
 		}
+		
+		KMM_improved_construction_methods = {
+			name = KMM_improved_construction_methods
+			removal_cost = -1
+			
+			picture = generic_construction
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+			}
+		}
+		
+		KMM_unique_kuromorimine_goods = {
+			name = KMM_unique_kuromorimine_goods
+			removal_cost = -1
+			
+			picture = generic_construction
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = { ##IDEA: 5% CONSUMER GOODS, +10% PRODUCTION CAP AND EFFICENTCY
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		
+		KMM_consitutional_monarchy = {
+			name = KMM_consitutional_monarchy
+			removal_cost = -1
+			
+			picture = generic_economic_increase ## Add a picture of Kuome
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = { ##IDEA: +0.5% Weekly Stability, +10% Daily Political Power Gain, +15% War Support
+				war_support_factor = 0.15
+				stability_weekly_factor = 0.05
+				political_power_factor = 0.10
+			}
+		}
 	}
 }
