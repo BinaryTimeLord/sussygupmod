@@ -7,8 +7,12 @@
 - Events
     - Make sure all democratic branch events work properly
     - Make sure all Kaiserine events work properly
-- Potential Bugs:
+- Balancing
+    - Maybe reduce the time it takes to complete some of the Kaiserine focuses, as there are A LOT of 70 day focuses.
+    - Reposition Ostland Failure and Berlin Polytechnic, as the placement of these focuses is a bit odd.
+- (Potential) Bugs:
     - Check why France/UK will still declare war on Kuromorimine even after National Spirit Disarmement is removed
+    - The image used for the Anschluss (GER_offer_integration_oarai) focus is too large
 - 
 - 
 
@@ -23,7 +27,8 @@
     - And finally monarchist one with some minor changes
     - Balance of power mechanic will be removed for simplicity
 - 
-- 
+
+
 ## Balancing
 - Add National Spirit to Allied Nations to buff them
     - NOTE: This is a temporary fix until we begin work on some allied focus trees
