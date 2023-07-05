@@ -2427,4 +2427,17 @@
  GER_centeral_parlament_desc:0 "The final steps to unifying all of the schools lie ahead but another obstacle remains, the parliaments of the schools are spread out with their own laws, if we are to keep them united and achieve the dream we want, we have to make a central parliament to make sure our dreams aren't wasted."
  GER_united_europe_desc:0 "Now everything has been finalized and we can push forward that we aren't ones for the school but rather ones for the people. This alliance will make us one of the most powerful sets of schools ever, it may even rock the boat into another direction." 
 
-#Reach out Focus part KURO#
+# more updates
+
+ GER_internal_security:0 "Internal Security"
+ GER_internal_security_desc:0 "Kuromorimine has been focused on the outside activities so much that they failed to see the problems on the inside of the school. With the people growing restless, we need to bring order and end some of the draconian measures of the school has enforced."
+ GER_free_political_prisoners:"Lifting restrictions"
+ GER_free_political_prisoners_desc:0 "Now we have to lift some of the restrictions that we have imposed on the students who think differently. We should get these students off of the explusion list and reintergrate them back into Kuromorimine"
+ GER_repeal_fire_decree:0 "End of Nishizumi Domination"
+ GER_repeal_fire_decree_desc:0 "The Nishizumi style is doing more harm than good. It has created tyranical leaders with the intention of unifying the school, it is going horribly as the students wanted to head back to the days of Kirishima. Maybe we should give her ideas a second chance."
+ GER_road_building:0 "Mega projects"
+ GER_road_building_desc:0"Geshiko thinks that some of the budget can be diverted from the tanks to the public works of the school. We need to provide more homes for the everyday Kuromorimine resident"
+ GER_rearm_garrisons:0 "Student Brigades"
+ GER_rearm_garrisons_desc:0 "Student Brigades were used to guard the school during the days of Manami and Runa but have been abolished under Erika due to their disloyalty to her. Bringing these brigades back will help guard the school from future threats."
+ GER_fund_police:0 "Funding Disciplinary Force"
+ GER_fund_police_desc:0 "Students can't guard Kuromorimine alone, we have to deal with matters outside of the school. A dedicated police team would help the students out so they didn't have to keep watch all the time and they can get back to learning."
