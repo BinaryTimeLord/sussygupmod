@@ -2453,3 +2453,7 @@
  GER_political_connections_desc:0 "Kuromorimine needs to reform the internal system if it means we have a future. We'll invite the best people from the other schools to settle manners of how the new reforms would play out. If everything goes well, we can use this meeting to help reform the system."
  GER_consitutional_monarchy:0 "Koume's Consitutional Kaiserriech"
  GER_consitutional_monarchy_desc:0 "While many wish to maintain a strict republic, the people have spoken and all wish to see Koume as Kaiser of our nation, whilst maintaining the parlimentary system we fought so hard for"
+# Other fixies
+ GER_military_industry:0 "Zeitenwende"
+ GER_military_industry_desc:0 "This is a turning moment for us, we must plow forwards and save Europe from the tryanny of Pravda"
+ GER_military_buildup_desc:0 "The horns of war sound once more, as the final battle nears its occurrence, every man and women in our lands needs to know what’s at stake, every factory must do more build more for eventual total victory."
