@@ -2457,3 +2457,25 @@
  GER_military_industry:0 "Zeitenwende"
  GER_military_industry_desc:0 "This is a turning moment for us, we must plow forwards and save Europe from the tryanny of Pravda"
  GER_military_buildup_desc:0 "The horns of war sound once more, as the final battle nears its occurrence, every man and women in our lands needs to know what’s at stake, every factory must do more build more for eventual total victory."
+
+# Fuck you fixes your focus tree more
+GER_reform_wave:0 "Reform Wave"
+ GER_reform_wave_desc:0 "With Kuromorimine's new constitution in place, we should expand the school size due to the students being able to have different opinions that wouldn't be scrutinize. Let's expand on these."
+
+ GER_free_heathcare:0 "Free Healthcare"
+ GER_free_heathcare_desc:0 "Kuromorimine's healthcare is top notch but only few people could access it as it has been privatized for a while. It's time we make it accessable to everyone."
+
+ GER_political_rights:0 "Everyone Has A Voice"
+ GER_political_rights_desc:0 "Kuromorimine is moving forward and everyone should voice their opinion on how the school should be operated. Let's expand on this."
+
+ GER_liberalized_dicatorship:0 "Authoritarian Republicanism"
+ GER_liberalized_dicatorship_desc:0 "Where Maho and Erika went wrong, was their complete delusion in our superiority and quashing of any talk of elections, we must not follow in their footsteps and maintain a strong goverment to protect the people"
+
+ GER_anzai_plan:0 "Placeholder"
+ GER_anzai_plan_desc:0 "Placeholder"
+
+ GER_social_welfare:0 "Wellfare State"
+ GER_social_welfare_desc:0 "Not everyone is as rich as a Kuromorimine Queen so helping the welfare of the poorer students is the top priority. Everyone needs a place to stay if we are to remain stable."
+
+
+
