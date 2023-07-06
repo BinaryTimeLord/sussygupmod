@@ -12894,7 +12894,7 @@ focus_tree = {
 	## MIHO PATH ##
 	focus = {
 		id = GER_miho_victory
-		##icon = 
+		icon = GFX_goal_victory_for_miho
 		relative_position_id = GER_inaugurate_the_republic
 		
 		x = -4
@@ -12912,7 +12912,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_repair_republic
-		##icon = 
+		icon = GFX_goal_strategic_air_effort
 		relative_position_id = GER_miho_victory
 		
 		x = 0
@@ -13165,7 +13165,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_new_constitution
-		##icon = 
+		icon = GFX_goal_allow_the_ultimatums
 		relative_position_id = GER_inaugurate_the_republic
 		
 		x = 0
@@ -13191,7 +13191,7 @@ focus_tree = {
 	##GLORY TO THE ALLIES
 	focus = {
 		id = GER_the_west
-		##icon = 
+		icon = GFX_goal_JAP_indian_liberation_army
 		relative_position_id = GER_new_constitution
 		
 		x = -5
@@ -13243,7 +13243,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_polish_protection
-		##icon = 
+		icon = GFX_goal_ussr_war_goal
 		relative_position_id = GER_the_west
 		
 		x = -1
@@ -13267,7 +13267,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_against_pravda
-		##icon = 
+		icon = GFX_goal_fall_stroganoff
 		relative_position_id = GER_the_west
 		
 		x = -1
@@ -13315,7 +13315,7 @@ focus_tree = {
 	##ALONE WE STAND
 	focus = {
 		id = GER_our_own_way
-		##icon = 
+		icon = GFX_goal_mobilize_the_academy
 		relative_position_id = GER_the_west
 		
 		x = 1
@@ -13333,7 +13333,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_expand_fortlines
-		##icon = 
+		icon = GFX_goal_baltic_concession
 		relative_position_id = GER_the_west
 		
 		x = 1
@@ -13351,7 +13351,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_military_industry
-		##icon = 
+		icon = GFX_goal_erika_favorite
 		relative_position_id = GER_the_west
 		
 		x = 1
