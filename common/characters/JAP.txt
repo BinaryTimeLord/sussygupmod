@@ -1574,7 +1574,7 @@ characters={
 		advisor={
             cost = 100
 			slot = army_chief
-			idea_token = ikuyo_fukuda_armychief
+			idea_token = JAP_ikuyo_fukuda
 
 			allowed = {
 				OR = {
@@ -1816,7 +1816,7 @@ characters={
 		advisor={
             cost = 100
 			slot = high_command
-			idea_token = akemi_kubota
+			idea_token = JAP_akemi_kubota
 			ledger = navy
 
 			allowed = {

@@ -14678,7 +14678,7 @@ focus_tree = {
 		}
 	}
 	
-}ER_STABILITY}
+}
 ### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 ### search_filters = {FOCUS_FILTER_MANPOWER}
 ### search_filters = {FOCUS_FILTER_ANNEXATION}

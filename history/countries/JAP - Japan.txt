@@ -252,9 +252,9 @@ create_import = {
 	add_ideas = {
 
 		undying_will
-		akemi_kubota
+		JAP_akemi_kubota
 
-		ikuyo_fukuda
+		JAP_ikuyo_fukuda
 		kawasaki
 
 		#laws
