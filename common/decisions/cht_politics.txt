@@ -108,6 +108,7 @@ chihatan_politics = {
 		complete_effect = {
 			add_war_support = 0.1
 			set_country_flag = cht_unthinkable_option
+			custom_effect_tooltip = "FUTURE_CONTENT_ALTERNATE_HISTORY"
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
@@ -148,6 +149,7 @@ chihatan_politics = {
 		complete_effect = {
 			add_political_power = 100
 			set_country_flag = cht_strengthen_government
+			custom_effect_tooltip = "FUTURE_CONTENT_ALTERNATE_HISTORY"
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION

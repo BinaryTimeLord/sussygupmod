@@ -826,6 +826,7 @@
  strengthen_government: "Support Democracy"
  TAMADA_VICTORY: "§RDoing nothing will let Tamada pursue her plan!§!"
  FUKUDA_VICTORY: "§GProtecting Fukuda will spoil Tamada's Plans!§!"
+ FUTURE_CONTENT_ALTERNATE_HISTORY: "§RChi-ha-tan isn't ready to tread down this path yet. Tune in soon after Hamada and Hosomi are ready! (FUTURE UPDATE)§!"
  hokushinron: "Hokushin-ron Achieved"
  hokushinron_desc: "As we have taken enough land against Pravda, we can now send them an ultimatum for their unconditional surrender of those lands. If they reject we can simply go further. Besides, they can't keep fighting forever~."
  final_ultimatum: "Final Ultimatum to Pravda"
@@ -905,6 +906,7 @@
  command_power_more_than18: "§H18§!£command_power"
  command_power_more_than18_blocked: "§R18§!£command_power"
  command_power_more_than18_tooltip: "It costs 18£command_power to select this."
+
  #JATKOSOTA
  FIN_foreign_help:0 "Foreign help"
  Fin_buy_motor_FRA:0 "Buy motorized transport in BC Freedom"
@@ -1235,8 +1237,8 @@
  
  ##DEMOCRATIC GERMANY##
  
-GER_TAKEBEISM_LONG:0 "Democratic Takebeism Party"
-GER_TAKEBEISM:0 "DTP"
+ GER_TAKEBEISM_LONG:0 "Democratic Takebeism Party"
+ GER_TAKEBEISM:0 "DTP"
  
  GER_miho_victory:0 "Miho's Victory"
  GER_miho_victory_desc:0 ""

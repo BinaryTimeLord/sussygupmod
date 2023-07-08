@@ -982,7 +982,7 @@ country_event = {
 	option = {
 		name = army_law.1.a
 		
-		add_ideas = ikuyo_fukuda
+		add_ideas = JAP_ikuyo_fukuda
 
 		if = {
 			limit = {
@@ -994,7 +994,7 @@ country_event = {
 			else = {
 				add_tech_bonus = {
 					name = army_law.1
-					bonus = 2.0
+					bonus = 0.75
 					uses = 3
 					category = cat_grand_battle_plan
 				}
@@ -1026,13 +1026,13 @@ country_event = {
 	option = {
 		name = army_law.1.b
 		
-		add_ideas = haru_tamada
+		add_ideas = JAP_haru_tamada
 
 		add_tech_bonus = {
 			name = army_law.1
-			bonus = 2.0
+			bonus = 0.75
 			uses = 2
-			category = cat_grand_battle_plan
+			category = cat_grand_battle_plan #CHECKMARK POINT CHANGE TO MASS ASSAULT
 		}
 
 		hidden_effect = { 
