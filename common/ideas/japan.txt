@@ -190,12 +190,10 @@ ideas = {
 			picture = jap_zaibatsu
 			
 			modifier = {
-				political_power_cost = 0.25
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor = 0.25
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = 0.05
+				political_power_cost = 0.5
+				trade_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -236,14 +234,14 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.25
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor = 0.25
+				political_power_cost = 0.5
+				trade_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.025
 			}
 		}
 
@@ -262,7 +260,7 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.25
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
@@ -288,10 +286,12 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
+				trade_laws_cost_factor = -0.5
+				economy_cost_factor = -0.5
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -326,11 +326,10 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = 0.2
-				mobilization_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.5
 				justify_war_goal_time = -0.2
 				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
-				ai_desired_divisions_factor = 0.25
 			}
 		}
 

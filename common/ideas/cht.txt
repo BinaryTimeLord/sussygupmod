@@ -335,9 +335,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				political_power_factor = -0.50
-				stability_weekly = 0.02
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_arms_factory_factor = 0.05
+				stability_weekly = -0.02
 			}
 		}
 
@@ -359,8 +357,6 @@ ideas = {
 				stability_factor = -0.1
 				war_support_factor = -0.2
 				political_power_factor = -0.25
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_arms_factory_factor = 0.05
 			}
 		}
 
@@ -379,9 +375,9 @@ ideas = {
 			picture = chi_army_corruption3
 
 			modifier = {
-				stability_factor = -0.1
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_arms_factory_factor = 0.05
+				stability_factor = 0.1
+				supply_consumption_factor = 0.1
+				attrition = 0.1
 			}
 		}
 
@@ -506,13 +502,16 @@ ideas = {
 
 			modifier = {
 				war_support_factor = 0.2
-				mobilization_laws_cost_factor = -0.25
-				trade_laws_cost_factor = -0.25
-				economy_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.5
+				trade_laws_cost_factor = -0.5
+				economy_cost_factor = -0.5
 				justify_war_goal_time = -0.2
-				research_speed_factor = -0.02
+				research_speed_factor = -0.1
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.25
+				}
 			}
 		}
 

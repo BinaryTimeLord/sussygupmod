@@ -1067,7 +1067,7 @@ country_event = {
 			submarine_operations_bs = 1
 			convoy_escorts_bs = 1
 		}
-		add_ideas = katsumi_nishihara
+		add_ideas = JAP_katsumi_nishihara
 		set_country_flag = cht_carrier
 
 		hidden_effect = { 
@@ -1092,7 +1092,7 @@ country_event = {
 			battlefleet_concentration = 1
 			convoy_sailing = 1
 		}
-		add_ideas = yukiko_nagura
+		add_ideas = JAP_yukiko_nagura
 		set_country_flag = cht_sub_destroyer
 
 		hidden_effect = { 
