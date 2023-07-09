@@ -6515,16 +6515,11 @@
 	focus = {
 		id = JAP_strategic_engineering
 		icon = GFX_goal_strategic_engineering
-<<<<<<< HEAD
+
 		x = 3
 		y = 0
 		relative_position_id = JAP_ikeda_section_3
-=======
-		x = 9
-		y = 2
-		relative_position_id = JAP_chihatan_armed_forces
->>>>>>> edc9943108047b189553467a09518053b90f4943
-
+		
 		cost = 10
 
 		ai_will_do = {
