@@ -2506,10 +2506,23 @@ GER_partition_italy_desc:0 "Anzio is far to large for its own good, the fact is 
 GER_war_italy:0 "Cook the Pizza"
 GER_war_italy_desc:0 "Anzio will be brought under proper adminstration, and it will unfortuantly require violence to accomplish, but victory requires sacrifice."
 
+
 # elections unable to put in due to the desc and titles being somewhere else
-# GER_miho_victory_desc:0 "Miho is the only person who can save our nations democracy"
-# GER_miho_victory:0  "Miho's Victory"
 
 
+GER_repair_republic:0 "Family Matters"
+GER_repair_republic_desc:0 "Its time for miho to make her choice for the good of the nation shall she find the strength"
+
+GER_miho_victory:0  "Miho's Victory"
+GER_miho_victory_desc:0 "Miho is the only person who can save our nations democracy"
+
+
+
+
+
+
+# Emi
+GER_de_nishizmization:0 "DE-Nishizmization"
+GER_de_nishizmization_desc: "With the war now over the difficult period of getting rid of nishizmizume influence is before us"
 
 
