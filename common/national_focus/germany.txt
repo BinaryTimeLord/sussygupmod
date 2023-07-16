@@ -8994,8 +8994,8 @@ focus_tree = {
 	focus = {
 		id = GER_inaugurate_the_republic 
 		icon = GFX_goal_kuroooaria
-		##prerequisite = { focus = GER_establish_consituition }
-		x = 13
+		prerequisite = { focus = GER_establish_consituition }
+		x = 14
 		y = 1
 		cost = 10
 		ai_will_do = {
