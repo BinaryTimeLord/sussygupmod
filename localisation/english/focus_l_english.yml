@@ -2513,10 +2513,30 @@ GER_war_italy_desc:0 "Anzio will be brought under proper adminstration, and it w
 GER_repair_republic:0 "Family Matters"
 GER_repair_republic_desc:0 "Its time for miho to make her choice for the good of the nation shall she find the strength"
 
-GER_miho_victory:0  "Miho's Victory"
+GER_miho_victory:0 "Miho's Victory"
 GER_miho_victory_desc:0 "Miho is the only person who can save our nations democracy"
-
-
+GER_repair_republic:0 "Family Choices"
+GER_repair_republic_desc:0 ""
+GER_a_gentle_touch:0 "Operation Platzwart"
+GER_a_gentle_touch_desc:0 ""
+GER_our_future:0 "Our Future"
+GER_our_future_desc:0 ""
+GER_saori_victory:0 "Saori's Victory"
+GER_saori_victory_desc:0 ""
+GER_revive_nationalism:0 "Revive Nationalism"
+GER_revive_nationalism_desc:0 ""
+GER_a_friend:0 "A Friend in Anzio"
+GER_a_friend_desc:0 ""
+GER_democratic_takebeism_ideals:0 "Democratic Takebeism"
+GER_democratic_takebeism_ideals_desc:0 ""
+GER_emi_victory:0 "Emi's Victory"
+GER_emi_victory_desc:0 ""
+GER_de_nishizumization:0 "De-Nishizumization"
+GER_de_nishizumization_desc:0 ""
+GER_anti_corruption:0 "Anti Corruption Policies"
+GER_anti_corruption_desc:0 ""
+GER_forwards:0 "Forwards!"
+GER_forwards_desc:0 ""
 
 
 
