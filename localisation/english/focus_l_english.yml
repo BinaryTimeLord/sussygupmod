@@ -2510,39 +2510,29 @@ GER_war_italy_desc:0 "Anzio will be brought under proper adminstration, and it w
 # elections unable to put in due to the desc and titles being somewhere else
 
 
-GER_repair_republic:0 "Family Matters"
-GER_repair_republic_desc:0 "Its time for miho to make her choice for the good of the nation shall she find the strength"
+
 
 GER_miho_victory:0 "Miho's Victory"
 GER_miho_victory_desc:0 "Miho is the only person who can save our nations democracy"
 GER_repair_republic:0 "Family Choices"
-GER_repair_republic_desc:0 ""
+GER_repair_republic_desc:0 "The Matter of Mihos Family requires addressing, whilst she has resisted having to publically call out her family in the end, we have gotten her to speak on the matter."
 GER_a_gentle_touch:0 "Operation Platzwart"
-GER_a_gentle_touch_desc:0 ""
+GER_a_gentle_touch_desc:0 "There Remenants of the Old regime will continue to rock the nation, its time to deal with them in the only proper way"
 GER_our_future:0 "Our Future"
-GER_our_future_desc:0 ""
+GER_our_future_desc:0 "Miho is the Future, with time everyone will see that, we must reject militarism and focus on creating a Europe of Peace not of war."
 GER_saori_victory:0 "Saori's Victory"
-GER_saori_victory_desc:0 ""
+GER_saori_victory_desc:0 "Under Saori's Leadership we shall correct the mistakes of old, whilst expanding our ambitions as we should towards a Kuromorimine that will stand for a thousand years"
 GER_revive_nationalism:0 "Revive Nationalism"
-GER_revive_nationalism_desc:0 ""
+GER_revive_nationalism_desc:0 "We cannot be ashamed of our past, we should never bow to any nation, we deserve to fill pride any anything less is unpatriotic"
 GER_a_friend:0 "A Friend in Anzio"
-GER_a_friend_desc:0 ""
+GER_a_friend_desc:0 "Pepperoni and Anchovy is a great help to Saori's World view, Anzio is a friend of our nation, we must not abandon them to the decadent west"
 GER_democratic_takebeism_ideals:0 "Democratic Takebeism"
-GER_democratic_takebeism_ideals_desc:0 ""
+GER_democratic_takebeism_ideals_desc:0 "True democracy as some claim is impractical and would destroy us, better to have a system where the state directs the people, with parliment to handle day to day actions"
 GER_emi_victory:0 "Emi's Victory"
-GER_emi_victory_desc:0 ""
+GER_emi_victory_desc:0 "While seen by some as a cold but pragmatic leader, Emi's heart bleeds like so many others for our nation to get back on track, she knows what must be done to prevent the nations continued decline into authoritarianism, we put our faith in her"
 GER_de_nishizumization:0 "De-Nishizumization"
-GER_de_nishizumization_desc:0 ""
+GER_de_nishizumization_desc:0 "The Nishizumi Rot goes deep into our nation, we must turn our backs on this shameful era of our history if we are to make our nation great again"
 GER_anti_corruption:0 "Anti Corruption Policies"
-GER_anti_corruption_desc:0 ""
+GER_anti_corruption_desc:0 "We must not allow the same rot that caused the rise of Nishizumi rule to reappear, we must do all in our power to stop it from ever appearing once more"
 GER_forwards:0 "Forwards!"
-GER_forwards_desc:0 ""
-
-
-
-
-# Emi
-GER_de_nishizmization:0 "DE-Nishizmization"
-GER_de_nishizmization_desc: "With the war now over the difficult period of getting rid of nishizmizume influence is before us"
-
-
+GER_forwards_desc:0 "Whilst much more can be done, Emi must focus on turning our nation into a land of prosperity, to show to all that we will not fail them, forwards workers to liberty and justice"
