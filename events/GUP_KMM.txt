@@ -2772,7 +2772,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		complete_national_focus = GER_victory_for_emi
+		complete_national_focus = GER_emi_victory
 		set_country_flag = kmm_emi_pres
 	}
 	option = {
@@ -2780,17 +2780,17 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		complete_national_focus = GER_victory_for_miho
+		complete_national_focus = GER_miho_victory
 		set_country_flag = kmm_miho_pres
 	}
-	option = {
-		name = kmm.37.c
-		ai_chance = {
-			base = 1
-		}
-		complete_national_focus = GER_victory_for_mauko
-		set_country_flag = kmm_kojima_pres
-	}
+	##option = {
+		##name = kmm.37.c
+		##ai_chance = {
+			##base = 1
+		##}
+		##complete_national_focus = GER_victory_for_mauko
+		##set_country_flag = kmm_kojima_pres
+	##}
 }
 
 country_event = { #Gregorian Question
