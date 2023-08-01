@@ -346,7 +346,7 @@
  DOD_hungary.112.desc:0 "On his recent trip to Moscow, [HUN.GetLeader] had to endure several gruelling hours of meetings with [SOV.GetLeader], who repeatedly called him an idiot for trying to suggest such an obviously misguided scheme. Apparently, we have not quite understood the role of national territory in the revolutionary struggle yet, and have therefore come to the wrong conclusions about what our strategy should be."
  DOD_hungary.112.a:0 "We will press on alone."
  DOD_hungary.112.b:0 "We will consider our mistakes."
- DOD_hungary.113.t:0 Count offers a compromise"
+ DOD_hungary.113.t:0 "Count offers a compromise"
  DOD_hungary.113.desc:0 "The Count government under [ROM.GetLeader] has sent a delegation to Moscow to negotiate the issue of the contested territories. It seems that they believe that they can reach a compromise solution, where they would give up one part of the contested areas to hold onto the other. If we agree, which part should we demand?"
  DOD_hungary.113.a:0 "Force them to give up Transylvania"
  DOD_hungary.113.b:0 "Force them to give up Bessarabia"
