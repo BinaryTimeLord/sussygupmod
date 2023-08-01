@@ -70,9 +70,9 @@ country_event = {
 			hidden_effect = { activate_mission = GER_mefo_bills_mission }
 		}
 		create_country_leader = {
-			name = "Koume"
+			name = "Koume Akaboshi"
 			desc = "POLITICS_KOUME_DESC"
-			picture = "Portrait_GER_KoumeK.dds"
+			picture = "Portrait_GER_Koume.dds"
 			expire = "1965.1.1"
 			ideology = german_idealism4
 			traits = {
@@ -243,9 +243,9 @@ country_event = {
 		name = wtt_germany.4.a
 		set_country_flag = kaiser_wilhelm_ii
 		create_country_leader = {
-			name = "Koume"
+			name = "Koume Akaboshi"
 			desc = "POLITICS_WILHELM_II_DESC"
-			picture = "Portrait_GER_KoumeK.dds"
+			picture = "Portrait_GER_Koume.dds"
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
@@ -322,7 +322,7 @@ country_event = {
 		HOL = { clr_country_flag = netherlands_refused_return_kaiser }
 		set_country_flag = kaiser_wilhelm_ii
 		create_country_leader = {
-			name = "Koume"
+			name = "Koume Akaboshi"
 			desc = "POLITICS_WILHELM_II_DESC"
 			picture = GFX_portrait_ger_wilhelm_ii
 			expire = "1965.1.1"

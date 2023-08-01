@@ -3976,9 +3976,9 @@ country_event = {
 
 		SLO = {
 			create_country_leader = {
-				name = "Erika"
+				name = "Erika Itsumi"
 				desc = "POLITICS_ERIKA_DESC"
-				picture = "gfx/leaders/GER/Portrait_GER_Erika1.dds"
+				picture = "gfx/leaders/GER/Portrait_GER_Erika.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism3
 				traits = {
@@ -3990,7 +3990,7 @@ country_event = {
 			hidden_effect = {
 				set_cosmetic_tag = SLO_erika
 				create_field_marshal = {
-					name = "Maho"
+					name = "Maho Nishizumi"
 					picture = "Portrait_GER_Maho.dds"
 					traits = { armor_officer expert_delegator offensive_doctrine war_hero ranger }
 					skill = 5
@@ -4003,7 +4003,7 @@ country_event = {
 				}
 
 				create_corps_commander = {
-					name = "Erika"
+					name = "Erika Itsumi"
 					picture = "Portrait_GER_Erika.dds"
 					traits = { panzer_leader harsh_leader career_officer ranger }
 					skill = 4
@@ -4016,7 +4016,7 @@ country_event = {
 				}
 
 				create_corps_commander = {
-					name = "Koume"
+					name = "Koume Akaboshi"
 					picture = "Portrait_GER_Koume.dds"
 					traits = { panzer_leader trait_cautious career_officer ranger }
 					skill = 4
@@ -4802,9 +4802,9 @@ country_event = {
 
 		SLO = {
 			create_country_leader = {
-				name = "Erika"
+				name = "Erika Itsumi"
 				desc = "POLITICS_ERIKA_DESC"
-				picture = Portrait_GER_Erika1.dds
+				picture = Portrait_GER_Erika.dds
 				expire = "1965.1.1"
 				ideology = german_idealism3
 				traits = {
@@ -4816,7 +4816,7 @@ country_event = {
 			hidden_effect = {
 				set_cosmetic_tag = SLO_erika
 				create_field_marshal = {
-					name = "Maho"
+					name = "Maho Nishizumi
 					picture = "Portrait_GER_Maho.dds"
 					traits = { armor_officer expert_delegator offensive_doctrine war_hero ranger }
 					skill = 5
@@ -4829,7 +4829,7 @@ country_event = {
 				}
 
 				create_corps_commander = {
-					name = "Erika"
+					name = "Erika Itsumi"
 					picture = "Portrait_GER_Erika.dds"
 					traits = { panzer_leader harsh_leader career_officer ranger }
 					skill = 4
@@ -4842,7 +4842,7 @@ country_event = {
 				}
 
 				create_corps_commander = {
-					name = "Koume"
+					name = "Koume Akaboshi"
 					picture = "Portrait_GER_Koume.dds"
 					traits = { panzer_leader trait_cautious career_officer ranger }
 					skill = 4
@@ -5597,7 +5597,7 @@ country_event = {
 		# Koume never gets mob tree - gets denied nishizumist secrets
 		add_stability = 0.05
 		create_country_leader = { #FASCIST KOUME
-			name = "Koume"
+			name = "Koume Akaboshi"
 			desc = "POLITICS_KOUME_DESC"
 			picture = "Portrait_GER_Koume.dds"
 			expire = "1965.1.1"
