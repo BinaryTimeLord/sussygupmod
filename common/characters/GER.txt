@@ -1,11 +1,17 @@
 characters={
 
 	GER_maho={
-		name="Maho"
+		name="Maho Nishizumi"
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Maho1.dds"
+				large="gfx/leaders/GER/Portrait_GER_Maho.dds"
 			}
+				army={
+			        small="gfx/interface/ideas/Kuromorimine/idea_ger_maho_armychief.dds"
+		        }
+		        army={
+			    large="gfx/leaders/GER/Portrait_GER_Maho.dds"
+	      	}
 		}
 		country_leader={
 			desc="POLITICS_MAHO_DESC"
@@ -14,12 +20,27 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal={
+			traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=1003
+		}
 	}
 	GER_erika={
-		name="Erika"
+		name="Erika Itsumi"
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Erika1.dds"
+				large="gfx/leaders/GER/Portrait_GER_Erika.dds"
+			}
+		    army={
+			    small="gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
+			}
+		    army={
+			    large="gfx/leaders/GER/Portrait_GER_Erika.dds"
 			}
 		}
 		country_leader={
@@ -29,12 +50,27 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		corps_commander={
+			traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=1004
+		}
 	}
 	GER_koume={
-		name="Koume"
+		name="Koume Akaboshi"
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_KoumeK.dds"
+				large="gfx/leaders/GER/Portrait_GER_Koume.dds"
+			}
+		    army={
+			small="gfx/interface/ideas/Kuromorimine/idea_ger_koume_akaboshi.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Koume.dds"
 			}
 		}
 		country_leader={
@@ -44,7 +80,18 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+
+		corps_commander={
+			traits={ career_officer trait_cautious panzer_leader ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=1005
+		}
 	}
+
 	GER_the_union={
 		name="The Union"
 		portraits={
@@ -58,81 +105,6 @@ characters={
 			traits={ communal_unity reigns_of_olden_tactics }
 			expire="1965.1.1.1"
 			id=-1
-		}
-	}
-	GER_akaboshi={
-		name="Akaboshi"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_5"
-			}
-		}
-		country_leader={
-			desc="POLITICS_KOUME1_DESC"
-			ideology=german_idealism
-			traits={ reformer popular_commander }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	GER_maho_nishizumi={
-		name="Maho Nishizumi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_maho_armychief.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_GER_Maho.dds"
-			}
-		}
-		field_marshal={
-			traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=4
-			legacy_id=1003
-		}
-	}
-	GER_erika_itsumi={
-		name="Erika Itsumi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_GER_Erika.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=1004
-		}
-	}
-	GER_koume_akaboshi={
-		name="Koume Akaboshi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_koume_akaboshi.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_GER_Koume.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer trait_cautious panzer_leader ranger }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=1005
 		}
 	}
 	GER_emi_kojima={

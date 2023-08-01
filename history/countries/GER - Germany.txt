@@ -180,9 +180,9 @@ create_import = {
 	}
 
 	create_country_leader = { #neue fuhrerin
-		name = "Erika"
+		name = "Erika Itsumi"
 		desc = "POLITICS_ERIKA_DESC"
-		picture = Portrait_GER_Erika1.dds
+		picture = "Portrait_GER_Erika.dds"
 		expire = "1965.1.1"
 		ideology = german_idealism3
 		traits = {
@@ -497,11 +497,7 @@ activate_mission = GER_mefo_bills_mission
 recruit_character = GER_maho
 recruit_character = GER_koume
 recruit_character = GER_the_union
-recruit_character = GER_akaboshi
 recruit_character = GER_erika
-recruit_character = GER_maho_nishizumi
-recruit_character = GER_erika_itsumi
-recruit_character = GER_koume_akaboshi
 recruit_character = GER_emi_kojima
 recruit_character = GER_maukou
 recruit_character = GER_geshiko

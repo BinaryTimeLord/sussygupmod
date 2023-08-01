@@ -13,7 +13,13 @@ characters = {
 		name = Anchovy
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ITA/Portrait_ITA_Anchovy1.dds"
+				large = "gfx/leaders/ITA/Portrait_ITA_Anchovy.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_anchovy.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Anchovy.dds"
 			}
 		}
 
@@ -24,16 +30,14 @@ characters = {
 			id = -1
 		}
 
-		corps_commander = {
+		field_marshal={
 			traits={ armor_officer logistics_wizard expert_delegator }
 			skill=5
 			attack_skill=3
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			legacy_id=0
-			visible = {
-			}
+			legacy_id=-1
 		}
 	}
 
@@ -148,26 +152,6 @@ characters = {
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
 
-	ITA_anchobi={
-		name="Anchobi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Anzio/idea_ita_anchovy.dds"
-			}
-			army={
-				large="gfx/leaders/ITA/Portrait_ITA_Anchovy.dds"
-			}
-		}
-		field_marshal={
-			traits={ armor_officer logistics_wizard expert_delegator }
-			skill=5
-			attack_skill=3
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
 	ITA_pepperoni={
 		name="Pepperoni"
 		portraits={

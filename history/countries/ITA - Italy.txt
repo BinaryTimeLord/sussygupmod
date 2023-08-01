@@ -722,7 +722,6 @@ set_popularities = {
 	neutrality = 5
 }
 
-recruit_character = ITA_anchobi
 recruit_character = ITA_pepperoni
 recruit_character = ITA_carpaccio
 recruit_character = ITA_amaretto

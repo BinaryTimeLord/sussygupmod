@@ -3,8 +3,23 @@ characters={
 		name="Kinuyo Nishi"
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Kinuyo1.dds"
+				large="gfx/leaders/JAP/Kinuyo.dds"
 			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_kinuyi_nishi.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Kinuyo.dds"
+			}
+		}
+		field_marshal={
+			traits={ armor_officer offensive_doctrine expert_delegator }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1705
 		}
 		country_leader={
 			desc="POLITICS_KINUYO_DESC"
@@ -21,6 +36,21 @@ characters={
 			civilian={
 				large="gfx/leaders/JAP/Tamada.dds"
 			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Tamada.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless cavalry_leader panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1703
 		}
 		country_leader={
 			desc="POLITICS_TAMADA_DESC"
@@ -37,6 +67,21 @@ characters={
 			civilian={
 				large="gfx/leaders/JAP/Hosomi.dds"
 			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Hosomi.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless cht_toseiha_symphatizer trickster panzer_leader }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1702
 		}
 		country_leader={
 			desc="POLITICS_HOSOMI_DESC"
@@ -63,26 +108,6 @@ characters={
 		}
 	}
 
-	JAP_nishi={
-		name="Nishi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_kinuyi_nishi.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Kinuyo.dds"
-			}
-		}
-		field_marshal={
-			traits={ armor_officer offensive_doctrine expert_delegator }
-			skill=5
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
 	JAP_fukuda={
 		name="Fukuda"
 		portraits={
@@ -101,26 +126,6 @@ characters={
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
-		}
-	}
-	JAP_tamada={
-		name="Tamada"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Tamada.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_reckless cavalry_leader panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=1703
 		}
 	}
 	JAP_kubota={
@@ -181,26 +186,6 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=1700
-		}
-	}
-	JAP_hosomi={
-		name="Hosomi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Hosomi.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_reckless cht_toseiha_symphatizer trickster panzer_leader }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1702
 		}
 	}
 	JAP_nagura={
