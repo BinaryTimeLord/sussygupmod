@@ -13170,7 +13170,20 @@ focus_tree = {
 		
 		completion_reward = { ##JOIN ALLIES
 			ENG = {
-				country_event = { id = generic.2 }
+				country_event = { id = kmm.217 }
+				add_ai_strategy = {
+					type = befriend
+					id = "GER"			
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"			
+					value = 200
+				}	
+			}
+			
+			FRA = {
 				add_ai_strategy = {
 					type = befriend
 					id = "GER"			
@@ -13261,7 +13274,7 @@ focus_tree = {
 	##ALONE WE STAND
 	focus = {
 		id = GER_our_own_way
-		icon = GFX_goal_mobilize_the_academy
+		icon = GFX_goal_european_union
 		relative_position_id = GER_the_west
 		
 		x = 1
@@ -13273,13 +13286,14 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			add_political_power = 50
+			add_ideas = GER_united_europe1
 		}
 	}
 	
 	focus = {
 		id = GER_expand_fortlines
-		icon = GFX_goal_baltic_concession
+		icon = GFX_goal_festung
 		relative_position_id = GER_the_west
 		
 		x = 1
@@ -13291,13 +13305,155 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = { ##ADDS DECISIONS TO BUILD FORTS
-		
+			set_country_flag = GER_FORTLINES
+			custom_effect_tooltip = kmm_fortlines_tooltips
+			add_ideas GER_fortifications
+			
+			hidden_effect = {
+				5 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9327
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11386
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9372
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6375
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9346
+						instant_build = yes
+					}
+				}
+				
+				763 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3384
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 281
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11265
+						instant_build = yes
+					}
+				}
+				
+				67 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11467
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9511
+						instant_build = yes
+					}
+				}
+				
+				66 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9570
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9470
+						instant_build = yes
+					}
+				}
+				
+				68 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 444
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11478
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6236
+						instant_build = yes
+					}
+				}
+				
+				63 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11260
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11316
+						instant_build = yes
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11372
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = GER_military_industry
-		icon = GFX_goal_erika_favorite
+		icon = GFX_goal_miltaryindust
 		relative_position_id = GER_the_west
 		
 		x = 1
@@ -13310,13 +13466,31 @@ focus_tree = {
 		
 		completion_reward = {
 			complete_national_focus = GER_european_union
+			
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
 		}
 	}
 	
 	focus = {
 		## Currently, the spy agency and the extra two spies are exclusive
 		id = GER_internal_security
-		##icon = 
+		icon = GFX_goal_security
 		relative_position_id = GER_new_constitution
 		
 		x = 5
@@ -13354,7 +13528,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_repeal_fire_decree
-		##icon = 
+		icon = GFX_goal_fireban
 		relative_position_id = GER_internal_security
 		
 		x = 1
@@ -13490,7 +13664,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##IDEA LESS RESISTANCE, AND BETTER COMPLIANCE
-			add_ideas = KMM_well_funded_police
+			add_ideas = GER_well_funded_police
 		}
 	}
 	
@@ -13502,7 +13676,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_free_market
-		##icon = 
+		icon = GFX_goal_freemarket
 		relative_position_id = GER_new_constitution
 		
 		available = {
@@ -13520,13 +13694,13 @@ focus_tree = {
 		completion_reward = { ##MOVE A TRADE LAW UP AND CANT CHANGE IT, ADD IDEA: -5% CONSUMER GOODS AND 5% BUILD SPEED
 			add_ideas = export_focus 
 			## NEED A RULE TO PREVENT FROM CHANGING
-			add_ideas = KMM_free_market
+			add_ideas = GER_free_market2
 		}
 	}
 	
 	focus = {
 		id = GER_liberalize_economy
-		##icon = 
+		icon = GFX_goal_gloriana_aid
 		relative_position_id = GER_free_market
 		
 		x = 1
@@ -13558,7 +13732,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_economy_experts
-		##icon = 
+		icon = GFX_goal_anschluss_miho
 		relative_position_id = GER_free_market
 		
 		x = -1
@@ -13570,13 +13744,13 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { 
-		
+			add_ideas = GER_miho_economics
 		}
 	}
 	
 	focus = {
 		id = GER_expand_civil_rights
-		##icon =
+		icon = GFX_goal_women_sufferage
 		relative_position_id = GER_free_market
 		
 		x = -3
@@ -13588,13 +13762,13 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ##REDUCE REPUBLIC DEBUFF
-		
+			add_ideas = womens_sufferage
 		}
 	}
 	
 	focus = {
 		id = GER_stable_currency
-		##icon = 
+		icon = GFX_goal_open_the_fields
 		relative_position_id = GER_free_market
 		
 		x = 0
@@ -13608,7 +13782,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##ADD IDEA: -5% CONSUMER GOODS, +10% Stability
-			add_ideas = KMM_stable_currency
+			add_ideas = GER_stable_currency
 		}
 	}	
 	
@@ -14070,6 +14244,7 @@ focus_tree = {
 		focus = {
 		id = GER_european_union
 		relative_position_id = GER_new_constitution
+		icon = GFX_goal_european_union
 		prerequisite = {
 			focus = GER_military_industry
 		}
@@ -14098,6 +14273,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_invite_benelux
+		icon = GFX_goal_invite_benelux
 		relative_position_id = GER_european_union
 		prerequisite = { focus = GER_european_union}
 		x = -2
@@ -14116,6 +14292,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_invite_france
+		icon = GFX_goal_invite_france
 		relative_position_id = GER_invite_benelux
 		prerequisite = { focus = GER_invite_benelux}
 		x = -1
@@ -14132,6 +14309,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_iberia
+		icon = GFX_goal_invite_iberia
 		relative_position_id = GER_invite_benelux
 		prerequisite = { focus = GER_invite_france}
 		prerequisite = { focus = GER_invite_switzerland }
@@ -14150,6 +14328,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_switzerland
+		icon = GFX_goal_invite_switzerland
 		relative_position_id = GER_invite_benelux
 		prerequisite = { focus = GER_invite_benelux}
 		x = 1
@@ -14166,6 +14345,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_british_isles
+		icon = GFX_invite_british_isles
 		relative_position_id = GER_invite_benelux
 		prerequisite = { focus = GER_invite_iberia}
 		x = 0
@@ -14183,6 +14363,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_anzio1
+		icon = GFX_goal_invite_anzio
 		relative_position_id = GER_invite_benelux
 		prerequisite = { focus = GER_invite_british_isles}
 		x = 0
@@ -14199,6 +14380,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_poland
+		icon = GFX_goal_invite_poland
 		relative_position_id = GER_european_union
 		prerequisite = { focus = GER_european_union}
 		x = 2
@@ -14215,6 +14397,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_baltics
+		icon = GFX_goal_invite_baltics
 		relative_position_id = GER_invite_poland
 		prerequisite = { focus = GER_invite_poland}
 		x = -1
@@ -14233,6 +14416,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_czech
+		icon = GFX_goal_invite_czech
 		relative_position_id = GER_invite_poland
 		prerequisite = { focus = GER_invite_poland}
 		x = 1
@@ -14249,6 +14433,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_romania
+		icon = GFX_goal_invite_romania
 		relative_position_id = GER_invite_poland
 		prerequisite = { focus = GER_invite_baltics }
 		prerequisite = { focus = GER_invite_czech}
@@ -14266,6 +14451,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_balkans
+		icon = GFX_goal_invite_balkans
 		relative_position_id = GER_invite_poland
 		prerequisite = { focus = GER_invite_romania }
 		x = 0
@@ -14287,6 +14473,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invite_northern_gang
+		icon = GFX_goal_aid_finland
 		relative_position_id = GER_invite_poland
 		prerequisite = { focus = GER_invite_balkans }
 		x = 0

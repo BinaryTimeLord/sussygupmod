@@ -472,7 +472,7 @@
  GER_free_political_prisoners_desc:0 "Now we have to lift some of the restrictions that we have imposed on the students who think differently. We should get these students off of the explusion list and reintergrate them back into Kuromorimine"
  GER_repeal_fire_decree:0 "End of Nishizumi Domination"
  GER_repeal_fire_decree_desc:0 "The Nishizumi style is doing more harm than good. It has created tyranical leaders with the intention of unifying the school, it is going horribly as the students wanted to head back to the days of Kirishima. Maybe we should give her ideas a second chance."
- GER_road_building:0 "Mega projects"
+ GER_road_building:0 "Mega Projects"
  GER_road_building_desc:0"Geshiko thinks that some of the budget can be diverted from the tanks to the public works of the school. We need to provide more homes for the everyday Kuromorimine resident"
  GER_rearm_garrisons:0 "Student Brigades"
  GER_rearm_garrisons_desc:0 "Student Brigades were used to guard the school during the days of Manami and Runa but have been abolished under Erika due to their disloyalty to her. Bringing these brigades back will help guard the school from future threats."
@@ -491,7 +491,7 @@
  GER_military_industry:0 "Zeitenwende"
  GER_military_industry_desc:0 "This is a turning moment for us, we must plow forwards and save Europe from the tryanny of Pravda"
  GER_military_buildup_desc:0 "The horns of war sound once more, as the final battle nears its occurrence, every man and women in our lands needs to know what’s at stake, every factory must do more build more for eventual total victory."
-# Fuck you fixes your focus tree more
+# Fuck you fixes your focus tree more ##makes more of a mess
 GER_reform_wave:0 "Reform Wave"
  GER_reform_wave_desc:0 "With Kuromorimine's new constitution in place, we should expand the school size due to the students being able to have different opinions that wouldn't be scrutinize. Let's expand on these."
  GER_free_heathcare:0 "Free Healthcare"
@@ -506,39 +506,22 @@ GER_reform_wave:0 "Reform Wave"
  GER_social_welfare_desc:0 "Not everyone is as rich as a Kuromorimine Queen so helping the welfare of the poorer students is the top priority. Everyone needs a place to stay if we are to remain stable."
 GER_new_constitution:0 "Frankfurt Constitution"
  GER_new_constitution_desc:0 "With the end of elections in Kuromorimine, the time to draft a constitution has come, to deliver us from the mistakes of old, the time is now to forge a new destiny"
-
-# final nail
- GER_eradicate_nishizumism:0 "Final Nail in the Coffin"
- GER_eradicate_nishizumism_desc:0 "Whilst Maho and Erika have been dealt with, their influence over some still remains, and will continue to remain unless we put effort into wiping it off the face of the earth completely. Their ideas must never rise again"
-
+GER_eradicate_nishizumism:0 "Final Nail in the Coffin"
+GER_eradicate_nishizumism_desc:0 "Whilst Maho and Erika have been dealt with, their influence over some still remains, and will continue to remain unless we put effort into wiping it off the face of the earth completely. Their ideas must never rise again"
 GER_anti_fasisct_prop:0 "Anti Authoritarian Propaganda"
 GER_anti_fasisct_prop_desc:0 "The reason why Maho rose to power was due to fear and anger over our defeat, if we are are to stand as a beacon of Democracy and liberty we must ensure such movements do not happen abroad. This can be accomplished through many means, propaganda and military intervention, the first is preferable but in time we may require preemptive action against authoritarian states"
-
 GER_prepare_coups:0 "Prepare Democratic Forces"
 GER_prepare_coups_desc:0 "Through back channels and embassy staff we have the opportunity to make contact with like minded officers who are sympathetic to our cause of restoring democracy in their nations. With the proper funding and support they could take their nations back from the tyrants who rule their states, and we shall provide such support to protect democracy wherever we can."
-
 GER_against_tyranny:0 "The Great Crusade"
 GER_against_tyranny_desc:0 "Its clear, that standing by isnt acceptable we must act now, we must preemptively destroy these dictatorships to be truly safe"
-
 GER_peace_our_time:0 "Peace in our Time"
 GER_peace_our_time_desc:0 "With many of the greatest threats to democracy, there shall truly be peace in our time, and perhaps forever"
-
 GER_prepare_italian_invasion:0 "Ready the Oven"
 GER_prepare_italian_invasion_desc:0 "Anzio has the most disturbing form of authoritarianism, while we are confident that they would fall quickly, one must not be lulled in by false security"
-
 GER_partition_italy:0 "Put In the Pizza"
 GER_partition_italy_desc:0 "Anzio is far to large for its own good, the fact is it should not control several parts of land, and should be brought down a peg only then can they be a true democracy"
-
-
 GER_war_italy:0 "Cook the Pizza"
 GER_war_italy_desc:0 "Anzio will be brought under proper adminstration, and it will unfortuantly require violence to accomplish, but victory requires sacrifice."
-
-
-# elections unable to put in due to the desc and titles being somewhere else
-
-
-
-
 GER_miho_victory:0 "Miho's Victory"
 GER_miho_victory_desc:0 "Miho is the only person who can save our nations democracy"
 GER_repair_republic:0 "Family Choices"
@@ -558,11 +541,17 @@ GER_democratic_takebeism_ideals_desc:0 "True democracy as some claim is impracti
 GER_emi_victory:0 "Emi's Victory"
 GER_emi_victory_desc:0 "While seen by some as a cold but pragmatic leader, Emi's heart bleeds like so many others for our nation to get back on track, she knows what must be done to prevent the nations continued decline into authoritarianism, we put our faith in her"
 GER_de_nishizumization:0 "De-Nishizumization"
-GER_de_nishizumization_desc:0 "The Nishizumi Rot goes deep into our nation, we must turn our backs on this shameful era of our history if we are to make our nation great again""
+GER_de_nishizumization_desc:0 "The Nishizumi Rot goes deep into our nation, we must turn our backs on this shameful era of our history if we are to make our nation great again"
 GER_anti_corruption:0 "Anti Corruption Policies"
 GER_anti_corruption_desc:0 "We must not allow the same rot that caused the rise of Nishizumi rule to reappear, we must do all in our power to stop it from ever appearing once more"
 GER_forwards:0 "Forwards!"
 GER_forwards_desc:0 "Whilst much more can be done, Emi must focus on turning our nation into a land of prosperity, to show to all that we will not fail them, forwards workers to liberty and justice"
+GER_the_west:0 "Look Towards the West"
+GER_the_west_desc:"" ##NEEDS DONE
+GER_our_own_way:0 "A United Europe?"
+GER_our_own_way_desc:0 ""
+GER_expand_fortlines:0 "Defense First"
+GER_expand_fortlines_desc:0 ""
  
  ##DISARM IDEAS
  kmm_disarmament1:0 "Heavy Disarmament"
@@ -600,8 +589,8 @@ GER_forwards_desc:0 "Whilst much more can be done, Emi must focus on turning our
  ##EU Focuses
  GER_european_union:0 "European Congress"
  GER_european_union_desc:0 "Europe has been divided for too long, It has caused many wars and much bloodshed. We should all come together for the better and unite into one great state."
- kmm_belgium:0 "Invite Waffle"   
- kmm_holland:0 "Invite the Batavian"
+ kmm_belgium:0 "Invite Belgium"   
+ kmm_holland:0 "Invite the Netherlands"
  kmm_lux:0 "Invite Luxembourg"
  GER_adopt_euro:0 "Adopt the Euro"
  GER_adopt_euro_desc:0 "Since we have Invited most of Europe we should adopt a currency that we can all use, univerally."
@@ -625,26 +614,26 @@ GER_forwards_desc:0 "Whilst much more can be done, Emi must focus on turning our
  kmm_europe_union:0 "European Union"
  kmm_austria:0 "Invite Ooarai"
  kmm_czech:0 "Invite Gregor"
- kmm_hungary:0 "Invite Turul"
- kmm_yugo:0 "Invite Brazava"
+ kmm_hungary:0 "Invite Hungary"
+ kmm_yugo:0 "Invite Yugoslavia"
  kmm_rom:0 "Invite Count"
  kmm_alb:0 "Invite Albania"
- kmm_greece:0 "Invite Hoplite"
+ kmm_greece:0 "Invite Greece"
  kmm_bulgaria:0 "Invite Yogurt"
  kmm_spain:0 "Invite Spain"
  kmm_portugal:0 "Invite Portugal"
  kmm_lit:0 "Invite Lithuana"
- kmm_lat:0 "Invite Livland"
- kmm_est:0 "Invite Hestia"
- kmm_italy:0 "Invite Anzio"
+ kmm_lat:0 "Invite Latvia"
+ kmm_est:0 "Invite Estonia"
+ kmm_italy:0 "Invite Italy"
  kmm_den:0 "Invite Denmark"
- kmm_nor:0 "Invite Viking"
- kmm_swe:0 "Invite Viggen"
+ kmm_nor:0 "Invite Norway"
+ kmm_swe:0 "Invite Sweden"
  kmm_fin:0 "Invite Jatkosota"
  kmm_uk:0 "Invite St. Gloriana"
  kmm_fra:0 "Invite BC Freedom"
  kmm_pol:0 "Invite Bonple"
- kmm_swi:0 "Invite Neutrality"
+ kmm_swi:0 "Invite Switzerland"
  ##EU TOOLTIPS
  kmm_balkan_tooltip2:0 "§RWill be removed after completion of:§! 'Develop the Balkans'"
  kmm_iberia_tooltip:0 "§CUnlocks§! 'Help Iberia Recover' §CFocus§!"
@@ -675,6 +664,9 @@ GER_forwards_desc:0 "Whilst much more can be done, Emi must focus on turning our
  kmm_mining:0 "United Resource Extraction"
  kmm_science:0 "United Research Efforts"
  kmm_german_invest:0 "German Investment"
+ 
+ ##DEMOCRATIC TOOLTIPS
+ kmm_fortlines_tooltips:0 "§CBuilds§! Forts on the East"
  
  ##TOOLTIPS
  kmm_research_tooltip:0 "§CIf we have more than 5 research slots this will bypass§!"

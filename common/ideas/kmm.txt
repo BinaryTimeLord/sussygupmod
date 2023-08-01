@@ -2742,6 +2742,110 @@ ideas = {
 				political_power_cost = 0.1
 			}
 		}
+		
+		GER_united_europe1 = {
+			name = GER_united_europe1
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		GER_fortifications = {
+			name = GER_fortifications
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+		
+		GER_stable_currency = {
+			name = GER_stable_currency 
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		GER_free_market2 = {
+			name = GER_stable_currency 
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				political_power_gain = 0.05
+				democratic_drift = 0.01
+				democratic_acceptance = 200
+				
+			}
+		}
+		
+		
+		GER_miho_economics = {
+			name = GER_miho_economics
+			##picture = 
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
 
 		GER_bright_future = {
 			name = GER_bright_future
@@ -2761,6 +2865,28 @@ ideas = {
 				#+5% POLITICAL POWER GAIN, 5% STABILITY
 				political_power_factor = 0.05
 				stability_factor = 0.05
+			}
+		}
+		
+		GER_well_funded_police = {
+			name = GER_well_funded_police
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				resistance_damage_to_garrison = -0.05
+				resistance_garrison_penetration_chance = -0.05
+				resistance_growth = -0.10
 			}
 		}
 		

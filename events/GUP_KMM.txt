@@ -4666,3 +4666,137 @@ country_event = {
 		add_manpower = -10589
 	}
 }
+
+country_event = { ##UK
+	id = kmm.217
+	title = kmm.217.t
+	desc = kmm.217.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.217.a
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.219
+				days = 5
+			}
+			
+			add_to_faction = ENG
+		}
+		
+	}
+	
+	option = {
+		name = kmm.217.b
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.218
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { ##UK NO
+	id = kmm.218
+	title = kmm.218.t
+	desc = kmm.218.d
+	picture = GFX_report_event_czech_betrayal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.218.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = { ##UK YES
+
+id = kmm.219
+	title = kmm.219.t
+	desc = kmm.219.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.219.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+##NEED LOC##
+
+country_event = { ##FRANCE
+	id = kmm.220
+	title = kmm.220.t
+	desc = kmm.220.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.220.a
+		ai_chance = {
+			base = 10
+		}
+	}
+	
+	option = {
+		name = kmm.220.b
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { ##FRANCE NO
+	id = kmm.221
+	title = kmm.221.t
+	desc = kmm.221.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.221.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = { ##FRANCE YES
+
+id = kmm.221
+	title = kmm.221.t
+	desc = kmm.221.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.219.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
