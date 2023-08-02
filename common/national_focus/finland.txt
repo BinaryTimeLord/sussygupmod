@@ -1911,8 +1911,213 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = FIN_estonia_coop
+		icon = GFX_goal_generic_alliance
+		
+		x = 3
+		y = 1
+		
+		
+        prerequisite = { focus = FIN_war_dictatorship }
+		relative_position_id = FIN_war_dictatorship
+		mutually_exclusive = { focus = FIN_finnish_neutrality }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		    is_subject = no
+			is_in_faction = no
+		}
+
+		completion_reward = {
+			create_faction = FIN_finland_pact
+			if = {
+			    limit = {
+				    country_exists = EST
+				    EST = {
+			 	  		is_subject = no
+						is_in_faction = no
+					}
+				}
+				EST = { country_event = { id = finland.5 days = 3 } }
+			}
+		}
+	}
 	
+	focus = {
+		id = FIN_latvia_pact
+		icon = GFX_goal_generic_improve_relations
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FIN_estonia_coop}
+		relative_position_id = FIN_estonia_coop
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		bypass = {
+		    OR = {
+				NOT = { country_exists = LAT }
+				LAT = { is_subject = yes }
+				LAT = { is_in_faction = yes }
+			}
+		}
+		
+		available = {
+		    is_subject = no
+		}
+
+		completion_reward = {
+			LAT = { country_event = { id = finland.5 days = 3 } }
+		}
+	}
 	
+	focus = {
+		id = FIN_coordination
+		icon = GFX_goal_generic_national_unity
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FIN_latvia_pact}
+		relative_position_id = FIN_latvia_pact
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+		    is_subject = no
+		}
+
+		completion_reward = {
+			add_ideas = FIN_planning_bonus
+			every_other_country = { 
+			    limit = {
+					is_in_faction_with = FIN
+				}
+				add_ideas = FIN_planning_bonus
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_technical_pact
+		icon = GFX_goal_tfv_generic_tech_sharing
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FIN_latvia_pact}
+		relative_position_id = FIN_latvia_pact
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+		    is_subject = no
+		}
+
+		completion_reward = {
+		    add_to_tech_sharing_group = FIN_technical_pact_tech_group
+			every_other_country = { 
+			    limit = {
+					is_in_faction_with = FIN
+				}
+				add_to_tech_sharing_group = FIN_technical_pact_tech_group
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_strike_at_lenin_sity
+		icon = GFX_focus_ger_strike_at_the_source
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FIN_protect_karelia }
+		relative_position_id = FIN_protect_karelia
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1000
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+		    is_subject = no
+			has_war = no
+			SOV = { 
+			    surrender_progress > 0.2
+			}
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = take_state_focus
+				generator = { 213 215 216 } 
+			}
+		}
+	}
+	
+    focus = {
+		id = FIN_New_Finland
+		icon = GFX_focus_mikko
+		
+		mutually_exclusive = { focus = FIN_war_dictatorship }
+		relative_position_id = FIN_strengten_regime
+		prerequisite = { focus = FIN_strengten_regime}
+		
+		x = 4
+		y = 1
+		
+		available = {
+			has_country_flag = FIN_fascist_rule
+		}
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+		    is_subject = no
+		}
+
+		completion_reward = {
+		    add_political_power = 40
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.3
+			}
+		}
+	}
+
 	focus = {
 		id = FIN_germany_alliance
 		icon = GFX_focus_chi_mission_to_germany
@@ -2122,213 +2327,6 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = Fin_SOV_attack show_effect_tooltip = no }
 		}
 	
-	}
-	
-	focus = {
-		id = FIN_estonia_coop
-		icon = GFX_goal_generic_alliance
-		
-		x = 3
-		y = 1
-		
-		
-        prerequisite = { focus = FIN_war_dictatorship }
-		relative_position_id = FIN_war_dictatorship
-		mutually_exclusive = { focus = FIN_finnish_neutrality }
-		
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-		
-		available = {
-		    is_subject = no
-			is_in_faction = no
-		}
-
-		completion_reward = {
-			create_faction = FIN_finland_pact
-			if = {
-			    limit = {
-				    country_exists = EST
-				    EST = {
-			 	  		is_subject = no
-						is_in_faction = no
-					}
-				}
-				EST = { country_event = { id = finland.5 days = 3 } }
-			}
-		}
-	}
-	
-	focus = {
-		id = FIN_latvia_pact
-		icon = GFX_goal_generic_improve_relations
-		
-		x = 0
-		y = 1
-		
-		prerequisite = { focus = FIN_estonia_coop}
-		relative_position_id = FIN_estonia_coop
-		
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-		
-		bypass = {
-		    OR = {
-				NOT = { country_exists = LAT }
-				LAT = { is_subject = yes }
-				LAT = { is_in_faction = yes }
-			}
-		}
-		
-		available = {
-		    is_subject = no
-		}
-
-		completion_reward = {
-			LAT = { country_event = { id = finland.5 days = 3 } }
-		}
-	}
-	
-	focus = {
-		id = FIN_coordination
-		icon = GFX_goal_generic_national_unity
-		
-		x = -1
-		y = 1
-		
-		prerequisite = { focus = FIN_latvia_pact}
-		relative_position_id = FIN_latvia_pact
-		
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-		
-		available = {
-		    is_subject = no
-		}
-
-		completion_reward = {
-			add_ideas = FIN_planning_bonus
-			every_other_country = { 
-			    limit = {
-					is_in_faction_with = FIN
-				}
-				add_ideas = FIN_planning_bonus
-			}
-		}
-	}
-	
-	focus = {
-		id = FIN_technical_pact
-		icon = GFX_goal_tfv_generic_tech_sharing
-		
-		x = 1
-		y = 1
-		
-		prerequisite = { focus = FIN_latvia_pact}
-		relative_position_id = FIN_latvia_pact
-		
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-		
-		available = {
-		    is_subject = no
-		}
-
-		completion_reward = {
-		    add_to_tech_sharing_group = FIN_technical_pact_tech_group
-			every_other_country = { 
-			    limit = {
-					is_in_faction_with = FIN
-				}
-				add_to_tech_sharing_group = FIN_technical_pact_tech_group
-			}
-		}
-	}
-	
-	focus = {
-		id = FIN_strike_at_lenin_sity
-		icon = GFX_focus_ger_strike_at_the_source
-		
-		x = 0
-		y = 1
-		
-		prerequisite = { focus = FIN_protect_karelia }
-		relative_position_id = FIN_protect_karelia
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1000
-		}
-
-		available_if_capitulated = no
-		
-		available = {
-		    is_subject = no
-			has_war = no
-			SOV = { 
-			    surrender_progress > 0.2
-			}
-		}
-
-		completion_reward = {
-			declare_war_on = {
-				target = SOV
-				type = take_state_focus
-				generator = { 213 215 216 } 
-			}
-		}
-	}
-	
-    focus = {
-		id = FIN_New_Finland
-		icon = GFX_focus_mikko
-		
-		mutually_exclusive = { focus = FIN_war_dictatorship }
-		relative_position_id = FIN_strengten_regime
-		prerequisite = { focus = FIN_strengten_regime}
-		
-		x = 4
-		y = 1
-		
-		available = {
-			has_country_flag = FIN_fascist_rule
-		}
-		
-		
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-		
-		available = {
-		    is_subject = no
-		}
-
-		completion_reward = {
-		    add_political_power = 40
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.3
-			}
-		}
 	}
 	
 	focus = {

@@ -6279,66 +6279,6 @@
 	}
 
 	focus = {
-		id = JAP_reinforcement
-		icon = GFX_goal_reinforcement
-		prerequisite = {
-			focus = JAP_man_the_guns
-		}
-		x = 0
-		y = 1
-		relative_position_id = JAP_man_the_guns
-
-		cost = 3
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		allow_branch = {
-			has_completed_focus = JAP_purge_the_kodoha_faction
-		}
-
-		available = {
-			is_puppet = no
-			has_war_with = USA
-			has_war_with = ENG
-			AND = {
-				671 = {
-					is_controlled_by = ROOT
-				}
-				286 = {
-					is_controlled_by = ROOT
-				}
-				336 = {
-					is_controlled_by = ROOT
-				}
-				327 = {
-					is_controlled_by = ROOT
-				}
-				335 = {
-					is_controlled_by = ROOT
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			custom_effect_tooltip = "SEA_DEFENSE_GARRISONS"
-			hidden_effect = {
-				load_oob = "SEA_DEFENSE"
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
 		prerequisite = {
@@ -8024,6 +7964,66 @@
 				custom_effect_tooltip = STRATEGY_KODOHA
 				custom_effect_tooltip = CHINA_DEFENSE_GARRISONS
 
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_reinforcement
+		icon = GFX_goal_reinforcement
+		prerequisite = {
+			focus = JAP_man_the_guns
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_man_the_guns
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_completed_focus = JAP_purge_the_kodoha_faction
+		}
+
+		available = {
+			is_puppet = no
+			has_war_with = USA
+			has_war_with = ENG
+			AND = {
+				671 = {
+					is_controlled_by = ROOT
+				}
+				286 = {
+					is_controlled_by = ROOT
+				}
+				336 = {
+					is_controlled_by = ROOT
+				}
+				327 = {
+					is_controlled_by = ROOT
+				}
+				335 = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			custom_effect_tooltip = "SEA_DEFENSE_GARRISONS"
+			hidden_effect = {
+				load_oob = "SEA_DEFENSE"
 			}
 		}
 	}

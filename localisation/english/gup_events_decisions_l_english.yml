@@ -19,8 +19,8 @@
  #KILIMANJARO EVENT III
  kmm.59.t: "Initial Exchanges"
  kmm.59.d: "Having been able to shake the hand of her idol,  Kilimanjaro steadies herself as her journey continues. Darjeeling has provided Kilimanjaro a Black Prince to ride in on the way to 10 Downing Street Whilst Darjeeling rode in her Churchill. On the way, both Girls passed through the Tower of London. Inside the Tower, many prisoners were shown to Kilimanjaro including Rosehip, imprisoned for a day for her 600th speeding offense. However, another prisoner was show to Kilimanjaro, called Calvin, or as the prisoner described himself as, St. Gloriana Gaming College. Darjeeling stated that he was an important prisoner and that he was under the custody of St. Gloriana due to the evil nature of his crimes. Although a Koala citizen, Calvin was wanted by many schools for child grooming allegations, exposed by a St. Gloriana citizen under the pseudonym OC Gangsta, which led to his apprehension by Koala authorities. Once the rest of the Commonwealth and Saunders had been notified, only St. Gloriana were willing to take such a vile prisoner, such was their supreme confidence in handling criminals. \n\nArriving at 10 Downing Street, Darjeeling and Kilimanjaro sat down for a cup of tea before moving over to Highbury to watch a football match between Woolwich Arsenal and Manchester United FC. Manchester United Ended up winning 8-2. \n\nReturning to 10 Downing Street, Kilimanjaro stated that..."
- kmm.59.a: "...she had enjoyed today’s events."
- kmm.59.b: "...she had enjoyed today’s events, but wished to get on to business now."
+ kmm.59.a: "...she had enjoyed today's events."
+ kmm.59.b: "...she had enjoyed today's events, but wished to get on to business now."
 
  #KILIMANJARO EVENT II
  kmm.58.t: "Greetings from St. Gloriana"
@@ -29,15 +29,15 @@
  kmm.58.b: "Hug her"
 
  #KILIMANJARO EVENT I
- kmm.57.t: "Kilimanjaro’s Visit to St. Gloriana"
- kmm.57.d: "Our friend Kiri Shiratori, better known as Kilimanjaro from West Kureoji Grona Academy is primed to visit her idol Darjeeling to work out an agreement over the two nations relations. This trip awaits Emi’s final signoff..."
+ kmm.57.t: "Kilimanjaro's Visit to St. Gloriana"
+ kmm.57.d: "Our friend Kiri Shiratori, better known as Kilimanjaro from West Kureoji Grona Academy is primed to visit her idol Darjeeling to work out an agreement over the two nations relations. This trip awaits Emi's final signoff..."
  kmm.57.a: "Signed, Emi Nakasauga."
  KMM_CHAIN_CONTINUE: "§RThe event chain will continue§!"
  kmm.57.b: "This is a wasted venture"
 
  #OOARAI REFUSES
  kmm.56.t: "Ooarai Refuses"
- kmm.56.d: "Ooarai has refused! Clearly Miho’s friendliness is just a sham! What shall we do?"
+ kmm.56.d: "Ooarai has refused! Clearly Miho's friendliness is just a sham! What shall we do?"
  kmm.56.a: "Get her."
 
  #CHIHATAN REFUSAL
@@ -88,8 +88,8 @@
 
  #CHT-KURO ALLLIANCE
  kmm.47.t: "An alliance with the new Kuromorimine?"
- kmm.47.d: "Kuromorimine has offered us an alliance, hoping that our two nations will become better friends than our previous relations had suggested. Shall we accept and bind our destiny to that of Kuromorimine’s."
- kmm.47.a: "Let’s Totsugeki our way in"
+ kmm.47.d: "Kuromorimine has offered us an alliance, hoping that our two nations will become better friends than our previous relations had suggested. Shall we accept and bind our destiny to that of Kuromorimine's."
+ kmm.47.a: "Let's Totsugeki our way in"
  kmm.47.b: "Maybe Retreating would be better"
 
  #TRIAL OF THE LOYALISTS
@@ -182,7 +182,7 @@
  kmm.36.b: "Morals Committees keep understanding in check."
 
  kmm.37.t: "Snap Student Council Election"
- kmm.37.desc: "With our former commanders’ elimination and General Koume’s unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First candidate was a well known one, Emi Kojima who famously occupied Maho’s place at a Senshado conference. She was a popular candidate preaching peace and harmony between the big Senshado schools. \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy’s Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe Last Candidate was not the most well known. This was Emi Nakasauga, a German-Japanese mixed child who preached what Miho had said but went further to promise revenge against Kuromorimine’s vanquishers. \n\nThe election was tight, and violence from all sides marred what could’ve been a good show of the new Kuro democracy. However, when the ballots were counted..."
+ kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First candidate was a well known one, Emi Kojima who famously occupied Maho's place at a Senshado conference. She was a popular candidate preaching peace and harmony between the big Senshado schools. \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe Last Candidate was not the most well known. This was Emi Nakasauga, a German-Japanese mixed child who preached what Miho had said but went further to promise revenge against Kuromorimine's vanquishers. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
  kmm.37.a: "Emi Nakasauga came out on top"
  kmm.37.b: "Miho came out on top"
  kmm.37.c: "Emi Kojima came out on top"
@@ -541,16 +541,16 @@
  kmm_news.1.d: "Wish you luck... "
  
  ##DEMOCRATIC EVENTS
- kmm.210.t:0 "Miho’s invite to Kummamoto"
+ kmm.210.t:0 "Miho's invite to Kummamoto"
  kmm.210.d:0 "A letter has arrived from Kuromorimine, inviting Miho to take control of her former school!"
- kmm.210.a:0 "Indeed. Let’s unite Ooarai to her!"
+ kmm.210.a:0 "Indeed. Let's unite Ooarai to her!"
  kmm.210.b:0 "Never! Ooarai deserves a better leader."
  kmm.211.t:0 "How to retake our lost lands?"
- kmm.211.d:0 "Kuromorimine has lost a decent amount of land in the past years, now it’s our time to strike back. The only question is, do we use violence or approach the pacifist way? The decision should be made wisely considering the current status of the world at the moment."
+ kmm.211.d:0 "Kuromorimine has lost a decent amount of land in the past years, now it's our time to strike back. The only question is, do we use violence or approach the pacifist way? The decision should be made wisely considering the current status of the world at the moment."
  kmm.211.a:0 "Alright"
  kmm.212.t:0 "Kuromorimine demands South Tyrol"
  kmm.212.d:0 "Kuromorimine wants back the former land of Ooarai but for what? The decision is ours to remain in peace or to get involved in a devastating war."
- kmm.212.a:0 "Let’s give it to them, the land is no use for us either."
+ kmm.212.a:0 "Let's give it to them, the land is no use for us either."
  kmm.212.b:0 "We will never give away our land for free. AVANTI!"
  kmm.213.t:0 "Our place in a peaceful world"
  kmm.213.d:0 "Now we settled up peace, We will be able to promote a better form of Senshado and secure our nations future."
@@ -775,11 +775,11 @@
  
  ##DEMOCRATIC GERMANY##
  kmm.215.t:0 "Miho's Greatest Challange"
- kmm.215.d:0 "It takes a great deal of courage to stand against your family, it takes even more to publicly denounce your families actions, but Miho had such strength as she appears before the Kuromorimine people. \n \nWhile many of her friends stood besides her as she made her speech she stuttered, and spoke with tears in her eyes as she spoke the bitter words to the world, condemning her family’s horrid actions against not just to its own, but also for their plans for the future. \n \nShe spoke what felt to her like days but only lasted 30 minutes by the end of the transmission she broke down into tears with the small step to rehabilitating Kuromorimine into a more moral school."
+ kmm.215.d:0 "It takes a great deal of courage to stand against your family, it takes even more to publicly denounce your families actions, but Miho had such strength as she appears before the Kuromorimine people. \n \nWhile many of her friends stood besides her as she made her speech she stuttered, and spoke with tears in her eyes as she spoke the bitter words to the world, condemning her family's horrid actions against not just to its own, but also for their plans for the future. \n \nShe spoke what felt to her like days but only lasted 30 minutes by the end of the transmission she broke down into tears with the small step to rehabilitating Kuromorimine into a more moral school."
  kmm.215.a:0 "The Hardest Decision"
  
  kmm.216.t:0 "Operation Platzwart"
- kmm.216.d:0 "With the civil war now over, we must now turn their attention to dealing with the many groups that still hold loyalty to the Nishizumi regime. \n \nClearing them out will require some unsavoury tactics to ensure that they don’t reorganize themselves, but in time these radicals will be brought to justice and Kuromorimine will once again know peace. \n \nFor the next few days and weeks mass police raids and arrests will need to take place to stop any resurgent nishizumi force from plunging our nation back into chaos."
+ kmm.216.d:0 "With the civil war now over, we must now turn their attention to dealing with the many groups that still hold loyalty to the Nishizumi regime. \n \nClearing them out will require some unsavoury tactics to ensure that they don't reorganize themselves, but in time these radicals will be brought to justice and Kuromorimine will once again know peace. \n \nFor the next few days and weeks mass police raids and arrests will need to take place to stop any resurgent nishizumi force from plunging our nation back into chaos."
  kmm.216.a:0 "Wipe this Stain from our Nation!"
  
  kmm.217.t:0 "Kuromine Asks for Alliance"

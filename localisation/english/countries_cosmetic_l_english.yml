@@ -1539,8 +1539,8 @@
  OKU_fascism_DEF:0 "Kuro-Ooarai Union"
  
  KOP_neutrality:0 "Kuro Österreich"
- KOP_neutrality:0 "Ooarai"
- KOP_neutrality:0 "Kuro Österreich"
+ KOP_neutrality_ADJ:0 "Ooarai"
+ KOP_neutrality_DEF:0 "Kuro Österreich"
  
  EURO_democratic:0 "European Union"
  EURO_democratic_ADJ:0 "European Union"
