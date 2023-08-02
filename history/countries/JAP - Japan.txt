@@ -249,18 +249,14 @@ create_import = {
 	add_ideas = {
 
 		undying_will
-<<<<<<< HEAD
 		JAP_haru_tamada_p
 		JAP_akemi_kubota_t
 		JAP_akemi_kubota
 		JAP_ikuyo_fukuda
 		JAP_katsumi_nishihara
-
-=======
 		JAP_akemi_kubota
 
 		JAP_ikuyo_fukuda
->>>>>>> edc9943108047b189553467a09518053b90f4943
 		kawasaki
 
 		#laws

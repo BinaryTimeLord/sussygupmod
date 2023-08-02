@@ -664,25 +664,22 @@ country_event = {
 		add_timed_idea = { idea = JAP_military_purges days = 90 }
 		if = { #MM: I honestly have no idea about how this works, so checking just in case
 			limit = {
-				JAP_emperor_hirohito = {
+				JAP_kinuyo_nishi = {
 					is_country_leader = yes
 				}
 			}
 			remove_country_leader_role = {
-				character = JAP_emperor_hirohito
+				character = JAP_kinuyo_nishi
 				ideology = fascism_ideology
 			}
 		}
 		add_country_leader_role = {
-			character = JAP_emperor_hirohito
+			character = JAP_kinuyo_nishi
 			country_leader = {
-				expire = "1989.1.1"
-				ideology = despotism
-				traits = {
-					warrior_code
-					emperor_showa
-				}
-				id = 700 #Hirohito
+				ideology=japanese_idealism3
+				traits={ emperor_nishi warrior_code shintoism totsugeki_sanction }
+				expire="1989.1.1.1"
+				id=-1
 			}
 			promote_leader = yes
 		}

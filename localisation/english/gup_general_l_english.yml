@@ -1361,6 +1361,7 @@ GER_expand_fortlines_desc:0 ""
  JAP_shizuka_tsuruki_desc: "Shizuka and the fear that is stricken against others is known very well in the academy. She's been dubbed 'Chi-Ha-Tan's Fiery General' for her strict discipline."
  
  ##CHIHATAN POLITICAL DESCRIPTIONS
+ POLITICS_KINUYO_DESC: "'Yesterday's enemy is today's friend!'"
  POLITICS_TOMOYO_IKEDA_DESC: "Head of the Chi-Wan-Tung Army"
  POLITICS_TAMADA_DESC: "'We need to show the world the spirit of Chi-Ha-Tan!'"
  POLITICS_HAMADA_DESC: "'Deep regret!'"
