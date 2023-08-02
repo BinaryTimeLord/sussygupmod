@@ -355,17 +355,21 @@ give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM
 
+recruit_character = FRA_philippe_petain
 recruit_character = FRA_marie
-recruit_character = FRA_mari
 recruit_character = FRA_andou
 recruit_character = FRA_oshida
 recruit_character = FRA_azumi
+recruit_character = FRA_isabe
+recruit_character = FRA_sofue
+recruit_character = FRA_asparagus
+recruit_character = FRA_moules
+recruit_character = FRA_bordeux
 
 recruit_character = FRA_maurice_thorez
 recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier
 recruit_character = FRA_denis_guillaumat
-recruit_character = FRA_philippe_petain
 recruit_character = FRA_jean_de_lattre_de_tassigny
 recruit_character = FRA_alphonse_juin
 recruit_character = FRA_maurice_gamelin

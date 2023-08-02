@@ -3,8 +3,23 @@ characters={
 		name="Marie"
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_FRA_Marie1.dds"
+				large="gfx/leaders/FRA/Portrait_FRA_Marie.dds"
 			}
+			army={
+				small="gfx/interface/ideas/BC Freedom/idea_fra_marie.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Marie.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious armor_officer fast_planner expert_delegator }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 		}
 		country_leader={
 			desc="POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -43,28 +58,8 @@ characters={
 		}
 	}
 
-	FRA_mari={
-		name="Mari"
-		portraits={
-			army={
-				small="gfx/interface/ideas/BC Freedom/idea_fra_marie.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Marie.dds"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious armor_officer fast_planner expert_delegator }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 	FRA_andou={
-		name="Andou"
+		name="Rena Andou"
 		portraits={
 			army={
 				small="gfx/interface/ideas/BC Freedom/idea_fra_andou.dds"
@@ -84,7 +79,7 @@ characters={
 		}
 	}
 	FRA_oshida={
-		name="Oshida"
+		name="Ruka Oshida"
 		portraits={
 			army={
 				small="gfx/interface/ideas/BC Freedom/idea_fra_oshida.dds"
@@ -113,13 +108,113 @@ characters={
 				large="gfx/leaders/FRA/Portrait_FRA_Azumi.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ trait_cautious armor_officer }
 			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	FRA_isabe={
+		name="Isabe"
+		portraits={
+			army={
+				small="gfx/interface/ideas/BC Freedom/idea_fra_isabe.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Isabe.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=3
 			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	FRA_sofue={
+		name="Sofue"
+		portraits={
+			army={
+				small="gfx/interface/ideas/BC Freedom/idea_fra_sofue.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Sofue.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	FRA_asparagus={
+		name="Asparagus"
+		portraits={
+			army={
+				small="gfx/interface/ideas/BC Freedom/idea_fra_asparagus.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Asparagus.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=4
+			attack_skill=4
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	FRA_moules={
+		name="Moules"
+		portraits={
+			army={
+				small="gfx/interface/ideas/BC Freedom/idea_fra_moules.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Moules.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	FRA_bordeux={
+		name="Bordeux"
+		portraits={
+			army={
+				small="gfx/interface/ideas/BC Freedom/idea_fra_bordeux.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Bordeux.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -243,18 +338,13 @@ characters={
 	}
 
 	FRA_philippe_petain={ #Fascist Leader
-		name="Rena Andou"
+		name="Ruka Oshida"
 		portraits={
 			civilian={
 				large=GFX_portrait_FRA_philippe_petain
 			}
 		}
-
-
-
-
-
-        }
+    }
 		
 	FRA_jean_de_lattre_de_tassigny={
 		name=FRA_jean_de_lattre_de_tassigny
