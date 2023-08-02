@@ -5,7 +5,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			99 = {
 				CONTROLLER = {
@@ -26,7 +26,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				DEN = {
@@ -57,7 +57,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi"}
 			}
 			110 = { 
 				CONTROLLER = { 
@@ -94,7 +94,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				NOR = {
@@ -120,7 +120,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			
 			36 = { 
@@ -152,7 +152,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				HOL = {
@@ -178,7 +178,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			6 = { 
 				CONTROLLER = { 
@@ -199,7 +199,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				BEL = {
@@ -225,7 +225,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			29 = { 
 				CONTROLLER = { 
@@ -262,7 +262,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				FRA = {
@@ -288,7 +288,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			13 = { 
 				CONTROLLER = { 
@@ -309,7 +309,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				EST = {
@@ -340,7 +340,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			12 = { 
 				CONTROLLER = { 
@@ -361,7 +361,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				LAT = {
@@ -392,7 +392,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			
 			11 = { 
@@ -414,7 +414,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				LIT = {
@@ -445,7 +445,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			126 = { 
 				CONTROLLER = { 
@@ -482,7 +482,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				ENG = {
@@ -513,7 +513,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				AND = {
@@ -532,7 +532,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				AND = {
@@ -565,7 +565,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			141 = { 
 				CONTROLLER = { 
@@ -602,7 +602,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { name = "Erika" }
+				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
 				SWE = {

@@ -92,21 +92,6 @@ characters={
 		}
 	}
 
-	GER_the_union={
-		name="The Union"
-		portraits={
-			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Union.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_UNION_DESC"
-			ideology=german_idealism2
-			traits={ communal_unity reigns_of_olden_tactics }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	GER_emi_kojima={
 		name="Emi Kojima"
 		portraits={
@@ -1036,7 +1021,7 @@ characters={
 		name=ger_miho_pol
 		portraits={
 		    army={
-                                large="gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+                large="gfx/leaders/GER/Portrait_GER_Miho.dds"
 				small="GFX_idea_ger_miho_armychief"
 			}
 		}
@@ -1910,7 +1895,7 @@ characters={
 		name=ger_miho_armychief
 		portraits={
 			army={
-                                large="gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+                large="gfx/leaders/GER/Portrait_GER_Miho.dds"
 				small="GFX_idea_ger_miho_armychief"
 			}
 		}
@@ -1939,7 +1924,7 @@ characters={
 				OR = {
 					has_civil_war = no
 					NOT = {
-						has_country_leader = { ruling_only = yes name = "Erika" }
+						has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 					}
 				}
 			}

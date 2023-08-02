@@ -735,9 +735,9 @@ country_event = { ##maho resign
 		custom_effect_tooltip = GER_ACTIONS_HAVE_CONSEQUENCES
 
 		create_country_leader = {
-			name = "Miho"
+			name = "Miho Nishizumi"
 			desc = "POLITICS_MIHO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+			picture = "Portrait_GER_Miho.dds"
 			expire = "1965.1.1"
 			ideology = german_idealism3
 			traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
@@ -882,9 +882,9 @@ country_event = { #ERIKA'S COUNTERCOUP #VIOLENT
 				#load_oob = "GER_German_Civil_War_fascist"
 				set_party_name = { ideology = neutrality long_name = GER_miho_civil_war name = GER_miho_civil_war }
 				create_country_leader = {
-					name = "Miho"
+					name = "Miho Nishizumi"
 					desc = "POLITICS_MIHO_DESC"
-					picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+					picture = "Portrait_GER_Miho.dds"
 					expire = "1965.1.1"
 					ideology = german_idealism4
 					traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
@@ -1091,9 +1091,9 @@ country_event = { #ERIKA'S COUNTERCOUP #VIOLENT
 		custom_effect_tooltip = GER_fascism_civil_war_tt
 		add_stability = -0.25
 		create_country_leader = {
-			name = "Miho"
+			name = "Miho Nishizumi"
 			desc = "POLITICS_MIHO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+			picture = "Portrait_GER_Miho.dds"
 			expire = "1965.1.1"
 			ideology = german_idealism4
 			traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)
@@ -1177,11 +1177,11 @@ country_event = { #MAHO'S FIELDSMANSHIP RESIGNATION per chance
 	option = { #maho's line
 		name = kmm.11.a
 		trigger = {
-			has_country_leader = { ruling_only = yes name = "Maho" }
+			has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
 			NOT = {
 				OR = {
-					has_country_leader = { ruling_only = yes name = "Erika" }
-					has_country_leader = { ruling_only = yes name = "Miho" }
+					has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
+					has_country_leader = { ruling_only = yes name = "Miho Nishizumi" }
 				}
 			}
 		}
@@ -1201,11 +1201,11 @@ country_event = { #MAHO'S FIELDSMANSHIP RESIGNATION per chance
 	option = { #erika's line
 		name = kmm.11.b
 		trigger = {
-			has_country_leader = { ruling_only = yes name = "Erika" }
+			has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 			NOT = {
 				OR = {
-					has_country_leader = { ruling_only = yes name = "Maho" }
-					has_country_leader = { ruling_only = yes name = "Miho" }
+					has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
+					has_country_leader = { ruling_only = yes name = "Miho Nishizumi" }
 				}
 			}
 		}
@@ -1225,11 +1225,11 @@ country_event = { #MAHO'S FIELDSMANSHIP RESIGNATION per chance
 	option = {
 		name = kmm.11.c
 		trigger = {
-			has_country_leader = { ruling_only = yes name = "Miho" }
+			has_country_leader = { ruling_only = yes name = "Miho Nishizumi" }
 			NOT = {
 				OR = {
-					has_country_leader = { ruling_only = yes name = "Maho" }
-					has_country_leader = { ruling_only = yes name = "Erika" }
+					has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
+					has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 				}
 			}
 		}
@@ -3417,7 +3417,7 @@ country_event = {
 		SOV = {
 			surrender_progress > 0.15
 		}
-		has_country_leader = { ruling_only = yes name = "Erika" }
+		has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 	}
 
 	option = {

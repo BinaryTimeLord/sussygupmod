@@ -496,7 +496,6 @@ activate_mission = GER_mefo_bills_mission
 
 recruit_character = GER_maho
 recruit_character = GER_koume
-recruit_character = GER_the_union
 recruit_character = GER_erika
 recruit_character = GER_emi_kojima
 recruit_character = GER_maukou

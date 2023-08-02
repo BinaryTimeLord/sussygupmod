@@ -254,9 +254,9 @@ news_event = { #news event for schwarzburg visit to birmingham #crashes
 				retire = yes
 			}
 			create_country_leader = {
-				name = "Miho"
+				name = "Miho Nishizumi"
 				desc = "POLITICS_MIHO_DESC"
-				picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+				picture = "Portrait_GER_Miho.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism3
 				traits = {

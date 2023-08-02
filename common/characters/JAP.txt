@@ -134,18 +134,6 @@ characters={
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
 			}
-			army={
-				large="gfx/leaders/JAP/Kubota.dds"
-			}
-		}
-		corps_commander={
-			traits={ cht_toseiha_symphatizer infantry_leader panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	JAP_nishihara={
@@ -154,18 +142,6 @@ characters={
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_katsumi_nishihara.dds"
 			}
-			army={
-				large="gfx/leaders/JAP/Nishihara.dds"
-			}
-		}
-		corps_commander={
-			traits={ cht_toseiha_symphatizer panzer_leader naval_invader swamp_fox }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	JAP_teramoto={

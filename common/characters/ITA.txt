@@ -113,6 +113,16 @@ characters = {
 			}
 		}
 
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+
 		country_leader = {
 			ideology = socialism
 			traits = { resistance_leader }
@@ -128,6 +138,19 @@ characters = {
 				large = GFX_portrait_ITA_vittorio_emanuele_III
 				small = GFX_portrait_ITA_vittorio_emanuele_III_small #just in case
 			}
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_pepperoni.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ career_officer panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 
 		country_leader = {
@@ -151,67 +174,6 @@ characters = {
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
-
-	ITA_pepperoni={
-		name="Pepperoni"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Anzio/idea_ita_pepperoni.dds"
-			}
-			army={
-				large="gfx/leaders/ITA/Portrait_ITA_Pepperoni.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	ITA_carpaccio={
-		name="Carpaccio"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Anzio/idea_ita_carpaccio.dds"
-			}
-			army={
-				large="gfx/leaders/ITA/Portrait_ITA_Carpaccio.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer panzer_leader desert_fox }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	ITA_amaretto={
-		name="Amaretto"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Anzio/idea_ita_amaretto.dds"
-			}
-			army={
-				large="gfx/leaders/ITA/Portrait_ITA_Amaretto.dds"
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 
 	ITA_rodolfo_graziani = {
 		name = ITA_rodolfo_graziani
@@ -327,12 +289,24 @@ characters = {
 		name = ITA_italo_balbo
 		portraits = {
 			army = {
-				small = GFX_portrait_ITA_italo_balbo_small
 				large = GFX_portrait_ITA_italo_balbo
+			}
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_carpaccio.dds"
 			}
 			civilian = {
 				large = GFX_portrait_ITA_italo_balbo_civilian
 			}
+		}
+
+		corps_commander={
+			traits={ career_officer panzer_leader desert_fox }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
 		}
 
 		advisor = {
@@ -356,19 +330,6 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 1.000
-			}
-		}
-		
-		field_marshal = {
-			traits = { career_officer politically_connected trait_reckless media_personality }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = {
-				ITA_is_advisor_available = yes
 			}
 		}
 	}
@@ -1769,11 +1730,21 @@ characters = {
 		name = ITA_dino_grandi
 		portraits = {
 			army = {
-				small = GFX_portrait_ITA_dino_grandi_small
+				small="gfx/interface/ideas/Anzio/idea_ita_amaretto.dds"
 			}
 			civilian = {
 				large = GFX_portrait_ITA_dino_grandi
 			}
+		}
+
+		corps_commander = {
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
 		}
 
 		advisor = {
@@ -2763,6 +2734,16 @@ characters = {
 			}
 		}
 
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+
 		advisor = {
 			slot = political_advisor
 			idea_token = ivanoe_bonomi
@@ -2818,6 +2799,16 @@ characters = {
 				small = GFX_portrait_ITA_alcide_de_gasperi_small
 				large = GFX_portrait_ITA_alcide_de_gasperi
 			}
+		}
+
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 
 		country_leader = {
@@ -3295,6 +3286,16 @@ characters = {
 			id = -1
 		}
 
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_palmiro_togliatti
@@ -3342,6 +3343,16 @@ characters = {
 				large = GFX_portrait_ITA_sandro_pertini
 				small = GFX_portrait_ITA_sandro_pertini_small
 			}
+		}
+
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 
 		country_leader = {

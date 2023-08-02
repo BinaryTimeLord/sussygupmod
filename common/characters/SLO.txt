@@ -175,7 +175,7 @@ characters={
 		}
 	}
 	SLO_erwin={
-		name="Erwin"
+		name="Riko Matsumoto"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_riko_matsumoto_high_command.dds"
@@ -195,7 +195,7 @@ characters={
 		}
 	}
 	SLO_oryou={
-		name="Oryou"
+		name="Takeko Nogami"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_oryou.dds"
@@ -215,7 +215,7 @@ characters={
 		}
 	}
 	SLO_saemonza={
-		name="Saemonza"
+		name="Kiyomi Sugiyama"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_saemonza.dds"
@@ -235,7 +235,7 @@ characters={
 		}
 	}
 	SLO_caesar={
-		name="Caesar"
+		name="Takako Suzuki"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_takako_suzuki_high_command.dds"
@@ -575,7 +575,7 @@ characters={
 		}
 	}
 	SLO_tsuchiya={
-		name="Tsuchiya"
+		name="Muuton Tsuchiya"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_muuton_tsuchiya_theorist.dds"
@@ -595,7 +595,7 @@ characters={
 		}
 	}
 	SLO_nekota={
-		name="Nekota"
+		name="Mai Nekota"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_nekota.dds"
@@ -615,7 +615,7 @@ characters={
 		}
 	}
 	SLO_piyotan={
-		name="Piyotan"
+		name="Aoi Hiyoshi"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_piyotan.dds"
@@ -635,7 +635,7 @@ characters={
 		}
 	}
 	SLO_momoga={
-		name="Momoga"
+		name="Taki Momose"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_momoga.dds"

@@ -53,9 +53,9 @@ on_actions = {
 				set_party_name = { ideology = fascism long_name = GER_miho_civil_war name = GER_miho_civil_war }
 				set_party_name = { ideology = neutrality long_name = neutrality name = neutrality } #reset name
 				create_country_leader = {
-					name = "Miho"
+					name = "Miho Nishizumi"
 					desc = "POLITICS_MIHO_DESC"
-					picture = "gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+					picture = "gfx/leaders/GER/Portrait_GER_Miho.dds"
 					expire = "1965.1.1"
 					ideology = german_idealism3
 					traits = { #can't think of original traits, change if needed (fits both personalities anyway with Koume)

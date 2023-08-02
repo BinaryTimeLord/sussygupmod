@@ -722,10 +722,6 @@ set_popularities = {
 	neutrality = 5
 }
 
-recruit_character = ITA_pepperoni
-recruit_character = ITA_carpaccio
-recruit_character = ITA_amaretto
-
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_grand_council
 recruit_character = ITA_vittorio_emanuele_iii
