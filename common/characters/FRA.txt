@@ -78,6 +78,8 @@ characters={
 			legacy_id=-1
 		}
 	}
+
+
 	FRA_oshida={
 		name="Ruka Oshida"
 		portraits={
@@ -98,6 +100,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+	
 	FRA_azumi={
 		name="Azumi"
 		portraits={
@@ -338,7 +341,7 @@ characters={
 	}
 
 	FRA_philippe_petain={ #Fascist Leader
-		name="Ruka Oshida"
+		name="Oshida"
 		portraits={
 			civilian={
 				large=GFX_portrait_FRA_philippe_petain
