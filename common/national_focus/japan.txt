@@ -5872,240 +5872,6 @@
 	}
 
 	focus = {
-		id = JAP_ikeda_section_3
-		icon = GFX_goal_ikeda_section_3
-		prerequisite = {
-			#focus = JAP_a_trip_to_ooarai
-		}
-		x = -5
-		y = 1
-		relative_position_id = JAP_strengthen_the_divine_wind
-
-		cost = 10
-
-		allow_branch = {
-			#has_dlc = "La Resistance"
-			#has_country_flag = cht_wtt
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_completed_focus = JAP_waking_the_tiger
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				create_intelligence_agency = yes
-				upgrade_intelligence_agency = upgrade_form_department
-				upgrade_intelligence_agency = upgrade_decryption_boost
-				upgrade_intelligence_agency = upgrade_crypto_strength
-			}
-		}
-	}
-
-	#possibly better future use
-	#focus = {
-	#	id = JAP_japanese_enigma
-	#	icon = GFX_goal_japanese_enigma
-	#	prerequisite = {
-	#		focus = JAP_kuromorimine_enigma
-	#	}
-	#	x = 3
-	#	y = 2
-	#	relative_position_id = JAP_ikeda_section_3
-
-	#	cost = 10
-
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-
-	#	available = {
-
-	#	}
-
-	#	bypass = {
-
-	#	}
-
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
-	#	available_if_capitulated = no
-
-	#	search_filters = {  }
-	#	completion_reward = {
-	#		if = {
-	#			limit = {
-	#				has_dlc = "La Resistance"
-	#			}
-	#			custom_effect_tooltip = "CHT_ENCRYPTION"
-	#			hidden_effect = {
-	#				upgrade_intelligence_agency = upgrade_crypto_strength_2
-	#				upgrade_intelligence_agency = upgrade_crypto_strength_2
-	#			}
-	#		}
-	#	}
-	#}
-
-	focus = {
-		id = JAP_kuromorimine_enigma
-		icon = GFX_goal_kuromorimine_enigma
-		prerequisite = {
-			focus = JAP_ikeda_section_3
-		}
-		x = -1
-		y = 1
-		relative_position_id = JAP_ikeda_section_3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = mechanical_computing
-			GER = {
-				has_tech = mechanical_computing
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = "CHT_DECRYPTION"
-				hidden_effect = {
-					upgrade_intelligence_agency = upgrade_passive_defense
-					upgrade_intelligence_agency = upgrade_passive_defense
-					upgrade_intelligence_agency = upgrade_decryption_boost_2
-					upgrade_intelligence_agency = upgrade_decryption_boost_2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_espionage_infiltration
-		icon = GFX_goal_espionage_infiltration
-		prerequisite = {
-			focus = JAP_ikeda_section_3
-		}
-		x = 1
-		y = 1
-		relative_position_id = JAP_ikeda_section_3
-
-		cost = 10	
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = "CHT_OPERATIVE"
-				upgrade_intelligence_agency = upgrade_training_centers
-				upgrade_intelligence_agency = upgrade_suicide_pills
-				hidden_effect = {
-					create_operative_leader = {
-						bypass_recruitment = yes
-					}
-					create_operative_leader = {
-						bypass_recruitment = yes
-					}
-					create_operative_leader = {
-						bypass_recruitment = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_chihatan_cryptology
-		icon = GFX_goal_generic_production2
-		prerequisite = {
-			focus = JAP_kuromorimine_enigma
-			focus = JAP_espionage_infiltration
-		}
-		x = 0
-		y = 2
-		relative_position_id = JAP_ikeda_section_3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				upgrade_intelligence_agency = upgrade_economy_civilian
-				upgrade_intelligence_agency = upgrade_army_department
-				upgrade_intelligence_agency = upgrade_naval_department
-				upgrade_intelligence_agency = upgrade_airforce_department
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_insular_exapnsion
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = {
@@ -6508,543 +6274,6 @@
 					}
 				}
 				add_state_core = 631
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_strategic_engineering
-		icon = GFX_goal_strategic_engineering
-
-		x = 3
-		y = 0
-		relative_position_id = JAP_ikeda_section_3
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_puppet = no
-			OR = {
-				AND = {
-					has_completed_focus = JAP_purge_the_kodoha_faction
-					MAN = {
-						is_subject_of = ROOT
-					}
-					MEN = {
-						is_subject_of = ROOT
-					}
-				}
-				has_completed_focus = JAP_support_the_kodoha_faction
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = JAP_purge_the_kodoha_faction
-				}
-				645 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 13025
-							level = 3
-						}
-						add_extra_state_shared_building_slots = 2
-					}
-				}
-				648 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 13026
-							level = 3
-						}
-						add_extra_state_shared_building_slots = 2
-					}
-				}
-				646 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 3995
-							level = 3
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 13023
-							level = 3
-						}
-						add_extra_state_shared_building_slots = 2
-					}
-				}
-				684 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 13031
-							level = 2
-						}
-						add_extra_state_shared_building_slots = 2
-					}
-				}
-				633 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 11392
-							level = 3
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 13041
-							level = 2
-						}
-						add_extra_state_shared_building_slots = 2
-					}
-				}
-				647 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = air_base
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = naval_base
-							province = 4347
-							level = 3
-						}
-						add_extra_state_shared_building_slots = 4
-					}
-				}
-				526 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = naval_base
-							province = 11932
-							level = 1
-						}
-					}
-				}	
-			}
-			
-			if = {
-				limit = {
-					has_completed_focus = JAP_support_the_kodoha_faction
-				}
-				MAN = {
-					every_owned_state = {
-						limit = {
-							is_fully_controlled_by = PREV
-							any_neighbor_state = {
-								is_controlled_by = SOV
-							}
-						}
-						set_building_level = {
-							type = bunker
-							level = 3
-							province = {
-								all_provinces = yes
-								limit_to_border = yes
-								level < 3
-							}
-						}
-					}				
-				}
-				MEN = {
-					every_owned_state = {
-						limit = {
-							is_fully_controlled_by = PREV
-							any_neighbor_state = {
-								is_controlled_by = MON
-							}
-						}
-						set_building_level = {
-							type = bunker
-							level = 3
-							province = {
-								all_provinces = yes
-								limit_to_border = yes
-								level < 3
-							}
-						}
-					}				
-				}
-			}
-			
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = JAP_purge_the_kodoha_faction
-						has_completed_focus = JAP_support_the_kodoha_faction
-					}
-				}
-
-				custom_effect_tooltip = STRATEGY_TOSEIHA
-				custom_effect_tooltip = STRATEGY_TOSEIHA_FORTS
-				
-				custom_effect_tooltip = STRATEGY_KODOHA
-				custom_effect_tooltip = STRATEGY_KODOHA_FORTS
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_tactical_engineering
-		icon = GFX_goal_tactical_engineering
-		prerequisite = {
-			focus = JAP_strategic_engineering
-		}
-		x = 0
-		y = 1
-		relative_position_id = JAP_strategic_engineering
-
-		cost = 20
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_puppet = no
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = JAP_purge_the_kodoha_faction
-				}
-				645 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = anti_air_building
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 13025
-							level = 5
-						}
-						add_extra_state_shared_building_slots = 3
-					}
-				}
-				648 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = anti_air_building
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 13026
-							level = 5
-						}
-						add_extra_state_shared_building_slots = 3
-					}
-				}
-				646 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = anti_air_building
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 3995
-							level = 5
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 13023
-							level = 5
-						}
-						add_extra_state_shared_building_slots = 3
-					}
-				}
-				684 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = anti_air_building
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 13031
-							level = 5
-						}
-						add_extra_state_shared_building_slots = 3
-					}
-				}
-				633 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = anti_air_building
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 11392
-							level = 5
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 13041
-							level = 5
-						}
-						add_extra_state_shared_building_slots = 3
-					}
-				}
-				647 = {
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						add_building_construction = {
-							type = anti_air_building
-							level = 4
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							province = 4347
-							level = 5	
-						}
-						add_extra_state_shared_building_slots = 3
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					has_completed_focus = JAP_support_the_kodoha_faction
-				}
-				add_ideas = cht_kodoha_tactics
-				527 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11835
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 9918
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 9795
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11828
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6963
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 906
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 9899
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 3803
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 3860
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 898
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6944
-						instant_build = yes
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = JAP_purge_the_kodoha_faction
-						has_completed_focus = JAP_support_the_kodoha_faction
-					}
-				}
-
-				custom_effect_tooltip = STRATEGY_TOSEIHA
-				custom_effect_tooltip = TACTICS_TOSEIHA_FORTS
-				
-				custom_effect_tooltip = STRATEGY_KODOHA
-				custom_effect_tooltip = TACTICS_KODOHA_FORTS
-
-				effect_tooltip = {
-					add_ideas = cht_kodoha_tactics
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_man_the_guns
-		icon = GFX_goal_man_the_guns
-		prerequisite = {
-			focus = JAP_tactical_engineering
-		}
-		x = 0
-		y = 1
-		relative_position_id = JAP_tactical_engineering
-
-		cost = 30
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_puppet = no
-			has_tech = tech_logistics_company
-			has_tech = interwar_antiair
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = JAP_purge_the_kodoha_faction
-				}
-				custom_effect_tooltip = PACIFIC_DEFENSE_GARRISONS
-				hidden_effect = {
-					load_oob = "PACIFIC_DEFENSE"
-				}
-			}
-			
-			if = {
-				limit = {
-					has_completed_focus = JAP_support_the_kodoha_faction
-				}
-				custom_effect_tooltip = CHINESE_DEFENSE_GARRISONS
-				hidden_effect = {
-					load_oob = "CHINESE_DEFENSE"
-				}
-			}
-			
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = JAP_purge_the_kodoha_faction
-						has_completed_focus = JAP_support_the_kodoha_faction
-					}
-				}
-
-				custom_effect_tooltip = STRATEGY_TOSEIHA
-				custom_effect_tooltip = PACIFIC_DEFENSE_GARRISONS2
-				
-				custom_effect_tooltip = STRATEGY_KODOHA
-				custom_effect_tooltip = CHINA_DEFENSE_GARRISONS
-
 			}
 		}
 	}
@@ -8025,6 +7254,777 @@
 		completion_reward = {
 			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
 			hidden_effect = { set_technology = { suicide_craft = 1 } }
+		}
+	}
+
+	focus = {
+		id = JAP_ikeda_section_3
+		icon = GFX_goal_ikeda_section_3
+		prerequisite = {
+			#focus = JAP_a_trip_to_ooarai
+		}
+		x = -5
+		y = 1
+		relative_position_id = JAP_strengthen_the_divine_wind
+
+		cost = 10
+
+		allow_branch = {
+			#has_dlc = "La Resistance"
+			#has_country_flag = cht_wtt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = JAP_waking_the_tiger
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = yes
+				upgrade_intelligence_agency = upgrade_form_department
+				upgrade_intelligence_agency = upgrade_decryption_boost
+				upgrade_intelligence_agency = upgrade_crypto_strength
+			}
+		}
+	}
+
+	#possibly better future use
+	#focus = {
+	#	id = JAP_japanese_enigma
+	#	icon = GFX_goal_japanese_enigma
+	#	prerequisite = {
+	#		focus = JAP_kuromorimine_enigma
+	#	}
+	#	x = 3
+	#	y = 2
+	#	relative_position_id = JAP_ikeda_section_3
+
+	#	cost = 10
+
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+
+	#	available = {
+
+	#	}
+
+	#	bypass = {
+
+	#	}
+
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+
+	#	search_filters = {  }
+	#	completion_reward = {
+	#		if = {
+	#			limit = {
+	#				has_dlc = "La Resistance"
+	#			}
+	#			custom_effect_tooltip = "CHT_ENCRYPTION"
+	#			hidden_effect = {
+	#				upgrade_intelligence_agency = upgrade_crypto_strength_2
+	#				upgrade_intelligence_agency = upgrade_crypto_strength_2
+	#			}
+	#		}
+	#	}
+	#}
+
+	focus = {
+		id = JAP_kuromorimine_enigma
+		icon = GFX_goal_kuromorimine_enigma
+		prerequisite = {
+			focus = JAP_ikeda_section_3
+		}
+		x = -1
+		y = 1
+		relative_position_id = JAP_ikeda_section_3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_tech = mechanical_computing
+			GER = {
+				has_tech = mechanical_computing
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				custom_effect_tooltip = "CHT_DECRYPTION"
+				hidden_effect = {
+					upgrade_intelligence_agency = upgrade_passive_defense
+					upgrade_intelligence_agency = upgrade_passive_defense
+					upgrade_intelligence_agency = upgrade_decryption_boost_2
+					upgrade_intelligence_agency = upgrade_decryption_boost_2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_espionage_infiltration
+		icon = GFX_goal_espionage_infiltration
+		prerequisite = {
+			focus = JAP_ikeda_section_3
+		}
+		x = 1
+		y = 1
+		relative_position_id = JAP_ikeda_section_3
+
+		cost = 10	
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				custom_effect_tooltip = "CHT_OPERATIVE"
+				upgrade_intelligence_agency = upgrade_training_centers
+				upgrade_intelligence_agency = upgrade_suicide_pills
+				hidden_effect = {
+					create_operative_leader = {
+						bypass_recruitment = yes
+					}
+					create_operative_leader = {
+						bypass_recruitment = yes
+					}
+					create_operative_leader = {
+						bypass_recruitment = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_chihatan_cryptology
+		icon = GFX_goal_generic_production2
+		prerequisite = {
+			focus = JAP_kuromorimine_enigma
+			focus = JAP_espionage_infiltration
+		}
+		x = 0
+		y = 2
+		relative_position_id = JAP_ikeda_section_3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				upgrade_intelligence_agency = upgrade_economy_civilian
+				upgrade_intelligence_agency = upgrade_army_department
+				upgrade_intelligence_agency = upgrade_naval_department
+				upgrade_intelligence_agency = upgrade_airforce_department
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_strategic_engineering
+		icon = GFX_goal_strategic_engineering
+
+		x = 3
+		y = 0
+		relative_position_id = JAP_ikeda_section_3
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			OR = {
+				AND = {
+					has_completed_focus = JAP_purge_the_kodoha_faction
+					MAN = {
+						is_subject_of = ROOT
+					}
+					MEN = {
+						is_subject_of = ROOT
+					}
+				}
+				has_completed_focus = JAP_support_the_kodoha_faction
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = JAP_purge_the_kodoha_faction
+				}
+				645 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 13025
+							level = 3
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				648 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 13026
+							level = 3
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				646 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 3995
+							level = 3
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 13023
+							level = 3
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				684 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 13031
+							level = 2
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				633 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 11392
+							level = 3
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 13041
+							level = 2
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				647 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = air_base
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							province = 4347
+							level = 3
+						}
+						add_extra_state_shared_building_slots = 4
+					}
+				}
+				526 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = naval_base
+							province = 11932
+							level = 1
+						}
+					}
+				}	
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = JAP_support_the_kodoha_faction
+				}
+				MAN = {
+					every_owned_state = {
+						limit = {
+							is_fully_controlled_by = PREV
+							any_neighbor_state = {
+								is_controlled_by = SOV
+							}
+						}
+						set_building_level = {
+							type = bunker
+							level = 3
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+								level < 3
+							}
+						}
+					}				
+				}
+				MEN = {
+					every_owned_state = {
+						limit = {
+							is_fully_controlled_by = PREV
+							any_neighbor_state = {
+								is_controlled_by = MON
+							}
+						}
+						set_building_level = {
+							type = bunker
+							level = 3
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+								level < 3
+							}
+						}
+					}				
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = JAP_purge_the_kodoha_faction
+						has_completed_focus = JAP_support_the_kodoha_faction
+					}
+				}
+
+				custom_effect_tooltip = STRATEGY_TOSEIHA
+				custom_effect_tooltip = STRATEGY_TOSEIHA_FORTS
+				
+				custom_effect_tooltip = STRATEGY_KODOHA
+				custom_effect_tooltip = STRATEGY_KODOHA_FORTS
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_tactical_engineering
+		icon = GFX_goal_tactical_engineering
+		prerequisite = {
+			focus = JAP_strategic_engineering
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_strategic_engineering
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = JAP_purge_the_kodoha_faction
+				}
+				645 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = anti_air_building
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 13025
+							level = 5
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+				648 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = anti_air_building
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 13026
+							level = 5
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+				646 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = anti_air_building
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 3995
+							level = 5
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 13023
+							level = 5
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+				684 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = anti_air_building
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 13031
+							level = 5
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+				633 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = anti_air_building
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 11392
+							level = 5
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 13041
+							level = 5
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+				647 = {
+					if = {
+						limit = { is_fully_controlled_by = ROOT }
+						add_building_construction = {
+							type = anti_air_building
+							level = 4
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = coastal_bunker
+							province = 4347
+							level = 5	
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = JAP_support_the_kodoha_faction
+				}
+				add_ideas = cht_kodoha_tactics
+				527 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11835
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9918
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9795
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11828
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6963
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 906
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9899
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3803
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3860
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 898
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6944
+						instant_build = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = JAP_purge_the_kodoha_faction
+						has_completed_focus = JAP_support_the_kodoha_faction
+					}
+				}
+
+				custom_effect_tooltip = STRATEGY_TOSEIHA
+				custom_effect_tooltip = TACTICS_TOSEIHA_FORTS
+				
+				custom_effect_tooltip = STRATEGY_KODOHA
+				custom_effect_tooltip = TACTICS_KODOHA_FORTS
+
+				effect_tooltip = {
+					add_ideas = cht_kodoha_tactics
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_man_the_guns
+		icon = GFX_goal_man_the_guns
+		prerequisite = {
+			focus = JAP_tactical_engineering
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_tactical_engineering
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_tech = tech_logistics_company
+			has_tech = interwar_antiair
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = JAP_purge_the_kodoha_faction
+				}
+				custom_effect_tooltip = PACIFIC_DEFENSE_GARRISONS
+				hidden_effect = {
+					load_oob = "PACIFIC_DEFENSE"
+				}
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = JAP_support_the_kodoha_faction
+				}
+				custom_effect_tooltip = CHINESE_DEFENSE_GARRISONS
+				hidden_effect = {
+					load_oob = "CHINESE_DEFENSE"
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = JAP_purge_the_kodoha_faction
+						has_completed_focus = JAP_support_the_kodoha_faction
+					}
+				}
+
+				custom_effect_tooltip = STRATEGY_TOSEIHA
+				custom_effect_tooltip = PACIFIC_DEFENSE_GARRISONS2
+				
+				custom_effect_tooltip = STRATEGY_KODOHA
+				custom_effect_tooltip = CHINA_DEFENSE_GARRISONS
+
+			}
 		}
 	}
 

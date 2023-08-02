@@ -101,7 +101,7 @@ JAP_historical_plan = {
 		JAP_kuromorimine_enigma
 		JAP_sign_tripartite_pact
 		JAP_chihatan_cryptology
-		JAP_japanese_enigma
+		#JAP_japanese_enigma
 		JAP_national_defense_state
 		JAP_revise_the_bushido_code
 		JAP_strike_south_doctrine

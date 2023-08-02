@@ -14695,9 +14695,8 @@ focus_tree = {
 	}
 	
 }
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+### DUPLICATION of focus_tree STARTED HERE FOR SOME REASON -KRASI 02 08 23
 
 focus_tree = {
 	id = german_focus

@@ -49,14 +49,14 @@ German_alternate_kaiser = {
 		GER_weltpolitik
 		GER_eastern_protection
 		GER_bonple_alliance
-		GER_baltic_gurantee
+		#GER_baltic_gurantee
 		GER_anti_pravda_pact
 		GER_disarm_stepone
 		GER_disarm_steptwo
 		GER_disarm_stepthree
 		GER_count_on_me
-		GER_helsinki_gurantee
-		GER_offer_integration_ooarai
+		#GER_helsinki_gurantee
+		#GER_offer_integration_ooarai
 		GER_gregorian_question
 		GER_hungarian_question
 		GER_yugoslavian_role

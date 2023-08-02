@@ -87,7 +87,7 @@ JAP_manchukuo_player_historical_plan = {
 		JAP_kuromorimine_enigma
 		JAP_sign_tripartite_pact
 		JAP_chihatan_cryptology
-		JAP_japanese_enigma
+		#JAP_japanese_enigma
 		JAP_national_defense_state
 		JAP_revise_the_bushido_code
 		JAP_strike_south_doctrine
@@ -191,7 +191,7 @@ JAP_alternate_plan_strike_north = {
 		JAP_ikeda_section_3
 		JAP_espionage_infiltration
 		JAP_kuromorimine_enigma
-		JAP_japanese_enigma
+		#JAP_japanese_enigma
 		JAP_chihatan_cryptology
 		JAP_arts_department
 		#1940

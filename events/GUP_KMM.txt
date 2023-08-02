@@ -4786,15 +4786,15 @@ country_event = { ##FRANCE NO
 
 country_event = { ##FRANCE YES
 
-id = kmm.221
-	title = kmm.221.t
-	desc = kmm.221.d
+id = kmm.222
+	title = kmm.222.t
+	desc = kmm.222.d
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = kmm.219.a
+		name = kmm.222.a
 		ai_chance = {
 			base = 10
 		}
