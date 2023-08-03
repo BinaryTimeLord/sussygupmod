@@ -113,16 +113,6 @@ characters = {
 			}
 		}
 
-		corps_commander={
-			traits={ panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-
 		country_leader = {
 			ideology = socialism
 			traits = { resistance_leader }
@@ -2734,16 +2724,6 @@ characters = {
 			}
 		}
 
-		corps_commander={
-			traits={ panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = ivanoe_bonomi
@@ -2799,16 +2779,6 @@ characters = {
 				small = GFX_portrait_ITA_alcide_de_gasperi_small
 				large = GFX_portrait_ITA_alcide_de_gasperi
 			}
-		}
-
-		corps_commander={
-			traits={ panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
 		}
 
 		country_leader = {
@@ -3286,16 +3256,6 @@ characters = {
 			id = -1
 		}
 
-		corps_commander={
-			traits={ panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_palmiro_togliatti
@@ -3343,16 +3303,6 @@ characters = {
 				large = GFX_portrait_ITA_sandro_pertini
 				small = GFX_portrait_ITA_sandro_pertini_small
 			}
-		}
-
-		corps_commander={
-			traits={ panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
 		}
 
 		country_leader = {

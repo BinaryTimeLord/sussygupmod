@@ -3,26 +3,8 @@ characters={
 		name="Mika"
 		portraits={
 			civilian={
-				large="gfx/leaders/FIN/Portrait_FIN_Mika1.dds"
+				large="gfx/leaders/FIN/Portrait_FIN_Mika.dds"
 			}
-		}
-		country_leader={
-			desc="POLITICS_RISTO_HEIKKI_RYT_DESC"
-			ideology=liberalism
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="POLITICS_KYÖSTI_KALLIO_DESC"
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	FIN_mikka={
-		name="Mikka"
-		portraits={
 			army={
 				small="gfx/interface/ideas/Jatkosota/idea_fin_mika.dds"
 			}
@@ -39,7 +21,20 @@ characters={
 			logistics_skill=4
 			legacy_id=5000
 		}
+		country_leader={
+			desc="POLITICS_RISTO_HEIKKI_RYT_DESC"
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_KYÖSTI_KALLIO_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
+
 	FIN_aki={
 		name="Aki"
 		portraits={
@@ -102,9 +97,9 @@ characters={
 				large="gfx/leaders/FIN/Portrait_FIN_Rumi.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ trait_reckless trickster }
-			skill=4
+			skill=5
 			attack_skill=3
 			defense_skill=1
 			planning_skill=2
@@ -225,8 +220,10 @@ characters={
 		name=FIN_erik_heinrichs
 		portraits={
 			army={
-				large=GFX_portrait_FIN_erik_heinrichs
 				small=GFX_portrait_FIN_erik_heinrichs_small
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 			}
 		}
 		corps_commander={
@@ -244,8 +241,10 @@ characters={
 		name=FIN_vilho_petter_nenonen
 		portraits={
 			army={
-				large=GFX_portrait_FIN_vilho_petter_nenonen
 				small=GFX_portrait_FIN_vilho_petter_nenonen_small
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_Finland_Risto_Heikki_Ryti.dds"
 			}
 		}
 		corps_commander={

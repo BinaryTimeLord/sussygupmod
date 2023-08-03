@@ -3459,8 +3459,8 @@ focus_tree = {
 		available = {
 			has_completed_focus = GER_rhineland
 			OR = {
-				has_country_leader = { ruling_only = yes name = "Maho" }
-				has_country_leader = { ruling_only = yes name = "Erika" }
+				has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
+				has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 			}
 		}
 
@@ -3468,8 +3468,8 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = GER_rhineland
 				OR = {
-					has_country_leader = { ruling_only = yes name = "Maho" }
-					has_country_leader = { ruling_only = yes name = "Erika" }
+					has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
+					has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 				}
 			}
 		}
@@ -3484,7 +3484,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = {
-						ruling_only = yes name = "Maho"
+						ruling_only = yes name = "Maho Nishizumi"
 					}
 				}
 				add_political_power = -100
@@ -3941,7 +3941,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					GER = { has_country_leader = { ruling_only = yes name = "Koume" } }
+					GER = { has_country_leader = { ruling_only = yes name = "Koume Akaboshi" } }
 				}
 				add_stability = -0.3
 				add_war_support = -0.3
@@ -4210,7 +4210,7 @@ focus_tree = {
 						}
 					}
 					create_corps_commander = {
-						name = "Oryou"
+						name = "Takeko Nogami"
 						portrait_path = "gfx/leaders/AUS/Portrait_AUS_Oryou.dds"
 						traits = { panzer_leader infantry_officer commando }
 						skill = 3
@@ -4220,7 +4220,7 @@ focus_tree = {
 						logistics_skill = 2
 					}
 					create_corps_commander = {
-						name = "Saemonza"
+						name = "Kiyomi Sugiyama"
 						portrait_path = "gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
 						traits = { panzer_leader cavalry_officer hill_fighter }
 						skill = 3
@@ -4763,8 +4763,8 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = { size > 999999 } #110 div		
 			OR = {
-				has_country_leader = { ruling_only = yes name = "Erika" }
-				has_country_leader = { ruling_only = yes name = "Maho" }
+				has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
+				has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
 			}	#Miho would never
 			#Make custom trigger tooltip here
 			85 = {
@@ -6192,7 +6192,7 @@ focus_tree = {
 			factor = 6
 			modifier = {
 				factor = 6
-				has_country_leader = { ruling_only = yes name = "Miho" }
+				has_country_leader = { ruling_only = yes name = "Miho Nishizumi" }
 			}
 		}	
 		
@@ -6229,7 +6229,7 @@ focus_tree = {
 			factor = 6
 			modifier = {
 				factor = 6
-				has_country_leader = { ruling_only = yes name = "Miho" }
+				has_country_leader = { ruling_only = yes name = "Miho Nishizumi" }
 			}
 		}	
 		completion_reward = {
@@ -7796,9 +7796,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			has_country_leader = { ruling_only = yes name = "Erika" }
+			has_country_leader = { ruling_only = yes name = "Erika Itsumi" }
 			NOT = {
-				has_country_leader = { ruling_only = yes name = "Maho" }
+				has_country_leader = { ruling_only = yes name = "Maho Nishizumi" }
 			}
 		}
 		ai_will_do = {
@@ -7811,7 +7811,7 @@ focus_tree = {
 			add_stability = 0.1
 			if = {
 				limit = {
-					GER = { has_country_leader = { ruling_only = yes name = "Erika" } }
+					GER = { has_country_leader = { ruling_only = yes name = "Erika Itsumi" } }
 				}
 				remove_country_leader_trait = inexperienced_panzer_leader
 			}	
@@ -7861,7 +7861,7 @@ focus_tree = {
 				add_war_support =  -0.2
 				if = {
 					limit = {
-						GER = { has_country_leader = { ruling_only = yes name = "Erika" } }
+						GER = { has_country_leader = { ruling_only = yes name = "Erika Itsumi" } }
 					}
 					remove_country_leader_trait = cold_hearted_ruler2
 					add_country_leader_trait = nishizumi_spirit
@@ -7888,7 +7888,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						GER = { has_country_leader = { ruling_only = yes name = "Erika" } }
+						GER = { has_country_leader = { ruling_only = yes name = "Erika Itsumi" } }
 					}
 					add_country_leader_trait = iron_heart 
 				}
@@ -7933,7 +7933,7 @@ focus_tree = {
 		id = GER_mahos_favorite
 		icon = GFX_goal_die_favoritin
 		available = {
-			has_country_leader = { ruling_only = yes name = "Miho" }
+			has_country_leader = { ruling_only = yes name = "Miho Nishizumi" }
 		}
 		prerequisite = {
 			focus = GER_mobilization_miho
@@ -7950,7 +7950,7 @@ focus_tree = {
 			add_political_power = 120
 			if = {
 				limit = {
-					GER = { has_country_leader = { ruling_only = yes name = "Miho" } }
+					GER = { has_country_leader = { ruling_only = yes name = "Miho Nishizumi" } }
 				}
 				remove_country_leader_trait = reformer
 			}
@@ -10451,13 +10451,13 @@ focus_tree = {
 		}
 		relative_position_id = GER_naval_submission
 		available = {
-			has_country_leader = { ruling_only = yes name = "Koume" }
+			has_country_leader = { ruling_only = yes name = "Koume Akaboshi" }
 		}
 		
 		completion_reward = {
 			if = {
 				limit = {
-					GER = { has_country_leader = { ruling_only = yes name = "Koume" } }
+					GER = { has_country_leader = { ruling_only = yes name = "Koume Akaboshi" } }
 				}
 				remove_country_leader_trait = non_nishizumi
 				add_country_leader_trait = akaboshism
@@ -12359,7 +12359,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Emi Kojima"
 				desc = "POLITICS_KOJIMA_DESC"
-				picture = "Kojima1.dds"
+				picture = "Portrait_GER_Kojima.dds.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
 				traits = { }
@@ -12580,7 +12580,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Miho Nishizumi"
 				desc = "POLITICS_MIHO_DESC"
-				picture = "Miho1.dds"
+				picture = "Portrait_GER_Miho.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
 				traits = { }
@@ -12912,7 +12912,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Miho Nishizumi"
 				desc = "POLITICS_MIHO_DESC"
-				picture = "Miho1.dds"
+				picture = "Portrait_GER_Miho.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
 				traits = { }
@@ -13027,7 +13027,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Emi Kojima"
 				desc = "POLITICS_KOJIMA_DESC"
-				picture = "Kojima1.dds"
+				picture = "Portrait_GER_Kojima.dds.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
 				traits = { }
@@ -14695,5 +14695,3 @@ focus_tree = {
 	}
 	
 }
-
-	

@@ -12,7 +12,6 @@ if = {
 set_research_slots = 3
 
 recruit_character = FIN_mika
-recruit_character = FIN_mikka
 recruit_character = FIN_aki
 recruit_character = FIN_mikko
 recruit_character = FIN_rumi
