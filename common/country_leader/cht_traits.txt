@@ -27,7 +27,7 @@ leader_traits = {
         random = no
 
         industry_air_damage_factor = -0.1
-		army_morale_factor = 0.15
+		army_morale_factor = 0.05
 
         ai_will_do = {
             factor = 1
@@ -74,7 +74,7 @@ leader_traits = {
 	emperor_nishi = { ### Nishi Heika Banzai!
 		random = no
 
-		stability_factor = 0.8 #FOR THE SUKIYAKI
+		stability_factor = 0.5 #FOR THE SUKIYAKI
 
 		ai_will_do = {
 			factor = 1

@@ -221,6 +221,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/Chi-Ha-Tan/GFX_chihatan_operations.dds"
 	}
 
+	#SPIES
+	spriteType = {
+		name = "GFX_portrait_tomiko_teramoto"
+		texturefile = "gfx/leaders/JAP/Teramoto.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_loid_forger"
+		texturefile = "gfx/leaders/JAP/Forger.dds"
+	}
+
 	#TRAITS
 	spriteType = {
 		name = "GFX_trait_cht_toseiha_symphatizer"

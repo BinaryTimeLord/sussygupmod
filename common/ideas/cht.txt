@@ -314,6 +314,12 @@ ideas = {
 				hidden_modifier = {
 					army_core_attack_factor = 0.8
 					army_core_defence_factor = 0.8
+					surrender_limit = 1.0
+					land_reinforce_rate = -0.15
+					army_org_factor = -0.15
+					attrition = 0.1
+					weekly_casualties_war_support = 0.005
+					supply_consumption_factor = 0.1
 				}
 			}
 		}
@@ -1338,6 +1344,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.15
 			}
 		}
+
 		cht_imperialist = {
 		
 			allowed = {
@@ -1353,13 +1360,51 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
-				
 				fascism_drift = -0.05
-				
+			}		
+		}
+
+		cht_teramoto_section_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
 			}
 			
+			removal_cost = -1
+
+			picture = generic_spy_coup
 			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		cht_phase_investments = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
 			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				conscription_factor = -0.15
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
+				local_resources_factor = -0.15
+			}
 		}
 	}
 }

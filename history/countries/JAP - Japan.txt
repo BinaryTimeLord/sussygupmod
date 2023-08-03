@@ -2,11 +2,11 @@
 
 
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
-set_war_support = 0.8
+set_stability = 0.1 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.50
 
 set_research_slots = 4
-set_fuel_ratio = 1.0
+set_fuel_ratio = 0.9
 add_ideas = {
 	limited_conscription
 	limited_exports
@@ -492,6 +492,7 @@ set_popularities = {
 	democratic = 3
 }
 
+#GuP chars
 recruit_character = JAP_kinuyo_nishi
 recruit_character = JAP_haru_tamada
 recruit_character = JAP_noriyo_hamada
@@ -505,8 +506,19 @@ recruit_character = JAP_ikeda
 recruit_character = JAP_uenishi
 recruit_character = JAP_hasegawa
 recruit_character = JAP_hirai
-
+#AL/KanColle chars
 recruit_character = JAP_akagi
+recruit_character = JAP_kaga
+recruit_character = JAP_nagato
+recruit_character = JAP_yamato
+recruit_character = JAP_suruga
+recruit_character = JAP_takao
+recruit_character = JAP_atago
+recruit_character = JAP_kongou
+recruit_character = JAP_hiei
+recruit_character = JAP_kirishima
+recruit_character = JAP_haruna
+recruit_character = JAP_shimakaze
 
 #No vanilla for now
 #recruit_character = JAP_tetsu_katayama
@@ -553,6 +565,7 @@ recruit_character = JAP_akagi
 #recruit_character = JAP_tadashige_daigo
 #recruit_character = JAP_gengo_hyakutake
 
+#Ministers etc.
 recruit_character = natsuko_hosomi_p
 recruit_character = ritsuko_hamada_p
 recruit_character = ikuyo_fukuda_p
@@ -584,22 +597,30 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_operative_leader = {
-		name = "Yoshiko Kawashima"
-		GFX = GFX_portrait_yoshiko_kawashima
-		traits = { }
+		name = "Tomiko Teramoto"
+		GFX = GFX_portrait_tomiko_teramoto
+		traits = { operative_master_interrogator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
 		nationalities = { MAN JAP CHI }
 	}
-
-	create_operative_leader = {
-		name = "Takeo Yoshikawa"
-		GFX = GFX_portrait_takeo_yoshikawa
-		traits = { }
+	create_operative_leader = { #nishi #easter egg marriage event? + anya?
+		name = "Yor Briar"
+		GFX = GFX_portrait_man_yoshiko_kawashima
+		traits = { operative_double_agent operative_tough operative_well_groomed }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { JAP }
+		female = yes
+		nationalities = { MAN JAP CHI GER DDR PRC SOV }
+	}
+	create_operative_leader = {
+		name = "Loid Forger"
+		GFX = GFX_portrait_loid_forger
+		traits = { operative_infiltrator operative_tough operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { MAN JAP CHI GER WGR ENG USA }
 	}
 }
 if = {

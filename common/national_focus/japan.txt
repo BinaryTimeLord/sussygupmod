@@ -7207,15 +7207,19 @@
 		y = 1
 		relative_position_id = JAP_strengthen_the_divine_wind
 
-		cost = 10
+		cost = 8
 
 		allow_branch = {
-			#has_dlc = "La Resistance"
-			#has_country_flag = cht_wtt
+			has_dlc = "La Resistance"
+			has_country_flag = cht_wtt
 		}
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_teramoto_section_3 days = 56 }
 		}
 
 		available = {
@@ -7236,6 +7240,7 @@
 				limit = {
 					has_dlc = "La Resistance"
 				}
+				add_political_power = -175
 				create_intelligence_agency = yes
 				upgrade_intelligence_agency = upgrade_form_department
 				upgrade_intelligence_agency = upgrade_decryption_boost
@@ -7298,10 +7303,14 @@
 		y = 1
 		relative_position_id = JAP_ikeda_section_3
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_teramoto_section_3 days = 42 }
 		}
 
 		available = {
@@ -7325,6 +7334,7 @@
 				limit = {
 					has_dlc = "La Resistance"
 				}
+				add_political_power = -80
 				custom_effect_tooltip = "CHT_DECRYPTION"
 				hidden_effect = {
 					upgrade_intelligence_agency = upgrade_passive_defense
@@ -7346,10 +7356,14 @@
 		y = 1
 		relative_position_id = JAP_ikeda_section_3
 
-		cost = 10	
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_teramoto_section_3 days = 42 }
 		}
 
 		available = {
@@ -7370,20 +7384,10 @@
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				custom_effect_tooltip = "CHT_OPERATIVE"
+				add_political_power = -80
+				#custom_effect_tooltip = "CHT_OPERATIVE"
 				upgrade_intelligence_agency = upgrade_training_centers
 				upgrade_intelligence_agency = upgrade_suicide_pills
-				hidden_effect = {
-					create_operative_leader = {
-						bypass_recruitment = yes
-					}
-					create_operative_leader = {
-						bypass_recruitment = yes
-					}
-					create_operative_leader = {
-						bypass_recruitment = yes
-					}
-				}
 			}
 		}
 	}
@@ -7399,10 +7403,14 @@
 		y = 2
 		relative_position_id = JAP_ikeda_section_3
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_teramoto_section_3 days = 56 }
 		}
 
 		available = {
@@ -7423,6 +7431,7 @@
 				limit = {
 					has_dlc = "La Resistance"
 				}
+				add_political_power = -80
 				upgrade_intelligence_agency = upgrade_economy_civilian
 				upgrade_intelligence_agency = upgrade_army_department
 				upgrade_intelligence_agency = upgrade_naval_department
@@ -7435,7 +7444,7 @@
 		id = JAP_strategic_engineering
 		icon = GFX_goal_strategic_engineering
 
-		x = 3
+		x = 0
 		y = 0
 		relative_position_id = JAP_ikeda_section_3
 		
@@ -7443,6 +7452,19 @@
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				has_dlc = "La Resistance"
+				has_country_flag = cht_wtt
+			}
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_phase_investments days = 70 }
 		}
 
 		available = {
@@ -7664,10 +7686,14 @@
 		y = 1
 		relative_position_id = JAP_strategic_engineering
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_phase_investments days = 70 }
 		}
 
 		available = {
@@ -7908,10 +7934,14 @@
 		y = 1
 		relative_position_id = JAP_tactical_engineering
 
-		cost = 30
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_phase_investments days = 70 }
 		}
 
 		available = {
@@ -7978,10 +8008,14 @@
 		y = 1
 		relative_position_id = JAP_man_the_guns
 
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		select_effect = {
+			add_timed_idea = { idea = cht_phase_investments days = 35 }
 		}
 
 		allow_branch = {

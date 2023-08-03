@@ -133,7 +133,7 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=1212 # Nishi is 1208
+			legacy_id=1212 # Nishi is 120841
 		}
 		country_leader={
 			desc="POLITICS_FUKUDA_DESC"
@@ -163,6 +163,7 @@ characters={
 			legacy_id=1213
 		}
 	}
+
 	JAP_nagura={
 		name="Setsuko Nagura"
 		portraits={
@@ -181,6 +182,7 @@ characters={
 			legacy_id=1214
 		}
 	}
+
 	JAP_kubota={
 		name="Rin Kubota"
 		portraits={
@@ -199,6 +201,7 @@ characters={
 			legacy_id=1215
 		}
 	}
+
 	JAP_nishihara={
 		name="Yasuko Nishihara"
 		portraits={
@@ -217,6 +220,7 @@ characters={
 			legacy_id=1216
 		}
 	}
+	
 	JAP_uenishi={
 		name="Chiyoko Uenishi"
 		portraits={
@@ -235,6 +239,7 @@ characters={
 			legacy_id=1217
 		}
 	}
+
 	JAP_teramoto={
 		name="Tomiko Teramoto"
 		portraits={
@@ -253,6 +258,7 @@ characters={
 			legacy_id=1218
 		}
 	}
+	
 	JAP_hasegawa={
 		name="Tatsu Hasegawa"
 		portraits={
@@ -271,6 +277,7 @@ characters={
 			legacy_id=1219
 		}
 	}
+
 	JAP_hirai={
 		name="Hanako Hirai"
 		portraits={
@@ -299,7 +306,6 @@ characters={
 				large="gfx/leaders/JAP/ShipWaifus/Akagi.dds"
 			}
 		}
-
 		navy_leader={
 			traits = { aviation_enthusiast bold air_controller flight_deck_manager superior_tactician spotter }
 			skill = 5
@@ -308,6 +314,215 @@ characters={
 			maneuvering_skill = 3
 			coordination_skill = 6
 			legacy_id=1221
+		}
+	}
+
+	JAP_kaga={
+		name="Kaga"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Kaga.dds"
+			}
+		}
+		navy_leader={
+			traits = { bold battleship_adherent superior_tactician spotter }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 3
+			legacy_id=1222
+		}
+	}
+
+	JAP_nagato={
+		name="Nagato"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Nagato.dds"
+			}
+		}
+		navy_leader={
+			traits = { gentlemanly }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+			legacy_id=1223
+		}
+	}
+
+	JAP_yamato={
+		name="Yamato"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Yamato.dds"
+			}
+		}
+		navy_leader={
+			traits = { aviation_enthusiast navy_career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 3
+			legacy_id=1224
+		}
+	}
+
+	JAP_suruga={
+		name="Suruga"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Suruga.dds"
+			}
+		}
+		navy_leader={
+			traits = { battleship_adherent naval_lineage fly_swatter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id=1225
+		}
+	}
+
+	JAP_takao={
+		name="Takao"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Takao.dds"
+			}
+		}
+		navy_leader={
+			traits = { spotter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id=1226
+		}
+	}
+
+	JAP_atago={
+		name="Atago"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Atago.dds"
+			}
+		}
+		navy_leader={
+			traits = { bold ironside old_guard_navy }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id=1227
+		}
+	}
+
+	JAP_kongou={
+		name="Kongou"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Kongou.dds"
+			}
+		}
+		navy_leader={
+			traits = { bold aviation_enthusiast navy_career_officer blockade_runner superior_tactician }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 4
+			legacy_id=1228
+		}
+	}
+
+	JAP_hiei={
+		name="Hiei"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Hiei.dds"
+			}
+		}
+		navy_leader={
+			traits = { old_guard_navy }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+			legacy_id=1229
+		}
+	}
+
+	JAP_kirishima={
+		name="Kirishima"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Kirishima.dds"
+			}
+		}
+		navy_leader={
+			traits = { battleship_adherent }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+			legacy_id=1230
+		}
+	}
+
+	JAP_haruna={
+		name="Haruna"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Haruna.dds"
+			}
+		}
+		navy_leader={
+			traits = { navy_career_officer seawolf }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id=1231
+		}
+	}
+
+	JAP_shimakaze={
+		name="Shimakaze"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Shimakaze.dds"
+			}
+		}
+		navy_leader={
+			traits = { gentlemanly }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id=1232
 		}
 	}
 
