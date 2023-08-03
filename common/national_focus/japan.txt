@@ -4889,7 +4889,7 @@
 		completion_reward = {
 			if = {
 				limit = {
-					JAP = { has_country_leader = { ruling_only = yes name = "Kinuyo Nishi" } } #Nishi
+					JAP = { has_country_leader = { ruling_only = yes name = "Kinuyo Nishi" } }
 				}
 				remove_country_leader_trait = warrior_code
 			}

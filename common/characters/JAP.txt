@@ -17,7 +17,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1208 # Nishi's birthday
+			legacy_id=120841 # Nishi's birthday
 		}
 		country_leader={
 			desc="POLITICS_KINUYO_DESC"
@@ -46,7 +46,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1209
+			legacy_id=120941
 		}
 		country_leader={
 			desc="POLITICS_HOSOMI_DESC"
@@ -75,7 +75,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=1210
+			legacy_id=121041
 		}
 		country_leader={
 			desc="POLITICS_TAMADA_DESC"
@@ -104,7 +104,7 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=1211
+			legacy_id=121141
 		}
 		country_leader={
 			desc="POLITICS_HAMADA_DESC"
@@ -290,6 +290,27 @@ characters={
 		}
 	}
 
+	#NAVY
+	JAP_akagi={
+		name="Akagi"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/ShipWaifus/Akagi.dds"
+			}
+		}
+
+		navy_leader={
+			traits = { aviation_enthusiast bold air_controller flight_deck_manager superior_tactician spotter }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 6
+			legacy_id=1221
+		}
+	}
+
 	#POLITICAL ADVISORS
 	natsuko_hosomi_p = {
 		name=JAP_natsuko_hosomi_p
@@ -313,6 +334,7 @@ characters={
 				#	limit = { has_dlc = "Man the Guns" }	
 				#	NOT = { has_autonomy_state = autonomy_supervised_state }
 				#}
+				has_country_flag = cht_unthinkable_option
 			}
 
 			allowed = {
@@ -357,6 +379,7 @@ characters={
 				#	}
 				#	has_completed_focus = JAP_strengthen_civilian_government
 				#}
+				has_country_flag = cht_strengthen_government
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
