@@ -12,12 +12,10 @@ if = {
 	set_country_flag = vlasov_owner_flag
 }
 
-recruit_character = SOV_kachusha
 recruit_character = SOV_nonna
 recruit_character = SOV_klara
 recruit_character = SOV_nina
 recruit_character = SOV_alina
-recruit_character = SOV_katyusha
 
 #POLITICAL ADVISORS
 recruit_character = SOV_mikhail_kalinin

@@ -7574,7 +7574,7 @@ focus_tree = {
 			}
 			has_completed_focus = SOV_expand_the_agitprop
 			has_country_leader = {
-				character = SOV_katyusha
+				character = SOV_iosif_stalin
 				ruling_only = yes
 			}
 		}
@@ -7912,7 +7912,7 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = stalin_great_commander
 			add_field_marshal_role = {
-				character = "SOV_kachusha"
+				character = "SOV_iosif_stalin"
 				traits={ old_guard politically_connected media_personality harsh_leader }
 				skill=3
 				attack_skill=1
@@ -9658,7 +9658,7 @@ focus_tree = {
 
 		completion_reward = {
 			SOV_paranoia_medium_increase_effect = yes 
-			SOV_kachusha = {
+			SOV_iosif_stalin = {
 				swap_country_leader_traits = { remove = stalin_political_paranoia add = stalin_authority_undermined }
 			}
 			add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 }
@@ -9822,7 +9822,7 @@ focus_tree = {
 			# Stalin dead
 			IF = {
 				limit = {
-					NOT = { has_character = SOV_kachusha }
+					NOT = { has_character = SOV_iosif_stalin }
 				}
 				custom_effect_tooltip = SOV_coup_detat_success_tt
 				hidden_effect = {

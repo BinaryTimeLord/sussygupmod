@@ -12,9 +12,12 @@ characters = {
   ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
                                                                                                                   
 
-	SOV_kachusha={
-		name="Kachusha"
-		portraits={
+	SOV_iosif_stalin = {
+		name = SOV_iosif_stalin
+		portraits = {
+			civilian = {
+				large="gfx/leaders/SOV/Portrait_SOV_Katyusha.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Pravda/idea_sov_katyusha.dds"
 			}
@@ -31,7 +34,15 @@ characters = {
 			logistics_skill=3
 			legacy_id=-1
 		}
+		country_leader={
+			desc="POLITICS_JOSEPH_STALIN_DESC"
+			ideology=soviet_idealism2
+			traits={ little_tyrant drifting_snow }
+			expire="1953.3.1.1"
+			id=-1
+		}
 	}
+
 	SOV_nonna={
 		name="Nonna"
 		portraits={
@@ -110,40 +121,6 @@ characters = {
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
-		}
-	}
-	SOV_katyusha={
-		name="Katyusha"
-		portraits={
-			civilian={
-				large="gfx/leaders/SOV/Portrait_SOV_Katyusha1.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_JOSEPH_STALIN_DESC"
-			ideology=soviet_idealism2
-			traits={ little_tyrant drifting_snow }
-			expire="1953.3.1.1"
-			id=-1
-		}
-	}
-
-	SOV_iosif_stalin = {
-		name = SOV_iosif_stalin
-		portraits = {
-			civilian = {
-				large = GFX_portrait_SOV_iosif_stalin
-			}
-			army = {
-				large = GFX_portrait_SOV_iosif_stalin
-				small = GFX_portrait_SOV_iosif_stalin_small
-			}
-		}
-		country_leader = {
-			ideology = soviet_idealism2
-			traits = { stalin_heart_of_steel }
-			expire = "1953.3.1.1"
-			id = -1
 		}
 	}
 
