@@ -10615,6 +10615,7 @@ focus_tree = {
 				promote_character = ITA_grand_council
 			}
 			add_ideas = ITA_shadow_of_mussolini
+            retire_character = ITA_benito_mussolini
 			ITA_bop_low_decrease_effect = yes 
 		}
 	}
