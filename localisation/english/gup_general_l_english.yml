@@ -666,6 +666,9 @@ GER_expand_fortlines_desc:0 ""
  ##DEMOCRATIC TOOLTIPS
  kmm_fortlines_tooltips:0 "§CBuilds§! Forts on the East"
  
+ ##DEMOCRATIC IDEAS
+ GER_war_economy2:0 "Against Communism"
+ 
  ##TOOLTIPS
  kmm_research_tooltip:0 "§CIf we have more than 5 research slots this will bypass§!"
  GER_europe_tooltip3:0 "§RHas Debt§!"
