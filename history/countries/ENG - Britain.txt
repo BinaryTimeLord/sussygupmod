@@ -253,7 +253,7 @@ if = {
         create_country_leader = {
 	        name = "Darjeeling"
 	        desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-	        picture = "Portrait_ENG_Darjeeling1.dds"
+	        picture = "Portrait_ENG_Darjeeling.dds"
 	        expire = "1965.1.1"
 	        ideology = liberalism
 	        traits = {
@@ -474,7 +474,7 @@ add_to_faction = MAL
 create_country_leader = {
 	name = "Darjeeling"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_ENG_Darjeeling1.dds"
+	picture = "Portrait_ENG_Darjeeling.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -485,7 +485,6 @@ create_country_leader = {
 
 
 recruit_character = ENG_darjeeling
-recruit_character = ENG_dajirin
 recruit_character = ENG_orange_pekoe
 recruit_character = ENG_assam
 recruit_character = ENG_rosehip

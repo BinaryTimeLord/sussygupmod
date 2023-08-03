@@ -3,8 +3,23 @@ characters={
 		name="Darjeeling"
 		portraits={
 			civilian={
-				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling1.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
 			}
+			army={
+				small="gfx/interface/ideas/St. Gloriana/idea_eng_darjeeling.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious armor_officer defensive_doctrine expert_delegator }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
 		}
 		country_leader={
 			desc="POLITICS_WINSTON_CHURCHILL_DESC"
@@ -40,26 +55,6 @@ characters={
 			traits={ elegant_and_wise diplomatic_tongue }
 			expire="1965.1.1.1"
 			id=-1
-		}
-	}
-	ENG_dajirin={
-		name="Dajirin"
-		portraits={
-			army={
-				small="gfx/interface/ideas/St. Gloriana/idea_eng_darjeeling.dds"
-			}
-			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious armor_officer defensive_doctrine expert_delegator }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	ENG_orange_pekoe={
