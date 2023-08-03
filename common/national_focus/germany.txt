@@ -13307,7 +13307,7 @@ focus_tree = {
 		completion_reward = { ##ADDS DECISIONS TO BUILD FORTS
 			set_country_flag = GER_FORTLINES
 			custom_effect_tooltip = kmm_fortlines_tooltips
-			add_ideas GER_fortifications
+			add_ideas = GER_fortifications
 			
 			hidden_effect = {
 				5 = {
