@@ -7,8 +7,6 @@ characters={
 			}
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_kinuyi_nishi.dds"
-			}
-			army={
 				large="gfx/leaders/JAP/Kinuyo.dds"
 			}
 		}
@@ -19,45 +17,14 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1705
+			legacy_id=1208 # Nishi's birthday
 		}
 		country_leader={
 			desc="POLITICS_KINUYO_DESC"
 			ideology=japanese_idealism3
 			traits={ emperor_nishi warrior_code shintoism totsugeki_sanction }
 			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-
-	JAP_haru_tamada={
-		name="Haru Tamada"
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Tamada.dds"
-			}
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Tamada.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_reckless cavalry_leader panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=1703
-		}
-		country_leader={
-			desc="POLITICS_TAMADA_DESC"
-			ideology=japanese_idealism4
-			traits={ warrior_code shintoism }
-			expire="1989.1.1.1"
-			id=-1
+			id=1208
 		}
 	}
 
@@ -69,8 +36,6 @@ characters={
 			}
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
-			}
-			army={
 				large="gfx/leaders/JAP/Hosomi.dds"
 			}
 		}
@@ -81,14 +46,43 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1702
+			legacy_id=1209
 		}
 		country_leader={
 			desc="POLITICS_HOSOMI_DESC"
 			ideology=japanese_idealism2
 			traits={ warrior_code }
 			expire="1989.1.1.1"
-			id=-1
+			id=1209
+		}
+	}
+
+	JAP_haru_tamada={ # Old name made by Yamato from cht fan server
+		name="Tamaki Tamada" # Official names
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Tamada.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds" # Old name made by Yamato from cht fan server
+				large="gfx/leaders/JAP/Tamada.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless cavalry_leader panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1210
+		}
+		country_leader={
+			desc="POLITICS_TAMADA_DESC"
+			ideology=japanese_idealism4
+			traits={ warrior_code shintoism }
+			expire="1989.1.1.1"
+			id=1210
 		}
 	}
 
@@ -98,99 +92,8 @@ characters={
 			civilian={
 				large="gfx/leaders/JAP/Hamada.dds"
 			}
-		}
-		country_leader={
-			desc="POLITICS_HAMADA_DESC"
-			ideology=japanese_idealism
-			traits={ warrior_code centrist_dem }
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-
-	JAP_fukuda={
-		name="Fukuda"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Fukuda.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer trait_cautious panzer_leader }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	JAP_kubota={
-		name="Kubota"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
-			}
-		}
-	}
-	JAP_nishihara={
-		name="Nishihara"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_katsumi_nishihara.dds"
-			}
-		}
-	}
-	JAP_teramoto={
-		name="Teramoto"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Teramoto.dds"
-			}
-		}
-		corps_commander={
-			traits={ cht_toseiha_symphatizer trait_engineer panzer_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1700
-		}
-	}
-	JAP_nagura={
-		name="Nagura"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_yukiko_nagura.dds"
-			}
-			army={
-				large="gfx/leaders/JAP/Nagura.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_cautious cht_kodoha_symphatizer panzer_leader naval_liason }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	JAP_hamada={
-		name="Hamada"
-		portraits={
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
-			}
-			army={
 				large="gfx/leaders/JAP/Hamada.dds"
 			}
 		}
@@ -201,16 +104,52 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=1704
+			legacy_id=1211
+		}
+		country_leader={
+			desc="POLITICS_HAMADA_DESC"
+			ideology=japanese_idealism
+			traits={ warrior_code centrist_dem }
+			expire="1989.1.1.1"
+			id=1211
 		}
 	}
-	JAP_ikeda={
-		name="Ikeda"
+
+	JAP_fukuda={ 
+		name="Haru Fukuda"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Fukuda.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds" # Old name made by Yamato from cht fan server
+				large="gfx/leaders/JAP/Fukuda.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_cautious panzer_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1212 # Nishi is 1208
+		}
+		country_leader={
+			desc="POLITICS_FUKUDA_DESC"
+			ideology=japanese_idealism3
+			traits={ warrior_code shintoism totsugeki_sanction }
+			expire="1989.1.1.1"
+			id=1212
+		}
+	}
+
+	#NON-LEADER CHARS
+	JAP_ikeda={ # Manchuria has her too
+		name="Emi Ikeda"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
-			}
-			army={
 				large="gfx/leaders/JAP/Ikeda.dds"
 			}
 		}
@@ -221,10 +160,137 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=1701
+			legacy_id=1213
+		}
+	}
+	JAP_nagura={
+		name="Setsuko Nagura"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_yukiko_nagura.dds"
+				large="gfx/leaders/JAP/Nagura.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious cht_kodoha_symphatizer panzer_leader naval_liason }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1214
+		}
+	}
+	JAP_kubota={
+		name="Rin Kubota"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
+				large="gfx/leaders/JAP/Kubota.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader infantry_leader cht_toseiha_symphatizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=1215
+		}
+	}
+	JAP_nishihara={
+		name="Yasuko Nishihara"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_katsumi_nishihara.dds"
+				large="gfx/leaders/JAP/Nishihara.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader swamp_fox naval_invader cht_toseiha_symphatizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id=1216
+		}
+	}
+	JAP_uenishi={
+		name="Chiyoko Uenishi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_uenishi.dds"
+				large="gfx/leaders/JAP/Uenishi.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader jungle_rat naval_invader cht_toseiha_symphatizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1217
+		}
+	}
+	JAP_teramoto={
+		name="Tomiko Teramoto"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
+				large="gfx/leaders/JAP/Teramoto.dds"
+			}
+		}
+		corps_commander={
+			traits={ cht_toseiha_symphatizer trait_engineer panzer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1218
+		}
+	}
+	JAP_hasegawa={
+		name="Tatsu Hasegawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_hasegawa.dds"
+				large="gfx/leaders/JAP/Hasegawa.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader cht_toseiha_symphatizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=1219
+		}
+	}
+	JAP_hirai={
+		name="Hanako Hirai"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_hirai.dds"
+				large="gfx/leaders/JAP/Hirai.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader cht_toseiha_symphatizer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1220
 		}
 	}
 
+	#POLITICAL ADVISORS
 	natsuko_hosomi_p = {
 		name=JAP_natsuko_hosomi_p
 		portraits={
@@ -539,6 +605,7 @@ characters={
 		}
 	}
 
+	#THEORISTS
 	ikuyo_fukuda_t = {
 		name=JAP_ikuyo_fukuda_t
 		portraits={
@@ -710,6 +777,7 @@ characters={
 		}
 	}
 
+	#ARMY
 	ikuyo_fukuda = {
 		name=JAP_ikuyo_fukuda
 		portraits={
@@ -770,6 +838,7 @@ characters={
 		}
 	}
 	
+	#NAVY
 	katsumi_nishihara = {
 		name=JAP_katsumi_nishihara
 		portraits={
@@ -830,6 +899,7 @@ characters={
 		}
 	}
 
+	#AIR
 	tomoyo_ikeda = {
 		name=JAP_tomoyo_ikeda
 		portraits={
@@ -859,6 +929,7 @@ characters={
 		}
 	}
 
+	#HIGH COMMAND
 	natsuko_hosomi = {
 		name=JAP_natsuko_hosomi
 		portraits={

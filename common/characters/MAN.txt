@@ -1,6 +1,6 @@
 characters={
 	MAN_tomoyo_ikeda={
-		name="Tomoyo Ikeda"
+		name="Emi Ikeda"
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/Ikeda.dds"
@@ -22,12 +22,10 @@ characters={
 		}
 	}
 	MAN_ikeda={
-		name="Ikeda"
+		name="Emi Ikeda"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
-			}
-			army={
 				large="gfx/leaders/MAN/Ikeda.dds"
 			}
 		}

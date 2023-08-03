@@ -501,8 +501,11 @@ recruit_character = JAP_kubota
 recruit_character = JAP_nishihara
 recruit_character = JAP_teramoto
 recruit_character = JAP_nagura
-recruit_character = JAP_hamada
+recruit_character = JAP_noriyo_hamada
 recruit_character = JAP_ikeda
+recruit_character = JAP_uenishi
+recruit_character = JAP_hasegawa
+recruit_character = JAP_hirai
 
 #No vanilla for now
 #recruit_character = JAP_tetsu_katayama
