@@ -3,8 +3,23 @@ characters={
 		name="Kay"
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Kay1.dds"
+				large="gfx/leaders/USA/Portrait_USA_Kay.dds"
 			}
+			army={
+				small="gfx/interface/ideas/Saunders/idea_usa_kay.dds"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_USA_Kay.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious armor_officer expert_delegator }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 		}
 		country_leader={
 			desc="POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
@@ -29,26 +44,6 @@ characters={
 		}
 	}
 
-	USA_kei={
-		name="Kei"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Saunders/idea_usa_kay.dds"
-			}
-			army={
-				large="gfx/leaders/USA/Portrait_USA_Kay.dds"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious armor_officer expert_delegator }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 	USA_alisa={
 		name="Alisa"
 		portraits={
@@ -99,13 +94,53 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Megumi.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ inflexible_strategist armor_officer }
 			skill=5
 			attack_skill=4
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	USA_helmet={
+		name="Helmet-Chan"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Saunders/idea_usa_helmet.dds"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_USA_Helmet.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	USA_gunner={
+		name="Gunner-Chan"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Saunders/idea_usa_gunner.dds"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_USA_Gunner.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}

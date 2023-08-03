@@ -346,6 +346,8 @@ recruit_character = USA_kei
 recruit_character = USA_alisa
 recruit_character = USA_naomi
 recruit_character = USA_megumi
+recruit_character = USA_helmet
+recruit_character = USA_gunner
 
 recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley

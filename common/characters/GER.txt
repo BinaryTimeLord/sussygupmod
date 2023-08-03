@@ -172,6 +172,46 @@ characters={
 			legacy_id=1009
 		}
 	}
+	GER_erisou={
+		name="Eri-Sou"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_erisou.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Erisou.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	GER_erihou={
+		name="Eri-Hou"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_erihou.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Erihou.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
 
 	GER_adolf_hitler={
 		name=GER_adolf_hitler
