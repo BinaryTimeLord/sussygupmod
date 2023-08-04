@@ -39,6 +39,25 @@ characters={
 			legacy_id=-1
 		}
 	}
+	MAN_shizuko_hosomi={
+		name="Shizuko Hosomi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
+				large="gfx/leaders/JAP/Hosomi.dds"
+			}
+		}
+	}
+	MAN_noriyo_hamada={
+		name="Noriyo Hamada"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
+				large="gfx/leaders/JAP/Hamada.dds"
+			}
+		}
+	}
+
 
 	MAN_aisin_gioro_puyi={
 		name=MAN_aisin_gioro_puyi

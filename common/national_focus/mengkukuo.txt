@@ -874,9 +874,8 @@
 				active = yes
 			}
 			give_military_access = MAN
-			create_corps_commander = {
-				name = "Shizuko Hosomi" # Whorls
-				portrait_path = "gfx/leaders/JAP/Hosomi.dds"
+			add_corps_commander_role = {
+                character = MEN_shizuko_hosomi
 				traits = { panzer_leader trait_reckless trickster cht_toseiha_symphatizer }
 				skill = 4
 				attack_skill = 4
@@ -884,9 +883,8 @@
 				planning_skill = 2
 				logistics_skill = 3
 			}
-			create_corps_commander = {
-				name = "Noriyo Hamada"
-				portrait_path = "gfx/leaders/JAP/Hamada.dds"
+			add_corps_commander_role = {
+                character = MEN_noriyo_hamada
 				traits = { panzer_leader infantry_leader camouflage_expert cht_kodoha_symphatizer }
 				skill = 4
 				attack_skill = 3

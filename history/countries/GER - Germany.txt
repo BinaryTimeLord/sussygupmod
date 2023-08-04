@@ -179,29 +179,14 @@ create_import = {
 		name = GER_erika_partei_long 
 	}
 
-	create_country_leader = { #neue fuhrerin
-		name = "Erika Itsumi"
-		desc = "POLITICS_ERIKA_DESC"
-		picture = "Portrait_GER_Erika.dds"
-		expire = "1965.1.1"
-		ideology = german_idealism3
-		traits = {
-			cold_hearted_ruler2
-			inexperienced_panzer_leader
-		}
-	}
+	promote_character = GER_erika
+	retire_character = GER_maho
 
 	random_army_leader = {
 		limit = {
 			has_id = 1004 # ERIKA
 		}
 		promote_leader = yes
-	}
-
-	AUS = {
-		every_unit_leader = {
-			set_nationality = GER
-		}
 	}
 
 	set_country_flag = kmm_sudeten_erika
@@ -503,6 +488,8 @@ recruit_character = GER_geshiko
 recruit_character = GER_sangou
 recruit_character = GER_erisou
 recruit_character = GER_erihou
+recruit_character = GER_oryou
+recruit_character = GER_saemonza
 
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer

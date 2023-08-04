@@ -567,9 +567,8 @@
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 			add_political_power = 200
-			create_corps_commander = {
-				name = "Shizuko Hosomi" # Whorls
-				portrait_path = "gfx/leaders/JAP/Hosomi.dds"
+			add_corps_commander_role = {
+                character = MAN_shizuko_hosomi
 				traits = { panzer_leader trait_reckless trickster cht_toseiha_symphatizer }
 				skill = 4
 				attack_skill = 4
@@ -577,9 +576,8 @@
 				planning_skill = 2
 				logistics_skill = 3
 			}
-			create_corps_commander = {
-				name = "Noriyo Hamada"
-				portrait_path = "gfx/leaders/JAP/Hamada.dds"
+			add_corps_commander_role = {
+                character = MAN_noriyo_hamada
 				traits = { panzer_leader infantry_leader camouflage_expert cht_kodoha_symphatizer }
 				skill = 4
 				attack_skill = 3
@@ -1306,9 +1304,8 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = MAN_kwantung_veto
-			create_field_marshal = {
-				name = "Haru Tamada"
-				portrait_path = "gfx/leaders/JAP/Tamada.dds"
+			add_field_marshal_role = {
+				character = JAP_haru_tamada
 				traits = { panzer_leader cavalry_leader trait_reckless }
 				skill = 4
 				attack_skill = 4
@@ -1316,8 +1313,8 @@
 				planning_skill = 2
 				logistics_skill = 2
 			}
-			create_corps_commander = {
-				name = "Shizuka Tsuruki"
+			add_corps_commander_role = {
+				character = shizuka_tsuruki
 				portrait_path = "gfx/leaders/JAP/Tsuruki.dds"
 				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
@@ -1326,8 +1323,8 @@
 				planning_skill = 4
 				logistics_skill = 2
 			}
-			create_corps_commander = {
-				name = "Rin Matsukaze"
+			add_corps_commander_role = {
+				character = rin_matsukaze
 				portrait_path = "gfx/leaders/JAP/Matsukaze.dds"
 				traits = { infantry_leader }
 				skill = 5
@@ -1572,9 +1569,8 @@
 						autonomy_state = autonomy_wtt_imperial_subject
 					}
 				}
-				create_corps_commander = {
-					name = "Shizuko Hosomi" # Whorls
-					portrait_path = "gfx/leaders/JAP/Hosomi.dds"
+			    add_corps_commander_role = {
+                    character = MAN_shizuko_hosomi
 					traits = { panzer_leader trait_reckless trickster cht_toseiha_symphatizer }
 					skill = 4
 					attack_skill = 4
@@ -1582,8 +1578,8 @@
 					planning_skill = 2
 					logistics_skill = 3
 				}
-				create_corps_commander = {
-					name = "Noriyo Hamada"
+			    add_corps_commander_role = {
+                    character = MAN_noriyo_hamada
 					portrait_path = "gfx/leaders/JAP/Hamada.dds"
 					traits = { panzer_leader infantry_leader camouflage_expert cht_kodoha_symphatizer }
 					skill = 4
@@ -1634,9 +1630,8 @@
 							autonomy_state = autonomy_wtt_imperial_subject
 						}
 					}
-					create_corps_commander = {
-						name = "Natsuko Hosomi" # Whorls
-						picture = "Hosomi.dds"
+			        add_corps_commander_role = {
+                        character = MAN_shizuko_hosomi
 						traits = { panzer_leader trait_reckless trickster cht_toseiha_symphatizer }
 						skill = 4
 						attack_skill = 4
@@ -1644,8 +1639,8 @@
 						planning_skill = 2
 						logistics_skill = 3
 					}
-					create_corps_commander = {
-						name = "Ritsuko Hamada"
+			       add_corps_commander_role = {
+                        character = MAN_noriyo_hamada
 						picture = "Hamada.dds"
 						traits = { panzer_leader infantry_leader camouflage_expert cht_kodoha_symphatizer }
 						skill = 4

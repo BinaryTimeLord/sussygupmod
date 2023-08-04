@@ -21,6 +21,8 @@ if = {
 
 recruit_character = MAN_tomoyo_ikeda
 recruit_character = MAN_ikeda
+recruit_character = MAN_noriyo_hamada
+recruit_character = MAN_shizuko_hosomi
 
 recruit_character = MAN_aisin_gioro_puyi
 recruit_character = MAN_zhang_haipeng

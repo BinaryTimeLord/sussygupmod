@@ -41,6 +41,24 @@ characters={ #IGNORE FOR NOW - MEN WON'T EXIST INDEFINITELY
 			legacy_id=-1
 		}
 	}
+	MEN_shizuko_hosomi={
+		name="Shizuko Hosomi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
+				large="gfx/leaders/JAP/Hosomi.dds"
+			}
+		}
+	}
+	MEN_noriyo_hamada={
+		name="Noriyo Hamada"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
+				large="gfx/leaders/JAP/Hamada.dds"
+			}
+		}
+	}
 	MEN_prince_demchugdongrub={
 		name="Prince Demchugdongrub"
 		portraits={
