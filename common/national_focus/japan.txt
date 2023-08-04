@@ -5341,7 +5341,7 @@
 		y = 0
 		relative_position_id = JAP_support_the_kodoha_faction
  
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5378,7 +5378,7 @@
 		y = 1
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5415,7 +5415,7 @@
 		y = 1
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5450,7 +5450,7 @@
 		y = 2
 		relative_position_id = JAP_failure_on_62nd_senshadou_tournament
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5495,7 +5495,7 @@
 			}
 		}
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5532,7 +5532,7 @@
 		y = 0
 		relative_position_id = JAP_victory
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5567,7 +5567,7 @@
 		y = 1
 		relative_position_id = JAP_victory
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1

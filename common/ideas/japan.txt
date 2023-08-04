@@ -191,10 +191,10 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.5
-				trade_laws_cost_factor = 0.5
-				economy_cost_factor = 0.5
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = 0.05
+				trade_laws_cost_factor = 1.0
+				economy_cost_factor = 1.0
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 
