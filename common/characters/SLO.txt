@@ -3,7 +3,7 @@ characters={
 		name="Anzu"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUS/Portrait_AUS_Anzu1.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Anzu.dds"
 			}
 		}
 		country_leader={

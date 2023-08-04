@@ -3,7 +3,7 @@ characters={
 		name="Miho Nishizumi"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Miho.dds"
 			}
 		}
 		country_leader={
