@@ -193,6 +193,11 @@ ideas = {
 				political_power_cost = 0.5
 				trade_laws_cost_factor = 1.0
 				economy_cost_factor = 1.0
+				tank_manufacturer_cost_factor = 1.0 
+				naval_manufacturer_cost_factor = 1.0 
+				aircraft_manufacturer_cost_factor = 1.0 
+				materiel_manufacturer_cost_factor = 1.0 
+				industrial_concern_cost_factor = 1.0 
 				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = 0.1
 			}

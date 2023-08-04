@@ -188,11 +188,20 @@
 			add_corps_commander_role = {
                 character = rin_matsukaze
 				traits = { infantry_leader }
-				skill = 5
+				skill = 2
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
 				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+                character = endou_haruka
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
 			}
 		}
 	}
@@ -3910,8 +3919,8 @@
 			add_political_power = 120
 			add_stability = 0.1
 			add_field_marshal_role = {
-				character = shizuka_tsuruki
-				traits = { offensive_doctrine JAP_samurai_lineage panzer_leader trait_reckless }
+                character = shizuka_tsuruki
+				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
 				attack_skill = 4
 				defense_skill = 3
@@ -3919,13 +3928,22 @@
 				logistics_skill = 2
 			}
 			add_corps_commander_role = {
-				character = rin_matsukaze
+                character = rin_matsukaze
 				traits = { infantry_leader }
-				skill = 4
+				skill = 2
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
 				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+                character = endou_haruka
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
 			}
 		}
 	}
@@ -3967,32 +3985,52 @@
 			}
 			retire_country_leader = yes
 			add_field_marshal_role = {
-				character = shizuka_tsuruki
-				traits = { offensive_doctrine JAP_samurai_lineage panzer_leader trait_reckless }
+                character = shizuka_tsuruki
+				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
-				attack_skill = 5
+				attack_skill = 4
 				defense_skill = 3
 				planning_skill = 4
 				logistics_skill = 2
 			}
 			add_corps_commander_role = {
-				character = rin_matsukaze
+                character = rin_matsukaze
 				traits = { infantry_leader }
-				skill = 5
+				skill = 2
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
 				logistics_skill = 3
 			}
-			add_country_leader_role = {
-                character = shizuka_tsuruki
-                country_leader = {
-				expire = "1965.1.1"
+			add_corps_commander_role = {
+                character = endou_haruka
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			#add_country_leader_role = {
+            #    character = shizuka_tsuruki
+            #    country_leader = {
+			#		expire = "1965.1.1"
+			#		ideology = japanese_idealism4
+			#		traits = {
+			#			warrior_code
+			#			mystical_fanaticism
+			#		}
+			#	}
+			#}
+			create_country_leader = { # Shizuka Shogunate
+				name = "Shizuka Tsuruki"
+				desc = "POLITICS_SHIZUKA_TSURUKI_DESC"
+				picture = "Tsuruki.dds"
+				expire = "1989.1.1"
 				ideology = japanese_idealism4
 				traits = {
 					warrior_code
 					mystical_fanaticism
-				}
 				}
 			}
 		}

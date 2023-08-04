@@ -1576,7 +1576,7 @@ focus_tree = {
 				ideology = french_idealism
 				traits = {
 					bc_freedom_uniter
-		            ake_lover
+		            cake_lover
 				}
 				}
 			}

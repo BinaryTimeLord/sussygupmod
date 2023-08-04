@@ -723,10 +723,20 @@ characters={
 	}
 
 	rin_matsukaze = {
-		name=JAP_shizuka_tsuruki
+		name="Rin Matsukaze"
 		portraits={
 			army={
                 large="gfx/leaders/JAP/Matsukaze.dds"
+				small="GFX_idea_rin_matsukaze"
+			}
+		}
+	}
+
+	endou_haruka = {
+		name="Endou Haruka"
+		portraits={
+			army={
+                large="gfx/leaders/JAP/Endou_Haruka.dds"
 				small="GFX_idea_rin_matsukaze"
 			}
 		}
