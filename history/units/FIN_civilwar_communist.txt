@@ -87,3 +87,4 @@ units = {
 		location = 11065
 		division_template = "Revolution brigade"
 	}
+}

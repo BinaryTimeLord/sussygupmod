@@ -733,6 +733,12 @@ country_event = {
 				}
 				set_nationality = FRA
 			}
+			every_unit_leader = {
+				limit = {
+					has_id = 70840 #Oshida (b-day tag)
+				}
+				set_nationality = PREV.PREV
+			}
 
 			set_country_flag = vichy_france
 			save_event_target_as = vichy_france
@@ -1309,6 +1315,12 @@ country_event = {
 				every_navy_leader = {
 					limit = {
 						has_id = 102 #Darlan
+					}
+					set_nationality = PREV.PREV
+				}
+				every_unit_leader = {
+					limit = {
+						has_id = 70840 #Oshida (b-day tag)
 					}
 					set_nationality = PREV.PREV
 				}
