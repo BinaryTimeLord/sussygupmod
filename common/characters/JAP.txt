@@ -722,6 +722,16 @@ characters={
 		}
 	}
 
+	rin_matsukaze = {
+		name=JAP_shizuka_tsuruki
+		portraits={
+			army={
+                large="gfx/leaders/JAP/Matsukaze.dds"
+				small="GFX_idea_rin_matsukaze"
+			}
+		}
+	}
+
 	yukiko_nagura_p = {
 		name=JAP_yukiko_nagura_p
 		portraits={

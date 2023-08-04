@@ -176,9 +176,8 @@
 				add_planning = 1
 			}
 			add_political_power = 100
-			create_corps_commander = {
-				name = "Shizuka Tsuruki"
-				picture = "Tsuruki.dds"
+			add_field_marshal_role = {
+                character = shizuka_tsuruki
 				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
 				attack_skill = 4
@@ -186,9 +185,8 @@
 				planning_skill = 4
 				logistics_skill = 2
 			}
-			create_corps_commander = {
-				name = "Rin Matsukaze"
-				picture = "Matsukaze.dds"
+			add_corps_commander_role = {
+                character = rin_matsukaze
 				traits = { infantry_leader }
 				skill = 5
 				attack_skill = 2
@@ -230,10 +228,9 @@
 			create_faction = "Chi-Ha-Tan Ken"
 			
 			hidden_effect = {
-				create_country_leader = { # NISHI HEIKA BANZAI
-					name = "Kinuyo Nishi"
-					desc = "POLITICS_KINUYO_DESC"
-					picture = "Kinuyo1.dds"
+				add_country_leader_role = { # NISHI HEIKA BANZAI
+                    character = JAP_kinuyo_nishi
+                    country_leader = {
 					expire = "1989.1.1"
 					ideology = japanese_idealism3
 					traits = {
@@ -241,6 +238,7 @@
 						shintoism
 						totsugeki_sanction
 						emperor_nishi
+					}
 					}
 				}
 			}
@@ -3911,9 +3909,8 @@
 		completion_reward = {
 			add_political_power = 120
 			add_stability = 0.1
-			create_field_marshal = {
-				name = "Shizuka Tsuruki"
-				picture = "Tsuruki.dds"
+			add_field_marshal_role = {
+				character = shizuka_tsuruki
 				traits = { offensive_doctrine JAP_samurai_lineage panzer_leader trait_reckless }
 				skill = 5
 				attack_skill = 4
@@ -3921,9 +3918,8 @@
 				planning_skill = 4
 				logistics_skill = 2
 			}
-			create_corps_commander = {
-				name = "Rin Matsukaze"
-				picture = "Matsukaze.dds"
+			add_corps_commander_role = {
+				character = rin_matsukaze
 				traits = { infantry_leader }
 				skill = 4
 				attack_skill = 2
@@ -3970,9 +3966,8 @@
 			    name = JAP_neutrality_party_tatanashi
 			}
 			retire_country_leader = yes
-			create_field_marshal = {
-				name = "Shizuka Tsuruki"
-				picture = "Tsuruki.dds"
+			add_field_marshal_role = {
+				character = shizuka_tsuruki
 				traits = { offensive_doctrine JAP_samurai_lineage panzer_leader trait_reckless }
 				skill = 5
 				attack_skill = 5
@@ -3980,9 +3975,8 @@
 				planning_skill = 4
 				logistics_skill = 2
 			}
-			create_corps_commander = {
-				name = "Rin Matsukaze"
-				picture = "Matsukaze.dds"
+			add_corps_commander_role = {
+				character = rin_matsukaze
 				traits = { infantry_leader }
 				skill = 5
 				attack_skill = 2
@@ -3990,15 +3984,15 @@
 				planning_skill = 2
 				logistics_skill = 3
 			}
-			create_country_leader = {
-				name = "Shizuka Tsuruki"
-				desc = "POLITICS_SHIZUKA_TSURUKI_DESC"
-				picture = "Tsuruki.dds"
+			add_country_leader_role = {
+                character = shizuka_tsuruki
+                country_leader = {
 				expire = "1965.1.1"
 				ideology = japanese_idealism4
 				traits = {
 					warrior_code
 					mystical_fanaticism
+				}
 				}
 			}
 		}

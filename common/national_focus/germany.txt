@@ -4206,9 +4206,8 @@ focus_tree = {
 							}
 						}
 					}
-					create_corps_commander = {
-						name = "Takeko Nogami"
-						portrait_path = "gfx/leaders/AUS/Portrait_AUS_Oryou.dds"
+					add_corps_commander_role = {
+                        character = GER_oryou
 						traits = { panzer_leader infantry_officer commando }
 						skill = 3
 						attack_skill = 3
@@ -4216,9 +4215,8 @@ focus_tree = {
 						planning_skill = 2
 						logistics_skill = 2
 					}
-					create_corps_commander = {
-						name = "Kiyomi Sugiyama"
-						portrait_path = "gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
+					add_corps_commander_role = {
+                        character = GER_saemonza
 						traits = { panzer_leader cavalry_officer hill_fighter }
 						skill = 3
 						attack_skill = 4

@@ -9,6 +9,8 @@ set_technology = {
 
 recruit_character = MEN_mayuka_teramoto
 recruit_character = MEN_teramoto
+recruit_character = MEN_noriyo_hamada
+recruit_character = MEN_shizuko_hosomi
 
 recruit_character = MEN_prince_demchugdongrub
 recruit_character = MEN_sonin_xiangying

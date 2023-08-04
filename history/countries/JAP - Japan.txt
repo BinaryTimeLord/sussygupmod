@@ -571,6 +571,7 @@ recruit_character = ritsuko_hamada_p
 recruit_character = ikuyo_fukuda_p
 recruit_character = haru_tamada_p
 recruit_character = shizuka_tsuruki
+recruit_character = rin_matsukaze
 recruit_character = yukiko_nagura_p
 recruit_character = tomoyo_ikeda_p
 recruit_character = tomoyo_ikeda_p_man
