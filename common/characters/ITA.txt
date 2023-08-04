@@ -2719,7 +2719,7 @@ characters = {
 		name = ITA_ivanoe_bonomi
 		portraits = {
 			army = {
-				small = GFX_idea_ivanoe_bonomi
+				small="gfx/interface/ideas/Anzio/idea_ita_bologna.dds"
 				large = GFX_portrait_ITA_ivanoe_bonomi
 			}
 		}
@@ -2776,7 +2776,7 @@ characters = {
 		name = ITA_alcide_de_gasperi
 		portraits = {
 			civilian = {
-				small = GFX_portrait_ITA_alcide_de_gasperi_small
+				small="gfx/interface/ideas/Anzio/idea_ita_gelato.dds"
 				large = GFX_portrait_ITA_alcide_de_gasperi
 			}
 		}
@@ -3244,7 +3244,7 @@ characters = {
 		name = ITA_palmiro_togliatti
 		portraits = {
 			civilian = {
-				large = GFX_portrait_ita_palmiro_togliatti
+				small="gfx/interface/ideas/Anzio/idea_ita_panetonne.dds"
 				small = GFX_portrait_ITA_palmiro_togliatti_small
 			}
 		}
@@ -3301,7 +3301,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ITA_sandro_pertini
-				small = GFX_portrait_ITA_sandro_pertini_small
+				small="gfx/interface/ideas/Anzio/idea_ita_robiola.dds"
 			}
 		}
 
