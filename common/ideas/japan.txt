@@ -190,7 +190,7 @@ ideas = {
 			picture = jap_zaibatsu
 			
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.25
 				trade_laws_cost_factor = 1.0
 				economy_cost_factor = 1.0
 				tank_manufacturer_cost_factor = 1.0 
@@ -330,11 +330,16 @@ ideas = {
 			picture = warrior_traditions_idea
 			
 			modifier = {
-				war_support_factor = 0.2
+				political_power_cost = 0.25
+				war_support_factor = 0.25
 				mobilization_laws_cost_factor = -0.5
-				justify_war_goal_time = -0.2
-				research_speed_factor = -0.05
-				production_speed_industrial_complex_factor = -0.1
+				justify_war_goal_time = -0.25
+				research_speed_factor = -0.08
+				production_speed_industrial_complex_factor = -0.15
+				hidden_modifier = {
+					defensive_war_stability_factor = 0.1
+					offensive_war_stability_factor = 0.1
+				}
 			}
 		}
 

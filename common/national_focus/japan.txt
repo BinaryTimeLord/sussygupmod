@@ -178,7 +178,7 @@
 			add_political_power = 100
 			add_field_marshal_role = {
                 character = shizuka_tsuruki
-				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
+				traits = { cht_kodoha_symphatizer panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
 				attack_skill = 4
 				defense_skill = 3
@@ -187,7 +187,7 @@
 			}
 			add_corps_commander_role = {
                 character = rin_matsukaze
-				traits = { infantry_leader }
+				traits = { cht_kodoha_symphatizer infantry_leader }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
@@ -196,7 +196,7 @@
 			}
 			add_corps_commander_role = {
                 character = endou_haruka
-				traits = { infantry_leader }
+				traits = { cht_kodoha_symphatizer infantry_leader }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 2
@@ -3920,7 +3920,7 @@
 			add_stability = 0.1
 			add_field_marshal_role = {
                 character = shizuka_tsuruki
-				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
+				traits = { cht_kodoha_symphatizer panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
 				attack_skill = 4
 				defense_skill = 3
@@ -3929,7 +3929,7 @@
 			}
 			add_corps_commander_role = {
                 character = rin_matsukaze
-				traits = { infantry_leader }
+				traits = { cht_kodoha_symphatizer infantry_leader }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
@@ -3938,7 +3938,7 @@
 			}
 			add_corps_commander_role = {
                 character = endou_haruka
-				traits = { infantry_leader }
+				traits = { cht_kodoha_symphatizer infantry_leader }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 2
@@ -3986,7 +3986,7 @@
 			retire_country_leader = yes
 			add_field_marshal_role = {
                 character = shizuka_tsuruki
-				traits = { panzer_leader JAP_samurai_lineage trait_reckless }
+				traits = { cht_kodoha_symphatizer panzer_leader JAP_samurai_lineage trait_reckless }
 				skill = 5
 				attack_skill = 4
 				defense_skill = 3
@@ -3995,7 +3995,7 @@
 			}
 			add_corps_commander_role = {
                 character = rin_matsukaze
-				traits = { infantry_leader }
+				traits = { cht_kodoha_symphatizer infantry_leader }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
@@ -4004,7 +4004,7 @@
 			}
 			add_corps_commander_role = {
                 character = endou_haruka
-				traits = { infantry_leader }
+				traits = { cht_kodoha_symphatizer infantry_leader }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 2
