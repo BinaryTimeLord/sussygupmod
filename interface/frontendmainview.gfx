@@ -32,13 +32,13 @@ spriteTypes = {
 		name = "GFX_main_lobby_divider"
 		textureFile = "gfx/interface/main_lobby_divider.dds"
 	}
-        spriteType = {
+        frameAnimatedSpriteType = {
                 name = "GFX_frontend_game_logo"
                 texturefile = "gfx/interface/logo_game.dds"
-                #noOfFrames = 36
-                #animation_rate_fps = 24
-                #looping = no
-                #play_on_show = yes
+                noOfFrames = 31
+                animation_rate_fps = 15
+                looping = no
+                play_on_show = yes
         }
 
         frameAnimatedSpriteType = {
