@@ -422,7 +422,18 @@ spriteTypes = {
 		name = "GFX_ideology_SLO_fascism_group"
 		texturefile = "gfx/interface/ideologies/Austria.dds"
 	}
-
+	spriteType = {
+		name = "GFX_ideology_SLO_communism_group"
+		texturefile = "gfx/interface/ideologies/Austria.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SLO_democratic_group"
+		texturefile = "gfx/interface/ideologies/Austria.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SLO_neutrality_group"
+		texturefile = "gfx/interface/ideologies/Austria.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_MAN_fascism_group"
 		texturefile = "gfx/interface/ideologies/Japan.dds"
@@ -477,6 +488,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_AUS_neutrality_group"
 		texturefile = "gfx/interface/ideologies/Austria.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_TUR_communism_group"
+		texturefile = "gfx/interface/ideologies/Turkey.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_TUR_fascism_group"
+		texturefile = "gfx/interface/ideologies/Turkey.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_TUR_democratic_group"
+		texturefile = "gfx/interface/ideologies/Turkey.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_TUR_neutrality_group"
+		texturefile = "gfx/interface/ideologies/Turkey.dds"
 	}
 	
 	spriteType = {
