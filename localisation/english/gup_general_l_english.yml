@@ -1403,8 +1403,8 @@ GER_expand_fortlines_desc:0 ""
  cht_unthinkable_option: "Unthinkable Option"
  cht_strengthen_government: "Strengthen Civilian Government"
  cht_supported_fukuda: "Supported Fukuda"
- cht_hosomi_path: "Has chosen Hosomi"
- cht_hamada_path: "Has chosen Hamada"
+ cht_hosomi_chosen: "Has chosen Hosomi"
+ cht_ikeda_chosen: "Has chosen Ikeda"
  
  ##FINLAND STUFFS
  ##STARTING FOCUS TREES

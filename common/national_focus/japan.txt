@@ -1517,7 +1517,6 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			set_country_flag = cht_hosomi_path
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -1530,14 +1529,14 @@
 						}
 					}					
 					free_building_slots = {
-						building = industrial_complex
+						building = arms_factory
 						size > 1
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -1554,14 +1553,14 @@
 						}
 					}					
 					free_building_slots = {
-						building = industrial_complex
+						building = arms_factory
 						size > 1
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -1578,20 +1577,29 @@
 						}
 					}					
 					free_building_slots = {
-						building = industrial_complex
+						building = arms_factory
 						size > 1
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
-			add_political_power = 50
-			add_stability = 0.05
+			if = {
+				limit = {
+					has_completed_focus = JAP_purge_the_kodoha_faction
+				}
+				
+			}
+			custom_effect_tooltip = STRATEGY_TOSEIHA
+			custom_effect_tooltip = STRATEGY_TOSEIHA_FORTS
+				
+			custom_effect_tooltip = STRATEGY_KODOHA
+			custom_effect_tooltip = STRATEGY_KODOHA_FORTS
 		}
 	}
 
@@ -2101,7 +2109,7 @@
 			has_completed_focus = JAP_national_research_policy
 			has_completed_focus = JAP_national_mobilization_law
 			has_idea = war_economy
-			has_country_flag = cht_hosomi_path
+			has_country_flag = cht_hosomi_chosen
 		}
 
 		bypass = {
@@ -2130,7 +2138,7 @@
 						}
 					}
 					free_building_slots = {
-						building = arms_factory
+						building = dockyard
 						size > 1
 						include_locked = yes
 					}
@@ -2491,7 +2499,7 @@
 			has_completed_focus = JAP_national_research_policy
 			has_completed_focus = JAP_national_mobilization_law
 			has_idea = war_economy
-			has_country_flag = cht_hamada_path
+			has_country_flag = cht_ikeda_chosen
 		}
 
 		bypass = {
@@ -3550,7 +3558,6 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			set_country_flag = cht_ikeda_path
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -3623,8 +3630,6 @@
 					instant_build = yes
 				}
 			}
-			add_political_power = -50
-			add_stability = -0.1
 		}
 	}
 
@@ -5734,7 +5739,7 @@
 
 	focus = {
 		id = JAP_colonial_mobilization
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_generic_manpower
 		prerequisite = {
 			focus = JAP_waking_the_tiger
 		}

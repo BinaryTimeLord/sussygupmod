@@ -537,15 +537,19 @@ ideas = {
 			picture = warrior_traditions_idea
 
 			modifier = { #nishi CHANGE SHIT for funny reivison
-				war_support_factor = 0.2
-				mobilization_laws_cost_factor = -0.25
-				trade_laws_cost_factor = -0.25
-				economy_cost_factor = -0.25
+				war_support_factor = 0.25
 				non_core_manpower = 0.08
-				research_speed_factor = 0.02
+				mobilization_laws_cost_factor = -0.5
+				justify_war_goal_time = -0.25
+				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
-
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.25
+					ai_focus_aggressive_factor = 0.25
+					defensive_war_stability_factor = 0.1
+					offensive_war_stability_factor = 0.1
+				}
 			}
 		}
 
@@ -930,9 +934,15 @@ ideas = {
 			picture = jap_zaibatsu
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
+				war_support_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				line_change_production_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.05
 				local_resources_factor = 0.15
+				consumer_goods_factor = -0.025
+
 				conversion_cost_civ_to_mil_factor = -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
 				mobilization_speed = 0.2
@@ -954,9 +964,14 @@ ideas = {
 			picture = jap_zaibatsu_control
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.15
-				production_speed_arms_factory_factor = 0.1
+				stability_weekly = 0.005
+				war_support_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+
 				conversion_cost_civ_to_mil_factor = -0.4
 				conversion_cost_mil_to_civ_factor = -0.4
 				mobilization_speed = 0.1

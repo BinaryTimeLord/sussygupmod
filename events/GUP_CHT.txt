@@ -1372,7 +1372,13 @@ country_event = {
 		}
 
 		ai_chance = {
-			base = 1
+			factor = 80
+
+			modifier = { #no zaibatsu conglomerate formed w/ikeda
+				add = -80
+				tag = JAP
+				has_completed_focus = JAP_imperial_arsenals
+			}
 		}
 	}
 
