@@ -1199,6 +1199,15 @@ GER_expand_fortlines_desc:0 ""
  CHINA_DEFENSE_GARRISONS: "\n§CSet up garrison forces around our Chinese Border to help defend against them just in case.§!"
  LOYAL_EFFECT: "If we have accepted '§HTeramoto's Plead§!', this focus will have the following §GEffects§!:\n"
  TRAITOR_EFFECT: "If we have rejected '§HTeramoto's Plead§!', this focus will have the following §GEffects§!:\n"
+ cht_hosomi_chosen: "Has chosen Hosomi"
+ cht_ikeda_chosen: "Has chosen Ikeda"
+
+ STRATEGY_TOSEIHA_INDUSTRY_GUIDE: "\n§OAdd §HMilitary Industry§! in our heartlands and gain §HWar Support§!.§!\n\n"
+ STRATEGY_KODOHA_INDUSTRY_GUIDE: "\n§CGain some §HCivilian Industry§! in our heartlands and lose substantial §HWar Support§!.§!\n\n"
+ 
+ STRATEGY_TOSEIHA_INDUSTRY_CHALLENGE: "\n§OGain some §HMilitary Industry§! and lose substantial §HStability§!.§!\n\n"
+ STRATEGY_KODOHA_INDUSTRY_CHALLENGE: "\n§CAdd §HCivilian Industry§! and §HInfrastructre§! in the countryside and gain increased §HStability§!.§!\n\n"
+
  cht_men_accept: "has accepted Teramoto's plead"
  cht_men_reject: "has rejected Teramoto's plead"
 
@@ -1403,8 +1412,6 @@ GER_expand_fortlines_desc:0 ""
  cht_unthinkable_option: "Unthinkable Option"
  cht_strengthen_government: "Strengthen Civilian Government"
  cht_supported_fukuda: "Supported Fukuda"
- cht_hosomi_chosen: "Has chosen Hosomi"
- cht_ikeda_chosen: "Has chosen Ikeda"
  
  ##FINLAND STUFFS
  ##STARTING FOCUS TREES

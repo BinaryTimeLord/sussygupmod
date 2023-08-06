@@ -994,7 +994,7 @@ country_event = {
 			else = {
 				add_tech_bonus = {
 					name = army_law.1
-					bonus = 0.75
+					bonus = 0.5
 					uses = 3
 					category = cat_grand_battle_plan
 				}
@@ -1030,7 +1030,7 @@ country_event = {
 
 		add_tech_bonus = {
 			name = army_law.1
-			bonus = 0.75
+			bonus = 0.5
 			uses = 2
 			category = cat_grand_battle_plan #CHECKMARK POINT CHANGE TO MASS ASSAULT
 		}
