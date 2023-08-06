@@ -295,6 +295,23 @@ soundeffect =
         sound = uk_Idle_002
         sound = uk_Idle_003
         sound = uk_Idle_004  
+        sound = uk_Idle_005
+        sound = uk_Idle_006
+        sound = uk_Idle_007
+        sound = uk_Idle_008
+        sound = uk_Idle_009
+        sound = uk_Idle_010
+        sound = uk_Idle_011
+        sound = uk_Idle_012
+        sound = uk_Idle_013
+        sound = uk_Idle_014
+        sound = uk_Idle_015
+        sound = uk_Idle_016
+        sound = uk_Idle_017
+        sound = uk_Idle_018
+        sound = uk_Idle_019
+        sound = uk_Idle_020
+        sound = uk_Idle_021
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -316,6 +333,18 @@ soundeffect =
         sound = uk_Neutral_008
         sound = uk_Neutral_009
         sound = uk_Neutral_010
+        sound = uk_Neutral_011
+        sound = uk_Neutral_012
+        sound = uk_Neutral_013
+        sound = uk_Neutral_014
+        sound = uk_Neutral_015
+        sound = uk_Neutral_016
+        sound = uk_Neutral_017
+        sound = uk_Neutral_018
+        sound = uk_Neutral_019
+        sound = uk_Neutral_020
+        sound = uk_Neutral_021
+        sound = uk_Neutral_022
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -338,6 +367,17 @@ soundeffect =
         sound = uk_Positive_009
         sound = uk_Positive_010
         sound = uk_Positive_011
+        sound = uk_Positive_012
+        sound = uk_Positive_013
+        sound = uk_Positive_014
+        sound = uk_Positive_015
+        sound = uk_Positive_016
+        sound = uk_Positive_017
+        sound = uk_Positive_018
+        sound = uk_Positive_019
+        sound = uk_Positive_020
+        sound = uk_Positive_021
+        sound = uk_Positive_022
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -355,6 +395,12 @@ soundeffect =
         sound = uk_Retreat_004
         sound = uk_Retreat_005
         sound = uk_Retreat_006
+        sound = uk_Retreat_007
+        sound = uk_Retreat_008
+        sound = uk_Retreat_009
+        sound = uk_Retreat_010
+        sound = uk_Retreat_011
+        sound = uk_Retreat_012
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -366,16 +412,16 @@ soundeffect =
 {
     name = "ENG_infantry_move_out"
     sounds = {
-        sound = uk_Neutral_001
-        sound = uk_Neutral_002
-        sound = uk_Neutral_003
-        sound = uk_Neutral_004
-        sound = uk_Neutral_005
-        sound = uk_Neutral_006
-        sound = uk_Neutral_007
-        sound = uk_Neutral_008
-        sound = uk_Neutral_009
-        sound = uk_Neutral_010
+        sound = uk_Moveout_001
+        sound = uk_Moveout_002
+        sound = uk_Moveout_003
+        sound = uk_Moveout_004
+        sound = uk_Moveout_005
+        sound = uk_Moveout_006
+        sound = uk_Moveout_007
+        sound = uk_Moveout_008
+        sound = uk_Moveout_009
+        sound = uk_Moveout_010
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1429,7 +1475,20 @@ soundeffect =
         sound = ru_Idle_001
         sound = ru_Idle_002
         sound = ru_Idle_003
-        sound = ru_Idle_004       
+        sound = ru_Idle_004
+        sound = ru_Idle_005
+        sound = ru_Idle_006
+        sound = ru_Idle_007
+        sound = ru_Idle_008
+        sound = ru_Idle_009
+        sound = ru_Idle_010
+        sound = ru_Idle_011 
+        sound = ru_Idle_012
+        sound = ru_Idle_013
+        sound = ru_Idle_014
+        sound = ru_Idle_015
+        sound = ru_Idle_016
+        sound = ru_Idle_017    
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1453,6 +1512,15 @@ soundeffect =
         sound = ru_Neutral_010
         sound = ru_Neutral_011
         sound = ru_Neutral_012
+        sound = ru_Neutral_013
+        sound = ru_Neutral_014
+        sound = ru_Neutral_015
+        sound = ru_Neutral_016
+        sound = ru_Neutral_017
+        sound = ru_Neutral_018
+        sound = ru_Neutral_019
+        sound = ru_Neutral_020
+        sound = ru_Neutral_021
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1480,6 +1548,11 @@ soundeffect =
         sound = ru_Positive_014
         sound = ru_Positive_015
         sound = ru_Positive_016
+        sound = ru_Positive_017
+        sound = ru_Positive_018
+        sound = ru_Positive_019
+        sound = ru_Positive_020
+        sound = ru_Positive_021
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1496,6 +1569,10 @@ soundeffect =
         sound = ru_Retreat_003
         sound = ru_Retreat_004
         sound = ru_Retreat_005
+        sound = ru_Retreat_006
+        sound = ru_Retreat_007
+        sound = ru_Retreat_008
+        sound = ru_Retreat_009
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1507,18 +1584,15 @@ soundeffect =
 {
     name = "SOV_infantry_move_out"
     sounds = {
-        sound = ru_Neutral_001
-        sound = ru_Neutral_002
-        sound = ru_Neutral_003
-        sound = ru_Neutral_004
-        sound = ru_Neutral_005
-        sound = ru_Neutral_006
-        sound = ru_Neutral_007
-        sound = ru_Neutral_008
-        sound = ru_Neutral_009
-        sound = ru_Neutral_010
-        sound = ru_Neutral_011
-        sound = ru_Neutral_012
+        sound = ru_Moveout_001
+        sound = ru_Moveout_002
+        sound = ru_Moveout_003
+        sound = ru_Moveout_004
+        sound = ru_Moveout_005
+        sound = ru_Moveout_006
+        sound = ru_Moveout_007
+        sound = ru_Moveout_008
+        sound = ru_Moveout_009
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1535,7 +1609,21 @@ soundeffect =
         sound = us_Idle_001
         sound = us_Idle_002
         sound = us_Idle_003
-        sound = us_Idle_004      
+        sound = us_Idle_004
+        sound = us_Idle_005
+        sound = us_Idle_006
+        sound = us_Idle_007
+        sound = us_Idle_008
+        sound = us_Idle_009
+        sound = us_Idle_010
+        sound = us_Idle_011
+        sound = us_Idle_012
+        sound = us_Idle_013
+        sound = us_Idle_014
+        sound = us_Idle_015
+        sound = us_Idle_016
+        sound = us_Idle_017
+        sound = us_Idle_018  
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1559,6 +1647,15 @@ soundeffect =
         sound = us_Neutral_010
         sound = us_Neutral_011
         sound = us_Neutral_012
+        sound = us_Neutral_013
+        sound = us_Neutral_014
+        sound = us_Neutral_015
+        sound = us_Neutral_016
+        sound = us_Neutral_017
+        sound = us_Neutral_018
+        sound = us_Neutral_019
+        sound = us_Neutral_020
+        sound = us_Neutral_021
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1586,6 +1683,7 @@ soundeffect =
         sound = us_Positive_014
         sound = us_Positive_015
         sound = us_Positive_016
+        sound = us_Positive_017
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1602,6 +1700,10 @@ soundeffect =
         sound = us_Retreat_003
         sound = us_Retreat_004
         sound = us_Retreat_005
+        sound = us_Retreat_006
+        sound = us_Retreat_007
+        sound = us_Retreat_008
+        sound = us_Retreat_009
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1613,18 +1715,15 @@ soundeffect =
 {
     name = "USA_infantry_move_out"
     sounds = {
-        sound = us_Neutral_001
-        sound = us_Neutral_002
-        sound = us_Neutral_003
-        sound = us_Neutral_004
-        sound = us_Neutral_005
-        sound = us_Neutral_006
-        sound = us_Neutral_007
-        sound = us_Neutral_008
-        sound = us_Neutral_009
-        sound = us_Neutral_010
-        sound = us_Neutral_011
-        sound = us_Neutral_012
+        sound = us_Moveout_001
+        sound = us_Moveout_002
+        sound = us_Moveout_003
+        sound = us_Moveout_004
+        sound = us_Moveout_005
+        sound = us_Moveout_006
+        sound = us_Moveout_007
+        sound = us_Moveout_008
+        sound = us_Moveout_009
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -1825,6 +1924,91 @@ sound =
 }
 sound = 
 {
+	name = "uk_Idle_005"
+	file = "eng/uk_Idle_005.wav"
+}
+sound = 
+{
+	name = "uk_Idle_006"
+	file = "eng/uk_Idle_006.wav"
+}
+sound = 
+{
+	name = "uk_Idle_007"
+	file = "eng/uk_Idle_007.wav"
+}
+sound = 
+{
+	name = "uk_Idle_008"
+	file = "eng/uk_Idle_008.wav"
+}
+sound = 
+{
+	name = "uk_Idle_009"
+	file = "eng/uk_Idle_009.wav"
+}
+sound = 
+{
+	name = "uk_Idle_010"
+	file = "eng/uk_Idle_010.wav"
+}
+sound = 
+{
+	name = "uk_Idle_011"
+	file = "eng/uk_Idle_011.wav"
+}
+sound = 
+{
+	name = "uk_Idle_012"
+	file = "eng/uk_Idle_012.wav"
+}
+sound = 
+{
+	name = "uk_Idle_013"
+	file = "eng/uk_Idle_013.wav"
+}
+sound = 
+{
+	name = "uk_Idle_014"
+	file = "eng/uk_Idle_014.wav"
+}
+sound = 
+{
+	name = "uk_Idle_015"
+	file = "eng/uk_Idle_015.wav"
+}
+sound = 
+{
+	name = "uk_Idle_016"
+	file = "eng/uk_Idle_016.wav"
+}
+sound = 
+{
+	name = "uk_Idle_017"
+	file = "eng/uk_Idle_017.wav"
+}
+sound = 
+{
+	name = "uk_Idle_018"
+	file = "eng/uk_Idle_018.wav"
+}
+sound = 
+{
+	name = "uk_Idle_019"
+	file = "eng/uk_Idle_019.wav"
+}
+sound = 
+{
+	name = "uk_Idle_020"
+	file = "eng/uk_Idle_020.wav"
+}
+sound = 
+{
+	name = "uk_Idle_021"
+	file = "eng/uk_Idle_021.wav"
+}
+sound = 
+{
 	name = "uk_Neutral_001"
 	file = "eng/uk_Neutral_001.wav"
 }
@@ -1872,6 +2056,66 @@ sound =
 {
 	name = "uk_Neutral_010"
 	file = "eng/uk_Neutral_010.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_011"
+	file = "eng/uk_Neutral_011.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_012"
+	file = "eng/uk_Neutral_012.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_013"
+	file = "eng/uk_Neutral_013.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_014"
+	file = "eng/uk_Neutral_014.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_015"
+	file = "eng/uk_Neutral_015.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_016"
+	file = "eng/uk_Neutral_016.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_017"
+	file = "eng/uk_Neutral_017.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_018"
+	file = "eng/uk_Neutral_018.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_019"
+	file = "eng/uk_Neutral_019.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_020"
+	file = "eng/uk_Neutral_020.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_021"
+	file = "eng/uk_Neutral_021.wav"
+}
+sound = 
+{
+	name = "uk_Neutral_022"
+	file = "eng/uk_Neutral_022.wav"
 }
 sound = 
 {
@@ -1930,6 +2174,61 @@ sound =
 }
 sound = 
 {
+	name = "uk_Positive_012"
+	file = "eng/uk_Positive_012.wav"
+}
+sound = 
+{
+	name = "uk_Positive_013"
+	file = "eng/uk_Positive_013.wav"
+}
+sound = 
+{
+	name = "uk_Positive_014"
+	file = "eng/uk_Positive_014.wav"
+}
+sound = 
+{
+	name = "uk_Positive_015"
+	file = "eng/uk_Positive_015.wav"
+}
+sound = 
+{
+	name = "uk_Positive_016"
+	file = "eng/uk_Positive_016.wav"
+}
+sound = 
+{
+	name = "uk_Positive_017"
+	file = "eng/uk_Positive_017.wav"
+}
+sound = 
+{
+	name = "uk_Positive_018"
+	file = "eng/uk_Positive_018.wav"
+}
+sound = 
+{
+	name = "uk_Positive_019"
+	file = "eng/uk_Positive_019.wav"
+}
+sound = 
+{
+	name = "uk_Positive_020"
+	file = "eng/uk_Positive_020.wav"
+}
+sound = 
+{
+	name = "uk_Positive_021"
+	file = "eng/uk_Positive_021.wav"
+}
+sound = 
+{
+	name = "uk_Positive_022"
+	file = "eng/uk_Positive_022.wav"
+}
+sound = 
+{
 	name = "uk_Retreat_001"
 	file = "eng/uk_Retreat_001.wav"
 }
@@ -1957,6 +2256,86 @@ sound =
 {
 	name = "uk_Retreat_006"
 	file = "eng/uk_Retreat_006.wav"
+}
+sound = 
+{
+	name = "uk_Retreat_007"
+	file = "eng/uk_Retreat_007.wav"
+}
+sound = 
+{
+	name = "uk_Retreat_008"
+	file = "eng/uk_Retreat_008.wav"
+}
+sound = 
+{
+	name = "uk_Retreat_009"
+	file = "eng/uk_Retreat_009.wav"
+}
+sound = 
+{
+	name = "uk_Retreat_010"
+	file = "eng/uk_Retreat_010.wav"
+}
+sound = 
+{
+	name = "uk_Retreat_011"
+	file = "eng/uk_Retreat_011.wav"
+}
+sound = 
+{
+	name = "uk_Retreat_012"
+	file = "eng/uk_Retreat_012.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_001"
+	file = "eng/uk_Moveout_001.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_002"
+	file = "eng/uk_Moveout_002.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_003"
+	file = "eng/uk_Moveout_003.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_004"
+	file = "eng/uk_Moveout_004.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_005"
+	file = "eng/uk_Moveout_005.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_006"
+	file = "eng/uk_Moveout_006.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_007"
+	file = "eng/uk_Moveout_007.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_008"
+	file = "eng/uk_Moveout_008.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_009"
+	file = "eng/uk_Moveout_009.wav"
+}
+sound = 
+{
+	name = "uk_Moveout_010"
+	file = "eng/uk_Moveout_010.wav"
 }
 sound = 
 {
@@ -3670,6 +4049,71 @@ sound =
 }
 sound = 
 {
+	name = "ru_Idle_005"
+	file = "sov/ru_Idle_005.wav"
+}
+sound = 
+{
+	name = "ru_Idle_006"
+	file = "sov/ru_Idle_006.wav"
+}
+sound = 
+{
+	name = "ru_Idle_007"
+	file = "sov/ru_Idle_007.wav"
+}
+sound = 
+{
+	name = "ru_Idle_008"
+	file = "sov/ru_Idle_008.wav"
+}
+sound = 
+{
+	name = "ru_Idle_009"
+	file = "sov/ru_Idle_009.wav"
+}
+sound = 
+{
+	name = "ru_Idle_010"
+	file = "sov/ru_Idle_010.wav"
+}
+sound = 
+{
+	name = "ru_Idle_011"
+	file = "sov/ru_Idle_011.wav"
+}
+sound = 
+{
+	name = "ru_Idle_012"
+	file = "sov/ru_Idle_012.wav"
+}
+sound = 
+{
+	name = "ru_Idle_013"
+	file = "sov/ru_Idle_013.wav"
+}
+sound = 
+{
+	name = "ru_Idle_014"
+	file = "sov/ru_Idle_014.wav"
+}
+sound = 
+{
+	name = "ru_Idle_015"
+	file = "sov/ru_Idle_015.wav"
+}
+sound = 
+{
+	name = "ru_Idle_016"
+	file = "sov/ru_Idle_016.wav"
+}
+sound = 
+{
+	name = "ru_Idle_017"
+	file = "sov/ru_Idle_017.wav"
+}
+sound = 
+{
 	name = "ru_Neutral_001"
 	file = "sov/ru_Neutral_001.wav"
 }
@@ -3727,6 +4171,51 @@ sound =
 {
 	name = "ru_Neutral_012"
 	file = "sov/ru_Neutral_012.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_013"
+	file = "sov/ru_Neutral_013.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_014"
+	file = "sov/ru_Neutral_014.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_015"
+	file = "sov/ru_Neutral_015.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_016"
+	file = "sov/ru_Neutral_016.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_017"
+	file = "sov/ru_Neutral_017.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_018"
+	file = "sov/ru_Neutral_018.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_019"
+	file = "sov/ru_Neutral_019.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_020"
+	file = "sov/ru_Neutral_020.wav"
+}
+sound = 
+{
+	name = "ru_Neutral_021"
+	file = "sov/ru_Neutral_021.wav"
 }
 sound = 
 {
@@ -3810,6 +4299,31 @@ sound =
 }
 sound = 
 {
+	name = "ru_Positive_017"
+	file = "sov/ru_Positive_017.wav"
+}
+sound = 
+{
+	name = "ru_Positive_018"
+	file = "sov/ru_Positive_018.wav"
+}
+sound = 
+{
+	name = "ru_Positive_019"
+	file = "sov/ru_Positive_019.wav"
+}
+sound = 
+{
+	name = "ru_Positive_020"
+	file = "sov/ru_Positive_020.wav"
+}
+sound = 
+{
+	name = "ru_Positive_021"
+	file = "sov/ru_Positive_021.wav"
+}
+sound = 
+{
 	name = "ru_Retreat_001"
 	file = "sov/ru_Retreat_001.wav"
 }
@@ -3835,6 +4349,71 @@ sound =
 }
 sound = 
 {
+	name = "ru_Retreat_006"
+	file = "sov/ru_Retreat_006.wav"
+}
+sound = 
+{
+	name = "ru_Retreat_007"
+	file = "sov/ru_Retreat_007.wav"
+}
+sound = 
+{
+	name = "ru_Retreat_008"
+	file = "sov/ru_Retreat_008.wav"
+}
+sound = 
+{
+	name = "ru_Retreat_009"
+	file = "sov/ru_Retreat_009.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_001"
+	file = "sov/ru_Moveout_001.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_002"
+	file = "sov/ru_Moveout_002.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_003"
+	file = "sov/ru_Moveout_003.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_004"
+	file = "sov/ru_Moveout_004.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_005"
+	file = "sov/ru_Moveout_005.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_006"
+	file = "sov/ru_Moveout_006.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_007"
+	file = "sov/ru_Moveout_007.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_008"
+	file = "sov/ru_Moveout_008.wav"
+}
+sound = 
+{
+	name = "ru_Moveout_009"
+	file = "sov/ru_Moveout_009.wav"
+}
+sound = 
+{
 	name = "us_Idle_001"
 	file = "usa/us_Idle_001.wav"
 }
@@ -3852,6 +4431,76 @@ sound =
 {
 	name = "us_Idle_004"
 	file = "usa/us_Idle_004.wav"
+}
+sound = 
+{
+	name = "us_Idle_005"
+	file = "usa/us_Idle_005.wav"
+}
+sound = 
+{
+	name = "us_Idle_006"
+	file = "usa/us_Idle_006.wav"
+}
+sound = 
+{
+	name = "us_Idle_007"
+	file = "usa/us_Idle_007.wav"
+}
+sound = 
+{
+	name = "us_Idle_008"
+	file = "usa/us_Idle_008.wav"
+}
+sound = 
+{
+	name = "us_Idle_009"
+	file = "usa/us_Idle_009.wav"
+}
+sound = 
+{
+	name = "us_Idle_010"
+	file = "usa/us_Idle_010.wav"
+}
+sound = 
+{
+	name = "us_Idle_011"
+	file = "usa/us_Idle_011.wav"
+}
+sound = 
+{
+	name = "us_Idle_012"
+	file = "usa/us_Idle_012.wav"
+}
+sound = 
+{
+	name = "us_Idle_013"
+	file = "usa/us_Idle_013.wav"
+}
+sound = 
+{
+	name = "us_Idle_014"
+	file = "usa/us_Idle_014.wav"
+}
+sound = 
+{
+	name = "us_Idle_015"
+	file = "usa/us_Idle_015.wav"
+}
+sound = 
+{
+	name = "us_Idle_016"
+	file = "usa/us_Idle_016.wav"
+}
+sound = 
+{
+	name = "us_Idle_017"
+	file = "usa/us_Idle_017.wav"
+}
+sound = 
+{
+	name = "us_Idle_018"
+	file = "usa/us_Idle_018.wav"
 }
 sound = 
 {
@@ -3912,6 +4561,51 @@ sound =
 {
 	name = "us_Neutral_012"
 	file = "usa/us_Neutral_012.wav"
+}
+sound = 
+{
+	name = "us_Neutral_013"
+	file = "usa/us_Neutral_013.wav"
+}
+sound = 
+{
+	name = "us_Neutral_014"
+	file = "usa/us_Neutral_014.wav"
+}
+sound = 
+{
+	name = "us_Neutral_015"
+	file = "usa/us_Neutral_015.wav"
+}
+sound = 
+{
+	name = "us_Neutral_016"
+	file = "usa/us_Neutral_016.wav"
+}
+sound = 
+{
+	name = "us_Neutral_017"
+	file = "usa/us_Neutral_017.wav"
+}
+sound = 
+{
+	name = "us_Neutral_018"
+	file = "usa/us_Neutral_018.wav"
+}
+sound = 
+{
+	name = "us_Neutral_019"
+	file = "usa/us_Neutral_019.wav"
+}
+sound = 
+{
+	name = "us_Neutral_020"
+	file = "usa/us_Neutral_020.wav"
+}
+sound = 
+{
+	name = "us_Neutral_021"
+	file = "usa/us_Neutral_021.wav"
 }
 sound = 
 {
@@ -3995,6 +4689,11 @@ sound =
 }
 sound = 
 {
+	name = "us_Positive_017"
+	file = "usa/us_Positive_017.wav"
+}
+sound = 
+{
 	name = "us_Retreat_001"
 	file = "usa/us_Retreat_001.wav"
 }
@@ -4017,4 +4716,69 @@ sound =
 {
 	name = "us_Retreat_005"
 	file = "usa/us_Retreat_005.wav"
+}
+sound = 
+{
+	name = "us_Retreat_006"
+	file = "usa/us_Retreat_006.wav"
+}
+sound = 
+{
+	name = "us_Retreat_007"
+	file = "usa/us_Retreat_007.wav"
+}
+sound = 
+{
+	name = "us_Retreat_008"
+	file = "usa/us_Retreat_008.wav"
+}
+sound = 
+{
+	name = "us_Retreat_009"
+	file = "usa/us_Retreat_009.wav"
+}
+sound = 
+{
+	name = "us_Moveout_001"
+	file = "usa/us_Moveout_001.wav"
+}
+sound = 
+{
+	name = "us_Moveout_002"
+	file = "usa/us_Moveout_002.wav"
+}
+sound = 
+{
+	name = "us_Moveout_003"
+	file = "usa/us_Moveout_003.wav"
+}
+sound = 
+{
+	name = "us_Moveout_004"
+	file = "usa/us_Moveout_004.wav"
+}
+sound = 
+{
+	name = "us_Moveout_005"
+	file = "usa/us_Moveout_005.wav"
+}
+sound = 
+{
+	name = "us_Moveout_006"
+	file = "usa/us_Moveout_006.wav"
+}
+sound = 
+{
+	name = "us_Moveout_007"
+	file = "usa/us_Moveout_007.wav"
+}
+sound = 
+{
+	name = "us_Moveout_008"
+	file = "usa/us_Moveout_008.wav"
+}
+sound = 
+{
+	name = "us_Moveout_009"
+	file = "usa/us_Moveout_009.wav"
 }
