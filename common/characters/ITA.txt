@@ -3244,8 +3244,8 @@ characters = {
 		name = ITA_palmiro_togliatti
 		portraits = {
 			civilian = {
+				large = GFX_portrait_ita_palmiro_togliatti
 				small="gfx/interface/ideas/Anzio/idea_ita_panetonne.dds"
-				small = GFX_portrait_ITA_palmiro_togliatti_small
 			}
 		}
 
