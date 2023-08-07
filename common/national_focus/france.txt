@@ -1569,17 +1569,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			add_country_leader_role = {
-                character = FRA_marie
-                country_leader = {
-				expire = "1965.1.1"
-				ideology = french_idealism
-				traits = {
-					bc_freedom_uniter
-		            cake_lover
-				}
-				}
-			}
 			set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 } #fires strike event if labour laws not reformed in time
 		}
 	}

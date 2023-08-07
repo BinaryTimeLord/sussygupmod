@@ -4206,24 +4206,6 @@ focus_tree = {
 							}
 						}
 					}
-					add_corps_commander_role = {
-                        character = GER_oryou
-						traits = { panzer_leader infantry_officer commando }
-						skill = 3
-						attack_skill = 3
-						defense_skill = 4
-						planning_skill = 2
-						logistics_skill = 2
-					}
-					add_corps_commander_role = {
-                        character = GER_saemonza
-						traits = { panzer_leader cavalry_officer hill_fighter }
-						skill = 3
-						attack_skill = 4
-						defense_skill = 3
-						planning_skill = 3
-						logistics_skill = 2
-					}
 				}
 				add_offsite_building = { type = arms_factory level = 5 }
 				add_offsite_building = { type = industrial_complex level = 5 }

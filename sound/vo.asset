@@ -2005,12 +2005,7 @@ sound =
 sound = 
 {
 	name = "au_Idle_026"
-	file = "aus/au_Idle_002.wav"
-}
-sound = 
-{
-	name = "au_Idle_026"
-	file = "aus/au_Idle_002.wav"
+	file = "aus/au_Idle_026.wav"
 }
 sound = 
 {

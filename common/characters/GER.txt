@@ -212,7 +212,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-
+		
 	GER_adolf_hitler={
 		name=GER_adolf_hitler
 		portraits={
@@ -2059,27 +2059,5 @@ characters={
 				amateur_aviator_hess
 			}
 		}
-	}
-	GER_oryou={
-		name="Takeko Nogami"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_oryou.dds"
-			}
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Oryou.dds"
-			}
-		}
-	}
-	GER_saemonza={
-		name="Kiyomi Sugiyama"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_saemonza.dds"
-			}
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
-			}
-		}
-	}		
+	}	
 }
