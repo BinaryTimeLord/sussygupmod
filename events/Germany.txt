@@ -62,10 +62,14 @@ country_event = {
 		}
 		AUS = {
 			every_unit_leader = {
+				limit = {
+					has_id = 6972
+					has_id = 6970
+				}
 				set_nationality = GER
 			}
 		}
-		annex_country = { target = AUS transfer_troops = no }
+		annex_country = { target = AUS transfer_troops = yes }
 		add_political_power = 75
 		set_country_flag = AUS_annexed
 		add_war_support = 0.1
