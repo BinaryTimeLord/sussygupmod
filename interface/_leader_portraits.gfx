@@ -4174,22 +4174,22 @@ spriteTypes = {
 
 	spriteType = {
 		name = GFX_portrait_FIN_erik_heinrichs
-		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+		texturefile = "gfx/leaders/Europe/Portrait_Finland_Kyosti_Kallio.dds"
 	}
 
 	spriteType = {
 		name = GFX_portrait_FIN_erik_heinrichs_small
-		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
+		texturefile = "gfx/interface/ideas/portrait_FIN_erik_heinrichs_small.dds"
 	}
 
 	spriteType = {
 		name = GFX_portrait_FIN_vilho_petter_nenonen
-		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+		texturefile = "gfx/leaders/Europe/Portrait_Finland_Risto_Heikki_Ryti.dds"
 	}
 
 	spriteType = {
 		name = GFX_portrait_FIN_vilho_petter_nenonen_small
-		texturefile = "gfx/interface/ideas/idea_europe_generic_land_3.dds"
+		texturefile = "gfx/interface/ideas/portrait_FIN_vilho_petter_nenonen_small.dds"
 	}
 
 	spriteType = {
