@@ -207,10 +207,6 @@ country_event = { ##DIE WATCH AM RHEIN
 	desc = kmm.70.d
 	picture = GFX_report_event_switzerland1
 	
-	immediate = {
-		sound_effect = diewatchamrhien
-	}
-	
 	major = yes
 	hidden = yes
 	fire_only_once = yes

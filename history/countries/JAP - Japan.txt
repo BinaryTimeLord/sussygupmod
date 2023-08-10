@@ -506,6 +506,8 @@ recruit_character = JAP_ikeda
 recruit_character = JAP_uenishi
 recruit_character = JAP_hasegawa
 recruit_character = JAP_hirai
+recruit_character = JAP_oryou
+recruit_character = JAP_saemonza
 #AL/KanColle chars
 recruit_character = JAP_akagi
 recruit_character = JAP_kaga

@@ -1947,4 +1947,9 @@ GER_expand_fortlines_desc:0 ""
  wtw_winter_war_win:0 "Won the Winter War"
  jak_white_guard:0 "White Guard"
  jak_form_white_guard:0 "Raise the White Guard"
+
+ #ITALY
+ ITA_caesar:0 ""
+ ITA_caesar_desc:0 ""
+
  

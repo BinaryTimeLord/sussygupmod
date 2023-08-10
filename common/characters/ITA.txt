@@ -163,7 +163,19 @@ characters = {
  #######  #####   #    #    #        #        #       ######  #    #  #       #####        # 
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
-                                                                                             
+
+
+	ITA_caesar = {
+		name = "Takako Suzuki"
+		portraits = {
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_takako_suzuki_high_command.dds"
+			}
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_Caesar.dds"
+			}
+		}
+	}                                                                                            
 
 	ITA_rodolfo_graziani = {
 		name = ITA_rodolfo_graziani

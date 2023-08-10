@@ -11138,6 +11138,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_caesar
+		icon = GFX_focus_ITA_caesar
+		prerequisite = { focus = ITA_italo_balbo_focus }
+		relative_position_id = ITA_italo_balbo_focus
+		x = 2
+		y = 1		
+
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            add_corps_commander_role = {
+				character = ITA_caesar
+			    traits={ cavalry_officer }
+			    skill=4
+			    attack_skill=3
+			    defense_skill=2
+			    planning_skill=3
+			    logistics_skill=2
+			    legacy_id=-1
+            }         
+		}
+	}
+
+	focus = {
 		id = ITA_reinforce_regia_aeronautica
 		icon = GFX_focus_SOV_flying_clubs
 		prerequisite = { focus = ITA_italo_balbo_focus }
