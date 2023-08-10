@@ -4209,6 +4209,24 @@ focus_tree = {
 				}
 				add_offsite_building = { type = arms_factory level = 5 }
 				add_offsite_building = { type = industrial_complex level = 5 }
+				add_corps_commander_role = {
+					character = AUS_oryou
+					traits={ cavalry_officer }
+			        skill=4
+			        attack_skill=1
+			        defense_skill=4
+			        planning_skill=2
+			        logistics_skill=2
+				}
+				add_corps_commander_role = {
+					character = AUS_saemonza
+			        traits={ media_personality swamp_fox }
+			        skill=4
+			        attack_skill=5
+			        defense_skill=1
+			        planning_skill=3
+			        logistics_skill=6
+				}
 			}
 			event_target:WTT_current_china_leader = {
 				add_opinion_modifier = { target = GER modifier = withdrew_advisors }
