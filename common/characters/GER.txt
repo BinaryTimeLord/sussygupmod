@@ -212,6 +212,69 @@ characters={
 			legacy_id=-1
 		}
 	}
+
+   GER_nakasuga={
+		name="Emi Nakasuga"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_Nakasuga.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_nakasuga.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Nakasuga.dds"
+			}
+		}
+	}
+
+    GER_yuzumoto={
+		name="Yuzumoto Hitomi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_yuzumoto.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Yuzumoto.dds"
+			}
+		}
+	}
+
+    GER_kita={
+		name="Kita Kabayo"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_kita.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Kita.dds"
+			}
+		}
+	}
+
+    GER_shiratori={
+		name="Shiratori Nagisa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_shiratori.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Shiratori.dds"
+			}
+		}
+	}
+
+    GER_takami={
+		name="Takami Yuu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_chihiro.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Chihiro.dds"
+			}
+		}
+	}
 		
 	GER_adolf_hitler={
 		name=GER_adolf_hitler
