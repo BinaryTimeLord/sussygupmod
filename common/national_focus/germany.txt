@@ -4068,7 +4068,7 @@ focus_tree = {
 		icon = GFX_goal_rhineland_kmm
 		x = 29
 		y = 0
-		cost = 10
+		cost = 10 #nishi
 		allow_branch = { ## This is for debugging ## STOP TOUCHING THIS TILL RELEASE ##
 			has_country_flag = deez
 		}
@@ -8594,9 +8594,9 @@ focus_tree = {
 			factor = 3
 		}
 
-		##allow_branch = { ##HIDE ONCE DONE##
-			##has_completed_focus = GER_river_incident
-		##}
+		#allow_branch = { ##HIDE ONCE DONE## #nishi
+		#	has_completed_focus = GER_river_incident
+		#}
 		
 		relative_position_id = GER_river_incident
 		completion_reward = {
