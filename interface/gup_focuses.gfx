@@ -1,7 +1,7 @@
 spriteTypes = {
 	#KUROMORIMINE
 	#more like dumborimine B) #agreed #damn you agree!
-	
+
 	SpriteType = {
 		name = "GFX_consitutional_monarchy"
 		texturefile = "gfx/interface/goals/Kuromorimine/GFX_consitutional_monarchy.dds"
@@ -3041,7 +3041,7 @@ spriteTypes = {
 	}
         frameAnimatedSpriteType = {
                 name = "GFX_DUCE_DUCE"
-                texturefile = "gfx/interface/goals/DUCE_DUCE.dds"
+                texturefile = "gfx/interface/goals/Anzio/DUCE_DUCE.dds"
                 noOfFrames = 30
                 animation_rate_fps = 24
                 looping = yes
@@ -12118,14 +12118,14 @@ spriteTypes = {
 
     frameAnimatedSpriteType = {
 		name = "GFX_DUCE_DUCE_shine"
-		texturefile = "gfx/interface/goals/DUCE_DUCE.dds"
+		texturefile = "gfx/interface/goals/Anzio/DUCE_DUCE.dds"
                 noOfFrames = 30
                 animation_rate_fps = 24
                 looping = yes
                 play_on_show = yes
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DUCE_DUCE.dds"
+			animationmaskfile = "gfx/interface/goals/Anzio/DUCE_DUCE.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -12138,7 +12138,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DUCE_DUCE.dds"
+			animationmaskfile = "gfx/interface/goals/Anzio/DUCE_DUCE.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -13100,6 +13100,43 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_JAP_support_democracy_hamada.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ITA_caesar"
+		texturefile = "gfx/interface/goals/Anzio/focus_ITA_caesar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ITA_caesar_shine"
+		texturefile = "gfx/interface/goals/Anzio/focus_ITA_caesar.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Anzio/focus_ITA_caesar.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Anzio/focus_ITA_caesar.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
