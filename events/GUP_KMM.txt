@@ -5059,6 +5059,401 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = kmm.230
+	title = kmm.230.t
+	desc = kmm.230.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.230.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			add_to_faction = POL
+		}
+	}
+	
+	option = {
+		name = kmm.230.b
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+
+##PARTITION OF ITALY
+
+country_event = { ##BOTH SIDES WILL AGREE MORE IF MIHO IN CHARGE
+	id = kmm.231
+	title = kmm.231.t
+	desc = kmm.231.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.231.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		FRA = {
+			country_event = {
+				id = kmm.232
+				days = 10
+			}
+		}
+		
+		YUG = {
+			country_event = {
+				id = kmm.235
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { ##FRANCE
+	id = kmm.232
+	title = kmm.232.t
+	desc = kmm.232.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.232.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.233
+				days = 15
+			}
+		}
+	}
+	
+	option = {
+		name = kmm.232.b
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.234
+				days = 15
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = kmm.233
+	title = kmm.233.t
+	desc = kmm.233.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.233.a
+		
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = GER_FRA_AGREES
+	}
+}
+
+country_event = {
+	id = kmm.234
+	title = kmm.234.t
+	desc = kmm.234.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.234.a
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = { ##YUGOSLAVIA
+	id = kmm.235
+	title = kmm.235.t
+	desc = kmm.235.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.235.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.236
+				days = 8
+			}
+		}
+	}
+	
+	option = {
+		name = kmm.235.b
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.237
+				days = 8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.236
+	title = kmm.236.t
+	desc = kmm.236.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.236.a
+		
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = GER_YUG_AGREES
+	}
+}
+
+country_event = {
+	id = kmm.237
+	title = kmm.237.t
+	desc = kmm.237.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.237.a
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+##ULTIMATIUM
+
+country_event = {
+	id = kmm.238
+	title = kmm.238.t
+	desc = kmm.238.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.238.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		ITA = {
+			country_event = {
+				id = kmm.239
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { ##ITALIAN RESPONSE
+	id = kmm.239
+	title = kmm.239.t
+	desc = kmm.239.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##SAY YES IF BOTH PARTIES ARE INVOLVED
+		name = kmm.239.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.240
+				days = 5
+			}
+		}
+	}
+	
+	option = { ##NO IF FRANCE OR YUGO DONT JOIN IN
+		name = kmm.239.b
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.241
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { ##ITS OVER ITALY BROS
+	id = kmm.240
+	title = kmm.240.t
+	desc = kmm.240.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = kmm.240.a
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		ITA = {
+			release = ETH
+			release = ALB
+		}
+		
+		ETH = {
+			transfer_state = 844
+			transfer_state = 559
+			transfer_state = 550
+		}
+		
+		FRA = {
+			transfer_state = 237
+			transfer_state = 158
+			transfer_state = 114
+			transfer_state = 661
+			transfer_state = 662
+			transfer_state = 448
+			transfer_state = 449
+			transfer_state = 450
+			transfer_state = 451
+			transfer_state = 663
+			
+			##ETHIOPIA PUPPET
+			##550
+			##559
+			##844
+			
+			puppet = ETH
+			
+		}
+		
+		YUG = {
+			transfer_state = 163
+			transfer_state = 852
+			transfer_state = 736
+			
+			##GETS ALBANIA
+			puppet = ALB
+		}
+		
+		GER = {
+			##PUPPET ITALY
+			transfer_state = 39
+			transfer_state = 850
+			puppet = ITA
+			
+		}
+	}
+}
+
+country_event = { ##WAR
+	id = kmm.241
+	title = kmm.241.t
+	desc = kmm.241.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.241.a
+		ai_chance = {
+			base = 10
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = GER_FRA_AGREES
+			}
+			
+			FRA = {
+				declare_war_on = {
+					target = ITA
+					type = puppet
+				}
+			}
+		
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = GER_YUG_AGREES
+			}
+			
+			YUG = {
+				declare_war_on = {
+					target = ITA
+					type = puppet
+				}
+			}
+		}
+		
+		GER = {
+			declare_war_on = {
+					target = ITA
+					type = puppet
+				}
+		}	
+	}
+}
+
+
+
 
 
 

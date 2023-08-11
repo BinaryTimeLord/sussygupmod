@@ -12329,7 +12329,7 @@ focus_tree = {
 	}
 
 
-	focus = { ### ITS KOJIMA 
+	focus = {
 		id = GER_victory_for_mauko
 		##icon = GFX_goal_victory_for_kojima
 		prerequisite = {
@@ -13003,7 +13003,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_emi_victory
-		icon = GFX_goal_victory_for_kojima
+		icon = GFX_victory_for_emi
 		relative_position_id = GER_inaugurate_the_republic
 		
 		x = 4
@@ -13020,12 +13020,15 @@ focus_tree = {
 			
 			set_politics = { ruling_party = democratic }
 			create_country_leader = {
-				name = "Emi Kojima"
-				desc = "POLITICS_KOJIMA_DESC"
-				picture = "Portrait_GER_Kojima.dds.dds"
+				name = "Emi Nakasauga"
+				desc = "POLITICS_NAKA_DESC"
+				picture = "Portrait_GER_Nakasuga.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
-				traits = { }
+				traits = {
+					awkward_communicator
+					skilled_commander
+				}
 			}
 		}
 	}
@@ -13933,7 +13936,33 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = { ##ANTI COMETERN PACT PUT DEMOCRATIC
-		
+			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			add_named_threat = { threat = 3 name = GER_anti_comitern_pact }
+			every_other_country = {
+				limit = {
+					NOT = { tag = GER }
+					NOT = { has_war_with = GER }
+					NOT = { is_in_faction_with = SOV }
+					is_subject = no
+					OR = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+						capital_scope = {
+							is_on_continent = asia
+						}
+						num_of_factories > 30
+					}
+					OR = {
+						has_government = democratic
+						AND = {
+							is_neighbor_of = SOV
+							NOT = { has_government = communism }
+						}
+					}
+				}
+				country_event = germany.5
+			}
 		}
 	}
 	
@@ -13951,7 +13980,9 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##PROTECT BALTICS
-		
+			give_guarantee = LIT
+			give_guarantee = LAT
+			give_guarantee = EST
 		}
 	}
 	
@@ -13969,7 +14000,12 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ##PROTECT POLAND
-		
+			POL = {
+				country_event = {
+					id = kmm.230
+					days = 5
+				}
+			}
 		}
 	}
 	
@@ -13987,7 +14023,24 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = { ## ADD MODIFIER AGAINST SOVIETS FOR ALL NON ALLIES DEMOCRATIC NATIONS IN THE WEST
-		
+			every_other_country = {
+				limit = {
+					NOT = { tag = GER }
+					NOT = { has_war_with = GER }
+					NOT = { is_in_faction_with = SOV }
+					NOT = { is_in_faction_with = GER }
+					
+					has_government = democratic
+					
+					OR = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+				}
+				
+				add_ideas = KMM_joint_anti_pravada_tactics
+			}
 		}
 	}
 	
@@ -14005,7 +14058,29 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = { ##ADD 5 MILS AND EQUIPMENT
-		
+			every_other_country = {
+				limit = {
+					NOT = { tag = GER }
+					is_in_faction_with = GER
+					has_government = democratic
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -14017,13 +14092,54 @@ focus_tree = {
 		x = 2
 		y = 2
 		
+		available = {
+			FIN = {
+				has_war_with = SOV
+				NOT = { is_in_faction_with = GER }
+			}
+		}
+		
 		prerequisite = { focus = GER_protect_baltics focus = GER_protect_poland }
 		mutually_exclusive = {}
 		
 		cost = 7
 		
 		completion_reward = { ##SEND EQUIPMENT TO THE EAST
-		
+			if = {
+				limit = {
+					FIN = {
+						has_war_with = SOV
+					}
+				}
+				FIN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					
+					amount = 5000
+					
+					producer = GER
+				
+				}
+				
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					
+					amount = 350
+					
+					producer = GER
+				
+				}
+				
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					
+					amount = 350
+					
+					producer = GER
+				
+				}
+				}
+			}
 		}
 	}
 	
@@ -14041,7 +14157,12 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = { ##ADD BARB BONUS FOR 180 DAYS AND DELCARE WAR ON SOVIETS
-		
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = puppet
+				}
+			}
 		}
 	}
 	
@@ -14058,7 +14179,39 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = { ##ANTI FASCISM PATH
-		
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+					has_government = democratic
+				}
+				
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.15
+				}
+				
+			}
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
 		}
 	}
 	
@@ -14076,7 +14229,13 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ##ADD PROPAGANDA IDEA TO ALL FASCIST NATIONS
-		
+			every_other_country = {
+				limit = {
+					has_government = fascism
+				}
+				
+				add_ideas = GER_anti_facsism
+			}
 		}
 	}
 	
@@ -14094,7 +14253,16 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = { ## COUP FASCIST MAJOR NATIONS ##
-		
+			every_other_country = {
+				limit = {
+					has_government = fascism
+				}
+				
+				start_civil_war = {
+					ideology = democratic
+					size = 0.3
+				}
+			}
 		}
 	}
 
@@ -14112,7 +14280,19 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = { ## WAR GOALS ON ALL FASCIST NATIONS ##
-		
+			every_other_country = {
+				limit = {
+					has_government = fascism
+					NOT = { has_civil_war = yes }
+				}
+				
+				GER = {
+					create_wargoal = { 
+						target = ROOT
+						type = puppet_wargoal_focus 
+					}
+				}
+			}
 		}
 	}
 	
@@ -14130,7 +14310,13 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+			39 = {
+				add_claim_by = GER
+			}
+			
+			850 = {
+				add_claim_by = GER
+			}
 		}
 	}
 	
@@ -14148,7 +14334,10 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ## PLAN PARITION OF ITALY WITH FRANCE AND YUGOSLAVIA ##
-		
+			country_event = {
+				id = kmm.231
+				days = 2
+			}	
 		}
 	}
 	
@@ -14166,7 +14355,10 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			country_event = {
+				id = kmm.238
+				days = 5
+			}
 		}
 	}
 	
@@ -14202,7 +14394,141 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = { ##PEACEFUL UNIFICATION
-		
+			if = {
+				limit = {
+					country_exists = AUS
+					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848 # Austria has 4 core states
+						}
+					}
+				}
+
+				AUS = {
+					country_event = germany.28
+				}				
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						original_tag = AUS
+						has_civil_war = yes
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848 # Austria has 4 core states
+						}
+					}
+				}
+				custom_effect_tooltip = germany.126.warning 
+				random_other_country = {
+					limit = {
+						original_tag = AUS
+						OR = {
+							has_government = fascism
+							AND = {
+								has_government = neutrality
+								NOT = {
+									any_other_country = {
+										original_tag = AUS
+										has_government = fascism
+									}
+								}
+							}
+							NOT = {
+								any_other_country = {
+									original_tag = AUS
+									OR = {
+										has_government = fascism
+										has_government = neutrality
+									}
+								}
+							}							
+						}
+					}
+					country_event = { id = germany.126 days = 1 }
+				}
+			}
+
+
+			if = {
+				limit = {
+					4 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 4
+			}
+			if = {
+				limit = {
+					152 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 152
+			}
+			if = {
+				limit = {
+					153 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 153
+			}
+			if = {
+				limit = {
+					153 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848 # Austria has 4 core states
+			}
+			if = {
+				limit = {
+					AUS = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						has_government = neutrality
+						NOT = { has_war_with = GER }
+					}		
+					NOT = { country_exists = HUN }			
+				}
+				AUS = { country_event = { id = generic.5 } }
+			}
 		}
 		
 	}
@@ -14539,6 +14865,7 @@ focus_tree = {
 			limit = {
 				has_idea = kmm_europe
 			}
+			
 			give_military_access = GER
 		}
 		}
@@ -14691,6 +15018,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				
+				every_owned_state = {
+					add_core_of = ROOT
+				}
+			}
 			
 			add_ideas = kmm_united_europe
 			GER = { country_event = { id = kmm.98 } }

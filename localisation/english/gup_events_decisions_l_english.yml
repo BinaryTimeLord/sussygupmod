@@ -182,7 +182,7 @@
  kmm.36.b: "Morals Committees keep understanding in check."
 
  kmm.37.t: "Snap Student Council Election"
- kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First candidate was a well known one, Emi Kojima who famously occupied Maho's place at a Senshado conference. She was a popular candidate preaching peace and harmony between the big Senshado schools. \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
+ kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First was not the most well known. This was Emi Nakasauga, a German-Japanese mixed child who preached what Miho had said but went further to promise revenge against Kuromorimine's vanquisher \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
  kmm.37.a: "Emi Nakasauga came out on top"
  kmm.37.b: "Miho came out on top"
  kmm.37.c: "Emi Kojima came out on top"
@@ -837,6 +837,54 @@
  kmm.229.t:0 "St Gloriana Respectfully refuses to help"
  kmm.229.d:0 "It seems that despite several representatives wishing to send us aid St Gloriana has decided to not send us aid."
  kmm.229.a:0 "We Must suffer on then"
+ 
+ kmm.230.t:0 "Kuromorimine Protection Plan"
+ kmm.230.d:0 "Kuromorimine has arrived to invite us to their faction to stop Pravda from expanding. Shall we join?"
+ kmm.230.a:0 "Yes"
+ kmm.230.b:0 "No"
+ 
+ kmm.231.t:0 "Anzio Partition Plans"
+ kmm.231.d:0 "As the sick Man of Europe, Anzio is a utter embarrassment for a nation, and is clearly not capable of developing into a proper ally of ours, it’s clear we need to intervene to secure them, through our guidance. \n \nTo do so we likely will require some assistance, both BC freedom and Yugoslavia have historic tensions with Anzio. \n \nSardina, piedmont, and libya would probably be enough to appease BC Freedoms ambitions, and Yugoslavia would likely wish to have Istria and Damatia returned to them."
+ kmm.231.a:0 "maybe these offers will be enough to get  them to get involved with our plot"
+ 
+ kmm.232.t:0 "Kuro offers BC Freedom Sardina Piedmont"
+ kmm.232.d:0 "Anzio has become a rather large nuisance as of late, they continually harp on about their ideas of a great Anzio empire and of grand naval buildups but to most in BC they are treated as a bit of a joke with us seeing kuromine as our most serious threat. \n \nSo it was a bit concerning to us that Kuromine came to us with a offer to divy up Anzio between ourselves, the Yugoslavian government has already secretly informed us that they have also received a offer as well, being offered lands that they wish to see returned, while in our case kuromine is offering to give us Sardinia Piedmont. \n \nThe land is perfectly situated in mountainous areas being perfect to expand our defence parimeter as well as also being close to the northern industrial heartland of Anzio, a very tempting offer the only question is should we jump at this opportunity and risk larger Kuromine influence in the region."
+ kmm.232.a:0 "We shall enjoy cutting these upstarts down to size."
+ kmm.232.b:0 "This is too Risky"
+ 
+ kmm.233.t:0 "BC Freedom agrees to the partition plan"
+ kmm.233.d:0 "So much for Anzio Freedom"
+ kmm.233.a:0 ":trollface:"
+ 
+ kmm.234.t:0 "BC Freedom is not amused "
+ kmm.234.d:0 "looks like that’s one less nation we have to give land too"
+ kmm.234.a:0 "Traitors!"
+ 
+ kmm.235.t:0 "Partition of Anzio"
+ kmm.235.d:0 "To say that we are on good terms with Anzio is a a horrible misunderstanding of the situation between our lands, for years we’ve been at each others throats with the occupation of lands that should belong to us, and to their even more outrageous claims of ownership over even more of our territory. \n \nAnd now Kuromine it appears is also at odds with Anzio’s continued status as a European player seeking to expand their influence in Anzio, and in return for our support will return all the lands we desire of them, the offer is indeed tempting but can we trust them to not backstab us when the mutual enemy is vanquished."
+ kmm.235.a:0 "If it hurts Anzio we are in"
+ kmm.235.b:0 "War isnt a option"
+ 
+ kmm.236.t:0 "Yugoslavia Agrees"
+ kmm.236.d:0 "Panzer Vor to Anzio!"
+ kmm.236.a:0 "Another Pawn in Our Grand Plans"
+ 
+ kmm.237.t:0 "Yugoslavia Declines"
+ kmm.237.d:0 "Yugoslavia has rejected our proposal for the partition of Anzio"
+ kmm.237.a:0 "well we didn’t want them in Anzio anyway!!!"
+ 
+ kmm.238.t:0 "The Ultimatum"
+ kmm.238.d:0 "Anzio has begun to notice our diplomatic meddling no doubt if we delay any longer they will move to oppose our actions, we must push forwards with our demands before the secret negotiations are exposed."
+ kmm.238.a:0 "Send the Demands"
+ 
+ kmm.239.t:0 "Kuromine demands access to our nation and transferring of land"
+ kmm.239.d:0 "The dastardly kuromine has sent a letter demanding that we allow their troops to pass through our lands and protect our citizens. \n \nThis is quite clearly just a excuse for the ousting of the government, we’ve looked to BC freedom and Yugoslavia but both appear to either be in league with them or at the very least won’t intervene. \n \nWhat should we do?"
+ kmm.239.a:0 "We must give the knee to protect our people"
+ kmm.239.b:0 "Never!!!!!! Pepperoni get the tankettes ready for battle"
+ 
+ kmm.240.t:0 "Anzio bends the knee"
+ kmm.240.d:0 "Anzio realizing that resistance would only be worse for them have agreed to our terms, now all there is to do is to divy up the land as required and move in troops to fix Anzio for the better"
+ kmm.240.a:0 "at least they see reason"
  
  #####################
  ### NEW DEICSIONS ###
