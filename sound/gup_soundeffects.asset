@@ -1,7 +1,0 @@
-soundeffect = {
-	name = "diewatchamrhien"
-	sounds = {
-		sound = diewatchamrhien
-	}
-	volume = 3
-}

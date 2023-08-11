@@ -1,8 +1,14 @@
 characters={
-	AUS_miho={
+	AUS_miho_nishizumi={
 		name="Miho Nishizumi"
 		portraits={
 			civilian={
+				large="gfx/leaders/AUS/Portrait_AUS_Miho.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
+			}
+			army={
 				large="gfx/leaders/AUS/Portrait_AUS_Miho.dds"
 			}
 		}
@@ -30,17 +36,6 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
-	AUS_miho_nishizumi={
-		name="Miho Nishizumi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
-			}
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Miho.dds"
-			}
-		}
 		field_marshal={
 			traits={ brilliant_strategist armor_officer panzer_leader inspirational_leader }
 			skill=5
@@ -51,6 +46,7 @@ characters={
 			legacy_id=6969
 		}
 	}
+
 	AUS_saori_takebe={
 		name="Saori Takebe"
 		portraits={
@@ -663,7 +659,7 @@ characters={
 		}
 		corps_commander={
 			traits={ trait_reckless }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1

@@ -485,6 +485,7 @@ create_country_leader = {
 
 
 recruit_character = ENG_darjeeling
+recruit_character = ENG_dajirin
 recruit_character = ENG_orange_pekoe
 recruit_character = ENG_assam
 recruit_character = ENG_rosehip

@@ -62,10 +62,14 @@ country_event = {
 		}
 		AUS = {
 			every_unit_leader = {
+				limit = {
+					has_id = 6972
+					has_id = 6970
+				}
 				set_nationality = GER
 			}
 		}
-		annex_country = { target = AUS transfer_troops = no }
+		annex_country = { target = AUS transfer_troops = yes }
 		add_political_power = 75
 		set_country_flag = AUS_annexed
 		add_war_support = 0.1
@@ -3493,409 +3497,389 @@ country_event = {
 				create_field_marshal = {
 					name = "Miho Nishizumi"
 					picture = "Portrait_AUS_Miho.dds"
-					traits = {  }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ brilliant_strategist armor_officer panzer_leader inspirational_leader }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=6969
 				}
 
 				create_field_marshal = {
 					name = "Saori Takebe"
 					picture = "Portrait_AUS_Saori.dds"
-					traits = { }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ media_personality cavalry_officer fast_planner }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=6974
 				}
 
 				create_field_marshal = {
 					name = "Hana Isuzu"
 					picture = "Portrait_AUS_Hana.dds"
-					traits = {  }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ war_hero fortress_buster }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=6971
 				}
 
 				create_field_marshal = {
-					name = "Yukari Akiyama"
-					picture = "Portrait_AUS_Yukari.dds"
-					traits = { }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+				name = "Yukari Akiyama"
+				picture = "Portrait_AUS_Yukari.dds"
+			traits={ armor_officer panzer_leader commando winter_specialist adaptable }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=6972
 				}
 
 				create_field_marshal = {
 					name = "Mako Reizei"
 					picture = "Portrait_AUS_Mako.dds"
-					traits = { }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ brilliant_strategist career_officer }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=6973
 				}
 
 				create_corps_commander = {
 					name = "Anzu Kadotani"
 					picture = "Portrait_AUS_Anzu.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ old_guard skilled_staffer guerilla_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Momo Kawashima"
 					picture = "Portrait_AUS_Momo.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ old_guard inflexible_strategist trait_reckless harsh_leader }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Yuzu Koyama"
 					picture = "Portrait_AUS_Yuzu.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ old_guard }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Riko Matsumoto"
 					picture = "Portrait_AUS_Erwin.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ brilliant_strategist panzer_leader desert_fox }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=6970
 				}
 
 				create_corps_commander = {
 					name = "Takeko Nogami"
 					picture = "Portrait_AUS_Oryou.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ cavalry_officer }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Kiyomi Sugiyama"
 					picture = "Portrait_AUS_Saemonza.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ media_personality swamp_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Takako Suzuki"
 					picture = "Portrait_AUS_Caesar.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ cavalry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Azusa Sawa"
 					picture = "Portrait_AUS_Azusa.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ brilliant_strategist trait_cautious urban_assault_specialist expert_improviser }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Ayumi Yamagou"
 					picture = "Portrait_AUS_Ayumi.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Aya Oono"
 					picture = "Portrait_AUS_Aya.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Yuuki Utsugi"
 					picture = "Portrait_AUS_Yuuki.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Karina Sakaguchi"
 					picture = "Portrait_AUS_Karina.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Saki Maruyama"
 					picture = "Portrait_AUS_Saki.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Noriko Isobe"
 					picture = "Portrait_AUS_Noriko.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ inflexible_strategist trait_reckless }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Taeko Kondou"
 					picture = "Portrait_AUS_Taeko.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Shinobu Kawanishi"
 					picture = "Portrait_AUS_Shinobu.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Akebi Sasaki"
 					picture = "Portrait_AUS_Akebi.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Midoriko Sono"
 					picture = "Portrait_AUS_Midoriko.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ harsh_leader politically_connected }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Moyoko Gotou"
 					picture = "Portrait_AUS_Moyoko.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 
 				create_corps_commander = {
 					name = "Nozomi Konparu"
 					picture = "Portrait_AUS_Nozomi.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Reira Nakajima"
 					picture = "Portrait_AUS_Satoko.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_reckless panzer_leader hill_fighter }
+			skill=3
+			attack_skill=5
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Keiko Hoshino"
 					picture = "Portrait_AUS_Hoshino.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Maria Suzuki"
 					picture = "Portrait_AUS_Suzuki.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ media_personality armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Muuton Tsuchiya"
 					picture = "Portrait_AUS_Tsuchiya.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_reckless }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Mai Nekota"
 					picture = "Portrait_AUS_Nekota.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Aoi Hiyoshi"
 					picture = "Portrait_AUS_Piyotan.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Taki Momose"
 					picture = "Portrait_AUS_Momoga.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
-				}
-
-				create_navy_leader = {
-					name = "Ogin"
-					picture = "Portrait_AUS_Ogin.dds"
-			        traits={ old_guard career_officer gentlemanly bold battleship_adherent naval_lineage superior_tactician }
-			        skill=3
-			        attack_skill=3
-			        defense_skill=3
-			        maneuvering_skill=3
-			        coordination_skill=3
-			        legacy_id=0
-				}
-				create_navy_leader = {
-					name = "Murakami"
-					picture = "Portrait_AUS_Murakami.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
-				create_navy_leader = {
-					name = "Cutlass"
-					picture = "Portrait_AUS_Cutlass.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
-				create_navy_leader = {
-					name = "Flint"
-					picture = "Portrait_AUS_Flint.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
-				create_navy_leader = {
-					name = "Rum"
-					picture = "Portrait_AUS_Rum.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 			}
 		}
+	}
 
 		if = {
 			limit = { has_global_flag = GER_HUN_CZE_split }
@@ -4406,406 +4390,387 @@ country_event = {
 				create_field_marshal = {
 					name = "Miho Nishizumi"
 					picture = "Portrait_AUS_Miho.dds"
-					traits = {  }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ brilliant_strategist armor_officer panzer_leader inspirational_leader }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=6969
 				}
 
 				create_field_marshal = {
 					name = "Saori Takebe"
 					picture = "Portrait_AUS_Saori.dds"
-					traits = { }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ media_personality cavalry_officer fast_planner }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=6974
 				}
 
 				create_field_marshal = {
 					name = "Hana Isuzu"
 					picture = "Portrait_AUS_Hana.dds"
-					traits = {  }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ war_hero fortress_buster }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=6971
 				}
 
 				create_field_marshal = {
-					name = "Yukari Akiyama"
-					picture = "Portrait_AUS_Yukari.dds"
-					traits = { }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+				name = "Yukari Akiyama"
+				picture = "Portrait_AUS_Yukari.dds"
+			traits={ armor_officer panzer_leader commando winter_specialist adaptable }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=6972
 				}
 
 				create_field_marshal = {
 					name = "Mako Reizei"
 					picture = "Portrait_AUS_Mako.dds"
-					traits = { }
-					skill = 5
-					attack_skill = 5
-					defense_skill = 5
-					planning_skill = 5
-					logistics_skill = 5
+			traits={ brilliant_strategist career_officer }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=6973
 				}
 
 				create_corps_commander = {
 					name = "Anzu Kadotani"
 					picture = "Portrait_AUS_Anzu.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ old_guard skilled_staffer guerilla_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Momo Kawashima"
 					picture = "Portrait_AUS_Momo.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ old_guard inflexible_strategist trait_reckless harsh_leader }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Yuzu Koyama"
 					picture = "Portrait_AUS_Yuzu.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ old_guard }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Riko Matsumoto"
 					picture = "Portrait_AUS_Erwin.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ brilliant_strategist panzer_leader desert_fox }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=6970
 				}
 
 				create_corps_commander = {
 					name = "Takeko Nogami"
 					picture = "Portrait_AUS_Oryou.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ cavalry_officer }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Kiyomi Sugiyama"
 					picture = "Portrait_AUS_Saemonza.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ media_personality swamp_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Takako Suzuki"
 					picture = "Portrait_AUS_Caesar.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ cavalry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Azusa Sawa"
 					picture = "Portrait_AUS_Azusa.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ brilliant_strategist trait_cautious urban_assault_specialist expert_improviser }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Ayumi Yamagou"
 					picture = "Portrait_AUS_Ayumi.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Aya Oono"
 					picture = "Portrait_AUS_Aya.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Yuuki Utsugi"
 					picture = "Portrait_AUS_Yuuki.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Karina Sakaguchi"
 					picture = "Portrait_AUS_Karina.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Saki Maruyama"
 					picture = "Portrait_AUS_Saki.dds"
-					traits = {  }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trickster }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Noriko Isobe"
 					picture = "Portrait_AUS_Noriko.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ inflexible_strategist trait_reckless }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Taeko Kondou"
 					picture = "Portrait_AUS_Taeko.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Shinobu Kawanishi"
 					picture = "Portrait_AUS_Shinobu.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Akebi Sasaki"
 					picture = "Portrait_AUS_Akebi.dds"
-					traits = { }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 4
+			traits={ trait_reckless }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Midoriko Sono"
 					picture = "Portrait_AUS_Midoriko.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ harsh_leader politically_connected }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Moyoko Gotou"
 					picture = "Portrait_AUS_Moyoko.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 
 				create_corps_commander = {
 					name = "Nozomi Konparu"
 					picture = "Portrait_AUS_Nozomi.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+					traits={ politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Reira Nakajima"
 					picture = "Portrait_AUS_Satoko.dds"
-					traits = {  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_reckless panzer_leader hill_fighter }
+			skill=3
+			attack_skill=5
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Keiko Hoshino"
 					picture = "Portrait_AUS_Hoshino.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Maria Suzuki"
 					picture = "Portrait_AUS_Suzuki.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ media_personality armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Muuton Tsuchiya"
 					picture = "Portrait_AUS_Tsuchiya.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_reckless }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Mai Nekota"
 					picture = "Portrait_AUS_Nekota.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Aoi Hiyoshi"
 					picture = "Portrait_AUS_Piyotan.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
 				}
 
 				create_corps_commander = {
 					name = "Taki Momose"
 					picture = "Portrait_AUS_Momoga.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
-				}
-				create_navy_leader = {
-					name = "Ogin"
-					picture = "Portrait_AUS_Ogin.dds"
-			        traits={ old_guard career_officer gentlemanly bold battleship_adherent naval_lineage superior_tactician }
-			        skill=3
-			        attack_skill=3
-			        defense_skill=3
-			        maneuvering_skill=3
-			        coordination_skill=3
-			        legacy_id=0
-				}
-				create_navy_leader = {
-					name = "Murakami"
-					picture = "Portrait_AUS_Murakami.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
-				create_navy_leader = {
-					name = "Cutlass"
-					picture = "Portrait_AUS_Cutlass.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
-				create_navy_leader = {
-					name = "Flint"
-					picture = "Portrait_AUS_Flint.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
-				create_navy_leader = {
-					name = "Rum"
-					picture = "Portrait_AUS_Rum.dds"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-			        maneuvering_skill=3
-			        coordination_skill=3
-				}
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+			}
 			}
 		}
 

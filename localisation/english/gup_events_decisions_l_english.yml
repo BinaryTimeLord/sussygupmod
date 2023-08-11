@@ -182,7 +182,7 @@
  kmm.36.b: "Morals Committees keep understanding in check."
 
  kmm.37.t: "Snap Student Council Election"
- kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First candidate was a well known one, Emi Kojima who famously occupied Maho's place at a Senshado conference. She was a popular candidate preaching peace and harmony between the big Senshado schools. \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe Last Candidate was not the most well known. This was Emi Nakasauga, a German-Japanese mixed child who preached what Miho had said but went further to promise revenge against Kuromorimine's vanquishers. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
+ kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First candidate was a well known one, Emi Kojima who famously occupied Maho's place at a Senshado conference. She was a popular candidate preaching peace and harmony between the big Senshado schools. \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
  kmm.37.a: "Emi Nakasauga came out on top"
  kmm.37.b: "Miho came out on top"
  kmm.37.c: "Emi Kojima came out on top"
@@ -795,19 +795,48 @@
  kmm.219.d:0 "After much discussion amongst the Ministers and military leaders ST Gloriana has decided to accept us with welcome arms into the alliance, with rosehip herself being the Energetic commander she was, personally travelling to Korumine to hand the acceptance letter in person. \n \nNow both St Gloriana and Korumine are united in their desire for peace and prosperity, we can move on to ensuring Europes continued security."
  kmm.218.a:0 "Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!"
  
- kmm.220.t:0 ""
- kmm.220.d:0 ""
- kmm.220.a:0 ""
- kmm.220.b:0 ""
+ kmm.220.t:0 "Asking for Aid"
+ kmm.220.d:0 "The Kuromine state following the civil war has to put it mildly is using one of the generals in our army, “on fire” which is a tad ironic due to the fact we are in a shortage of fire engines, and the  growing shortages gripping our country. \n \nit’s clear that if this continues public order will collapse and another civil war could potentially occur, to prevent this, it is clear that we must swallow our pride for the good of our people and ask for aid from the other major powers while we don’t expect much surely some kind souls will be willing to help us limp into a brighter future."
+ kmm.220.a:0 "Let’s hope that they can spare us some help"
  
- kmm.221.t:0 ""
- kmm.221.d:0 ""
- kmm.221.a:0 ""
+ kmm.221.t:0 "Kuromine Not in my BC Freedom!!"
+ kmm.221.d:0 "As usual Marie sits in the meeting room of the National Assembly watching with some amusement at both Rena and Oshida going at one another arguing over taxes as she eats herself some very delicious strawberry rhubarb crisp that was sent by a visiting maple diplomat. \n \nShe had to admit that maple definitely knew how to make dessert, however the amazing taste didn’t stop a rather annoying messenger who offers a letter to her, she did want to finish the crisp but alas maple would always say to our government measures over their dessert. \n \nShe reads over the letter before holding up her hand causing both arguing parties to fall silent as she says putting a piece of crisp into her mouth as she says. \n \n'Kuromine are requesting our assistance with feeding their populace.' \n \nshe didn’t say anything more, as as soon as she finished the sentence the whole assembly into utter chaos as the two factions began to bicker back and forth each arguing for and against on counts of patriotism or revanchism, after waiting for several minutes she holds up her hand and the assembly falls silent again \n \nMarie then said to the assembly being the only one able to speak for the whole state."
+ kmm.221.a:0 "Let them eat cake"
+ kmm.221.b:0 "They can look after themselves"
  
- kmm.222.t:0 ""
- kmm.222.d:0 ""
- kmm.222.a:0 ""
+ kmm.222.t:0 "BC Tells us to Eat Cake"
+ kmm.222.d:0 "BC freedom in a surprising turn of events has opted to send us cake, bread and other food to help us on these trying time, this may be the turn around that’s needed to finally normalize Kuro BC relations."
+ kmm.222.a:0 "Eat Up"
  
+ kmm.223.t:0 "As Expected"
+ kmm.223.d:0 "BC Freedom has completely ruled out sending any support whatsoever, it seems that the rivalry between our two states was just too strong."
+ kmm.223.a:0 "Hopefully maple can help us out"
+ 
+ kmm.224.t:0 "Meat Balls For Kuro?"
+ kmm.224.d:0 "The whole cabinet were stuffing their faces with the large quantities of spaghetti when the message from Kuro was delivered to them, everyone had been quite hungry after Anchovy had decided to put more money into the army, with the recent harvest they all could barely contain their appetite. \n \nAnchovy however actually decided to read the letter aloud to the whole cabinet. \n'To Anchovy as you no doubt have heard kuromine has recently suffered a civil war, and millions are now suffering from food insecurity, we ask that you please send us much needed food, for which we will forever be in your debt, sincerely Miho.' \n \nShe gives the whole cabinet a few seconds to think it over before saying. \n'Your thoughts'"
+ kmm.224.a:0 "The Cabinet Grumpily agrees"
+ kmm.224.b:0 "Everyone breaks out in laughter rejecting the letter"
+ 
+ kmm.225.t:0 "Pasta for days!!"
+ kmm.225.d:0 "Anzio sends us large quantities of pasta and corn to help us with our ongoing shortages."
+ kmm.225.a:0 "We are in their debt."
+ 
+ kmm.226.t:0 "Letter is Received"
+ kmm.226.d:0 "From Pepperoni: \n \n'We eated it all sorry' \n \nA few crumbles fall off the letter."
+ kmm.226.a:0 "Anzio being as useful as always."
+ 
+ kmm.227.t:0 "Chaos in Parliament"
+ kmm.227.d:0 "The request from Kuromine to help them has caused a bit of a situation that only darjeeling the leader of St Gloriana can sort out, and after several days of constant back and forth two major factions have emerged regarding the issue. \n \nRosehip is the main champion for sending a large amount of support to Kuromine arguing that it would be the perfect opportunity to support a buffer to both BC freedom and Pravda and could lead to a potential alliance, as well as saying that it would help ensure that kuromine would be in St Gloriana’s Debt down the road. \n \nOrange Pekoe for her part has instead called for restraint over concerns of angering BC freedom and Pravda, both of which have had a history of disliking kuromine. \n \nThe discussion has thus devolved into deadlock and it now falls to Darjeeling to decide what to do, rosehip’s plan or Pekoe’s the decision could change the relationship with Kuro moving forwards but the time to make a decision is now."
+ kmm.227.a:0 "Support Rosehip’s proposal"
+ kmm.227.b:0 "Support Pekoe’s Restraint"
+ 
+ kmm.228.t:0 "St Gloriana Sends substantial aid"
+ kmm.228.d:0 "St Gloriana seeing our desperation have agreed to send us much needed support."
+ kmm.228.a:0 "Thats great to hear"
+ 
+ kmm.229.t:0 "St Gloriana Respectfully refuses to help"
+ kmm.229.d:0 "It seems that despite several representatives wishing to send us aid St Gloriana has decided to not send us aid."
+ kmm.229.a:0 "We Must suffer on then"
  
  #####################
  ### NEW DEICSIONS ###

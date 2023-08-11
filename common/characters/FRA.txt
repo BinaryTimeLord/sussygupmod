@@ -113,11 +113,11 @@ characters={
 		}
 		field_marshal={
 			traits={ trait_cautious armor_officer }
-			skill=5
-			attack_skill=5
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=5
+			skill = 6
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 5
 			legacy_id=-1
 		}
 	}
@@ -132,12 +132,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ trait_cautious thorough_planner }
 			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -152,12 +152,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ armor_officer trait_mountaineer }
 			skill=3
 			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=-1
 		}
 	}
@@ -172,7 +172,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ old_guard armor_officer }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -192,12 +192,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ old_guard panzer_leader }
 			skill=4
 			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -212,10 +212,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ old_guard cavalry_leader }
 			skill=4
-			attack_skill=4
-			defense_skill=4
+			attack_skill=2
+			defense_skill=3
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1

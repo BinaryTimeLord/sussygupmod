@@ -30,7 +30,6 @@ set_technology = {
 	basic_train = 1
 }
 
-recruit_character = AUS_miho
 recruit_character = AUS_miho_nishizumi
 recruit_character = AUS_saori_takebe
 recruit_character = AUS_hana_isuzu

@@ -4206,27 +4206,27 @@ focus_tree = {
 							}
 						}
 					}
-					add_corps_commander_role = {
-                        character = GER_oryou
-						traits = { panzer_leader infantry_officer commando }
-						skill = 3
-						attack_skill = 3
-						defense_skill = 4
-						planning_skill = 2
-						logistics_skill = 2
-					}
-					add_corps_commander_role = {
-                        character = GER_saemonza
-						traits = { panzer_leader cavalry_officer hill_fighter }
-						skill = 3
-						attack_skill = 4
-						defense_skill = 3
-						planning_skill = 3
-						logistics_skill = 2
-					}
 				}
 				add_offsite_building = { type = arms_factory level = 5 }
 				add_offsite_building = { type = industrial_complex level = 5 }
+				add_corps_commander_role = {
+					character = JAP_oryou
+					traits={ cavalry_officer }
+			        skill=4
+			        attack_skill=1
+			        defense_skill=4
+			        planning_skill=2
+			        logistics_skill=2
+				}
+				add_corps_commander_role = {
+					character = JAP_saemonza
+			        traits={ media_personality swamp_fox }
+			        skill=4
+			        attack_skill=5
+			        defense_skill=1
+			        planning_skill=3
+			        logistics_skill=6
+				}
 			}
 			event_target:WTT_current_china_leader = {
 				add_opinion_modifier = { target = GER modifier = withdrew_advisors }
@@ -13148,7 +13148,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_negotiate_alliance
-		##icon = 
+		icon = GFX_goal_anti_bullying_protocols
 		relative_position_id = GER_the_west
 		
 		x = -1
@@ -13547,7 +13547,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_free_political_prisoners
-		##icon = 
+		icon = GFX_lifting_restrictions
 		relative_position_id = GER_internal_security
 		
 		x = -1
@@ -13581,7 +13581,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rearm_garrisons
-		##icon = 
+		icon = GFX_student_brigades
 		relative_position_id = GER_internal_security
 		
 		x = 1
@@ -13629,7 +13629,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_road_building
-		##icon = 
+		icon = GFX_mega_projects
 		relative_position_id = GER_internal_security
 		
 		x = -1
@@ -13647,7 +13647,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_fund_police
-		##icon = 
+		icon = GFX_police_force
 		relative_position_id = GER_internal_security
 		
 		x = 0
@@ -13785,7 +13785,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_reach_out
-		##icon = 
+		icon = GFX_end_isolation
 		relative_position_id = GER_new_constitution
 		
 		available = {
@@ -13801,13 +13801,16 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = { ##EVENT(S)
-		
+			country_event = {
+				id = kmm.220
+				days = 1
+			}
 		}
 	}	
 	
 	focus = {
 		id = GER_protect_german_products
-		##icon = 
+		icon = GFX_tarrifs
 		relative_position_id = GER_reach_out
 		
 		x = -1
@@ -13825,7 +13828,7 @@ focus_tree = {
 	
 	focus  = {
 		id = GER_cooperative_diplomacy
-		##icon = 
+		icon = GFX_cooperative_diplomacy2
 		relative_position_id = GER_reach_out
 		
 		x = 1
@@ -13838,12 +13841,16 @@ focus_tree = {
 		
 		completion_reward = { ##ADD OPINION OF NATIONS TO US
 			add_political_power = 25
+			
+			add_opinion_modifier = { target = ENG modifier = medium_increase }
+			add_opinion_modifier = { target = FRA modifier = medium_increase }
+			add_opinion_modifier = { target = USA modifier = medium_increase }
 		}
 	}
 	
 	focus = {
 		id = GER_political_connections
-		##icon = 
+		icon = GFX_great_meeting
 		relative_position_id = GER_reach_out
 		
 		x = 3
@@ -13852,16 +13859,17 @@ focus_tree = {
 		prerequisite = { focus = GER_reach_out }
 		mutually_exclusive = {}
 		
-		cost = 4
+		cost = 1
 		
 		completion_reward = { ##REDUCE REPUBLIC DEBUFF
-		
+			add_stability = 0.05
+			add_political_power = 150
 		}
 	}
 	
 	focus = {
 		id = GER_consitutional_monarchy
-		##icon = 
+		icon = GFX_consitutional_monarchy
 		relative_position_id = GER_reach_out
 		
 		x = 0
@@ -14261,7 +14269,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		
+			remove_ideas = GER_damaged_republic_2
 			add_ideas = kmm_europe
 		}
 	}
