@@ -4772,7 +4772,7 @@ country_event = { ##KURO
 		ENG = {
 			country_event = {
 				id = kmm.227
-				dayys = 5
+				days = 5
 			}
 		}
 	}
