@@ -29,11 +29,17 @@ chihatan_politics = {
 		timeout_effect = {
 			custom_effect_tooltip = "TAMADA_VICTORY"
 			set_country_flag = cht_tamada_chosen
+			JAP = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 		
-		complete_effect  = {
+		complete_effect = {
 			custom_effect_tooltip = "FUKUDA_VICTORY"
 			set_country_flag = cht_fukuda_chosen
+			JAP = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION

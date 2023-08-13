@@ -2,7 +2,7 @@ chihatan_industry = {
 	fate_of_the_zaibatsu = {
 
 		icon = GFX_decision_ger_mefo_bills
-		days_mission_timeout = 168
+		days_mission_timeout = 274
 		is_good = no
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
