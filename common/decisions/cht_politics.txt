@@ -95,6 +95,7 @@ chihatan_politics = {
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
 		
 		available = {
+			has_country_flag = LOCKED
 			NOT = {
 				has_country_flag = cht_supported_fukuda
 				has_country_flag = cht_strengthen_government
@@ -136,6 +137,7 @@ chihatan_politics = {
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
 		
 		available = {
+			has_country_flag = LOCKED
 			NOT = {
 				has_country_flag = cht_supported_fukuda
 				has_country_flag = cht_unthinkable_option
