@@ -60,15 +60,12 @@ country_event = {
 				add_core_of = GER
 			}
 		}
-		AUS = {
-			every_unit_leader = {
-				limit = {
-					has_id = 6972
-					has_id = 6970
-				}
-				set_nationality = GER
-			}
-		}
+
+        AUS = {
+			AUS_yukari_akiyama = { set_nationality = GER }
+			AUS_erwin = { set_nationality = GER }
+		} 
+		
 		annex_country = { target = AUS transfer_troops = yes }
 		add_political_power = 75
 		set_country_flag = AUS_annexed

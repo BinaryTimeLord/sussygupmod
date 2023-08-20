@@ -103,6 +103,10 @@ country_event = {
 						OR = {
 							has_id = 1003
 							has_id = 1004
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
 						}
 					}
 					set_nationality = event_target:fascist_germany_civil_war

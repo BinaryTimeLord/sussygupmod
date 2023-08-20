@@ -2,8 +2,8 @@ spriteTypes = {
         frameAnimatedSpriteType = {
                 name = "GFX_frontend_bg"
                 texturefile = "gfx/load_1.dds"
-                noOfFrames = 8
-                animation_rate_fps = 30
+                noOfFrames = 6
+                animation_rate_fps = 24
                 looping = yes
                 play_on_show = yes
         }
