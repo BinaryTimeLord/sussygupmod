@@ -189,7 +189,7 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id=-1
+			legacy_id= 1234
 		}
 	}
 	GER_erihou={
@@ -209,7 +209,7 @@ characters={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id=-1
+			legacy_id= 4321
 		}
 	}
 
