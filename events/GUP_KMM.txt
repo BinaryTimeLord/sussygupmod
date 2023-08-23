@@ -2779,6 +2779,17 @@ country_event = {
 		}
 		complete_national_focus = GER_miho_victory
 		set_country_flag = kmm_miho_pres
+		AUS = {
+			retire_country_leader = yes
+			add_country_leader_role = {
+			character = AUS_anzu_kadotani
+            promote_leader = yes
+                country_leader = {
+                ideology = german_idealism4
+                traits = { popular_commander }
+                }
+			}
+		}
 	}
 	##option = {
 		##name = kmm.37.c
@@ -5425,7 +5436,7 @@ country_event = { ##WAR
 			FRA = {
 				declare_war_on = {
 					target = ITA
-					type = puppet
+					type = puppet_wargoal_focus
 				}
 			}
 		
@@ -5439,7 +5450,7 @@ country_event = { ##WAR
 			YUG = {
 				declare_war_on = {
 					target = ITA
-					type = puppet
+					type = puppet_wargoal_focus
 				}
 			}
 		}
@@ -5447,7 +5458,7 @@ country_event = { ##WAR
 		GER = {
 			declare_war_on = {
 					target = ITA
-					type = puppet
+					type = puppet_wargoal_focus
 				}
 		}	
 	}

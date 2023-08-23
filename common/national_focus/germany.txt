@@ -14160,7 +14160,7 @@ focus_tree = {
 			GER = {
 				declare_war_on = {
 					target = SOV
-					type = puppet
+					type = puppet_wargoal_focus
 				}
 			}
 		}

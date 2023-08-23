@@ -137,6 +137,30 @@ characters={
 				large="gfx/leaders/AUS/Portrait_AUS_Anzu.dds"
 			}
 		}
+		country_leader={
+			desc="POLITICS_ANZU_DESC"
+			ideology=german_idealism4
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ANZU_DESC"
+			ideology=german_idealism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ANZU_DESC"
+			ideology=german_idealism3
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ANZU_DESC"
+			ideology=german_idealism2
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander={
 			traits={ old_guard skilled_staffer guerilla_fighter }
 			skill=4
