@@ -5464,6 +5464,29 @@ country_event = { ##WAR
 	}
 }
 
+country_event = {
+	id = kmm.242
+	title = kmm.242.t
+	desc = kmm.242.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.241.a
+		ai_chance = {
+			base = 10
+		}
+		
+		add_stability = 0.05
+			
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
 
 
 

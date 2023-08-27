@@ -13893,7 +13893,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_repaired_republic
-		##icon = 
+		icon = GFX_republic_restored
 		relative_position_id = GER_new_constitution 
 		
 		x = -6
@@ -13924,7 +13924,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_soviet_threat
-		##icon = 
+		icon = GFX_soviet_threat
 		relative_position_id = GER_repaired_republic
 		
 		x = -4
@@ -13968,7 +13968,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_protect_baltics
-		##icon = 
+		icon = GFX_baltic_protection
 		relative_position_id = GER_soviet_threat
 		
 		x = -1
@@ -13988,7 +13988,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_protect_poland
-		##icon = 
+		icon = GFX_polish_protection
 		relative_position_id = GER_soviet_threat
 		
 		x = 1
@@ -14011,7 +14011,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rally_west
-		##icon = 
+		icon = GFX_rally_westy
 		relative_position_id = GER_soviet_threat
 		
 		x = -2
@@ -14046,7 +14046,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_military_buildup
-		##icon = 
+		icon = GFX_military_buildup
 		relative_position_id = GER_soviet_threat
 		
 		x = 0
@@ -14086,7 +14086,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_lend_lease
-		##icon = 
+		icon = GFX_finnish_support
 		relative_position_id = GER_soviet_threat
 		
 		x = 2
@@ -14145,7 +14145,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_final_showdown
-		##icon = 
+		icon = GFX_final_showdown
 		relative_position_id = GER_soviet_threat
 		
 		x = 0
@@ -14370,6 +14370,24 @@ focus_tree = {
 		x = 0
 		y = 4
 		
+		available = {
+			NOT = {
+				has_war = yes
+			}
+			
+			ITA = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			JAP = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+		
 		prerequisite = { focus = GER_eradicate_nishizumism }
 		prerequisite = { focus = GER_against_tyranny focus = GER_war_italy }
 		mutually_exclusive = {}
@@ -14377,7 +14395,10 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			country_event = {
+				id = kmm.242
+				days = 10
+			}
 		}
 	}
 	

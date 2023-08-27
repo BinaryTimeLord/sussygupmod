@@ -1,7 +1,299 @@
 spriteTypes = {
 	#KUROMORIMINE
 	#more like dumborimine B) #agreed #damn you agree!
+	
+	SpriteType = {
+		name = "GFX_final_showdown"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_final_showdown.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_final_showdown"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_final_showdown.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_final_showdown.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
 
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_final_showdown.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_finnish_support"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_finnish_support.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_finnish_support_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_finnish_support.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_finnish_support.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_finnish_support.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_military_buildup"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_military_buildup.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_military_buildup_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_military_buildup.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_military_buildup.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_military_buildup.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_rally_westy"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_rally_westy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rally_westy_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_rally_westy.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_rally_westy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_rally_westy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_polish_protection_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_polish_protection.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_polish_protection.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_polish_protection.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_baltic_protection"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_baltic_protection.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_baltic_protection_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_baltic_protection.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_baltic_protection.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_baltic_protection.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_soviet_threat"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_soviet_threat.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_soviet_threat_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_soviet_threat.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_soviet_threat.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_soviet_threat.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_republic_restored"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_republic_restored.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_republic_restored_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/GFX_republic_restored.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_republic_restored.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/GFX_republic_restored.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
 	SpriteType = {
 		name = "GFX_consitutional_monarchy"
 		texturefile = "gfx/interface/goals/Kuromorimine/GFX_consitutional_monarchy.dds"

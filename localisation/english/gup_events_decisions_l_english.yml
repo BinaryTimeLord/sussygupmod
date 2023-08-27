@@ -886,6 +886,14 @@
  kmm.240.d:0 "Anzio, realizing that resistance would only be worse for them, has agreed to our terms. Now all there is to do is divide up the land as required and move in troops to fix Anzio for the better."
  kmm.240.a:0 "At least they see reason"
  
+ kmm.241.t:0 "Anzio Denies the Ultimatum!"
+ kmm.241.d:0 "As foolish as their ruling goverment they have denied our ultimatum. This means war!"
+ kmm.241.a:0 "Today we want to march!"
+ 
+ kmm.242.t:0 "Eradication of Nishizumism"
+ kmm.242.d:0 "We’ve done it finally after many hard years of constant fighting we’ve at last saved humanity from the tyranny of Authoritarianism, millions are dead and thousands left in misery but we have ensured the evil does not continue and we can finally rest knowing we have made a brighter future for our children. \n \nKuromormine has finally cleansed ourselves of our initial sin and done away with authoritarian rule across the world let us hope our decedents will realize all that was sacrificed for their liberty."
+ kmm.242.a:0 "Peace to last 1000 years!"
+ 
  #####################
  ### NEW DEICSIONS ###
  #####################
