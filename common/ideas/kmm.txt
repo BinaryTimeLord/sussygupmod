@@ -2681,7 +2681,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = scw_intervention_republicans_focus
 
 			modifier = {
 				# Terrible Production
@@ -2706,7 +2706,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = scw_intervention_republicans_focus
 
 			modifier = {
 				# Terrible Production
@@ -2749,6 +2749,8 @@ ideas = {
 				original_tag = GER
 			}
 			
+			picture = POL_Ideology_Drift_Defence
+			
 			allowed_civil_war = {
 				has_government = democratic
 			}
@@ -2763,6 +2765,8 @@ ideas = {
 		
 		GER_fortifications = {
 			name = GER_fortifications
+			
+			picture = FRA_fortification_focus
 			
 			allowed = {
 				original_tag = GER
@@ -2790,6 +2794,8 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
+			
+			picture = generic_economic_increase
 
 			removal_cost = -1
 			
@@ -2836,6 +2842,8 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
+			
+			picture = ger_miho_armychief
 
 			removal_cost = -1
 			
@@ -2859,7 +2867,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = EST_democratic_opposition
 
 			modifier = {
 				#+5% POLITICAL POWER GAIN, 5% STABILITY
@@ -2881,7 +2889,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = service_by_requirement
 
 			modifier = {
 				resistance_damage_to_garrison = -0.05
@@ -2923,7 +2931,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = generic_fascism_banned
 
 			modifier = {
 				##IDEA: DENISHIZUMIZATION -0.05 FASCISM, +0.1 POLITICAL POWER GAIN
@@ -2944,7 +2952,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = ast_classify_aliens
 
 			modifier = {
 				##IDEA: +5% STABILITY, 15% LESS RESISTANCE GROWTH, +1% COMPLIANCE GAIN
@@ -2971,7 +2979,7 @@ ideas = {
 		}
 		
 		KMM_joint_anti_pravada_tactics = {
-			picture = ger_the_great_red_menace
+			picture = the_great_red_menace
 		
 			## NOT TOO SURE IF THIS WOULD CAUSE THE ALLIES TO NOT GET THIS
 			#allowed = {
@@ -3029,7 +3037,7 @@ ideas = {
 			name = KMM_improved_construction_methods
 			removal_cost = -1
 			
-			picture = generic_construction
+			picture = por_hydroelectric_power
 			
 			allowed = {
 				original_tag = GER
@@ -3048,7 +3056,7 @@ ideas = {
 			name = KMM_unique_kuromorimine_goods
 			removal_cost = -1
 			
-			picture = generic_construction
+			picture = generic_industrial_concern_1
 			
 			allowed = {
 				original_tag = GER
@@ -3069,7 +3077,7 @@ ideas = {
 			name = KMM_consitutional_monarchy
 			removal_cost = -1
 			
-			picture = generic_economic_increase ## Add a picture of Kuome
+			picture = ger_koume_akaboshi ## Add a picture of Kuome
 			
 			allowed = {
 				original_tag = GER
@@ -3089,6 +3097,8 @@ ideas = {
 		GER_anti_facsism = {
 			name = KMM_anti_fascism
 			removal_cost = -1
+			
+			picture = idea_generic_fascism_banned
 			
 			allowed = {
 				original_tag = GER

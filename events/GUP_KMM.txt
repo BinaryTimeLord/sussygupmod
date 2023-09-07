@@ -3872,6 +3872,10 @@ country_event = { #danzig - nakasauga
 			add_core_of = GER
 			set_state_name = "Posen"
 		}
+		807 = {
+			add_core_of = GER
+		}
+		GER = { transfer_state = 807 }
 		GER = { transfer_state = 86 }
 
 		add_timed_idea = {
@@ -5484,6 +5488,93 @@ country_event = {
 			ideology = democratic
 			popularity = 0.05
 		}
+	}
+}
+
+##SUDENTENDLAND i cant spell 
+
+country_event = {
+	id = kmm.243
+	title = kmm.243.t
+	desc = kmm.243.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = { ##YES 
+		name = kmm.243.a
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.244
+				days = 15
+			}
+		}
+
+	}
+	
+	option = { ##NO
+		name = kmm.243.b
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			country_event = {
+				id = kmm.245
+				days = 15
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = kmm.244
+	title = kmm.244.t
+	desc = kmm.244.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.244.a
+		ai_chance = {
+			base = 10
+		}
+		
+		GER = {
+			add_to_faction = CZE
+			transfer_state = 69
+			transfer_state = 74
+			give_guarantee = CZE
+		}
+	}
+}
+
+country_event = {
+	id = kmm.245
+	title = kmm.245.t
+	desc = kmm.245.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.244.a
+		ai_chance = {
+			base = 10
+		}
+		
+		declare_war_on = {
+			target = CZE
+			type = annex_everything
+		}
+		
 	}
 }
 

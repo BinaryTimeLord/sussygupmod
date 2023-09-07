@@ -13691,8 +13691,7 @@ focus_tree = {
 		
 		completion_reward = { ##MOVE A TRADE LAW UP AND CANT CHANGE IT, ADD IDEA: -5% CONSUMER GOODS AND 5% BUILD SPEED
 			add_ideas = export_focus 
-			## NEED A RULE TO PREVENT FROM CHANGING
-			add_ideas = GER_free_market2
+
 		}
 	}
 	
@@ -14168,7 +14167,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_eradicate_nishizumism
-		##icon = 
+		icon = GFX_destory_fascism
 		relative_position_id = GER_repaired_republic
 		
 		x = 5
@@ -14217,7 +14216,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_anti_fasisct_prop
-		##icon = 
+		icon = GFX_goal_anti_bullying_protocols
 		relative_position_id = GER_eradicate_nishizumism
 		
 		x = -1
@@ -14241,7 +14240,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_prepare_coups
-		##icon =
+		icon = GFX_respected_at_last
 		relative_position_id = GER_eradicate_nishizumism
 		
 		x = -2
@@ -14268,7 +14267,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_against_tyranny
-		##icon = 
+		icon = GFX_goal_a_world_of_bullies_and_haters
 		relative_position_id = GER_eradicate_nishizumism
 		
 		x = -2
@@ -14298,7 +14297,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_prepare_italian_invasion
-		##icon = 
+		icon = GFX_italian_claims
 		relative_position_id = GER_eradicate_nishizumism 
 		
 		x = 1
@@ -14322,7 +14321,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_partition_italy
-		##icon = 
+		icon = GFX_splitting_italy
 		relative_position_id = GER_eradicate_nishizumism
 		
 		x = 2
@@ -14343,7 +14342,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_war_italy
-		##icon = 
+		icon = GFX_italian_ultimatium
 		relative_position_id = GER_eradicate_nishizumism 
 		
 		x = 2
@@ -14364,7 +14363,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_peace_our_time
-		##icon = 
+		icon = GFX_goal_improve_national_spirit
 		relative_position_id = GER_eradicate_nishizumism
 		
 		x = 0
@@ -14404,7 +14403,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_unify_germans
-		##icon = 
+		icon = GFX_goal_die_favoritin
 		relative_position_id = GER_repaired_republic
 		
 		x = 0
@@ -14556,7 +14555,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_sudentendland_ask
-		##icon = 
+		icon = GFX_czech_protection
 		relative_position_id = GER_unify_germans
 		
 		x = -1
@@ -14568,13 +14567,18 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+			CZE = {
+				country_event = {
+					id = kmm.243
+					days = 10
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = GER_danzig_for_industy
-		##icon = 
+		icon = GFX_goal_buy_danzing_and_posen_using_kashiwaba_money
 		relative_position_id = GER_unify_germans
 		x = 1
 		y = 1
@@ -14585,7 +14589,12 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+			POL = {
+				country_event = {
+					id = kmm.51
+					days = 10
+				}
+			}
 		}
 	}
 	
@@ -14847,6 +14856,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_adopt_euro
+		icon = GFX_goal_adopt_euro
 		relative_position_id = GER_european_union
 		x = 0
 		y = 6
@@ -14872,6 +14882,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_open_borders
+		icon = GFX_goal_open_borders
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_adopt_euro }
 		x = -1
@@ -14894,6 +14905,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_free_movement
+		icon = GFX_goal_free_movement
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_open_borders }
 		x = -1
@@ -14917,6 +14929,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_economic_collab
+		icon = GFX_goal_economic_collab
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_adopt_euro }
 		x = 1
@@ -14948,6 +14961,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_centeral_bank
+		icon = GFX_goal_nishizumi_constitution
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_economic_collab}
 		x = 1
@@ -14976,6 +14990,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_ethics_group
+		icon = GFX_goal_healthy_wealthy_and_wise
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_free_movement}
 		prerequisite = { focus = GER_centeral_bank}
@@ -15003,6 +15018,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_centeral_parlament
+		icon = GFX_goal_centeral_parliament
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_ethics_group }
 		x = 0
@@ -15029,6 +15045,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_united_europe 
+		icon = GFX_goal_united_europe
 		relative_position_id = GER_adopt_euro
 		prerequisite = { focus = GER_centeral_parlament}
 		x = 0
