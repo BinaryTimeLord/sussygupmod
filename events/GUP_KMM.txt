@@ -553,7 +553,6 @@ country_event = { ##debuff or war no british
 			base = 5
 		}
 		add_ideas = kmm_disarmament1
-		country_lock_all_division_template = yes
 		add_ideas = kmm_great_war_debt
 		hidden_effect = {
 			set_country_flag = GER_debt_time
