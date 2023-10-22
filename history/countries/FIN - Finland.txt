@@ -645,7 +645,6 @@ country_event = { id = AAT_finland_political.02 days = 426 }
 
 
 add_ideas = {
-	sisu
 	FIN_white_guard
 	FIN_mass_ski_equipment
 }

@@ -26,9 +26,9 @@
 			factor = 4
 		}
 
-		allow_branch = {
-			has_country_flag = cht_fukuda_chosen
-		}
+		#allow_branch = {
+		#	has_country_flag = cht_fukuda_chosen
+		#}
 
 		available = {
 			custom_trigger_tooltip = {
@@ -1150,11 +1150,6 @@
 			factor = 3
 		}
 
-		allow_branch = {
-			has_dlc = "La Resistance"
-			has_country_flag = cht_fukuda_chosen
-		}
-
 		available = {
 			OR = {
 				RAJ = {
@@ -1506,10 +1501,6 @@
 
 		ai_will_do = {
 			factor = 3
-		}
-
-		allow_branch = {
-			has_country_flag = cht_wtt
 		}
 
 		select_effect = {
@@ -3329,10 +3320,6 @@
 			factor = 1
 		}
 
-		allow_branch = {
-			has_completed_focus = JAP_national_defense_state
-		}
-
 		available = {
 			has_war_with = CHI
 		}
@@ -3370,10 +3357,6 @@
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		allow_branch = {
-			has_completed_focus = JAP_national_defense_state
 		}
 
 		available = {
@@ -3418,10 +3401,6 @@
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		allow_branch = {
-			has_completed_focus = JAP_national_defense_state
 		}
 
 		available = {
@@ -3537,9 +3516,9 @@
 			factor = 3
 		}
 
-		allow_branch = {
-			has_country_flag = cht_tamada_chosen
-		}
+		#allow_branch = {
+		#	has_country_flag = cht_tamada_chosen
+		#}
 
 		available = {
 			custom_trigger_tooltip = {
@@ -3584,10 +3563,6 @@
 
 		ai_will_do = {
 			factor = 3
-		}
-
-		allow_branch = {
-			has_country_flag = cht_wtt
 		}
 
 		select_effect = {
@@ -5439,9 +5414,9 @@
 		prerequisite = {
 
 		}
-		x = 5
+		x = 9
 		y = 0
-		relative_position_id = JAP_support_the_kodoha_faction
+		relative_position_id = JAP_chihatan_armed_forces
  
 		cost = 0.2
 
@@ -5723,10 +5698,6 @@
 			has_full_control_of_state = 645
 		}
 
-		allow_branch = {
-			has_country_flag = cht_wtt
-		}
-
 		bypass = {
 
 		}
@@ -5832,10 +5803,6 @@
 			has_full_control_of_state = 645
 		}
 
-		allow_branch = {
-			has_country_flag = cht_wtt
-		}
-
 		bypass = {
 
 		}
@@ -5892,10 +5859,6 @@
 
 		available = {
 			has_completed_focus = JAP_waking_the_tiger
-		}
-
-		allow_branch = {
-			has_country_flag = cht_wtt
 		}
 
 		bypass = {
@@ -6399,10 +6362,6 @@
 		x = 0
 		y = 1
 		relative_position_id = JAP_waking_the_tiger
-
-		allow_branch = {
-			has_country_flag = cht_wtt
-		}
 
 		cost = 8
 
@@ -7225,10 +7184,6 @@
 			factor = 3
 		}
 
-		allow_branch = {
-			has_completed_focus = JAP_national_defense_state
-		}
-
 		available = {
 			has_war = yes
 			surrender_progress > 0.2
@@ -7329,11 +7284,6 @@
 		relative_position_id = JAP_strengthen_the_divine_wind
 
 		cost = 8
-
-		allow_branch = {
-			has_dlc = "La Resistance"
-			has_country_flag = cht_wtt
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -7565,7 +7515,7 @@
 		id = JAP_strategic_engineering
 		icon = GFX_goal_strategic_engineering
 
-		x = 0
+		x = 3
 		y = 0
 		relative_position_id = JAP_ikeda_section_3
 		
@@ -8141,10 +8091,6 @@
 
 		select_effect = {
 			add_timed_idea = { idea = cht_phase_investments days = 35 }
-		}
-
-		allow_branch = {
-			has_completed_focus = JAP_purge_the_kodoha_faction
 		}
 
 		available = {
