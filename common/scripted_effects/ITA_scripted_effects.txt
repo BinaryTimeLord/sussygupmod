@@ -607,6 +607,10 @@ ITA_missiolini_occupy_albania_success_effect = {
 				add_compliance = 5
 				add_resistance = -5
 			}
+			934 = { #SHKÖDER
+				add_compliance = 5
+				add_resistance = -5
+			}
 		}
 
 		custom_effect_tooltip = ITA_missiolini_occupy_albania_subject_effects
@@ -640,6 +644,18 @@ ITA_missiolini_occupy_albania_success_effect = {
 					}
 				}
 				805 = { #NORTHERN EPIRUS
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					934 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				934 = { #SHKÖDER
 					add_compliance = 5
 					add_resistance = -5
 				}
@@ -681,6 +697,10 @@ ITA_missiolini_occupy_albania_success_effect = {
 				add_compliance = 5
 				add_resistance = -5
 			}
+			934 = { #SHKÖDER
+				add_compliance = 5
+				add_resistance = -5
+			}
 		}
 
 		custom_effect_tooltip = ITA_missiolini_occupy_albania_subject_effects
@@ -714,6 +734,18 @@ ITA_missiolini_occupy_albania_success_effect = {
 					}
 				}
 				805 = { #NORTHERN EPIRUS
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					934 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				934 = { #SHKÖDER
 					add_compliance = 5
 					add_resistance = -5
 				}
@@ -4846,6 +4878,32 @@ ITA_peace_out_eth_on_startup_effect = {
 
 
 ITA_replace_designers_by_improved_version_north = {
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		every_military_industrial_organization = {
+			limit = {
+				OR = {
+					is_military_industrial_organization = ITA_fiat_organization
+					is_military_industrial_organization = ITA_crda_organization
+					is_military_industrial_organization = ITA_cantiere_oto_organization
+					is_military_industrial_organization = ITA_macchi_organization
+					is_military_industrial_organization = ITA_savoia_marchetti_organization
+					is_military_industrial_organization = ITA_caproni_organization
+					is_military_industrial_organization = ITA_piaggio_organization
+					is_military_industrial_organization = ITA_crda_cant_organization
+					is_military_industrial_organization = ITA_fiat_aviazione_organization
+					is_military_industrial_organization = ITA_beretta_organization
+					is_military_industrial_organization = ITA_lancia_organization
+					is_military_industrial_organization = ITA_breda_organization
+					is_military_industrial_organization = ITA_brescia_arsenal_organization
+				}
+			}
+			complete_mio_trait = ITA_mio_trait_new_industrialization_program
+		}
+	}
+	else = {
 	#ARMOR
 	if = {
 		limit = {
@@ -4971,7 +5029,9 @@ ITA_replace_designers_by_improved_version_north = {
 		}
 	}
 
-	#INDUSTRIAL
+	}
+
+	#INDUSTRIAL (Always regardless of AAT)
 	if = {
 		limit = {
 			has_idea = danieli
@@ -5002,47 +5062,65 @@ ITA_replace_designers_by_improved_version_north = {
 }
 
 ITA_replace_designers_by_improved_version_south = {
-	#NAVAL
 	if = {
 		limit = {
-			has_idea =  ITA_navalmeccanica
+			has_dlc = "Arms Against Tyranny"
 		}
-		swap_ideas = {
-			remove_idea = ITA_navalmeccanica
-			add_idea = ITA_navalmeccanica_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantiere_navale_di_ancona
-		}
-		swap_ideas = {
-			remove_idea = ITA_cantiere_navale_di_ancona
-			add_idea = ITA_cantiere_navale_di_ancona_improved
+		every_military_industrial_organization = {
+			limit = {
+				OR = {
+					is_military_industrial_organization = ITA_navalmeccanica_organization
+					is_military_industrial_organization = ITA_cantiere_navale_di_ancona_organization
+					is_military_industrial_organization = ITA_cantieri_navali_tosi_organization
+					is_military_industrial_organization = ITA_imam_organization
+				}
+			}
+			complete_mio_trait = ITA_mio_trait_new_industrialization_program
 		}
 	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantieri_navali_tosi
+	else = {
+		#NAVAL
+		if = {
+			limit = {
+				has_idea =  ITA_navalmeccanica
+			}
+			swap_ideas = {
+				remove_idea = ITA_navalmeccanica
+				add_idea = ITA_navalmeccanica_improved
+			}
 		}
-		swap_ideas = {
-			remove_idea = ITA_cantieri_navali_tosi
-			add_idea = ITA_cantieri_navali_tosi_improved
+		else_if = {
+			limit = {
+				has_idea = ITA_cantiere_navale_di_ancona
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantiere_navale_di_ancona
+				add_idea = ITA_cantiere_navale_di_ancona_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_cantieri_navali_tosi
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantieri_navali_tosi
+				add_idea = ITA_cantieri_navali_tosi_improved
+			}
+		}
+
+		#AIRCRAFT
+		if = {
+			limit = {
+				has_idea = ITA_imam
+			}
+			swap_ideas = {
+				remove_idea = ITA_imam
+				add_idea = ITA_imam_improved
+			}
 		}
 	}
 
-	#AIRCRAFT
-	if = {
-		limit = {
-			has_idea = ITA_imam
-		}
-		swap_ideas = {
-			remove_idea = ITA_imam
-			add_idea = ITA_imam_improved
-		}
-	}
-
-	#INDUSTRIAL
+	#INDUSTRIAL (Always regardless of AAT)
 	if = {
 		limit = {
 			has_idea = ITA_terni_industria_ed_elettricita

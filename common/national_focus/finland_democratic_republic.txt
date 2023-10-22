@@ -1,5 +1,5 @@
 focus_tree = {
-	id = finland_democratic_finland_focus
+	id = finland_democratic_finnish_focus
 	
 	country = {
 		factor = 0

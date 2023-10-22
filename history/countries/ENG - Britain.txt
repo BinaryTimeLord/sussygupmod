@@ -41,6 +41,7 @@ if = {
 			iw_large_airframe = 1
 			basic_medium_airframe = 1
 			basic_small_airframe = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"
@@ -70,6 +71,7 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -177,7 +179,7 @@ add_ideas = {
 }
 	
 
-set_convoys = 800
+set_convoys = 1000
 
 # DIPLOMACY
 if = {
@@ -310,6 +312,7 @@ if = {
 			aa_cannon_1 = 1
 			engines_3 = 1
 			range_improvements = 1
+			air_torpedoe_1 = 1
 		}
 		else = {
 			set_air_oob = "ENG_1939_air_legacy"
@@ -751,7 +754,7 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	create_equipment_variant = {
+	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
 		name = "Light Tank Mk. IV"
 		type = light_tank_chassis_1
 		parent_version = 0
@@ -792,6 +795,7 @@ if = {
 	create_equipment_variant = {
 		name = "Medium Mk. II"
 		type = medium_tank_chassis_0
+		design_team = mio:ENG_vickers_armstrong_eng_organization
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_small_cannon

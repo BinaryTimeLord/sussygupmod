@@ -128,7 +128,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1
 					air_agility = 0.05
 					reliability = 0.05
@@ -159,7 +159,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.1
 					air_agility = 0.05
 					reliability = 0.05
@@ -995,10 +995,7 @@ ideas = {
 				consumer_goods_factor = 0.025
 			}
 			equipment_bonus = {
-				fighter = {
-					build_cost_ic = -0.1
-				}
-				CAS_equipment = {
+				small_plane_airframe = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -1848,7 +1845,7 @@ ideas = {
 				always = yes
 			}
 			equipment_bonus = {
-			CAS_equipment = {
+			small_plane_airframe = {
 					instant = yes
 					air_ground_attack = -0.1 
 					build_cost_ic = 0.1
@@ -1882,17 +1879,11 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
 				instant = yes
 				air_agility = 0.1 
 				maximum_speed = 0.1
 				build_cost_ic = -0.1
-			}
-			CAS_equipment = {
-					instant = yes
-					air_ground_attack = 0.05 
-					maximum_speed = 0.1
-					build_cost_ic = -0.1
 			}
 			}
 			modifier = {
@@ -1957,7 +1948,7 @@ ideas = {
 				always = yes
 			}
 			equipment_bonus = {
-			CAS_equipment = {
+			small_plane_airframe = {
 					instant = yes
 					air_ground_attack = -0.1 
 					build_cost_ic = 0.1
@@ -1993,17 +1984,11 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
 				instant = yes
 				air_agility = 0.125 
 				maximum_speed = 0.125
 				build_cost_ic = -0.1
-			}
-			CAS_equipment = {
-					instant = yes
-					air_ground_attack = 0.1 
-					maximum_speed = 0.125
-					build_cost_ic = -0.1
 			}
 			}
 			modifier = {

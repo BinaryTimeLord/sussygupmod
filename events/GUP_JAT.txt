@@ -34,12 +34,12 @@ country_event = {
 						AND = {
 							is_historical_focus_on = yes
 							has_game_rule = {
-								rule = FIN_ai_behavior
+								rule = jat_ai_behavior
 								option = DEFAULT
 							}
 						}
 						has_game_rule = {
-							rule = FIN_ai_behavior
+							rule = jat_ai_behavior
 							option = HISTORICAL
 						}
 					}
@@ -59,28 +59,28 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = SOV_COMPROMISE
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = WAR_DICTATORSHIP
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = FASCISM
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = CIVIL_WAR
 					}
 				}
@@ -139,14 +139,14 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = SOV_COMPROMISE
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = FIGHT_THE_COMMUNISM
 					}
 				}
@@ -164,21 +164,21 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = WAR_DICTATORSHIP
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = FASCISM
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = CIVIL_WAR
 					}
 				}
@@ -333,14 +333,14 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = FASCISM
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = CIVIL_WAR
 					}
 				}
@@ -364,14 +364,14 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = WAR_DICTATORSHIP
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = FASCISM
 					}
 				}
@@ -398,14 +398,14 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = WAR_DICTATORSHIP
 					}
 				}
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = CIVIL_WAR
 					}
 				}
@@ -640,12 +640,12 @@ country_event = {
 						AND = {
 							is_historical_focus_on = yes
 							has_game_rule = {
-								rule = FIN_ai_behavior
+								rule = jat_ai_behavior
 								option = DEFAULT
 							}
 						}
 						has_game_rule = {
-							rule = FIN_ai_behavior
+							rule = jat_ai_behavior
 							option = HISTORICAL
 						}
 					}
@@ -712,7 +712,7 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = SOV_COMPROMISE
 					}
 				}
@@ -743,7 +743,7 @@ country_event = {
 				modifier = {
 					factor = 0
 					has_game_rule = {
-						rule = FIN_AI_BEHAVIOR
+						rule = jat_ai_behavior
 						option = FIGHT_THE_COMMUNISM
 					}
 				}

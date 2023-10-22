@@ -254,16 +254,11 @@ ideas = {
 			picture = generic_air_bonus
 
 			equipment_bonus = {
-				fighter_equipment  = {
+				small_plane_airframe  = {
 					air_range = 0.1
 					air_agility = 0.05
 					build_cost_ic = -0.1 instant = yes
 				}
-				CAS_equipment = {
-					air_range = 0.1
-					air_agility = 0.05
-					build_cost_ic = -0.1 instant = yes
-   				}
 			}
 		}
 
@@ -848,12 +843,12 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			equipment_bonus = {
-				fighter_equipment  = {
+				small_plane_airframe  = {
 					air_range = 0.1
 					air_attack = 0.05
 					build_cost_ic = -0.12 instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					air_range = 0.1
 					air_attack = 0.05
 					build_cost_ic = -0.12 instant = yes
@@ -880,12 +875,12 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				fighter_equipment  = {
+				small_plane_airframe  = {
 					air_range = 0.15
 					air_attack = 0.1
 					build_cost_ic = -0.15 instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					air_range = 0.15
 					air_attack = 0.1
 					build_cost_ic = -0.15 instant = yes

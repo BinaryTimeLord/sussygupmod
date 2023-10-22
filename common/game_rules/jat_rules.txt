@@ -1,5 +1,5 @@
-FIN_ai_behavior = {
-	name = "FIN_AI_BEHAVIOR"
+jat_ai_behavior = {
+	name = "JAT_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	
 	default = {

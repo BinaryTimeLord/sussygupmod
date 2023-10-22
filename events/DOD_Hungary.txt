@@ -473,6 +473,12 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
+				has_country_leader = {
+					character = SWE_per_albin_hansson 
+				}
+				factor = 0.05
+			}
+			modifier = {
 				HUN = {
 					has_war_with = DEN
 				}
@@ -858,9 +864,20 @@ country_event = {
 
 	option = { #cool
 		name = DOD_hungary.31.a
-		swap_ideas = {
-			remove_idea = HUN_treaty_of_triannon
-			add_idea = Hun_treaty_of_triannon_2
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			swap_ideas = {
+				remove_idea = HUN_treaty_of_triannon_aat
+				add_idea = Hun_treaty_of_triannon_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = HUN_treaty_of_triannon
+				add_idea = Hun_treaty_of_triannon_2
+			}
 		}
 	}
 
@@ -1128,7 +1145,15 @@ country_event = {
 
 	option = { #Excellent!
 		name = DOD_hungary.42.a
-		remove_ideas = HUN_treaty_of_triannon
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			remove_ideas = HUN_treaty_of_triannon_aat
+		}
+		else = {
+			remove_ideas = HUN_treaty_of_triannon
+		}
 		news_event = { id = news.298 days = 1 }
 	}
 	
@@ -4970,11 +4995,27 @@ country_event = {
 	option = {# 
 		name = DOD_hungary.142.a
 		if = {
-			limit = { has_idea = HUN_treaty_of_triannon }
-			swap_ideas = {
-				remove_idea = HUN_treaty_of_triannon
-				add_idea = HUN_treaty_of_triannon_3
+			limit = { 
+				OR = {
+					has_idea = HUN_treaty_of_triannon 
+					has_idea = HUN_treaty_of_triannon_aat
+				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon_aat
+					add_idea = Hun_treaty_of_triannon_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon
+					add_idea = Hun_treaty_of_triannon_3
+			}
+		}
 		}
 		if = {
 			limit = { has_idea = HUN_treaty_of_triannon_2 }
@@ -5240,7 +5281,15 @@ country_event = {
 			factor = 80
 		}
 		add_threat = 5
-		remove_ideas = HUN_treaty_of_triannon
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			remove_ideas = HUN_treaty_of_triannon_aat
+		}
+		else = {
+			remove_ideas = HUN_treaty_of_triannon
+		}
 	}
 
 }
@@ -6708,6 +6757,10 @@ country_event = {
 	picture = GFX_report_event_fighters
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		HUN = { set_variable = { fighter_buy_amount = 200 } }
+	}
 
 	option = {# certainly
 		name = DOD_hungary.153.a
@@ -6767,7 +6820,6 @@ country_event = {
 		}
 	}
 		else = {
-			HUN = { set_variable = { fighter_buy_amount = 200 } }
 			FROM = { save_event_target_as = license_target }
 			if = {
 				limit = {
@@ -8743,6 +8795,7 @@ country_event = {
 		tag = HUN
 		OR = {
 			has_idea = HUN_treaty_of_triannon
+			has_idea = HUN_treaty_of_triannon_aat
 			has_idea = HUN_treaty_of_triannon_2
 		}
 		AND = {
@@ -8764,6 +8817,10 @@ country_event = {
 
 	option = {# Great
 		name = DOD_hungary.170.a
+		if = {
+			limit = { has_idea = HUN_treaty_of_triannon_aat }
+			remove_ideas = HUN_treaty_of_triannon_aat
+		}
 		if = {
 			limit = { has_idea = HUN_treaty_of_triannon }
 			remove_ideas = HUN_treaty_of_triannon

@@ -299,14 +299,16 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = backed_down_netherlands_kaiser
 		}
-		create_country_leader = {
-			name = "Wilhelm III"
-			desc = "POLITICS_WILHELM_III_DESC"
-			picture = GFX_portrait_ger_wilhelm_iii
-			expire = "1965.1.1"
-			ideology = despotism
-			traits = {
-				popular_figurehead2
+		GER_wilhelm_iii = {
+			add_country_leader_role = {
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					popular_figurehead2
+				}
+			}
+			promote_leader = yes
 			}
 		}
 		custom_effect_tooltip = wtt_germany.5_tt
