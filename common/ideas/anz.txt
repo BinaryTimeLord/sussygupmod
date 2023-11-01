@@ -1,0 +1,559 @@
+ideas = {
+	country = {
+		##############################################
+		############ NEW DEFAULT IDEAS ###############
+		##############################################
+
+
+		##############################################
+		############# NEW ARMY IDEAS #################
+		##############################################
+
+		### NAVY
+		pride_of_the_regia_marina = {
+
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				experience_gain_navy_factor = 0.3
+				naval_accidents_chance = -0.1
+				naval_coordination = 0.25
+				naval_damage_factor = 0.1
+				naval_detection = 0.2
+				naval_hit_chance = 0.15
+				navy_capital_ship_attack_factor = 0.15
+				naval_torpedo_screen_penetration_factor = 0.1
+				navy_visibility = -0.05
+				repair_speed_factor = -0.15
+				sub_retreat_speed = -0.1
+			}
+
+		}
+
+		### Army
+
+		italian_trench_warfare = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.25
+				max_planning_factor = 0.1
+				recon_factor_while_entrenched = 0.25
+				planning_speed = -0.1
+			}
+		}
+
+		italian_firepower = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
+				army_armor_attack_factor = -0.1
+				army_armor_defence_factor = -0.1
+				mechanized_attack_factor = -0.1
+				mechanized_defence_factor = -0.1
+				army_speed_factor = 0.2
+				org_loss_when_moving = 0.05
+				army_morale_factor = 0.1
+				attrition = -0.05
+				cas_damage_reduction = 0.2
+				air_superiority_bonus_in_combat = 0.1
+			}
+		}
+
+		italian_tank_warfare = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				army_infantry_attack_factor = -0.1
+				army_infantry_defence_factor = -0.1
+				army_artillery_attack_factor = -0.1
+				army_artillery_defence_factor = -0.1
+				army_armor_attack_factor = 0.25
+				army_armor_defence_factor = 0.25
+				army_armor_speed_factor = 0.25
+				mechanized_attack_factor = 0.25
+				mechanized_defence_factor = 0.25
+				army_speed_factor = 0.25
+				army_fuel_consumption_factor = -0.1
+				org_loss_when_moving = -0.1
+				breakthrough_factor = 0.1
+				dig_in_speed_factor = -0.15
+			}
+		}
+
+		pride_of_the_regio_esercito = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				max_surrender_limit_offset = 0.15
+				war_support_factor = 0.1
+				conscription = 0.05
+				experience_loss_factor = -0.1
+				max_command_power = 50
+				army_leader_start_level = 2
+				military_leader_cost_factor = -0.1
+				land_doctrine_cost_factor = -0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				training_time_factor = 0.1
+				special_forces_cap = 0.1
+				terrain_penalty_reduction = 0.05
+			}
+		}
+
+		### Air Force
+
+		local_air_production = {
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+		foreign_ideas = {
+			
+			removal_cost = -1
+
+			modifier = {
+				license_air_purchase_cost = -0.5
+			}
+
+		}
+
+		pride_of_the_regia_aeronautica = {
+
+			removal_cost = -1
+
+			modifier = {
+				air_accidents_factor = -0.1
+				air_ace_generation_chance_factor = 0.05
+				air_air_superiority_attack_factor = 0.25
+				air_air_superiority_defence_factor = 0.25
+				air_air_superiority_agility_factor = 0.25
+				air_close_air_support_attack_factor = 0.25
+				air_close_air_support_defence_factor = 0.25
+				air_close_air_support_agility_factor = 0.25
+				air_fuel_consumption_factor = 0.1
+			}
+
+		}
+
+		##############################################
+		########### NEW ECONOMIC IDEAS ###############
+		##############################################
+
+		build_italy_better = {
+
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+
+		}
+
+		expansionist_economic_policy = {
+
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+
+		concentrationist_economic_policy = {
+
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		##############################################
+		########## NEW DEMOCRATIC IDEAS ##############
+		##############################################
+
+		ethiopian_independence = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				autonomy_gain = 1
+				democratic_drift = 0.1
+			}
+		}
+
+		new_italian_republic = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.15
+				drift_defence_factor = 0.3
+				defensive_war_stability_factor = 0.2
+				surrender_limit = 0.1
+				max_command_power = 50
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				training_time_factor = 0.3
+				generate_wargoal_tension = 0.5
+				conscription_factor = -0.05
+			}
+		}
+
+		##############################################
+		########### NEW COMMUNIST IDEAS ##############
+		##############################################
+
+		workers_strikes = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+				communism_drift = 0.1
+			}
+		}
+
+		stalinism = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				agency_upgrade_time = -0.2
+				civilian_intel_to_others = -25
+				airforce_intel_to_others = -25
+				navy_intel_to_others = -25
+				new_operative_slot_bonus = 1
+				enemy_operative_capture_chance_factor = 0.25
+
+			}
+		}
+
+		mediterranean_integration = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				political_power_gain = -0.3
+				subjects_autonomy_gain = -0.5
+				autonomy_gain_global_factor = -0.5
+				autonomy_gain_trade_factor = -0.25
+				autonomy_gain_warscore_factor = -0.25
+				enemy_operative_detection_chance = 0.25
+			}
+
+		}
+
+		mediterranean_union = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				local_resources_factor = 0.1
+				political_power_factor = 0.15
+				drift_defence_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = -0.1
+				conscription = 0.05
+				min_export = -0.10
+				trade_opinion_factor = -0.15
+			}
+
+		}
+
+		##############################################
+		########## NEW MONARCHIST IDEAS ##############
+		##############################################
+
+		italian_monarchist_sentiment = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				neutrality_drift = 0.1
+				neutrality_acceptance = 85
+				stability_weekly = 0.005
+			}
+		}
+
+		kings_economy = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				economy_cost_factor = -0.2
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+
+		kings_army = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				conscription = 0.02
+				resistance_decay_on_our_occupied_states = -0.1
+				surrender_limit = 0.1
+				land_doctrine_cost_factor = -0.1
+				air_doctrine_cost_factor = -0.1
+				naval_doctrine_cost_factor = -0.1
+			}
+		}
+
+		albanian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = ALB
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		bulgarian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+
+		}
+		greek_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		hungarian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		romanian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		turkish_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		yugoslavian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		french_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		benelux_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		british_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		iberian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = POR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		arabian_conquest = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			targeted_modifier = {
+				tag = PER
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = IRQ
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+
+		##############################################
+		############# NEW SCHIZO IDEAS ###############
+		##############################################
+
+		mussolinis_paranoia = {
+			allowed = {
+				original_tag = "ITA"
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_gain = -0.3
+				command_power_gain = -0.2
+				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				communism_acceptance = -50
+				democratic_acceptance = -50
+				fascism_acceptance = -50
+				neutrality_acceptance = -50
+				disabled_ideas = 1
+			}
+		}
+
+		mussolinism = {
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			modifier = {
+				communism_acceptance = -100
+				democratic_acceptance = -100
+				fascism_acceptance = -100
+				neutrality_acceptance = -100
+				join_faction_tension = 10
+				justify_war_goal_time = -0.75
+				surrender_limit = 0.5
+				annex_cost_factor = -0.7
+				puppet_cost_factor = 0.7
+				war_support_weekly = 0.01
+				compliance_growth_on_our_occupied_states = -0.3
+				resistance_growth_on_our_occupied_states = -0.3
+				required_garrison_factor = -0.3
+				conscription = 0.2
+				mobilization_laws_cost_factor = 1.0
+				offensive_war_stability_factor = 0.5
+			}
+		}
+
+	}
+}

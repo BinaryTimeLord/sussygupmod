@@ -132,64 +132,22 @@ bookmarks = {
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
 				vittorio_emanuele
-				ITA_iri_fake_ns
+				vittoria_mutilata
 				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_to_live_as_a_lion
-				ITA_a_colonial_empire
-                        }
+				ITA_return_of_the_republic
+				ITA_the_workers_revolution
+				ITA_rebuild_the_empire
                 }
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			available = { NOT = { OR = { has_dlc = "Man the Guns" has_dlc = "Waking the Tiger" } } }
-			ideology = fascism
-			ideas = {
-				JAP_militarism
-			}	
-			focuses = {
-				JAP_purge_the_kodoha_faction
-				JAP_waking_the_tiger
-				JAP_support_the_kodoha_faction
-			}			
-		}
+            }
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Man the Guns" NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
+				state_shintoism
+				JAP_zaibatsus
 				JAP_militarism
-				MTG_naval_treaty_adherent
-			}	
-			focuses = {
-				JAP_purge_the_kodoha_faction
-				JAP_waking_the_tiger
-				JAP_support_the_kodoha_faction
-			}			
-		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" NOT = { has_dlc = "Man the Guns" } }
-			ideas = {
-				JAP_militarism
-				JAP_interservice_rivalry_balanced
-			}	
-			focuses = {
-				JAP_purge_the_kodoha_faction
-				JAP_waking_the_tiger
-				JAP_support_the_kodoha_faction
-			}			
-		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { AND = { has_dlc = "Waking the Tiger" has_dlc = "Man the Guns" } }
-			ideas = {
-				JAP_militarism
-				JAP_interservice_rivalry_balanced
-				MTG_naval_treaty_adherent
 			}	
 			focuses = {
 				JAP_purge_the_kodoha_faction
@@ -680,17 +638,34 @@ bookmarks = {
 		}
 		FIN={
 			minor = yes
-			history = "FINLAND_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = FIN_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = {  NOT = { has_dlc = "Arms Against Tyranny" } }
 			ideas = {
 				sisu
 				FIN_white_guard
 				FIN_mass_ski_equipment
 			}
 			focuses = {
-				FIN_white_snipers
-				FIN_flames_of_revolution
-				FIN_germany
+				FIN_eastern_question
+				FIN_war_dictatorship
+				FIN_New_Finland
+			}
+		}
+		FIN={
+			minor = yes
+			history = FIN_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				FIN_sisu_2
+				FIN_white_guard
+				FIN_mass_ski_equipment
+			}
+			focuses = {
+				FIN_red_finland
+				FIN_winter_warfare
+				FIN_greater_finland
 			}
 		}
 		SWE={

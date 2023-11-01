@@ -321,6 +321,10 @@ if = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	#From decisions targetting fascists
+	FIN_mika = {
+		set_character_flag = FIN_anti_communist_character_flag
+		set_character_flag = FIN_anti_fascist_character_flag		
+	}
 	FIN_vilho_annala = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
@@ -456,18 +460,15 @@ if = {
 
 set_convoys = 5
 
-add_ideas = {
-	limited_conscription
-}
-
 1939.1.1 = {
 	add_political_power = 1198
 	add_command_power = 100
 	
-	#generic focuses
-	complete_national_focus = FIN_protect_democraty
-	complete_national_focus = FIN_eastern_question
+	### JATKOSOTA FOCUS TREE###
+	complete_national_focus = FIN_strengten_regime
+	complete_national_focus = FIN_war_dictatorship
 	complete_national_focus = FIN_red_menace
+	complete_national_focus = FIN_finnish_neutrality	
 	complete_national_focus = FIN_equipment_reform
 	complete_national_focus = FIN_continue_war_preparation
 	complete_national_focus = FIN_protection
@@ -568,6 +569,38 @@ add_ideas = {
 	# These templates would otherwise not be unlocked
 	load_oob = "unlock_motorized"
 	load_oob = "unlock_tanks_mot"
+	
+	### FOCUS TREE ###
+	#1936
+	complete_national_focus = FIN_finnish_neutrality
+	complete_national_focus = FIN_enhance_southern_infrastructure
+	unlock_national_focus = FIN_industrial_development #Timed idea should be gone
+	unlock_national_focus = FIN_vaisala_radiosonde_tests #35 #tech bonus should be consumed
+	complete_national_focus = FIN_increase_military_budget #35
+	complete_national_focus = FIN_suomen_maavoimat
+
+	#1937
+	complete_national_focus = FIN_reach_out_to_scandinavia #35
+	complete_national_focus = FIN_moderate_politics #35
+	complete_national_focus = FIN_mannerheim_line
+	complete_national_focus = FIN_national_unity
+	complete_national_focus = FIN_outokumpu_for_defence_industry
+	complete_national_focus = FIN_industrial_upgrade_in_harjavalta #35
+	complete_national_focus = FIN_janiskoski_power_plant #35 (1938 historically)
+
+	#1938
+	complete_national_focus = FIN_political_unity
+	complete_national_focus = FIN_railways_and_infrastructure
+	complete_national_focus = FIN_repurpose_small_industries
+	complete_national_focus = FIN_extra_refresher_exercises # (ASAP - gated behind WT)
+	complete_national_focus = FIN_weapon_caches #35 (ASAP - gated behind WT)
+	complete_national_focus = FIN_the_cold_front #35
+	
+	#1939 (Nov -> Winter War)
+	complete_national_focus = FIN_defense_in_depth
+	complete_national_focus = FIN_jaeger_movement
+	complete_national_focus = FIN_salvaged_and_retooled
+	complete_national_focus = FIN_motti_tactics #35
 
 	# FOCUS ADJUSTMENTS
 
@@ -623,10 +656,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 53
-	fascism = 10
-	communism = 10
-	neutrality = 27
+	democratic = 15
+	fascism = 19
+	communism = 1
+	neutrality = 65
 }
 add_stability = -0.1
 
@@ -641,8 +674,13 @@ country_event = { id = AAT_finland_political.02 days = 426 }
 		election_frequency = 72
 		elections_allowed = yes
 	}
+	set_popularities = {
+		democratic = 4
+		fascism = 15
+		communism = 1
+		neutrality = 80
+	}
 }
-
 
 add_ideas = {
 	FIN_white_guard

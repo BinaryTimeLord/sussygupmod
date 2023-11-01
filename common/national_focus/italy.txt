@@ -29,6 +29,7 @@ focus_tree = {
 				tag = RSI
 				tag = RDS
 			}
+			has_global_flag = ITA_use_DLC_tree
 		}
 	}
 	

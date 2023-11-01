@@ -40,6 +40,7 @@ German_alternate_kaiser = {
 		GER_kdf_wagen
 		GER_extra_tech_slot
 		GER_autobahn
+		GER_swedish_trade_agreement
 		GER_bundesrat
 		GER_german_war_economy
 		GER_brain_drain

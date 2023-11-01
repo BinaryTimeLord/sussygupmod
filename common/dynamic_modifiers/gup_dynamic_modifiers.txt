@@ -1,0 +1,22 @@
+incompetent_army = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_incompetent_army
+
+	command_power_gain = ITA.ITA_army_command_power
+	land_reinforce_rate = ITA.ITA_army_reinforce_rate
+	army_leader_cost_factor = ITA.ITA_army_leader_cost
+	army_attack_factor = ITA.ITA_army_attack
+	army_defence_factor = ITA.ITA_army_defence
+	army_org_factor = ITA.ITA_army_org
+	experience_gain_army_unit_factor = ITA.ITA_army_xp_gain
+	planning_speed = ITA.ITA_army_planning
+	convoy_escort_efficiency = ITA.ITA_navy_escort_eff
+	critical_receive_chance = ITA.ITA_navy_crit_chance
+	naval_coordination = ITA.ITA_navy_coor
+	naval_speed_factor = ITA.ITA_navy_speed
+	air_attack_factor = ITA.ITA_air_attack
+	air_defence_factor = ITA.ITA_air_defence
+	air_agility_factor = ITA.ITA_air_agg
+}

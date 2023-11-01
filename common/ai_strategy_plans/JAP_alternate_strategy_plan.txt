@@ -1,3 +1,56 @@
+JAP_manchukuo_player_plan = {
+	name = "Japan Plan for Player manchukuo"
+	desc = "Build Up manchukuo"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		is_historical_focus_on = no
+		MAN = {
+			is_ai = no
+		}
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = DEFAULT
+		}
+	}
+	abort = {
+		MAN = {
+			NOT = { is_subject_of = JAP }
+			NOT = { is_in_faction_with = JAP }
+		}
+	}
+
+	focus_factors = {
+		JAP_the_manchurian_project = 5
+		JAP_expand_manchurian_railways = 5
+		JAP_light_industry_development = 5
+		JAP_heavy_industry_development = 5
+		JAP_expand_the_showa_steel_works = 5
+		JAP_japanese_settlement = 5
+		JAP_build_up_the_manchurian_army = 5
+		JAP_create_a_manchurian_imperial_air_force = 5
+	}
+
+	ai_strategy = {
+		type = support
+		id = "MAN"			
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
 JAP_manchukuo_player_historical_plan = {
 	name = "Historical Japan Plan for Player manchukuo"
 	desc = "Build up manchukuo to help out, otherwise historical"
@@ -123,6 +176,72 @@ JAP_manchukuo_player_historical_plan = {
 	}
 
 }
+JAP_alternate_plan_communist = {
+	name = "Communist Japan Plan"
+	desc = "A red sun rises"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		OR = {
+			has_country_flag = JAP_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		JAP_the_unthinkable_option
+		JAP_approach_the_young_officers
+		JAP_exchange_the_exiles
+		JAP_open_up_the_universities
+		JAP_army_expansion_law
+		JAP_cast_the_die
+		JAP_nationalize_the_zaibatsus
+		JAP_red_brigades
+		JAP_public_works
+		JAP_the_fate_of_the_imperial_family
+		JAP_reeducation_campaign
+		JAP_rebuild_the_civil_service
+		JAP_people_owned_mines
+		JAP_small_arms_modernization
+		JAP_army_expansion
+		JAP_supremacy_of_technology
+		JAP_fighter_modernization
+		JAP_agility_focus
+		JAP_new_naval_estimates
+		JAP_communist_volunteers
+		JAP_tokyo_aluminum_plant
+		JAP_carrier_warfare_experiments
+		JAP_first_air_fleet
+		JAP_the_zero
+		JAP_unified_fighter_development
+		JAP_expand_the_snlf
+		JAP_finish_the_fight
+		JAP_asian_communist_solidarity
+		JAP_cruiser_modernization
+		JAP_long_lance_torpedoes
+		JAP_torpedo_cruisers
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
 JAP_alternate_plan_strike_north = {
 	name = "Neutrality Japan Plan"
 	desc = "Japan pushes north"
@@ -211,6 +330,72 @@ JAP_alternate_plan_strike_north = {
 		JAP_technological_exchange
 		JAP_preemptive_war
 		###FROM HERE ON IN, CHI-HA-TAN WILL EITHER RISE OR FALL!
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+JAP_alternate_plan_democratic = {
+	name = "Democracy Japan Plan"
+	desc = "Japan goes democratic"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		OR = {
+			has_country_flag = JAP_AI_RANDOM_DEMOCRATIC
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = DEMOCRATIC
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		JAP_strengthen_civilian_government
+		JAP_research_spending
+		JAP_ally_with_the_zaibatsus
+		JAP_purge_the_militarists
+		JAP_pre_emptive_coup
+		#1937
+		JAP_the_showa_constitution
+		JAP_army_expansion_law
+		JAP_new_naval_estimates
+		JAP_rekindle_the_old_alliance
+		JAP_west_pacific_treaty_organization #backup if Britain non-democratic
+		JAP_cruiser_modernization
+		#1938
+		JAP_carrier_warfare_experiments
+		JAP_small_arms_modernization
+		JAP_supremacy_of_technology
+		JAP_first_air_fleet
+		JAP_fighter_modernization
+		#1939
+		JAP_range_focus
+		JAP_bomber_modernization
+		JAP_strategic_bomber_effort
+		JAP_pacific_guardian
+		JAP_the_korean_question
+		#1940
+		JAP_modern_artillery
+		JAP_armored_divisions
+		JAP_liberate_manchuria
+		JAP_anti_communist_bulwark
+		JAP_anti_communist_volunteers
+		#1941
+		JAP_ultimate_deterrence
+		JAP_modern_escorts
 	}
 
 	

@@ -466,6 +466,29 @@ if = {
 
 1939.1.1 = {
 
+	### ANZIO FOCUS TREE ###
+	unlock_national_focus = ITA_support_the_nationalists
+	complete_national_focus = ITA_the_sovereign_question
+	complete_national_focus = ITA_mussolinis_cult_of_personality
+	complete_national_focus = ITA_bulgaria_friend
+	complete_national_focus = ITA_slovenia_dalmatia_claims
+	complete_national_focus = ITA_albania_war_goal
+	complete_national_focus = ITA_army_incompetence
+	complete_national_focus = ITA_army_reform
+	complete_national_focus = ITA_regia_aeronautica
+	complete_national_focus = ITA_regia_marina
+	complete_national_focus = ITA_regio_esercito
+	complete_national_focus = ITA_build_italy_better
+	complete_national_focus = ITA_military_focus
+	complete_national_focus = ITA_civilian_focus
+	complete_national_focus = ITA_expand_local_industry
+	complete_national_focus = ITA_expand_africa
+	complete_national_focus = ITA_italian_bright_minds
+	complete_national_focus = ITA_arms_cache_in_the_alps
+	complete_national_focus = ITA_prepare_for_war
+	complete_national_focus = ITA_pact_of_steel
+
+
 	add_political_power = 1198
 	add_command_power = 100
 	
@@ -1703,4 +1726,53 @@ if = {
 			icon = "GFX_ITA_basic_medium_tank_medium"
 		}
 	}
+}
+
+###############################################
+########### NEW ITALIAN VARIABLES #############
+###############################################
+set_variable = {
+	ITA_army_command_power = -0.1
+}
+set_variable = {
+	ITA_army_reinforce_rate = -0.1
+}
+set_variable = {
+	ITA_army_leader_cost = 0.25
+}
+set_variable = {
+	ITA_army_attack = -0.1
+}
+set_variable = {
+	ITA_army_defence = -0.1
+}
+set_variable = {
+	ITA_army_org = -0.1
+}
+set_variable = {
+	ITA_army_xp_gain = -0.05
+}
+set_variable = {
+	ITA_army_planning = -0.15
+}
+set_variable = {
+	ITA_navy_escort_eff = -0.1
+}
+set_variable = {
+	ITA_navy_crit_chance = 0.05
+}
+set_variable = {
+	ITA_navy_coor = -0.1
+}
+set_variable = {
+	ITA_navy_speed = -0.1
+}
+set_variable = {
+	ITA_air_attack = -0.1
+}
+set_variable = {
+	ITA_air_defence = -0.1
+}
+set_variable = {
+	ITA_air_agg = -0.1
 }

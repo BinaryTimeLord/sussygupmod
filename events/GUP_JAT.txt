@@ -1,4 +1,3 @@
-
 add_namespace = jat
 
 country_event = {
@@ -13,6 +12,7 @@ country_event = {
 		tag = FIN
 		date > 1936.3.1
 		date < 1938.1.1
+		NOT = { has_global_flag = FIN_use_DLC_tree }
 	}
 
 	mean_time_to_happen = {
@@ -810,3 +810,1442 @@ country_event = {
 		}
 }
 
+country_event = {
+	id = jat.23
+	title = jat.23.t
+	desc = jat.23.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Accept 
+		name = jat.23.a
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		add_to_faction = FIN
+		FIN = { country_event = { id = jat.24 hours = 6 } }
+		
+	}
+	
+	
+	option = { #Decline 
+		name = jat.23.b
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		FIN = { country_event = { id = jat.25 hours = 6 } }
+		FIN = { add_opinion_modifier = { target = ROOT modifier = FIN_outranged } }
+	}
+}
+
+country_event = {
+	id = jat.24
+	title = jat.24.t
+	desc = jat.24.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.24.a
+		}
+}
+
+country_event = {
+	id = jat.25
+	title = jat.25.t
+	desc = jat.25.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.25.a
+		}
+}
+
+country_event = {
+	id = jat.26
+	title = jat.26.t
+	desc = jat.26.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Accept 
+		name = jat.26.a
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+		    limit = {
+			    FIN = { is_faction_leader = yes }
+			}
+			FIN = { add_to_faction = SWE }
+		}
+		
+		if = {
+		    limit = {
+			    FIN = { is_in_faction = no }
+			}
+			create_faction = FIN_nordic_pact
+		    add_to_faction = FIN
+		}
+		FIN = { country_event = { id = jat.24 hours = 6 } }
+		
+		hidden_effect = {
+			FROM = { set_country_flag = alliance_finland@ROOT }
+		}
+		
+	}
+	
+	
+	option = { #Decline 
+		name = jat.26.b
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_to_faction = FIN
+		FIN = { country_event = { id = jat.25 hours = 6 } }
+		
+		hidden_effect = {
+			FROM = { set_country_flag = alliance_finland@ROOT }
+		}
+		FIN = { add_opinion_modifier = { target = ROOT modifier = FIN_outranged } }
+		
+	}
+}
+
+country_event = {
+	id = jat.27
+	title = jat.27.t
+	desc = jat.27.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+		option = { 
+			name = jat.27.a
+			
+			ai_chance = {
+				factor = 95
+		    }
+			
+			FROM = { add_to_faction = ROOT }
+			FIN = { country_event = { id = jat.28 hours = 6 } }
+			
+			hidden_effect = {
+			    FIN = { add_ideas = FIN_Ally }
+				ROOT = { add_ideas = FIN_Ally }
+			}
+		}
+		
+		option = { 
+			name = jat.27.b
+			
+			ai_chance = {
+				factor = 5
+		    }
+			
+			FIN = { country_event = { id = jat.29 hours = 6 } }
+		}
+}
+
+country_event = {
+	id = jat.28
+	title = jat.28.t
+	desc = jat.28.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.28.a
+		}
+}
+
+country_event = {
+	id = jat.29
+	title = jat.29.t
+	desc = jat.29.7.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+		option = {  
+			name = jat.29.a
+		} 
+}
+
+country_event = {
+	id = jat.30
+	title = jat.30.t
+	desc = jat.30.d
+	picture = GFX_report_event_stalin_propaganda
+	
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		tag = SOV
+		FROM = { tag = FIN }
+		NOT = { has_country_flag = FIN_soviet_leningrad }
+		146 = {
+			is_claimed_by = SOV
+			is_owned_by = FIN
+		}
+	}
+	
+	immediate = { set_country_flag = FIN_soviet_leningrad } 
+	
+	option = { 
+		name = jat.30.a
+		FIN = { country_event = { days = 2 id = jat.31 } }
+		trigger = {
+		    SOV = { 
+			    NOT = { has_country_flag = FIN_SOV_refuse_to_compromise }
+			}
+		}
+		
+		ai_chance = {
+			factor = 80
+		}
+	} 
+	
+	option = {
+		name = jat.30.b
+		FIN = { country_event = { days = 2 id = jat.34 } }
+		trigger = {
+		    FIN = { 
+			    NOT = { has_country_flag = FIN_SOV_compromise }
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = FIN_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = FIN_ai_behavior
+						option = HISTORICAL
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = SOV_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = HISTORICAL
+					}
+				}
+			}
+		}
+	} 
+}
+
+country_event = {
+	id = jat.31
+	title = jat.31.t
+	desc = jat.31.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jat.31.a
+		SOV = { country_event = { days = 2 id = jat.32 } }
+		
+		SOV = {
+			effect_tooltip = {
+				remove_state_claim = 146
+			}
+			add_opinion_modifier = { target = FIN modifier = FIN_SOV_accept }
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = FIN_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = FIN_ai_behavior
+						option = HISTORICAL
+					}
+				}
+			}
+		}
+	} 
+	
+	option = { 
+		name = jat.31.b
+		SOV = { country_event = { days = 2 id = jat.33 } }
+		SOV = { 
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = FIN
+				}
+			}
+			add_opinion_modifier = { target = FIN modifier = FIN_SOV_decline }
+		}
+		trigger = {
+		    FIN = { 
+			    NOT = { has_country_flag = FIN_SOV_compromise }
+			}
+		}
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.05
+				has_completed_focus = FIN_germany_alliance
+			}
+			modifier = {
+			    factor = 0.2
+			    has_country_leader = {
+					name = "Mika"
+					ruling_only = yes
+				}
+			}
+		}
+	} 
+}
+
+country_event = {
+	id = jat.32
+	title = jat.32.t
+	desc = jat.32.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.32.a
+		
+		SOV = {
+			remove_state_claim = 146
+		}
+		
+		hidden_effect = {
+			SOV = {
+				country_event = { days = 1 id = news.13 }
+			}
+			SOV = {
+				remove_state_claim = 146
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.13 }
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = jat.33
+	title = jat.33.t
+	desc = jat.33.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.33.a
+		
+		create_wargoal = {
+			type = take_state
+			target = FIN
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.12 }
+		}
+	}
+}
+
+country_event = {
+	id = jat.34
+	title = jat.34.t
+	desc = jat.34.d
+	picture = GFX_report_event_polish_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jat.34.a
+		SOV = { country_event = { days = 2 id = jat.35 } }
+		
+		SOV = {
+			effect_tooltip = {
+				transfer_state = 146
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = FIN_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = FIN_ai_behavior
+						option = HISTORICAL
+					}
+				}
+			}
+		}
+	} 
+	
+	option = { 
+		name = jat.34.b
+		SOV = { country_event = { days = 2 id = jat.33 } }
+		SOV = { 
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = FIN
+				}
+			}
+			add_opinion_modifier = { target = FIN modifier = FIN_SOV_decline }
+		}
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.05
+				has_completed_focus = FIN_germany_alliance
+			}
+		}
+	} 
+}
+
+country_event = {
+	id = jat.35
+	title = jat.35.t
+	desc = jat.35.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jat.35.a
+		
+		SOV = {
+			transfer_state = 146
+		}
+		
+		hidden_effect = {
+			SOV = {
+				country_event = { days = 1 id = news.13 }
+			}
+			
+			SOV = {
+				remove_state_claim = 146
+			}
+			
+			hidden_effect = {
+				news_event = { hours = 6 id = news.13 }
+				FIN = { complete_national_focus = FIN_defeated }
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = jat.36
+	title = jat.36.t
+	desc = jat.36.d
+	picture = GFX_report_event_generic_parliament
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		FIN = {
+			NOT = { has_completed_focus = FIN_soviet_compromise }
+			focus_progress = {
+				focus = FIN_soviet_compromise
+				progress > 0.45
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+	    name = jat.36.a
+		
+		ai_chance = {
+			factor = 90
+		}
+		
+		FIN = { country_event = { days = 1 id = jat.37 } }
+	}
+	
+	option = {
+	    name = jat.36.b
+		
+		ai_chance = {
+			factor = 10
+		}
+		
+		FIN = { country_event = { days = 1 id = jat.38 } }
+		hidden_effect = {
+			set_country_flag = FIN_refuse_to_compromise
+		}
+		set_country_flag = FIN_SOV_refuse_to_compromise
+	}
+}
+
+country_event = {
+	id = jat.37
+	title = jat.37.t
+	desc = jat.37.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.37.a
+	}
+}
+
+country_event = {
+	id = jat.38
+	title = jat.38.t
+	desc = jat.38.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.38.a
+		complete_national_focus = FIN_red_menace
+	}
+}
+
+country_event = {
+	id = jat.39
+	title = jat.39.t
+	desc = jat.39.d
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jat.39.a
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		FIN = {
+			country_event = { days = 1 id = jat.40 } 
+		}
+		
+		diplomatic_relation = { country = FIN relation = non_aggression_pact }
+	}
+	
+	option = { 
+		name = jat.39.b
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		diplomatic_relation = { country = FIN relation = non_aggression_pact }
+		
+		FIN = {
+			country_event = { days = 1 id = jat.41 } 
+		}
+		
+		hidden_effect = {
+		    SOV = {
+				remove_state_claim = 146
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jat.40
+	title = jat.40.t
+	desc = jat.40.d
+	picture = GFX_report_event_stalin_meeting
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.40.a
+	}
+}
+
+country_event = {
+	id = jat.41
+	title = jat.41.t
+	desc = jat.41.d
+	picture = GFX_report_event_stalin_meeting
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.41.a
+	}
+}
+
+country_event = {
+	id = jat.42
+	title = jat.42.t
+	desc = jat.42.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.42.a
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		FIN = {
+			country_event = { days = 1 id = jat.43 } 
+		}
+		
+		diplomatic_relation = { country = FIN relation = guarantee  }
+		diplomatic_relation = { country = FIN relation = military_access  }
+	}
+	
+	option = {
+		name = jat.42.b
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		FIN = {
+			country_event = { days = 1 id = jat.44 } 
+		}
+	}
+}
+
+
+
+country_event = {
+	id = jat.43
+	title = jat.43.t
+	desc = jat.43.d
+	picture = GFX_report_event_stalin_01
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.43.a
+	}
+}
+
+
+country_event = {
+	id = jat.44
+	title = jat.44.t
+	desc = jat.44.d
+	picture = GFX_report_event_stalin_01
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.44.a
+	}
+}
+
+country_event = {
+	id = jat.45
+	title = jat.45.t
+	desc = jat.45.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+
+	option = {
+		name = jat.45.a
+
+		ai_chance = {
+			factor = 10 
+			modifier = {
+				factor = 20
+				has_government = communism
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		FIN = {
+			country_event = { id = jat.46 days = 3 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = refused_help
+			}
+		}
+	}
+		
+
+	option = {
+		name = jat.45.b
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 5							
+				has_government = democratic
+				FIN = {
+				    has_government = democratic
+				}
+			}
+		}
+		
+		
+
+		trigger = {
+			AND = {
+				has_war = no
+				NOT = {
+					has_government = communism
+				}
+				has_equipment = {
+					infantry_equipment > 500
+				}
+			}	
+		}
+		
+		
+		
+		if = {
+			limit = {
+				has_equipment = {
+					infantry_equipment > 500
+					infantry_equipment < 1000
+				}
+			}
+			send_equipment = {
+				target = FIN
+				type = infantry_equipment
+				amount = 500
+			}
+		}
+		if = {
+			limit = {
+				has_equipment = {
+					infantry_equipment > 1000
+				}
+			}
+			send_equipment = {
+				target = FIN
+				type = infantry_equipment
+				amount = 1000
+			}
+		}
+		if = {
+			limit = {
+				has_equipment = {
+					artillery_equipment > 250
+				}
+			}
+			send_equipment = {
+				target = FIN
+				type = artillery_equipment
+				amount = 250
+			}
+		}
+		add_ai_strategy = {
+			type = support
+			id = FIN
+			value = 100
+		}
+		FIN = {
+			country_event = { id = jat.47 days = 3 }
+		}
+	}
+	
+	
+	
+	
+
+	option = {
+		name = jat.45.c
+		trigger = { TAG = SWE }
+
+		ai_chance = {
+
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 100
+				has_war = no
+				has_government = democratic
+				strength_ratio = {
+					tag = SOV
+					ratio > 0.2
+				}
+				FIN = {
+					has_government = democratic
+					strength_ratio = {
+						tag = SOV 
+						ratio > 0.3
+					}
+				}
+			}			
+		}
+
+		declare_war_on = {
+			target = SOV
+			type = take_state
+			generator = { 195 208 } # Leningrand and Luga
+		}
+		
+		
+		FIN = {
+			country_event = { id = jat.48 days = 3 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = took_stand_for_us
+			}
+		}
+	}
+}
+
+
+
+
+
+
+country_event = {
+	id = jat.46
+	title = jat.46.t
+	desc = jat.46.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.46.a
+	}
+}
+
+
+
+country_event = {
+	id = jat.47
+	title = jat.47.t
+	desc = jat.47.d
+	picture = GFX_report_event_swedish_soldier
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.47.a
+		effect_tooltip = {
+			FROM = {
+				send_equipment = {
+					target = FIN
+					type = infantry_equipment
+					amount = 1000
+				}
+				send_equipment = {
+					target = FIN
+					type = artillery_equipment
+					amount = 300
+				}
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = jat.48
+	title = jat.48.t
+	desc = jat.48.d
+	picture = GFX_report_event_swedish_soldier
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.48.a
+	}
+}
+
+country_event = {
+	id = jat.49
+	title = jat.49.t
+	desc = jat.49.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger = {
+		tag = FIN
+		has_war_with = SOV
+		surrender_progress > 0.15
+		has_civil_war = no
+		is_in_faction = no
+		OR = { 
+			has_government = democratic
+			AND = {
+				has_government = neutrality
+				has_country_leader = {
+					name = "Mika"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 20 }
+
+	fire_only_once = yes
+
+	#Surrender and offer territory
+	option = {
+		name = jat.49.a
+		ai_chance = {
+			base = 8
+		}
+		
+		SOV = {
+			country_event = { id = jat.50 }
+		}
+		
+		effect_tooltip = {
+			SOV = { 
+				white_peace = {
+					tag = FIN 
+				} 
+			}
+			transfer_state = 146
+			transfer_state = 147
+			if = {
+				limit = {
+					722 = {
+						is_claimed_by = SOV
+					}
+				}
+				SOV = { remove_state_claim = 722 }
+			}
+			complete_national_focus = FIN_defeated
+			add_stability = -0.2
+		}
+	}
+
+	#Never give up!
+	option = {
+		name = jat.49.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = FIN_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = FIN_ai_behavior
+						option = HISTORICAL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jat.50
+	title = jat.50.t
+	desc = jat.50.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = jat.50.a
+		ai_chance = {
+			base = 9
+		}
+		white_peace = FIN
+		transfer_state = 146
+		transfer_state = 147
+		if = {
+			limit = {
+				722 = {
+					is_claimed_by = SOV
+				}
+			}
+			remove_state_claim = 722
+		}
+		
+		
+		
+		FIN = {
+			add_ai_strategy = {
+				type = antagonize
+				id = "SOV"			
+				value = 200
+			}
+			complete_national_focus = FIN_defeated
+			add_stability = -0.2
+		}
+		
+		
+		
+		if = {
+			limit = {
+				GER = {
+					is_subject = no
+					not = { is_in_faction_with = SOV}
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"			
+				value = 200
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = "GER"			
+				value = 200
+			}
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FIN"			
+					value = 200
+				}
+			}
+		}
+	}
+
+	#Take it all
+	option = {
+		name = jat.50.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}			
+		}
+		FIN = { country_event = { id = jat.51 } }
+	}
+}
+
+country_event = {
+	id = jat.51
+	title = jat.51.t
+	desc = jat.51.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.51.a
+	}
+}
+
+country_event = {
+	id = jat.52
+	title = jat.52.t
+	desc = jat.52.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.52.a
+		FIN = { country_event = { id = jat.53 days = 2 } }
+		ai_chance = {
+			factor = 80
+		}
+		effect_tooltip = {
+			FIN = { 
+				create_wargoal = {
+					type = take_state
+					target = SWE
+					generator = { 145 }
+				} 
+			}
+		}
+	}
+	
+	option = { 
+		name = jat.52.b
+		FIN = { country_event = { id = jat.54 days = 2 } }
+		ai_chance = {
+			factor = 20
+		}
+		effect_tooltip = {
+			FIN = { transfer_state = 145 }
+		}
+	}
+}
+
+country_event = {
+	id = jat.53
+	title = jat.53.t
+	desc = jat.53.d
+	picture = GFX_FIN_event_parlament_01
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.53.a
+		create_wargoal = {
+			type = take_state
+			target = SWE
+			generator = { 145 }
+		} 
+		complete_national_focus = FIN_Torne_land_claim
+	}
+}
+
+country_event = {
+	id = jat.54
+	title = jat.54.t
+	desc = jat.54.d
+	picture = GFX_FIN_event_parlament_02
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.54.a
+		transfer_state = 145
+	}
+}
+
+country_event = {
+	id = jat.55
+	title = jat.55.t
+	desc = jat.55.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jat.55.a
+		SWE = { country_event = jat.56 }
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = { 
+		name = jat.55.b
+		every_other_country  = {
+			limit = {
+				is_in_faction_with = FIN
+				has_war_with = SWE
+			}
+			white_peace = SWE
+		}
+		white_peace = SWE		
+			
+		if = {
+			limit = {
+				SWE = { controls_state = 145 }
+			}
+			transfer_state = 145
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = jat.56
+	title = jat.56.t
+	desc = jat.56.d
+	picture = GFX_FIN_mika_coup
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.56.a
+	}
+}
+
+country_event = {
+	id = jat.57
+	title = jat.57.t
+	desc = jat.57.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = jat.57.a
+		NOR = { country_event = jat.56 }
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = jat.57.b
+		every_other_country  = {
+			limit = {
+				is_in_faction_with = FIN
+				has_war_with = NOR
+			}
+			white_peace = NOR
+		}
+		white_peace = NOR
+		transfer_state = 144
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = jat.58
+	title = jat.58.t
+	desc = jat.58.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = jat.58.a
+		ai_chance = {
+			base = 9
+		}
+		transfer_state = 722
+		
+		hidden_effect = {
+			FIN = {
+				add_stability = -0.2
+			}
+		}
+		
+		if = {
+			limit = {
+				FIN = { is_in_faction_with = GER }
+			}
+			GER = { country_event = { id = jat.62 days = 3 } }
+		}
+		
+		if = {
+			limit = {
+				GER = {
+					has_war_with = SOV
+				}
+			}
+			FIN = {
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"			
+					value = -1000
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = "GER"			
+					value = -1000
+				}
+			}
+			GER = {
+				add_ai_strategy = {
+					type = antagonize
+					id = "FIN"			
+					value = 1000
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				FIN = {
+					is_in_faction_with = GER
+				}
+			}
+			GER = { remove_from_faction = FIN }
+		}
+		
+		white_peace = FIN
+		
+		hidden_effect = {
+		    every_other_country = {
+				limit = { has_war_with = FIN }
+				white_peace = FIN
+			}
+		}
+		
+		FIN = { add_ideas = FIN_demilitarized }
+	}
+
+	#Take it all
+	option = {
+		name = jat.58.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}			
+		}
+		FIN = { country_event = { id = jat.61 } }
+	}
+}
+
+country_event = {
+	id = jat.59
+	title = jat.59.t
+	desc = jat.59.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jat.59.a
+		
+		FIN = { set_country_flag = FIN_GER_agreement }
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = { 
+		name = jat.59.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = jat.61
+	title = jat.61.t
+	desc = jat.61.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	
+	option = { 
+		name = jat.61.a
+		hidden_effect = {
+			FIN = { load_oob = FIN_civilwar_white_guard }
+			FIN = { set_country_flag = FIN_white_guard_f } 
+		}
+	}
+}
+
+country_event = {
+	id = jat.62
+	title = jat.62.t
+	desc = jat.62.d
+	picture = GFX_FIN_event_mika
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = jat.62.a
+		declare_war_on = {
+			target = FIN
+			type = take_state_focus
+			generator = { 111 } 
+		}
+		if = {
+			limit = {
+				has_country_flag = FIN_GER_lapland
+			}
+			hidden_effect = {
+				GER = {
+					set_province_controller = 11130
+					set_province_controller = 203
+					set_province_controller = 167
+					set_province_controller = 3069
+					set_province_controller = 6061
+					set_province_controller = 3097
+					set_province_controller = 103
+					set_province_controller = 11115
+					set_province_controller = 3193
+					set_province_controller = 11125
+					set_province_controller = 6183
+					set_province_controller = 6012
+					set_province_controller = 11142
+					set_province_controller = 9140
+					set_province_controller = 11204
+					set_province_controller = 11167
+					set_province_controller = 3107
+					set_province_controller = 124
+					set_province_controller = 3055
+					set_province_controller = 6087
+					set_province_controller = 9189
+					set_province_controller = 6076
+					set_province_controller = 2992
+					set_province_controller = 6142
+					set_province_controller = 3158
+					load_oob = GER_lapland_garrison
+				}
+			}
+		}
+	}
+}

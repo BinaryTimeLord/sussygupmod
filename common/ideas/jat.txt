@@ -1,0 +1,674 @@
+ideas = {
+    hidden_ideas = {
+		
+		FIN_Ally = {
+		
+			allowed = {
+				ROOT = { is_in_faction_with = FIN }
+				FIN = { is_faction_leader = yes }
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+		
+			modifier = {
+			    ai_join_ally_desire_factor = +100
+			}
+		}	
+	}
+
+	country = {
+			
+		FIN_white_guard = {
+			
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.25
+				conscription = 0.005
+			}
+		}
+		
+		FIN_mass_ski_equipment = {
+		
+			picture = fin_ski
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 1.00
+				winter_attrition_factor = -0.90
+				training_time_army_factor = 0.05
+			}
+		}
+		
+		FIN_motorization_prodiction = {
+		
+			picture = FRA_motorized_focus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.10 
+					instant = yes
+				}
+			}
+		}
+		
+		FIN_armor_prodiction = {
+		
+			picture = man_five_year_plan_tank
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.10 
+					instant = yes
+				}
+			}
+		}
+		
+		FIN_buyarmor = {
+		
+			picture = generic_license_production
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    license_armor_purchase_cost = -0.35
+			}
+		}
+		
+		FIN_antisoviet_propaganda_idea = {
+		
+			picture = trotskyite_plot
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+		
+		FIN_war_on_independence_idea = {
+		
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+
+		}
+		
+		FIN_white_snipers_idea = {
+		
+			picture = fin_sniper
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		
+		FIN_diversion_form_idea = {
+		
+			picture = MEX_politicised_army
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		FIN_planning_bonus = {
+		
+		    picture = CZE_planning_bonus
+		
+			allowed = {
+				always = no
+				original_tag = FIN
+			}
+
+			available = {
+				is_faction_leader = yes 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				max_planning = 0.2
+			}
+		}
+		
+		
+		
+		FIN_resourses = {
+		
+			picture = generic_exploit_mines
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    local_resources_factor = 0.1
+			}
+		}
+		
+		
+		FIN_militarization_idea = {
+		
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		
+		FIN_mobilization_idea = {
+		
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    conscription = 0.04
+			}
+		}
+		
+		
+		FIN_war_economy_idea = { 
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = -0.05
+			}
+		}
+		
+		FIN_war_cost_idea = { 
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = 0.05
+			}
+		}
+		
+		FIN_communism_crisis_idea_IV = { 
+		
+			picture = great_depression
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				
+				production_speed_buildings_factor = -0.2
+				
+				production_factory_max_efficiency_factor = -0.2
+			
+			}
+		}
+		
+		FIN_communism_crisis_idea_III = { 
+		
+			picture = great_depression
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = 0.15
+				
+				production_speed_buildings_factor = -0.15
+				
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+		
+		FIN_communism_crisis_idea_II = { 
+		
+			picture = great_depression
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = 0.10
+				
+				production_speed_buildings_factor = -0.1
+				
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		
+		FIN_communism_crisis_idea_I = { 
+		
+			picture = great_depression
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = 0.05
+				
+				production_speed_buildings_factor = -0.05
+				
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		
+		
+		
+		
+		FIN_no_surrender = { 
+		
+			picture = chi_war_of_resistance3
+			
+			allowed = {
+			    always = no
+			    OR = {
+					has_war_with = FIN
+					has_war_with = FDR
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    surrender_limit = 1
+				max_surrender_limit_offset = 0.1
+			}
+		}
+		
+		FIN_war_budget_idea = { 
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = -0.05
+			}
+		}
+		
+		FIN_finnish_revanshism = { 
+		
+			picture = generic_intel_bonus
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		FIN_demilitarized = { 
+		
+			picture = great_depression
+			
+			allowed = {
+				original_tag = FIN
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FIN
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    conscription_factor = -0.5
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+############################################################################################################################################################
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	political_advisor = {
+
+		
+		FIN_ralf_torngren = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { ideological_crusader }
+		}
+
+		FIN_ake_henrik_gartz = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		FIN_antti_hackzell = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+	theorist = {
+		
+		FIN_theorist_1 = {
+		
+			ledger = army
+					
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	}
+
+	# TECHNOLOGY
+
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		crichton = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			# submarine and defence ship production
+			
+			traits = { naval_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		
+		valtion_lentokonetehdas = {
+			
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			# assembled Junkers, fast bombers
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

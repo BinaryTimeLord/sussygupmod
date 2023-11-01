@@ -46,3 +46,43 @@ jat_ai_behavior = {
 	}
 	
 }
+
+#-> FIN: Finland <><>
+FIN_focus_tree_selection = {
+	name = "FIN_FOCUS_TREE_SELECTION"
+	required_dlc = "Arms Against Tyranny"
+	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+	default = {
+		name = STANDARD_TREE
+		text = "RULE_OPTION_STANDARD_TREE"
+		desc = "RULE_OPTION_STANDARD_TREE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JATKOSOTA_TREE
+		text = "RULE_OPTION_JATKOSOTA_TREE"
+		desc = "RULE_OPTION_JATKOSOTA_TREE_DESC"
+	}
+}
+
+#-> ITA: Italy <><>
+ITA_focus_tree_selection = {
+	name = "ITA_FOCUS_TREE_SELECTION"
+	required_dlc = "By Blood Alone"
+	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+	default = {
+		name = STANDARD_TREE
+		text = "RULE_OPTION_STANDARD_TREE"
+		desc = "RULE_OPTION_STANDARD_TREE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ANZIO_TREE
+		text = "RULE_OPTION_ANZIO_TREE"
+		desc = "RULE_OPTION_ANZIO_TREE_DESC"
+	}
+}
+
+
+
+			has_global_flag = FIN_use_DLC_tree

@@ -1,0 +1,1042 @@
+ITA_form_the_roman_empire = {
+	albanian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_remove = 180
+
+		visible = {
+			country_exists = ALB
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = albanian_conquest
+				days = 180
+			}
+		}
+	}
+	albanian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = ALB
+				}
+				ALB = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			ALB = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	bulgarian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = BUL
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = bulgarian_conquest
+				days = 180
+			}
+		}
+	}
+	bulgarian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = BUL
+				}
+				BUL = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	greek_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = GRE
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = greek_conquest
+				days = 180
+			}
+		}
+	}
+	greek_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = GRE
+				}
+				GRE = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			GRE = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	hungarian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = HUN
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = hungarian_conquest
+				days = 180
+			}
+		}
+	}
+	hungarian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = HUN
+				}
+				HUN = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			HUN = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	romanian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = ROM
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = romanian_conquest
+				days = 180
+			}
+		}
+	}
+	romanian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = ROM
+				}
+				ROM = {
+					46 = {
+						is_controlled_by = ITA
+					}
+					76 = {
+						is_controlled_by = ITA
+					}
+					77 = {
+						is_controlled_by = ITA
+					}
+					81 = {
+						is_controlled_by = ITA
+					}
+					82 = {
+						is_controlled_by = ITA
+					}
+					83 = {
+						is_controlled_by = ITA
+					}
+					84 = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			ROM = {
+				46 = {
+					add_core_of = PREV.PREV
+				}
+				76 = {
+					add_core_of = PREV.PREV
+				}
+				77 = {
+					add_core_of = PREV.PREV
+				}
+				81 = {
+					add_core_of = PREV.PREV
+				}
+				82 = {
+					add_core_of = PREV.PREV
+				}
+				83 = {
+					add_core_of = PREV.PREV
+				}
+				84 = {
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	turkish_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = TUR
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = turkish_conquest
+				days = 180
+			}
+		}
+	}
+	turkish_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = TUR
+				}
+				TUR = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			TUR = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+			set_province_name = {
+			    id = 9833
+			    name = ITA_byzantium
+			}
+		}
+	}
+	yugoslavian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_balkan_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = YUG
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = yugoslavian_conquest
+				days = 180
+			}
+		}
+	}
+	yugoslavian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_balkan_riconquista
+				NOT = {
+					country_exists = YUG
+				}
+				YUG = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			YUG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	french_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_french_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = FRA
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = french_conquest
+				days = 180
+			}
+		}
+	}
+	french_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_french_riconquista
+				NOT = {
+					country_exists = FRA
+				}
+				FRA = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_french_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			FRA = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+				462 = {
+					add_core_of = PREV.PREV
+				}
+				461 = {
+					add_core_of = PREV.PREV
+				}
+				459 = {
+					add_core_of = PREV.PREV
+				}
+				513 = {
+					add_core_of = PREV.PREV
+				}
+				460 = {
+					add_core_of = PREV.PREV
+				}
+				458 = {
+					add_core_of = PREV.PREV
+				}
+				665 = {
+					add_core_of = PREV.PREV
+				}
+				799 = {
+					add_core_of = PREV.PREV
+				}
+				677 = {
+					add_core_of = PREV.PREV
+				}
+				680 = {
+					add_core_of = PREV.PREV
+				}
+				513 = {
+					add_core_of = PREV.PREV
+				}
+				554 = {
+					add_core_of = PREV.PREV
+				}
+				553 = {
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	benelux_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_french_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = BEL
+			country_exists = HOL
+			country_exists = LUX
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = benelux_conquest
+				days = 180
+			}
+		}
+	}
+	benelux_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_french_riconquista
+				NOT = {
+					country_exists = BEL
+					country_exists = HOL
+					country_exists = LUX
+				}
+				BEL = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+				HOL = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+				LUX = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_french_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			BEL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+			HOL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+			LUX = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	british_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_british_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = ENG
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = british_conquest
+				days = 180
+			}
+		}
+	}
+	british_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_british_riconquista
+				NOT = {
+					country_exists = ENG
+				}
+				ENG = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_british_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			ENG = {
+				127 = {
+					add_core_of = PREV.PREV
+				}
+				123 = {
+					add_core_of = PREV.PREV
+				}
+				126 = {
+					add_core_of = PREV.PREV
+				}
+				338 = {
+					add_core_of = PREV.PREV
+				}
+				122 = {
+					add_core_of = PREV.PREV
+				}
+				125 = {
+					add_core_of = PREV.PREV
+				}
+				129 = {
+					add_core_of = PREV.PREV
+				}
+				128 = {
+					add_core_of = PREV.PREV
+				}
+				130 = {
+					add_core_of = PREV.PREV
+				}
+				132 = {
+					add_core_of = PREV.PREV
+				}
+				131 = {
+					add_core_of = PREV.PREV
+				}
+				452 = {
+					add_core_of = PREV.PREV
+				}
+				447 = {
+					add_core_of = PREV.PREV
+				}
+				446 = {
+					add_core_of = PREV.PREV
+				}
+				456 = {
+					add_core_of = PREV.PREV
+				}
+				454 = {
+					add_core_of = PREV.PREV
+				}
+				455 = {
+					add_core_of = PREV.PREV
+				}
+				552 = {
+					add_core_of = PREV.PREV
+				}
+				456 = {
+					add_core_of = PREV.PREV
+				}
+				457 = {
+					add_core_of = PREV.PREV
+				}
+				183 = {
+					add_core_of = PREV.PREV
+				}
+				118 = {
+					add_core_of = PREV.PREV
+				}
+				656 = {
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	iberian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_iberian_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_iberian_riconquista
+				is_debug = yes
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = iberian_conquest
+				days = 180
+			}
+		}
+	}
+	iberian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_iberian_riconquista
+				NOT = {
+					country_exists = SPR
+				}
+				SPR = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+				NOT = {
+					country_exists = POR
+				}
+				POR = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			SPR = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+				290 = {
+					add_core_of = PREV.PREV
+				}
+			}
+			POR = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+	arabian_conquest = {
+
+		icon = GFX_decision_generic_operation
+		
+		available = {
+			has_completed_focus = ITA_arabian_riconquista
+		}
+		
+		fire_only_once = no
+		days_re_enable = 180
+
+		visible = {
+			country_exists = PER
+			country_exists = IRQ
+		}		
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = arabian_conquest
+				days = 180
+			}
+		}
+	}
+	arabian_integration = {
+
+		icon = GFX_decision_generic_form_nation
+		
+		available = {
+			AND = {
+				has_completed_focus = ITA_arabian_riconquista
+				NOT = {
+					country_exists = IRQ
+					country_exists = PER
+				}
+				IRQ = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+				PER = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_arabian_riconquista
+				is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			IRQ = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+			IRQ = {
+				419 = {
+					add_core_of = PREV.PREV
+				}
+				421 = {
+					add_core_of = PREV.PREV
+				}
+				413 = {
+					add_core_of = PREV.PREV
+				}
+			}
+		}
+	}
+}
+
+ITA_mussolinism_worldwide = {
+	on_map_decision = {
+		icon = generic_nationalism
+		on_map_mode = map_only
+
+
+		available = {
+			OR = {
+				has_completed_focus = ITA_the_world_is_your_oyster
+				is_debug = yes
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = ITA_the_world_is_your_oyster
+				is_debug = yes
+			}
+		}
+
+
+		highlight_states = {
+			state = 2
+		}
+
+		target_array = controlled_states
+		target_trigger = {
+		    FROM = {
+		        state = ID
+		    }
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				compliance > 35
+			}
+		}
+
+		fire_only_once = yes
+		cost = 100
+	}
+}

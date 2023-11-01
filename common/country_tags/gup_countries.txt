@@ -1,1 +1,4 @@
 FDR = "countries/Finnish Democratic Republic.txt"
+ITC = "countries/Italian Communist Party.txt" # Communist block for civil war
+ITD = "countries/Italian Democratic Party.txt" # Democratic block for civil war
+ITE = "countries/Italian Monarchist Party.txt" # Monarchist block for civil war

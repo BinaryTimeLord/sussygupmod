@@ -33,6 +33,9 @@ ideologies = {
 			
 			american_idealism = {
 			}
+
+			finnish_idealism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -124,6 +127,9 @@ ideologies = {
 			
 			american_idealism2 = {
 			}
+
+			finnish_idealism2 = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -206,6 +212,9 @@ ideologies = {
 			
 			american_idealism3 = {
 			}
+
+			finnish_idealism3 = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -283,6 +292,9 @@ ideologies = {
 			}
 			
 			american_idealism4 = {
+			}
+
+			finnish_idealism4 = {
 			}
 		}
 

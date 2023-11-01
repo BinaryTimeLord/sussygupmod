@@ -34,3 +34,35 @@ technology_sharing_group = {
 		}
     }
 }
+
+technology_sharing_group = {
+
+	id = mediterranean_research
+	name = mediterranean_research_name
+	desc = mediterranean_research_desc
+	picture = GFX_tfv_generic_tech_sharing
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = ITA
+        compare_autonomy_state > autonomy_puppet
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = internazionale_research
+	name = internazionale_research_name
+	desc = internazionale_research_desc
+	picture = GFX_tfv_generic_tech_sharing
+    
+	research_sharing_per_country_bonus = 0.15
+
+    available = {
+        is_in_faction_with = ITA
+        compare_autonomy_state > autonomy_puppet
+    }
+
+}

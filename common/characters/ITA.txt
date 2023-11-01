@@ -140,14 +140,14 @@ characters = {
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=696969
 		}
 
 		country_leader = {
 			ideology = despotism
 			traits = { the_soldier_king }
 			expire = "1965.1.1.1"
-			id = -1
+			id =-1
 		}
 	}
 
@@ -308,7 +308,7 @@ characters = {
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=6969696
 		}
 
 		advisor = {
@@ -1734,6 +1734,9 @@ characters = {
 			army = {
 				small="gfx/interface/ideas/Anzio/idea_ita_amaretto.dds"
 			}
+			army={
+				large="gfx/leaders/ITA/portrait_ITA_dino_grandi.dds"
+			}
 			civilian = {
 				large = GFX_portrait_ITA_dino_grandi
 			}
@@ -1746,7 +1749,7 @@ characters = {
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=0
+			legacy_id=69696969
 		}
 
 		advisor = {

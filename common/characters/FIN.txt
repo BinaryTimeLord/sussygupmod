@@ -17,12 +17,6 @@ characters = {
 				large = GFX_portrait_FIN_pehr_evind_svinhufvud
 			}
 		}
-		country_leader = {
-			ideology = moderatism #National Coalition Party
-			expire = "1965.1.1.1"
-			id = -1
-			traits = { member_of_the_suojeluskunta conservative_nationalist personal_agenda_svinhufvud }
-		}
 	}
 
 	FIN_kyosti_kallio = {
@@ -31,12 +25,6 @@ characters = {
 			civilian = {
 				large = GFX_portrait_FIN_kyosti_kallio
 			}
-		}
-		country_leader = {
-			ideology = centrism #Agrarian League
-			expire = "1965.1.1.1"
-			id = -1
-			traits = { anti_communist backed_by_political_coalition personal_agenda_kallio }
 		}
 	} 
 
@@ -50,12 +38,6 @@ characters = {
 			civilian = {
 				large = GFX_portrait_FIN_juho_kusti_paasikivi
 			}
-		}
-		country_leader = {
-			ideology = moderatism #National Coalition Party
-			expire = "1965.1.1.1"
-			id = -1
-			traits = { paasikivi_doctrine personal_agenda_paasikivi }
 		}
 	}
 
@@ -107,17 +89,29 @@ characters = {
 			logistics_skill=4
 			legacy_id=5000
 		}
-		country_leader={
-			desc="POLITICS_RISTO_HEIKKI_RYT_DESC"
-			ideology=liberalism
-			expire="1965.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = finnish_idealism4 #National Progressive Party
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { white_liberal_leader personal_agenda_ryti }
 		}
-		country_leader={
-			desc="POLITICS_KYÖSTI_KALLIO_DESC"
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = centrism #Agrarian League
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { anti_communist backed_by_political_coalition personal_agenda_kallio }
+		}
+		country_leader = {
+			ideology = moderatism #National Coalition Party
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { member_of_the_suojeluskunta conservative_nationalist personal_agenda_svinhufvud }
+		}
+		country_leader = {
+			ideology = finnish_idealism #National Coalition Party
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { paasikivi_doctrine personal_agenda_paasikivi }
 		}
 	}
 
@@ -1611,12 +1605,6 @@ characters = {
 				large = GFX_portrait_FIN_risto_ryti
 				small = GFX_portrait_FIN_risto_ryti_small
 			}
-		}
-		country_leader = {
-			ideology = centrism #National Progressive Party
-			expire = "1965.1.1.1"
-			id = -1
-			traits = { white_liberal_leader personal_agenda_ryti }
 		}
 		advisor = {
 			slot = political_advisor

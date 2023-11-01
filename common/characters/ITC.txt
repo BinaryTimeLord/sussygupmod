@@ -1,0 +1,20 @@
+characters={
+
+	## Leaders
+
+	### Communist Leaders
+
+	ITC_amaretto={
+		name=ITA_amaretto
+		portraits={
+			civilian={
+				large = GFX_portrait_ITA_amaretto
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+		}
+	}
+
+}

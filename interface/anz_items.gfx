@@ -1,0 +1,241 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_incompetent_army"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_pride_of_the_regia_marina"
+		texturefile = "gfx/interface/goals/idea_generic_coastal_defense_ships.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_build_italy_better"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_expansionist_economic_policy"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_concentrationist_economic_policy"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_pride_of_the_regia_marina"
+		texturefile = "gfx/interface/ideas/liberty_ships_focus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_pride_of_the_regio_esercito"
+		texturefile = "gfx/interface/ideas/idea_generic_war_preparation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_italian_trench_warfare"
+		texturefile = "gfx/interface/ideas/idea_ast_all_in.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_italian_tank_warfare"
+		texturefile = "gfx/interface/ideas/idea_generic_armor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_italian_firepower"
+		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_pride_of_the_regia_aeronautica"
+		texturefile = "gfx/interface/ideas/idea_generic_aircraft_support.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_local_air_production"
+		texturefile = "gfx/interface/ideas/idea_generic_air_research.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_local_air_production"
+		texturefile = "gfx/interface/ideas/idea_generic_air_research.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_foreign_ideas"
+		texturefile = "gfx/interface/ideas/idea_generic_air_manufacturer_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_ethiopian_independence"
+		texturefile = "gfx/interface/ideas/idea_generic_neutrality_drift_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_new_italian_republic"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_workers_strikes"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_stalinism"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mediterranean_integration"
+		texturefile = "gfx/interface/ideas/idea_SOV_system_decentralization.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mediterranean_union"
+		texturefile = "gfx/interface/ideas/idea_SOV_stakhanovite_movement.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_italian_monarchist_sentiment"
+		texturefile = "gfx/interface/ideas/idea_generic_monarchist_uprising.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_kings_economy"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_kings_army"
+		texturefile = "gfx/interface/ideas/idea_eng_imperial_conscription.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_albanian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_bulgarian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_hungarian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_greek_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_romanian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_yugoslavian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_french_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_turkish_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_benelux_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_british_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_iberian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_arabian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_albanian_conquest"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mussolinis_paranoia"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_attack_nationalist_spain"
+		texturefile = "gfx/interface/goals/focus_generic_attack_nationalist_spain.dds"
+	}
+	spriteType = { 
+		name = "GFX_report_mussolini_thinking_1"
+		texturefile = "gfx/event_pictures/Anzio/report_mussolini_thinking_1.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_report_mussolini_thinking_2"
+		texturefile = "gfx/event_pictures/Anzio/report_mussolini_thinking_2.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_report_mussolini_thinking_3"
+		texturefile = "gfx/event_pictures/Anzio/report_mussolini_thinking_3.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_report_mussolini_communist_split"
+		texturefile = "gfx/event_pictures/Anzio/report_mussolini_communist_split.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_report_mussolini_democratic_split"
+		texturefile = "gfx/event_pictures/Anzio/report_mussolini_democratic_split.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_report_mussolini_monarchist_split"
+		texturefile = "gfx/event_pictures/Anzio/report_mussolini_monarchist_split.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ITA_amaretto"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_dino_grandi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ITA_carpaccio"
+		texturefile = "gfx/leaders/ITA/portrait_italy_italo_balbo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ITA_pepperoni"
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ITA_anchovys_paranoia"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_Anchovy.dds"
+	}
+}

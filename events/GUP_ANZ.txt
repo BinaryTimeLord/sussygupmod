@@ -1,0 +1,1287 @@
+add_namespace = anz
+
+news_event = { # Incompetent army activates
+	id = anz.1
+	title = anz.1.t
+	desc = anz.1.d
+	picture = GFX_news_event_italian_tank_desert
+
+	major = no
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = ITA
+	}
+
+	option = {
+		name = anz.1.a
+		trigger = {
+			has_completed_focus = ITA_army_incompetence
+		}
+	}
+}
+
+country_event = { # Democrats demand elections
+	id = anz.2
+	title = anz.2.t
+	desc = anz.2.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = anz.2.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		add_stability = 0.25
+		set_politics = {
+			ruling_party = democratic
+		    elections_allowed = yes
+		    election_frequency = 48
+		}
+		remove_ideas = { vittoria_mutilata }
+		create_country_leader = {
+			name = "Carpaccios"
+			desc = "POLITICS_CARPACCIO_DESC"
+			picture = GFX_portrait_ITA_carpaccio
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = { conservative_grandee
+			}
+        }
+		ITA_italo_balbo = { promote_leader = yes }
+	}
+
+	option = {
+		name = anz.2.b
+		start_civil_war = {
+		    ruling_party = democratic
+		    ideology = ROOT
+		    size = 0.5
+		    capital = 115
+		    keep_political_leader = yes
+		    keep_political_party_members = yes
+		}
+		ITA_italo_balbo = { promote_leader = yes }
+		remove_ideas = { vittoria_mutilata }
+		create_country_leader = {
+			name = "Carpaccios"
+			desc = "POLITICS_CARPACCIO_DESC"
+			picture = GFX_portrait_ITA_carpaccio
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = { conservative_grandee
+			}
+        }
+	}
+}
+
+country_event = { # The communists take power
+	id = anz.3
+	title = anz.3.t
+	desc = anz.3.d
+	picture = GFX_report_event_generic_communist_congress
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = anz.3.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		add_stability = 0.25
+		set_politics = {
+			ruling_party = communism
+		    elections_allowed = no
+		}
+		remove_ideas = { vittoria_mutilata }
+		ITA_dino_grandi = { promote_leader = yes }
+		create_country_leader = {
+			name = "Amarettos"
+			desc = "POLITICS_AMARETTO_DESC"
+			picture = GFX_portrait_ITA_amaretto
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+	}
+
+	option = {
+		name = anz.3.b
+		start_civil_war = {
+		    ruling_party = communism
+		    ideology = ROOT
+		    size = 0.5
+		    capital = 115
+		    keep_political_leader = yes
+		    keep_political_party_members = yes
+		}
+		remove_ideas = { vittoria_mutilata }
+		ITA_dino_grandi = { promote_leader = yes }
+		create_country_leader = {
+			name = "Amarettos"
+			desc = "POLITICS_AMARETTO_DESC"
+			picture = GFX_portrait_ITA_amaretto
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+	}
+}
+
+# Italy demands a country to be puppeted
+country_event = {
+	id = anz.4
+	title = anz.4.t
+	desc = anz.4.d
+	picture = GFX_report_mussolini_demands_subjugation
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = anz.4.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				ITA = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				ITA = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = ITA
+			}
+		}
+		FROM = {
+			puppet = ROOT
+			country_event = { id = anz.5 }
+		}
+	}
+
+	#Never
+	option = {
+		name = anz.4.b
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = {
+			country_event = { id = anz.6 }
+		}
+	}
+}
+
+# Answer from country - Yes
+country_event = {
+	id = anz.5
+	title = anz.5.t
+	desc = anz.5.d
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.5.a
+	}
+}
+
+
+# Answer from country - No
+country_event = {
+	id = anz.6
+	title = anz.6.t
+	desc = anz.6.d
+	picture = GFX_report_event_gre_italian_troops
+
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.6.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FROM
+		}
+	}
+}
+
+country_event = {
+	id = anz.7
+	title = anz.7.t
+	desc = anz.7.d
+	picture = GFX_report_mussolini_demands_subjugation
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = anz.7.a
+		ai_chance = { 
+			base = 90 
+			modifier = {
+				has_global_flag = ita_diplomacy_focus
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = ALB
+				}
+			}
+		}
+		FROM = {
+			puppet = ROOT
+			country_event = { id = anz.8 }
+		}
+	}
+
+	#Never
+	option = {
+		name = anz.7.b
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = {
+			country_event = { id = anz.9 }
+		}
+	}
+}
+
+# Answer from country - Yes
+country_event = {
+	id = anz.8
+	title = anz.8.t
+	desc = anz.8.d
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.8.a
+	}
+}
+
+
+# Answer from country - No
+country_event = {
+	id = anz.9
+	title = anz.9.t
+	desc = anz.9.d
+	picture = GFX_report_event_gre_italian_troops
+
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.9.a
+	}
+}
+
+country_event = { # A new queen gets crowned
+	id = anz.10
+	title = anz.10.t
+	desc = anz.10.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = anz.10.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		add_stability = 0.25
+		set_politics = {
+			ruling_party = neutrality
+		    elections_allowed = no
+		}
+		remove_ideas = { vittoria_mutilata }
+		ITA_vittorio_emanuele_iii = { promote_leader = yes }
+		create_country_leader = {
+			name = "Pepperonis"
+			desc = "POLITICS_PEPPERONI_DESC"
+			picture = GFX_portrait_ITA_pepperoni
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+		set_cosmetic_tag = ITA_EMP
+	}
+
+	option = {
+		name = anz.10.b
+		start_civil_war = {
+		    ruling_party = neutrality
+		    ideology = ROOT
+		    size = 0.5
+		    capital = 115
+		    keep_political_leader = yes
+		    keep_political_party_members = yes
+		}
+		remove_ideas = { vittoria_mutilata }
+		ITA_vittorio_emanuele_iii = { promote_leader = yes }
+		create_country_leader = {
+			name = "Pepperonis"
+			desc = "POLITICS_PEPPERONI_DESC"
+			picture = GFX_portrait_ITA_pepperoni
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+		set_cosmetic_tag = ITA_EMP
+	}
+}
+
+# Schizo Anchovy event 1 - Lose PP
+country_event = {
+	id = anz.11
+	title = anz.11.t
+	desc = anz.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.11.a
+
+		add_political_power = -100
+		add_stability = -0.01
+	}
+}
+
+# Schizo Anchovy event 2 - Lose Manpower and Guns
+country_event = {
+	id = anz.12
+	title = anz.12.t
+	desc = anz.12.d
+	picture = GFX_report_event_desertion_poster
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.12.a
+
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = -1000
+		}
+	}
+}
+
+# Schizo Anchovy event 3 - Damage a civ
+country_event = {
+	id = anz.13
+	title = anz.13.t
+	desc = anz.13.d
+	picture = GFX_report_event_gre_city_devastated
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.13.a
+
+		ROOT = {
+			random_owned_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				damage_building = {
+				    type = industrial_complex
+				    damage = 0.5
+				}
+			}
+		}
+	}
+}
+
+# Schizo Anchovy event 4 - Damage a mil
+country_event = {
+	id = anz.14
+	title = anz.14.t
+	desc = anz.14.d
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.14.a
+
+		ROOT = {
+			random_owned_state = {
+				limit = {
+					arms_factory > 0
+				}
+				damage_building = {
+				    type = arms_factory
+				    damage = 0.5
+				}
+			}
+		}
+	}
+}
+
+# Schizo Anchovy event 5 - Damage infra
+country_event = {
+	id = anz.15
+	title = anz.15.t
+	desc = anz.15.d
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.15.a
+
+		ROOT = {
+			random_owned_state = {
+				damage_building = {
+				    type = infrastructure
+				    damage = 0.5
+				}
+			}
+		}
+	}
+}
+
+# Schizo Anchovy event 1 - Unrest in the nation
+country_event = {
+	id = anz.16
+	title = anz.16.t
+	desc = anz.16.d
+	picture = GFX_report_mussolini_thinking_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.16.a
+		set_popularities = {
+			democratic = 25
+			neutrality = 25
+			fascism = 25
+			communism = 25
+		}
+		remove_ideas = { vittoria_mutilata } 
+		remove_ideas = { victor_emmanuel }
+		add_ideas = { mussolinis_paranoia }
+	}
+}
+
+# Schizo Anchovy event 2 - Separatists movements rise
+country_event = {
+	id = anz.17
+	title = anz.17.t
+	desc = anz.17.d
+	picture = GFX_report_mussolini_thinking_2
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ITA = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 1
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = ITA_Mussolinism
+				}
+			}
+			country_event = { id = anz.18 }
+			country_event = { id = anz.19 }
+			country_event = { id = anz.20 }
+		}
+	}
+
+	option = {
+		name = anz.17.a
+
+		ITA = {
+			set_politics = {
+				ruling_party = neutrality
+			    elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Anchovy's Paranoia"
+			    desc = "POLITICS_ANCHOVYS_PARANOIA_DESC"
+			    picture = GFX_portrait_ITA_anchovys_paranoia
+				expire = "1965.1.1"
+				ideology = despotism
+			}
+			set_cosmetic_tag = ITP
+		}
+	}
+
+}
+
+country_event = { # Communist Italy secedes
+	id = anz.18
+	title = anz.18.t
+	desc = anz.18.d
+	picture = GFX_report_mussolini_communist_split
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.18.a
+
+		hidden_effect = {
+			ITC = {
+				set_cosmetic_tag = ITA_ITC
+				set_war_support = 0.7
+				set_stability = 0.6
+				add_political_power = 650
+				add_manpower = 190000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 27500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 750
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+				}
+				add_ideas = { 
+					limited_conscription
+					partial_economic_mobilisation 
+				}
+				inherit_technology = ITA
+			}
+		}
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_id = 69696969
+				}
+			}
+			set_nationality = ITC
+		}
+
+		ITC = {
+			transfer_state = 158
+			158 = {
+				add_core_of = ITC
+			}
+			transfer_state = 159
+			159 = {
+				add_core_of = ITC
+			}
+			transfer_state = 161
+			161 = {
+				add_core_of = ITC
+			}
+		}
+	}
+
+}
+
+country_event = { # Democratic Italy secedes
+	id = anz.19
+	title = anz.19.t
+	desc = anz.19.d
+	picture = GFX_report_mussolini_democratic_split
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.19.a
+
+		hidden_effect = {
+			ITD = {
+				set_cosmetic_tag = ITA_ITD
+				set_war_support = 0.7
+				set_stability = 0.6
+				add_political_power = 650
+				add_manpower = 190000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 27500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 750
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+				}
+				add_ideas = { 
+					limited_conscription
+					partial_economic_mobilisation 
+				}
+				inherit_technology = ITA
+			}
+		}
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_id = 6969696
+				}
+			}
+			set_nationality = ITD
+		}
+
+		ITD = {
+			transfer_state = 39
+			add_state_core = 39
+			transfer_state = 160
+			add_state_core = 160
+			transfer_state = 736
+			add_state_core = 736
+			transfer_state = 850
+			add_state_core = 850
+			transfer_state = 852
+			add_state_core = 852
+		}
+	}
+
+}
+
+country_event = { # Monarchist Italy secedes
+	id = anz.20
+	title = anz.20.t
+	desc = anz.20.d
+	picture = GFX_report_mussolini_monarchist_split
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.20.a
+
+		hidden_effect = {
+			ITE = {
+				set_cosmetic_tag = ITA_ITE
+				set_war_support = 0.7
+				set_stability = 0.6
+				add_political_power = 650
+				add_manpower = 190000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 27500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 750
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+				}
+				add_ideas = { 
+					limited_conscription
+					partial_economic_mobilisation 
+				}
+				inherit_technology = ITA
+			}
+		}
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_id = 696969
+				}
+			}
+			set_nationality = ITE
+		}
+
+		ITE = {
+			transfer_state = 117
+			117 = {
+				add_core_of = ITE
+			}
+			transfer_state = 156
+			156 = {
+				add_core_of = ITE
+			}
+			transfer_state = 115
+			115 = {
+				add_core_of = ITE
+			}
+		}
+	}
+}
+
+# Schizo Anchovy decision 3 - CIVIL WAR!
+country_event = {
+	id = anz.21
+	title = anz.21.t
+	desc = anz.21.d
+	picture = GFX_report_mussolini_thinking_3
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# He's no longer paranoid
+			remove_ideas = {
+				mussolinis_paranoia
+			}
+			# Let those pesky events die off
+			if = {
+				limit = {
+					has_country_flag = ITA_mussolini_schizophrenia
+				}
+				clr_country_flag = ITA_mussolini_schizophrenia
+			}
+		}
+	}
+
+	option = { # Dark Mussolini Rises!
+		name = anz.21.a
+
+		hidden_effect = {
+			ITC = {
+				division_template = {
+				    name = "Divisione Communista"
+				    is_locked = yes
+				    division_names_group = ITA_INF_01
+				    priority = 1
+				    template_counter = 4
+				    regiments = {
+				        infantry = { x = 0 y = 0 }
+				        infantry = { x = 0 y = 1 }
+				        infantry = { x = 0 y = 2 }
+				        infantry = { x = 0 y = 3 }
+				        infantry = { x = 1 y = 0 }
+				    }
+				    support = { 
+				        engineer = { x = 0 y = 0 }
+				    } 
+				}
+				random_controlled_state = {
+					prioritize = { 158 }
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Divisione Communista\" division_template = \"Divisione Communista\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+				}
+				declare_war_on = {
+				    target = ITD
+				    type = civil_war
+				}
+				add_civil_war_target = ITD
+				declare_war_on = {
+				    target = ITE
+				    type = civil_war
+				}
+				add_civil_war_target = ITE
+			}
+			ITD = {
+				division_template = {
+				    name = "Divisione Democrata"
+				    is_locked = yes
+				    division_names_group = ITA_INF_01
+				    priority = 1
+				    template_counter = 2
+				    regiments = {
+				        infantry = { x = 0 y = 0 }
+				        infantry = { x = 0 y = 1 }
+				        infantry = { x = 0 y = 2 }
+				        infantry = { x = 0 y = 3 }
+				        infantry = { x = 1 y = 0 }
+				    }
+				    support = { 
+				        engineer = { x = 0 y = 0 }
+				    } 
+				}
+				set_temp_variable = { units = 0 }
+				random_controlled_state = {
+					prioritize = { 39 }
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+					create_unit = {
+					    division = "name = \"Divisione Democrata\" division_template = \"Divisione Democrata\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITD
+					}
+				}
+				declare_war_on = {
+				    target = ITC
+				    type = civil_war
+				}
+				add_civil_war_target = ITC
+				declare_war_on = {
+				    target = ITE
+				    type = civil_war
+				}
+				add_civil_war_target = ITE
+			}
+			ITE = {
+				division_template = {
+				    name = "Regia Divisione"
+				    is_locked = yes
+				    division_names_group = ITA_INF_01
+				    priority = 1
+				    template_counter = 3
+				    regiments = {
+				        infantry = { x = 0 y = 0 }
+				        infantry = { x = 0 y = 1 }
+				        infantry = { x = 0 y = 2 }
+				        infantry = { x = 0 y = 3 }
+				        infantry = { x = 1 y = 0 }
+				    }
+				    support = { 
+				        engineer = { x = 0 y = 0 }
+				    } 
+				}
+				random_controlled_state = {
+					prioritize = { 156 }
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+					create_unit = {
+					    division = "name = \"Regia Divisione\" division_template = \"Regia Divisione\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					    owner = ITC
+					}
+				}
+				declare_war_on = {
+				    target = ITC
+				    type = civil_war
+				}
+				add_civil_war_target = ITC
+				declare_war_on = {
+				    target = ITD
+				    type = civil_war
+				}
+				add_civil_war_target = ITD
+			}
+		}
+
+		ITA = {
+			declare_war_on = {
+			    target = ITC
+			    type = civil_war
+			}
+			add_civil_war_target = ITC
+			declare_war_on = {
+			    target = ITD
+			    type = civil_war
+			}
+			add_civil_war_target = ITD
+			declare_war_on = {
+			    target = ITE
+			    type = civil_war
+			}
+			add_civil_war_target = ITE
+		}
+	}
+}
+
+# Italy extends an olive branch to greece
+country_event = {
+	id = anz.22
+	title = anz.22.t
+	desc = anz.22.d
+	picture = GFX_report_mussolini_demands_subjugation
+
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = anz.22.a
+
+	ai_chance = {
+		base = 30
+		modifier = {
+			add = -25
+			GRE = {
+				has_opinion = {
+					target = ITA
+					value < 70
+				}
+			}
+		}
+		modifier = {
+			add = 20
+			GRE = {
+				has_opinion = {
+					target = ITA
+					value > 69
+				}
+			}
+		}
+		modifier = {
+			add = 10
+			ITA = {
+				has_government = democratic
+			}
+			GRE = {
+				has_government = democratic
+			}
+		}
+		modifier = {
+			add = 20
+			is_in_faction_with = ITA
+		}
+	}
+
+	add_political_power = 50
+	ITA = {
+		164 = {
+			transfer_state_to = GRE
+		}
+	}
+	ITA = {
+		give_guarantee = GRE
+	}
+	GRE = {
+		give_guarantee = ITA
+	}
+	GRE = {
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = medium_increase
+		}
+	}
+
+	ITA = {
+		country_event = { id = anz.23 }
+	}
+
+	}
+
+	# No
+	option = {
+		name = anz.22.b
+		ai_chance = { 
+			base = 10
+		}
+		ITA = {
+			country_event = { id = anz.24 }
+		}
+	}
+}
+
+# Greece accepts
+country_event = {
+	id = anz.23
+	title = anz.23.t
+	desc = anz.23.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.23.a
+	}
+}
+
+# Greece denies
+country_event = {
+	id = anz.24
+	title = anz.24.t
+	desc = anz.24.d
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = anz.24.a
+	}
+}
+
+# Italy demands a country to be annexed
+country_event = {
+	id = anz.29
+	title = anz.29.t
+	desc = anz.29.d
+	picture = GFX_report_mussolini_demands_subjugation
+
+	is_triggered_only = yes
+	
+	#Accept annexation
+	option = {
+		name = anz.29.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				ITA = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 50
+				ITA = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = ITA
+			}
+		}
+
+		FROM = {
+			ITA = { annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			} }
+			country_event = { id = anz.30 }
+		}
+	}
+
+	#Never
+	option = {
+		name = anz.29.b
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = {
+			country_event = { id = anz.31 }
+		}
+	}
+}
+
+# Answer from country - Yes
+country_event = {
+	id = anz.30
+	title = anz.30.t
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.30.a
+	}
+}
+
+
+# Answer from country - No
+country_event = {
+	id = anz.31
+	title = anz.31.t
+	picture = GFX_report_event_gre_italian_troops
+
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.31.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FROM
+		}
+	}
+}
+
+###############################################
+################ NEWS EVENTS ##################
+###############################################
+
+# Italy turns democratic
+news_event = {
+	id = anz.25
+	title = anz.25.t
+	desc = anz.25.d
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.25.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+
+	option = {
+		name = anz.25.b
+		trigger = { 
+			NOT = { original_tag = ITA }
+		}
+	}
+}
+
+# Italy turns communist
+news_event = {
+	id = anz.26
+	title = anz.26.t
+	desc = anz.26.d
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.26.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+
+	option = {
+		name = anz.26.b
+		trigger = { 
+			NOT = { original_tag = ITA }
+		}
+	}
+}
+
+# Italy turns monarchist
+news_event = {
+	id = anz.27
+	title = anz.27.t
+	desc = anz.27.d
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.27.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+
+	option = {
+		name = anz.27.b
+		trigger = { 
+			NOT = { original_tag = ITA }
+		}
+	}
+}
+
+# Italy forms the Imperium Romanum
+news_event = {
+	id = anz.28
+	title = anz.28.t
+	desc = anz.28.d
+	picture = GFX_news_event_german_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anz.28.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+
+	option = {
+		name = anz.28.b
+		trigger = { 
+			NOT = { original_tag = ITA }
+		}
+	}
+}

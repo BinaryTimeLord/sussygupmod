@@ -1658,6 +1658,13 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  EURO_neutrality:0 "European Union"
  EURO_neutrality_ADJ:0 "European Union"
  EURO_neutrality_DEF:0 "European Union"
+
+ ITA_EMP:0 "Anzio Empire"
+ ITA_EMP_DEF:0 "the Anzio Empire"
+ ITA_REP:0 "Anzio Republic"
+ ITA_REP_DEF:0 "the Anzio Republic"
+ ITA_MEDUN:0 "Socialist Union of Mediterranean Countries"
+ ITA_MEDUN_DEF:0 "the Socialist Union of Mediterranean Countries"
  
  
  

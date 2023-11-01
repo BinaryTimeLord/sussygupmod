@@ -1,0 +1,23 @@
+characters={
+
+	## Leaders
+
+	### Communist Leaders
+
+	ITD_carpaccio={
+		name=ITA_carpaccio
+		portraits={
+			civilian={
+				large = GFX_portrait_ITA_carpaccio
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+	        traits = {
+		        conservative_grandee
+	        }
+		}
+	}
+
+}

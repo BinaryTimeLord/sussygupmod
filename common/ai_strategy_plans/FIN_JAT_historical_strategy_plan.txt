@@ -1,9 +1,15 @@
 FIN_historical_plan = {
 	name = "FIN historical plan"
-	desc = ""
+	desc = "Historical behavior for Finland"
+
+	allowed = {
+		original_tag = FIN
+	}
 
 	enable = {
-		original_tag = FIN
+		NOT = {
+			has_global_flag = FIN_use_DLC_tree
+		}
 		OR = {
 			AND = {
 				is_historical_focus_on = yes

@@ -623,7 +623,7 @@ FIN_allies = {
 		}
 		
 		complete_effect = {
-		    ENG = {country_event = { id = finland.1 days = 2} }
+		    ENG = {country_event = { id = jat.23 days = 2} }
 		}
 	}
 	
@@ -658,7 +658,7 @@ FIN_allies = {
 		}
 		
 		complete_effect = {
-		    FRA = {country_event = finland.1}
+		    FRA = {country_event = jat.23}
 		}
 	}
 	
@@ -695,7 +695,7 @@ FIN_allies = {
 		}
 		
 		complete_effect = {
-		    SWE = {country_event = finland.4}
+		    SWE = {country_event = jat.26}
 		}
 	}
 }
@@ -843,7 +843,7 @@ FIN_SWE_NOR_peace = {
 		}
 		
 		complete_effect = {
-		    FIN = { country_event = { id = finland.33 days = 3 } }
+		    FIN = { country_event = { id = jat.55 days = 3 } }
 		}
 
 	}
@@ -876,7 +876,7 @@ FIN_SWE_NOR_peace = {
 		}
 		
 		complete_effect = {
-		    FIN = { country_event = { id = finland.35 days = 3 } }
+		    FIN = { country_event = { id = jat.57 days = 3 } }
 		}
 
 	}

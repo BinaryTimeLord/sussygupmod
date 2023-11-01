@@ -1,7 +1,3 @@
-
-
-
-
 FIN_foreign_help = {
     allowed = {
 		original_tag = FIN

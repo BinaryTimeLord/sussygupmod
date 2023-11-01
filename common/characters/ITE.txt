@@ -1,0 +1,20 @@
+characters={
+
+	## Leaders
+
+	### Communist Leaders
+
+	ITE_pepperoni={
+		name=ITA_pepperoni
+		portraits={
+			civilian={
+				large = GFX_portrait_ITA_pepperoni
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+		}
+	}
+
+}

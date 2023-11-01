@@ -71,6 +71,22 @@ bookmarks = {
 		ITA = {
 			history = ITA_BLITZKRIEG_DESC
 			ideology = fascism
+			available = {  NOT = { has_dlc = "By Blood Alone" } }
+			ideas={
+				vittorio_emanuele_albania_ethiopia
+				ITA_camicie_nere
+				ITA_pact_of_steel
+			}
+			focuses = {
+                ITA_italy_first
+				ITA_mussolinis_cult_of_personality
+				ITA_go_after_france
+			}			
+		}
+		ITA = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = fascism
+			available = { has_dlc = "By Blood Alone" } 
 			ideas={
 				vittorio_emanuele_albania_ethiopia
 				ITA_camicie_nere
@@ -86,8 +102,9 @@ bookmarks = {
 			history = JAP_BLITZKRIEG_DESC
 			ideology = fascism
 			ideas={
-				JAP_militarism3
-				cht_extremists2
+				state_shintoism
+				JAP_guide_the_zaibatsus
+				JAP_militarism
 			}	
 			focuses = {
 				JAP_strike_south_doctrine
@@ -518,17 +535,34 @@ bookmarks = {
 		}
 		FIN={
 			minor = yes
-			history = "FINLAND_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = FIN_BLITZKRIEG_DESC
+			ideology = neutrality
+			available = {  NOT = { has_dlc = "Arms Against Tyranny" } }
 			ideas = {
-			    sisu
+				sisu
 				FIN_white_guard
 				FIN_mass_ski_equipment
 			}
 			focuses = {
 				FIN_red_menace
+				FIN_white_snipers
 				FIN_war_on_independence
-				FIN_strike_at_lenin_sity
+			}
+		}
+		FIN={
+			minor = yes
+			history = FIN_BLITZKRIEG_DESC
+			ideology = neutrality
+			available = { has_dlc = "Arms Against Tyranny" }
+			ideas = {
+				FIN_sisu_3
+				FIN_fortification_effort
+				FIN_repurposed_small_industries
+			}
+			focuses = {
+				FIN_winter_warfare
+				FIN_the_lone_wolf
+				FIN_long_range_patrols
 			}
 		}	
 		SWE={
