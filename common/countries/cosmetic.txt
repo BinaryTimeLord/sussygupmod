@@ -1059,7 +1059,7 @@ NOR_GER_fascism = {
 }
 
 NOR_fascism = {	
-	color = rgb { 132 0 0 }
+	color = rgb { 134 120 66 }
 	color_ui = rgb { 178 172 0 }
 }
 
@@ -1081,6 +1081,20 @@ NSE_UNIFIED = {
 DEN_imperial = {
 	color = rgb { 200 210 220 }
 	color_ui = rgb { 230 255 255 }
+}
+
+SWE_the_new_order = {
+	color = rgb { 152 107 16 }
+	color_ui = rgb  { 152 107 16  }		
+}
+
+DEN_greater_denmark = {
+	color = rgb { 218 41 28 }
+	color_ui = rgb { 218 41 28 }
+}
+ENE = {
+	color = rgb { 46 80 144 }
+	color_ui = rgb { 46 80 144 }
 }
 
 ITP = {

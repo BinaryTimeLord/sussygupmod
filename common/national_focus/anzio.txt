@@ -1364,7 +1364,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_the_sovereign_question
-		icon = GFX_goal_unknown
+		icon = GFX_DUCE_DUCE
 		x = 23
 		y = 0
 		cost = 5
@@ -1480,7 +1480,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_return_of_the_republic
-		icon = GFX_focus_ITA_italo_balbo
+		icon = GFX_focus_ITA_carpaccio_leader
 		x = 13
 		y = 2
 		cost = 5
@@ -2099,7 +2099,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_the_workers_revolution
-		icon = GFX_focus_ITA_dino_grandi
+		icon = GFX_focus_ITA_amaretto_leader
 		x = 17
 		y = 2
 		cost = 5
@@ -2161,8 +2161,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_invite_trotsky
-		icon = GFX_focus_unknown
+		id = ITA_invite_nonna
+		icon = GFX_focus_ITA_invite_nonna
 		x = 16
 		y = 4
 		cost = 10
@@ -2176,7 +2176,7 @@ focus_tree = {
 		bypass = { }
 
 		mutually_exclusive = { 
-		 	focus = ITA_follow_stalin
+		 	focus = ITA_follow_katyusha
 		}
 
 		prerequisite = { 
@@ -2199,8 +2199,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_follow_stalin
-		icon = GFX_focus_unknown
+		id = ITA_follow_katyusha
+		icon = GFX_focus_ITA_follow_katyusha
 		x = 18
 		y = 4
 		cost = 10
@@ -2218,7 +2218,7 @@ focus_tree = {
 		}
 
 		mutually_exclusive = { 
-			focus = ITA_invite_trotsky
+			focus = ITA_invite_nonna
 		}
 
 		completion_reward = {
@@ -2253,8 +2253,8 @@ focus_tree = {
 		bypass = { }
 
 		prerequisite = { 
-			focus = ITA_invite_trotsky
-		 	focus = ITA_follow_stalin
+			focus = ITA_invite_nonna
+		 	focus = ITA_follow_katyusha
 		}
 
 
@@ -3206,7 +3206,7 @@ focus_tree = {
 		available = {
 			ITA = {
 				AND = {
-					has_completed_focus = ITA_invite_trotsky
+					has_completed_focus = ITA_invite_nonna
 					has_completed_focus = ITA_create_the_italian_international
 				}
 			}
@@ -4240,7 +4240,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_the_kings_coronation
+		id = ITA_the_queens_coronation
 		icon = GFX_focus_generic_monarchy_2
 		x = 29
 		y = 4
@@ -4272,7 +4272,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_the_kings_economy
+		id = ITA_the_queens_economy
 		icon = GFX_focus_generic_royal_wedding
 		x = 28
 		y = 5
@@ -4288,7 +4288,7 @@ focus_tree = {
 
 
 		prerequisite = { 
-			focus = ITA_the_kings_coronation
+			focus = ITA_the_queens_coronation
 		}
 
 		completion_reward = {
@@ -4298,7 +4298,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_the_kings_army
+		id = ITA_the_queens_army
 		icon = GFX_focus_generic_little_entente
 		x = 30
 		y = 5
@@ -4313,7 +4313,7 @@ focus_tree = {
 		bypass = { }
 
 		prerequisite = { 
-			focus = ITA_the_kings_coronation
+			focus = ITA_the_queens_coronation
 		}
 
 		completion_reward = {
@@ -4341,10 +4341,10 @@ focus_tree = {
 		}
 
 		prerequisite = { 
-			focus = ITA_the_kings_army
+			focus = ITA_the_queens_army
 		}
 		prerequisite = { 
-			focus = ITA_the_kings_economy
+			focus = ITA_the_queens_economy
 		}
 
 		completion_reward = {
@@ -4940,7 +4940,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_the_voices_inside_my_head
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ITA_schizo_anchovy
 		x = 34
 		y = 2
 		cost = 5
@@ -6431,7 +6431,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_king_of_the_air
+		id = ITA_queen_of_the_air
 		icon = GFX_goal_generic_air_bomber
 		x = 51
 		y = 4
@@ -6474,7 +6474,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = ITA_king_of_the_air
+			focus = ITA_queen_of_the_air
 		}
 
 		available_if_capitulated = yes

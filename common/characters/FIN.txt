@@ -125,11 +125,11 @@ characters = {
 				large="gfx/leaders/FIN/Portrait_FIN_Aki.dds"
 			}
 		}
-		country_leader={
-			desc="POLITICS_AIMO_AALTONEN_DESC"
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = marxism # SKP
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { committed_anti_fascist personal_agenda_aaltonen }
 		}
 		corps_commander={
 			traits={ trait_cautious trickster }
@@ -151,11 +151,11 @@ characters = {
 				large="gfx/leaders/FIN/Portrait_FIN_Mikko.dds"
 			}
 		}
-		country_leader={
-			desc="POLITICS_VILHO_ANNALA_DESC"
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = fascism_ideology #IKL
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { economic_reformer personal_agenda_annala }
 		}
 		corps_commander={
 			traits={ trait_reckless politically_connected trickster }
@@ -185,6 +185,12 @@ characters = {
 			planning_skill=4
 			logistics_skill=5
 			legacy_id=5003
+		}
+		country_leader = {
+			ideology = socialism # SDP
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { pragmatic_socialist personal_agenda_tanner }
 		}
 	}
 	FIN_jouko={
@@ -1715,12 +1721,6 @@ characters = {
 					small = GFX_portrait_FIN_vilho_annala_small
 				}
 			}
-			country_leader = {
-				ideology = fascism_ideology #IKL
-				expire = "1965.1.1.1"
-				id = -1
-				traits = { economic_reformer personal_agenda_annala }
-			}
 			advisor = {
 				slot = political_advisor
 				idea_token = FIN_vilho_annala
@@ -2016,12 +2016,6 @@ characters = {
 					small = GFX_portrait_FIN_vaino_tanner_small
 				}
 			}
-			country_leader = {
-				ideology = socialism # SDP
-				expire = "1965.1.1.1"
-				id = -1
-				traits = { pragmatic_socialist personal_agenda_tanner }
-			}
 			advisor = {
 				slot = political_advisor
 				idea_token = FIN_vaino_tanner
@@ -2273,12 +2267,6 @@ characters = {
 					large = GFX_portrait_FIN_aimo_aaltonen
 					small = GFX_portrait_FIN_aimo_aaltonen_small
 				}
-			}
-			country_leader = {
-				ideology = marxism # SKP
-				expire = "1965.1.1.1"
-				id = -1
-				traits = { committed_anti_fascist personal_agenda_aaltonen }
 			}
 			advisor = {
 				slot = political_advisor

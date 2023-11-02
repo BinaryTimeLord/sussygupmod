@@ -485,7 +485,7 @@ if = {
 	complete_national_focus = ITA_expand_africa
 	complete_national_focus = ITA_italian_bright_minds
 	complete_national_focus = ITA_arms_cache_in_the_alps
-	complete_national_focus = ITA_prepare_for_war
+	complete_national_focus = ITA_prepare_for_conflict
 	complete_national_focus = ITA_pact_of_steel
 
 

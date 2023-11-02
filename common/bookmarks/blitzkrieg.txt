@@ -572,8 +572,8 @@ bookmarks = {
 			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
 				SWE_radiotjanst_democratic
-				SWE_with_finland_for_sweden
-				SWE_en_svensk_tiger_aat_lar
+				SWE_saltsjobaden_agreement
+				SWE_paid_holidays_idea
 			}
 			focuses = {
 				SWE_as_the_barometer_falls
@@ -600,6 +600,23 @@ bookmarks = {
 			minor = yes
 			history = DEN_BLITZKRIEG_DESC
 			ideology = democratic
+			available = { NOT = { has_dlc = "By Blood Alone" } }
+			ideas = {
+				DEN_fake_industrial_capability_2_ns
+				DEN_declaration_of_neutrality_no_BBA
+				DEN_danish_produce_improved 
+			}
+			focuses = {
+				DEN_full_employment
+				DEN_declare_independence
+				DEN_create_danforce
+			}
+		}
+		"DEN"={
+			minor = yes
+			history = DEN_BLITZKRIEG_DESC
+			ideology = democratic
+			available = { has_dlc = "By Blood Alone" }
 			ideas = {
 				DEN_fake_industrial_capability_2_ns
 				DEN_declaration_of_neutrality
