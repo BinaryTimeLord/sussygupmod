@@ -1,0 +1,41 @@
+characters = { ##fuck this shit it wont work##
+	SDF_saori_takebe = {
+		name = SDF_saori_takebe
+		
+		portraits={
+			civilian={
+				large = "gfx/leaders/SDF/GFX_saori3.dds"
+			}
+			
+			civilian = {
+				small = "gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
+			}
+			
+			army={
+				small = "gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
+			}
+			
+			army = {
+				large = "gfx/leaders/SDF/GFX_saori.dds"
+			}
+			
+		}
+		
+		field_marshal={
+			traits={ media_personality war_hero }
+			skill=4
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=5
+		}
+		
+		country_leader = {
+			ideology = centrism
+			traits = { }
+			expire = "1965.1.1"
+		}
+	
+	}
+
+}

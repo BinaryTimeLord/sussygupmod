@@ -1,0 +1,29 @@
+capital = 52
+
+
+##TECH/POLITICS##
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.35
+
+set_popularities = {
+	democratic = 12
+	communism = 0
+	fascism = 10
+	neutrality = 78
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+
+}
+
+##CHARACTERS##
+
+recruit_character = SDF_saori_takebe

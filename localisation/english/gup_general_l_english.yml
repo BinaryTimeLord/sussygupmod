@@ -2391,7 +2391,7 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   iberian_integration:0 "Iberian Integration"
   arabian_integration:0 "Arabian Integration"
 
-  # Country Leaders
+  # Country LeadersForces
   ITA_amaretto:0 "Amaretto"
   ITA_carpaccio:0 "Carpaccio"
   ITA_pepperoni:0 "Pepperoni"
@@ -2414,5 +2414,11 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   ITA_Mussolinism:0 "Anchovysm"
   separation_movement:0 "§YStrange things will happen in Anzio..."
   three_way_war:0 "§RAnchovy will reunify all of the partitions... by force!"
+  
+  ## SCHHIZO ##
+  
+  SDF:0 "Sozialistische Demokratische Kuromorimine"
+  SDF_saori_takebe:0 "Heerfuhrer Saori Takebe"
+  
 
  
