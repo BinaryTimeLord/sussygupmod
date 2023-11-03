@@ -576,17 +576,11 @@ country_event = { # Communist Italy secedes
 
 		ITC = {
 			transfer_state = 158
-			158 = {
-				add_core_of = ITC
-			}
+			add_state_core = 158
 			transfer_state = 159
-			159 = {
-				add_core_of = ITC
-			}
+			add_state_core = 159
 			transfer_state = 161
-			161 = {
-				add_core_of = ITC
-			}
+			add_state_core = 161
 		}
 	}
 
@@ -702,17 +696,11 @@ country_event = { # Monarchist Italy secedes
 
 		ITE = {
 			transfer_state = 117
-			117 = {
-				add_core_of = ITE
-			}
+			add_state_core = 117
 			transfer_state = 156
-			156 = {
-				add_core_of = ITE
-			}
+			add_state_core = 156
 			transfer_state = 115
-			115 = {
-				add_core_of = ITE
-			}
+			add_state_core = 115
 		}
 	}
 }

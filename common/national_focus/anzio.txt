@@ -3239,7 +3239,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_mussolinis_cult_of_personality
-		icon = GFX_focus_ITA_capo_supremo
+		icon = GFX_focus_ITA_cult_of_personality
 		x = 23
 		y = 2
 		cost = 5
@@ -5056,7 +5056,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = { mussolinism }
+			custom_effect_tooltip = anchovy_reborn
 		}
 	}
 

@@ -127,11 +127,6 @@ if = {
 
 set_convoys = 200
 
-add_state_core = 117
-add_state_core = 156
-add_state_core = 115
-
-
 set_politics = {
 	ruling_party = neutrality
     elections_allowed = no
