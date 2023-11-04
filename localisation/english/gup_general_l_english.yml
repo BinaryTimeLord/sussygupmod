@@ -450,7 +450,7 @@
  GER_invite_chihatan: "Invite Chi-Ha-Tan"
  GER_invite_chihatan_desc: "Chi-Ha-Tan a school known for its large charges and fast light and medium tanks, have a extremely large schoolship and many devoted followers to the sport of Sensha-do as well as their leader Kinuyo Nishi they would make a great ally."
  GER_invite_ooarai: "Invite Ooarai"
- GER_invite_ooarai_desc: ""
+ GER_invite_ooarai_desc: "" #not sure if ya mean these binary
  GER_invite_jatkosota: "Invite Jatkosota"
  GER_invite_jatkosota_desc: ""
  GER_expanded_world_sensha_do: "Expanded the World of Sensha-do"
