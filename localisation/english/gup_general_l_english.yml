@@ -321,13 +321,13 @@
  GER_festung_ostland:0 "Festung Ostland"
  GER_festung_ostland_desc: "Die Wacht im Osten"
  GER_mobilize_the_academy:0 "Mobilize the Academy"
- GER_mobilize_the_academy_desc: "" #dont
+ GER_mobilize_the_academy_desc: "To some the Pen is mightier then the sword, but nothings stronger then a bullet"
  GER_foreign_investment:0 "Foreign Investments"
  GER_foreign_investment_desc: "We must invest in our eastern allies to reduce their dependencies on us."
  GER_mass_training:0 "Mass Training"
- GER_mass_training_desc: "" #dont
+ GER_mass_training_desc: "The Kuromormine Horde shall defeat any enemy it faces"
  GER_specialized_training:0 "Specialized Training"
- GER_specialized_training_desc: "" #dont
+ GER_specialized_training_desc: "The army must not be made an army of fools, it will be a army of real soldiers"
  GER_fall_romanien:0 "Fall Romanien"
  GER_fall_romanien_desc: "Case Romania shall see Count ready against Pravda."
  GER_berlin_polytechnic:0 "Berliner Polytechnikum"
