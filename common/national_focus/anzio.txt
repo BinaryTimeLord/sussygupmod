@@ -2293,6 +2293,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			remove_ideas = { vittorio_emanuele }
+            retire_character = ITA_vittorio_emanuele_iii
 		}
 	}
 
@@ -5397,6 +5398,12 @@ focus_tree = {
 			        name = "US/ITA Pensacola"
 			    }
 			}
+			USA = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_invite_usa
+				}
+			}
 		}
 	}
 
@@ -5447,6 +5454,12 @@ focus_tree = {
 			        name = "UK/ITA Queen Elizabeth"
 			    }
 			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_invite_eng
+				}
+			}
 		}
 	}
 
@@ -5496,6 +5509,12 @@ focus_tree = {
 			        creator = JAP
 			        name = "JAP/ITA Akagi"
 			    }
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_invite_jap
+				}
 			}
 		}
 	}
@@ -5715,6 +5734,12 @@ focus_tree = {
 			add_to_variable = { ITA.ITA_army_defence = 0.025 }
 			add_to_variable = { ITA.ITA_army_leader_cost = -0.05 }
 			custom_effect_tooltip = ITA_military_reform_tt_1_desc
+			ENG = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_learn_eng
+				}
+			}
 		}
 	}
 
@@ -5845,6 +5870,10 @@ focus_tree = {
 							superior_firepower = 1
 							popup = yes
 						}
+						set_technology = {
+							trench_warfare = 0
+							popup = yes
+						}
 					}					
 				}
 			add_doctrine_cost_reduction = {
@@ -5905,6 +5934,12 @@ focus_tree = {
 				category = artillery
 			}
 			custom_effect_tooltip = ITA_military_reform_tt_5_desc
+			USA = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_learn_usa
+				}
+			}
 		}
 	}
 
@@ -6034,9 +6069,24 @@ focus_tree = {
 			add_to_variable = { ITA.ITA_army_defence = 0.025 }
 			add_to_variable = { ITA.ITA_army_leader_cost = -0.01 }
 			army_experience = 50
-			set_technology = {
-				mobile_warfare = 1
-				popup = yes
+			if = {
+				limit = {
+					has_tech = mobile_warfare
+				}
+				set_technology = {
+					mobile_warfare = 2
+						popup = yes
+				}
+				else = {
+					set_technology = {
+						mobile_warfare = 1
+						popup = yes
+					}
+					set_technology = {
+						trench_warfare = 0
+						popup = yes
+					}
+				}					
 			}
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.7
@@ -6129,6 +6179,12 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = ITA_military_reform_tt_5_desc
+			GER = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_learn_ger
+				}
+			}
 		}
 	}
 
@@ -6174,6 +6230,12 @@ focus_tree = {
 				category = armor
 			}
 			custom_effect_tooltip = ITA_military_reform_tt_5_desc
+			SOV = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_learn_sov
+				}
+			}
 		}
 	}
 

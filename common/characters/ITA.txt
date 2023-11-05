@@ -2372,6 +2372,7 @@ characters = {
 			idea_token = carlo_scorza
 			allowed = {
 				ITA_is_italian_tag = yes
+                has_global_flag = ITA_use_DLC_tree
 			}
 			available = {
 				ITA_government_is_really_fascist = yes
@@ -2744,6 +2745,7 @@ characters = {
 			idea_token = ivanoe_bonomi
 			allowed = {
 				ITA_is_italian_tag = yes
+				has_global_flag = ITA_use_DLC_tree
 			}
 			available = {
 				if = {
@@ -3172,6 +3174,7 @@ characters = {
 			idea_token = amadeo_bordiga
 			allowed = {
 				ITA_is_italian_tag = yes
+                has_global_flag = ITA_use_DLC_tree
 			}
 			available = {
 				ITA_is_going_antifascist_in_bba = yes

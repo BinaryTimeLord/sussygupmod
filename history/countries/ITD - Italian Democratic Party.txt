@@ -26,10 +26,6 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-add_state_core = 39
-add_state_core = 160
-add_state_core = 736
-
 set_rule = { 
 	can_join_factions = no 
 	can_create_factions = no

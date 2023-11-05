@@ -17,20 +17,40 @@ opinion_modifiers = {
 	antisovprop_opinion = {
 		value = -40
 	}
-	
 	FIN_diplomatic_accent = {
 	    value = 60
 	}
-	
 	FIN_outranged = {
 		value = -100
 	}
-	
 	FIN_SOV_accept = {
 	    value = 50
 	}
-	
 	FIN_SOV_decline = {
 	    value = -50
+	}
+	ITA_learn_eng = {
+	    value = 20
+	}
+	ITA_learn_usa = {
+	    value = 20
+	}
+	ITA_learn_ger = {
+	    value = 20
+	}
+	ITA_learn_sov = {
+	    value = 20
+	}
+	ITA_learn_eng = {
+	    value = 20
+	}
+	ITA_invite_eng = {
+	    value = 10
+	}
+	ITA_invite_jap = {
+	    value = 10
+	}
+	ITA_invite_usa = {
+	    value = 10
 	}
 }
