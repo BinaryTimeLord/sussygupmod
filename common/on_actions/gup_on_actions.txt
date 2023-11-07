@@ -175,11 +175,12 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = {
-						original_tag = ETH
+                    original_tag = ETH
+                    FROM = {
+                        original_tag = ITA
 					}
 				}
-				ITA = {
+				FROM = {
 					complete_national_focus = ITA_army_incompetence
 					news_event = { id = anz.1 days = 1 }
 				}
