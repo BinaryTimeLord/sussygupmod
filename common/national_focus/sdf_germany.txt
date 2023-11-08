@@ -1,0 +1,141 @@
+focus_tree = {
+	id = sdfgerman_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SDF
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = SDF_wacht_am_rhien
+		##icon
+		
+		x = 5
+		y = 0
+		
+		cost = 0.5
+		ai_will_do = {
+			factor = 10000
+		}
+		
+		mutually_exclusive = { focus = SDF_southern_expedition }
+		
+		completion_reward = {
+			country_event = {
+				id = sdf.2
+				days = 1
+			}
+			
+			every_state = {
+				limit = { is_core_of = GER }
+				add_core_of = SDF
+			}
+		}
+	}
+	
+	focus = {
+		id = SDF_southern_expedition
+		##icon 
+		
+		x = 9
+		y = 0
+		
+		cost = 0.5
+		ai_will_do = {
+			factor = 0
+		}
+		
+		mutually_exclusive = { focus = SDF_wacht_am_rhien }
+		
+		completion_reward = {
+			country_event = {
+				id = sdf.3
+				days = 1
+			}
+			every_state = {
+				limit = { is_core_of = GER }
+				add_core_of = SDF
+			}
+		}
+	}
+	
+	focus = {
+		id = SDF_ooarai_cells
+		##icon 
+		
+		x = 7
+		y = 1
+		
+		cost = 0.5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = SDF_wacht_am_rhien focus = SDF_southern_expedition }
+		
+		##mutually_exclusive = { }
+		
+		completion_reward = {
+			52 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+			
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					
+					amount = 5500
+					
+					producer = GER
+				
+				}
+		}	
+	}
+	
+	focus = {
+		id = SDF_war_liberation
+		##icon
+		
+		x = 7
+		y = 2
+		
+		cost = 1
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = SDF_ooarai_cells }
+		##mutually_exclusive = 
+		
+		completion_reward = {
+			
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+			
+			declare_war_on = {
+				target = D04
+				type = annex_everything
+			}
+			
+		}
+			
+	}
+			
+}
+

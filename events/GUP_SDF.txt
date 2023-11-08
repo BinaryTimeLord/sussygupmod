@@ -1,0 +1,195 @@
+add_namespace = sdf
+
+##TEMPLATE
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+		#ai_chance = {
+			#base =
+		#}
+
+	#}
+#}
+
+country_event = { ##NAZI VOLUNTEERS
+	id = sdf.1
+	title = sdf.1.t
+	desc = sdf.1.d
+	##picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.1.a
+		ai_chance = {
+			base = 10
+		}
+		
+		create_field_marshal = {
+				name = "Heerfuhrer Maho Nishizumi"
+				portrait_path = "gfx/leaders/SDF/GFX_maho.dds"
+				traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
+				skill=5
+				attack_skill=4
+				defense_skill=5
+				planning_skill=5
+				logistics_skill=4
+			}
+			
+			create_corps_commander = { ##CAN BE PURGED##
+				name = "Erika Itsumi"
+				portrait_path = "gfx/leaders/SDF/GFX_erika.dds"
+				traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=3
+			}
+			
+		52 = {
+			create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+		}
+	}
+	
+	option = { ##REJECT
+		name = sdf.1.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+##BATTLE FOR RHIENLAND
+
+country_event = {
+	id = sdf.2
+	title = sdf.2.t
+	desc = sdf.2.d
+	##picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.2.a
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			42 = {
+				add_core_of = SDF
+			}
+		
+			51 = {
+				add_core_of = SDF
+			}	
+		}
+		SDF = {
+			transfer_state = 42
+			transfer_state = 51
+		}
+		
+		hidden_effect = {
+			42 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+			
+			51 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sdf.3
+	title = sdf.3.t
+	desc = sdf.3.d
+	##picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.3.a
+		ai_chance = {
+			base = 10	
+		}
+		
+		hidden_effect = {
+			50 = {
+				add_core_of = SDF
+			}
+		
+			53 = {
+				add_core_of = SDF
+			}	
+		}
+		
+		SDF = {
+			transfer_state = 50
+			transfer_state = 53
+		}
+		
+		hidden_effect = {
+			50 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+			
+			53 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+		}
+	}
+	
+}

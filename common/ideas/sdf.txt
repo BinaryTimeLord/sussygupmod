@@ -1,0 +1,85 @@
+ideas = {
+	country = {
+		sdf_army_w_state = {
+	
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_volunteer_defence_corps
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.8
+				stability_factor = -0.25
+				surrender_limit = -0.50
+				war_support_factor = 0.15'
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.075
+				army_morale_factor = 0.02
+			}
+		}
+		
+		sdf_revolutionary_fevor = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.1
+				army_org_factor = -0.15
+				attrition = 0.15
+				stability_weekly = -0.005
+				fascism_drift = 0.05
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+				instant = yes
+				build_cost_ic = -0.1
+				}
+			}
+		}
+		
+		sdf_battle_for_freedom = {
+		
+			picture = chi_war_of_resistance3
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				war_support_factor = 0.05
+				supply_consumption_factor = 0.05
+				fascism_drift = 0.05
+				communism_drift = 0.05
+			}
+		}
+	}
+	
+}

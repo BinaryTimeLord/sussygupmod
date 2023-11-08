@@ -2329,5 +2329,19 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF:0 "Sozialistische Demokratische Kuromorimine"
   SDF_saori_takebe:0 "Heerfuhrer Saori Takebe"
   
+  ##IDEAS##
+  sdf_army_w_state:0 "Army With a State"
+  sdf_army_w_state_desc:0 "Like the Kuromormine of old, we are a people that are centred around one goal Total Victory, all shall fight for it no matter the cost"
+  sdf_revolutionary_fevor:0 "Revolutionary Fervor"
+  sdf_revolutionary_fevor_desc:0 "We fight for true strength for our people, not that of the insanity of liberty or the illusion of strength"
+  sdf_battle_for_freedom:0 "Liberation War"
+  sdf_battle_for_freedom_desc:0 "We cannot fail our people, we must win no matter the cost for the Strength and will of the nation"
+  
+  ##FOCUS##
+  SDF_wacht_am_rhien:0 "Die Wacht Am Rhein"
+  SDF_wacht_am_rhien_desc:0 ""
+  SDF_southern_expedition:0 "Southern Expedition"
+  SDF_southern_expedition_desc:0 ""
+  
 
  

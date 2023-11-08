@@ -491,6 +491,7 @@
  kmm.99.t:0 "Volunteers!"
  kmm.99.d:0 "As the Civil War is moving more in our favour more people are volunteering for the army. A small group of south Germans have rallied together to create a armoured brigade. The 37th will help us in this great struggle."
  kmm.99.a:0 "Good to Hear"
+ kmm.99.b:0 "I dont like these fellas"
  
  #OFFENSIVE WAR RESIGNATION
  kmm.13.t: "Maho Nishizumi resigns on all Posts!"
@@ -906,6 +907,11 @@
  kmm.245.t:0 "Gregor defiant"
  kmm.245.d:0 "Gregor has rejected our terms."
  kmm.245.a:0 "prepare for conflict"
+ 
+ kmm.246.t:0 "Frankfurt Revolution"
+ kmm.246.d:0 "Tensions have been growing in the Anti Nishizumi coalition for some time, despite working together against a common enemy, a growing disconnect between the provisional government and the Sozialistische Demokratische Kräfte or SDK, while relations started out strong routine sidelining and even stricter rationing has alienated many members whom have taken to the streets to show their dissatisfaction with the government. \n \nKnown as the Frankfurt Putch, 5000 SDK members led by Saori marched towards the town hall, where they were stopped by security forces who attempted to disperse the crowd, however after attempting to detain Saori things turned violent as gunfire errupted through the streets as the small military garrison sided with the SDK and launched a attack on the town hall seizing it. \n \nAfter the seizure of the town hall a panicked moment insued as fears of a rebellion occurring was only quashed when the government folded to many of the SDKs demands for representation and even recieved many concessions post war. \n \nWith Frankfurt putch over many wonder if this signals the start of a eventual SDK Uprising or just a minor correction to old mistakes."
+ kmm.246.a:0 "They sound cool (Play As)"
+ kmm.246.b:0 "Down with the Traitors!"
  
  #####################
  ### NEW DEICSIONS ###
@@ -1463,7 +1469,9 @@
   anz.31.t:0 "[From.GetNameDefCap] rejects annexation"
   anz.31.a:0 "We shall see about that!"
  
- ##DEMOCRATIC GERMANY##
+ ## SCHIZO ##
  
- GER_TAKEBEISM_LONG:0 "Democratic Takebeism Party"
- GER_TAKEBEISM:0 "DTP"
+ sdf.1.t:0 "Fuhrer and Her Lackey"
+ sdf.1.d:0 "As Gunshots echoed outside fear gripped Erika as she hurriedly fills her bag whilst loading a magazine into her machine gun, the revolutionaries were close and Erika urged Maho to flee southward with her. \n \n She would hurriedly enter her office as she calmly closes a briefcase as she looks over at Erika with a pained look of sadness as she says. \n \n 'Alright I’m ready' \n \n The two take their bags as they step outside the building where they are met with several loyalists, waiting near cars to take them to Mahonich"
+ sdf.1.a:0 "They are useful, for now"
+ sdf.1.b:0 "Turn them awa!"
