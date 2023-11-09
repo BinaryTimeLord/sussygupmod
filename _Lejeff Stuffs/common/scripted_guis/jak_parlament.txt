@@ -1,0 +1,12 @@
+scripted_gui = {
+
+	jak_parlament1_decision_ui = {
+		context_type = decision_category
+		window_name = "jak_parlament_decision_ui_window"
+
+		properties = {
+		parlament_info = {
+		}
+		}
+	}	
+}

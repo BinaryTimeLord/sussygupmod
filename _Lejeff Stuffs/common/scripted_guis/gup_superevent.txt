@@ -1,0 +1,56 @@
+scripted_gui = {
+
+GUP_SG_big_event_finale_victory_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "GUP_SG_big_event_finale_victory_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_GUP1 ### this country flag triggers the #superevent
+		}
+	}
+
+	GUP_SG_big_event_frame_finale_victory_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "GUP_SG_big_event_frame_finale_victory_custom"
+
+		visible = {
+			has_country_flag =  big_event_custom_GUP1
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_GUP1 ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+	
+##SECOND EVENT
+
+GUP_SG_big_event_nuclear_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "GUP_SG_big_event_nuclear_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_nuclear ### this country flag triggers the #superevent
+		}
+	}
+
+	GUP_SG_big_event_frame_nuclear_custom1 = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "GUP_SG_big_event_frame_nuclear_custom"
+
+		visible = {
+			has_country_flag =  big_event_custom_nuclear
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_nuclear ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+
+##set_country_flag big_event_custom_GUP1
+##set_country_flag big_event_custom_nuclear
+}
+

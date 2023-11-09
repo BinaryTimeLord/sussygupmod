@@ -1387,6 +1387,7 @@
   anz.5.d:0 "Seeing themselves either powerless or sympathetic for the workers' struggle, they have accepted."
   anz.5.a:0 "Excellent!"
   anz.6.t:0 "[From.GetNameDefCap] rejects subjugation"
+  anz.6.d:0 "They won't let others control them. Things are tense and uncertain now as they resist."
   anz.6.a:0 "We shall see about that!"
   anz.7.t:0 "Anzio offers protection"
   anz.7.d:0 "The new democratic government offers to take Albania under its mantel and help them reform their current country into a democratic republic."
@@ -1456,7 +1457,7 @@
   anz.27.d:0 "The italian people have sought for the return of the monarchy for several months and now in the eyes of thousands of people the new Queen will be crown!"
   anz.27.a:0 "Long live the Queen!"
   anz.27.b:0 "Interesting..."
-  anz.28.t:0 "Anzio announces the formation of the Imperium Romanum"
+  anz.28.t:0 "Anzio Forms Imperium Romanum"
   anz.28.d:0 "After uniting the old provinces of the Empire, today the Queen announces in front of millions the formation of the Imperium Romanum, a long ambition since her days of conquest. United under one banner, millions accross the territory have celebrated this event."
   anz.28.a:0 "Roma Invicta!"
   anz.28.b:0 "Interesting..."
@@ -1465,8 +1466,10 @@
   anz.29.a:0 "We better accept..."
   anz.29.b:0 "No surrender without a fight!"
   anz.30.t:0 "[From.GetNameDefCap] accepts annexation"
+  anz.30.d:0 "A new era begins."
   anz.30.a:0 "Excellent!"
   anz.31.t:0 "[From.GetNameDefCap] rejects annexation"
+  anz.31.d:0 "The situation is tense, and the future remains uncertain."
   anz.31.a:0 "We shall see about that!"
  
  ## SCHIZO ##

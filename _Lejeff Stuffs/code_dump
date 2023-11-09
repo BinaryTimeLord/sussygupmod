@@ -1,0 +1,2780 @@
+
+
+	##EMI PATH <---- more socialist?!?
+	##EUROPEAN UNION
+	focus = {
+		id = GER_victory_for_emi
+		mutually_exclusive = { focus = GER_victory_for_mauko focus = GER_victory_for_geshiko }
+		icon = GFX_goal_
+		x = 50
+		y = 12
+		cost = 1
+		available = { ##HAS EMI
+		
+		
+		}
+		completion_reward = {
+		add_stability = 0.1
+		}
+		
+		}
+		
+		focus = {
+		id = GER_free_heathcare
+		prerequisite = { focus = GER_victory_for_emi }
+		icon = GFX_goal_
+		relative_position_id = GER_victory_for_emi
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = kmm_free_heath
+		add_political_power = 75
+		}
+		}
+	
+		
+		focus = {
+		id = GER_nationalize_resources 
+		prerequisite = { focus = GER_victory_for_emi }
+		icon = GFX_goal_
+		relative_position_id = GER_victory_for_emi
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = kmm_nationalize
+		}
+		}
+		
+		focus = {
+		id = GER_education_inititive 
+		prerequisite = { focus = GER_free_heathcare }
+		relative_position_id = GER_victory_for_emi
+		x = -2
+		y = 2
+		cost = 7
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = kmm_free_heath
+		add_idea = kmm_free_health_and_education
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_limited_nationalization 
+		prerequisite = { focus = GER_free_heathcare }
+		relative_position_id = GER_victory_for_emi
+		x = 0
+		y = 2
+		cost = 7 
+		completion_reward = {
+		64 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+					}
+		
+		}
+		
+		56 = {
+		
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = industry
+			}
+		}
+		}
+		
+		focus = {
+		id = GER_allow_unions
+		prerequisite = { focus = GER_education_inititive }
+		prerequisite = { focus = GER_limited_nationalization }
+		relative_position_id = GER_victory_for_emi
+		x = -1
+		y = 3
+		cost = 7
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 150
+		}
+		}
+		
+		focus = {
+		id = GER_deterrence
+		prerequisite = { focus = GER_nationalize_resources }
+		relative_position_id = GER_victory_for_emi
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = deterrence
+		}
+		
+		}
+		
+		focus = { 
+		id = GER_education_everyone
+		prerequisite = { focus = GER_allow_unions focus = GER_deterrence }
+		relative_position_id = GER_victory_for_emi
+		x = -2
+		y = 4
+		cost = 10
+		completion_reward = {
+		custom_effect_tooltip = kmm_research_tooltip
+		if = {
+		limit = {
+		GER = {
+		original_research_slots < 5
+		}
+		}
+		add_research_slot = 1
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_railroad_expansion
+		prerequisite = { focus = GER_allow_unions focus = GER_deterrence }
+		relative_position_id = GER_victory_for_emi
+		x = 0
+		y = 4
+		cost = 10
+		completion_reward = {
+		53 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+		
+		}
+		
+		763 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+		}
+		
+		63 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_home_of_free
+		prerequisite = { focus = GER_education_everyone }
+		prerequisite = { focus = GER_railroad_expansion }
+		relative_position_id = GER_victory_for_emi
+		x = -1
+		y = 5
+		cost = 7
+		completion_reward = {
+		add_ideas = kmm_free_home
+		}
+		}
+		
+		focus = {
+		id = GER_government_owned_arms_factory
+		prerequisite = { focus = GER_education_everyone }
+		prerequisite = { focus = GER_railroad_expansion }
+		relative_position_id = GER_victory_for_emi
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+		64 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory 
+			level = 2
+			instant_build = yes
+					}
+		
+		}
+		
+		55 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory 
+			level = 2
+			instant_build = yes
+					}
+		}
+		
+		}
+		}
+		
+		##GESHIKO <---- average democratic
+		focus = {
+		id = GER_victory_for_geshiko
+		icon = GFX_goal_
+		mutually_exclusive = { focus = GER_victory_for_emi focus = GER_victory_for_mauko }
+		x = 55
+		y = 12
+		cost = 1
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 75
+		}
+		}
+		
+		focus = {
+		id = GER_coliliton 
+		icon = GFX_goal_
+		relative_position_id = GER_victory_for_geshiko
+		x = -1
+		y = 1
+		prerequisite = { focus = GER_victory_for_geshiko }
+		cost = 7
+		completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+			}
+		add_stability = 0.05	
+		}
+		}
+		
+		focus = {
+		id = GER_establish_reichswehr
+		relative_position_id = GER_victory_for_geshiko
+		x = 1
+		y = 1
+		prerequisite = { focus = GER_victory_for_geshiko }
+		cost = 7
+		completion_reward = {
+		add_ideas = kmm_reichswehr
+		}
+		}
+		
+		focus = {
+		id = GER_kill_radicals
+		relative_position_id = GER_victory_for_geshiko
+		x = -2
+		y = 2
+		prerequisite = { focus = GER_coliliton }
+		cost = 7
+		completion_reward = { ##EVENT
+		
+		}
+		}
+		
+		focus = {
+		id = GER_industrial_projects
+		relative_position_id = GER_victory_for_geshiko
+		x = 0
+		y = 2
+		prerequisite = { focus = GER_coliliton }
+		cost = 7
+		completion_reward = {
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+		}
+		
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+		}
+		
+		}
+		}
+		
+		focus = {
+		id = GER_arm_reichwehr
+		relative_position_id = GER_victory_for_geshiko
+		x = 2
+		y = 2
+		prerequisite = { focus = GER_establish_reichswehr }
+		cost = 15
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = kmm_reichswehr
+		add_idea = kmm_reichswehr2
+		}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory 
+			level = 2
+			instant_build = yes
+					}
+		}
+		
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory 
+			level = 2
+			instant_build = yes
+					}
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_federal_bank
+		relative_position_id = GER_victory_for_geshiko
+		x = -1
+		y = 3
+		prerequisite = { focus = GER_industrial_projects }
+		cost = 7
+		completion_reward = {
+		add_ideas = kmm_federal_bank
+		}
+		}
+		
+		focus = {
+		id = GER_land_base
+		relative_position_id = GER_victory_for_geshiko
+		x = 1
+		y = 3
+		mutually_exclusive = { focus = GER_air_base }
+		prerequisite = { focus = GER_arm_reichwehr }
+		available = {
+		NOT = {
+			has_country_flag = GER_europe2
+		}
+		}
+		cost = 7 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = kmm_reichswehr2
+		add_idea = kmm_land_doctrine
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_air_base
+		relative_position_id = GER_victory_for_geshiko
+		x = 3
+		y = 3
+		mutually_exclusive = { focus = GER_land_base }
+		prerequisite = { focus = GER_arm_reichwehr }
+		available = {
+		NOT = {
+			has_country_flag = GER_europe2
+		}
+		}
+		cost = 7
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = kmm_reichswehr2 
+		add_idea = kmm_air_doctrine
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_citization ##lol funny name
+		relative_position_id = GER_victory_for_geshiko
+		x = -1
+		y = 4
+		prerequisite = { focus = GER_federal_bank }
+		cost = 7
+		completion_reward = {
+		64 = {
+		add_extra_state_shared_building_slots = 2
+		}
+		
+		52 = {
+		add_extra_state_shared_building_slots = 2
+		}
+		
+		810 = {
+		add_extra_state_shared_building_slots = 2
+		}
+		}
+		}
+		
+		focus = {
+		id = GER_invest_construct
+		relative_position_id = GER_victory_for_geshiko
+		x = -3
+		y = 4
+		prerequisite = { focus = GER_federal_bank }
+		cost = 7
+		completion_reward = {
+		add_timed_idea = { idea = kmm_construction_projects days = 180 }
+		}
+		}
+		
+		focus = {
+		id = GER_infantry_equipemnt 
+		relative_position_id = GER_victory_for_geshiko
+		x = 1
+		y = 4
+		prerequisite = { focus = GER_land_base } 
+		cost = 7
+		completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+			}
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = armor
+				}
+		army_experience = 25
+		}
+		}
+		
+		focus = {
+		id = GER_air_modern
+		relative_position_id = GER_victory_for_geshiko
+		x = 3
+		y = 4
+		prerequisite = { focus = GER_air_base } 
+		cost = 7
+		completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = air_doctrine
+			}
+			add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			technology = fighter2
+			technology = fighter3
+				}
+			air_experience = 25
+			}
+		}
+		
+		focus = {
+		id = GER_industrial_exploitation
+		relative_position_id = GER_victory_for_geshiko
+		x = -1
+		y = 5
+		prerequisite = { focus = GER_invest_construct focus = GER_citization } 
+		cost = 7
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = kmm_federal_bank
+			add_idea = kmm_industrial_exploit
+			}
+		}
+		}
+		
+		focus = {
+		id = GER_strong_army
+		relative_position_id = GER_victory_for_geshiko
+		x = 1
+		y = 5
+		prerequisite = { focus = GER_infantry_equipemnt }
+		cost = 7
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = kmm_land_doctrine 
+		add_idea = kmm_land_doctrine2
+		}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory 
+			level = 2
+			instant_build = yes
+					}
+		}
+		army_experience = 25
+		}
+		}
+		
+		focus = {
+		id = GER_strong_air
+		relative_position_id = GER_victory_for_geshiko
+		x = 3
+		y = 5
+		prerequisite = { focus = GER_air_modern }
+		cost = 7
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = kmm_air_doctrine
+		add_idea = kmm_air_doctrine2
+		}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory 
+			level = 2
+			instant_build = yes
+					}
+		}
+		air_experience = 25
+		}
+		}
+		
+		##WILL HAVE A MIDDLE BRANCH FOR THE LESS MILITERISTIC 
+		
+		##MAUKO PATH <---- militeristic democratic
+		focus = {
+		id = GER_victory_for_mauko
+		icon = GFX_goal_
+		mutually_exclusive = { focus = GER_victory_for_emi focus = GER_victory_for_geshiko }
+		x = 60
+		y = 12
+		cost = 1
+		available = { ##HAS MAUKO
+		
+		
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		}
+		}
+			##why did i do this, what a waste of fucking time. it will never be used and everything i did will be changed anyways
+	}
+
+
+	focus = {
+		id = GER_european_union
+		icon = GFX_ger_union2
+		prerequisite = { focus = GER_home_of_free }
+		prerequisite = { focus = GER_government_owned_arms_factory }
+		relative_position_id = GER_establish_consituition
+		available = {
+		NOT = {
+		has_country_flag = GER_europe2
+		}
+		}
+		x = 13
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = GER_european_tooltip1
+			custom_effect_tooltip = GER_european_tooltip2
+			custom_effect_tooltip = GER_europe3
+			add_ideas = kmm_europe
+		}
+	}
+
+	#EUROPEAN UNION ##CAN ONLY DO IF THE MOST DEMOCRAITC GETS ELECTED, OTHERWISE DO SOMETHING ELSE LOL?!?!?!
+	
+	focus = {
+		id = GER_science_society
+		prerequisite = { focus = GER_european_union } 
+		relative_position_id = GER_european_union
+		available = {
+		has_completed_focus = GER_adopt_euro
+		}
+		x = 2.5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		add_ideas = kmm_science
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_science
+			}
+		}
+		}
+	
+		
+		
+		##build up da smol bois ##WILL ADD MORE SOONISH MAYBE?
+		focus = {
+		id = GER_build_up_lowlands
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = { 
+		has_country_flag = GER_invite_lowlands
+		NOT = {
+		has_completed_focus = GER_united_europe
+		has_country_flag = GER_europe_tooltip3
+		}
+		}
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+			limit = {
+			BEL = {
+			has_idea = kmm_europe
+			}
+			}
+			BEL = {
+			add_timed_idea = { idea = kmm_german_invest days = 180 }
+			}
+			}
+			
+			if = {
+			limit = {
+			HOL = {
+			has_idea = kmm_europe
+			}
+			}
+			HOL = {
+			add_timed_idea = { idea = kmm_german_invest days = 180 }
+			}
+			}
+			
+			if = {
+			limit = {
+			LUX = {
+			has_idea = kmm_europe
+			}
+			}
+			LUX = {
+			add_timed_idea = { idea = kmm_german_invest days = 360 }
+			}
+			}
+			hidden_effect = {
+			add_ideas = kmm_europe_debt1
+			set_country_flag = GER_europe_tooltip3
+			}
+		}
+		}
+		focus = {
+		id = GER_dev_balkans
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+		has_country_flag = GER_invited_balkans
+		NOT = {
+		has_completed_focus = GER_united_europe
+		has_country_flag = GER_europe_tooltip3
+		}
+		
+		}
+		x = -3
+		y = 2
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		clr_country_flag = GER_balkan5
+		if = {
+		limit = {
+		AUS = {
+			has_idea = kmm_europe
+		}
+		}
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		
+		if = {
+		limit = {
+		CZE = {
+			has_idea = kmm_europe
+		}
+		}
+		CZE = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		HUN = {
+			has_idea = kmm_europe
+		}
+		}
+		HUN = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		YUG = {
+			has_idea = kmm_europe
+		}
+		}
+		YUG = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		ROM = {
+			has_idea = kmm_europe
+		}
+		}
+		ROM = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		ALB = {
+			has_idea = kmm_europe
+		}
+		}
+		ALB = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		
+		if = {
+		limit = {
+		GRE = {
+			has_idea = kmm_europe
+		}
+		}
+		GRE = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		
+		if = {
+		limit = {
+		BUL = {
+			has_idea = kmm_europe
+		}
+		}
+		BUL = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		hidden_effect = {
+			add_ideas = kmm_europe_debt1
+			set_country_flag = GER_europe_tooltip3
+			}
+		
+		}
+		}
+		
+		focus = {
+		id = GER_dev_baltics
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+		has_country_flag = GER_invited_baltics
+		NOT = {
+		has_completed_focus = GER_united_europe
+		has_country_flag = GER_europe_tooltip3
+		}
+		}
+		x = -5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		if = {
+		limit = {
+		LIT = {
+			has_idea = kmm_europe
+		}
+		}
+		LIT = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		
+		if = {
+		limit = {
+		LAT = {
+			has_idea = kmm_europe
+		}
+		}
+		LAT = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		
+		if = {
+		limit = {
+		EST = {
+			has_idea = kmm_europe
+		}
+		}
+		EST = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		hidden_effect = {
+			add_ideas = kmm_europe_debt1
+			set_country_flag = GER_europe_tooltip3
+			}
+		}
+		}
+		
+		focus = {
+		id = GER_dev_med
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+		has_country_flag = GER_invited_med
+		NOT = {
+		has_completed_focus = GER_united_europe
+		has_country_flag = GER_europe_tooltip3
+		}
+		}
+		x = -5
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		if = {
+		limit = {
+		ITA = {
+			has_idea = kmm_europe
+		}
+		}
+		ITA = {
+		add_timed_idea = { idea = kmm_german_invest days = 70 }
+		}
+		}
+		hidden_effect = {
+			add_ideas = kmm_europe_debt1
+			set_country_flag = GER_europe_tooltip3
+			}
+		}
+		}
+		
+		focus = {
+		id = GER_dev_iberia
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+		has_country_flag = GER_dev_iberia2
+		NOT = {
+		has_completed_focus = GER_united_europe
+		}
+		}
+		x = -3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		if = {
+		limit = {
+		SPR = {
+			has_idea = kmm_europe
+		}
+		}
+		SPR = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		POR = {
+			has_idea = kmm_europe
+		}
+		}
+		POR = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		hidden_effect = {
+			add_ideas = kmm_europe_debt1
+			set_country_flag = GER_europe_tooltip3
+			}
+		}
+		}
+		
+		focus = {
+		id = GER_dev_north
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+		has_country_flag = GER_invited_northern
+		NOT = {
+		has_completed_focus = GER_united_europe
+		has_country_flag = GER_europe_tooltip3
+		}
+		}
+		x = -5
+		y = 3
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		if = {
+		limit = {
+		DEN = {
+			has_idea = kmm_europe
+		}
+		}
+		DEN = {
+		add_timed_idea = { idea = kmm_german_invest days = 365 }
+		}
+		}
+		
+		if = {
+		limit = {
+		NOR = {
+			has_idea = kmm_europe
+		}
+		}
+		NOR = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		SWE = {
+			has_idea = kmm_europe
+		}
+		}
+		SWE = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		
+		if = {
+		limit = {
+		FIN = {
+			has_idea = kmm_europe
+		}
+		}
+		FIN = {
+		add_timed_idea = { idea = kmm_german_invest days = 180 }
+		}
+		}
+		hidden_effect = {
+			add_ideas = kmm_europe_debt1
+			set_country_flag = GER_europe_tooltip3
+			}
+		}
+		}
+		
+		focus = {
+		id = GER_mining
+		prerequisite = { focus = GER_dev_north focus = GER_dev_iberia focus = GER_dev_baltics focus = GER_dev_iberia focus = GER_build_up_lowlands focus = GER_dev_med focus = GER_dev_balkans }
+		relative_position_id = GER_european_union
+		x = -4
+		y = 4
+		cost = 14
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = kmm_mining
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_mining
+			}
+		}
+		}
+		
+		focus = { ## GOTTA DO SOME WACKY STUFF LOL # THE FUCKING INDENTS JESUS FUCKING CHRIST HOW HARD IS IT TO PRESS FUCKING TAB YOU FUCKING NIMROD MONGGOLOID #i had to lash out ##thanks bro
+		id = GER_resources
+		prerequisite = { focus = GER_mining }
+		relative_position_id = GER_european_union
+		x = -4
+		y = 5
+		cost = 14
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		if = {
+		limit = {
+		112 = {
+			is_owned_and_controlled_by = POR
+			}
+		POR = {
+		has_idea = kmm_europe
+		}
+		}
+		
+		112 = {
+		
+		add_resource = {
+				type = tungsten
+				amount = 50
+			}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+		
+		if = {
+		limit = {
+		43 = {
+			is_owned_and_controlled_by = HUN
+			}
+		HUN = {
+		has_idea = kmm_europe
+		}
+		}
+		
+		43 = {
+		add_resource = {
+				type = aluminium
+				amount = 45
+			}
+			
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+		}
+		
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+		
+		}
+		}
+		
+		if = {
+		limit = {
+		46 = {
+			is_owned_and_controlled_by = ROM
+			}
+		ROM = {
+		has_idea = kmm_europe
+		}
+		}
+		
+		46 = {
+		
+		add_resource = {
+				type = oil
+				amount = 75
+		}
+		
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+		}
+		}
+		}
+		}
+	
+	focus = { ##why do i even fucking try anymore
+	id = GER_europe_debt
+	prerequisite = { focus = GER_dev_north focus = GER_dev_iberia focus = GER_dev_baltics focus = GER_dev_iberia focus = GER_build_up_lowlands focus = GER_dev_med focus = GER_dev_balkans }
+	relative_position_id = GER_european_union
+	available = {
+	GER = {
+	has_idea = kmm_europe_debt1
+	}
+	}
+	allow_branch = {
+	GER = {
+	has_idea = kmm_europe_debt1
+	}
+	}
+	x = -6
+	y = 4
+	ai_will_do = {
+		factor = 3
+	}
+	completion_reward = { ##UNLOCKS FUNDING FOR EUROPEAN UNION
+		custom_effect_tooltip = GER_europe_tooltip4
+	}	
+	}
+	
+	focus = {
+		id = GER_adopt_euro
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_euro
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			add_ideas = kmm_euro
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_open_borders
+		prerequisite = { focus = GER_adopt_euro }
+		relative_position_id = GER_european_union
+		x = -1 
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			give_military_access = GER
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_free_movement
+		icon = GFX_ger_free
+		prerequisite = { focus = GER_open_borders }
+		relative_position_id = GER_european_union
+		x = -1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_free_movement
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			add_ideas = kmm_free_movement
+		}
+		}
+	}
+	
+	focus = {
+		id = GER_economic_collab
+		icon = GFX_ger_collab
+		prerequisite = { focus = GER_adopt_euro }
+		prerequisite = { focus = GER_science_society } 
+		relative_position_id = GER_european_union
+		x = 1 
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+
+			remove_ideas = kmm_euro
+			add_ideas = kmm_economic_collab 
+			
+			
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+
+			remove_ideas = kmm_euro
+			add_ideas = kmm_economic_collab 
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_centeral_bank
+		prerequisite = { focus = GER_economic_collab}
+		relative_position_id = GER_european_union
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			remove_ideas =  kmm_economic_collab
+			add_ideas = kmm_central_bank 
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+
+			remove_ideas= kmm_economic_collab
+			add_ideas = kmm_central_bank
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_ethics_group
+		icon = GFX_ger_ethics
+		prerequisite = { focus = GER_free_movement}
+		prerequisite = { focus = GER_centeral_bank}
+		relative_position_id = GER_european_union
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_ethics_group
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+
+			add_ideas = kmm_ethics_group
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_centeral_parlament
+		prerequisite = { focus = GER_centeral_bank}
+		relative_position_id = GER_european_union
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_central_parlament
+			
+			every_other_country = {
+			limit = {
+				has_idea = kmm_europe
+			}
+			
+			add_ideas = kmm_central_parlament
+			
+			
+		}
+		}
+	}
+	
+		focus = {
+		id = GER_united_europe
+		icon = GFX_ger_united
+		prerequisite = { focus = GER_centeral_parlament}
+		relative_position_id = GER_european_union
+		available = {
+		NOT = {
+		has_country_flag = GER_europe2
+		}
+		}
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+			add_ideas = kmm_united_europe
+			GER = { country_event = { id = kmm.98 } }
+		}
+	}
+
+
+#NEWER EU PATH
+focus = {
+		id = GER_european_union
+		icon = GFX_ger_union2
+		prerequisite = { focus = GER_home_of_free }
+		prerequisite = { focus = GER_government_owned_arms_factory }
+		relative_position_id = GER_establish_consituition
+		allow_branch = {
+			always = no
+		}
+		available = {
+			NOT = {
+				has_country_flag = GER_europe2
+			}
+		}
+		x = 8
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = GER_european_tooltip1
+			custom_effect_tooltip = GER_european_tooltip2
+			custom_effect_tooltip = GER_europe3
+			add_ideas = kmm_europe
+		}
+	}
+
+	#EUROPEAN UNION ##CAN ONLY DO IF THE MOST DEMOCRAITC GETS ELECTED, OTHERWISE DO SOMETHING ELSE LOL?!?!?!
+	
+	focus = {
+		id = GER_science_society
+		prerequisite = { focus = GER_european_union } 
+		relative_position_id = GER_european_union
+		available = {
+			has_completed_focus = GER_adopt_euro
+		}
+		x = 2.5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_ideas = kmm_science
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_science
+			}
+		}
+	}
+	
+		
+		
+		##build up da smol bois ##WILL ADD MORE SOONISH MAYBE?
+	focus = {
+		id = GER_build_up_lowlands
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = { 
+			has_country_flag = GER_invite_lowlands
+			NOT = {
+				has_completed_focus = GER_united_europe
+				has_country_flag = GER_europe_tooltip3
+			}
+		}
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					BEL = {
+						has_idea = kmm_europe
+					}
+				}
+				BEL = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					HOL = {
+						has_idea = kmm_europe
+					}
+				}
+				HOL = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					LUX = {
+						has_idea = kmm_europe
+					}
+				}
+				LUX = {
+					add_timed_idea = { idea = kmm_german_invest days = 360 }
+				}
+			}
+			hidden_effect = {
+				add_ideas = kmm_europe_debt1
+				set_country_flag = GER_europe_tooltip3
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_dev_balkans
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+			has_country_flag = GER_invited_balkans
+			NOT = {
+				has_completed_focus = GER_united_europe
+				has_country_flag = GER_europe_tooltip3
+			}
+		}
+		x = -3
+		y = 2
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			clr_country_flag = GER_balkan5
+			if = {
+				limit = {
+					AUS = {
+						has_idea = kmm_europe
+					}
+				}
+				add_timed_idea = { idea = kmm_german_invest days = 180 }
+			}
+			
+			if = {
+				limit = {
+					CZE = {
+						has_idea = kmm_europe
+					}
+				}
+				CZE = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					HUN = {
+						has_idea = kmm_europe
+					}
+				}
+				HUN = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					YUG = {
+						has_idea = kmm_europe
+					}
+				}
+				YUG = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					ROM = {
+						has_idea = kmm_europe
+					}
+				}
+				ROM = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					ALB = {
+						has_idea = kmm_europe
+					}
+				}
+				ALB = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			
+			if = {
+				limit = {
+					GRE = {
+						has_idea = kmm_europe
+					}
+				}
+				GRE = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			
+			if = {
+				limit = {
+					BUL = {
+						has_idea = kmm_europe
+					}
+				}
+				BUL = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			hidden_effect = {
+				add_ideas = kmm_europe_debt1
+				set_country_flag = GER_europe_tooltip3
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_dev_baltics
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+			has_country_flag = GER_invited_baltics
+			NOT = {
+				has_completed_focus = GER_united_europe
+				has_country_flag = GER_europe_tooltip3
+			}
+		}
+		x = -5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					LIT = {
+						has_idea = kmm_europe
+					}
+				}
+				LIT = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			
+			if = {
+				limit = {
+					LAT = {
+						has_idea = kmm_europe
+					}
+				}
+				LAT = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			
+			if = {
+				limit = {
+					EST = {
+						has_idea = kmm_europe
+					}
+				}
+				EST = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			hidden_effect = {
+				add_ideas = kmm_europe_debt1
+				set_country_flag = GER_europe_tooltip3
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_dev_med
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+			has_country_flag = GER_invited_med
+			NOT = {
+				has_completed_focus = GER_united_europe
+				has_country_flag = GER_europe_tooltip3
+			}
+		}
+		x = -5
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+			if = {
+				limit = {
+					ITA = {
+						has_idea = kmm_europe
+					}
+				}
+				ITA = {
+					add_timed_idea = { idea = kmm_german_invest days = 70 }
+				}
+			}
+			hidden_effect = {
+				add_ideas = kmm_europe_debt1
+				set_country_flag = GER_europe_tooltip3
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_dev_iberia
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+			has_country_flag = GER_dev_iberia2
+			NOT = {
+				has_completed_focus = GER_united_europe
+			}
+		}
+		x = -3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+			if = {
+				limit = {
+					SPR = {
+						has_idea = kmm_europe
+					}
+				}
+				SPR = {
+				add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					POR = {
+						has_idea = kmm_europe
+					}
+				}
+				POR = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			hidden_effect = {
+				add_ideas = kmm_europe_debt1
+				set_country_flag = GER_europe_tooltip3
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_dev_north
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		available = {
+			has_country_flag = GER_invited_northern
+			NOT = {
+				has_completed_focus = GER_united_europe
+				has_country_flag = GER_europe_tooltip3
+			}
+		}
+		x = -5
+		y = 3
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+			if = {
+				limit = {
+					DEN = {
+						has_idea = kmm_europe
+					}
+				}
+				DEN = {
+					add_timed_idea = { idea = kmm_german_invest days = 365 }
+				}
+			}
+			
+			if = {
+				limit = {
+					NOR = {
+						has_idea = kmm_europe
+					}
+				}
+				NOR = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					SWE = {
+						has_idea = kmm_europe
+					}
+				}
+				SWE = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			
+			if = {
+				limit = {
+					FIN = {
+						has_idea = kmm_europe
+					}
+				}
+				FIN = {
+					add_timed_idea = { idea = kmm_german_invest days = 180 }
+				}
+			}
+			hidden_effect = {
+				add_ideas = kmm_europe_debt1
+				set_country_flag = GER_europe_tooltip3
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_mining
+		prerequisite = { focus = GER_dev_north focus = GER_dev_iberia focus = GER_dev_baltics focus = GER_dev_iberia focus = GER_build_up_lowlands focus = GER_dev_med focus = GER_dev_balkans }
+		relative_position_id = GER_european_union
+		x = -4
+		y = 4
+		cost = 14
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = kmm_mining
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_mining
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_resources
+		prerequisite = { focus = GER_mining }
+		relative_position_id = GER_european_union
+		x = -4
+		y = 5
+		cost = 14
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					112 = {
+						is_owned_and_controlled_by = POR
+					}
+					POR = {
+						has_idea = kmm_europe
+					}
+				}
+				112 = {
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+				
+			if = {
+				limit = {
+					43 = {
+						is_owned_and_controlled_by = HUN
+					}
+					HUN = {
+						has_idea = kmm_europe
+					}
+				}
+				43 = {
+					add_resource = {
+						type = aluminium
+						amount = 45
+					}
+					
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					46 = {
+						is_owned_and_controlled_by = ROM
+						}
+					ROM = {
+						has_idea = kmm_europe
+					}
+				}
+				
+				46 = {
+					add_resource = {
+						type = oil
+						amount = 75
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_europe_debt
+		prerequisite = { focus = GER_dev_north focus = GER_dev_iberia focus = GER_dev_baltics focus = GER_dev_iberia focus = GER_build_up_lowlands focus = GER_dev_med focus = GER_dev_balkans }
+		relative_position_id = GER_european_union
+		available = {
+			GER = {
+				has_idea = kmm_europe_debt1
+			}
+		}
+		allow_branch = {
+			GER = {
+				has_idea = kmm_europe_debt1
+			}
+		}
+		x = -6
+		y = 4
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = { ##UNLOCKS FUNDING FOR EUROPEAN UNION
+			custom_effect_tooltip = GER_europe_tooltip4
+		}	
+	}
+	
+	focus = {
+		id = GER_adopt_euro
+		prerequisite = { focus = GER_european_union }
+		relative_position_id = GER_european_union
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_euro
+			
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_euro
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_open_borders
+		prerequisite = { focus = GER_adopt_euro }
+		relative_position_id = GER_european_union
+		x = -1 
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				give_military_access = GER
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_free_movement
+		icon = GFX_ger_free
+		prerequisite = { focus = GER_open_borders }
+		relative_position_id = GER_european_union
+		x = -1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_free_movement
+			
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_free_movement
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_economic_collab
+		icon = GFX_ger_collab
+		prerequisite = { focus = GER_adopt_euro }
+		prerequisite = { focus = GER_science_society } 
+		relative_position_id = GER_european_union
+		x = 1 
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			remove_ideas = kmm_euro
+			add_ideas = kmm_economic_collab
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				remove_ideas = kmm_euro
+				add_ideas = kmm_economic_collab
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_centeral_bank
+		prerequisite = { focus = GER_economic_collab}
+		relative_position_id = GER_european_union
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			remove_ideas =  kmm_economic_collab
+			add_ideas = kmm_central_bank 
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				remove_ideas= kmm_economic_collab
+				add_ideas = kmm_central_bank
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_ethics_group
+		icon = GFX_ger_ethics
+		prerequisite = { focus = GER_free_movement}
+		prerequisite = { focus = GER_centeral_bank}
+		relative_position_id = GER_european_union
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_ethics_group
+			
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+
+				add_ideas = kmm_ethics_group
+				
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_centeral_parlament
+		prerequisite = { focus = GER_centeral_bank}
+		relative_position_id = GER_european_union
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_central_parlament
+			
+			every_other_country = {
+				limit = {
+					has_idea = kmm_europe
+				}
+				add_ideas = kmm_central_parlament
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = GER_united_europe
+		icon = GFX_ger_united
+		prerequisite = { focus = GER_centeral_parlament}
+		relative_position_id = GER_european_union
+		available = {
+			NOT = {
+				has_country_flag = GER_europe2
+			}
+		}
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = kmm_united_europe
+			GER = { country_event = { id = kmm.98 } }
+		}
+	}
+
+#EU DECISIONS
+
+
+kmm_europe_union = {
+	kmm_belgium = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	fire_only_once = yes
+	available ={
+		GER = {
+			has_completed_focus = GER_european_union
+			}
+		}
+	cost = 50
+	days_remove = 15	
+	remove_effect = {
+		BEL = {
+			country_event = { id = kmm.97 }
+		}
+		set_country_flag = GER_belgium1
+		}	
+	
+	}
+
+	kmm_holland = {
+	allowed = {
+		original_tag = GER
+	}
+	fire_only_once = yes
+	available = {
+		has_country_flag = GER_belgium1
+	}
+	cost = 50
+	days_remove = 15
+	visible = {
+		has_country_flag = GER_belgium1
+	}
+	remove_effect = {
+		clr_country_flag = GER_belgium1
+		set_country_flag = GER_holland
+		HOL = {
+			country_event = { id = kmm.97 }
+		}
+	}
+	}
+	
+	kmm_lux = {
+	allowed = {
+		original_tag = GER
+	}
+	
+	available = {
+		has_country_flag = GER_holland
+	}
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	visible = {
+		has_country_flag = GER_holland
+	}
+	
+	remove_effect = {
+		clr_country_flag = GER_holland
+		set_country_flag = GER_invite_lowlands
+		LUX = {
+			country_event = { id = kmm.97 }
+		}
+		custom_effect_tooltip = kmm_lowlands_tooltip
+	}
+	}
+	
+	kmm_austria = {
+	allowed = {
+		original_tag = GER
+	}
+	
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		AUS = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_austria
+		}
+	}
+	}
+	
+	##TWO CHOICES ( CAN DO BOTH OR 1 )
+	kmm_czech = {
+	allowed = {
+		original_tag = GER
+	}
+	
+	available = {
+		has_country_flag = GER_austria
+	}
+	visible = {
+		has_country_flag = GER_austria
+	}
+	fire_only_once = yes
+	cost = 75
+	days_remove = 15
+	
+	remove_effect = {
+		CZE = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan3
+		}
+	}
+	}
+	
+	kmm_hungary = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_austria
+	}
+	available = {
+		has_country_flag = GER_austria
+	}
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		HUN = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan3
+		}
+	}
+	}
+	
+	kmm_yugo = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_balkan3
+	}
+	available = {
+		has_country_flag = GER_balkan3
+	}
+	
+	fire_only_once = yes
+	cost = 75
+	days_remove = 15
+	
+	remove_effect = {
+		YUG = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan4
+		}
+	}
+	
+	}
+	
+	kmm_rom = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_balkan4
+	}
+	available = {
+		has_country_flag = GER_balkan4
+	}
+	
+	fire_only_once = yes
+	cost = 100
+	days_remove = 15
+	
+	remove_effect = {
+		ROM = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan5 ##LAST 3 ARE OPTIONAL
+			set_country_flag = GER_invited_balkans
+		}
+		custom_effect_tooltip = kmm_balkan_tooltip
+	}
+	}
+	
+	kmm_alb = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_balkan5
+	}
+	available = {
+		has_country_flag = GER_balkan5
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		ALB = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan5 
+			set_country_flag = GER_invited_balkans
+		}
+		custom_effect_tooltip = kmm_balkan_tooltip2
+	}
+	
+	}
+	
+	kmm_greece = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_balkan5
+	}
+	available = {
+		has_country_flag = GER_balkan5
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		GRE = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan5 
+			set_country_flag = GER_invited_balkans
+		}
+		custom_effect_tooltip = kmm_balkan_tooltip2
+	}
+	}
+	
+	kmm_bulgaria = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_balkan5
+	}
+	available = {
+		has_country_flag = GER_balkan5
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		BUL = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_balkan5 
+			set_country_flag = GER_invited_balkans
+		}
+		custom_effect_tooltip = kmm_balkan_tooltip2
+	}
+	}
+	
+	##IBERIA
+	
+	kmm_spain = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+		NOT = {
+		SPR = {
+			has_war = yes
+		}
+		}
+
+	}
+	
+	fire_only_once = yes
+	cost = 75
+	days_remove = 15
+	
+	remove_effect = {
+		SPR = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_dev_iberia2
+		}
+		custom_effect_tooltip = kmm_iberia_tooltip
+	}
+	}
+	
+	kmm_portugal = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	
+	fire_only_once = yes
+	cost = 75
+	days_remove = 15
+	
+	remove_effect = {
+		POR = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_dev_iberia2
+		}
+		custom_effect_tooltip = kmm_iberia_tooltip
+	}
+	
+	}
+	
+	kmm_lit = { ##LITHUANA IS LIT?????
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		LIT = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_baltics
+		}
+	}
+	
+	}
+	
+	kmm_lat = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_baltics
+	}
+	available = {
+		has_country_flag = GER_baltics
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		LAT = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_baltics2
+		}
+	}
+	}
+	
+	kmm_est = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_baltics2
+	}
+	available = {
+		has_country_flag = GER_baltics2
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		EST = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_invited_baltics
+		}
+		custom_effect_tooltip = kmm_baltic_tooltip
+	}
+	}
+	
+	kmm_italy = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	
+	fire_only_once = yes
+	cost = 150
+	days_remove = 15
+	
+	remove_effect = {
+		ITA = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_invited_med
+		}
+		custom_effect_tooltip = kmm_italy_tooltip
+	}
+	}
+	
+	kmm_den = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		DEN = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_north
+		}
+	}
+	}
+	
+	kmm_nor = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_north
+	}
+	available = {
+		has_country_flag = GER_north
+	}
+	
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		NOR = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_north1
+		}
+	}
+	}
+	
+	kmm_swe = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_north1
+	}
+	available = {
+		has_country_flag = GER_north1
+	}
+	
+	fire_only_once = yes
+	cost = 75
+	days_remove = 15
+	
+	remove_effect = {
+		SWE = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_north2
+		}
+	}
+	}
+	
+	kmm_fin = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_north2
+	}
+	available = {
+		has_country_flag = GER_north2
+	}
+	
+	fire_only_once = yes
+	cost = 75
+	days_remove = 15
+	
+	remove_effect = {
+		FIN = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_invited_northern
+		}
+		custom_effect_tooltip = kmm_north_tooltip
+	}
+	}
+	
+	##MAJOR POWERS thats right italy isnt a major power
+	
+	kmm_uk = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	
+	fire_only_once = yes
+	cost = 150
+	days_remove = 15
+	
+	remove_effect = {
+		ENG = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_major
+		}
+	}
+	}
+	
+	kmm_fra = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_major
+	}
+	available = {
+		has_country_flag = GER_major
+	}
+	
+	fire_only_once = yes
+	cost = 150
+	days_remove = 15
+	
+	remove_effect = {
+		FRA = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+		GER = {
+			set_country_flag = GER_major2
+		}
+	}
+	
+	}
+	
+	kmm_pol = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_major2
+	}
+	available = {
+		has_country_flag = GER_major2
+	}
+	
+	fire_only_once = yes
+	cost = 150
+	days_remove = 15
+	
+	remove_effect = {
+		POL = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+	}
+	
+	}
+	
+	kmm_swi = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_european_union
+	}
+	available = {
+		has_completed_focus = GER_european_union
+	}
+	fire_only_once = yes
+	cost = 50
+	days_remove = 15
+	
+	remove_effect = {
+		SWI = {
+			country_event = { id = kmm.97 days = 1 }
+		}
+	}
+	}
+	
+	kmm_debt_payment = {
+	
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		has_country_flag = GER_europe_tooltip3
+		has_completed_focus = GER_europe_debt
+	}
+	cost = 150
+	days_remove = 140
+	remove_effect = {
+		clr_country_flag = GER_europe_tooltip3
+		remove_ideas = kmm_europe_debt1
+	}
+	}

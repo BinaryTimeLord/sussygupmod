@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_FRK_fascism_group"
+		texturefile = "gfx/interface/ideologies/FranceRK.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_eurounion"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_eurounion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_winterwar"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_winterwar.dds"
+	}
+}
+

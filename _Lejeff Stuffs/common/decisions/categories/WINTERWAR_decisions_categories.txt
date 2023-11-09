@@ -1,0 +1,14 @@
+winter_war = {
+	allowed = {
+		has_country_flag = wtw_winter_war_start
+		OR = {
+			original_tag = FIN
+			original_tag = SOV
+		}
+	}
+	priority = 50
+	scripted_gui = winter_war_decision_ui
+	visible = {
+		has_country_flag = wtw_winter_war_start
+	}
+}

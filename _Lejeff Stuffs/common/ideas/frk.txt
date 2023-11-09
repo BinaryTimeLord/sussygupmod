@@ -1,0 +1,983 @@
+ideas = {
+
+	##POLITICAL ADVISORS
+	political_advisor = { ##ICONS NEED FIXING SOMETIme
+	
+		frk_mako_industrial = {
+			
+			picture = frk_mako_industrial
+			
+			cost = 75
+			
+			allowed = {
+				original_tag = FRK
+			}
+		
+			available = {
+				has_completed_focus = FRK_mako_plan
+				NOT = {
+					has_country_flag = FRK_resigned
+				}
+			}
+			
+			traits = {
+				compassionate_industrialist
+			}
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		frk_yukari_industrial = {
+		
+			picture = frk_yukari
+			
+			cost = 75
+			
+			allowed = {
+				original_tag = FRK
+			}
+		
+			available = {
+				has_completed_focus = FRK_yukari_plan
+			}
+			
+			traits = {
+				ruthless_industrialist
+			}
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		frk_saori_popular = {
+		
+		picture = saori
+		
+			cost = 75
+			
+			allowed = {
+				original_tag = FRK
+			}
+		
+			available = {
+				NOT = {
+					has_country_flag = frk_dead
+				}
+			}
+			
+			traits = {
+				popular_figurehead
+			}
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		frk_saemonza_terror = {
+		
+		picture = frk_saemonza
+		
+			cost = 150
+			
+			allowed = {
+				original_tag = FRK
+			}
+		
+			available = {
+				
+			}
+			
+			traits = {
+				prince_of_terror
+			}
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		frk_suzuki_finance = {
+			
+			picture = frk_suzuki
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = FRK
+			}
+		
+			available = {
+				NOT = {
+					has_country_flag = FRK_resigned
+				}
+			}
+			
+			traits = {
+				financial_expert
+			}
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+	
+	}
+	
+	army_chief = { 
+	
+	frk_yukari_offensive = {
+	
+		picture = frk_yukari
+		
+		allowed = {
+			original_tag = FRK
+		}
+			
+		traits = { army_chief_offensive_2 }
+			
+		ai_will_do = {
+			factor = 1
+		}
+		}
+	
+	frk_saemonza_defensive = {
+	
+		picture = frk_saemonza
+		
+		allowed = {
+			original_tag = FRK
+		}
+				
+		traits = { army_chief_defensive_2 }
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	}
+	
+	air_chief = {
+	
+		frk_yukari_close = {
+		
+			picture = frk_yukari
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		
+		}
+	
+	}
+	
+	high_command = {
+	
+		frk_suzuki_regroup = {
+			
+		picture = frk_suzuki
+		ledger = army
+		
+			allowed = {
+				original_tag = FRK
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = FRK_resigned
+				}
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		frk_saori_infantry = {
+		
+		picture = saori
+		ledger = army
+		
+			allowed = {
+				original_tag = FRK
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = frk_dead
+				}
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		frk_yukari_armour = {
+		ledger = army
+		
+			picture = frk_yukari
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		
+	
+	}
+
+	country = {
+	
+		frk_defeated_government = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_defeated
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_weekly = -0.004
+				conscription = -0.03
+				conscription_factor = -0.25
+				production_speed_arms_factory_factor = -0.3
+				production_speed_air_base_factor = -0.3
+				production_speed_anti_air_building_factor = -0.3
+				production_speed_bunker_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+			}
+		}
+		
+		frk_defeated_government2 = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_defeated
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				conscription = -0.02
+				conscription_factor = -0.25
+				production_speed_arms_factory_factor = -0.3
+				production_speed_air_base_factor = -0.3
+				production_speed_anti_air_building_factor = -0.3
+				production_speed_bunker_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				military_leader_cost_factor = 1.00
+				
+			}
+		}
+		
+		frk_defeated_government3 = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_defeated2
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription = -0.01
+				conscription_factor = -0.15
+				production_speed_arms_factory_factor = -0.2
+				production_speed_air_base_factor = -0.2
+				production_speed_anti_air_building_factor = -0.2
+				production_speed_bunker_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				military_leader_cost_factor = 1.00
+				
+			}
+		
+		}
+		
+		frk_low_government_support = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_low_support
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+		
+		frk_KS_support = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_KS_support
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				non_core_manpower = 0.01
+			}
+		}
+		
+		frk_KS_support2 = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_KS_support
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				army_attack_factor = 0.075
+				army_defence_factor = 0.075
+				non_core_manpower = 0.01
+				resistance_growth_on_our_occupied_states = -0.15 
+				compliance_gain = -0.15
+			}
+		
+		}
+		
+		frk_consolidate_industry = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_consolidate
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		frk_exploit_resources = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_exploit_resources
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		
+		}
+		
+		frk_repair = {
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_repair
+	
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = 0.15
+			}
+		
+		}
+		
+		frk_postcoup = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_postcoup
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.45
+				political_power_factor = -0.5
+				compliance_gain = -0.5
+			}
+		}
+		
+		frk_workcamps = { 
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_work_camps
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -500
+				stability_factor = -0.1
+			}
+		
+		}
+		
+		frk_workcamps1 = { 
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_work_camps
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -1000
+				stability_factor = -0.1
+			}
+		
+		}
+		
+		frk_seize_assets = {
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = frk_seize_assets
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.1
+			}
+			
+		}
+		 
+		frk_consolidation = {
+			
+			picture = frk_consolidate
+			
+			allowed = {
+				original_tag = FRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				political_power_factor = 0.25
+			}
+		
+		}
+		
+		frk_suzuki_plan = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.5
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		
+		frk_citizenship = {
+		
+			picture = frk_citizenship
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				stability_factor = 0.1
+			}
+			
+		
+		}
+		
+		frk_citizenship2 = {
+		
+			picture = frk_citizenship
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+			
+		
+		}
+		
+		frk_pravda_focus = {
+			
+			picture = frk_pravda_focus
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			
+			targeted_modifier = {
+				tag = SOV
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+			}
+		
+		}
+		
+		frk_supported_ooarai = {
+			
+			picture = frk_support_ooarai
+			
+			allowed = {
+
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+		##GFX NEEDED?!?!?!
+		
+		frk_bunker_projects = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+		
+		frk_french_workers = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.02
+				stability_factor = -0.05
+			}
+		}
+		
+		frk_digging_deeper = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		
+		frk_bunker_projects1 = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.02
+				stability_factor = -0.05
+				local_resources_factor = 0.15
+			}
+		}
+		
+		frk_highcommand = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				high_command_cost_factor = -0.15
+				max_command_power = 20
+			}
+		
+		}
+		
+		frk_kuro_youth = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				conscription = 0.03
+				political_power_factor = 0.25
+			}
+		
+		}
+		
+		frk_bunker_projects2 = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				stability_factor = 0.1
+				local_resources_factor = 0.15
+				high_command_cost_factor = -0.15
+				max_command_power = 20
+				political_power_factor = 0.25
+			}
+		}
+		
+		frk_hydroponics = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				weekly_manpower = 50
+			}
+		
+		}
+		
+		frk_final_touches = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		frk_bunker_projects3 = {
+			
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				stability_factor = 0.1
+				local_resources_factor = 0.15
+				high_command_cost_factor = -0.15
+				max_command_power = 20
+				political_power_factor = 0.25
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				research_speed_factor = 0.05
+				weekly_manpower = 50
+			}
+		}
+		
+		frk_nuclear_projects = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		
+		frk_nuclear_projects3 = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.05
+				production_speed_rocket_site_factor = 0.05
+				war_support_factor = 0.15
+				research_speed_factor = 0.05
+			}
+		
+		}
+		
+		frk_nuclear_projects2 = {
+		
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.05
+				war_support_factor = 0.1
+			}
+		
+		}
+		
+		frk_build_rockets = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+		
+		frk_reichkomissarit = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				weekly_manpower = 100
+			}
+			
+		}
+		
+		frk_reichkomissarit2 = {
+			allowed = {
+				original_tag = FRK
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				weekly_manpower = 250
+				consumer_goods_factor = -0.05
+			}
+		
+		}
+	}
+
+}

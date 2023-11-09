@@ -1,0 +1,49 @@
+FRK_stability_crisis = {
+	icon = generic_political_actions
+	priority = 4
+	
+	allowed = {
+		original_tag = FRK
+		has_completed_focus = FRK_purge_remaining_saorists
+	}
+	
+	visible = {
+			has_completed_focus = FRK_purge_remaining_saorists
+		}
+	
+}
+
+FRK_negotiations = {
+	icon = generic_political_actions
+	priority = 4
+	
+	allowed = {
+		original_tag = FRK
+		#has_completed_focus = FRK_secret_negotiations
+	}
+
+}
+
+##eternal pain
+FRK_nuclear = {
+	icon = generic_political_actions
+	priority = 4
+	
+	allowed = {
+		original_tag = FRK
+		has_completed_focus = FRK_secret_world
+	}
+}
+
+FRK_assasinate_erika = {
+	icon = generic_political_actions
+	priority = 4
+
+	
+	allowed = {
+		original_tag = FRK
+	}
+	
+	scripted_gui = FRK_spying_Decisions_GUI
+
+}

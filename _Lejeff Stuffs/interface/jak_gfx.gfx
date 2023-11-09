@@ -1,0 +1,340 @@
+spriteTypes = {
+
+	#NEWS EVENTS
+	spriteType = {	
+		name = "GFX_news_event_jatkosota_tankathlon"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_news_event_jatkosota_tankathlon.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_news_event_wtw_leningrad"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_news_event_wtw_leningrad.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_news_event_winter_war"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_news_event_winter_war.dds"
+	}
+
+
+	#COUNTRY EVENTS
+	spriteType = {
+		name = "GFX_report_event_fin_revolution"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_revolution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_revolution_fail"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_revolution_fail.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_revolution_trials"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_trials.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_election_vote1"
+		texturefile = "gfx/event_pictures/Jatkosota/report_event_election_vote.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_election"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_election.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_inaug"
+		texturefile = "gfx/event_pictures/Jatkosota/report_event_inaug.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_revolution_crush"
+		texturefile = "gfx/event_pictures/Jatkosota/report_event_revolution_crush.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_mikko_victory"
+		texturefile = "gfx/event_pictures/Jatkosota/report_event_mikko_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_gotland"
+		texturefile = "gfx/event_pictures/Jatkosota/report_event_gotland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_gotland_no"
+		texturefile = "gfx/event_pictures/Jatkosota/report_event_gotland_no.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_refuse"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_refuse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_lenningrad"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_lenningrad.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_mika_victory"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_mika_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fin_aid"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_fin_aid.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_wtw_one"
+		texturefile = "gfx/event_pictures/Jatkosota/GFX_report_event_wtw_one.dds"
+	}
+	
+	##IDEAS
+	spriteType = {
+		name = "GFX_idea_fin_purge"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_purge.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_executive"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_executive.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_youth"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_youth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_police"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_police.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_police_state"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_police_state.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_expel"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_expel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_fevour"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_fevour.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_own_way"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_own_way.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_anti_pravda"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_anti_pravda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_techshare"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_techshare.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_centrist_victory"
+		texturefile = "gfx/interface/ideas/Jatkosota/centrist_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_expandfarm"
+		texturefile = "gfx/interface/ideas/Jatkosota/expandfarm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_winter_war"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_winter_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_bunker_effort"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_bunker_effort.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_winter_war_win"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_winter_war_win.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_winter_war_loss"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_winter_war_loss.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_winter_war_rally_pop"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_winter_war_rally_pop.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_better_factory"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_better_factory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_boom"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_boom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_tank_upgrade"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_tank_upgrade.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_great_war"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_great_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_air_support"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_air_support.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_support"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_support.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_arty"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_arty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_blitz"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_blitz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_revenge"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_revenge.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_faster_factory"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_faster_factory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fin_anti_pravda_allience"
+		texturefile = "gfx/interface/ideas/Jatkosota/fin_anti_pravda_allience.dds"
+	}
+	
+	##FOCUS
+	
+	spriteType = {
+		name = "GFX_goal_mika_victory"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_mika_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_agrarian_league"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_agrarian_league.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_independent_farms"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_independent_farms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_decentralize"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_decentralize.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_free_education"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_free_education.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_farmer_relief"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_farmer_relief.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_self_govern"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_self_govern.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_mend_relations"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_mend_relations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_finnish_nationalism"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_finnish_nationalism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_socialist_coliltion"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_socialist_coliltion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_free_healthcare"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_free_healthcare.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_rich_tax"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_rich_tax.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_coopertive"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_coopertive.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_GOB"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_GOB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_free_uni"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_free_uni.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_sufferage"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_sufferage.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_liberalize"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_liberalize.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_SEM"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_SEM.dds"
+	}
+	
+	
+	
+	
+	
+	##FNNY ICOSN
+	spriteType = {
+		name = "GFX_goal_northern_wind"
+		texturefile = "gfx/interface/goals/Jatkosota/GFX_goal_northern_wind.dds"
+	}
+	
+	
+}

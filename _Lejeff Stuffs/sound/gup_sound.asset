@@ -1,0 +1,14 @@
+sound = {
+	name = "union"
+	file = "ger_koume/union.wav"
+}
+
+sound = {
+	name = "finale_victory_bigevent"
+	file = "ger_koume/finale_victory.wav"
+}
+
+sound = {
+	name = "nuclearhell_bigevent"
+	file = "ger_koume/nuclearhell.wav"
+}

@@ -1,0 +1,11 @@
+scripted_gui = {
+	winter_war_decision_ui = {
+		context_type = decision_category
+		window_name = "winter_war_decision_ui_window"
+
+		properties = {
+		wtw_info = {
+		}
+		}
+	}
+}

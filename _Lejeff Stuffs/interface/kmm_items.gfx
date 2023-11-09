@@ -1,0 +1,157 @@
+spriteTypes = {
+
+	##FRANCERK IDEAS
+	
+	spriteType = {
+		name = "GFX_idea_frk_mako_industrial"
+		texturefile = "gfx/interface/ideas/BCRK/idea_mako.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_saemonza"
+		texturefile = "gfx/interface/ideas/BCRK/idea_saemonza.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_suzuki"
+		texturefile = "gfx/interface/ideas/BCRK/idea_suzuki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_yukari"
+		texturefile = "gfx/interface/ideas/BCRK/idea_yukari.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_saori"
+		texturefile = "gfx/interface/ideas/BCRK/idea_saori.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_defeated"
+		texturefile = "gfx/interface/ideas/BCRK/frk_defeated.dds"
+	}
+	
+	spriteType = {
+		name = "frk_defeated2"
+		texturefile = "gfx/interface/ideas/BCRK/frk_defeated2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_low_support"
+		texturefile = "gfx/interface/ideas/BCRK/frk_low_support.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_KS_support"
+		texturefile = "gfx/interface/ideas/BCRK/frk_KS_support.dds"
+	}
+	
+	spriteType = {
+		name = "frk_consolidate"
+		texturefile = "gfx/interface/ideas/BCRK/frk_consolidate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_exploit_resources"
+		texturefile = "gfx/interface/ideas/BCRK/frk_exploit_resources.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_repair"
+		texturefile = "gfx/interface/ideas/BCRK/frk_repair.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_postcoup"
+		texturefile = "gfx/interface/ideas/BCRK/frk_postcoup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_work_camps"
+		texturefile = "gfx/interface/ideas/BCRK/frk_work_camps.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_seize_assets"
+		texturefile = "gfx/interface/ideas/BCRK/frk_seize_assets.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_citizenship"
+		texturefile = "gfx/interface/ideas/BCRK/frk_citizenship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_pravda_focus"
+		texturefile = "gfx/interface/ideas/BCRK/frk_pravda_focus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frk_support_ooarai"
+		texturefile = "gfx/interface/ideas/BCRK/frk_support_ooarai.dds"
+	}
+	
+	##FRANCERK EVENTS
+	spriteType = {	
+		name = "GFX_report_event_saori_shocked"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saori_shocked.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_KS_troops"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_KS_troops.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saori_happy"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saori_happy.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saori_dottedline2"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saori_dottedline2.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saori_establish"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saori_establish.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saori_books"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saori_books.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saemona_report"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saemona_report.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saemona_report1"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saemona_report1.dds"
+	}
+	
+	spriteType = {	
+		name = "GFX_report_event_saori_ministers"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saori_ministers.dds"
+	}
+
+	spriteType = {	
+		name = "GFX_report_event_saemona_vs_erwin"
+		texturefile = "gfx/event_pictures/Kuromorimine/GFX_report_event_saemona_vs_erwin.dds"
+	}
+
+	#DECISIONS
+	spriteType = {	
+		name = "GFX_decision_jatkosota_logo"
+		texturefile = "gfx/interface/decisions/Kuromorimine/GFX_decision_jatkosota_logo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_eurounion"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_eurounion.dds"
+	}
+
+}

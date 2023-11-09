@@ -1,0 +1,5 @@
+frk_assasination_effect = {
+	clear_array = global.frk_assasination_array
+	set_variable = { global.frk_assasination = 1 }
+	add_to_array = { global.frk_assasination_array = 1 } 
+}

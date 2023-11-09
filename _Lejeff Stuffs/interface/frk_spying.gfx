@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_FRK_spying"
+		textureFile = "gfx/interface/decisions/decision_cat_generic_erika_assasination.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_FRK_spying_border"
+		textureFile = "gfx/interface/decisions/decision_cat_generic_erika_assasination_border.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_FRK_ooarai_logo"
+		textureFile = "gfx/interface/decisions/decision_cat_generic_ooarai_logo.dds"
+	}
+
+}

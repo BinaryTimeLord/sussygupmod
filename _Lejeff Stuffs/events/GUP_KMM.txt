@@ -1,0 +1,1079 @@
+add_namespace = kmm  #### I HAVE PUT gfx BY EVERY EVENT THAT NEEDS IT ####
+
+##NORTHERN FRANCE EVENTS
+country_event = {
+	id = kmm.200
+	title = kmm.200.t
+	desc = kmm.200.d
+	
+	picture = GFX_report_event_erika_malicious
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.200.a ##PLAY AS
+		ai_chance = {
+			base = 10
+		}
+		FRK = {
+			change_tag_from = GER
+		}
+		FRK = {
+			set_state_owner = 14
+			set_state_owner = 30
+			set_state_owner = 15
+			set_state_owner = 16
+			set_state_owner = 24
+			set_state_owner = 785
+			set_state_owner = 18
+			set_state_owner = 17
+			set_state_owner = 27
+			set_state_owner = 23
+			set_state_owner = 19
+			set_state_owner = 806
+			
+			set_state_controller = 14
+			set_state_controller = 30
+			set_state_controller = 15
+			set_state_controller = 16
+			set_state_controller = 24
+			set_state_controller = 785
+			set_state_controller = 18
+			set_state_controller = 17
+			set_state_controller = 27
+			set_state_controller = 23
+			set_state_controller = 19
+			set_state_controller = 806
+			load_oob = "FRK_KS_units"
+			inherit_technology = GER
+			country_event = { id = kmm.201}
+			
+		}
+		
+		16 = {
+			add_core_of = FRK
+		}
+		
+		GER = {
+			give_guarantee = FRK
+			puppet = FRK
+		}
+		
+	}
+	
+	option = {
+		name = kmm.200.b
+		
+		FRK = {
+			inherit_technology = GER
+		}
+		FRK = {
+			set_state_owner = 14
+			set_state_owner = 30
+			set_state_owner = 15
+			set_state_owner = 16
+			set_state_owner = 24
+			set_state_owner = 785
+			set_state_owner = 18
+			set_state_owner = 17
+			set_state_owner = 27
+			set_state_owner = 23
+			set_state_owner = 19
+			set_state_owner = 806
+			
+			set_state_controller = 14
+			set_state_controller = 30
+			set_state_controller = 15
+			set_state_controller = 16
+			set_state_controller = 24
+			set_state_controller = 785
+			set_state_controller = 18
+			set_state_controller = 17
+			set_state_controller = 27
+			set_state_controller = 23
+			set_state_controller = 19
+			set_state_controller = 806
+			load_oob = "FRK_KS_units"
+		
+		}
+		
+		16 = {
+			add_core_of = FRK
+		}
+		
+		GER = {
+			give_guarantee = FRK
+			puppet = FRK
+		}
+	}
+
+}
+
+##ARRIVAL
+country_event = {
+	id = kmm.201
+	title = kmm.201.t
+	desc = kmm.201.d
+	picture = GFX_report_event_saori_shocked
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.201.a
+		ai_chance = {
+			base = 10
+		}
+	}
+
+}
+
+##KS BUILD UP
+country_event = {
+	id = kmm.202
+	title = kmm.202.t
+	desc = kmm.202.d
+	picture = GFX_report_event_KS_troops
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.202.a
+		ai_chance = {
+			base = 10
+		}
+	}
+	
+}
+
+##DOTTED LINE REPORT 
+country_event = {
+	id = kmm.203
+	title = kmm.203.t
+	desc = kmm.203.d
+	picture = GFX_report_event_saori_happy
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.203.a
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			country_event = { id = kmm.204 days = 7 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.204
+	title = kmm.204.t
+	desc = kmm.204.d
+	picture = GFX_report_event_saori_dottedline2
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.204.a
+		ai_chance = {
+			base = 10
+		}
+	}
+
+
+}
+
+##GOVERNMENT FIX
+country_event = {
+	id = kmm.205
+	title = kmm.205.t
+	desc = kmm.205.d
+	picture = GFX_report_event_saori_establish
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	trigger = {
+	tag = FRK
+		NOT = { has_completed_focus = GER_inaugurate_the_republic }
+		focus_progress = {
+			focus = FRK_report_to_erika
+			progress > 0.1
+		}
+	}
+	
+	option = {
+		name = kmm.205.a
+		ai_chance = {
+			base = 10
+		}
+		swap_ideas = {
+			remove_idea = frk_defeated_government2
+			add_idea = frk_defeated_government3
+		}
+	}
+	
+	
+}
+
+##ESTABLISH GOVERNMENT
+country_event = {
+	id = kmm.206
+	title = kmm.206.t
+	desc = kmm.206.d
+	picture = GFX_report_event_saori_books
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.206.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.01
+	}
+
+}
+
+##REPORT TO ERIKA EVENTS
+country_event = {
+	id = kmm.207
+	title = kmm.207.t
+	desc = kmm.207.d
+	picture = GFX_report_event_saemona_report
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.207.a
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = kmm.208 days = 6 }
+	}
+
+}
+
+country_event = {
+	id = kmm.208
+	title = kmm.208.t
+	desc = kmm.208.d
+	picture = GFX_report_event_czechoslovakia_chain2
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.208.a
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = kmm.209 days = 1 }
+	}
+
+}
+
+country_event = {
+	id = kmm.209
+	title = kmm.209.t
+	desc = kmm.209.d
+	picture = GFX_report_event_saori_ministers
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.209.a
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = FRK_reported
+		set_country_flag = FRK_yukari_picked
+	}
+	
+	option = {
+		name = kmm.209.b
+		ai_chance = {
+			base = 10
+		}
+	
+	}
+}
+
+##I RESERVE 215 - 220
+
+country_event = { 
+	id = kmm.215
+	title = kmm.215.t
+	desc = kmm.215.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = kmm.215.a
+		ai_chance = {
+			base = 10
+		}
+		##LIBERATION FRONT
+		KRO = {
+			set_state_owner = 4
+			set_state_owner = 152
+			set_state_owner = 153
+			set_state_owner = 52
+			set_state_owner = 53
+			set_state_owner = 50
+			set_state_owner = 811
+			set_state_owner = 54
+			
+			set_state_controller = 4
+			set_state_controller = 152
+			set_state_controller = 153
+			set_state_controller = 52
+			set_state_controller = 53
+			set_state_controller = 50
+			set_state_controller = 811
+			set_state_controller = 54
+		}
+		
+		KRS = {
+			set_state_owner = 42
+			set_state_owner = 51
+			set_state_owner = 810
+			set_state_owner = 56
+			set_state_owner = 57
+			set_state_owner = 55
+			set_state_owner = 59
+			set_state_owner = 60
+			set_state_owner = 58
+		
+			set_state_controller = 42
+			set_state_controller = 51
+			set_state_controller = 810
+			set_state_controller = 56
+			set_state_controller = 57
+			set_state_controller = 55
+			set_state_controller = 59
+			set_state_controller = 60
+			set_state_controller = 58
+		
+		}
+	}
+	
+	option = { 
+		name = kmm.215.b
+		ai_chance = {
+			base = 10
+		}
+		
+		##KS FRONT
+		KRS = {
+			set_state_owner = 42
+			set_state_owner = 51
+			set_state_owner = 810
+			set_state_owner = 56
+			set_state_owner = 57
+			set_state_owner = 55
+			set_state_owner = 59
+			set_state_owner = 60
+			set_state_owner = 58
+		
+			set_state_controller = 42
+			set_state_controller = 51
+			set_state_controller = 810
+			set_state_controller = 56
+			set_state_controller = 57
+			set_state_controller = 55
+			set_state_controller = 59
+			set_state_controller = 60
+			set_state_controller = 58
+		
+		}
+		
+		KRO = {
+			set_state_owner = 4
+			set_state_owner = 152
+			set_state_owner = 153
+			set_state_owner = 52
+			set_state_owner = 53
+			set_state_owner = 50
+			set_state_owner = 811
+			set_state_owner = 54
+			
+			set_state_controller = 4
+			set_state_controller = 152
+			set_state_controller = 153
+			set_state_controller = 52
+			set_state_controller = 53
+			set_state_controller = 50
+			set_state_controller = 811
+			set_state_controller = 54
+		}
+	}
+	
+	option = { 
+		name = kmm.215.c
+		ai_chance = {
+			base = 10
+		}
+		##STAND BY MAHO
+		KRS = {
+			set_state_owner = 42
+			set_state_owner = 51
+			set_state_owner = 810
+			set_state_owner = 56
+			set_state_owner = 57
+			set_state_owner = 55
+			set_state_owner = 59
+			set_state_owner = 60
+			set_state_owner = 58
+		
+			set_state_controller = 42
+			set_state_controller = 51
+			set_state_controller = 810
+			set_state_controller = 56
+			set_state_controller = 57
+			set_state_controller = 55
+			set_state_controller = 59
+			set_state_controller = 60
+			set_state_controller = 58
+		
+		}
+		
+		KRO = {
+			set_state_owner = 4
+			set_state_owner = 152
+			set_state_owner = 153
+			set_state_owner = 52
+			set_state_owner = 53
+			set_state_owner = 50
+			set_state_owner = 811
+			set_state_owner = 54
+			
+			set_state_controller = 4
+			set_state_controller = 152
+			set_state_controller = 153
+			set_state_controller = 52
+			set_state_controller = 53
+			set_state_controller = 50
+			set_state_controller = 811
+			set_state_controller = 54
+		}
+	}
+}
+
+##LOCALIZATION NEEDED
+country_event = {
+	id = kmm.216
+	title = kmm.216.t
+	desc = kmm.216.d
+	picture = GFX_report_event_saemona_report
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.216.a
+		ai_chance = {
+			base = 10
+		}
+		
+		create_country_leader = { 
+			name = "Fallen Government"
+			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
+			picture = "gfx/leaders/ENG/portrait_eng_fallen_government.dds"
+			expire = "1965.1.1"
+			ideology = german_idealism3 #fascist
+			traits = {
+				cabinet_crisis
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.217
+	title = kmm.217.t
+	desc = kmm.217.d
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.217.a
+		ai_chance = {
+			base = 10
+		}
+	}
+
+}
+
+country_event = {
+	id = kmm.218
+	title = kmm.218.t
+	desc = kmm.218.d
+	picture = GFX_report_event_saemona_report1
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.218.a
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = FRK_end
+		create_country_leader = { 
+			name = "Fallen Government"
+			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
+			picture = "gfx/leaders/ENG/portrait_eng_fallen_government.dds"
+			expire = "1965.1.1"
+			ideology = german_idealism3 #fascist
+			traits = {
+				cabinet_crisis
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.219
+	title = kmm.219.t
+	desc = kmm.219.d
+	picture = GFX_report_event_saemona_vs_erwin
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.219.a
+		ai_chance = {
+			base = 10
+			}
+			set_country_flag = frk_saemonza_picked1
+				create_country_leader = {
+					name = "Kiyoma Sugiyama"
+					desc = "POLITICS_SAEMONZA_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism3 #fascist
+						traits = {
+							deadeye
+							erika_puppet
+							ruthless_leader
+						}	
+				}
+		}
+	
+	option = {
+		name = kmm.219.b
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = frk_erwin_picked1
+			create_country_leader = {
+					name = "Riko Matsumoto"
+					desc = "POLITICS_ERWIN_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Erwin.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism3 #fascist
+						traits = {
+							panzer_enthisiast
+							decisive
+						}	
+				}
+	}
+}
+
+country_event = {
+	id = kmm.220
+	title = kmm.220.t
+	desc = kmm.220.d
+	picture = GFX_report_event_saemona_report
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.220.a
+		ai_chance = {
+			base = 10
+		}
+			set_country_flag = frk_yukari_coup_flag
+			create_country_leader = {
+					name = "Yukari"
+					desc = "POLITICS_YUKARI_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Yukari.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism3 #fascist
+						traits = {
+							dictator
+						}	
+				}
+	}
+
+}
+
+country_event = {
+	id = kmm.221
+	title = kmm.221.t
+	desc = kmm.221.d
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.221.a
+		ai_chance = {
+			base = 10
+		}
+			FRK = {
+				transfer_state = 6
+				transfer_state = 29
+				transfer_state = 34
+			}
+			
+	}
+
+}
+
+country_event = {
+	id = kmm.222
+	title = kmm.222.t
+	desc = kmm.222.d
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.222.a
+		ai_chance = {
+			base = 10
+		}
+			FRK = {
+				transfer_state = 7
+				transfer_state = 35
+				transfer_state = 36
+			}
+			
+	}
+
+}
+
+##I KNOW THESE SUCK YOUR NOT SUPPOSED TO SEE THEM
+country_event = {
+	id = kmm.223
+	title = kmm.223.t
+	desc = kmm.223.d
+	picture = GFX_report_event_anchovy_coup
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.223.a
+		ai_chance = {
+			base = 10
+		}
+		
+		set_country_flag = frk_italy_yes
+		add_ideas = frk_supported_ooarai
+	}
+	
+	option = {
+		name = kmm.223.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = kmm.224
+	title = kmm.224.t
+	desc = kmm.224.d
+	picture = GFX_report_event_fin_revolution
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.224.a
+		ai_chance = {
+			base = 10
+		}
+		
+		set_country_flag = frk_finland_yes
+		add_ideas = frk_supported_ooarai
+	}
+	
+	option = {
+		name = kmm.224.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = kmm.225
+	title = kmm.225.t
+	desc = kmm.225.d
+	picture = GFX_report_event_countercoup
+	
+	fire_only_once = yes
+	is_triggered_only  = yes
+	
+	option = {
+		name = kmm.225.a
+		ai_chance = {
+			base = 10
+		}
+		
+		set_country_flag = frk_spain_yes
+		add_ideas = frk_supported_ooarai
+	}
+	
+	option = {
+		name = kmm.225.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = kmm.226
+	title = kmm.226.t
+	desc = kmm.226.d
+	picture = GFX_report_event_saemona_report1
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kmm.226.a
+		ai_chance = {
+			base = 20
+		}
+		custom_effect_tooltip = frk_yukari_plan_chosen
+		set_country_flag = frk_nuclears
+	}
+
+	option = {
+		name = kmm.226.b
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			country_event = { id = kmm.218 days = 5 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.227
+	title = kmm.227.t
+	desc = kmm.227.d
+	picture = GFX_report_event_saemona_report
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.227.a
+		ai_chance = {
+			base = 20
+		}
+		FRK = {
+			set_country_flag = frk_kuro_accept
+			country_event = { id = kmm.228 days = 1}
+		}
+	}
+}
+
+country_event = {
+	id = kmm.228
+	title = kmm.228.t
+	desc = kmm.228.d
+	picture = GFX_report_event_seeteufel
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.228.a
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+##1
+country_event = {
+	id = kmm.229
+	title = kmm.229.t
+	desc = kmm.229.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.229.a
+		ai_chance = {
+			base = 20
+		}
+		#hidden_effect = {
+			country_event = { id = kmm.230 days = 1 }
+		#}
+	}
+
+}
+
+country_event = {
+	id = kmm.230
+	title = kmm.230.t
+	desc = kmm.230.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = kmm.230.a
+		ai_chance = {
+			base = 20
+		}
+		
+		ZZZ = {
+			transfer_state = 127
+			transfer_state = 123
+			transfer_state = 126
+			transfer_state = 338
+			transfer_state = 125
+			country_event = { id = kmm.231 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.231
+	title = kmm.231.t
+	desc = kmm.231.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = kmm.231.a
+		ai_chance = {
+			base = 20
+		}
+		
+		ZZZ = {
+			transfer_state = 7
+			transfer_state = 36
+			transfer_state = 35
+			transfer_state = 6
+			transfer_state = 34
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 51
+			transfer_state = 55
+			transfer_state = 42
+			transfer_state = 810
+			transfer_state = 8
+			transfer_state = 28
+			country_event = { id = kmm.232 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.232
+	title = kmm.232.t
+	desc = kmm.232.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = kmm.232.a
+		ai_chance = {
+			base = 20
+		}
+		
+		ZZZ = {
+			transfer_state = 811
+			transfer_state = 50
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 785
+			transfer_state = 29
+			country_event = { id = kmm.233 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.233
+	title = kmm.233.t
+	desc = kmm.233.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = kmm.233.a
+		ai_chance = {
+			base = 20
+		}
+		
+		ZZZ = {
+			transfer_state = 16
+			transfer_state = 15
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 24
+			transfer_state = 27
+			country_event = { id = kmm.234 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.234
+	title = kmm.234.t
+	desc = kmm.234.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = kmm.234.a
+		ai_chance = {
+			base = 20
+		}
+		
+		ZZZ = {
+			transfer_state = 23
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 26
+			transfer_state = 20
+			transfer_state = 19
+			transfer_state = 31
+			transfer_state = 806
+			transfer_state = 22
+			country_event = { id = kmm.235 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = kmm.235
+	title = kmm.235.t
+	desc = kmm.235.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = kmm.235.a
+		ai_chance = {
+			base = 20
+		}
+		
+		ZZZ = {
+			transfer_state = 21
+			transfer_state = 32
+			transfer_state = 735
+			transfer_state = 3
+			transfer_state = 151
+			transfer_state = 159
+			transfer_state = 158
+			transfer_state = 161
+			
+		}
+	}
+}
+
+country_event = {
+	id = kmm.236
+	title = kmm.236.t
+	desc = kmm.236.d
+	picture = GFX_report_event_seeteufel
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kmm.236.a
+		ai_chance = {
+			base = 20
+		}
+		GER = {
+			declare_war_on = {
+		        target = FRK
+		        type = annex_everything
+	        }
+		}
+	}
+
+}
+
+country_event = { ##saving private funny fish
+	id = kmm.237
+	title = kmm.237.t
+	desc = kmm.237.d
+	picture = GFX_report_event_anchovy_coup
+	
+	trigger = {
+		original_tag = FRK
+		ITA = {
+			NOT = {
+				controls_state = 2
+			}
+		
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = kmm.237.a
+		ai_chance = {
+			base = 20
+		}
+		
+		create_field_marshal = {
+			name = "Anchovy"
+			picture = "gfx/leaders/ITA/Portrait_ITA_Anchovy1.dds" 
+			traits = {  armor_officer logistics_wizard expert_delegator }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}
+

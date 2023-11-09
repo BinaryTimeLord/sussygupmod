@@ -1,0 +1,87 @@
+add_namespace = wtw
+
+##TEMPLATE
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+		#ai_chance = {
+			#base =
+		#}
+
+	#}
+#}
+
+country_event = {
+    id = wtw.1
+    title = wtw.1.t
+    desc = wtw.d
+	picture = GFX_report_event_wtw_one
+
+    trigger = {
+        SOV = {
+            has_war_with = FIN
+        }
+        OR = {
+            original_tag = FIN
+            original_tag = SOV
+        }
+        NOT = {
+            has_country_flag = wtw_winter_war_start
+        }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = wtw.1.a
+        ai_chance = {
+        	base = 1
+        }
+        trigger = {
+            original_tag = SOV
+        }
+        set_country_flag = wtw_winter_war_start
+		activate_mission = defend_leningrad
+    }
+
+    option = {
+        name = wtw.1.b
+        ai_chance = {
+            base = 1
+        }
+        trigger = {
+            original_tag = FIN
+        }
+        set_country_flag = wtw_winter_war_start
+		activate_mission = capture_leningrad
+    }
+}
+
+##FINNISH VICTORY
+
+country_event = {
+	id = wtw.2
+	title = wtw.2.t
+	desc = wtw.2.d
+	picture = GFX_report_event_fin_aid
+	
+	option = {
+	name = wtw.2.a
+	ai_chance = {
+		base = 1
+	}
+	FIN = {
+	transfer_state = 195
+	}
+	news_event = { id = wtwnews.1 }
+	}
+	
+}

@@ -1,0 +1,90 @@
+winter_war = {
+	capture_leningrad = {
+		is_good = no
+		days_mission_timeout = 250
+		
+		available = {
+			has_country_flag = wtw_winter_war
+			FIN = {
+				owns_state = 195
+			}
+		}
+		
+		allowed = {
+			original_tag = FIN
+		}
+
+		activation = {
+			has_country_flag = wtw_winter_war_start
+			original_tag = FIN
+		}
+
+		visible = {
+			has_country_flag = wtw_winter_war_start
+			original_tag = FIN
+		}
+		
+		timeout_effect = {
+			hidden_effect = {
+				SOV = {
+					set_country_flag = wtw_winter_war_win
+					clr_country_flag = wtw_winter_war_start
+				}
+				
+				FIN = {
+					clr_country_flag = wtw_winter_war_start
+					set_country_flag = JAK_winter_war_loss
+				}
+			}
+		}
+		remove_effect = {
+			SOV = {
+				clr_country_flag = wtw_winter_war_start
+			}
+			FIN = {
+				country_event = { id = wtw.2 days = 1 }
+				set_country_flag = JAK_winter_war_won
+				clr_country_flag = wtw_winter_war_start
+			}
+		}
+	}
+	
+	defend_leningrad = {
+		
+		is_good = no
+		days_mission_timeout = 250
+		
+		allowed = {
+			original_tag = SOV
+		}
+		
+		visible = {
+			has_country_flag = wtw_winter_war_start
+			original_tag = SOV
+		}
+		
+		available = {
+			has_country_flag = wtw_winter_war1
+			SOV = {
+				has_country_flag = wtw_winter_war_win
+			}
+		}
+
+		activation = {
+			has_country_flag = wtw_winter_war_start
+			original_tag = SOV
+		}
+		
+		visible = {
+			has_country_flag = wtw_winter_war_start
+			original_tag = SOV
+		}
+		
+		timeout_effect = {
+		
+		}
+		remove_effect = {
+		
+		}
+	}
+}

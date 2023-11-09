@@ -1,0 +1,7 @@
+category = {
+ name = "Event Sound"
+ soundeffects = {
+	union
+	finale_victory_bigevent
+	}
+}

@@ -190,33 +190,78 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_generic_attack_nationalist_spain.dds"
 	}
 	spriteType = { 
-		name = "GFX_report_mussolini_thinking_1"
-		texturefile = "gfx/event_pictures/Anzio/report_mussolini_thinking_1.dds"
+		name = "GFX_ITA_amaretto_election"
+		texturefile = "gfx/event_pictures/Anzio/ITA_amaretto_election.dds"
 	}
 
 	spriteType = { 
-		name = "GFX_report_mussolini_thinking_2"
-		texturefile = "gfx/event_pictures/Anzio/report_mussolini_thinking_2.dds"
+		name = "GFX_ITA_amaretto_leader"
+		texturefile = "gfx/event_pictures/Anzio/ITA_amaretto_leader.dds"
 	}
 
 	spriteType = { 
-		name = "GFX_report_mussolini_thinking_3"
-		texturefile = "gfx/event_pictures/Anzio/report_mussolini_thinking_3.dds"
+		name = "GFX_ITA_anchovy_demand"
+		texturefile = "gfx/event_pictures/Anzio/ITA_anchovy_demand.dds"
 	}
 
 	spriteType = { 
-		name = "GFX_report_mussolini_communist_split"
-		texturefile = "gfx/event_pictures/Anzio/report_mussolini_communist_split.dds"
+		name = "GFX_ITA_anchovy_duce"
+		texturefile = "gfx/event_pictures/Anzio/ITA_anchovy_duce.dds"
 	}
 
 	spriteType = { 
-		name = "GFX_report_mussolini_democratic_split"
-		texturefile = "gfx/event_pictures/Anzio/report_mussolini_democratic_split.dds"
+		name = "GFX_ITA_anchovy_mad"
+		texturefile = "gfx/event_pictures/Anzio/ITA_anchovy_mad.dds"
 	}
 
 	spriteType = { 
-		name = "GFX_report_mussolini_monarchist_split"
-		texturefile = "gfx/event_pictures/Anzio/report_mussolini_monarchist_split.dds"
+		name = "GFX_ITA_anchovy_mad2"
+		texturefile = "gfx/event_pictures/Anzio/ITA_anchovy_mad2.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_anchovy_mad3"
+		texturefile = "gfx/event_pictures/Anzio/ITA_anchovy_mad3.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_carpaccio_election"
+		texturefile = "gfx/event_pictures/Anzio/ITA_carpaccio_election.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_carpaccio_leader"
+		texturefile = "gfx/event_pictures/Anzio/ITA_carpaccio_leader.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_communist"
+		texturefile = "gfx/event_pictures/Anzio/ITA_communist.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_democratic"
+		texturefile = "gfx/event_pictures/Anzio/ITA_democratic.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_monarchist"
+		texturefile = "gfx/event_pictures/Anzio/ITA_monarchist.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_pepperoni_election"
+		texturefile = "gfx/event_pictures/Anzio/ITA_pepperoni_election.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_pepperoni_leader"
+		texturefile = "gfx/event_pictures/Anzio/ITA_pepperoni_leader.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ITA_roman_empire"
+		texturefile = "gfx/event_pictures/Anzio/ITA_roman_empire.dds"
 	}
 
 	spriteType = {

@@ -1,0 +1,1967 @@
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRK
+		}
+	}
+	
+	continuous_focus_position = { x = 3000 y = 675 }
+	
+		focus = {
+			id = FRK_establish_control
+			icon = GFX_goal_establish_control
+			allow_branch = {
+				NOT = {
+					has_country_flag = FRK_reported
+				}	
+			}
+			x = 16
+			y = 0
+			cost = 4
+			completion_reward = {
+				add_political_power = 25
+				add_stability = 0.05
+				hidden_effect = {
+					random_list = {
+						50 = { set_country_flag = FRK_NUCLEAR }
+						50 = { set_country_flag = FRK_NUCLEARNO }
+					}
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_deploy_KS_garrisons
+			icon = GFX_goal_deploy_KS
+			relative_position_id = FRK_establish_control
+			x = 0
+			y = 1
+			prerequisite = { focus = FRK_establish_control }
+			cost = 5
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = frk_KS_support
+					add_idea = frk_KS_support2
+				}
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_establish_government
+			icon = GFX_goal_establish_government
+			relative_position_id = FRK_establish_control 
+			x = -2
+			y = 1
+			prerequisite = { focus = FRK_establish_control }
+			cost = 10
+			completion_reward = {
+			##EVENT HERE
+			country_event = { id = kmm.206 days = 1 }
+			swap_ideas = {
+				remove_idea = frk_defeated_government
+				add_idea = frk_defeated_government2
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_dotted_line_report
+			icon = GFX_goal_dotted_line
+			relative_position_id = FRK_establish_control
+			x = 2
+			y = 1
+			prerequisite = { focus = FRK_establish_control }
+			cost = 10
+			completion_reward = {
+			##EVENT HERE
+			add_stability = 0.05
+			country_event = { id = kmm.203 days = 1 }
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_rebuild_railroads
+			icon = GFX_goal_rebuild_railroads
+			relative_position_id = FRK_establish_control
+			x = 1
+			y = 2
+			prerequisite = { focus = FRK_deploy_KS_garrisons }
+			prerequisite = { focus = FRK_dotted_line_report }
+			cost = 10
+			completion_reward = {
+				add_ideas = frk_repair
+			}
+		}
+		
+		focus = {
+			id = FRK_crackdown_anarchy
+			icon = GFX_goal_anarchy
+			relative_position_id = FRK_establish_control 
+			x = -1
+			y = 2
+			prerequisite = { focus = FRK_deploy_KS_garrisons }
+			prerequisite = { focus = FRK_establish_government }
+			cost = 10
+			completion_reward = {
+			##EVENT HERE
+			add_stability = 0.1
+			}
+		}
+		
+		focus = {
+			id = FRK_report_to_erika
+			icon = GFX_goal_report_erika
+			relative_position_id = FRK_establish_control
+			x = 0
+			y = 3
+			prerequisite = { focus = FRK_crackdown_anarchy focus = FRK_rebuild_railroads }
+			cost = 1
+			completion_reward = {
+			##EVENT HERE
+			country_event = { id = kmm.207 days = 1 }
+			}
+		}
+		
+		##YUKARI PLAN
+		
+		focus = {
+			id = FRK_yukari_plan 
+			icon = GFX_goal_yukari_plan
+			x = 5
+			y = 4
+			cost = 1
+				available = {
+					has_country_flag = FRK_reported
+					has_country_flag = FRK_yukari_picked
+				}
+			completion_reward = {
+				if = {
+					limit = {
+						NOT = { has_idea = war_economy }
+						NOT = { has_idea = tot_economic_mobilisation }
+					}
+					add_ideas = war_economy
+				}
+				add_political_power = 75
+			}
+		}
+		
+		focus = {
+			id = FRK_consolidate_industry
+			icon = GFX_goal_consolidate_economy
+			relative_position_id = FRK_yukari_plan
+			x = -1
+			y = 1
+			prerequisite = { focus = FRK_yukari_plan }
+			cost = 7
+			completion_reward = {
+				add_timed_idea = { idea = frk_consolidate_industry days = 180 }
+			}
+		}
+		
+		focus = {
+			id = FRK_french_worker_conscript
+			icon = GFX_goal_worker_conscript
+			relative_position_id = FRK_yukari_plan
+			x = 1
+			y = 1
+			prerequisite = { focus = FRK_yukari_plan }
+			cost = 7
+			completion_reward = {
+				add_manpower = 150000
+				add_stability = -0.05
+			}
+		}
+		
+		focus = {
+			id = FRK_kickstart_industry
+			icon = GFX_goal_kickstart_economy
+			relative_position_id = FRK_yukari_plan
+			x = 0
+			y = 2
+			prerequisite = { focus = FRK_consolidate_industry }
+			prerequisite = { focus = FRK_french_worker_conscript }
+			cost = 10
+			completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			
+				add_stability = -0.05
+			}
+		}
+		
+		focus = {
+			id = FRK_french_KS_battalions
+			icon = GFX_goal_KS_french
+			relative_position_id = FRK_yukari_plan 
+			x = -2
+			y = 3
+			prerequisite = { focus = FRK_kickstart_industry }
+			cost = 7
+			completion_reward = {
+				custom_effect_tooltip = frk_KS_mobilize
+				hidden_effect = {
+					load_oob = "FRK_KS_units"
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_exploit_aluminium
+			icon = GFX_goal_KS_exploit_aluminium
+			relative_position_id = FRK_yukari_plan 
+			x = 0 
+			y = 3
+			prerequisite = { focus = FRK_kickstart_industry }
+			cost = 7
+			completion_reward = {
+				add_ideas = frk_exploit_resources
+				if = {
+					limit = {
+						FRK = {
+							has_full_control_of_state = 785
+						}
+					}
+					785 = {
+						add_resource = {
+							type = aluminium
+							amount = 25
+						}
+					}
+				}
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_begin_alantic_wall
+			icon = GFX_goal_KS_alanticwall_pt1
+			relative_position_id = FRK_yukari_plan
+			x = 2
+			y = 3
+			prerequisite = { focus = FRK_kickstart_industry }
+			cost = 14
+			completion_reward = {
+				if = {
+					limit = {
+						FRK = {
+							has_full_control_of_state = 15
+						}
+					}
+					
+					15 = {
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+						
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+						
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+					
+					
+				}
+				
+				if = {
+					limit = {
+						FRK = {
+							has_full_control_of_state = 14
+						}
+					}
+				
+					14 = {
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+						
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+						
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+			}
+		}
+		
+		focus = { ##LEADS TO YUKARI COUP IF DONE
+			id = FRK_continue_KS_buildup
+			icon = GFX_goal_KS_french_buildup
+			relative_position_id = FRK_yukari_plan
+			x = -2
+			y = 4
+			prerequisite = { focus = FRK_french_KS_battalions }
+			cost = 20
+			completion_reward = { ##HIDDEN EFFECT 70 DAYS TILL COUP
+				custom_effect_tooltip = frk_KS_buildup
+				add_stability = -0.15
+				hidden_effect = {
+					country_event = { id = kmm.220 days = 70 }
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_military_build_up
+			icon = GFX_goal_military_buildup
+			relative_position_id = FRK_yukari_plan
+			x = 0
+			y = 4
+			prerequisite = { focus = FRK_exploit_aluminium }
+			cost = 7 
+			completion_reward = {
+				if = {
+					limit = {
+						FRK = {
+							has_full_control_of_state = 16
+						}
+					}
+					
+					16 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}	
+					}
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_rearm_nation
+			icon = GFX_goal_rearm
+			relative_position_id = FRK_yukari_plan 
+			x = 0
+			y = 5
+			prerequisite = { focus = FRK_military_build_up }
+			cost = 7
+			completion_reward = {
+			custom_effect_tooltip = frk_KS_mobilize	
+				hidden_effect = {
+					load_oob = "FRK_KS_mob"
+				}
+				add_stability = -0.05
+			}
+		
+		}
+		
+		##POST COUP
+		
+		focus = {
+			id = FRK_yukari_coup
+			icon = GFX_goal_yukari_coup
+			available = {
+				has_country_flag = frk_yukari_coup_flag
+			}
+			x = 12
+			y = 4
+			cost = 1
+			completion_reward = {
+				add_stability = 0.05
+			}
+		}
+		
+		focus = {
+			id = FRK_precoup_stability
+			icon = GFX_goal_precoup
+			relative_position_id = FRK_yukari_coup
+			x = -1
+			y = 1
+			prerequisite = { focus = FRK_yukari_coup }
+			cost = 7
+			completion_reward = {
+				add_stability = -0.1
+				country_event = { id = kmm.217 days = 0 }
+			}
+		}
+		
+		focus = {
+			id = FRK_hunt_traitors
+			icon = GFX_goal_hunt_traitors
+			relative_position_id = FRK_yukari_coup
+			x = 1
+			y = 1
+			prerequisite = { focus = FRK_yukari_coup }
+			cost = 7 
+			completion_reward = {
+				16 = {
+				add_manpower = -15000
+				}
+				
+				14 = {
+				add_manpower = -15000
+				}
+				
+				15 = {
+				add_manpower = -15000
+				}
+				
+				add_stability = -0.1
+			}
+		}
+		
+		focus = { 
+			id = FRK_deploy_elite_KS
+			icon = GFX_goal_deploy_elite
+			relative_position_id = FRK_yukari_coup 
+			x = 0
+			y = 2
+			cost = 10
+			prerequisite = { focus = FRK_precoup_stability }
+			prerequisite = { focus = FRK_hunt_traitors }
+			completion_reward = {
+				custom_effect_tooltip = frk_KS_mobilize
+				hidden_effect = {
+					load_oob = "FRK_KS_units"
+				}
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_erika_aid
+			icon = GFX_goal_erika_aid
+			relative_position_id = FRK_yukari_coup
+			x = 2
+			y = 2
+			cost = 10
+			prerequisite = { focus = FRK_hunt_traitors }
+			completion_reward = {
+				add_political_power = 150
+				add_stability = -0.05
+				16 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_seize_weapons
+			icon = GFX_goal_seize_weapons
+			relative_position_id = FRK_yukari_coup
+			x = -2
+			y = 2
+			cost = 5
+			prerequisite = { focus = FRK_precoup_stability }
+			completion_reward = {
+				add_stability = -0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					
+					amount = 2043
+					
+					producer = FRA
+				
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_interogate_ministers
+			icon = GFX_goal_interrogate
+			relative_position_id = FRK_yukari_coup
+			x = -1
+			y = 3
+			cost = 7
+			prerequisite = { focus = FRK_seize_weapons focus = FRK_deploy_elite_KS }
+			completion_reward = {
+			add_political_power = 75
+			add_stability = 0.1
+			custom_effect_tooltip = frk_remove
+			set_country_flag = FRK_resigned
+			}
+		}
+		
+		focus = {
+			id = FRK_capture_brest
+			icon = GFX_goal_capture_brest
+			relative_position_id = FRK_yukari_coup
+			x = 1
+			y = 3
+			cost = 20
+			prerequisite = { focus = FRK_deploy_elite_KS }
+			prerequisite = { focus = FRK_erika_aid }
+			completion_reward = {
+				add_stability = 0.15
+				14 = {
+				add_core_of = FRK
+					
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				
+				
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_stability_once_more
+			icon = GFX_goal_stability_once
+			relative_position_id = FRK_yukari_coup
+			x = 0
+			y = 4
+			cost = 1
+			prerequisite = { focus = FRK_interogate_ministers }
+			prerequisite = { focus = FRK_capture_brest }
+			completion_reward = {
+				add_stability = 0.1
+				add_political_power = 75
+			}	
+		
+		}
+		
+		focus = {
+			id = FRK_choosing_successor
+			icon = GFX_goal_succesoor		
+			relative_position_id = FRK_yukari_coup
+			x = 0
+			y = 5
+			cost = 1
+			prerequisite = { focus = FRK_stability_once_more } 
+			completion_reward = {
+				country_event = { id = kmm.219 days = 1 }
+			}
+		
+		}
+		
+		##SUCCESSOR TREE
+		
+		##SAEMONZA
+		focus = {
+			id = FRK_saemonza_picked
+			icon = GFX_goal_saemonza_picked
+			available = {
+				has_country_flag = frk_saemonza_picked1
+			}
+			x = 5
+			y = 10
+			cost = 1
+			mutually_exclusive = { focus = FRK_erwin_picked }
+			completion_reward = {
+				add_stability = 0.05
+				add_political_power = 25
+				hidden_effect = {
+					set_country_flag = FRK_stability1
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_enlightened
+			icon = GFX_goal_erika_plan
+			relative_position_id = FRK_saemonza_picked
+			allow_branch = {
+				#has_completed_focus = FRK_saemonza_picked
+			}
+			x = 0
+			y = 1
+			cost = 1
+			prerequisite = { focus = FRK_saemonza_picked }
+			completion_reward = {
+			custom_effect_tooltip = frk_enlightended_tooltip
+			hidden_effect = {
+				
+					clr_country_flag = FRK_stability1
+					set_country_flag = FRK_stability2
+
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_purge_remaining_saorists
+			icon = GFX_goal_purge
+			relative_position_id = FRK_saemonza_picked
+			x = 0
+			y = 2
+			cost = 1
+			prerequisite = { focus = FRK_enlightened }
+			completion_reward = {
+			custom_effect_tooltip = frk_purge_wanted
+				add_stability = -0.1
+				16 = {
+					add_manpower = -50000
+				}
+				
+				18 = {
+					add_manpower = -50000
+				}
+				
+				17 = {
+					add_manpower = -50000
+				}
+				
+				27 = {
+					add_manpower = -50000
+				}
+				
+				hidden_effect = {
+				clr_country_flag = FRK_stability2
+				set_country_flag = FRK_stability3
+				
+				
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_french_work_camps
+			icon = GFX_goal_workcamps
+			relative_position_id = FRK_saemonza_picked
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					
+				}
+			}
+			x = -1
+			y = 3
+			cost = 7
+			prerequisite = { focus = FRK_purge_remaining_saorists }
+			completion_reward = {
+				add_ideas = frk_workcamps
+			}
+		}
+		
+		focus = {
+			id = FRK_seize_french_assets
+			icon = GFX_goal_seize
+			relative_position_id = FRK_saemonza_picked 
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					
+				}
+			}
+			x = 1
+			y = 3
+			cost = 7
+			prerequisite = { focus = FRK_purge_remaining_saorists }
+			completion_reward = {
+				add_timed_idea = { idea = frk_seize_assets days = 180 }
+			}
+		}
+		
+		focus = {
+			id = FRK_export_french_workers
+			icon = GFX_goal_sell_french_workers
+			relative_position_id = FRK_saemonza_picked
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					
+				}
+			}
+			x = -1
+			y = 4
+			cost = 7
+			prerequisite = { focus = FRK_french_work_camps }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = frk_workcamps
+					add_idea = frk_workcamps1
+				
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_sell_assets
+			icon = GFX_goal_sell_french_assets
+			relative_position_id = FRK_saemonza_picked
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					has_idea = frk_seize_assets
+					
+				}
+			}
+			x = 1
+			y = 4
+			cost = 7
+			prerequisite = { focus = FRK_seize_french_assets }
+			completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_french_united
+			icon = GFX_goal_french_united
+			relative_position_id = FRK_saemonza_picked 
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+				}
+			}
+			x = 0
+			y = 5
+			cost = 14
+			prerequisite = { focus = FRK_export_french_workers }
+			prerequisite = { focus = FRK_sell_assets }
+			completion_reward = {
+				country_event =  { id = kmm.226 days = 1}
+				785 = {
+					add_core_of = FRK
+				}
+				
+				18 = {
+					add_core_of = FRK
+				}
+				
+				17 = {
+					add_core_of = FRK
+				}
+				
+				27 = {
+					add_core_of = FRK
+				}
+
+				24 = {
+					add_core_of = FRK
+				}
+				
+				30 = {
+					add_core_of = FRK
+				}
+				
+				15 = {
+					add_core_of = FRK
+				}
+				
+				14 = {
+					add_core_of = FRK
+				}
+				
+				30 = {
+					add_core_of = FRK
+				}
+				
+				23 = {
+					add_core_of = FRK
+				}
+				
+				19 = {
+					add_core_of = FRK
+				}
+				
+				806 = {
+					add_core_of = FRK
+				}
+				
+			}
+		}
+		
+		##ERWIN
+		focus = {
+			id = FRK_erwin_picked
+			icon = GFX_goal_erwin_picked
+			available = {
+				has_country_flag = frk_erwin_picked1
+			}
+			x = 11
+			y = 10
+			cost = 1
+			mutually_exclusive = { focus = FRK_saemonza_picked }
+			completion_reward = {
+				add_stability = 0.1
+			}
+		}
+		
+		focus = {
+			id = FRK_prepare_consolidation
+			icon = GFX_goal_prepare_consolidation
+			relative_position_id = FRK_erwin_picked
+			allow_branch = {
+				#has_completed_focus = FRK_erwin_picked
+			}
+			x = 0
+			y = 1
+			cost = 1
+			prerequisite = { focus = FRK_erwin_picked }
+			completion_reward = {
+				add_ideas = frk_consolidation 
+			}
+		}
+		
+		focus = {
+			id = FRK_invite_suzuki_back
+			icon = GFX_goal_invite_suzuki
+			relative_position_id = FRK_erwin_picked
+			x = 0
+			y = 2
+			cost = 1
+			prerequisite = { focus = FRK_prepare_consolidation }
+			completion_reward = {
+				custom_effect_tooltip = frk_suzuki_tooltip
+				clr_country_flag = FRK_resigned
+			}	
+		}
+		
+		focus = {
+			id = FRK_suzuki_plan
+			icon = GFX_goal_suzuki_plan
+			relative_position_id = FRK_erwin_picked
+			x = 0
+			y = 3
+			cost = 7
+			prerequisite = { focus = FRK_invite_suzuki_back }
+			completion_reward = { ##PLANS FOR BELGIUM AND NETHERLANDS UNIFICATION
+				add_ideas = frk_suzuki_plan
+				remove_ideas = frk_consolidation
+					random_country = {
+						limit= {
+							original_tag = BEL
+							has_government = fascism
+						}
+							country_event = { id = kmm.221 days = 1 }
+						}
+						
+					random_country = {
+						limit= {
+							original_tag = HOL
+							has_government = fascism
+						}
+							country_event = { id = kmm.222 days = 1 }
+						}			
+				}
+			
+		}
+		
+		focus = {
+			id = FRK_citizenship_for_service
+			icon = GFX_goal_citizenship_for_service
+			relative_position_id = FRK_erwin_picked
+			x = -1
+			y = 4
+			cost = 7
+			prerequisite = { focus = FRK_suzuki_plan }
+			completion_reward = {
+				add_ideas = frk_citizenship
+			}
+		}
+		
+		focus = { 
+			id = FRK_factory_worker_incentives
+			icon = GFX_goal_worker_incentive
+			relative_position_id = FRK_erwin_picked
+			available = {
+				has_idea = frk_citizenship
+			}
+			x = 1
+			y = 4
+			cost = 7
+			prerequisite = { focus = FRK_suzuki_plan }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = frk_citizenship
+					add_idea = frk_citizenship2
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_lay_back_on_oppression
+			icon = GFX_goal_lay_back_oppression
+			relative_position_id = FRK_erwin_picked
+			x = 0
+			y = 5
+			cost = 4
+			prerequisite = { focus = FRK_citizenship_for_service }
+			prerequisite = { focus = FRK_factory_worker_incentives }
+			completion_reward = {
+				add_stability = 0.05
+				add_war_support = 0.05
+				add_political_power = 150
+			}			
+		}
+		
+		focus = {
+			id = FRK_to_the_east
+			icon = GFX_goal_to_the_east
+			relative_position_id = FRK_erwin_picked
+			x = -1
+			y = 6
+			cost = 4
+			prerequisite = { focus = FRK_lay_back_on_oppression }
+			completion_reward = {
+				add_ideas = frk_pravda_focus
+			}
+		}
+		
+		focus = {
+			id = FRK_secret_negotiations
+			icon = GFX_goal_secret_negotations
+			relative_position_id = FRK_erwin_picked 
+			x = 1
+			y = 6
+			cost = 4
+			prerequisite = { focus = FRK_lay_back_on_oppression }
+			completion_reward = {
+				custom_effect_tooltip = frk_negotiations
+			}
+		}
+		
+		focus = {
+			id = FRK_united_free_french
+			icon = GFX_goal_united_free_french
+			relative_position_id = FRK_erwin_picked 
+			x = 0
+			y = 7
+			prerequisite = { focus = FRK_to_the_east }
+			prerequisite = { focus = FRK_secret_negotiations }
+			completion_reward = {
+				785 = {
+					add_core_of = FRK
+				}
+				
+				18 = {
+					add_core_of = FRK
+				}
+				
+				17 = {
+					add_core_of = FRK
+				}
+				
+				27 = {
+					add_core_of = FRK
+				}
+
+				24 = {
+					add_core_of = FRK
+				}
+				
+				30 = {
+					add_core_of = FRK
+				}
+				
+				15 = {
+					add_core_of = FRK
+				}
+				
+				14 = {
+					add_core_of = FRK
+				}
+				
+				30 = {
+					add_core_of = FRK
+				}
+				
+				23 = {
+					add_core_of = FRK
+				}
+				
+				19 = {
+					add_core_of = FRK
+				}
+				
+				806 = {
+					add_core_of = FRK
+				}
+			}
+		}
+		
+		##MIDDLE PATH
+		focus = {
+			id = FRK_reinvegerate_government
+			icon = GFX_goal_reinvergerate_government
+			available = {
+				NOT = {
+					has_country_flag = FRK_end
+				}
+			}
+			x = 8
+			y = 12
+			cost = 7
+			prerequisite = { focus = FRK_enlightened focus = FRK_prepare_consolidation }
+			completion_reward = {
+				custom_effect_tooltip = frk_remove_government
+				hidden_effect = {
+					remove_ideas = frk_defeated_government
+					remove_ideas = frk_defeated_government2
+					remove_ideas = frk_defeated_government3
+				}
+				}
+		}
+		
+		focus = {
+			id = FRK_KS_training
+			icon = GFX_goal_deploy_KS
+			relative_position_id = FRK_reinvegerate_government
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					
+				}
+			}
+			x = 0
+			y = 1
+			cost = 7
+			prerequisite = { focus = FRK_reinvegerate_government }
+			completion_reward = {
+				custom_effect_tooltip = frk_KS_mobilize
+				hidden_effect = {
+					load_oob = "FRK_KS_mob"
+				}
+			}	
+		}
+		
+		focus = { 
+			id = FRK_demand_vichy
+			icon = GFX_goal_demand_vichy
+			relative_position_id = FRK_reinvegerate_government 
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					
+				}
+			}
+			x = 0
+			y = 2
+			cost = 10
+			prerequisite = { focus = FRK_KS_training }
+			completion_reward = {
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = FRA
+					}
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_integrate_vichy
+			icon = GFX_goal_integrate_vichy
+			relative_position_id = FRK_reinvegerate_government
+			available = {
+				NOT = {
+					
+					has_country_flag = FRK_end
+					
+				}
+			}
+			x = 0 
+			y = 3
+			cost = 14
+			prerequisite = { focus = FRK_demand_vichy }
+			completion_reward = {
+				735 = {
+					add_core_of = FRK
+				}
+				
+				32 = {
+					add_core_of = FRK
+				}
+				
+				21 = {
+					add_core_of = FRK
+				}
+				
+				20 = {
+					add_core_of = FRK
+				}
+				
+				22 = {
+					add_core_of = FRK
+				}
+				
+				31 = {
+					add_core_of = FRK
+				}
+				
+				25 = {
+					add_core_of = FRK
+				}
+				
+			}
+		}
+		##TERRIBLE ENDING
+		
+		focus = {
+			id = FRK_final_solution
+			icon = GFX_goal_the_final_solution
+			available = {
+				has_completed_focus = FRK_french_united
+			}
+			x = 5
+			y = 16
+			cost = 1
+			completion_reward = {
+			
+			} 
+		}
+		
+		focus = {
+			id = FRK_bunker_projects
+			icon = GFX_goal_bunker_project
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 1
+			cost = 1
+			prerequisite = { focus = FRK_final_solution }
+			completion_reward = {
+				add_ideas = frk_bunker_projects
+			}
+		}
+		
+		focus = {
+			id = FRK_buy_concrete
+			icon = GFX_goal_kuro_concrete
+			relative_position_id = FRK_final_solution
+			x = -5
+			y = 2
+			cost = 7
+			prerequisite = { focus = FRK_bunker_projects }
+			completion_reward = {
+				custom_effect_tooltip = frk_unlocking1
+			}
+		}
+		
+		focus = {
+			id = FRK_french_workforce
+			icon = GFX_goal_french_conscripted_workers
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 2
+			cost = 10
+			prerequisite = { focus = FRK_bunker_projects }
+			completion_reward = {
+				add_ideas = frk_french_workers
+			}
+		}
+		
+		focus = {
+			id = FRK_digging_deeper
+			icon = GFX_goal_digging_deeper
+			relative_position_id = FRK_final_solution
+			x = -1
+			y = 2
+			cost = 10
+			prerequisite = { focus = FRK_bunker_projects }
+			completion_reward = {
+				add_ideas = frk_digging_deeper
+			}
+		}
+		
+		focus = {
+			id = FRK_bunker_levelone
+			icon = GFX_goal_bunkerpt1
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 3
+			cost = 20
+			prerequisite = { focus = FRK_buy_concrete }
+			prerequisite = { focus = FRK_french_workforce }
+			prerequisite = { focus = FRK_digging_deeper }
+			completion_reward = {
+				custom_effect_tooltip = frk_combining
+				add_political_power = 150
+				hidden_effect = {
+					add_ideas = frk_bunker_projects1
+					remove_ideas = frk_digging_deeper
+					remove_ideas = frk_french_workers
+				}
+			}
+			
+		}
+		
+		focus = {
+			id = FRK_highcommand_compartment
+			icon = GFX_goal_highcommand
+			relative_position_id = FRK_final_solution
+			x = -5
+			y = 4
+			cost = 10
+			prerequisite = { focus = FRK_bunker_levelone }
+			completion_reward = {
+				add_ideas = frk_highcommand
+			}
+		}
+		
+		focus = {
+			id = FRK_colonizers_compartment
+			icon = GFX_goal_hitleryouth
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 4
+			cost = 10
+			prerequisite = { focus = FRK_bunker_levelone }
+			completion_reward = {
+				add_ideas = frk_kuro_youth
+			}
+		}
+		
+		focus = {
+			id = FRK_life_sustaning_equipment
+			icon = GFX_goal_lifesus
+			relative_position_id = FRK_final_solution 
+			x = -1
+			y = 4
+			cost = 10
+			prerequisite = { focus = FRK_bunker_levelone }
+			completion_reward = {
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+			
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 3
+				category = radar_tech
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_workers_compartment
+			icon = GFX_goal_worker_compartment
+			relative_position_id = FRK_final_solution
+			x = -4
+			y = 5
+			cost = 10
+			mutually_exclusive = { focus = FRK_no_need }
+			prerequisite = { focus = FRK_highcommand_compartment }
+			prerequisite = { focus = FRK_colonizers_compartment }
+			prerequisite = { focus = FRK_life_sustaning_equipment }
+			completion_reward = {
+				custom_effect_tooltip = frk_workers_yes
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_no_need
+			icon = GFX_goal_no_need
+			relative_position_id = FRK_final_solution
+			x = -2
+			y = 5
+			cost = 1
+			mutually_exclusive = { focus = FRK_workers_compartment }
+			prerequisite = { focus = FRK_highcommand_compartment }
+			prerequisite = { focus = FRK_colonizers_compartment }
+			prerequisite = { focus = FRK_life_sustaning_equipment }
+			completion_reward = {
+				custom_effect_tooltip = frk_workers_no
+			}
+		}
+		
+		focus = {
+			id = FRK_bunker_leveltwo
+			icon = GFX_goal_bunkerpt1
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 6
+			cost = 20
+			prerequisite = { focus = FRK_workers_compartment focus = FRK_no_need }
+			completion_reward = {
+				custom_effect_tooltip = frk_combining
+				add_stability = 0.15
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = frk_bunker_projects2
+						remove_idea = frk_bunker_projects1
+					}
+					remove_ideas = frk_kuro_youth
+					remove_ideas = frk_highcommand
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_equipment_storage
+			icon = GFX_goal_equipment_storage
+			relative_position_id = FRK_final_solution 
+			x = -5
+			y = 7
+			cost = 10
+			prerequisite = { focus = FRK_bunker_leveltwo }
+			completion_reward = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					
+					amount = 3000
+					
+					producer = GER
+				
+				}
+				
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					
+					amount = 1000
+					
+					producer = FRA
+				
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_hydroponics
+			icon = GFX_goal_hyroponics
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 7
+			cost = 10
+			prerequisite = { focus = FRK_bunker_leveltwo }
+			completion_reward = {
+				add_ideas = frk_hydroponics 
+			}
+		}
+		
+		focus = {
+			id = FRK_final_touches
+			icon = GFX_goal_final_touches
+			relative_position_id = FRK_final_solution
+			x = -1
+			y = 7
+			available = {
+				has_completed_focus = FRK_hydroponics
+				has_completed_focus = FRK_equipment_storage 
+			}
+			cost = 10
+			prerequisite = { focus = FRK_bunker_leveltwo }
+			completion_reward = {
+				add_ideas = frk_final_touches
+			}
+		}
+		
+		focus = {
+			id = FRK_bunker_is_ready
+			icon = GFX_goal_bunkerpt1
+			relative_position_id = FRK_final_solution
+			x = -3
+			y = 8
+			cost = 1
+			prerequisite = { focus = FRK_equipment_storage }
+			prerequisite = { focus = FRK_hydroponics }
+			prerequisite = { focus = FRK_final_touches }
+			completion_reward = {
+				custom_effect_tooltip = frk_combining
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = frk_bunker_projects3
+						remove_idea = frk_bunker_projects2
+					}
+					remove_ideas = frk_hydroponics 
+					remove_ideas = frk_final_touches
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_nuclear_research
+			relative_position_id = FRK_final_solution
+			x = 3
+			y = 1
+			cost = 1
+			prerequisite = { focus = FRK_final_solution }
+			completion_reward = {
+				add_ideas = frk_nuclear_projects
+			}
+		}
+		
+		focus = {
+			id = FRK_kuromormine_science
+			relative_position_id = FRK_final_solution
+			x = 2
+			y = 2
+			cost = 4
+			prerequisite = { focus = FRK_nuclear_research }
+			completion_reward = {
+				GER = {
+					country_event = { id = kmm.227 days = 1 }
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_yukaris_insight
+			relative_position_id = FRK_final_solution 
+			x = 4
+			y = 2
+			cost = 4
+			prerequisite = { focus = FRK_nuclear_research }
+			completion_reward = {
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_utilize_BC_heavy_water
+			available = {
+				has_country_flag = frk_kuro_accept
+			}
+			relative_position_id = FRK_final_solution 
+			x = 1
+			y = 3
+			cost = 10
+			prerequisite = { focus = FRK_kuromormine_science }
+			completion_reward = {
+				27 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				30 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_mine_uranium 
+			available = {
+				has_country_flag = frk_kuro_accept
+			}
+			relative_position_id = FRK_final_solution
+			x = 3
+			y = 3
+			cost = 10
+			prerequisite = { focus = FRK_kuromormine_science }
+			prerequisite = { focus = FRK_yukaris_insight }
+			completion_reward = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				}
+				
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_atombombe_project
+			available = {
+				has_country_flag = frk_kuro_accept
+			}
+			relative_position_id = FRK_final_solution 
+			x = 5
+			y = 3
+			cost = 10
+			prerequisite = { focus = FRK_yukaris_insight }
+			completion_reward = {
+				add_tech_bonus = {
+					name = UK_secret_focus
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_secret_world
+			relative_position_id = FRK_final_solution 
+			x = 3
+			y = 4
+			cost = 1
+			prerequisite = { focus = FRK_utilize_BC_heavy_water }
+			prerequisite = { focus = FRK_mine_uranium }
+			prerequisite = { focus = FRK_atombombe_project }
+			completion_reward = {
+				custom_effect_tooltip = frk_decision_timer
+			}
+		}
+		
+		focus = {
+			id = FRK_exploit_old_rks
+			relative_position_id = FRK_final_solution
+			x = 2
+			y = 5
+			cost = 10
+			prerequisite = { focus = FRK_secret_world }
+			completion_reward = {
+				add_ideas = frk_reichkomissarit
+			}
+		}
+		
+		focus = {
+			id = FRK_german_rocket_tech
+			relative_position_id = FRK_final_solution
+			x = 4
+			y = 5
+			cost = 10
+			prerequisite = { focus = FRK_secret_world }
+			completion_reward = {
+				add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			}
+		}
+		
+		focus = {
+			id = FRK_build_rockets
+			relative_position_id = FRK_final_solution
+			x = 5 
+			y = 6
+			cost = 10
+			prerequisite = { focus = FRK_german_rocket_tech }
+			completion_reward = {
+				add_ideas = frk_build_rockets
+			}
+		}
+		
+		focus = {
+			id = FRK_run_em_dry
+			relative_position_id = FRK_final_solution 
+			x = 1
+			y = 6
+			cost = 10
+			prerequisite = { focus = FRK_exploit_old_rks }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = frk_reichkomissarit
+					add_idea = frk_reichkomissarit2
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_nuclear_bomb_almost
+			relative_position_id = FRK_final_solution 
+			x = 3
+			y = 6
+			cost = 10
+			prerequisite = { focus = FRK_exploit_old_rks focus = FRK_german_rocket_tech }
+			completion_reward = {
+				hidden_effect = {
+					add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+					}
+				}
+				swap_ideas = {
+					remove_idea = frk_nuclear_projects
+					add_idea = frk_nuclear_projects2
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_bomb_testing
+			relative_position_id = FRK_final_solution 
+			x = 3
+			y = 7
+			cost = 14
+			prerequisite = { focus = FRK_nuclear_bomb_almost }
+			completion_reward = {
+				add_war_support = 0.05
+				add_stability = -0.05
+			}
+		}
+		
+		focus = {
+			id = FRK_no_need_for_rks
+			relative_position_id = FRK_final_solution
+			x = 1
+			y = 7
+			cost = 7
+			prerequisite = { focus = FRK_run_em_dry }
+			completion_reward = {
+				GER = {
+					transfer_state = 7
+					transfer_state = 35
+					transfer_state = 36
+					
+					transfer_state = 6
+					transfer_state = 29
+					transfer_state = 34
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_rockets_ready
+			relative_position_id = FRK_final_solution
+			x = 5
+			y = 7
+			cost = 10
+			prerequisite = {focus = FRK_build_rockets }
+			completion_reward = {
+				remove_ideas = frk_build_rockets
+				swap_ideas = {
+					remove_idea = frk_nuclear_projects2
+					add_idea = frk_nuclear_projects3
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_nukes_are_ready
+			relative_position_id = FRK_final_solution
+			x = 3
+			y = 8
+			cost = 1
+			prerequisite = { focus = FRK_bomb_testing }
+			completion_reward = {
+				news_event = frk_news.1
+			}
+		}
+		
+		focus = {
+			id = FRK_our_independence
+			relative_position_id = FRK_final_solution
+			x = 0
+			y = 9
+			cost = 1
+			prerequisite = { focus = FRK_nukes_are_ready }
+			prerequisite = { focus = FRK_bunker_is_ready }
+			completion_reward = {
+				GER = {
+					end_puppet = FRK
+				}
+			}
+		}
+		
+		focus = {
+			id = FRK_goodbye
+			relative_position_id = FRK_final_solution 
+			x = 0
+			y = 10
+			cost = 10
+			prerequisite = { focus = FRK_our_independence }
+			completion_reward = {
+				if = {
+					limit = {
+						FRK = {
+							has_country_flag = FRK_NUCLEAR
+						}
+					}
+					
+					FRK  = {
+						country_event = { id = kmm.229 days = 1 }
+					}
+					
+					else = {
+						
+						FRK = {
+							country_event = { id = kmm.236 days = 1 }
+						}
+					
+					}
+				}
+			}
+		}
+		##MAKO PLAN
+		
+		focus = {
+			id = FRK_mako_plan
+			x = 20
+			y = 4
+			cost = 1
+			allow_branch = {
+			
+			}
+			completion_reward = {
+				if = {
+					limit = {
+						NOT = { has_idea = war_economy }
+						NOT = { has_idea = tot_economic_mobilisation }
+					}
+					add_ideas = war_economy
+				}
+				
+				add_stability = 0.15
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_seize_military_assets
+			relative_position_id = FRK_mako_plan 
+			x = -2
+			y = 1
+			prerequisite = { focus = FRK_mako_plan }
+			cost = 7
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = { 
+			id = FRK_conscript_french_veterans
+			relative_position_id = FRK_mako_plan
+			x = 0
+			y = 1
+			prerequisite = { focus = FRK_mako_plan }
+			cost = 7
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = FRK_civilian_priority
+			relative_position_id = FRK_mako_plan
+			x = 2
+			y = 1
+			prerequisite = { focus = FRK_mako_plan }
+			cost = 7
+			completion_reward = {
+			
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_second_french_army
+			relative_position_id = FRK_mako_plan
+			x = -1
+			y = 2
+			prerequisite = { focus = FRK_conscript_french_veterans }
+			prerequisite = { focus = FRK_seize_military_assets }
+			cost = 10
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = FRK_loosen_quota
+			relative_position_id = FRK_mako_plan
+			x = 1
+			y = 2
+			prerequisite = { focus = FRK_civilian_priority }
+			cost = 7
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = FRK_better_worker_conditions
+			relative_position_id = FRK_mako_plan
+			x = 1
+			y = 3
+			prerequisite = { focus = FRK_loosen_quota }
+			completion_reward = {
+			
+			}
+		
+		}
+		
+		focus = {
+			id = FRK_french_armament_factories
+			relative_position_id = FRK_mako_plan
+			x = -3
+			y = 3
+			prerequisite = { focus = FRK_second_french_army }
+			cost = 10
+			completion_reward = {
+			
+			}
+		
+		}
+		
+		focus = { 
+			id = FRK_lessen_KS_involvment
+			relative_position_id = FRK_mako_plan
+			x = -1
+			y = 3
+			prerequisite = { focus = FRK_second_french_army }
+			cost = 10
+			completion_reward = {
+			
+			}
+		
+		}
+		
+		focus = { ##THERE IS NO GOING BACK
+			id = FRK_end_the_cruelty
+			relative_position_id = FRK_mako_plan
+			x = -2
+			y = 4
+			prerequisite = { focus = FRK_lessen_KS_involvment }
+			prerequisite = { focus = FRK_french_armament_factories }
+			cost = 20
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = { 
+			id = FRK_proclaim_duel_citizenship
+			relative_position_id = FRK_mako_plan
+			x = 1
+			y = 4
+			prerequisite = { focus = FRK_better_worker_conditions }
+			cost = 10
+			completion_reward = {
+			
+			}
+		}
+	
+}

@@ -1,0 +1,10 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			FRK = {
+				country_lock_all_division_template = yes
+			}
+		}
+	}
+}

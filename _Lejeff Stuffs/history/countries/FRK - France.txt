@@ -1,0 +1,119 @@
+capital = 16
+
+set_technology = {
+		
+}
+
+set_research_slots = 3
+set_stability = 0.3
+set_war_support = 0.75
+
+add_ideas = frk_defeated_government
+add_ideas = frk_low_government_support
+add_ideas = frk_KS_support
+
+
+##DIPLOMATIC
+give_military_access = GER
+
+set_popularities = {
+	democratic = 30
+	communism = 20
+	fascism = 40
+	neutrality = 10
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Saori Takebe"
+	desc = "POLITICS_SAORI_TAKEBE_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Saori.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { 
+		radio_operator
+		media_personality_trait
+		jeff_bias
+	}
+}
+
+create_country_leader = {
+	name = "Saori Takebe"
+	desc = "POLITICS_SAORI_TAKEBE_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Saori.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = { 
+		radio_operator
+		media_personality_trait
+		jeff_bias
+	}
+}
+
+create_country_leader = {
+	name = "Saori Takebe"
+	desc = "POLITICS_SAORI_TAKEBE_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Saori.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { 
+		radio_operator
+		media_personality_trait
+		jeff_bias
+	}
+}
+
+create_country_leader = {
+	name = "Saori Takebe"
+	desc = "POLITICS_SAORI_TAKEBE_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Saori.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = { 
+		radio_operator
+		media_personality_trait
+		jeff_bias
+	}
+}
+
+##GENERALS
+
+create_field_marshal = {
+	name = "Saori Takebe"
+	picture = "Portrait_AUS_Saori.dds"
+	traits = { media_personality cavalry_officer fast_planner }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+
+}
+
+create_corps_commander = {
+	name = "Kiyomi Sugiyama"
+	picture = "Portrait_AUS_Saemonza.dds"
+	traits = { swamp_fox media_personality bold }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 6
+}
+
+create_corps_commander = {
+	name = "Maria Suzuki"
+	picture = "Portrait_AUS_Suzuki.dds"
+	traits = { armor_officer media_personality }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}

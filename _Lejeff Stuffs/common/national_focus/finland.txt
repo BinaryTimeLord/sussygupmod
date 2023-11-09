@@ -1,0 +1,956 @@
+focus_tree = {
+	id = finland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	continuous_focus_position = { x = 20 y = 2000 } ##WILL MOVE LATER
+	
+	####FUNNY STUFF TO BE DONE#####
+	##HOPEFULLY I KEPT THE WORDS THE SAME BUT ##JAK IS WHAT NEEDS TO BE DONE #jawohl
+
+
+	focus = { ##FINISH VIA EVENT
+		id = FIN_mikas_victory
+		icon = GFX_goal_mika_victory
+		x = 5
+		y = 0
+		available = {
+			has_country_flag = JAK_mika_win
+		}
+		cost = 0
+		completion_reward = {
+		
+		}
+	}
+
+	focus = { ##FINISH VIA EVENT
+		id = FIN_agrarian_league
+		relative_position_id = FIN_mikas_victory 
+		icon = GFX_goal_agrarian_league
+		x = -3
+		y = 1
+		cost = 0
+		mutually_exclusive = { focus = FIN_socialist_coalition }
+		prerequisite = { focus = FIN_mikas_victory }
+		completion_reward = {
+			add_stability = 0.01
+			add_political_power = 25
+		}
+
+	}
+	
+	focus = {
+		id = FIN_decentralize
+		icon = GFX_goal_decentralize
+		relative_position_id = FIN_agrarian_league
+		x = -1
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_agrarian_league }
+		completion_reward = {
+			add_ideas = JAK_decentralize
+		}
+	}
+	
+	focus = {
+		id = FIN_freedom_for_farms
+		relative_position_id = FIN_agrarian_league
+		icon = GFX_goal_independent_farms
+		x = 1
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_agrarian_league }
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_free_education
+		icon = GFX_goal_free_education
+		relative_position_id = FIN_agrarian_league
+		x = 0
+		y = 2
+		cost = 14
+		prerequisite = { focus = FIN_decentralize focus = FIN_freedom_for_farms }
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = JAK_free_education
+		}
+	}
+	
+	focus = {
+		id = FIN_farmer_relief
+		icon = GFX_goal_farmer_relief
+		relative_position_id = FIN_agrarian_league
+		x = 2
+		y = 2
+		cost = 7
+		prerequisite = { focus = FIN_freedom_for_farms }
+		completion_reward = {
+			add_ideas = JAK_farm_relief
+		}
+	}
+
+	focus = {
+		id = FIN_establish_self_government
+		icon = GFX_goal_self_govern
+		relative_position_id = FIN_agrarian_league 
+		x = -2
+		y = 2
+		cost = 7
+		prerequisite = { focus = FIN_decentralize }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = FIN_mend_civilwar_relatiosn
+		relative_position_id = FIN_agrarian_league 
+		icon = GFX_goal_mend_relations
+		x = -1
+		y = 3
+		cost = 7
+		prerequisite = { focus = FIN_establish_self_government }
+		completion_reward = {
+		add_timed_idea = { idea = JAK_mend_relations days = 180 }
+		}
+	
+	}
+	
+	focus = {
+		id = FIN_finnish_nationalism
+		icon = GFX_goal_finnish_nationalism
+		relative_position_id = FIN_agrarian_league 
+		x = 1
+		y = 3
+		cost = 7
+		prerequisite = { focus = FIN_farmer_relief }
+		completion_reward = {
+		add_ideas = JAK_nationalism
+		}
+	}
+	
+	focus = {
+		id = FIN_look_outwards
+		relative_position_id = FIN_agrarian_league
+		x = -1
+		y = 4
+		cost = 7
+		mutually_exclusive = { focus = FIN_neutrality_policy }
+		prerequisite = { focus = FIN_mend_civilwar_relatiosn focus = FIN_finnish_nationalism }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = FIN_neutrality_policy
+		relative_position_id = FIN_agrarian_league
+		x = 1
+		y = 4
+		cost = 7
+		mutually_exclusive = { focus = FIN_look_outwards }
+		prerequisite = { focus = FIN_mend_civilwar_relatiosn focus = FIN_finnish_nationalism }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##FINISH VIA EVENT 
+		id = FIN_socialist_coalition
+		icon = GFX_goal_socialist_coliltion
+		relative_position_id = FIN_mikas_victory
+		x = 3
+		y = 1
+		cost = 0
+		mutually_exclusive = { focus = FIN_agrarian_league }
+		prerequisite = { focus = FIN_mikas_victory }
+		completion_reward = {
+			add_stability = 0.01
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = FIN_free_healthcare
+		icon = GFX_goal_free_healthcare
+		relative_position_id = FIN_socialist_coalition
+		x = -2
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_socialist_coalition }
+		completion_reward = {
+			add_ideas = JAK_free_healthcare
+		}
+	}
+	
+	focus = {
+		id = FIN_rich_tax
+		icon = GFX_goal_rich_tax
+		relative_position_id = FIN_socialist_coalition 
+		x = 0
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_socialist_coalition }
+		completion_reward = {
+			custom_effect_tooltip = FIN_rich_tax_tooltip
+			add_timed_idea = { idea = JAK_tax_rich days = 180 }
+		}
+	}
+	
+	focus = {
+		id = FIN_coopertive_programs
+		icon = GFX_goal_coopertive
+		relative_position_id = FIN_socialist_coalition 
+		x = 2
+		y = 1
+		cost = 4
+		available = {
+			has_idea = JAK_tax_rich
+		}
+		prerequisite = { focus = FIN_socialist_coalition }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_free_university
+		icon = GFX_goal_free_uni
+		relative_position_id = FIN_socialist_coalition
+		x = 0
+		y = 2
+		cost = 7
+		available = {
+			has_idea = JAK_tax_rich
+		}
+		prerequisite = { focus = FIN_coopertive_programs }
+		prerequisite = { focus = FIN_rich_tax }
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = JAK_free_education
+		}
+
+	}
+	
+	focus = {
+		id = FIN_government_buisness
+		icon = GFX_goal_GOB
+		relative_position_id = FIN_socialist_coalition
+		x = 2
+		y = 2
+		cost = 7
+		prerequisite = { focus = FIN_coopertive_programs }
+		completion_reward = {
+			add_ideas = JAK_goverment_owned_buisness
+		}
+	}
+	
+	focus = {
+		id = FIN_women_sufferage
+		icon = GFX_goal_sufferage
+		relative_position_id = FIN_socialist_coalition 
+		x = -2
+		y = 2
+		cost = 7
+		prerequisite = { focus = FIN_free_healthcare }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+	
+	focus = { 
+		id = FIN_liberalize_army
+		icon = GFX_goal_liberalize
+		relative_position_id = FIN_socialist_coalition
+		x = -1
+		cost = 7
+		y = 3
+		prerequisite = { focus = FIN_women_sufferage } 
+		completion_reward = {
+			add_ideas = JAK_liberalize_army
+		}
+	}
+	
+	focus = {
+		id = FIN_socialist_economic_miricle
+		icon = GFX_goal_SEM
+		relative_position_id = FIN_socialist_coalition 
+		x = 1
+		y = 3
+		cost = 7
+		prerequisite = { focus = FIN_government_buisness }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_for_fatherland
+		relative_position_id = FIN_socialist_coalition 
+		x = 0
+		y = 4
+		cost = 10
+		prerequisite = { focus = FIN_liberalize_army }
+		prerequisite = { focus = FIN_socialist_economic_miricle }
+		completion_reward = {
+		
+		
+		}
+	}
+
+
+	focus = {
+		id = FIN_winter_war_victory
+		icon = GFX_goal_winter_war_win
+		x = 30
+		y = 1
+		cost = 10
+		available = {
+			has_country_flag = JAK_winter_war_won
+		}
+		mutually_exclusive = { focus = FIN_failure_winter_war }
+		completion_reward = {
+			remove_ideas = jak_winter_war
+			add_ideas = jak_winter_war_won
+		}
+	}
+	
+	focus = { ##JAK ILL DO THIS
+	id = FIN_develop_new_land 
+	relative_position_id = FIN_winter_war_victory
+	x = 1
+	y = 1
+	cost = 10
+	prerequisite = { focus = FIN_winter_war_victory }
+	completion_reward = {
+	
+	}
+	}
+	
+	focus = { ##JAK ILL DO THIS
+	id = FIN_invest_in_mining
+	relative_position_id = FIN_winter_war_victory
+	x = -1
+	y = 1
+	cost = 10
+	prerequisite = { focus = FIN_winter_war_victory }
+	completion_reward = {
+	
+	}
+	}
+	
+	focus = { ##JAK ILL DO THIS
+	id = FIN_encourage_finnishization
+	relative_position_id = FIN_winter_war_victory
+	x = -1
+	y = 2
+	cost = 7
+	prerequisite = { focus = FIN_invest_in_mining }
+	completion_reward = {
+	
+	}
+	}
+	
+	focus = {
+		id = FIN_urbanize_new_lands
+		relative_position_id = FIN_winter_war_victory
+		x = 1 
+		y = 2
+		cost = 7
+		prerequisite = { focus = FIN_develop_new_land }
+		completion_reward = {
+			195 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	##LARGE DEFENSE
+	focus = {
+		id = FIN_extend_mika_line
+		relative_position_id = FIN_winter_war_victory
+		x = 0
+		y = 3
+		available = {
+		has_completed_focus = FIN_expand_mika_line 
+		}
+		cost = 1
+		prerequisite = { focus = FIN_urbanize_new_lands focus = FIN_encourage_finnishization }
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					any_neighbor_state = {
+						is_controlled_by = SOV
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					instant_build = yes
+				}
+			}
+		}
+	}
+	##JOIN AGAINST GERMANY
+	focus = {
+		id = FIN_join_fight_fascism
+		relative_position_id = FIN_winter_war_victory
+		x = 0
+		y = 4
+		available = {
+		SOV = {
+		has_war_with = GER
+		}
+		}
+		prerequisite = { focus = FIN_extend_mika_line }
+		completion_reward = {
+			create_wargoal = {
+				target = GER
+				type = puppet_wargoal_focus
+			}
+			diplomatic_relation = {
+				country = SOV
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_failure_winter_war
+		icon = GFX_goal_winter_war_loss
+		x = 35
+		y = 1
+		available = {
+		has_country_flag = JAK_winter_war_loss
+		}
+		cost = 1
+		mutually_exclusive = { focus = FIN_winter_war_victory }
+		completion_reward = {
+			remove_ideas = jak_winter_war
+			add_ideas = jak_winter_war_lost
+		}
+	}
+	
+	focus = {
+		id = FIN_prepare_revenge
+		icon = GFX_goal_revenge_prepare
+		relative_position_id = FIN_failure_winter_war
+		x = -1
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_failure_winter_war }
+		completion_reward = {
+			111 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_rally_pop
+		icon = GFX_goal_rally_pop
+		relative_position_id = FIN_failure_winter_war
+		x = 1
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_failure_winter_war }
+		completion_reward = {
+			add_ideas = jak_population_rallied
+		}
+	}
+	
+	##DECISIONS
+	focus = {
+		id = FIN_create_white_guard
+		icon = GFX_goal_white_guard
+		relative_position_id = FIN_failure_winter_war
+		x = 1
+		y = 2
+		cost = 14
+		prerequisite = { focus = FIN_rally_pop }
+		completion_reward = {
+			activate_decision = jak_form_white_guard
+		}
+	}
+	
+	focus = {
+		id = FIN_invest_military 
+		icon = GFX_goal_army_invest
+		relative_position_id = FIN_failure_winter_war
+		x = -1
+		y = 2
+		cost = 7
+		prerequisite = { focus = FIN_prepare_revenge }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_invest_military
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_jatkosota ##THATS THE CONTINUATION WAR IN FINNISH
+		icon = GFX_goal_jatkosota
+		relative_position_id = FIN_failure_winter_war
+		available = {
+			GER = {
+				has_war_with = SOV
+			}
+		}
+		x = 0
+		y = 3
+		cost = 3
+		prerequisite = { focus = FIN_invest_military }
+		prerequisite = { focus = FIN_create_white_guard }
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+
+	
+	##ARMY
+	focus = {
+		id = FIN_tankery
+		icon = GFX_goal_fin_tankery
+		x = 40
+		y = 0
+		cost = 7
+		completion_reward = {
+			111 = {
+				if = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"1. Säiliöjoukko\" division_template = \"Jatokosota Tank Corps\" start_experience_factor = 1.75" 
+						owner = FIN
+					}
+				}
+			}
+			hidden_effect = {
+				set_technology = {
+					basic_light_tank = 1
+				}
+				division_template = { 						
+					name = "Jatokosota Tank Corps"
+					division_names_group = FIN_ARM_01
+
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 0 y = 2 }
+						light_armor = { x = 0 y = 3 }
+						light_armor = { x = 0 y = 4 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 1 y = 1 }
+						light_armor = { x = 1 y = 2 }
+						light_armor = { x = 1 y = 3 }
+						light_armor = { x = 1 y = 4 }
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_62ndtournament
+		icon = GFX_goal_62nd_sensha_do
+		relative_position_id = FIN_tankery
+		x = 0
+		y = 1
+		cost = 7
+		prerequisite = { focus = FIN_tankery }
+		completion_reward = {
+			add_ideas = jak_62tournament_learn
+		}
+	}
+	
+	focus = {
+		id = FIN_infantry_focus 
+		icon  = GFX_goal_fin_infantry_base
+		relative_position_id = FIN_tankery
+		x = 1
+		y = 2
+		cost = 7
+		mutually_exclusive = { focus = FIN_tank_focus }
+		prerequisite = { focus = FIN_62ndtournament }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_infantry_focus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_mass_assault
+		relative_position_id = FIN_tankery
+		x = 1
+		y = 3
+		cost = 7
+		mutually_exclusive = { focus = FIN_grand_battleplan }
+		prerequisite = { focus = FIN_infantry_focus }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_mass_assault
+				bonus = 1.0
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_modern_rifles
+		relative_position_id = FIN_tankery 
+		x = 1
+		y = 4
+		cost = 7
+		prerequisite = { focus = FIN_mass_assault }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_modern_rifles
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_modern_assaults
+		relative_position_id = FIN_tankery
+		x = 1 
+		y = 5
+		cost = 7
+		prerequisite = { focus = FIN_modern_rifles }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_modern_assaults
+				bonus = 1.0
+				uses = 1
+				category = cat_mass_assault
+			}
+			add_tech_bonus = {
+				name = FIN_modern_assaults
+				ahead_reduction = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_grand_battleplan
+		icon = GFX_goal_fin_grand_battleplan
+		relative_position_id = FIN_tankery
+		x = 3
+		y = 3
+		cost = 7
+		mutually_exclusive = { focus = FIN_mass_assault }
+		prerequisite = { focus = FIN_infantry_focus }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_grand_battleplan
+				bonus = 1.0
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_modern_artillery
+		icon = GFX_goal_modern_arty
+		relative_position_id = FIN_tankery 
+		x = 3
+		y = 4
+		cost = 7
+		prerequisite = { focus = FIN_grand_battleplan }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_modern_artillery
+				ahead_reduction = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_fortification_focus
+		relative_position_id = FIN_tankery
+		x = 3
+		y = 5
+		cost = 7
+		prerequisite = { focus = FIN_modern_artillery }
+		completion_reward = {
+			add_ideas = jak_fortification1
+		}
+	}
+	
+	focus = {
+		id = FIN_air_support
+		relative_position_id = FIN_tankery
+		x = 0
+		y = 6
+		cost = 7
+		mutually_exclusive = { focus = FIN_support_companies focus = FIN_artillery_support }
+		prerequisite = { focus = FIN_modern_assaults focus = FIN_fortification_focus }
+		completion_reward = {
+			add_ideas = jak_air_support
+			add_tech_bonus = {
+				name = FIN_air_support
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+				category = tactical_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_support_companies
+		relative_position_id = FIN_tankery
+		x = 2
+		y = 6
+		cost = 7
+		mutually_exclusive = { focus = FIN_air_support focus = FIN_artillery_support }
+		prerequisite = { focus = FIN_modern_assaults focus = FIN_fortification_focus }
+		completion_reward = { 
+			add_tech_bonus = {
+				name = FIN_support_companies
+				ahead_reduction = 1
+				uses = 2
+				category = support_tech
+			}
+			add_ideas = jak_support
+		}
+	}
+	
+	focus = {
+		id = FIN_artillery_support
+		relative_position_id = FIN_tankery
+		x = 4
+		y = 6
+		cost = 7
+		mutually_exclusive = { focus = FIN_air_support focus = FIN_support_companies }
+		prerequisite = { focus = FIN_modern_assaults focus = FIN_fortification_focus }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_artillery_support
+				ahead_reduction = 1
+				category = artillery
+			}
+			add_ideas = jak_artillery_focus
+		}
+	}
+
+	focus = {
+		id = FIN_tank_focus 
+		icon = GFX_goal_fin_tank_focus
+		relative_position_id = FIN_tankery 
+		x = -1
+		y = 2
+		cost = 7
+		mutually_exclusive = { focus = FIN_infantry_focus }
+		prerequisite = { focus = FIN_62ndtournament }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FIN_tank_focus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_light_tanks
+		relative_position_id = FIN_tankery
+		x = -1
+		y = 3
+		cost = 7
+		prerequisite = { focus = FIN_tank_focus }
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = FIN_light_tanks
+				bonus = 1.0
+				uses = 2
+				category = cat_light_armor
+			}
+		}
+	}
+	
+	focus = { #no possible hoi4 org modifier	 for tanks
+		id = FIN_blitz
+		relative_position_id = FIN_tankery
+		x = -1 
+		y = 4
+		cost = 7 
+		prerequisite = { focus = FIN_light_tanks }
+		completion_reward = {
+			add_ideas = jak_blitz
+		}
+	}
+	
+	focus = {
+		id = FIN_upgraded_light_tank
+		relative_position_id = FIN_tankery
+		x = -1
+		y = 5
+		cost = 7
+		prerequisite = { focus = FIN_blitz }
+		completion_reward = {
+			add_ideas = jak_light_tonks
+		}
+	}
+	
+	focus = {
+		id = FIN_major_tank_upgrades
+		relative_position_id = FIN_tankery
+		x = -2
+		y = 6
+		cost = 7
+		prerequisite = { focus = FIN_upgraded_light_tank }
+		available = {
+			date > 1941.1.1
+		}
+		completion_reward = {
+			if = { # to prevent mixed tooltips if other path is taken
+				limit = {
+					has_completed_focus = FIN_upgraded_light_tank
+				}
+				remove_ideas = jak_light_tonks
+			}
+			add_ideas = jak_major_tank_upgrades
+		}
+	}

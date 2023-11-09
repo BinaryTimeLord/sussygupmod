@@ -1,0 +1,10 @@
+jak_elections = {
+	allowed = {
+		original_tag = FIN
+	}
+	priority = 50
+	visible = {
+	}
+	icon = GFX_decision_jatkosota_logo
+}
+

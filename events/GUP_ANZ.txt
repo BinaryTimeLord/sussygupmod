@@ -26,7 +26,7 @@ country_event = { # Democrats demand elections
 	id = anz.2
 	title = anz.2.t
 	desc = anz.2.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_ITA_carpaccio_election
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -84,7 +84,7 @@ country_event = { # The communists take power
 	id = anz.3
 	title = anz.3.t
 	desc = anz.3.d
-	picture = GFX_report_event_generic_communist_congress
+	picture = GFX_ITA_amaretto_election
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -142,7 +142,7 @@ country_event = {
 	id = anz.4
 	title = anz.4.t
 	desc = anz.4.d
-	picture = GFX_report_mussolini_demands_subjugation
+	picture = GFX_ITA_anchovy_demand
 
 	is_triggered_only = yes
 	
@@ -187,7 +187,7 @@ country_event = {
 	id = anz.5
 	title = anz.5.t
 	desc = anz.5.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_ITA_anchovy_duce
 
 	is_triggered_only = yes
 	
@@ -202,7 +202,7 @@ country_event = {
 	id = anz.6
 	title = anz.6.t
 	desc = anz.6.d
-	picture = GFX_report_event_gre_italian_troops
+	picture = GFX_ITA_anchovy_mad
 
 	is_triggered_only = yes
 	
@@ -219,7 +219,7 @@ country_event = {
 	id = anz.7
 	title = anz.7.t
 	desc = anz.7.d
-	picture = GFX_report_mussolini_demands_subjugation
+	picture = GFX_ITA_anchovy_demand
 
 	is_triggered_only = yes
 	
@@ -262,7 +262,7 @@ country_event = {
 	id = anz.8
 	title = anz.8.t
 	desc = anz.8.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_ITA_anchovy_duce
 
 	is_triggered_only = yes
 	
@@ -277,7 +277,7 @@ country_event = {
 	id = anz.9
 	title = anz.9.t
 	desc = anz.9.d
-	picture = GFX_report_event_gre_italian_troops
+	picture = GFX_ITA_anchovy_mad
 
 	is_triggered_only = yes
 	
@@ -290,7 +290,7 @@ country_event = { # A new queen gets crowned
 	id = anz.10
 	title = anz.10.t
 	desc = anz.10.d
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_ITA_pepperoni_election
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -387,7 +387,7 @@ country_event = {
 	id = anz.13
 	title = anz.13.t
 	desc = anz.13.d
-	picture = GFX_report_event_gre_city_devastated
+	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
 
@@ -462,7 +462,7 @@ country_event = {
 	id = anz.16
 	title = anz.16.t
 	desc = anz.16.d
-	picture = GFX_report_mussolini_thinking_1
+	picture = GFX_ITA_anchovy_mad
 
 	is_triggered_only = yes
 
@@ -485,7 +485,7 @@ country_event = {
 	id = anz.17
 	title = anz.17.t
 	desc = anz.17.d
-	picture = GFX_report_mussolini_thinking_2
+	picture = GFX_ITA_anchovy_mad2
 
 	is_triggered_only = yes
 
@@ -532,7 +532,7 @@ country_event = { # Communist Italy secedes
 	id = anz.18
 	title = anz.18.t
 	desc = anz.18.d
-	picture = GFX_report_mussolini_communist_split
+	picture = GFX_ITA_amaretto_leader
 
 	is_triggered_only = yes
 
@@ -590,7 +590,7 @@ country_event = { # Democratic Italy secedes
 	id = anz.19
 	title = anz.19.t
 	desc = anz.19.d
-	picture = GFX_report_mussolini_democratic_split
+	picture = GFX_ITA_carpaccio_leader
 
 	is_triggered_only = yes
 
@@ -652,7 +652,7 @@ country_event = { # Monarchist Italy secedes
 	id = anz.20
 	title = anz.20.t
 	desc = anz.20.d
-	picture = GFX_report_mussolini_monarchist_split
+	picture = GFX_ITA_pepperoni_leader
 
 	is_triggered_only = yes
 
@@ -710,7 +710,7 @@ country_event = {
 	id = anz.21
 	title = anz.21.t
 	desc = anz.21.d
-	picture = GFX_report_mussolini_thinking_3
+	picture = GFX_ITA_anchovy_mad3
 
 	is_triggered_only = yes
 
@@ -978,7 +978,7 @@ country_event = {
 	id = anz.22
 	title = anz.22.t
 	desc = anz.22.d
-	picture = GFX_report_mussolini_demands_subjugation
+	picture = GFX_ITA_anchovy_demand
 
 	is_triggered_only = yes
 	
@@ -1063,7 +1063,7 @@ country_event = {
 	id = anz.23
 	title = anz.23.t
 	desc = anz.23.d
-	picture = GFX_report_event_generic_sign_treaty1
+	picture = GFX_ITA_anchovy_duce
 
 	is_triggered_only = yes
 
@@ -1077,7 +1077,7 @@ country_event = {
 	id = anz.24
 	title = anz.24.t
 	desc = anz.24.d
-	picture = GFX_report_event_gre_cabinet_meeting
+	picture = GFX_ITA_anchovy_mad
 
 	is_triggered_only = yes
 
@@ -1091,7 +1091,7 @@ country_event = {
 	id = anz.29
 	title = anz.29.t
 	desc = anz.29.d
-	picture = GFX_report_mussolini_demands_subjugation
+	picture = GFX_ITA_anchovy_demand
 
 	is_triggered_only = yes
 	
@@ -1139,7 +1139,7 @@ country_event = {
 country_event = {
 	id = anz.30
 	title = anz.30.t
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_ITA_anchovy_duce
 
 	is_triggered_only = yes
 	
@@ -1153,7 +1153,7 @@ country_event = {
 country_event = {
 	id = anz.31
 	title = anz.31.t
-	picture = GFX_report_event_gre_italian_troops
+	picture = GFX_ITA_anchovy_mad
 
 	is_triggered_only = yes
 	
@@ -1175,7 +1175,7 @@ news_event = {
 	id = anz.25
 	title = anz.25.t
 	desc = anz.25.d
-	picture = GFX_news_event_generic_parliament
+	picture = GFX_ITA_democratic
 	
 	major = yes
 	
@@ -1201,7 +1201,7 @@ news_event = {
 	id = anz.26
 	title = anz.26.t
 	desc = anz.26.d
-	picture = GFX_news_event_generic_parliament
+	picture = GFX_ITA_communist
 	
 	major = yes
 	
@@ -1227,7 +1227,7 @@ news_event = {
 	id = anz.27
 	title = anz.27.t
 	desc = anz.27.d
-	picture = GFX_news_event_generic_parliament
+	picture = GFX_ITA_monarchist
 	
 	major = yes
 	
@@ -1253,7 +1253,7 @@ news_event = {
 	id = anz.28
 	title = anz.28.t
 	desc = anz.28.d
-	picture = GFX_news_event_german_speech
+	picture = GFX_ITA_roman_empire
 	
 	major = yes
 	
@@ -1264,6 +1264,26 @@ news_event = {
 		trigger = {
 			original_tag = ITA
 		}
+		create_country_leader = {
+			name = "Caesar"
+			desc = "POLITICS_CAESAR_DESC"
+			picture = "gfx/leaders/AUS/Portrait_AUS_Caesar.dds"
+			expire = "1965.1.1"
+			ideology = italian_idealism4
+			traits = { }
+        }
+
+        create_field_marshal = {
+	        name = "Caesar"
+	        picture = "gfx/leaders/AUS/Portrait_AUS_Caesar.dds"
+	        traits = { cavalry_officer }
+	        skill = 4
+	        attack_skill = 3
+	        defense_skill = 2
+	        planning_skill = 3
+	        logistics_skill = 2
+			legacy_id=-1
+        } 
 	}
 
 	option = {

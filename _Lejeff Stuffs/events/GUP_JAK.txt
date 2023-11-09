@@ -1,0 +1,51 @@
+add_namespace = jak
+
+##TEMPLATE
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+		#ai_chance = {
+			#base =
+		#}
+
+	#}
+#}
+
+country_event = {
+	id = jak.1
+	title = jak.1.t
+	desc = jak.1.d
+	picture = GFX_report_event_fin_election
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	##MIKA
+	option = {
+		name = jak.1.a
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = JAK_mika_win
+	
+	}
+	
+	##MIKKO
+	option = {
+		name = jak.1.b
+		ai_chance = {
+		base = 1
+		}
+	}
+
+
+
+}

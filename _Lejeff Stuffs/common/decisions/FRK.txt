@@ -1,0 +1,219 @@
+FRK_stability_crisis = {
+	
+	FRK_the_end = {
+		days_mission_timeout = 730
+		is_good = no
+		priority = 4
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = FRK_purge_remaining_saorists
+		}
+		
+		available = {
+			has_country_flag = frk_yukari_plan_chosen
+		}
+		
+		timeout_effect = {
+			custom_effect_tooltip = frk_the_end
+			hidden_effect = {
+				country_event = { id = kmm.218 days = 1 }
+			}
+		}
+	}
+	
+}
+
+FRK_assasinate_erika = {
+	test = {
+		complete_effect = {
+			add_to_variable = {
+				var = global.frk_assasination
+				value = 10
+			}
+		
+		}
+	}
+}
+
+FRK_negotiations = {
+	FRK_ask_anchovy = {
+		visible = {
+			ITA = {
+				has_government = fascism
+			}
+			has_completed_focus = FRK_secret_negotiations
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 10
+		
+		complete_effect = {
+			ITA = {
+				country_event = { id = kmm.223 days = 1 }
+			}
+		}
+	
+	}
+	
+	FRK_ask_mika = {
+		visible = {
+			FIN = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			has_completed_focus = FRK_secret_negotiations
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 10
+		
+		complete_effect = {
+			FIN = {
+				country_event = { id = kmm.224 id = 1 }
+			}
+		}
+	
+	}
+	
+	FRK_ask_blue_divison = {
+		visible = {
+			SPR = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			has_completed_focus = FRK_secret_negotiations
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 10
+		
+		complete_effect = {
+			SPR = {
+				country_event = { id = kmm.225 id = 1 }
+			}
+		}
+	}
+
+}
+
+FRK_nuclear = {
+
+	FRK_buy_concrete = {
+		icon = decision_category_generic_industry
+		
+		cost = 25
+		fire_only_once = yes
+		days_remove = 10
+		
+		available = {
+               has_completed_focus = FRK_buy_concrete
+          }
+		  visible = {
+				has_completed_focus = FRK_buy_concrete
+		  }
+		  
+		complete_effect = {
+			set_country_flag = FRK_concrete1
+		}
+	}
+	
+	FRK_buy_concrete1 = {
+		icon = decision_category_generic_industry
+		
+		cost = 25
+		fire_only_once = yes
+		days_remove = 10
+		
+		available = {
+               has_completed_focus = FRK_buy_concrete
+			   has_country_flag = FRK_concrete1
+          }
+		  visible = {
+				has_completed_focus = FRK_buy_concrete
+				has_country_flag = FRK_concrete1
+		  }
+		  
+		complete_effect = {
+			set_country_flag = FRK_concrete2
+		}
+	}
+	
+	FRK_buy_concrete2 = {
+		icon = decision_category_generic_industry
+		
+		cost = 25
+		fire_only_once = yes
+		days_remove = 10
+		
+		available = {
+              #has_completed_focus = FRK_buy_concrete
+			   has_country_flag = FRK_concrete1
+          }
+		  visible = {
+				has_completed_focus = FRK_buy_concrete
+				has_country_flag = FRK_concrete1
+		  }
+		  
+		complete_effect = {
+			set_country_flag = FRK_concrete3
+		}
+	}
+	
+	FRK_keeping_a_secret = {
+		days_mission_timeout = 60
+		is_good = no
+		priority = 4
+		
+		
+		visible = {
+			has_completed_focus = FRK_secret_world
+		}
+		
+		available = {
+			has_country_flag = FRK_secret_kept
+		}
+		
+		complete_effect = {
+			clr_country_flag = FRK_secret_kept
+		}
+		
+		timeout_effect = {
+			GER = {
+				declare_war_on = {
+					target = FRK
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	
+	}
+	
+	FRK_silence_dissidants = {
+		icon = decision_category_generic_industry
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 5
+		
+		visible = {
+			has_completed_focus = FRK_secret_world
+		  }
+		 
+		 available = {
+			has_completed_focus = FRK_secret_world
+		}
+		
+		complete_effect = {
+			set_country_flag = FRK_secret_kept
+		}
+	}
+
+
+}

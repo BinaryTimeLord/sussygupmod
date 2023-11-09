@@ -1,0 +1,31 @@
+﻿add_namespace = cht_news
+add_namespace = kmm_news
+add_namespace = frk_news`
+
+##FRANCERK
+news_event = {
+	id = frk_news.1
+	title = frk_news.1.t
+	desc = frk_news.1.d
+	picture = GFX_news_event_nuclear_war
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = frk_news.1.a
+		trigger = {
+			original_tag = FRK
+		}
+	}
+	
+	option = {
+		name =  frk_news.1.b
+		trigger = {
+		NOT = {
+			original_tag = FRK
+		}
+		}
+	}
+
+}

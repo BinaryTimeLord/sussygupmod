@@ -1,0 +1,163 @@
+guiTypes = {
+
+containerWindowType = {
+		name = "GUP_SG_big_event_finale_victory_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = finale_victory_bigevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "BE_GUP_VICTORY" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_custom_finale_victory"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "GUP_SG_big_event_frame_finale_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "BE_GUP_VICTORY2"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 183 }
+			quadTextureSprite ="GFX_button_super_event"
+			buttonFont = "hoi_18mbs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 30 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 120 y = -195 }
+			font = "hoi_18mbs"
+			text = "BE_GUP_VICTORY_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 455
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+
+guiTypes = {
+##NEW ONE	
+containerWindowType = {
+		name = "GUP_SG_big_event_nuclear_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = nuclearhell_bigevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "BE_GUP_NUCLEAR" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_custom_nuclear"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "GUP_SG_big_event_frame_nuclear_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "BE_GUP_NUCLEAR2"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 183 }
+			quadTextureSprite ="GFX_button_super_event"
+			buttonFont = "hoi_18mbs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 30 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 120 y = -195 }
+			font = "hoi_18mbs"
+			text = "BE_GUP_NUCLEAR_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 455
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}

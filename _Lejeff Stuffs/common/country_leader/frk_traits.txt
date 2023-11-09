@@ -1,0 +1,91 @@
+leader_traits = {
+	##SAORI TAKEBE TRAITS
+	
+		radio_operator = {
+			random = no
+			
+			land_reinforce_rate = 0.05
+			political_power_cost = -0.05
+		}
+		
+		media_personality_trait = {
+			random = no
+			
+			stability_factor = 0.15
+		}
+		
+		jeff_bias = {
+			random = no
+			
+			stability_factor = 0.05
+			war_support_factor = 0.05
+		
+		}
+		
+	##SAEMONZA
+		
+		deadeye = {
+			random = no
+			
+			army_core_attack_factor = 0.1
+		}
+		
+		erika_puppet = {
+			random = no
+			
+			political_power_factor = -0.15
+			stability_factor = -0.05
+			fascism_drift = 0.05
+			surrender_limit = 0.1
+		}
+		
+		ruthless_leader = {
+			random = no
+			
+			resistance_growth_on_our_occupied_states = 0.15
+			stability_factor = -0.05
+		}
+		
+	##ERWIN
+	
+		panzer_enthisiast = {
+			random = no
+			
+			research_speed_factor = 0.05
+			army_core_attack_factor = 0.05
+
+		}
+		
+		decisive = {
+			random = no
+			
+			planning_speed = 0.1
+			army_org_factor = 0.05
+		}
+		
+		
+	##IDEA TRAITS
+		compassionate_industrialist = { ##MAKO
+			sprite = 10
+			random = no
+			
+			production_speed_industrial_complex_factor = 0.05
+			production_speed_infrastructure_factor = 0.05
+			political_power_factor = 0.05
+			non_core_manpower = 0.01
+		}
+		
+		ruthless_industrialist = { ##YUKARI
+			sprite = 10
+			random = no
+			
+			production_speed_bunker_factor = 0.1
+			production_speed_coastal_bunker_factor = 0.1
+			consumer_goods_factor = 0.025
+			stability_factor = -0.1
+			industrial_capacity_factory = 0.1
+			
+		
+		}
+
+}

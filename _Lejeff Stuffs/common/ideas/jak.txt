@@ -1,0 +1,189 @@
+ideas = {
+	country = {
+		JAK_decentralize = {
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = fin_faster_factory
+			
+			modifier = {
+				conscription_factor = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		
+		}
+		
+		JAK_farm_relief = {
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = expandfarm
+			
+			modifier = {
+				production_speed_buildings_factor = 0.025
+				political_power_factor = 0.05
+			
+			}
+		
+		}
+		
+		JAK_free_education = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		JAK_mend_relations = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				communism_drift = -0.05
+				stability_weekly = 0.005
+			
+			}
+		
+		}
+		
+		JAK_nationalism = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 1000
+				war_support_factor = 0.1
+			}
+		
+		
+		}
+		
+		JAK_free_healthcare = {
+			
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				consumer_goods_factor = 0.02
+				political_power_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		JAK_tax_rich = {
+			
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.25
+			}
+		
+		}
+		
+		JAK_goverment_owned_buisness = {
+			
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				stability_factor = 0.05
+			}
+		
+		}
+		
+		JAK_liberalize_army = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				conscription = 0.01
+				army_morale_factor = -0.03
+				army_attack_factor = 0.05
+				army_defence_factor = 0.07
+				stability_factor = -0.1
+			}
+		
+		}
+		
+	}
+	
+}
+	

@@ -1,0 +1,60 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "FRK_spying_window"
+		size = { width = 538 height = 320 }
+		position = { x = 0 y = 0 }
+		
+		iconType = {
+			name = "FRK_spying_image"
+			spriteType = "GFX_FRK_spying"
+			position = { x = 25 y = 3 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "FRK_spying_ooarai_image"
+			spriteType = "GFX_FRK_ooarai_logo"
+			position = { x = 335 y = 3 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_FRK_spying_border"
+			spriteType = "GFX_FRK_spying_border"
+			position = { x = 20 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "infomation_text"
+			position = { x = 35 y = 175 }
+			font = "hoi_10mbs"
+			text = "ASSASINATION_TEXT"
+			maxWidth = 400
+			maxHeight = 24
+			format = centre
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "chancesuccess_text"
+			position = { x = 10 y = 275 }
+			font = "hoi_10mbs"
+			text = "CHANCESUCCESS_TEXT"
+			format = centre
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "successnumber_text"
+			position = { x = 175 y = 275 }
+			font = "hoi_10mbs"
+			text = "[?global.frk_assasination]%"
+			maxWidth = 30
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+}

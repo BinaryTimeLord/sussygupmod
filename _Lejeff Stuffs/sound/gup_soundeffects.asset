@@ -1,0 +1,23 @@
+soundeffect = {
+	name = "union"
+	sounds = {
+		sound = union
+	}
+	volume = 3
+}
+
+soundeffect = {
+	name = "finale_victory_bigevent"
+	sounds = {
+		sound = finale_victory_bigevent
+	}
+	volume = 3
+}
+
+soundeffect = {
+	name = "nuclearhell_bigevent"
+	sounds = {
+		sound = nuclearhell_bigevent
+	}
+	volume = 3
+}

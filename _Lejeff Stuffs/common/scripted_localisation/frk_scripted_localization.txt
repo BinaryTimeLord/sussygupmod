@@ -1,0 +1,681 @@
+##NUCLEAR TREE
+
+defined_text = {
+	name = GetFRK_final_solution
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_final_solution_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_bunker_projects
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_bunker_projects_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_buy_concrete
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_buy_concrete_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_french_workforce
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_french_workforce_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_digging_deeper
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_digging_deeper_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_bunker_levelone
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_bunker_levelone_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_highcommand_compartment
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_highcommand_compartment_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_colonizers_compartment
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_colonizers_compartment_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_life_sustaning_equipment
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_life_sustaning_equipment_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_workers_compartment
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_workers_compartment_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_no_need
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_no_need_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_bunker_leveltwo
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_bunker_leveltwo_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_equipment_storage
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_equipment_storage_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_hydroponics
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_hydroponics_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_final_touches
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_final_touches_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_bunker_is_ready
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_bunker_is_ready_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_nuclear_research
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_nuclear_research_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_kuromormine_science
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_kuromormine_science_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_yukaris_insight
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_yukaris_insight_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_utilize_BC_heavy_water
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_utilize_BC_heavy_water_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_mine_uranium
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_mine_uranium_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_atombombe_project
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_atombombe_project_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_secret_world
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_secret_world_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_exploit_old_rks
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_exploit_old_rks_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_german_rocket_tech
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_german_rocket_tech_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_run_em_dry
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_run_em_dry_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_nuclear_bomb_almost
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_nuclear_bomb_almost_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_build_rockets
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_build_rockets_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_no_need_for_rks
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_no_need_for_rks_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_bomb_testing
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_bomb_testing_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_rockets_ready
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_rockets_ready_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_nukes_are_ready
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_nukes_are_ready_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_our_independence
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_our_independence_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}
+
+defined_text = {
+	name = GetFRK_goodbye
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = no
+			}
+		}
+		localization_key = FRK_goodbye_text
+	}
+	text = {
+		trigger = {
+			FRK = {
+				is_ai = yes
+			}
+		}
+		localization_key = FRK_redacted
+	}
+}

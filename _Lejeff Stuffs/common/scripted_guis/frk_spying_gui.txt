@@ -1,0 +1,20 @@
+scripted_gui = {
+
+	FRK_spying_Decisions_GUI = {
+		context_type = decision_category
+		window_name = "FRK_spying_window"
+
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+
+		}
+		
+		effects = {
+
+		}
+
+	}
+}
