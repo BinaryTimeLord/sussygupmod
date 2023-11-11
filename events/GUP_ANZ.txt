@@ -499,6 +499,7 @@ country_event = {
 				set_party_name = {
 					ideology = neutrality
 					name = ITA_Mussolinism
+			        long_name = ITA_Long_Mussolinism
 				}
 			}
 			country_event = { id = anz.18 }
@@ -1284,6 +1285,12 @@ news_event = {
 	        logistics_skill = 2
 			legacy_id=-1
         } 
+
+		set_party_name = {
+            ideology = neutrality
+			name = ITA_Caesar
+			long_name = ITA_Long_Caesar
+		}
 	}
 
 	option = {

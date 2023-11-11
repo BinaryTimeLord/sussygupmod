@@ -1364,7 +1364,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_the_sovereign_question
-		icon = GFX_DUCE_DUCE
+		icon = GFX_focus_ITA_sovereign_question
 		x = 23
 		y = 0
 		cost = 5
@@ -4641,7 +4641,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_reform_the_roman_empire
-		icon = GFX_focus_generic_home_defense
+		icon = GFX_focus_ITA_caesar
 		x = 29
 		y = 9
 		cost = 10
@@ -4941,7 +4941,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_the_voices_inside_my_head
-		icon = GFX_focus_ITA_schizo_anchovy
+		icon = GFX_focus_ITA_depose_mussolini
 		x = 34
 		y = 2
 		cost = 5
