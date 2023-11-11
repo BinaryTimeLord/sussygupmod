@@ -38,14 +38,8 @@ ITA_form_the_roman_empire = {
 					country_exists = ALB
 				}
 				ALB = {
-					44 = {
-						is_controlled_by = ITA
-					}
-					805 = {
-						is_controlled_by = ITA
-					}
-					934 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -64,13 +58,10 @@ ITA_form_the_roman_empire = {
 
 		complete_effect = {
 			ALB = {
-				44 = {
-					add_core_of = PREV.PREV
-				}
-				805 = {
-					add_core_of = PREV.PREV
-				}
-				934 = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
 					add_core_of = PREV.PREV
 				}
 			}
@@ -115,17 +106,8 @@ ITA_form_the_roman_empire = {
 					country_exists = BUL
 				}
 				BUL = {
-					48 = {
-						is_controlled_by = ITA
-					}
-					211 = {
-						is_controlled_by = ITA
-					}
-					212 = {
-						is_controlled_by = ITA
-					}
-					801 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -144,16 +126,10 @@ ITA_form_the_roman_empire = {
 
 		complete_effect = {
 			BUL = {
-				48 = {
-					add_core_of = PREV.PREV
-				}
-				211 = {
-					add_core_of = PREV.PREV
-				}
-				212 = {
-					add_core_of = PREV.PREV
-				}
-				801 = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
 					add_core_of = PREV.PREV
 				}
 			}
@@ -198,26 +174,8 @@ ITA_form_the_roman_empire = {
 					country_exists = GRE
 				}
 				GRE = {
-					47 = {
-						is_controlled_by = ITA
-					}
-					182 = {
-						is_controlled_by = ITA
-					}
-					184 = {
-						is_controlled_by = ITA
-					}
-					185 = {
-						is_controlled_by = ITA
-					}
-					186 = {
-						is_controlled_by = ITA
-					}
-					187 = {
-						is_controlled_by = ITA
-					}
-					731 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -236,25 +194,10 @@ ITA_form_the_roman_empire = {
 
 		complete_effect = {
 			GRE = {
-				47 = {
-					add_core_of = PREV.PREV
-				}
-				182 = {
-					add_core_of = PREV.PREV
-				}
-				184 = {
-					add_core_of = PREV.PREV
-				}
-				185 = {
-					add_core_of = PREV.PREV
-				}
-				186 = {
-					add_core_of = PREV.PREV
-				}
-				187 = {
-					add_core_of = PREV.PREV
-				}
-				731 = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
 					add_core_of = PREV.PREV
 				}
 			}
@@ -299,14 +242,8 @@ ITA_form_the_roman_empire = {
 					country_exists = HUN
 				}
 				HUN = {
-					43 = {
-						is_controlled_by = ITA
-					}
-					154 = {
-						is_controlled_by = ITA
-					}
-					155 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -325,13 +262,10 @@ ITA_form_the_roman_empire = {
 
 		complete_effect = {
 			HUN = {
-				43 = {
-					add_core_of = PREV.PREV
-				}
-				154 = {
-					add_core_of = PREV.PREV
-				}
-				155 = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
 					add_core_of = PREV.PREV
 				}
 			}
@@ -376,40 +310,10 @@ ITA_form_the_roman_empire = {
 					country_exists = ROM
 				}
 				ROM = {
-					46 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
-					76 = {
-						is_controlled_by = ITA
-					}
-					77 = {
-						is_controlled_by = ITA
-					}
-					78 = {
-						is_controlled_by = ITA
-					}
-					79 = {
-						is_controlled_by = ITA
-					}
-					80 = {
-						is_controlled_by = ITA
-					}
-					81 = {
-						is_controlled_by = ITA
-					}
-					82 = {
-						is_controlled_by = ITA
-					}
-					83 = {
-						is_controlled_by = ITA
-					}
-					84 = {
-						is_controlled_by = ITA
-					}
-					766 = {
-						is_controlled_by = ITA
-					}
-				}
+				}	
 			}
 		}
 
@@ -435,15 +339,6 @@ ITA_form_the_roman_empire = {
 				77 = {
 					add_core_of = PREV.PREV
 				}
-				78 = {
-					add_core_of = PREV.PREV
-				}
-				79 = {
-					add_core_of = PREV.PREV
-				}
-				80 = {
-					add_core_of = PREV.PREV
-				}
 				81 = {
 					add_core_of = PREV.PREV
 				}
@@ -454,9 +349,6 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 				84 = {
-					add_core_of = PREV.PREV
-				}
-				766 = {
 					add_core_of = PREV.PREV
 				}
 			}
@@ -501,68 +393,8 @@ ITA_form_the_roman_empire = {
 					country_exists = TUR
 				}
 				TUR = {
-					49 = {
-						is_controlled_by = ITA
-					}
-					339 = {
-						is_controlled_by = ITA
-					}
-					340 = {
-						is_controlled_by = ITA
-					}
-					341 = {
-						is_controlled_by = ITA
-					}
-					342 = {
-						is_controlled_by = ITA
-					}
-					343 = {
-						is_controlled_by = ITA
-					}
-					344 = {
-						is_controlled_by = ITA
-					}
-					345 = {
-						is_controlled_by = ITA
-					}
-					346 = {
-						is_controlled_by = ITA
-					}
-					347 = {
-						is_controlled_by = ITA
-					}
-					348 = {
-						is_controlled_by = ITA
-					}
-					349 = {
-						is_controlled_by = ITA
-					}
-					350 = {
-						is_controlled_by = ITA
-					}
-					352 = {
-						is_controlled_by = ITA
-					}
-					353 = {
-						is_controlled_by = ITA
-					}
-					354 = {
-						is_controlled_by = ITA
-					}
-					355 = {
-						is_controlled_by = ITA
-					}
-					356 = {
-						is_controlled_by = ITA
-					}
-					797 = {
-						is_controlled_by = ITA
-					}
-					798 = {
-						is_controlled_by = ITA
-					}
-					800 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -580,71 +412,14 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-             TUR = {
-				    49 = {
-						add_core_of = PREV.PREV
+			TUR = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
 					}
-					339 = {
-						add_core_of = PREV.PREV
-					}
-					340 = {
-						add_core_of = PREV.PREV
-					}
-					341 = {
-						add_core_of = PREV.PREV
-					}
-					342 = {
-						add_core_of = PREV.PREV
-					}
-					343 = {
-						add_core_of = PREV.PREV
-					}
-					344 = {
-						add_core_of = PREV.PREV
-					}
-					345 = {
-						add_core_of = PREV.PREV
-					}
-					346 = {
-						add_core_of = PREV.PREV
-					}
-					347 = {
-						add_core_of = PREV.PREV
-					}
-					348 = {
-						add_core_of = PREV.PREV
-					}
-					349 = {
-						add_core_of = PREV.PREV
-					}
-					350 = {
-						add_core_of = PREV.PREV
-					}
-					352 = {
-						add_core_of = PREV.PREV
-					}
-					353 = {
-						add_core_of = PREV.PREV
-					}
-					354 = {
-						add_core_of = PREV.PREV
-					}
-					355 = {
-						add_core_of = PREV.PREV
-					}
-					356 = {
-						add_core_of = PREV.PREV
-					}
-					797 = {
-						add_core_of = PREV.PREV
-					}
-					798 = {
-						add_core_of = PREV.PREV
-					}
-					800 = {
-						add_core_of = PREV.PREV
-					}
-                }
+					add_core_of = PREV.PREV
+				}
+			}
 			set_province_name = {
 			    id = 9833
 			    name = ITA_byzantium
@@ -690,44 +465,8 @@ ITA_form_the_roman_empire = {
 					country_exists = YUG
 				}
 				YUG = {
-					45 = {
-						is_controlled_by = ITA
-					}
-					102 = {
-						is_controlled_by = ITA
-					}
-					103 = {
-						is_controlled_by = ITA
-					}
-					104 = {
-						is_controlled_by = ITA
-					}
-					105 = {
-						is_controlled_by = ITA
-					}
-					106 = {
-						is_controlled_by = ITA
-					}
-					107 = {
-						is_controlled_by = ITA
-					}
-					108 = {
-						is_controlled_by = ITA
-					}
-					109 = {
-						is_controlled_by = ITA
-					}
-					764 = {
-						is_controlled_by = ITA
-					}
-					802 = {
-						is_controlled_by = ITA
-					}
-					803 = {
-						is_controlled_by = ITA
-					}
-					804 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -745,47 +484,14 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-				YUG = {
-					45 = {
-						add_core_of = PREV.PREV
+			YUG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
 					}
-					102 = {
-						add_core_of = PREV.PREV
-					}
-					103 = {
-						add_core_of = PREV.PREV
-					}
-					104 = {
-						add_core_of = PREV.PREV
-					}
-					105 = {
-						add_core_of = PREV.PREV
-					}
-					106 = {
-						add_core_of = PREV.PREV
-					}
-					107 = {
-						add_core_of = PREV.PREV
-					}
-					108 = {
-						add_core_of = PREV.PREV
-					}
-					109 = {
-						add_core_of = PREV.PREV
-					}
-					764 = {
-						add_core_of = PREV.PREV
-					}
-					802 = {
-						add_core_of = PREV.PREV
-					}
-					803 = {
-						add_core_of = PREV.PREV
-					}
-					804 = {
-						add_core_of = PREV.PREV
-					}
+					add_core_of = PREV.PREV
 				}
+			}
 		}
 	}
 	french_conquest = {
@@ -827,8 +533,8 @@ ITA_form_the_roman_empire = {
 					country_exists = FRA
 				}
 				FRA = {
-					all_state = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -939,30 +645,18 @@ ITA_form_the_roman_empire = {
 					country_exists = LUX
 				}
 				BEL = {
-					6 = {
-						is_controlled_by = ITA
-					}
-					34 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 				HOL = {
-					7 = {
-						is_controlled_by = ITA
-					}
-					8 = {
-						is_controlled_by = ITA
-					}
-					35 = {
-						is_controlled_by = ITA
-					}
-					36 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 				LUX = {
-					8 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -980,33 +674,32 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-				BEL = {
-					6 = {
-						add_core_of = PREV.PREV
+			BEL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
 					}
-					34 = {
-						add_core_of = PREV.PREV
-					}
+					add_core_of = PREV.PREV
 				}
-				HOL = {
-					7 = {
-						add_core_of = PREV.PREV
+			}
+			HOL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
 					}
-					8 = {
-						add_core_of = PREV.PREV
-					}
-					35 = {
-						add_core_of = PREV.PREV
-					}
-					36 = {
-						add_core_of = PREV.PREV
-					}
+					add_core_of = PREV.PREV
 				}
-				LUX = {
-					8 = {
-						add_core_of = PREV.PREV
+			}
+			LUX = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
 					}
+					add_core_of = PREV.PREV
 				}
+			}
 		}
 	}
 	british_conquest = {
@@ -1048,8 +741,8 @@ ITA_form_the_roman_empire = {
 					country_exists = ENG
 				}
 				ENG = {
-					all_state = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -1176,89 +869,18 @@ ITA_form_the_roman_empire = {
 				has_completed_focus = ITA_iberian_riconquista
 				NOT = {
 					country_exists = SPR
-					country_exists = POR
 				}
 				SPR = {
-					41 = {
-						is_controlled_by = ITA
-					}
-					165 = {
-						is_controlled_by = ITA
-					}
-					166 = {
-						is_controlled_by = ITA
-					}
-					167 = {
-						is_controlled_by = ITA
-					}
-					168 = {
-						is_controlled_by = ITA
-					}
-					169 = {
-						is_controlled_by = ITA
-					}
-					170 = {
-						is_controlled_by = ITA
-					}
-					171 = {
-						is_controlled_by = ITA
-					}
-					172 = {
-						is_controlled_by = ITA
-					}
-					173 = {
-						is_controlled_by = ITA
-					}
-					174 = {
-						is_controlled_by = ITA
-					}
-					175 = {
-						is_controlled_by = ITA
-					}
-					176 = {
-						is_controlled_by = ITA
-					}
-					177 = {
-						is_controlled_by = ITA
-					}
-					783 = {
-						is_controlled_by = ITA
-					}
-					788 = {
-						is_controlled_by = ITA
-					}
-					789 = {
-						is_controlled_by = ITA
-					}
-					790 = {
-						is_controlled_by = ITA
-					}
-					792 = {
-						is_controlled_by = ITA
-					}
-					793 = {
-						is_controlled_by = ITA
-					}
-					794 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
-
+				NOT = {
+					country_exists = POR
+				}
 				POR = {
-					180 = {
-						is_controlled_by = ITA
-					}
-					181 = {
-						is_controlled_by = ITA
-					}
-					112 = {
-						is_controlled_by = ITA
-					}
-					795 = {
-						is_controlled_by = ITA
-					}
-					179 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
 			}
@@ -1276,89 +898,27 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-				SPR = {
-					41 = {
-						add_core_of = PREV.PREV
+			SPR = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
 					}
-					165 = {
-						add_core_of = PREV.PREV
-					}
-					166 = {
-						add_core_of = PREV.PREV
-					}
-					167 = {
-						add_core_of = PREV.PREV
-					}
-					168 = {
-						add_core_of = PREV.PREV
-					}
-					169 = {
-						add_core_of = PREV.PREV
-					}
-					170 = {
-						add_core_of = PREV.PREV
-					}
-					171 = {
-						add_core_of = PREV.PREV
-					}
-					172 = {
-						add_core_of = PREV.PREV
-					}
-					173 = {
-						add_core_of = PREV.PREV
-					}
-					174 = {
-						add_core_of = PREV.PREV
-					}
-					175 = {
-						add_core_of = PREV.PREV
-					}
-					176 = {
-						add_core_of = PREV.PREV
-					}
-					177 = {
-						add_core_of = PREV.PREV
-					}
-					783 = {
-						add_core_of = PREV.PREV
-					}
-					788 = {
-						add_core_of = PREV.PREV
-					}
-					789 = {
-						add_core_of = PREV.PREV
-					}
-					790 = {
-						add_core_of = PREV.PREV
-					}
-					792 = {
-						add_core_of = PREV.PREV
-					}
-					793 = {
-						add_core_of = PREV.PREV
-					}
-					794 = {
-						add_core_of = PREV.PREV
-					}
+					add_core_of = PREV.PREV
 				}
-
-				POR = {
-					180 = {
-						add_core_of = PREV.PREV
-					}
-					181 = {
-						add_core_of = PREV.PREV
-					}
-					112 = {
-						add_core_of = PREV.PREV
-					}
-					795 = {
-						add_core_of = PREV.PREV
-					}
-					179 = {
-						add_core_of = PREV.PREV
-					}
+				290 = {
+					add_core_of = PREV.PREV
 				}
+			}
+			POR = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+			}
 		}
 	}
 	arabian_conquest = {
@@ -1402,54 +962,15 @@ ITA_form_the_roman_empire = {
 					country_exists = PER
 				}
 				IRQ = {
-					291 = {
-						is_controlled_by = ITA
-					}
-					675 = {
-						is_controlled_by = ITA
-					}
-					676 = {
-						is_controlled_by = ITA
+					all_core_state = {
+						is_owned_by = ITA
 					}
 				}
-                PER = {
-                    266 = {
-                        is_controlled_by = ITA
-                    }
-                    410 = {
-                        is_controlled_by = ITA
-                    }
-                    411 = {
-                        is_controlled_by = ITA
-                    }
-                    412 = {
-                        is_controlled_by = ITA
-                    }
-                    413 = {
-                        is_controlled_by = ITA
-                    }
-                    414 = {
-                        is_controlled_by = ITA
-                    }
-                    416 = {
-                        is_controlled_by = ITA
-                    }
-                    417 = {
-                        is_controlled_by = ITA
-                    }
-                    418 = {
-                        is_controlled_by = ITA
-                    }
-                    419 = {
-                        is_controlled_by = ITA
-                    }
-                    420 = {
-                        is_controlled_by = ITA
-                    }
-                    421 = {
-                        is_controlled_by = ITA
-                    }
-                }
+				PER = {
+					all_core_state = {
+						is_owned_by = ITA
+					}
+				}
 			}
 		}
 
@@ -1465,55 +986,25 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-                IRQ = {
-                    291 = {
-                        add_core_of = PREV.PREV
-                    }
-                    675 = {
-                        add_core_of = PREV.PREV
-                    }
-                    676 = {
-                        add_core_of = PREV.PREV
-                    }
-                }
-                PER = {
-                    266 = {
-                        add_core_of = PREV.PREV
-                    }
-                    410 = {
-                        add_core_of = PREV.PREV
-                    }
-                    411 = {
-                        add_core_of = PREV.PREV
-                    }
-                    412 = {
-                        add_core_of = PREV.PREV
-                    }
-                    413 = {
-                        add_core_of = PREV.PREV
-                    }
-                    414 = {
-                        add_core_of = PREV.PREV
-                    }
-                    416 = {
-                        add_core_of = PREV.PREV
-                    }
-                    417 = {
-                        add_core_of = PREV.PREV
-                    }
-                    418 = {
-                        add_core_of = PREV.PREV
-                    }
-                    419 = {
-                        add_core_of = PREV.PREV
-                    }
-                    420 = {
-                        add_core_of = PREV.PREV
-                    }
-                    421 = {
-                        add_core_of = PREV.PREV
-                    }
-                }
+			IRQ = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+			}
+			IRQ = {
+				419 = {
+					add_core_of = PREV.PREV
+				}
+				421 = {
+					add_core_of = PREV.PREV
+				}
+				413 = {
+					add_core_of = PREV.PREV
+				}
+			}
 		}
 	}
 }

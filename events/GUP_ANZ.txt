@@ -45,7 +45,7 @@ country_event = { # Democrats demand elections
 		}
 		remove_ideas = { vittoria_mutilata }
 		create_country_leader = {
-			name = "Carpaccios"
+			name = "Karupaccho"
 			desc = "POLITICS_CARPACCIO_DESC"
 			picture = GFX_portrait_ITA_carpaccio
 			expire = "1965.1.1"
@@ -69,7 +69,7 @@ country_event = { # Democrats demand elections
 		ITA_italo_balbo = { promote_leader = yes }
 		remove_ideas = { vittoria_mutilata }
 		create_country_leader = {
-			name = "Carpaccios"
+			name = "Karupaccho"
 			desc = "POLITICS_CARPACCIO_DESC"
 			picture = GFX_portrait_ITA_carpaccio
 			expire = "1965.1.1"
@@ -309,7 +309,7 @@ country_event = { # A new queen gets crowned
 		remove_ideas = { vittoria_mutilata }
 		ITA_vittorio_emanuele_iii = { promote_leader = yes }
 		create_country_leader = {
-			name = "Pepperonis"
+			name = "Peparoni"
 			desc = "POLITICS_PEPPERONI_DESC"
 			picture = GFX_portrait_ITA_pepperoni
 			expire = "1965.1.1"
@@ -333,7 +333,7 @@ country_event = { # A new queen gets crowned
 		remove_ideas = { vittoria_mutilata }
 		ITA_vittorio_emanuele_iii = { promote_leader = yes }
 		create_country_leader = {
-			name = "Pepperonis"
+			name = "Peparoni"
 			desc = "POLITICS_PEPPERONI_DESC"
 			picture = GFX_portrait_ITA_pepperoni
 			expire = "1965.1.1"
@@ -1140,6 +1140,7 @@ country_event = {
 country_event = {
 	id = anz.30
 	title = anz.30.t
+	desc = anz.30.d
 	picture = GFX_ITA_anchovy_duce
 
 	is_triggered_only = yes
@@ -1154,6 +1155,7 @@ country_event = {
 country_event = {
 	id = anz.31
 	title = anz.31.t
+	desc = anz.31.d
 	picture = GFX_ITA_anchovy_mad
 
 	is_triggered_only = yes
