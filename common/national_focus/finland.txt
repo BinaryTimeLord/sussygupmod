@@ -243,7 +243,7 @@ focus_tree = {
 						}
 					}
 				}
-				FIN_vaino_tanner = {
+				FIN_rumi = {
 					if = {
 						limit = {
 							has_trait = FIN_humble_appeaser_tanner
@@ -411,9 +411,9 @@ focus_tree = {
 
 					if = {
 						limit = {
-							has_character = FIN_vilho_annala
+							has_character = FIN_mikko
 						}
-						promote_character = FIN_vilho_annala
+						promote_character = FIN_mikko
 					}
 				}
 
@@ -1816,7 +1816,7 @@ focus_tree = {
 						}
 					}
 				}
-				FIN_vaino_tanner = {
+				FIN_rumi = {
 					if = {
 						limit = {
 							has_trait = FIN_humble_appeaser_tanner
@@ -4052,10 +4052,10 @@ focus_tree = {
 				limit = {
 					has_country_leader = {
 						ruling_only = yes
-						character = FIN_vaino_tanner
+						character = FIN_rumi
 					}
 				}
-				FIN_vaino_tanner = {
+				FIN_rumi = {
 					swap_country_leader_traits = {
 						remove = pragmatic_socialist
 						add = champion_of_national_cooperation
@@ -4588,7 +4588,7 @@ focus_tree = {
 							}
 						}
 					}
-					FIN_vaino_tanner = {
+					FIN_rumi = {
 						if = {
 							limit = {
 								has_trait = FIN_humble_appeaser_tanner
@@ -5029,11 +5029,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = FIN_pehr_evind_svinhufvud
+					character = FIN_mika
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = FIN_juho_kusti_paasikivi
+					character = FIN_mika
 				}
 			}
 		}
@@ -5049,10 +5049,10 @@ focus_tree = {
 				limit = {
 					has_country_leader = {
 						ruling_only = yes
-						character = FIN_pehr_evind_svinhufvud
+						character = FIN_mika
 					}
 				}
-				FIN_pehr_evind_svinhufvud = {
+				FIN_mika = {
 					swap_country_leader_traits = {
 						remove = member_of_the_suojeluskunta
 						add = member_of_the_suojeluskunta_improved
@@ -5060,7 +5060,7 @@ focus_tree = {
 					add_country_leader_trait = kokoomus_policies
 				}
 			}
-			FIN_juho_kusti_paasikivi = {
+			FIN_mika = {
 				swap_country_leader_traits = {
 					remove = paasikivi_doctrine
 					add = paasikivi_doctrine_improved
@@ -5088,7 +5088,7 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = FIN_pehr_evind_svinhufvud
+					character = FIN_mika
 				}
 				has_country_leader = {
 					ruling_only = yes
@@ -5100,7 +5100,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = FIN_pehr_evind_svinhufvud
+				character = FIN_mika
 			}
 		}
 
@@ -5203,7 +5203,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = FIN_risto_ryti
+				character = FIN_mika
 			}
 		}
 
@@ -5214,7 +5214,7 @@ focus_tree = {
 
 			add_political_power = 100
 
-			FIN_risto_ryti = {
+			FIN_mika = {
 				swap_country_leader_traits = {
 					remove = white_liberal_leader
 					add = white_liberal_leader_improved
@@ -7139,7 +7139,7 @@ focus_tree = {
 						}
 					}
 				}
-				FIN_vaino_tanner = {
+				FIN_rumi = {
 					if = {
 						limit = {
 							has_trait = FIN_humble_appeaser_tanner
@@ -7426,9 +7426,9 @@ focus_tree = {
 					# SET UP COUNTRY LEADERS
 					if = {
 						limit = {
-							has_character = FIN_kyosti_kallio
+							has_character = FIN_mika
 						}
-						promote_character = FIN_kyosti_kallio
+						promote_character = FIN_mika
 					}
 				}
 
@@ -9464,7 +9464,7 @@ focus_tree = {
 				add_idea = FIN_patriotic_peoples_movement_ns_4
 			}
 
-			FIN_vilho_annala = {
+			FIN_mikko = {
 				swap_country_leader_traits = {
 					remove = economic_reformer
 					add = architect_of_finnish_coporatism

@@ -273,6 +273,10 @@ ITA_form_the_roman_empire = {
 
 		visible = {
 			country_exists = HUN
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
 		}		
 
 		cost = 50
@@ -346,6 +350,10 @@ ITA_form_the_roman_empire = {
 
 		visible = {
 			country_exists = ROM
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
 		}		
 
 		cost = 50
@@ -467,6 +475,10 @@ ITA_form_the_roman_empire = {
 
 		visible = {
 			country_exists = TUR
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
 		}		
 
 		cost = 50
@@ -652,6 +664,10 @@ ITA_form_the_roman_empire = {
 
 		visible = {
 			country_exists = YUG
+			OR = {
+				has_completed_focus = ITA_balkan_riconquista
+				is_debug = yes
+			}
 		}		
 
 		cost = 50
@@ -785,6 +801,10 @@ ITA_form_the_roman_empire = {
 
 		visible = {
 			country_exists = FRA
+			OR = {
+				has_completed_focus = ITA_french_riconquista
+				is_debug = yes
+			}
 		}
 
 		cost = 50
@@ -806,113 +826,11 @@ ITA_form_the_roman_empire = {
 				NOT = {
 					country_exists = FRA
 				}
-                FRA = {
-                    1 = {
-                        is_controlled_by = ITA
-                    }
-                    14 = {
-                        is_controlled_by = ITA
-                    }
-                    15 = {
-                        is_controlled_by = ITA
-                    }
-                    16 = {
-                        is_controlled_by = ITA
-                    }
-                    17 = {
-                        is_controlled_by = ITA
-                    }
-                    18 = {
-                        is_controlled_by = ITA
-                    }
-                    19 = {
-                        is_controlled_by = ITA
-                    }
-                    20 = {
-                        is_controlled_by = ITA
-                    }
-                    21 = {
-                        is_controlled_by = ITA
-                    }
-                    22 = {
-                        is_controlled_by = ITA
-                    }
-                    23 = {
-                        is_controlled_by = ITA
-                    }
-                    24 = {
-                        is_controlled_by = ITA
-                    }
-                    25 = {
-                        is_controlled_by = ITA
-                    }
-                    26 = {
-                        is_controlled_by = ITA
-                    }
-                    27 = {
-                        is_controlled_by = ITA
-                    }
-                    28 = {
-                        is_controlled_by = ITA
-                    }
-                    29 = {
-                        is_controlled_by = ITA
-                    }
-                    30 = {
-                        is_controlled_by = ITA
-                    }
-                    31 = {
-                        is_controlled_by = ITA
-                    }
-                    32 = {
-                        is_controlled_by = ITA
-                    }
-                    33 = {
-                        is_controlled_by = ITA
-                    }
-                    448 = {
-                        is_controlled_by = ITA
-                    }
-                    459 = {
-                        is_controlled_by = ITA
-                    }
-                    460 = {
-                        is_controlled_by = ITA
-                    }
-                    461 = {
-                        is_controlled_by = ITA
-                    }
-                    462 = {
-                        is_controlled_by = ITA
-                    }
-                    553 = {
-                        is_controlled_by = ITA
-                    }
-                    665 = {
-                        is_controlled_by = ITA
-                    }
-                    667 = {
-                        is_controlled_by = ITA
-                    }
-                    680 = {
-                        is_controlled_by = ITA
-                    }
-                    735 = {
-                        is_controlled_by = ITA
-                    }
-                    785 = {
-                        is_controlled_by = ITA
-                    }
-                    799 = {
-                        is_controlled_by = ITA
-                    }
-                    806 = {
-                        is_controlled_by = ITA
-                    }
-                    956 = {
-                        is_controlled_by = ITA
-                    }
-                }
+				FRA = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
 			}
 		}
 
@@ -928,113 +846,54 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-                FRA = {
-                    1 = {
-                        add_core_of = PREV.PREV
-                    }
-                    14 = {
-                        add_core_of = PREV.PREV
-                    }
-                    15 = {
-                        add_core_of = PREV.PREV
-                    }
-                    16 = {
-                        add_core_of = PREV.PREV
-                    }
-                    17 = {
-                        add_core_of = PREV.PREV
-                    }
-                    18 = {
-                        add_core_of = PREV.PREV
-                    }
-                    19 = {
-                        add_core_of = PREV.PREV
-                    }
-                    20 = {
-                        add_core_of = PREV.PREV
-                    }
-                    21 = {
-                        add_core_of = PREV.PREV
-                    }
-                    22 = {
-                        add_core_of = PREV.PREV
-                    }
-                    23 = {
-                        add_core_of = PREV.PREV
-                    }
-                    24 = {
-                        add_core_of = PREV.PREV
-                    }
-                    25 = {
-                        add_core_of = PREV.PREV
-                    }
-                    26 = {
-                        add_core_of = PREV.PREV
-                    }
-                    27 = {
-                        add_core_of = PREV.PREV
-                    }
-                    28 = {
-                        add_core_of = PREV.PREV
-                    }
-                    29 = {
-                        add_core_of = PREV.PREV
-                    }
-                    30 = {
-                        add_core_of = PREV.PREV
-                    }
-                    31 = {
-                        add_core_of = PREV.PREV
-                    }
-                    32 = {
-                        add_core_of = PREV.PREV
-                    }
-                    33 = {
-                        add_core_of = PREV.PREV
-                    }
-                    448 = {
-                        add_core_of = PREV.PREV
-                    }
-                    459 = {
-                        add_core_of = PREV.PREV
-                    }
-                    460 = {
-                        add_core_of = PREV.PREV
-                    }
-                    461 = {
-                        add_core_of = PREV.PREV
-                    }
-                    462 = {
-                        add_core_of = PREV.PREV
-                    }
-                    553 = {
-                        add_core_of = PREV.PREV
-                    }
-                    665 = {
-                        add_core_of = PREV.PREV
-                    }
-                    667 = {
-                        add_core_of = PREV.PREV
-                    }
-                    680 = {
-                        add_core_of = PREV.PREV
-                    }
-                    735 = {
-                        add_core_of = PREV.PREV
-                    }
-                    785 = {
-                        add_core_of = PREV.PREV
-                    }
-                    799 = {
-                        add_core_of = PREV.PREV
-                    }
-                    806 = {
-                        add_core_of = PREV.PREV
-                    }
-                    956 = {
-                        add_core_of = PREV.PREV
-                    }
-                }
+			FRA = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+						is_on_continent = europe
+					}
+					add_core_of = PREV.PREV
+				}
+				462 = {
+					add_core_of = PREV.PREV
+				}
+				461 = {
+					add_core_of = PREV.PREV
+				}
+				459 = {
+					add_core_of = PREV.PREV
+				}
+				513 = {
+					add_core_of = PREV.PREV
+				}
+				460 = {
+					add_core_of = PREV.PREV
+				}
+				458 = {
+					add_core_of = PREV.PREV
+				}
+				665 = {
+					add_core_of = PREV.PREV
+				}
+				799 = {
+					add_core_of = PREV.PREV
+				}
+				677 = {
+					add_core_of = PREV.PREV
+				}
+				680 = {
+					add_core_of = PREV.PREV
+				}
+				513 = {
+					add_core_of = PREV.PREV
+				}
+				554 = {
+					add_core_of = PREV.PREV
+				}
+				553 = {
+					add_core_of = PREV.PREV
+				}
+			}
 		}
 	}
 	benelux_conquest = {
@@ -1052,6 +911,10 @@ ITA_form_the_roman_empire = {
 			country_exists = BEL
 			country_exists = HOL
 			country_exists = LUX
+			OR = {
+				has_completed_focus = ITA_french_riconquista
+				is_debug = yes
+			}
 		}
 
 		cost = 50
@@ -1159,6 +1022,10 @@ ITA_form_the_roman_empire = {
 
 		visible = {
 			country_exists = ENG
+			OR = {
+				has_completed_focus = ITA_british_riconquista
+				is_debug = yes
+			}
 		}		
 
 		cost = 50
@@ -1180,89 +1047,11 @@ ITA_form_the_roman_empire = {
 				NOT = {
 					country_exists = ENG
 				}
-                ENG = {
-                    116 = {
-                        is_controlled_by = ITA
-                    }
-                    118 = {
-                        is_controlled_by = ITA
-                    }
-                    120 = {
-                        is_controlled_by = ITA
-                    }
-                    121 = {
-                        is_controlled_by = ITA
-                    }
-                    122 = {
-                        is_controlled_by = ITA
-                    }
-                    123 = {
-                        is_controlled_by = ITA
-                    }
-                    125 = {
-                        is_controlled_by = ITA
-                    }
-                    126 = {
-                        is_controlled_by = ITA
-                    }
-                    127 = {
-                        is_controlled_by = ITA
-                    }
-                    128 = {
-                        is_controlled_by = ITA
-                    }
-                    129 = {
-                        is_controlled_by = ITA
-                    }
-                    130 = {
-                        is_controlled_by = ITA
-                    }
-                    131 = {
-                        is_controlled_by = ITA
-                    }
-                    132 = {
-                        is_controlled_by = ITA
-                    }
-                    133 = {
-                        is_controlled_by = ITA
-                    }
-                    136 = {
-                        is_controlled_by = ITA
-                    }
-                    183 = {
-                        is_controlled_by = ITA
-                    }
-                    338 = {
-                        is_controlled_by = ITA
-                    }
-                    446 = {
-                        is_controlled_by = ITA
-                    }
-                    447 = {
-                        is_controlled_by = ITA
-                    }
-                    452 = {
-                        is_controlled_by = ITA
-                    }
-                    453 = {
-                        is_controlled_by = ITA
-                    }
-                    454 = {
-                        is_controlled_by = ITA
-                    }
-                    455 = {
-                        is_controlled_by = ITA
-                    }
-                    656 = {
-                        is_controlled_by = ITA
-                    }
-                    907 = {
-                        is_controlled_by = ITA
-                    }
-                    931 = {
-                        is_controlled_by = ITA
-                    }
-                }
+				ENG = {
+					all_state = {
+						is_controlled_by = ITA
+					}
+				}
 			}
 		}
 
@@ -1278,89 +1067,77 @@ ITA_form_the_roman_empire = {
 		cost = 100
 
 		complete_effect = {
-                ENG = {
-                    116 = {
-                        add_core_of = PREV.PREV
-                    }
-                    118 = {
-                        add_core_of = PREV.PREV
-                    }
-                    120 = {
-                        add_core_of = PREV.PREV
-                    }
-                    121 = {
-                        add_core_of = PREV.PREV
-                    }
-                    122 = {
-                        add_core_of = PREV.PREV
-                    }
-                    123 = {
-                        add_core_of = PREV.PREV
-                    }
-                    125 = {
-                        add_core_of = PREV.PREV
-                    }
-                    126 = {
-                        add_core_of = PREV.PREV
-                    }
-                    127 = {
-                        add_core_of = PREV.PREV
-                    }
-                    128 = {
-                        add_core_of = PREV.PREV
-                    }
-                    129 = {
-                        add_core_of = PREV.PREV
-                    }
-                    130 = {
-                        add_core_of = PREV.PREV
-                    }
-                    131 = {
-                        add_core_of = PREV.PREV
-                    }
-                    132 = {
-                        add_core_of = PREV.PREV
-                    }
-                    133 = {
-                        add_core_of = PREV.PREV
-                    }
-                    136 = {
-                        add_core_of = PREV.PREV
-                    }
-                    183 = {
-                        add_core_of = PREV.PREV
-                    }
-                    338 = {
-                        add_core_of = PREV.PREV
-                    }
-                    446 = {
-                        add_core_of = PREV.PREV
-                    }
-                    447 = {
-                        add_core_of = PREV.PREV
-                    }
-                    452 = {
-                        add_core_of = PREV.PREV
-                    }
-                    453 = {
-                        add_core_of = PREV.PREV
-                    }
-                    454 = {
-                        add_core_of = PREV.PREV
-                    }
-                    455 = {
-                        add_core_of = PREV.PREV
-                    }
-                    656 = {
-                        add_core_of = PREV.PREV
-                    }
-                    907 = {
-                        add_core_of = PREV.PREV
-                    }
-                    931 = {
-                        add_core_of = PREV.PREV
-                    }
-                }
+			ENG = {
+				127 = {
+					add_core_of = PREV.PREV
+				}
+				123 = {
+					add_core_of = PREV.PREV
+				}
+				126 = {
+					add_core_of = PREV.PREV
+				}
+				338 = {
+					add_core_of = PREV.PREV
+				}
+				122 = {
+					add_core_of = PREV.PREV
+				}
+				125 = {
+					add_core_of = PREV.PREV
+				}
+				129 = {
+					add_core_of = PREV.PREV
+				}
+				128 = {
+					add_core_of = PREV.PREV
+				}
+				130 = {
+					add_core_of = PREV.PREV
+				}
+				132 = {
+					add_core_of = PREV.PREV
+				}
+				131 = {
+					add_core_of = PREV.PREV
+				}
+				452 = {
+					add_core_of = PREV.PREV
+				}
+				447 = {
+					add_core_of = PREV.PREV
+				}
+				446 = {
+					add_core_of = PREV.PREV
+				}
+				456 = {
+					add_core_of = PREV.PREV
+				}
+				454 = {
+					add_core_of = PREV.PREV
+				}
+				455 = {
+					add_core_of = PREV.PREV
+				}
+				552 = {
+					add_core_of = PREV.PREV
+				}
+				456 = {
+					add_core_of = PREV.PREV
+				}
+				457 = {
+					add_core_of = PREV.PREV
+				}
+				183 = {
+					add_core_of = PREV.PREV
+				}
+				118 = {
+					add_core_of = PREV.PREV
+				}
+				656 = {
+					add_core_of = PREV.PREV
+				}
+			}
 		}
 	}
 	iberian_conquest = {
@@ -1598,6 +1375,10 @@ ITA_form_the_roman_empire = {
 		visible = {
 			country_exists = PER
 			country_exists = IRQ
+			OR = {
+				has_completed_focus = ITA_arabian_riconquista
+				is_debug = yes
+			}
 		}		
 
 		cost = 50
