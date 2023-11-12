@@ -4655,204 +4655,26 @@ focus_tree = {
 		bypass = { }
 
 		available = {
+			has_country_flag = albania_integrate
+			has_country_flag = bulgaria_integrate
+			has_country_flag = greece_integrate
+			has_country_flag = hungaria_integrate
+			has_country_flag = romania_integrate
+			has_country_flag = turkey_integrate
+			has_country_flag = yugoslavia_integrate
+			has_country_flag = france_integrate
+			has_country_flag = benelux_integrate
+			has_country_flag = britain_integrate
+			has_country_flag = iberia_integrate
+			has_country_flag = arabia_integrate
 			ITA = {
 				SWI = {
-					all_state = {
+					all_core_state = {
 						is_owned_by = ITA
 					}
 				}
 				AUS = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				ALB = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				BUL = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				HUN = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				GRE = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				ROM = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				TUR = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				YUG = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				FRA = {
-					all_state = {
-						is_on_continent = europe
-						is_owned_by = ITA
-					}
-					462 = {
-						is_owned_by = ITA
-					}
-					461 = {
-						is_owned_by = ITA
-					}
-					459 = {
-						is_owned_by = ITA
-					}
-					513 = {
-						is_owned_by = ITA
-					}
-					460 = {
-						is_owned_by = ITA
-					}
-					458 = {
-						is_owned_by = ITA
-					}
-					665 = {
-						is_owned_by = ITA
-					}
-					799 = {
-						is_owned_by = ITA
-					}
-					677 = {
-						is_owned_by = ITA
-					}
-					680 = {
-						is_owned_by = ITA
-					}
-					513 = {
-						is_owned_by = ITA
-					}
-					554 = {
-						is_owned_by = ITA
-					}
-					553 = {
-						is_owned_by = ITA
-					}
-				}
-				BEL = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				HOL = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				LUX = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				ENG = {
-					ENG = {
-						127 = {
-							is_owned_by = ITA
-						}
-						123 = {
-							is_owned_by = ITA
-						}
-						126 = {
-							is_owned_by = ITA
-						}
-						338 = {
-							is_owned_by = ITA
-						}
-						122 = {
-							is_owned_by = ITA
-						}
-						125 = {
-							is_owned_by = ITA
-						}
-						129 = {
-							is_owned_by = ITA
-						}
-						128 = {
-							is_owned_by = ITA
-						}
-						130 = {
-							is_owned_by = ITA
-						}
-						132 = {
-							is_owned_by = ITA
-						}
-						131 = {
-							is_owned_by = ITA
-						}
-						452 = {
-							is_owned_by = ITA
-						}
-						447 = {
-							is_owned_by = ITA
-						}
-						446 = {
-							is_owned_by = ITA
-						}
-						456 = {
-							is_owned_by = ITA
-						}
-						454 = {
-							is_owned_by = ITA
-						}
-						455 = {
-							is_owned_by = ITA
-						}
-						552 = {
-							is_owned_by = ITA
-						}
-						456 = {
-							is_owned_by = ITA
-						}
-						457 = {
-							is_owned_by = ITA
-						}
-						183 = {
-							is_owned_by = ITA
-						}
-						118 = {
-							is_owned_by = ITA
-						}
-						656 = {
-							is_owned_by = ITA
-						}
-					}
-				}
-				SPR = {
-					all_state = {
-						is_on_continent = europe
-						is_owned_by = ITA
-					}
-				}
-				POR = {
-					all_state = {
-						is_on_continent = europe
-						is_owned_by = ITA
-					}
-				}
-				PER = {
-					all_state = {
-						is_owned_by = ITA
-					}
-				}
-				IRQ = {
-					all_state = {
+					all_core_state = {
 						is_owned_by = ITA
 					}
 				}

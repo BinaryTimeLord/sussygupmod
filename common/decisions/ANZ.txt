@@ -65,6 +65,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = albania_integrate
 		}
 	}
 	bulgarian_conquest = {
@@ -133,6 +134,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = bulgaria_integrate
 		}
 	}
 	greek_conquest = {
@@ -201,6 +203,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = greece_integrate
 		}
 	}
 	hungarian_conquest = {
@@ -269,6 +272,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = hungaria_integrate
 		}
 	}
 	romanian_conquest = {
@@ -352,6 +356,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = romania_integrate
 		}
 	}
 	turkish_conquest = {
@@ -424,6 +429,7 @@ ITA_form_the_roman_empire = {
 			    id = 9833
 			    name = ITA_byzantium
 			}
+            set_country_flag = turkey_integrate
 		}
 	}
 	yugoslavian_conquest = {
@@ -492,6 +498,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = yugoslavia_integrate
 		}
 	}
 	french_conquest = {
@@ -600,6 +607,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = france_integrate
 		}
 	}
 	benelux_conquest = {
@@ -700,6 +708,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = benelux_integrate
 		}
 	}
 	british_conquest = {
@@ -831,6 +840,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = britain_integrate
 		}
 	}
 	iberian_conquest = {
@@ -919,6 +929,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = iberia_integrate
 		}
 	}
 	arabian_conquest = {
@@ -1005,6 +1016,7 @@ ITA_form_the_roman_empire = {
 					add_core_of = PREV.PREV
 				}
 			}
+            set_country_flag = arabia_integrate
 		}
 	}
 }

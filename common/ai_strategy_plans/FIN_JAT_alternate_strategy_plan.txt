@@ -1,0 +1,76 @@
+FIN_alternate_plan = {
+	name = "FIN alternate plan"
+	desc = "Alternate behavior for Finland"
+
+	allowed = {
+		original_tag = FIN
+	}
+
+	enable = {
+		NOT = {
+			has_global_flag = FIN_use_DLC_tree
+		}
+	}
+	
+	ai_national_focuses = {
+	    FIN_lend_lease
+		FIN_foreign_volunteers
+		FIN_moscow_treaty
+	
+	
+		FIN_continue_war_preparation
+		FIN_protection
+		FIN_buy_motor
+		
+		FIN_protect_democraty
+		FIN_finnish_neutrality
+		FIN_eastern_question
+		####################
+		FIN_red_menace
+		FIN_norm_industry
+		FIN_use_invenstors
+		FIN_english
+		FIN_france
+		####################
+		FIN_swedish
+		FIN_germany
+		FIN_ger_airdroms
+		FIN_Mannerheim_doctrine
+		FIN_antitank
+		####################
+		FIN_protect_karelia
+		FIN_antisoviet_propaganda
+		FIN_diversion_form
+		FIN_war_on_independence
+		FIN_white_snipers
+		####################
+		FIN_prepare_for_revenge
+		FIN_retake_east
+		FIN_germany_coop
+		FIN_expand_the_military_budget
+		FIN_salo_line
+		####################
+		FIN_reform_military
+	}
+	
+	research = {
+	
+	}
+
+	ideas = {
+	
+	}
+	
+	traits = {
+		
+	}
+
+	
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,60 @@
+ITA_alternate_plan = {
+	name = "Italy alternate plan"
+	desc = "Alternate behavior for Italy"
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	enable = {
+		NOT = {
+			has_global_flag = ITA_use_DLC_tree
+		}
+	}
+
+	ai_national_focuses = {	
+        ITA_the_sovereign_question
+	    ITA_mussolinis_cult_of_personality
+	    ITA_build_italy_better
+		ITA_support_the_nationalists
+	    ITA_civilian_focus
+	    ITA_military_focus
+	    ITA_army_incompetence
+	    ITA_army_reform
+	    ITA_slovenia_dalmatia_claims
+	    ITA_regio_esercito
+	    ITA_regia_marina
+	    ITA_regia_aeronautica
+	    ITA_bulgaria_friend
+ 	    ITA_expand_local_industry
+	    ITA_expand_africa   
+	    ITA_italian_bright_minds
+        ITA_albania_war_goal
+	    ITA_pact_of_steel
+        ITA_arms_cache_in_the_alps
+        ITA_urban_arms_cache
+        ITA_arms_cache_in_the_south
+        ITA_prepare_for_conflict
+        ITA_german_military_cooperation
+        ITA_claims_on_france
+        ITA_greece_war_goal
+	}				
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
