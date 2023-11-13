@@ -1816,8 +1816,8 @@
 					limit = {
 						is_field_marshal = no
 						OR = {
-							has_id = 1700
-							has_id = 1701
+							has_id = 1218
+							has_id = 1213
 						}
 					}
 					retire = yes
@@ -2116,8 +2116,8 @@
 					limit = {
 						is_field_marshal = no
 						OR = {
-							has_id = 1700
-							has_id = 1701
+							has_id = 1218
+							has_id = 1213
 						}
 					}
 					retire = yes

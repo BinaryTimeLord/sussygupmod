@@ -261,7 +261,7 @@
 				capital = 282
 				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 }
 				keep_unit_leaders = {
-					750 751 752 1700 1702 1703
+					750 751 752 1218 120941 121041
 				}
 			}
 			if = {
@@ -297,7 +297,7 @@
 			}
 			random_army_leader = {
 				limit = {
-					has_id = 1702 # HOSOMI
+					has_id = 120941 # HOSOMI
 				}
 				promote_leader = yes
 			}

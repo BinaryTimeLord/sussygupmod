@@ -931,12 +931,12 @@ country_event = {
 			ideology = fascism
 			size = 0.5
 		    keep_unit_leaders = {
-			1704 1701 
+			121141 1213
 		    }
 		}
 		random_army_leader = {
 			limit = {
-				has_id = 1704
+				has_id = 121141
 			}
 			promote_leader = yes
 		}
