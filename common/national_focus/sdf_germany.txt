@@ -67,9 +67,10 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_ooarai_cells
-		##icon 
+		##icon
+		relative_position_id = SDF_wacht_am_rhien
 		
-		x = 7
+		x = 2
 		y = 1
 		
 		cost = 0.5
@@ -108,9 +109,10 @@ focus_tree = {
 	focus = {
 		id = SDF_war_liberation
 		##icon
+		relative_position_id = SDF_ooarai_cells
 		
-		x = 7
-		y = 2
+		x = 0
+		y = 1
 		
 		cost = 1
 		
@@ -136,6 +138,150 @@ focus_tree = {
 		}
 			
 	}
+	
+	##CIVIL WAR EQUIPMENT FOCUSES
 			
+	focus = {
+		id = SDF_old_stockpiles
+		##icon
+		relative_position_id = SDF_war_liberation
+		
+		available = {
+			has_war_with = GER
+		}
+		
+		x = -2
+		y = 1
+		
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		prerequisite = { focus = SDF_war_liberation }
+		##mutually_exclusive = 
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+					
+				amount = 2500
+					
+				producer = GER
+				
+			}
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+					
+				amount = 300
+					
+				producer = AUS
+				
+			}
+			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+					
+				amount = 150
+					
+				producer = GER
+				
+			}
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_war_efforts
+		##icon 
+		relative_position_id = SDF_war_liberation
+		
+		available = {
+			has_war_with = GER
+		}
+		
+		x = 0
+		y = 1
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = SDF_war_liberation }
+		##mutually_exclusive = 
+		
+		completion_reward = {
+			add_political_power = -50
+			add_manpower = 15000
+			if = {
+					limit = {
+						has_idea = civilian_economy
+					}
+					add_ideas = war_economy
+				}
+				
+				if = {
+					limit = {
+						has_idea = low_economic_mobilisation
+					}
+					add_ideas = war_economy
+				}
+				
+				if = {
+					limit = {
+						has_idea = partial_economic_mobilisation
+					}
+					add_ideas = war_economy
+				}
+				
+				if = {
+					limit = {
+						has_idea = war_economy
+					}
+					add_ideas = tot_economic_mobilisation
+				}
+		}
+	}
+	
+	focus = {
+		id = SDF_emergency_factories
+		##icon
+		relative_position_id = SDF_war_liberation
+		
+		available = {
+			has_war_with = GER
+			has_full_control_of_state = 52
+		}
+		
+		x = 2
+		y = 1
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = SDF_war_liberation }
+		##mutually_exclusive = 
+		
+		completion_reward = {
+			add_stability = -0.1
+			52 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		
+		}
+	}
 }
+
 

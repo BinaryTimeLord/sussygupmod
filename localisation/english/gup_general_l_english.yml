@@ -2354,9 +2354,18 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   
   ##FOCUS##
   SDF_wacht_am_rhien:0 "Die Wacht Am Rhein"
-  SDF_wacht_am_rhien_desc:0 ""
+  SDF_wacht_am_rhien_desc:0 "The Rhine has been the industrial heartland of Kuromormine for years, though demilitarized it does mean we can secretly build up forces here loyal to us, without the fear of a government response"
   SDF_southern_expedition:0 "Southern Expedition"
-  SDF_southern_expedition_desc:0 ""
-  
+  SDF_southern_expedition_desc:0 "Southern Kuromormine is known for its Nishizumi heritage, but it’s also known for its sympathy to our cause, though the Nishizumi elements here must either be swayed or killed we can gain much from taking this land for ourselves."
+  SDF_ooarai_cells:0 "Ooarai PMC Cells"
+  SDF_ooarai_cells_desc:0 "Though in Kuromormine we may have allies, we still have friends in places like Ooarai perhaps we could call in a few favours."
+  SDF_war_liberation:0 "War of Liberation"
+  SDF_war_liberation_desc:0 ""
+  SDF_old_stockpiles:0 "Dig up Old Stockpiles"
+  SDF_old_stockpiles_desc:0 ""
+  SDF_war_efforts:0 "Kuromorimine War Machine"
+  SDF_war_efforts_desc:0 ""
+  SDF_emergency_factories:0 "Emergency Factories"
+  SDF_emergency_factories_desc:0 ""
 
  

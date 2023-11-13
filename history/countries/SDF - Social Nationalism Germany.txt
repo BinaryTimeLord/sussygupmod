@@ -1,10 +1,9 @@
 capital = 52
 
-
 ##TECH/POLITICS##
 set_research_slots = 4
 set_stability = 0.6
-set_war_support = 0.35
+set_war_support = 0.6
 
 set_popularities = {
 	democratic = 12
@@ -21,7 +20,9 @@ set_politics = {
 }
 
 add_ideas = {
-
+	add_ideas = sdf_army_w_state
+	add_ideas = sdf_revolutionary_fevor
+	add_ideas = sdf_battle_for_freedom
 }
 
 ##CHARACTERS##

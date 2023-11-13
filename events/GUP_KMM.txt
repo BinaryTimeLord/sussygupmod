@@ -5618,9 +5618,6 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 			release = SDF
 		
 			SDF = {
-				add_ideas = sdf_army_w_state
-				add_ideas = sdf_revolutionary_fevor
-				add_ideas = sdf_battle_for_freedom
 				transfer_state = 52
 			}
 		
@@ -5633,32 +5630,11 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		hidden_effect = {
 		SDF = {
 			inherit_technology = GER
-			create_country_leader = {
-				name = SDF_saori_takebe
-				desc = ""
-				picture = "gfx/leaders/SDF/GFX_saori3.dds"
-				
-				ideology = centrism
-				expire = "1965.1.1"
-				traits = {
-				
-				}
-			}
-		
+			
+			recruit_character = SDF_saori_takebe
 			country_event = {
 				id = sdf.1
 				day = 5
-			}
-		
-			create_field_marshal = {
-				name = "Heerfuhrer Saori Takebe"
-				portrait_path = "gfx/leaders/SDF/GFX_saori.dds"
-				traits={ media_personality war_hero }
-				skill=4
-				attack_skill=1
-				defense_skill=2
-				planning_skill=3
-				logistics_skill=5
 			}
 			
 			create_corps_commander = { 
@@ -5854,9 +5830,6 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 			release = SDF
 		
 			SDF = {
-				add_ideas = sdf_army_w_state
-				add_ideas = sdf_revolutionary_fevor
-				add_ideas = sdf_battle_for_freedom
 			}
 		
 		}
@@ -5864,17 +5837,7 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		hidden_effect = {
 		SDF = {
 			inherit_technology = GER
-			create_country_leader = {
-				name = SDF_saori_takebe
-				desc = ""
-				picture = "gfx/leaders/SDF/GFX_saori3.dds"
-				
-				ideology = centrism
-				expire = "1965.1.1"
-				traits = {
-				
-				}
-			}
+			
 			
 			create_field_marshal = {
 				name = "Heerfuhrer Saori Takebe"

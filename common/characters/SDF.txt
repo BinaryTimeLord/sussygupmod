@@ -1,22 +1,22 @@
 characters = { ##fuck this shit it wont work##
 	SDF_saori_takebe = {
-		name = SDF_saori_takebe
+		name = "Heerfuhrer Saori Takebe"
 		
 		portraits={
 			civilian={
-				large = "gfx/leaders/SDF/GFX_saori3.dds"
+				large="gfx/leaders/SDF/GFX_saori3.dds"
 			}
 			
 			civilian = {
-				small = "gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
 			}
 			
 			army={
-				small = "gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
 			}
 			
-			army = {
-				large = "gfx/leaders/SDF/GFX_saori.dds"
+			army={
+				large="gfx/leaders/SDF/GFX_saori.dds"
 			}
 			
 		}
@@ -30,12 +30,69 @@ characters = { ##fuck this shit it wont work##
 			logistics_skill=5
 		}
 		
-		country_leader = {
-			ideology = centrism
-			traits = { }
-			expire = "1965.1.1"
+		country_leader={
+			desc="POLITICS_SAORI_DESC"
+			ideology=centrism
+			traits={}
+			expire="1965.1.1.1"
+			id=1
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token =SDF_saori_idea
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				tag = SDF
+				NOT = {
+					has_country_flag = SDF_coup
+				}
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SDF_coup
+				}
+			}
+			traits = {
+				popular_figurehead
+			}
+			
+			cost = 150
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SDF_saoriarmy_idea
+			ledger = army
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				tag = SDF
+				NOT = {
+					has_country_flag = SDF_coup
+				}
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SDF_coup
+				}
+			}
+			
+			traits = {
+				army_cavalry_3
+			}
+			
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
 		}
 	
 	}
+	
+	
 
 }
