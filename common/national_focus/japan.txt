@@ -253,6 +253,7 @@
 			}
 			remove_ideas = cht_extremists
 			remove_ideas = JAP_the_unthinkable_option
+			remove_ideas = undying_will
 			set_capital = { state = 532 }
 			start_civil_war = {
 				ruling_party = communism
@@ -4911,6 +4912,10 @@
 				tooltip = CHT_FEBRUARY_26TH_TAMADA
 				has_country_flag = cht_tamada_chosen
 			}
+			NOT = {
+				has_country_flag = cht_unthinkable_option
+				has_country_flag = cht_strengthen_government
+			}
 		}
 
 		bypass = {
@@ -8876,6 +8881,7 @@
 				}
 			}
 			remove_ideas = cht_extremists
+			remove_ideas = undying_will
 			country_event = { id = wtt_japan.114 }
 			effect_tooltip = {
 				if = {

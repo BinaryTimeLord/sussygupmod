@@ -61,6 +61,10 @@ spriteTypes = {
 		name = "GFX_idea_shizuka_tsuruki"
 		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_shizuka_tsuruki.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_kinuyi_nishi"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_kinuyi_nishi.dds"
+	}
 	
 	#EVENTS
 	spriteType = {
