@@ -5867,13 +5867,15 @@ focus_tree = {
 			random_list = { #maho finds out near end making sure that sudetenland gets completed before civil war/confrontation happens
 				5 = { #maho wont realize this all happened until end of gregor
 					#GER = { country_event = { days = 60 id = kmm.8 } }
-					set_country_flag = kmm_sudeten_erika
-					mark_focus_tree_layout_dirty = yes
+					#set_country_flag = kmm_sudeten_erika
+					#mark_focus_tree_layout_dirty = yes
+					GER = { country_event = { days = 66 id = kmm.8 } }
 				}
 				5 = { #still get erika tree anyway lmao
 					#GER = { country_event = { days = 63 id = kmm.8 } }
-					set_country_flag = kmm_sudeten_erika
-					mark_focus_tree_layout_dirty = yes
+					#set_country_flag = kmm_sudeten_erika
+					#mark_focus_tree_layout_dirty = yes
+					GER = { country_event = { days = 60 id = kmm.8 } }
 				}
 				45 = {
 					GER = { country_event = { days = 68 id = kmm.8 } }
