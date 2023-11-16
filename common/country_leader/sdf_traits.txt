@@ -1,0 +1,28 @@
+leader_traits = {
+	popular_author = {
+		random = no
+		sprite = 13
+		
+		research_speed_factor = 0.05
+		political_power_factor = 0.05
+	}
+	
+	head_of_security = {
+		random = no
+		sprite = 13
+		
+		drift_defence_factor = 0.5
+		encryption_factor = 0.15
+		political_power_factor = 0.05
+	
+	}
+	
+	forign_minister2 = {
+		random = no
+		sprite = 13
+		
+		trade_opinion_factor = 0.05
+		fascism_drift = 0.05
+		fascism_acceptance = 50
+	}
+}

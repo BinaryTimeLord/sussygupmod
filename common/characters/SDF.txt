@@ -38,6 +38,13 @@ characters = { ##fuck this shit it wont work##
 			id=1
 		}
 		
+		country_leader={
+			ideology=nazism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
 		advisor={
 			slot = political_advisor
 			idea_token =SDF_saori_idea
@@ -90,8 +97,584 @@ characters = { ##fuck this shit it wont work##
 				factor = 2.000
 			}
 		}
+		
+		advisor={
+            cost = 150
+			slot = army_chief
+			idea_token = SDF_saoriarmy2_idea
+	
+			allowed = {
+				tag = SDF
+			}
+		
+			available = {
+				
+			}
+		
+			traits = { army_chief_organizational_2 }
+		}
 	
 	}
+	
+	##POLITICAL ADVISORS/GENERALS/HIGHCOMMAND##
+	
+	SDF_maria_suzuki = {
+		name = "Maria Suzuki"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_suzuki.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_suzuki.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_suzuki.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_suzuki.dds"
+			}
+			
+		}
+		
+		corps_commander = {
+			traits={ media_personality armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SDF_suzuki_idea
+			allowed = {
+				original_tag = SDF
+			}
+			available = {
+
+			}
+			visible = {
+			
+			}
+			traits = {
+				popular_author
+			}
+			
+			cost = 150
+		}
+		
+		country_leader={
+			desc="POLITICS_SUZUKI_DESC"
+			ideology=conservatism
+			traits={}
+			expire="1965.1.1.1"
+			id=1
+		}
+	}
+	
+	SDF_kiyomi_sugiyama = {
+		name = "Kiyomi Sugiyama"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_saemonza.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_saemonza.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_saemonza.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_saemonza.dds"
+			}
+			
+		}
+		
+		corps_commander = { 
+			traits={ media_personality bold swamp_fox }
+			skill=3
+			attack_skill=5
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=6
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SDF_saemonza_idea
+			allowed = {
+				original_tag = SDF
+			}
+			available = {
+
+			}
+			visible = {
+				
+			}
+			traits = {
+				head_of_security
+			}
+			
+			cost = 150
+		}
+		
+		advisor={
+            cost = 100
+			slot = high_command
+			idea_token = SDF_saemonzaarmy_idea
+			ledger = air
+
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { air_airborne_2 }
+		}
+	}
+	
+	SDF_erwin = {
+		name = "Riko Matsumoto"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_erwin.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_riko_matsumoto_high_command.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_riko_matsumoto_high_command.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_erwin.dds"
+			}
+			
+		}
+		
+		corps_commander = {
+			traits={ brilliant_strategist panzer_leader desert_fox }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		
+		advisor={
+            cost = 100
+			slot = high_command
+			idea_token = SDF_erwin_idea
+			ledger = army
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+	
+	}
+	
+	SDF_hoshino = {
+		name = "Keiko Hoshino"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_hoshino.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_hoshino.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_hoshino.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_hoshino.dds"
+			}
+			
+		}
+		
+		advisor={
+            cost = 150
+			slot = high_command
+			idea_token = SDF_hoshino_idea
+			ledger = army
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = SDF_hoshino_idea2
+			allowed = {
+				tag = SDF
+			}
+			
+			available = {
+				
+			}
+			
+			traits = { backroom_backstabber }
+		}
+		
+		corps_commander = {
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+		
+	}
+	
+	SDF_noriko = {
+		name = "Noriko Isobe"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_noriko.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_noriko.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_noriko.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_noriko.dds"
+			}
+			
+		}
+		
+		corps_commander = {
+			traits={ inflexible_strategist trait_reckless }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+		
+		advisor={
+            cost = 150
+			slot = high_command
+			idea_token = SDF_noriko_idea
+			ledger = army
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { army_logistics_2 }
+			
+		}
+	}
+	
+	SDF_yukari = { ##CAN BE PURGED
+		name = "Yukari Akiyama"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_yukari.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_yukari_akiyama_theorist.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_yukari_akiyama_theorist.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_yukari.dds"
+			}
+			
+		}
+		
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = SDF_yukari_akiyama_theorist
+			ledger = army
+			
+			allowed = {
+				tag = GER
+			}
+			available = {
+			
+			}
+					
+			traits = { blitzkrieg_theorist }
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SDF_yukari_idea
+			allowed = {
+				tag = SDF
+			}
+			
+			traits = {
+				forign_minister2
+			}
+			
+			cost = 100
+		}
+		
+		corps_commander = { 
+			traits={ armor_officer panzer_leader commando winter_specialist adaptable }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+		
+	}
+	
+	SDF_maho = { ##CAN BE PURGED
+		name = "Heerfuhrer Maho Nishizumi"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_maho.dds"
+			}
+			
+			civilian = {
+				small="GFX_idea_ger_maho_armychief"
+			}
+			
+			army={
+				small="GFX_idea_ger_maho_armychief"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_maho.dds"
+			}
+			
+		}
+		
+		advisor={
+            cost = 150
+			slot = army_chief
+			idea_token = SDF_maho_armychief
+	
+			allowed = {
+				tag = SDF
+			}
+		
+			available = {
+				has_country_flag = SDF_exiles
+			}
+			
+			visible = {
+				has_country_flag = SDF_exiles
+			}
+		
+			traits = { army_chief_organizational_2 }
+	
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		create_field_marshal = {	
+			traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=4
+			visible = { has_country_flag = SDF_exiles }
+		}
+	
+	}
+	
+	SDF_erika = { ##WILL BE PURGED
+		name = "Erika Itsumi"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_erika.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
+			}
+			
+			army={
+			    small="gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_erika.dds"
+			}
+			
+		}
+		
+		create_corps_commander = { ##CAN BE PURGED##
+			traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			
+			visible = { has_country_flag = SDF_exiles }
+			available = { has_country_flag = SDF_exiles }
+		}
+	}
+	
+	SDF_ogin_theorist = {
+		name= "Ogin"
+		portraits={
+			army={
+				small="GFX_idea_ger_ogin_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SDF_ogin_idea
+			ledger = navy
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { naval_theorist }
+		}
+	}
+	
+	SDF_rum_high_command = {
+		name= "Rum"
+		portraits={
+			army={
+				small="GFX_idea_ger_rum_high_command"
+			}
+		}
+		advisor={
+            cost = 100
+			slot = high_command
+			idea_token = SDF_rum_high
+			ledger = navy
+
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+	SDF_flint_high_command = {
+		name= "Flint"
+		portraits={
+			army={
+				small="GFX_idea_ger_flint_high_command"
+			}
+		}
+		advisor={
+            cost = 100
+			slot = high_command
+			idea_token = SDF_flint_idea
+			ledger = navy
+		
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		 
+	SDF_murakami_high_command = {
+		name= "Murakami"
+		portraits={
+			army={
+				small="GFX_idea_ger_murakami_high_command"
+			}
+		}
+		advisor={
+            cost = 50
+			slot = high_command
+			idea_token = SDF_murakami_idea
+			ledger = navy
+	
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { navy_anti_submarine_1 }
+		}
+    }
 	
 	
 

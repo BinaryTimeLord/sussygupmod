@@ -5661,28 +5661,6 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 				day = 5
 			}
 			
-			create_corps_commander = { 
-				name = "Kiyomi Sugiyama"
-				portrait_path = "gfx/leaders/SDF/GFX_saemonza.dds"
-				traits={ media_personality bold swamp_fox }
-				skill=3
-				attack_skill=5
-				defense_skill=1
-				planning_skill=3
-				logistics_skill=6
-			}
-			
-			create_corps_commander = {
-				name = "Maria Suzuki"
-				portrait_path = "gfx/leaders/SDF/GFX_suzuki.dds"
-				traits={ media_personality armor_officer }
-				skill=3
-				attack_skill=3
-				defense_skill=3
-				planning_skill=2
-				logistics_skill=4
-			}
-			
 			create_corps_commander = { ##CAN BE PURGED##
 				name = "Ayumi Yamagou"
 				portrait_path = "gfx/leaders/SDF/GFX_ayumi.dds"
@@ -5717,39 +5695,6 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 			}
 			
 			create_corps_commander = {
-				name = "Riko Matsumoto"
-				portrait_path = "gfx/leaders/SDF/GFX_erwin.dds"
-				traits={ brilliant_strategist panzer_leader desert_fox }
-				skill=4
-				attack_skill=3
-				defense_skill=2
-				planning_skill=2
-				logistics_skill=2
-			}
-			
-			create_corps_commander = {
-				name = "Keiko Hoshino"
-				portrait_path = "gfx/leaders/SDF/GFX_hoshino.dds"
-				traits={ trait_cautious armor_officer }
-				skill=3
-				attack_skill=3
-				defense_skill=1
-				planning_skill=2
-				logistics_skill=2
-			}
-			
-			create_corps_commander = {
-				name = "Noriko Isobe"
-				portrait_path = "gfx/leaders/SDF/GFX_noriko.dds"
-				traits={ inflexible_strategist trait_reckless }
-				skill=4
-				attack_skill=5
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=2
-			}
-			
-			create_corps_commander = {
 				name = "Shinobu Kawanishi"
 				portrait_path = "gfx/leaders/SDF/GFX_shinobu.dds"
 				traits={ trait_reckless }
@@ -5771,16 +5716,7 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 				logistics_skill=2
 			}
 			
-			create_corps_commander = { ##CAN BE PURGED##
-				name = "Yukari Akiyama"
-				portrait_path = "gfx/leaders/SDF/GFX_yukari.dds"
-				traits={ armor_officer panzer_leader commando winter_specialist adaptable }
-				skill=5
-				attack_skill=3
-				defense_skill=2
-				planning_skill=3
-				logistics_skill=4
-			}
+			
 			
 			load_oob = "SDF_1936"
 	
@@ -5874,27 +5810,8 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 				logistics_skill=5
 			}
 			
-			create_field_marshal = {
-				name = "Heerfuhrer Maho Nishizumi"
-				portrait_path = "gfx/leaders/SDF/GFX_maho.dds"
-				traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
-				skill=5
-				attack_skill=4
-				defense_skill=5
-				planning_skill=5
-				logistics_skill=4
-			}
 			
-			create_corps_commander = { ##CAN BE PURGED##
-				name = "Erika Itsumi"
-				portrait_path = "gfx/leaders/SDF/GFX_erika.dds"
-				traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
-				skill=4
-				attack_skill=4
-				defense_skill=4
-				planning_skill=4
-				logistics_skill=3
-			}
+			
 			
 			create_corps_commander = { 
 				name = "Kiyomi Sugiyama"

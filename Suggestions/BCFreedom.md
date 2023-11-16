@@ -26,4 +26,4 @@ There are three initial choices that open up the political tree
 ## NOTES
 - Easter Egg? : Charles de Gaulle "Chad" branch?
 
-
+##what is this insane stuff, like both these files -LeJeff4
