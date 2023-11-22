@@ -1,0 +1,12 @@
+
+SDF_raise_units = {
+	icon = GFX_decision_category_generic_arms_trade
+	
+	allowed = {
+		tag = SDF
+	}
+	visible = {
+		
+		always = yes
+	}
+}

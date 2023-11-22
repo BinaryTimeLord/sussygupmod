@@ -5719,6 +5719,7 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 			
 			
 			load_oob = "SDF_1936"
+			load_oob = "SDF_1936_air"
 	
 		}
 			52 = {

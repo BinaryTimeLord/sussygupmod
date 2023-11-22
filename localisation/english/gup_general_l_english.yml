@@ -2354,7 +2354,7 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_neutrality_party:0 "C-R Coalition"
   SDF_neutrality_party_long:0 "Centre Right Coalition"
   
-  
+  ##TRAITS##
   SDF_saori_takebe:0 "Heerfuhrer Saori Takebe"
   sdf_ig_faben:0 "Ooarai Oil"
   sdf_krupp:0 "Krupp"
@@ -2362,6 +2362,9 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   popular_author:0 "Popular Author"
   head_of_security:0 "Head of the K.I.A"
   forign_minister2:0 "Foreign Affairs Minister"
+  sdf_nationalist:0 "Greater Kuromorimine Nationalist"
+  sdf_underrated_politician:0 "Underrated Politician" 
+  POLITICS_SAORI_DESC:0 "Born June 22nd 1914 in rural Ooarai, the first Great War was raging across Europe. Coming from a poorer family her father was conscripted into the Ooarai-Turul Empire's infantry corps and sent off to the eastern front to fight the Pravda threat. He was killed on the Eastern Front in 1917. \n \n With the hatered of Pravda and Nationalistic rhetoric sweeping post war Kuromorimine and Ooarai, Saori was swept up in the far right movements. In 1923 a political party known as the Sozialistische Demokratische Ooarai Vorderseite was formed by post war veterans. Their ideals were mild compared to the Nishizumi doctrine that was sweeping across Kuromorimine. Joining in 1931 in the military wing of the party, Saori quicky rose the ranks thanks to her radio communication and sub par commanding skills. \n \n In 1934 there was a power grab as the head of the party was killed in a firefight between the leftist Pravda front in Vienna. Through her charisma and charm Saori rose to the top of the party, controlling the military and the party itself. With the Kuromorimine civil war raging it is her time to act."
   
   ##IDEAS##
   sdf_army_w_state:0 "Army With a State"
@@ -2372,6 +2375,16 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   sdf_battle_for_freedom_desc:0 "We cannot fail our people, we must win no matter the cost for the Strength and will of the nation"
   sdf_war_lost:0 "All or Nothing!"
   sdf_war_time_reforms:0 "Wartime Reforms"
+  
+  ##DECISIONS##
+  SDF_raise_units:0 "Raising the National Guard"
+  SDF_units_52:0 "Raise Units in Munich"
+  SDF_units_53:0 "Contact Volunteers in Regensburg"
+  SDF_units_50:0 "Form a Panzer Divison in Stuttgart"
+  SDF_units_54:0 "Mobilize the Nuremberg Guard"
+  SDF_units_42:0 "Raise a Unit in Saarbrucken"
+  SDF_units_55:0 "Raise Loyalist Brigades in Frankfurt"
+  SDF_units_51:0 "Deploy the Essen National Guard"
   
   ##FOCUS##
   SDF_wacht_am_rhien:0 "Die Wacht Am Rhein"
@@ -2389,13 +2402,13 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_emergency_factories:0 "Emergency Factories"
   SDF_emergency_factories_desc:0 "Every factory is needed to win this war, from wood working plants to automobile companies all can do their part"
   SDF_only_chance:0 "For the Fatherland!"
-  SDF_only_chance_desc:0 ""
+  SDF_only_chance_desc:0 "The fatherland calls for all those loyal to Kuromormine, cowards and traitors have no place in the warrior nation, all shall serve their sacred duty, those that refuse are traitors to the fatherland. \n \nYoung and old will be called upon to defend our nation and vanquish the enemy fighting to the bitter end if needed for the goal of ultimate victory, death to the enemy before us as we shall win by will of total war."
   SDF_soup_kitchens:0 "SDK Soup Kitchens"
-  SDF_soup_kitchens_desc:0 ""
+  SDF_soup_kitchens_desc:0 "Soup is not the most beloved food in the world but it’s stupidly easy to make and helps both give people much needed clean water and also a simple way to cook even meger food into something they can feed a hundred men. \n \n"Pine soup, grass, tree bark and other such items can be used to help spread out our food supplies and prevent total starvation, though most people won’t eat this normally it’s better then nothing and implementing things such as this along with sawdust bread we can make our rations go further.
   SDF_civil_militia:0 "Mobilize Civil Militia"
-  SDF_civil_militia_desc:0 ""
+  SDF_civil_militia_desc:0 "The friekorps once called upon to stop the pravdan backed traitors from taking over our great nation now lay in ruin but their legacy remains, and that legacy is what we shall embrace a people devoted to the cause of a strong Kuromormine, a force not afraid to get their hands dirty not afraid to kill our enemies. \n \n And this nations civilians know this duty and will seize it unhesitatingly as before to bring down these enemies of Kuromormine and restore us to greatness once again, we shall call and they shall answer for we are not afraid of our enemies nor their benefactors"
   SDF_implement_wartime_reforms:0 "Implement Wartime Reforms"
-  SDF_implement_wartime_reforms_desc:0 ""
+  SDF_implement_wartime_reforms_desc:0 "Whilst the war may have begun sooner then any of us could have foreseen that doesn’t mean we can’t continue pre war reforms. \n \n Simple things like paid leave or Unemployment insurance, though not necessary for a good standard of living can heavily impact our peoples lives and their support of us, rolling back restrictions on breaks and pay we can help the workers like no other would, and make what Pravda would claim only possible through them, A workers Paradise."
   SDF_pmc_recruit:0 "SDK Recruitment Campaigns"
   SDF_pmc_recruit_desc:0 ""
   SDF_slacken_recruitment:0 "Death or Dishonour"

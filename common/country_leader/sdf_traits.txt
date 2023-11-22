@@ -1,4 +1,23 @@
 leader_traits = {
+	
+	##SAORI LEADER TRAITS##
+	sdf_nationalist = {
+		random = no
+		
+		stability_factor = 0.1
+		war_support_factor = 0.05
+	
+	}
+	
+	sdf_underrated_politician = {
+		random = no
+		
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+		compliance_gain = 0.05
+	
+	}
+
 	popular_author = {
 		random = no
 		sprite = 13

@@ -1,0 +1,257 @@
+SDF_raise_units = {
+	
+	SDF_units_52 = {
+		
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 52
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			52 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+		
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	SDF_units_53 = {
+	
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 53
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			53 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+		
+		}
+	}
+	
+	SDF_units_50 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 50
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 75
+		
+		complete_effect = {
+			50 = {
+				create_unit = {
+					division = "division_template = \"37th Mixed Brigade\" start_experience_factor = 1" 
+					owner = SDF
+				}
+			}
+		
+		}
+	}
+	
+	SDF_units_54 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 54
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 150
+		
+		complete_effect = {
+			54 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"37th Mixed Brigade\" start_experience_factor = 1" 
+					owner = SDF
+				}
+			}
+		
+		}
+		
+	}
+	
+	SDF_units_42 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 42
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			42 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+		}
+	}
+	
+	SDF_units_55 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 55
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 150
+		
+		complete_effect = {
+			55 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"37th Mixed Brigade\" start_experience_factor = 1" 
+					owner = SDF
+				}
+			}
+		
+		}
+	}
+	
+	SDF_units_51 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 51
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			SDF = {
+				has_war_with = GER
+			}
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			51 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+		}
+	}
+}

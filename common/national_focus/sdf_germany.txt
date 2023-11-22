@@ -14,7 +14,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_wacht_am_rhien
-		##icon
+		icon = GFX_goal_rhienland_grab
 		
 		x = 5
 		y = 0
@@ -41,7 +41,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_southern_expedition
-		##icon 
+		icon = GFX_goal_south_grab
 		
 		x = 9
 		y = 0
@@ -67,7 +67,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_ooarai_cells
-		##icon
+		icon = GFX_goal_ooarai_cells
 		relative_position_id = SDF_wacht_am_rhien
 		
 		x = 2
@@ -103,12 +103,28 @@ focus_tree = {
 					producer = GER
 				
 				}
+				
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				
+				amount = 10
+				
+				producer = GER
+			}
+			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				
+				amount = 500
+				
+				producer = GER
+			}
 		}	
 	}
 	
 	focus = {
 		id = SDF_war_liberation
-		##icon
+		icon = GFX_goal_war_liberation
 		relative_position_id = SDF_ooarai_cells
 		
 		x = 0
@@ -124,6 +140,13 @@ focus_tree = {
 		##mutually_exclusive = 
 		
 		completion_reward = {
+			
+			hidden_effect = {
+				country_event = {
+					id = sdf.7
+					days = 0 
+				}
+			}
 			
 			declare_war_on = {
 				target = GER
@@ -143,7 +166,7 @@ focus_tree = {
 			
 	focus = {
 		id = SDF_old_stockpiles
-		##icon
+		icon = GFX_goal_old_stockpiles
 		relative_position_id = SDF_war_liberation
 		
 		available = {
@@ -198,7 +221,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_war_efforts
-		##icon 
+		icon = GFX_goal_war_econom
 		relative_position_id = SDF_war_liberation
 		
 		available = {
@@ -255,7 +278,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_emergency_factories
-		##icon
+		icon = GFX_goal_emergency_factories
 		relative_position_id = SDF_war_liberation
 		
 		available = {
@@ -294,7 +317,7 @@ focus_tree = {
 	
 	focus = { ##RAISE MEN BEHIND LINES##
 		id = SDF_only_chance
-		##icon
+		icon = GFX_goal_for_fatherland
 		relative_position_id = SDF_war_liberation
 		
 		available = {
@@ -313,8 +336,13 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = {
-		
-		
+			add_country_flag = SDF_CIVIL_WAR_UNITS
+			hidden_effect = {
+				country_event = {
+					id = sdf.9
+					days = 5
+				}
+			}
 		}
 	}
 	
@@ -322,7 +350,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_pmc_recruit
-		##icon = 
+		icon = GFX_goal_SDK_recruitment
 		relative_position_id = SDF_only_chance
 		
 		available = {
@@ -359,7 +387,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_slacken_recruitment
-		##icon = 
+		icon = GFX_goal_death_or_dishonour
 		relative_position_id = SDF_pmc_recruit
 		
 		available = {
@@ -419,7 +447,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_soup_kitchens
-		##icon = 
+		icon = GFX_goal_soup_kitchens
 		relative_position_id = SDF_only_chance
 		
 		available = {
@@ -447,7 +475,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_implement_wartime_reforms
-		##icon = 
+		icon = GFX_goal_wartime_reforms
 		relative_position_id = SDF_soup_kitchens
 		
 		available = {
@@ -474,7 +502,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_civil_militia
-		##icon = 
+		icon = GFX_goal_civil_militia
 		relative_position_id = SDF_soup_kitchens 
 		
 		available = {
@@ -507,7 +535,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_civs1
-		##icon = 
+		icon = GFX_goal_civs1
 		relative_position_id = SDF_only_chance
 		
 		available = {
@@ -543,7 +571,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_frankfurt_factories
-		##icon = 
+		icon = GFX_goal_frankfurt_factories
 		relative_position_id = SDF_civs1
 		
 		available = {
@@ -573,7 +601,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_rhein_factories
-		##icon = 
+		icon = GFX_goal_rhienland_factories
 		relative_position_id = SDF_civs1
 		
 		available = {

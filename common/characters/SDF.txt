@@ -33,14 +33,15 @@ characters = { ##fuck this shit it wont work##
 		country_leader={
 			desc="POLITICS_SAORI_DESC"
 			ideology=centrism
-			traits={}
+			traits={ sdf_nationalist sdf_underrated_politician }
 			expire="1965.1.1.1"
 			id=1
 		}
 		
 		country_leader={
+			desc="POLITICS_SAORI_DESC"
 			ideology=nazism
-			traits={}
+			traits={ sdf_nationalist sdf_underrated_politician }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -510,11 +511,15 @@ characters = { ##fuck this shit it wont work##
 			}
 		
 			available = {
-				has_country_flag = SDF_exiles
+				SDF = {
+					has_country_flag = SDF_exiles
+				}
 			}
 			
 			visible = {
-				has_country_flag = SDF_exiles
+				SDF = {
+					has_country_flag = SDF_exiles
+				}
 			}
 		
 			traits = { army_chief_organizational_2 }
@@ -531,7 +536,11 @@ characters = { ##fuck this shit it wont work##
 			defense_skill=5
 			planning_skill=5
 			logistics_skill=4
-			visible = { has_country_flag = SDF_exiles }
+			visible = { 
+				SDF = {
+					has_country_flag = SDF_exiles
+				}
+			}
 		}
 	
 	}
@@ -566,8 +575,16 @@ characters = { ##fuck this shit it wont work##
 			planning_skill=4
 			logistics_skill=3
 			
-			visible = { has_country_flag = SDF_exiles }
-			available = { has_country_flag = SDF_exiles }
+			visible = { 
+				SDF = {
+					has_country_flag = SDF_exiles
+				} 
+			}
+			available = { 
+				SDF = {
+					has_country_flag = SDF_exiles
+				}
+			}
 		}
 	}
 	

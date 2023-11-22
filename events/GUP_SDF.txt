@@ -19,64 +19,6 @@ add_namespace = sdf
 	#}
 #}
 
-country_event = { ##NAZI VOLUNTEERS
-	id = sdf.1
-	title = sdf.1.t
-	desc = sdf.1.d
-	##picture = 
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = sdf.1.a
-		ai_chance = {
-			base = 10
-		}
-		
-		create_field_marshal = {
-				name = "Heerfuhrer Maho Nishizumi"
-				portrait_path = "gfx/leaders/SDF/GFX_maho.dds"
-				traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
-				skill=5
-				attack_skill=4
-				defense_skill=5
-				planning_skill=5
-				logistics_skill=4
-			}
-			
-			create_corps_commander = { ##CAN BE PURGED##
-				name = "Erika Itsumi"
-				portrait_path = "gfx/leaders/SDF/GFX_erika.dds"
-				traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
-				skill=4
-				attack_skill=4
-				defense_skill=4
-				planning_skill=4
-				logistics_skill=3
-			}
-			
-		52 = {
-			create_unit = {
-					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
-					owner = SDF
-				}
-				
-				create_unit = {
-					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
-					owner = SDF
-				}
-		}
-	}
-	
-	option = { ##REJECT
-		name = sdf.1.b
-		ai_chance = {
-			base = 0
-		}
-	}
-}
-
 ##BATTLE FOR RHIENLAND
 
 country_event = {
@@ -248,4 +190,128 @@ country_event = {
 		
 		complete_national_focus = SDF_war_liberation
 	}
+}
+
+country_event = {
+	id = sdf.6
+	title = sdf.6.t
+	desc = sdf.6.d
+	##picture
+	
+	trigger = {
+		tag = SDF
+		D04 = {
+			has_full_control_of_state = 64
+		}
+		
+		OR = {
+			SDF = {
+				has_full_control_of_state = 65
+				has_full_control_of_state = 59
+			}
+			
+			GER = {
+				has_full_control_of_state = 65
+				has_full_control_of_state = 59
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = { ##LET THEM IN
+		name = sdf.6.a
+		ai_chance = {
+			base = 1
+		}
+		
+		SDF = {
+			set_country_flag = SDF_exiles
+		}
+	}
+	
+	option = { ##NO
+		name = sdf.6.b
+		ai_chance = {
+			base = 1
+		}
+		
+		
+	}
+	
+}
+
+##WAR OF LIBERATION##
+
+country_event = {
+	id = sdf.7
+	title = sdf.7.t
+	desc = sdf.7.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.7.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_war_support = 0.05
+	}
+	
+}
+
+##BERLIN##
+
+country_event = {
+	id = sdf.8
+	title = sdf.8.t
+	desc = sdf.8.d
+	##picture = 
+	
+	trigger = {
+		SDF = {
+			has_full_control_of_state = 64
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.8.a
+		ai_chance = {
+			base = 1
+		}
+		
+		every_owned_state = {
+			remove_dynamic_modifier = {
+					modifier = SOV_civilian_labor_in_defense_mod
+					scope = SDF
+				}
+		}
+	}
+}
+
+##FOR THE FATHERLAND##
+
+country_event = {
+	id = sdf.9
+	title = sdf.9.t
+	desc = sdf.9.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.9.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_war_support = -0.05
+	}
+	
 }

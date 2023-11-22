@@ -64,9 +64,9 @@ kmm_europe_union = {
 	
 	
 	visible = {
-		always = no
+		
 		GER = {
-			#has_completed_focus = GER_european_union
+			has_completed_focus = GER_european_union
 		}
 	}
 }
