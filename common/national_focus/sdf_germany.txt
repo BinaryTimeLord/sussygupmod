@@ -24,6 +24,12 @@ focus_tree = {
 			factor = 10000
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		mutually_exclusive = { focus = SDF_southern_expedition }
 		
 		completion_reward = {
@@ -51,6 +57,12 @@ focus_tree = {
 			factor = 0
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		mutually_exclusive = { focus = SDF_wacht_am_rhien }
 		
 		completion_reward = {
@@ -76,6 +88,12 @@ focus_tree = {
 		cost = 0.5
 		ai_will_do = {
 			factor = 10
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
 		}
 		
 		prerequisite = { focus = SDF_wacht_am_rhien focus = SDF_southern_expedition }
@@ -136,6 +154,12 @@ focus_tree = {
 			factor = 10
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		prerequisite = { focus = SDF_ooarai_cells }
 		##mutually_exclusive = 
 		
@@ -183,6 +207,12 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1000
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
 		}
 		
 		prerequisite = { focus = SDF_war_liberation }
@@ -238,6 +268,12 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
 		}
 		
 		prerequisite = { focus = SDF_war_liberation }
@@ -298,6 +334,12 @@ focus_tree = {
 			factor = 10
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		prerequisite = { focus = SDF_war_liberation }
 		##mutually_exclusive = 
 		
@@ -324,6 +366,12 @@ focus_tree = {
 			OR = {
 				has_war_with = GER
 				has_war_with = D04
+			}
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -357,6 +405,12 @@ focus_tree = {
 			OR = {
 				has_war_with = GER
 				has_war_with = D04
+			}
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -398,6 +452,12 @@ focus_tree = {
 			surrender_progress > 0.5
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		x = 0
 		y = 1
 		
@@ -409,6 +469,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = sdf_war_lost
 			add_manpower = 15000
+			
+			country_event = {
+				id = sdf.14
+				days = 3
+			}
 			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
@@ -457,6 +522,12 @@ focus_tree = {
 			}
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		x = -2
 		y = 1
 		
@@ -485,6 +556,12 @@ focus_tree = {
 			}
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		x = 0
 		y = 1
 		
@@ -509,6 +586,12 @@ focus_tree = {
 			OR = {
 				has_war_with = GER
 				has_war_with = D04
+			}
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -546,6 +629,12 @@ focus_tree = {
 			has_full_control_of_state = 52
 		}
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		x = 2
 		y = 1
 		
@@ -576,6 +665,12 @@ focus_tree = {
 		
 		available = {
 			has_full_control_of_state = 55
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
 		}
 		
 		x = 0
@@ -609,6 +704,12 @@ focus_tree = {
 			has_full_control_of_state = 51
 		}	
 		
+		allow_branch = {
+			NOT = {
+				has_country_tag = SDF_CIVIL_WAR_WIN
+			}
+		}
+		
 		x = 2
 		y = 1
 		
@@ -639,6 +740,309 @@ focus_tree = {
 		}
 	}
 	
+	##POST CIVIL WAR##
+	
+	focus = {
+		id = SDF_victory_civil
+		##icon = 
+		
+		available = {
+			has_country_flag = SDF_CIVIL_WAR_WIN
+		}
+		
+		allow_branch = {
+			has_country_flag = SDF_CIVIL_WAR_WIN
+		}
+		
+		x = 18
+		y = 0
+		
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			country_event = {
+				id = sdf.12
+				days = 3
+			}
+		}
+	}
+	
+	focus = { ##EVENT##
+		id = SDF_dotted_line_report
+		##icon = 
+		relative_position_id = SDF_victory_civil
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_victory_civil }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anarchy_issue
+		##icon = 
+		relative_position_id = SDF_dotted_line_report 
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_dotted_line_report }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_where_to
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_anarchy_issue }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_east_priority
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = SDF_where_to }
+		mutually_exclusive = { focus = SDF_west_priority }
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_west_priority
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = SDF_where_to }
+		mutually_exclusive = { focus = SDF_east_priority }
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##EASY PATH
+		id = SDF_send_SDK
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SDF_east_priority focus = SDF_west_priority }
+		mutually_exclusive = {  }
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##LONGER
+		id = SDF_unban_unions
+		##icon =
+		relative_position_id = SDF_anarchy_issue
+		
+		x = -2
+		y = 3
+		
+		prerequisite = { focus = SDF_east_priority focus = SDF_west_priority }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_workers_rights
+		##icon =
+		relative_position_id = SDF_anarchy_issue
+		
+		x = -2
+		y = 4
+		
+		prerequisite = { focus = SDF_unban_unions }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_democratic_fascism
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = 2
+		y = 3
+		
+		prerequisite = { focus = SDF_east_priority focus = SDF_west_priority }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_peoples_representation
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = 2
+		y = 4
+		
+		prerequisite = { focus = SDF_democratic_fascism }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_sort_of_stability
+		##icon = 
+		relative_position_id = SDF_anarchy_issue
+		
+		x = 0
+		y = 5
+		
+		prerequisite = { focus = SDF_workers_rights }
+		prerequisite = { focus = SDF_peoples_representation }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_reign_military
+		##icon = 
+		relative_position_id = SDF_dotted_line_report
+		
+		x = 4
+		y = 1
+		
+		prerequisite = { focus = SDF_dotted_line_report }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { 
+		id = SDF_ooarai_issue
+		##icon = 
+		relative_position_id = SDF_dotted_line_report 
+		
+		x = -4
+		y = 1
+		
+		prerequisite = { focus = SDF_dotted_line_report }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			country_event = {
+				id = sdf.13
+				days = 10
+			}
+		}
+	}
+	
+	focus = {
+		id = SDF_steal_gold
+		##icon = 
+		relative_position_id = SDF_ooarai_issue
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = SDF_ooarai_issue }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_disarm_ooarai
+		##icon = 
+		relative_position_id = SDF_ooarai_issue
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = SDF_ooarai_issue }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
 }
-
 

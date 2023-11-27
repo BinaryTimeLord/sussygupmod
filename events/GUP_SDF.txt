@@ -315,3 +315,157 @@ country_event = {
 	}
 	
 }
+
+country_event = { ##VICTORY IN THE CIVIL WAR##
+	id = sdf.10
+	title = sdf.10.t
+	desc = sdf.10.d
+	##picture = 
+	
+	trigger = {
+		tag = SDF
+		SDF = {
+			has_war = no
+			controls_state = 64
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.10.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_stability = -0.05
+		add_political_power = 150
+		
+		SDF = {
+			set_country_flag = SDF_CIVIL_WAR_WIN
+		}
+		
+		mark_focus_tree_layout_dirty = yes
+		
+		remove_ideas = sdf_war_time_reforms
+		remove_ideas = sdf_war_lost
+		remove_ideas = sdf_battle_for_freedom
+		remove_ideas = sdf_revolutionary_fevor
+		
+		hidden_effect = {
+			set_cosmetic_tag = SDF_UNI
+			add_ideas = sdf_failing_loyalty
+			add_ideas = sdf_anarchy_3
+		}
+	}
+}
+
+country_event = { ##CHANGING MUNICH NAME#$
+	id = sdf.11
+	title = sdf.11.t
+	desc = sdf.11.d
+	##picture = 
+	
+	trigger = {
+		SDF = {
+			has_war = no
+			controls_state = 64
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.11.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_province_name = { id = 692 name = "Munich" }
+	}
+	
+}
+
+country_event = { ##CAPITAL##
+	id = sdf.12
+	title = sdf.12.t
+	desc = sdf.12.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { ##BERLIN##
+		name = sdf.12.a
+		ai_chance = {
+			base = 10
+		}
+		set_capital = { state = 64 }
+		
+		add_stability = 0.05
+	}
+	
+	option = { ##KEEP IT##
+		name = sdf.12.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = 0.05
+		add_political_power = 25
+	}
+	
+	option = { ##FRANKFURT##
+		name = sdf.12.c
+		ai_chance = {
+			base = 0
+		}
+		set_capital = { state = 55 }
+		add_stability = 0.05
+	}
+	
+	option = { ##HAMBURG##
+		name = sdf.12.d
+		ai_chance = {
+			base = 0
+		}
+		set_capital = { state = 58 }
+		
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = sdf.13
+	title = sdf.13.t
+	desc = sdf.13.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.13.a
+		ai_chance = {
+			base = 1
+		}
+		
+		SDF = {
+			declare_war_on = AUS
+		}
+	}
+}
+
+country_event = { ##DEATH OR DISHONOUR##
+	id = sdf.14
+	title = sdf.14.t
+	desc = sdf.14.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.14.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}

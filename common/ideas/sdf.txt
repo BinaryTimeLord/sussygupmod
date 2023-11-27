@@ -135,6 +135,58 @@ ideas = {
 				political_power_factor = -0.25
 			}
 		}
+		
+		sdf_anarchy_3 = {
+			picture = generic_neutrality_drift_bonus
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.4
+				stability_weekly = -0.01
+				political_power_factor = -0.05
+				
+				fascism_drift = 0.05
+				communism_drift = 0.05
+				
+				consumer_goods_factor = 0.8
+				production_speed_buildings_factor = -0.95
+				production_speed_arms_factory_factor = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				production_speed_dockyard_factor = -0.15
+				
+				compliance_gain = -1
+				research_speed_factor = -0.95
+			}
+		}
+		
+		sdf_failing_loyalty = {
+			picture = generic_army_problems
+		
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.25
+				army_morale_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
 	}
 	
 	industrial_concern = {
