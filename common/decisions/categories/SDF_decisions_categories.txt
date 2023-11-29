@@ -6,7 +6,9 @@ SDF_raise_units = {
 		tag = SDF
 	}
 	visible = {
-		
+		SDF = {
+			has_country_flag = SDF_CIVIL_WAR_UNITS
+		}
 		always = yes
 	}
 }

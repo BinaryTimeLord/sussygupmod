@@ -2358,6 +2358,9 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_neutrality_party:0 "C-R Coalition"
   SDF_neutrality_party_long:0 "Centre Right Coalition"
   
+  ##CUSTOM EFFECT TOOLTIPS##
+  SDF_decisions_units:0 "§Unlocks Decisions to Raise Units Across South Kuromorimine§!"
+  
   ##TRAITS##
   SDF_saori_takebe:0 "Heerfuhrer Saori Takebe"
   sdf_ig_faben:0 "Ooarai Oil"

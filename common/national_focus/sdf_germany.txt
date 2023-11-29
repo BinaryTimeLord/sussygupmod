@@ -384,13 +384,15 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = {
-			add_country_flag = SDF_CIVIL_WAR_UNITS
+			set_country_flag = SDF_CIVIL_WAR_UNITS
 			hidden_effect = {
 				country_event = {
 					id = sdf.9
 					days = 5
 				}
 			}
+			
+			custom_effect_tooltip = SDF_decisions_units
 		}
 	}
 	
