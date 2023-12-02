@@ -756,7 +756,7 @@ focus_tree = {
 			has_country_flag = SDF_CIVIL_WAR_WIN
 		}
 		
-		x = 18
+		x = 20
 		y = 0
 		
 		prerequisite = {}
@@ -804,11 +804,14 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_anarchy_3
+				add_idea = sdf_anarchy_2
+			}
 		}
 	}
 	
-	focus = {
+	focus = { ##EVENT##
 		id = SDF_where_to
 		##icon = 
 		relative_position_id = SDF_anarchy_issue
@@ -840,7 +843,42 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			custom_effect_tooltip = SDF_coring_focus
+			64 = {
+				add_core_of = SDF
+			}
+			
+			62 = {
+				add_core_of = SDF
+			}
+			
+			63 = {
+				add_core_of = SDF
+			}
+			
+			66 = {
+				add_core_of = SDF
+			}
+			
+			67 = {
+				add_core_of = SDF
+			}
+			
+			5 = {
+				add_core_of = SDF
+			}
+			
+			763 = {
+				add_core_of = SDF
+			}
+			
+			65 = {
+				add_core_of = SDF
+			}
+			
+			61 = {
+				add_core_of = SDF
+			}
 		}
 	}
 	
@@ -858,7 +896,26 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			custom_effect_tooltip = SDF_coring_focus
+			50 = {
+				add_core_of = SDF
+			}
+			
+			53 = {
+				add_core_of = SDF
+			}
+			
+			54 = {
+				add_core_of = SDF
+			}
+			
+			42 = {
+				add_core_of = SDF
+			}
+			
+			51 = {
+				add_core_of = SDF
+			}
 		}
 	}
 	
@@ -894,7 +951,12 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_political_power = 25
+			add_ideas = sdf_unions_1
 		}
 	}
 	
@@ -912,11 +974,15 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = sdf_unions_1
+				add_idea = sdf_unions_2
+			}
 		}
 	}
 	
-	focus = {
+	focus = { ##EVENT##
 		id = SDF_democratic_fascism
 		##icon = 
 		relative_position_id = SDF_anarchy_issue
@@ -930,8 +996,47 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
-		}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			
+			add_ideas = sdf_takebeism
+			
+			##NE
+			set_party_name = { 
+				ideology = neutrality
+				long_name = SDF_neutrality_takebeism_long
+				name = SDF_neutrality_takebeism
+			}
+			
+			hidden_effect = {
+				##FA
+				set_party_name = { 
+					ideology = fascism
+					long_name = SDF_fascism_takebeism_long
+					name = SDF_fascism_takebeism
+				}
+			}
+			##CM
+			set_party_name = { 
+				ideology = communism
+				long_name = SDF_communism_takebeism_long
+				name = SDF_communism_takebeism
+			}
+			
+			##DM
+			set_party_name = { 
+				ideology = democratic
+				long_name = SDF_democratic_takebeism_long
+				name = SDF_democratic_takebeism
+			}
+		}	
 	}
 	
 	focus = {
@@ -948,7 +1053,7 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			add_ideas = sdf_student_representation
 		}
 	}
 	
@@ -967,7 +1072,10 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_anarchy_2
+				add_idea = sdf_anarchy_1
+			}
 		}
 	}
 	
@@ -994,7 +1102,7 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_dotted_line_report 
 		
-		x = -4
+		x = -6
 		y = 1
 		
 		prerequisite = { focus = SDF_dotted_line_report }
@@ -1040,6 +1148,99 @@ focus_tree = {
 		mutually_exclusive = {}
 		
 		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_trail_of_4
+		##icon = 
+		relative_position_id = SDF_ooarai_issue
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SDF_steal_gold }
+		prerequisite = { focus = SDF_disarm_ooarai }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_exploiting_ooarai
+		##icon = 
+		relative_position_id = SDF_ooarai_issue
+		
+		x = -2
+		y = 3
+		
+		prerequisite = { focus = SDF_trail_of_4 }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_penal_battalions
+		##icon =
+		relative_position_id = SDF_ooarai_issue
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SDF_trail_of_4 }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_industrial_stealing
+		##icon = 
+		relative_position_id = SDF_ooarai_issue
+		
+		x = 2
+		y = 3
+		
+		prerequisite = { focus = SDF_trail_of_4 }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_ooarai_core
+		##icon =
+		relative_position_id = SDF_ooarai_issue
+		
+		x = 0
+		y = 5
+		
+		prerequisite = { focus = SDF_exploiting_ooarai }
+		prerequisite = { focus = SDF_penal_battalions }
+		prerequisite = { focus = SDF_industrial_stealing }
+		mutually_exclusive = {}
+		
+		cost = 10
 		
 		completion_reward = {
 		

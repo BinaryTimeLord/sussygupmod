@@ -20,7 +20,8 @@ SDF_raise_units = {
 		
 		cost = 25
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			52 = {
 				create_unit = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
@@ -60,7 +61,8 @@ SDF_raise_units = {
 		
 		cost = 25
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			53 = {
 				create_unit = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
@@ -95,7 +97,8 @@ SDF_raise_units = {
 		
 		cost = 75
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			50 = {
 				create_unit = {
 					division = "division_template = \"37th Mixed Brigade\" start_experience_factor = 1" 
@@ -125,7 +128,8 @@ SDF_raise_units = {
 		
 		cost = 150
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			54 = {
 				create_unit = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
@@ -171,7 +175,8 @@ SDF_raise_units = {
 		
 		cost = 25
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			42 = {
 				create_unit = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
@@ -200,7 +205,8 @@ SDF_raise_units = {
 		
 		cost = 150
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			55 = {
 				create_unit = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
@@ -245,7 +251,8 @@ SDF_raise_units = {
 		
 		cost = 25
 		
-		complete_effect = {
+		days_remove = 12
+		remove_effect = {
 			51 = {
 				create_unit = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
@@ -254,4 +261,628 @@ SDF_raise_units = {
 			}
 		}
 	}
+}
+
+SDF_core_states = {
+
+	SDF_core_states_763 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 763
+				has_completed_focus = SDF_west_priority
+			}
+			
+			763 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			763 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_5 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 5
+				has_completed_focus = SDF_west_priority
+			}
+			
+			5 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			5 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_63 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 63
+				has_completed_focus = SDF_west_priority
+			}
+			
+			63 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			63 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_68 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 68
+				has_completed_focus = SDF_west_priority
+			}
+			
+			68 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			68 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_66 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 66
+				has_completed_focus = SDF_west_priority
+			}
+			
+			66 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			6 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_65 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 65
+				has_completed_focus = SDF_west_priority
+			}
+			
+			65 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			65 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_62 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 62
+				has_completed_focus = SDF_west_priority
+			}
+			
+			62 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			62 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_64 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 64
+				has_completed_focus = SDF_west_priority
+			}
+			
+			64 = {
+				compliance > 85
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 150
+		
+		days_remove = 30
+		remove_effect = {
+			64 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_61 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 61
+				has_completed_focus = SDF_west_priority
+			}
+			
+			61 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			61 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	##NORTH##
+	
+	SDF_core_states_58 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 58
+			}
+			
+			58 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			58 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_909 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 909
+			}
+			
+			909 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			909 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_58 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 58
+			}
+			
+			58 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			58 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_59 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 59
+			}
+			
+			59 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			59 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_56 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 56
+			}
+			
+			56 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			56 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	##SOUTH##
+	
+	SDF_core_states_57 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 57
+				has_completed_focus = SDF_east_priority
+			}
+			
+			57 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			57 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_51 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 51
+				has_completed_focus = SDF_east_priority
+			}
+			
+			51 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			51 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_42 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 42
+				has_completed_focus = SDF_east_priority
+			}
+			
+			42 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			42 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_55 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 55
+				has_completed_focus = SDF_east_priority
+			}
+			
+			55 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 55
+		remove_effect = {
+			55 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_60 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 60
+				has_completed_focus = SDF_east_priority
+			}
+			
+			60 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			60 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_54 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 54
+				has_completed_focus = SDF_east_priority
+			}
+			
+			54 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			54 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_53 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 53
+				has_completed_focus = SDF_east_priority
+			}
+			
+			53 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			53 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_52 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 52
+				has_completed_focus = SDF_east_priority
+			}
+			
+			52 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			52 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
+	SDF_core_states_50 = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 50
+				has_completed_focus = SDF_east_priority
+			}
+			
+			50 = {
+				compliance > 50
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 30
+		remove_effect = {
+			50 = {
+				add_core_of = SDF
+			}
+		}
+		
+	}
+	
 }

@@ -355,6 +355,19 @@ country_event = { ##VICTORY IN THE CIVIL WAR##
 			set_cosmetic_tag = SDF_UNI
 			add_ideas = sdf_failing_loyalty
 			add_ideas = sdf_anarchy_3
+			
+			
+			every_owned_state = {
+				remove_core_of = SDF
+			}
+			
+			52 = {
+				add_core_of = SDF
+			}
+			
+			55 = {
+				add_core_of = SDF
+			}
 		}
 	}
 }
