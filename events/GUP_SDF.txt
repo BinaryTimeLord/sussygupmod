@@ -482,3 +482,156 @@ country_event = { ##DEATH OR DISHONOUR##
 		}
 	}
 }
+country_event = { ##UNBAN UNIONS##
+	id = sdf.15
+	title = sdf.15.t
+	desc = sdf.15.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.15.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { ##SEND SDK##
+	id = sdf.16
+	title = sdf.16.t
+	desc = sdf.16.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.16.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_manpower = -1087
+		
+		hidden_effect = {
+			country_event = {
+				id = sdf.17
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = { ##DEMOCRAT COUP##
+	id = sdf.17
+	title = sdf.17.t
+	desc = sdf.17.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.17.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = sdf.18
+				days = 5
+			}
+			
+			country_event = {
+				id = sdf.19
+				days = 6
+			}
+		}
+	}
+	
+}
+
+country_event = { ##FASCIST RISING##
+	id = sdf.18
+	title = sdf.18.t
+	desc = sdf.18.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.18.a
+		ai_chance = {
+			base = 1
+		}
+		
+		start_civil_war = {
+			ideology = fascism
+			size = 0.85
+			states = {
+				64 62 63 68 5 763
+			}
+			capital = 64
+			
+			keep_all_characters = yes
+		}
+	}
+}
+
+country_event = {
+	id = sdf.19
+	title = sdf.19.t
+	desc = sdf.19.d
+	
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.19.a
+		ai_chance = {
+			base = 1
+		}
+		
+		GER = {
+			transfer_state = 55
+			transfer_state = 51
+			transfer_state = 42
+			transfer_state = 50
+			transfer_state = 53
+			transfer_state = 54
+		}
+		
+		GER = {
+			every_owned_state = {
+				create_unit = {
+					division = "division_template = \"Infanterie-Division\" start_experience_factor = 0.3" 
+					owner = GER
+				}
+				
+				create_unit = {
+					division = "division_template = \"Infanterie-Division\" start_experience_factor = 0.3" 
+					owner = GER
+				}
+				
+			}
+			
+			declare_war_on = {
+                target = SDF
+                type = annex_everything
+            }
+			
+		}	
+	}
+}

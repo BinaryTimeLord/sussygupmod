@@ -38,10 +38,6 @@ focus_tree = {
 				days = 1
 			}
 			
-			every_state = {
-				limit = { is_core_of = GER }
-				add_core_of = SDF
-			}
 		}
 	}
 	
@@ -69,10 +65,6 @@ focus_tree = {
 			country_event = {
 				id = sdf.3
 				days = 1
-			}
-			every_state = {
-				limit = { is_core_of = GER }
-				add_core_of = SDF
 			}
 		}
 	}
@@ -934,6 +926,38 @@ focus_tree = {
 		
 		completion_reward = {
 		
+			hidden_effect = {
+				if = {
+					limit = {
+						has_ideas = sdf_anarchy_3
+					}
+				
+					remove_ideas = sdf_anarchy_3
+				}
+			
+				if = {
+					limit = {
+						has_ideas = sdf_anarchy_2
+					}
+				
+					remove_ideas = sdf_anarchy_2
+				}
+			
+				if = {
+					limit = {
+						has_ideas = sdf_anarchy_1
+					}
+				
+					remove_ideas = sdf_anarchy_1
+				}
+			}
+			
+			country_event = {
+				id = sdf.16
+				days = 1
+			}
+			
+			custom_effect_tooltip = SDF_send_in_SDK
 		}
 	}
 	
@@ -957,6 +981,11 @@ focus_tree = {
 			}
 			add_political_power = 25
 			add_ideas = sdf_unions_1
+			
+			country_event = {
+				id = sdf.15
+				days = 5
+			}
 		}
 	}
 	
