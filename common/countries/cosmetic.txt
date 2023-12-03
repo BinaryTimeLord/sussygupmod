@@ -281,6 +281,16 @@ SOV_russia = {
     color_ui = rgb { 72 143 68 }
 }
 
+SOV_anarchism = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 35 35 35 }
+}
+
+SOV_orthodox = {
+	color = rgb { 200 140 20 }
+	color_ui = rgb { 200 160 0 }
+}
+
 HOL_benelux_unified = {
 	color = rgb { 255 128 0 }
 	color_ui = rgb { 255 128 0 }

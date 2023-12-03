@@ -170,6 +170,26 @@ on_actions = {
 	}
 	}
 
+### Soviet [SOV] [NSB]
+
+	on_startup = {
+		effect = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = SOV_focus_tree_selection
+				option = STANDARD_TREE
+			}
+			has_dlc = "No Step Back"
+		}
+		set_global_flag = SOV_use_DLC_tree
+		SOV = {
+			load_focus_tree = soviet_focus
+		}
+	}
+	}
+	}
+
 	# Triggers the incompetent army focus and modifier
 	on_capitulation = {
 		effect = {
@@ -216,6 +236,634 @@ on_actions = {
 					}
 				}
 			}
+		}
+	}
+	on_war = {
+		effect = {
+			if = {
+				limit = { 
+					tag = SOV 
+					has_completed_focus = SOV_great_purge
+				}
+			set_country_flag = SOV_war_since_purge
+			}
+		}
+	}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_completed_focus = SOV_seize_occupied_resources
+					num_subjects > 0
+				}
+				every_country = {
+					limit = {
+						is_subject_of = SOV
+						NOT = { has_idea = PRC_soviet_tribute_6 }
+					}
+					add_ideas = PRC_soviet_tribute_6
+					remove_ideas = PRC_soviet_tribute_5
+					remove_ideas = PRC_soviet_tribute_4
+					remove_ideas = PRC_soviet_tribute_3
+					remove_ideas = PRC_soviet_tribute_2
+					remove_ideas = PRC_soviet_tribute_1
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = SOV
+					SOV = { has_completed_focus = SOV_warsaw_pact }
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact }
+						NOT = { has_idea = SOV_warsaw_pact2 }
+					}
+					add_ideas = SOV_warsaw_pact
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = SOV 
+					SOV = { has_completed_focus = SOV_establish_COMECON }
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact2 }
+					}
+					remove_ideas = SOV_warsaw_pact
+					add_ideas = SOV_warsaw_pact2	
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { is_in_tech_sharing_group = comintern_research }
+					}
+					add_to_tech_sharing_group = comintern_research
+				}
+			}
+			if = {
+				limit = {
+					SOV = { has_completed_focus = SOV_self_reliant_socialist_bloc }
+				}
+				every_country = {
+					limit = { 
+						has_government = democratic
+						NOT = { is_in_faction_with = SOV }
+					}
+					every_country = {
+						limit = { 
+							is_subject_of = SOV
+						} 
+						add_opinion_modifier = { target = PREV modifier = embargo } 
+					}
+				}
+			}
+		}
+		effect = { #Add Soviet's puppet NS
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+						has_country_leader_with_trait = father_of_nations
+					}
+					NOT = { has_idea = socialist_community }
+				}
+				add_ideas = socialist_community
+			}
+		}
+		effect = { #Add Soviet's puppet NS
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+						has_completed_focus = SOV_seize_occupied_resources
+					}
+					NOT = { has_idea = socialist_community }
+				}
+				add_ideas = SOV_soviet_tribute
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_completed_focus = SOV_union_of_soviet_socialist_republics
+					has_government = communism
+					num_subjects > 0
+					any_country = {
+						is_subject_of = ROOT
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = SOV 
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+					SOV = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_soviet_socialist_republic
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_completed_focus = SOV_seize_occupied_resources
+					num_subjects > 0
+				}
+				every_other_country = {
+					limit = {
+						is_subject_of = SOV
+						NOT = { has_idea = PRC_soviet_tribute_6 }
+					}
+					add_ideas = PRC_soviet_tribute_6
+					remove_ideas = PRC_soviet_tribute_5
+					remove_ideas = PRC_soviet_tribute_4
+					remove_ideas = PRC_soviet_tribute_3
+					remove_ideas = PRC_soviet_tribute_2
+					remove_ideas = PRC_soviet_tribute_1
+
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = SOV
+					SOV = { has_completed_focus = SOV_warsaw_pact }
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact }
+					}
+					add_ideas = SOV_warsaw_pact
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = SOV 
+					SOV = { has_completed_focus = SOV_establish_COMECON }
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact2 }
+					}
+					remove_ideas = SOV_warsaw_pact
+					add_ideas = SOV_warsaw_pact2	
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { is_in_tech_sharing_group = comintern_research }
+					}
+					add_to_tech_sharing_group = comintern_research
+				}
+			}
+			if = {
+				limit = {
+					SOV = { has_completed_focus = SOV_self_reliant_socialist_bloc }
+				}
+				every_country = {
+					limit = { 
+						has_government = democratic
+						NOT = { is_in_faction_with = SOV }
+					}
+					every_country = {
+						limit = { 
+							is_subject_of = SOV
+						} 
+						add_opinion_modifier = { target = PREV modifier = embargo } 
+					}
+				}
+			}	
+		}
+		effect = { #Add Soviet's puppet NS
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+						has_country_leader_with_trait = father_of_nations
+					}
+					NOT = { has_idea = socialist_community }
+				}
+				add_ideas = socialist_community
+			}
+		}
+		effect = { #Add Soviet's puppet NS
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+						has_completed_focus = SOV_seize_occupied_resources
+					}
+					NOT = { has_idea = socialist_community }
+				}
+				add_ideas = SOV_soviet_tribute
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_completed_focus = SOV_union_of_soviet_socialist_republics
+					has_government = communism
+					num_subjects > 0
+					any_country = {
+						is_subject_of = ROOT
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = SOV 
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+					SOV = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_soviet_socialist_republic
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_weekly_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = SOV_seize_occupied_resources
+					any_country = {
+						is_subject_of = ROOT
+						NOT = { has_idea = PRC_soviet_tribute_6 }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+						NOT = { has_idea = PRC_soviet_tribute_6 }
+					}
+					add_ideas = PRC_soviet_tribute_6
+					remove_ideas = PRC_soviet_tribute_5
+					remove_ideas = PRC_soviet_tribute_4
+					remove_ideas = PRC_soviet_tribute_3
+					remove_ideas = PRC_soviet_tribute_2
+					remove_ideas = PRC_soviet_tribute_1
+				}		
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_leader_with_trait = father_of_nations
+					any_country = {
+						is_subject_of = ROOT
+						NOT = { has_idea = socialist_community }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+						NOT = { has_idea = socialist_community }
+					}
+					add_ideas = socialist_community
+				}		
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_completed_focus = SOV_union_of_soviet_socialist_republics
+					has_government = communism
+					num_subjects > 0
+					any_country = {
+						is_subject_of = ROOT
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = SOV 
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+					SOV = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_soviet_socialist_republic
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = SOV_warsaw_pact 
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact2 }
+						NOT = { has_idea = SOV_warsaw_pact }
+					}
+					add_ideas = SOV_warsaw_pact
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_establish_COMECON 
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact2 }
+					}
+					remove_ideas = SOV_warsaw_pact
+					add_ideas = SOV_warsaw_pact2	
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { is_in_tech_sharing_group = comintern_research }
+					}
+					add_to_tech_sharing_group = comintern_research
+				}
+			}
+		}
+	}
+
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = SOV }
+					SOV = { has_completed_focus = SOV_warsaw_pact }
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact2 }
+						NOT = { has_idea = SOV_warsaw_pact }
+					}
+					add_ideas = SOV_warsaw_pact
+				}
+			}
+			if = {
+				limit = {
+					FROM = { tag = SOV }
+					SOV = { has_completed_focus = SOV_establish_COMECON }
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { has_idea = SOV_warsaw_pact2 }
+					}
+					remove_ideas = SOV_warsaw_pact
+					add_ideas = SOV_warsaw_pact2	
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { is_in_tech_sharing_group = comintern_research }
+					}
+					add_to_tech_sharing_group = comintern_research
+				}
+			}
+		}
+	}
+
+	on_offer_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { is_in_faction_with = SOV }
+					SOV = { has_completed_focus = SOV_warsaw_pact }
+				}
+				FROM = {
+					add_ideas = SOV_warsaw_pact
+				}
+			}
+			if = {
+				limit = {
+					FROM = { is_in_faction_with = SOV }
+					SOV = { has_completed_focus = SOV_establish_COMECON }
+				}
+				FROM = {
+					remove_ideas = SOV_warsaw_pact
+					add_ideas = SOV_warsaw_pact2	
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						NOT = { is_in_tech_sharing_group = comintern_research }
+					}
+					add_to_tech_sharing_group = comintern_research
+				}
+			}
+		}
+	}
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { is_in_faction_with = SOV }
+				}
+				remove_ideas = SOV_warsaw_pact
+				remove_ideas = SOV_warsaw_pact2
+				remove_from_tech_sharing_group = comintern_research
+			}
+			if = {
+				limit = {
+					tag = SOV
+				}
+				every_country = {
+					remove_ideas = SOV_warsaw_pact
+					remove_ideas = SOV_warsaw_pact2
+				}
+			}
+		}
+	}
+	on_war = {
+		effect = {
+			if = {
+				limit = { 
+					tag = SOV 
+					has_completed_focus = SOV_great_purge
+				}
+			set_country_flag = SOV_war_since_purge
+			}
+		}
+	}
+
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_government = communism
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = SOV
+						NOT = { has_government = communism }
+					}
+				}
+				load_focus_tree = { tree = soviet_focus keep_completed = no }
+				unlock_national_focus = SOV_great_purge
+				if = {
+					limit = { has_idea = SOV_yezhovshchina1 }
+					remove_ideas = SOV_yezhovshchina1
+					add_ideas = SOV_yezhovshchina2
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = ITA
+						NOT = { has_government = fascism }
+					}
+				}
+				load_focus_tree = { tree = italian_focus keep_completed = no }
+				unlock_national_focus = ITA_victoryinETH
+			}
+			if = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = GER
+						NOT = { has_government = fascism }
+					}
+				}
+				load_focus_tree = { tree = soviet_focus keep_completed = no }
+				unlock_national_focus = GER_rhineland
+			}
+		}
+
+	}
+
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_country_leader_with_trait = father_of_nations
+					num_subjects > 0
+				}
+				every_other_country = {
+					limit = {
+						is_subject_of = SOV
+						NOT = { has_idea = socialist_community }
+					}
+					add_ideas = socialist_community
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = SOV
+					NOT = {
+						has_country_leader_with_trait = father_of_nations
+					}
+					num_subjects > 0
+				}
+				every_other_country = {
+					limit = {
+						is_subject_of = SOV
+						has_idea = socialist_community
+					}
+					remove_ideas = socialist_community
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+					has_completed_focus = SOV_union_of_soviet_socialist_republics
+					has_government = communism
+					num_subjects > 0
+					any_country = {
+						is_subject_of = ROOT
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = SOV 
+						NOT = { has_autonomy_state = autonomy_soviet_socialist_republic } 
+ NOT = { has_autonomy_state = autonomy_collaboration_government }
+					}
+					SOV = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_soviet_socialist_republic
+						}
+					}
+				}
+			}
+		}
+	}
+	on_monthly_SOV = {
+		
+		effect = {
+			clamp_variable = {
+				var = party_drift_variable
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = military_drift_variable
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = nkvd_drift_variable
+				min = 0
+				max = 100
+			}
+			for_loop_effect = {
+				start = 0
+				end = party_drift_variable
+				add = 1
+				SOV_power_struggle_increase_party_influence_low = yes
+			}
+			for_loop_effect = {
+				start = 0
+				end = military_drift_variable
+				add = 1
+				SOV_power_struggle_increase_military_influence_low = yes
+			}
+			for_loop_effect = {
+				start = 0
+				end = nkvd_drift_variable
+				add = 1
+				SOV_power_struggle_increase_nkvd_influence_low = yes
+			}
+			WRRFTangle_calcXY = yes
 		}
 	}
 }

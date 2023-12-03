@@ -20,3 +20,26 @@ incompetent_army = {
 	air_defence_factor = ITA.ITA_air_defence
 	air_agility_factor = ITA.ITA_air_agg
 }
+
+peoples_commissariat_focus = { #Used as National Spirit
+	enable = { always = yes }
+	
+	icon = GFX_idea_generic_production_bonus
+
+	conversion_cost_civ_to_mil_factor = conversion_cost_variable
+	industrial_capacity_factory = factory_output_variable
+	industrial_capacity_dockyard = factory_output_variable
+}
+
+gulag_labour_campaigns = { 
+	remove_trigger = { 
+		OR = {
+			controller = { NOT = { tag = SOV } }
+			SOV = { check_variable = { SOV_nkvd_balance < 16 } }
+		}
+	}
+	icon = GFX_idea_gulag_labour_camp
+	
+	state_production_speed_buildings_factor = 0.1
+	local_resources = 0.2
+}

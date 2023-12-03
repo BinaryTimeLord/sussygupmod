@@ -1,0 +1,1727 @@
+add_namespace = pvd
+
+country_event = {
+	id = pvd.1
+	title = pvd.1.title
+	desc = {
+		text = pvd.1.desc
+	}		
+	picture = GFX_report_event_soviet_purge_politicians
+
+	is_triggered_only = yes
+
+	option = { #ask other communist faction leaders to dismantle their faction and join Trotsky
+		name = pvd.1.a
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+			}
+			country_event = {
+				id = pvd.2
+			}
+		}
+		dismantle_faction = yes
+		SOV = {
+			add_to_faction = PREV
+		}
+		ai_chance = {
+			factor = 70
+		}		
+	}	
+	option = {
+		name = pvd.1.b #Never! Stalinism best -ism.
+		ai_chance = {
+			factor = 30
+		}		
+	}
+}
+
+country_event = {
+	id = pvd.2
+	title = pvd.1.title
+	desc = pvd.1.desc
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_applicant
+			SOV = {
+				save_event_target_as = alliance_inviter
+			}
+		}
+	}
+	option = { 
+		trigger = { ROOT = { is_subject = no } }#ask minor communist countries to join Trotsky
+		name = pvd.1.a
+		SOV = {
+			add_to_faction = ROOT
+			country_event = { id = generic.6 }
+		}
+		ai_chance = {
+			factor = 90
+		}		
+	}	
+	option = {
+		name = pvd.1.b
+		#Never! Stalinism best -ism.
+		SOV = { country_event = { id = generic.7 } }
+		ai_chance = {
+			factor = 10
+		}		
+	}
+}
+
+country_event = {
+	id = pvd.3
+	title = pvd.3.title
+	desc = pvd.3.desc
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { #ask minor communist countries to join Trotsky
+		trigger = { ROOT = { is_subject = no } }
+		name = pvd.3.a
+		SOV = {
+			puppet = ROOT
+			country_event = { id = pvd.4 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+			modifier = {
+				factor = 2
+				is_neighbor_of = FROM
+			}
+			modifier = {
+				factor = 2
+				is_in_faction_with = SOV
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				factor = 10
+				NOT = { is_in_faction_with = SOV }
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { is_in_faction_with = SOV }
+				strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { is_in_faction_with = SOV }
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+		}		
+	}	
+	option = {
+		name = pvd.3.b
+		#Never! Stalinism best -ism.
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				factor = 5
+				has_opinion = {
+					target = FROM
+					value < 50
+				}
+			}
+		}
+		
+		SOV = {
+			country_event = { id = pvd.5 }
+		}		
+	}
+}
+
+country_event = {
+	id = pvd.4
+	title = pvd.4.t
+	desc = pvd.4.d
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { #ask minor communist countries to join Trotsky
+		name = pvd.4.a		
+	}	
+}
+
+country_event = {
+	id = pvd.5
+	title = pvd.5.t
+	desc = pvd.5.d
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { #ask minor communist countries to join Trotsky
+		name = pvd.5.a	
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}	
+}
+
+#CONTINUATION WAR
+country_event = { 
+	id = pvd.6
+	title = pvd.6.t
+	desc = pvd.6.d
+	
+	picture = GFX_news_event_011
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		GER = {
+			has_war_with = SOV
+		}
+		tag = FIN
+		NOT = { controls_state = 146 }
+	}
+	
+	option = { #CONTINUATION
+		ai_chance = { base = 75 }
+		name = pvd.6.a	
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+	}	
+	option = { #NAH
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = pvd.6.b	
+	}	
+}
+
+country_event = { 
+	id = pvd.7
+	title = pvd.7.t
+	desc = pvd.7.d
+	
+	picture = GFX_news_event_012
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		SOV = { surrender_progress < 0.05 }
+		date > 1942.1.1
+		original_tag = SOV
+		has_war_with = GER
+		has_war_with = FIN
+	}
+	
+	option = { #PEACE
+		name = pvd.7.a	
+		ai_chance = { base = 75 }
+		SOV = { country_event = { id = pvd.8 } }
+	}	
+	option = { #NAH
+		name = pvd.7.b	
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}	
+}
+
+country_event = { 
+	id = pvd.8
+	title = pvd.8.t
+	desc = pvd.8.d
+	
+	picture = GFX_news_event_012
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #ACCEPT
+		name = pvd.8.a	
+		ai_chance = { base = 75 }
+		SOV = { 
+			white_peace = {
+				tag = FIN 
+				message = FIN_agree_peace 
+			}
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 722			
+		}
+		ENG = {
+			if = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = FIN
+			}
+		}
+		USA = {
+			if = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = FIN
+			}
+		}
+		leave_faction = yes
+		declare_war_on = {
+			target = GER
+			type = topple_government
+		}
+		SOV = { country_event = pvd.9 }
+	}	
+	option = { #NAH
+		name = pvd.8.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		SOV = { country_event = pvd.10 }
+	}	
+}
+
+country_event = { 
+	id = pvd.9
+	title = pvd.9.t
+	desc = pvd.9.d
+	
+	picture = GFX_news_event_012
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #ACCEPT
+		name = pvd.9.a	
+	}		
+}
+
+country_event = { 
+	id = pvd.10
+	title = pvd.10.t
+	desc = pvd.10.d
+	
+	picture = GFX_news_event_012
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #ACCEPT
+		name = pvd.10.a	
+	}		
+}
+
+country_event = {
+	id = pvd.11
+	title = germany.89.t
+	desc = pvd.11.d
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.89.a
+		dismantle_faction = yes
+		add_stability = -0.1
+		every_other_country = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { tag = GER }
+						has_government = fascism 
+					}
+					has_government = democratic 
+				}
+			}
+			add_opinion_modifier = { target = SOV modifier = unholy_alliance }
+		}
+		SOV = {
+			if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+			}
+			if = {
+					limit = {
+						is_in_faction  = yes
+					}
+					remove_from_faction = GER
+			}
+			add_stability = -0.2
+			create_faction = "the_berlin_moscow_axis"
+			add_to_faction = GER
+			add_named_threat = { threat = 10 name = germany.89.t }
+			every_other_country = {
+				limit = {
+					has_government = fascism 
+				}
+				add_opinion_modifier = { target = GER modifier = communist_collaborators }
+			}
+			every_other_country = {
+				limit = {
+					has_government = democratic 
+				}
+				add_opinion_modifier = { target = GER modifier = unholy_alliance }
+			}
+		}
+		hidden_effect = { 
+			add_ai_strategy = {
+				type = alliance
+				id = SOV
+				value = 200
+			}
+			# Britain can rally democracies
+			ENG = {
+				country_event = { days = 3 id = britain.11 }
+			}
+			# US drops communism/fascism
+			USA = {
+				country_event = { id = usa.14 }
+				country_event = { id = usa.24 }
+			}
+		}
+	}
+	
+	option = {
+		name = germany.89.b
+		ai_chance = { factor = 0 }
+		SOV = {
+			country_event = pvd.12
+			effect_tooltip = {
+				remove_ideas = soviet_german_friendship
+				create_wargoal = {
+					type = take_state_focus
+					target = GER
+					generator = { 64 58 } # Berlin and Hamburg
+				}
+			}
+		}
+		remove_opinion_modifier = { target = GER modifier = ger_sov_alliance_focus }
+		remove_ideas = soviet_german_friendship
+	}
+}
+country_event = {
+	id = pvd.12
+	title = germany.90.t
+	desc = pvd.12.d
+	picture = GFX_report_event_stalin_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.90.a
+		remove_ideas = soviet_german_friendship
+		create_wargoal = {
+			type = take_state_focus
+			target = GER
+			generator = { 64 58 } # Moscow and Stalingrad
+		}
+	}
+}
+
+country_event = {
+	id = pvd.13
+	title = japan.15.t
+	desc = japan.15.d
+	picture = GFX_report_event_indian_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.15.a
+		hidden_effect = {
+			load_oob = "SOV_Indian_National_Army_reinforcement"
+		}
+		custom_effect_tooltip = SOV_Indian_National_Army_arrives
+		add_manpower = 10000
+		set_global_flag = indian_national_army_setup
+		RAJ = {
+			add_stability = -0.2
+			if = { 
+				limit = {
+					SOV = { has_government = fascism }
+				}
+				RAJ = {
+					add_ideas = RAJ_azad_hind
+				}
+			}
+			else_if = { 
+				limit = {
+					SOV = { has_government = communism }
+				}
+				RAJ = {
+					add_ideas = comintern_influence
+				}
+			}
+			ENG = {
+				country_event = { id = britain.19 }
+			}
+		}
+	}
+}
+
+# Tannu Tuva is asked to join the USSR
+country_event = {
+	id = pvd.14
+	title = soviet.14.t
+	desc = soviet.14.d
+	picture = GFX_report_event_stalin_01
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = soviet.14.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = { id = pvd.16 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse
+		name = soviet.14.b
+		SOV = {
+			country_event = { id = pvd.15 }
+		}
+	}
+}
+
+# Tannu Tuva declines the offer
+country_event = {
+	id = pvd.15
+	title = soviet.15.t
+	desc = soviet.15.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.15.a
+	}
+}
+
+# Tannu Tuva accepts the offer
+country_event = {
+	id = pvd.16
+	title = soviet.16.t
+	desc = soviet.16.d
+	picture = GFX_report_event_stalin_propaganda
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.16.a
+		annex_country = { target = FROM }
+	}
+}
+
+country_event = {
+	id = pvd.17
+	title = britain.19.t
+	desc = pvd.17
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.19.a
+		effect_tooltip = {
+			if = { 
+				limit = {
+					SOV = { 
+						OR = {
+							has_government = fascism 
+							AND = { 
+								has_government = neutrality
+								has_completed_focus = SOV_orthodoxy
+							}
+						}
+					}
+				}
+				RAJ = {
+					add_ideas = RAJ_azad_hind
+				}
+			}
+			else = { 
+				RAJ = {
+					add_ideas = comintern_influence
+				}
+			}
+		}
+		custom_effect_tooltip = ENG_RAJ_azad_hind_tooltip 
+		hidden_effect = {
+			if = {
+				limit = {
+					SOV = { 
+						OR = {
+							has_government = fascism 
+							AND = { 
+								has_government = neutrality
+								has_completed_focus = SOV_orthodoxy
+							}
+						}
+					}
+				}
+				country_event = { id = britain.20 days = 500  random_days = 100 }
+			}
+			else = {
+				country_event = { id = pvd.18 days = 500  random_days = 100 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.18
+	title = britain.20.t
+	desc = britain.20.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_completed_focus = uk_free_india_focus
+		}
+		RAJ = {
+			is_puppet_of = ENG
+			communism > 0.3
+			has_civil_war = no
+		}
+	}
+
+	option = {
+		name = britain.20.a
+		hidden_effect = {
+			if = {
+				limit = {
+					RAJ = {
+						has_idea = comintern_influence
+					}
+				}
+				RAJ = {
+					remove_ideas = comintern_influence
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					RAJ = {
+						has_government = communism
+					}
+				}
+			}
+			RAJ = {
+				country_event = { id = pvd.19 }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = {
+					has_government = communism
+				}
+			}
+			end_puppet = RAJ
+			if = {
+				limit = {
+					RAJ = {
+						is_in_faction_with = ENG
+					}
+				}
+				remove_from_faction = RAJ
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = RAJ
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = pvd.19
+	title = britain.23.t
+	desc = britain.23.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	#side with government
+	option = {
+		ai_chance = {
+			factor = 100
+			modifier = {
+				has_government = communism
+				factor = 0
+			}
+		}
+		name = britain.23.a
+		start_civil_war = {
+			ideology = communism
+			size = 0.5
+		}
+	}
+	#side with communism
+	option = {
+		name = britain.23.b
+		start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.5
+		}
+		random_other_country = {
+			limit = {
+				original_tag = RAJ
+				has_government = neutrality
+				is_puppet_of = ENG
+			}
+			set_cosmetic_tag = RAJ_UK
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pvd.20
+	title = pvd.20.t
+	desc = pvd.20.t
+	picture = GFX_report_news_event_aid_pact
+
+	is_triggered_only = no
+	
+	trigger = {
+		OR = {
+			has_completed_focus = SOV_tukhachevsky_coup
+			has_completed_focus = SOV_great_purge
+		}
+		date > 1940.1.1
+	}
+		
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		remove_ideas = SOV_yezhovshchina2
+	}
+	
+	option = {
+	}
+}
+
+country_event = { #ITALIAN CIVIL WAR
+	id = pvd.21
+	title = pvd.21.t
+	desc = pvd.21.d
+	picture = report_event_spr_italian_volunteers
+
+	trigger = {
+		tag = ITA
+		surrender_progress > 0.15
+		is_in_faction_with = GER
+		has_war_with = ENG
+		GER = { has_war_with = ENG }
+		has_government = fascism
+		GER = { has_government = fascism }
+	}
+	
+	fire_only_once = yes
+	
+	#side with resistance
+	option = {
+		ai_chance = {
+			base = 80
+		}
+		name = pvd.21.a
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = fascism
+			size = 0.5
+			capital = 159
+			states = { 
+				162 157 161 159 158 39 160 736 
+			}
+			keep_unit_leaders = {
+				9999
+			}
+		}
+		white_peace = ENG
+		white_peace = SOV
+		declare_war_on = {
+			target = GER
+			type = annex_everything
+		}
+		random_other_country = {
+			limit = {
+				original_tag = ITA
+				has_government = fascism
+			}
+			remove_ideas = victor_emmanuel
+			GER = { 
+				puppet = PREV
+				transfer_state = 39
+				transfer_state = 160
+				transfer_state = 736
+			}
+			hidden_effect = {
+				load_focus_tree = {
+					tree = italian_focus
+					keep_completed = yes
+				}
+			}
+		}
+		add_ideas = victor_emmanuel
+		set_party_name = { 
+			ideology = democratic 
+			long_name = ITA_CLN_name 
+			name = ITA_CLN_name 
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = pvd.105 }
+		}
+	}
+	#side with fascists
+	option = {
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		} 
+		name = pvd.21.b
+	}
+}
+
+country_event = { #GERMAN COMMIE CIVIL WAR
+	id = pvd.22
+	title = pvd.22.t
+	desc = pvd.22.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	#side with resistance
+	option = {
+		name = pvd.22.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Heinrich Himmler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Germany_Heinrich_Himmler.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+		start_civil_war = {
+			ruling_party = communism
+			ideology = fascism
+			states = { 
+				42 55 54 53 52 50 65 66 67 68 69 
+			}
+			size = 0.5
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = pvd.106 }
+		}
+	}
+}
+
+country_event = {
+	id = pvd.23
+	title = pvd.23.title
+	desc = pvd.23.desc
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { #ask minor communist countries to join Trotsky
+		name = pvd.3.a
+		POL = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+					OR = {
+						is_core_of = HUN
+						is_core_of = ROM
+						is_core_of = CZE
+						is_core_of = YUG	
+						is_core_of = LIT
+						is_core_of = LAT
+						is_core_of = EST
+						is_core_of = FIN
+						is_core_of = UKR
+						is_core_of = BLR
+					}
+				}
+				add_core_of = POL
+			}
+			country_event = { id = pvd.24 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+			modifier = {
+				factor = 2
+				is_neighbor_of = FROM
+			}
+			modifier = {
+				factor = 2
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				factor = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+		}		
+	}	
+	option = {
+		trigger = { NOT = { is_subject_of = FROM } }
+		name = pvd.3.b
+		#Never! Stalinism best -ism.
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				factor = 5
+				has_opinion = {
+					target = FROM
+					value < 50
+				}
+			}
+		}
+		leave_faction = yes
+		POL = {
+			country_event = { id = pvd.25 }
+		}		
+	}
+}
+
+country_event = {
+	id = pvd.24
+	title = pvd.4.t
+	desc = pvd.4.d
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { #ask minor communist countries to join Trotsky
+		name = pvd.24.a		
+	}	
+}
+
+country_event = {
+	id = pvd.25
+	title = pvd.5.t
+	desc = pvd.5.d
+	
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = { #ask minor communist countries to join Trotsky
+		name = pvd.25.a	
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}	
+}
+
+country_event = {
+	id = pvd.26
+	title = bftb_turkey.79.t
+	desc = pvd.26.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bftb_turkey.79.a #it is necessary we remain friendly with Turkey
+		ai_chance = {
+			base = 10
+		}
+		diplomatic_relation = {
+			country = POL
+			relation = non_aggression_pact
+			active = yes
+		}
+		hidden_effect = {
+			POL = { country_event = { id = pvd.27 hours = 6 } }
+		}
+	}
+	option = {
+		name = bftb_turkey.79.b #we have new plans for Turkey
+		ai_chance = {
+			base = 0
+		}
+		POL = { 
+			country_event = { id = pvd.32 hours = 8 } 
+		}
+	}
+}
+
+country_event = {
+	id = pvd.27
+	title = bftb_turkey.79.t
+	desc = bftb_turkey.79.desc
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bftb_turkey.80.a #a great relief!
+		effect_tooltip = {
+			diplomatic_relation = {
+				country = FROM
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = pvd.28
+	title = soviet.28.t
+	desc = pvd.28.d
+	picture = GFX_report_event_soviet_purge_politicians
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.28.a
+		set_country_flag = counter_purge
+		swap_ideas = {
+			remove_idea = SOV_yezhovshchina1
+			add_idea = SOV_yezhovshchina2
+		}
+		if = {
+			limit = { has_idea = trotskyite_plot_purged }
+			remove_ideas = trotskyite_plot_purged
+		}
+		if = {
+			limit = { has_idea = trotskyite_plot }
+			remove_ideas = trotskyite_plot
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Leon Trotsky"
+			desc = "POLITICS_LEON_TROTSKY_DESC"
+			picture = "Portrait_Leon_Trotsky.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+				permanent_revolutionary
+			}
+		}
+		remove_ideas = mikhail_kalinin
+		remove_ideas = SOV_vyacheslav_molotov
+		remove_ideas = ivan_konev
+		remove_unit_leader = 408
+		remove_ideas = pavel_zhigarev
+		remove_ideas = stepan_krasovsky
+		remove_ideas = arseniy_golovko
+		remove_unit_leader = 409
+		remove_ideas = mikhail_tukhachevsky
+		remove_unit_leader = 401
+		remove_ideas = sergey_gorshkov
+		remove_unit_leader = 411
+		remove_ideas = sergei_rudenko
+		remove_ideas = nikita_khrushchev
+		remove_ideas = konstantin_rodzaevsky
+		add_timed_idea = {
+			idea = officers_purged_7
+			days = 584
+		}
+		hidden_effect = {
+			country_event = { id = soviet.43 days = 146 }				
+		}
+		start_civil_war = {
+			ideology = neutrality
+			size = 0.18
+			keep_unit_leaders = {  402 407 410 406 405 403 407 404 }
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = pvd.221 }
+		}
+	}
+}
+
+country_event = {
+	id = pvd.29
+	title = pvd.29.t
+	desc = pvd.29.d
+	picture = GFX_report_event_election_vote
+			
+	fire_only_once = yes
+	
+	trigger = {
+		focus_progress = {
+			focus = SOV_constitutional_convention
+			progress > 0
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SOV_state_atheism
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		add_ideas = SOV_state_atheism
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		set_country_flag = SOV_state_atheism
+	}
+	option = {
+		name = SOV_secularism
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		add_ideas = SOV_secularism
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		set_country_flag = SOV_secularism
+	}
+	option = {
+		name = SOV_orthodox_state
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		add_ideas = YUG_idea_orthodox_church_support
+		add_stability = -0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		set_country_flag = SOV_orthodox_state
+		ai_chance = {
+			modifier = {
+				add = 100
+				has_game_rule = { rule = SOV_ai_behavior option = FASCIST }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.30
+	title = pvd.30.t
+	desc = pvd.30.d
+	picture = GFX_report_event_election_vote
+		
+	fire_only_once = yes
+	
+	trigger = {
+		focus_progress = {
+			focus = SOV_constitutional_convention
+			progress > 0.33
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SOV_democratic_socialism
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_ideas = SOV_democratic_socialism
+		set_country_flag = SOV_democratic_socialism
+	}
+	option = {
+		name = SOV_market_economy
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		add_ideas = SOV_market_economy
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		set_country_flag = SOV_market_economy
+	}
+	option = {
+		name = SOV_corporatist_economy
+				WRRFTangle_calcXY = yes
+		add_ideas = SOV_corporatist_economy
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		set_country_flag = SOV_corporatist_economy
+		ai_chance = {
+			modifier = {
+				add = 100
+				has_game_rule = { rule = SOV_ai_behavior option = FASCIST }
+			}
+		}
+	}
+}
+country_event = {
+	id = pvd.31
+	title = pvd.31.t
+	desc = pvd.31.d
+	picture = GFX_report_event_election_vote
+		
+	fire_only_once = yes
+	
+	trigger = {
+		focus_progress = {
+			focus = SOV_constitutional_convention
+			progress > 0.66
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SOV_soviet_republics
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		add_stability = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		set_country_flag = SOV_soviet_republics
+	}
+	option = {
+		name = SOV_devolution
+		SOV_power_struggle_increase_party_influence_high = yes
+		WRRFTangle_calcXY = yes
+		release_autonomy = {
+			target = UKR
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = BLR
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = KAZ
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = GEO
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = ARM
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = AZR
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = KAZ
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = UZB
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = KYR
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = TMS
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		release_autonomy = {
+			target = TAJ
+			autonomy_state = autonomy_integrated_puppet
+			freedom_level = 0.5
+		}
+		add_manpower = 150000
+		add_ideas = SOV_devolution
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SOV_russia
+		set_country_flag = SOV_devolution
+	}
+	option = {
+		name = SOV_russian_nation
+				WRRFTangle_calcXY = yes
+		every_state = {
+			limit = {
+				is_core_of = SOV
+				OR = {
+					is_core_of = UKR
+					is_core_of = BLR
+					is_core_of = GEO
+					is_core_of = ARM
+					is_core_of = AZR
+					is_core_of = KAZ
+					is_core_of = KYR
+					is_core_of = UZB
+					is_core_of = TMS
+					is_core_of = TAJ
+				}
+			}
+			remove_core_of = SOV
+			start_resistance = UKR
+			start_resistance = BLR
+			start_resistance = GEO
+			start_resistance = ARM
+			start_resistance = AZR
+			start_resistance = KAZ
+			start_resistance = KYR
+			start_resistance = UZB
+			start_resistance = TMS
+			start_resistance = TAJ
+		}
+		add_ideas = SOV_russian_nation_idea
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SOV_russia
+		set_country_flag = SOV_russian_nation
+		ai_chance = {
+			modifier = {
+				add = 100
+				has_game_rule = { rule = SOV_ai_behavior option = FASCIST }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.32
+	title =bftb_turkey.81.t
+	desc = bftb_turkey.81.desc
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bftb_turkey.81.a #this can only only mean something terrible
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = pvd.33
+	title = SOV_trotsky_leads
+	desc = pvd.33.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pvd.33.a
+		add_country_leader_trait = red_army_organizer
+		if = {
+			limit = {
+				has_completed_focus = SOV_perpetual_war
+			}
+			add_country_leader_trait = revolutionary_zeal
+		}
+	}
+	option = {
+		name = SOV_kollontai_leads
+		create_country_leader = {
+			name = "Alexandra Kollontai"
+			desc = "POLITICS_NIKOLAY_YEZHOV_DESC"
+			picture = "Portrait_Soviet_Nikolay_Bukharin.tga"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+				ambitious_negotiator_communism
+				marxist_feminist
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = SOV_perpetual_war
+			}
+			add_country_leader_trait = revolutionary_zeal
+		}
+	}
+	option = {
+		name = SOV_bukharin_leads
+		create_country_leader = {
+				name = "Nikolai Bukharin"
+				desc = "POLITICS_NIKOLAY_YEZHOV_DESC"
+				picture = "Portrait_Soviet_Alexandra_Kollontai.tga"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					marxist_philosopher
+					market_socialist
+				}
+			}
+		if = {
+			limit = {
+				has_completed_focus = SOV_perpetual_war
+			}
+			add_country_leader_trait = revolutionary_zeal
+		}
+	}
+}
+
+news_event = {
+	id = pvd.101
+	title = pvd.101.t
+	desc = pvd.101.d
+	picture = GFX_news_event_023
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pvd.101.a
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = pvd.101.b
+		trigger = { 
+			NOT = { original_tag = SOV }
+			has_government = communism
+		}
+	}
+	option = {
+		name = pvd.101.c
+		trigger = { 
+			NOT = { original_tag = SOV }
+			NOT = { has_government = communism }
+		}
+	}
+}
+
+news_event = {
+	id = pvd.102
+	title = pvd.102.t
+	desc = pvd.102.d
+	picture = GFX_news_event_generic_rally2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pvd.102.a
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = pvd.102.b
+		trigger = { 
+			original_tag = SPR
+			has_completed_focus = SPR_regional_defense_council_of_aragon
+		}
+	}
+	option = {
+		name = pvd.102.c
+		trigger = { 
+			NOT = { 
+				OR = {
+					original_tag = SOV 
+					has_completed_focus = SPR_regional_defense_council_of_aragon
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = pvd.103
+	title = pvd.103.t
+	desc = pvd.103.d
+	picture = GFX_report_event_election_vote
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pvd.103.a
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = pvd.103.b
+		trigger = { 
+			has_government = democratic
+		}
+	}
+	option = {
+		name = pvd.103.c
+		trigger = { 
+			NOT = { 
+				original_tag = SOV
+				has_government = democratic
+			}
+		}
+	}
+}
+
+news_event = {
+	id = pvd.104
+	title = pvd.104.t
+	desc = pvd.104.d
+	picture = report_event_spr_italian_volunteers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pvd.104.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = pvd.104.b
+		trigger = { 
+			has_government = fascism
+		}
+	}
+	option = {
+		name = pvd.104.c
+		trigger = { 
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+news_event = {
+	id = pvd.105
+	title = pvd.105.t
+	desc = pvd.105.d
+	picture = report_event_spr_italian_volunteers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pvd.105.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = pvd.105.b
+		trigger = { 
+			has_government = fascism
+		}
+	}
+	option = {
+		name = pvd.105.c
+		trigger = { 
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+news_event = {
+	id = pvd.106
+	title = wtt_news.1.t
+	desc = pvd.106.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.1.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.1.b
+		trigger = { 
+			NOT = { original_tag = GER }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = wtt_news.1.c
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+
+
+news_event = {
+	id = pvd.221
+	title = news.221.t
+	desc = pvd.221.d
+	picture = GFX_news_event_journalists_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = news.221.a
+		trigger = {
+			OR = {
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = news.221.b
+		trigger = {
+			NOT = {
+				has_government = communism 
+			}
+			NOT = {
+				tag = MEX
+			}
+		}
+	}
+
+	option = {
+		name = news.221.c
+		trigger = {
+			tag = MEX
+		}
+	}
+}

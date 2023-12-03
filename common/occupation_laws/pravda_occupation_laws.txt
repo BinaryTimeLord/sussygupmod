@@ -1,0 +1,42 @@
+SOV_terror_campaign = {
+	icon = 10
+	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
+	
+	visible = {
+		original_tag = SOV
+		has_country_leader = {
+			name = "Nikolai Yezhov"
+			ruling_only = yes
+		}
+	}
+	
+	state_modifier = {		
+		resistance_target 				= -0.75
+		compliance_gain 				= -0.1
+		required_garrison_factor 		= 1.5
+		resistance_damage_to_garrison 	= 1.5
+		resistance_decay 				= 1.0
+		enemy_operative_detection_chance_over_occupied_tag = 2 
+		enemy_intel_network_gain_factor_over_occupied_tag = -0.5 
+	}
+	
+	ai_will_do = {
+		base = 0
+		
+		modifier = {		
+			check_variable  = { resistance_target_without_law > 0.94 }
+			
+			set_temp_variable = { resistance_limit = 40 }
+			set_temp_variable = { requirement_limit = 2.0 }
+			if = {
+				limit = { occupation_law = SOV_terror_campaign }
+				set_temp_variable = { resistance_limit = 35 }
+				set_temp_variable = { requirement_limit = 1.8 }
+			}
+			check_variable = { garrison_min_support_ratio > requirement_limit }
+			resistance > resistance_limit
+			
+			add = 1000
+		}
+	}
+}

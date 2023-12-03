@@ -175,17 +175,17 @@ bookmarks = {
 			ideology = communism
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
+				SOV_yezhovshchina1
+				trotskyite_plot
+				home_of_revolution
 			}
 			focuses = {
-				SOV_behead_the_snake
-				SOV_father_of_nations
-				SOV_the_supreme_soviet
+				SOV_great_purge
+				SOV_democratic_government
+				SOV_the_black_army
 			}	
 		}
-
+		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}

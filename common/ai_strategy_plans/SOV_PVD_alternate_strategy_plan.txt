@@ -1,0 +1,439 @@
+SOV_alternate_plan = {
+	name = "Soviet alternate plan"
+	desc = "Alternate behavior for Soviet"
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_ALTERNATE
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = ALTERNATE
+			}
+		}
+		NOT = {
+			has_global_flag = SOV_use_DLC_tree
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_finish_five_year_plan
+		SOV_move_industry_to_urals #just in case
+		SOV_defense_of_moscow #just in case
+		SOV_production_effort
+		SOV_great_purge
+		#1937
+		SOV_stalin_constitution
+		SOV_collectivist_propaganda
+		SOV_extra_tech_slot_early
+		SOV_improve_railway
+		SOV_transpolar_flights
+		#1938
+		SOV_ocean_going_navy
+		SOV_peoples_commissariat
+		SOV_infrastructure_effort
+		SOV_comintern_congress
+		SOV_abolish_popular_front
+		SOV_anti_capitalist_diplomacy
+		#1939
+		SOV_expand_red_fleet
+		SOV_rehabilitated_military
+		SOV_militarized_schools
+		SOV_workers_culture
+		SOV_military_reorganization
+		#1940
+		SOV_anti_colonialist_rebels
+		SOV_middle_eastern_expansion
+		SOV_southern_thrust
+		SOV_claim_on_the_straits
+		SOV_armenian_irredentism
+		#1941
+		SOV_lessons_of_war
+		SOV_reconcile_japan
+		SOV_ultimatum_to_greece
+		SOV_expand_red_fleet
+		SOV_research_city_experiment
+		#1942
+		SOV_diversify_the_programme
+		SOV_closed_city_network
+		SOV_claim_on_sinkiang
+		SOV_women_pilots
+		SOV_smersh
+		SOV_partisan_suppression
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+	
+	SOV_alternate_communist = {
+	name = "SOV alternate communist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_TUKHACHEVSKY
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = TUKHACHEVSKY
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_tukhachevsky_coup
+		SOV_finish_five_year_plan
+		SOV_move_industry_to_urals #just in case
+		SOV_defense_of_moscow #just in case
+		SOV_production_effort
+		#1937
+		SOV_new_government
+		SOV_the_red_army
+		SOV_abolish_popular_front
+		SOV_anti_capitalist_diplomacy
+		SOV_expand_red_fleet
+		#1938
+		SOV_anti_colonialist_rebels
+		SOV_middle_eastern_expansion
+		SOV_southern_thrust
+		SOV_claim_on_the_straits
+		SOV_armenian_irredentism
+		#1939
+		SOV_improve_railway
+		SOV_ultimatum_to_greece
+		SOV_transpolar_flights
+		SOV_pact_with_germany
+		SOV_empower_the_military
+		#1940
+		SOV_infrastructure_effort
+		SOV_socialist_realism
+		SOV_militarized_schools
+		SOV_workers_culture
+		SOV_tranformation_of_nature
+		#1941
+		SOV_end_the_purges
+		SOV_empty_gulags
+		SOV_release_dissidents
+		SOV_restore_academia
+		SOV_women_pilots
+		#1942
+		SOV_empower_the_military
+		SOV_invite_exiled_communists
+		SOV_military_state
+		SOV_prepare_army
+		SOV_learn_from_makhno
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}	
+	SOV_anarchist = {
+	name = "SOV anarchist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_ANARCHIST
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = ANARCHIST
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_tukhachevsky_coup
+		SOV_finish_five_year_plan
+		SOV_move_industry_to_urals #just in case
+		SOV_defense_of_moscow #just in case
+		SOV_production_effort
+		#1937
+		SOV_new_government
+		SOV_the_red_army
+		SOV_empower_the_military
+		SOV_invite_exiled_communists
+		SOV_military_state
+		#1938
+		SOV_prepare_army
+		SOV_learn_from_makhno
+		SOV_stalin_constitution
+		SOV_collectivist_propaganda
+		SOV_extra_tech_slot_early
+		#1939
+		SOV_improve_railway
+		SOV_transpolar_flights
+		SOV_ocean_going_navy
+		SOV_peoples_commissariat
+		SOV_infrastructure_effort
+		#1940
+		SOV_anarchist_revolution
+		SOV_socialist_realism
+		SOV_militarized_schools
+		SOV_workers_culture
+		SOV_tranformation_of_nature
+		#1941
+		SOV_end_the_purges
+		SOV_empty_gulags
+		SOV_release_dissidents
+		SOV_restore_academia
+		SOV_women_pilots
+		#1942
+		SOV_international_anarchism
+		SOV_the_black_army
+		SOV_abolish_popular_front
+		SOV_anti_capitalist_diplomacy
+		SOV_expand_red_fleet
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		social_revolutionary = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}	
+	SOV_democratic = {
+	name = "SOV democratic plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_DEMOCRATIC
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = DEMOCRATIC
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_tukhachevsky_coup
+		SOV_finish_five_year_plan
+		SOV_move_industry_to_urals #just in case
+		SOV_defense_of_moscow #just in case
+		SOV_production_effort
+		#1937
+		SOV_democratic_government
+		SOV_end_the_purges
+		SOV_empty_gulags
+		SOV_release_dissidents
+		SOV_restore_academia
+		#1938
+		SOV_constituent_assembly
+		SOV_european_alliance
+		#1939
+		SOV_central_european_membership
+		SOV_northern_european_membership
+		SOV_balkan_membership
+		SOV_middle_eastern_membership
+		SOV_stalin_constitution
+		#1940
+		SOV_collectivist_propaganda
+		SOV_extra_tech_slot_early
+		SOV_improve_railway
+		SOV_transpolar_flights
+		SOV_ocean_going_navy
+		#1941
+		SOV_peoples_commissariat
+		SOV_infrastructure_effort
+		SOV_joint_russia_commonwealth_research
+		SOV_socialist_realism
+		SOV_militarized_schools
+		#1942
+		SOV_workers_culture
+		SOV_tranformation_of_nature
+		SOV_united_nations
+		SOV_secure_russian_sphere
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SOV_fascist = {
+	name = "SOV fascist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_FASCIST
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_tukhachevsky_coup
+		SOV_finish_five_year_plan
+		SOV_move_industry_to_urals #just in case
+		SOV_defense_of_moscow #just in case
+		SOV_production_effort
+		#1937
+		SOV_democratic_government
+		SOV_end_the_purges
+		SOV_empty_gulags
+		SOV_release_dissidents
+		SOV_restore_academia
+		#1938
+		SOV_constituent_assembly
+		SOV_hold_elections
+		SOV_white_russians
+		SOV_constitutional_convention
+		#1939
+		SOV_fascist_coup
+		SOV_stalin_constitution
+		SOV_dynastic_ties
+		SOV_join_GEACPS
+		#1940
+		SOV_collectivist_propaganda
+		SOV_extra_tech_slot_early
+		SOV_improve_railway
+		SOV_transpolar_flights
+		SOV_ocean_going_navy
+		#1940
+		SOV_peoples_commissariat
+		SOV_infrastructure_effort
+		SOV_join_GEACPS
+		SOV_socialist_realism
+		SOV_militarized_schools
+		#1941
+		SOV_workers_culture
+		SOV_tranformation_of_nature
+		SOV_tsarist_restoration
+		
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		fascist_demagogue = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

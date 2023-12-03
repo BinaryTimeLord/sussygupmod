@@ -1,0 +1,62 @@
+SOV_border_conflicts = {
+	icon = border_conflicts
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_perpetual_war
+	}
+
+	visible = {
+		has_completed_focus = SOV_perpetual_war
+	}
+}
+
+SOV_the_seeds_of_revolution = {
+
+	icon = spr_the_seeds_of_revolution
+	
+	allowed = {
+		original_tag = SOV
+	}
+}
+
+SOV_propaganda_category = {
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = SOV
+	}
+}
+
+soviet_power_struggle_decisions_gui = {
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible_when_empty = yes
+
+	scripted_gui = soviet_power_struggle_decisions_gui
+	priority = 10000
+}
+
+expand_the_soviet_union_category = {
+		
+	icon = sov_great_patriotic_war
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	available = {
+		NOT = { has_country_flag = SOV_devolution }
+		NOT = { has_country_flag = SOV_union_of_soviet_socialist_republics }
+		NOT = { has_country_flag = SOV_russian_nation }
+	}
+	
+}

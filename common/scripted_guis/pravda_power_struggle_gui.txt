@@ -1,0 +1,25 @@
+scripted_gui = {
+	soviet_power_struggle_decisions_gui = {
+		context_type = decision_category
+		window_name = "soviet_power_struggle_decisions_gui"
+		
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+			
+		}
+		
+		effects = {
+			
+		}
+
+		properties = {
+			soviet_power_struggle_dot = {
+				x = WRRFTangle_X
+				y = WRRFTangle_Y
+			}
+		}
+	}
+}

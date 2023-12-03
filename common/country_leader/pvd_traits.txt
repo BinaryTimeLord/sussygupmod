@@ -1,0 +1,113 @@
+leader_traits = {
+
+	ambitious_negotiator_communism = { 
+		random = no
+		sprite = 13
+		diplomatic_pressure_mission_factor = 0.25
+		control_trade_mission_factor = 0.25
+		political_power_factor = 0.1
+		opinion_gain_monthly_factor = 0.25
+
+	}
+	
+	stakhanovite_figurehead = {
+		random = no
+		sprite = 10
+
+		local_resources_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	red_bonaparte = {
+		random = no
+		army_org_regain = 0.1
+		org_loss_when_moving = -0.2
+	}
+	
+	revolutionary_zeal = {
+		random = no
+		war_stability_factor = 0.3
+		justify_war_goal_time = -0.25
+	}
+	
+	disgraced_former_leader = {
+		opinion_gain_monthly_factor = 0.25
+		trade_opinion_factor = 0.25
+	}
+	
+	agrarian_reformer = {
+		random = no 
+		global_building_slots_factor = 0.1
+	}
+	
+	chekist = {
+		random = no
+		resistance_target = -0.05
+		resistance_decay = 0.2
+		consumer_goods_factor = -0.05
+	}
+	
+	generalissimus = {
+		random = no
+		command_power_gain_mult = 0.25
+		max_command_power = 25
+		army_org_factor = 0.05
+	}
+	
+	tsar_restorer = {
+		random = no
+		army_morale_factor = 0.1
+		political_power_factor = 0.1
+		communism_drift = -0.1
+		democratic_drift = -0.1
+	}
+	
+	strasserist = {
+		random = no
+		consumer_goods_factor = -0.05
+		fascism_drift = 0.1
+	}
+	
+	stalinist_survivor = {
+		random = no
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.1
+		communism_drift = 0.1
+		sprite = 13
+	}
+	
+	father_of_nations = {
+		random = no
+		justify_war_goal_time = -0.15
+		subjects_autonomy_gain = -0.1
+		master_ideology_drift = 0.1
+		compliance_gain = 0.05
+		custom_modifier_tooltip = socialist_community_tt 
+	}
+	
+	mother_of_nations = {
+		random = no
+		justify_war_goal_time = -0.15
+		subjects_autonomy_gain = -0.1
+		master_ideology_drift = 0.1
+		compliance_gain = 0.05
+		custom_modifier_tooltip = socialist_community_tt 
+	}
+	
+	market_socialist = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		sprite = 13
+	}
+	
+	marxist_feminist = {
+		random = no
+		recruitable_population_factor = 0.25
+		monthly_population = 1.0
+		sprite = 13
+	}
+	
+}

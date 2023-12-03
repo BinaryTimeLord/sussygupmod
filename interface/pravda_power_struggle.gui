@@ -1,0 +1,52 @@
+guiTypes = {
+	containerWindowType = {
+		name = "soviet_power_struggle_decisions_gui"
+		size = { width = 500 height = 450 }
+		position = { x = 0 y = 0 }
+		
+		iconType = {
+			name = "soviet_power_struggle_outline"
+			spriteType = "GFX_tangle_outline"
+			position = { x = 38 y = 25 }
+		}
+		
+		iconType = {
+			name = "soviet_power_struggle_dot"
+			spriteType = "GFX_tangle_dot"
+			position = { x = 38 y = 25 }
+		}
+		
+		instantTextboxType = {
+			name = "soviet_power_struggle_party"
+			position = { x = 200 y = 0 }
+			font = "hoi_18mbs"
+			text = "SOV_party"
+			alwaystransparent = yes
+			pdx_tooltip = "SOV_party_tt"
+		}
+		
+		instantTextboxType = {
+			name = "soviet_power_struggle_military"
+			position = { x = 20 y = 418 }
+			font = "hoi_18mbs"
+			text = "SOV_military"
+			alwaystransparent = yes
+			maxWidth = 300
+			maxHeight = 300
+			fixedsize = yes
+			pdx_tooltip = "SOV_military_tt"
+		}
+		
+		instantTextboxType = {
+			name = "soviet_power_struggle_nkvd"
+			position = { x = 370 y = 418 }
+			font = "hoi_18mbs"
+			text = "SOV_nkvd_gui"
+			alwaystransparent = yes
+			maxWidth = 300
+			maxHeight = 300
+			fixedsize = yes
+			pdx_tooltip = "SOV_nkvd_tt"
+		}
+	}
+}

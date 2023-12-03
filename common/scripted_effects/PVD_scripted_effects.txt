@@ -1,0 +1,339 @@
+SOV_industrialisation_effect = {
+	if = {
+		limit = { has_idea = SOV_agrarian_society1 }
+		swap_ideas = { remove_idea = SOV_agrarian_society1 add_idea = SOV_agrarian_society2 }	
+	}
+	else_if = {
+		limit = { has_idea = SOV_agrarian_society2 }
+		swap_ideas = { remove_idea = SOV_agrarian_society2 add_idea = SOV_agrarian_society3 }	
+	}
+	else_if = {
+		limit = { has_idea = SOV_agrarian_society3 }
+		swap_ideas = { remove_idea = SOV_agrarian_society3 add_idea = SOV_agrarian_society4 }	
+	}
+	else_if = {
+		limit = { has_idea = SOV_agrarian_society4 }
+		swap_ideas = { remove_idea = SOV_agrarian_society4 add_idea = SOV_agrarian_society5 }	
+	}
+	else_if = {
+		limit = { has_idea = SOV_agrarian_society5 }
+		remove_ideas = SOV_agrarian_society5
+	}
+}
+
+## WRRFTangle calcXY
+#  - Calculates the x & y values used by WRRFTangle to set the location of it's point
+#  - The Equation is the following;
+#  - (x,y) = (1/2 * ((2B+C)/(A+B+C)), sqrt(3)/2 * ((C)/(A+B+C)))
+#  - Where A = party, B = nkvd, C = military.
+WRRFTangle_calcXY = {
+	log = "[GetDateText]: [Root.GetName]: WRRFTangle_calcXY; Executing"
+
+	clamp_variable = { var = SOV_nkvd_balance min = 0 max = 100 }
+	clamp_variable = { var = SOV_military_balance min = 0 max = 100 }
+	clamp_variable = { var = SOV_party_balance min = 0 max = 100 }
+
+
+	## Temp Variable Definition
+	# Done to make life a bit easier
+	set_temp_variable = { A = SOV_military_balance }
+	set_temp_variable = { B = SOV_nkvd_balance }
+	set_temp_variable = { C = SOV_party_balance }
+	# ABC = A+B+C
+	set_temp_variable = { ABC = A }
+	add_to_temp_variable = { ABC = B }
+	add_to_temp_variable = { ABC = C }
+
+	## Calc X
+	# 1/2 * ((2B+C)/(A+B+C))
+	set_variable = { WRRFTangle_X = B }
+	multiply_variable = { WRRFTangle_X = 2 }
+	add_to_variable = { WRRFTangle_X = C }
+	divide_variable = { WRRFTangle_X = ABC }	#A+B+C
+	multiply_variable = { WRRFTangle_X = 0.5 }	#1/2
+
+	## Calc Y
+	# sqrt(3)/2 * ((C)/(A+B+C))
+	set_variable = { WRRFTangle_Y = C }
+	divide_variable = { WRRFTangle_Y = ABC }	#A+B+C
+	multiply_variable = { WRRFTangle_Y = 0.866 }	#sqrt(3)/2
+
+	## Scaling
+	# The above calculates the x and y values for a triangle contained in a 1x1 square,
+	# that's not per se how large the end triangle will be.
+	# So, we scale it up. We can do so by just multiplying x & y by some scale.
+	multiply_variable = { WRRFTangle_X = 496 }
+	multiply_variable = { WRRFTangle_Y = 392 }
+	multiply_variable = { WRRFTangle_Y = -1 }
+	add_to_variable = { WRRFTangle_Y = 392 }
+	
+	log = "[GetDateText]: [Root.GetName]: WRRFTangle_calcXY; Completed execution."
+}
+SOV_power_struggle_increase_party_influence_low = {
+	custom_effect_tooltip = SOV_power_struggle_increase_party_influence_low_tt
+	if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 0.5 }
+			check_variable = { SOV_military_balance < 0.5 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_military_balance < 0.5 }
+		}
+		add_to_variable = { SOV_nkvd_balance = -1 }
+		add_to_variable = { SOV_party_balance = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 0.5 }
+		}
+		add_to_variable = { SOV_military_balance = -1 }
+		add_to_variable = { SOV_party_balance = 1 }
+	}
+	else = {
+		add_to_variable = { SOV_nkvd_balance = -0.5 }
+		add_to_variable = { SOV_military_balance = -0.5 }
+		add_to_variable = { SOV_party_balance = 1 }
+	}
+}
+
+SOV_power_struggle_increase_party_influence_med = {
+	custom_effect_tooltip = SOV_power_struggle_increase_party_influence_med_tt
+	if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 1 }
+			check_variable = { SOV_military_balance < 1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_military_balance < 1 }
+		}
+		add_to_variable = { SOV_nkvd_balance = -2 }
+		add_to_variable = { SOV_party_balance = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 1 }
+		}
+		add_to_variable = { SOV_military_balance = -2 }
+		add_to_variable = { SOV_party_balance = 2 }
+	}
+	else = {
+		add_to_variable = { SOV_nkvd_balance = -1 }
+		add_to_variable = { SOV_military_balance = -1 }
+		add_to_variable = { SOV_party_balance = 2 }
+	}
+}
+
+SOV_power_struggle_increase_party_influence_high = {
+	custom_effect_tooltip = SOV_power_struggle_increase_party_influence_high_tt
+	if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 2.5 }
+			check_variable = { SOV_military_balance < 2.5 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_military_balance < 2.5 }
+		}
+		add_to_variable = { SOV_nkvd_balance = -5 }
+		add_to_variable = { SOV_party_balance = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 2.5 }
+		}
+		add_to_variable = { SOV_military_balance = -5 }
+		add_to_variable = { SOV_party_balance = 5 }
+	}
+	else = {
+		add_to_variable = { SOV_nkvd_balance = -2.5 }
+		add_to_variable = { SOV_military_balance = -2.5 }
+		add_to_variable = { SOV_party_balance = 5 }
+	}
+}
+
+
+SOV_power_struggle_increase_military_influence_low = {
+	custom_effect_tooltip = SOV_power_struggle_increase_military_influence_low_tt
+	if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 0.5 }
+			check_variable = { SOV_party_balance < 0.5 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_party_balance < 0.5 }
+		}
+		add_to_variable = { SOV_nkvd_balance = -1 }
+		add_to_variable = { SOV_military_balance = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 0.5 }
+		}
+		add_to_variable = { SOV_party_balance = -1 }
+		add_to_variable = { SOV_military_balance = 1 }
+	}
+	else = {
+		add_to_variable = { SOV_nkvd_balance = -0.5 }
+		add_to_variable = { SOV_party_balance = -0.5 }
+		add_to_variable = { SOV_military_balance = 1 }
+	}
+	
+}
+
+SOV_power_struggle_increase_military_influence_med = {
+	custom_effect_tooltip = SOV_power_struggle_increase_military_influence_med_tt
+	if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 1 }
+			check_variable = { SOV_party_balance < 1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_party_balance < 1 }
+		}
+		add_to_variable = { SOV_nkvd_balance = -2 }
+		add_to_variable = { SOV_military_balance = 2 }
+
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 1 }
+		}
+		add_to_variable = { SOV_party_balance = -2 }
+		add_to_variable = { SOV_military_balance = 2 }
+	}
+	else = {
+		add_to_variable = { SOV_nkvd_balance = -1 }
+		add_to_variable = { SOV_party_balance = -1 }
+		add_to_variable = { SOV_military_balance = 2 }
+	}
+}
+
+SOV_power_struggle_increase_military_influence_high = {
+	custom_effect_tooltip = SOV_power_struggle_increase_military_influence_high_tt
+	if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 2.5 }
+			check_variable = { SOV_party_balance < 2.5 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_party_balance < 2.5 }
+		}
+		add_to_variable = { SOV_nkvd_balance = -5 }
+		add_to_variable = { SOV_military_balance = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_nkvd_balance < 2.5 }
+		}
+		add_to_variable = { SOV_party_balance = -5 }
+		add_to_variable = { SOV_military_balance = 5 }
+	}
+	else = {
+		add_to_variable = { SOV_nkvd_balance = -2.5 }
+		add_to_variable = { SOV_party_balance = -2.5 }
+		add_to_variable = { SOV_military_balance = 5 }
+	}
+
+}
+
+
+SOV_power_struggle_increase_nkvd_influence_low = {
+	custom_effect_tooltip = SOV_power_struggle_increase_nkvd_influence_low_tt
+	if = {
+		limit = {
+			check_variable = { SOV_military_balance < 0.5 }
+			check_variable = { SOV_party_balance < 0.5 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_party_balance < 0.5 }
+		}
+		add_to_variable = { SOV_military_balance = -1 }
+		add_to_variable = { SOV_nkvd_balance = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_military_balance < 0.5 }
+		}
+		add_to_variable = { SOV_party_balance = -1 }
+		add_to_variable = { SOV_nkvd_balance = 1 }
+	}
+	else = {
+		add_to_variable = { SOV_military_balance = -0.5 }
+		add_to_variable = { SOV_party_balance = -0.5 }
+		add_to_variable = { SOV_nkvd_balance = 1 }
+	}
+}
+
+SOV_power_struggle_increase_nkvd_influence_med = {
+	custom_effect_tooltip = SOV_power_struggle_increase_nkvd_influence_med_tt
+	if = {
+		limit = {
+			check_variable = { SOV_military_balance < 1 }
+			check_variable = { SOV_party_balance < 1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_party_balance < 1 }
+		}
+		add_to_variable = { SOV_military_balance = -2 }
+		add_to_variable = { SOV_nkvd_balance = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_military_balance < 1 }
+		}
+		add_to_variable = { SOV_party_balance = -2 }
+		add_to_variable = { SOV_nkvd_balance = 2 }
+	}
+	else = {
+		add_to_variable = { SOV_military_balance = -1 }
+		add_to_variable = { SOV_party_balance = -1 }
+		add_to_variable = { SOV_nkvd_balance = 2 }
+	}
+}
+
+SOV_power_struggle_increase_nkvd_influence_high = {
+	custom_effect_tooltip = SOV_power_struggle_increase_nkvd_influence_high_tt
+	if = {
+		limit = {
+			check_variable = { SOV_military_balance < 2.5 }
+			check_variable = { SOV_party_balance < 2.5 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_party_balance < 2.5 }
+		}
+		add_to_variable = { SOV_military_balance = -5 }
+		add_to_variable = { SOV_nkvd_balance = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SOV_military_balance < 2.5 }
+		}
+		add_to_variable = { SOV_party_balance = -5 }
+		add_to_variable = { SOV_nkvd_balance = 5 }
+	}
+	else = {
+		add_to_variable = { SOV_military_balance = -2.5 }
+		add_to_variable = { SOV_party_balance = -2.5 }
+		add_to_variable = { SOV_nkvd_balance = 5 }
+	}
+}
+
+
+
