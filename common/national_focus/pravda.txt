@@ -2209,7 +2209,7 @@
 
 	focus = { dynamic = yes
 		id = SOV_great_purge
-		icon = GFX_focus_fra_loyalty_stalin
+		icon =
 		available = {
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
@@ -6023,7 +6023,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_trotskyist_cadre_revolt
-		icon = GFX_focus_fra_loyalty_trotzky
+		icon = 
 		prerequisite = { focus = SOV_prepare_army }
 		mutually_exclusive = { focus = SOV_learn_from_makhno }
 		available = {
@@ -6731,7 +6731,7 @@
 			set_cosmetic_tag = SOV_orthodox
 			hidden_effect = { 341 = { set_state_name = "Constantinople" } }
 			set_province_name = { id = 9833 name = "Constantinople" }
-			set_capital = 797
+			set_capital = { state = 797 }
 			set_politics = {
 				ruling_party = neutrality
 			}

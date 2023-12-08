@@ -26,7 +26,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -55,7 +55,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -84,7 +84,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -148,7 +148,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -203,7 +203,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -264,7 +264,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -328,7 +328,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -363,7 +363,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -404,7 +404,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -448,7 +448,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -518,7 +518,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -552,7 +552,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -585,7 +585,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -625,7 +625,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -663,7 +663,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -700,7 +700,7 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = {
-				has_country_tag = SDF_CIVIL_WAR_WIN
+				has_country_flag = SDF_CIVIL_WAR_WIN
 			}
 		}
 		
@@ -929,7 +929,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_ideas = sdf_anarchy_3
+						has_idea = sdf_anarchy_3
 					}
 				
 					remove_ideas = sdf_anarchy_3
@@ -937,7 +937,7 @@ focus_tree = {
 			
 				if = {
 					limit = {
-						has_ideas = sdf_anarchy_2
+						has_idea = sdf_anarchy_2
 					}
 				
 					remove_ideas = sdf_anarchy_2
@@ -945,7 +945,7 @@ focus_tree = {
 			
 				if = {
 					limit = {
-						has_ideas = sdf_anarchy_1
+						has_idea = sdf_anarchy_1
 					}
 				
 					remove_ideas = sdf_anarchy_1

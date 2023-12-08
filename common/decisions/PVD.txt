@@ -1913,7 +1913,7 @@ soviet_power_struggle_decisions_gui = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_military_balance_100
-				check_variable = { var = sov_military_balance = 100 }
+				check_variable = { sov_military_balance = 100 }
 			}
 			NOT = {
 				has_idea = SOV_military_supremacy

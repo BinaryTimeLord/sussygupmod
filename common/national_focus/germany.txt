@@ -4299,7 +4299,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 3
+		x = -1
 		y = 1
 		relative_position_id = GER_anti_comitern_pact
 		cost = 5
@@ -4482,7 +4482,7 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = { size > 849999 } #ca 90 div
 		}
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = GER_anti_comitern_pact
 		cost = 10
@@ -4523,15 +4523,15 @@ focus_tree = {
 		id = GER_ussr_war_goal
 		icon = GFX_goal_ussr_war_goal
 		prerequisite = { focus = GER_anti_soviet_pact focus = GER_mol_rib_pact }
-		mutually_exclusive = { focus = GER_soviet_ally }
+		mutually_exclusive = { focus = GER_soviet_ally focus = GER_socialist_exile_exchange }
 		#will_lead_to_war_with = SOV
 
 		cancel = {
 			NOT = { country_exists = SOV }
 		}
-		x = 1
-		y = 2
-		relative_position_id = GER_anti_comitern_pact
+		x = 0
+		y = 1
+		relative_position_id = GER_anti_soviet_pact
 		cost = 10
 		historical_ai = {
 			NOT = {
@@ -6210,7 +6210,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = GER_anti_comitern_pact
 		cost = 10
@@ -6235,7 +6235,7 @@ focus_tree = {
 		id = GER_soviet_ally
 		icon = GFX_goal_soviet_ally
 		prerequisite = { focus = GER_mol_rib_pact }
-		mutually_exclusive = { focus = GER_ussr_war_goal }
+		mutually_exclusive = { focus = GER_ussr_war_goal focus = GER_socialist_exile_exchange }
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -15809,5 +15809,231 @@ focus_tree = {
 			GER = { country_event = { id = kmm.98 } }
 		}
 	}
-	
+
+	#COMMIE BRANCH
+	focus = { 
+		id = GER_socialist_exile_exchange
+		icon = 
+		prerequisite = { focus = GER_mol_rib_pact }
+		mutually_exclusive = { focus = GER_ussr_war_goal focus = GER_soviet_ally }
+		available = {
+			is_puppet = no
+			has_global_flag = sov_yes_pact
+		}
+		bypass = {
+			has_government = communism
+		}
+		x = 2
+		y = 1
+		relative_position_id = GER_anti_soviet_pact
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			custom_effect_tooltip = GER_military_civil_war_tt
+			activate_mission_tooltip = GER_military_unrest
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.1
+			}
+		}
+	}
+	focus = { 
+		id = GER_free_communist_prisoners
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = GER_socialist_exile_exchange }
+		x = -1
+		y = 1
+		relative_position_id = GER_socialist_exile_exchange
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = GER_military_unrest
+				days = -70
+			}
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.05
+			}
+		}
+	}
+	focus = { 
+		id = GER_socialist_intellectual_repatriation
+		icon = GFX_focus_research2
+		prerequisite = { focus = GER_socialist_exile_exchange }
+		available = {
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_socialist_exile_exchange
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			add_research_slot = 1
+			add_days_mission_timeout = {
+				mission = GER_military_unrest
+				days = -70
+			}
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.05
+			}
+		}
+	}
+	focus = { 
+		id = GER_free_strasserist_prisoners
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = GER_socialist_exile_exchange }
+		available = {
+		}
+		x = 3
+		y = 1
+		relative_position_id = GER_socialist_exile_exchange
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = GER_military_unrest
+				days = -70
+			}
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.05
+			}
+		}
+	}
+	focus = { 
+		id = GER_german_workers_party
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = GER_free_strasserist_prisoners }
+		prerequisite = { focus = GER_socialist_intellectual_repatriation }
+		mutually_exclusive = { focus = GER_communist_revolution }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GER_socialist_civil_war_tt
+				has_country_flag = GER_socialist_civil_war
+				has_civil_war = no
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = GER_free_strasserist_prisoners
+		cost = 10
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			set_cosmetic_tag = GER_strasserism
+			set_party_name = {
+				ideology = fascism
+				long_name = GER_DAP_long
+				name = GER_DAP
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = GER_DAP_long
+				name = GER_DAP
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+			if = {
+				limit = { has_idea = otto_strasser }
+				remove_ideas = otto_strasser
+				add_political_power = 150
+			}
+		}
+	}
+	focus = { 
+		id = GER_communist_revolution
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_free_communist_prisoners }
+		prerequisite = { focus = GER_socialist_intellectual_repatriation }
+		mutually_exclusive = { focus = GER_german_workers_party }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GER_socialist_civil_war_tt
+				has_country_flag = GER_socialist_civil_war
+				has_civil_war = no
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_free_communist_prisoners
+		cost = 10
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.2
+			}
+		}
+	}
+	focus = { 
+		id = GER_german_socialism
+		icon = 
+		prerequisite = { focus = GER_communist_revolution focus = GER_german_workers_party }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GER_socialist_civil_war_tt
+				has_country_flag = GER_socialist_civil_war
+				has_civil_war = no
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_communist_revolution
+		cost = 10
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = GER_communist_revolution }
+				add_ideas = GER_legacy_of_marx
+			}
+			else = {
+				add_ideas = GER_german_socialism
+			}
+		}
+	}
 }

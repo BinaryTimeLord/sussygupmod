@@ -1,6 +1,46 @@
 ideas = {
 
 	country = {
+
+		GER_legacy_of_marx = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_communism_drift_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		
+		GER_german_socialism = {
+			allowed = {
+				always = no
+			}
+
+			picture = ger_rebuild_the_nation
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		
 		sour_loser = {
 			
 			allowed = {

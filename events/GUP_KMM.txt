@@ -5655,10 +5655,10 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		SDF = {
 			inherit_technology = GER
 			
-			recruit_character = SDF_saori_takebe
+			add_country_leader_role = { character = SDF_saori_takebe }
 			country_event = {
 				id = sdf.1
-				day = 5
+				days = 5
 			}
 			
 			create_corps_commander = { ##CAN BE PURGED##

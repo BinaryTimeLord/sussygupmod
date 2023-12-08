@@ -196,3 +196,103 @@ German_alternate_democratic = {
 	}
 
 }
+
+German_alternate_communist = {
+	name = "German Alternate plan to become communist"
+	desc = "Long Live the Free Socialist Republic!"
+
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		OR = {
+			has_country_flag = GER_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		GER_around_maginot
+
+		GER_rhineland
+		GER_four_year_plan
+		GER_west_wall
+		GER_autarky
+		GER_hermann_goring_werke
+		#1937
+		GER_army_innovation
+		GER_soviet_treaty
+		GER_kdf_wagen
+		GER_coal_liquidization
+		GER_anschluss
+		#1938
+		GER_synthetic_rubber
+		GER_army_innovation_2
+		GER_demand_sudetenland
+		GER_first_vienna_award
+		GER_demand_memel
+		#1939
+		GER_end_of_czechoslovakia
+		GER_mol_rib_pact
+		GER_socialist_exile_exchange
+		GER_weserubung
+		GER_danzig_or_war
+		#1940
+		GER_war_with_france
+		GER_autobahn
+		GER_german_war_economy
+		GER_free_strasserist_prisoners
+		GER_extra_tech_slot		
+		#1941
+		GER_rocketry_focus
+		GER_free_communist_prisoners
+		GER_socialist_intellectual_repatriation
+		GER_naval_air_effort
+		GER_air_innovation
+		#1942
+		GER_tactical_air_effort
+		GER_communist_revolution
+		GER_air_innovation_2
+		GER_naval_rearmament
+		GER_naval_effort
+		#1943
+		GER_soviet_ally
+		GER_atlantikwall
+		GER_wunderwaffe
+	}
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 10
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

@@ -529,7 +529,7 @@ characters = { ##fuck this shit it wont work##
 			}
 		}
 		
-		create_field_marshal = {	
+		field_marshal = {	
 			traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
 			skill=5
 			attack_skill=4
@@ -567,7 +567,7 @@ characters = { ##fuck this shit it wont work##
 			
 		}
 		
-		create_corps_commander = { ##CAN BE PURGED##
+		corps_commander = { ##CAN BE PURGED##
 			traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
 			skill=4
 			attack_skill=4
@@ -576,13 +576,8 @@ characters = { ##fuck this shit it wont work##
 			logistics_skill=3
 			
 			visible = { 
-				SDF = {
-					has_country_flag = SDF_exiles
-				} 
-			}
-			available = { 
-				SDF = {
-					has_country_flag = SDF_exiles
+			    SDF = {
+				    has_country_flag = SDF_exiles
 				}
 			}
 		}

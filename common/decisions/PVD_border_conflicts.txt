@@ -126,9 +126,11 @@ SOV_border_conflicts = {
 			hidden_trigger = { always = no }
 		}
 
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:defender_state_temp
 			state = var:ROOT.defender_state_vs_@FROM
+		}
 		}
 
 		war_with_target_on_timeout = yes
@@ -170,9 +172,11 @@ SOV_border_conflicts = {
 			hidden_trigger = { always = no }
 		}
 
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:defender_state_temp
 			state = var:ROOT.defender_state_vs_@FROM
+		}
 		}
 
 		war_with_target_on_timeout = yes
@@ -218,8 +222,10 @@ SOV_border_conflicts = {
 			}
 		}
 
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:FROM.attacker_state_vs_@ROOT			
+		}
 		}
 
 		ai_will_do = {
@@ -297,9 +303,11 @@ SOV_border_conflicts = {
 			var:FROM.attacker_state_vs_@ROOT = { has_border_war = no }
 		}
 		
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:defender_state_temp
 			state = var:FROM.defender_state_vs_@ROOT
+		}
 		}
 
 		ai_will_do = {
@@ -349,9 +357,11 @@ SOV_border_conflicts = {
 			FROM = { owner = { has_border_war_with = ROOT } } 
 		}
 
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:FROM.attacker_state_vs_@ROOT
 			state = var:ROOT.defender_state_vs_@FROM
+		}
 		}
 			
 		on_map_mode = map_and_decisions_view
@@ -415,9 +425,11 @@ SOV_border_conflicts = {
 			FROM = { owner = { has_border_war_with = ROOT } }
 		}
 
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:FROM.defender_state_vs_@ROOT
 			state = var:ROOT.attacker_state_vs_@FROM
+		}
 		}
 		
 		on_map_mode = map_and_decisions_view
@@ -497,9 +509,11 @@ SOV_border_conflicts = {
 			has_border_war_with = FROM
 		}
 
+        highlight_states = {
 		highlight_state_targets = {
 			state = var:FROM.attacker_state_vs_@ROOT
 			state = var:ROOT.defender_state_vs_@FROM
+		}
 		}
 
 		ai_will_do = {
@@ -529,5 +543,4 @@ SOV_border_conflicts = {
 			}
 		}
 	}
-}
 }

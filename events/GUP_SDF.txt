@@ -681,7 +681,7 @@ country_event = {
 		FRA = {
 			declare_war_on = {
                 target = SDF
-                type = puppet_wargoal
+                type = puppet_wargoal_focus
             }
 		}
 	}
