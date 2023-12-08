@@ -335,6 +335,43 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+		
+		sdf_ooarai_gold = {
+			picture = seize_the_gold_reserves
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.4
+			}
+		}
+		
+		sdf_explotiing_resource = {
+			##picture = 
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.2
+				local_non_core_manpower = 0.075
+				economy_cost_factor = -0.05
+			}	
+		}
 	}
 	
 	industrial_concern = {

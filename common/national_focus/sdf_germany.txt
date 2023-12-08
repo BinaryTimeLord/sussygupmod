@@ -738,7 +738,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_victory_civil
-		##icon = 
+		icon = GFX_goal_victory_civil_war
 		
 		available = {
 			has_country_flag = SDF_CIVIL_WAR_WIN
@@ -766,7 +766,7 @@ focus_tree = {
 	
 	focus = { ##EVENT##
 		id = SDF_dotted_line_report
-		##icon = 
+		icon = GFX_goal_dotted_line
 		relative_position_id = SDF_victory_civil
 		
 		x = 0
@@ -1113,7 +1113,7 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_dotted_line_report
 		
-		x = 4
+		x = 6
 		y = 1
 		
 		prerequisite = { focus = SDF_dotted_line_report }
@@ -1128,7 +1128,7 @@ focus_tree = {
 	
 	focus = { 
 		id = SDF_ooarai_issue
-		##icon = 
+		icon = GFX_goal_ooarai_debate
 		relative_position_id = SDF_dotted_line_report 
 		
 		x = -6
@@ -1149,11 +1149,18 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_steal_gold
-		##icon = 
+		icon = GFX_goal_ooarai_gold
 		relative_position_id = SDF_ooarai_issue
 		
 		x = -1
 		y = 1
+		
+		available = {
+			has_full_control_of_state = 153
+			has_full_control_of_state = 848
+			has_full_control_of_state = 152
+			has_full_control_of_state = 4
+		}
 		
 		prerequisite = { focus = SDF_ooarai_issue }
 		mutually_exclusive = {}
@@ -1161,17 +1168,27 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+			add_timed_idea = {
+				idea = sdf_ooarai_gold
+				days = 75
+			}
 		}
 	}
 	
 	focus = {
 		id = SDF_disarm_ooarai
-		##icon = 
+		icon = GFX_goal_ooarai_resistance
 		relative_position_id = SDF_ooarai_issue
 		
 		x = 1
 		y = 1
+		
+		available = {
+			has_full_control_of_state = 153
+			has_full_control_of_state = 848
+			has_full_control_of_state = 152
+			has_full_control_of_state = 4
+		}
 		
 		prerequisite = { focus = SDF_ooarai_issue }
 		mutually_exclusive = {}
@@ -1179,13 +1196,37 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			153 = {
+				add_resistance = -15
+				add_compliance = -5
+			}
+			
+			848 = {
+				add_resistance = -15
+				add_compliance = -5
+			}
+			
+			152 = {
+				add_resistance = -15
+				add_compliance = -5
+			}
+			
+			4 = {
+				add_resistance = -15
+				add_compliance = -5
+			}
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0 
+				amount = 7500
+				producer = AUS
+			}
 		}
 	}
 	
 	focus = {
 		id = SDF_trail_of_4
-		##icon = 
+		icon = GFX_goal_trial_of_4
 		relative_position_id = SDF_ooarai_issue
 		
 		x = 0
@@ -1204,7 +1245,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_exploiting_ooarai
-		##icon = 
+		icon = GFX_goal_exploit_resourses
 		relative_position_id = SDF_ooarai_issue
 		
 		x = -2
@@ -1216,13 +1257,14 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			add_ideas = sdf_explotiing_resource
+			add_stability = 0.05
 		}
 	}
 	
 	focus = {
 		id = SDF_penal_battalions
-		##icon =
+		icon = GFX_goal_penal_battalions
 		relative_position_id = SDF_ooarai_issue
 		
 		x = 0
@@ -1234,13 +1276,16 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			hidden_effect = {
+				load_oob = "SDF_ooarai_divisions"
+			}
+			custom_effect_tooltip = SDF_ooarai_penal
 		}
 	}
 	
 	focus = {
 		id = SDF_industrial_stealing
-		##icon = 
+		icon = GFX_goal_industrial_exploits
 		relative_position_id = SDF_ooarai_issue
 		
 		x = 2
@@ -1252,14 +1297,61 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SDF_ooarai_core
-		##icon =
+		icon = GFX_goal_rk_ooarai
 		relative_position_id = SDF_ooarai_issue
+		
+		available = {
+			153 = {
+				resistance < 15
+				compliance > 50
+			}
+			
+			848 = {
+				resistance < 15
+				compliance > 50
+			}
+			
+			152 = {
+				resistance < 15
+				compliance > 50
+			}
+			
+			4 = {
+				resistance < 15
+				compliance > 50
+			}
+		}
 		
 		x = 0
 		y = 5
@@ -1272,7 +1364,21 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			153 = {
+				add_core_of = SDF
+			}
+			
+			848 = {
+				add_core_of = SDF
+			}
+			
+			152 = {
+				add_core_of = SDF
+			}
+			
+			4 = {
+				add_core_of = SDF
+			}
 		}
 	}
 	
