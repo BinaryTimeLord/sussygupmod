@@ -886,3 +886,89 @@ SDF_core_states = {
 	}
 	
 }
+
+SDF_officer_revolt = {
+	SDF_officer_repeating = {
+		icon = GFX_decision_generic_reorganize_irregulars
+		
+		activation = {
+			SDF = {
+				has_completed_focus = SDF_victory_civil
+			}
+		}
+		
+		available = {
+			SDF = {
+				has_completed_focus = SDF_heer_no_fear
+			}
+		}
+		
+		is_good = no
+		
+		days_mission_timeout = 40
+		selectable_mission = no
+		complete_effect = {
+		
+		}
+		
+		timeout_effect = {
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty4
+					}
+				}
+				
+				custom_effect_tooltip = SDF_failing_loyalty4
+				country_event = {
+					id = sdf.18
+					days = 1
+				}
+				
+				
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty3
+					}
+				}
+				
+				add_ideas = sdf_failing_loyalty4
+				
+				hidden_effect = {
+					remove_ideas = sdf_failing_loyalty3
+				}
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty2
+					}
+				}
+				
+				add_ideas = sdf_failing_loyalty3
+				
+				hidden_effect = {
+					remove_ideas = sdf_failing_loyalty2
+				}
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty
+					}
+				}
+				
+				add_ideas = sdf_failing_loyalty2
+				
+				hidden_effect = {
+					remove_ideas = sdf_failing_loyalty
+				}
+			}
+		}
+	}
+}

@@ -1122,6 +1122,185 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = { ##EVENT
+		id = SDF_power_struggle
+		##icon = 
+		relative_position_id = SDF_reign_military
+		
+		x = 0
+		y = 1 
+		
+		prerequisite = { focus = SDF_reign_military }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##REMOVE ERIKA AND MAHO
+		id = SDF_purge_generals
+		##icon = 
+		relative_position_id = SDF_power_struggle
+		
+		x = 1
+		y = 1
+		
+		available = {
+			always = false
+		}	
+		
+		prerequisite = { focus = SDF_power_struggle }
+		mutually_exclusive = { focus = SDF_keep_nishizumists }
+		
+		cost = 1
+		
+		completion_reward = {
+			
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_elevate_fallshimjager
+		##icon = 
+		relative_position_id = SDF_purge_generals 
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = SDF_purge_generals }
+		mutually_exclusive = {}
+		
+		cost = 4
+		
+		completion_reward = {
+			add_ideas = sdf_elevate_fallshimjager
+		}
+	}
+	
+	focus = {
+		id = SDF_fallshimpanzers
+		##icon = 
+		relative_position_id = SDF_elevate_fallshimjager
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_elevate_fallshimjager }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SDF_keep_nishizumists
+		##icon = 
+		relative_position_id = SDF_power_struggle
+		
+		x = -1
+		y = 1
+		
+		available = {
+			always = false
+		}
+		
+		prerequisite = { focus = SDF_power_struggle }
+		mutually_exclusive = { focus = SDF_purge_generals }
+		
+		cost = 1
+		
+		completion_reward = {
+			add_ideas = sdf_keep_nishizumists
+		}
+	}
+	
+	focus = {
+		id = SDF_reinstate_KS
+		##icon = 
+		relative_position_id = SDF_keep_nishizumists
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = SDF_keep_nishizumists }
+		mutually_exclusive = {}
+		
+		cost = 4
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_coup_government
+		##icon = 
+		relative_position_id = SDF_reinstate_KS
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_reinstate_KS }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	
+	focus = {
+		id = SDF_ratne_igre
+		##icon = 
+		relative_position_id = SDF_power_struggle
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SDF_keep_nishizumists focus = SDF_purge_generals }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+			add_ideas = sdf_war_games
+		}
+	}
+	
+	focus = {
+		id = SDF_heer_no_fear
+		##icon = 
+		relative_position_id = SDF_power_struggle
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_no_going_back
+			}
+		}
+		
+		x = 0
+		y = 4
+		
+		prerequisite = { focus = SDF_coup_government focus = SDF_fallshimpanzers }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
 		
 		}
 	}

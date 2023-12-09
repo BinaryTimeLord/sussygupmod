@@ -14,7 +14,7 @@ SDF_raise_units = {
 }
 
 SDF_core_states = {
-	icon = GFX_decision_category_generic_arms_trade
+	icon = GFX_decision_ger_reichskommissariats
 	
 	priority = 100
 	allowed = {
@@ -30,4 +30,20 @@ SDF_core_states = {
 		}
 	}
 	
+}
+
+SDF_officer_revolt = {
+	
+	icon = GFX_decision_ger_reichskommissariats
+	
+	priority = 1000
+	allowed = {
+		tag = SDF
+	}
+	
+	visible = {
+		SDF = {
+			has_completed_focus = SDF_victory_civil
+		}
+	}
 }
