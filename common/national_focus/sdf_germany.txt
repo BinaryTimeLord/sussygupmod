@@ -778,13 +778,16 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.21
+				days = 5
+			}
 		}
 	}
 	
 	focus = {
 		id = SDF_anarchy_issue
-		##icon = 
+		icon = GFX_goal_country_need
 		relative_position_id = SDF_dotted_line_report 
 		
 		x = 0
@@ -805,7 +808,7 @@ focus_tree = {
 	
 	focus = { ##EVENT##
 		id = SDF_where_to
-		##icon = 
+		icon = GFX_goal_where_to
 		relative_position_id = SDF_anarchy_issue
 		
 		x = 0
@@ -817,14 +820,21 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.22
+				days = 5
+			}
 		}
 	}
 	
 	focus = {
 		id = SDF_east_priority
-		##icon = 
+		icon = GFX_goal_to_east
 		relative_position_id = SDF_anarchy_issue
+		
+		available = {
+			always = false
+		}
 		
 		x = -1
 		y = 2
@@ -876,8 +886,12 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_west_priority
-		##icon = 
+		icon = GFX_goal_to_west
 		relative_position_id = SDF_anarchy_issue
+		
+		available = {
+			always = false
+		}
 		
 		x = 1
 		y = 2
@@ -913,11 +927,21 @@ focus_tree = {
 	
 	focus = { ##EASY PATH
 		id = SDF_send_SDK
-		##icon = 
+		icon = GFX_goal_send_sdk
 		relative_position_id = SDF_anarchy_issue
 		
 		x = 0
 		y = 3
+		
+		available = {
+			
+			OR = {
+				NOT = {
+					has_completed_focus = SDF_unban_unions
+					has_completed_focus = SDF_democratic_fascism
+				}
+			}
+		}
 		
 		prerequisite = { focus = SDF_east_priority focus = SDF_west_priority }
 		mutually_exclusive = {  }
@@ -963,8 +987,14 @@ focus_tree = {
 	
 	focus = { ##LONGER
 		id = SDF_unban_unions
-		##icon =
+		icon = GFX_goal_unban_unions
 		relative_position_id = SDF_anarchy_issue
+		
+		available = {
+			NOT = {
+				has_completed_focus = SDF_send_SDK
+			}
+		}
 		
 		x = -2
 		y = 3
@@ -991,7 +1021,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_workers_rights
-		##icon =
+		icon = GFX_goal_reward_unions
 		relative_position_id = SDF_anarchy_issue
 		
 		x = -2
@@ -1013,8 +1043,14 @@ focus_tree = {
 	
 	focus = { ##EVENT##
 		id = SDF_democratic_fascism
-		##icon = 
+		icon = GFX_goal_implement_takebeism
 		relative_position_id = SDF_anarchy_issue
+		
+		available = {
+			NOT = {
+				has_completed_focus = SDF_send_SDK
+			}
+		}
 		
 		x = 2
 		y = 3
@@ -1070,7 +1106,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_peoples_representation
-		##icon = 
+		icon = GFX_goal_representaion
 		relative_position_id = SDF_anarchy_issue
 		
 		x = 2
@@ -1088,7 +1124,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_sort_of_stability
-		##icon = 
+		icon = GFX_goal_stability_last
 		relative_position_id = SDF_anarchy_issue
 		
 		x = 0
@@ -1108,9 +1144,9 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##EVENT
 		id = SDF_reign_military
-		##icon = 
+		icon = GFX_goal_reign_army
 		relative_position_id = SDF_dotted_line_report
 		
 		x = 6
@@ -1129,7 +1165,7 @@ focus_tree = {
 	
 	focus = { ##EVENT
 		id = SDF_power_struggle
-		##icon = 
+		icon = GFX_goal_great_game
 		relative_position_id = SDF_reign_military
 		
 		x = 0
@@ -1147,7 +1183,7 @@ focus_tree = {
 	
 	focus = { ##REMOVE ERIKA AND MAHO
 		id = SDF_purge_generals
-		##icon = 
+		icon = GFX_goal_reformed_sdk
 		relative_position_id = SDF_power_struggle
 		
 		x = 1
@@ -1163,14 +1199,30 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					SDF = {
+						has_country_flag = SDF_exiles
+					}
+				}
+				
+				remove_character = SDF_erika
+				remove_character = SDF_maho
+				
+				else = {
+					add_timed_idea = {
+						idea = sdf_army_purge
+						days = 60
+					}
+				}
+			}
 		
 		}
 	}
 	
 	focus = {
 		id = SDF_elevate_fallshimjager
-		##icon = 
+		icon = GFX_goal_elevate_fallshimjager
 		relative_position_id = SDF_purge_generals 
 		
 		x = 1
@@ -1188,7 +1240,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_fallshimpanzers
-		##icon = 
+		icon = GFX_goal_fallshim_panzer
 		relative_position_id = SDF_elevate_fallshimjager
 		
 		x = 0
@@ -1206,7 +1258,7 @@ focus_tree = {
 
 	focus = {
 		id = SDF_keep_nishizumists
-		##icon = 
+		icon = GFX_goal_old_guard
 		relative_position_id = SDF_power_struggle
 		
 		x = -1
@@ -1228,7 +1280,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_reinstate_KS
-		##icon = 
+		icon = GFX_goal_reinstate
 		relative_position_id = SDF_keep_nishizumists
 		
 		x = -1
@@ -1240,13 +1292,13 @@ focus_tree = {
 		cost = 4
 		
 		completion_reward = {
-		
+			add_ideas = sdf_reinstate_ks
 		}
 	}
 	
-	focus = {
+	focus = { ##EVENT
 		id = SDF_coup_government
-		##icon = 
+		icon = GFX_goal_SDK_coup
 		relative_position_id = SDF_reinstate_KS
 		
 		x = 0
@@ -1258,14 +1310,14 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			set_country_flag = SDF_no_going_back
 		}
 	}
 	
 	
 	focus = {
 		id = SDF_ratne_igre
-		##icon = 
+		icon = GFX_goal_war_games
 		relative_position_id = SDF_power_struggle
 		
 		x = 0
@@ -1283,7 +1335,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_heer_no_fear
-		##icon = 
+		icon = GFX_goal_heer_fear
 		relative_position_id = SDF_power_struggle
 		
 		available = {
@@ -1301,7 +1353,38 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty3
+					}
+				}
+				remove_ideas = sdf_failing_loyalty3
+
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty2
+					}
+				}
+
+				remove_ideas = sdf_failing_loyalty2
+				
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_failing_loyalty
+					}
+				}
+
+				remove_ideas = sdf_failing_loyalty
+				
+			}
 		}
 	}
 	
@@ -1558,6 +1641,28 @@ focus_tree = {
 			4 = {
 				add_core_of = SDF
 			}
+		}
+	}
+	
+	##BEFORE WAR##
+	
+	focus = {
+		id = SDF_continue_reforms
+		##icon =
+		relative_position_id = SDF_dotted_line_report
+		
+		x = 0
+		y = 7
+		
+		prerequisite = { focus = SDF_ooarai_core }
+		prerequisite = { focus = SDF_sort_of_stability }
+		prerequisite = { focus = SDF_heer_no_fear }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
 		}
 	}
 	

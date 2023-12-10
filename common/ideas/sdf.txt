@@ -497,6 +497,45 @@ ideas = {
 				max_planning_factor = 0.15
 			}
 		}
+		
+		sdf_army_purge = {
+			##picture = 
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = -0.05
+				stability_factor = -0.15
+			}
+		}
+		
+		sdf_reinstate_ks = {
+			##picture = 
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				compliance_gain = 0.5
+				stability_factor = -0.01
+				stability_weekly = -0.015
+				political_power_factor = -0.35
+				consumer_goods_factor = 0.05
+			}
+		}
 	}
 	
 	industrial_concern = {

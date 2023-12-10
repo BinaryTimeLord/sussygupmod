@@ -939,6 +939,9 @@ SDF_officer_revolt = {
 				
 				hidden_effect = {
 					remove_ideas = sdf_failing_loyalty3
+					SDF = {
+						set_country_flag = SDF_no_going_back
+					}	
 				}
 			}
 			
