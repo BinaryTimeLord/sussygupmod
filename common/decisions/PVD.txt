@@ -2236,7 +2236,7 @@ soviet_power_struggle_decisions_gui = {
 				news_event = { hours = 3 id = news.220 }
 				if = {
 					limit = {
-						NOT = { has_completed_focus = SOV_tukhachevsky_coup }
+						NOT = { has_completed_focus = SOV_klara_coup }
 						NOT = { has_country_flag = counter_purge }
 					}
 					random_other_country = {
@@ -2346,9 +2346,9 @@ soviet_power_struggle_decisions_gui = {
 							has_government = neutrality
 						}
 						create_country_leader = {
-							name = "Mikhail Tukhachevsky"
-							desc = "POLITICS_MIKHAIL_TUKHACHEVSKY_DESC"
-							picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+							name = "Klara"
+							desc = "POLITICS_KLARA_DESC"
+							picture = "Portrait_SOV_Klara.dds"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {
@@ -2509,9 +2509,9 @@ soviet_power_struggle_decisions_gui = {
 						}
 						kill_country_leader = yes
 						create_country_leader = {
-							name = "Mikhail Tukhachevsky"
-							desc = "POLITICS_MIKHAIL_TUKHACHEVSKY_DESC"
-							picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+							name = "Klara"
+							desc = "POLITICS_KLARA_DESC"
+							picture = "Portrait_SOV_Klara.dds"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {

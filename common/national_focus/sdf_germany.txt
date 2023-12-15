@@ -1206,8 +1206,8 @@ focus_tree = {
 					}
 				}
 				
-				remove_character = SDF_erika
-				remove_character = SDF_maho
+				retire_character = SDF_erika
+				retire_character = SDF_maho
 				
 				else = {
 					add_timed_idea = {
@@ -1265,7 +1265,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		prerequisite = { focus = SDF_power_struggle }

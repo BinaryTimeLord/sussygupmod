@@ -347,6 +347,11 @@ characters={
 				large=GFX_portrait_FRA_philippe_petain
 			}
 		}
+
+
+
+
+		
     }
 		
 	FRA_jean_de_lattre_de_tassigny={

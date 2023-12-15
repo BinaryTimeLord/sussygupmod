@@ -984,7 +984,7 @@ country_event = {
 		tag = SOV
 		NOT = {
 			MEX = {
-				has_country_leader = { name = "Leon Trotsky" ruling_only = yes }
+				has_country_leader = { name = "Nonna" ruling_only = yes }
 			}
 		}
 	}
@@ -1019,9 +1019,9 @@ country_event = {
 		}
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Leon Trotsky"
-			desc = "POLITICS_LEON_TROTSKY_DESC"
-			picture = "Portrait_Leon_Trotsky.dds"
+			name = "Nonna"
+			desc = "POLITICS_NONNA_DESC"
+			picture = "Portrait_SOV_Nonna.dds"
 			expire = "1965.1.1"
 			ideology = leninism
 			traits = {
@@ -1764,7 +1764,7 @@ country_event = {
 	trigger = {
 		has_government = communism
 		tag = SOV
-		NOT = { has_completed_focus = SOV_tukhachevsky_coup }
+		NOT = { has_completed_focus = SOV_klara_coup }
 		has_global_flag = SOV_fourth_international_fired
 		NOT = { has_completed_focus = SOV_great_purge }
 	}
@@ -1775,14 +1775,14 @@ country_event = {
 
 	fire_only_once = yes
 
-	#Don't invite trotsky
+	#Don't invite nonna
 	option = {
 		name = soviet.48.a
 		custom_effect_tooltip = soviet.48.a_tt
 		set_country_flag = SOV_soviet.48_notrotsky
 	}
 
-	#Invite back Trotsky
+	#Invite back Nonna
 	option = {
 		name = soviet.48.b
 		custom_effect_tooltip = soviet.48.b_tt

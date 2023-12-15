@@ -4880,8 +4880,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_FIN_confederated_finno_russian_republics.dds"
 	}
 	SpriteType = { 
-		name = "GFX_focus_FIN_socialist_wellfare"
-		texturefile = "gfx/interface/goals/focus_FIN_socialist_wellfare.dds"
+		name = "GFX_focus_FIN_socialist_welfare"
+		texturefile = "gfx/interface/goals/focus_FIN_socialist_welfare.dds"
 	}
 	SpriteType = { 
 		name = "GFX_focus_FIN_the_finnish_throne"

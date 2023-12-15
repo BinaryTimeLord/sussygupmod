@@ -2451,7 +2451,7 @@ FIN_foreign_politics_decision_category = {
 		icon = GFX_decision_hol_war_on_pacifism
 
 		ai_will_do = { # This historically happnened on the 19th of September 1944
-			base = 0.8
+			base = 0.2
 			modifier = {
 				add = ROOT.surrender_progress
 				always = yes 
@@ -2467,8 +2467,18 @@ FIN_foreign_politics_decision_category = {
 				is_historical_focus_on = yes
 				date < 1942.11.11
 			}
-			modifier = { # You do not control "greater finnish territory"
+			modifier = { # Germany is crumbling ooops
 				factor = 2
+				is_historical_focus_on = yes
+				date > 1944.1.1
+				GER = {
+					has_war_with = SOV
+					has_country_flag = FIN_pact_for_continuation_war_flag
+					surrender_progress > 0.15
+				}
+			}
+			modifier = { # You do not control "greater finnish territory"
+				factor = 1.5
 				NOT = {
 					OR = {
 						213 = {
@@ -2484,14 +2494,13 @@ FIN_foreign_politics_decision_category = {
 				}
 			}
 			modifier = { # If the Soviets have issued order 227, you start getting nervous
-				factor = 2
+				factor = 1.5
 				SOV = { has_country_flag = SOV_order_227_flag }
 			}
 			modifier = { # Don't Do it if you, Germany or any of their Allies hold Leningrad or Moscow and you are not very close to collapsing 
 				factor = 0
 				surrender_progress < 0.75
-				OR = {
-					
+				OR = {	
 					195 = { # Leningrad
 						OR = { 
 							
@@ -2507,8 +2516,7 @@ FIN_foreign_politics_decision_category = {
 								controls_state = PREV
 							}
 						}
-					}
-					
+					}					
 					219 = { # Mocow
 						OR = { 
 							
@@ -2524,8 +2532,7 @@ FIN_foreign_politics_decision_category = {
 								controls_state = PREV
 							}
 						}
-					}
-					
+					}					
 				}
 			}
 			modifier = { # Stalingrad feels a little less safe than the others
@@ -2728,7 +2735,7 @@ FIN_foreign_politics_decision_category = {
 		icon = GFX_decision_generic_political_discourse
 
 		ai_will_do = { # This should not happen on historical, but should still be a possibility otherwise
-			base = 0.5
+			base = 0.1
 			modifier = {
 				add = ROOT.surrender_progress
 				always = yes 
@@ -2751,6 +2758,16 @@ FIN_foreign_politics_decision_category = {
 							is_controlled_by = ROOT
 						}
 					}
+				}
+			}
+			modifier = { # Germany is crumbling ooops
+				factor = 2
+				is_historical_focus_on = yes
+				date > 1944.1.1
+				GER = {
+					has_war_with = SOV
+					has_country_flag = FIN_pact_for_continuation_war_flag
+					surrender_progress > 0.15
 				}
 			}
 			modifier = { # If the Soviets have issued order 227, you start getting nervous

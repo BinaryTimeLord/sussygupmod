@@ -3578,6 +3578,12 @@ generic_general_aircraft_organization = {
 		}
 		NOT = {
 			AND = {
+				OR = { tag = AST tag = RAJ }
+				has_dlc = "Together for Victory"
+			}
+		}
+		NOT = {
+			AND = {
 				OR = { tag = PRC tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
@@ -6336,7 +6342,7 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				tag = RAJ
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -6683,7 +6689,6 @@ generic_artillery_organization = {
 			defense = 0.1
 		}
 	}
-
 }
 
 	
@@ -6707,7 +6712,7 @@ generic_infantry_equipment_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				OR = { tag = AST tag = CAN tag = RAJ }
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -7030,7 +7035,6 @@ generic_infantry_equipment_organization = {
 
 		}
 	}
-
 }
 
 
@@ -7318,6 +7322,12 @@ generic_motorized_mechanized_organization = {
 					has_dlc = "Poland: United and Ready"
 					has_dlc = "No Step Back"
 				}
+			}
+		}
+		NOT = {
+			AND = {
+				tag = NZL
+				has_dlc = "Together for Victory"
 			}
 		}
 		NOT = {

@@ -328,7 +328,8 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				
+				viceroy_emeritus
+				cautious_arbiter				
 			}
 		}
 	}
@@ -980,6 +981,7 @@ country_event = {
         	add_to_faction = ROOT
         	# This doesn't work here
         	#country_event = { id = generic.6 days = 1 }  
+		}
         	IF = {
         		limit = { 
         			has_dlc = "Arms Against Tyranny"	
@@ -989,7 +991,6 @@ country_event = {
         		}
         		restore_ideology_popularities = yes 
         		restore_ruling_party = yes 
-        	}
         }
 
         ai_chance = {

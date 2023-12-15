@@ -18,6 +18,30 @@ on_actions = {
 
 	#Not run on a specific country.
 	on_startup = {
+		effect= {
+			if = {
+				limit = { 
+					is_historical_focus_on = yes
+				}
+
+				every_possible_country = {
+
+					SWE = {
+						add_ai_strategy = {
+							type = protect
+							id = PREV
+							value = -1000
+						}
+
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = -50
+						}	
+					}
+				}
+			}
+		}
 		#SET UP MIO SIZE IN 1939 BOOKMARK
 		effect = {
 			if = {
@@ -109,6 +133,9 @@ on_actions = {
 						}
 						num_faction_members < 3
 						num_faction_members > 1
+						any_allied_country = {
+							NORDIC_is_nordic = yes
+						}
 					}
 
 					ROOT = {
@@ -116,7 +143,7 @@ on_actions = {
 					}
 				}
 
-				set_global_flag = capitulated_soviet_with_only_finland_and_another
+				set_global_flag = capitulated_soviet_with_only_finland_and_another_nordic
 			}
 			if = { #Flag locking Achievement "Everything is Awesome"
 				limit = {
@@ -1365,6 +1392,20 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						ROOT = { has_completed_focus = GER_oppose_hitler }
+						FROM = { has_completed_focus = GER_oppose_hitler }
+					}
+				}
+				NOR = {
+					find_global_platonic_countries = yes 
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+		}
 	}
 
 	on_peaceconference_ended = {
@@ -1462,6 +1503,17 @@ on_actions = {
 				}
 				DEN_puppet_on_action_effects = yes
 				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
+			}
+		}
+		effect = { #Effect so Norway can update countries in its focus tree. 
+			if = {
+				limit = {
+					has_aat = yes 
+				}
+				NOR = {
+					find_global_platonic_countries = yes 
+					mark_focus_tree_layout_dirty = yes
+				}
 			}
 		}
 	}
@@ -1884,6 +1936,19 @@ on_actions = {
 						FROM.FROM = { reset_state_name = yes }
 					}
 				}
+			}
+		}
+		effect = { #Greenland's new Controller gets all of Greenland
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 101
+					}
+					
+				}
+				ROOT = {  #Province 13058 is impassable and cannot be conquered. Give it to the new state controller.
+    				set_province_controller = 13058
+  				}
 			}
 		}
 
@@ -2335,6 +2400,7 @@ on_actions = {
 	}
 
 	on_ruling_party_change = {
+	# temp var old_ideology_token is available for effects
 		effect = {
 			IF = {
 				limit = {
@@ -2567,6 +2633,105 @@ on_actions = {
 					NOT = { has_government = neutrality }
 				}
 				drop_cosmetic_tag = yes
+			}
+		}
+
+		effect = { # Changing Norway Cosmetic Tags depending on situation 
+			if = {
+				limit = {
+					original_tag = NOR 
+				}
+				if = {
+					limit = {
+						has_government = democratic
+						OR = {
+							has_cosmetic_tag = NOR_SOV_communism
+							has_cosmetic_tag = NOR_trotsky_communism
+							has_cosmetic_tag = NOR_cw_communism
+							has_cosmetic_tag = NOR_neutrality
+							has_cosmetic_tag = NOR_GER_fascism
+							has_cosmetic_tag = NOR_fascism
+							has_cosmetic_tag = NOR_norgesveldet_fascism
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = NOR_vote_of_no_confidence
+						}
+						set_cosmetic_tag = NOR_alt_democratic
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = communism 
+						OR = {
+							has_cosmetic_tag = NOR_neutrality
+							has_cosmetic_tag = NOR_GER_fascism
+							has_cosmetic_tag = NOR_fascism
+							has_cosmetic_tag = NOR_norgesveldet_fascism
+							has_cosmetic_tag = NOR_alt_democratic
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = NOR_compromise_with_the_nkp 
+						}
+						set_cosmetic_tag = NOR_SOV_communism
+					}
+					else_if = {
+						limit = {
+							has_completed_focus = NOR_prosecute_the_nkp
+						}
+						set_cosmetic_tag = NOR_trotsky_communism
+					}
+					else = {
+						set_cosmetic_tag = NOR_cw_communism 
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = fascism 
+						OR = {
+							has_cosmetic_tag = NOR_SOV_communism
+							has_cosmetic_tag = NOR_trotsky_communism
+							has_cosmetic_tag = NOR_cw_communism
+							has_cosmetic_tag = NOR_neutrality					
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = NOR_reviving_the_norgesveldet
+						}
+						set_cosmetic_tag = NOR_norgesveldet_fascism
+					}
+					else_if = {
+						limit = {
+							is_subject_of = GER 
+						}
+						set_cosmetic_tag = NOR_GER_fascism
+					}
+					else = {
+						set_cosmetic_tag = NOR_fascism
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = neutrality 
+						OR = {
+							has_cosmetic_tag = NOR_SOV_communism
+							has_cosmetic_tag = NOR_trotsky_communism
+							has_cosmetic_tag = NOR_cw_communism
+							has_cosmetic_tag = NOR_GER_fascism
+							has_cosmetic_tag = NOR_fascism
+							has_cosmetic_tag = NOR_norgesveldet_fascism
+							has_cosmetic_tag = NOR_alt_democratic
+						}
+					}
+					set_cosmetic_tag = NOR_neutrality
+				}
 			}
 		}
 	}

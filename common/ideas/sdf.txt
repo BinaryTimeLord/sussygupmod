@@ -491,7 +491,7 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army = 0.05
-				experience_gain_naval = 0.05
+				experience_gain_navy = 0.05
 				experience_gain_air = 0.05
 				planning_speed = 0.05
 				max_planning_factor = 0.15

@@ -676,6 +676,31 @@ SOV_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	option = {
+		name = ALTERNATE
+		text = "RULE_OPTION_ALTERNATE"
+		desc = "RULE_OPTION_ALTERNATE_SOV_AI_DESC"
+	}
+	option = {
+		name = KLARA
+		text = "RULE_OPTION_ALTERNATE_KLARA"
+		desc = "RULE_OPTION_ALTERNATE_KLARA_SOV_AI_DESC"
+	}
+	option = {
+		name = ANARCHIST
+		text = "RULE_OPTION_ANARCHIST"
+		desc = "RULE_OPTION_ANARCHIST_SOV_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_OPTION_DEMOCRATIC_SOV_AI_DESC"
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_OPTION_FASCIST_SOV_AI_DESC"
+	}
 }
 JAP_ai_behavior = {
 	name = "JAP_AI_BEHAVIOR"

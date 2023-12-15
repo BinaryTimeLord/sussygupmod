@@ -217,8 +217,6 @@
 			SOV_power_struggle_increase_party_influence_low = yes
 			
 			SOV_industrialisation_effect = yes
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = alexey_kosygin
 		}
 	}
 	focus = { dynamic = yes
@@ -974,8 +972,6 @@
 			show_ideas_tooltip = konstantin_rokossovsky 
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = georgy_zhukov
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = alexey_stakhanov
 			# REVISIT Might want to add more
 		}
 	}
@@ -2209,12 +2205,12 @@
 
 	focus = { dynamic = yes
 		id = SOV_great_purge
-		icon =
+		icon = GFX_goal_unknown
 		available = {
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
 		}
-		mutually_exclusive = { focus = SOV_tukhachevsky_coup }
+		mutually_exclusive = { focus = SOV_klara_coup }
 		x = 37
 		y = 0
 		cost = 30
@@ -2357,10 +2353,9 @@
 		}
 	}
 	focus = { dynamic = yes
-		id = SOV_trotsky_leads
+		id = SOV_Nonna_leads
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = SOV_great_purge focus = SOV_tukhachevsky_coup }
-		mutually_exclusive = { focus = SOV_kollontai_leads focus = SOV_bukharin_leads }
+		prerequisite = { focus = SOV_great_purge focus = SOV_klara_coup }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_permanent_revolution_tt
@@ -2393,11 +2388,11 @@
 	focus = { dynamic = yes
 		id = SOV_permanent_revolution
 		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = SOV_great_purge focus = SOV_tukhachevsky_coup }
+		prerequisite = { focus = SOV_great_purge focus = SOV_klara_coup }
 		mutually_exclusive = { focus = SOV_yezhovshchina }
 		available = {
 			has_country_leader = {
-				name = "Leon Trotsky"
+				name = "Nonna"
 				ruling_only = yes
 			}
 		}
@@ -2978,7 +2973,7 @@
 		x = 10
 		y = 1
 		relative_position_id = SOV_great_purge
-		prerequisite = { focus = SOV_great_purge focus = SOV_tukhachevsky_coup }
+		prerequisite = { focus = SOV_great_purge focus = SOV_klara_coup }
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -5789,10 +5784,10 @@
 		}
 	}
 	
-	#Tukhachevsky Coup Path
+	#Klara Coup Path
 	focus = { dynamic = yes
-		id = SOV_tukhachevsky_coup
-		icon = GFX_goal_generic_dangerous_deal
+		id = SOV_klara_coup
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_great_purge } 
 		available = {
 			
@@ -5837,9 +5832,9 @@
 				}
 			}
 			create_country_leader = {
-				name = "Mikhail Tukhachevsky"
-				desc = "POLITICS_MIKHAIL_TUKHACHEVSKY_DESC"
-				picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+				name = "Klara"
+				desc = "POLITICS_KLARA_DESC"
+				picture = "Portrait_SOV_Klara.dds"
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -5849,7 +5844,7 @@
 			}
 			set_party_name = { 
 				ideology = neutrality 
-				long_name = SOV_neutrality_party_tukhachevsky 
+				long_name = SOV_neutrality_party_klara
 				name = SOV_the_red_army 
 			}
 		}
@@ -5858,13 +5853,13 @@
 	focus = { dynamic = yes
 		id = SOV_new_government
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = SOV_tukhachevsky_coup }
+		prerequisite = { focus = SOV_klara_coup }
 		available = {
 			has_civil_war = no
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_tukhachevsky_coup
+		relative_position_id = SOV_klara_coup
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -5907,9 +5902,9 @@
 				popularity = 0.3
 			}
 			create_country_leader = {
-				name = "Mikhail Tukhachevsky"
-				desc = "POLITICS_MIKHAIL_TUKHACHEVSKY_DESC"
-				picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+				name = "Klara"
+				desc = "POLITICS_KLARA_DESC"
+				picture = "Portrait_SOV_Klara.dds"
 				expire = "1965.1.1"
 				ideology = marxism
 				traits = {
@@ -5919,7 +5914,7 @@
 			}
 			set_party_name = { 
 				ideology = communism 
-				long_name = SOV_communist_party_tukhachevsky
+				long_name = SOV_communist_party_klara
 				name = SOV_the_red_army 
 			}
 		}
@@ -5962,15 +5957,11 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = SOV_leon_trotsky
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = yevgeni_preobrazhensky
 			add_political_power = 50
+			add_stability = 10
 			add_manpower = 50000
 			hidden_effect = {
-				set_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
+				set_global_flag = flag_trotskyite_has_returned_to_ussr_from_mexico
 			}
 		}
 	}
@@ -6022,10 +6013,10 @@
 		}
 	}
 	focus = { dynamic = yes
-		id = SOV_trotskyist_cadre_revolt
-		icon = 
+		id = SOV_Nonna_cadre_revolt
+		icon =  GFX_goal_unknown
 		prerequisite = { focus = SOV_prepare_army }
-		mutually_exclusive = { focus = SOV_learn_from_makhno }
+		mutually_exclusive = { focus = SOV_learn_from_nina }
 		available = {
 		}
 		x = 0
@@ -6041,15 +6032,15 @@
 						
 			country_event = { id = pvd.28 }
 			hidden_effect = {
-				set_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
+				set_global_flag = flag_trotskyite_has_returned_to_ussr_from_mexico
 			}
 		}
 	}
 	focus = { dynamic = yes
-		id = SOV_learn_from_makhno
+		id = SOV_learn_from_nina
 		icon = GFX_focus_spr_anarchism_knows_no_borders
 		prerequisite = { focus = SOV_prepare_army }
-		mutually_exclusive = { focus = SOV_trotskyist_cadre_revolt }
+		mutually_exclusive = { focus = SOV_Nonna_cadre_revolt }
 		available = {
 		}
 		x = 2
@@ -6088,19 +6079,17 @@
 					anarchist_zeal
 				}
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = agafya_andreyevna_kuzmenko_makhno
 		}
 	}
 	focus = { dynamic = yes
 		id = SOV_perpetual_war
 		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = SOV_learn_from_makhno focus = SOV_trotskyist_cadre_revolt }
+		prerequisite = { focus = SOV_learn_from_nina focus = SOV_Nonna_cadre_revolt }
 		available = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_trotskyist_cadre_revolt
+		relative_position_id = SOV_Nonna_cadre_revolt
 	
 		cost = 10
 		ai_will_do = {
@@ -6109,22 +6098,21 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-						add_country_leader_trait = revolutionary_zeal
-			
+			add_country_leader_trait = revolutionary_zeal
 			unlock_decision_tooltip = SOV_border_conflict_initiate_incident
 		}
 	}
 	focus = { dynamic = yes
 		id = SOV_socialist_world_republic
 		icon = GFX_focus_ger_great_red_menace
-		prerequisite = { focus = SOV_trotskyist_cadre_revolt focus = SOV_learn_from_makhno }
+		prerequisite = { focus = SOV_Nonna_cadre_revolt focus = SOV_learn_from_nina }
 		mutually_exclusive = { focus = SOV_anarchist_revolution }
 		available = {
 			has_government = communism
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_learn_from_makhno
+		relative_position_id = SOV_learn_from_nina
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -6195,16 +6183,16 @@
 	focus = { dynamic = yes
 		id = SOV_anarchist_revolution
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		prerequisite = { focus = SOV_learn_from_makhno }
+		prerequisite = { focus = SOV_learn_from_nina }
 		mutually_exclusive = { focus = SOV_socialist_world_republic }
 		available = {
 			neutrality > 0.4
 			NOT = { has_completed_focus = SOV_consolidate_communist_governments }
-			NOT = { has_completed_focus = SOV_trotskyist_cadre_revolt }
+			NOT = { has_completed_focus = SOV_Nonna_cadre_revolt }
 		}
 		x = 2
 		y = 1
-		relative_position_id = SOV_learn_from_makhno
+		relative_position_id = SOV_learn_from_nina
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -6339,7 +6327,7 @@
 			hidden_effect = { 195 = { set_state_name = "Petrograd" } }
 			set_province_name = { id = 3151 name = "Petrograd" }
 			hidden_effect = { 217 = { set_state_name = "Volgograd" } }
-			set_province_name = { id = 3526 name = "Volgograd" }
+			set_province_name = { id = 3529 name = "Volgograd" }
 		}
 	}
 	focus = { dynamic = yes
@@ -6469,9 +6457,9 @@
 				name = SOV_republic_fascism
 			}
 			create_country_leader = {
-				name = "Victor Chernov"
-				desc = "POLITICS_VICTOR_CHERNOV_DESC"
-				picture = "Portrait_Soviet_Victor_Chernov.dds"
+				name = "Alina"
+				desc = "POLITICS_ALINA_DESC"
+				picture = "Portrait_SOV_Alina.dds"
 				expire = "1965.1.1"
 				ideology = anarchist_communism
 				traits = {

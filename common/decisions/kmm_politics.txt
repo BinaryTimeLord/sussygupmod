@@ -880,6 +880,26 @@ kmm_pravdaist_concessions = {
 	}
 }	
 
+political_actions = {
+	GER_military_unrest = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = GER
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			has_completed_focus = GER_socialist_exile_exchange
+		}
+		days_mission_timeout = 365              # How many days before the mission fails?
+		timeout_effect = {
+			country_event = { id = pvd.22 }
+			set_country_flag = GER_socialist_civil_war
+		}
+	}
+}
+
 	
 	
 	

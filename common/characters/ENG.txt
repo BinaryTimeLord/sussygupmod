@@ -2042,7 +2042,10 @@ characters={
 			slot = political_advisor
 			idea_token = ENG_sylvia_pankhurst
 			available  = {
-				has_government  = communism 
+				OR = {
+					has_government  = communism 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			allowed  = {
 				OR = {
@@ -2053,6 +2056,11 @@ characters={
 					AND = {
 						original_tag = ETH
 						has_dlc = "By Blood Alone"
+					}
+
+					AND = {
+						original_tag = SWE
+						has_aat = yes
 					}
 				}
 				

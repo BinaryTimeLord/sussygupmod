@@ -101,10 +101,10 @@ SOV_alternate_plan = {
 	}
 	enable = {
 		OR = {
-			has_country_flag = SOV_AI_RANDOM_COMMUNIST_TUKHACHEVSKY
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_KLARA
 			has_game_rule = {
 				rule = SOV_ai_behavior
-				option = TUKHACHEVSKY
+				option = KLARA
 			}
 		}
 	}
@@ -113,7 +113,7 @@ SOV_alternate_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_tukhachevsky_coup
+		SOV_klara_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
@@ -153,7 +153,7 @@ SOV_alternate_plan = {
 		SOV_invite_exiled_communists
 		SOV_military_state
 		SOV_prepare_army
-		SOV_learn_from_makhno
+		SOV_learn_from_nina
 	}
 
 	research = {
@@ -200,7 +200,7 @@ SOV_alternate_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_tukhachevsky_coup
+		SOV_klara_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
@@ -213,7 +213,7 @@ SOV_alternate_plan = {
 		SOV_military_state
 		#1938
 		SOV_prepare_army
-		SOV_learn_from_makhno
+		SOV_learn_from_nina
 		SOV_stalin_constitution
 		SOV_collectivist_propaganda
 		SOV_extra_tech_slot_early
@@ -288,7 +288,7 @@ SOV_alternate_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_tukhachevsky_coup
+		SOV_klara_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
@@ -373,7 +373,7 @@ SOV_fascist = {
 	}
 
 	ai_national_focuses = {
-		SOV_tukhachevsky_coup
+		SOV_klara_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
