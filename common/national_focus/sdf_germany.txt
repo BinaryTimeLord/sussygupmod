@@ -1666,5 +1666,31 @@ focus_tree = {
 		}
 	}
 	
+	##ECONOMIC##
+	
+	focus = {
+		id = SDF_status_economic
+		##icon = 
+		##relative_position_id =
+		
+		x = 2
+		y = 0
+		
+		allow_branch = {
+			has_country_flag = SDF_CIVIL_WAR_WIN
+		}
+		
+		##prerequisite = {}
+		##mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	##MILITARY##
+	
 }
 

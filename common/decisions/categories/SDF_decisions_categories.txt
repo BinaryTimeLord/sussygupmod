@@ -47,3 +47,19 @@ SDF_officer_revolt = {
 		}
 	}
 }
+
+SDF_economic_crisis = {
+
+	icon = GFX_decision_gre_paying_ifc_debt
+	
+	priority = 1000
+	allowed = {
+		tag = SDF
+	}
+	
+	visible = {
+		SDF = {
+			has_completed_focus = SDF_victory_civil
+		}
+	}
+}

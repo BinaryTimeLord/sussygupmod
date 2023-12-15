@@ -688,6 +688,56 @@ characters = { ##fuck this shit it wont work##
 		}
     }
 	
+	SDF_anzai = {
+		name= "Anzai Chiyomi"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_anchovy.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Anzio/idea_ita_anchovy.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_anchovy.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_anchovy.dds"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token =SDF_anzai_idea
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				tag = SDF
+				
+			}
+			visible = {
+				
+			}
+			traits = {
+				head_of_military_complex
+			}
+			
+			cost = 150
+		}
+		
+		corps_commander={
+			traits={ inflexible_strategist trait_reckless }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
 	
 
 }

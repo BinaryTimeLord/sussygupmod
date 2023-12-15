@@ -17,7 +17,8 @@ leader_traits = {
 		compliance_gain = 0.05
 	
 	}
-
+	
+	##OTHERS##
 	popular_author = {
 		random = no
 		sprite = 13
@@ -43,5 +44,15 @@ leader_traits = {
 		trade_opinion_factor = 0.05
 		fascism_drift = 0.05
 		fascism_acceptance = 50
+	}
+	
+	head_of_military_complex = {
+		random = no
+		sprite = 13
+		
+		industry_air_damage_factor = -0.075
+		production_lack_of_resource_penalty_factor = -0.15
+		industrial_capacity_factory = 0.05
+		production_speed_arms_factory_factor = 0.15
 	}
 }

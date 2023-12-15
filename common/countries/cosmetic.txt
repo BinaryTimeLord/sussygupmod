@@ -1143,6 +1143,6 @@ ITA_REP = {
 }
 
 SDF_UNI = {
-	color = rgb { 204  82  0 }
-	color_ui = rgb { 204  82  0 }
+	color = { 204  82  0 }
+	color_ui = { 204  82  0 }
 }

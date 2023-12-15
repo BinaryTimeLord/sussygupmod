@@ -975,3 +975,87 @@ SDF_officer_revolt = {
 		}
 	}
 }
+
+SDF_economic_crisis = {
+	
+	SDF_economic_crisis_repeating = {
+		icon = GFX_decision_ger_mefo_bills
+		
+	
+	activation = {
+			SDF = {
+				has_completed_focus = SDF_victory_civil
+			}
+		}
+		
+		available = {
+			SDF = {
+				has_idea = sdf_economic_downturn4
+			}
+		}
+		
+		is_good = no
+		
+		days_mission_timeout = 80
+		selectable_mission = no
+		complete_effect = {
+		
+		}
+		
+		timeout_effect = { 
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_economic_downturn4
+					}
+				}
+				
+				add_ideas = sdf_economic_downturn4
+				hidden_effect = {
+					remove_ideas = sdf_economic_downturn3
+				}
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_economic_downturn2
+					}
+				}
+				
+				add_ideas = sdf_economic_downturn3
+				hidden_effect = {
+					remove_ideas = sdf_economic_downturn2
+				}
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = sdf_economic_downturn1
+					}
+				}
+				
+				add_ideas = sdf_economic_downturn2
+				hidden_effect = {
+					remove_ideas = sdf_economic_downturn1
+				}
+			}
+		
+			if = {
+				limit = {
+					NOT = {
+						SDF = {
+							has_idea = sdf_economic_downturn1
+							has_idea = sdf_economic_downturn2
+							has_idea = sdf_economic_downturn3
+							has_idea = sdf_economic_downturn4
+						}
+					}
+				}
+				
+				add_ideas = sdf_economic_downturn1
+			}
+		}
+}

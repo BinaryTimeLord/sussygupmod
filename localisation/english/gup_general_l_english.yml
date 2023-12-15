@@ -2910,6 +2910,7 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   sdf_nationalist:0 "Greater Kuromorimine Nationalist"
   sdf_underrated_politician:0 "Underrated Politician" 
   POLITICS_SAORI_DESC:0 "Born June 22nd 1914 in rural Ooarai, the first Great War was raging across Europe. Coming from a poorer family her father was conscripted into the Ooarai-Turul Empire's infantry corps and sent off to the eastern front to fight the Pravda threat. He was killed on the Eastern Front in 1917. \n \n With the hatered of Pravda and Nationalistic rhetoric sweeping post war Kuromorimine and Ooarai, Saori was swept up in the far right movements. In 1923 a political party known as the Sozialistische Demokratische Ooarai Vorderseite was formed by post war veterans. Their ideals were mild compared to the Nishizumi doctrine that was sweeping across Kuromorimine. Joining in 1931 in the military wing of the party, Saori quicky rose the ranks thanks to her radio communication and sub par commanding skills. \n \n In 1934 there was a power grab as the head of the party was killed in a firefight between the leftist Pravda front in Vienna. Through her charisma and charm Saori rose to the top of the party, controlling the military and the party itself. With the Kuromorimine civil war raging it is her time to act."
+  head_of_military_complex:0 "Head of the SDK(M)"
   
   ##IDEAS##
   sdf_army_w_state:0 "Army With a State"
@@ -2938,6 +2939,12 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   sdf_war_games:0 "War Games"
   sdf_army_purge:0 "Right Wing Army Purges"
   sdf_reinstate_ks:0 "Reinstated Kurostaffel"
+  sdf_economic_downturn1:0 "Economic Downturn: §OSelling Shares§!"
+  sdf_economic_downturn2:0 "Economic Downturn: §OClosing the Banks§!"
+  sdf_economic_downturn3:0 "Collapsing Economy: §OEconomic Downfall§!"
+  sdf_economic_downturn4:0 "Collapsed Economy"
+  sdf_economic_downturn5:0 "Recovering Economy: §OOn the Up§!"
+  sdf_economic_downturn6:0 "Recovering Economy: §CReturning to Normal§!"
   
   ##DECISIONS##
   SDF_raise_units:0 "Raising the National Guard"
@@ -2973,6 +2980,9 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_core_states_50:0 "Core Wuttemberg"
   SDF_core_states_53:0 "Core Niederbayern"
   SDF_core_states_52:0 "Core Oberbayern"
+  ##ECONOMY##
+  SDF_economic_crisis:0 "Economic Downturn"
+  SDF_economic_crisis_repeating:0 "Economic Crisis"
   
   ##FOCUS##
   SDF_wacht_am_rhien:0 "Die Wacht Am Rhein"

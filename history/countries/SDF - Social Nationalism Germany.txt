@@ -122,6 +122,7 @@ recruit_character = SDF_flint_high_command
 recruit_character = SDF_rum_high_command
 recruit_character = SDF_maho
 recruit_character = SDF_erika
+recruit_character = SDF_anzai
 
 ##EQUIPMENT##
 if = {
