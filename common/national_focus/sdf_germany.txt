@@ -748,7 +748,7 @@ focus_tree = {
 			has_country_flag = SDF_CIVIL_WAR_WIN
 		}
 		
-		x = 20
+		x = 15
 		y = 0
 		
 		prerequisite = {}
@@ -1673,6 +1673,10 @@ focus_tree = {
 		##icon = 
 		##relative_position_id =
 		
+		available = {
+			has_idea = sdf_economic_downturn4
+		}
+		
 		x = 2
 		y = 0
 		
@@ -1684,6 +1688,302 @@ focus_tree = {
 		##mutually_exclusive = {}
 		
 		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_industrial_democracy
+		##icon =
+		relative_position_id = SDF_status_economic
+		
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = SDF_status_economic }
+		mutually_exclusive = { focus = SDF_autarky }
+		mutually_exclusive = { focus = SDF_free_market }
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_break_corperations
+		##icon = 
+		relative_position_id = SDF_industrial_democracy
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = SDF_industrial_democracy }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_unite_mic
+		##icon = 
+		relative_position_id = SDF_industrial_democracy
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = SDF_industrial_democracy }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_work_freedom
+		##icon =
+		relative_position_id = SDF_industrial_democracy
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SDF_break_corperations focus = SDF_unite_mic }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_land_distribution
+		##icon = 
+		relative_position_id = SDF_industrial_democracy
+		
+		x = 1
+		y = 3
+		
+		prerequisite = { focus = SDF_unite_mic }
+		prerequisite = { focus = SDF_work_freedom }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+		
+	}
+	
+	focus = {
+		id = SDF_autarky
+		##icon = 
+		relative_position_id = SDF_status_economic
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_status_economic }
+		mutually_exclusive = { focus = SDF_industrial_democracy }
+		mutually_exclusive = { focus = SDF_free_market }
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_closing_trade
+		##icon = 
+		relative_position_id = SDF_autarky
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_autarky }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_battle_grain
+		##icon =
+		relative_position_id = SDF_autarky
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = SDF_closing_trade }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_new_mines
+		##icon = 
+		relative_position_id = SDF_autarky
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = SDF_closing_trade }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_kuro_century
+		##icon = 
+		relative_position_id = SDF_autarky
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SDF_battle_grain }
+		prerequisite = { focus = SDF_new_mines }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_free_market
+		##icon = 
+		relative_position_id = SDF_status_economic
+		
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = SDF_status_economic }
+		mutually_exclusive = { focus = SDF_industrial_democracy }
+		mutually_exclusive = { focus = SDF_autarky }
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_civil_works
+		##icon = 
+		relative_position_id = SDF_free_market
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = SDF_free_market }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_autobauhn
+		##icon =
+		relative_position_id = SDF_free_market
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = SDF_free_market }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = SDF_fix_buracracy
+		##icon = 
+		relative_position_id = SDF_free_market
+		
+		x = 0 
+		y = 2
+		
+		prerequisite = { focus = SDF_civil_works }
+		prerequisite = { focus = SDF_autobauhn }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_zero_tarrifs
+		##icon = 
+		relative_position_id = SDF_free_market
+		
+		x = -1
+		y = 3
+		
+		prerequisite = { focus = SDF_fix_buracracy }
+		prerequisite = { focus = SDF_civil_works }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_into_future
+		##icon = 
+		relative_position_id = SDF_status_economic
+		
+		x = 0
+		y = 5
+		
+		prerequisite = { focus = SDF_land_distribution focus = SDF_zero_tarrifs }
+		mutually_exclusive = {}
+		
+		cost = 10
 		
 		completion_reward = {
 		
