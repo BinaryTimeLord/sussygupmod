@@ -8318,6 +8318,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 2
@@ -8336,6 +8337,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 2

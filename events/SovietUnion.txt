@@ -178,10 +178,28 @@ country_event = {
 	
 	option = {
 		name = soviet.4.a
-		SOV = { 
-			transfer_state = 78
-			transfer_state = 80
-			transfer_state = 766
+
+		set_variable = { SOV.former_controller_of_bessarabia = 78.controller }
+		
+		ROOT = { #Scoping for tooltip reasons
+			if = { #NSB note: Now this will check for ownership and control so that in edge cases where there might be more than one controller, it won't break.
+				limit = {
+					78 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 78
+			}
+			if = {
+				limit = {
+					80 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 80
+			}
+			if = {
+				limit = {
+					766 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 766
+			}
 		}
 		hidden_effect = {
 			SOV = {
@@ -205,7 +223,7 @@ country_event = {
 		name = soviet.5.a
 		create_wargoal = {
 			type = take_state
-			target = ROM
+			target = FROM
 			generator = { 78 }
 		}
 		hidden_effect = {
@@ -227,7 +245,15 @@ country_event = {
 	
 	option = {
 		name = soviet.6.a
-		annex_country = { target = EST }
+		if = {
+			limit = {
+				FROM = { has_country_flag = cave_to_enemy_pressure_flag }
+			}
+			puppet = FROM
+		}
+		else = {
+			annex_country = { target = FROM }
+		}
 	}
 }
 
@@ -260,7 +286,15 @@ country_event = {
 	
 	option = {
 		name = soviet.8.a
-		annex_country = { target = LAT }
+		if = {
+			limit = {
+				FROM = { has_country_flag = cave_to_enemy_pressure_flag }
+			}
+			puppet = FROM
+		}
+		else = {
+			annex_country = { target = FROM }
+		}
 	}
 }
 
@@ -293,7 +327,15 @@ country_event = {
 	
 	option = {
 		name = soviet.10.a
-		annex_country = { target = LIT }
+		if = {
+			limit = {
+				FROM = { has_country_flag = cave_to_enemy_pressure_flag }
+			}
+			puppet = FROM
+		}
+		else = {
+			annex_country = { target = FROM }
+		}
 	}
 }
 
@@ -328,8 +370,18 @@ country_event = {
 		name = soviet.12.a
 		SOV = { 
 			transfer_state = 146
+			custom_effect_tooltip = FIN_remove_soviet_claims_in_other_states_tt
 		}
 		hidden_effect = {
+			FIN = {
+				every_core_state = {
+					limit = {
+						is_owned_by = PREV
+						is_claimed_by = ROOT
+					}
+					remove_claim_by = ROOT 
+				} 
+			}
 			SOV = {
 				country_event = { days = 1 id = news.13 }
 			}
@@ -355,7 +407,7 @@ country_event = {
 		}				
 		hidden_effect = {
 			SOV = {
-				country_event = { days = 1 id = news.12 }				
+				country_event = { days = 1 id = news.12 }
 			}
 		}
 	}
@@ -703,17 +755,11 @@ country_event = {
 	
 	option = {
 		name = soviet.24.a
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = grigory_zinoviev
-		set_country_flag = purged_zinoviev
-		hidden_effect = {
-			remove_ideas = grigory_zinoviev
-		}
 	}
 }
 
-# Great Purge - Trial of the Anti-Soviet Trotskyist Center
-country_event = {
+ #Great Purge - Trial of the Anti-Soviet Trotskyist Center
+ country_event = {
 	id = soviet.25
 	title = soviet.25.t
 	desc = soviet.25.d
@@ -744,7 +790,7 @@ country_event = {
 		show_ideas_tooltip = mikhail_kalinin
 		set_country_flag = purged_kalinin
 		hidden_effect = {
-			remove_ideas = mikhail_kalinin
+			retire_character = SOV_mikhail_kalinin_old
 		}
 	}
 	option = {
@@ -757,22 +803,17 @@ country_event = {
 		show_ideas_tooltip = nikita_khrushchev
 		set_country_flag = purged_khrushchev
 		hidden_effect = {
-			remove_ideas = nikita_khrushchev
+			retire_character = SOV_nikita_khrushchyov_old
 		}
 	}
-
 	option = {
 		ai_chance = {
 			factor = 30
 		}
 				WRRFTangle_calcXY = yes
-		name = soviet.25.g
+		name = soviet.25.c
+		add_political_power = -75
 		set_country_flag = purged_party_members
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = nikolay_bukharin
-		hidden_effect = {
-			remove_ideas = nikolay_bukharin
-		}
 	}
 	option = {
 		ai_chance = {
@@ -823,8 +864,8 @@ country_event = {
 		custom_effect_tooltip = remove_theorist
 		show_ideas_tooltip = mikhail_tukhachevsky
 		custom_effect_tooltip = remove_chief_of_army
-		show_ideas_tooltip = alexander_yegorov
-		show_ideas_tooltip = vasily_blucher
+		show_ideas_tooltip = SOV_aleksandr_yegorov
+		show_ideas_tooltip = SOV_vasily_blyukher
 		custom_effect_tooltip = remove_chief_of_navy
 		show_ideas_tooltip = pyotr_smirnov
 		show_ideas_tooltip = mikhail_frinovsky
@@ -832,8 +873,8 @@ country_event = {
 		custom_effect_tooltip = soviet.27_tt
 		hidden_effect = {
 			remove_ideas = mikhail_tukhachevsky
-			remove_ideas = alexander_yegorov
-			remove_ideas = vasily_blucher
+			remove_ideas = SOV_aleksandr_yegorov
+			remove_ideas = SOV_vasily_blyukher
 			remove_ideas = pyotr_smirnov
 			remove_ideas = mikhail_frinovsky
 		}
@@ -914,7 +955,7 @@ country_event = {
 		name = soviet.27.a
 		set_country_flag = purge_2_group_a
 		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = SOV_nikolai_yezhov
+		show_ideas_tooltip = SOV_nikolay_yezhov
 		custom_effect_tooltip = remove_chief_of_airforce
 		show_ideas_tooltip = yakov_smushkevich
 		show_ideas_tooltip = pavel_rychagov
@@ -924,7 +965,7 @@ country_event = {
 		remove_unit_leader = 406 #gordey_levchenko, naval commander
 		custom_effect_tooltip = soviet.27_tt
 		hidden_effect = {
-			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = SOV_nikolay_yezhov
 			remove_ideas = yakov_smushkevich
 			remove_ideas = pavel_rychagov
 			remove_ideas = alexander_novikov
@@ -971,7 +1012,7 @@ country_event = {
 
 
 # Trotsykist Coup
-country_event = {
+ country_event = { 
 	id = soviet.28
 	title = soviet.28.t
 	desc = soviet.28.d
@@ -996,8 +1037,7 @@ country_event = {
 		#	OR = {
 		#		has_country_flag = purged_kalinin
 		#		has_country_flag = purged_khrushchev
-		#		has_country_flag = purged_zinoviev
-		#		has_country_flag = purged_bukharin
+		#		has_country_flag = purged_party_members
 		#	}
 		#}	
 	}
@@ -1018,19 +1058,18 @@ country_event = {
 			remove_ideas = trotskyite_plot
 		}
 		kill_country_leader = yes
-		create_country_leader = {
-			name = "Nonna"
-			desc = "POLITICS_NONNA_DESC"
-			picture = "Portrait_SOV_Nonna.dds"
-			expire = "1965.1.1"
-			ideology = leninism
-			traits = {
-				permanent_revolutionary
+		add_country_leader_role = {
+			character = MEX_leon_trotsky
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					permanent_revolutionary
+				}
 			}
+			promote_leader = yes
 		}
-		remove_ideas = SOV_yezhovshchina1
 		remove_ideas = mikhail_kalinin
-		remove_ideas = SOV_vyacheslav_molotov
 		remove_ideas = ivan_konev
 		remove_unit_leader = 408
 		remove_ideas = pavel_zhigarev
@@ -2008,7 +2047,7 @@ country_event = {
 
 
 #New Leadership in Russia
-country_event = {
+country_event = { 
 	id = soviet.54
 	title = soviet.54.t
 	desc = {
@@ -2034,6 +2073,7 @@ country_event = {
 		NOT = {
 			has_government = communism
 		}
+		NOT = { SOV_is_exiles = yes } # No need to fire event if following the exiles focus branch
 		has_civil_war = no
 	}
 
@@ -2077,28 +2117,33 @@ country_event = {
 			is_subject = no
 		}
 		NOT =  { has_war_with = GER }
+		NOT = { has_global_flag = germany_lost_the_war }
 		OR = {
 			OR = {
-				owns_state = 88
-				owns_state = 92
-				owns_state = 90
-				owns_state = 86
-				owns_state = 87
-				owns_state = 85
-				owns_state = 98
-				owns_state = 10
+				owns_state = 88 #KRAKOW
+				owns_state = 92 #LUBLIN
+				owns_state = 90 #KIELCE
+				owns_state = 86 #POZNAN
+				owns_state = 87 #LODZ
+				owns_state = 85 #DANZIG
+				owns_state = 98 #PLOCK
+				owns_state = 10 #WARSAW
+				owns_state = 762 #KATOWICE
+				owns_state = 807 #GDYNIA
 			}
 			AND = {
 				POL = { has_capitulated = yes }
 				OR = {
-					controls_state = 88
-					controls_state = 92
-					controls_state = 90
-					controls_state = 86
-					controls_state = 87
-					controls_state = 85
-					controls_state = 98
-					controls_state = 10
+					controls_state = 88 #KRAKOW
+					controls_state = 92 #LUBLIN
+					controls_state = 90 #KIELCE
+					controls_state = 86 #POZNAN
+					controls_state = 87 #LODZ
+					controls_state = 85 #DANZIG
+					controls_state = 98 #PLOCK
+					controls_state = 10 #WARSAW
+					controls_state = 762 #KATOWICE
+					controls_state = 807 #GDYNIA
 				}
 			}
 			OR = {
@@ -2108,25 +2153,29 @@ country_event = {
 						is_faction_leader = yes
 					}
 					OR = {
-						owns_state = 88
-						owns_state = 92
-						owns_state = 90
-						owns_state = 86
-						owns_state = 87
-						owns_state = 85
-						owns_state = 98
-						owns_state = 10
+						owns_state = 88 #KRAKOW
+						owns_state = 92 #LUBLIN
+						owns_state = 90 #KIELCE
+						owns_state = 86 #POZNAN
+						owns_state = 87 #LODZ
+						owns_state = 85 #DANZIG
+						owns_state = 98 #PLOCK
+						owns_state = 10 #WARSAW
+						owns_state = 762 #KATOWICE
+						owns_state = 807 #GDYNIA
 						AND = {
 							POL = { has_capitulated = yes }
 							OR = {
-								controls_state = 88
-								controls_state = 92
-								controls_state = 90
-								controls_state = 86
-								controls_state = 87
-								controls_state = 85
-								controls_state = 98
-								controls_state = 10
+								controls_state = 88 #KRAKOW
+								controls_state = 92 #LUBLIN
+								controls_state = 90 #KIELCE
+								controls_state = 86 #POZNAN
+								controls_state = 87 #LODZ
+								controls_state = 85 #DANZIG
+								controls_state = 98 #PLOCK
+								controls_state = 10 #WARSAW
+								controls_state = 762 #KATOWICE
+								controls_state = 807 #GDYNIA
 							}
 						}		
 					}
@@ -2154,6 +2203,7 @@ country_event = {
 			}
 		}
 		name = soviet.60.a
+		#KRAKOW
 		if = {
 			limit = {
 				88 = {
@@ -2169,6 +2219,7 @@ country_event = {
 			}
 			GER = { transfer_state = 88 }
 		}
+		#LUBLIN
 		if = {
 			limit = {
 				92 = {
@@ -2184,6 +2235,7 @@ country_event = {
 			}
 			GER = { transfer_state = 92 }
 		}
+		#KIELCE
 		if = {
 			limit = {
 				90 = {
@@ -2199,6 +2251,7 @@ country_event = {
 			}
 			GER = { transfer_state = 90 }
 		}
+		#POZNAN
 		if = {
 			limit = {
 				86 = {
@@ -2217,6 +2270,7 @@ country_event = {
 				add_state_core = 86
 			}
 		}
+		#LODZ
 		if = {
 			limit = {
 				87 = {
@@ -2232,6 +2286,7 @@ country_event = {
 			}
 			GER = { transfer_state = 87 }
 		}
+		#DANZIG
 		if = {
 			limit = {
 				85 = {
@@ -2250,6 +2305,7 @@ country_event = {
 				add_state_core = 85
 			}
 		}
+		#PLOCK
 		if = {
 			limit = {
 				98 = {
@@ -2265,6 +2321,7 @@ country_event = {
 			}
 			GER = { transfer_state = 98 }
 		}
+		#WARSAW
 		if = {
 			limit = {
 				10 = {
@@ -2280,51 +2337,7 @@ country_event = {
 			}
 			GER = { transfer_state = 10 }
 		}
-		if = {
-			limit = {
-				70 = {
-					OR = {
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 70
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			GER = { transfer_state = 70 }
-		}
-		if = {
-			limit = {
-				664 = {
-					OR = {
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 664
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			GER = { transfer_state = 664 }
-		}
-		if = {
-			limit = {
-				72 = {
-					OR = {
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 72
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			GER = { transfer_state = 72 }
-		}
+		#KATOWICE
 		if = {
 			limit = {
 				762 = {
@@ -2343,6 +2356,103 @@ country_event = {
 				add_state_core = 762
 			}
 		}
+		#GDYNIA
+		if = {
+			limit = {
+				807 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 807
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 807 }
+		}
+		#MEMEL
+		if = {
+			limit = {
+				188 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 188
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 188 }
+		}
+		#WESTERN SLOVAKIA
+		if = {
+			limit = {
+				70 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 70
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 70 }
+		}
+		#EASTERN SLOVAKIA
+		if = {
+			limit = {
+				71 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 71
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 71 }
+		}
+		#SOUTHERN SLOVAKIA
+		if = {
+			limit = {
+				664 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 664
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 664 }
+		}
+		#ZAOLZIE
+		if = {
+			limit = {
+				72 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 72
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 72 }
+		}
+
 		GER = { country_event = soviet.61 }
 	}
 	option = {
@@ -2379,6 +2489,8 @@ country_event = {
 			add_state_claim = 85
 			add_state_claim = 98
 			add_state_claim = 10
+			add_state_claim = 762
+			add_state_claim = 807
 			effect_tooltip = {
 				create_wargoal = {
 					type = annex_everything
@@ -2516,4 +2628,231 @@ country_event = {
 		play_no_invincible_armies_effect = yes
 	}
 	option = {}
+}
+
+# Polish event for Soviets demanding alignment after Yalta
+country_event = {
+	id = soviet.70
+	title = soviet.70.t
+	desc = soviet.70.d
+	picture = GFX_report_event_soviet_tanks
+
+	trigger = {
+		tag = POL
+		NOT = { has_government = communism }
+		has_global_flag = yalta_agreed_flag
+		SOV = {
+			exists = yes
+		}
+		OR = {
+			NOT = {GER = {has_government = fascism}}
+			GER = {exists = no}
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = soviet.70.a
+		SOV = {
+			country_event = {
+				id = soviet.71
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = soviet.70.b
+		SOV = {
+			country_event = {
+				id = soviet.72
+				days = 1
+			}
+		}
+	}
+}
+
+# Soviet event for Poland joining sphere after Yalta 
+country_event = {
+	id = soviet.71
+	title = soviet.71.t
+	desc = soviet.71.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = soviet.71.a
+	}
+}
+
+# Soviet event for Poland refusing to join sphere after Yalta 
+country_event = {
+	id = soviet.72
+	title = soviet.72.t
+	desc = soviet.72.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = soviet.72.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+	option = {
+		name = soviet.72.b
+		FROM = {
+			country_event = {
+				id = soviet.73
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = soviet.73
+	title = soviet.73.t
+	desc = soviet.73.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = soviet.73.a
+	}
+}
+
+
+# Polish event for Returning occupied territory
+country_event = {
+	id = soviet.74
+	title = soviet.74.t
+	desc = soviet.74.d
+	picture = GFX_report_event_SOV_demands
+	is_triggered_only = yes 
+
+	trigger = {
+		
+	}
+	#fire_only_once = yes
+	
+	option = {
+		name = soviet.74.a
+		ai_chance = {
+			base = 1
+		}
+		POL = {
+			add_autonomy_score = { 
+				value = -250 
+				localization = POL_accepted_states
+			}
+			add_popularity = {
+				ideology = FROM
+				popularity = 0.05
+			}
+		}
+		FROM  ={
+			every_owned_state = {
+				limit = {
+					is_core_of = POL 
+					OR = {
+						# Białystok
+						state = 97 
+						# Uncontested Polish Cores
+						NOT = {
+							any_country_with_core = {
+								NOT = { tag = POL }
+							}
+						}
+					}
+					
+				}
+				transfer_state_to = POL
+			}
+		}
+		FROM = {
+			country_event = {
+				id = soviet.75
+				hours = 2 
+				random_hours = 6 
+			}
+		}
+	}
+	option = {
+		name = soviet.74.b
+		ai_chance = {
+			base = 0
+		}
+		POL = {
+			add_autonomy_score = { 
+				value = 250 
+				localization = POL_refused_states
+			}
+		}
+		FROM = {
+			every_owned_state = {
+				limit = {
+					is_core_of = POL 
+					OR = {
+						# Białystok
+						state = 97 
+						# Uncontested Polish Cores
+						NOT = {
+							any_country_with_core = {
+								NOT = { tag = POL }
+							}
+						}
+					}
+					
+				}
+				remove_core_of = POL  
+				add_core_of = SOV
+				add_claim_by = POL 
+			}
+		}
+		FROM = {
+			country_event = {
+				id = soviet.76
+				hours = 2 
+				random_hours = 6 
+			}
+		}
+	}
+}
+
+# Poland Accepted
+country_event = {
+	id = soviet.75
+	title = soviet.75.t
+	desc = soviet.75.d
+	picture = GFX_report_event_SOV_demands
+	is_triggered_only = yes 
+	option = {
+		name = soviet.75.a
+		ai_chance = {
+			base = 1
+		}
+		add_stability = 0.05
+	}
+}
+
+# Poland refused
+country_event = {
+	id = soviet.76
+	title = soviet.76.t
+	desc = soviet.76.d
+	picture = GFX_report_event_SOV_demands
+	is_triggered_only = yes 
+	option = {
+		name = soviet.76.a
+		ai_chance = {
+			base = 1
+		}
+	}
 }
