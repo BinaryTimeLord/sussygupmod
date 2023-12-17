@@ -2052,13 +2052,13 @@ soviet_power_struggle_decisions_gui = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_nkvd_balance_16_low
-				check_variable = { var = sov_nkvd_balance < 16 }
+				check_variable = { var = sov_nkvd_balance value = 16 compare = less_than_or_equals}
 			}
 		}
 		visible = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_nkvd_balance_16_low
-				check_variable = { var = sov_nkvd_balance < 16 }
+				check_variable = { var = sov_nkvd_balance value = 16 compare = less_than_or_equals }
 			}
 		}
 		fire_only_once = no
@@ -2172,7 +2172,7 @@ soviet_power_struggle_decisions_gui = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_nkvd_balance_100
-				check_variable = { var = sov_nkvd_balance = 100 }
+				check_variable = { var = sov_nkvd_balance value = 100 }
 			}
 			NOT = {
 				has_idea = SOV_nkvd_supremacy

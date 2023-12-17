@@ -387,7 +387,7 @@
 			
 			unlock_decision_tooltip = SOV_relocate_industry_from_moscow
 			unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
-			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk			
+			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk		
 		}
 	}
 
@@ -4378,7 +4378,7 @@
 					}
 				}
 				country_event = { #4th international congress
-					id = pvd.1
+					id = pvd.300
 				}
 			}
 			if = {
@@ -4399,7 +4399,7 @@
 						}
 					}
 					country_event = {
-						id = pvd.2
+						id = pvd.301
 					}
 				}
 			}
@@ -5741,7 +5741,7 @@
 					PRC = { has_government = communism }
 				}
 				PRC = {
-					country_event = { id = pvd.3 }
+					country_event = { id = pvd.302 }
 				}
 			}
 			else = {
@@ -6176,7 +6176,7 @@
 					}
 					has_government = communism
 				}
-				country_event = pvd.2
+				country_event = pvd.301
 			}
 		}
 	}
@@ -7197,7 +7197,7 @@
 					}
 					has_government = communism
 				}
-				country_event = pvd.2
+				country_event = pvd.301
 			}
 		}
 	}

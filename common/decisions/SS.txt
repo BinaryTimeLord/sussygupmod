@@ -5,7 +5,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			99 = {
@@ -27,7 +27,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -59,7 +59,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi"}
 			}
 			110 = { 
@@ -97,7 +97,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -124,7 +124,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			
@@ -157,7 +157,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -184,7 +184,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			6 = { 
@@ -206,7 +206,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -233,7 +233,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			29 = { 
@@ -271,7 +271,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -298,7 +298,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			13 = { 
@@ -320,7 +320,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -352,7 +352,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			12 = { 
@@ -374,7 +374,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -406,7 +406,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			
@@ -429,7 +429,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -461,7 +461,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			126 = { 
@@ -499,7 +499,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -531,7 +531,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -551,7 +551,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {
@@ -585,7 +585,7 @@ SS_recruitment = {
 
 		available = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			141 = { 
@@ -623,7 +623,7 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = ger_erika_pol
+				#has_idea = ger_erika_pol
 				has_country_leader = { name = "Erika Itsumi" }
 			}
 			OR = {

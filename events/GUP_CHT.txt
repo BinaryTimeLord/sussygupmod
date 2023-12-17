@@ -350,16 +350,16 @@ country_event = {
 }
 
 country_event = {
-	id = pvd.1
-	title = pvd.1.t
-	desc = pvd.1.desc
+	id = pvd.300
+	title = pvd.300.t
+	desc = pvd.300.desc
 	picture = GFX_report_event_pravda_ultimatum
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pvd.1.a
+		name = pvd.300.a
 		
 		white_peace = {
 			tag = JAP
@@ -369,7 +369,7 @@ country_event = {
 		hidden_effect = {
 			JAP = {
 				country_event = {
-					id = pvd.2
+					id = pvd.301
 				}
 			}
 			JAP = {
@@ -445,7 +445,7 @@ country_event = {
 	}
 
 	option = {
-		name = pvd.1.b
+		name = pvd.300.b
 		
 		JAP = {
 			add_ideas = cht_furious
@@ -454,7 +454,7 @@ country_event = {
 		hidden_effect = {
 			JAP = {
 				country_event = {
-					id = pvd.3
+					id = pvd.302
 				}
 			}
 		}
@@ -474,16 +474,16 @@ country_event = {
 }
 
 country_event = {
-	id = pvd.2
-	title = pvd.2.t
-	desc = pvd.2.desc
+	id = pvd.301
+	title = pvd.301.t
+	desc = pvd.301.desc
 	picture = GFX_report_event_cht_treaty_sign
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pvd.2.a
+		name = pvd.301.a
 		
 		JAP = {
 			transfer_state = 655
@@ -548,16 +548,16 @@ country_event = {
 }
 
 country_event = {
-	id = pvd.3
-	title = pvd.3.t
-	desc = pvd.3.desc
+	id = pvd.302
+	title = pvd.302.t
+	desc = pvd.302.desc
 	picture = GFX_report_event_cht_treaty_sign
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pvd.3.a
+		name = pvd.302.a
 		
 		if = {
 			limit = {

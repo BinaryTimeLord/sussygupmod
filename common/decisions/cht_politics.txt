@@ -248,7 +248,7 @@ chihatan_politics = {
 		complete_effect = {
 			SOV = {
 				country_event = {
-					id = pvd.1
+					id = pvd.300
 					days = 2
 				}
 			}

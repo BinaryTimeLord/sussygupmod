@@ -280,7 +280,7 @@
  kmm.4.t:0 "Kuromorimine Approaches Us"
  kmm.4.d:0 "After the 62nd tournament our relations with Kuromorimine have been a bit sour. But after the civil war Koume seems a bit more nice and open. She is suggesting a return of our old colonies for an alliance against the ever growing Pravda threat in the east. Pravda is already destabilizing our nation. Do we accept this offer?
  kmm.4.a:0 "Down with Pravda!"
- kmm.4.d:0 "Refuse, they are up to something!"
+ kmm.4.b:0 "Refuse, they are up to something!"
  kmm.5.t:0 "BC Freedom Agrees"
  kmm.5.d:0 "Now that we have BC Freedom on our side and some new colonies to exploit we can take on the Pravdaist threat to the east."
  kmm.5.a:0 "Excellent"
@@ -631,17 +631,17 @@
  cht2.9.a: "It is done."
 
  #PRAVDA ULTIMATUM
- pvd.1.t: "Ultimatum of Surrender from Chi-Ha-Tan"
- pvd.1.desc: "A delegate has arrrived in to the capital and has brought about an offer of peace with concession measures of our land in the east. It'll be [SOV.GetLeader]'s choice to accept or decline this offer. Our academy's fate is at stake with this."
- pvd.1.a: "They fought formidabbly."
- pvd.1.b: "They backstabbed us! Why else would we?"
+ pvd.300.t: "Ultimatum of Surrender from Chi-Ha-Tan"
+ pvd.300.desc: "A delegate has arrrived in to the capital and has brought about an offer of peace with concession measures of our land in the east. It'll be [SOV.GetLeader]'s choice to accept or decline this offer. Our academy's fate is at stake with this."
+ pvd.300.a: "They fought formidabbly."
+ pvd.300.b: "They backstabbed us! Why else would we?"
  ULAANBAATOR_TREATY: "Acceptance of the §RUlaanbaator Conference§!"
- pvd.2.t: "[SOV.GetLeader] concedes"
- pvd.2.desc: ""
- pvd.2.a: "Smart idea!"
- pvd.3.t: "[SOV.GetLeader] defiant"
- pvd.3.desc: ""
- pvd.3.a: "Aight bet"
+ pvd.301.t: "[SOV.GetLeader] concedes"
+ pvd.301.desc: ""
+ pvd.301.a: "Smart idea!"
+ pvd.302.t: "[SOV.GetLeader] defiant"
+ pvd.302.desc: ""
+ pvd.302.a: "Aight bet"
 
  #GLORIANA TREATY
  glo.1.t: "Treaty Offer in Singapore"
@@ -796,7 +796,7 @@
  
  kmm.219.t:0 "St Gloriana Accepts"
  kmm.219.d:0 "After much discussion amongst the ministers and military leaders, St. Gloriana has decided to accept us with welcome arms into the alliance, with Rosehip herself being the energetic commander she was, personally traveling to Kuromorimine to hand the acceptance letter in person.\n \nNow that both St. Gloriana and Kuromorimine are united in their desire for peace and prosperity, we can move on to ensuring Europe's continued security."
- kmm.218.a:0 "Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!"
+ kmm.219.a:0 "Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!"
  
  kmm.220.t:0 "Asking for Aid"
  kmm.220.d:0 "The Kuromorimine state following the civil war, to put it mildly, is using one of the generals in our army, on fire, which is a tad ironic due to the fact we are in a shortage of fire engines and the growing shortages gripping our country.\n \nIt’s clear that if this continues, public order will collapse and another civil war could potentially occur. To prevent this, it is clear that we must swallow our pride for the good of our people and ask for aid from the other major powers. While we don’t expect much, surely some kind souls will be willing to help us limp into a brighter future."
@@ -1355,8 +1355,6 @@
  jat.22.d:0 "Due to failures at the front, the political crisis begins. The President is forced to resign, and Mika takes over her position."
  jat.22.a:0 "Let's hope for the best..."
  
- 
- FIN_AI_BEHAVIOR:0 "@FIN Jatkosota"
  RULE_OPTION_SOV_COMPROMISE:0 "Compromise with the Pravda"
  RULE_OPTION_SOV_COMPROMISE_FIN_AI_DESC:0 ""
  RULE_OPTION_FIGHT_THE_COMMUNISM:0 "Fight the Pravda"
@@ -1584,7 +1582,7 @@
  sdf.12.a:0 "Berlin!"
  sdf.12.b:0 "Keep it at Munich!"
  sdf.12.c:0 "Frankfurt"
- sdf.12.d:0 "Obviously Hamburg"
+ sdf.12.e:0 "Obviously Hamburg"
  
  sdf.13.t:0 "A Border Incident!"
  sdf.13.d:0 "With the room illuminated only by a few candles, members of Saori’s inner circle gathered to discuss the future of Kuromormine. Unable to quell the Mahoist opposition in the east, the government had been forced to implement martial law, curfews, and mass arrests with some success. The leaders discussed their options in the midst of their flimsy grasp on order. “Elections?” one suggested. “Total martial law, at least for now,” said another. Others discussed plans for a tiered system of increased rights for politically compliant citizens. But while these would solve Kuromormine’s internal problems, they wouldn’t stop the external threat of Mahoist supporters fleeing towards Ooarai for political safety. \n \n Hours later, Saori had been notified by members of her International Information Bureau (IIB) of a massive attack from the southern border. Video evidence from Ooarai border guards had been leaked to newspapers, and showed Ooarai firing across the demarcation line into Kuromorimine, and with Ooarai’s planes bombing Kuromorimine positions. As the first of Kuromorimine’s tanks rolled to stem the onslaught from the border, Saori smiled quietly, knowing that the Kuromorimine planes painted in Ooarai insignia, and the IIB officers in stolen Ooarai uniforms had accomplished their duty."

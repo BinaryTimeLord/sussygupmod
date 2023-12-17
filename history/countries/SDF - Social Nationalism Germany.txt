@@ -599,16 +599,4 @@ if = {
 		}
 		icon = "GFX_GER_CAS1_medium"
 	}
-	create_equipment_variant = {
-		name = "Do 22"
-		type = small_plane_naval_bomber_airframe_1
-		design_team = mio:GER_dornier_organization
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = floats
-		}
-		icon = "GFX_GER_naval_bomber1_medium"
-	}
 }

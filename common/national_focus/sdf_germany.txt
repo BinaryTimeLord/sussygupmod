@@ -833,7 +833,7 @@ focus_tree = {
 		relative_position_id = SDF_anarchy_issue
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = -1
@@ -890,7 +890,7 @@ focus_tree = {
 		relative_position_id = SDF_anarchy_issue
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = 1
@@ -1190,7 +1190,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false
+			always = no
 		}	
 		
 		prerequisite = { focus = SDF_power_struggle }

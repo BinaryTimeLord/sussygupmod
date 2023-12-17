@@ -75,9 +75,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
 			add_stability = 0.1
@@ -114,9 +112,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -161,9 +157,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 		
 		completion_reward = {
 			add_ideas = MAN_mukden_military_academy
@@ -207,7 +201,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
+				limit = { has_state_flag = MAN_invite_japanese_settlers_2IC }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -272,9 +266,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -321,9 +313,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -370,9 +360,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -406,9 +394,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -559,9 +545,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -615,13 +599,23 @@
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_STABILITY }
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
-			MAN_low_legitimacy_level_down = yes
-			add_ideas = MAN_hoankyoku
+			add_stability = 0.1
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					is_ai = no
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = yes
+				}
+				add_ideas = MAN_hoankyoku_idea
+			}
 		}
 	}
 
@@ -651,9 +645,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -739,59 +731,21 @@
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = tomoyo_ikeda_p_man
-			random_state = {
-				limit = {
-					has_state_flag = MAN_invite_japanese_investors_IC
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = tomoyo_ikeda_p_man
-			random_owned_controlled_state = {
+			random_core_state = {
 				prioritize = { 328 }
 				limit = {
 					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = MAN_invite_japanese_investors_IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_refinery
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = MAN_expand_the_textile_industry_IC
 			}
 			MAN_low_legitimacy_level_down = yes
 		}
@@ -836,50 +790,85 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
-				limit = { 716 = { is_fully_controlled_by = ROOT } }
-				716 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
+					limit = {
+						controls_state = 716
+					}
+					build_railway = { #Mukden-Korean border
+						path = {
+							11771 9885 3895 3839 3970 6981
+						}
+					}
+					build_railway = { #Mukden - Dalian
+						path = {
+							11771 987 9781 11764 964 3783
+						}
+					}
+				}
+			if = {
+				limit = { 
+					328 = { is_fully_controlled_by = ROOT } 
+					controls_state = 715
+					controls_state = 716
+				}
+				build_railway = {
+					path = { #Mukden - Hsinking - Harbin
+						11771 11808 916 4642 4572 4503 7652 10433
 					}
 				}
 			}
 			if = {
-				limit = { 328 = { is_fully_controlled_by = ROOT } }
-				328 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-				} 
+				limit = {
+					controls_state = 716
+					controls_state = 610
+				}
+				build_railway = { #Mukden - Chinese border
+					path = { 11771 6951 11815 9835 6837 11886 3900 }
+				}
 			}
 			if = {
-				limit = { 610 = { is_fully_controlled_by = ROOT } }
-				610 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-				} 
+				limit = {
+					controls_state = 714
+					controls_state = 715
+				}
+				build_railway = { #Mukden - central Manchuria
+					path = { 11771 846 9831 930 4633 4561 4506 7582 10433 }
+				}
 			}
-			if = {
-				limit = { 717 = { is_fully_controlled_by = ROOT } }
-				717 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
 					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -911,9 +900,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -965,9 +952,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1009,9 +994,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1066,9 +1049,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1153,9 +1134,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1189,9 +1168,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1259,15 +1236,38 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = MAN_mamc_light
-			show_ideas_tooltip = MAN_mamc_medium
-			show_ideas_tooltip = MAN_mamc_heavy
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = MAN_mamc_light_organization
+				show_mio_tooltip = MAN_mamc_medium_organization
+				show_mio_tooltip = MAN_mamc_heavy_organization
+				
+
+
+				mio:MAN_mamc_light_organization = {
+					add_mio_funds = 500
+				}
+				mio:MAN_mamc_medium_organization = {
+					add_mio_funds = 500
+				}
+				mio:MAN_mamc_heavy_organization = {
+					add_mio_funds = 500
+				}
+			}
+
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = MAN_mamc_light
+				show_ideas_tooltip = MAN_mamc_medium
+				show_ideas_tooltip = MAN_mamc_heavy
+			}
 		}
 	}
 
@@ -1297,9 +1297,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1333,9 +1331,9 @@
 				planning_skill = 2
 				logistics_skill = 3
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = MAN_alliance_with_the_kwantung_army
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1368,9 +1366,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1414,9 +1410,7 @@
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
 			annex_country = { target = MEN transfer_troops = yes }
@@ -1452,9 +1446,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1503,9 +1495,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1513,6 +1503,7 @@
 				value = 0.15
 				localization = MAN_the_two_emperors
 			}
+			MAN_low_legitimacy_level_down_twice = yes
 		}
 	}
 
@@ -2069,9 +2060,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
@@ -2105,9 +2094,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
 			add_ideas = MAN_white_russian_advisers
@@ -2349,7 +2336,12 @@
 		completion_reward = {
 			add_stability = 0.15
 
-			unlock_decision_tooltip = MAN_prepare_to_seize_arms
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				unlock_decision_tooltip = MAN_prepare_to_seize_arms
+			}
 			if = {
 				limit = {
 					has_idea = MAN_kwantung_veto
@@ -2399,9 +2391,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -2444,7 +2434,13 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			hidden_effect = { OVERLORD = { save_event_target_as = overlord_target } }
+			hidden_effect = { set_variable = { MAN_independence_target = OVERLORD } } #We're using a variable here because the saved event target becomes invalidated deep in ScopedEventTarget
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				add_country_leader_trait = nationalist_symbol
+			}
 			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
 			effect_tooltip = {		
 				if = {
@@ -2461,20 +2457,18 @@
 			hidden_effect = {
 				if = {
 					limit = {
-						is_in_faction_with = event_target:overlord_target
+						is_in_faction_with = var:MAN_independence_target
 					}
 					leave_faction = yes
 				}
 				declare_war_on = {
-					target = event_target:overlord_target
+					target = var:MAN_independence_target 
 					type = puppet_wargoal_focus
 				}
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.48 days = 2 }
 			}
-			
-			add_country_leader_trait = nationalist_symbol
 		}
 	}
 
@@ -2504,12 +2498,22 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
+
+			if = {
+				limit = {
+
+					NOT = {
+						has_country_leader_with_trait = nationalist_symbol
+					}
+					
+					is_subject = no
+				}
+				add_country_leader_trait = nationalist_symbol
+			}
 		}
 	}
 
@@ -2539,9 +2543,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2576,9 +2578,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		completion_reward = {
 			set_capital = { state = 608 }
@@ -2622,9 +2622,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -2689,9 +2687,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2731,9 +2727,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -2778,9 +2772,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
 
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
