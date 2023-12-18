@@ -682,9 +682,9 @@ SOV_ai_behavior = {
 		desc = "RULE_OPTION_ALTERNATE_SOV_AI_DESC"
 	}
 	option = {
-		name = KLARA
-		text = "RULE_OPTION_ALTERNATE_KLARA"
-		desc = "RULE_OPTION_ALTERNATE_KLARA_SOV_AI_DESC"
+		name = ALINA
+		text = "RULE_OPTION_ALTERNATE_ALINA"
+		desc = "RULE_OPTION_ALTERNATE_ALINA_SOV_AI_DESC"
 	}
 	option = {
 		name = ANARCHIST

@@ -147,7 +147,6 @@ GER_daimler_benz_organization = {
 	
 	allowed = {	
 		tag = GER 
-		tag = SDF
 	}
 
 	tree_header_text = {

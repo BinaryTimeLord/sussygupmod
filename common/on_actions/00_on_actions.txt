@@ -1643,7 +1643,7 @@ on_actions = {
 								game_weight_can_add_fascist = no
 							}
 						}
-						10 = { SOV = { set_country_flag = SOV_AI_RANDOM_COMMUNIST_ALTERNATE_KLARA } }
+						10 = { SOV = { set_country_flag = SOV_AI_RANDOM_COMMUNIST_ALTERNATE_ALINA } }
 						10 = { SOV = { set_country_flag = SOV_AI_RANDOM_COMMUNIST_ANARCHIST } }
 						10 = { SOV = { set_country_flag = SOV_AI_RANDOM_COMMUNIST_DEMOCRATIC } }
 						10 = { SOV = { set_country_flag = SOV_AI_RANDOM_COMMUNIST_FASCIST } }

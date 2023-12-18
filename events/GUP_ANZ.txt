@@ -517,8 +517,8 @@ country_event = {
 			    elections_allowed = no
 			}
 			create_country_leader = {
-				name = "Anchovy's Paranoia"
-			    desc = "POLITICS_ANCHOVYS_PARANOIA_DESC"
+				name = "Schizo Anchovy"
+			    desc = "POLITICS_SCHIZO_ANCHOVY_DESC"
 			    picture = GFX_portrait_ITA_anchovys_paranoia
 				expire = "1965.1.1"
 				ideology = despotism

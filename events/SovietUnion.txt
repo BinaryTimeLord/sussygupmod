@@ -1803,7 +1803,7 @@ country_event = {
 	trigger = {
 		has_government = communism
 		tag = SOV
-		NOT = { has_completed_focus = SOV_klara_coup }
+		NOT = { has_completed_focus = SOV_alina_coup }
 		has_global_flag = SOV_fourth_international_fired
 		NOT = { has_completed_focus = SOV_great_purge }
 	}

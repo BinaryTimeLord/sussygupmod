@@ -2624,24 +2624,13 @@ characters = {
 				small = "GFX_idea_SOV_lev_trotsky"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
 
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_lev_trotsky
 			allowed = {
 				original_tag = SOV
+				has_government = communism
 			}
 			on_add = {
 				if = {
@@ -2668,20 +2657,10 @@ characters = {
 			}
 			available = {
 				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				OR = {
 					has_completed_focus = SOV_integrate_smirnovs_bloc
 					has_completed_focus = SOV_return_democracy_to_the_party
 				}
 				is_country_leader = no
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 				IF = {
 					limit = {
 						has_global_flag = flag_mexico_invited_trotsky_to_government

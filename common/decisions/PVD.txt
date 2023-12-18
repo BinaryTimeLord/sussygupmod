@@ -243,7 +243,7 @@ expand_the_soviet_union_category = {
 		fire_only_once = yes
 		available = {
 			custom_trigger_tooltip = {
-				controls_state = 514
+				controls_state = 65
 			}
 			has_completed_focus = SOV_war_with_germany
 			
@@ -254,9 +254,8 @@ expand_the_soviet_union_category = {
 		}
 		
 		complete_effect = {
-			514 = { add_core_of = ROOT }
+			65 = { add_core_of = ROOT }
 		}
-		
 	}
 	
 	SOV_establish_bavarian_SSR = {
@@ -2236,7 +2235,7 @@ soviet_power_struggle_decisions_gui = {
 				news_event = { hours = 3 id = news.220 }
 				if = {
 					limit = {
-						NOT = { has_completed_focus = SOV_klara_coup }
+						NOT = { has_completed_focus = SOV_alina_coup }
 						NOT = { has_country_flag = counter_purge }
 					}
 					random_other_country = {
@@ -2346,9 +2345,9 @@ soviet_power_struggle_decisions_gui = {
 							has_government = neutrality
 						}
 						create_country_leader = {
-							name = "Klara"
-							desc = "POLITICS_KLARA_DESC"
-							picture = "Portrait_SOV_Klara.dds"
+							name = "Alina"
+							desc = "POLITICS_ALINA_DESC"
+							picture = "Portrait_SOV_Alina.dds"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {
@@ -2509,9 +2508,9 @@ soviet_power_struggle_decisions_gui = {
 						}
 						kill_country_leader = yes
 						create_country_leader = {
-							name = "Klara"
-							desc = "POLITICS_KLARA_DESC"
-							picture = "Portrait_SOV_Klara.dds"
+							name = "Alina"
+							desc = "POLITICS_ALINA_DESC"
+							picture = "Portrait_SOV_Alina.dds"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {

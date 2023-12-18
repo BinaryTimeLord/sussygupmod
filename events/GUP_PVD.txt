@@ -204,7 +204,7 @@ country_event = {
 	title = pvd.6.t
 	desc = pvd.6.d
 	
-	picture = GFX_news_event_011
+	picture = GFX_report_event_hungarian_soldiers
 
 	is_triggered_only = no
 	
@@ -243,7 +243,7 @@ country_event = {
 	title = pvd.7.t
 	desc = pvd.7.d
 	
-	picture = GFX_news_event_012
+	picture = GFX_report_event_molotov_ribentrop_handshake
 
 	is_triggered_only = no
 	
@@ -279,7 +279,7 @@ country_event = {
 	title = pvd.8.t
 	desc = pvd.8.d
 	
-	picture = GFX_news_event_012
+	picture = GFX_report_event_molotov_ribentrop_handshake
 
 	is_triggered_only = yes
 	
@@ -338,7 +338,7 @@ country_event = {
 	title = pvd.9.t
 	desc = pvd.9.d
 	
-	picture = GFX_news_event_012
+	picture = GFX_report_event_molotov_ribentrop_handshake
 
 	is_triggered_only = yes
 	
@@ -354,7 +354,7 @@ country_event = {
 	title = pvd.10.t
 	desc = pvd.10.d
 	
-	picture = GFX_news_event_012
+	picture = GFX_report_event_molotov_ribentrop_handshake
 
 	is_triggered_only = yes
 	
@@ -572,7 +572,7 @@ country_event = {
 country_event = {
 	id = pvd.17
 	title = britain.19.t
-	desc = pvd.17
+	desc = britain.19.d
 	picture = GFX_report_event_indian_soldiers
 
 	is_triggered_only = yes
@@ -741,7 +741,7 @@ country_event = {
 country_event = {
 	id = pvd.20
 	title = pvd.20.t
-	desc = pvd.20.t
+	desc = pvd.20.d
 	picture = GFX_report_news_event_aid_pact
 
 	is_triggered_only = no
@@ -865,9 +865,9 @@ country_event = { #GERMAN COMMIE CIVIL WAR
 		name = pvd.22.a
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Heinrich Himmler"
-			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-			picture = "Portrait_Germany_Heinrich_Himmler.dds"
+			name = "Erika"
+			desc = "POLITICS_ERIKA_DESC"
+			picture = "Portrait_GER_Erika.dds"
 			expire = "1965.1.1"
 			ideology = nazism
 			traits = {
@@ -889,8 +889,8 @@ country_event = { #GERMAN COMMIE CIVIL WAR
 
 country_event = {
 	id = pvd.23
-	title = pvd.23.title
-	desc = pvd.23.desc
+	title = pvd.23.t
+	desc = pvd.23.d
 	
 	picture = GFX_report_event_communists_cheer
 
@@ -1033,7 +1033,7 @@ country_event = {
 country_event = {
 	id = pvd.26
 	title = bftb_turkey.79.t
-	desc = pvd.26.d
+	desc = bftb_turkey.79.d
 	picture = GFX_report_event_polish_tanks_01
 
 	is_triggered_only = yes
@@ -1086,7 +1086,7 @@ country_event = {
 
 country_event = {
 	id = pvd.28
-	title = soviet.28.t
+	title = pvd.28.t
 	desc = pvd.28.d
 	picture = GFX_report_event_soviet_purge_politicians
 
@@ -1432,7 +1432,7 @@ country_event = {
 
 country_event = {
 	id = pvd.33
-	title = SOV_trotsky_leads
+	title = pvd.33.a
 	desc = pvd.33.d
 	picture = GFX_report_event_communists_cheer
 
@@ -1441,46 +1441,6 @@ country_event = {
 	option = {
 		name = pvd.33.a
 		add_country_leader_trait = red_army_organizer
-		if = {
-			limit = {
-				has_completed_focus = SOV_perpetual_war
-			}
-			add_country_leader_trait = revolutionary_zeal
-		}
-	}
-	option = {
-		name = SOV_kollontai_leads
-		create_country_leader = {
-			name = "Alexandra Kollontai"
-			desc = "POLITICS_NIKOLAY_YEZHOV_DESC"
-			picture = "Portrait_Soviet_Nikolay_Bukharin.tga"
-			expire = "1965.1.1"
-			ideology = leninism
-			traits = {
-				ambitious_negotiator_communism
-				marxist_feminist
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = SOV_perpetual_war
-			}
-			add_country_leader_trait = revolutionary_zeal
-		}
-	}
-	option = {
-		name = SOV_bukharin_leads
-		create_country_leader = {
-				name = "Nikolai Bukharin"
-				desc = "POLITICS_NIKOLAY_YEZHOV_DESC"
-				picture = "Portrait_Soviet_Alexandra_Kollontai.tga"
-				expire = "1965.1.1"
-				ideology = leninism
-				traits = {
-					marxist_philosopher
-					market_socialist
-				}
-			}
 		if = {
 			limit = {
 				has_completed_focus = SOV_perpetual_war
@@ -1562,7 +1522,7 @@ news_event = {
 	id = pvd.103
 	title = pvd.103.t
 	desc = pvd.103.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_news_event_military_planning
 	
 	major = yes
 	
@@ -1687,7 +1647,7 @@ news_event = {
 
 news_event = {
 	id = pvd.221
-	title = news.221.t
+	title = pvd.221.t
 	desc = pvd.221.d
 	picture = GFX_news_event_journalists_speech
 

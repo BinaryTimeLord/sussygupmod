@@ -1250,14 +1250,10 @@
  jat.62.d:0 "Without caring about the allied treaties concluded with us, Jatkosota made a separate peace with the Pravda and withdrew from the war."
  jat.62.a:0 "They'll pay for that."
  
- 
- 
  FIN_Mika_coup:0 "Mika seized power"
  FIN_SD_goverment:0 "Social Democratic Government was created"
  FIN_coalition_goverment:0 "Coalition Government was created"
  FIN_fascist_rule:0 "Fascists seized power"
- 
- 
  
  jat.1.t:0 "1936 election"
  jat.1.d:0 "The next elections to the 200-seat finnish parliament, Eduskunta, will take place very soon. At the moment, the only party capable of getting an absolute majority in the election is Social Democratic Party. The rests don't have enough popularity among the population, but the current president is against the Social Democrats. Whom should we support?"
@@ -1487,10 +1483,10 @@
  pvd.5.t:1 "[From.GetName] resists [Root.GetAdjective] pressure"
  pvd.5.d:1 "[From.GetName] is resisting our diplomatic pressure for us to have more control of their foreign policy."
  pvd.5.a:1 "Pity."
- pvd.33.d:1 "On one hand, the radical Alexandra Kollontai is proposing a social revolution that is targeted against patriarchy, and a left-communist agenda. She is a notable advocate of Free Love. \n\n Nikolai Bukharin was the mastermind behind the New Economic Policy, and she believes a reinstatement of this could be beneficial for the country. \n\n And of course, Nonna, the creator of the Red Army, wants to militarize labour and spread the revolution by force."
+ pvd.33.d:1 ""
  pvd.33.a:1 "Nonna Leads"
  pvd.11.d:1 "After the success of our recent cooperation, the Soviets have come to us with an intriguing offer. They propose that we put our differences aside and instead of wasting our strength fighting each other while the western democracies watch and profit, we combine our strength and crush them instead!" 
- pvd.12.d:1 "The Germans have refused our offer, if we want the industry of Germany we shall have to take them by force!"
+ pvd.12.d:1 "The Germans have refused our offer, if we want the industry of Kuromorimine we shall have to take them by force!"
  pvd.14.t:1 "Membership in [Root.GetNameDef]"
  pvd.14.d:1 "We are under pressure from Moscow to officially join [Root.GetNameDef]. Should we agree to this?
  pvd.15.t:1 "[From.GetName] Refuses!"
@@ -1498,7 +1494,7 @@
  pvd.16.t:1 "The Annexation of [From.GetName]"
  pvd.16.d:1 "The Supreme Soviet has received a formal request from the [From.GetAdjective] parliament for membership in [From.GetNameDef]. They will be organized as the [From.GetAdjective] Autonomous Oblast in the Russian SFSR.
  pvd.101.t:1 "Coup in [From.GetNameDef]!"
- pvd.101.d:1 "Klara have launched a coup d'etat against Katyusha's leadership, quickly seizing control of Moscow and Leningrad. They pledged to end the tyranny and purges of Katyusha's reign in a public address this morning. \n\nKatyusha escaped from the Kremlin in the midst of the coup, and her loyalists have gathered around the city of Katyushagrad, preparing to take back power from the ursurpers."
+ pvd.101.d:1 "Alina have launched a coup d'etat against Katyusha's leadership, quickly seizing control of Moscow and Leningrad. They pledged to end the tyranny and purges of Katyusha's reign in a public address this morning. \n\nKatyusha escaped from the Kremlin in the midst of the coup, and her loyalists have gathered around the city of Katyushagrad, preparing to take back power from the ursurpers."
  pvd.101.a:1 "Long Live [From.GetNameDef]!"
  pvd.101.b:1 "Perhaps it is for the better."
  pvd.101.c:1 "Proof of the instability of the Communist system."
@@ -1508,13 +1504,14 @@
  pvd.102.b:1 "They have come a long way."
  pvd.102.c:1 "Chaos reigns supreme."
  pvd.103.t:1 "Legislative Elections held in [From.GetNameDef]"
- pvd.103.d:1 "Klara's §RMilitary§! Government has recently announced that it is conducting legislative elections to the newly re-established All-Union Constituent Assembly. International observers have been invited to verify that the election is free and fair. \n\nA suprising number of political parties have emerged in the post civil-war landscape, and there are sure to be some interesting developments in this election."
+ pvd.103.d:1 "Alina's §RMilitary§! Government has recently announced that it is conducting legislative elections to the newly re-established All-Union Constituent Assembly. International observers have been invited to verify that the election is free and fair. \n\nA suprising number of political parties have emerged in the post civil-war landscape, and there are sure to be some interesting developments in this election."
  pvd.103.a:1 "Let the people be heard."
  pvd.103.b:1 "They have come a long way."
  pvd.103.c:1 "An unexpected development."
- pvd.221.d:1 "[SOV.GetNameDefCap] has seen a great upset, as Klara has been deposed by a faction supporting her new political rival [SOV.GetLeader]!\nAs for where the old Marshal is now, or exactly how the transition took place, details are still scarce.\nEverything indicates that it was not a peaceful transition however, as some Klara loyalists have hoisted their banners in revolt against Nonna's new regime."
+ pvd.221.t:1 "Nonna Asserts to Pravda"
+ pvd.221.d:1 "[SOV.GetNameDefCap] has seen a great upset, as Alina has been deposed by a faction supporting her new political rival [SOV.GetLeader]!\nAs for where the old Marshal is now, or exactly how the transition took place, details are still scarce.\nEverything indicates that it was not a peaceful transition however, as some Alina loyalists have hoisted their banners in revolt against Nonna's new regime."
  pvd.6.t:1 "Reclaim Karelia"
- pvd.6.d:1 "Germany has recently offered to help us regain the territory lost to the Russians in exchange for us joining their war. Should we accept?"
+ pvd.6.d:1 "Kuromorimine has recently offered to help us regain the territory lost to the Russians in exchange for us joining their war. Should we accept?"
  pvd.6.a:1 "Yes. We will reclaim what is ours!"
  pvd.6.b:1 "It is too risky."
  pvd.7.t:1 "Peace with Finland"
@@ -1531,11 +1528,16 @@
  pvd.10.t:1 "The Finns refuse"
  pvd.10.d:1 "The Finns have rejected our generous peace offer. The war continues."
  pvd.10.a:1 "Their loss."
+ pvd.20.t:1 ""
+ pvd.20.d:1 ""
+ pvd.23.t:1 ""
+ pvd.23.d:1 ""
  pvd.21.t:1 "Italian Civil War"
- pvd.21.d:1 "Bolstered by the capture of Italian mainland territories by the allies, Anti-Fascist resistance movements have risen up against our government. Sir Pietro Badoglio suggests that we side with them and join the Allies against Mussolini's wishes."
+ pvd.21.d:1 "Bolstered by the capture of Italian mainland territories by the allies, Anti-Fascist resistance movements have risen up against our government. Peppeorni suggests that we side with them and join the Allies against Anchovy's wishes."
  pvd.21.a:1 "Viva la Resistenza!"
- pvd.21.b:1 "Viva Mussolini!"
- pvd.28.d:1 "The world may never know if Klara was right to unseat Katyusha, or whether she made more enemies by ending the purges of the Red Army. What is known is that what she feared eventually came to pass. Today, Nonna reemerged as having returned from her exile, and with the support of several influential party members and NKVD officers, launched a coup overthrowing Klara's rule.\n\nThe former Marshal was attacked in her home with an ice axe, and was swiftly executed along with several of her supporters. Tearing down the militaristic state she built up will take time, but the people know now at least that she was not infallible.\n\n One of the few survivors who managed to escape was Ivan Konev. The fierce supporter of Katyusha has managed to gather some support and declared war on the Nonna government, in an attempt to take back power and 'fulfill the vision of Comrade Klara'."
+ pvd.21.b:1 "Viva Anchovy!"
+ pvd.28.t:1 "Nonna's Coup"
+ pvd.28.d:1 "The world may never know if Alina was right to unseat Katyusha, or whether she made more enemies by ending the purges of the Red Army. What is known is that what she feared eventually came to pass. Today, Nonna and with the support of several influential party members and NKVD officers, launched a coup overthrowing Alina's rule.\n\nThe former Marshal was attacked in her home with an ice axe, and was swiftly executed along with several of her supporters. Tearing down the militaristic state she built up will take time, but the people know now at least that she was not infallible.\n\nOne of the few survivors who managed to escape was Ivan Konev. The fierce supporter of Katyusha has managed to gather some support and declared war on the Nonna government, in an attempt to take back power and 'fulfill the vision of Comrade Alina'."
  pvd.29.t:1 "Constitutional Convention - Religion in the State"
  pvd.29.d:1 "Our New State has an undetermined policy towards religion. While the former government was anti-religious, many clamour for a return of the days where the Church had a greater say in politics."
  pvd.30.t:1 "Constitutional Convention - Economic System"
@@ -1543,8 +1545,9 @@
  pvd.31.t:1 "Constitutional Convention - Policy of the Nationalities"
  pvd.31.d:1 "Many nationalitites have been agitating for greater independence or autonomy. However, the status of Russians in the state has traditionally been enshrined as superior. Which policy should we choose?"
  pvd.22.t:1 "The End of Nazism"
- pvd.22.d:1 "Our underground networks are mobilising. We will put the Fascist menace down for once and for all! For Germany!"
+ pvd.22.d:1 "Our underground networks are mobilising. We will put the Fascist menace down for once and for all! For Kuromorimine!"
  pvd.22.a:1 "Deutschland Uber Alles!"
+ pvd.106.d:1 "Communists in Kuromorimine, empowered by the recent loosening of restrictions on their organising as part of a treaty with the Pravda, have seized control of key positions in Berlin and killed Maho. \n\n Erika has taken charge of the Nazi Party and secured most of the country, promising to bring ruin to all 'Traitorious Judeo-Bolsheviks who murdered the Great Fuhrer'."
  
  ## SCHIZO ##
  

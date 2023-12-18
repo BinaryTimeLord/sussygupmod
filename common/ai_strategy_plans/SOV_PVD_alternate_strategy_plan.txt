@@ -101,10 +101,10 @@ SOV_alternate_plan = {
 	}
 	enable = {
 		OR = {
-			has_country_flag = SOV_AI_RANDOM_COMMUNIST_KLARA
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_ALINA
 			has_game_rule = {
 				rule = SOV_ai_behavior
-				option = KLARA
+				option = ALINA
 			}
 		}
 	}
@@ -113,7 +113,7 @@ SOV_alternate_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_klara_coup
+		SOV_alina_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
@@ -200,7 +200,7 @@ SOV_alternate_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_klara_coup
+		SOV_alina_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
@@ -288,7 +288,7 @@ SOV_alternate_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_klara_coup
+		SOV_alina_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case
@@ -373,7 +373,7 @@ SOV_fascist = {
 	}
 
 	ai_national_focuses = {
-		SOV_klara_coup
+		SOV_alina_coup
 		SOV_finish_five_year_plan
 		SOV_move_industry_to_urals #just in case
 		SOV_defense_of_moscow #just in case

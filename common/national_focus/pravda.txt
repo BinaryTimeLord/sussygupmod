@@ -834,7 +834,7 @@
 
 	focus = { dynamic = yes
 		id = SOV_stalin_constitution
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_unknown
 		x = 10
 		y = 0
 		cost = 10
@@ -2210,7 +2210,7 @@
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
 		}
-		mutually_exclusive = { focus = SOV_klara_coup }
+		mutually_exclusive = { focus = SOV_alina_coup }
 		x = 37
 		y = 0
 		cost = 30
@@ -2354,8 +2354,8 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_Nonna_leads
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = SOV_great_purge focus = SOV_klara_coup }
+		icon = GFX_goal_unknown
+		prerequisite = { focus = SOV_great_purge focus = SOV_alina_coup }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_permanent_revolution_tt
@@ -2388,7 +2388,7 @@
 	focus = { dynamic = yes
 		id = SOV_permanent_revolution
 		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = SOV_great_purge focus = SOV_klara_coup }
+		prerequisite = { focus = SOV_great_purge focus = SOV_alina_coup }
 		mutually_exclusive = { focus = SOV_yezhovshchina }
 		available = {
 			has_country_leader = {
@@ -2655,9 +2655,9 @@
 						
 			add_stability = -0.25
 			create_country_leader = {
-				name = "Nikolai Yezhov"
-				desc = "POLITICS_NIKOLAY_YEZHOV_DESC"
-				picture = "Portrait_Soviet_Nikolay_Yezhov.dds"
+				name = "Schizo Katyusha"
+				desc = "POLITICS_SCHIZO_KATYUSHA_DESC"
+				picture = "Portrait_SOV_Schizo_Katyusha.dds"
 				expire = "1965.1.1"
 				ideology = anti_revisionism
 				traits = {
@@ -2973,7 +2973,7 @@
 		x = 10
 		y = 1
 		relative_position_id = SOV_great_purge
-		prerequisite = { focus = SOV_great_purge focus = SOV_klara_coup }
+		prerequisite = { focus = SOV_great_purge focus = SOV_alina_coup }
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -5784,9 +5784,9 @@
 		}
 	}
 	
-	#Klara Coup Path
+	#Alina Coup Path
 	focus = { dynamic = yes
-		id = SOV_klara_coup
+		id = SOV_alina_coup
 		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_great_purge } 
 		available = {
@@ -5832,9 +5832,9 @@
 				}
 			}
 			create_country_leader = {
-				name = "Klara"
-				desc = "POLITICS_KLARA_DESC"
-				picture = "Portrait_SOV_Klara.dds"
+				name = "Alina"
+				desc = "POLITICS_Alina_DESC"
+				picture = "Portrait_SOV_Alina.dds"
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -5844,7 +5844,7 @@
 			}
 			set_party_name = { 
 				ideology = neutrality 
-				long_name = SOV_neutrality_party_klara
+				long_name = SOV_neutrality_party_alina
 				name = SOV_the_red_army 
 			}
 		}
@@ -5853,13 +5853,13 @@
 	focus = { dynamic = yes
 		id = SOV_new_government
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = SOV_klara_coup }
+		prerequisite = { focus = SOV_alina_coup }
 		available = {
 			has_civil_war = no
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_klara_coup
+		relative_position_id = SOV_alina_coup
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -5902,9 +5902,9 @@
 				popularity = 0.3
 			}
 			create_country_leader = {
-				name = "Klara"
-				desc = "POLITICS_KLARA_DESC"
-				picture = "Portrait_SOV_Klara.dds"
+				name = "Alina"
+				desc = "POLITICS_Alina_DESC"
+				picture = "Portrait_SOV_Alina.dds"
 				expire = "1965.1.1"
 				ideology = marxism
 				traits = {
@@ -5914,7 +5914,7 @@
 			}
 			set_party_name = { 
 				ideology = communism 
-				long_name = SOV_communist_party_klara
+				long_name = SOV_communist_party_alina
 				name = SOV_the_red_army 
 			}
 		}
@@ -6038,7 +6038,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_learn_from_nina
-		icon = GFX_focus_spr_anarchism_knows_no_borders
+		icon = GFX_focus_unknown
 		prerequisite = { focus = SOV_prepare_army }
 		mutually_exclusive = { focus = SOV_Nonna_cadre_revolt }
 		available = {
@@ -6457,9 +6457,9 @@
 				name = SOV_republic_fascism
 			}
 			create_country_leader = {
-				name = "Alina"
-				desc = "POLITICS_ALINA_DESC"
-				picture = "Portrait_SOV_Alina.dds"
+				name = "Nina"
+				desc = "POLITICS_NINA_DESC"
+				picture = "Portrait_SOV_Nina.dds"
 				expire = "1965.1.1"
 				ideology = anarchist_communism
 				traits = {
@@ -6616,8 +6616,10 @@
 			custom_effect_tooltip = party_drift_weaken
 						
 			add_ideas = SOV_tsar_vladimir
-			hidden_effect = { 217 = { set_state_name = "Tsargrad" } }
-			set_province_name = { id = 3526 name = "Tsargrad" }
+			hidden_effect = { 195 = { set_state_name = "Saint Petersburg" } }
+			set_province_name = { id = 3151 name = "Saint Petersburg" }
+			hidden_effect = { 217 = { set_state_name = "Klaragrad" } }
+			set_province_name = { id = 3529 name = "Klaragrad" }
 		}
 	}
 	focus = { dynamic = yes
@@ -6638,9 +6640,9 @@
 		completion_reward = {
 						
 			create_country_leader = {
-				name = "Vladimir Romanov III"
-				desc = "POLITICS_VLADIMIR_ROMANOV_DESC"
-				picture = "Portrait_Soviet_Vladimir_Romanov.tga"
+				name = "Klara"
+				desc = "POLITICS_KLARA_DESC"
+				picture = "Portrait_SOV_Klara.dds"
 				expire = "1965.1.1"
 				ideology = rexism
 				traits = {
@@ -6737,9 +6739,9 @@
 				popularity = -1.0
 			}
 			create_country_leader = {
-				name = "Vladimir Romanov III"
-				desc = "POLITICS_VLADIMIR_ROMANOV_DESC"
-				picture = "Portrait_Soviet_Vladimir_Romanov.tga"
+				name = "Klara"
+				desc = "POLITICS_KLARA_DESC"
+				picture = "Portrait_SOV_Klara.dds"
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -7068,8 +7070,10 @@
 			SOV_power_struggle_increase_party_influence_low = yes
 			
 			add_to_tech_sharing_group = commonwealth_research
-			hidden_effect = { 217 = { set_state_name = "Tsargrad" } }
-			set_province_name = { id = 3526 name = "Tsargrad" }
+			hidden_effect = { 195 = { set_state_name = "Saint Petersburg" } }
+			set_province_name = { id = 3151 name = "Saint Petersburg" }
+			hidden_effect = { 217 = { set_state_name = "Klaragrad" } }
+			set_province_name = { id = 3529 name = "Klaragrad" }
 		}
 	}
 	focus = { dynamic = yes
