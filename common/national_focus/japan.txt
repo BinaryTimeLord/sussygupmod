@@ -1351,7 +1351,7 @@
 	}
 
 	focus = {
-		id = JAP_nationalize_the_zaibatsus
+		id = JAP_nationalize_the_zaibatsus_bruh
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_cast_the_die }
 		x = 2

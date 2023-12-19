@@ -16290,7 +16290,7 @@ focus = {
 			create_country_leader = {
 				name = "Hitomi_Yuzumoto"
 				desc = "POLITICS_HITOMI_YUZUMOTO_DESC"
-				picture = ".dds"
+				picture = "Portrait_GER_Yuzumoto.dds"
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
@@ -16300,7 +16300,7 @@ focus = {
 			create_country_leader = {
 				name = "Hitomi_Yuzumoto"
 				desc = "POLITICS_Hitomi_Yuzumoto_DESC"
-				picture = ".dds"
+				picture = "Portrait_GER_Yuzumoto.dds"
 				expire = "1965.1.1"
 				ideology = anarchist_communism
 				traits = {
@@ -16339,14 +16339,12 @@ focus = {
 				popularity = 0.2
 			}
 			if = {
-				limit = { has_idea = emi_nakasuga }
-				remove_ideas = emi_nakasuga
 				add_political_power = 150
 			}
 			create_country_leader = {
-				name = "Emi Nakasuga"
-				desc = "POLITICS_EMI_NAKASUGA_DESC"
-				picture = ".dds"
+				name = "Kita Kabayo"
+				desc = "POLITICS_KITA_KABAYO_DESC"
+				picture = "Portrait_GER_Kita.dds"
 				expire = "1965.1.1"
 				ideology = stalinism
 				traits = {

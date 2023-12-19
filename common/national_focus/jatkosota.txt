@@ -1005,7 +1005,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FIN_finnish_neutrality
+		id = FIN_finnish_neutrality_bruh
 		icon = GFX_goal_generic_defence
 		
 		x = 6
@@ -1921,7 +1921,7 @@ focus_tree = {
 		
         prerequisite = { focus = FIN_war_dictatorship }
 		relative_position_id = FIN_war_dictatorship
-		mutually_exclusive = { focus = FIN_finnish_neutrality }
+		mutually_exclusive = { focus = FIN_finnish_neutrality_bruh }
 		
 		cost = 10
 		ai_will_do = {

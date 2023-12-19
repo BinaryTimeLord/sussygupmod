@@ -202,7 +202,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_libyan_refineries
+		id = ITA_libyan_refineries_bruh
 		icon = GFX_goal_generic_oil_refinery
 		x = -4
 		y = 4
@@ -271,7 +271,7 @@ focus_tree = {
 
 		bypass = { }
 
-		prerequisite = { focus = ITA_libyan_refineries }
+		prerequisite = { focus = ITA_libyan_refineries_bruh }
 
 		completion_reward = {
 			if = {
@@ -331,7 +331,7 @@ focus_tree = {
 
 		bypass = { }
 
-		prerequisite = { focus = ITA_libyan_refineries }
+		prerequisite = { focus = ITA_libyan_refineries_bruh }
 
 		completion_reward = {
 			if = {
@@ -1945,7 +1945,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_befriend_greece
+		id = ITA_befriend_greece_bruh
 		icon = GFX_focus_generic_befriend_greece
 		x = 13
 		y = 9
@@ -2006,7 +2006,7 @@ focus_tree = {
 		}
 
 		prerequisite = { 
-			focus = ITA_befriend_greece
+			focus = ITA_befriend_greece_bruh
 		}
 
 		mutually_exclusive = { focus = ITA_form_ethiopian_democracy }
@@ -2040,7 +2040,7 @@ focus_tree = {
 		}
 
 		prerequisite = { 
-			focus = ITA_befriend_greece
+			focus = ITA_befriend_greece_bruh
 		}
 
 		mutually_exclusive = { focus = ITA_release_ethiopia }
@@ -3469,10 +3469,10 @@ focus_tree = {
 		}
 
 		focus = {
-			id = ITA_pact_of_steel
+			id = ITA_pact_of_steel_bruh
 			icon = GFX_goal_generic_major_alliance
 			prerequisite = { focus = ITA_bulgaria_friend }
-			mutually_exclusive = { focus = ITA_italy_first }
+			mutually_exclusive = { focus = ITA_italy_first_bruh }
 			available = {
 				NOT = { has_war_with = GER }
 				custom_trigger_tooltip = {
@@ -3558,7 +3558,7 @@ focus_tree = {
 		focus = {
 			id = ITA_german_millitary_cooperation
 			icon = GFX_goal_generic_military_deal
-			prerequisite = { focus = ITA_pact_of_steel }
+			prerequisite = { focus = ITA_pact_of_steel_bruh }
 
 			available = {
 				NOT = { has_war_with = GER }
@@ -3567,7 +3567,7 @@ focus_tree = {
 			
 			x = -2
 			y = 1
-			relative_position_id = ITA_pact_of_steel
+			relative_position_id = ITA_pact_of_steel_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 10
@@ -3582,10 +3582,10 @@ focus_tree = {
 		
 
 		focus = {
-			id = ITA_italy_first
+			id = ITA_italy_first_bruh
 			icon = GFX_focus_generic_italy_first
 			prerequisite = { focus = ITA_bulgaria_friend }
-			mutually_exclusive = { focus = ITA_pact_of_steel }
+			mutually_exclusive = { focus = ITA_pact_of_steel_bruh }
 			available = {
 				is_subject = no
 				NOT = { has_war_with = BUL }
@@ -3662,7 +3662,7 @@ focus_tree = {
 		focus = {
 			id = ITA_go_after_france
 			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = ITA_italy_first }
+			prerequisite = { focus = ITA_italy_first_bruh }
 			available = {
 				country_exists = FRA
 				FRA = {
@@ -3677,7 +3677,7 @@ focus_tree = {
 			will_lead_to_war_with = FRA
 			x = 2
 			y = 1
-			relative_position_id = ITA_italy_first
+			relative_position_id = ITA_italy_first_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -3756,14 +3756,14 @@ focus_tree = {
 		focus = {
 			id = ITA_german_rd_treaty
 			icon = GFX_goal_generic_scientific_exchange
-			prerequisite = { focus = ITA_pact_of_steel }
+			prerequisite = { focus = ITA_pact_of_steel_bruh }
 			available = {
 				NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 			}
 			cancel = { has_war_with = GER }
 			x = -1
 			y = 3
-			relative_position_id = ITA_pact_of_steel
+			relative_position_id = ITA_pact_of_steel_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -3797,7 +3797,7 @@ focus_tree = {
 		}
 
 		focus = {
-			id = ITA_secret_weapons
+			id = ITA_secret_weapons_bruh
 			icon = GFX_goal_generic_secret_weapon
 			text = secret_weapons
 			prerequisite = { focus = ITA_german_millitary_cooperation }
@@ -3830,7 +3830,7 @@ focus_tree = {
 		focus = {
 			id = ITA_greece_war_goal
 			icon = GFX_goal_generic_occupy_states_ongoing_war
-			prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
+			prerequisite = { focus = ITA_pact_of_steel_bruh focus = ITA_italy_first_bruh }
 			mutually_exclusive = { focus = ITA_greece_friend }
 			available = {
 				NOT = { is_in_faction_with = GRE }
@@ -3841,7 +3841,7 @@ focus_tree = {
 			will_lead_to_war_with = GRE
 			x = 1
 			y = 3
-			relative_position_id = ITA_pact_of_steel
+			relative_position_id = ITA_pact_of_steel_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 10
@@ -3863,11 +3863,11 @@ focus_tree = {
 		focus = {
 			id = ITA_greece_friend
 			icon = GFX_goal_generic_improve_relations
-			prerequisite = { focus = ITA_italy_first }
+			prerequisite = { focus = ITA_italy_first_bruh }
 			mutually_exclusive = { focus = ITA_greece_war_goal focus = ITA_turkey_friend }
 			x = 1
 			y = 3
-			relative_position_id = ITA_italy_first
+			relative_position_id = ITA_italy_first_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -3950,7 +3950,7 @@ focus_tree = {
 		focus = {
 			id = ITA_claims_on_france
 			icon = GFX_goal_generic_territory_or_war
-			prerequisite = { focus = ITA_pact_of_steel }
+			prerequisite = { focus = ITA_pact_of_steel_bruh }
 			available = {
 				is_puppet = no
 				is_in_faction_with = GER
@@ -3972,7 +3972,7 @@ focus_tree = {
 			}
 			x = 0
 			y = 2
-			relative_position_id = ITA_pact_of_steel
+			relative_position_id = ITA_pact_of_steel_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -4022,11 +4022,11 @@ focus_tree = {
 		focus = {
 			id = ITA_turkey_friend
 			icon = GFX_goal_generic_improve_relations
-			prerequisite = { focus = ITA_italy_first }
+			prerequisite = { focus = ITA_italy_first_bruh }
 			mutually_exclusive = { focus = ITA_greece_friend }
 			x = 3
 			y = 3
-			relative_position_id = ITA_italy_first
+			relative_position_id = ITA_italy_first_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -4068,7 +4068,7 @@ focus_tree = {
 		focus = {
 			id = ITA_anti_uk_war_goals
 			icon = GFX_goal_generic_major_war
-			prerequisite = { focus = ITA_italy_first }	
+			prerequisite = { focus = ITA_italy_first_bruh }	
 			available = {
 				NOT = { is_in_faction_with = ENG }
 			}	
@@ -4082,7 +4082,7 @@ focus_tree = {
 			will_lead_to_war_with = ENG
 			x = 0
 			y = 1
-			relative_position_id = ITA_italy_first
+			relative_position_id = ITA_italy_first_bruh
 			cost = 10
 			ai_will_do = {
 				factor = 1

@@ -95,7 +95,7 @@ SOV_focus_tree_selection = {
 		allow_achievements = yes
 	}
 	option = {
-		name = Pravda_TREE
+		name = PRAVDA_TREE
 		text = "RULE_OPTION_PRAVDA_TREE"
 		desc = "RULE_OPTION_PRAVDA_TREE_DESC"
 	}

@@ -748,7 +748,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_completed_focus = SOV_klara_coup
+			has_completed_focus = SOV_alina_coup
 			has_completed_focus = SOV_great_purge
 		}
 		date > 1940.1.1

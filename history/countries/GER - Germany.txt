@@ -485,6 +485,9 @@ recruit_character = GER_geshiko
 recruit_character = GER_sangou
 recruit_character = GER_erisou
 recruit_character = GER_erihou
+recruit_character = GER_nakasuga
+recruit_character = GER_yuzumoto
+recruit_character = GER_kita
 
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer

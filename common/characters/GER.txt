@@ -226,6 +226,12 @@ characters={
 				large="gfx/leaders/GER/Portrait_GER_Nakasuga.dds"
 			}
 		}
+		country_leader={
+			ideology = conservatism
+			traits = {  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 
     GER_yuzumoto={
@@ -243,12 +249,21 @@ characters={
     GER_kita={
 		name="Kita Kabayo"
 		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_Kita.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_kita.dds"
 			}
 			army={
 				large="gfx/leaders/GER/Portrait_GER_Kita.dds"
 			}
+		}
+		country_leader={
+			ideology = german_idealism2
+			traits={ exiled }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 
@@ -298,11 +313,6 @@ characters={
 				large=GFX_portrait_GER_konrad_adenauer
 			}
 		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
 	GER_wilhelm_pieck={
@@ -311,12 +321,6 @@ characters={
 			civilian={
 				large=GFX_portrait_GER_wilhelm_pieck
 			}
-		}
-		country_leader={
-			ideology=stalinism
-			traits={ exiled }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 

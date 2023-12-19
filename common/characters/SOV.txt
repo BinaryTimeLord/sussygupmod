@@ -82,6 +82,12 @@ characters = {
 			logistics_skill=3
 			legacy_id=-1
 		}
+		country_leader = {
+			ideology = soviet_idealism3
+			traits = { fascist_orchestrator }
+			expire = "1953.3.1.1"
+			id = -1
+		}
 	}
 	SOV_nina={
 		name="Nina"
@@ -122,6 +128,11 @@ characters = {
 			logistics_skill=3
 			legacy_id=-1
 		}
+		country_leader = {
+			ideology = socialism
+			expire = "1953.3.1.1"
+			id = -1
+		}
 	}
 
 	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
@@ -133,7 +144,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = soviet_idealism4
+			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
 		}
@@ -149,7 +160,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = soviet_idealism4
+			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
 			traits = {
@@ -165,7 +176,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = soviet_idealism4
+			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
 		}
@@ -182,7 +193,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = soviet_idealism4
+			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
 			traits = {
@@ -232,7 +243,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = soviet_idealism4
+			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
 			traits = {
@@ -3864,13 +3875,6 @@ characters = {
 					small = "GFX_idea_konstantin_rodzaevsky"
 				}
 			}
-
-			country_leader = {
-				ideology = fascism_ideology
-				traits = { fascist_orchestrator }
-				expire = "1953.3.1.1"
-				id = -1
-			}
 		}
 		instance = {
 			allowed = {
@@ -3935,11 +3939,6 @@ characters = {
 			army = {
 				small = "GFX_idea_alexander_kerensky"
 			}
-		}
-		country_leader = {
-			ideology = socialism
-			expire = "1953.3.1.1"
-			id = -1
 		}
 		allowed_civil_war = { tag = SOV}
 

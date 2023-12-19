@@ -273,7 +273,7 @@
 		}
 	}
 	focus = { dynamic = yes
-		id = SOV_third_five_year_plan
+		id = SOV_third_five_year_plan_bruh
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = SOV_sovkhoz focus = SOV_consumer_cooperatives }
 		x = -1
@@ -314,11 +314,11 @@
 	focus = { dynamic = yes
 		id = SOV_virgin_lands
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = SOV_third_five_year_plan }
+		prerequisite = { focus = SOV_third_five_year_plan_bruh }
 		prerequisite = { focus = SOV_tranformation_of_nature }
 		x = 2
 		y = 1
-		relative_position_id = SOV_third_five_year_plan
+		relative_position_id = SOV_third_five_year_plan_bruh
 
 		cost = 10
 
@@ -663,7 +663,7 @@
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = SOV_production_effort }
-		prerequisite = { focus = SOV_collectivist_propaganda }
+		prerequisite = { focus = SOV_collectivist_propaganda_bruh }
 		x = 0
 		y = 1
 		relative_position_id = SOV_production_effort
@@ -852,10 +852,10 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_collectivist_propaganda
+		id = SOV_collectivist_propaganda_bruh
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
+		mutually_exclusive = { focus = SOV_positive_heroism_bruh }
 		x = -4
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -877,10 +877,10 @@
 	focus = { dynamic = yes
 		id = SOV_militarized_schools
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_collectivist_propaganda }
+		prerequisite = { focus = SOV_collectivist_propaganda_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_collectivist_propaganda
+		relative_position_id = SOV_collectivist_propaganda_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -952,10 +952,10 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_positive_heroism
+		id = SOV_positive_heroism_bruh
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
+		mutually_exclusive = { focus = SOV_collectivist_propaganda_bruh }
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -979,10 +979,10 @@
 	focus = { dynamic = yes
 		id = SOV_progress_cult
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = SOV_positive_heroism }
+		prerequisite = { focus = SOV_positive_heroism_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_positive_heroism
+		relative_position_id = SOV_positive_heroism_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1043,10 +1043,10 @@
 	focus = { dynamic = yes
 		id = SOV_aviation_cult
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SOV_positive_heroism }
+		prerequisite = { focus = SOV_positive_heroism_bruh }
 		x = 2
 		y = 1
-		relative_position_id = SOV_positive_heroism
+		relative_position_id = SOV_positive_heroism_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1123,7 +1123,7 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_socialist_realism
+		id = SOV_socialist_realism_bruh
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_stalin_constitution }
 		mutually_exclusive = { focus = SOV_constructivism }
@@ -1156,11 +1156,11 @@
 	focus = { dynamic = yes
 		id = SOV_socialist_classicism
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = SOV_socialist_realism focus = SOV_constructivism }
+		prerequisite = { focus = SOV_socialist_realism_bruh focus = SOV_constructivism }
 		mutually_exclusive = { focus = SOV_futurism }
 		x = 0
 		y = 1
-		relative_position_id = SOV_socialist_realism
+		relative_position_id = SOV_socialist_realism_bruh
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1179,7 +1179,7 @@
 		id = SOV_constructivism
 		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_socialist_realism }
+		mutually_exclusive = { focus = SOV_socialist_realism_bruh }
 		x = 4
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -1201,7 +1201,7 @@
 	focus = { dynamic = yes
 		id = SOV_futurism
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		prerequisite = { focus = SOV_constructivism focus = SOV_socialist_realism }
+		prerequisite = { focus = SOV_constructivism focus = SOV_socialist_realism_bruh }
 		mutually_exclusive = { focus = SOV_socialist_classicism }
 		x = 0
 		y = 1
@@ -1452,7 +1452,7 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_transpolar_flights
+		id = SOV_transpolar_flights_bruh 
 		icon = GFX_goal_generic_air_fighter2
 		x = 2
 		y = 0
@@ -1503,7 +1503,7 @@
 		id = SOV_peoples_commissariat
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_improve_railway }
-		prerequisite = { focus = SOV_transpolar_flights }
+		prerequisite = { focus = SOV_transpolar_flights_bruh }
 		prerequisite = { focus = SOV_ocean_going_navy }
 		x = 2
 		y = 1
@@ -2414,10 +2414,10 @@
 	}
 	
 	focus = { dynamic = yes
-		id = SOV_rehabilitated_military
+		id = SOV_rehabilitated_military_bruh
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_great_purge }
-		mutually_exclusive = { focus = SOV_nkvd_primacy }
+		mutually_exclusive = { focus = SOV_nkvd_primacy_bruh }
 		x = 0
 		y = 1
 		relative_position_id = SOV_great_purge
@@ -2441,12 +2441,12 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_military_reorganization
+		id = SOV_military_reorganization_bruh
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_rehabilitated_military }
+		prerequisite = { focus = SOV_rehabilitated_military_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_rehabilitated_military
+		relative_position_id = SOV_rehabilitated_military_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
@@ -2474,11 +2474,11 @@
 	focus = { dynamic = yes
 		id = SOV_general_zhukov
 		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = SOV_military_reorganization }
+		prerequisite = { focus = SOV_military_reorganization_bruh }
 		prerequisite = { focus = SOV_partisan_suppression }
 		x = -2
 		y = 1
-		relative_position_id = SOV_military_reorganization
+		relative_position_id = SOV_military_reorganization_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
@@ -2514,7 +2514,7 @@
 	focus = { dynamic = yes
 		id = SOV_war_industry
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = SOV_general_zhukov focus = SOV_lessons_of_war }
+		prerequisite = { focus = SOV_general_zhukov focus = SOV_lessons_of_war_bruh }
 		x = 0
 		y = 1
 		relative_position_id = SOV_general_zhukov
@@ -2574,10 +2574,10 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_nkvd_primacy
+		id = SOV_nkvd_primacy_bruh
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_great_purge }
-		mutually_exclusive = { focus = SOV_rehabilitated_military }
+		mutually_exclusive = { focus = SOV_rehabilitated_military_bruh }
 		x = 2
 		y = 1
 		relative_position_id = SOV_great_purge
@@ -2602,10 +2602,10 @@
 	focus = { dynamic = yes
 		id = SOV_nkvd_divisions
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = SOV_nkvd_primacy }
+		prerequisite = { focus = SOV_nkvd_primacy_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_nkvd_primacy
+		relative_position_id = SOV_nkvd_primacy_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2670,9 +2670,9 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_lessons_of_war
+		id = SOV_lessons_of_war_bruh
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization }
+		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization_bruh }
 		available = {
 			OR = {
 				date > 1941.1.1
@@ -2681,7 +2681,7 @@
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_military_reorganization
+		relative_position_id = SOV_military_reorganization_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2732,13 +2732,13 @@
 	focus = { dynamic = yes
 		id = SOV_research_city_experiment
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = SOV_lessons_of_war }
+		prerequisite = { focus = SOV_lessons_of_war_bruh }
 		available = {
 
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_lessons_of_war
+		relative_position_id = SOV_lessons_of_war_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2818,10 +2818,10 @@
 	focus = { dynamic = yes
 		id = SOV_secure_the_party_rule
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SOV_lessons_of_war }
+		prerequisite = { focus = SOV_lessons_of_war_bruh }
 		x = 2
 		y = 1
-		relative_position_id = SOV_lessons_of_war
+		relative_position_id = SOV_lessons_of_war_bruh
 		cost = 10
 		available = {
 			NOT = { has_idea = trotskyite_plot_purged }
@@ -2903,7 +2903,7 @@
 	}
 	
 	focus = { dynamic = yes
-		id = SOV_smersh
+		id = SOV_smersh_bruh
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_great_purge }
 		available = {
@@ -2949,10 +2949,10 @@
 	focus = { dynamic = yes
 		id = SOV_partisan_suppression
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = SOV_smersh }
+		prerequisite = { focus = SOV_smersh_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_smersh
+		relative_position_id = SOV_smersh_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3223,7 +3223,7 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_far_east_fortification
+		id = SOV_far_east_fortification_bruh
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
 		x = 2
@@ -3335,7 +3335,7 @@
 	focus = { dynamic = yes
 		id = SOV_operation_zet
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SOV_far_east_fortification }
+		prerequisite = { focus = SOV_far_east_fortification_bruh }
 		available = {
 			has_equipment = {
 				infantry_equipment > 199
@@ -3382,7 +3382,7 @@
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_far_east_fortification
+		relative_position_id = SOV_far_east_fortification_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3420,7 +3420,7 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_annex_tannu_tuva
+		id = SOV_annex_tannu_tuva_bruh
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = SOV_operation_zet }
 		available = { is_puppet = no }
@@ -3477,14 +3477,14 @@
 			add_state_claim = 716 
 			add_state_claim = 717
 			add_state_claim = 761 
-			add_named_threat = { threat = 3 name = SOV_annex_tannu_tuva }
+			add_named_threat = { threat = 3 name = SOV_annex_tannu_tuva_bruh }
 		}
 	}
 	
 	focus = { dynamic = yes
 		id = SOV_manchurian_claim
 		icon = GFX_focus_AST_war_japan
-		prerequisite = { focus = SOV_annex_tannu_tuva }
+		prerequisite = { focus = SOV_annex_tannu_tuva_bruh }
 		available = {
 			NOT = { has_idea = trotskyite_plot }
 			custom_trigger_tooltip = {
@@ -3511,7 +3511,7 @@
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_annex_tannu_tuva
+		relative_position_id = SOV_annex_tannu_tuva_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3755,7 +3755,7 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_baltic_security
+		id = SOV_baltic_security_bruh
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_claims_on_baltic }
 		x = 0
@@ -3791,7 +3791,7 @@
 			# Estonia
 			add_state_claim = 191 
 			add_state_claim = 13
-			add_named_threat = { threat = 1 name = SOV_baltic_security }
+			add_named_threat = { threat = 1 name = SOV_baltic_security_bruh }
 			if = {
 				limit = { has_government = communism }
 				FIN = {
@@ -3823,12 +3823,12 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_claims_on_poland
+		id = SOV_claims_on_poland_bruh
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SOV_baltic_security }
+		prerequisite = { focus = SOV_baltic_security_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_baltic_security
+		relative_position_id = SOV_baltic_security_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -3897,7 +3897,7 @@
 			add_state_claim = 91
 			add_state_claim = 89
 			add_state_claim = 784
-			add_named_threat = { threat = 3 name = SOV_claims_on_poland }
+			add_named_threat = { threat = 3 name = SOV_claims_on_poland_bruh }
 
 			every_other_country = {
 				limit = { 
@@ -3917,13 +3917,13 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_demand_eastern_poland
+		id = SOV_demand_eastern_poland_bruh
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = SOV_claims_on_poland }
-		mutually_exclusive = { focus = SOV_offer_poland_protection }
+		prerequisite = { focus = SOV_claims_on_poland_bruh }
+		mutually_exclusive = { focus = SOV_offer_poland_protection_bruh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_claims_on_poland
+		relative_position_id = SOV_claims_on_poland_bruh
 		cost = 10
 		available = {
 			is_puppet = no
@@ -4015,10 +4015,10 @@
 	}
 
 	focus = { dynamic = yes
-		id = SOV_offer_poland_protection
+		id = SOV_offer_poland_protection_bruh
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SOV_claims_on_poland focus = SOV_defend_poland }
-		mutually_exclusive = { focus = SOV_demand_eastern_poland }
+		prerequisite = { focus = SOV_claims_on_poland_bruh focus = SOV_defend_poland }
+		mutually_exclusive = { focus = SOV_demand_eastern_poland_bruh }
 		available = {
 			POL = {
 				country_exists = POL
@@ -4028,7 +4028,7 @@
 		}
 		x = -2
 		y = 1
-		relative_position_id = SOV_claims_on_poland
+		relative_position_id = SOV_claims_on_poland_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -4112,10 +4112,10 @@
 	focus = { dynamic = yes
 		id = SOV_claim_bessarabia
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SOV_claims_on_poland }
+		prerequisite = { focus = SOV_claims_on_poland_bruh }
 		x = 2
 		y = 1
-		relative_position_id = SOV_claims_on_poland
+		relative_position_id = SOV_claims_on_poland_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 2.5
@@ -5171,7 +5171,7 @@
 	focus = { dynamic = yes
 		id = SOV_warsaw_pact
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = SOV_consolidate_communist_governments focus = SOV_offer_poland_protection }
+		prerequisite = { focus = SOV_consolidate_communist_governments focus = SOV_offer_poland_protection_bruh }
 		available = {			
 			is_subject = no
 			has_government = communism
@@ -5472,7 +5472,7 @@
 	
 	### END BRANCH ###
 	focus = { dynamic = yes
-		id = SOV_reconcile_japan
+		id = SOV_reconcile_japan_bruh
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = SOV_anti_capitalist_diplomacy }
 		available = {			
@@ -5503,7 +5503,7 @@
 	focus = { dynamic = yes
 		id = SOV_claim_on_sinkiang
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SOV_reconcile_japan }
+		prerequisite = { focus = SOV_reconcile_japan_bruh }
 		available = {
 			OR = {
 				JAP = { has_war_with = CHI }
@@ -5512,7 +5512,7 @@
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_reconcile_japan
+		relative_position_id = SOV_reconcile_japan_bruh
 		cost = 10
 		ai_will_do = {
 			factor = 1
