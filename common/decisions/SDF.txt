@@ -895,6 +895,12 @@ SDF_officer_revolt = {
 			SDF = {
 				has_completed_focus = SDF_victory_civil
 			}
+			
+			SDF = {
+				NOT = {
+					has_completed_focus = SDF_heer_no_fear
+				}
+			}
 		}
 		
 		available = {
@@ -905,7 +911,7 @@ SDF_officer_revolt = {
 		
 		is_good = no
 		
-		days_mission_timeout = 40
+		days_mission_timeout = 50
 		selectable_mission = no
 		complete_effect = {
 		
@@ -1045,8 +1051,8 @@ SDF_economic_crisis = {
 		
 			if = {
 				limit = {
-					NOT = {
-						SDF = {
+					SDF = {
+						OR = {
 							has_idea = sdf_economic_downturn1
 							has_idea = sdf_economic_downturn2
 							has_idea = sdf_economic_downturn3
@@ -1055,7 +1061,47 @@ SDF_economic_crisis = {
 					}
 				}
 				
-				add_ideas = sdf_economic_downturn1
+				else = {
+					add_ideas = sdf_economic_downturn1
+				}
 			}
 		}
+	}
+}
+
+SDF_war_with_pravda = {
+	SDF_pravda_war_timer = {
+		
+		icon = GFX_decision_generic_prepare_civil_war
+		
+	
+		activation = {
+			SDF = {
+				has_completed_focus = SDF_victory_civil
+			}
+		}
+		
+		available = {
+			SDF = {
+				has_war_with = SOV
+			}
+		}
+		
+		is_good = no
+		
+		days_mission_timeout = 365
+		selectable_mission = no
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.25
+		}
+		
+		timeout_effect = { 
+			country_event = {
+				id = sdf.25
+				days = 1
+			}
+			custom_effect_tooltip = SDF_pravda_war_timer_tooltip
+		}
+	}
 }

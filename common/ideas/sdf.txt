@@ -670,6 +670,30 @@ ideas = {
 				economy_cost_factor = 0.25
 			}
 		}
+		
+		sdf_ooarai_resistance = {
+			##picture = 
+			allowed = {
+				original_tag = GER
+				
+				has_full_control_of_state = 153
+				has_full_control_of_state = 848
+				has_full_control_of_state = 152
+				has_full_control_of_state = 4
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				compliance_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
 	}
 	
 	industrial_concern = {

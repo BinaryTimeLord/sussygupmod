@@ -1160,6 +1160,10 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 25
 			add_war_support = 0.05
+			country_event = {
+				id = sdf.23
+				days = 5
+			}
 		}
 	}
 	
@@ -1252,7 +1256,10 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			hidden_effect = {
+				load_oob = "SDF_fallshimjager"
+			}
+			custom_effect_tooltip = SDF_fallshimjager_tooltip
 		}
 	}
 
@@ -1311,6 +1318,10 @@ focus_tree = {
 		
 		completion_reward = {
 			set_country_flag = SDF_no_going_back
+			country_event = {
+				id = sdf.25
+				days = 1
+			}
 		}
 	}
 	
@@ -1501,7 +1512,10 @@ focus_tree = {
 		cost = 2
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.26
+				days = 5
+			}
 		}
 	}
 	
