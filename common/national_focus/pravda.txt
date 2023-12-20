@@ -2841,7 +2841,7 @@
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Alexandra Kollontai"
+						name = "Nonna"
 						ruling_only = yes
 					}
 				}
@@ -6127,7 +6127,7 @@
 				limit = {
 					ITA = { 
 						has_country_leader = {
-							name = "Amadeo Bordiga"
+							name = "Anchovy"
 							ruling_only = yes
 						}
 					}
@@ -6137,7 +6137,6 @@
 					retire_country_leader = yes
 				}
 			}
-			add_ideas = SOV_amadeo_bordiga
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = SOV_world
 			set_party_name = {

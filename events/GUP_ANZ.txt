@@ -519,7 +519,7 @@ country_event = {
 			create_country_leader = {
 				name = "Schizo Anchovy"
 			    desc = "POLITICS_SCHIZO_ANCHOVY_DESC"
-			    picture = GFX_portrait_ITA_anchovys_paranoia
+			    picture = "gfx/leaders/ITA/Portrait_ITA_Schizo_Anchovy.dds"
 				expire = "1965.1.1"
 				ideology = despotism
 			}

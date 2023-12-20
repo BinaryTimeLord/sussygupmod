@@ -10,7 +10,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #ask other communist faction leaders to dismantle their faction and join Trotsky
+	option = { #ask other communist faction leaders to dismantle their faction and join Nonna
 		name = pvd.1.a
 		every_other_country = {
 			limit = {
@@ -53,7 +53,7 @@ country_event = {
 		}
 	}
 	option = { 
-		trigger = { ROOT = { is_subject = no } }#ask minor communist countries to join Trotsky
+		trigger = { ROOT = { is_subject = no } }#ask minor communist countries to join Nonna
 		name = pvd.1.a
 		SOV = {
 			add_to_faction = ROOT
@@ -82,7 +82,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #ask minor communist countries to join Trotsky
+	option = { #ask minor communist countries to join Nonna
 		trigger = { ROOT = { is_subject = no } }
 		name = pvd.3.a
 		SOV = {
@@ -175,7 +175,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #ask minor communist countries to join Trotsky
+	option = { #ask minor communist countries to join Nonna
 		name = pvd.4.a		
 	}	
 }
@@ -189,7 +189,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #ask minor communist countries to join Trotsky
+	option = { #ask minor communist countries to join Nonna
 		name = pvd.5.a	
 		create_wargoal = {
 			type = puppet_wargoal_focus
@@ -763,6 +763,7 @@ country_event = {
 	}
 	
 	option = {
+		name = pvd.20.a
 	}
 }
 
@@ -798,9 +799,6 @@ country_event = { #ITALIAN CIVIL WAR
 			states = { 
 				162 157 161 159 158 39 160 736 
 			}
-			keep_unit_leaders = {
-				9999
-			}
 		}
 		white_peace = ENG
 		white_peace = SOV
@@ -813,25 +811,12 @@ country_event = { #ITALIAN CIVIL WAR
 				original_tag = ITA
 				has_government = fascism
 			}
-			remove_ideas = victor_emmanuel
 			GER = { 
 				puppet = PREV
 				transfer_state = 39
 				transfer_state = 160
 				transfer_state = 736
 			}
-			hidden_effect = {
-				load_focus_tree = {
-					tree = italian_focus
-					keep_completed = yes
-				}
-			}
-		}
-		add_ideas = victor_emmanuel
-		set_party_name = { 
-			ideology = democratic 
-			long_name = ITA_CLN_name 
-			name = ITA_CLN_name 
 		}
 		hidden_effect = {
 			news_event = { hours = 6 id = pvd.105 }
@@ -888,152 +873,9 @@ country_event = { #GERMAN COMMIE CIVIL WAR
 }
 
 country_event = {
-	id = pvd.23
-	title = pvd.23.t
-	desc = pvd.23.d
-	
-	picture = GFX_report_event_communists_cheer
-
-	is_triggered_only = yes
-
-	option = { #ask minor communist countries to join Trotsky
-		name = pvd.3.a
-		POL = {
-			annex_country = {
-				target = ROOT
-				transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = ROOT
-					OR = {
-						is_core_of = HUN
-						is_core_of = ROM
-						is_core_of = CZE
-						is_core_of = YUG	
-						is_core_of = LIT
-						is_core_of = LAT
-						is_core_of = EST
-						is_core_of = FIN
-						is_core_of = UKR
-						is_core_of = BLR
-					}
-				}
-				add_core_of = POL
-			}
-			country_event = { id = pvd.24 }
-		}
-		ai_chance = {
-			base = 10
-			modifier = {
-				factor = 2
-				has_opinion = {
-					target = FROM
-					value > 50
-				}
-			}
-			modifier = {
-				factor = 2
-				is_neighbor_of = FROM
-			}
-			modifier = {
-				factor = 2
-				is_in_faction_with = POL
-			}
-			modifier = {
-				factor = 2
-				strength_ratio = {
-					tag = FROM
-					ratio < 1
-				}
-			}
-			modifier = {
-				factor = 10
-				strength_ratio = {
-					tag = FROM
-					ratio < 0.5
-				}
-			}
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-					tag = FROM
-					ratio > 1
-				}
-			}
-			modifier = {
-				factor = 0
-				strength_ratio = {
-					tag = FROM
-					ratio > 2
-				}
-			}
-		}		
-	}	
-	option = {
-		trigger = { NOT = { is_subject_of = FROM } }
-		name = pvd.3.b
-		#Never! Stalinism best -ism.
-		ai_chance = {
-			base = 20
-			modifier = {
-				factor = 2
-				has_opinion = {
-					target = FROM
-					value < 0
-				}
-			}
-			modifier = {
-				factor = 5
-				has_opinion = {
-					target = FROM
-					value < 50
-				}
-			}
-		}
-		leave_faction = yes
-		POL = {
-			country_event = { id = pvd.25 }
-		}		
-	}
-}
-
-country_event = {
-	id = pvd.24
-	title = pvd.4.t
-	desc = pvd.4.d
-	
-	picture = GFX_report_event_communists_cheer
-
-	is_triggered_only = yes
-
-	option = { #ask minor communist countries to join Trotsky
-		name = pvd.24.a		
-	}	
-}
-
-country_event = {
-	id = pvd.25
-	title = pvd.5.t
-	desc = pvd.5.d
-	
-	picture = GFX_report_event_communists_cheer
-
-	is_triggered_only = yes
-
-	option = { #ask minor communist countries to join Trotsky
-		name = pvd.25.a	
-		create_wargoal = {
-			type = annex_everything
-			target = FROM
-		}
-	}	
-}
-
-country_event = {
 	id = pvd.26
 	title = bftb_turkey.79.t
-	desc = bftb_turkey.79.d
+	desc = bftb_turkey.79.desc
 	picture = GFX_report_event_polish_tanks_01
 
 	is_triggered_only = yes
@@ -1547,36 +1389,6 @@ news_event = {
 				original_tag = SOV
 				has_government = democratic
 			}
-		}
-	}
-}
-
-news_event = {
-	id = pvd.104
-	title = pvd.104.t
-	desc = pvd.104.d
-	picture = report_event_spr_italian_volunteers
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = pvd.104.a
-		trigger = {
-			original_tag = ITA
-		}
-	}
-	option = {
-		name = pvd.104.b
-		trigger = { 
-			has_government = fascism
-		}
-	}
-	option = {
-		name = pvd.104.c
-		trigger = { 
-			NOT = { has_government = fascism }
 		}
 	}
 }
