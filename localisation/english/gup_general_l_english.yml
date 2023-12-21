@@ -2866,13 +2866,13 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_UNI_DEF:0 "Kuromorimine"
   SDF_UNI_ADJ:0 "Kuromorimine"
   
-  SDF_fascism_party:0 "F-R Coalition"
+  SDF_fascism_party:0 "FRC"
   SDF_fascism_party_long:0 "Far Right Wing Coalition"
-  SDF_democratic_party:0 "C-L Coalition"
+  SDF_democratic_party:0 "CLC"
   SDF_democratic_party_long:0 "Centre Left Coalition"
-  SDF_communism_party:0 "F-L Coalition"
+  SDF_communism_party:0 "FLC"
   SDF_communism_party_long:0 "Far Left Coalition"
-  SDF_neutrality_party:0 "C-R Coalition"
+  SDF_neutrality_party:0 "CRC"
   SDF_neutrality_party_long:0 "Centre Right Coalition"
   
   SDF_neutrality_takebeism:0 "UKF"
@@ -2881,8 +2881,8 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_communism_takebeism_long:0 "Sozialistische Demokratische Kuromorimine Party"
   SDF_democratic_takebeism:0 "RDKA"
   SDF_democratic_takebeism_long:0 "Right-Democrats Kuromorimine Alliance"
-  SDF_fascism_takebeism:0 "MJTA"
-  SDF_fascism_takebeism_long:0 "Military Junta"
+  SDF_fascism_takebeism:0 "OBA"
+  SDF_fascism_takebeism_long:0 "Orange-Black Alliance"
   
   ##CUSTOM EFFECT TOOLTIPS##
   SDF_decisions_units:0 "§CUnlocks Decisions to Raise Units Across South Kuromorimine§!"
@@ -2985,6 +2985,14 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_pravda_war_timer:0 "The Clock is Ticking"
   SDF_officer_revolt:0 "Officer Revolt"
   SDF_officer_repeating:0 "Officer Activity"
+  
+  ##SCRIPTED GUI
+  ELECTIONS_NEUTRALITY_TEXT:0 "§gUKP:§!"
+  ELECTIONS_COMMUNISM_TEXT:0 "§RSDKP:§!"
+  ELECTIONS_FASCISM_TEXT:0 "§OOBA:§!"
+  ELECTIONS_DEMOCRATIC_TEXT:0 "§2RDKA:§!"
+  ELECTIONS_TEXT:0 "The Parliament of the SDK is a melting pot for multiple ideologies. From Socialists to Nishizumists the parliament since its inception in 1935 has always been divided."
+  SDF_elections:0 "Lower Parliament"
   
   ##FOCUS##
   SDF_wacht_am_rhien:0 "Die Wacht Am Rhein"

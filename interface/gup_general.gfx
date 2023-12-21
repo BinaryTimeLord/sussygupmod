@@ -515,5 +515,10 @@ spriteTypes = {
 		name = "GFX_decision_cat_picture_winterwar"
 		texturefile = "gfx/interface/decisions/decision_cat_picture_winterwar.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_decision_category_SDF_icon_elections"
+		texturefile = "gfx/interface/decisions/SDFGermany/SDF_elections.dds"
+	}
 }
 

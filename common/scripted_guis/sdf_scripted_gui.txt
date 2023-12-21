@@ -1,0 +1,20 @@
+scripted_gui = {
+
+	SDF_elections_Decisions_GUI = {
+		context_type = decision_category
+		window_name = "SDF_elections_window"
+
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+
+		}
+		
+		effects = {
+
+		}
+
+	}
+}

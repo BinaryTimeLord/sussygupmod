@@ -1,0 +1,24 @@
+sdf_fascism_effect = {
+	set_variable = {
+		SDF.fascism_popularity = 1
+	}
+}
+
+sdf_democratic_effect = {
+	set_variable = {
+		SDF.democratic_popularity = 1
+	}
+}
+
+sdf_communism_effect = {
+	set_variable = {
+		SDF.communism_popularity = 1
+	}
+}
+
+sdf.neutrality_popularity = {
+	set_variable = {
+		SDF.neutrality_popularity = 1
+	}
+}
+

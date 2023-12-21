@@ -1,0 +1,105 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "SDF_elections_window"
+		size = { width = 538 height = 100 }
+		position = { x = 0 y = 0 }
+		moveable = no
+		
+		##PERCENTS
+		instantTextboxType = {
+			name = "fascistnumber_text"
+			position = { x = 215 y = 85 }
+			font = "hoi_18mbs"
+			text = "[?SDF.fascism_popularity]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "fascist_text"
+			position = { x = 185 y = 85 }
+			font = "hoi_18mbs"
+			text = "ELECTIONS_FASCISM_TEXT"
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "democraticnumber_text"
+			position = { x = 215 y = 65 }
+			font = "hoi_18mbs"
+			text = "[?SDF.democratic_popularity]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "democratic_text"
+			position = { x = 185 y = 65 }
+			font = "hoi_18mbs"
+			text = "ELECTIONS_DEMOCRATIC_TEXT"
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "communismnumber_text"
+			position = { x = 140 y = 65 }
+			font = "hoi_18mbs"
+			text = "[?SDF.communism_popularity]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "communism_text"
+			position = { x = 110 y = 65 }
+			font = "hoi_18mbs"
+			text = "ELECTIONS_COMMUNISM_TEXT"
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "neutralitynumber_text"
+			position = { x = 140 y = 85 }
+			font = "hoi_18mbs"
+			text = "[?SDF.neutrality_popularity]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "neutrality_text"
+			position = { x = 110 y = 85 }
+			font = "hoi_18mbs"
+			text = "ELECTIONS_NEUTRALITY_TEXT"
+			alwaystransparent = no
+		}
+		
+		iconType = {
+			name = "GFX_decision_category_SDF_icon_elections"
+			spriteType = "GFX_decision_category_SDF_icon_elections"
+			position = { x = 10 y = -15 }
+			alwaystransparent = no
+		}
+		
+		##BLURB
+		
+		instantTextboxType = {
+			name = "infomation_text"
+			position = { x = 110 y = -15 }
+			font = "hoi_18mbs"
+			text = "ELECTIONS_TEXT"
+			maxWidth = 400
+			maxHeight = 24
+			format = centre
+			alwaystransparent = no
+		}
+	}
+	
+	
+	
+}

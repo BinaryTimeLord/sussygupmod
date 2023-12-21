@@ -87,3 +87,20 @@ SDF_war_with_pravda = {
 		}
 	}
 }
+
+SDF_elections = {
+	
+	icon = GFX_decision_generic_protection
+	
+	priority = 1001
+	allowed = {
+		tag = SDF
+	}
+	
+	visible = {
+		always = yes
+	}
+	
+	scripted_gui = SDF_elections_Decisions_GUI
+	
+}
