@@ -2854,7 +2854,17 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
  GER_german_socialism:1 "German Socialism"
  GER_german_socialism_desc:1 "German Socialism must meet the unique conditions of the country. Should we exalt the German nation, or instead honour the ideals of Marxist internationalism?"
  GER_legacy_of_marx:1 "Legacy of Marx"
+
  RULE_COMMUNIST_GER_AI_DESC:1 "Germany will reconcile with the Soviet Union and communists will stage a coup."
+ JAT_AI_BEHAVIOR:1 "Finland"
+ RULE_GROUP_CHOOSE_FOCUS_TREE:1 "DO NOT TOUCH IT. IT WILL CAUSE A DATABASE ERROR"
+ FIN_FOCUS_TREE_SELECTION:1 "Jatkosota"
+ SOV_FOCUS_TREE_SELECTION:1 "Pravda"
+ ITA_FOCUS_TREE_SELECTION:1 "Anzio"
+ RULE_OPTION_STANDARD_TREE:1 "Standard Tree"
+ RULE_OPTION_JATKOSOTA_TREE:1 "Jatkosota Tree"
+ RULE_OPTION_PRAVDA_TREE:1 "Pravda Tree"
+ RULE_OPTION_ANZIO_TREE:1 "Anzio Tree"
 
   ## SCHHIZO ##
   
