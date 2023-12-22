@@ -13218,8 +13218,7 @@ focus = {
 		relative_position_id = GER_respected_finally
 		completion_reward = {
 			create_corps_commander = {
-				name = "Hitomi Yuzumoto"
-				picture = "Yuzumoto.dds"
+				character = JAP_oryou
 				traits = {  }
 				skill = 3
 				attack_skill = 1
@@ -14072,16 +14071,62 @@ focus = {
 			add_war_support = 0.02
 			
 			set_politics = { ruling_party = democratic }
-			create_country_leader = {
-				name = "Emi Nakasauga"
-				desc = "POLITICS_NAKA_DESC"
-				picture = "Portrait_GER_Nakasuga.dds"
-				expire = "1965.1.1"
+			add_country_leader_role = {
+                character = GER_nakasuga
+                promote_leader = yes
+                country_leader = {
 				ideology = german_idealism
+				expire = "1965.1.1"
 				traits = {
 					awkward_communicator
 					skilled_commander
 				}
+				}
+			}
+			add_field_marshal_role = { 
+				character = GER_nakasuga
+				traits = {  }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 4
+			}
+			add_corps_commander_role  = {
+				character = GER_yuzumoto
+				traits = {  }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			add_corps_commander_role  = {
+				character = GER_kita
+				traits = {  }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			add_corps_commander_role  = {
+				character = GER_shiratori
+				traits = {  }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			add_corps_commander_role  = {
+				character = GER_takami
+				traits = {  }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 4
 			}
 		}
 	}
