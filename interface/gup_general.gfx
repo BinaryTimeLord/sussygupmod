@@ -520,5 +520,25 @@ spriteTypes = {
 		name = "GFX_decision_category_SDF_icon_elections"
 		texturefile = "gfx/interface/decisions/SDFGermany/SDF_elections.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_SDF_neutrality_group"
+		texturefile = "gfx/interface/ideologies/SDF_UKP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SDF_communism_group"
+		texturefile = "gfx/interface/ideologies/SDF_SDKP.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SDF_fascism_group"
+		texturefile = "gfx/interface/ideologies/SDF_OBA.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SDF_democratic_group"
+		texturefile = "gfx/interface/ideologies/SDF_RDKA.dds"
+	}
+	
+	
 }
 
