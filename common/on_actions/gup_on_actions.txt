@@ -198,6 +198,7 @@ on_actions = {
                     original_tag = ETH
                     FROM = {
                         original_tag = ITA
+						NOT = { has_global_flag = ITA_use_DLC_tree }
 					}
 				}
 				FROM = {

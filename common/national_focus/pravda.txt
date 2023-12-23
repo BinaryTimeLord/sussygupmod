@@ -834,7 +834,7 @@
 
 	focus = { dynamic = yes
 		id = SOV_stalin_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_communism
 		x = 10
 		y = 0
 		cost = 10
@@ -2358,7 +2358,6 @@
 		prerequisite = { focus = SOV_great_purge focus = SOV_alina_coup }
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_permanent_revolution_tt
 				has_country_flag = counter_purge
 			}
 			has_government = communism
@@ -2473,7 +2472,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_general_zhukov
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_military_reorganization_bruh }
 		prerequisite = { focus = SOV_partisan_suppression }
 		x = -2
@@ -4330,7 +4329,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_zhdanov_doctrine
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_generic_strike_at_democracy1
 		x = 0
 		y = 2
 		prerequisite = { focus = SOV_comintern_congress }
@@ -5310,7 +5309,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_expand_ussr
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_heart_of_revolution }
 		prerequisite = { focus = SOV_self_reliant_socialist_bloc }
 		prerequisite = { focus = SOV_establish_COMECON }
@@ -5876,7 +5875,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_the_red_army
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = SOV_new_government }
 		mutually_exclusive = { focus = SOV_democratic_government }
 		available = {
@@ -5943,7 +5942,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_invite_exiled_communists
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_empower_the_military }
 		available = {
 		}
@@ -6038,7 +6037,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_learn_from_nina
-		icon = GFX_focus_unknown
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_prepare_army }
 		mutually_exclusive = { focus = SOV_Nonna_cadre_revolt }
 		available = {
@@ -6428,7 +6427,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_constituent_assembly
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_unknown
 		prerequisite = { focus = SOV_democratic_government }
 		available = {
 		}
@@ -6561,7 +6560,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_fascist_coup
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_constitutional_convention }
 		mutually_exclusive = { focus = SOV_soviet_democracy focus = SOV_entrench_liberalism }
 		available = {
@@ -6979,7 +6978,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_social_liberation
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_universal_suffrage }
 
 		x = 0

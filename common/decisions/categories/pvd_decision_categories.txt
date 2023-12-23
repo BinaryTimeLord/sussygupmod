@@ -37,6 +37,7 @@ soviet_power_struggle_decisions_gui = {
 	
 	allowed = {
 		original_tag = SOV
+		NOT = { has_global_flag = SOV_use_DLC_tree }
 	}
 	
 	visible_when_empty = yes

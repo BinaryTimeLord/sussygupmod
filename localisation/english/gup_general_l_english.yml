@@ -2633,7 +2633,7 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
  SOV_military_state:1 "A Military with a State"
  SOV_military_state_desc:1 "Our government has been described as a military with a state, with the military holding a leading position in all sectors of society."
  SOV_learn_from_nina:1 "Learn from Nina"
- SOV_learn_from_nina_desc:1 "The anarchists of the Ukrainian Black Army were not incorrect in many of their points. We should invite Nina's wife and comrade back to teach us their anarchist organisational doctrine."
+ SOV_learn_from_nina_desc:1 "The anarchists of the Ukrainian Black Army were not incorrect in many of their points. We should invite Nina back to teach us their anarchist organisational doctrine."
  SOV_socialist_world_republic:1 "The Socialist World Republic"
  SOV_socialist_world_republic_desc:1 "For Final Victory, we must establish Communism not only in our motherland but also across the whole world. We should follow the theories of Amadeo Bordiga relating to this matter."
  SOV_perpetual_war:1 "Perpetual War"
@@ -2865,6 +2865,7 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
  RULE_OPTION_JATKOSOTA_TREE:1 "Jatkosota Tree"
  RULE_OPTION_PRAVDA_TREE:1 "Pravda Tree"
  RULE_OPTION_ANZIO_TREE:1 "Anzio Tree"
+ RULE_OPTION_ALTERNATE_ALINA:1 "Alina's Coup"
 
   ## SCHHIZO ##
   

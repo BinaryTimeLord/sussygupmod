@@ -659,7 +659,7 @@
  SOV_great_purge_bypass_tt:0 "Nonna becomes the leader of The Soviet Union"
  SOV_great_purge_desc:0 "There is a dangerous Nonna's plot brewing among the officers; even in the highest ranks. Though Nonna's personal involvement remains unknown, the threat is great. The USSR could even be thrown into another civil war... unless we are prepared to break some eggs."
  SOV_great_purge_tt:0 "A series of §Yshow trials§! will be held to purge suspected Nonna's ministers and leaders.\n"
- SOV_great_purge_tt2:3 "The number of purges completed will affect the likelihood of renewed §Ycivil war§! and scale the effect from §HOfficers Purged§!.\nNot picking this focus will lead to §Ycivil war§! and the potential return of §YNonna§! from exile.\n\n"
+ SOV_great_purge_tt2:3 "The number of purges completed will affect the likelihood of renewed §Ycivil war§! and scale the effect from §HOfficers Purged§!.\nNot picking this focus will lead to §Ycivil war§! \n"
  SOV_permanent_revolution:0 "Permanent Revolution"
  SOV_permanent_revolution_tt:0 "Nonna has returned"
  SOV_permanent_revolution_tt2:0 "§YNonna§! gains a better leader trait."
