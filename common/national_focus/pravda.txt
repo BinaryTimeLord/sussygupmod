@@ -5368,7 +5368,7 @@
 	}
 		focus = { dynamic = yes
 		id = SOV_union_of_soviet_socialist_republics
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		prerequisite = { focus = SOV_heart_of_revolution }
 		prerequisite = { focus = SOV_self_reliant_socialist_bloc }
 		prerequisite = { focus = SOV_establish_COMECON }

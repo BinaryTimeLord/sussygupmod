@@ -2,12 +2,18 @@ FIN_foreign_help = {
     allowed = {
 		original_tag = FIN
 	}
+	visible = {
+		NOT = { has_global_flag = FIN_use_DLC_tree }
+	}
 }
 
 
 FIN_allies = {
     allowed = {
 		original_tag = FIN
+	}
+	visible = {
+		NOT = { has_global_flag = FIN_use_DLC_tree }
 	}
 }
 
@@ -16,6 +22,9 @@ FIN_attack = {
 	
     allowed = {
 		original_tag = FIN
+	}
+	visible = {
+		NOT = { has_global_flag = FIN_use_DLC_tree }
 	}
 }
 
@@ -28,6 +37,9 @@ FIN_SWE_NOR_peace = {
 			original_tag = NOR
 		}
 	}
+	visible = {
+		NOT = { has_global_flag = FIN_use_DLC_tree }
+	}
 }
 
 FIN_SOV_Return_Territory = {
@@ -36,10 +48,16 @@ FIN_SOV_Return_Territory = {
     allowed = {
 		original_tag = SOV
 	}
+	visible = {
+		NOT = { has_global_flag = FIN_use_DLC_tree }
+	}
 }
 
 FIN_integrate_eastern_territories = {
     allowed = {
 		original_tag = FIN
+	}
+	visible = {
+		NOT = { has_global_flag = FIN_use_DLC_tree }
 	}
 }

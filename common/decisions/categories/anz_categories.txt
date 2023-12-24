@@ -11,7 +11,9 @@ ITA_form_the_roman_empire = {
 			has_completed_focus = ITA_restore_the_empire
 			is_debug = yes
 		}
+		NOT = { has_global_flag = ITA_use_DLC_tree }
 	}
+
 }
 
 ITA_mussolinism_worldwide = {
@@ -26,6 +28,7 @@ ITA_mussolinism_worldwide = {
 			has_completed_focus = ITA_mussolinism_reborn
 			is_debug = yes
 		}
+		NOT = { has_global_flag = ITA_use_DLC_tree }
 	}
 	visible_when_empty = no
 }

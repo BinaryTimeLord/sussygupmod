@@ -2192,6 +2192,7 @@ soviet_power_struggle_decisions_gui = {
 			
 		}
 	}
+}
 
 
 SOV_border_conflicts = {

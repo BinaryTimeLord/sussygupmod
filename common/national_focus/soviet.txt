@@ -6768,7 +6768,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
-		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		icon = GFX_goal_unknown
 		x = 16
 		y = 0
 		offset = {
@@ -6824,7 +6824,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_centre
-		icon = GFX_focus_fra_loyalty_stalin
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = -8
 		y = 1
@@ -6958,7 +6958,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_zinovyevite_terrorist_center
-		icon = GFX_focus_SOV_purge_zinovyevists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_stalin_constitution }
 		x = 0
 		y = 1
@@ -7222,7 +7222,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_anti_soviet_trotskyist_center
-		icon = GFX_focus_SOV_purge_trotskyists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
 		x = 0
 		y = 2
@@ -7572,7 +7572,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_bloc_of_rights_and_trotskyites
-		icon = GFX_focus_SOV_purge_bukharinists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_military_conspiracy }
 		x = 0
 		y = 1
@@ -7670,7 +7670,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_behead_the_snake
-		icon = GFX_focus_SOV_behead_the_snake
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_military_conspiracy }
 		x = 2
 		y = 1
@@ -7714,7 +7714,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_stalins_cult_of_personality
-		icon = GFX_focus_SOV_stalins_cult_of_personality
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites }
 		x = 0
 		y = 1
@@ -8113,7 +8113,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_father_of_nations
-		icon = GFX_focus_SOV_father_of_nations
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_great_commander focus = SOV_architect_of_communism }
 		x = 1
 		y = 1
@@ -8245,7 +8245,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_the_left_opposition
-		icon = GFX_focus_fra_loyalty_trotzky
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_centre }
 		x = 2
@@ -8505,7 +8505,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_left_eliminate_right
-		icon = GFX_focus_SOV_purge_bukharinists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_left_opposition }
 		mutually_exclusive = { focus = SOV_cooperation_against_stalin }
 		x = 2
@@ -8565,7 +8565,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_approach_tukhachevsky
-		icon = GFX_focus_SOV_approach_tukahchevsky
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_integrate_smirnovs_bloc }
 		x = -1
 		y = 1
@@ -8659,7 +8659,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_approach_primakov
-		icon = GFX_focus_SOV_approach_primakov
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_integrate_smirnovs_bloc }
 		x = 1
 		y = 1
@@ -9512,7 +9512,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_right_opposition
-		icon = GFX_focus_SOV_bukharinists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		allow_branch = { 
 			has_dlc = "No Step Back"
@@ -9691,7 +9691,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_eliminate_the_left
-		icon = GFX_focus_SOV_purge_trotskyists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_need_for_policy_changes }
 		mutually_exclusive = { focus = SOV_cooperation_against_stalin }
 		x = -4
@@ -10501,7 +10501,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_international_revolutionary_marxist_centre
-		icon = GFX_focus_spr_unify_the_london_bureau
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_a_new_theory_of_revolution focus = SOV_administrative_reforms }
 		prerequisite = { focus = SOV_planned_economy }
 		x = 0
@@ -11010,7 +11010,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_align_the_zinovyevites
-		icon = GFX_focus_SOV_zinovyevists
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_cooperation_against_stalin }
 		x = -1
 		y = 1
@@ -11086,7 +11086,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_liberate_ryutin
-		icon = GFX_focus_CZE_german_puppet
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_cooperation_against_stalin }
 		x = 1
 		y = 1
@@ -15292,7 +15292,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_beaten_but_not_defeated
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		x = 61
 		y = 0
 		relative_position_id = SOV_the_path_of_marxism_leninism
@@ -15635,7 +15635,7 @@ ai_will_do = {
 	}
 	focus = {
 		id = SOV_approach_semyonov
-		icon = GFX_focus_SOV_approach_semyonov
+		icon = GFX_goal_unknown
 		prerequisite = { 
 			focus = SOV_embrace_the_black_hundreds
 		}
@@ -15953,7 +15953,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_request_imperial_protection 
-		icon = GFX_focus_jap_showa_restoration
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_call_for_aid }
 		x = 0
 		y = 1
@@ -16428,7 +16428,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_reconvene_the_zemsky_sobor
-		icon = GFX_focus_SOV_zemsky_sobor
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_consolidate_power }
 		prerequisite = { focus = SOV_reformalize_the_role_of_the_patriarchate }
 		x = 4
