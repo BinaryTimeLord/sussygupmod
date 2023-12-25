@@ -38,14 +38,6 @@ characters = { ##fuck this shit it wont work##
 			id=1
 		}
 		
-		country_leader={
-			desc="POLITICS_SAORI_DESC"
-			ideology=nazism
-			traits={ sdf_nationalist sdf_underrated_politician }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		
 		advisor={
 			slot = political_advisor
 			idea_token =SDF_saori_idea
@@ -275,6 +267,14 @@ characters = { ##fuck this shit it wont work##
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
+		}
+		
+		country_leader={
+			##desc=""
+			ideology=nazism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		
 		advisor={
@@ -726,6 +726,15 @@ characters = { ##fuck this shit it wont work##
 			}
 			
 			cost = 150
+		}
+		
+		
+		country_leader={
+			##desc=""
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		
 		corps_commander={

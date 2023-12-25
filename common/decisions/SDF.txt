@@ -1106,107 +1106,107 @@ SDF_war_with_pravda = {
 	}
 }
 
-SDF_elections = {
-	SDF_elections_test = {
+##SDF_elections = {
+	##SDF_elections_test = {
 	
-		activation = {
+		##activation = {
 			
-		}
+		##}
 		
-		available = {
+		##available = {
 			
-		}
+		##}
 		
-		is_good = yes
+		##is_good = yes
 		
-		days_mission_timeout = 1
-		selectable_mission = no
+		##days_mission_timeout = 1
+		##selectable_mission = no
 		
-		timeout_effect = { 
+		##timeout_effect = { 
 			
 			##FASCISM
-			set_variable = {
-				var = SDF.fascism_popularity
-				value = 0
-			}
+			##set_variable = {
+				##var = SDF.fascism_popularity
+				##value = 0
+			##}
 			
-			set_temp_variable = {
-				fascism_pop = party_popularity@fascism
-			}
+			##set_temp_variable = {
+				##fascism_pop = party_popularity@fascism
+			##}
 			
-			multiply_temp_variable = {
-				var = fascism_pop
-				value = 100
-			}
+			##multiply_temp_variable = {
+				##var = fascism_pop
+				##value = 100
+			##}
 			
-			set_variable = {
-				var = SDF.fascism_popularity
-				value = fascism_pop
-			}
+			##set_variable = {
+				##var = SDF.fascism_popularity
+				##value = fascism_pop
+			##}
 			
 			##DEMOCRATIC
-			set_variable = {
-				var = SDF.democratic_popularity
-				value = 0
-			}
+			##set_variable = {
+				##var = SDF.democratic_popularity
+				##value = 0
+			##}
 			
-			set_temp_variable = {
-				democratic_pop = party_popularity@democratic
-			}
+			##set_temp_variable = {
+				##democratic_pop = party_popularity@democratic
+			##}
 			
-			multiply_temp_variable = {
-				var = democratic_pop
-				value = 100
-			}
+			##multiply_temp_variable = {
+				##var = democratic_pop
+				##value = 100
+			##}
 			
-			set_variable = {
-				var = SDF.democratic_popularity
-				value = democratic_pop
-			}
+			##set_variable = {
+				##var = SDF.democratic_popularity
+				##value = democratic_pop
+			##}
 			
 			##COMMUNISM
 					
-			set_variable = {
-				var = SDF.communism_popularity
-				value = 0
-			}
+			##set_variable = {
+				##var = SDF.communism_popularity
+				##value = 0
+			##}
 			
-			set_temp_variable = {
-				communism_pop = party_popularity@communism
-			}
+			##set_temp_variable = {
+				##communism_pop = party_popularity@communism
+			##}
 			
-			multiply_temp_variable = {
-				var = communism_pop
-				value = 100
-			}
+			##multiply_temp_variable = {
+				##var = communism_pop
+				##value = 100
+			##}
 			
-			set_variable = {
-				var = SDF.communism_popularity
-				value = communism_pop
-			}
+			##set_variable = {
+				##var = SDF.communism_popularity
+				##value = communism_pop
+			##}
 
 			##NEUTRALITY
 				
-			set_variable = {
-				var = SDF.neutrality_popularity
-				value = 0
-			}
+			##set_variable = {
+				##var = SDF.neutrality_popularity
+				##value = 0
+			##}
 			
-			set_temp_variable = {
-				neutrality_pop = party_popularity@neutrality
-			}
+			##set_temp_variable = {
+				##neutrality_pop = party_popularity@neutrality
+			##}
 			
-			multiply_temp_variable = {
-				var = neutrality_pop
-				value = 100
-			}
+			##multiply_temp_variable = {
+				##var = neutrality_pop
+				##value = 100
+			##}
 			
-			set_variable = {
-				var = SDF.neutrality_popularity
-				value = neutrality_pop
-			}
-		}
+			##set_variable = {
+				##var = SDF.neutrality_popularity
+				##value = neutrality_pop
+			##}
+		##}
 		
-	}
-}
+	##}
+##}
 

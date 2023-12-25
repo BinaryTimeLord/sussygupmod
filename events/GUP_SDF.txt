@@ -643,6 +643,17 @@ country_event = {
                 type = annex_everything
             }
 			
+			every_country = {
+				limit = {
+					owns_state = 64
+				}
+				
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+			}
+			
 		}	
 	}
 }
@@ -839,4 +850,33 @@ country_event = {
 		retire_character = AUS_hana_isuzu
 		add_ideas = sdf_ooarai_resistance
 	}	
+}
+
+##GREAT GAME##
+country_event = {
+	id = sdf.27
+	title = sdf.27.t
+	desc = sdf.27.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.27.a
+		ai_chance = {
+			base = 1
+		}
+		
+		complete_national_focus = SDF_purge_generals
+	}
+	
+	option = {
+		name = sdf.27.b
+		ai_chance = {
+			base = 1
+		}
+		
+		complete_national_focus = SDF_keep_nishizumists
+	}
 }

@@ -169,9 +169,16 @@ focus_tree = {
 				type = annex_everything
 			}
 			
-			declare_war_on = {
-				target = D04
-				type = annex_everything
+			every_country = {
+				limit = {
+					owns_state = 64
+					original_tag = GER
+				}
+				
+				declare_war_on = {
+					target = SDF
+					type = annex_everything
+				}
 			}
 			
 		}
