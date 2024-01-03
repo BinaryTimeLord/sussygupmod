@@ -1188,7 +1188,10 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.27
+				days = 3
+			}
 		}
 	}
 	
@@ -1246,6 +1249,11 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_elevate_fallshimjager
+			
+			country_event = {
+				id = sdf.28
+				days = 5
+			}
 		}
 	}
 	
@@ -1307,6 +1315,11 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_reinstate_ks
+			
+			country_event = {
+				id = sdf.29
+				days = 5
+			}
 		}
 	}
 	
@@ -1341,6 +1354,10 @@ focus_tree = {
 		x = 0
 		y = 2
 		
+		available = {
+			has_war = no
+		}
+		
 		prerequisite = { focus = SDF_keep_nishizumists focus = SDF_purge_generals }
 		mutually_exclusive = {}
 		
@@ -1348,6 +1365,11 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_war_games
+			
+			country_event = {
+				id = sdf.30
+				days = 5
+			}
 		}
 	}
 	
@@ -1401,7 +1423,12 @@ focus_tree = {
 				}
 
 				remove_ideas = sdf_failing_loyalty
-				
+			}
+			
+			country_event = {
+				id = sdf.31
+				days = 5
+			
 			}
 		}
 	}
@@ -1689,7 +1716,7 @@ focus_tree = {
 	
 	##ECONOMIC##
 	
-	focus = {
+	focus = { ##EVENT
 		id = SDF_status_economic
 		##icon = 
 		##relative_position_id =
@@ -1723,6 +1750,10 @@ focus_tree = {
 		x = -3
 		y = 1
 		
+		available = {
+			always = no
+		}
+		
 		prerequisite = { focus = SDF_status_economic }
 		mutually_exclusive = { focus = SDF_autarky }
 		mutually_exclusive = { focus = SDF_free_market }
@@ -1730,7 +1761,7 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_ideas = sdf_industrial_democracy
 		}
 	}
 	
@@ -1742,13 +1773,20 @@ focus_tree = {
 		x = -1
 		y = 1
 		
+		available = {
+			has_idea = sdf_economic_downturn4
+		}
+		
 		prerequisite = { focus = SDF_industrial_democracy }
 		mutually_exclusive = {}
 		
-		cost = 5
+		cost = 8
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_economic_downturn4
+				add_idea = sdf_economic_downturn5
+			}
 		}
 	}
 	
@@ -1766,7 +1804,23 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory 
+						level = 2
+						instant_build = yes
+					}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory 
+						level = 2
+						instant_build = yes
+					}
+			}
 		}
 	}
 	
@@ -1781,10 +1835,22 @@ focus_tree = {
 		prerequisite = { focus = SDF_break_corperations focus = SDF_unite_mic }
 		mutually_exclusive = {}
 		
-		cost = 7
+		cost = 3
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_industrial_democracy
+				add_idea = sdf_industrial_democracy2
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
 		}
 	}
 	
@@ -1803,7 +1869,36 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+			}
+			
+			random_owned_state = {
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+			
+			random_owned_state = {
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+			}
 		}
 		
 	}
@@ -1816,6 +1911,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		
+		available = {
+			always = false
+		}
+		
 		prerequisite = { focus = SDF_status_economic }
 		mutually_exclusive = { focus = SDF_industrial_democracy }
 		mutually_exclusive = { focus = SDF_free_market }
@@ -1823,7 +1922,37 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			if = {
+				limit = {
+					has_idea = free_trade
+				}
+				
+				add_ideas = sdf_closed_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = export_focus
+				}
+				
+				add_ideas = sdf_closed_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = limited_exports
+				}
+				
+				add_ideas = sdf_closed_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				
+				add_ideas = sdf_closed_economy
+			}
 		}
 	}
 	
@@ -1841,7 +1970,7 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_ideas = sdf_autarky
 		}
 	}
 	
@@ -1859,7 +1988,23 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex 
+						level = 2
+						instant_build = yes
+					}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex 
+						level = 2
+						instant_build = yes
+					}
+			}
 		}
 	}
 	
@@ -1877,7 +2022,34 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_autarky
+				add_idea = sdf_autarky2
+			}
+			
+			random_owned_state = {
+				add_resource = {
+						type = aluminium
+						amount = 15
+					}
+					
+					add_resource = {
+						type = tungsten
+						amount = 10
+					}
+			}
+			
+			random_owned_state = {
+				add_resource = {
+						type = oil
+						amount = 50
+					}
+					
+					add_resource = {
+						type = rubber
+						amount = 5
+					}
+			}
 		}
 	}
 	
@@ -1896,7 +2068,66 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			
+			if = {
+				limit = {
+					has_idea = war_economy
+				}
+				
+				add_ideas = tot_economic_mobilisation
+			}
+			
+			if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
+				}
+				
+				add_ideas = war_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				
+				add_ideas = partial_economic_mobilisation
+			}
+			
+			if = {
+				limit = {
+					has_idea = civilian_economy
+				}
+				
+				add_ideas = low_economic_mobilisation
+			}
+			
+			swap_ideas = {
+				remove_idea = sdf_economic_downturn4
+				add_idea = sdf_economic_downturn5
+			}
+			
+			add_war_support = 0.15
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory 
+						level = 2
+						instant_build = yes
+					}
+					
+				create_unit = {
+					division = "division_template = \"Fallschirmjager\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+			
+			random_owned_state = {
+				create_unit = {
+					division = "division_template = \"Fallschirmjager\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+			
 		}
 	}
 	
@@ -1908,14 +2139,55 @@ focus_tree = {
 		x = 3
 		y = 1
 		
+		available = {
+			always = false
+		}
+		
 		prerequisite = { focus = SDF_status_economic }
 		mutually_exclusive = { focus = SDF_industrial_democracy }
 		mutually_exclusive = { focus = SDF_autarky }
 		
 		cost = 7
-		
+
 		completion_reward = {
-		
+			if = {
+				limit = {
+					has_idea = free_trade
+				}
+				
+				add_ideas = sdf_free_trade_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = export_focus
+				}
+				
+				add_ideas = sdf_free_trade_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = limited_exports
+				}
+				
+				add_ideas = sdf_free_trade_economy
+			}
+			
+			if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				
+				add_ideas = sdf_free_trade_economy
+			}
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			
+			add_research_slot = 1
 		}
 	}
 	
@@ -1933,7 +2205,27 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_manpower = -15000
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	
@@ -1952,6 +2244,28 @@ focus_tree = {
 		
 		completion_reward = {
 		
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+
+				category = motorized_equipment
+
+			}
+				
+			every_owned_state = {
+				limit = {
+					core_of = SDF
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			
+			
 		}
 	}	
 	
@@ -1970,7 +2284,21 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = sdf_economic_downturn4
+				add_idea = sdf_economic_downturn5
+			}
+			
+			every_owned_state = {
+				limit = {
+					NOT = {
+						core_of = SDF
+					}
+				}
+				
+				add_compliance = 10.5
+			}
 		}
 	}
 	
@@ -1989,7 +2317,7 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_ideas = sdf_no_tarrifs
 		}
 	}
 	
@@ -2007,7 +2335,105 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = SDF_industrial_democracy
+							has_completed_focus = SDF_free_market
+						}
+					}	
+				}
+				
+				custom_effect_tooltip = SDF_into_future_tooltip
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = sdf_industrial_democracy_law
+				}
+				
+			if = {
+				limit = {
+					has_idea = war_economy
+				}
+				
+				add_ideas = sdf_industrial_democracy_law
+			}
+			
+			if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
+				}
+				
+				add_ideas = sdf_industrial_democracy_law
+			}
+			
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				
+				add_ideas = sdf_industrial_democracy_law
+			}
+			
+			if = {
+				limit = {
+					has_idea = civilian_economy
+				}
+				
+				add_ideas = sdf_industrial_democracy_law
+			}
+			
+			}
+				
+			
+			if = {
+				limit = {
+					has_completed_focus = SDF_free_market
+				}
+				
+				if = {
+				limit = {
+					has_idea = war_economy
+				}
+				
+				add_ideas = sdf_free_trade_law
+			}
+			
+			if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
+				}
+				
+				add_ideas = sdf_free_trade_law
+			}
+			
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				
+				add_ideas = sdf_free_trade_law
+			}
+			
+			if = {
+				limit = {
+					has_idea = civilian_economy
+				}
+				
+				add_ideas = sdf_free_trade_law
+			}
+				
+			}
+			
+			remove_ideas = sdf_economic_downturn5
+			
+			add_timed_idea = {
+				idea = sdf_economic_downturn6
+				days = 365
+			}
 		}
 	}
 	

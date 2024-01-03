@@ -880,3 +880,119 @@ country_event = {
 		complete_national_focus = SDF_keep_nishizumists
 	}
 }
+
+##FALLSCHIRMJAGER##
+country_event = {
+	id = sdf.28
+	title = sdf.28.t
+	desc = sdf.28.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.28.a
+		ai_chance = {
+			base = 1
+		}
+		add_war_support = 0.01
+	}
+}
+
+##KS STUFF##
+country_event = {
+	id = sdf.29
+	title = sdf.29.t
+	desc = sdf.29.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.29.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+##OPERATION LIONHEART##
+country_event = {
+	id = sdf.30
+	title = sdf.30.t
+	desc = sdf.30.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.30.a
+		ai_chance = {
+			base = 1
+		}
+		add_war_support = 0.01
+		army_experience = 15
+	}
+}
+
+##REFORMED##
+country_event = {
+	id = sdf.31
+	title = sdf.31.t
+	desc = sdf.31.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.31.a
+		ai_chance = {
+			base = 1
+		}
+		
+		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_medium_armor
+		}
+				
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = battlefield_support_tree
+		}	
+
+		add_doctrine_cost_reduction = {
+			name = USA_louisiana_maneuvers
+			cost_reduction = 1
+			uses = 1
+			category = land_doctrine
+		}		
+	}
+}
+
+##ANZAI EVENTS##
+country_event = {
+	id = sdf.32
+	title = sdf.32.t
+	desc = sdf.32.d
+	
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.32.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_country_flag = SDF_anzai_arrivial
+	}
+}

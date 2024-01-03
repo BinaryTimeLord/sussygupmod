@@ -123,6 +123,7 @@ recruit_character = SDF_rum_high_command
 recruit_character = SDF_maho
 recruit_character = SDF_erika
 recruit_character = SDF_anzai
+recruit_character = SDF_victoria
 
 ##EQUIPMENT##
 if = {

@@ -694,6 +694,112 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		
+		sdf_industrial_democracy = {
+			##picture =
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.01
+				economy_cost_factor = -0.075
+				trade_laws_cost_factor = -0.075
+				political_power_factor = 0.05
+			}
+		}
+		
+		sdf_industrial_democracy2 = {
+			##picture =
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.01
+				economy_cost_factor = -0.075
+				trade_laws_cost_factor = -0.075
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.075
+			}
+		}
+		
+		sdf_autarky = {
+			##picture
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.75
+				consumer_goods_factor = -0.05
+				conscription = 0.005
+			}
+		}
+		
+		
+		sdf_autarky2 = {
+			##picture
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.75
+				consumer_goods_factor = -0.05
+				conscription = 0.005
+				local_resources_factor = 0.15
+			}
+		}
+		
+		sdf_no_tarrifs = {
+			##picture
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.5
+				democratic_acceptance = 15
+				compliance_gain = 0.01
+				weekly_manpower = 150
+			}
+		}
 	}
 	
 	industrial_concern = {
@@ -752,4 +858,113 @@ ideas = {
 			traits = { electronics_concern }
 		}		
 	}
-}
+	
+	trade_laws = {
+		law = yes
+		
+		sdf_closed_economy = {
+		
+			##picture 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			allowed = {
+				tag = SDF
+			}
+			
+			modifier = {
+				min_export = 0
+				#civilian_intel_to_others = 0.0
+				lend_lease_tension = 0.40
+				cic_construction_boost = -0.1
+				trade_opinion_factor = -0.5
+			}
+		}
+		
+		sdf_free_trade_economy = {
+			##picture 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			allowed = {
+				tag = SDF
+			}
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+				cic_construction_boost_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+		economy = {
+			law = yes
+			
+			sdf_industrial_democracy_law = {
+				##picture = 
+				allowed = {
+					
+				}
+				removal_cost = -1
+				
+				allowed_to_remove = {
+					always = no
+				}
+			
+				modifier = {
+					consumer_goods_factor = 0.25
+					production_speed_arms_factory_factor = 0.40
+					conversion_cost_civ_to_mil_factor= -0.3
+					production_speed_industrial_complex_factor = -0.25
+					production_speed_buildings_factor = -0.05
+					fascism_drift = 0.05
+					communism_drift = 0.05
+					war_support_factor = 0.15
+					stability_factor = -0.15
+					conscription = 0.01
+				}
+			}
+			
+			sdf_free_trade_law = {
+				##picture = 
+				allowed = {
+					
+				}
+				removal_cost = -1
+				
+				allowed_to_remove = {
+					always = no
+				}
+				
+				modifier = {
+					consumer_goods_factor = 0.45
+					local_resources_factor = 0.1
+					political_power_factor = 0.25
+					production_speed_buildings_factor = 0.075
+					production_speed_industrial_complex_factor = 0.25
+					production_speed_dockyard_factor = -0.15
+					production_speed_arms_factory_factor = -0.15
+					stability_factor = 0.05
+				}
+			}
+				
+		}
+	}

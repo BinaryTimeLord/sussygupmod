@@ -719,7 +719,7 @@ characters = { ##fuck this shit it wont work##
 				
 			}
 			visible = {
-				
+				has_country_flag = SDF_anzai_arrivial
 			}
 			traits = {
 				head_of_military_complex
@@ -738,12 +738,71 @@ characters = { ##fuck this shit it wont work##
 		}
 		
 		corps_commander={
+			visible = {
+				has_country_flag = SDF_anzai_arrivial
+			}
 			traits={ inflexible_strategist trait_reckless }
 			skill=4
 			attack_skill=5
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=1
+		}
+	}
+	
+	SDF_victoria = {
+		name = "Victoria"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_victoria.dds"
+			}
+			
+			civilian = {
+				##small="gfx/interface/ideas/Kuromorimine/GFX_victoria.dds"
+			}
+			
+			army={
+				##small="gfx/interface/ideas/Kuromorimine/GFX_victoria.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_victoria.dds"
+			}
+			
+		}
+		
+		corps_commander = {
+			traits={ brilliant_strategist politically_connected war_hero paratrooper }
+			skill=2
+			attack_skill=1
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			
+			visible = {
+				has_completed_focus = SDF_elevate_fallshimjager
+			}
+		}
+		
+		advisor={
+            cost = 150
+			slot = high_command
+			idea_token = SDF_victoria_idea
+			ledger = army
+			
+			allowed = {
+				tag = SDF
+			}
+			available = {
+				
+			}
+			
+			traits = { air_airborne_1 }
+			
+			visible = {
+				has_completed_focus = SDF_elevate_fallshimjager
+			}
 		}
 	}
 	
