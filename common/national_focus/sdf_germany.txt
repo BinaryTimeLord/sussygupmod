@@ -431,11 +431,6 @@ focus_tree = {
 					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
 					owner = SDF
 				}
-				
-				create_unit = {
-					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
-					owner = SDF
-				}
 			}
 		}
 	}
@@ -767,6 +762,17 @@ focus_tree = {
 			country_event = {
 				id = sdf.12
 				days = 3
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+				
+					unlock_national_focus = SDF_ooarai_issue
+				
+				}
 			}
 		}
 	}
@@ -1695,22 +1701,24 @@ focus_tree = {
 	##BEFORE WAR##
 	
 	focus = {
-		id = SDF_continue_reforms
+		id = SDF_elections
 		##icon =
 		relative_position_id = SDF_dotted_line_report
 		
 		x = 0
 		y = 7
 		
-		prerequisite = { focus = SDF_ooarai_core }
-		prerequisite = { focus = SDF_sort_of_stability }
+		prerequisite = { focus = SDF_sort_of_stability focus = SDF_ooarai_core }
 		prerequisite = { focus = SDF_heer_no_fear }
 		mutually_exclusive = {}
 		
 		cost = 10
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.35
+				days = 3
+			}
 		}
 	}
 	

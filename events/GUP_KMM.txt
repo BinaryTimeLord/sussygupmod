@@ -368,10 +368,12 @@ country_event = { ##37th easter egg <------------- NEEDS FIXING
 		
 		load_oob = GER_thirtyseven
 		
-		GER = {
-			country_event = {
-				id = kmm.246
-				days = 10
+		hidden_effect = {
+			GER = {
+				country_event = {
+					id = kmm.246
+					days = 10
+				}
 			}
 		}
 		
@@ -390,6 +392,15 @@ country_event = { ##37th easter egg <------------- NEEDS FIXING
 		name = kmm.99.b 
 		ai_chance = {
 			base = 100
+		}
+		
+		hidden_effect = {
+			GER = {
+				country_event = {
+					id = kmm.246
+					days = 10
+				}
+			}
 		}
 	}
 }
@@ -5627,7 +5638,7 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 	option = { 
 		name = kmm.246.a
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 		
 		hidden_effect = {
@@ -5638,6 +5649,11 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 			55 = {
 				add_core_of = SDF
 			}
+			
+			delete_unit = {
+				state = 52
+				disband = yes #will refund equipment and manpower
+			}
 
 			release = SDF
 		
@@ -5647,13 +5663,38 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		
 		}
 		
-		SDF = {
-			change_tag_from = GER
+		if = {
+			limit = {
+				AUS = {
+					is_ai = no
+				}
+			}
+			
+			AUS = {
+				country_event = {
+					id = sdf.33
+					days = 0
+				}
+			}
+			
+			else = {
+				SDF = {
+					change_tag_from = GER
+				}
+			}
+		
 		}
 		
 		hidden_effect = {
 		SDF = {
 			inherit_technology = GER
+			
+		delete_unit_template_and_units = { division_template = "Infanterie-Division" }
+		delete_unit_template_and_units = { division_template = "Panzer-Division" }
+		delete_unit_template_and_units = { division_template = "Infanterie-Division (mot.)" }
+		delete_unit_template_and_units = { division_template = "Gebirgs-Brigade" }
+		delete_unit_template_and_units = { division_template = "Kavallerie-Brigade" }
+		delete_unit_template_and_units = { division_template = "Landsturmregiment" }
 			
 			add_country_leader_role = { 
 				character = SDF_saori_takebe 
@@ -5807,6 +5848,13 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		SDF = {
 			inherit_technology = GER
 			
+		delete_unit_template_and_units = { division_template = "Infanterie-Division" }
+		delete_unit_template_and_units = { division_template = "Panzer-Division" }
+		delete_unit_template_and_units = { division_template = "Infanterie-Division (mot.)" }
+		delete_unit_template_and_units = { division_template = "Gebirgs-Brigade" }
+		delete_unit_template_and_units = { division_template = "Kavallerie-Brigade" }
+		delete_unit_template_and_units = { division_template = "Landsturmregiment" }
+		
 			
 			create_field_marshal = {
 				name = "Heerfuhrer Saori Takebe"

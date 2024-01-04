@@ -985,7 +985,7 @@ SDF_economic_crisis = {
 			if = {
 				limit = {
 					SDF = {
-						has_idea = sdf_economic_downturn4
+						has_idea = sdf_economic_downturn3
 					}
 				}
 				
@@ -1074,6 +1074,40 @@ SDF_war_with_pravda = {
 				days = 1
 			}
 			custom_effect_tooltip = SDF_pravda_war_timer_tooltip
+		}
+	}
+}
+
+AUS_intervention = {
+	AUS_intervention_war_timer = {
+		
+		icon = GFX_decision_generic_prepare_civil_war
+		
+	
+		activation = {
+			AUS = {
+				has_ai = no
+			}
+		}
+		
+		available = {
+			GER = {
+				has_war = yes
+			}
+		}
+		
+		is_good = yes
+		
+		days_mission_timeout = 35
+		selectable_mission = no
+		complete_effect = {
+			
+		}
+		
+		timeout_effect = { 
+			GER = {
+				complete_national_focus = GER_river_incident
+			}
 		}
 	}
 }

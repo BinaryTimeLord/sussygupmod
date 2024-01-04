@@ -996,3 +996,206 @@ country_event = {
 		set_country_flag = SDF_anzai_arrivial
 	}
 }
+
+##CIVIL WAR EVENTS (AUS)##
+
+country_event = {
+	id = sdf.33
+	title = sdf.33.t
+	desc = sdf.33.d
+	
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.33.a
+		ai_chance = {
+			base = 1
+		}
+		
+		SDF = {
+			change_tag_from = AUS
+			
+			country_event = {
+				id = sdf.34 
+				days = 5
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = sdf.34
+	title = sdf.34.t
+	desc = sdf.34.d
+	
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.34.a
+		ai_chance = {
+			base = 1
+		}
+		
+		SDF = {
+			annex_country = {
+				target = AUS
+				transfer_troops = yes
+			}
+			
+			hidden_effect = {
+				delete_unit_template_and_units = { division_template = "Infanterie Division" }
+				delete_unit_template_and_units = { division_template = "Schnelle Division" }
+				
+				52 = {
+					create_unit = {
+						division = "division_template = \"Alpenjäger Division\" start_experience_factor = 0.3" 
+						owner = SDF
+					}
+				}
+				
+				every_owned_state = {
+					create_unit = {
+						division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+						owner = SDF
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = sdf.35
+	title = sdf.35.t
+	desc = sdf.35.d
+	
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { ##DEMO
+		name = sdf.35.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		
+		if = {
+			limit = {
+				SDF = {
+					has_country_flag = SDF_BALLS
+				}
+			}
+			
+			else = {
+				complete_national_focus = SDF_free_market
+			}
+		}
+		
+		add_ideas = sdf_saori_takebe_idea
+		
+		set_country_flag = SDF_BALLS
+		
+		hidden_effect = {
+			country_event = {
+				id = sdf.35
+				days = 1095
+			}
+		}
+		
+	}
+	
+	option = { ##NEUTRAL
+		name = sdf.35.b
+		ai_chance = {
+			base = 1
+		}
+		
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		
+		if = {
+			limit = {
+				SDF = {
+					has_country_flag = SDF_BALLS
+				}
+			}
+			
+			else = {
+				complete_national_focus = SDF_industrial_democracy
+			}
+		}
+		
+		set_country_flag = SDF_BALLS
+		
+		hidden_effect = {
+			country_event = {
+				id = sdf.35
+				days = 1095
+			}
+			
+			if = {
+				limit = {
+					has_idea = sdf_saori_takebe_idea
+				}
+				
+				remove_ideas = sdf_saori_takebe_idea
+				
+				else = {
+				
+				}
+			}
+		}
+		
+	}
+	
+	option = { ##RIGHT
+		name = sdf.35.c
+		ai_chance = {
+			base = 1
+		}
+		
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		
+		if = {
+			limit = {
+				SDF = {
+					has_country_flag = SDF_BALLS
+				}
+			}
+			
+			else = {
+				complete_national_focus = SDF_autarky
+			}
+		}
+		
+		add_ideas = sdf_saori_takebe_idea
+		
+		set_country_flag = SDF_BALLS
+		
+		hidden_effect = {
+			country_event = {
+				id = sdf.35
+				days = 1095
+			}
+		}
+	}
+}

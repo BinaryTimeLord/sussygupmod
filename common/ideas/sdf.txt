@@ -3,7 +3,10 @@ ideas = {
 		sdf_army_w_state = {
 	
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -30,7 +33,10 @@ ideas = {
 		
 		sdf_revolutionary_fevor = {
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -62,7 +68,10 @@ ideas = {
 			picture = chi_war_of_resistance3
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -85,7 +94,10 @@ ideas = {
 		sdf_war_lost = {
 			picture = FRA_national_mobilization_focus
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -119,7 +131,10 @@ ideas = {
 			picture = generic_constitutional_guarantee
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -140,7 +155,10 @@ ideas = {
 			picture = generic_neutrality_drift_bonus
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -172,7 +190,10 @@ ideas = {
 			picture = generic_neutrality_drift_bonus
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -204,7 +225,10 @@ ideas = {
 			picture = generic_neutrality_drift_bonus
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -235,7 +259,10 @@ ideas = {
 			##picture = 
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -254,7 +281,10 @@ ideas = {
 			##picture = 
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -274,7 +304,10 @@ ideas = {
 			##picture = 
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -297,7 +330,10 @@ ideas = {
 			##picture = 
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -320,7 +356,10 @@ ideas = {
 			picture = generic_army_problems
 		
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -340,7 +379,10 @@ ideas = {
 			picture = generic_army_problems
 		
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -360,7 +402,10 @@ ideas = {
 			picture = generic_army_problems
 		
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -382,7 +427,10 @@ ideas = {
 			picture = generic_army_problems
 		
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -404,7 +452,10 @@ ideas = {
 			picture = seize_the_gold_reserves
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -421,7 +472,10 @@ ideas = {
 		sdf_explotiing_resource = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -440,7 +494,10 @@ ideas = {
 		sdf_elevate_fallshimjager = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -460,7 +517,10 @@ ideas = {
 		sdf_keep_nishizumists = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -480,7 +540,10 @@ ideas = {
 		sdf_war_games = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -501,7 +564,10 @@ ideas = {
 		sdf_army_purge = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -519,7 +585,10 @@ ideas = {
 		sdf_reinstate_ks = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -542,7 +611,10 @@ ideas = {
 		sdf_economic_downturn1 = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -564,7 +636,10 @@ ideas = {
 		sdf_economic_downturn2 = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -586,7 +661,10 @@ ideas = {
 		sdf_economic_downturn3 = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -608,7 +686,10 @@ ideas = {
 		sdf_economic_downturn4 = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -630,7 +711,10 @@ ideas = {
 		sdf_economic_downturn5 = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -652,7 +736,10 @@ ideas = {
 		sdf_economic_downturn6 = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -674,7 +761,10 @@ ideas = {
 		sdf_ooarai_resistance = {
 			##picture = 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 				
 				has_full_control_of_state = 153
 				has_full_control_of_state = 848
@@ -699,7 +789,10 @@ ideas = {
 			##picture =
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -720,7 +813,10 @@ ideas = {
 			##picture =
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -742,7 +838,10 @@ ideas = {
 			##picture
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -763,7 +862,10 @@ ideas = {
 			##picture
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -784,7 +886,10 @@ ideas = {
 			##picture
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
 			}
 
 			allowed_civil_war = {
@@ -798,6 +903,36 @@ ideas = {
 				democratic_acceptance = 15
 				compliance_gain = 0.01
 				weekly_manpower = 150
+			}
+		}
+		
+		sdf_saori_takebe_idea = {
+			##picture = 
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
+				
+				NOT = {
+					has_government = neutrality
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = { ##HER TRAITS
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				compliance_gain = 0.05
 			}
 		}
 	}
@@ -921,14 +1056,14 @@ ideas = {
 			sdf_industrial_democracy_law = {
 				##picture = 
 				allowed = {
-					
+					always = no
 				}
 				removal_cost = -1
 				
 				allowed_to_remove = {
 					always = no
 				}
-			
+				
 				modifier = {
 					consumer_goods_factor = 0.25
 					production_speed_arms_factory_factor = 0.40
@@ -946,7 +1081,7 @@ ideas = {
 			sdf_free_trade_law = {
 				##picture = 
 				allowed = {
-					
+					always = no
 				}
 				removal_cost = -1
 				

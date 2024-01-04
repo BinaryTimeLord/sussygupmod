@@ -4236,7 +4236,15 @@ focus_tree = {
 			51 = { is_demilitarized_zone = no }
 		}
 		ai_will_do = {
-			factor = 10
+			base = 10
+			
+			modifier = {
+				AUS = {
+					is_ai = no
+				}
+				
+				factor = 0
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }				
 		completion_reward = {
@@ -9595,12 +9603,21 @@ focus = {
 		icon = GFX_goal_river_incident
 		x = 3
 		y = 0
-		cost = 20
+		cost = 1
 		mutually_exclusive = {
 			focus = GER_rhineland
 		}
 		ai_will_do = {
 			factor = 3
+		
+			modifier = {
+				AUS = {
+					is_ai = no
+				}
+				
+				factor = 25
+			}
+			
 		}
 
 		offset = {

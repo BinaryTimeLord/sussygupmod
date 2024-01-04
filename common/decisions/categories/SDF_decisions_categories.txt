@@ -104,3 +104,16 @@ SDF_elections = {
 	scripted_gui = SDF_elections_Decisions_GUI
 	
 }
+
+AUS_intervention = {
+	icon = GFX_decision_generic_protection
+	
+	priority = 1001
+	allowed = {
+		tag = AUS
+	}
+	
+	visible = {
+		always = yes
+	}
+}
