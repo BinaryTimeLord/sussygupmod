@@ -16190,7 +16190,7 @@ focus = {
 	#COMMIE BRANCH
 	focus = { 
 		id = GER_socialist_exile_exchange
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_socialist_exchange
 		prerequisite = { focus = GER_mol_rib_pact }
 		mutually_exclusive = { focus = GER_ussr_war_goal focus = GER_soviet_ally }
 		available = {
@@ -16222,7 +16222,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_free_communist_prisoners
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_kitas_prisoners
 		prerequisite = { focus = GER_socialist_exile_exchange }
 		x = -1
 		y = 1
@@ -16249,7 +16249,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_socialist_intellectual_repatriation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_intellectual_repatriation
 		prerequisite = { focus = GER_socialist_exile_exchange }
 		available = {
 		}
@@ -16278,7 +16278,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_free_strasserist_prisoners
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_yuzumotos_prisoners
 		prerequisite = { focus = GER_socialist_exile_exchange }
 		available = {
 		}
@@ -16307,7 +16307,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_german_workers_party
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_workers_party
 		prerequisite = { focus = GER_free_strasserist_prisoners }
 		prerequisite = { focus = GER_socialist_intellectual_repatriation }
 		mutually_exclusive = { focus = GER_communist_revolution }
@@ -16374,7 +16374,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_communist_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_socialist_republic
 		prerequisite = { focus = GER_free_communist_prisoners }
 		prerequisite = { focus = GER_socialist_intellectual_repatriation }
 		mutually_exclusive = { focus = GER_german_workers_party }
