@@ -898,11 +898,23 @@ SDF_officer_revolt = {
 				}
 				
 				custom_effect_tooltip = SDF_failing_loyalty4
-				country_event = {
-					id = sdf.18
-					days = 1
-				}
 				
+				random_list = {
+					
+					75 = {
+						country_event = {
+							id = sdf.36
+							days = 1
+						}
+					}
+					
+					25 = {
+						country_event = {
+							id = sdf.18
+							days = 1
+						}
+					}	
+				}
 				
 			}
 			

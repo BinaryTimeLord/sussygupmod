@@ -1199,3 +1199,124 @@ country_event = {
 		}
 	}
 }
+
+##COUP FAILSTATE##
+
+country_event = {
+	id = sdf.36
+	title = sdf.36.t
+	desc = sdf.36.d
+	##picture =
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.36.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_country_flag = SDF_COUP_FAILSTATE
+		
+		##IDEAS##
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = sdf_takebeism
+				}
+			
+				remove_ideas = sdf_takebeism
+			}
+		
+			if = {
+				limit = {
+					has_idea = sdf_student_representation
+				}
+			
+				remove_ideas = sdf_student_representation
+			}
+		
+			if = {
+				limit = {
+					has_idea = sdf_unions_1
+				}
+			
+				remove_ideas = sdf_unions_1
+			}
+		
+			if = {
+				limit = {
+					has_idea = sdf_unions_2
+				}
+			
+				remove_ideas = sdf_unions_2
+			}
+			
+			if = {
+				limit = {
+					has_idea = sdf_failing_loyalty
+				}
+			
+				remove_ideas = sdf_failing_loyalty
+			}
+			
+			if = {
+				limit = {
+					has_idea = sdf_failing_loyalty2
+				}
+			
+				remove_ideas = sdf_failing_loyalty2
+			}
+			
+			if = {
+				limit = {
+					has_idea = sdf_failing_loyalty3
+				}
+			
+				remove_ideas = sdf_failing_loyalty3
+			}
+			
+			if = {
+				limit = {
+					has_idea = SDF_failing_loyalty4
+				}
+			
+				remove_ideas = SDF_failing_loyalty4
+			}
+			
+		}
+		
+		if = {
+			limit = {
+				has_idea = sdf_saori_takebe_idea
+			}
+			
+			remove_ideas = sdf_saori_takebe_idea
+		}
+		
+		##POLITICS##
+		retire_character = SDF_saori_takebe
+		
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		
+		hidden_effect = {
+			unlock_national_focus = SDF_heer_no_fear
+			unlock_national_focus = SDF_purge_generals
+			unlock_national_focus = SDF_elevate_fallshimjager
+			unlock_national_focus = SDF_fallshimpanzers
+			unlock_national_focus = SDF_coup_government
+			unlock_national_focus = SDF_sort_of_stability
+			unlock_national_focus = SDF_autarky
+			
+			drop_cosmetic_tag = yes
+			
+			set_cosmetic_tag = SDF_COUP_TAG
+			
+		}
+		
+	}
+}
