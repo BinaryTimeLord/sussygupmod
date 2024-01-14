@@ -744,8 +744,12 @@ focus_tree = {
 		
 		available = {
 			has_country_flag = SDF_CIVIL_WAR_WIN
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
 		}
 		
+		cancel_if_invalid = yes
 		allow_branch = {
 			has_country_flag = SDF_CIVIL_WAR_WIN
 		}
@@ -782,6 +786,14 @@ focus_tree = {
 		icon = GFX_goal_dotted_line
 		relative_position_id = SDF_victory_civil
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 1
 		
@@ -802,6 +814,14 @@ focus_tree = {
 		id = SDF_anarchy_issue
 		icon = GFX_goal_country_need
 		relative_position_id = SDF_dotted_line_report 
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 0
 		y = 1
@@ -824,6 +844,14 @@ focus_tree = {
 		icon = GFX_goal_where_to
 		relative_position_id = SDF_anarchy_issue
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 1
 		
@@ -844,6 +872,7 @@ focus_tree = {
 		id = SDF_east_priority
 		icon = GFX_goal_to_east
 		relative_position_id = SDF_anarchy_issue
+		
 		
 		available = {
 			always = no
@@ -943,6 +972,14 @@ focus_tree = {
 		icon = GFX_goal_send_sdk
 		relative_position_id = SDF_anarchy_issue
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 3
 		
@@ -1005,9 +1042,14 @@ focus_tree = {
 		
 		available = {
 			NOT = {
-				has_completed_focus = SDF_send_SDK
+				OR = {
+					has_completed_focus = SDF_send_SDK
+					has_country_flag = SDF_COUP_FAILSTATE
+				}
 			}
 		}
+		
+		cancel_if_invalid = yes
 		
 		x = -2
 		y = 3
@@ -1037,6 +1079,14 @@ focus_tree = {
 		icon = GFX_goal_reward_unions
 		relative_position_id = SDF_anarchy_issue
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = -2
 		y = 4
 		
@@ -1061,9 +1111,14 @@ focus_tree = {
 		
 		available = {
 			NOT = {
-				has_completed_focus = SDF_send_SDK
+				OR = {
+					has_completed_focus = SDF_send_SDK
+					has_country_flag = SDF_COUP_FAILSTATE
+				}
 			}
 		}
+		
+		cancel_if_invalid = yes
 		
 		x = 2
 		y = 3
@@ -1122,6 +1177,14 @@ focus_tree = {
 		icon = GFX_goal_representaion
 		relative_position_id = SDF_anarchy_issue
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 2
 		y = 4
 		
@@ -1139,6 +1202,14 @@ focus_tree = {
 		id = SDF_sort_of_stability
 		icon = GFX_goal_stability_last
 		relative_position_id = SDF_anarchy_issue
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 0
 		y = 5
@@ -1162,6 +1233,14 @@ focus_tree = {
 		icon = GFX_goal_reign_army
 		relative_position_id = SDF_dotted_line_report
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 6
 		y = 1
 		
@@ -1184,6 +1263,14 @@ focus_tree = {
 		id = SDF_power_struggle
 		icon = GFX_goal_great_game
 		relative_position_id = SDF_reign_military
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 0
 		y = 1 
@@ -1245,6 +1332,14 @@ focus_tree = {
 		icon = GFX_goal_elevate_fallshimjager
 		relative_position_id = SDF_purge_generals 
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 1
 		y = 1
 		
@@ -1268,6 +1363,14 @@ focus_tree = {
 		icon = GFX_goal_fallshim_panzer
 		relative_position_id = SDF_elevate_fallshimjager
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 1
 		
@@ -1288,6 +1391,7 @@ focus_tree = {
 		id = SDF_keep_nishizumists
 		icon = GFX_goal_old_guard
 		relative_position_id = SDF_power_struggle
+		
 		
 		x = -1
 		y = 1
@@ -1310,6 +1414,14 @@ focus_tree = {
 		id = SDF_reinstate_KS
 		icon = GFX_goal_reinstate
 		relative_position_id = SDF_keep_nishizumists
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = -1
 		y = 1
@@ -1334,6 +1446,14 @@ focus_tree = {
 		icon = GFX_goal_SDK_coup
 		relative_position_id = SDF_reinstate_KS
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 1
 		
@@ -1345,7 +1465,7 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = SDF_no_going_back
 			country_event = {
-				id = sdf.25
+				id = sdf.36
 				days = 1
 			}
 		}
@@ -1356,6 +1476,14 @@ focus_tree = {
 		id = SDF_ratne_igre
 		icon = GFX_goal_war_games
 		relative_position_id = SDF_power_struggle
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 0
 		y = 2
@@ -1386,9 +1514,14 @@ focus_tree = {
 		
 		available = {
 			NOT = {
-				has_country_flag = SDF_no_going_back
+				OR = {
+					has_country_flag = SDF_no_going_back
+					has_country_flag = SDF_COUP_FAILSTATE
+				}
 			}
 		}
+		
+		cancel_if_invalid = yes
 		
 		x = 0
 		y = 4
@@ -1443,6 +1576,7 @@ focus_tree = {
 		id = SDF_ooarai_issue
 		icon = GFX_goal_ooarai_debate
 		relative_position_id = SDF_dotted_line_report 
+		
 		
 		x = -6
 		y = 1
@@ -1705,6 +1839,14 @@ focus_tree = {
 		##icon =
 		relative_position_id = SDF_dotted_line_report
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 7
 		
@@ -1731,7 +1873,12 @@ focus_tree = {
 		
 		available = {
 			has_idea = sdf_economic_downturn4
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
 		}
+		
+		cancel_if_invalid = yes
 		
 		x = 2
 		y = 0
@@ -1778,6 +1925,14 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_industrial_democracy
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = -1
 		y = 1
 		
@@ -1802,6 +1957,14 @@ focus_tree = {
 		id = SDF_unite_mic
 		##icon = 
 		relative_position_id = SDF_industrial_democracy
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 1
 		y = 1
@@ -1837,6 +2000,14 @@ focus_tree = {
 		##icon =
 		relative_position_id = SDF_industrial_democracy
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0
 		y = 2
 		
@@ -1866,6 +2037,14 @@ focus_tree = {
 		id = SDF_land_distribution
 		##icon = 
 		relative_position_id = SDF_industrial_democracy
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 1
 		y = 3
@@ -2144,6 +2323,14 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_status_economic
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 3
 		y = 1
 		
@@ -2204,6 +2391,14 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_free_market
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = -1
 		y = 1
 		
@@ -2241,6 +2436,14 @@ focus_tree = {
 		id = SDF_autobauhn
 		##icon =
 		relative_position_id = SDF_free_market
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 1
 		y = 1
@@ -2282,6 +2485,14 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_free_market
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = 0 
 		y = 2
 		
@@ -2315,6 +2526,14 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_free_market
 		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
 		x = -1
 		y = 3
 		
@@ -2333,6 +2552,14 @@ focus_tree = {
 		id = SDF_into_future
 		##icon = 
 		relative_position_id = SDF_status_economic
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
+		
+		cancel_if_invalid = yes
 		
 		x = 0
 		y = 5
