@@ -10,6 +10,9 @@ focus_tree = {
 		}
 	}
 	
+	
+	continuous_focus_position = { x = 100 y = 800 }
+	
 	default = no
 	
 	focus = {
@@ -1836,7 +1839,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_elections
-		##icon =
+		icon = GFX_goal_elections
 		relative_position_id = SDF_dotted_line_report
 		
 		available = {
@@ -1868,7 +1871,7 @@ focus_tree = {
 	
 	focus = { ##EVENT
 		id = SDF_status_economic
-		##icon = 
+		icon = GFX_goal_status_economy
 		##relative_position_id =
 		
 		available = {
@@ -1899,7 +1902,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_industrial_democracy
-		##icon =
+		icon = GFX_goal_industrial_democracy
 		relative_position_id = SDF_status_economic
 		
 		x = -3
@@ -1975,6 +1978,7 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
+		
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -2092,7 +2096,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_autarky
-		##icon = 
+		icon = GFX_goal_autarky
 		relative_position_id = SDF_status_economic
 		
 		x = 0
@@ -2175,6 +2179,12 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
+		
+			country_event = {
+				id = sdf.38
+				days = 5
+			}
+			
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -2320,7 +2330,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_free_market
-		##icon = 
+		icon = GFX_goal_free_trade
 		relative_position_id = SDF_status_economic
 		
 		available = {
@@ -2672,7 +2682,435 @@ focus_tree = {
 		}
 	}
 	
-	##MILITARY##
+	##OPERATION NORTHWIND##
 	
+	focus = {
+		id = SDF_northwind_planning
+		##icon =
+		relative_position_id = SDF_elections
+		
+		x = -11
+		y = 1
+		
+		prerequisite = { focus = SDF_elections }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	##PEACEFUL SOLUTION RDKP ONLY##
+	focus = {
+		id = SDF_peace_time
+		##icon = 
+		relative_position_id = SDF_northwind_planning
+		
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = SDF_northwind_planning }
+		mutually_exclusive = { focus = SDF_war_prep }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_war_prep
+		##icon = 
+		relative_position_id = SDF_northwind_planning
+		
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = SDF_northwind_planning }
+		mutually_exclusive = { focus = SDF_peace_time }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_sdk_training
+		##icon = 
+		relative_position_id = SDF_war_prep
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_war_prep }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_saarbrucken_confrence
+		##icon = 
+		relative_position_id = SDF_war_prep
+		
+		x = 2
+		y = 1
+		
+		prerequisite { focus = SDF_war_prep }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##INVASION OF POLAND
+		id = SDF_operation_gleiwitz
+		##icon = 
+		relative_position_id = SDF_war_prep
+		
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = SDF_war_prep }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = { ##INVASION OF BALTICS
+		id = SDF_operation_ikarus 
+		##icon = 
+		relative_position_id = SDF_war_prep
+		
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = SDF_operation_gleiwitz }
+		mutually_exclusive = { focus = SDF_treaty_friendship }
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##NON AGRESSION WITH ALLIES
+		id = SDF_treaty_friendship
+		##icon = 
+		relative_position_id = SDF_war_prep
+		
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = SDF_saarbrucken_confrence }
+		mutually_exclusive = { focus = SDF_operation_ikarus }
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##"CONVINCING" HUNGARY, ROMANIA, YUGO, BULGARIA, GREECE, AND ALBANIA
+		id = SDF_eastern_allies
+		##icon = 
+		relative_position_id = SDF_war_prep
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SDF_operation_ikarus focus = SDF_treaty_friendship }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	
+	
+	##WAR WITH PRAVDA##
+	
+	focus = {
+		id = SDF_operation_northwind
+		##icon = 
+		relative_position_id = SDF_northwind_planning
+		
+		x = 2
+		y = 0
+		
+		prerequisite = { focus = SDF_elections }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	
+	##POLITICAL PATH##
+	
+	##PRE STUFF##
+	focus = {
+		id = SDF_political_manouvering
+		##icon =
+		relative_position_id = SDF_elections
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_elections }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_soup_kitchen
+		##icon =
+		relative_position_id = SDF_political_manouvering 
+		
+		x = -2
+		y = 1
+		
+		available = {
+			always = false 
+		}
+		
+		prerequisite = { focus = SDF_political_manouvering }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_conscription 
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = 0
+		y = 1
+		
+		available = {
+			always = false 
+		}
+		
+		prerequisite = { focus = SDF_political_manouvering }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = SDF_anzai_plan
+		##icon = 
+		relative_position_id = SDF_political_manouvering 
+		
+		x = -4
+		y = 1
+		
+		available = {
+			always = false 
+		}
+		
+		prerequisite = { focus = SDF_political_manouvering }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_economic_crisis_handled
+		##icon = 
+		relative_position_id = SDF_political_manouvering 
+		x = 2
+		y = 1
+		
+		available = {
+			always = false 
+		}
+		
+		prerequisite = { focus = SDF_political_manouvering }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_tamed_military
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = 4
+		y = 1
+		
+		available = {
+			always = false 
+		}
+		
+		prerequisite = { focus = SDF_political_manouvering }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_coalition_form
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = SDF_anzai_plan focus = SDF_soup_kitchen focus = SDF_conscription focus = SDF_economic_crisis_handled focus = SDF_tamed_military }
+		mutually_exclusive = { focus = SDF_outright_majority }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_outright_majority
+		##icon = 
+		relative_position_id = SDF_political_manouvering 
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = SDF_anzai_plan focus = SDF_soup_kitchen focus = SDF_conscription focus = SDF_economic_crisis_handled focus = SDF_tamed_military }
+		mutually_exclusive = { focus = SDF_coalition_form }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+		
+	}
+	
+	##ALL FOCUSES IF HAVE COALITION TAKES POLITICAL PARTY POP TO DO, ADD DECISIONS FOR IT
+	
+	focus = {
+		id = SDF_minority_rights
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SDF_coalition_form focus = SDF_outright_majority }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_press_freedom
+		##icon = 
+		relative_position_id = SDF_political_manouvering 
+		
+		x = -3
+		y = 3
+		
+		prerequisite = { focus = SDF_coalition_form focus = SDF_outright_majority }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SDF_corperations
+		##icon = 
+		relative_position_id = SDF_political_manouvering 
+		
+		x = 3
+		y = 3
+		
+		prerequisite = { focus = SDF_coalition_form focus = SDF_outright_majority }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	##MILITARY STUFF##
+	
+	focus = {
+		id = SDF_military_buildup
+		##icon = 
+		relative_position_id = SDF_elections
+		
+		x = 11
+		y = 1
+		
+		prerequisite = { focus = SDF_elections }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+		
+		}
+	}
 }
 

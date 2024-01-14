@@ -1095,6 +1095,17 @@ AUS_intervention = {
 		
 		icon = GFX_decision_generic_prepare_civil_war
 		
+		visible = {
+			OR = {
+				AUS = {
+					has_ai = no
+				}
+				
+				GER = {
+					has_civil_war = yes
+				}
+			}
+		}
 	
 		activation = {
 			AUS = {
@@ -1104,7 +1115,7 @@ AUS_intervention = {
 		
 		available = {
 			GER = {
-				has_war = yes
+				has_civil_war = yes
 			}
 		}
 		

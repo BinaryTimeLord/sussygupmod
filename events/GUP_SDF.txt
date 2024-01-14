@@ -1018,29 +1018,6 @@ country_event = {
 		SDF = {
 			change_tag_from = AUS
 			
-			country_event = {
-				id = sdf.34 
-				days = 5
-			}
-		}
-		
-	}
-}
-
-country_event = {
-	id = sdf.34
-	title = sdf.34.t
-	desc = sdf.34.d
-	
-	##picture =
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = sdf.34.a
-		ai_chance = {
-			base = 1
 		}
 		
 		SDF = {
@@ -1303,6 +1280,11 @@ country_event = {
 			elections_allowed = no
 		}
 		
+		############################################	
+		##	WILL REMOVE ONCE CUSTOM TREE IS DONE  ##
+		############################################
+		
+		
 		hidden_effect = {
 			unlock_national_focus = SDF_heer_no_fear
 			unlock_national_focus = SDF_purge_generals
@@ -1318,5 +1300,62 @@ country_event = {
 			
 		}
 		
+	}
+}
+
+country_event = {
+	id = sdf.37
+	title = sdf.37.t
+	desc = sdf.37.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.37.a
+		ai_chance = {
+			base = 1
+		}
+		
+		random_list = {
+			50 = {
+				add_political_power = 15
+			}
+			
+			40 = {
+				random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory 
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			10 = {
+				every_owned_state = {
+					add_compliance = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sdf.38
+	title = sdf.38.t
+	desc = sdf.38.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.38.a
+		ai_chance = {
+			base = 1
+		}
 	}
 }
