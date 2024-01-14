@@ -6824,7 +6824,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_centre
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_great_purge
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = -8
 		y = 1
@@ -9512,7 +9512,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_right_opposition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_alina_coup
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		allow_branch = { 
 			has_dlc = "No Step Back"
@@ -16428,7 +16428,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_reconvene_the_zemsky_sobor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_tsar_klara
 		prerequisite = { focus = SOV_consolidate_power }
 		prerequisite = { focus = SOV_reformalize_the_role_of_the_patriarchate }
 		x = 4

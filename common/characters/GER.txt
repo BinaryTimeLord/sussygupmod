@@ -10,7 +10,7 @@ characters={
 			        small="gfx/interface/ideas/Kuromorimine/idea_ger_maho_armychief.dds"
 		        }
 		        army={
-			    large="gfx/leaders/GER/Portrait_GER_Maho.dds"
+			    large="gfx/leaders/GER/Portrait_GER_Maho1.dds"
 	      	}
 		}
 		country_leader={
@@ -40,7 +40,7 @@ characters={
 			    small="gfx/interface/ideas/Kuromorimine/idea_ger_erika_armychief.dds"
 			}
 		    army={
-			    large="gfx/leaders/GER/Portrait_GER_Erika.dds"
+			    large="gfx/leaders/GER/Portrait_GER_Erika1.dds"
 			}
 		}
 		country_leader={
@@ -70,7 +70,7 @@ characters={
 			small="gfx/interface/ideas/Kuromorimine/idea_ger_koume_akaboshi.dds"
 			}
 			army={
-				large="gfx/leaders/GER/Portrait_GER_Koume.dds"
+				large="gfx/leaders/GER/Portrait_GER_Koume1.dds"
 			}
 		}
 		country_leader={
@@ -91,7 +91,6 @@ characters={
 			legacy_id=1005
 		}
 	}
-
 	GER_emi_kojima={
 		name="Emi Kojima"
 		portraits={
@@ -113,7 +112,7 @@ characters={
 		}
 	}
 	GER_maukou={
-		name="Maukou"
+		name="Hidda Emma"
 		portraits={
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_mauko_pol.dds"
@@ -130,6 +129,26 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=1007
+		}
+	}
+	GER_sangou={
+		name="Meg Katyusa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_sangou_pol.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Sangou.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster panzer_leader }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=1009
 		}
 	}
 	GER_geshiko={
@@ -152,67 +171,6 @@ characters={
 			legacy_id=1008
 		}
 	}
-	GER_sangou={
-		name="Sangou"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_sangou_pol.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_GER_Sangou.dds"
-			}
-		}
-		corps_commander={
-			traits={ trickster panzer_leader }
-			skill=3
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=1009
-		}
-	}
-	GER_erisou={
-		name="Eri-Sou"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_erisou.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_GER_Erisou.dds"
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader cavalry_officer hill_fighter }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id= 1234
-		}
-	}
-	GER_erihou={
-		name="Eri-Hou"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_erihou.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_GER_Erihou.dds"
-			}
-		}
-		corps_commander={
-			traits = { panzer_leader infantry_officer commando }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id= 4321
-		}
-	}
-
    GER_nakasuga={
 		name="Emi Nakasuga"
 		portraits={

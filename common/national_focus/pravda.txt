@@ -2205,7 +2205,7 @@
 
 	focus = { dynamic = yes
 		id = SOV_great_purge
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_great_purge
 		available = {
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
@@ -2354,7 +2354,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_Nonna_leads
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_new_leader
 		prerequisite = { focus = SOV_great_purge focus = SOV_alina_coup }
 		available = {
 			custom_trigger_tooltip = {
@@ -2472,7 +2472,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_general_zhukov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_general_zhukov
 		prerequisite = { focus = SOV_military_reorganization_bruh }
 		prerequisite = { focus = SOV_partisan_suppression }
 		x = -2
@@ -5786,7 +5786,7 @@
 	#Alina Coup Path
 	focus = { dynamic = yes
 		id = SOV_alina_coup
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_alina_coup
 		mutually_exclusive = { focus = SOV_great_purge } 
 		available = {
 			
@@ -5942,7 +5942,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_invite_exiled_communists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_nonna_exiles
 		prerequisite = { focus = SOV_empower_the_military }
 		available = {
 		}
@@ -6037,7 +6037,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_learn_from_nina
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_learn_nina
 		prerequisite = { focus = SOV_prepare_army }
 		mutually_exclusive = { focus = SOV_Nonna_cadre_revolt }
 		available = {
@@ -6427,7 +6427,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_constituent_assembly
-		icon = GFX_focus_unknown
+		icon = GFX_focus_SOV_constituent_assembly
 		prerequisite = { focus = SOV_democratic_government }
 		available = {
 		}
@@ -6560,7 +6560,7 @@
 	
 	focus = { dynamic = yes
 		id = SOV_fascist_coup
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_tsar_klara
 		prerequisite = { focus = SOV_constitutional_convention }
 		mutually_exclusive = { focus = SOV_soviet_democracy focus = SOV_entrench_liberalism }
 		available = {
