@@ -994,6 +994,60 @@ country_event = {
 		}
 		
 		set_country_flag = SDF_anzai_arrivial
+		
+		mark_focus_tree_layout_dirty = yes
+		
+		hidden_effect = {
+			country_event = {
+				id = sdf.39
+				days = 7
+			}
+			
+			complete_national_focus = SDF_anzai_one
+		}
+	}
+}
+
+country_event = { ##PT.1 
+	id = sdf.39
+	title = sdf.39.t
+	desc = sdf.39.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.39.a
+		ai_chance = {
+			base = 1
+		}
+		
+		country_event = {
+			id = sdf.40
+			days = 1
+		}
+	}
+}
+
+country_event = { ##PT.2
+	id = sdf.40
+	title = sdf.40.t
+	desc = sdf.40.d
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.40.a
+		ai_chance = {
+			base = 1
+		}
+		
+		country_event = {
+		
+		}
 	}
 }
 
@@ -1357,5 +1411,44 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
+		
+		add_manpower = -15000
 	}
 }
+
+country_event = {
+	id = sdf.41
+	title = sdf.41.t
+	desc = sdf.41.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.41.a
+		ai_chance = {
+			base = 1
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = sdf.42
+	title = sdf.42.t
+	desc = sdf.42.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.42.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+

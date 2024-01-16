@@ -774,7 +774,12 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						original_tag = AUS
+						SDF = {
+							has_full_control_of_state = 153
+							has_full_control_of_state = 848
+							has_full_control_of_state = 152
+							has_full_control_of_state = 4
+						}
 					}
 				
 					unlock_national_focus = SDF_ooarai_issue
@@ -1864,6 +1869,21 @@ focus_tree = {
 				id = sdf.35
 				days = 3
 			}
+			
+			hidden_effect = {
+				random_list = {
+					25 = {
+						country_event = {
+							id = sdf.32
+							days = 5
+						}
+					}
+					
+					75 = {
+					
+					}
+				}
+			}
 		}
 	}
 	
@@ -1896,7 +1916,10 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.41
+				days = 3
+			}
 		}
 	}
 	
@@ -2162,6 +2185,11 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_autarky
+			
+			country_event = {
+				id = sdf.42
+				days = 5
+			}
 		}
 	}
 	
@@ -2689,7 +2717,7 @@ focus_tree = {
 		##icon =
 		relative_position_id = SDF_elections
 		
-		x = -11
+		x = -8
 		y = 1
 		
 		prerequisite = { focus = SDF_elections }
@@ -2702,35 +2730,16 @@ focus_tree = {
 		}
 	}
 	
-	##PEACEFUL SOLUTION RDKP ONLY##
-	focus = {
-		id = SDF_peace_time
-		##icon = 
-		relative_position_id = SDF_northwind_planning
-		
-		x = -3
-		y = 1
-		
-		prerequisite = { focus = SDF_northwind_planning }
-		mutually_exclusive = { focus = SDF_war_prep }
-		
-		cost = 3
-		
-		completion_reward = {
-		
-		}
-	}
-	
 	focus = {
 		id = SDF_war_prep
 		##icon = 
 		relative_position_id = SDF_northwind_planning
 		
-		x = 3
+		x = 0
 		y = 1
 		
 		prerequisite = { focus = SDF_northwind_planning }
-		mutually_exclusive = { focus = SDF_peace_time }
+		mutually_exclusive = {}
 		
 		cost = 3
 		
@@ -2764,6 +2773,12 @@ focus_tree = {
 		
 		x = 2
 		y = 1
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
 		
 		prerequisite { focus = SDF_war_prep }
 		mutually_exclusive = {}
@@ -2880,6 +2895,12 @@ focus_tree = {
 		
 		x = 0
 		y = 1
+		
+		available = {
+			NOT = {
+				has_country_flag = SDF_COUP_FAILSTATE
+			}
+		}
 		
 		prerequisite = { focus = SDF_elections }
 		mutually_exclusive = {}
@@ -3040,7 +3061,7 @@ focus_tree = {
 	##ALL FOCUSES IF HAVE COALITION TAKES POLITICAL PARTY POP TO DO, ADD DECISIONS FOR IT
 	
 	focus = {
-		id = SDF_minority_rights
+		id = SDF_war_effort 
 		##icon = 
 		relative_position_id = SDF_political_manouvering
 		
@@ -3048,6 +3069,24 @@ focus_tree = {
 		y = 3
 		
 		prerequisite = { focus = SDF_coalition_form focus = SDF_outright_majority }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_volksturm
+		##icon =
+		relative_position_id = SDF_political_manouvering
+		
+		x = 0
+		y = 4
+		
+		prerequisite = { focus = SDF_war_effort }
 		mutually_exclusive = {}
 		
 		cost = 5
@@ -3066,6 +3105,42 @@ focus_tree = {
 		y = 3
 		
 		prerequisite = { focus = SDF_coalition_form focus = SDF_outright_majority }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_civil_freedoms
+		##icon =
+		relative_position_id = SDF_political_manouvering
+		
+		x = -4
+		y = 4
+		
+		prerequisite = { focus = SDF_press_freedom }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_secret_police
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = -2
+		y = 4
+		
+		prerequisite = { focus = SDF_press_freedom }
 		mutually_exclusive = {}
 		
 		cost = 5
@@ -3093,6 +3168,63 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SDF_rhinemetal_contracts
+		##icon =
+		relative_position_id = SDF_political_manouvering 
+		
+		x = 2
+		y = 4
+		
+		prerequisite = { focus = SDF_corperations }
+		mutually_exclusive = { focus = SDF_messerschmitt_contracts }
+		
+		cost = 5 
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_messerschmitt_contracts
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = 4
+		y = 4
+		
+		prerequisite = { focus = SDF_corperations }
+		mutually_exclusive = { focus = SDF_rhinemetal_contracts }
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_consitution_secured
+		##icon = 
+		relative_position_id = SDF_political_manouvering
+		
+		x = 0
+		y = 5
+		
+		prerequisite = { focus = SDF_civil_freedoms }
+		prerequisite = { focus = SDF_secret_police }
+		prerequisite = { focus = SDF_volksturm }
+		prerequisite = { focus = SDF_rhinemetal_contracts focus = SDF_messerschmitt_contracts }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
 	##MILITARY STUFF##
 	
 	focus = {
@@ -3100,7 +3232,7 @@ focus_tree = {
 		##icon = 
 		relative_position_id = SDF_elections
 		
-		x = 11
+		x = 12
 		y = 1
 		
 		prerequisite = { focus = SDF_elections }
@@ -3112,5 +3244,688 @@ focus_tree = {
 		
 		}
 	}
+	
+	focus = {
+		id = SDF_war_plan_n
+		##icon = 
+		relative_position_id = SDF_military_buildup
+		
+		x = -4
+		y = 1
+		
+		available = {
+			always = false
+			has_completed_focus = SDF_keep_nishizumists
+		}
+		
+		prerequisite = { focus = SDF_military_buildup }
+		mutually_exclusive = { focus = SDF_war_plan_v }
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_artillery_modernization
+		##icon = 
+		relative_position_id = SDF_war_plan_n
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_war_plan_n }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_conscription_extended
+		##icon = 
+		relative_position_id = SDF_war_plan_n
+		
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = SDF_war_plan_n }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_tankette
+		##icon =
+		relative_position_id = SDF_war_plan_n
+		
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = SDF_war_plan_n }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_chemical_warfare
+		##icon = 
+		relative_position_id = SDF_war_plan_n
+
+		x = -3
+		y = 2
+		
+		prerequisite = { focus = SDF_conscription_extended }
+		prerequisite = { focus = SDF_artillery_modernization }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_stormtroopers
+		##icon = 
+		relative_position_id = SDF_war_plan_n
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = SDF_conscription_extended }
+		prerequisite = { focus = SDF_artillery_modernization }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_radar_efforts
+		##icon = 
+		relative_position_id = SDF_war_plan_n 
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = SDF_tankette }
+		prerequisite = { focus = SDF_artillery_modernization }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = SDF_flak_towers
+		##icon =
+		relative_position_id = SDF_war_plan_n
+		
+		x = 3
+		y = 2
+		
+		prerequisite = { focus = SDF_tankette }
+		prerequisite = { focus = SDF_artillery_modernization }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_50cm_cannon
+		##icon =
+		relative_position_id = SDF_war_plan_n
+		
+		x = -2
+		y = 3
+		
+		prerequisite = { focus = SDF_chemical_warfare }
+		prerequisite = { focus = SDF_stormtroopers }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SDF_bayonett_strength
+		##icon = 
+		relative_position_id = SDF_war_plan_n
+		
+		x = 2
+		y = 3
+		
+		prerequisite = { focus = SDF_radar_efforts }
+		prerequisite = { focus = SDF_flak_towers }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SDF_war_plan_v
+		##icon =
+		relative_position_id = SDF_military_buildup
+		
+		x = 4
+		y = 1
+		
+		available = {
+			has_completed_focus = SDF_elevate_fallshimjager
+		}	
+		
+		available = {
+			always = false
+		}
+		
+		prerequisite = { focus = SDF_military_buildup }
+		mutually_exclusive = { focus = SDF_war_plan_n}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_air_focus
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = SDF_war_plan_v }
+		mutually_exclusive = { focus = SDF_tank_focus }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_fallshimjager_modernization
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -3
+		y = 2
+		
+		prerequisite = { focus = SDF_air_focus }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_jet_power
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = SDF_air_focus }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_bf109G4
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -1
+		y = 3
+		
+		prerequisite = { focus = SDF_jet_power }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_pzIIIpara
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -3
+		y = 3
+		
+		prerequisite = { focus = SDF_fallshimjager_modernization }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_radio_everyone
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -5
+		y = 4
+		
+		prerequisite = { focus = SDF_pzIIIpara }
+		prerequisite = { focus = SDF_bf109G4 }
+		mutually_exclusive = {}
+		
+		cost = 4
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_aircraft_industry
+		##icon =
+		relative_position_id = SDF_war_plan_v
+		
+		x = -3
+		y = 4
+		
+		prerequisite = { focus = SDF_pzIIIpara }
+		prerequisite = { focus = SDF_bf109G4 }
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_arato
+		##icon =
+		relative_position_id = SDF_war_plan_v
+		
+		x = -1
+		y = 4
+		
+		prerequisite = { focus = SDF_pzIIIpara }
+		prerequisite = { focus = SDF_bf109G4 }
+		mutually_exclusive = {}
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_signal_battalions
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = -4
+		y = 5
+		
+		prerequisite = { focus = SDF_radio_everyone focus = SDF_aircraft_industry }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+		
+	}
+	
+	focus = {
+		id = SDF_officer_training
+		##icon =
+		relative_position_id = SDF_war_plan_v
+		
+		x = -2
+		y = 5
+		
+		prerequisite = { focus = SDF_arato focus = SDF_aircraft_industry }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_tank_focus
+		##icon =
+		relative_position_id = SDF_war_plan_v
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = SDF_war_plan_v }
+		mutually_exclusive = { focus = SDF_air_focus }
+		
+		cost = 3
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_panzeriv
+		##icon = 
+		relative_position_id = SDF_tank_focus
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_tank_focus }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_mechinized_focus 
+		##icon = 
+		relative_position_id = SDF_tank_focus
+		
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = SDF_tank_focus }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = SDF_tank_mechanics
+		##icon = 
+		relative_position_id = SDF_tank_focus 
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SDF_panzeriv }
+		mutually_exclusive = {}
+		
+		cost = 7 
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_streamline_trucks
+		##icon = 
+		relative_position_id = SDF_tank_focus 
+		
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = SDF_mechinized_focus }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_tigerI
+		##icon = 
+		relative_position_id = SDF_tank_focus
+		
+		x = 2
+		y = 3
+		
+		prerequisite = { focus = SDF_tank_mechanics }
+		prerequisite = { focus = SDF_streamline_trucks }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_modern_blitzkrieg
+		##icon = 
+		relative_position_id = SDF_tank_focus 
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SDF_tank_mechanics }
+		prerequisite = { focus = SDF_streamline_trucks }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_casemates
+		##icon = 
+		relative_position_id = SDF_tank_focus 
+		
+		x = 4
+		y = 3
+		
+		prerequisite = { focus = SDF_tank_mechanics }
+		prerequisite = { focus = SDF_streamline_trucks }
+		mutually_exclusive = {}
+		
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_dedicated_armour
+		##icon =
+		relative_position_id = SDF_tank_focus
+		
+		x = 1
+		y = 4
+		
+		prerequisite = { focus = SDF_modern_blitzkrieg }
+		prerequisite = { focus = SDF_tigerI }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_merge_units
+		##icon = 
+		relative_position_id = SDF_tank_focus
+		
+		x = 3
+		y = 4
+		
+		prerequisite = { focus = SDF_casemates }
+		prerequisite = { focus = SDF_tigerI }
+		mutually_exclusive = {}
+		
+		cost = 7
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_decisive_battle
+		##icon = 
+		relative_position_id = SDF_war_plan_v
+		
+		x = 0
+		y = 6
+		
+		prerequisite = {
+			focus = SDF_signal_battalions
+			focus = SDF_officer_training
+			focus = SDF_dedicated_armour 
+			focus = SDF_merge_units
+		}
+		mutually_exclusive = {}
+		
+		cost = 10
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	##EASTER EGG##
+	
+	##THESE DO NOTHING, IS JUST STORY TELLING##
+	
+	focus = {
+		id = SDF_anzai_one
+		icon = GFX_goal_anzai_one
+		
+		available = {
+			always = false 
+		}	
+		
+		allow_branch = {
+			has_country_flag = SDF_anzai_arrivial
+		}
+		
+		x = 7
+		y = 6
+		
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anzai_two
+		icon = GFX_goal_anzai_two
+		relative_position_id = SDF_anzai_one
+		
+		available = {
+			always = false
+		}
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SDF_anzai_one }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anzai_three
+		##icon = 
+		relative_position_id = SDF_anzai_one
+		
+		available = {
+			always = false
+		}
+		
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SDF_anzai_two }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
 }
 
