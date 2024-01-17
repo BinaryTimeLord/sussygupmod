@@ -22,7 +22,7 @@ characters = {
 				small="gfx/interface/ideas/Pravda/idea_sov_katyusha.dds"
 			}
 			army={
-				large="gfx/leaders/SOV/Portrait_SOV_Katyusha.dds"
+				large="gfx/leaders/SOV/Portrait_SOV_Katyusha1.dds"
 			}
 		}
 		field_marshal={
@@ -50,7 +50,7 @@ characters = {
 				small="gfx/interface/ideas/Pravda/idea_sov_nonna.dds"
 			}
 			army={
-				large="gfx/leaders/SOV/Portrait_SOV_Nonna.dds"
+				large="gfx/leaders/SOV/Portrait_SOV_Nonna1.dds"
 			}
 		}
 		corps_commander={
@@ -70,7 +70,7 @@ characters = {
 				small="gfx/interface/ideas/Pravda/idea_sov_klara.dds"
 			}
 			army={
-				large="gfx/leaders/SOV/Portrait_SOV_Klara.dds"
+				large="gfx/leaders/SOV/Portrait_SOV_Klara1.dds"
 			}
 		}
 		corps_commander={
@@ -96,7 +96,7 @@ characters = {
 				small="gfx/interface/ideas/Pravda/idea_sov_nina.dds"
 			}
 			army={
-				large="gfx/leaders/SOV/Portrait_SOV_Nina.dds"
+				large="gfx/leaders/SOV/Portrait_SOV_Nina1.dds"
 			}
 		}
 		corps_commander={
@@ -116,7 +116,7 @@ characters = {
 				small="gfx/interface/ideas/Pravda/idea_sov_alina.dds"
 			}
 			army={
-				large="gfx/leaders/SOV/Portrait_SOV_Alina.dds"
+				large="gfx/leaders/SOV/Portrait_SOV_Alina1.dds"
 			}
 		}
 		corps_commander={
