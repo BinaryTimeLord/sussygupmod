@@ -2910,6 +2910,8 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_fallshimjager_tooltip:0 "Deploys §C3§! Fallschirmjager and §C1§! Fallschirm-Panzer"
   SDF_pravda_war_timer_tooltip:0 "§RThe People Demand a end to Communism§!"
   SDF_into_future_tooltip:0 "§CWhen you finish the focus it will add a custom Economy law§!"
+  SDF_timed_idea_tooltip:0 "Adds §C60§! Days to "§RClock is Ticking§!""
+  SDF_eastern_allies_tooltip:0 "§CEnables§! you to Convince Eastern Nations to join you"
 
   
   ##TRAITS##
@@ -2970,6 +2972,7 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   sdf_free_trade_law:0 "Free Economy"
   sdf_saori_takebe_idea:0 "Heerfuhrer Saori Takebe"
   sdf_saori_takebe_idea_desc:0 "Even if another wing of the party is in charge, Saori is always at the helm"
+  sdf_war_prep:0 "War Preparations"
   
   ##DECISIONS##
   SDF_raise_units:0 "Raising the National Guard"
@@ -3012,6 +3015,24 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_pravda_war_timer:0 "The Clock is Ticking"
   SDF_officer_revolt:0 "Officer Revolt"
   SDF_officer_repeating:0 "Officer Activity"
+  ##WAR STUFF##
+  SDF_convincing_eastern:0 ""Convincing" Eastern European Nations"
+  SDF_hungary_war:0 "Invade Turul"
+  SDF_romania_war:0 "Secure the Count Oil Fields"
+  SDF_yugoslavia_war:0 "End the Brazava Experiement"
+  SDF_bulgaria_war:0 "Around Brazava"
+  SDF_greece_war:0 "Secure the Mediterranean"
+  SDF_albania_war:0 "End the Superpower"
+  ##Reichskommissariats##
+  SDF_reichkommisarits:0 "The Reichskommissariats"
+  SDF_poland_reichkommissarit:0 "Polish Reichskommissariat"
+  SDF_hungary_reichkommissarit:0 "Hungarian Reichskommissariat"
+  SDF_romania_reichkommissarit:0 "Romanian Reichskommissariat"
+  SDF_yugo_reichkommissarit:0 "Yugoslavian Reichskommissariat"
+  SDF_albania_reichkommissarit:0 "Albanian Reichskommissariat"
+  SDF_bulgaria_reichkommissarit:0 "Bulgarian Reichskommissariat"
+  SDF_greece_reichkommissarit:0 "Greek Reichskommissariat"
+  
   
   ##SCRIPTED GUI
   ELECTIONS_NEUTRALITY_TEXT:0 "§gUKP:§!"
@@ -3166,6 +3187,26 @@ KMM_anti_fascism:0 "Anti Nishizumist Propaganda"
   SDF_anzai_two_desc:0 ""
   SDF_anzai_three:0 ""
   SDF_anzai_three_desc:0 ""
+  
+  ##WAR PATH##
+  SDF_northwind_planning:0 "Planning Operation Northwind"
+  SDF_northwind_planning_desc:0 ""
+  SDF_war_prep:0 "War Preparations"
+  SDF_war_prep_desc:0 ""
+  SDF_operation_gleiwitz:0 "Operation Gleiwitz"
+  SDF_operation_gleiwitz_desc:0 ""
+  SDF_operation_ikarus:0 "Operation Ikarus"
+  SDF_sdk_training:0 "Large Scale SDK Military Exercises"
+  SDF_sdk_training_desc:0 ""
+  SDF_saarbrucken_confrence:0 "Saarbrucken Conference"
+  SDF_saarbrucken_confrence_desc:0 ""
+  SDF_treaty_friendship:0 "Treaty of Friendship"
+  SDF_treaty_friendship_desc:0 ""
+  SDF_eastern_allies:0 "Eastern "Allies"
+  SDF_eastern_allies_desc:0 ""
+  SDF_operation_northwind:0 "Operation Northwind"
+  SDF_operation_northwind_desc:0 ""
+  
   
   ##SDF TECH LOC##
   

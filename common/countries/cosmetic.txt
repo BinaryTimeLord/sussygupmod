@@ -1151,3 +1151,8 @@ SDF_COUP_TAG = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
 }
+
+SDF_reichskommissariat_colour = {
+	color = rgb { 204  82  0 }
+	color_ui = rgb { 204  82  0 }
+}

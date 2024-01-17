@@ -1135,6 +1135,692 @@ AUS_intervention = {
 	}
 }
 
+SDF_convincing_eastern = {
+	SDF_hungary_war = { ##INVADING HUNGARY
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			HUN = {
+				country_exists = HUN
+				NOT = {
+					is_in_faction_with = SDF
+					is_puppet_of = SDF
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 30
+		remove_effect = {
+			SDF = {
+				declare_war_on = {
+					target = HUN
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		
+	}
+	
+	SDF_romania_war = { ##INVADING ROMANIA
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			ROM = {
+				country_exists = ROM
+				NOT = {
+					is_in_faction_with = SDF
+					is_puppet_of = SDF
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 30
+		remove_effect = {
+			SDF = {
+				declare_war_on = {
+					target = ROM
+					type = puppet_wargoal_focus
+				}
+			}
+		} 
+	}
+	
+	SDF_yugoslavia_war = { ##INVADING YUGOSLAVIA
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			YUG = {
+				NOT = {
+					is_in_faction_with = SDF
+					is_puppet_of = SDF
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 30
+		remove_effect = {
+			SDF = {
+				declare_war_on = {
+					target = YUG
+					type = puppet_wargoal_focus
+				}
+			}
+		} 
+	}
+	
+	SDF_bulgaria_war = { ##INVADING BULGARIA
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			BUL = {
+				country_exists = BUL
+				NOT = {
+					is_in_faction_with = SDF
+					is_puppet_of = SDF
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 30
+		remove_effect = {
+			SDF = {
+				declare_war_on = {
+					target = BUL
+					type = puppet_wargoal_focus
+				}
+			}
+		} 
+	}
+	
+	SDF_greece_war = { ##INVADING GREECE
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			GRE = {
+				country_exists = GRE
+				NOT = {
+					is_in_faction_with = SDF
+					is_puppet_of = SDF
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 30
+		remove_effect = {
+			SDF = {
+				declare_war_on = {
+					target = GRE
+					type = puppet_wargoal_focus
+				}
+			}
+		} 
+	}
+	
+	SDF_albania_war = { ##INVADING ALBANIA
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			ALB = {
+				country_exists = ALB
+				NOT = {
+					is_in_faction_with = SDF
+					is_puppet_of = SDF
+					has_capitulated = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 30
+		remove_effect = {
+			SDF = {
+				declare_war_on = {
+					target = ALB
+					type = puppet_wargoal_focus
+				}
+			}
+		} 
+	}
+}
+
+SDF_reichkommisarits = {
+	SDF_poland_reichkommissarit = {
+	
+		available = {
+		
+			SDF = {
+				has_full_control_of_state = 88
+				has_full_control_of_state = 90
+				has_full_control_of_state = 98
+				has_full_control_of_state = 10
+				has_full_control_of_state = 87
+				has_full_control_of_state = 92
+			}
+			
+			NOT = {
+				POL = {
+					exists = yes
+				}
+			}
+			
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		remove_effect = {
+			
+			release_puppet = POL
+			
+			POL = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+				
+				807 = {
+					transfer_state_to = SDF
+				}
+				
+				85 = {
+					transfer_state_to = SDF
+				}
+				
+				86 = {
+					transfer_state_to = SDF
+				}	
+				
+				762 = {
+					transfer_state_to = SDF
+				}
+			}
+		} 
+	}
+	
+	SDF_hungary_reichkommissarit = {
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 155
+				has_full_control_of_state = 43
+				has_full_control_of_state = 154
+			}
+			
+			NOT = {
+				HUN = {
+					exists = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		
+		remove_effect = {
+			release_puppet = HUN
+			
+			HUN = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+				if = { ##SLOVAKIA
+					limit = {
+						SDF = {
+							has_full_control_of_state = 73
+							has_full_control_of_state = 71 
+							has_full_control_of_state = 70
+							has_full_control_of_state = 664
+						}
+					}
+					
+					73 = {
+						transfer_state_to = HUN
+					}
+					
+					71 = {
+						transfer_state_to = HUN
+					}
+					
+					70 = {
+						transfer_state_to = HUN
+					}
+					
+					664 = {
+						transfer_state_to = HUN
+					}
+				}
+				
+				if = {
+					limit = {
+						SDF = {
+							has_full_control_of_state = 76
+						}
+					}
+					
+					76 = {
+						transfer_state_to = HUN
+					}
+				}
+				
+				if = {
+					limit = {
+						ROM = {
+							is_puppet_of = SDF
+							has_full_control_of_state = 76
+						}
+					}
+					
+					76 = {
+						transfer_state_to = HUN
+					}
+				}
+				
+			}
+		}
+	}
+	
+	SDF_romania_reichkommissarit = {
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 77
+				has_full_control_of_state = 46
+				has_full_control_of_state = 81 
+				has_full_control_of_state = 82
+				has_full_control_of_state = 83
+				has_full_control_of_state = 84
+				has_full_control_of_state = 79
+			}
+			
+			NOT = {
+				ROM = {
+					exists = yes
+				}
+			}
+		}
+		
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		
+		remove_effect = {
+			release_puppet = ROM
+		
+			ROM = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						SDF = {
+							has_full_control_of_state = 80
+							has_full_control_of_state = 78
+							has_full_control_of_state = 766
+						}
+					}
+				
+					80 = {
+						transfer_state_to = ROM
+					}
+				
+					78 = {
+						transfer_state_to = ROM
+					}
+				
+					766 = {
+						transfer_state_to = ROM
+					}
+				}
+			
+				if = {
+					limit = {
+						SDF = {
+							has_full_control_of_state = 76
+						}
+					}
+					
+					76 = {
+						transfer_state_to = HUN
+					}
+				}
+				
+				if = {
+					limit = {
+						ROM = {
+							is_puppet_of = SDF
+							has_full_control_of_state = 76
+						}
+					}
+					
+					76 = {
+						transfer_state_to = HUN
+					}
+				}
+			}
+		}
+	}
+	
+	SDF_yugo_reichkommissarit = {
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 109
+				has_full_control_of_state = 102
+				has_full_control_of_state = 853
+				has_full_control_of_state = 103
+				has_full_control_of_state = 104
+				has_full_control_of_state = 45
+				has_full_control_of_state = 764
+				has_full_control_of_state = 107
+				has_full_control_of_state = 804
+				has_full_control_of_state = 105
+				has_full_control_of_state = 108
+				has_full_control_of_state = 803
+				has_full_control_of_state = 802
+				has_full_control_of_state = 106
+			}
+			
+			NOT = {
+				YUG = {
+					exists = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		
+		remove_effect = {
+			release_puppet = YUG
+			
+			YUG = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+				102 = {
+					transfer_state_to = SDF
+				}
+				
+				853 = {
+					transfer_state_to = SDF
+				}
+				
+				if = {
+					limit = {
+						BUL = {
+							is_puppet_of = SDF
+						}
+					}
+					
+					803 = {
+						transfer_state_to = BUL
+					}
+					
+					106 = {
+						transfer_state_to = BUL
+					}
+				}
+				
+				if = {
+					limit = {
+						HUN = {
+							is_puppet_of = SDF
+						}
+					}
+					
+					45 = {
+						transfer_state_to = HUN
+					}
+					
+					764 = {
+						transfer_state_to = HUN
+					}
+				}
+				
+				if = {
+					limit = {
+						ALB ={
+							is_puppet_of = SDF
+						}
+					}
+					
+					802 = {
+						transfer_state_to = ALB
+					}
+				}
+			}
+		}
+	}
+	
+	SDF_albania_reichkommissarit = {
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 934
+				has_full_control_of_state = 44
+				has_full_control_of_state = 805
+			}
+			
+			NOT = {
+				ALB = {
+					exists = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		
+		remove_effect = {
+			release_puppet = ALB
+			
+			ALB = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						YUG = {
+							is_puppet_of = SDF
+						}
+					}
+				
+					802 = {
+						transfer_state_to = ALB
+					}
+				}
+			}
+		}
+	}
+	
+	SDF_bulgaria_reichkommissarit = {
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 48
+				has_full_control_of_state = 212
+				has_full_control_of_state = 211
+				has_full_control_of_state = 801
+			}
+			
+			NOT = {
+				BUL = {
+					exists = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		
+		remove_effect = {
+			release_puppet = BUL
+			
+			BUL = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						YUG = {
+							is_puppet_of = SDF
+						}
+					}
+					
+					803 = {
+						transfer_state_to = BUL
+					}
+					
+					106 = {
+						transfer_state_to = BUL
+					}
+				}
+				
+				if = {
+					limit = {
+						ROM = {
+							is_puppet_of = SDF
+						}
+					}
+					
+					77 = {
+						transfer_state_to = BUL
+					}
+				}
+				
+				if = {
+					limit = {
+						GRE = {
+							is_puppet_of = SDF
+						}
+					}
+					
+					184 = {
+						transfer_state_to = BUL
+					}
+					
+					731 = {
+						transfer_state_to = BUL
+					}
+				}
+			}
+		}
+	}
+	
+	SDF_greece_reichkommissarit = {
+		
+		available = {
+			SDF = {
+				has_full_control_of_state = 184
+				has_full_control_of_state = 731
+				has_full_control_of_state = 185
+				has_full_control_of_state = 47
+				has_full_control_of_state = 186
+				has_full_control_of_state = 187
+				has_full_control_of_state = 182
+			}
+			
+			NOT = {
+				GRE = {
+					exists = yes
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 10
+		
+		remove_effect = {
+			release_puppet = GRE
+			
+			GRE = {
+				set_cosmetic_tag = SDF_reichskommissariat_colour
+			}
+			
+			hidden_effect = {
+			
+				187 = {
+					transfer_state_to = SDF
+				}
+				
+				182 = {
+					transfer_state_to = SDF
+				}
+			
+				if = {
+					limit = {
+						BUL = {
+							is_puppet_of = SDF
+						}
+					}
+					
+					184 = {
+						transfer_state_to = BUL
+					}
+					
+					731 = {
+						transfer_state_to = BUL
+					}
+					
+				}
+			}
+		}
+	}
+}
+
 ##SDF_elections = {
 	##SDF_elections_test = {
 	

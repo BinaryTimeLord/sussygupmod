@@ -2726,7 +2726,13 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			custom_effect_tooltip = SDF_timed_idea_tooltip
+			hidden_effect = {
+				add_days_remove  = {
+					decision = SDF_pravda_war_timer
+					days = 60
+				}
+			}
 		}
 	}
 	
@@ -2745,10 +2751,22 @@ focus_tree = {
 		
 		completion_reward = {
 		
+			add_timed_idea = {
+				idea = sdf_war_prep
+				days = 180
+			}
+			
+			custom_effect_tooltip = SDF_timed_idea_tooltip
+			hidden_effect = {
+				add_days_remove  = {
+					decision = SDF_pravda_war_timer
+					days = 60
+				}
+			}
 		}
 	}
 	
-	focus = {
+	focus = { ##EVENT
 		id = SDF_sdk_training
 		##icon = 
 		relative_position_id = SDF_war_prep
@@ -2762,11 +2780,17 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			custom_effect_tooltip = SDF_timed_idea_tooltip
+			hidden_effect = {
+				add_days_remove  = {
+					decision = SDF_pravda_war_timer
+					days = 60
+				}
+			}
 		}
 	}
 	
-	focus = {
+	focus = { ##EVENT
 		id = SDF_saarbrucken_confrence
 		##icon = 
 		relative_position_id = SDF_war_prep
@@ -2777,6 +2801,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_flag = SDF_COUP_FAILSTATE
+				has_war = yes
 			}
 		}
 		
@@ -2804,7 +2829,12 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			SDF = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+			}
 		}
 	}	
 	
@@ -2822,17 +2852,36 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			SDF = {
+				declare_war_on = {
+					target = LIT
+					type = annex_everything
+				}
+				
+				declare_war_on = {
+					target = LAT
+					type = annex_everything
+				}
+				
+				declare_war_on = {
+					target = EST
+					type = annex_everything
+				}
+			}
 		}
 	}
-	
-	focus = { ##NON AGRESSION WITH ALLIES
+	 
+	focus = { ##NON AGRESSION WITH ALLIES ##EVENT
 		id = SDF_treaty_friendship
 		##icon = 
 		relative_position_id = SDF_war_prep
 		
 		x = 2
 		y = 2
+		
+		available = {
+			has_war = has_war = yes
+		}
 		
 		prerequisite = { focus = SDF_saarbrucken_confrence }
 		mutually_exclusive = { focus = SDF_operation_ikarus }
@@ -2844,7 +2893,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { ##"CONVINCING" HUNGARY, ROMANIA, YUGO, BULGARIA, GREECE, AND ALBANIA
+	focus = { ##"CONVINCING" HUNGARY, ROMANIA, YUGO, BULGARIA, GREECE, AND ALBANIA ##EVENT, UNLOCKS DECISIONS
 		id = SDF_eastern_allies
 		##icon = 
 		relative_position_id = SDF_war_prep
@@ -2858,7 +2907,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			custom_effect_tooltip = SDF_eastern_allies_tooltip
 		}
 	}
 	
@@ -2866,7 +2915,7 @@ focus_tree = {
 	
 	##WAR WITH PRAVDA##
 	
-	focus = {
+	focus = { ##EVENT
 		id = SDF_operation_northwind
 		##icon = 
 		relative_position_id = SDF_northwind_planning
@@ -2880,7 +2929,12 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+			SDF = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
 		}
 	}
 	
