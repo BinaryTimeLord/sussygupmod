@@ -11,7 +11,7 @@ focus_tree = {
 	}
 	
 	
-	continuous_focus_position = { x = 100 y = 800 }
+	continuous_focus_position = { x = 100 y = 950 }
 	
 	default = no
 	
@@ -2714,7 +2714,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_northwind_planning
-		##icon =
+		icon = GFX_goal_operation_northwind_planning
 		relative_position_id = SDF_elections
 		
 		x = -8
@@ -2738,7 +2738,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_war_prep
-		##icon = 
+		icon = GFX_goal_war_preperations
 		relative_position_id = SDF_northwind_planning
 		
 		x = 0
@@ -2792,7 +2792,7 @@ focus_tree = {
 	
 	focus = { ##EVENT
 		id = SDF_saarbrucken_confrence
-		##icon = 
+		icon = GFX_goal_saarbruken_confrence
 		relative_position_id = SDF_war_prep
 		
 		x = 2
@@ -2817,7 +2817,7 @@ focus_tree = {
 	
 	focus = { ##INVASION OF POLAND
 		id = SDF_operation_gleiwitz
-		##icon = 
+		icon = GFX_goal_operation_gleiwitz
 		relative_position_id = SDF_war_prep
 		
 		x = -2
@@ -2840,7 +2840,7 @@ focus_tree = {
 	
 	focus = { ##INVASION OF BALTICS
 		id = SDF_operation_ikarus 
-		##icon = 
+		icon = GFX_goal_operation_ikarus
 		relative_position_id = SDF_war_prep
 		
 		x = -2
@@ -2873,7 +2873,7 @@ focus_tree = {
 	 
 	focus = { ##NON AGRESSION WITH ALLIES ##EVENT
 		id = SDF_treaty_friendship
-		##icon = 
+		icon = GFX_goal_treaty_friendship
 		relative_position_id = SDF_war_prep
 		
 		x = 2
@@ -2895,7 +2895,7 @@ focus_tree = {
 	
 	focus = { ##"CONVINCING" HUNGARY, ROMANIA, YUGO, BULGARIA, GREECE, AND ALBANIA ##EVENT, UNLOCKS DECISIONS
 		id = SDF_eastern_allies
-		##icon = 
+		icon = GFX_goal_eastern_allies
 		relative_position_id = SDF_war_prep
 		
 		x = 0
@@ -2917,7 +2917,7 @@ focus_tree = {
 	
 	focus = { ##EVENT
 		id = SDF_operation_northwind
-		##icon = 
+		icon = GFX_goal_operation_northwind
 		relative_position_id = SDF_northwind_planning
 		
 		x = 2
@@ -3915,17 +3915,18 @@ focus_tree = {
 	focus = {
 		id = SDF_anzai_one
 		icon = GFX_goal_anzai_one
+		relative_position_id = SDF_victory_civil
 		
 		available = {
 			always = false 
 		}	
 		
 		allow_branch = {
-			has_country_flag = SDF_anzai_arrivial
+			##has_country_flag = SDF_anzai_arrivial
 		}
 		
-		x = 7
-		y = 6
+		x = 10
+		y = 0
 		
 		prerequisite = {}
 		mutually_exclusive = {}
@@ -3959,7 +3960,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##YES
 		id = SDF_anzai_three
 		##icon = 
 		relative_position_id = SDF_anzai_one
@@ -3968,10 +3969,98 @@ focus_tree = {
 			always = false
 		}
 		
-		x = 0
+		x = -1
 		y = 2
 		
 		prerequisite = { focus = SDF_anzai_two }
+		mutually_exclusive = { focus = SDF_anzai_three2 }
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anzai_four
+		##icon = 
+		relative_position_id = SDF_anzai_one
+		
+		available = {
+			always = false
+		}
+		
+		x = -1
+		y = 3
+		
+		prerequisite = { focus = SDF_anzai_three }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = { ##NO
+		id = SDF_anzai_three2
+		##icon = 
+		relative_position_id = SDF_anzai_one
+		
+		available = {
+			always = false
+		}
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = SDF_anzai_two }
+		mutually_exclusive = { focus = SDF_anzai_three }
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anzai_four2
+		##icon = 
+		relative_position_id = SDF_anzai_one
+		
+		available = {
+			always = false
+		}
+		
+		x = 1
+		y = 3
+		
+		prerequisite = { focus = SDF_anzai_three2 }
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anzai_five
+		##icon = 
+		relative_position_id = SDF_anzai_one 
+		
+		available = {
+			always = false
+		}
+		
+		x = 0
+		y = 4
+		
+		prerequisite = { focus = SDF_anzai_four focus = SDF_anzai_four2 }
 		mutually_exclusive = {}
 		
 		cost = 0
