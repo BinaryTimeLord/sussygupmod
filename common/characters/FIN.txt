@@ -77,7 +77,7 @@ characters = {
 				small="gfx/interface/ideas/Jatkosota/idea_fin_mika.dds"
 			}
 			army={
-				large="gfx/leaders/FIN/Portrait_FIN_Mika.dds"
+				large="gfx/leaders/FIN/Portrait_FIN_Mika1.dds"
 			}
 		}
 		field_marshal={
@@ -118,11 +118,14 @@ characters = {
 	FIN_aki={
 		name="Aki"
 		portraits={
+			civilian={
+				large="gfx/leaders/FIN/Portrait_FIN_Aki.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Jatkosota/idea_fin_aki.dds"
 			}
 			army={
-				large="gfx/leaders/FIN/Portrait_FIN_Aki.dds"
+				large="gfx/leaders/FIN/Portrait_FIN_Aki1.dds"
 			}
 		}
 		country_leader = {
@@ -144,11 +147,14 @@ characters = {
 	FIN_mikko={
 		name="Mikko"
 		portraits={
+			civilian={
+				large="gfx/leaders/FIN/Portrait_FIN_Mikko.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Jatkosota/idea_fin_mikko.dds"
 			}
 			army={
-				large="gfx/leaders/FIN/Portrait_FIN_Mikko.dds"
+				large="gfx/leaders/FIN/Portrait_FIN_Mikko1.dds"
 			}
 		}
 		country_leader = {
@@ -170,11 +176,14 @@ characters = {
 	FIN_rumi={
 		name="Rumi"
 		portraits={
+			civilian={
+				large="gfx/leaders/FIN/Portrait_FIN_Rumi.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Jatkosota/idea_fin_rumi.dds"
 			}
 			army={
-				large="gfx/leaders/FIN/Portrait_FIN_Rumi.dds"
+				large="gfx/leaders/FIN/Portrait_FIN_Rumi1.dds"
 			}
 		}
 		field_marshal={

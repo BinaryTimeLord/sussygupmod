@@ -9,7 +9,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
 			}
 			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Miho.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Miho1.dds"
 			}
 		}
 		country_leader={

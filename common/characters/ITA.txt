@@ -19,7 +19,7 @@ characters = {
 				small="gfx/interface/ideas/Anzio/idea_ita_anchovy.dds"
 			}
 			army={
-				large="gfx/leaders/ITA/Portrait_ITA_Anchovy.dds"
+				large="gfx/leaders/ITA/Portrait_ITA_Anchovy1.dds"
 			}
 		}
 
@@ -130,6 +130,9 @@ characters = {
 			}
 			army={
 				small="gfx/interface/ideas/Anzio/idea_ita_pepperoni.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Pepperoni1.dds"
 			}
 		}
 
@@ -291,7 +294,7 @@ characters = {
 		name = ITA_italo_balbo
 		portraits = {
 			army = {
-				large = GFX_portrait_ITA_italo_balbo
+				large="gfx/leaders/ITA/Portrait_ITA_Carpaccio1.dds"
 			}
 			army={
 				small="gfx/interface/ideas/Anzio/idea_ita_carpaccio.dds"
@@ -1735,7 +1738,7 @@ characters = {
 				small="gfx/interface/ideas/Anzio/idea_ita_amaretto.dds"
 			}
 			army={
-				large="gfx/leaders/ITA/portrait_ITA_dino_grandi.dds"
+				large="gfx/leaders/ITA/Portrait_ITA_Amaretto1.dds"
 			}
 			civilian = {
 				large = GFX_portrait_ITA_dino_grandi
