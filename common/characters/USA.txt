@@ -9,7 +9,7 @@ characters={
 				small="gfx/interface/ideas/Saunders/idea_usa_kay.dds"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Kay.dds"
+				large="gfx/leaders/USA/Portrait_USA_Kay1.dds"
 			}
 		}
 		field_marshal={

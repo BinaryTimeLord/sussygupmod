@@ -9,7 +9,7 @@ characters={
 				small="gfx/interface/ideas/BC Freedom/idea_fra_marie.dds"
 			}
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Marie.dds"
+				large="gfx/leaders/FRA/Portrait_FRA_Marie1.dds"
 			}
 		}
 		field_marshal={

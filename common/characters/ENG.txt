@@ -9,7 +9,7 @@ characters={
 				small="gfx/interface/ideas/St. Gloriana/idea_eng_darjeeling.dds"
 			}
 			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling1.dds"
 			}
 		}
 		country_leader={

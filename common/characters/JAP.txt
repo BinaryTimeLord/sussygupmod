@@ -7,7 +7,7 @@ characters={
 			}
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_kinuyi_nishi.dds"
-				large="gfx/leaders/JAP/Kinuyo.dds"
+				large="gfx/leaders/JAP/Kinuyo1.dds"
 			}
 		}
 		field_marshal={
@@ -36,7 +36,7 @@ characters={
 			}
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
-				large="gfx/leaders/JAP/Hosomi.dds"
+				large="gfx/leaders/JAP/Hosomi1.dds"
 			}
 		}
 		corps_commander={
@@ -65,7 +65,7 @@ characters={
 			}
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds" # Old name made by Yamato from cht fan server
-				large="gfx/leaders/JAP/Tamada.dds"
+				large="gfx/leaders/JAP/Tamada1.dds"
 			}
 		}
 		corps_commander={
@@ -123,7 +123,7 @@ characters={
 			}
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds" # Old name made by Yamato from cht fan server
-				large="gfx/leaders/JAP/Fukuda.dds"
+				large="gfx/leaders/JAP/Fukuda1.dds"
 			}
 		}
 		corps_commander={
