@@ -1452,3 +1452,59 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = sdf.43
+	title = sdf.43.t
+	desc = sdf.43.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.43.a
+		ai_chance = {
+			base = 1
+		}
+		add_stability = 0.1
+		add_political_power = 75
+	}
+}
+
+country_event = {
+	id = sdf.44
+	title = sdf.44.t
+	desc = sdf.44.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.44.a
+		ai_chance = {
+			base = 1
+		}
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = sdf.45
+	title = sdf.45.t
+	desc = sdf.45.d
+	##picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.45.a
+		ai_chance = {
+			base = 1
+		}
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+}
+

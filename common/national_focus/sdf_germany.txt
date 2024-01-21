@@ -1981,7 +1981,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_unite_mic
-		##icon = 
+		icon = GFX_goal_unite_mic
 		relative_position_id = SDF_industrial_democracy
 		
 		available = {
@@ -2172,7 +2172,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_closing_trade
-		##icon = 
+		icon = GFX_goal_close_communication
 		relative_position_id = SDF_autarky
 		
 		x = 0
@@ -2247,6 +2247,11 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
+			country_event = {
+				id = sdf.44
+				days = 5
+			}
+		
 			swap_ideas = {
 				remove_idea = sdf_autarky
 				add_idea = sdf_autarky2
@@ -2293,6 +2298,11 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
+		
+			country_event = {
+				id = sdf.45
+				days = 5
+			}
 			
 			if = {
 				limit = {
@@ -2426,7 +2436,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_civil_works
-		##icon = 
+		icon = GFX_goal_civil_works
 		relative_position_id = SDF_free_market
 		
 		available = {
@@ -2472,7 +2482,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_autobauhn
-		##icon =
+		icon = GFX_goal_expand_autobahn
 		relative_position_id = SDF_free_market
 		
 		available = {
@@ -2520,7 +2530,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_fix_buracracy
-		##icon = 
+		icon = GFX_goal_reorganzie_bureaucracy
 		relative_position_id = SDF_free_market
 		
 		available = {
@@ -2561,7 +2571,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_zero_tarrifs
-		##icon = 
+		icon = GFX_goal_open_to_west
 		relative_position_id = SDF_free_market
 		
 		available = {
@@ -2608,6 +2618,11 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
+			
+			country_event = {
+				id = sdf.43
+				days = 3
+			}
 			
 			if = {
 				limit = {
