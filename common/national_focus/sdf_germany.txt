@@ -435,6 +435,8 @@ focus_tree = {
 					owner = SDF
 				}
 			}
+			
+			set_country_flag = SDF_CONSCRIPTION_BAD
 		}
 	}
 	
@@ -540,6 +542,8 @@ focus_tree = {
 			add_political_power = 150
 			
 			add_offsite_building = { type = industrial_complex level = 1 }
+			
+			set_country_flag = SDF_SOUP_GOOD
 		}
 	}
 	
@@ -1870,6 +1874,8 @@ focus_tree = {
 				days = 3
 			}
 			
+			remove_ideas = sdf_anarchy_1
+			
 			hidden_effect = {
 				random_list = {
 					25 = {
@@ -1948,7 +1954,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_break_corperations
-		##icon = 
+		icon = GFX_goal_break_corperations
 		relative_position_id = SDF_industrial_democracy
 		
 		available = {
@@ -2024,7 +2030,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_work_freedom
-		##icon =
+		icon = GFX_goal_work_freedom
 		relative_position_id = SDF_industrial_democracy
 		
 		available = {
@@ -2062,7 +2068,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_land_distribution
-		##icon = 
+		icon = GFX_goal_land_distrabution
 		relative_position_id = SDF_industrial_democracy
 		
 		available = {
@@ -2126,7 +2132,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		prerequisite = { focus = SDF_status_economic }
@@ -2195,7 +2201,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_battle_grain
-		##icon =
+		icon = GFX_goal_battle_grain
 		relative_position_id = SDF_autarky
 		
 		x = -1
@@ -2235,7 +2241,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_new_mines
-		##icon = 
+		icon = GFX_goal_resource_allocation
 		relative_position_id = SDF_autarky
 		
 		x = 1
@@ -2285,7 +2291,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_kuro_century
-		##icon = 
+		icon = GFX_goal_golden_age
 		relative_position_id = SDF_autarky
 		
 		x = 0
@@ -2383,7 +2389,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		prerequisite = { focus = SDF_status_economic }
@@ -2513,7 +2519,7 @@ focus_tree = {
 				
 			every_owned_state = {
 				limit = {
-					core_of = SDF
+					is_core_of = SDF
 				}
 				
 				add_building_construction = {
@@ -2560,7 +2566,7 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					NOT = {
-						core_of = SDF
+						is_core_of = SDF
 					}
 				}
 				
@@ -2598,7 +2604,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_into_future
-		##icon = 
+		icon = GFX_goal_into_future
 		relative_position_id = SDF_status_economic
 		
 		available = {
@@ -2742,6 +2748,10 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = SDF_timed_idea_tooltip
+			country_event = {
+				id = sdf.46
+				days = 5
+			}
 			hidden_effect = {
 				add_days_remove  = {
 					decision = SDF_pravda_war_timer
@@ -2789,6 +2799,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		
 		prerequisite = { focus = SDF_war_prep }
 		mutually_exclusive = {}
 		
@@ -2796,6 +2812,10 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = SDF_timed_idea_tooltip
+			country_event = {
+				id =  sdf.47
+				days = 5
+			}
 			hidden_effect = {
 				add_days_remove  = {
 					decision = SDF_pravda_war_timer
@@ -2895,7 +2915,7 @@ focus_tree = {
 		y = 2
 		
 		available = {
-			has_war = has_war = yes
+			has_war = no
 		}
 		
 		prerequisite = { focus = SDF_saarbrucken_confrence }
@@ -2904,7 +2924,10 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.48
+				days = 5
+			}
 		}
 	}
 	
@@ -2974,10 +2997,105 @@ focus_tree = {
 		prerequisite = { focus = SDF_elections }
 		mutually_exclusive = {}
 		
-		cost = 1
+		cost = 8
 		
 		completion_reward = {
 		
+		
+			hidden_effect = { ##SDF.good_deeds_counter
+				
+				country_event = {
+					id = sdf.49
+					days = 5
+				}
+				
+				##SOUP
+				if = {
+					limit = {
+						SDF = {
+							has_country_flag = SDF_SOUP_GOOD
+						}
+					}
+					
+					add_to_variable = {
+						var = SDF.good_deeds_counter
+						value = 1
+					}
+					
+					complete_national_focus = SDF_soup_kitchen
+				}
+					
+				##CONSCRIPTION
+				
+				if = {
+					limit = {
+						SDF = {
+							NOT = {
+								OR = {
+									has_idea = extensive_conscription
+									has_country_flag = SDF_CONSCRIPTION_BAD
+								}
+							}
+						}
+					}
+
+						add_to_variable = {
+							var = SDF.good_deeds_counter
+							value = 1
+						}
+						
+						complete_national_focus = SDF_conscription
+
+				}
+				##ANZAI PLAN
+					if = {
+						limit = {
+							SDF = {
+								has_country_flag = SDF_anzai_arrivial
+							}
+						}
+						
+						add_to_variable = {
+							var = SDF.good_deeds_counter
+							value = 1
+						}
+						
+						complete_national_focus = SDF_anzai_plan
+					}
+				##CRISIS
+					if = {
+						limit = {
+							SDF = {
+								has_completed_focus = SDF_into_future
+							}
+						}
+						
+						add_to_variable = {
+							var = SDF.good_deeds_counter
+							value = 1
+						}
+						
+						complete_national_focus = SDF_economic_crisis_handled
+						
+					}
+				##MILITARY
+				
+					if = {
+						limit = {
+							SDF = {
+								has_completed_focus = SDF_purge_generals
+							}
+						}
+						
+						add_to_variable = {
+							var = SDF.good_deeds_counter
+							value = 1
+						}
+						
+						complete_national_focus = SDF_tamed_military
+					}
+					
+			}
 		}
 	}
 	
@@ -2990,7 +3108,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false 
+			always = no 
 		}
 		
 		prerequisite = { focus = SDF_political_manouvering }
@@ -3012,7 +3130,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false 
+			always = no 
 		}
 		
 		prerequisite = { focus = SDF_political_manouvering }
@@ -3034,7 +3152,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false 
+			always = no 
 		}
 		
 		prerequisite = { focus = SDF_political_manouvering }
@@ -3055,7 +3173,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false 
+			always = no 
 		}
 		
 		prerequisite = { focus = SDF_political_manouvering }
@@ -3077,7 +3195,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false 
+			always = no 
 		}
 		
 		prerequisite = { focus = SDF_political_manouvering }
@@ -3098,13 +3216,17 @@ focus_tree = {
 		x = -1
 		y = 2
 		
+		available = {
+			always = no 
+		}
+		
 		prerequisite = { focus = SDF_anzai_plan focus = SDF_soup_kitchen focus = SDF_conscription focus = SDF_economic_crisis_handled focus = SDF_tamed_military }
 		mutually_exclusive = { focus = SDF_outright_majority }
 		
 		cost = 3
 		
 		completion_reward = {
-		
+			add_ideas = sdf_coalition
 		}
 	}
 	
@@ -3116,13 +3238,17 @@ focus_tree = {
 		x = 1
 		y = 2
 		
+		available = {
+			always = no 
+		}
+		
 		prerequisite = { focus = SDF_anzai_plan focus = SDF_soup_kitchen focus = SDF_conscription focus = SDF_economic_crisis_handled focus = SDF_tamed_military }
 		mutually_exclusive = { focus = SDF_coalition_form }
 		
 		cost = 3
 		
 		completion_reward = {
-		
+			add_ideas = sdf_outright_majority
 		}
 		
 	}
@@ -3136,14 +3262,60 @@ focus_tree = {
 		
 		x = 0
 		y = 3
-		
+	
 		prerequisite = { focus = SDF_coalition_form focus = SDF_outright_majority }
 		mutually_exclusive = {}
 		
 		cost = 5
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = limited_conscription
+					}
+				}
+				
+				add_ideas = extensive_conscription
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = volunteer_only
+					}
+				}
+				
+				add_ideas = limited_conscription
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = disarmed_nation
+					}
+				}
+				
+				add_ideas = volunteer_only
+			}
 		}
 	}
 	
@@ -3161,7 +3333,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			add_ideas = sdf_volksturm_act
 		}
 	}
 	
@@ -3179,7 +3351,7 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			add_ideas = sdf_press_freedom_1
 		}
 	}
 	
@@ -3192,12 +3364,15 @@ focus_tree = {
 		y = 4
 		
 		prerequisite = { focus = SDF_press_freedom }
-		mutually_exclusive = {}
+		mutually_exclusive = { focus = SDF_secret_police }
 		
 		cost = 5
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_press_freedom_1
+				add_idea = sdf_civil_freedoms
+			}
 		}
 	}
 	
@@ -3210,12 +3385,15 @@ focus_tree = {
 		y = 4
 		
 		prerequisite = { focus = SDF_press_freedom }
-		mutually_exclusive = {}
+		mutually_exclusive = { focus = SDF_civil_freedoms }
 		
 		cost = 5
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_press_freedom_1
+				add_idea = sdf_secret_police
+			}
 		}
 	}
 
@@ -3233,7 +3411,34 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			add_ideas = sdf_corperations
 		}
 	}
 	
@@ -3251,7 +3456,10 @@ focus_tree = {
 		cost = 5 
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_corperations
+				add_idea = sdf_rhinemetal
+			}
 		}
 	}
 	
@@ -3269,7 +3477,10 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = sdf_corperations
+				add_idea = sdf_messerschmitt
+			}
 		}
 	}
 	
@@ -3323,7 +3534,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = false
+			always = no
 			has_completed_focus = SDF_keep_nishizumists
 		}
 		
@@ -3518,7 +3729,7 @@ focus_tree = {
 		}	
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		prerequisite = { focus = SDF_military_buildup }
@@ -3933,7 +4144,7 @@ focus_tree = {
 		relative_position_id = SDF_victory_civil
 		
 		available = {
-			always = false 
+			always = no 
 		}	
 		
 		allow_branch = {
@@ -3959,7 +4170,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = 0
@@ -3981,7 +4192,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = -1
@@ -4003,7 +4214,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = -1
@@ -4025,7 +4236,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = 1
@@ -4047,7 +4258,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = 1
@@ -4069,7 +4280,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one 
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = 0

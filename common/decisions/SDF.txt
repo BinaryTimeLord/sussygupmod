@@ -1081,10 +1081,22 @@ SDF_war_with_pravda = {
 		}
 		
 		timeout_effect = { 
-			country_event = {
-				id = sdf.25
-				days = 1
-			}
+			random_list = {
+					
+					75 = {
+						country_event = {
+							id = sdf.36
+							days = 1
+						}
+					}
+					
+					25 = {
+						country_event = {
+							id = sdf.18
+							days = 1
+						}
+					}	
+				}
 			custom_effect_tooltip = SDF_pravda_war_timer_tooltip
 		}
 	}

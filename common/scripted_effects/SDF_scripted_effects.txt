@@ -22,3 +22,9 @@ sdf.neutrality_popularity = {
 	}
 }
 
+sdf.good_deeds_counter = {
+	set_variable = {
+		SDF.good_deeds_counter = 0
+	}
+}
+
