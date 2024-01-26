@@ -61,11 +61,14 @@ characters={
 	FRA_andou={
 		name="Rena Andou"
 		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Andou.dds"
+			}
 			army={
 				small="gfx/interface/ideas/BC Freedom/idea_fra_andou.dds"
 			}
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Andou.dds"
+				large="gfx/leaders/FRA/Portrait_FRA_Andou1.dds"
 			}
 		}
 		corps_commander={
@@ -83,11 +86,14 @@ characters={
 	FRA_oshida={
 		name="Ruka Oshida"
 		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Oshida.dds"
+			}
 			army={
 				small="gfx/interface/ideas/BC Freedom/idea_fra_oshida.dds"
 			}
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Oshida.dds"
+				large="gfx/leaders/FRA/Portrait_FRA_Oshida1.dds"
 			}
 		}
 		corps_commander={
@@ -104,11 +110,14 @@ characters={
 	FRA_azumi={
 		name="Azumi"
 		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Azumi.dds"
+			}
 			army={
 				small="gfx/interface/ideas/BC Freedom/idea_fra_azumi.dds"
 			}
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Azumi.dds"
+				large="gfx/leaders/FRA/Portrait_FRA_Azumi1.dds"
 			}
 		}
 		field_marshal={

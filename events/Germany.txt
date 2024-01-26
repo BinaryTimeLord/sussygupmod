@@ -63,6 +63,7 @@ country_event = {
 		}
 
         AUS = {
+			AUS_miho_nishizumi = { set_nationality = GER }
 			AUS_yukari_akiyama = { set_nationality = GER }
 			AUS_erwin = { set_nationality = GER }
 		} 

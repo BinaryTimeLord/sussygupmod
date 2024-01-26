@@ -3,7 +3,7 @@ characters={
 		name="Anzu"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUS/Portrait_AUS_Anzu.dds"
+				large="gfx/leaders/SLO/Portrait_AUS_Anzu1.dds"
 			}
 		}
 		country_leader={
@@ -12,26 +12,6 @@ characters={
 			traits={ popular_commander }
 			expire="1965.1.1.1"
 			id=-1
-		}
-	}
-	SLO_miho_nishizumi={
-		name="Miho Nishizumi"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
-			}
-			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Miho.dds"
-			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist trait_cautious media_personality armor_officer organizer skilled_staffer trickster trait_engineer panzer_leader urban_assault_specialist fast_planner inspirational_leader }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	SLO_saori_takebe={
@@ -71,26 +51,6 @@ characters={
 			defense_skill=3
 			planning_skill=5
 			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	SLO_yukari_akiyama={
-		name="Yukari Akiyama"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_yukari_akiyama_theorist.dds"
-			}
-			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Yukari.dds"
-			}
-		}
-		field_marshal={
-			traits={ armor_officer panzer_leader commando winter_specialist desert_fox fast_planner expert_improviser adaptable }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -171,26 +131,6 @@ characters={
 			defense_skill=2
 			planning_skill=6
 			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	SLO_erwin={
-		name="Riko Matsumoto"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Kuromorimine/idea_ger_riko_matsumoto_high_command.dds"
-			}
-			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Erwin.dds"
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist panzer_leader desert_fox }
-			skill=4
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
 			legacy_id=-1
 		}
 	}

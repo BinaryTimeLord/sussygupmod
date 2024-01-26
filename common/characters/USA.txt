@@ -47,11 +47,14 @@ characters={
 	USA_alisa={
 		name="Alisa"
 		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Alisa.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Saunders/idea_usa_alisa.dds"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Alisa.dds"
+				large="gfx/leaders/USA/Portrait_USA_Alisa1.dds"
 			}
 		}
 		corps_commander={
@@ -67,11 +70,14 @@ characters={
 	USA_naomi={
 		name="Naomi"
 		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Naomi.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Saunders/idea_usa_naomi.dds"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Naomi.dds"
+				large="gfx/leaders/USA/Portrait_USA_Naomi1.dds"
 			}
 		}
 		corps_commander={
@@ -87,11 +93,14 @@ characters={
 	USA_megumi={
 		name="Megumi"
 		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Megumi.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Saunders/idea_usa_megumi.dds"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Megumi.dds"
+				large="gfx/leaders/USA/Portrait_USA_Megumi1.dds"
 			}
 		}
 		field_marshal={

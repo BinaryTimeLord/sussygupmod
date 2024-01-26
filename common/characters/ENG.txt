@@ -52,11 +52,14 @@ characters={
 	ENG_dajirin={
 		name="Darjeeling"
 		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
+			}
 			army={
 				small="gfx/interface/ideas/St. Gloriana/idea_eng_darjeeling.dds"
 			}
 			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling1.dds"
 			}
 		}
 		field_marshal={
@@ -72,11 +75,14 @@ characters={
 	ENG_orange_pekoe={
 		name="Orange Pekoe"
 		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Orange.dds"
+			}
 			army={
 				small="gfx/interface/ideas/St. Gloriana/idea_eng_orange.dds"
 			}
 			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Orange.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Orange1.dds"
 			}
 		}
 		corps_commander={
@@ -92,11 +98,14 @@ characters={
 	ENG_assam={
 		name="Assam"
 		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Assam.dds"
+			}
 			army={
 				small="gfx/interface/ideas/St. Gloriana/idea_eng_assam.dds"
 			}
 			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Assam.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Assam1.dds"
 			}
 		}
 		corps_commander={
@@ -112,11 +121,14 @@ characters={
 	ENG_rosehip={
 		name="Rosehip"
 		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Rosehip.dds"
+			}
 			army={
 				small="gfx/interface/ideas/St. Gloriana/idea_eng_rosehip.dds"
 			}
 			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Rosehip.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Rosehip1.dds"
 			}
 		}
 		corps_commander={
@@ -132,11 +144,14 @@ characters={
 	ENG_rukuriri={
 		name="Rukuriri"
 		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Rukuriri.dds"
+			}
 			army={
 				small="gfx/interface/ideas/St. Gloriana/idea_eng_rukuriri.dds"
 			}
 			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Rukuriri.dds"
+				large="gfx/leaders/ENG/Portrait_ENG_Rukuriri1.dds"
 			}
 		}
 		corps_commander={
