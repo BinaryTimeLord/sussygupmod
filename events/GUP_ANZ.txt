@@ -717,7 +717,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			# He's no longer paranoid
+			# sge's no longer paranoid
 			remove_ideas = {
 				mussolinis_paranoia
 			}
@@ -731,7 +731,7 @@ country_event = {
 		}
 	}
 
-	option = { # Dark Mussolini Rises!
+	option = { # Dark Anchovy Rises!
 		name = anz.21.a
 
 		hidden_effect = {

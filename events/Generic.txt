@@ -1095,7 +1095,7 @@ country_event = {
 	title = generic.8.t
 	desc = generic.8.d
 	
-	picture = GFX_report_event_physics_lab_01 #todo picture of Little Boy
+	picture = GFX_report_event_physics_lab_01 #todo picture of Little Girl
 
 	is_triggered_only = yes
 	

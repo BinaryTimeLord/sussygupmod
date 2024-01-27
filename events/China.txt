@@ -146,7 +146,7 @@ country_event = {
 	}
 }
 
-# Mao is gaining ground, loses his Cornered Fox trait
+# Mao is gaining ground, loses her Cornered Fox trait
 country_event = {
 	id = china.5
 	title = china.5.t
@@ -1081,7 +1081,7 @@ country_event = {
 
 }
 
-# China and Japan no longer at war - Break up faction and Mao claims his part of China
+# China and Japan no longer at war - Break up faction and Mao claims her part of China
 country_event = {
 	id = china.107
 	title = china.107.t
@@ -1226,7 +1226,7 @@ country_event = {
 
 }
 
-# China and Japan no longer at war - Break up faction and Mao claims his part of China
+# China and Japan no longer at war - Break up faction and Mao claims her part of China
 country_event = {
 	id = china.111
 	title = china.111.t

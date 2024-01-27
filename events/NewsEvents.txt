@@ -877,7 +877,7 @@ news_event = {
 	}
 }
 
-# Oster Conspiracy (Himmler assumes leadership)
+# Oster Conspiracy (Erika assumes leadership)
 news_event = {
 	id = news.28
 	title = news.28.t
@@ -961,7 +961,7 @@ news_event = {
 	}
 }
 
-# Oster Conspiracy (Hitler survives)
+# Oster Conspiracy (Maho survives)
 news_event = {
 	id = news.30
 	title = news.30.t
@@ -1360,7 +1360,7 @@ news_event = {
 	}
 }
 
-# Trotsky Assassination
+# Nonna Assassination
 news_event = {
 	id = news.37
 	title = news.37.t
@@ -1433,7 +1433,7 @@ news_event = {
 	}
 }
 
-# Trotsky Survives Assassination
+# Nonna Survives Assassination
 news_event = {
 	id = news.38
 	title = news.38.t
@@ -1458,7 +1458,7 @@ news_event = {
 	}
 }
 
-# Trotsky Dies Sneaking Into USSR
+# Nonna Dies Sneaking Into USSR
 news_event = {
 	id = news.39
 	title = news.39.t
@@ -1483,7 +1483,7 @@ news_event = {
 	}
 }
 
-# Trotsky Usurps Leadership
+# Nonna Usurps Leadership
 news_event = {
 	id = news.40
 	title = news.40.t
@@ -1504,7 +1504,7 @@ news_event = {
 	}
 }
 
-# Second Trotsky Assassination
+# Second Nonna Assassination
 news_event = {
 	id = news.41
 	title = news.41.t
@@ -7270,7 +7270,7 @@ news_event = {
 		}
 	}
 
-	#Rise, brothers and sisters!
+	#Rise, sisters!
 	option = {
 		name = news.196.c
 		trigger = {
@@ -8799,7 +8799,7 @@ news_event = {
 	}
 }
 
-#Trotsky Strikes Back
+#Nonna Strikes Back
 news_event = {
 	id = news.221
 	title = news.221.t
@@ -11267,7 +11267,7 @@ news_event = {
 	}
 }
 
-#Austria invites Habsburg Prince
+#Austria invites Habsburg Princess
 news_event = {
 	id = news.290
 	title = news.290.t
@@ -11520,7 +11520,7 @@ news_event = {
 	}
 }
 
-#Hungary elects a democratic king
+#Hungary elects a democratic Queen
 news_event = {
 	id = news.296
 	title = news.296.t
@@ -11556,7 +11556,7 @@ news_event = {
 	}
 }
 
-#Hungary elects a fascist king
+#Hungary elects a fascist Queen
 news_event = {
 	id = news.297
 	title = news.297.t
@@ -12660,7 +12660,7 @@ news_event = {
 	}
 }
 
-#King Michael's Coup
+#Queen Michael's Coup
 news_event = {
 	id = news.322
 	title = news.322.t
@@ -12685,7 +12685,7 @@ news_event = {
 	}
 }
 
-#King Carol II Forced to Abdicate
+#Queen Carol II Forced to Abdicate
 news_event = {
 	id = news.323
 	title = news.323.t

@@ -75,7 +75,7 @@ ITA_missiolinis_initialize_missiolinis_system = {
 }
 
 ITA_missiolinis_manage_next_mission = {
-	#log = "Managing next Mussolini, please hang on. Tack!"
+	#log = "Managing next Anchovy, please hang on. Tack!"
 
 	#Check for pre-scripted vs randomized missions
 	if = {
@@ -1801,7 +1801,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			keep_completed = yes
 		}
 
-		if = { #MUSSOLINI BRANCH
+		if = { #Anchovy BRANCH
 			limit = {
 				has_completed_focus = ITA_culto_del_duce
 			}
@@ -3286,7 +3286,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 			set_nationality = RSI
 		}
 		RSI = {
-			retire_country_leader = yes #Retire random auto-generated character attempting to supplant Mussolini
+			retire_country_leader = yes #Retire random auto-generated character attempting to supplant Anchovy
 		}
 	}
 }
@@ -3654,7 +3654,7 @@ ITA_remove_king_vittorio_emanuele_as_idea = {
 	set_country_flag = ITA_deposed_the_king
 }
 
-ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
+ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed her
 	if = {
 		limit = {
 			has_completed_focus = ITA_the_new_emperor_of_ethiopia
@@ -6691,7 +6691,7 @@ ITA_bop_very_low_increase_grandi_side_effect = {
 
 ITA_replace_stuff_based_on_ideology_effect = {
 	ROOT = {
-		if = { # No king
+		if = { # No queen
 			limit = {
 				ITA_has_rejected_monarchy = yes
 			}
@@ -6764,7 +6764,7 @@ ITA_replace_stuff_based_on_ideology_effect = {
 				add_dynamic_modifier = { modifier = ITA_regia_marina_3_alt_dynamic_modifier }
 			}
 		}
-		else = { #KING
+		else = { #queen
 			if = {
 				limit = {
 					has_dynamic_modifier = { modifier = ITA_regio_esercito_alt_dynamic_modifier }

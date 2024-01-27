@@ -5100,7 +5100,7 @@ focus_tree = {
 
 			add_political_power = 100
 
-			if = { #Only do it if he is the country leader (he can't come back)
+			if = { #Only do it if she is the country leader (sge can't come back)
 				limit = {
 					has_country_leader = {
 						ruling_only = yes

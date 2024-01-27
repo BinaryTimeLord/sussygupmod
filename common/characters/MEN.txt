@@ -60,7 +60,7 @@ characters={ #IGNORE FOR NOW - MEN WON'T EXIST INDEFINITELY
 		}
 	}
 	MEN_prince_demchugdongrub={
-		name="Prince Demchugdongrub"
+		name="Princess Demchugdongrub"
 		portraits={
 			civilian={
 				large="GFX_portrait_men_demchugdongrub"

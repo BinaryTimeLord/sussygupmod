@@ -8923,7 +8923,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			# The king is an idea
+			# The queen is an idea
 			if = {
 				limit = {
 					has_idea = vittorio_emanuele
@@ -9044,7 +9044,7 @@ focus_tree = {
 				value > 0.499
 			}
 			custom_trigger_tooltip = {
-				tooltip = "Requires 50+ value towards Mussolini in the Balance of Power"
+				tooltip = "Requires 50+ value towards Anchovy in the Balance of Power"
 				always = yes
 			}
 		}
@@ -10138,7 +10138,7 @@ focus_tree = {
 
 			add_country_leader_trait = capo_supremo
 
-			custom_effect_tooltip = ITA_mussolini_becomes_field_marshal_tt #Has to start as unit leader so that you cannot give him traits via unit_leader events (missiolinis)
+			custom_effect_tooltip = ITA_mussolini_becomes_field_marshal_tt #Has to start as unit leader so that you cannot give her traits via unit_leader events (missiolinis)
 
 			hidden_effect = {
 				ITA_benito_mussolini = {
@@ -15039,7 +15039,7 @@ focus_tree = {
 				custom_effect_tooltip = if_they_accept_tt
 				annex_country = { target = ALB }
 				add_named_threat = { threat = 2 name = ITA_albania_war_goal }
-				# The king is an idea
+				# The queen is an idea
 				if = {
 					limit = {
 						has_idea = vittorio_emanuele

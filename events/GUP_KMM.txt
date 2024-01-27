@@ -884,7 +884,7 @@ country_event = { #ERIKA'S COUNTERCOUP #VIOLENT
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = { #uh oh stinky ##he said funny! -lejeff  
+	option = { #uh oh stinky ##she said funny! -lejeff  
 		name = kmm.10.a
 		ai_chance = {
 			base = 50
@@ -2899,7 +2899,7 @@ country_event = { #Gregorian Question
 			add_opinion_modifier = { target = CZE modifier = small_increase }
 		}
 	}
-	option = { #Neutrality - Don't care. He literally doesnt care chat. Hikaru doesnt care.
+	option = { #Neutrality - Don't care. she literally doesnt care chat. Hikaru doesnt care.
 		name = kmm.38.c
 		ai_chance = { factor = 2 }
 
@@ -2994,7 +2994,7 @@ country_event = { #Hungarian Question
 			add_opinion_modifier = { target = HUN modifier = small_increase }
 		}
 	}
-	option = { #Neutrality - Don't care. He literally doesnt care chat. Hikaru doesnt care.
+	option = { #Neutrality - Don't care. she literally doesnt care chat. Hikaru doesnt care.
 		name = kmm.39.c
 		ai_chance = { 
 			factor = 2 

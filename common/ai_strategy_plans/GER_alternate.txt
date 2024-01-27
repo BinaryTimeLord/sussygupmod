@@ -17,7 +17,7 @@ German_alternate_kaiser = {
 					rule = GER_ai_behavior
 					option = DEFAULT
 				}
-				has_completed_focus = GER_oppose_hitler #historical mode off, Germany picked oppose Hitler
+				has_completed_focus = GER_oppose_hitler #historical mode off, Germany picked oppose Maho
 			}
 		}
 	}

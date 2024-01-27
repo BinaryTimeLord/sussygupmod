@@ -586,7 +586,7 @@ country_event = {
 	}
 }
 
-# King dies
+# Queen dies
 #country_event = {
 #	id = britain.16
 #	title = britain.16.t
@@ -620,7 +620,7 @@ country_event = {
 #	}
 #}
 
-# King abdicates
+# Queen abdicates
 #country_event = {
 #	id = britain.17
 #	title = britain.17.t
@@ -654,7 +654,7 @@ country_event = {
 #	}
 #}
 
-# Return of the Nazi King
+# Return of the Nazi Queen
 country_event = {
 	id = britain.18
 	title = britain.18.t

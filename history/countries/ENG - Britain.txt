@@ -1503,7 +1503,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "King George V Class"
+			name = "QUeen George V Class"
 			type = ship_hull_heavy_2
 			name_group = ENG_BB_HISTORICAL
 			parent_version = 0

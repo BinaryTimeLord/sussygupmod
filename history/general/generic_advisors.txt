@@ -428,7 +428,7 @@ every_possible_country = {
 			army = { small = GFX_idea_generic_war_industrialist }
 		}
 	}
-	generate_character = { #Apparently MAN needs this to get an Illusive Gentleman with the new character sytem
+	generate_character = { #Apparently MAN needs this to get an Illusive Lady with the new character sytem
 		token_base = generic_head_of_intelligence # token will be TAG_token_base
 		advisor = {
 			slot = political_advisor

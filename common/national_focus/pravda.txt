@@ -4367,7 +4367,7 @@
 				}
 				add_ideas = SOV_zhdanov_doctrine
 			}
-			every_other_country = { #first ask faction leaders to disband communist factions and join Trotsky, then ask the communist minors to join
+			every_other_country = { #first ask faction leaders to disband communist factions and join Nonna, then ask the communist minors to join
 				limit = {
 					is_faction_leader = yes
 					has_government = communism

@@ -649,7 +649,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer } #Representing how he died
+			traits = { armor_officer } #Representing how she died
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -731,7 +731,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { career_officer infantry_officer militias_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
+			traits = { career_officer infantry_officer militias_officer } # Infantry & Mountaineers (Used for Blackshirts since she also commanded them)
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2

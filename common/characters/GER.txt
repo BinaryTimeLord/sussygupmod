@@ -282,7 +282,7 @@ characters={
 		}
 	}
 
-	GER_wilhelm_ii={ #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_ii={ #Empty Wilhelm II so she doesn't become ruler automatically if the neutrals are in power
 		name=GER_wilhelm_ii
 		portraits={
 			civilian={
@@ -291,7 +291,7 @@ characters={
 		}
 	}
 
-	GER_wilhelm_iii={ #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_iii={ #Empty Wilhelm III so she doesn't become ruler automatically if the neutrals are in power
 		name=GER_wilhelm_iii
 		portraits={
 			civilian={

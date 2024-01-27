@@ -5995,7 +5995,7 @@ country_event = {
 }
 
 ###########################
-###THE FATE OF MUSSOLINI###
+###THE FATE OF Anchovy###
 ###########################
 country_event = {
 	id = BBA_italy_decide_the_fate_of_mussolini.1
@@ -6056,7 +6056,7 @@ country_event = {
 	}
 }
 
-#MUSSOLINI STANDS ON TRIAL
+#Anchovy STANDS ON TRIAL
 country_event = {
 	id = BBA_italy_decide_the_fate_of_mussolini.2
 	title = BBA_italy_decide_the_fate_of_mussolini.2.t
@@ -6100,7 +6100,7 @@ country_event = {
 	}
 }
 
-#MUSSOLINI IS ASSASSINATED
+#Anchovy IS ASSASSINATED
 country_event = {
 	id = BBA_italy_decide_the_fate_of_mussolini.3
 	title = BBA_italy_decide_the_fate_of_mussolini.3.t
@@ -9570,7 +9570,7 @@ country_event = {
 	}
 }
 
-# Italy demands the coronation of an Italian prince!
+# Italy demands the coronation of an Italian princess!
 country_event = {
 	id = BBA_italy_interaction_events.4
 	title = BBA_italy_interaction_events.4.t 

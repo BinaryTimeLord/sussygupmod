@@ -147,7 +147,7 @@ characters = {
 		}
 	}
 
-	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
+	#TODO: This should be a country leader token added to Katyusha in the appropriate event/focus/whatever
 	SOV_tsar_iosif_stalin = {
 		name = "Tsar Joseph I"
 		portraits = {
@@ -2337,7 +2337,7 @@ characters = {
 		allowed_civil_war = {
 			OR = {
 				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
+				AND = { #If not aligned by Right oppo, then stays with Katyusha
 					original_tag = SOV
 					NOT = { tag = SOV }
 					NOT = {
@@ -2388,7 +2388,7 @@ characters = {
 		allowed_civil_war = {
 			OR = {
 				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
+				AND = { #If not aligned by Right oppo, then stays with Katyusha
 					original_tag = SOV
 					NOT = { tag = SOV }
 					NOT = {
@@ -3591,7 +3591,7 @@ characters = {
 			allowed = {
 				OR = {
 					original_tag = SOV
-					original_tag = MAN # This is where he starts the game
+					original_tag = MAN # This is where she starts the game
 				}
 			}
 			available = {

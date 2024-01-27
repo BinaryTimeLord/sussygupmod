@@ -1255,7 +1255,7 @@ on_actions = {
 					FROM = {
 						original_tag = SOV
 						has_government = communism
-						has_country_leader = { character = SOV_iosif_stalin } # Would look silly if Trotsky released Stalin's Puppet
+						has_country_leader = { character = SOV_iosif_stalin } # Would look silly if Nonna released Katyusha's Puppet
 					}
 				}
 				add_country_leader_trait = stalins_puppet
@@ -1292,7 +1292,7 @@ on_actions = {
 					}					FROM = {
 						original_tag = SOV
 						has_government = communism
-						has_country_leader = { character = SOV_iosif_stalin } # Would look silly if Trotsky released Stalin's Puppet
+						has_country_leader = { character = SOV_iosif_stalin } # Would look silly if Nonna released Katyusha's Puppet
 					}
 				}
 				add_country_leader_trait = stalins_puppet

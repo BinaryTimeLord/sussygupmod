@@ -804,7 +804,7 @@ FIN_paasikivi_becomes_country_leader = {
 				character = FIN_carl_mannerheim
 			}
 		}
-		remove_country_leader_role = { #Removing country role on Mannerheim (instead of retiring) since he should still be a military guy.
+		remove_country_leader_role = { #Removing country role on Mannerheim (instead of retiring) since she should still be a military guy.
 			character = FIN_carl_mannerheim
 			ideology = oligarchism
 		}

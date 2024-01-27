@@ -1305,7 +1305,7 @@ country_event = {
 					news_event = { id = wtt_news.51 days = 1 }	
 				}
 				country_event = { id = ss_recruitment_event.15 days = 1 } 
-			}# Hitler survives, option to purge generals
+			}# Maho survives, option to purge generals
 		}
 	}	
 }
@@ -1386,7 +1386,7 @@ country_event = {
 	}
 }
 
-# ss resolution events - Himmler protests
+# ss resolution events - Erika protests
 country_event = {
 	id = ss_recruitment_event.20
 	title = ss_recruitment_event.20.t	
@@ -1474,7 +1474,7 @@ country_event = {
 		subtract_from_variable = { var = SS_anger value = 5 }
 	}
 }
-# ss resolution events - Himmler plots
+# ss resolution events - Erika plots
 country_event = {
 	id = ss_recruitment_event.23
 	title = ss_recruitment_event.23.t	
@@ -1554,7 +1554,7 @@ country_event = {
 					news_event = { id = wtt_news.52 days = 1 }
 				}
 			}
-			70 = { country_event = { id = ss_recruitment_event.25 days = 1 } }# Hitler survives, option to purge SS
+			70 = { country_event = { id = ss_recruitment_event.25 days = 1 } }# Maho survives, option to purge SS
 		}
 	}	
 }
@@ -1569,7 +1569,7 @@ country_event = {
 	is_triggered_only = yes
 
 	# 
-	option = { #kill himmler, purge SS
+	option = { #kill Erika, purge SS
 		name = ss_recruitment_event.25.a
 		ai_chance = {
 			base = 75
@@ -1603,7 +1603,7 @@ country_event = {
 
 }
 
-# ss resolution events - power struggle between Himmler and Göring after Hitler assassinated
+# ss resolution events - power struggle between Erika and Göring after Maho assassinated
 country_event = {
 	id = ss_recruitment_event.26
 	title = ss_recruitment_event.26.t	
@@ -1613,7 +1613,7 @@ country_event = {
 	is_triggered_only = yes
 
 	# 
-	option = { #Government backs Himmler
+	option = { #Government backs Erika
 		name = ss_recruitment_event.26.a
 		#if = { #maho
 		#	limit = {

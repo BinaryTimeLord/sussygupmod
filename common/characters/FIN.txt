@@ -1777,7 +1777,7 @@ characters = {
 					modifier = {
 						factor = 10
 						FIN_is_fascist_ai = yes
-						date < 1937.10.01 #He will become country leader after completing the focus A Fascist Regime at the end of 1937
+						date < 1937.10.01 #she will become country leader after completing the focus A Fascist Regime at the end of 1937
 					}
 				}
 			}
@@ -2611,7 +2611,7 @@ characters = {
 				has_dlc = "Arms Against Tyranny"
 			}
 			available = {
-				if = { #Only show tooltip if he is not extradited
+				if = { #Only show tooltip if she is not extradited
 					limit = {
 						NOT = { has_country_flag = FIN_kullervo_manner_extradited_flag }
 					}

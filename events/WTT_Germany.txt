@@ -2210,7 +2210,7 @@ state_event = {
 	}
 }
 
-# Hitler suicide upon fall of Berlin in civil war
+# Maho suicide upon fall of Berlin in civil war
 country_event = {
 	id = wtt_germany.50
 	title = wtt_germany.50.t

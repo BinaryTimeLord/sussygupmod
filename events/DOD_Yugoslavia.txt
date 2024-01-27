@@ -4845,7 +4845,7 @@ country_event = {
 	}
 }
 
-#Age King Peter after a few years
+#Age Queen Peter after a few years
 country_event = {
 	id = DOD_yugoslavia.19
 	title = DOD_yugoslavia.19.t

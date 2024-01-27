@@ -3576,7 +3576,7 @@ country_event = {
 		}	
 	}
 }
-#The King Takes Power
+#The Queen Takes Power
 country_event = {
 	id = bftb_greece.50
 	title = bftb_greece.50.t
@@ -4761,7 +4761,7 @@ country_event = {
 		}	
 	}
 }
-#Byzantinists - An Emperor Appears
+#Byzantinists - An Empress Appears
 country_event = {
 	id = bftb_greece.232
 	title = bftb_greece.232.t
@@ -4809,7 +4809,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = bftb_greece.232.b #he's a madman!
+		name = bftb_greece.232.b #she's a madman!
 		add_stability = 0.05
 	}
 }
@@ -5214,7 +5214,7 @@ country_event = {
 		}
 	}	
 }
-#German investment events - German businessmen attend Greek national showcase to lure investors
+#German investment events - German businesswomen attend Greek national showcase to lure investors
 country_event = {
 	id = bftb_greece.167
 	title = bftb_greece.167.t

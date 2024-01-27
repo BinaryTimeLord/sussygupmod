@@ -1366,7 +1366,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Stalin in charge) (with No Step Back)
+		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Katyusha in charge) (with No Step Back)
 			limit = {
 				has_dlc = "No Step Back"
 				has_dlc = "La Resistance"

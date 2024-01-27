@@ -659,12 +659,12 @@ on_actions = {
 						exists = yes 
 						date > 1938.10.29 # 20 days before Queen Maud death. 
 					}
-					if = { # The King Dies
+					if = { # The Queen Dies
 						limit = {
 							has_country_flag = NOR_has_a_rikstanken
 							has_completed_focus = NOR_the_chamberlains_overture
 						}
-						if = { # The King Dies
+						if = { # The Queen Dies
 							limit = {
 								has_completed_focus = NOR_shield_of_the_north
 								has_war = yes
@@ -2970,7 +2970,7 @@ on_actions = {
 			###########################################################
 			###### RYTI ############################## VON HESSE ######
 			###########################################################
-			else_if = { #RYTI - GOOD = Control Cores owned by enemies |||| BAD = Some Democ OR Commie // Losing Cores  ######## Also used for King von Hesse
+			else_if = { #RYTI - GOOD = Control Cores owned by enemies |||| BAD = Some Democ OR Commie // Losing Cores  ######## Also used for Queen von Hesse
 				limit = {
 					OR = {
 						has_country_leader = {

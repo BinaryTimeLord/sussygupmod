@@ -389,10 +389,10 @@ set_variable = { SOV_paranoia_low_decrease = -10 } #Paranoia low decrement -----
 set_variable = { SOV_paranoia_medium_decrease = -20 } #Paranoia medium decrement --------> (prev -10)
 set_variable = { SOV_paranoia_high_decrease = -30 } #Paranoia high decrement --------> (prev -15)
 set_variable = { SOV_paranoia_very_high_decrease = -50 } #Paranoia very high decrement --------> (prev -25)
-set_variable = { SOV_paranoia_lower_threshold = 25 } #Lower Threshold -> Below Stalin doesn't purge
-set_variable = { SOV_paranoia_higher_threshold = 75 } #Higher Threshold -> Below Stalin purges occasionally / Above Stalin can start a Great Purge
-set_variable = { SOV_paranoia_modifier_increase = 1 } #Paranoia weekly increase via modifiers (Stalin's Paranoid leader trait) // WARNING: CUSTOM TOOLTIP DOES NOT WORK WITH VARS so needs to be updated
-set_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } #Number of Weekly Paranoia Modifiers currently active (Stalin's trait, Heads of NKVD, etc.). This value will be mulptiplied by SOV_paranoia_modifier_increase in order to apply the final weekly modifier
+set_variable = { SOV_paranoia_lower_threshold = 25 } #Lower Threshold -> Below Katyusha doesn't purge
+set_variable = { SOV_paranoia_higher_threshold = 75 } #Higher Threshold -> Below Katyusha purges occasionally / Above Katyusha can start a Great Purge
+set_variable = { SOV_paranoia_modifier_increase = 1 } #Paranoia weekly increase via modifiers (Katyusha's Paranoid leader trait) // WARNING: CUSTOM TOOLTIP DOES NOT WORK WITH VARS so needs to be updated
+set_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } #Number of Weekly Paranoia Modifiers currently active (Katyusha's trait, Heads of NKVD, etc.). This value will be mulptiplied by SOV_paranoia_modifier_increase in order to apply the final weekly modifier
 SOV_paranoia_modifier_update_gui_tooltip = yes #Used in the Paranoia GUI to show total weekly increase/decrease of Paranoia
 set_country_flag = SOV_paranoia_modifier_active_flag
 set_variable = { SOV_paranoia_great_purge_administration_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
@@ -425,8 +425,8 @@ set_variable = { SOV_purge_event_pp_to_avoid_great = 0 } #PP Required to show th
 set_variable = { SOV_purge_event_pp_to_avoid_regular_pay = -60 } #PP to be paid to avoid a regular purge
 set_variable = { SOV_purge_event_pp_to_avoid_great_pay = -120 } #PP to be paid to avoid a great purge
 
-set_variable = { SOV_paranoia_calm_down_stalin_re_enable_days = 180 } #Calm Down Stalin decision cooldown
-set_variable = { SOV_paranoia_calm_down_stalin_decision_cost = 25 } #Calm Down Stalin decision cost
+set_variable = { SOV_paranoia_calm_down_stalin_re_enable_days = 180 } #Calm Down Katyusha decision cooldown
+set_variable = { SOV_paranoia_calm_down_stalin_decision_cost = 25 } #Calm Down Katyusha decision cost
 set_variable = { SOV_paranoia_inspection_re_enable_days = 180 } #Inpsection decisions cooldown
 set_variable = { SOV_paranoia_inspection_remove_days = 7 } #Inspection decisions time to complete
 set_variable = { SOV_paranoia_inspection_decision_cost = 50 } #Inspection decisions cost
@@ -593,7 +593,7 @@ set_variable = { SOV_the_politburo_communism_drift = 0.05 }
 
 set_variable = { SOV_the_politburo_defensive_war_stability_factor = 0 } # -> Socialism in One Country
 set_variable = { SOV_the_politburo_drift_defence_factor = 0 } # -> Socialism in One Country
-set_variable = { SOV_the_politburo_political_power_factor = 0 } #0.05 -> The Stalin Constitution
+set_variable = { SOV_the_politburo_political_power_factor = 0 } #0.05 -> The Katyusha Constitution
 set_variable = { SOV_the_politburo_economy_cost_factor = 0 } # -> Secure the Administration
 set_variable = { SOV_the_politburo_trade_laws_cost_factor = 0 } # -> Secure the Administration
 set_variable = { SOV_the_politburo_mobilization_laws_cost_factor = 0 } # -> Secure the Administration

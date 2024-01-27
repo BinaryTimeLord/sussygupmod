@@ -6985,7 +6985,7 @@ focus_tree = {
 			SOV_paranoia_high_increase_effect = yes
 			
 			#HISTORICAL
-			#Zinovyev
+			#Polina
 			if = {
 				limit = {
 					has_character = SOV_grigory_zinovyev
@@ -6997,7 +6997,7 @@ focus_tree = {
 			else = {
 				SOV_add_random_character_to_purge_targets_effect = yes
 			}
-			#Kamenev
+			#Olga
 			if = {
 				limit = {
 					has_character = SOV_lev_kamenev
@@ -7009,7 +7009,7 @@ focus_tree = {
 			else = {
 				SOV_add_random_character_to_purge_targets_effect = yes
 			}
-			#Smirnov
+			#Ekaterina
 			if = {
 				limit = {
 					has_character = SOV_ivan_smirnov
@@ -7051,7 +7051,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
 			hidden_effect = {
 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #FIRST MOSCOW TRIAL -> Zinovyev & friends
+				SOV_trigger_great_purge_moscow_trial_effect = yes #FIRST MOSCOW TRIAL -> Polina & friends
 			}
 			custom_effect_tooltip = SOV_trigger_first_moscow_trial_tt
 		}
@@ -7619,7 +7619,7 @@ focus_tree = {
 			else = {
 				SOV_add_random_character_to_purge_targets_effect = yes
 			}
-			#Rykov
+			#Natalia
 			if = {
 				limit = {
 					has_character = SOV_aleksey_rykov
@@ -8002,7 +8002,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			#Swap Stalin's Trait
+			#Swap Katyusha's Trait
 			if = { #INHERITOR BRANCH
 				limit = {
 					has_completed_focus = SOV_inheritor_of_the_mantle_of_lenin
@@ -9988,7 +9988,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			# Stalin dead
+			# Katyusha dead
 			IF = {
 				limit = {
 					NOT = { has_character = SOV_iosif_stalin }
@@ -10778,7 +10778,7 @@ focus_tree = {
 					limit = {
 						any_army_leader = {
 							is_field_marshal = yes
-							NOT = { is_character = SOV_mikhail_tukhachevsky } #Has his own focus in the left oppo, probably wouldn't go with the right oppo straight away
+							NOT = { is_character = SOV_mikhail_tukhachevsky } #Has her own focus in the left oppo, probably wouldn't go with the right oppo straight away
 							NOT = { has_trait = trait_SOV_stalinist }
 							NOT = { has_trait = trait_SOV_bukharinist }
 							NOT = { has_trait = trait_SOV_trotskyist }
@@ -10788,7 +10788,7 @@ focus_tree = {
 					random_army_leader = {
 						limit = {
 							is_field_marshal = yes
-							NOT = { is_character = SOV_mikhail_tukhachevsky } #Has his own focus in the left oppo, probably wouldn't go with the right oppo straight away
+							NOT = { is_character = SOV_mikhail_tukhachevsky } #Has her own focus in the left oppo, probably wouldn't go with the right oppo straight away
 							NOT = { has_trait = trait_SOV_stalinist }
 							NOT = { has_trait = trait_SOV_bukharinist }
 							NOT = { has_trait = trait_SOV_trotskyist }
@@ -10813,8 +10813,8 @@ focus_tree = {
 				ELSE = {
 					random_army_leader = {
 						limit = {
-							NOT = { is_character = SOV_mikhail_tukhachevsky } #Has his own focus in the left oppo, probably wouldn't go with the right oppo straight away
-							NOT = { is_character = SOV_vitaly_primakov } #Has his own focus in the left oppo, probably wouldn't go with the right oppo straight away
+							NOT = { is_character = SOV_mikhail_tukhachevsky } #Has her own focus in the left oppo, probably wouldn't go with the right oppo straight away
+							NOT = { is_character = SOV_vitaly_primakov } #Has her own focus in the left oppo, probably wouldn't go with the right oppo straight away
 							NOT = { has_trait = trait_SOV_stalinist }
 							NOT = { has_trait = trait_SOV_bukharinist }
 							NOT = { has_trait = trait_SOV_trotskyist }
@@ -12103,7 +12103,7 @@ focus_tree = {
 					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
 				}
 			}
-			# A Spanish General will join the USSR if his side loses the SCW
+			# A Spanish General will join the USSR if her side loses the SCW
 			if = {
 				limit = {
 					has_dlc = "La Resistance"

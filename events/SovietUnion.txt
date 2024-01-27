@@ -472,7 +472,7 @@ country_event = {
 	}
 }
 
-# Improving the Stalin Line
+# Improving the Katyusha Line
 country_event = {
 	id = soviet.17
 	title = soviet.17.t

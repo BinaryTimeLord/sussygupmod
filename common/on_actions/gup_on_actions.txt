@@ -209,7 +209,7 @@ on_actions = {
 		}
 	}
 
-	#Triggers random schizo mussolini effects
+	#Triggers random schizo anchovy effects
 	on_monthly = {
 		effect = {
 			if = {
