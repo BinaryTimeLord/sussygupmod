@@ -64,6 +64,7 @@ characters = {
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 	SOV_klara={
@@ -86,7 +87,9 @@ characters = {
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=-
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 		}
 		country_leader = {
 			ideology = soviet_idealism3
@@ -116,6 +119,8 @@ characters = {
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 		}
 	}
 	SOV_alina={
@@ -139,6 +144,7 @@ characters = {
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 		country_leader = {
 			ideology = socialism

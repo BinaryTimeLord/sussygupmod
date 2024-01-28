@@ -52,15 +52,12 @@ if = {
 }
 
 recruit_character = SLO_anzu
-recruit_character = SLO_miho_nishizumi
 recruit_character = SLO_saori_takebe
 recruit_character = SLO_hana_isuzu
-recruit_character = SLO_yukari_akiyama
 recruit_character = SLO_mako_reizei
 recruit_character = SLO_anzu_kadotani
 recruit_character = SLO_momo_kawashima
 recruit_character = SLO_yuzu_koyama
-recruit_character = SLO_erwin
 recruit_character = SLO_oryou
 recruit_character = SLO_saemonza
 recruit_character = SLO_caesar

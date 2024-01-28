@@ -7607,7 +7607,18 @@ focus_tree = {
 			add_political_power = 25
 
 			#HISTORICAL
-			#Bukharin
+			#Alina
+			if = {
+				limit = {
+					has_character = SOV_alina
+				}
+				SOV_alina = {
+					set_character_flag = SOV_targeted_for_purge_flag
+				}
+			}
+			else = {
+				SOV_add_random_character_to_purge_targets_effect = yes
+			}
 			if = {
 				limit = {
 					has_character = SOV_nikolay_bukharin
@@ -7710,6 +7721,7 @@ focus_tree = {
 
 			SOV_paranoia_high_decrease_effect = yes
 		}
+		retire_character = SOV_nonna
 	}
 
 	focus = {
@@ -8532,7 +8544,7 @@ focus_tree = {
 			SOV_nikolay_bukharin = { set_character_flag = SOV_potential_target_flag }
 			SOV_mikhail_tomsky = { set_character_flag = SOV_potential_target_flag }
 			SOV_aleksey_rykov = { set_character_flag = SOV_potential_target_flag }
-			
+			retire_character = SOV_alina
 		}
 	}
 
@@ -9714,7 +9726,7 @@ focus_tree = {
 			SOV_karl_radek = { set_character_flag = SOV_potential_target_flag }
 			SOV_ivar_smilga = { set_character_flag = SOV_potential_target_flag }
 			SOV_yevgeny_preobrazhensky = { set_character_flag = SOV_potential_target_flag }
-			
+			retire_character = SOV_nonna
 		}
 	}
 
@@ -16560,7 +16572,6 @@ ai_will_do = {
 			}
 			custom_effect_tooltip = SOV_dismantle_the_zemsky_sobor_tt
 			add_stability = dismantle_the_zemsky_sobor_var
-			retire_character = SOV_tsar_vladimir_kirillovich
 			add_ideas = SOV_tsar_vladimir_i
 			set_politics = {
 				ruling_party = fascism
@@ -16570,7 +16581,6 @@ ai_will_do = {
 				ideology = fascism
 				popularity = 0.15
 			}
-			promote_character = SOV_konstantin_rodzayevsky
 			add_ideas = SOV_national_brotherhood_idea
 			news_event = { id = nsb_news.401 hours = 12 }
 			IF = { 
@@ -17045,11 +17055,6 @@ ai_will_do = {
    			}
    			remove_ideas = SOV_tsar_vladimir_i
    			custom_effect_tooltip = SOV_the_third_rome_tt
-   			promote_character = SOV_metropolitan_meletius
-   			set_country_leader_name = {
-			  ideology = neutrality
-			  name = SOV_patriarch_meletius
-			}
 			custom_effect_tooltip = SOV_the_third_rome_tt_2
    			country_event = NSB_soviet_fascist_tsarist.15
 		}
