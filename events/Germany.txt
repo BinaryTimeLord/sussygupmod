@@ -62,10 +62,40 @@ country_event = {
 			}
 		}
 
+		GER = {
+            add_field_marshal_role = {
+		        traits={ brilliant_strategist armor_officer panzer_leader inspirational_leader }
+                character = GER_miho
+                skill = 5
+                attack_skill = 3
+                defense_skill = 4
+                planning_skill = 4
+                logistics_skill = 2
+            }
+            add_corps_commander_role = {
+		        traits={ armor_officer panzer_leader commando winter_specialist adaptable }
+                character = GER_yukari
+                skill = 5
+                attack_skill = 3
+                defense_skill = 2
+                planning_skill = 3
+                logistics_skill = 4
+            }
+            add_corps_commander_role = {
+		        traits={ brilliant_strategist panzer_leader desert_fox }
+                character = GER_riko
+                skill = 4
+                attack_skill = 3
+                defense_skill = 2
+                planning_skill = 2
+                logistics_skill = 2
+            }
+		}
+
         AUS = {
-			AUS_miho_nishizumi = { set_nationality = GER }
-			AUS_yukari_akiyama = { set_nationality = GER }
-			AUS_erwin = { set_nationality = GER }
+			retire_character = AUS_miho_nishizumi
+			retire_character = AUS_yukari_akiyama 
+			retire_character = AUS_erwin 
 		} 
 		
 		annex_country = { target = AUS transfer_troops = yes }

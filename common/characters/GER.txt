@@ -175,7 +175,7 @@ characters={
 		name="Emi Nakasuga"
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Nakasuga.dds"
+				large="gfx/leaders/GER/Portrait_GER_Nakasuga1.dds"
 			}
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_nakasuga.dds"
@@ -192,9 +192,48 @@ characters={
 		}
 	}
 
+    GER_miho={
+		name="Miho Nishizumi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Miho1.dds"
+			}
+		}
+	}
+
+    GER_riko={
+		name="Riko Matsumoto"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_riko_matsumoto_high_command.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Riko.dds"
+			}
+		}
+	}
+
+    GER_yukari={
+		name="Yukari Akiyama"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_yukari_akiyama_theorist.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Yukari.dds"
+			}
+		}
+	}
+
     GER_yuzumoto={
 		name="Yuzumoto Hitomi"
 		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_Yuzumoto1.dds"
+			}
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_yuzumoto.dds"
 			}
@@ -208,7 +247,7 @@ characters={
 		name="Kita Kabayo"
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Kita.dds"
+				large="gfx/leaders/GER/Portrait_GER_Kita1.dds"
 			}
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_kita.dds"

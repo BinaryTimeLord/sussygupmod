@@ -7697,6 +7697,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
+		retire_character = SOV_nonna
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -7721,7 +7722,6 @@ focus_tree = {
 
 			SOV_paranoia_high_decrease_effect = yes
 		}
-		retire_character = SOV_nonna
 	}
 
 	focus = {

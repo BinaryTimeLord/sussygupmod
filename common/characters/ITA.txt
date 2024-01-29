@@ -175,7 +175,7 @@ characters = {
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_takako_suzuki_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Caesar.dds"
+				large="gfx/leaders/ITA/Portrait_ITA_Caesar.dds"
 			}
 		}
 	}                                                                                            

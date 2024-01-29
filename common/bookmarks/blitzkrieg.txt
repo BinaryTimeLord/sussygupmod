@@ -63,9 +63,9 @@ bookmarks = {
 				GER_autarky_idea
 			}
 			focuses = {
-				GER_weserubung
-				GER_plan_z
-				GER_ussr_war_goal
+				GER_anschluss
+				GER_erika_ss
+				GER_river_incident
 			}
 		}
 		ITA = {
@@ -78,9 +78,9 @@ bookmarks = {
 				ITA_pact_of_steel
 			}
 			focuses = {
-                ITA_italy_first
-				ITA_mussolinis_cult_of_personality
-				ITA_go_after_france
+				ITA_return_of_the_republic
+				ITA_the_sovereign_question
+				ITA_rebuild_the_empire
 			}			
 		}
 		ITA = {
@@ -93,9 +93,9 @@ bookmarks = {
 				ITA_pact_of_steel
 			}
 			focuses = {
-				ITA_battaglioni_d_assalto
-				ITA_by_blood_alone
-				ITA_ferrea_mole_ferreo_cuore
+				ITA_return_of_the_republic
+				ITA_the_sovereign_question
+				ITA_rebuild_the_empire
 			}			
 		}
 		JAP = {
@@ -107,9 +107,9 @@ bookmarks = {
 				JAP_militarism
 			}	
 			focuses = {
-				JAP_strike_south_doctrine
-				JAP_the_zero
-				JAP_tora_tora_tora
+				JAP_purge_the_kodoha_faction
+				JAP_nishi_era
+				JAP_support_the_kodoha_faction
 			}		
 		}
 		SOV = {
@@ -121,9 +121,9 @@ bookmarks = {
 				SOV_purged_junior_army_officers_2
 			}
 			focuses = {
-				SOV_found_the_comecon
-				SOV_father_of_nations
-				SOV_patriarch_of_all_russia
+				SOV_Nonna_leads
+				SOV_great_purge
+				SOV_reconvene_the_zemsky_sobor
 			}
 		}
 
@@ -544,9 +544,9 @@ bookmarks = {
 				FIN_mass_ski_equipment
 			}
 			focuses = {
-				FIN_red_menace
-				FIN_white_snipers
-				FIN_war_on_independence
+				FIN_eastern_question
+				FIN_war_dictatorship
+				FIN_New_Finland
 			}
 		}
 		FIN={
@@ -560,9 +560,9 @@ bookmarks = {
 				FIN_repurposed_small_industries
 			}
 			focuses = {
-				FIN_winter_warfare
-				FIN_the_lone_wolf
-				FIN_long_range_patrols
+				FIN_eastern_question
+				FIN_war_dictatorship
+				FIN_New_Finland
 			}
 		}	
 		SWE={

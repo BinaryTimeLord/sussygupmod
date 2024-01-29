@@ -151,7 +151,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_oryou.dds"
 			}
 			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Oryou.dds"
+				large="gfx/leaders/JAP/Portrait_JAP_Oryou.dds"
 			}
 		}
 	}
@@ -163,7 +163,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_saemonza.dds"
 			}
 			army={
-				large="gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
+				large="gfx/leaders/JAP/Portrait_JAP_Saemonza.dds"
 			}
 		}
 	}

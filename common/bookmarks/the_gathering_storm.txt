@@ -92,7 +92,7 @@ bookmarks = {
 			}
 			focuses = {
 				GER_anschluss
-				GER_danzig_or_war
+				GER_erika_ss
 				GER_river_incident
 			}
 		}
@@ -107,8 +107,8 @@ bookmarks = {
 			}
 			focuses = {
 				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
+				GER_erika_ss
+				GER_river_incident
 			}
 		}
 		"ITA"={
@@ -121,9 +121,9 @@ bookmarks = {
 				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_il_sol_dell_avvenire
-				ITA_a_colonial_empire
+				ITA_return_of_the_republic
+				ITA_the_sovereign_question
+				ITA_rebuild_the_empire
 			}		
 		}
 		"ITA"={
@@ -137,7 +137,7 @@ bookmarks = {
 			}	
 			focuses = {
 				ITA_return_of_the_republic
-				ITA_the_workers_revolution
+				ITA_the_sovereign_question
 				ITA_rebuild_the_empire
                 }
             }
@@ -151,7 +151,7 @@ bookmarks = {
 			}	
 			focuses = {
 				JAP_purge_the_kodoha_faction
-				JAP_waking_the_tiger
+				JAP_nishi_era
 				JAP_support_the_kodoha_faction
 			}			
 		}
@@ -165,8 +165,8 @@ bookmarks = {
 				SOV_politicized_military
 			}
 			focuses = {
-				SOV_behead_the_snake
-				SOV_the_supreme_soviet
+				SOV_Nonna_leads
+				SOV_great_purge
 				SOV_reconvene_the_zemsky_sobor
 			}
 		}
@@ -180,9 +180,9 @@ bookmarks = {
 				home_of_revolution
 			}
 			focuses = {
+				SOV_Nonna_leads
 				SOV_great_purge
-				SOV_democratic_government
-				SOV_the_black_army
+				SOV_reconvene_the_zemsky_sobor
 			}	
 		}
 		
@@ -663,9 +663,9 @@ bookmarks = {
 				FIN_mass_ski_equipment
 			}
 			focuses = {
-				FIN_red_finland
-				FIN_winter_warfare
-				FIN_greater_finland
+				FIN_eastern_question
+				FIN_war_dictatorship
+				FIN_New_Finland
 			}
 		}
 		SWE={

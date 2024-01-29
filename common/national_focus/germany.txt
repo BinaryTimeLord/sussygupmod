@@ -13982,6 +13982,15 @@ focus = {
 				ideology = german_idealism
 				traits = { }
 			}
+            add_field_marshal_role = {
+		        traits={ brilliant_strategist armor_officer panzer_leader inspirational_leader }
+                character = GER_miho
+                skill = 5
+                attack_skill = 3
+                defense_skill = 4
+                planning_skill = 4
+                logistics_skill = 2
+            }
 		}
 	}
 	
