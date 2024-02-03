@@ -145,3 +145,8 @@
  MEN_DEF: "Teramotokoku"
  MEN_ADJ: "Teramotokoku"
  STATE_42: "Kuroland"
+ stalin_father_of_nations:0 "Mother of Nations"
+ stalin_servant_of_lenin:0 "Faithful Servant of Pravda"
+ stalin_inheritor_of_lenin:0 "Inheritor of the Mantle of Pravda"
+ trait_SOV_trotskyist:0 "Nonnist"
+ trait_SOV_bukharinist:0 "Alinist"

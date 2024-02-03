@@ -7607,29 +7607,6 @@ focus_tree = {
 			add_political_power = 25
 
 			#HISTORICAL
-			#Alina
-			if = {
-				limit = {
-					has_character = SOV_alina
-				}
-				SOV_alina = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			if = {
-				limit = {
-					has_character = SOV_nikolay_bukharin
-				}
-				SOV_nikolay_bukharin = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
 			#Natalia
 			if = {
 				limit = {
@@ -7698,29 +7675,9 @@ focus_tree = {
 
 		completion_reward = {
 		retire_character = SOV_nonna
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = SOV_behead_the_snake_lar_tt
-				create_operative_leader = {
-					name = "Ramón Mercader"
-					GFX = GFX_portrait_SOV_ramon_mercader
-					traits = { operative_tough operative_infiltrator }
-					bypass_recruitment = no
-					available_to_spy_master = yes
-					nationalities = { SOV SPR MEX }
-				}
+		retire_character = SOV_alina
 
-				#Extra operative slot
-				set_variable = { SOV_the_politburo_operative_slot = 1 }
-				custom_effect_tooltip = SOV_behead_the_snake_ns_tt
-			}
-			else = {
-				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
-			}
-
-			SOV_paranoia_high_decrease_effect = yes
+		SOV_paranoia_high_decrease_effect = yes
 		}
 	}
 
@@ -8147,7 +8104,7 @@ focus_tree = {
 				add = stalin_father_of_nations
 			}
 			hidden_effect = {
-				play_song = "comintern_war_1"
+				play_song = "greatkatyusha"
 			}
 		}
 	}
@@ -8829,6 +8786,15 @@ focus_tree = {
 			add_to_variable = { SOV.SOV_left_opposition_navy_support = 0.05 }
 			add_to_variable = { SOV.SOV_left_opposition_air_support = 0.05 }
 			hidden_effect = {
+			SOV_nonna = {
+				add_unit_leader_trait = trait_SOV_trotskyist
+				set_character_flag = SOV_aligned_left_opposition_flag
+				promote_leader = yes
+			    }
+			SOV_klara = {
+				add_unit_leader_trait = trait_SOV_trotskyist
+				set_character_flag = SOV_aligned_left_opposition_flag
+			    }
 				country_event = {
 					id = NSB_soviet_communist_civil_war.001
 					hours = 1
@@ -10000,6 +9966,17 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			hidden_effect = {
+			SOV_alina = {
+				add_unit_leader_trait = trait_SOV_bukharinist
+				set_character_flag = SOV_aligned_right_opposition_flag
+				promote_leader = yes
+			}
+			SOV_nina = {
+				add_unit_leader_trait = trait_SOV_bukharinist
+				set_character_flag = SOV_aligned_right_opposition_flag
+			}
+			}
 			# Katyusha dead
 			IF = {
 				limit = {
@@ -16572,7 +16549,14 @@ ai_will_do = {
 			}
 			custom_effect_tooltip = SOV_dismantle_the_zemsky_sobor_tt
 			add_stability = dismantle_the_zemsky_sobor_var
-			add_ideas = SOV_tsar_vladimir_i
+            create_country_leader = {
+            	name = "Klara"
+	            desc = "POLITICS_KLARA_DESC"
+	            picture = "Portrait_SOV_Klara1.dds"
+	            expire = "1965.1.1"
+	            ideology = fascism_ideology
+	            traits = { }
+            }
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = yes

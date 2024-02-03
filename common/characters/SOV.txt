@@ -87,10 +87,9 @@ characters = {
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=-
+			legacy_id=-1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 		country_leader = {
@@ -100,8 +99,61 @@ characters = {
 			id = -1
 		}
 	}
+	SOV_clara={
+		name="Clara"
+		portraits={
+			civilian = {
+				large="gfx/leaders/SOV/Portrait_SOV_Klara.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Pravda/idea_sov_klara.dds"
+			}
+			army={
+				large="gfx/leaders/SOV/Portrait_SOV_Klara1.dds"
+			}
+		}
+		field_marshal={
+			traits={ panzer_leader winter_specialist winter_expert }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+			}
+		}
+	}
 	SOV_nina={
 		name="Nina"
+		portraits={
+			civilian = {
+				large="gfx/leaders/SOV/Portrait_SOV_Nina.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Pravda/idea_sov_nina.dds"
+			}
+			army={
+				large="gfx/leaders/SOV/Portrait_SOV_Nina1.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trait_engineer panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+			}
+		}
+	}
+	SOV_mina={
+		name="Mina"
 		portraits={
 			civilian = {
 				large="gfx/leaders/SOV/Portrait_SOV_Nina.dds"

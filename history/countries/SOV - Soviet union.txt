@@ -144,6 +144,8 @@ if = {
 	recruit_character = SOV_vladimir_kosmin
 	recruit_character = SOV_andrey_shkuro
 	recruit_character = SOV_anton_denikin
+    recruit_character = SOV_clara
+    recruit_character = SOV_mina
 }
 
 
@@ -242,8 +244,14 @@ if = {
 		set_character_flag = SOV_exiled_flag
 		set_character_flag = SOV_exiled_army_leader
 	}
-	
-	
+	SOV_clara = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	SOV_mina = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
 }
 
 
