@@ -9609,15 +9609,6 @@ focus = {
 		}
 		ai_will_do = {
 			factor = 3
-		
-			modifier = {
-				AUS = {
-					is_ai = no
-				}
-				
-				factor = 25
-			}
-			
 		}
 
 		offset = {

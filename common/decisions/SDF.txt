@@ -1107,42 +1107,16 @@ AUS_intervention = {
 		
 		icon = GFX_decision_generic_prepare_civil_war
 		
-		visible = {
-			OR = {
-				AUS = {
-					has_ai = no
-				}
-				
-				GER = {
-					has_civil_war = yes
-				}
-			}
-		}
-	
-		activation = {
-			AUS = {
-				has_ai = no
-			}
-		}
-		
 		available = {
-			GER = {
-				has_civil_war = yes
-			}
+			has_completed_focus = the_trollge
 		}
 		
-		is_good = yes
-		
-		days_mission_timeout = 35
+		days_mission_timeout = 69 #funni number
 		selectable_mission = no
 		complete_effect = {
-			
-		}
-		
-		timeout_effect = { 
 			GER = {
 				complete_national_focus = GER_river_incident
-			}
+			}	
 		}
 	}
 }

@@ -6768,7 +6768,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_path_pravdaism
 		x = 16
 		y = 0
 		offset = {
@@ -6997,7 +6997,7 @@ focus_tree = {
 			else = {
 				SOV_add_random_character_to_purge_targets_effect = yes
 			}
-			#Olga
+			#Natalia
 			if = {
 				limit = {
 					has_character = SOV_lev_kamenev
@@ -7607,7 +7607,7 @@ focus_tree = {
 			add_political_power = 25
 
 			#HISTORICAL
-			#Natalia
+			#Olga
 			if = {
 				limit = {
 					has_character = SOV_aleksey_rykov
@@ -8214,7 +8214,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_the_left_opposition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_left_opposition
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_centre }
 		x = 2
@@ -8534,7 +8534,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_approach_tukhachevsky
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_approach_tukhachevsky
 		prerequisite = { focus = SOV_integrate_smirnovs_bloc }
 		x = -1
 		y = 1
@@ -8628,7 +8628,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_approach_primakov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_approach_primakov
 		prerequisite = { focus = SOV_integrate_smirnovs_bloc }
 		x = 1
 		y = 1
@@ -9669,7 +9669,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_eliminate_the_left
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_eliminate_left
 		prerequisite = { focus = SOV_the_need_for_policy_changes }
 		mutually_exclusive = { focus = SOV_cooperation_against_stalin }
 		x = -4
@@ -10999,7 +10999,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_align_the_zinovyevites
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_align_polinites
 		prerequisite = { focus = SOV_cooperation_against_stalin }
 		x = -1
 		y = 1
@@ -11075,7 +11075,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_liberate_ryutin
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_liberate_natalia
 		prerequisite = { focus = SOV_cooperation_against_stalin }
 		x = 1
 		y = 1
@@ -15281,7 +15281,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_beaten_but_not_defeated
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_beaten_defeated
 		x = 61
 		y = 0
 		relative_position_id = SOV_the_path_of_marxism_leninism
@@ -15624,7 +15624,7 @@ ai_will_do = {
 	}
 	focus = {
 		id = SOV_approach_semyonov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_approach_semyonov
 		prerequisite = { 
 			focus = SOV_embrace_the_black_hundreds
 		}

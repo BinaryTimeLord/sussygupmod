@@ -3,7 +3,7 @@ characters={
 		name="Anzu"
 		portraits={
 			civilian={
-				large="gfx/leaders/SLO/Portrait_AUS_Anzu1.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Anzu.dds"
 			}
 		}
 		country_leader={
@@ -21,7 +21,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Saori.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Saori.dds"
 			}
 		}
 		field_marshal={
@@ -41,7 +41,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_hana.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Hana.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Hana.dds"
 			}
 		}
 		field_marshal={
@@ -61,7 +61,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_mako_rezei_theorist.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Mako.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Mako.dds"
 			}
 		}
 		field_marshal={
@@ -81,7 +81,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_anzu_kadotani_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Anzu.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Anzu.dds"
 			}
 		}
 		corps_commander={
@@ -101,7 +101,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_momo_kawashima_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Momo.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Momo.dds"
 			}
 		}
 		corps_commander={
@@ -121,7 +121,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_yuzu.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Yuzu.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Yuzu.dds"
 			}
 		}
 		corps_commander={
@@ -141,7 +141,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_oryou.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Oryou.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Oryou.dds"
 			}
 		}
 		corps_commander={
@@ -161,7 +161,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_saemonza.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Saemonza.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
 			}
 		}
 		corps_commander={
@@ -181,7 +181,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_takako_suzuki_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Caesar.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Caesar.dds"
 			}
 		}
 		corps_commander={
@@ -201,7 +201,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_azusa_sawa_theorist.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Azusa.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Azusa.dds"
 			}
 		}
 		corps_commander={
@@ -221,7 +221,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_ayumi.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Ayumi.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Ayumi.dds"
 			}
 		}
 		corps_commander={
@@ -241,7 +241,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_aya.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Aya.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Aya.dds"
 			}
 		}
 		corps_commander={
@@ -261,7 +261,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_yuuki_utsugi_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Yuuki.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Yuuki.dds"
 			}
 		}
 		corps_commander={
@@ -281,7 +281,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_karina.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Karina.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Karina.dds"
 			}
 		}
 		corps_commander={
@@ -301,7 +301,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_saki.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Saki.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Saki.dds"
 			}
 		}
 		corps_commander={
@@ -321,7 +321,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_noriko.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Noriko.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Noriko.dds"
 			}
 		}
 		corps_commander={
@@ -341,7 +341,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_taeko.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Taeko.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Taeko.dds"
 			}
 		}
 		corps_commander={
@@ -361,7 +361,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_shinobu_kawanishi_theorist.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Shinobu.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Shinobu.dds"
 			}
 		}
 		corps_commander={
@@ -381,7 +381,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_akebi_sasaki_theorist.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Akebi.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Akebi.dds"
 			}
 		}
 		corps_commander={
@@ -401,7 +401,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_midoriko_sono_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Midoriko.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Midoriko.dds"
 			}
 		}
 		corps_commander={
@@ -421,7 +421,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_moyoko.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Moyoko.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Moyoko.dds"
 			}
 		}
 		corps_commander={
@@ -441,7 +441,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_nozomi.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Nozomi.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Nozomi.dds"
 			}
 		}
 		corps_commander={
@@ -461,7 +461,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_reira_nakajima_high_command.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Satoko.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Satoko.dds"
 			}
 		}
 		corps_commander={
@@ -481,7 +481,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_hoshino.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Hoshino.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Hoshino.dds"
 			}
 		}
 		corps_commander={
@@ -501,7 +501,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_suzuki.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Suzuki.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Suzuki.dds"
 			}
 		}
 		corps_commander={
@@ -521,7 +521,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_muuton_tsuchiya_theorist.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Tsuchiya.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Tsuchiya.dds"
 			}
 		}
 		corps_commander={
@@ -541,7 +541,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_nekota.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Nekota.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Nekota.dds"
 			}
 		}
 		corps_commander={
@@ -561,7 +561,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_piyotan.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Piyotan.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Piyotan.dds"
 			}
 		}
 		corps_commander={
@@ -581,7 +581,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_momoga.dds"
 			}
 			army={
-				large="gfx/leaders/SLO/Portrait_AUS_Momoga.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_Momoga.dds"
 			}
 		}
 		corps_commander={

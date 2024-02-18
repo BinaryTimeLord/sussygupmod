@@ -4658,7 +4658,7 @@ leader_traits = {
 		industrial_capacity_factory = -0.02
 	}
 
-	#Natalia
+	#Olga
 	labor_defense_organizer = {
 		random = no
 		sprite = 13
@@ -4678,7 +4678,7 @@ leader_traits = {
 		compliance_growth = -0.05
 	}
 
-	#Olga
+	#Natalia
 	the_faded_star = {
 		random = no
 		research_speed_factor = 0.03
@@ -4984,7 +4984,7 @@ leader_traits = {
 		line_change_production_efficiency_factor = 0.1
 	}
 
-	#Natalia
+	#Olga
 	peoples_commissar_for_posts_and_telegraphs = {
 		random = no
 		sprite = 13
@@ -5000,7 +5000,7 @@ leader_traits = {
 		political_power_factor = 0.15
 	}
 
-	#Olga
+	#Natalia
 	appeasing_technocrat = {
 		random = no
 		sprite = 13

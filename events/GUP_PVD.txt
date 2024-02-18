@@ -6,7 +6,7 @@ country_event = {
 	desc = {
 		text = pvd.1.desc
 	}		
-	picture = GFX_report_event_soviet_purge_politicians
+	picture = GFX_report_event_cht_treaty_sign
 
 	is_triggered_only = yes
 
@@ -41,7 +41,7 @@ country_event = {
 	title = pvd.1.title
 	desc = pvd.1.desc
 	
-	picture = GFX_report_event_communists_cheer
+	picture = GFX_report_event_cht_treaty_sign
 
 	is_triggered_only = yes
 	immediate = {
@@ -78,7 +78,7 @@ country_event = {
 	title = pvd.3.title
 	desc = pvd.3.desc
 	
-	picture = GFX_report_event_communists_cheer
+	picture = GFX_report_event_cht_treaty_sign
 
 	is_triggered_only = yes
 
@@ -171,7 +171,7 @@ country_event = {
 	title = pvd.4.t
 	desc = pvd.4.d
 	
-	picture = GFX_report_event_communists_cheer
+	picture = GFX_SOV_katyusha_happy
 
 	is_triggered_only = yes
 
@@ -185,7 +185,7 @@ country_event = {
 	title = pvd.5.t
 	desc = pvd.5.d
 	
-	picture = GFX_report_event_communists_cheer
+	picture = GFX_SOV_katyusha_angry
 
 	is_triggered_only = yes
 
@@ -204,7 +204,7 @@ country_event = {
 	title = pvd.6.t
 	desc = pvd.6.d
 	
-	picture = GFX_report_event_hungarian_soldiers
+	picture = GFX_SOV_reclaim_karelia
 
 	is_triggered_only = no
 	
@@ -243,7 +243,7 @@ country_event = {
 	title = pvd.7.t
 	desc = pvd.7.d
 	
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_SOV_pravda_victory
 
 	is_triggered_only = no
 	
@@ -279,7 +279,7 @@ country_event = {
 	title = pvd.8.t
 	desc = pvd.8.d
 	
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_SOV_mika_angry
 
 	is_triggered_only = yes
 	
@@ -338,7 +338,7 @@ country_event = {
 	title = pvd.9.t
 	desc = pvd.9.d
 	
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_SOV_mika_happy
 
 	is_triggered_only = yes
 	
@@ -354,7 +354,7 @@ country_event = {
 	title = pvd.10.t
 	desc = pvd.10.d
 	
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_SOV_karelian_war
 
 	is_triggered_only = yes
 	
@@ -369,7 +369,7 @@ country_event = {
 	id = pvd.11
 	title = germany.89.t
 	desc = pvd.11.d
-	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+	picture = GFX_SOV_kuromorimine_pravda
 
 	is_triggered_only = yes
 	
@@ -459,7 +459,7 @@ country_event = {
 	id = pvd.12
 	title = germany.90.t
 	desc = pvd.12.d
-	picture = GFX_report_event_stalin_02
+	picture = GFX_SOV_kuromorimine_pravda2
 
 	is_triggered_only = yes
 	
@@ -520,7 +520,7 @@ country_event = {
 	id = pvd.14
 	title = soviet.14.t
 	desc = soviet.14.d
-	picture = GFX_report_event_stalin_01
+	picture = GFX_report_event_cht_treaty_sign
 	
 	is_triggered_only = yes
 	
@@ -545,7 +545,7 @@ country_event = {
 	id = pvd.15
 	title = soviet.15.t
 	desc = soviet.15.d
-	picture = GFX_report_event_stalin_02
+	picture = GFX_SOV_katyusha_angry
 	
 	is_triggered_only = yes
 	
@@ -559,7 +559,7 @@ country_event = {
 	id = pvd.16
 	title = soviet.16.t
 	desc = soviet.16.d
-	picture = GFX_report_event_stalin_propaganda
+	picture = GFX_SOV_katyusha_happy
 	
 	is_triggered_only = yes
 	
@@ -742,7 +742,7 @@ country_event = {
 	id = pvd.20
 	title = pvd.20.t
 	desc = pvd.20.d
-	picture = GFX_report_news_event_aid_pact
+	picture = GFX_SOV_great_purge
 
 	is_triggered_only = no
 	
@@ -771,7 +771,7 @@ country_event = { #ITALIAN CIVIL WAR
 	id = pvd.21
 	title = pvd.21.t
 	desc = pvd.21.d
-	picture = report_event_spr_italian_volunteers
+	picture = GFX_SOV_its_choever
 
 	trigger = {
 		tag = ITA
@@ -839,7 +839,7 @@ country_event = { #GERMAN COMMIE CIVIL WAR
 	id = pvd.22
 	title = pvd.22.t
 	desc = pvd.22.d
-	picture = GFX_report_event_communists_cheer
+	picture = GFX_SOV_pravda_victory2
 
 	is_triggered_only = yes
 	
@@ -930,7 +930,7 @@ country_event = {
 	id = pvd.28
 	title = pvd.28.t
 	desc = pvd.28.d
-	picture = GFX_report_event_soviet_purge_politicians
+	picture = GFX_SOV_nonna_coup
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -998,7 +998,7 @@ country_event = {
 	id = pvd.29
 	title = pvd.29.t
 	desc = pvd.29.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_SOV_pravda_party
 			
 	fire_only_once = yes
 	
@@ -1059,7 +1059,7 @@ country_event = {
 	id = pvd.30
 	title = pvd.30.t
 	desc = pvd.30.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_SOV_pravda_party
 		
 	fire_only_once = yes
 	
@@ -1116,7 +1116,7 @@ country_event = {
 	id = pvd.31
 	title = pvd.31.t
 	desc = pvd.31.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_SOV_pravda_party
 		
 	fire_only_once = yes
 	
@@ -1262,7 +1262,7 @@ country_event = {
 	id = pvd.32
 	title =bftb_turkey.81.t
 	desc = bftb_turkey.81.desc
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_SOV_bonple_rejects
 
 	is_triggered_only = yes
 	
@@ -1276,7 +1276,7 @@ country_event = {
 	id = pvd.33
 	title = pvd.33.a
 	desc = pvd.33.d
-	picture = GFX_report_event_communists_cheer
+	picture = GFX_SOV_nonna_coup2
 
 	is_triggered_only = yes
 	
@@ -1296,7 +1296,7 @@ news_event = {
 	id = pvd.101
 	title = pvd.101.t
 	desc = pvd.101.d
-	picture = GFX_news_event_023
+	picture = GFX_SOV_alina_coup
 	
 	major = yes
 	
@@ -1328,7 +1328,7 @@ news_event = {
 	id = pvd.102
 	title = pvd.102.t
 	desc = pvd.102.d
-	picture = GFX_news_event_generic_rally2
+	picture = GFX_SOV_anarchism_rebellion
 	
 	major = yes
 	
@@ -1364,7 +1364,7 @@ news_event = {
 	id = pvd.103
 	title = pvd.103.t
 	desc = pvd.103.d
-	picture = GFX_news_event_military_planning
+	picture = GFX_SOV_legistlative_democracy
 	
 	major = yes
 	
@@ -1397,7 +1397,7 @@ news_event = {
 	id = pvd.105
 	title = pvd.105.t
 	desc = pvd.105.d
-	picture = report_event_spr_italian_volunteers
+	picture = GFX_SOV_anzio_war
 	
 	major = yes
 	
@@ -1427,7 +1427,7 @@ news_event = {
 	id = pvd.106
 	title = wtt_news.1.t
 	desc = pvd.106.d
-	picture = GFX_news_event_ger_civil_war
+	picture = GFX_SOV_kuromorimine_war
 	
 	major = yes
 	
@@ -1461,7 +1461,7 @@ news_event = {
 	id = pvd.221
 	title = pvd.221.t
 	desc = pvd.221.d
-	picture = GFX_news_event_journalists_speech
+	picture = GFX_SOV_nonna_leads
 
 	major = yes
 
