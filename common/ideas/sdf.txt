@@ -927,9 +927,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = { ##HER TRAITS
-				stability_factor = 0.1
-				war_support_factor = 0.05
-				
+				war_support_factor = 0.05			
 				consumer_goods_factor = -0.05
 				stability_factor = 0.05
 				compliance_gain = 0.05

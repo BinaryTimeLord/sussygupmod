@@ -3203,9 +3203,7 @@ focus_tree = {
 		
 		cost = 0
 		
-		completion_reward {
-		
-		}
+		completion_reward = {}
 	}
 	
 	focus = {

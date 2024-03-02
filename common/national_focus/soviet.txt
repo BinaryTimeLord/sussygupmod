@@ -6958,7 +6958,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_zinovyevite_terrorist_center
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_polinite_terrorist
 		prerequisite = { focus = SOV_the_stalin_constitution }
 		x = 0
 		y = 1
@@ -7222,7 +7222,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_anti_soviet_trotskyist_center
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_anti_nonnists
 		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
 		x = 0
 		y = 2
@@ -7572,7 +7572,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_bloc_of_rights_and_trotskyites
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bloc_rights
 		prerequisite = { focus = SOV_the_military_conspiracy }
 		x = 0
 		y = 1
@@ -7658,7 +7658,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_behead_the_snake
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_exile_snakes
 		prerequisite = { focus = SOV_the_military_conspiracy }
 		x = 2
 		y = 1
@@ -7683,7 +7683,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_stalins_cult_of_personality
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_cult_personality
 		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites }
 		x = 0
 		y = 1
@@ -8082,7 +8082,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_father_of_nations
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_mother_nations
 		prerequisite = { focus = SOV_great_commander focus = SOV_architect_of_communism }
 		x = 1
 		y = 1
@@ -8474,7 +8474,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_left_eliminate_right
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_eliminate_right
 		prerequisite = { focus = SOV_the_left_opposition }
 		mutually_exclusive = { focus = SOV_cooperation_against_stalin }
 		x = 2
@@ -10490,7 +10490,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_international_revolutionary_marxist_centre
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_international_revolutionary
 		prerequisite = { focus = SOV_a_new_theory_of_revolution focus = SOV_administrative_reforms }
 		prerequisite = { focus = SOV_planned_economy }
 		x = 0
@@ -15942,7 +15942,7 @@ ai_will_do = {
 
 	focus = {
 		id = SOV_request_imperial_protection 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_imperial_protection
 		prerequisite = { focus = SOV_call_for_aid }
 		x = 0
 		y = 1

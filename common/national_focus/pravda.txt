@@ -6013,7 +6013,7 @@
 	}
 	focus = { dynamic = yes
 		id = SOV_Nonna_cadre_revolt
-		icon =  GFX_goal_unknown
+		icon =  GFX_focus_SOV_nonnas_revolt
 		prerequisite = { focus = SOV_prepare_army }
 		mutually_exclusive = { focus = SOV_learn_from_nina }
 		available = {
