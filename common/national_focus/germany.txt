@@ -8432,7 +8432,7 @@ focus = {
 		allow_branch = { #activated once erika takes over DEFINITELY
 			has_country_flag = kmm_sudeten_erika
 		}
-		x = 43
+		x = 48
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -8963,7 +8963,7 @@ focus = {
 		allow_branch = {
 			has_country_flag = kmm_sudeten_miho
 		}
-		x = 43
+		x = 48
 		y = 0
 		cost = 1
 		ai_will_do = {
