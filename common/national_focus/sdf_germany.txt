@@ -4186,11 +4186,10 @@ focus_tree = {
 	
 	focus = { ##YES
 		id = SDF_anzai_three
-		##icon = 
+		icon = GFX_goal_anzai_tank
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = no
 		}
 		
 		x = -1
@@ -4199,10 +4198,19 @@ focus_tree = {
 		prerequisite = { focus = SDF_anzai_two }
 		mutually_exclusive = { focus = SDF_anzai_three2 }
 		
-		cost = 0
+		cost = 5
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.50
+				days = 3
+			}
+			
+			air_experience = 50
+			
+			set_technology = {
+				paras_combat_drop = 1
+			}
 		}
 	}
 	
@@ -4212,7 +4220,6 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = no
 		}
 		
 		x = -1
@@ -4221,10 +4228,15 @@ focus_tree = {
 		prerequisite = { focus = SDF_anzai_three }
 		mutually_exclusive = {}
 		
-		cost = 0
+		cost = 5
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.51
+				days = 5
+			}
+			
+			add_ideas = sdf_logi_time
 		}
 	}
 	
@@ -4234,7 +4246,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = no
+			
 		}
 		
 		x = 1
@@ -4243,10 +4255,15 @@ focus_tree = {
 		prerequisite = { focus = SDF_anzai_two }
 		mutually_exclusive = { focus = SDF_anzai_three }
 		
-		cost = 0
+		cost = 5
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.52
+				days = 5
+			}
+			
+			add_ideas = sdf_rebuilding_classic
 		}
 	}
 	
@@ -4256,7 +4273,8 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = no
+			has_manpower = 40000
+			has_war_with = SOV
 		}
 		
 		x = 1
@@ -4265,10 +4283,14 @@ focus_tree = {
 		prerequisite = { focus = SDF_anzai_three2 }
 		mutually_exclusive = {}
 		
-		cost = 0
+		cost = 5
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.53
+				days = 5
+			}
+			add_ideas = sdf_emergency_services
 		}
 	}
 	

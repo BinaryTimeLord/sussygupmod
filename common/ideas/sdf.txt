@@ -1196,6 +1196,71 @@ ideas = {
 				}
 			}
 		}
+		
+		sdf_logi_time = {
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				truck_attrition = -0.05
+				truck_attrition_factor= -0.05
+				army_fuel_consumption_factor = -0.1
+				army_speed_factor = 0.15
+			}
+		}
+		
+		sdf_rebuilding_classic = {
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				monthly_population = 0.35
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		sdf_emergency_services = {
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = 0.55
+				production_speed_buildings_factor = -0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
 	}
 	
 	industrial_concern = {

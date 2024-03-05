@@ -27,6 +27,12 @@
 			factor = 0
 		}
 		
+		available = {
+			GER = {
+				has_civil_war = yes
+			}
+		}
+		
 		available_if_capitulated = no
 
 		completion_reward = {

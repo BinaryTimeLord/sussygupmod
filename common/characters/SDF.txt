@@ -4,7 +4,7 @@ characters = { ##fuck this shit it wont work##
 		
 		portraits={
 			civilian={
-				large="gfx/leaders/SDF/GFX_saori3.dds"
+				large="gfx/leaders/SDF/GFX_saori.dds"
 			}
 			
 			civilian = {

@@ -914,5 +914,31 @@ spriteTypes = {
 		name = "GFX_SDF_advanced_heavy_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/GER_heavy_tank_chassis_2.dds"
 	}
+	
+	##EVENTS
+	SpriteType = {
+		name = "GFX_report_event_SDF_frankfurt"
+		texturefile = "gfx/event_pictures/SDF/report_event_SDF_frankfurt.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_report_event_SDF_civil_war"
+		texturefile = "gfx/event_pictures/SDF/report_event_SDF_civil_war.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_report_event_SDF_civil_war2"
+		texturefile = "gfx/event_pictures/SDF/report_event_SDF_civil_war2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_report_event_SDF_civil_war3"
+		texturefile = "gfx/event_pictures/SDF/report_event_SDF_civil_war3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_report_event_SDF_victory_war"
+		texturefile = "gfx/event_pictures/SDF/report_event_SDF_victory_war.dds"
+	}
 }
 

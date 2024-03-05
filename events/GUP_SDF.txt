@@ -25,7 +25,7 @@ country_event = {
 	id = sdf.2
 	title = sdf.2.t
 	desc = sdf.2.d
-	##picture = 
+	picture = GFX_report_event_SDF_frankfurt
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -81,7 +81,7 @@ country_event = {
 	id = sdf.3
 	title = sdf.3.t
 	desc = sdf.3.d
-	##picture = 
+	picture = GFX_report_event_SDF_frankfurt
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -140,7 +140,7 @@ country_event = { ##IF CIVIL WAR ENDS##
 	id = sdf.4
 	title = sdf.4.t
 	desc = sdf.4.d
-	##picture =
+	picture = GFX_report_event_countercoup
 	
 	fire_only_once = yes
 	
@@ -180,7 +180,7 @@ country_event = {
 	id = sdf.5
 	title = sdf.5.t
 	desc = sdf.5.d
-	##picture
+	picture = GFX_report_event_SDF_civil_war
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -199,9 +199,9 @@ country_event = {
 	id = sdf.6
 	title = sdf.6.t
 	desc = sdf.6.d
-	##picture
+	picture = GFX_report_event_maho_resign
 	
-	trigger = {
+	trigger = { ##REWORK
 		tag = SDF
 		D04 = {
 			has_full_control_of_state = 64
@@ -250,7 +250,7 @@ country_event = {
 	id = sdf.7
 	title = sdf.7.t
 	desc = sdf.7.d
-	##picture = 
+	picture = report_event_SDF_civil_war2
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -272,7 +272,7 @@ country_event = {
 	id = sdf.8
 	title = sdf.8.t
 	desc = sdf.8.d
-	##picture = 
+	picture = GFX_report_event_german_polish_border
 	
 	trigger = {
 		SDF = {
@@ -303,7 +303,7 @@ country_event = {
 	id = sdf.9
 	title = sdf.9.t
 	desc = sdf.9.d
-	##picture = 
+	picture = GFX_report_event_SDF_civil_war3
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -323,7 +323,7 @@ country_event = { ##VICTORY IN THE CIVIL WAR##
 	id = sdf.10
 	title = sdf.10.t
 	desc = sdf.10.d
-	##picture = 
+	picture = GFX_report_event_SDF_victory_war
 	
 	trigger = {
 		tag = SDF
@@ -379,7 +379,7 @@ country_event = { ##CHANGING MUNICH NAME#$
 	id = sdf.11
 	title = sdf.11.t
 	desc = sdf.11.d
-	##picture = 
+	picture = GFX_report_event_ger_civil_war
 	
 	trigger = {
 		SDF = {
@@ -404,7 +404,7 @@ country_event = { ##CAPITAL##
 	id = sdf.12
 	title = sdf.12.t
 	desc = sdf.12.d
-	##picture = 
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -452,7 +452,7 @@ country_event = {
 	id = sdf.13
 	title = sdf.13.t
 	desc = sdf.13.d
-	##picture = 
+	picture = GFX_report_event_kuroland_remilitarize
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -476,7 +476,7 @@ country_event = { ##DEATH OR DISHONOUR##
 	id = sdf.14
 	title = sdf.14.t
 	desc = sdf.14.d
-	##picture = 
+	picture = GFX_report_event_SDF_civil_war2
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1636,6 +1636,78 @@ country_event = {
 			}
 		}
 		
+	}
+}
+
+country_event = {
+	id = sdf.50
+	title = sdf.50.t
+	desc = sdf.50.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.50.a
+		ai_chance = {
+			base = 1
+		}
+		
+	}
+}
+
+country_event = {
+	id = sdf.51
+	title = sdf.51.t
+	desc = sdf.51.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.51.a
+		ai_chance = {
+			base = 1
+		}
+		
+	}
+}
+
+country_event = {
+	id = sdf.52
+	title = sdf.52.t
+	desc = sdf.52.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.52.a
+		ai_chance = {
+			base = 1
+		}
+		
+	}
+}
+
+country_event = {
+	id = sdf.53
+	title = sdf.53.t
+	desc = sdf.53.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.53.a
+		ai_chance = {
+			base = 1
+		}
+		add_manpower = -40000
 	}
 }
 
