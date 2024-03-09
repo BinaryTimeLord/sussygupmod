@@ -13,6 +13,9 @@ ideologies = {
 			socialism = {
 			}
 			
+			populism = {
+			}
+			
 			french_idealism = {
 			}
 			

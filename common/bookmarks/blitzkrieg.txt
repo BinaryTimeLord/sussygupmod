@@ -628,6 +628,54 @@ bookmarks = {
 				DEN_create_danforce
 			}
 		}	
+		"BRA"={
+			minor = yes
+			history = BRA_BLITZKRIEG_DESC
+			ideology = neutrality
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				BRA_estado_novo_dummy_idea
+				BRA_radio_nacional_idea
+				BRA_army_dummy_idea
+			}
+			focuses = {
+				BRA_cooperation_in_the_americas
+				BRA_smoking_cobras
+				BRA_senta_a_pua
+			}
+		}
+		"CHL"={
+			minor = yes
+			history = CHL_BLITZKRIEG_DESC
+			ideology = democratic
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				idea_CHL_the_Hacienda_inquilinaje_system
+				CHL_the_mapuche_conflict
+				SMB_MTG_naval_arms_race_legacy
+			}
+			focuses = {
+				CHL_development_inwards
+				CHL_kickstart_the_arsenal_of_democracy
+				CHL_protect_the_easter_island
+			}
+		}
+		"ARG"={
+			minor = yes
+			history = ARG_BLITZKRIEG_DESC
+			ideology = neutrality
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				SMB_MTG_naval_arms_race_legacy
+				ARG_raf_cooperation_idea
+				ARG_argentine_metropole_idea
+			}
+			focuses = {
+				ARG_towards_a_greater_argentina
+				ARG_end_operation_bolivar
+				ARG_the_american_push
+			}
+		}
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

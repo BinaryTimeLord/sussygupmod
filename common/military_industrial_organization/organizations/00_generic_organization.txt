@@ -64,6 +64,16 @@ generic_tank_organization = {
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
+			}
+		}
 	}
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
@@ -2138,6 +2148,16 @@ generic_escort_ship_organization = {
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
+			}
+		}
 	}
 
 	equipment_type = {
@@ -3612,6 +3632,16 @@ generic_general_aircraft_organization = {
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
+			}
+		}
 	}
 
 	equipment_type = {
@@ -3887,9 +3917,14 @@ generic_light_aircraft_organization = {
 
 	equipment_type = {
 		mio_cat_eq_only_light_fighter
+		small_plane_cas_airframe
+		cv_small_plane_cas_airframe
 	}
 
-	research_categories = {	mio_cat_all_light_fighter_and_modules }
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+		mio_cat_all_cas_and_modules 
+	}
 	
 	tree_header_text = {
 		text = mio_header_production
@@ -6391,6 +6426,16 @@ generic_artillery_organization = {
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
+			}
+		}
 	}
 
 	equipment_type = {
@@ -6759,6 +6804,16 @@ generic_infantry_equipment_organization = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -7370,6 +7425,16 @@ generic_motorized_mechanized_organization = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}

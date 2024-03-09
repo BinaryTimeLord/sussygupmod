@@ -2187,7 +2187,7 @@
  soviet.24.d:0 "The persecution of enemies of the people, those who would reverse or subvert the revolution, has been ongoing policy since the Party came to power. The internal power struggles that followed have shifted our focus, and purging the Party ranks themselves has been given more emphasis since Nonna's exile. Katyusha has made herself an icon, but at the cost of making many real enemies and innumerable imaginary ones.\n\nHaving seen the worst of internal power struggles, the General Secretary is prone to act on the slightest suspicion. Being purged from the Party means imprisonment or death. Dark times lie ahead for those who show disloyalty - or just a bit too much loyalty to seem credible."
  soviet.24.a:0 "Are Polina and her ilk still in touch with Nonna?"
  soviet.25.t:0 "Trial of the Anti-Pravda Trotskyist Center"
- soviet.25.d:2 "Despite Nonna being forced into exile, $SOV_iosif_stalin$ fears that she has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Katyusha's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nParty members are beginning to believe that Katyusha's absolute power and the death of her wife have isolated her to the point where she perceives anyone as a threat, but isn't that exactly what a traitor would say?"
+ soviet.25.d:2 "Despite Nonna's Supporters being forced into exile, $SOV_iosif_stalin$ fears that she has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Katyusha's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nParty members are beginning to believe that Katyusha's absolute power and the death of her wife have isolated her to the point where she perceives anyone as a threat, but isn't that exactly what a traitor would say?"
  soviet.25.a:0 "Kalinin's wife is suspected. she cannot be trusted either."
  soviet.25.b:0 "Khrushchev dabbled with Trotskyism in the past. she must go."
  soviet.25.c:0 "Radek's confession points to several people within the party."
@@ -3325,6 +3325,16 @@ soviet.28.d:1 "The world may never know if Katyusha's purges were targeting the 
  generic_purchase_ships_events.03.t:0 "[FROM.GetNameDefCap] Refuses Naval Procurement Deal"
  generic_purchase_ships_events.03.desc:0 "[FROM.GetAdjective] diplomats have informed us that they are unwilling to part with the mothballed equipment we offered to purchase. It is unclear whether the rejection is due to their own plans for the ships or is intended as a sign of their disapproval for our policies."
  generic_purchase_ships_events.03.a:0 "Unfortunate."
+ generic_purchase_ships_events.04.t: "[FROM.GetAdjective] Naval Procurement"
+ generic_purchase_ships_events.04.desc: "[FROM.GetNameDefCap] have approached us with an offer to procure some of our mothballed capital ships. The assets they are interested in are no longer in service due to their age and lack of modern equipment. However, by selling the assets to [FROM.GetNameDef], we run the risk of escalating an already worsening naval arms race in the region."
+ generic_purchase_ships_events.04.a: "A mutually beneficial agreement."
+ generic_purchase_ships_events.04.b: "We can not spare any naval assets."
+ generic_purchase_ships_events.05.t: "[FROM.GetNameDefCap] Agrees to Dreadnought Procurement"
+ generic_purchase_ships_events.05.desc: "[FROM.GetAdjective] diplomats and naval personnel have informed us that they will part with their mothballed dreadnoughts that we offered to purchase. This will allow us to rapidly expand our navy and maintain a lead over our neighbors."
+ generic_purchase_ships_events.05.a: "Excellent news!"
+ generic_purchase_ships_events.06.t: "[FROM.GetNameDefCap] Refuses Dreadnought Procurement Deal"
+ generic_purchase_ships_events.06.desc: "[FROM.GetAdjective] diplomats have informed us that they are unwilling to part with the mothballed dreadnoughts we offered to purchase. It is unclear whether the rejection is due to their own plans for the ships or is intended as a sign of their disapproval for our policies."
+ generic_purchase_ships_events.06.a: "Unfortunate."
 
  AAT_germany.1.t: "[FROM.GetNameDefCap] requests resource rights"
  AAT_germany.1.desc: "[FROM.GetNameDefCap] has approached us with a deal they claim will benefit both economies. They need our natural resources for their industries and we need their investment to expand ours. A lucrative offer, but it is a devils bargain?"
@@ -3338,7 +3348,4 @@ soviet.28.d:1 "The world may never know if Katyusha's purges were targeting the 
  AAT_germany.3.t: "[FROM.GetName] accepts our deal"
  AAT_germany.3.desc: "[FROM.GetName] has accepted our deal, something that will surely benefit us both. Lets hope that this profitable arrangement is followed by many more"
  AAT_germany.3.a: "Great"
-
-
-
  

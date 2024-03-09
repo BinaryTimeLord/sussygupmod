@@ -63,7 +63,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 		spiritual_mobilization_idea = {
@@ -191,15 +191,12 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				trade_laws_cost_factor = 1.0
-				economy_cost_factor = 1.0
-				tank_manufacturer_cost_factor = 1.0 
-				naval_manufacturer_cost_factor = 1.0 
-				aircraft_manufacturer_cost_factor = 1.0 
-				materiel_manufacturer_cost_factor = 1.0 
-				industrial_concern_cost_factor = 1.0 
-				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = 0.1
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -239,14 +236,14 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.5
-				trade_laws_cost_factor = 0.5
-				economy_cost_factor = 0.5
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.025
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -265,13 +262,13 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.25
+				political_power_cost = 0.5
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -291,12 +288,10 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
-				trade_laws_cost_factor = -0.5
-				economy_cost_factor = -0.5
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -330,16 +325,12 @@ ideas = {
 			picture = warrior_traditions_idea
 			
 			modifier = {
-				political_power_cost = 0.25
-				war_support_factor = 0.25
-				mobilization_laws_cost_factor = -0.5
-				justify_war_goal_time = -0.25
-				research_speed_factor = -0.08
-				production_speed_industrial_complex_factor = -0.15
-				hidden_modifier = {
-					defensive_war_stability_factor = 0.1
-					offensive_war_stability_factor = 0.1
-				}
+				war_support_factor = 0.2
+				mobilization_laws_cost_factor = -0.25
+				justify_war_goal_time = -0.2
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+				ai_desired_divisions_factor = 0.25
 			}
 		}
 
@@ -464,7 +455,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = gre_agricultural_communes
+			picture = socialist_science_focus
 			
 			modifier = {
 				stability_weekly = 0.05
@@ -727,7 +718,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.02
+				special_forces_cap = 0.05
 			}
 		}
 

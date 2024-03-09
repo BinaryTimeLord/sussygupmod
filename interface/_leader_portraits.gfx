@@ -8456,5 +8456,16 @@ spriteTypes = {
 		name = "GFX_portrait_MNT_blazo_dukanovic"
 		texturefile = "gfx/leaders/ITA/portrait_MNT_blazo_dukanovic.dds"
 	}
+
+
+
+###TOA###
+
+
+	spriteType = {
+		name = "GFX_portrait_BRA_mascarenhas_de_morais_1"
+		texturefile = "gfx/leaders/BRA/portrait_BRA_mascarenhas_de_morais_1.dds"
+	}
+
 	
 }

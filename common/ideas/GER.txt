@@ -504,7 +504,7 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
-				consumer_goods_factor = -0.20
+				consumer_goods_factor = -0.50
 			}
 		}
 
@@ -648,7 +648,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1031,7 +1031,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1061,7 +1061,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1091,7 +1091,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1121,7 +1121,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1151,7 +1151,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1181,7 +1181,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1211,7 +1211,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1241,7 +1241,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1271,7 +1271,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1301,7 +1301,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1331,7 +1331,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1361,7 +1361,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1391,7 +1391,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1421,7 +1421,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1451,7 +1451,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1481,7 +1481,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1511,7 +1511,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1541,7 +1541,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1570,7 +1570,7 @@ ideas = {
 			picture = ger_mefo_bills_payment
 
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.40
 			}
 		}
 
@@ -1602,7 +1602,7 @@ ideas = {
 			picture = generic_air_bonus
 
 			equipment_bonus = {
-			small_plane_airframe = {
+				small_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
@@ -1689,7 +1689,7 @@ ideas = {
 				research_speed_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				local_resources_factor = 0.10
 			}
 		}

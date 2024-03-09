@@ -198,6 +198,12 @@ check_has_focus_tree_to_switch_to_communism = {
 			has_dlc = "La Resistance"
 		}
 	}
+	NOT = {
+		AND = {
+			original_tag = ARG
+			has_dlc =  "Trial of Allegiance"
+		}
+	}
 }
 
 #State scope
@@ -1035,9 +1041,13 @@ is_unlikely_country_tag = {
 		tag = SIL
 		tag = KSH
 		tag = ALT
-		tag = UZB
+		tag = BUK
 		tag = KHI
 		tag = SMI
+		tag = QUE
+		tag = YUC
+		tag = RIG
+		tag = WLA
 	}
 }
 

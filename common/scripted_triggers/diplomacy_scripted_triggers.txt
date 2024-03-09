@@ -122,6 +122,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					NOT = { original_tag = YUG }
 				}
 			}
+			OR = {
+				NOT = { has_dlc = "Trial of Allegiance" }
+				NOT = { original_tag = CHL }
+			}
 			NOT = { original_tag = SOV }
 		}
 		always = yes
@@ -226,6 +230,61 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = ORO } }
 			NOT = { FROM = { tag = QEM } }
 			NOT = { FROM = { tag = ERI } }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_game_rule = {
+					rule = allow_release_nations
+					option = FREE
+				}
+				has_game_rule = {
+					rule = allow_release_nations
+					option = PEACE_ONLY
+				}
+			}
+			has_dlc = "Trial of Allegiance"
+			original_tag = CHL
+			NOT = { 
+				OR = {
+					has_completed_focus = CHL_crusade_against_imperialism 
+					has_completed_focus = CHL_endorse_the_constitution
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_CHILE_TOOLTIP
+			NOT = { FROM = { tag = RAP } }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_game_rule = {
+					rule = allow_release_nations
+					option = FREE
+				}
+				has_game_rule = {
+					rule = allow_release_nations
+					option = PEACE_ONLY
+				}
+			}
+			has_dlc = "Trial of Allegiance"
+			original_tag = CAN
+			NOT = { 
+				OR = {
+					has_completed_focus = CAN_forced_quebec_conscription 
+					has_completed_focus = CAN_compromise_with_quebec
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_QUEBEC_TOOLTIP
+			OR = {
+				has_completed_focus = CAN_forced_quebec_conscription
+				has_completed_focus = CAN_compromise_with_quebec
+			}
 		}
 	}
 	if = {
@@ -1621,11 +1680,16 @@ game_weight_can_add_communist = {
 }
 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
-	if = { # TODO_TA make more generic trigger
+	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
-			FROM = {
-				tag = ETH 
+			OR = {
+				ROOT = {
+					tag = ETH
+				}
+				FROM = {
+					tag = ETH
+				}
 			}
 			
 		}
@@ -1667,8 +1731,13 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
-			ROOT = {
-				tag = ETH
+			OR = {
+				ROOT = {
+					tag = ETH
+				}
+				FROM = {
+					tag = ETH
+				}
 			}
 			
 		}

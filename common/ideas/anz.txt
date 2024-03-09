@@ -151,12 +151,8 @@ ideas = {
 			modifier = {
 				air_accidents_factor = -0.1
 				air_ace_generation_chance_factor = 0.05
-				air_air_superiority_attack_factor = 0.25
-				air_air_superiority_defence_factor = 0.25
-				air_air_superiority_agility_factor = 0.25
-				air_close_air_support_attack_factor = 0.25
-				air_close_air_support_defence_factor = 0.25
-				air_close_air_support_agility_factor = 0.25
+				air_superiority_efficiency = 0.25
+				air_cas_efficiency = 0.25
 				air_fuel_consumption_factor = 0.1
 			}
 
