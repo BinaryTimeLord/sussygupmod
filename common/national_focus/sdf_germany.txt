@@ -2793,7 +2793,7 @@ focus_tree = {
 	
 	focus = { ##EVENT
 		id = SDF_sdk_training
-		##icon = 
+		icon = GFX_goal_ls_exercise
 		relative_position_id = SDF_war_prep
 		
 		x = 0
@@ -2982,7 +2982,7 @@ focus_tree = {
 	##PRE STUFF##
 	focus = {
 		id = SDF_political_manouvering
-		##icon =
+		icon = GFX_goal_political_manouver
 		relative_position_id = SDF_elections
 		
 		x = 0
@@ -3101,7 +3101,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_soup_kitchen
-		##icon =
+		icon = GFX_goal_lower_class
 		relative_position_id = SDF_political_manouvering 
 		
 		x = -2
@@ -3123,7 +3123,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_conscription 
-		##icon = 
+		icon = GFX_goal_issue_conscription
 		relative_position_id = SDF_political_manouvering
 		
 		x = 0
@@ -3145,7 +3145,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_anzai_plan
-		##icon = 
+		icon = GFX_goal_anzai_plan
 		relative_position_id = SDF_political_manouvering 
 		
 		x = -4
@@ -3167,7 +3167,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_economic_crisis_handled
-		##icon = 
+		icon = GFX_goal_economy_handeled
 		relative_position_id = SDF_political_manouvering 
 		x = 2
 		y = 1
@@ -3188,7 +3188,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_tamed_military
-		##icon = 
+		icon = GFX_goal_tamed_military
 		relative_position_id = SDF_political_manouvering
 		
 		x = 4
@@ -3350,6 +3350,11 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_press_freedom_1
+			
+			country_event = {
+				id = sdf.54
+				days = 5
+			}
 		}
 	}
 	
@@ -3437,6 +3442,11 @@ focus_tree = {
 			}
 			
 			add_ideas = sdf_corperations
+			
+			country_event = {
+				id = sdf.55
+				days = 5
+			}
 		}
 	}
 	
@@ -4300,7 +4310,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one 
 		
 		available = {
-			always = no
+			has_completed_focus = SDF_consitution_secured
 		}
 		
 		x = 0
@@ -4309,7 +4319,33 @@ focus_tree = {
 		prerequisite = { focus = SDF_anzai_four focus = SDF_anzai_four2 }
 		mutually_exclusive = {}
 		
-		cost = 0
+		cost = 5
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = SDF_anzai_six
+		##icon = 
+		relative_position_id = SDF_anzai_one 
+		
+		allow_branch = {
+			##has_country_flag = SDF_FAILING
+		}
+		
+		available = {
+
+		}
+		
+		x = 0
+		y = 5
+		
+		prerequisite = { focus = SDF_anzai_five }
+		mutually_exclusive = {}
+		
+		cost = 1
 		
 		completion_reward = {
 		
