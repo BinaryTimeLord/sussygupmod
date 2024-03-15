@@ -9,5 +9,5 @@ tags={
 	"Gameplay"
 }
 name="Girls und Panzer"
-supported_version="1.14.1"
+supported_version="1.14.*"
 remote_file_id="2844411050"
