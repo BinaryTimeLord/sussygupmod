@@ -141,8 +141,13 @@ if = {
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
-
-#Monroe Doctrine
+##Monroe Doctrine
+IF = {
+	limit = { has_dlc = "Trial of Allegiance" }
+	add_ideas = USA_monroe_doctrine_enforcer
+}
+IF = {
+	limit = { NOT = { has_dlc = "Trial of Allegiance" }	}
 give_guarantee = CAN
 give_guarantee = MEX
 give_guarantee = CUB
@@ -164,6 +169,7 @@ give_guarantee = CHL
 give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
+}
 
 1939.1.1 = {
 
@@ -417,6 +423,7 @@ recruit_character = USA_henry_stimson
 recruit_character = USA_victor_perlo
 recruit_character = USA_charles_coughlin
 recruit_character = USA_harry_white
+recruit_character = USA_native_american_council
 
 
 if = {

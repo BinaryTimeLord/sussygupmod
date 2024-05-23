@@ -2424,7 +2424,7 @@ URG_AI_BEHAVIOR = {
 		name = HISTORICAL
 		text = "RULE_OPTION_HISTORICAL"
 		desc = "RULE_OPTION_HISTORICAL_URG_AI_DESC"
-		allow_achievements = no
+		allow_achievements = yes
 	}
 	option = {
 		name = DEMOCRATIC_ALT

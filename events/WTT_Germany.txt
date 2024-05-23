@@ -2273,7 +2273,6 @@ country_event = {
 							has_dlc = "Trial of Allegiance"
 							ARG = {
 								exists = yes
-								has_government = fascism 
 							}
 						}
 						ARG = {

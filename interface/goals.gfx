@@ -1986,7 +1986,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_generic_attack_communist_spain_focus"
+		name = "GFX_focus_generic_attack_communist_spain"
 		texturefile = "gfx/interface/goals/focus_generic_attack_communist_spain.dds"
 	}
 
@@ -1996,7 +1996,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_generic_attack_republican_spain_focus"
+		name = "GFX_focus_generic_attack_republican_spain"
 		texturefile = "gfx/interface/goals/focus_generic_attack_republican_spain.dds"
 	}
 
@@ -2016,7 +2016,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_generic_attack_vichy_france_focus"
+		name = "GFX_focus_generic_attack_vichy_france"
 		texturefile = "gfx/interface/goals/focus_generic_attack_vichy_france.dds"
 	}
 

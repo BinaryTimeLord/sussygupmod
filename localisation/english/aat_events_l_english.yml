@@ -2375,6 +2375,15 @@ AAT_britain_narvik.4.a: "This is still an outrage"
  AAT_USA_events.07.a: "Greenland Returns!"
  AAT_USA_events.07.b: "The Faroe Islands Returns!"
 
+ AAT_USA_events.08.t: "[FROM.GetNameDefCap] Requests Danish Territory"
+ AAT_USA_events.08.desc: "[FROM.GetLeader] of [FROM.GetNameDef] has sent us a request for returning un-lawfully held Danish territory to its rightful owner."
+ AAT_USA_events.08.a: "Return the territories"
+ AAT_USA_events.08.b: "We will not yield to oppressors!"
+ AAT_USA_events.09.t: "[FROM.GetNameDefCap] Returns Danish Territory"
+ AAT_USA_events.09.desc: "[FROM.GetLeader] of [FROM.GetNameDef] has agreed to return un-lawfully held Danish territory to its rightful owner."
+ AAT_USA_events.09.a: "How thoughtful"
+
+
 
 
 

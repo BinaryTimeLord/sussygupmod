@@ -16,6 +16,7 @@ if = {
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 	add_ideas = MAN_low_legitimacy_5
+	recruit_character = MAN_songgotu_zhanshan
 }
 
 recruit_character = MAN_tomoyo_ikeda
@@ -39,7 +40,7 @@ recruit_character = MAN_yin_zuoqian
 recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_xian_yuan
 recruit_character = MAN_guan_xingde
-
+recruit_character = MAN_megata_toshiro
 if = {
 	limit = { has_dlc = "No Step Back" }
 	recruit_character = SOV_grigory_semyonov
