@@ -1090,7 +1090,7 @@ news_event = {
 				has_government = communism
 			}
 			create_country_leader = {
-				name = "Rajani Palme Dutt"
+				name = "Nilgiri"
 				desc = "POLITICS_PALME_DUTT_DESC"
 				picture = GFX_portrait_Rajani_Palme_Dutt
 				expire = "1965.1.1"
@@ -5043,12 +5043,12 @@ news_event = {
 				original_tag = ENG
 				has_government = communism
 				has_country_leader = {
-					name = "Rajani Palme Dutt"
+					name = "Nilgiri"
 					ruling_only = yes
 				}
 			}
 			create_country_leader = {
-				name = "Harry Pollitt"
+				name = "Assam"
 				desc = "POLITICS_HARRY_POLLITT_DESC"
 				picture = GFX_portrait_Harry_Pollitt
 				expire = "1965.1.1"

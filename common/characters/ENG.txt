@@ -27,20 +27,6 @@ characters={
 			id=-1
 		}
 		country_leader={
-			desc="POLITICS_HARRY_POLLITT_DESC"
-			ideology=british_idealism2
-			traits={ staunch_stalinist }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="POLITICS_OSWALD_MOSLEY_DESC"
-			ideology=british_idealism3
-			traits={ economic_organizer }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
 			desc="POLITICS_NEVILLE_CHAMBERLAIN_DESC"
 			ideology=liberalism
 			traits={ elegant_and_wise diplomatic_tongue }
@@ -108,6 +94,13 @@ characters={
 				large="gfx/leaders/ENG/Portrait_ENG_Assam1.dds"
 			}
 		}
+		country_leader={
+			desc="POLITICS_HARRY_POLLITT_DESC"
+			ideology=british_idealism2
+			traits={ staunch_stalinist }
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander={
 			traits={ trait_engineer panzer_leader adaptable }
 			skill=4
@@ -130,6 +123,13 @@ characters={
 			army={
 				large="gfx/leaders/ENG/Portrait_ENG_Rosehip1.dds"
 			}
+		}
+		country_leader={
+			desc="POLITICS_OSWALD_MOSLEY_DESC"
+			ideology=british_idealism3
+			traits={ economic_organizer }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander={
 			traits={ trickster panzer_leader urban_assault_specialist }
@@ -181,6 +181,66 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ENG_vanilla={
+		name="Vanilla"
+		portraits={
+			army={
+				small="gfx/interface/ideas/St. Gloriana/idea_eng_vanilla.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_ENG_Vanilla.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ENG_peach={
+		name="Peach"
+		portraits={
+			army={
+				small="gfx/interface/ideas/St. Gloriana/idea_eng_peach.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_ENG_Peach.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader media_personality }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ENG_cranberry={
+		name="Cranberry"
+		portraits={
+			army={
+				small="gfx/interface/ideas/St. Gloriana/idea_eng_cranberry.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_ENG_Cranberry.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -1769,11 +1829,11 @@ characters={
 
 	### POLITICAL ADVISORS ###
 
-	# Churchill up there
+	# Darjeeling up there
 
-	# Mosley up there
+	# Rosehip up there
 
-	# Pollit up there
+	# Assam up there
 
 	ENG_clement_attlee={
 		name=ENG_clement_attlee
@@ -2413,13 +2473,13 @@ characters={
 				has_government  = neutrality 
 				has_completed_focus  = ENG_the_kings_party 
 				has_country_leader  = {
-					name = "Elizabeth II"
+					name = "Orange Pekoe"
 					ruling_only  = yes 
 				}
 			}
 			visible  = {
 				has_country_leader  = {
-					name = "Elizabeth II"
+					name = "Orange Pekoe"
 					ruling_only  = yes 
 				}
 			}
@@ -2450,13 +2510,13 @@ characters={
 				has_government  = neutrality 
 				has_completed_focus  = ENG_the_kings_party 
 				has_country_leader  = {
-					name = "Elizabeth II"
+					name = "Orange Pekoe"
 					ruling_only  = yes 
 				}
 			}
 			visible  = {
 				has_country_leader  = {
-					name = "Elizabeth II"
+					name = "Orange Pekoe"
 					ruling_only  = yes 
 				}
 			}
@@ -2487,13 +2547,13 @@ characters={
 				has_government  = neutrality 
 				has_completed_focus  = ENG_the_kings_party 
 				has_country_leader  = {
-					name = "Elizabeth II"
+					name = "Orange Pekoe"
 					ruling_only  = yes 
 				}
 			}
 			visible  = {
 				has_country_leader  = {
-					name = "Elizabeth II"
+					name = "Orange Pekoe"
 					ruling_only  = yes 
 				}
 			}

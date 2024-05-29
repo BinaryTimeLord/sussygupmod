@@ -8067,7 +8067,7 @@ country_event = {
 #		}
 #	}
 #
-#	# Churchill - leaving this out for now
+#	# Darjeeling - leaving this out for now
 #	option = {
 #		name = germany.118.e
 #		ai_chance = {
@@ -8278,7 +8278,7 @@ country_event = {
 	}
 }
 
-#Yalta Conference Follow-up - Churchill
+#Yalta Conference Follow-up - Darjeeling
 country_event = {
 	id = germany.1191
 	title = germany.1191.t

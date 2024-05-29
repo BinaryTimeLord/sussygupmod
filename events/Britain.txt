@@ -223,7 +223,7 @@ country_event = {
 	}
 }
 
-# Chamberlain Resigns
+# Darjeeling Resigns
 country_event = {
 	id = britain.9
 	title = britain.9.t
@@ -277,7 +277,7 @@ country_event = {
 }
 
 
-# Chamberlain Passes Away
+# Darjeeling Passes Away
 country_event = {
 	id = britain.10
 	title = britain.10.t
@@ -322,7 +322,7 @@ country_event = {
 		name = britain.10.b
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Lord Edward Halifax"
+			name = "Alice Shimada"
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
 			picture = GFX_portrait_Lord_Edward_Halifax
 			expire = "1965.1.1"
@@ -684,7 +684,7 @@ country_event = {
 			remove_ideas = ENG_george_vi	
 		}
 		create_country_leader = {
-			name = "Edward VIII"
+			name = "Orange Pekoe"
 			desc = "POLITICS_EDWARD_EDWARD_DESC"
 			picture = GFX_portrait_Edward_VIII
 			expire = "1965.1.1"
@@ -816,7 +816,7 @@ country_event = {
 	}
 }
 
-# Stanley Baldwin Resigns
+# Darjeeling Resigns
 country_event = {
     id = britain.22
     title = britain.22.t

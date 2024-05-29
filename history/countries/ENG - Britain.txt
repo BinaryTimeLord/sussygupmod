@@ -494,8 +494,11 @@ recruit_character = ENG_assam
 recruit_character = ENG_rosehip
 recruit_character = ENG_rukuriri
 recruit_character = ENG_nilgiri
+recruit_character = ENG_vanilla
+recruit_character = ENG_peach
+recruit_character = ENG_cranberry
 
-# Order matters - here Chamberlain becomes starting leader
+# Order matters - here Darjeeling becomes starting leader
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_winston_churchill
@@ -1503,7 +1506,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Queen George V Class"
+			name = "Queen Orange Pekoe Class"
 			type = ship_hull_heavy_2
 			name_group = ENG_BB_HISTORICAL
 			parent_version = 0
