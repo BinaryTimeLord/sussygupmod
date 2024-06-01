@@ -81,12 +81,12 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ trait_reckless cavalry_officer skilled_staffer trickster panzer_leader swamp_fox }
+			traits={ panzer_leader organisational_leader trickster logistics_wizard }
 			skill=5
-			attack_skill=2
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=5000
 		}
 		country_leader = {
@@ -135,12 +135,12 @@ characters = {
 			traits = { committed_anti_fascist personal_agenda_aaltonen }
 		}
 		corps_commander={
-			traits={ trait_cautious trickster }
+			traits={ offensive_doctrine panzer_expert fast_planner }
 			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=5001
 		}
 	}
@@ -164,12 +164,12 @@ characters = {
 			traits = { economic_reformer personal_agenda_annala }
 		}
 		corps_commander={
-			traits={ trait_reckless politically_connected trickster }
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
 			skill=4
 			attack_skill=4
-			defense_skill=1
+			defense_skill=5
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=5002
 		}
 	}
@@ -187,10 +187,10 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ trait_reckless trickster }
-			skill=6
-			attack_skill=2
-			defense_skill=5
+			traits={ infantry_leader fast_planner defensive_doctrine logistics_wizard }
+			skill=5
+			attack_skill=5
+			defense_skill=6
 			planning_skill=4
 			logistics_skill=5
 			legacy_id=5003
@@ -213,12 +213,12 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious trickster winter_specialist }
-			skill=5
-			attack_skill=5
-			defense_skill=2
+			traits={ aggressive_assaulter cavalry_leader trickster }
+			skill=4
+			attack_skill=3
+			defense_skill=4
 			planning_skill=5
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -368,7 +368,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_mountaineer commando trickster reckless }
+			traits = { trait_mountaineer commando trickster trait_reckless }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -675,7 +675,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer reckless }
+			traits = { infantry_officer trait_reckless }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -792,7 +792,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer engineer infantry_officer jaeger }
+			traits = { career_officer trait_engineer infantry_officer jaeger }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1

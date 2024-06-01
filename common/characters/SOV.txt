@@ -26,12 +26,12 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ armor_officer aggressive_assaulter expert_delegator }
+			traits={ aggressive_assaulter panzer_leader fast_planner }
 			skill=5
-			attack_skill=4
+			attack_skill=5
 			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 		country_leader={
@@ -57,11 +57,11 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader winter_expert }
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
 			skill=4
-			attack_skill=5
-			defense_skill=4
-			planning_skill=3
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
 			logistics_skill=3
 			legacy_id=-1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
@@ -81,12 +81,12 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader winter_specialist winter_expert }
+			traits={ panzer_expert organisational_leader logistics_wizard }
 			skill=4
 			attack_skill=4
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
@@ -113,12 +113,12 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ panzer_leader winter_specialist winter_expert }
+			traits={ panzer_expert organisational_leader logistics_wizard }
 			skill=4
 			attack_skill=4
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
@@ -140,7 +140,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trait_engineer panzer_leader }
+			traits={ fast_planner logistics_wizard }
 			skill=3
 			attack_skill=3
 			defense_skill=4
@@ -166,7 +166,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trait_engineer panzer_leader }
+			traits={ fast_planner logistics_wizard }
 			skill=3
 			attack_skill=3
 			defense_skill=4
@@ -193,12 +193,12 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader winter_expert }
+			traits={ aggressive_assaulter fortress_buster }
 			skill=3
 			attack_skill=3
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=-1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

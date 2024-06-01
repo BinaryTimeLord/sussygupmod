@@ -13,12 +13,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_cautious armor_officer expert_delegator }
+			traits={ aggressive_assaulter panzer_leader fast_planner }
 			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
+			attack_skill=6
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 		country_leader={
@@ -58,11 +58,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless trickster panzer_leader }
+			traits={ panzer_expert organisational_leader logistics_wizard }
 			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -81,12 +81,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader hill_fighter }
+			traits={ fast_planner fortress_buster infantry_leader }
 			skill=4
 			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -104,11 +104,11 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ inflexible_strategist armor_officer }
-			skill=6
-			attack_skill=4
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
+			skill=5
+			attack_skill=5
 			defense_skill=5
-			planning_skill=5
+			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1
 		}
@@ -124,10 +124,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster }
+			traits={ logistics_wizard cavalry_leader fortress_buster }
 			skill=3
-			attack_skill=2
-			defense_skill=1
+			attack_skill=3
+			defense_skill=2
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=-1
@@ -144,12 +144,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ fortress_buster }
+			traits={ aggressive_assaulter fast_planner infantry_leader }
 			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=4
-			logistics_skill=1
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}

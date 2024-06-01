@@ -5,6 +5,11 @@ oob = "FDR_1936"
 set_research_slots = 3
 
 recruit_character = FDR_aki
+recruit_character = FDR_yuri
+recruit_character = FDR_tami
+recruit_character = FDR_tomi
+recruit_character = FDR_ari
+recruit_character = FDR_reino
 
 set_technology = {
 	infantry_weapons = 1

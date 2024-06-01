@@ -4361,21 +4361,21 @@ focus_tree = {
 				add_offsite_building = { type = industrial_complex level = 5 }
 				add_corps_commander_role = {
 					character = JAP_oryou
-					traits={ cavalry_officer }
+					traits={ cavalry_leader scout jungle_rat }
 			        skill=4
-			        attack_skill=1
-			        defense_skill=4
-			        planning_skill=2
-			        logistics_skill=2
+			        attack_skill=4
+			        defense_skill=3
+			        planning_skill=5
+			        logistics_skill=4
 				}
 				add_corps_commander_role = {
 					character = JAP_saemonza
-			        traits={ media_personality swamp_fox }
+			        traits={ mountaineer_leader hill_fighter winter_specialist }
 			        skill=4
-			        attack_skill=5
-			        defense_skill=1
-			        planning_skill=3
-			        logistics_skill=6
+			        attack_skill=3
+			        defense_skill=5
+			        planning_skill=4
+			        logistics_skill=4
 				}
 			}
 			event_target:WTT_current_china_leader = {
@@ -4868,8 +4868,37 @@ focus_tree = {
 			}
 		}
 		
-		completion_reward = {
-			army_experience = 10
+		completion_reward = {	
+		GER = {
+            add_field_marshal_role = {
+		        traits={ panzer_leader offensive_doctrine logistics_wizard trickster }
+                character = GER_miho
+                skill = 5
+                attack_skill = 3
+                defense_skill = 4
+                planning_skill = 4
+                logistics_skill = 2
+            }
+            add_corps_commander_role = {
+		        traits={ scout cavalry_leader jungle_rat trickster }
+                character = GER_yukari
+                skill = 5
+                attack_skill = 4
+                defense_skill = 5
+                planning_skill = 5
+                logistics_skill = 6
+            }
+            add_corps_commander_role = {
+		        traits={ panzer_leader offensive_doctrine reckless }
+                character = GER_riko
+                skill = 4
+                attack_skill = 5
+                defense_skill = 4
+                planning_skill = 4
+                logistics_skill = 3
+            }
+		}
+		army_experience = 10
 			if = {
 				limit = {
 					country_exists = AUS
@@ -13228,22 +13257,22 @@ focus = {
 			create_corps_commander = {
 				name = "Hitomi Yuzumoto"
 				picture = "Yuzumoto.dds"
-				traits = {  }
+				traits = { defensive_doctrine infantry_leader }
 				skill = 3
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
 			}
 			create_corps_commander = {
 				name = "Chihiro Yusa"
 				picture = "Chihiro.dds"
-				traits = {  }
+				traits = { aggressive_assaulter cavalry_leader }
 				skill = 3
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
 			}
 		}
 	}
@@ -13974,13 +14003,13 @@ focus = {
 				traits = { }
 			}
             add_field_marshal_role = {
-		        traits={ brilliant_strategist armor_officer panzer_leader inspirational_leader }
+		        traits={ panzer_leader offensive_doctrine logistics_wizard trickster }
                 character = GER_miho
                 skill = 5
-                attack_skill = 3
-                defense_skill = 4
+                attack_skill = 6
+                defense_skill = 5
                 planning_skill = 4
-                logistics_skill = 2
+                logistics_skill = 5
             }
 		}
 	}
@@ -14103,48 +14132,48 @@ focus = {
 			}
 			add_field_marshal_role = { 
 				character = GER_nakasuga
-				traits = {  }
+				traits = { offensive_doctrine logistics_wizard fast_planner }
 				skill = 4
-				attack_skill = 3
-				defense_skill = 4
+				attack_skill = 5
+				defense_skill = 3
 				planning_skill = 5
-				logistics_skill = 4
-			}
-			add_corps_commander_role  = {
-				character = GER_yuzumoto
-				traits = {  }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 2
-			}
-			add_corps_commander_role  = {
-				character = GER_kita
-				traits = {  }
-				skill = 3
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 4
 				logistics_skill = 3
 			}
 			add_corps_commander_role  = {
-				character = GER_shiratori
-				traits = {  }
+				character = GER_yuzumoto
+				traits = { defensive_doctrine infantry_leader }
 				skill = 3
-				attack_skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			add_corps_commander_role  = {
+				character = GER_kita
+				traits = { fast_planner fortress_buster }
+				skill = 3
+				attack_skill = 3
 				defense_skill = 3
-				planning_skill = 1
+				planning_skill = 4
 				logistics_skill = 2
 			}
 			add_corps_commander_role  = {
-				character = GER_takami
-				traits = {  }
+				character = GER_shiratori
+				traits = { logistics_wizard scavenger }
 				skill = 3
 				attack_skill = 2
-				defense_skill = 1
+				defense_skill = 3
 				planning_skill = 3
 				logistics_skill = 4
+			}
+			add_corps_commander_role  = {
+				character = GER_takami
+				traits = { aggressive_assaulter cavalry_leader }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
 			}
 		}
 	}

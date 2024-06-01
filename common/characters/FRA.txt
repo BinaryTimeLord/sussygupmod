@@ -13,12 +13,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_cautious armor_officer fast_planner expert_delegator }
+			traits={ panzer_leader logistics_wizard infantry_leader }
 			skill=5
-			attack_skill=4
+			attack_skill=5
 			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 		country_leader={
@@ -72,9 +72,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ organizer panzer_leader adaptable }
+			traits={ defensive_doctrine logistics_wizard trickster }
 			skill=4
-			attack_skill=3
+			attack_skill=4
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
@@ -97,12 +97,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless panzer_leader }
+			traits={ panzer_expert infantry_leader fortress_buster }
 			skill=4
 			attack_skill=4
 			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=70840 #oshida b-day
 		}
 	}
@@ -121,12 +121,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_cautious armor_officer }
-			skill = 6
-			attack_skill = 4
-			defense_skill = 6
+			traits={ aggressive_assaulter fast_planner organisational_leader }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
 			planning_skill = 4
-			logistics_skill = 5
+			logistics_skill = 4
 			legacy_id=-1
 		}
 	}
@@ -141,11 +141,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious thorough_planner }
+			traits={ aggressive_assaulter fast_planner infantry_leader }
 			skill=3
-			attack_skill=1
-			defense_skill=4
-			planning_skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
 		}
@@ -161,12 +161,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer trait_mountaineer }
+			traits={ logistics_wizard infantry_leader organisational_leader }
 			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -181,10 +181,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard armor_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
+			skill=5
+			attack_skill=5
+			defense_skill=5
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1
@@ -201,12 +201,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard panzer_leader }
+			traits={ fast_planner fortress_buster infantry_leader }
 			skill=4
 			attack_skill=4
-			defense_skill=2
+			defense_skill=4
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -221,9 +221,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard cavalry_leader }
+			traits={ panzer_leader organisational_leader trickster }
 			skill=4
-			attack_skill=2
+			attack_skill=4
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=4

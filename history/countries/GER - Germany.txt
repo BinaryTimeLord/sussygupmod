@@ -250,7 +250,7 @@ set_war_support = 0.3
 	#Soviet treaty end
 	
 	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
+	complete_national_focus = GER_anschluss
 	unlock_national_focus = GER_demand_sudetenland
 	unlock_national_focus = GER_first_vienna_award
 	unlock_national_focus = GER_end_of_czechoslovakia
@@ -1092,6 +1092,7 @@ if = {
 
 ## 1939 Start ##
 1939.1.1 = {
+
 	if = {
 		limit = {
 			not = { has_dlc = "Man the Guns" }

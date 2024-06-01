@@ -31,12 +31,12 @@ characters = {
 		}
 
 		field_marshal={
-			traits={ armor_officer logistics_wizard expert_delegator }
+			traits={ panzer_leader organisational_leader trickster logistics_wizard }
 			skill=5
-			attack_skill=3
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
+			attack_skill=6
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -110,6 +110,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_italy_ferruccio_parri
+				small="gfx/interface/ideas/Anzio/idea_ita_ricotta.dds"
 			}
 		}
 
@@ -137,11 +138,11 @@ characters = {
 		}
 
 		corps_commander={
-			traits={ career_officer panzer_leader }
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
 			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=3
 			legacy_id=696969
 		}
@@ -305,12 +306,12 @@ characters = {
 		}
 
 		corps_commander={
-			traits={ career_officer panzer_leader desert_fox }
+			traits={ offensive_doctrine panzer_expert fast_planner }
 			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=6969696
 		}
 
@@ -921,7 +922,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { ascari_officer trickster guerilla_fighter reckless desert_fox } # Ascari
+			traits = { ascari_officer trickster guerilla_fighter trait_reckless desert_fox } # Ascari
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -1746,12 +1747,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits={ panzer_leader }
+			traits={ aggressive_assaulter cavalry_leader }
 			skill=3
 			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=69696969
 		}
 
@@ -2737,7 +2738,7 @@ characters = {
 	ITA_ivanoe_bonomi = {
 		name = ITA_ivanoe_bonomi
 		portraits = {
-			army = {
+			civilian = {
 				small="gfx/interface/ideas/Anzio/idea_ita_bologna.dds"
 				large = GFX_portrait_ITA_ivanoe_bonomi
 			}

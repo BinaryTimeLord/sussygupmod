@@ -21,12 +21,12 @@ characters={
 			id=-1
 		}
 		field_marshal={
-			traits={ armor_officer war_hero ranger offensive_doctrine expert_delegator }
+			traits={ panzer_leader organisational_leader trickster }
 			skill=5
-			attack_skill=4
-			defense_skill=5
+			attack_skill=6
+			defense_skill=4
 			planning_skill=5
-			logistics_skill=4
+			logistics_skill=5
 			legacy_id=1003
 		}
 	}
@@ -51,12 +51,12 @@ characters={
 			id=-1
 		}
 		corps_commander={
-			traits={ career_officer harsh_leader kmm_waffen_ss panzer_leader ranger }
+			traits={ kmm_waffen_ss offensive_doctrine fast_planner }
 			skill=4
-			attack_skill=4
+			attack_skill=5
 			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=1004
 		}
 	}
@@ -82,11 +82,11 @@ characters={
 		}
 
 		corps_commander={
-			traits={ career_officer trait_cautious panzer_leader ranger }
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
 			skill=4
 			attack_skill=4
-			defense_skill=4
-			planning_skill=4
+			defense_skill=5
+			planning_skill=3
 			logistics_skill=4
 			legacy_id=1005
 		}
@@ -102,12 +102,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trait_engineer panzer_leader }
+			traits={ aggressive_assaulter cavalry_leader}
 			skill=3
 			attack_skill=4
 			defense_skill=3
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=1006
 		}
 	}
@@ -122,12 +122,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ bearer_of_artillery panzer_leader }
+			traits={ defensive_doctrine fortress_buster }
 			skill=3
-			attack_skill=5
+			attack_skill=3
 			defense_skill=4
 			planning_skill=2
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=1007
 		}
 	}
@@ -142,12 +142,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster panzer_leader }
+			traits={ fast_planner scavenger }
 			skill=3
-			attack_skill=4
-			defense_skill=3
+			attack_skill=3
+			defense_skill=2
 			planning_skill=4
-			logistics_skill=4
+			logistics_skill=3
 			legacy_id=1009
 		}
 	}
@@ -162,12 +162,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless panzer_leader }
+			traits={ logistics_wizard trait_engineer }
 			skill=3
-			attack_skill=4
+			attack_skill=2
 			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=1008
 		}
 	}
@@ -199,7 +199,7 @@ characters={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_miho_armychief.dds"
 			}
 			army={
-				large="gfx/leaders/GER/Portrait_GER_Miho1.dds"
+				large="gfx/leaders/GER/Portrait_GER_Miho.dds"
 			}
 		}
 	}

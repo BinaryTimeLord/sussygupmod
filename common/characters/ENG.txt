@@ -49,11 +49,36 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_cautious armor_officer defensive_doctrine expert_delegator }
+			traits={ panzer_leader logistics_wizard infantry_leader }
 			skill=5
-			attack_skill=4
-			defense_skill=5
-			logistics_skill=3
+			attack_skill=5
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	ENG_alice={
+		name="Alice Shimada"
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Alice.dds"
+			}
+			army={
+				small="gfx/interface/ideas/St. Gloriana/idea_eng_alice.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_ENG_Alice.dds"
+			}
+		}
+		field_marshal={
+			traits={ aggressive_assaulter fast_planner organisational_leader }
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -72,7 +97,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer panzer_leader hill_fighter }
+			traits={ defensive_doctrine logistics_wizard trickster }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -102,12 +127,12 @@ characters={
 			id=-1
 		}
 		corps_commander={
-			traits={ trait_engineer panzer_leader adaptable }
+			traits={ panzer_expert infantry_leader fortress_buster }
 			skill=4
 			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -132,12 +157,12 @@ characters={
 			id=-1
 		}
 		corps_commander={
-			traits={ trickster panzer_leader urban_assault_specialist }
+			traits={ aggressive_assaulter fast_planner panzer_leader }
 			skill=4
-			attack_skill=4
+			attack_skill=5
 			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -155,10 +180,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ organizer infantry_leader panzer_leader }
+			traits={ logistics_wizard infantry_leader organisational_leader }
 			skill=3
-			attack_skill=4
-			defense_skill=2
+			attack_skill=2
+			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
@@ -175,12 +200,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader }
+			traits={ cavalry_leader fast_planner trickster }
 			skill=3
-			attack_skill=2
+			attack_skill=3
 			defense_skill=3
 			planning_skill=2
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -195,12 +220,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader career_officer }
-			skill=2
-			attack_skill=2
+			traits={ aggressive_assaulter logistics_wizard infantry_leader }
+			skill=3
+			attack_skill=3
 			defense_skill=2
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -215,12 +240,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader media_personality }
-			skill=2
-			attack_skill=1
-			defense_skill=3
+			traits={ fortress_buster fast_planner organisational_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=4
 			planning_skill=2
-			logistics_skill=1
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -235,11 +260,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader reckless }
-			skill=2
-			attack_skill=3
-			defense_skill=1
-			planning_skill=1
+			traits={ panzer_leader logistics_wizard trickster }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
 		}

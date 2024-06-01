@@ -26,15 +26,15 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
-				large="gfx/leaders/MAN/Ikeda.dds"
+				large="gfx/leaders/JAP/Ikeda.dds"
 			}
 		}
 		field_marshal={
-			traits={ trait_reckless panzer_leader }
-			skill=4
+			traits={ scavenger logistics_wizard }
+			skill=3
 			attack_skill=4
 			defense_skill=3
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
 		}

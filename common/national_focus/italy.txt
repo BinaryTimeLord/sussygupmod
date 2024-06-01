@@ -11234,12 +11234,12 @@ focus_tree = {
 		completion_reward = {
             add_corps_commander_role = {
 				character = ITA_caesar
-			    traits={ cavalry_officer }
+			    traits={ infantry_leader defensive_doctrine logistics_wizard }
 			    skill=4
-			    attack_skill=3
-			    defense_skill=2
+			    attack_skill=4
+			    defense_skill=4
 			    planning_skill=3
-			    logistics_skill=2
+			    logistics_skill=5
 			    legacy_id=-1
             }         
 		}

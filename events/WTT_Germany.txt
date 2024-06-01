@@ -2249,7 +2249,7 @@ country_event = {
 						factor = 100
 						has_dlc = "Trial of Allegiance"
 						ARG = {
-							has_completed_focus = ARG_guardia_nacional
+							has_completed_focus = ARG_work_with_the_nationalists
 						}
 					}
 

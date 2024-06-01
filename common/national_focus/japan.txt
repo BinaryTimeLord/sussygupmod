@@ -1590,30 +1590,30 @@
 			add_political_power = 100
 			add_field_marshal_role = {
                 character = shizuka_tsuruki
-				traits = { cht_kodoha_symphatizer panzer_leader JAP_samurai_lineage trait_reckless }
-				skill = 5
-				attack_skill = 4
-				defense_skill = 3
+				traits = { cht_kodoha_symphatizer offensive_doctrine logistics_wizard fast_planner }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
 				planning_skill = 4
 				logistics_skill = 2
 			}
 			add_corps_commander_role = {
                 character = rin_matsukaze
-				traits = { cht_kodoha_symphatizer infantry_leader }
-				skill = 2
-				attack_skill = 2
+				traits = { cht_kodoha_symphatizer aggressive_assault infantry_leader }
+				skill = 3
+				attack_skill = 4
 				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
 			}
 			add_corps_commander_role = {
                 character = endou_haruka
-				traits = { cht_kodoha_symphatizer infantry_leader }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
+				traits = { cht_kodoha_symphatizer defensive_doctrine cavalry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 3
 			}
 		}
 	}
@@ -5394,30 +5394,30 @@
 			add_stability = 0.1
 			add_field_marshal_role = {
                 character = shizuka_tsuruki
-				traits = { cht_kodoha_symphatizer panzer_leader JAP_samurai_lineage trait_reckless }
-				skill = 5
-				attack_skill = 4
-				defense_skill = 3
+				traits = { cht_kodoha_symphatizer offensive_doctrine logistics_wizard fast_planner }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
 				planning_skill = 4
 				logistics_skill = 2
 			}
 			add_corps_commander_role = {
                 character = rin_matsukaze
-				traits = { cht_kodoha_symphatizer infantry_leader }
-				skill = 2
-				attack_skill = 2
+				traits = { cht_kodoha_symphatizer aggressive_assault infantry_leader }
+				skill = 3
+				attack_skill = 4
 				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
 			}
 			add_corps_commander_role = {
                 character = endou_haruka
-				traits = { cht_kodoha_symphatizer infantry_leader }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
+				traits = { cht_kodoha_symphatizer defensive_doctrine cavalry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 3
 			}
 		}
 	}
@@ -5460,30 +5460,30 @@
 			retire_country_leader = yes
 			add_field_marshal_role = {
                 character = shizuka_tsuruki
-				traits = { cht_kodoha_symphatizer panzer_leader JAP_samurai_lineage trait_reckless }
-				skill = 5
-				attack_skill = 4
-				defense_skill = 3
+				traits = { cht_kodoha_symphatizer offensive_doctrine logistics_wizard fast_planner }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
 				planning_skill = 4
 				logistics_skill = 2
 			}
 			add_corps_commander_role = {
                 character = rin_matsukaze
-				traits = { cht_kodoha_symphatizer infantry_leader }
-				skill = 2
-				attack_skill = 2
+				traits = { cht_kodoha_symphatizer aggressive_assault infantry_leader }
+				skill = 3
+				attack_skill = 4
 				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
 			}
 			add_corps_commander_role = {
                 character = endou_haruka
-				traits = { cht_kodoha_symphatizer infantry_leader }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
+				traits = { cht_kodoha_symphatizer defensive_doctrine cavalry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 3
 			}
 			#add_country_leader_role = {
             #    character = shizuka_tsuruki

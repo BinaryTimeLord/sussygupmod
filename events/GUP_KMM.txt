@@ -1379,67 +1379,67 @@ country_event = { ##ooarai student
 		create_field_marshal = {
 			name = "Saori"
 			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Saori.dds"
-			traits = { media_personality cavalry_officer }
+			traits = { infantry_leader defensive_doctrine logistics_wizard commando }
 			skill = 5
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 5
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 4
 		}
 		
 		create_corps_commander = {
 			name = "Erwin"
 			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Erwin.dds"
-			traits = { desert_fox panzer_leader brilliant_strategist}
+			traits = { panzer_leader offensive_doctrine trait_reckless }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 5
 			defense_skill = 4
-			planning_skill = 5
-			logistics_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
 		}
 		
 		create_corps_commander = {
 			name = "Saemonza"
 			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Saemonza.dds"
-			traits = { swamp_fox }
+			traits = { trait_mountaineer hill_fighter winter_specialist }
 			skill = 4
-			attack_skill = 5
-			defense_skill = 1
-			planning_skill = 3
-			logistics_skill = 6
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
 		}
 		
 		create_corps_commander = {
 			name = "Noriko"
 			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Noriko.dds"
-			traits = { trait_reckless infantry_officer inflexible_strategist}
+			traits = { defensive_doctrine hill_fighter trait_engineer }
 			skill = 4
-			attack_skill = 5
-			defense_skill = 2
+			attack_skill = 4
+			defense_skill = 5
 			planning_skill = 3
-			logistics_skill = 2
+			logistics_skill = 4
 		}
 		
 		create_corps_commander = {
 			name = "Taeko"
 			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Taeko.dds"
-			traits = { trait_reckless }
+			traits = { fast_planner logistics_wizard old_guard }
 			skill = 4
-			attack_skill = 4
-			defense_skill = 5
-			planning_skill = 2
-			logistics_skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
 		}
 		
 		create_corps_commander = {
 			name = "Suzuki"
 			portrait_path = "gfx/leaders/AUS/Portrait_AUS_Suzuki.dds"
-			traits = { armor_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 4
+			traits = { infantry_leader defensive_doctrine logistics_wizard }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
 		}
 	}
 }

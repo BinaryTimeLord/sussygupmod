@@ -497,6 +497,7 @@ recruit_character = ENG_nilgiri
 recruit_character = ENG_vanilla
 recruit_character = ENG_peach
 recruit_character = ENG_cranberry
+recruit_character = ENG_alice
 
 # Order matters - here Darjeeling becomes starting leader
 recruit_character = ENG_oswald_mosley

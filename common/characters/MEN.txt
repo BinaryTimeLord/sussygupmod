@@ -28,16 +28,16 @@ characters={ #IGNORE FOR NOW - MEN WON'T EXIST INDEFINITELY
 				small="gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
 			}
 			army={
-				large="gfx/leaders/MEN/Teramoto.dds"
+				large="gfx/leaders/JAP/Teramoto.dds"
 			}
 		}
 		field_marshal={
-			traits={ panzer_leader expert_delegator }
-			skill=4
+			traits={ fortress_buster trait_engineer }
+			skill=3
 			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

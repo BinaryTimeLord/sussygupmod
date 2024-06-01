@@ -6,7 +6,7 @@ characters={
 				small="gfx/interface/ideas/Jatkosota/idea_fin_aki.dds"
 			}
 			army={
-				large="gfx/leaders/FDR/Portrait_FDR_Aki1.dds"
+				large="gfx/leaders/FIN/Portrait_FIN_Aki1.dds"
 			}
 		}
 		country_leader={
@@ -16,12 +16,113 @@ characters={
 			id=-1
 		}
 		field_marshal={
-			traits={ trait_cautious trickster }
+			traits={ offensive_doctrine panzer_expert fast_planner }
 			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+
+	FDR_yuri={
+		name="Yuri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_yuri.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Yuri.dds"
+			}
+		}
+		corps_commander={
+			traits={ fast_planner infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	FDR_tami={
+		name="Tami"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_tami.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Tami.dds"
+			}
+		}
+		corps_commander={
+			traits={ defensive_doctrine logistics_wizard}
+			skill=3
 			attack_skill=2
-			defense_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	FDR_tomi={
+		name="Tomi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_tomi.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Tomi.dds"
+			}
+		}
+		corps_commander={
+			traits={ organisational_leader cavalry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	FDR_ari={
+		name="Ari"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_ari.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Ari.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader logistics_wizard }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	FDR_reino={
+		name="Reino"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_reino.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Reino.dds"
+			}
+		}
+		corps_commander={
+			traits={ aggressive_assaulter fortress_buster }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 }

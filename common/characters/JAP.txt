@@ -11,12 +11,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ armor_officer offensive_doctrine expert_delegator }
+			traits={ panzer_leader organisational_leader trickster logistics_wizard }
 			skill=5
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			attack_skill=6
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=120841 # Nishi's birthday
 		}
 		country_leader={
@@ -25,93 +25,6 @@ characters={
 			traits={ emperor_nishi warrior_code shintoism totsugeki_sanction }
 			expire="1989.1.1.1"
 			id=1208
-		}
-	}
-
-	JAP_shizuko_hosomi={
-		name="Shizuko Hosomi"
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Hosomi.dds"
-			}
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
-				large="gfx/leaders/JAP/Hosomi1.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_reckless cht_toseiha_symphatizer trickster panzer_leader }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=120941
-		}
-		country_leader={
-			desc="POLITICS_HOSOMI_DESC"
-			ideology=japanese_idealism2
-			traits={ warrior_code }
-			expire="1989.1.1.1"
-			id=1209
-		}
-	}
-
-	JAP_haru_tamada={ # Old name made by Yamato from cht fan server
-		name="Tamaki Tamada" # Official names
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Tamada.dds"
-			}
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds" # Old name made by Yamato from cht fan server
-				large="gfx/leaders/JAP/Tamada1.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_reckless cavalry_leader panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=121041
-		}
-		country_leader={
-			desc="POLITICS_TAMADA_DESC"
-			ideology=japanese_idealism4
-			traits={ warrior_code shintoism }
-			expire="1989.1.1.1"
-			id=1210
-		}
-	}
-
-	JAP_noriyo_hamada={
-		name="Noriyo Hamada"
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Hamada.dds"
-			}
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
-				large="gfx/leaders/JAP/Hamada.dds"
-			}
-		}
-		corps_commander={
-			traits={ cht_kodoha_symphatizer infantry_leader panzer_leader camouflage_expert }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=121141
-		}
-		country_leader={
-			desc="POLITICS_HAMADA_DESC"
-			ideology=japanese_idealism
-			traits={ warrior_code centrist_dem }
-			expire="1989.1.1.1"
-			id=1211
 		}
 	}
 
@@ -127,12 +40,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious panzer_leader }
+			traits={ aggressive_assaulter cavalry_leader trickster }
 			skill=4
 			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=1212 # Nishi is 120841
 		}
 		country_leader={
@@ -141,6 +54,93 @@ characters={
 			traits={ warrior_code shintoism totsugeki_sanction }
 			expire="1989.1.1.1"
 			id=1212
+		}
+	}
+
+	JAP_haru_tamada={ # Old name made by Yamato from cht fan server
+		name="Tamaki Tamada" # Official names
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Tamada.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds" # Old name made by Yamato from cht fan server
+				large="gfx/leaders/JAP/Tamada1.dds"
+			}
+		}
+		corps_commander={
+			traits={ defensive_doctrine logistics_wizard infantry_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=121041
+		}
+		country_leader={
+			desc="POLITICS_TAMADA_DESC"
+			ideology=japanese_idealism4
+			traits={ warrior_code shintoism }
+			expire="1989.1.1.1"
+			id=1210
+		}
+	}
+
+	JAP_shizuko_hosomi={
+		name="Shizuko Hosomi"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Hosomi.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
+				large="gfx/leaders/JAP/Hosomi1.dds"
+			}
+		}
+		corps_commander={
+			traits={ cht_toseiha_symphatizer offensive_doctrine panzer_expert fast_planner }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=120941
+		}
+		country_leader={
+			desc="POLITICS_HOSOMI_DESC"
+			ideology=japanese_idealism2
+			traits={ warrior_code }
+			expire="1989.1.1.1"
+			id=1209
+		}
+	}
+
+	JAP_noriyo_hamada={
+		name="Noriyo Hamada"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Hamada.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
+				large="gfx/leaders/JAP/Hamada.dds"
+			}
+		}
+		corps_commander={
+			traits={ cht_kodoha_symphatizer fast_planner fortress_buster }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=121141
+		}
+		country_leader={
+			desc="POLITICS_HAMADA_DESC"
+			ideology=japanese_idealism
+			traits={ warrior_code centrist_dem }
+			expire="1989.1.1.1"
+			id=1211
 		}
 	}
 
@@ -178,11 +178,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless cht_kodoha_symphatizer panzer_leader expert_improviser }
+			traits={ cht_kodoha_symphatizer scavenger logistics_wizard }
 			skill=3
 			attack_skill=4
 			defense_skill=3
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=2
 			legacy_id=1213
 		}
@@ -197,13 +197,32 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious cht_kodoha_symphatizer panzer_leader naval_liason }
+			traits={ cht_kodoha_symphatizer panzer_leader trait_engineer }
 			skill=3
 			attack_skill=3
-			defense_skill=3
+			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=1214
+		}
+	}
+
+	JAP_teramoto={
+		name="Tomiko Teramoto"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
+				large="gfx/leaders/JAP/Teramoto.dds"
+			}
+		}
+		corps_commander={
+			traits={ cht_toseiha_symphatizer fortress_buster trait_engineer }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1218
 		}
 	}
 
@@ -216,11 +235,11 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { panzer_leader infantry_leader cht_toseiha_symphatizer }
+			traits = { cht_toseiha_symphatizer infantry_leader organisational_leader }
 			skill = 3
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
 			logistics_skill = 3
 			legacy_id=1215
 		}
@@ -235,10 +254,10 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { panzer_leader swamp_fox naval_invader cht_toseiha_symphatizer }
+			traits = { cht_toseiha_symphatizer defensive_doctrine logistics_wizard}
 			skill = 3
 			attack_skill = 3
-			defense_skill = 3
+			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 3
 			legacy_id=1216
@@ -254,32 +273,13 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { panzer_leader jungle_rat naval_invader cht_toseiha_symphatizer }
+			traits = { cht_toseiha_symphatizer offensive_doctrine trickster}
 			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
 			legacy_id=1217
-		}
-	}
-
-	JAP_teramoto={
-		name="Tomiko Teramoto"
-		portraits={
-			army={
-				small="gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
-				large="gfx/leaders/JAP/Teramoto.dds"
-			}
-		}
-		corps_commander={
-			traits={ cht_toseiha_symphatizer trait_engineer panzer_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1218
 		}
 	}
 	
@@ -292,12 +292,12 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { panzer_leader cht_toseiha_symphatizer }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
+			traits = { cht_toseiha_symphatizer fast_planner fortress_buster}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id=1219
 		}
 	}
@@ -311,12 +311,12 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { panzer_leader cht_toseiha_symphatizer }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
+			traits = { cht_toseiha_symphatizer logistics_wizard infantry_leader}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 3
 			legacy_id=1220
 		}
 	}
