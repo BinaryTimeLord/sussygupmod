@@ -16251,7 +16251,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_free_communist_prisoners
-		icon = GFX_focus_GER_kitas_prisoners
+		icon = GFX_focus_GER_chifuyu_prisoners
 		prerequisite = { focus = GER_socialist_exile_exchange }
 		x = -1
 		y = 1
@@ -16306,7 +16306,7 @@ focus = {
 	}
 	focus = { 
 		id = GER_free_strasserist_prisoners
-		icon = GFX_focus_GER_yuzumotos_prisoners
+		icon = GFX_focus_GER_neko_prisoners
 		prerequisite = { focus = GER_socialist_exile_exchange }
 		available = {
 		}
@@ -16372,9 +16372,9 @@ focus = {
 				elections_allowed = yes
 			}
 			create_country_leader = {
-				name = "Hitomi Yuzumoto"
-				desc = "POLITICS_Hitomi_Yuzumoto_DESC"
-				picture = "Portrait_GER_Yuzumoto1.dds"
+				name = "Neko Yamamori"
+				desc = "POLITICS_NEKO_YAMAMORI_DESC"
+				picture = "Portrait_GER_Neko.dds"
 				expire = "1965.1.1"
 				ideology = anarchist_communism
 				traits = {
@@ -16421,9 +16421,9 @@ focus = {
 				elections_allowed = yes
 			}
 			create_country_leader = {
-				name = "Kita Kabayo"
-				desc = "POLITICS_KITA_KABAYO_DESC"
-				picture = "Portrait_GER_Kita.dds"
+				name = "Chifuyu Doi"
+				desc = "POLITICS_CHIFUYU_DOI_DESC"
+				picture = "Portrait_GER_Chifuyu.dds"
 				expire = "1965.1.1"
 				ideology = stalinism
 				traits = {

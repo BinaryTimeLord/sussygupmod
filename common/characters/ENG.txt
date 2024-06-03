@@ -72,15 +72,6 @@ characters={
 				large="gfx/leaders/ENG/Portrait_ENG_Alice.dds"
 			}
 		}
-		field_marshal={
-			traits={ aggressive_assaulter fast_planner organisational_leader }
-			skill=5
-			attack_skill=6
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
-		}
 	}
 	
 	ENG_orange_pekoe={

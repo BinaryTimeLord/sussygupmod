@@ -29,13 +29,6 @@ characters={
 			id=-1
 		}
 		country_leader={
-			desc="POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-			ideology=american_idealism3
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
 			desc="POLITICS_CARNOY_WHEELER_DESC"
 			ideology=american_idealism4
 			traits={ financial_expert }
@@ -79,6 +72,13 @@ characters={
 			army={
 				large="gfx/leaders/USA/Portrait_USA_Naomi1.dds"
 			}
+		}
+		country_leader={
+			desc="POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+			ideology=american_idealism3
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander={
 			traits={ fast_planner fortress_buster infantry_leader }

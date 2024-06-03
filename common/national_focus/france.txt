@@ -5168,7 +5168,7 @@
 		completion_reward = {
 			hidden_effect = {
 				create_country_leader = {
-					name = "Pierre Laval"
+					name = "Marie"
 					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 					picture = GFX_portrait_fra_pierre_laval
 					expire = "1965.1.1"
@@ -5500,7 +5500,7 @@
 			set_rule = { can_create_factions = yes }
 			create_faction = FRA_latin_entente
 			create_country_leader = {
-				name = "François de la Rocque"
+				name = "Moules"
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 				picture = GFX_portrait_fra_francois_de_la_rocque
 				expire = "1965.1.1"
@@ -5877,7 +5877,7 @@
 		completion_reward = {
 			add_stability = -0.05
 			create_country_leader = {
-				name = "Jacques Doriot"
+				name = "Bordeaux"
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 				picture = GFX_portrait_fra_jacques_doriot
 				expire = "1965.1.1"
@@ -7005,7 +7005,7 @@
 					date < 1940.8.25
 				}
 				create_country_leader = {
-					name = "Jean III"
+					name = "Galette"
 					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 					picture = GFX_portrait_fra_jean_duke_of_guise
 					expire = "1965.1.1"
@@ -7017,7 +7017,7 @@
 			}
 			else = {
 				create_country_leader = {
-					name = "Henri VI"
+					name = "Eclair"
 					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 					picture = GFX_portrait_fra_henry_count_of_paris
 					expire = "1965.1.1"
@@ -7309,7 +7309,7 @@
 					date < 1941.2.21 #TODO_GABRIEL: coordinate with Drikus for death events
 				}
 				create_country_leader = {
-					name = "Alphonse I"
+					name = "Madelaine"
 					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 					picture = GFX_portrait_SPA_alfonso_xiii
 					expire = "1965.1.1"
@@ -7321,7 +7321,7 @@
 			}
 			else = {
 				create_country_leader = {
-					name = "Jacques II"
+					name = "Fondue"
 					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 					picture = GFX_portrait_fra_infante_jaime
 					expire = "1965.1.1"
@@ -7560,7 +7560,7 @@
 
 		completion_reward = {
 			create_country_leader = {
-				name = "Napoléon VI"
+				name = "Azumi"
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 				picture = GFX_portraits_fra_napoleon_vi
 				expire = "1965.1.1"

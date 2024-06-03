@@ -332,6 +332,15 @@ country_event = {
 				cautious_arbiter				
 			}
 		}
+        add_field_marshal_role = {
+            character = ENG_alice
+			traits = { aggressive_assaulter fast_planner organisational_leader }
+            skill = 5
+            attack_skill = 6
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 4
+        }
 	}
 }
 

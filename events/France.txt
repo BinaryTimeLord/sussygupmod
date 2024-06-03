@@ -751,7 +751,7 @@ country_event = {
 			set_country_flag = vichy_france
 			save_event_target_as = vichy_france
 
-			FRA = { #Move Petain to Vichy
+			FRA = { #Move Oshida to Vichy
 				set_nationality = {
 					target_country = PREV
 					character = FRA_philippe_petain
@@ -1300,7 +1300,7 @@ country_event = {
 			}
 			every_unit_leader = {
 				limit = {
-					has_id = 101 #de Gaulle
+					has_id = 101 #Andou
 				}
 				set_nationality = FRA
 			}
@@ -1453,7 +1453,7 @@ country_event = {
 	}
 }
 
-# De Gaulle becomes leader
+# Andou becomes leader
 country_event = {
 	id = france.20
 	title = france.20.t
@@ -1969,7 +1969,7 @@ country_event = {
 	}
 }
 
-# Édouard Daladier Resigns
+# Marie Resigns
 country_event = {
     id = france.31
     title = france.31.t

@@ -324,8 +324,8 @@
  MAN_changlin_linge:0 "Changlin Linge"
 
  #USA
- USA_franklin_delano_roosevelt:0 "Franklin Delano Roosevelt"
- USA_william_dudley_pelley:0 "William Dudley Pelley"
+ USA_franklin_delano_roosevelt:0 "Kay"
+ USA_william_dudley_pelley:0 "Naomi"
  USA_earl_browder:0 "$earl_browder$"
  USA_george_s_patton:0 "$george_patton$"
  USA_omar_bradley:0 "$omar_bradley$"
@@ -421,12 +421,12 @@
  ITA_carlo_scorza:0 "$carlo_scorza$"
 
  #FRANCE
- FRA_pierre_laval:0 "Pierre Laval"
- FRA_edouard_daladier:0 "Édouard Daladier"
- FRA_denis_guillaumat:0 "Denis Guillaumat"
+ FRA_pierre_laval:0 "Marie"
+ FRA_edouard_daladier:0 "Marie"
+ FRA_denis_guillaumat:0 "Marie"
  FRA_maurice_thorez:0 "$maurice_thorez$"
- FRA_rene_nicod:0 "René Nicod"
- FRA_philippe_petain:0 "Philippe Pétain"
+ FRA_rene_nicod:0 "Sofue"
+ FRA_philippe_petain:0 "Oshida"
  FRA_jean_de_lattre_de_tassigny:0 "Jean de Lattre de Tassigny"
  FRA_alphonse_juin:0 "Alphonse Juin"
  FRA_maurice_gamelin:0 "$maurice_gamelin$"

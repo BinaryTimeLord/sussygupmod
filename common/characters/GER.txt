@@ -91,6 +91,26 @@ characters={
 			legacy_id=1005
 		}
 	}
+	GER_sheska={
+		name="Sheska"
+		portraits={
+		    army={
+			small="gfx/interface/ideas/Kuromorimine/idea_ger_sheska.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Sheska.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader logistics_wizard fast_planner  }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
 	GER_emi_kojima={
 		name="Emi Kojima"
 		portraits={
@@ -271,9 +291,6 @@ characters={
     GER_yuzumoto={
 		name="Yuzumoto Hitomi"
 		portraits={
-			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Yuzumoto1.dds"
-			}
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_yuzumoto.dds"
 			}
@@ -286,21 +303,12 @@ characters={
     GER_kita={
 		name="Kita Kabayo"
 		portraits={
-			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Kita1.dds"
-			}
 			army={
 				small="gfx/interface/ideas/Kuromorimine/idea_ger_kita.dds"
 			}
 			army={
 				large="gfx/leaders/GER/Portrait_GER_Kita.dds"
 			}
-		}
-		country_leader={
-			ideology = german_idealism2
-			traits={ exiled }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -325,6 +333,42 @@ characters={
 			army={
 				large="gfx/leaders/GER/Portrait_GER_Chihiro.dds"
 			}
+		}
+	}
+
+    GER_neko={
+		name="Neko Yamamori"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_Neko.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_neko.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Neko.dds"
+			}
+		}
+	}
+
+    GER_chifuyu={
+		name="Chifuyu Doi"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_Chifuyu.dds"
+			}
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_chifuyu.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Chifuyu.dds"
+			}
+		}
+		country_leader={
+			ideology = german_idealism2
+			traits={ exiled }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 		

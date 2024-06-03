@@ -10007,16 +10007,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_kitas_prisoners"
-		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_kitas_prisoners.dds"
+		name = "GFX_focus_GER_chifuyu_prisoners"
+		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_chifuyu_prisoners.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_kitas_prisoners_shine"
-		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_kitas_prisoners.dds"
+		name = "GFX_focus_GER_chifuyu_prisoners_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_chifuyu_prisoners.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_kitas_prisoners.dds"
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_chifuyu_prisoners.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -10029,7 +10029,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_kitas_prisoners.dds"
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_chifuyu_prisoners.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -10044,16 +10044,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_yuzumotos_prisoners"
-		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_yuzumotos_prisoners.dds"
+		name = "GFX_focus_GER_neko_prisoners"
+		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_neko_prisoners.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_yuzumotos_prisoners_shine"
-		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_yuzumotos_prisoners.dds"
+		name = "GFX_focus_GER_neko_prisoners_shine"
+		texturefile = "gfx/interface/goals/Kuromorimine/focus_GER_neko_prisoners.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_yuzumotos_prisoners.dds"
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_neko_prisoners.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -10066,7 +10066,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_yuzumotos_prisoners.dds"
+			animationmaskfile = "gfx/interface/goals/Kuromorimine/focus_GER_neko_prisoners.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

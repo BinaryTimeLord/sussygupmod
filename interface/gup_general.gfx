@@ -365,6 +365,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_SPR_communism_group"
+		texturefile = "gfx/interface/ideologies/Blue Division.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_SPR_democratic_group"
+		texturefile = "gfx/interface/ideologies/Blue Division.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ideology_SWE_democratic_group"
 		texturefile = "gfx/interface/ideologies/Viggen.dds"
 	}

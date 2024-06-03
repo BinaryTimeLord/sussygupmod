@@ -191,7 +191,7 @@ country_event = {
 	}
 }
 
-# Election of 1936: Roosevelt vs Alf Landon
+# Election of 1936: Kay vs Alisa
 country_event = {
 	id = usa.6
 	title = usa.6.t
@@ -294,7 +294,7 @@ country_event = {
 			add_ideas = standard_oil_california
 		}
 		create_country_leader = {
-			name = "Alf Landon"
+			name = "Alisa"
 			desc = "POLITICS_ALF_LANDON_DESC"
 			picture = GFX_portrait_Alf_Landon
 			expire = "1965.1.1"
@@ -307,7 +307,7 @@ country_event = {
 	}
 }
 
-# Election of 1940: Roosevelt vs Wendell Wilkie
+# Election of 1940: Kay vs Alisa
 country_event = {
 	id = usa.7
 	title = usa.7.t
@@ -398,7 +398,7 @@ country_event = {
 	}
 }
 
-# Election of 1940: Roosevelt vs Landon (Incumbent)
+# Election of 1940: Kay vs Alisa (Incumbent)
 country_event = {
 	id = usa.8
 	title = usa.8.t
@@ -470,7 +470,7 @@ country_event = {
 	}
 }
 
-# Election of 1944: Roosevelt vs Thomas E. Dewey
+# Election of 1944: Kay vs Alisa
 country_event = {
 	id = usa.9
 	title = usa.9.t
@@ -547,7 +547,7 @@ country_event = {
 		add_political_power = 120
 		custom_effect_tooltip = usa_congress_elections_tt_good
 		create_country_leader = {
-			name = "Thomas E. Dewey"
+			name = "Alisa"
 			desc = "POLITICS_THOMAS_DEWEY_DESC"
 			picture = GFX_portrait_Thomas_E_Dewey
 			expire = "1965.1.1"
@@ -560,7 +560,7 @@ country_event = {
 	}
 }
 
-# Election of 1944: Roosevelt vs Incumbent
+# Election of 1944: Kay vs Incumbent
 country_event = {
 	id = usa.10
 	title = usa.10.t
@@ -634,7 +634,7 @@ country_event = {
 	}
 }
 
-# Election of 1944: Roosevelt vs MacArthur
+# Election of 1944: Kay vs MacArthur
 country_event = {
 	id = usa.11
 	title = usa.11.t
@@ -757,7 +757,7 @@ country_event = {
 	}
 }
 
-# Roosevelt Dies
+# Kay Dies
 country_event = {
 	id = usa.13
 	title = usa.13.t
@@ -782,7 +782,7 @@ country_event = {
 		add_political_power = -40
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Harry S. Truman"
+			name = "Kay"
 			desc = "POLITICS_HARRY_TRUMAN_DESC"
 			picture = GFX_portrait_Harry_S_Truman
 			expire = "1965.1.1"
