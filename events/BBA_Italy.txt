@@ -5196,7 +5196,6 @@ country_event = {
 		name = BBA_italy_bop.3.a
 
 		ITA_bop_medium_increase_effect = yes	
-		ITA_bop_decrease_lost_core_modifier = yes
 		custom_effect_tooltip = ITA_reclaiming_cores_tt	
 	}
 }

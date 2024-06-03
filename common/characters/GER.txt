@@ -171,6 +171,46 @@ characters={
 			legacy_id=1008
 		}
 	}
+	GER_anna={
+		name="Anna Iruma"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_anna.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Anna.dds"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard infantry_leader organisational_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	GER_bauer={
+		name="Bauer"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_bauer.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Bauer.dds"
+			}
+		}
+		corps_commander={
+			traits={ aggressive_assaulter fast_planner fortress_buster }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
    GER_nakasuga={
 		name="Emi Nakasuga"
 		portraits={

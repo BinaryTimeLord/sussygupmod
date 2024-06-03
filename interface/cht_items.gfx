@@ -230,10 +230,6 @@ spriteTypes = {
 		name = "GFX_portrait_tomiko_teramoto"
 		texturefile = "gfx/leaders/JAP/Teramoto.dds"
 	}
-	spriteType = {
-		name = "GFX_portrait_loid_forger"
-		texturefile = "gfx/leaders/JAP/Forger.dds"
-	}
 
 	#TRAITS
 	spriteType = {

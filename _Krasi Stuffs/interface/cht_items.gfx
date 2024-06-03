@@ -1,0 +1,4 @@
+	spriteType = {
+		name = "GFX_portrait_loid_forger"
+		texturefile = "gfx/leaders/JAP/Forger.dds"
+	}

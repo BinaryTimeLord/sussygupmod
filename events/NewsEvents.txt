@@ -1090,7 +1090,7 @@ news_event = {
 				has_government = communism
 			}
 			create_country_leader = {
-				name = "Nilgiri"
+				name = "Rukuriri"
 				desc = "POLITICS_PALME_DUTT_DESC"
 				picture = GFX_portrait_Rajani_Palme_Dutt
 				expire = "1965.1.1"
@@ -5043,7 +5043,7 @@ news_event = {
 				original_tag = ENG
 				has_government = communism
 				has_country_leader = {
-					name = "Nilgiri"
+					name = "Rukuriri"
 					ruling_only = yes
 				}
 			}

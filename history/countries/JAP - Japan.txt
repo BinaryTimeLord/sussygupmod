@@ -510,20 +510,6 @@ recruit_character = JAP_hirai
 recruit_character = JAP_oryou
 recruit_character = JAP_saemonza
 
-#AL/KanColle chars #Why do we need more hmmm
-#recruit_character = JAP_akagi
-#recruit_character = JAP_kaga
-#recruit_character = JAP_nagato
-#recruit_character = JAP_yamato
-#recruit_character = JAP_suruga
-#recruit_character = JAP_takao
-#recruit_character = JAP_atago
-#recruit_character = JAP_kongou
-#recruit_character = JAP_hiei
-#recruit_character = JAP_kirishima
-#recruit_character = JAP_haruna
-#recruit_character = JAP_shimakaze
-
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
 recruit_character = JAP_emperor_hirohito
@@ -609,23 +595,6 @@ if = {
 		available_to_spy_master = yes
 		female = yes
 		nationalities = { MAN JAP CHI }
-	}
-	create_operative_leader = { #nishi #easter egg marriage event? + anya?
-		name = "Yor Briar"
-		GFX = GFX_portrait_man_yoshiko_kawashima
-		traits = { operative_double_agent operative_tough operative_well_groomed }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { MAN JAP CHI GER DDR PRC SOV }
-	}
-	create_operative_leader = {
-		name = "Loid Forger"
-		GFX = GFX_portrait_loid_forger
-		traits = { operative_infiltrator operative_tough operative_commando }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { MAN JAP CHI GER WGR ENG USA }
 	}
 }
 if = {

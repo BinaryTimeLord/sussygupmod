@@ -56,454 +56,475 @@ spriteTypes = {
 	#IDEOLOGIES
 	spriteType = {
 		name = "GFX_ideology_USA_democratic_group"
-		texturefile = "gfx/interface/ideologies/America.dds"
+		texturefile = "gfx/interface/ideologies/Saunders.dds"
 	}
 	
     spriteType = {
 		name = "GFX_ideology_USA_fascism_group"
-		texturefile = "gfx/interface/ideologies/America.dds"
+		texturefile = "gfx/interface/ideologies/Saunders.dds"
 	}
 	
     spriteType = {
 		name = "GFX_ideology_USA_neutrality_group"
-		texturefile = "gfx/interface/ideologies/America.dds"
+		texturefile = "gfx/interface/ideologies/West Kureouji.dds"
 	}
 	
     spriteType = {
 		name = "GFX_ideology_USA_communism_group"
-		texturefile = "gfx/interface/ideologies/America.dds"
+		texturefile = "gfx/interface/ideologies/Saunders.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_AST_fascism_group"
-		texturefile = "gfx/interface/ideologies/Australia.dds"
+		texturefile = "gfx/interface/ideologies/Koala Forest.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_AST_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Australia.dds"
+		texturefile = "gfx/interface/ideologies/Koala Forest.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_AST_communism_group"
-		texturefile = "gfx/interface/ideologies/Australia.dds"
+		texturefile = "gfx/interface/ideologies/Koala Forest.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_AST_democratic_group"
-		texturefile = "gfx/interface/ideologies/Australia.dds"
+		texturefile = "gfx/interface/ideologies/Koala Forest.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BRM_democratic_group"
-		texturefile = "gfx/interface/ideologies/Burma.dds"
+		texturefile = "gfx/interface/ideologies/Tategoto.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BRM_fascism_group"
-		texturefile = "gfx/interface/ideologies/Burma.dds"
+		texturefile = "gfx/interface/ideologies/Tategoto.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BRM_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Burma.dds"
+		texturefile = "gfx/interface/ideologies/Tategoto.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BRM_communism_group"
-		texturefile = "gfx/interface/ideologies/Burma.dds"
+		texturefile = "gfx/interface/ideologies/Tategoto.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CAN_democratic_group"
-		texturefile = "gfx/interface/ideologies/Canada.dds"
+		texturefile = "gfx/interface/ideologies/Maple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CAN_fascism_group"
-		texturefile = "gfx/interface/ideologies/Canada.dds"
+		texturefile = "gfx/interface/ideologies/Maple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CAN_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Canada.dds"
+		texturefile = "gfx/interface/ideologies/Maple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CAN_communism_group"
-		texturefile = "gfx/interface/ideologies/Canada.dds"
+		texturefile = "gfx/interface/ideologies/Maple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CZE_democratic_group"
-		texturefile = "gfx/interface/ideologies/Czechslovakia.dds"
+		texturefile = "gfx/interface/ideologies/Gregor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CZE_fascism_group"
-		texturefile = "gfx/interface/ideologies/Czechslovakia.dds"
+		texturefile = "gfx/interface/ideologies/Gregor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CZE_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Czechslovakia.dds"
+		texturefile = "gfx/interface/ideologies/Gregor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_CZE_communism_group"
-		texturefile = "gfx/interface/ideologies/Czechslovakia.dds"
+		texturefile = "gfx/interface/ideologies/Gregor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ENG_democratic_group"
-		texturefile = "gfx/interface/ideologies/England.dds"
+		texturefile = "gfx/interface/ideologies/St. Gloriana.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ENG_fascism_group"
-		texturefile = "gfx/interface/ideologies/England.dds"
+		texturefile = "gfx/interface/ideologies/St. Gloriana.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ENG_neutrality_group"
-		texturefile = "gfx/interface/ideologies/England.dds"
+		texturefile = "gfx/interface/ideologies/St. Gloriana.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ENG_communism_group"
-		texturefile = "gfx/interface/ideologies/England.dds"
+		texturefile = "gfx/interface/ideologies/St. Gloriana.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FIN_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Finland.dds"
+		texturefile = "gfx/interface/ideologies/Jatkosota.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FIN_democratic_group"
-		texturefile = "gfx/interface/ideologies/Finland.dds"
+		texturefile = "gfx/interface/ideologies/Jatkosota.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FIN_fascism_group"
-		texturefile = "gfx/interface/ideologies/Finland.dds"
+		texturefile = "gfx/interface/ideologies/Jatkosota.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FIN_communism_group"
-		texturefile = "gfx/interface/ideologies/Finland.dds"
+		texturefile = "gfx/interface/ideologies/Jatkosota.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FRA_democratic_group"
-		texturefile = "gfx/interface/ideologies/France.dds"
+		texturefile = "gfx/interface/ideologies/BC Freedom.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_FRA_fascism_group"
-		texturefile = "gfx/interface/ideologies/France.dds"
+		texturefile = "gfx/interface/ideologies/BC Freedom.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FRA_neutrality_group"
-		texturefile = "gfx/interface/ideologies/France.dds"
+		texturefile = "gfx/interface/ideologies/Maginot.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_FRA_communism_group"
-		texturefile = "gfx/interface/ideologies/France.dds"
+		texturefile = "gfx/interface/ideologies/BC Freedom.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_GER_fascism_group"
-		texturefile = "gfx/interface/ideologies/Germany.dds"
+		texturefile = "gfx/interface/ideologies/Kuromorimine.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_GER_democratic_group"
-		texturefile = "gfx/interface/ideologies/Germany.dds"
+		texturefile = "gfx/interface/ideologies/Kuromorimine.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_GER_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Germany.dds"
+		texturefile = "gfx/interface/ideologies/Kuromorimine.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_GER_communism_group"
-		texturefile = "gfx/interface/ideologies/Germany.dds"
+		texturefile = "gfx/interface/ideologies/Bellwall.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ITA_fascism_group"
-		texturefile = "gfx/interface/ideologies/Italy.dds"
+		texturefile = "gfx/interface/ideologies/Anzio.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ITA_democratic_group"
-		texturefile = "gfx/interface/ideologies/Italy.dds"
+		texturefile = "gfx/interface/ideologies/Anzio.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ITA_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Italy.dds"
+		texturefile = "gfx/interface/ideologies/Anzio.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ITA_communism_group"
-		texturefile = "gfx/interface/ideologies/Italy.dds"
+		texturefile = "gfx/interface/ideologies/Anzio.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_JAP_fascism_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_JAP_democratic_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_JAP_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_JAP_communism_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_NOR_democratic_group"
-		texturefile = "gfx/interface/ideologies/Norway.dds"
+		texturefile = "gfx/interface/ideologies/Viking Fisheries.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_NOR_fascism_group"
-		texturefile = "gfx/interface/ideologies/Norway.dds"
+		texturefile = "gfx/interface/ideologies/Viking Fisheries.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_NOR_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Norway.dds"
+		texturefile = "gfx/interface/ideologies/Viking Fisheries.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_NOR_communism_group"
-		texturefile = "gfx/interface/ideologies/Norway.dds"
+		texturefile = "gfx/interface/ideologies/Viking Fisheries.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_POL_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Poland.dds"
+		texturefile = "gfx/interface/ideologies/Bonple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_POL_democratic_group"
-		texturefile = "gfx/interface/ideologies/Poland.dds"
+		texturefile = "gfx/interface/ideologies/Bonple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_POL_fascism_group"
-		texturefile = "gfx/interface/ideologies/Poland.dds"
+		texturefile = "gfx/interface/ideologies/Bonple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_POL_communism_group"
-		texturefile = "gfx/interface/ideologies/Poland.dds"
+		texturefile = "gfx/interface/ideologies/Bonple.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ROM_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Romania.dds"
+		texturefile = "gfx/interface/ideologies/Count.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ROM_democratic_group"
-		texturefile = "gfx/interface/ideologies/Romania.dds"
+		texturefile = "gfx/interface/ideologies/Count.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ROM_fascism_group"
-		texturefile = "gfx/interface/ideologies/Romania.dds"
+		texturefile = "gfx/interface/ideologies/Count.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_ROM_communism_group"
-		texturefile = "gfx/interface/ideologies/Romania.dds"
+		texturefile = "gfx/interface/ideologies/Count.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SOV_communism_group"
-		texturefile = "gfx/interface/ideologies/Soviet.dds"
+		texturefile = "gfx/interface/ideologies/Pravda.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SOV_democratic_group"
-		texturefile = "gfx/interface/ideologies/Soviet.dds"
+		texturefile = "gfx/interface/ideologies/Pravda.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SOV_fascism_group"
-		texturefile = "gfx/interface/ideologies/Soviet.dds"
+		texturefile = "gfx/interface/ideologies/Pravda.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SOV_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Soviet.dds"
+		texturefile = "gfx/interface/ideologies/Pravda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_SPR_fascism_group"
+		texturefile = "gfx/interface/ideologies/Blue Division.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SPR_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Spain.dds"
+		texturefile = "gfx/interface/ideologies/Blue Division.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SWE_democratic_group"
-		texturefile = "gfx/interface/ideologies/Sweden.dds"
+		texturefile = "gfx/interface/ideologies/Viggen.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SWE_fascism_group"
-		texturefile = "gfx/interface/ideologies/Sweden.dds"
+		texturefile = "gfx/interface/ideologies/Viggen.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SWE_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Sweden.dds"
+		texturefile = "gfx/interface/ideologies/Viggen.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_SWE_communism_group"
-		texturefile = "gfx/interface/ideologies/Sweden.dds"
+		texturefile = "gfx/interface/ideologies/Viggen.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BEL_democratic_group"
-		texturefile = "gfx/interface/ideologies/Belgium.dds"
+		texturefile = "gfx/interface/ideologies/Waffle.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BEL_fascism_group"
-		texturefile = "gfx/interface/ideologies/Belgium.dds"
+		texturefile = "gfx/interface/ideologies/Waffle.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BEL_democratic_group"
-		texturefile = "gfx/interface/ideologies/Belgium.dds"
+		texturefile = "gfx/interface/ideologies/Waffle.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BEL_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Belgium.dds"
+		texturefile = "gfx/interface/ideologies/Waffle.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BUL_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Bulgaria.dds"
+		texturefile = "gfx/interface/ideologies/Yogurt.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BUL_democratic_group"
-		texturefile = "gfx/interface/ideologies/Bulgaria.dds"
+		texturefile = "gfx/interface/ideologies/Yogurt.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BUL_fascism_group"
-		texturefile = "gfx/interface/ideologies/Bulgaria.dds"
+		texturefile = "gfx/interface/ideologies/Yogurt.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_BUL_communism_group"
-		texturefile = "gfx/interface/ideologies/Bulgaria.dds"
+		texturefile = "gfx/interface/ideologies/Yogurt.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_SLO_fascism_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_SLO_communism_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_SLO_democratic_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_SLO_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_MAN_fascism_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MAN_democratic_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MAN_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MAN_communism_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MEN_fascism_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MEN_democratic_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MEN_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_MEN_communism_group"
-		texturefile = "gfx/interface/ideologies/Japan.dds"
+		texturefile = "gfx/interface/ideologies/Chi Ha Tan.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_AUS_communism_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_AUS_fascism_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_AUS_democratic_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_AUS_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Austria.dds"
+		texturefile = "gfx/interface/ideologies/Ooarai.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_TUR_communism_group"
-		texturefile = "gfx/interface/ideologies/Turkey.dds"
+		texturefile = "gfx/interface/ideologies/Kebab.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_TUR_fascism_group"
-		texturefile = "gfx/interface/ideologies/Turkey.dds"
+		texturefile = "gfx/interface/ideologies/Kebab.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_TUR_democratic_group"
-		texturefile = "gfx/interface/ideologies/Turkey.dds"
+		texturefile = "gfx/interface/ideologies/Kebab.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_TUR_neutrality_group"
-		texturefile = "gfx/interface/ideologies/Turkey.dds"
+		texturefile = "gfx/interface/ideologies/Kebab.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_DEN_communism_group"
+		texturefile = "gfx/interface/ideologies/Gilbert.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_DEN_fascism_group"
+		texturefile = "gfx/interface/ideologies/Gilbert.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_DEN_democratic_group"
+		texturefile = "gfx/interface/ideologies/Gilbert.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_DEN_neutrality_group"
+		texturefile = "gfx/interface/ideologies/Gilbert.dds"
 	}
 	
 	spriteType = {
@@ -518,7 +539,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_decision_category_SDF_icon_elections"
-		texturefile = "gfx/interface/decisions/SDFGermany/SDF_elections.dds"
+		texturefile = "gfx/interface/decisions/SDFKuromorimine/SDF_elections.dds"
 	}
 	
 	spriteType = {

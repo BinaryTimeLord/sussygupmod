@@ -120,9 +120,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="POLITICS_HARRY_POLLITT_DESC"
-			ideology=british_idealism2
-			traits={ staunch_stalinist }
+			desc="POLITICS_OSWALD_MOSLEY_DESC"
+			ideology=british_idealism3
+			traits={ economic_organizer }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -150,9 +150,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="POLITICS_OSWALD_MOSLEY_DESC"
-			ideology=british_idealism3
-			traits={ economic_organizer }
+			desc="POLITICS_HARRY_POLLITT_DESC"
+			ideology=british_idealism2
+			traits={ staunch_stalinist }
 			expire="1965.1.1.1"
 			id=-1
 		}

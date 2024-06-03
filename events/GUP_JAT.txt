@@ -284,7 +284,14 @@ country_event = {
 				FDR = {
 					set_province_controller = 11065
 				}
-				
+
+				FIN = { 
+					retire_character = FIN_yuri
+				    retire_character = FIN_tami
+					retire_character = FIN_tomi
+					retire_character = FIN_ari
+					retire_character = FIN_reino
+			    }
 				
 				145 = { set_demilitarized_zone = no }
 				FDR = { add_ideas = FIN_no_surrender set_country_flag = FIN_civil_war }
@@ -307,6 +314,14 @@ country_event = {
 			hidden_effect = {
 				complete_national_focus = FIN_flames_of_revolution
 				FDR = { complete_national_focus = FDR_revolution }
+
+				FIN = { 
+					retire_character = FIN_yuri
+				    retire_character = FIN_tami
+					retire_character = FIN_tomi
+					retire_character = FIN_ari
+					retire_character = FIN_reino
+			    }
 			}
 			ai_chance = {
 				factor = 0

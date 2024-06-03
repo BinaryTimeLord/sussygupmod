@@ -185,6 +185,11 @@ recruit_character = FIN_aki
 recruit_character = FIN_mikko
 recruit_character = FIN_rumi
 recruit_character = FIN_jouko
+recruit_character = FIN_yuri
+recruit_character = FIN_tami
+recruit_character = FIN_tomi
+recruit_character = FIN_ari
+recruit_character = FIN_reino
 
 recruit_character = FIN_pehr_evind_svinhufvud
 recruit_character = FIN_kyosti_kallio
