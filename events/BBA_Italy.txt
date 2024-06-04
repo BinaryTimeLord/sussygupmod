@@ -6628,6 +6628,7 @@ country_event = {
 			} 
 		}
 		promote_character = ITA_palmiro_togliatti
+		ITA_palmiro_togliatti = { promote_leader = yes }
 	}
 
 	#PERTINI (SOCIALIST)
@@ -6645,6 +6646,7 @@ country_event = {
 			} 
 		}
 		promote_character = ITA_sandro_pertini
+		ITA_sandro_pertini = { promote_leader = yes }
 		set_party_name = {
 			ideology = communism
 			name = ITA_partito_socialista_italiano
@@ -7046,6 +7048,7 @@ country_event = {
 			}
 		}
 		promote_character = ITA_ferruccio_parri
+		ITA_ferruccio_parri = { promote_leader = yes }
 	}
 
 	#BONOMI (Lavoro)
@@ -7063,6 +7066,7 @@ country_event = {
 			} 
 		}
 		promote_character = ITA_ivanoe_bonomi
+		ITA_ivanoe_bonomi = { promote_leader = yes }
 		set_party_name = {
 			ideology = democratic
 			name = ITA_partito_democratico_del_lavoro

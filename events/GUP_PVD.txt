@@ -742,7 +742,7 @@ country_event = {
 	id = pvd.20
 	title = pvd.20.t
 	desc = pvd.20.d
-	picture = GFX_SOV_great_purge
+	picture = GFX_SOV_great_purge1
 
 	is_triggered_only = no
 	
@@ -850,7 +850,7 @@ country_event = { #GERMAN COMMIE CIVIL WAR
 		name = pvd.22.a
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Erika"
+			name = "Erikas"
 			desc = "POLITICS_ERIKA_DESC"
 			picture = "Portrait_GER_Erika.dds"
 			expire = "1965.1.1"
@@ -952,7 +952,7 @@ country_event = {
 		}
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Nonna"
+			name = "Nonnas"
 			desc = "POLITICS_NONNA_DESC"
 			picture = "Portrait_SOV_Nonna.dds"
 			expire = "1965.1.1"
@@ -1296,7 +1296,7 @@ news_event = {
 	id = pvd.101
 	title = pvd.101.t
 	desc = pvd.101.d
-	picture = GFX_SOV_alina_coup
+	picture = GFX_SOV_alina_coup1
 	
 	major = yes
 	

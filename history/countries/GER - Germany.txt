@@ -489,9 +489,13 @@ recruit_character = GER_bauer
 recruit_character = GER_nakasuga
 recruit_character = GER_yuzumoto
 recruit_character = GER_kita
+recruit_character = GER_shiratori
+recruit_character = GER_takami
 recruit_character = GER_miho
 recruit_character = GER_riko
 recruit_character = GER_yukari
+recruit_character = GER_chifuyu
+recruit_character = GER_neko
 
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer

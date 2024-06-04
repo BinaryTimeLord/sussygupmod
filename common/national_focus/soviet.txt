@@ -8469,6 +8469,16 @@ focus_tree = {
 					set_state_flag = SOV_opposition_partisans_flag 
 				}
 			}
+            add_corps_commander_role = {
+				character = SOV_ivan_smirnov
+			    traits={  }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=3
+			    legacy_id=-1
+            } 
 		}
 	}
 
@@ -9664,6 +9674,17 @@ focus_tree = {
 			SOV_paranoia_medium_increase_effect = yes 
 			add_political_power = 100
 			SOV_opposition_support_high_increase_effect = yes 
+
+            add_corps_commander_role = {
+				character = SOV_aleksey_rykov
+			    traits={  }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=3
+			    legacy_id=-1
+            } 
 		}
 	}
 
@@ -11018,6 +11039,17 @@ focus_tree = {
 			custom_effect_tooltip = SOV_align_the_zinovyevites_factionalism_tt
 			add_to_variable = { SOV_factionalism_political_power_factor = -0.05 }
 
+            add_corps_commander_role = {
+				character = SOV_grigory_zinovyev
+			    traits={  }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=3
+			    legacy_id=-1
+            } 
+
 			hidden_effect = {
 				if = {
 					limit = {
@@ -11088,6 +11120,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
+            add_corps_commander_role = {
+				character = SOV_lev_kamenev
+			    traits={  }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=3
+			    legacy_id=-1
+            } 
 			SOV_paranoia_medium_increase_effect = yes 
 			custom_effect_tooltip = SOV_liberate_ryutin_tt 
 			IF = {

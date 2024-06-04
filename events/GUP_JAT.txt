@@ -262,7 +262,7 @@ country_event = {
 		        create_country_leader = {
 			        name = "Aki"
 			        desc = "POLITICS_AKI_DESC"
-			        picture = "gfx/leaders/FDR/Portrait_FDR_Aki1.dds"
+			        picture = "gfx/leaders/FIN/Portrait_FIN_Aki1.dds"
 			        expire = "1965.1.1"
 			        ideology = conservatism
 			        traits = {}
@@ -284,14 +284,6 @@ country_event = {
 				FDR = {
 					set_province_controller = 11065
 				}
-
-				FIN = { 
-					retire_character = FIN_yuri
-				    retire_character = FIN_tami
-					retire_character = FIN_tomi
-					retire_character = FIN_ari
-					retire_character = FIN_reino
-			    }
 				
 				145 = { set_demilitarized_zone = no }
 				FDR = { add_ideas = FIN_no_surrender set_country_flag = FIN_civil_war }
@@ -672,12 +664,13 @@ country_event = {
 			name = jat.19.b 
 		        create_country_leader = {
 			        name = "Aki"
-			        desc = "POLITICS_Aki_DESC"
-			        picture = "gfx/leaders/FDR/Portrait_FDR_Aki1.dds"
+			        desc = "POLITICS_AKI_DESC"
+			        picture = "gfx/leaders/FIN/Portrait_FIN_Aki1.dds"
 			        expire = "1965.1.1"
 			        ideology = conservatism
 			        traits = {}
 		        } 
+			FIN_aki = { promote_leader = yes }
 			set_party_name = {
 				ideology = democratic
 				long_name = FIN_Agrarian_League_long
@@ -752,6 +745,7 @@ country_event = {
 				long_name = FIN_SDP_long
 				name = FIN_SDP
 			}
+			FIN_mikko = { promote_leader = yes }
 			
 			ai_chance = {
 				factor = 10

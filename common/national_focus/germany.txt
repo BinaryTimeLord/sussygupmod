@@ -13665,7 +13665,7 @@ focus = {
 			create_country_leader = {
 				name = "Miho Nishizumi"
 				desc = "POLITICS_MIHO_DESC"
-				picture = "Portrait_GER_Miho.dds"
+				picture = "Portrait_GER_Miho1.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
 				traits = { }
@@ -13997,7 +13997,7 @@ focus = {
 			create_country_leader = {
 				name = "Miho Nishizumi"
 				desc = "POLITICS_MIHO_DESC"
-				picture = "Portrait_GER_Miho.dds"
+				picture = "Portrait_GER_Miho1.dds"
 				expire = "1965.1.1"
 				ideology = german_idealism
 				traits = { }
@@ -16381,6 +16381,15 @@ focus = {
 					strasserist
 				}
 			}
+			add_field_marshal_role = {
+				character = GER_neko
+				traits={ panzer_leader logistics_wizard fast_planner }
+			    skill=4
+			    attack_skill=4
+			    defense_skill=3
+			    planning_skill=4
+			    logistics_skill=3
+			}
 		}
 	}
 	focus = { 
@@ -16429,6 +16438,15 @@ focus = {
 				traits = {
 					stalinist_survivor
 				}
+			}
+			add_field_marshal_role = {
+				character = GER_chifuyu
+				traits={ defensive_doctrine infantry_leader organisational_leader }
+			    skill=4
+			    attack_skill=3
+			    defense_skill=4
+			    planning_skill=3
+			    logistics_skill=4
 			}
 		}
 	}

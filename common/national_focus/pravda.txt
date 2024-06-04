@@ -2840,7 +2840,7 @@
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Nonna"
+						name = "Nonnas"
 						ruling_only = yes
 					}
 				}
@@ -5831,8 +5831,8 @@
 				}
 			}
 			create_country_leader = {
-				name = "Alina"
-				desc = "POLITICS_Alina_DESC"
+				name = "Alinas"
+				desc = "POLITICS_ALINA_DESC"
 				picture = "Portrait_SOV_Alina.dds"
 				expire = "1965.1.1"
 				ideology = despotism
@@ -5841,6 +5841,39 @@
 					hardened_officer
 				}
 			}
+			create_field_marshal = {
+	            name = "Klara"
+	            picture = "Portrait_SOV_Klara1.dds"
+	            traits = {  }
+	            skill = 4
+	            attack_skill = 4
+	            defense_skill = 4
+	            planning_skill = 4
+	            logistics_skill = 4
+			}
+			create_corps_commander = {
+	            name = "Elena"
+	            picture = "Portrait_SOV_Alina1.dds"
+	            traits = {  }
+	            skill = 3
+	            attack_skill = 3
+	            defense_skill = 3
+	            planning_skill = 3
+	            logistics_skill = 3
+				legacy_id = 372813782173821973291
+			}
+			create_corps_commander = {
+	            name = "Nina"
+	            picture = "Portrait_SOV_Nina1.dds"
+	            traits = {  }
+	            skill = 3
+	            attack_skill = 3
+	            defense_skill = 3
+	            planning_skill = 3
+	            logistics_skill = 3
+				legacy_id = 3919372183721873132
+			}
+
 			set_party_name = { 
 				ideology = neutrality 
 				long_name = SOV_neutrality_party_alina
@@ -5901,7 +5934,7 @@
 				popularity = 0.3
 			}
 			create_country_leader = {
-				name = "Alina"
+				name = "Alinas"
 				desc = "POLITICS_Alina_DESC"
 				picture = "Portrait_SOV_Alina.dds"
 				expire = "1965.1.1"
@@ -6028,6 +6061,9 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
+			remove_unit_leader = 372813782173821973291
+			remove_unit_leader = 3919372183721873132
 						
 			country_event = { id = pvd.28 }
 			hidden_effect = {
@@ -6455,11 +6491,11 @@
 				name = SOV_republic_fascism
 			}
 			create_country_leader = {
-				name = "Nina"
+				name = "Ninas"
 				desc = "POLITICS_NINA_DESC"
 				picture = "Portrait_SOV_Nina.dds"
 				expire = "1965.1.1"
-				ideology = anarchist_communism
+				ideology = socialism
 				traits = {
 					agrarian_reformer
 				}
@@ -6577,6 +6613,16 @@
 		}		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
+			create_country_leader = {
+				name = "Klaras"
+				desc = "POLITICS_KLARA_DESC"
+				picture = "Portrait_SOV_Klara.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {}
+			}
+
 			add_to_variable = { military_drift_variable = 1 }
 			custom_effect_tooltip = military_drift_strengthen
 						
@@ -6636,17 +6682,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-						
-			create_country_leader = {
-				name = "Klara"
-				desc = "POLITICS_KLARA_DESC"
-				picture = "Portrait_SOV_Klara.dds"
-				expire = "1965.1.1"
-				ideology = rexism
-				traits = {
-					tsar_restorer
-				}
-			}
+		    add_country_leader_trait = tsar_restorer 			
 		}
 	}
 	focus = { dynamic = yes
@@ -6737,7 +6773,7 @@
 				popularity = -1.0
 			}
 			create_country_leader = {
-				name = "Klara"
+				name = "Klaras"
 				desc = "POLITICS_KLARA_DESC"
 				picture = "Portrait_SOV_Klara.dds"
 				expire = "1965.1.1"

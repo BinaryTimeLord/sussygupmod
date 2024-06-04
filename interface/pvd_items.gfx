@@ -1,7 +1,7 @@
 spriteTypes = {	
 
 	spriteType = { 
-		name = "GFX_SOV_alina_coup"
+		name = "GFX_SOV_alina_coup1"
 		texturefile = "gfx/event_pictures/Pravda/SOV_alina_coup.dds"
 	}
 	spriteType = { 
@@ -61,7 +61,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Pravda/SOV_kuromorimine_pravda2.dds"
 	}
 	spriteType = { 
-		name = "GFX_SOV_great_purge"
+		name = "GFX_SOV_great_purge1"
 		texturefile = "gfx/event_pictures/Pravda/SOV_great_purge.dds"
 	}
 	spriteType = { 

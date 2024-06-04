@@ -181,6 +181,9 @@ focus_tree = {
 
 			hidden_effect = {
 				# SWAP ADVISOR TRAITS TO HIDE TOOLTIP ABOUT DECISIONS
+			    FIN_aki = { promote_leader = yes }
+				retire_character = FIN_rumi
+				retire_character = FIN_mikko
 				FIN_yrjo_leino = {
 					if = {
 						limit = {
@@ -7368,6 +7371,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
+
+			retire_character = FIN_aki
 			add_political_power = 100
 			add_popularity = {
 				ideology = fascism
@@ -7483,6 +7488,8 @@ focus_tree = {
 
 				#custom_effect_tooltip = FIN_the_fascist_side_in_cw_tt #Not necessary
 				hidden_effect = {
+                    FIN_mikko = { promote_leader = yes }
+					retire_character = FIN_rumi
 					random_other_country = {
 						limit = {
 							original_tag = FIN
