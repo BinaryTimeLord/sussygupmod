@@ -3317,7 +3317,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO spawn the militia template in every province
 		id = SDF_volksturm
 		##icon =
 		relative_position_id = SDF_political_manouvering
@@ -3379,7 +3379,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO if not have spy agency add one
 		id = SDF_secret_police
 		##icon = 
 		relative_position_id = SDF_political_manouvering
@@ -3515,7 +3515,7 @@ focus_tree = {
 	
 	##MILITARY STUFF##
 	
-	focus = {
+	focus = { ##TODO add 4 mils and 35 xp 
 		id = SDF_military_buildup
 		##icon = 
 		relative_position_id = SDF_elections
@@ -3533,7 +3533,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO 2 land doctrine price lowers
 		id = SDF_war_plan_n
 		##icon = 
 		relative_position_id = SDF_military_buildup
@@ -3556,7 +3556,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO 2 ahead of time research on arty tech, add 500 arty equipment
 		id = SDF_artillery_modernization
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3574,7 +3574,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO up a conscription law, if at scraping the barrel add 250k men
 		id = SDF_conscription_extended
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3592,7 +3592,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO -15 production to light tanks, add a design that has only a heavy machinegun
 		id = SDF_tankette
 		##icon =
 		relative_position_id = SDF_war_plan_n
@@ -3610,7 +3610,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO +15% to breakthru and attack but -25% to war support and stability
 		id = SDF_chemical_warfare
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3629,7 +3629,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO upgrade last idea with more attack and org, higher casualties
 		id = SDF_stormtroopers
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3648,7 +3648,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add radar tech, if have add a level free
 		id = SDF_radar_efforts
 		##icon = 
 		relative_position_id = SDF_war_plan_n 
@@ -3667,7 +3667,7 @@ focus_tree = {
 		}
 	}	
 	
-	focus = {
+	focus = { ##TODO build level 5 aa in most populated tiles
 		id = SDF_flak_towers
 		##icon =
 		relative_position_id = SDF_war_plan_n
@@ -3686,7 +3686,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add attack bonus to artillery equipment, reduce speed on them
 		id = SDF_50cm_cannon
 		##icon =
 		relative_position_id = SDF_war_plan_n
@@ -3705,7 +3705,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { ##more casualties attacking
 		id = SDF_bayonett_strength
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3724,7 +3724,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { ##TODO same as war plan n
 		id = SDF_war_plan_v
 		##icon =
 		relative_position_id = SDF_military_buildup
@@ -3750,7 +3750,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add 1 light airframe research and air doctrine reduction
 		id = SDF_air_focus
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3768,7 +3768,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add 50 xp, special forces doctrine point and paratrooper research speed buff
 		id = SDF_fallshimjager_modernization
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3786,7 +3786,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add research for jet engine (add the tech)
 		id = SDF_jet_power
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3840,7 +3840,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO +10% org and reinforcement for units
 		id = SDF_radio_everyone
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3859,7 +3859,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO -5% production for all planes
 		id = SDF_aircraft_industry
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3878,7 +3878,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO +15% production for jet CAS
 		id = SDF_arato
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3897,7 +3897,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add signal companies, if have add a free research and bonus for support equipment 
 		id = SDF_signal_battalions
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3916,7 +3916,7 @@ focus_tree = {
 		
 	}
 	
-	focus = {
+	focus = { ##TODO +15% army xp gain, +1 starting levels of leaders and + 1 to all skill on all commanders
 		id = SDF_officer_training
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3934,7 +3934,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO -10% to tank production
 		id = SDF_tank_focus
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3970,7 +3970,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO mech research speed bonus and -5% to mech production
 		id = SDF_mechinized_focus 
 		##icon = 
 		relative_position_id = SDF_tank_focus
@@ -3988,7 +3988,7 @@ focus_tree = {
 		}
 	}	
 	
-	focus = {
+	focus = { ##TODO +5% reliability to armour and speed
 		id = SDF_tank_mechanics
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4006,7 +4006,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { -15% to truck production
 		id = SDF_streamline_trucks
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4024,7 +4024,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO add tiger I tech and heavy tank research speed bonus
 		id = SDF_tigerI
 		##icon = 
 		relative_position_id = SDF_tank_focus
@@ -4043,7 +4043,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO 2 land doctrine reduction
 		id = SDF_modern_blitzkrieg
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4062,7 +4062,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO +25% breakthru on TDs and +5% armour
 		id = SDF_casemates
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4081,7 +4081,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO -15% to tank designs, +10% to tank reserach speed and generals start with panzer expert
 		id = SDF_dedicated_armour
 		##icon =
 		relative_position_id = SDF_tank_focus
@@ -4100,7 +4100,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO +5% attack, 5% defence and speed to panzers and paratroopers
 		id = SDF_merge_units
 		##icon = 
 		relative_position_id = SDF_tank_focus
@@ -4119,7 +4119,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ##TODO 2 land doctrine reduction
 		id = SDF_decisive_battle
 		##icon = 
 		relative_position_id = SDF_war_plan_v
