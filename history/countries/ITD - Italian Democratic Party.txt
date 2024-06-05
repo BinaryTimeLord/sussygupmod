@@ -138,6 +138,8 @@ set_popularities = {
 }
 
 recruit_character = ITD_carpaccio
+recruit_character = ITD_ricotta
+recruit_character = ITD_bologna
 
 complete_national_focus = ITA_the_sovereign_question
 complete_national_focus = ITA_return_of_the_republic

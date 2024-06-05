@@ -4,7 +4,7 @@ characters={
 
 	### Communist Leaders
 
-	ITE_pepperoni={
+	ITE_pepperoni = {
 		name=ITA_pepperoni
 		portraits={
 			civilian={
@@ -14,6 +14,27 @@ characters={
 		country_leader={
 			ideology=despotism
 			expire="1965.1.1.1"
+		}
+	}
+
+	ITE_gelato = {
+		name="Gelato"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_gelato.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Gelato.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader fast_planner trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 

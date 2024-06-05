@@ -5844,32 +5844,32 @@
 			create_field_marshal = {
 	            name = "Klara"
 	            picture = "Portrait_SOV_Klara1.dds"
-	            traits = {  }
+	            traits = { panzer_expert organisational_leader logistics_wizard }
 	            skill = 4
 	            attack_skill = 4
 	            defense_skill = 4
-	            planning_skill = 4
+	            planning_skill = 3
 	            logistics_skill = 4
 			}
 			create_corps_commander = {
 	            name = "Elena"
 	            picture = "Portrait_SOV_Alina1.dds"
-	            traits = {  }
+	            traits = { aggressive_assaulter fortress_buster }
 	            skill = 3
 	            attack_skill = 3
-	            defense_skill = 3
+	            defense_skill = 4
 	            planning_skill = 3
-	            logistics_skill = 3
+	            logistics_skill = 2
 				legacy_id = 372813782173821973291
 			}
 			create_corps_commander = {
 	            name = "Nina"
 	            picture = "Portrait_SOV_Nina1.dds"
-	            traits = {  }
+	            traits = { fast_planner logistics_wizard }
 	            skill = 3
 	            attack_skill = 3
-	            defense_skill = 3
-	            planning_skill = 3
+	            defense_skill = 4
+	            planning_skill = 2
 	            logistics_skill = 3
 				legacy_id = 3919372183721873132
 			}
@@ -6061,6 +6061,17 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
+			create_field_marshal = {
+	            name = "Monna"
+	            picture = "Portrait_SOV_Nonna1.dds"
+	            traits = { defensive_doctrine logistics_wizard infantry_leader }
+	            skill = 4
+	            attack_skill = 4
+	            defense_skill = 5
+	            planning_skill = 4
+	            logistics_skill = 3
+			}
 
 			remove_unit_leader = 372813782173821973291
 			remove_unit_leader = 3919372183721873132

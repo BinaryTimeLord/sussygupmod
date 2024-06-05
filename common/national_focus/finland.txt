@@ -182,7 +182,6 @@ focus_tree = {
 			hidden_effect = {
 				# SWAP ADVISOR TRAITS TO HIDE TOOLTIP ABOUT DECISIONS
 			    FIN_aki = { promote_leader = yes }
-				retire_character = FIN_rumi
 				retire_character = FIN_mikko
 				FIN_yrjo_leino = {
 					if = {
@@ -350,6 +349,56 @@ focus_tree = {
 				subtract_from_variable = { FIN_communist_cw_size_of_breakaway_country = 0.05 }
 			}
 
+			add_corps_commander_role = {
+				character = FIN_yuri
+				traits={ fast_planner infantry_leader }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=2
+			    planning_skill=4
+			    logistics_skill=3
+			}
+
+			add_corps_commander_role = {
+				character = FIN_tami
+				traits={ defensive_doctrine logistics_wizard }
+			    skill=3
+			    attack_skill=2
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=3
+			}
+
+			add_corps_commander_role = {
+				character = FIN_tomi
+				traits={ organisational_leader cavalry_leader }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=2
+			    logistics_skill=3
+			}
+
+			add_corps_commander_role = {
+				character = FIN_ari
+				traits={ panzer_leader logistics_wizard }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=2
+			}
+
+			add_corps_commander_role = {
+				character = FIN_reino
+				traits={ aggressive_assaulter fortress_buster }
+			    skill=3
+			    attack_skill=2
+			    defense_skill=4
+			    planning_skill=3
+			    logistics_skill=3
+			}
+
 			start_civil_war = {
 				ideology = neutrality
 				ruling_party = communism
@@ -405,13 +454,6 @@ focus_tree = {
 					retire_ideology_leader = fascism
 					retire_ideology_leader = neutrality
 					# SET UP COUNTRY LEADERS
-					if = {
-						limit = {
-							has_character = FIN_mika
-						}
-						promote_character = FIN_mika
-					}
-
 					if = {
 						limit = {
 							has_character = FIN_mikko
@@ -7372,6 +7414,56 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_corps_commander_role = {
+				character = FIN_yuri
+				traits={ fast_planner infantry_leader }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=2
+			    planning_skill=4
+			    logistics_skill=3
+			}
+
+			add_corps_commander_role = {
+				character = FIN_tami
+				traits={ defensive_doctrine logistics_wizard }
+			    skill=3
+			    attack_skill=2
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=3
+			}
+
+			add_corps_commander_role = {
+				character = FIN_tomi
+				traits={ organisational_leader cavalry_leader }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=2
+			    logistics_skill=3
+			}
+
+			add_corps_commander_role = {
+				character = FIN_ari
+				traits={ panzer_leader logistics_wizard }
+			    skill=3
+			    attack_skill=3
+			    defense_skill=3
+			    planning_skill=3
+			    logistics_skill=2
+			}
+
+			add_corps_commander_role = {
+				character = FIN_reino
+				traits={ aggressive_assaulter fortress_buster }
+			    skill=3
+			    attack_skill=2
+			    defense_skill=4
+			    planning_skill=3
+			    logistics_skill=3
+			}
+
 			retire_character = FIN_aki
 			add_political_power = 100
 			add_popularity = {
@@ -7477,19 +7569,12 @@ focus_tree = {
 
 					retire_ideology_leader = neutrality
 					# SET UP COUNTRY LEADERS
-					if = {
-						limit = {
-							has_character = FIN_mika
-						}
-						promote_character = FIN_mika
-					}
 				}
 
 
 				#custom_effect_tooltip = FIN_the_fascist_side_in_cw_tt #Not necessary
 				hidden_effect = {
                     FIN_mikko = { promote_leader = yes }
-					retire_character = FIN_rumi
 					random_other_country = {
 						limit = {
 							original_tag = FIN

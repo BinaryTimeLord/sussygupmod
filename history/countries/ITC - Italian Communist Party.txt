@@ -137,6 +137,8 @@ set_popularities = {
 }
 
 recruit_character = ITC_amaretto
+recruit_character = ITC_panetonne
+recruit_character = ITC_robiola
 
 complete_national_focus = ITA_the_sovereign_question
 complete_national_focus = ITA_the_workers_revolution

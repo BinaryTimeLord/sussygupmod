@@ -212,14 +212,62 @@ characters = {
 				large="gfx/leaders/FIN/Portrait_FIN_Youko.dds"
 			}
 		}
-		corps_commander={
-			traits={ aggressive_assaulter cavalry_leader trickster }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=4
-			legacy_id=-1
+	}
+
+    FIN_yuri={
+		name="Yuri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_yuri.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Yuri.dds"
+			}
+		}
+	}
+	FIN_tami={
+		name="Tami"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_tami.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Tami.dds"
+			}
+		}
+
+	}
+	FIN_tomi={
+		name="Tomi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_tomi.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Tomi.dds"
+			}
+		}
+	}
+	FIN_ari={
+		name="Ari"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_ari.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Ari.dds"
+			}
+		}
+	}
+	FIN_reino={
+		name="Reino"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Jatkosota/idea_fin_reino.dds"
+			}
+			army={
+				large="gfx/leaders/FIN/Portrait_FIN_Reino.dds"
+			}
 		}
 	}
 

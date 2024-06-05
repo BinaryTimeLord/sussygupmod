@@ -4,7 +4,7 @@ characters={
 
 	### Communist Leaders
 
-	ITD_carpaccio={
+	ITD_carpaccio = {
 		name=ITA_carpaccio
 		portraits={
 			civilian={
@@ -20,4 +20,45 @@ characters={
 		}
 	}
 
+	ITD_ricotta = {
+		name="Ricotta"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_ricotta.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Ricotta.dds"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard fast_planner organisational_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ITD_bologna = {
+		name="Bologna"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_bologna.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Bologna.dds"
+			}
+		}
+		corps_commander={
+			traits={ defensive_doctrine fortress_buster infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
 }

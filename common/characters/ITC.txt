@@ -4,7 +4,7 @@ characters={
 
 	### Communist Leaders
 
-	ITC_amaretto={
+	ITC_amaretto = {
 		name=ITA_amaretto
 		portraits={
 			civilian={
@@ -17,4 +17,45 @@ characters={
 		}
 	}
 
+	ITC_panetonne = {
+		name="Panetonne"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_panetonne.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Panetonne.dds"
+			}
+		}
+		corps_commander={
+			traits={ aggressive_assaulter fast_planner fortress_buster }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	ITC_robiola = {
+		name="Robiola"
+		portraits={
+			army={
+				small="gfx/interface/ideas/Anzio/idea_ita_robiola.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Robiola.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader logistics_wizard organisational_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
 }

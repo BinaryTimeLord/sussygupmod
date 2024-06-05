@@ -8373,7 +8373,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_integrate_smirnovs_bloc
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_SOV_ekaterina
 		prerequisite = { focus = SOV_the_left_opposition }
 		x = 0
 		y = 2
@@ -9652,7 +9652,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_dissent_in_the_party
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_SOV_olga
 		prerequisite = { focus = SOV_the_need_for_policy_changes }
 		x = 0
 		y = 1

@@ -3317,7 +3317,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { ##TODO spawn the militia template in every province
+	focus = { ##TODONE spawn the militia template in every province
 		id = SDF_volksturm
 		##icon =
 		relative_position_id = SDF_political_manouvering
@@ -3332,6 +3332,49 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_volksturm_act
+				load_oob = SDF_volksturm
+				random_owned_controlled_state = {
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+				create_unit = { 
+					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = SDF
+				}
+			}
 		}
 	}
 	
@@ -3379,7 +3422,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { ##TODO if not have spy agency add one
+	focus = { ##TODONE if not have spy agency add one
 		id = SDF_secret_police
 		##icon = 
 		relative_position_id = SDF_political_manouvering
@@ -3397,6 +3440,12 @@ focus_tree = {
 				remove_idea = sdf_press_freedom_1
 				add_idea = sdf_secret_police
 			}
+	       	if = {
+			    limit = {
+			    	has_intelligence_agency = no
+			    }
+			    create_intelligence_agency = yes
+		    }
 		}
 	}
 
@@ -3515,7 +3564,7 @@ focus_tree = {
 	
 	##MILITARY STUFF##
 	
-	focus = { ##TODO add 4 mils and 35 xp 
+	focus = { ##TODONE add 4 mils and 35 xp 
 		id = SDF_military_buildup
 		##icon = 
 		relative_position_id = SDF_elections
@@ -3529,11 +3578,43 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-		
+		    army_experience = 35
+		    random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		    random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		   random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		    random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
-	focus = { ##TODO 2 land doctrine price lowers
+	focus = { ##TODONE 2 land doctrine price lowers
 		id = SDF_war_plan_n
 		##icon = 
 		relative_position_id = SDF_military_buildup
@@ -3552,11 +3633,16 @@ focus_tree = {
 		cost = 0
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	
-	focus = { ##TODO 2 ahead of time research on arty tech, add 500 arty equipment
+	focus = { ##TODONE 2 ahead of time research on arty tech, add 500 arty equipment
 		id = SDF_artillery_modernization
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3570,11 +3656,24 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
+
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+				producer = SDF
+			}
+
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
 		
 		}
 	}
 	
-	focus = { ##TODO up a conscription law, if at scraping the barrel add 250k men
+	focus = { ##TODONE up a conscription law, if at scraping the barrel add 250k men
 		id = SDF_conscription_extended
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3588,11 +3687,80 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+
+
+			if = {
+				limit = {
+					SDF = {
+						has_idea = scraping_the_barrel
+					}
+				}
+                add_manpower = 250000
+			}
+
+			if = {
+				limit = {
+					SDF = {
+						has_idea = all_adults_serve
+					}
+				}
+				
+				add_ideas = scraping_the_barrel
+			}
+
+			if = {
+				limit = {
+					SDF = {
+						has_idea = service_by_requirement
+					}
+				}
+				
+				add_ideas = all_adults_serve
+			}
+
+			if = {
+				limit = {
+					SDF = {
+						has_idea = extensive_conscription
+					}
+				}
+				
+				add_ideas = service_by_requirement
+			}
+
+			if = {
+				limit = {
+					SDF = {
+						has_idea = limited_conscription
+					}
+				}
+				
+				add_ideas = extensive_conscription
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = volunteer_only
+					}
+				}
+				
+				add_ideas = limited_conscription
+			}
+			
+			if = {
+				limit = {
+					SDF = {
+						has_idea = disarmed_nation
+					}
+				}
+				
+				add_ideas = volunteer_only
+			}
 		}
 	}
 	
-	focus = { ##TODO -15 production to light tanks, add a design that has only a heavy machinegun
+	focus = { ##TODONE -15 production to light tanks, add a design that has only a heavy machinegun
 		id = SDF_tankette
 		##icon =
 		relative_position_id = SDF_war_plan_n
@@ -3606,11 +3774,17 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = SDF_tankette
+				bonus = 1
+				uses = 1
+				category = cat_light_armor
+			}
+			add_ideas = sdf_tankette
 		}
 	}
 	
-	focus = { ##TODO +15% to breakthru and attack but -25% to war support and stability
+	focus = { ##TODONE +15% to breakthru and attack but -25% to war support and stability
 		id = SDF_chemical_warfare
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3625,11 +3799,13 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+		add_ideas = sdf_chemical_warfare
+		add_war_support = -0.25
+		add_stability = -0.25
 		}
 	}
 	
-	focus = { ##TODO upgrade last idea with more attack and org, higher casualties
+	focus = { ##TODONE upgrade last idea with more attack and org, higher casualties
 		id = SDF_stormtroopers
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3644,11 +3820,11 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+		add_ideas = sdf_stormtroopers
 		}
 	}
 	
-	focus = { ##TODO add radar tech, if have add a level free
+	focus = { ##TODONE add radar tech, if have add a level free
 		id = SDF_radar_efforts
 		##icon = 
 		relative_position_id = SDF_war_plan_n 
@@ -3663,11 +3839,16 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = radar_bonus
+				uses = 1
+				bonus = 1
+				category = radar_tech
+			}
 		}
 	}	
 	
-	focus = { ##TODO build level 5 aa in most populated tiles
+	focus = { ##TODONE build level 5 aa in most populated tiles
 		id = SDF_flak_towers
 		##icon =
 		relative_position_id = SDF_war_plan_n
@@ -3682,11 +3863,21 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}	
 		}
 	}
 	
-	focus = { ##TODO add attack bonus to artillery equipment, reduce speed on them
+	focus = { ##TODONE add attack bonus to artillery equipment, reduce speed on them
 		id = SDF_50cm_cannon
 		##icon =
 		relative_position_id = SDF_war_plan_n
@@ -3701,11 +3892,11 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+		add_ideas = sdf_50cm_cannon
 		}
 	}
 
-	focus = { ##more casualties attacking
+	focus = { ##TODONE more casualties attacking
 		id = SDF_bayonett_strength
 		##icon = 
 		relative_position_id = SDF_war_plan_n
@@ -3720,11 +3911,11 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+		add_ideas = sdf_bayonet_strength
 		}
 	}
 
-	focus = { ##TODO same as war plan n
+	focus = { ##TODONE same as war plan n
 		id = SDF_war_plan_v
 		##icon =
 		relative_position_id = SDF_military_buildup
@@ -3746,11 +3937,16 @@ focus_tree = {
 		cost = 0
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}	
 		}
 	}
 	
-	focus = { ##TODO add 1 light airframe research and air doctrine reduction
+	focus = { ##TODONE add 1 light airframe research and air doctrine reduction
 		id = SDF_air_focus
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3764,11 +3960,22 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+        add_tech_bonus = {
+			name = fighter_bonus
+				category = light_fighter
+				bonus = 1
+				uses = 1
+		}
+		add_tech_bonus = {
+			name = air_doctrine_bonus
+			bonus = 0.5
+			uses = 1
+			category = air_doctrine
+		}	
 		}
 	}
 	
-	focus = { ##TODO add 50 xp, special forces doctrine point and paratrooper research speed buff
+	focus = { ##TODONE add 50 xp, special forces doctrine point and paratrooper research speed buff
 		id = SDF_fallshimjager_modernization
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3782,11 +3989,20 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+		    army_experience = 50
+			add_tech_bonus = {
+				name = paratrooper_bonus
+				bonus = 0.75
+				uses = 1
+				category = cat_paratroopers_doctrine
+			}
+			set_technology = {
+				paratroopers = 1
+			}
 		}
 	}
 	
-	focus = { ##TODO add research for jet engine (add the tech)
+	focus = { ##TODONE add research for jet engine (add the tech)
 		id = SDF_jet_power
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3800,7 +4016,9 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			set_technology = {
+				jet_engines = 1
+			}	
 		}
 	}
 	
@@ -3840,7 +4058,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { ##TODO +10% org and reinforcement for units
+	focus = { ##TODONE +10% org and reinforcement for units
 		id = SDF_radio_everyone
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3855,11 +4073,11 @@ focus_tree = {
 		cost = 4
 		
 		completion_reward = {
-		
+		add_ideas = sdf_radios_everyone
 		}
 	}
 	
-	focus = { ##TODO -5% production for all planes
+	focus = { ##TODONE -5% production for all planes
 		id = SDF_aircraft_industry
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3874,11 +4092,11 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+		add_ideas = sdf_aircraft_industry
 		}
 	}
 	
-	focus = { ##TODO +15% production for jet CAS
+	focus = { ##TODONE +15% production for jet CAS
 		id = SDF_arato
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3893,11 +4111,12 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
+		add_ideas = sdf_arato
 		
 		}
 	}
 	
-	focus = { ##TODO add signal companies, if have add a free research and bonus for support equipment 
+	focus = { ##TODONE add signal companies, if have add a free research and bonus for support equipment 
 		id = SDF_signal_battalions
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -3911,12 +4130,19 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
-		}
-		
+			add_tech_bonus = {
+				name = signal_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_signal_company4
+			}
+		}	
 	}
 	
-	focus = { ##TODO +15% army xp gain, +1 starting levels of leaders and + 1 to all skill on all commanders
+	focus = { ##TODONE +15% army xp gain, +1 starting levels of leaders and + 1 to all skill on all commanders
 		id = SDF_officer_training
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3930,11 +4156,14 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			add_ideas = sdf_officer_training
+            SDF = { 
+				every_army_leader = { add_skill_level = 1 }
+			}	
 		}
 	}
 	
-	focus = { ##TODO -10% to tank production
+	focus = { ##TODONE -10% to tank production
 		id = SDF_tank_focus
 		##icon =
 		relative_position_id = SDF_war_plan_v
@@ -3948,7 +4177,7 @@ focus_tree = {
 		cost = 3
 		
 		completion_reward = {
-		
+		add_ideas = sdf_tank_factory
 		}
 	}
 	
@@ -3970,7 +4199,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { ##TODO mech research speed bonus and -5% to mech production
+	focus = { ##TODONE mech research speed bonus and -5% to mech production
 		id = SDF_mechinized_focus 
 		##icon = 
 		relative_position_id = SDF_tank_focus
@@ -3984,11 +4213,17 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = mechanized_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_ideas = sdf_mechanized_factory
 		}
 	}	
 	
-	focus = { ##TODO +5% reliability to armour and speed
+	focus = { ##TODONE +5% reliability to armour and speed
 		id = SDF_tank_mechanics
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4002,11 +4237,11 @@ focus_tree = {
 		cost = 7 
 		
 		completion_reward = {
-		
+		add_ideas = sdf_tank_mechanics
 		}
 	}
 	
-	focus = { -15% to truck production
+	focus = { ##TODONE-15% to truck production
 		id = SDF_streamline_trucks
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4020,11 +4255,11 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+		add_ideas = sdf_streamline_trucks
 		}
 	}
 	
-	focus = { ##TODO add tiger I tech and heavy tank research speed bonus
+	focus = { ##TODONE add tiger I tech and heavy tank research speed bonus
 		id = SDF_tigerI
 		##icon = 
 		relative_position_id = SDF_tank_focus
@@ -4039,11 +4274,16 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = heavy_armor_bonus
+				bonus = 1
+				uses = 1
+				category = cat_heavy_armor
+			}	 
 		}
 	}
 	
-	focus = { ##TODO 2 land doctrine reduction
+	focus = { ##TODONE 2 land doctrine reduction
 		id = SDF_modern_blitzkrieg
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4058,11 +4298,16 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}	
 		}
 	}
 	
-	focus = { ##TODO +25% breakthru on TDs and +5% armour
+	focus = { ##TODONE +25% breakthru on TDs and +5% armour
 		id = SDF_casemates
 		##icon = 
 		relative_position_id = SDF_tank_focus 
@@ -4077,11 +4322,11 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+        add_ideas = sdf_casemates 
 		}
 	}
 	
-	focus = { ##TODO -15% to tank designs, +10% to tank reserach speed and generals start with panzer expert
+	focus = { ##TODONE -15% to tank designs, +10% to tank reserach speed and generals start with panzer expert
 		id = SDF_dedicated_armour
 		##icon =
 		relative_position_id = SDF_tank_focus
@@ -4096,11 +4341,29 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+		add_ideas = sdf_dedicated_armour
+			add_tech_bonus = {
+				name = light_armor_bonus
+				bonus = 0.1
+				uses = 1
+				category = cat_light_armor
+			}	
+			add_tech_bonus = {
+				name = medium_armor_bonus
+				bonus = 0.1
+				uses = 1
+				category = cat_medium_armor
+			}	
+			add_tech_bonus = {
+				name = heavy_armor_bonus
+				bonus = 0.1
+				uses = 1
+				category = cat_heavy_armor
+			}		
 		}
 	}
 	
-	focus = { ##TODO +5% attack, 5% defence and speed to panzers and paratroopers
+	focus = { ##TODONE +5% attack, 5% defence and speed to panzers and paratroopers
 		id = SDF_merge_units
 		##icon = 
 		relative_position_id = SDF_tank_focus
@@ -4115,11 +4378,11 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-		
+			add_ideas = sdf_merge_units
 		}
 	}
 	
-	focus = { ##TODO 2 land doctrine reduction
+	focus = { ##TODONE 2 land doctrine reduction
 		id = SDF_decisive_battle
 		##icon = 
 		relative_position_id = SDF_war_plan_v
@@ -4138,7 +4401,12 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}		
 		}
 	}
 	

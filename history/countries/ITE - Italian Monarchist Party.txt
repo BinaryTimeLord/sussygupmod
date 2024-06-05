@@ -18,6 +18,7 @@ if = {
 starting_train_buffer = 1.5
 
 recruit_character = ITE_pepperoni
+recruit_character = ITE_gelato
 
 set_research_slots = 4
 set_stability = 0.6

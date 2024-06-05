@@ -12424,11 +12424,11 @@ focus_tree = {
 				}
 				add_corps_commander_role = {
 					character = ITA_alcide_de_gasperi
-					traits={  }
+					traits={ infantry_leader fast_planner trickster }
 			        skill=3
 			        attack_skill=3
-			        defense_skill=3
-			        planning_skill=3
+			        defense_skill=4
+			        planning_skill=2
 			        logistics_skill=3
 				}
 			}
@@ -18687,38 +18687,38 @@ focus_tree = {
 			hidden_effect = {
 				add_corps_commander_role = {
 					character = ITA_sandro_pertini
-					traits={  }
+					traits={ panzer_leader logistics_wizard organisational_leader }
 			        skill=3
-			        attack_skill=3
+			        attack_skill=2
 			        defense_skill=3
-			        planning_skill=3
+			        planning_skill=4
 			        logistics_skill=3
 				}
 				add_corps_commander_role = {
 					character = ITA_palmiro_togliatti
-					traits={  }
+					traits={ aggressive_assaulter infantry_leader trickster }
 			        skill=3
-			        attack_skill=3
+			        attack_skill=4
 			        defense_skill=3
 			        planning_skill=3
-			        logistics_skill=3
+			        logistics_skill=2
 				}
 				add_corps_commander_role = {
 					character = ITA_ferruccio_parri
-					traits={  }
+					traits={ logistics_wizard fast_planner organisational_leader }
 			        skill=3
 			        attack_skill=3
-			        defense_skill=3
-			        planning_skill=3
+			        defense_skill=2
+			        planning_skill=4
 			        logistics_skill=3
 				}
 				add_corps_commander_role = {
 					character = ITA_ivanoe_bonomi
-					traits={  }
+					traits={ defensive_doctrine fortress_buster infantry_leader }
 			        skill=3
 			        attack_skill=3
-			        defense_skill=3
-			        planning_skill=3
+			        defense_skill=4
+			        planning_skill=2
 			        logistics_skill=3
 				}
 				play_song = "bella_ciao"
