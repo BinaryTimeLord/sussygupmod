@@ -5,7 +5,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_NORDIC_army_communist
 
 			removal_cost = -1
 
@@ -20,7 +20,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_ETH_conservative_high_command
 
 			removal_cost = -1
 
@@ -38,7 +38,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_acquire_tanks
 
 			removal_cost = -1
 
@@ -54,7 +54,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_ARG_war_division
 
 			removal_cost = -1
 			equipment_bonus = {
@@ -74,7 +74,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_supply_line
 
 			removal_cost = -1
 			equipment_bonus = {
@@ -88,7 +88,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_armor
 
 			removal_cost = -1
 			equipment_bonus = {
@@ -109,7 +109,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_ITA_bandits_war
 
 			removal_cost = -1
 			equipment_bonus = {
@@ -124,7 +124,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_air_payment
 
 			removal_cost = -1
 
@@ -140,7 +140,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_manpower_bonus
 
 			removal_cost = -1
 
@@ -155,7 +155,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_man_five_year_plan_tank
 
 			removal_cost = -1
 			equipment_bonus = {
@@ -176,7 +176,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_man_five_year_plan_air
 
 			removal_cost = -1
 			equipment_bonus = {
@@ -197,7 +197,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_radio_concern
 
 			removal_cost = -1
 			modifier = { 
@@ -211,7 +211,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_NORDIC_industry_communist
 
 			removal_cost = -1
 			equipment_bonus = {			
@@ -230,7 +230,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_SWE_let_fly_all_guns
 
 			removal_cost = -1
 			
@@ -245,7 +245,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_generic_artillery_regiments
 
 			removal_cost = -1
 			
@@ -260,7 +260,7 @@ ideas = {
 				original_tag = SDF
 			}
 	
-			picture = 
+			picture = GFX_idea_hun_secret_rearmament
 
 			removal_cost = -1
 			

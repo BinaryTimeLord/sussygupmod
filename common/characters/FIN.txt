@@ -212,6 +212,15 @@ characters = {
 				large="gfx/leaders/FIN/Portrait_FIN_Youko.dds"
 			}
 		}
+		corps_commander={
+			traits={ aggressive_assaulter cavalry_leader trickster }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
 	}
 
     FIN_yuri={
