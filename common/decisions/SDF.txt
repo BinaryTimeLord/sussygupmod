@@ -1107,16 +1107,33 @@ AUS_intervention = {
 		
 		icon = GFX_decision_generic_prepare_civil_war
 		
-		available = {
+		activation = {
 			has_completed_focus = the_trollge
 		}
 		
+		available = {
+			NOT = {
+				tag = SDF
+			}
+		}	
+		
 		days_mission_timeout = 69 #funni number
 		selectable_mission = no
+		fire_only_once = yes
+		
 		complete_effect = {
-			GER = {
-				complete_national_focus = GER_river_incident
-			}	
+			
+			every_country = {
+				limit = {
+					owns_state = 64
+					original_tag = GER
+				}
+				
+				declare_war_on = {
+					target = AUS
+					type = annex_everything
+				}
+			}
 		}
 	}
 }
