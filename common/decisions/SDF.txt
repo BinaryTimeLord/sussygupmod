@@ -271,12 +271,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 763
-				has_completed_focus = SDF_west_priority
 			}
 			
 			763 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -298,12 +301,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 5
-				has_completed_focus = SDF_west_priority
 			}
 			
 			5 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -325,12 +331,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 63
-				has_completed_focus = SDF_west_priority
 			}
 			
 			63 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -352,12 +361,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 68
-				has_completed_focus = SDF_west_priority
 			}
 			
 			68 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -379,12 +391,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 66
-				has_completed_focus = SDF_west_priority
 			}
 			
 			66 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -406,12 +421,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 65
-				has_completed_focus = SDF_west_priority
 			}
 			
 			65 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -433,12 +451,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 62
-				has_completed_focus = SDF_west_priority
 			}
 			
 			62 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -460,17 +481,20 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 64
-				has_completed_focus = SDF_west_priority
 			}
 			
 			64 = {
-				compliance > 85
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
 		
-		cost = 150
+		cost = 25
 		
 		days_remove = 30
 		remove_effect = {
@@ -487,12 +511,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 61
-				has_completed_focus = SDF_west_priority
 			}
 			
 			61 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -517,8 +544,12 @@ SDF_core_states = {
 			}
 			
 			909 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -543,8 +574,12 @@ SDF_core_states = {
 			}
 			
 			58 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -569,8 +604,12 @@ SDF_core_states = {
 			}
 			
 			59 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -595,8 +634,12 @@ SDF_core_states = {
 			}
 			
 			56 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+		
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -620,12 +663,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 57
-				has_completed_focus = SDF_east_priority
 			}
 			
 			57 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+	
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -647,12 +693,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 51
-				has_completed_focus = SDF_east_priority
 			}
 			
 			51 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -674,12 +723,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 42
-				has_completed_focus = SDF_east_priority
 			}
 			
 			42 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -701,19 +753,22 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 55
-				has_completed_focus = SDF_east_priority
 			}
 			
 			55 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
 		
 		cost = 25
 		
-		days_remove = 55
+		days_remove = 30
 		remove_effect = {
 			55 = {
 				add_core_of = SDF
@@ -728,12 +783,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 60
-				has_completed_focus = SDF_east_priority
 			}
 			
 			60 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_west_priority
 		}
 		
 		fire_only_once = yes
@@ -755,12 +813,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 54
-				has_completed_focus = SDF_east_priority
 			}
 			
 			54 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -782,12 +843,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 53
-				has_completed_focus = SDF_east_priority
 			}
 			
 			53 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -809,12 +873,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 52
-				has_completed_focus = SDF_east_priority
 			}
 			
 			52 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -836,12 +903,15 @@ SDF_core_states = {
 		available = {
 			SDF = {
 				has_full_control_of_state = 50
-				has_completed_focus = SDF_east_priority
 			}
 			
 			50 = {
-				compliance > 50
+				compliance > 25
 			}
+		}
+
+		visible = {
+			has_completed_focus = SDF_east_priority
 		}
 		
 		fire_only_once = yes
@@ -1032,7 +1102,7 @@ SDF_economic_crisis = {
 					remove_ideas = sdf_economic_downturn1
 				}
 			}
-		
+			
 			if = {
 				limit = {
 					SDF = {
@@ -1107,33 +1177,16 @@ AUS_intervention = {
 		
 		icon = GFX_decision_generic_prepare_civil_war
 		
-		activation = {
+		available = {
 			has_completed_focus = the_trollge
 		}
 		
-		available = {
-			NOT = {
-				tag = SDF
-			}
-		}	
-		
 		days_mission_timeout = 69 #funni number
 		selectable_mission = no
-		fire_only_once = yes
-		
 		complete_effect = {
-			
-			every_country = {
-				limit = {
-					owns_state = 64
-					original_tag = GER
-				}
-				
-				declare_war_on = {
-					target = AUS
-					type = annex_everything
-				}
-			}
+			GER = {
+				complete_national_focus = GER_river_incident
+			}	
 		}
 	}
 }

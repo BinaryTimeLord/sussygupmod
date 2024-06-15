@@ -1,12 +1,12 @@
 # Welcome to the Official GUP HOI4 Mod GitHub Page!
-This is where you can find mod files containing upcoming changes and features for the official GUP HOI4 mod on steam:
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2844411050 . 
+This is where you can find mod files containing upcoming changes and features for the official TEST GUP HOI4 mod on steam:
+- https://steamcommunity.com/sharedfiles/filedetails/?id=3068546359. 
 
 (Please note that many of these changes may be untested, so download and install these files at your own risk!)
 
 ## Discord
 The link to the discord is as follows: 
-- Insert Link to Discord Here ! 
+https://discord.gg/q4suE33UPM
 
 On the server, you can do the following:
 - Play online with others,

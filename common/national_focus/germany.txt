@@ -9632,7 +9632,7 @@ focus = {
 		icon = GFX_goal_river_incident
 		x = 3
 		y = 0
-		cost = 20
+		cost = 10
 		mutually_exclusive = {
 			focus = GER_rhineland
 		}

@@ -16,7 +16,7 @@ SDF_raise_units = {
 SDF_core_states = {
 	icon = GFX_decision_ger_reichskommissariats
 	
-	priority = 100
+	priority = 10000
 	allowed = {
 		tag = SDF
 	}

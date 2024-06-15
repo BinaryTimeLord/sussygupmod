@@ -5686,6 +5686,24 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		}
 		
 		hidden_effect = {
+		AUS = { 
+			retire_character = AUS_ayumi_yamagou
+			retire_character = AUS_yuuki_utsugi
+			retire_character = AUS_aya_oono
+			retire_character = AUS_shinobu_kawanishi
+			retire_character = AUS_tsuchiya
+			retire_character = AUS_saori_takebe
+			retire_character = AUS_maria_suzuki
+			retire_character = AUS_saemonza
+			retire_character = AUS_erwin
+			retire_character = AUS_keiko_hoshino
+			retire_character = AUS_noriko_isobe
+			retire_character = AUS_yukari_akiyama
+			retire_character = AUS_ogin
+			retire_character = AUS_rum
+			retire_character = AUS_flint
+			retire_character = AUS_murakami
+		}
 		SDF = {
 			inherit_technology = GER
 			

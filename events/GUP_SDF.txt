@@ -588,10 +588,9 @@ country_event = { ##FASCIST RISING##
 				64 62 63 68 5 763
 			}
 			capital = 64
-			
-			keep_all_characters = yes
+            keep_all_characters = yes
 		}
-		
+
 		country_event = {
 			id = sdf.19
 			days = 1
