@@ -1309,7 +1309,10 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = no
+			power_balance_value = {
+				id = SDF_power_balance
+				value < 0.35
+			}
 		}	
 		
 		prerequisite = { focus = SDF_power_struggle }
@@ -1409,7 +1412,10 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = no
+			power_balance_value = {
+				id = SDF_power_balance
+				value > 0.35
+			}
 		}
 		
 		prerequisite = { focus = SDF_power_struggle }
@@ -1430,6 +1436,11 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_flag = SDF_COUP_FAILSTATE
+			}
+			
+			power_balance_value = {
+				id = SDF_power_balance
+				value > 0.50
 			}
 		}
 		
@@ -1461,6 +1472,11 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_flag = SDF_COUP_FAILSTATE
+			}
+			
+			power_balance_value = {
+				id = SDF_power_balance
+				value > 0.75
 			}
 		}
 		
@@ -1544,37 +1560,6 @@ focus_tree = {
 		cost = 7
 		
 		completion_reward = {
-			
-			if = {
-				limit = {
-					SDF = {
-						has_idea = sdf_failing_loyalty3
-					}
-				}
-				remove_ideas = sdf_failing_loyalty3
-
-			}
-			
-			if = {
-				limit = {
-					SDF = {
-						has_idea = sdf_failing_loyalty2
-					}
-				}
-
-				remove_ideas = sdf_failing_loyalty2
-				
-			}
-			
-			if = {
-				limit = {
-					SDF = {
-						has_idea = sdf_failing_loyalty
-					}
-				}
-
-				remove_ideas = sdf_failing_loyalty
-			}
 			
 			country_event = {
 				id = sdf.31
@@ -4604,7 +4589,7 @@ focus_tree = {
 		}
 		
 		available = {
-
+			surrender_progress > 0.5
 		}
 		
 		x = 0

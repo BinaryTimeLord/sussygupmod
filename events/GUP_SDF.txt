@@ -345,6 +345,11 @@ country_event = { ##VICTORY IN THE CIVIL WAR##
 		
 		SDF = {
 			set_country_flag = SDF_CIVIL_WAR_WIN
+			set_power_balance = {
+				id = SDF_power_balance
+				left_side = SDF_democratic_side
+				right_side = SDF_army_side
+			}
 		}
 		
 		mark_focus_tree_layout_dirty = yes
@@ -867,7 +872,11 @@ country_event = {
 			base = 1
 		}
 		
-		complete_national_focus = SDF_purge_generals
+		add_power_balance_value = {
+			id = SDF_power_balance
+			value = -0.15
+			tooltip_side = SDF_democratic_side
+		}
 	}
 	
 	option = {
@@ -876,7 +885,11 @@ country_event = {
 			base = 1
 		}
 		
-		complete_national_focus = SDF_keep_nishizumists
+		add_power_balance_value = {
+			id = SDF_power_balance
+			value = 0.15
+			tooltip_side = SDF_army_side_side
+		}
 	}
 }
 

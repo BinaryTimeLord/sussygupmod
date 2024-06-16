@@ -2903,6 +2903,17 @@
  SDF_into_future_tooltip:0 "§CWhen you finish the focus it will add a custom Economy law§!"
  SDF_timed_idea_tooltip:0 "Adds §C60§! Days to "§RClock is Ticking§!""
  SDF_eastern_allies_tooltip:0 "§CEnables§! you to Convince Eastern Nations to join you"   
+ ##BALANCE OF POWER##
+ SDF_power_balance:0 "Balance of Power"
+ SDF_democratic_side_low_control_range:0 "Low Pro Democratic Support"
+ SDF_democratic_side_medium_control_range:0 "Medium Pro Democratic Support"
+ SDF_democratic_side_high_control_range:0 "High Pro Democratic Support"
+ SDF_army_side_low_control_range:0 "Disgruntled Officers"
+ SDF_army_side_medium_control_range:0 "Non-Approved Military Movements"
+ SDF_army_side_high_control_range:0 "SDF Coup"
+ SDF_democratic_side:0 "Pro Democracy"
+ SDF_army_side:0 "Military Support"
+ 
  ##TRAITS##
  SDF_saori_takebe:0 "Heerfuhrer Saori Takebe"
  sdf_ig_faben:0 "Ooarai Oil"
