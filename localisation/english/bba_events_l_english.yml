@@ -1856,7 +1856,7 @@
  BBA_italy_anti_colonialism_events.02.b:0 "We must surrender..."
  BBA_italy_anti_colonialism_events.02.c:0 "Too late, they will bend the knee!"
  BBA_italy_anti_colonialism_events.03.t:0 "End of the Anzi-Konjon War"
- BBA_italy_anti_colonialism_events.03.desc:0 "[FROM.GetName]’s [FROM.GetLeader] has agreed to our proposed cease-fire and is willing to give peace a chance. We can finally put one of Mussolini’s greatest atrocities behind us and start anew."
+ BBA_italy_anti_colonialism_events.03.desc:0 "[FROM.GetName]’s [FROM.GetLeader] has agreed to our proposed cease-fire and is willing to give peace a chance. We can finally put one of Anchovy’s greatest atrocities behind us and start anew."
  BBA_italy_anti_colonialism_events.03.a:0 "Peace it is!"
  BBA_italy_anti_colonialism_events.04.t:0 "[FROM.GetLeader] Rejects our Proposal"
  BBA_italy_anti_colonialism_events.04.desc:0 "The bloodthirsty [FROM.GetLeader] apparently smells blood after our Civil War, and thinks us weak. [FROM.GetSheHeCap] has refused our generous peace offer and is determined to fight on. We will show [FROM.GetHerHim] that we are far from weak!"
