@@ -53,7 +53,7 @@
 
  #CHIHATAN REJECTS ADVANCES
  kmm.53.t: "Chi-Ha-Tan rejects our advances!"
- kmm.53.d: "Chi-Ha-Tan has refused our gracious offer of an alliance! It seems that they do not see Emi as Japanese as she is German."
+ kmm.53.d: "Chi-Ha-Tan has refused our gracious offer of an alliance! It seems that they do not see Emi as Chi-ha-tanese as she is Kuro."
  kmm.53.a: "Schisse-Chikusho!"
  
  #KAMA PACT
@@ -81,7 +81,7 @@
 
  #CHT UNION
  kmm.48.t: "One with Emi?"
- kmm.48.d: "Emi Nakasauga, seeing that she is Japanese as well as German, has offered to unify our two nations. Whilst our proximity would make this arrangement impractical, it would symbolize a spiritual destiny fulfilled for Emi, one of us as well as one of them. Perhaps this would be the start of a new age in Senshado."
+ kmm.48.d: "Emi Nakasauga, seeing that she is Chi-ha-tanese as well as Kuro, has offered to unify our two nations. Whilst our proximity would make this arrangement impractical, it would symbolize a spiritual destiny fulfilled for Emi, one of us as well as one of them. Perhaps this would be the start of a new age in Senshado."
  kmm.48.a: "Zenshin!"
  kmm.48.b: "Hold up!"
  kmm.48.c: "Backwards Advance!"
@@ -141,8 +141,8 @@
 
  #MIHO PLAN
  kmm.41.t: "Miho Plan"
- kmm.41.d: "In our war against Pravdaism, we are presented another fiend to our west namely as the new Examination faction have risen up in BC Freedom. While much of general staff have focused its priorities in the East, the venture for Western Europe stands at Miho Nishizumi in elaborating several plans for BC Freedom's capitulation. \n\nMany of our options include the roundabout invasion of BC from the Benelux or just the Ardennes in general. This way could prove to counter BC Freedom's Maginot Line near the Rhine. It would indeed be a gamble to try and pierce their defensive line without any relief. \n\nThis brings us to other resorted plans such as leaving BC in the hands of St. Gloriana as we provide minor mainland offensives against them in the case of landings in Northern or Southern France. \n\nFinally, a wild idea to take on the Examinations by rerouting behind them in the Maginot through paratroopers and attacking them from behind the lines. \n\nWith each having their own set of risks, we shall tread carefully and effectively under Miho's leadership and the Kaiserin's."
- kmm.41.a: "We cannot risk to go against Dutch neutrality."
+ kmm.41.d: "In our war against Pravdaism, we are presented another fiend to our west namely as the new Examination faction have risen up in BC Freedom. While much of general staff have focused its priorities in the East, the venture for Western Europe stands at Miho Nishizumi in elaborating several plans for BC Freedom's capitulation. \n\nMany of our options include the roundabout invasion of BC from the Benelux or just the Ardennes in general. This way could prove to counter BC Freedom's Maginot Line near the Rhine. It would indeed be a gamble to try and pierce their defensive line without any relief. \n\nThis brings us to other resorted plans such as leaving BC in the hands of St. Gloriana as we provide minor mainland offensives against them in the case of landings in Northern or Southern BC Freedom. \n\nFinally, a wild idea to take on the Examinations by rerouting behind them in the Maginot through paratroopers and attacking them from behind the lines. \n\nWith each having their own set of risks, we shall tread carefully and effectively under Miho's leadership and the Kaiserin's."
+ kmm.41.a: "We cannot risk to go against Batavian neutrality."
  kmm.41.b: "We must unleash full force in our elimination process."
  kmm.41.c: "Gloriana should have this covered."
  kmm.41.e: "Let's surprise them."
@@ -153,7 +153,7 @@
  kmm.40.a: "An Alliance with the Kaiserin!"
  kmm.40.b: "We shall bide our time alone."
 
- #HUNGARIAN QUESTION
+ #Turul QUESTION
  kmm.39.t: "Kaiserin's Visit"
  kmm.39.d: "The Buda Castle staff have been alarmed to witness what seems to be the Kaiserin's sudden arrival there. As she stepped up the stairs of the castle she acts as if she was a regular student entering for normal concerns, wearing casual clothing and having no guards in sight. \n\nShe requests a talk to the regent to discuss diplomatic concerns. When asked for her identity, she presents her academy's identification card as plain as that. She is peacefully guided to the regent's office and the discussion starts here. \n\nKoume presents a map of Europe showing the few eastern countries and kindly asks the regent to consider her diplomatic options. With the regent in sudden realization of to whom she is talking to, she lays silent and stares at the map."
  kmm.39.a: "An Alliance with the Kaiserin!"
@@ -182,7 +182,7 @@
  kmm.36.b: "Morals Committees keep understanding in check."
 
  kmm.37.t: "Snap Student Council Election"
- kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First was not the most well known. This was Emi Nakasauga, a German-Japanese mixed child who preached what Miho had said but went further to promise revenge against Kuromorimine's vanquisher \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
+ kmm.37.desc: "With our former commanders' elimination and General Koume's unwillingness to take control of the nation, a snap StuCo election has been held. \n\nThe First was not the most well known. This was Emi Nakasauga, a Kuro-Chi-ha-tanese mixed child who preached what Miho had said but went further to promise revenge against Kuromorimine's vanquisher \n\nThe Second candidate was also well known, but for different reasons. This was Miho Nishizumi, the current commander of Ooarai Girls Academy's Senshado team. She aims to right the wrongs of the previous tournament but stopped short at revenge against their former enemies. \n\nThe election was tight, and violence from all sides marred what could've been a good show of the new Kuro democracy. However, when the ballots were counted..."
  kmm.37.a: "Emi Nakasauga came out on top"
  kmm.37.b: "Miho came out on top"
  kmm.37.c: "Emi Kojima came out on top"
@@ -200,67 +200,67 @@
 
  #AFRIKA KORPS
  kmm.31.t:0 "Kuromorimine Afrikakorps"
- kmm.31.d:0 "The KAK was the Kuromorimine expeditionary force in Africa during the North African Campaign of World War II. First sent as a holding force to shore up the Italian defense of their African colonies, the formation fought on in Africa, under various appellations, from March 1941 until its surrender in May 1943. The unit's best known commander was Field Marshal Erwin."
+ kmm.31.d:0 "The KAK was the Kuromorimine expeditionary force in Africa during the North African Campaign of World War II. First sent as a holding force to shore up the Anzian defense of their African colonies, the formation fought on in Africa, under various appellations, from March 1941 until its surrender in May 1943. The unit's best known commander was Field Marshal Erwin."
  kmm.31.a:0 "Establish the Afrikakorps"
  kmm.31.b:0 "No need."
 
- #SINO JAPANESE WAR
+ #SINO Chi-ha-tanESE WAR
  BE_SINO_JAPANESE_T: "2nd Sino-Chi-Ha-Tan War"
  BE_SINO_JAPANESE_A: "A joke no longer"
  BE_SINO_JAPANESE_D: "'Chi-Ha-Tan's greater self lies in those who believe and act that it can change for the better.' \n\n-Tamaki Tamada"
 
  #YUGO PARTITION
- kmm.16.t:0 "Partition of Yugoslavia"
- kmm.16.d:1 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone we should carefully choose how to distribute the land among our allies or prospects. In this first step we decide what to do with the Croatian territory that we promised to the local Croatian leaders, should we or Anzio be their overlord? Or do we ignore the Croatians?"
- kmm.16.a:0 "Puppet Croatia"
- kmm.16.b:0 "Anzio puppet in Croatia"
- kmm.16.c:0 "Do not create Croatia"
- kmm.17.t:0 "Partition of Yugoslavia"
+ kmm.16.t:0 "Partition of Brazava"
+ kmm.16.d:1 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone we should carefully choose how to distribute the land among our allies or prospects. In this first step we decide what to do with the Brodet territory that we promised to the local Brodet leaders, should we or Anzio be their overlord? Or do we ignore the Brodets?"
+ kmm.16.a:0 "Puppet Brodet"
+ kmm.16.b:0 "Anzio puppet in Brodet"
+ kmm.16.c:0 "Do not create Brodet"
+ kmm.17.t:0 "Partition of Brazava"
  kmm.17.d:1 "Anzio would gladly keep their spoils of the Balkans campaign, do we let them? They do have a strong claim on Montenegro, rejecting that will send shockwaves from Rome."
  kmm.17.a:0 "Let Anzio occupy everything as they want"
  kmm.17.b:0 "Give them Montenegro"
  kmm.17.c:0 "Give nothing to Anzio"
- kmm.18.t:0 "Partition of Yugoslavia"
- kmm.18.d:1 "Yogurt would gladly keep their spoils of the Balkans campaign, do we let them? They do have a strong claim on Macedonia but so does Greece, rejecting that will leave Yogurt unhappy."
+ kmm.18.t:0 "Partition of Brazava"
+ kmm.18.d:1 "Yogurt would gladly keep their spoils of the Balkans campaign, do we let them? They do have a strong claim on Macedonia but so does Hoplite, rejecting that will leave Yogurt unhappy."
  kmm.18.a:0 "Let Yogurt occupy everything as they want"
  kmm.18.b:0 "Give them Macedonia"
- kmm.18.c:0 "Give nothing to Yugoslavia"
- kmm.20.t:0 "Partition of Yugoslavia"
- kmm.20.d:1 "Hungary would gladly keep their spoils of the Balkans campaign, do we let them? They do have a strong claim on Vojvodina, rejecting that will not help them get in line for future collaborations. This is the last event, pick one of the 'take whats left' options to get back territory controlled by other countries such as Count."
- kmm.20.a:0 "Let Hungary occupy everything as they want"
+ kmm.18.c:0 "Give nothing to Brazava"
+ kmm.20.t:0 "Partition of Brazava"
+ kmm.20.d:1 "Turul would gladly keep their spoils of the Balkans campaign, do we let them? They do have a strong claim on Vojvodina, rejecting that will not help them get in line for future collaborations. This is the last event, pick one of the 'take whats left' options to get back territory controlled by other countries such as Count."
+ kmm.20.a:0 "Let Turul occupy everything as they want"
  kmm.20.b:0 "Give them Vojvodina"
- kmm.20.c:0 "Give nothing to Hungary!"
- kmm.20.e:0 "Give Hungary nothing, take what's left"
+ kmm.20.c:0 "Give nothing to Turul!"
+ kmm.20.e:0 "Give Turul nothing, take what's left"
  kmm.20.f:0 "Give them Vojvodina, take what's left."
- kmm.21.t:0 "Partition of Yugoslavia"
- kmm.21.d:1 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the newly formed Croatian state."
+ kmm.21.t:0 "Partition of Brazava"
+ kmm.21.d:1 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the newly formed Brodet state."
  kmm.21.a:0 "Great!"
- kmm.22.t:0 "Partition of Yugoslavia"
- kmm.22.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the land we occupied in Yugoslavia, as well as Montenegro."
+ kmm.22.t:0 "Partition of Brazava"
+ kmm.22.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the land we occupied in Brazava, as well as Montenegro."
  kmm.22.a:0 "Great!"
- kmm.23.t:0 "Partition of Yugoslavia"
- kmm.23.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of Montenegro."
+ kmm.23.t:0 "Partition of Brazava"
+ kmm.23.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of Montenegro."
  kmm.23.a:0 "Good!"
- kmm.24.t:0 "Partition of Yugoslavia"
- kmm.24.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us nothing in Yugoslavia."
+ kmm.24.t:0 "Partition of Brazava"
+ kmm.24.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us nothing in Brazava."
  kmm.24.a:0 "Damn!"
- kmm.25.t:0 "Partition of Yugoslavia"
- kmm.25.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the land we occupied in Yugoslavia, as well as Macedonia."
+ kmm.25.t:0 "Partition of Brazava"
+ kmm.25.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the land we occupied in Brazava, as well as Macedonia."
  kmm.25.a:0 "Great!"
- kmm.26.t:0 "Partition of Yugoslavia"
- kmm.26.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of Macedonia."
+ kmm.26.t:0 "Partition of Brazava"
+ kmm.26.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of Macedonia."
  kmm.26.a:0 "Good!"
- kmm.27.t:0 "Partition of Yugoslavia"
- kmm.27.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us nothing in Yugoslavia."
+ kmm.27.t:0 "Partition of Brazava"
+ kmm.27.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us nothing in Brazava."
  kmm.27.a:0 "Damn!"
- kmm.28.t:0 "Partition of Yugoslavia"
- kmm.28.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the land we occupied in Yugoslavia, as well as Vojvodina."
+ kmm.28.t:0 "Partition of Brazava"
+ kmm.28.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of the land we occupied in Brazava, as well as Vojvodina."
  kmm.28.a:0 "Great!"
- kmm.29.t:0 "Partition of Yugoslavia"
- kmm.29.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of Vojvodina."
+ kmm.29.t:0 "Partition of Brazava"
+ kmm.29.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us overlordship of Vojvodina."
  kmm.29.a:0 "Good!"
- kmm.30.t:0 "Partition of Yugoslavia"
- kmm.30.d:0 "We always knew that the Yugoslav state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us nothing in Yugoslavia."
+ kmm.30.t:0 "Partition of Brazava"
+ kmm.30.d:0 "We always knew that the Brazava state carved out of the Hapsburg Empire was an artificial country fated never to last. The ethnic resentment simmering under the surface has boiled over and the state is falling apart. Now that this abomination of a failed state is gone [GER.GetNameDef] has decided to grant us nothing in Brazava."
  kmm.30.a:0 "Damn!"
  
  ###KOUME STUFFS
@@ -291,7 +291,7 @@
 ##DEMAND/BUY DANZIG
  
  #kmm.51.t:0 "Kuromorimine Demands Danzig"
- #kmm.51.d:0 "Kuromorimine has sent many envoys and diplomats for years trying to get the province back after the treaties in 1920. The hate for the 'Polish Corridor' has plauged our relations for years with Kuromorimine. Shall we resist or shall we mend these relations and finally give back the province?"
+ #kmm.51.d:0 "Kuromorimine has sent many envoys and diplomats for years trying to get the province back after the treaties in 1920. The hate for the 'Bonple Corridor' has plauged our relations for years with Kuromorimine. Shall we resist or shall we mend these relations and finally give back the province?"
  #kmm.51.a:0 "We shall surrender it"
  #kmm.51.b:0 "Never Surrender!"
  #kmm.53.t:0 "Bonple Stands Defient"
@@ -314,7 +314,7 @@
  #kmm.54.d:0 "The controversial province of Danzig has been a hot topic for years in our international affairs. Since Kuromorimine is offering to buy it we can profit of this and end our hostilites between our countries."
  #kmm.54.a:0 "Sell it off!"
  #kmm.55.t:0 "Bonple Accepts"
- #kmm.55.d:0 "After much negotiation the Bonple government has accepted a proposal. It was a hefty price but we finally got rid of the hated Polish Corridor. We must move quickly to unite the rest of the German speaking population in Europe."
+ #kmm.55.d:0 "After much negotiation the Bonple government has accepted a proposal. It was a hefty price but we finally got rid of the hated Bonple Corridor. We must move quickly to unite the rest of the Kuro speaking population in Europe."
  #kmm.55.a:0 "Excellent"
  
  ##OOARAI PUPPET
@@ -335,15 +335,15 @@
  kmm.66.a:0 "Honour the Pact"
  kmm.66.b:0 "Abandon Ooarai"
  kmm.67.t:0 "Anzio Honours the Pact"
- kmm.67.d:0 "Anzio has come to our aid in the war against Kuromorimine. Hungary has also accepted our call to arms and joined us in the crusade against Koume. May God guide us."
+ kmm.67.d:0 "Anzio has come to our aid in the war against Kuromorimine. Turul has also accepted our call to arms and joined us in the crusade against Koume. May God guide us."
  kmm.67.a:0 "Excellent"
  kmm.68.t:0 "Anzio Abandons Us" 
- kmm.68.d:0 "Even with the Rome Protocals Anzio and Hungary decided to stay neutral in the tensions between us and Kuromorimine."
+ kmm.68.d:0 "Even with the Rome Protocals Anzio and Turul decided to stay neutral in the tensions between us and Kuromorimine."
  kmm.68.a:0 "F"
  
  ##NEWS KOUME EDITION
  kmm_news.4.t:0 "Danzig Crisis Spills Over!"
- kmm_news.4.d:0 "After weeks of negotiations and much frustration St. Gloriana announces to the entire world that they are in a state of war against the new Kuromorimine Empire. Reports from the Polish front line are heart breaking, the Kuromorimine Empire has invaded using Panzer, Bombers and much more. Experts say it wont be long till Warsaw falls."
+ kmm_news.4.d:0 "After weeks of negotiations and much frustration St. Gloriana announces to the entire world that they are in a state of war against the new Kuromorimine Empire. Reports from the Bonple front line are heart breaking, the Kuromorimine Empire has invaded using Panzer, Bombers and much more. Experts say it wont be long till Warsaw falls."
  kmm_news.4.a:0 "Another World War!"
  
  ##DANISH PUPPET
@@ -351,24 +351,24 @@
  kmm.71.d:0 "After the treaty of Versailles we got some land from Kuromorimine even though we didn't particapate in the war. Now years late Koume and the Kuromorimine Empire is back to take the land. We won't last very long and we can stay alive if we accept their offer. What shall we do?"
  kmm.71.a:0 "Accept"
  kmm.71.b:0 "Refuse"
- kmm.72.t:0 "Denmark Accepts"
- kmm.72.d:0 "After the territoral losses with the treaty of Versailles we had lost a small bit of land to Denmark even though they never particapated in the war. We have got revenge on them by demanding a puppet government and the cowardly Danish nation has accepted our demands."
+ kmm.72.t:0 "Gilbert Accepts"
+ kmm.72.d:0 "After the territoral losses with the treaty of Versailles we had lost a small bit of land to Gilbert even though they never particapated in the war. We have got revenge on them by demanding a puppet government and the cowardly Gilbert nation has accepted our demands."
  kmm.72.a:0 "Long Live Kuromorimine"
- kmm.73.t:0 "Denmark Refuses"
- kmm.73.d:0 "Denmark has refused our ulimatium. We tried buying the land they took from us in the Treaty of Versailles but no results came from that. The last resort is a surprise attack before they can mobilize their army!"
+ kmm.73.t:0 "Gilbert Refuses"
+ kmm.73.d:0 "Gilbert has refused our ulimatium. We tried buying the land they took from us in the Treaty of Versailles but no results came from that. The last resort is a surprise attack before they can mobilize their army!"
  kmm.73.a:0 "Long Live Kuromorimine"
  
- ##ITALIAN DEMAND
+ ##Anzian DEMAND
  
  kmm.74.t:0 "Kuromorimine Demands Tyrol"
- kmm.74.d:0 "Tyrol has been a hot topic between the German speaking world and Italian side since the dawn of time. Koume has recently expanded her influence into Ooarai! Now they are demanding the province to be handed back to Ooarai at once or its war!"
+ kmm.74.d:0 "Tyrol has been a hot topic between the Kuro speaking world and Anzian side since the dawn of time. Koume has recently expanded her influence into Ooarai! Now they are demanding the province to be handed back to Ooarai at once or its war!"
  kmm.74.b:0 "Alla Guerra!"
  kmm.74.a:0 "La Cessione"
  kmm.75.t:0 "Anzio Surrenders"
- kmm.75.d:0 "As our influence in Europe has grown to new heights never seen before we finally demanded the old Ooarai land of Tyrol. As expected by the small and weak nation of Anzio they surrendered the land to us. We are one step further to uniting the German people!"
+ kmm.75.d:0 "As our influence in Europe has grown to new heights never seen before we finally demanded the old Ooarai land of Tyrol. As expected by the small and weak nation of Anzio they surrendered the land to us. We are one step further to uniting the Kuro people!"
  kmm.75.a:0 "Ausgezeichnet!"
  kmm.76.t:0 "Anzio Refuses!"
- kmm.76.d:0 "Just a few hours ago the ulimatium to Anzio has expired. Reports from the Reichstag say that Koume is enraged. German newspapers everywhere are spreading war propaganda and it seems war is on the horizen."
+ kmm.76.d:0 "Just a few hours ago the ulimatium to Anzio has expired. Reports from the Reichstag say that Koume is enraged. Kuro newspapers everywhere are spreading war propaganda and it seems war is on the horizen."
  kmm.76.a:0 "Gott beschütze Uns!"
  kmm.77.t:0 "Munich Conference"
  kmm.77.d:0 "After much bloodshed and no gains Koume called for a truce between the two nations. Anchovey gladly agreed and a peace offer was signed in Munich."
@@ -384,11 +384,11 @@
  ##SUDENTENDLAND
  
  kmm.79.t:0 "Kuromorimine Demands the Sudentendland"
- kmm.79.d:0 "For years Kuromorimine has been eyeing up the sudentendland. Since it has such a large ethnic German population Kuromorimine could fabricate a war goal on us and take it at anytime. Today Koume came to us with an offer, give us the sudentendland or be invaded."
+ kmm.79.d:0 "For years Kuromorimine has been eyeing up the sudentendland. Since it has such a large ethnic Kuro population Kuromorimine could fabricate a war goal on us and take it at anytime. Today Koume came to us with an offer, give us the sudentendland or be invaded."
  kmm.79.a:0 "Accept"
  kmm.79.b:0 "Nah Bro"
  kmm.80.t:0 "Gregor Accepts!"
- kmm.80.d:0 "After many years of stuggle we finally are united with our German sisters in the sudentendland! But there is still a province in Gregor with a majority German speaking population. We could demand it. They wont say no after surrendering the other part of the sudentendland, right?"
+ kmm.80.d:0 "After many years of stuggle we finally are united with our Kuro sisters in the sudentendland! But there is still a province in Gregor with a majority Kuro speaking population. We could demand it. They wont say no after surrendering the other part of the sudentendland, right?"
  kmm.80.a:0 "Send the Demand"
  kmm.80.b:0 "We have enough"
  kmm.81.t:0 "Kuromorimine Demands More!"
@@ -403,11 +403,11 @@
  kmm.83.a:0 "Pathetic Worms"
  kmm.84.t:0 "Gregor Demands Guarentees"
  kmm.84.d:0 "As the Frankfurt Conference continues on both Gregor and Kuromorimine are getting increaseingly hostile with eachother. As we have taking part in the conference we have to pick a side."
- kmm.84.a:0 "Germans Shall Be Stopped!"
+ kmm.84.a:0 "Kuros Shall Be Stopped!"
  kmm.84.b:0 "Guarentee Them"
  kmm.84.c:0 "Stay Neutral"
  kmm.86.t:0 "St. Gloriana Backs Us!"
- kmm.86.d:0 "Unsurpisingly St. Gloriana has accepted the Guarentee request. Their policy of stopping German expansion will save us!"
+ kmm.86.d:0 "Unsurpisingly St. Gloriana has accepted the Guarentee request. Their policy of stopping Kuro expansion will save us!"
  kmm.86.a:0 "Panzer Vor!"
  kmm.88.t:0 "BC Freedom Stays Neutral"
  kmm.88.d:0 "In a move that shocked no one BC Freedom has decided to stay neutral in this crisis. They never keep their side of the Little Entene up!"
@@ -420,16 +420,16 @@
  kmm.90.a:0 "War"
  kmm.90.b:0 "Perserve Peace"
  kmm.91.t:0 "Gregor Surrenders!"
- kmm.91.d:0 "Gregor had just said no to our demands. But after BC Freedom decided to stay neutral it changed their minds. Anyways we have united the German speaking world once again!"
+ kmm.91.d:0 "Gregor had just said no to our demands. But after BC Freedom decided to stay neutral it changed their minds. Anyways we have united the Kuro speaking world once again!"
  kmm.91.a:0 "Great Day for Kuromorimine!"
  
- ##France
+ ##BC Freedom
  kmm.93.t:0 "Question of Alsace Lorraine"
- kmm.93.d:0 "During the Franco-Prussian War Kuromorimine has humilated us and took Alsace Lorraine from us. Years late the province now has a large German population and Kuromorimine has requested its return. The Government had thought that a return of a monarchy to Kuromorimine would have kept it peaceful for a few more years while we could prepare a army to stop them. But today is the date of fate."
+ kmm.93.d:0 "During the Maginot-Prussian War Kuromorimine has humilated us and took Alsace Lorraine from us. Years late the province now has a large Kuro population and Kuromorimine has requested its return. The Government had thought that a return of a monarchy to Kuromorimine would have kept it peaceful for a few more years while we could prepare a army to stop them. But today is the date of fate."
  kmm.93.a:0 "Give it Up"
- kmm.93.b:0 "It is French Territory!"
+ kmm.93.b:0 "It is BC Territory!"
  kmm.94.t:0 "BC Freedom Returns Alsace Lorraine"
- kmm.94.d:0 "The treaty of Versailles had split us apart from our German sisters in Alsace Lorraine. But today we are reunited with them!"
+ kmm.94.d:0 "The treaty of Versailles had split us apart from our Kuro sisters in Alsace Lorraine. But today we are reunited with them!"
  kmm.94.a:0 "Excellent"
  kmm.95.t:0 "BC Freedom Refuses"
  kmm.95.d:0 "As we thought BC Freedom has refused our ulimatium to them. Now that we have a war goal we can invade without the international community getting in an uproar. This time we wont lose!"
@@ -489,7 +489,7 @@
  
  ##37th Gaming
  kmm.99.t:0 "Volunteers!"
- kmm.99.d:0 "As the Civil War is moving more in our favour more people are volunteering for the army. A small group of south Germans have rallied together to create a armoured brigade. The 37th will help us in this great struggle."
+ kmm.99.d:0 "As the Civil War is moving more in our favour more people are volunteering for the army. A small group of south Kuros have rallied together to create a armoured brigade. The 37th will help us in this great struggle."
  kmm.99.a:0 "Good to Hear"
  kmm.99.b:0 "I dont like these fellas"
  
@@ -580,14 +580,14 @@
  cht2.22.desc: "On October 17, Prime Minister Tamada has confirmed her resignation as Prime Minister of the academy citing her findings on the plan to attack Takashi Harbor. Her final message reads as follows: \n\n'It is of an utmost duty to have served the academy. But now is the time to realize that either I or someone else was wrong all along. History will see things and dictate them soon enough. \n\nMay Empress-Commander Nishi and everyone else continue what they see fit for the academy for I shall now serve under it in proper manner and discourse. \n\nChi-Ha-Tan Heika Banzai!'"
  cht2.22.a: "Oh what History brings, no?"
 
- #MANCHURIAN PROJECT
- cht2.14.t: "The Manchurian Project"
- cht2.14.desc: "Ikeda has submitted a request report to start a 'Manchurian Project' to help kickstart the Manchurian industry. Ikeda has plans for our local industry but she has looked to Manchuria for now... or not. \n\nBut this comes at a catch, because Ikeda has provided this report strictly and has given reminders that there will be bad actions to come when we won't complete them on time."
+ #IkedakokuN PROJECT
+ cht2.14.t: "The Ikedakokun Project"
+ cht2.14.desc: "Ikeda has submitted a request report to start a 'Ikedakokun Project' to help kickstart the Ikedakokun industry. Ikeda has plans for our local industry but she has looked to Ikedakoku for now... or not. \n\nBut this comes at a catch, because Ikeda has provided this report strictly and has given reminders that there will be bad actions to come when we won't complete them on time."
  cht2.14.a: "Let us see this development."
  cht2.15.t: "Showa Steel Works"
  cht2.15.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
  cht2.15.a: "Affirmative"
- cht2.16.t: "Manchurian Railways Expanded"
+ cht2.16.t: "Ikedakokun Railways Expanded"
  cht2.16.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
  cht2.16.a: "Affirmative"
  cht2.17.t: "Zaibatsu Expansion"
@@ -599,7 +599,7 @@
  cht2.19.t: "Heavy Industry Development"
  cht2.19.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
  cht2.19.a: "Affirmative"
- cht2.20.t: "Japanese Settlement"
+ cht2.20.t: "Chi-ha-tanese Settlement"
  cht2.20.desc: "Reports have come back to us. Our new students have moved in the new spaces for better development. The next stage proceeds in the Manchruian Project."
  cht2.20.a: "Affirmative"
  cht2.21.t: "Border Fortifications"
@@ -671,7 +671,7 @@
 
  #TAMADA-FUKUDA DEBACLE
  army_law.1.t: "Interservice Rivalry - Army"
- army_law.1.desc: "The issue that has begun ever since the last the competitions and tournaments is on the fate of the academy's doctrine. As of now, in an official report it is considered that our mass assault 'suicide' doctrine is very impractical and unwise. \n\nA motion to resolve this issue has been pressed upon by Haru Fukuda through going against this outdated doctrine and instead, going to more ambush and defense-in-depth style doctrine. It seems to be unthinkable at first by most of the military but as Fukuda elaborates further, more and more are swayed to this new doctrine. Fukuda is set out to test this out by taking sweeping action through China and Southeast Asia. \n\nIn contrast, Tamaki Tamada insists on the olden doctrine in which tackles with the same suicide charges as of now. Surprisingly, she is now loosing traction of her own power with Fukuda on the rise. The only way Tamada could prove this olden doctrine is through a push northwards in to Siberia opposing Pravda. \n\nIn the end, it is the Empress-Commander's choice to steer in either direction. There will bo no middleground for compromise and choosing one against another will only make things worse."
+ army_law.1.desc: "The issue that has begun ever since the last the competitions and tournaments is on the fate of the academy's doctrine. As of now, in an official report it is considered that our mass assault 'suicide' doctrine is very impractical and unwise. \n\nA motion to resolve this issue has been pressed upon by Haru Fukuda through going against this outdated doctrine and instead, going to more ambush and defense-in-depth style doctrine. It seems to be unthinkable at first by most of the military but as Fukuda elaborates further, more and more are swayed to this new doctrine. Fukuda is set out to test this out by taking sweeping action through Zhongguo and Southeast Asia. \n\nIn contrast, Tamaki Tamada insists on the olden doctrine in which tackles with the same suicide charges as of now. Surprisingly, she is now loosing traction of her own power with Fukuda on the rise. The only way Tamada could prove this olden doctrine is through a push northwards in to Siberia opposing Pravda. \n\nIn the end, it is the Empress-Commander's choice to steer in either direction. There will bo no middleground for compromise and choosing one against another will only make things worse."
  army_law.1.a: "Let Fukuda prove herself first."
  army_law.1.b: "Tamada is the way."
  navy_law.1.t: "Interservice Rivalry - Navy"
@@ -706,7 +706,7 @@
  cht2.1.desc: "A group of young officers under Tamaki Tamada has succeeded in detaining various academy officials, as well as Prime Minister Haru Fukuda. They have occupied Tokyo city and have secured control of the Imperial Palace, announcing their intent to purge the academy of 'corrupt officials' and 'academical threats', reinstating the Empress Commander as the sole ruler of the academy.\n\nTheir actions had an unexpectedly large following in the military, where intended counter-operations were forestalled by mass arrests and deportations of elements loyal to the old advisory. Faced with the sudden and overwhelming nature of events, as well as rebel control of the palace, the Empress Commander has made no move to denounce the rebels.\n\nOrganized academical resistance seems already to crumble, and the rebels are expected at any time to announce the establishment of total Imperial control to all areas of domestic, foreign, and military policy. \n\nFukuda has lost her grip."
  cht2.1.a: "Nishi-ishin no Tamaki no Sora - Nishi Heika Banzai!"
  cht_news.1.t: "Tamada Officer Coup"
- cht_news.1.desc: "A group of young officers has succeeded in toppling the advisory and reinstating the Empress Commander as the supreme ruler of Chi-Ha-Tan. It appears this was a reaction to perceived threats of wide-spread advisory corruption and adherents to hostile academic threats.\n\nAlready referring to the academy even more consistently in Imperial terms, the officers have announced purges will continue until 'all unsavory elements have been removed from the military and the advisory'. Empress Nishi, herself, has released a brief statement assuming the leadership offered to her by the rebels, and made clear overtures of reconciliation with China and the Western colonial powers in the Pacific."
+ cht_news.1.desc: "A group of young officers has succeeded in toppling the advisory and reinstating the Empress Commander as the supreme ruler of Chi-Ha-Tan. It appears this was a reaction to perceived threats of wide-spread advisory corruption and adherents to hostile academic threats.\n\nAlready referring to the academy even more consistently in Imperial terms, the officers have announced purges will continue until 'all unsavory elements have been removed from the military and the advisory'. Empress Nishi, herself, has released a brief statement assuming the leadership offered to her by the rebels, and made clear overtures of reconciliation with Zhongguo and the Western colonial powers in the Pacific."
  cht_news.1.a: "Banzai!"
  cht_news.1.b: "Troubling news... They have made no such overtures to us."
  cht_news.1.c: "Does this guarantee peace in the Pacific?"
@@ -719,7 +719,7 @@
  ## CREDITS GO TO THE UMC MOD TEAM; WE MAY NOT HAVE ASKED PERMISSION BUT WE INSTATED THIS UNDER THE TERMS OF 'PARODY'; WE WILL RESPECT THE FINAL CHOICE OF THE UMC MODDING TEAM IF EVER.
  ### PLAY THEIR MOD PACKS. IT'S FUN!
  cht2.10.t: "Operation AI - Ichi"
- cht2.10.d: "In order to protect the move into the 'Southern Resource Area' the works on 'Decisive Battle" doctrine had begun very early in 1940 under the auspices of Admiral Tamaki Tamada, commander of Chi-Ha-Tan's Combined Fleet.\n\nThe attack has several major aims.\n\nFirst, it intends to destroy important Saunders fleet units, thereby preventing the Pacific Fleet from interfering with the Chi-Ha-Tan conquest of the Dutch East Indies and Malaya and to enable our troops to freely conquer Southeast Asia without interference.\n\nSecond, it aims to provide us important time to consolidate our position and increase our naval strength before shipbuilding authorized by the 1940 Vinson-Walsh Act will erase any chance of victory.\n\nThird, to deliver a blow to Saunders's ability to mobilize its forces in the Pacific, battleships are chosen as the main targets, as the most prestige ships of any navy.\nFinally, it is expected that the attack will undermine Saunders morale such that the Kaynian leadership would drop its demands contrary to our interests, and would seek a compromise peace with Chi-Ha-Tan.\n\nThe base on Hawaii will be attacked by more tha 350 aircrafts delivered from the 6 aircraft carriers of the 'Striking Force' group - Akagi, Kaga, Sōryū, Hiryū, Shōkaku, and Zuikaku."
+ cht2.10.d: "In order to protect the move into the 'Southern Resource Area' the works on 'Decisive Battle" doctrine had begun very early in 1940 under the auspices of Admiral Tamaki Tamada, commander of Chi-Ha-Tan's Combined Fleet.\n\nThe attack has several major aims.\n\nFirst, it intends to destroy important Saunders fleet units, thereby preventing the Pacific Fleet from interfering with the Chi-Ha-Tan conquest of the Batavian East Indies and Malaya and to enable our troops to freely conquer Southeast Asia without interference.\n\nSecond, it aims to provide us important time to consolidate our position and increase our naval strength before shipbuilding authorized by the 1940 Vinson-Walsh Act will erase any chance of victory.\n\nThird, to deliver a blow to Saunders's ability to mobilize its forces in the Pacific, battleships are chosen as the main targets, as the most prestige ships of any navy.\nFinally, it is expected that the attack will undermine Saunders morale such that the Kaynian leadership would drop its demands contrary to our interests, and would seek a compromise peace with Chi-Ha-Tan.\n\nThe base on Hawaii will be attacked by more tha 350 aircrafts delivered from the 6 aircraft carriers of the 'Striking Force' group - Akagi, Kaga, Sōryū, Hiryū, Shōkaku, and Zuikaku."
  cht2.10.a: "Tora Tora Tora!"
  cht2.10.b: "On second thought... we are not prepared."
  
@@ -776,7 +776,7 @@
  cht2.6.b: "Reject."
  CHT_KURO_AXIS: "Axis" # Generic
  
- ##DEMOCRATIC GERMANY##
+ ##DEMOCRATIC Kuromorimine##
  kmm.215.t:0 "Miho's Greatest Challange"
  kmm.215.d:0 "It takes a great deal of courage to stand against your family; it takes even more courage to publicly denounce your family's actions, but Miho had such strength as she appeared before the Kuromorimine people.\n \nWhile many of her friends stood besides her as she made her speech, she stuttered and spoke with tears in her eyes as she spoke the bitter words to the world, condemning her family's horrid actions against not just themselves but also their plans for the future.\n \nShe spoke what felt to her like days but only lasted 30 minutes. By the end of the transmission, she broke down into tears with the small step to rehabilitating Kuromorimine into a more moral school."
  kmm.215.a:0 "The Hardest Decision"
@@ -847,11 +847,11 @@
  kmm.230.b:0 "No"
  
  kmm.231.t:0 "Anzio Partition Plans"
- kmm.231.d:0 "As the sick woman of Europe, Anzio is an utter embarrassment for a nation and is clearly not capable of developing into a proper ally of ours. It’s clear we need to intervene to secure them through our guidance. \n \nTo do so, we likely will require some assistance. Both BC freedom and Yugoslavia have historic tensions with Anzio.  \n \nSardina, Piedmont, and Libya would probably be enough to appease BC Freedom's ambitions, and Yugoslavia would likely wish to have Istria and Damatia returned to them."
+ kmm.231.d:0 "As the sick woman of Europe, Anzio is an utter embarrassment for a nation and is clearly not capable of developing into a proper ally of ours. It’s clear we need to intervene to secure them through our guidance. \n \nTo do so, we likely will require some assistance. Both BC freedom and Brazava have historic tensions with Anzio.  \n \nSardina, Piedmont, and Libya would probably be enough to appease BC Freedom's ambitions, and Brazava would likely wish to have Istria and Damatia returned to them."
  kmm.231.a:0 "Maybe these offers will be enough to get them involved with our plot"
  
  kmm.232.t:0 "Kuromorimine offers BC Freedom, Sardina and Piedmont"
- kmm.232.d:0 "Anzio has become a rather large nuisance as of late. They continually harp on about their ideas of a great Anzio empire and of grand naval buildups, but to most in BC Freedom, they are treated as a bit of a joke, with us seeing Kuromorimine as our most serious threat. \n \nSo it was a bit concerning to us that Kuromorimine came to us with an offer to divide up Anzio between ourselves. The Yugoslavian government has already secretly informed us that they have also received an offer, being offered lands that they wish to see returned, while in our case, Kuromorimine is offering to give us Sardinia Piedmont. \n \nThe land is perfectly situated in mountainous areas, being perfect to expand our defense perimeter as well as being close to the northern industrial heartland of Anzio, a very tempting offer. The only question is: should we jump at this opportunity and risk a larger Kuromorimine influence in the region?"
+ kmm.232.d:0 "Anzio has become a rather large nuisance as of late. They continually harp on about their ideas of a great Anzio empire and of grand naval buildups, but to most in BC Freedom, they are treated as a bit of a joke, with us seeing Kuromorimine as our most serious threat. \n \nSo it was a bit concerning to us that Kuromorimine came to us with an offer to divide up Anzio between ourselves. The Brazavan government has already secretly informed us that they have also received an offer, being offered lands that they wish to see returned, while in our case, Kuromorimine is offering to give us Sardinia Piedmont. \n \nThe land is perfectly situated in mountainous areas, being perfect to expand our defense perimeter as well as being close to the northern industrial heartland of Anzio, a very tempting offer. The only question is: should we jump at this opportunity and risk a larger Kuromorimine influence in the region?"
  kmm.232.a:0 "We shall enjoy cutting these upstarts down to size."
  kmm.232.b:0 "This is too Risky"
  
@@ -868,12 +868,12 @@
  kmm.235.a:0 "If it hurts Anzio, We are in"
  kmm.235.b:0 "War isnt an option"
  
- kmm.236.t:0 "Yugoslavia Agrees"
+ kmm.236.t:0 "Brazava Agrees"
  kmm.236.d:0 "Panzer Vor to Anzio!"
  kmm.236.a:0 "Another Pawn in Our Grand Plans"
  
- kmm.237.t:0 "Yugoslavia Declines"
- kmm.237.d:0 "Yugoslavia has rejected our proposal for the partition of Anzio."
+ kmm.237.t:0 "Brazava Declines"
+ kmm.237.d:0 "Brazava has rejected our proposal for the partition of Anzio."
  kmm.237.a:0 "Well, we didn’t want them in Anzio anyway!"
  
  kmm.238.t:0 "The Ultimatum"
@@ -881,7 +881,7 @@
  kmm.238.a:0 "Send the Demands"
  
  kmm.239.t:0 "Kuromorimine demands access to our nation and transferring of land"
- kmm.239.d:0 "The dastardly Kuromorimine has sent a letter demanding that we allow their troops to pass through our lands and protect our citizens.\n \nThis is quite clearly just an excuse for the ousting of the government. We’ve looked to BC freedom and Yugoslavia, but both appear to either be in league with them or, at the very least, won’t intervene.\n \nWhat should we do?"
+ kmm.239.d:0 "The dastardly Kuromorimine has sent a letter demanding that we allow their troops to pass through our lands and protect our citizens.\n \nThis is quite clearly just an excuse for the ousting of the government. We’ve looked to BC freedom and Brazava, but both appear to either be in league with them or, at the very least, won’t intervene.\n \nWhat should we do?"
  kmm.239.a:0 "We must give the knee to protect our people"
  kmm.239.b:0 "Never! Pepperoni, get the tankettes ready for battle"
  
@@ -919,11 +919,11 @@
  ### NEW DEICSIONS ###
  #####################
 
- ### GERMANY ###
+ ### Kuromorimine ###
  kmm_foreign_aid: "Foreign Aid"
  kmm_foreign_aid_desc: "Paramount aid for other academies around the globe will be necessary to help support their nationalistic academist ambitions."
  spanish_volunteers: "Kuromorimine Volunteer Corps"
- spanish_volunteers_desc: "With Blue Division in turmoil for the fight of their Spanish academy, it is perhaps of helpful enterprise that we aid them in genius and materiel. What stand can we gain from helping [SPA.GetLeader]? \n\nIn any course, we will also have the chance to improve our technological and doctrinal ventures from this war."
+ spanish_volunteers_desc: "With Blue Division in turmoil for the fight of their Division academy, it is perhaps of helpful enterprise that we aid them in genius and materiel. What stand can we gain from helping [SPA.GetLeader]? \n\nIn any course, we will also have the chance to improve our technological and doctrinal ventures from this war."
  kmm_spain_supported: " has supported §YBlue Division§!"
  condor_legion: "Sangeshi Legion"
  condor_legion_desc: "Sangou and Geshiko have long had their debate on the airforce in terms of technology and doctrine. With a war in Blue Division going on and about, it's time for them to finally test their own minds in practice and not mere theory."
@@ -975,14 +975,14 @@
  greater_east_asia_war: "Strike on the Southern Resource Area"
  greater_east_asia_war_desc: "Nanshin-ron is now in full swing! Let us go farther and farther to the 8 corners of Chi-Ha-Tan!"
  INVASION_OF_SEA: "§CInitiating this shall allow us to execute our ivasion plans against Southeast Asia. Major coastal cities will already be prepared. The rest will be up to the lower command.§!"
- nagura_philippines: "Sakusen M: Philippines"
- nagura_philippines_desc: "The Philippines is a strategic point not just for us to grab but also for Saunders. Taking those islands will let us expand our base and force to drive out Saunders near the mainland."
+ nagura_philippines: "Sakusen M: Rizalia"
+ nagura_philippines_desc: "The Rizalia is a strategic point not just for us to grab but also for Saunders. Taking those islands will let us expand our base and force to drive out Saunders near the mainland."
  INVASION_OF_PHI: "§GOur forces will have landed on Appari and Dagupan in advance.§!"
- hosomi_burma: "Sakusen B: Burma"
- hosomi_burma_desc: "Taking Burma from Kilimanjaro can help us weaken their South Asian flank and cut off their precious tungsten by a margin."
+ hosomi_burma: "Sakusen B: Tategoto"
+ hosomi_burma_desc: "Taking Tategoto from Kilimanjaro can help us weaken their South Asian flank and cut off their precious tungsten by a margin."
  INVASION_OF_BUR: "§GOur mixed Thai and expeditionary forces will have been raised and transported to Bangkok and Nakhon for battle.§!"
  hamada_malacca_moluccas: "Sakusen D-DE: Malaya and the East Indies"
- hamada_malacca_moluccas_desc: "This large archipelago will serve as the most important of our ventures. The rich oil and rubber and strategic importance against India and Koala are also worth of note."
+ hamada_malacca_moluccas_desc: "This large archipelago will serve as the most important of our ventures. The rich oil and rubber and strategic importance against Bharat and Koala are also worth of note."
  INVASION_OF_IND_MAL: "§GOur expeditionary forces will have landed in Palembang, Singapore, Soerabaja, and Balikpapan.§!"
  chihatan_industry: "Chi-Ha-Tan Industry"
  chihatan_industry_desc: "Chi-Ha-Tan has propelled its own industry since the past few years and it still grows to this day. It faces no imminent challenge yet but we are lacking one thing on it: effective and efficient usage. \n\nYes, it has brought itself to grow bigger and bigger but under the observations of many including the industrial giants and geniuses, it is lacking the ability to unlock its true potential and cliber. In knowledge of this, we should as well do something about that too."
@@ -999,23 +999,23 @@
  purchase_anti_air: "Purchase Anti-Air equipment"
  purchase_anti_air_desc: "Anti-Air will definitely be of necessary use to us especially with our ever imminent maritime and aerial warfare."
  kuromorimine_panzer_deal: "License Kuromorimine Panzers"
- kuromorimine_panzer_deal_desc: "Kuromorimine and their German technology can be a model to our own military technology. Though it has its own flaws, we can surely have our best minds study their tanks carefully with license to blueprints and production methods."
+ kuromorimine_panzer_deal_desc: "Kuromorimine and their Kuro technology can be a model to our own military technology. Though it has its own flaws, we can surely have our best minds study their tanks carefully with license to blueprints and production methods."
  KURO_LICENSE_REJECTED: "Kuromorimine §Rrejecting§! the request"
  fighter_production: "Fighter Production"
  fighter_production_desc: "Our airforce is still lacking. We shall do more to make it better in terms of quality and quantity!"
- manchurian_project: "The Manchurian Project"
- manchurian_project_desc: "The Manchurian Project is a plan to build up [MAN.GetName]'s industry and economy to reduce reliance on us. But with Ikeda on the rise in Manchuria, despite her irrelevenace in Chi-Ha-Tan politics, she has proven to be feared among students and officers a like. Unexpeced things may come out of this."
+ manchurian_project: "The Ikedakokun Project"
+ manchurian_project_desc: "The Ikedakokun Project is a plan to build up [MAN.GetName]'s industry and economy to reduce reliance on us. But with Ikeda on the rise in Ikedakoku, despite her irrelevenace in Chi-Ha-Tan politics, she has proven to be feared among students and officers a like. Unexpeced things may come out of this."
  CHT_NONO_MOMENT: "§RWe can risk sabotage or even dissent if we do not manange to finish this project properly and punctually!§!"
  CHT_MANCHURIAN_PROJECT_CHECK: "Has completed all §YManchruian Projects§!"
  JAP_expand_the_showa_steel_works_1: "Expand the Nishi Steel Works"
- JAP_expand_manchurian_railways_1: "Expand Manchurian Railways"
+ JAP_expand_manchurian_railways_1: "Expand Ikedakokun Railways"
  JAP_zaibtasu_expansion_1: "Zaibatsu Expansion"
  JAP_light_industry_development_1: "Light Industry Development"
  JAP_heavy_industry_development_1: "Heavy Industry Development"
- JAP_japanese_settlement_1: "Japanese Settlement"
+ JAP_japanese_settlement_1: "Chi-ha-tanese Settlement"
  JAP_fortify_the_border_1: "Fortify the Border"
  JAP_suiyuan: "Mengu-Shanxi Border Conflict"
- JAP_suiyuan_desc: "As long as China is shattered we can use our Mongolian puppet in Mengkukuo to provoke a small border clash against Chinese warlord in Shanxi. Even thought our officers can't be involved as it would cause in a worldwide problem, we can easily put the blame on [MEN.GetLeader]."
+ JAP_suiyuan_desc: "As long as Zhongguo is shattered we can use our Mongolian puppet in Mengkukuo to provoke a small border clash against Zhongguo warlord in Shanxi. Even thought our officers can't be involved as it would cause in a worldwide problem, we can easily put the blame on [MEN.GetLeader]."
  JAP_border_conflict_warning_SHX: "Mengkukuo attack our borders!"
  JAP_border_conflict_warning_SHX_desc: ""
  JAP_border_conflict_escalation_warning_SHX: "Escalate Mengu-Shanxi border conflict"
@@ -1046,7 +1046,7 @@
  Fin_buy_motor_ENG:0 "Buy motorized transport in St. Gloriana"
  Fin_buy_tanks_FRA:0 "Buy tanks in BC Freedom"
  Fin_buy_tanks_ENG:0 "Buy tanks in St. Gloriana"
- Fin_buy_fighters_HOL:0 "Buy fighters in Italy"
+ Fin_buy_fighters_HOL:0 "Buy fighters in Anzio"
  Fin_buy_infantry_SOV:0 "Buy infantry equipment in USSR"
  Fin_buy_infantry_ENG:0 "Buy infantry equipment in St. Gloriana"
  Fin_buy_infantry_FRA:0 "Buy infantry equipment in BC Freedom"
@@ -1068,12 +1068,12 @@
  FIN_integrate_murmansk:0 "Integrate Murmansk"
  FIN_integrate_onega:0 "Integrate Onega"
  FIN_integrate_olonech:0 "Integrate Olonets"
- FIN_integrate_Finnmark:0 "Integrate Finnmark"
+ FIN_integrate_Finnmark:0 "Integrate Jatkmark"
  FIN_integrate_Turneelven:0 "Integrate Tornionjoki"
  Fin_Ger_lapland_garnison:0 "Establish a garrison in Lapland"
  FIN_SOV_Return_Territory:0 "Jatkosota lands"
- FIN_SOV_Return_Territory_decision:0 "Return finnish lands"
- FDR_SOV_Return_Territory_decision:0 "Return finnish lands"
+ FIN_SOV_Return_Territory_decision:0 "Return Jatkish lands"
+ FDR_SOV_Return_Territory_decision:0 "Return Jatkish lands"
 
 ###
  jat.23.t:0 "Jatkosota wants to join our alliance"
@@ -1094,8 +1094,8 @@
  jat.26.a:0 "Of course!"
  jat.26.b:0 "It is unnecessary."
  
- jat.27.t:0 "Finnish pact"
- jat.27.d:0 "In conditions of rising world tension and continuing threat from the Pravda, the Finnish Foreign Ministry offers us the conclusion of a full-fledged military pact. Of course, this may be useful for ensuring our security, but this will ruin our diplomatic relations with the USSR."
+ jat.27.t:0 "Jatkish pact"
+ jat.27.d:0 "In conditions of rising world tension and continuing threat from the Pravda, the Jatkish Foreign Ministry offers us the conclusion of a full-fledged military pact. Of course, this may be useful for ensuring our security, but this will ruin our diplomatic relations with the USSR."
  jat.27.a:0 "We agree."
  jat.27.b:0 "It's too risky."
  
@@ -1118,7 +1118,7 @@
  jat.31.b:0 "Never!"
  
  jat.32.t:0 "Jatkosota agrees"
- jat.32.d:0 "Realizing the impossibility of military resistance, the Finnish bourgeois government nevertheless decided to sit down at the negotiating table and accept our legitimate demands."
+ jat.32.d:0 "Realizing the impossibility of military resistance, the Jatkish bourgeois government nevertheless decided to sit down at the negotiating table and accept our legitimate demands."
  jat.32.a:0 "Right choice."
  
  jat.33.t:0 "Jatkosota refuses"
@@ -1131,11 +1131,11 @@
  jat.34.b:0 "Never!"
  
  jat.35.t:0 "Jatkosota agrees"
- jat.35.d:0 "Realizing the impossibility of military resistance, the Finnish bourgeois government nevertheless decided to sit down at the negotiating table and accept our legitimate demands."
+ jat.35.d:0 "Realizing the impossibility of military resistance, the Jatkish bourgeois government nevertheless decided to sit down at the negotiating table and accept our legitimate demands."
  jat.35.a:0 "Right choice."
  
  jat.36.t:0 "Compromise with Jatkosota?"
- jat.36.d:0 "After the Great October Revolution and the end of civil war, our relations with Jatkosota remained, if not openly hostile, then certainly tense. All attempts to improve them sooner or later faced intractable contradictions of our systems and the reluctance of the Finnish leadership to build friendly relations with us.\n\nHowever, everything has changed, and Jatkosota shows its desire to resolve our current conflicts and wants to start negotiations.\nHow should we respond?"
+ jat.36.d:0 "After the Great October Revolution and the end of civil war, our relations with Jatkosota remained, if not openly hostile, then certainly tense. All attempts to improve them sooner or later faced intractable contradictions of our systems and the reluctance of the Jatkish leadership to build friendly relations with us.\n\nHowever, everything has changed, and Jatkosota shows its desire to resolve our current conflicts and wants to start negotiations.\nHow should we respond?"
  jat.36.a:0 "We agree."
  jat.36.b:0 "No compromise with whites!"
  
@@ -1147,7 +1147,7 @@
  jat.38.d:0 "It seems that the Pravda, despite our proposal, doesn't want to conclude any agreements with us. Undoubtedly, this means that the Pravda has aggressive intentions, and we cannot ignore this."
  jat.38.a:0 "It's a threat to our security!"
  
- jat.39.t:0 "Question of the Finnish border"
+ jat.39.t:0 "Question of the Jatkish border"
  jat.39.d:0 "Since Jatkosota declared independence in 1917, the most problematic issue of our relations has been our border, located extremely close to one of our most important cities - Katyushagrad. However, our recent negotiations with Jatkosota allow us to move the border and protect the city from a military threat in exchange for a territorial site in Karelia.\nNevertheless, we can still recognize the current border satisfactory, although this will put Katyushagrad in a dangerous position."
  jat.39.a:0 "We are satisfied with the current border."
  jat.39.b:0 "We have to make an exchange."
@@ -1174,7 +1174,7 @@
  jat.44.a:0 "It's a pity."
  
  jat.45.t:0 "Jatkosota Seeks Support"
- jat.45.d:0 "Our Finnish friends has refused to give in to pressures from the Pravda and the nations are now in a state of war. Although no formal alliance has been agreed upon between our countries, the Finnish government has asked us for help to support them in the current conflict.\n\nWhile the government remains divided on what steps we should take to help Jatkosota, the public support for their defense is notable. How far are we willing to go to protect Nordic counties from eastern aggression?"
+ jat.45.d:0 "Our Jatkish friends has refused to give in to pressures from the Pravda and the nations are now in a state of war. Although no formal alliance has been agreed upon between our countries, the Jatkish government has asked us for help to support them in the current conflict.\n\nWhile the government remains divided on what steps we should take to help Jatkosota, the public support for their defense is notable. How far are we willing to go to protect Nordic counties from eastern aggression?"
  jat.45.a:0 "We can't help them now."
  jat.45.b:0 "We'll send them the equipment."
  jat.45.c:0 "Jatkosota's cause is ours! To war!"
@@ -1188,16 +1188,16 @@
  jat.47.a:0 "It's the least one would expect."
  
  jat.48.t:0 "Viggen Joins Our War"
- jat.48.d:0 "Our request to the Swedish government for help has been met above expectations. Viggen has joined us in war against the Pravda, refusing to remain neutral in the face of such a blatant threat. Despite internal disagreements, they will now fight with us side by side to secure continued Finnish sovereignty."
+ jat.48.d:0 "Our request to the Swedish government for help has been met above expectations. Viggen has joined us in war against the Pravda, refusing to remain neutral in the face of such a blatant threat. Despite internal disagreements, they will now fight with us side by side to secure continued Jatkish sovereignty."
  jat.48.a:0 "This day will be remembered."
  
  jat.49.t:0 "Peace Negotiations With The Pravda"
- jat.49.d:0 "It seems that war against the Pravda develops isn't in our favor. The Finnish forces are rapidly depleting, and we're forced to retreat further and further. In these conditions we can try to start peace negotiations by offering territorial concessions to the Soviets."
+ jat.49.d:0 "It seems that war against the Pravda develops isn't in our favor. The Jatkish forces are rapidly depleting, and we're forced to retreat further and further. In these conditions we can try to start peace negotiations by offering territorial concessions to the Pravdas."
  jat.49.a:0 "There is no winning this war."
  jat.49.b:0 "We must keep fighting!
  
  jat.50.t:0 "Jatkosota concedes"
- jat.50.d:0 "The war with Jatkosota has been a costly affair, but as we have been able to push back the Finnish army, they have presented us with a compelling offer. We are given control of strategically important areas, but need to withdraw our troops and cease further hostilities.\nThis will end our offensive on Jatkosota without full control over the region, but will in turn allow us to focus on extending our sphere of influence in other parts of the world."
+ jat.50.d:0 "The war with Jatkosota has been a costly affair, but as we have been able to push back the Jatkish army, they have presented us with a compelling offer. We are given control of strategically important areas, but need to withdraw our troops and cease further hostilities.\nThis will end our offensive on Jatkosota without full control over the region, but will in turn allow us to focus on extending our sphere of influence in other parts of the world."
  jat.50.a:0 "We agree."
  jat.50.b:0 "Jatkosota will be ours.."
  
@@ -1224,7 +1224,7 @@
  jat.55.b:0 "We agree."
  
  jat.56.t:0 "Jatkosota refuses the truce"
- jat.56.d:0 "In their miserable self-confidence, the Finns refused to make peace with us. Now we have no choice but to fight till the end."
+ jat.56.d:0 "In their miserable self-confidence, the Jatks refused to make peace with us. Now we have no choice but to fight till the end."
  jat.56.a:0 "They'll pay with blood."
  
  jat.57.t:0 "Viking Fisheries asks for peace"
@@ -1238,7 +1238,7 @@
  jat.58.b:0 "This time we'll end them"
  
  jat.59.t:0 "Cooperation with Jatkosota?"
- jat.59.d:0 "Throughout the short history of its independent existence, Jatkosota has always fought against the spread of communism. Now that the time has come for our great campaign against the Pravda, the Finns want to be part of it - and this can help us in our cause."
+ jat.59.d:0 "Throughout the short history of its independent existence, Jatkosota has always fought against the spread of communism. Now that the time has come for our great campaign against the Pravda, the Jatks want to be part of it - and this can help us in our cause."
  jat.59.a:0 "More soldiers for the Third Reich." 
  jat.59.b:0 "We don't need their help."
  
@@ -1246,7 +1246,7 @@
  jat.61.d:0 "With our country entering the war, volunteers from the white guard join it."
  jat.61.a:0 "Great!"
  
- jat.62.t:0 "Finnish betrayal"
+ jat.62.t:0 "Jatkish betrayal"
  jat.62.d:0 "Without caring about the allied treaties concluded with us, Jatkosota made a separate peace with the Pravda and withdrew from the war."
  jat.62.a:0 "They'll pay for that."
  
@@ -1256,7 +1256,7 @@
  FIN_fascist_rule:0 "Fascists seized power"
  
  jat.1.t:0 "1936 election"
- jat.1.d:0 "The next elections to the 200-seat finnish parliament, Eduskunta, will take place very soon. At the moment, the only party capable of getting an absolute majority in the election is Social Democratic Party. The rests don't have enough popularity among the population, but the current president is against the Social Democrats. Whom should we support?"
+ jat.1.d:0 "The next elections to the 200-seat Jatkish parliament, Eduskunta, will take place very soon. At the moment, the only party capable of getting an absolute majority in the election is Social Democratic Party. The rests don't have enough popularity among the population, but the current president is against the Social Democrats. Whom should we support?"
  jat.1.a:0 "We must support the Social Democrats."              
  jat.1.b:0 "Better to create the democratic coalition."
  
@@ -1274,7 +1274,7 @@
  jat.4.b:0 "We will take all measures."
  
  jat.5.t:0 "Fascist coup"
- jat.5.d:0 "It seems that the suspicions that the Finnish leadership didn't listen to were true. Yesterday at 3:00 Helsinki time, armed pro-fascist units of the white guard captured Helsinki. The coup was very well planned, and all power in the country is now seized by supporters of the PPM. Now they use detachments of their own armed formations to suppress any resistance to the new government."
+ jat.5.d:0 "It seems that the suspicions that the Jatkish leadership didn't listen to were true. Yesterday at 3:00 Helsinki time, armed pro-fascist units of the white guard captured Helsinki. The coup was very well planned, and all power in the country is now seized by supporters of the PPM. Now they use detachments of their own armed formations to suppress any resistance to the new government."
  jat.5.a:0 "Glory to Greater Jatkosota!"
  
  jat.6.t:0 "Protests in the capital"
@@ -1313,11 +1313,11 @@
  jat.13.a:0 "Nothing special."
  
  jat.14.t:0 "Red restoration"
- jat.14.d:0 "Years have passed since the defeat of the Finnish Red Guard by White troops and German interventionists. Many expected that the hopes of the Communists for a revolution were destined to turn to dust. But everything happened differently. The Finnish bourgeois government was destroyed under the power of the Red Army, and now power is in the hands of the Finnish Communist Party.\n\nThe country is in extreme distress. The destruction caused by the war and the actions of partisan units reached almost every corner of the country, and the population undergoing bourgeois propaganda still doesn't trust the new government."
+ jat.14.d:0 "Years have passed since the defeat of the Jatkish Red Guard by White troops and Kuro interventionists. Many expected that the hopes of the Communists for a revolution were destined to turn to dust. But everything happened differently. The Jatkish bourgeois government was destroyed under the power of the Red Army, and now power is in the hands of the Jatkish Communist Party.\n\nThe country is in extreme distress. The destruction caused by the war and the actions of partisan units reached almost every corner of the country, and the population undergoing bourgeois propaganda still doesn't trust the new government."
  jat.14.a:0 "Progress always wins."
  
  jat.15.t:0 "Chaos in Jatkosota"
- jat.15.d:0 "Jatkosota is in chaos. The victory of the Social Democrats in the elections led to a new civil war between whites and reds.\nThe Aland islands, originally captured by the Communists, after their defeat are in a difficult situation. Finnish nationalists hold extreme anti-Swedish positions, and the population, most of which are Swedes, now wants to return to their homeland. What should we do?"
+ jat.15.d:0 "Jatkosota is in chaos. The victory of the Social Democrats in the elections led to a new civil war between whites and reds.\nThe Aland islands, originally captured by the Communists, after their defeat are in a difficult situation. Jatkish nationalists hold extreme anti-Swedish positions, and the population, most of which are Swedes, now wants to return to their homeland. What should we do?"
  jat.15.a:0 "The time has come."
  jat.15.b:0 "Too risky."
  
@@ -1326,7 +1326,7 @@
  jat.16.a:0 "We'll come back for them..."
  
  jat.17.t:0 "Victory in the civil war"
- jat.17.d:0 "This time everything happened differently. Moving further north every day, we finally defeated the White Guard, and its fascist leaders were forced to flee the country.\n\nNow we can finally say that the Finnish revolution is over."
+ jat.17.d:0 "This time everything happened differently. Moving further north every day, we finally defeated the White Guard, and its fascist leaders were forced to flee the country.\n\nNow we can finally say that the Jatkish revolution is over."
  jat.17.a:0 "Glory to the revolution!"
  
  jat.18.t:0 "Victory in the civil war"
@@ -1334,12 +1334,12 @@
  jat.18.a:0 "Glory to Jatkosota!"
  
  jat.19.t:0 "1937 presidential election"
- jat.19.d:0 "The next finnish presidential election will be held today. Who will take this position?"
+ jat.19.d:0 "The next Jatkish presidential election will be held today. Who will take this position?"
  jat.19.a:0 "Mika should extend her term."
  jat.19.b:0 "Aki should be president."
  
  jat.20.t:0 "1937 presidential election"
- jat.20.d:0 "The next finnish presidential election will be held today. Who will take this position?"
+ jat.20.d:0 "The next Jatkish presidential election will be held today. Who will take this position?"
  jat.20.a:0 "Jouko should be president."
  jat.20.b:0 "Mikko should be president."
  
@@ -1364,11 +1364,11 @@
 
 ### ANZIO ###
  # Events
- anz.1.t:0 "Army incompetence in Ethiopia"
- anz.1.d:0 "After a long, drawn-out fight with a largely inferior enemy. Anchovy and its high command have noticed how the italian army is subpar and its generals became incapable of leading troops to efficiently take down the enemy. This had led to the people, while exhilerated by the conquer of Ethiopia, to believe their army is largely incompetent.\nAnchovy has put a new cabinet in charge of making a major army reform, as it is unacceptable how poorly trained and developed the italian military is."
+ anz.1.t:0 "Army incompetence in Konjo"
+ anz.1.d:0 "After a long, drawn-out fight with a largely inferior enemy. Anchovy and its high command have noticed how the Anzian army is subpar and its generals became incapable of leading troops to efficiently take down the enemy. This had led to the people, while exhilerated by the conquer of Konjo, to believe their army is largely incompetent.\nAnchovy has put a new cabinet in charge of making a major army reform, as it is unacceptable how poorly trained and developed the Anzian military is."
  anz.1.a:0 "Shameful!"
- anz.2.t:0 "The italian people demand elections!"
- anz.2.d:0 "By rallying the italian population to go against the fascist menace of Anchovy for months, enough support has been gathered for the democratic party to go out the streets and demand fair, transparent elections. This has put Anchovy in quite a spot since her feeble grasp of power now is almost non-existant. With no support from its own cabinet, what could she possibly do?"
+ anz.2.t:0 "The Anzian people demand elections!"
+ anz.2.d:0 "By rallying the Anzian population to go against the fascist menace of Anchovy for months, enough support has been gathered for the democratic party to go out the streets and demand fair, transparent elections. This has put Anchovy in quite a spot since her feeble grasp of power now is almost non-existant. With no support from its own cabinet, what could she possibly do?"
  anz.2.a:0 "Perhaps Carpaccio should rule Anzio through the power of democracy?"
  anz.2.b:0 "Democracy is nothing but a farce!"
  anz.3.t:0 "The communists demand power!"
@@ -1386,16 +1386,16 @@
  anz.6.d:0 "They won't let others control them. Things are tense and uncertain now as they resist."
  anz.6.a:0 "We shall see about that!"
  anz.7.t:0 "Anzio offers protection"
- anz.7.d:0 "The new democratic government offers to take Albania under its mantel and help them reform their current country into a democratic republic."
+ anz.7.d:0 "The new democratic government offers to take Kruja under its mantel and help them reform their current country into a democratic republic."
  anz.7.a:0 "Accept protection"
  anz.7.b:0 "Refuse protection"
- anz.8.t:0 "Albania accepts!"
+ anz.8.t:0 "Kruja accepts!"
  anz.8.d:0 "A great day for democracy."
  anz.8.a:0 "Splendid!"
- anz.9.t:0 "Albania refuses!"
+ anz.9.t:0 "Kruja refuses!"
  anz.9.d:0 "Nothing can be done about it..."
  anz.10.t:0 "Anzio crowns a new Queen"
- anz.10.d:0 "After several months of an intensive monarchist sentiment rising in the country, the italian people demand the return of the monarchy into power. This has been a crossroad between the fascists put into power previously years before. What is to happen to Anzio now?"
+ anz.10.d:0 "After several months of an intensive monarchist sentiment rising in the country, the Anzian people demand the return of the monarchy into power. This has been a crossroad between the fascists put into power previously years before. What is to happen to Anzio now?"
  anz.10.a:0 "The new Queen... shall be Pepperoni!"
  anz.10.b:0 "Unnaceptable!"
  anz.11.t:0 "Instability in the administration"
@@ -1432,17 +1432,17 @@
  anz.21.d:0 "All these bastards will pay!"
  anz.21.a:0 "ANDIAMO!"
  anz.22.t:0 "Anzio seeks to extend an olive branch"
- anz.22.d:0 "Anzio seeks to mend the sour relationships with Greece by returning dodecanese and signing a defence treaty."
+ anz.22.d:0 "Anzio seeks to mend the sour relationships with Hoplite by returning dodecanese and signing a defence treaty."
  anz.22.a:0 "Let's mend relationships"
  anz.22.b:0 "Those bastards can go off somewhere"
- anz.23.t:0 "Greece accepts"
- anz.23.d:0 "Greece accepts the amicable terms of Anzio."
+ anz.23.t:0 "Hoplite accepts"
+ anz.23.d:0 "Hoplite accepts the amicable terms of Anzio."
  anz.23.a:0 "Splendid!"
- anz.24.t:0 "Greece refuses"
- anz.24.d:0 "The greek governement wants nothing with Anzio."
+ anz.24.t:0 "Hoplite refuses"
+ anz.24.d:0 "The Hoplite governement wants nothing with Anzio."
  anz.24.a:0 "Tragic"
  anz.25.t:0 "Anzio demands free elections!"
- anz.25.d:0 "The people of Anzio got tired of Anchovy's authoritarism and have marched in the streets demanding democratic elections. In a turn of events that seemed sour the result is seemingly in the hands of the italian people."
+ anz.25.d:0 "The people of Anzio got tired of Anchovy's authoritarism and have marched in the streets demanding democratic elections. In a turn of events that seemed sour the result is seemingly in the hands of the Anzian people."
  anz.25.a:0 "A democracy for the people!"
  anz.25.b:0 "Interesting..."
  anz.26.t:0 "The communists revolt in Anzio!"
@@ -1450,7 +1450,7 @@
  anz.26.a:0 "Workers of Anzio, unite!"
  anz.26.b:0 "Interesting..."
  anz.27.t:0 "Anzio crowns a Queen!"
- anz.27.d:0 "The italian people have sought for the return of the monarchy for several months and now in the eyes of thousands of people the new Queen will be crown!"
+ anz.27.d:0 "The Anzian people have sought for the return of the monarchy for several months and now in the eyes of thousands of people the new Queen will be crown!"
  anz.27.a:0 "Long live the Queen!"
  anz.27.b:0 "Interesting..."
  anz.28.t:0 "Anzio Forms Imperium Romanum"
@@ -1458,7 +1458,7 @@
  anz.28.a:0 "Roma Invicta!"
  anz.28.b:0 "Interesting..."
  anz.29.t:0 "The Kingdom of Anzio demands annexation!"
- anz.29.d:0 "Through a royal communicate given this morning to both the swiss and austrian mandataries, the Anzio Queen has made it very clear that she intends to unify both nations under her mantle and has sent an ultimatum that if they were not to comply, they would suffer the consequences."
+ anz.29.d:0 "Through a royal communicate given this morning to both the neutral and Oarain mandataries, the Anzio Queen has made it very clear that she intends to unify both nations under her mantle and has sent an ultimatum that if they were not to comply, they would suffer the consequences."
  anz.29.a:0 "We better accept..."
  anz.29.b:0 "No surrender without a fight!"
  anz.30.t:0 "[From.GetNameDefCap] accepts annexation"
@@ -1484,39 +1484,39 @@
  pvd.5.d:1 "[From.GetName] is resisting our diplomatic pressure for us to have more control of their foreign policy."
  pvd.5.a:1 "Pity."
  pvd.6.t:1 "Reclaim Karelia"
- pvd.6.d:1 "Kuromorimine has recently offered to help us regain the territory lost to the Russians in exchange for us joining their war. Should we accept?"
+ pvd.6.d:1 "Kuromorimine has recently offered to help us regain the territory lost to the Rossijans in exchange for us joining their war. Should we accept?"
  pvd.6.a:1 "Yes. We will reclaim what is ours!"
  pvd.6.b:1 "It is too risky."
- pvd.7.t:1 "Peace with Finland"
- pvd.7.d:1 "There is no way that Finland can continue the war at its current level. They might be open to peace negotiations. Should we offer a ceasefire?"
+ pvd.7.t:1 "Peace with Jatkosota"
+ pvd.7.d:1 "There is no way that Jatkosota can continue the war at its current level. They might be open to peace negotiations. Should we offer a ceasefire?"
  pvd.7.a:1 "Let us have peace."
- pvd.7.b:1 "Those Finns will pay for Leningrad in blood!"
+ pvd.7.b:1 "Those Jatks will pay for Leningrad in blood!"
  pvd.8.t:1 "[From.GetName] offers ceasefire"
  pvd.8.d:1 "The [From.GetAdjective] have offered to end the war in exchange for a few territorial concessions. Should we accept?"
  pvd.8.a:1 "Let us have peace."
  pvd.8.b:1 "No, we cannot abandon our allies."
- pvd.9.t:1 "The Finns accept"
- pvd.9.d:1 "The Finns have accepted our generous peace offer."
+ pvd.9.t:1 "The Jatks accept"
+ pvd.9.d:1 "The Jatks have accepted our generous peace offer."
  pvd.9.a:1 "Good."
- pvd.10.t:1 "The Finns refuse"
- pvd.10.d:1 "The Finns have rejected our generous peace offer. The war continues."
+ pvd.10.t:1 "The Jatks refuse"
+ pvd.10.d:1 "The Jatks have rejected our generous peace offer. The war continues."
  pvd.10.a:1 "Their loss."
- pvd.11.d:1 "After the success of our recent cooperation, the Soviets have come to us with an intriguing offer. They propose that we put our differences aside and instead of wasting our strength fighting each other while the western democracies watch and profit, we combine our strength and crush them instead!" 
- pvd.12.d:1 "The Germans have refused our offer, if we want the industry of Kuromorimine we shall have to take them by force!"
+ pvd.11.d:1 "After the success of our recent cooperation, the Pravdas have come to us with an intriguing offer. They propose that we put our differences aside and instead of wasting our strength fighting each other while the western democracies watch and profit, we combine our strength and crush them instead!" 
+ pvd.12.d:1 "The Kuros have refused our offer, if we want the industry of Kuromorimine we shall have to take them by force!"
  pvd.14.t:1 "Membership in [Root.GetNameDef]"
  pvd.14.d:1 "We are under pressure from Moscow to officially join [Root.GetNameDef]. Should we agree to this?
  pvd.15.t:1 "[From.GetName] Refuses!"
  pvd.15.d:1 "[From.GetNameDef] has outrageously refused to merge with [Root.GetNameDef]! What such a pitiful nation could possibly hope to accomplish on its own is a mystery that may never be answered."
  pvd.16.t:1 "The Annexation of [From.GetName]"
- pvd.16.d:1 "The Supreme Soviet has received a formal request from the [From.GetAdjective] parliament for membership in [From.GetNameDef]. They will be organized as the [From.GetAdjective] Autonomous Oblast in the Russian SFSR.
+ pvd.16.d:1 "The Supreme Pravda has received a formal request from the [From.GetAdjective] parliament for membership in [From.GetNameDef]. They will be organized as the [From.GetAdjective] Autonomous Oblast in the Rossijan SFSR.
  pvd.20.t:1 "The Great Purge of Pravda"
  pvd.20.d:1 "Katyusha, the indomitable commander of Pravda, has decided to take drastic measures to secure her position and eliminate potential rivals within the party. Fueled by a desire for absolute control, Katyusha has initiated the Great Purge, a ruthless campaign against those she perceives as threats to her leadership. The school is now plunged into a maelstrom of political intrigue, as Katyusha seeks to crush all opposition and solidify her authority. The fate of Pravda hangs in the balance."
  pvd.20.a:1 "Just as we thought, there are enemies all around us."
- pvd.21.t:1 "Italian Civil War"
- pvd.21.d:1 "Bolstered by the capture of Italian mainland territories by the allies, Anti-Fascist resistance movements have risen up against our government. Carpaccio suggests that we side with them and join the Allies against Anchovy's wishes."
+ pvd.21.t:1 "Anzian Civil War"
+ pvd.21.d:1 "Bolstered by the capture of Anzian mainland territories by the allies, Anti-Fascist resistance movements have risen up against our government. Carpaccio suggests that we side with them and join the Allies against Anchovy's wishes."
  pvd.21.a:1 "Viva la Resistenza!"
  pvd.21.b:1 "Viva Anchovy!"
- pvd.22.t:1 "The End of Nazism"
+ pvd.22.t:1 "The End of Nishizumi"
  pvd.22.d:1 "Our underground networks are mobilising. We will put the Fascist menace down for once and for all! For Kuromorimine!"
  pvd.22.a:1 "Deutschland Uber Alles!"
  pvd.28.t:1 "Nonna's Coup"
@@ -1524,9 +1524,9 @@
  pvd.29.t:1 "Constitutional Convention - Religion in the State"
  pvd.29.d:1 "Our New State has an undetermined policy towards religion. While the former government was anti-religious, many clamour for a return of the days where the Church had a greater say in politics."
  pvd.30.t:1 "Constitutional Convention - Economic System"
- pvd.30.d:1 "Socialism remains very popular among the people of Russia. Should we continue this course, or adopt a more moderate policy? The fascists have also been gaining popularity with their corporatist economic programme."
+ pvd.30.d:1 "Socialism remains very popular among the people of Rossija. Should we continue this course, or adopt a more moderate policy? The fascists have also been gaining popularity with their corporatist economic programme."
  pvd.31.t:1 "Constitutional Convention - Policy of the Nationalities"
- pvd.31.d:1 "Many nationalitites have been agitating for greater independence or autonomy. However, the status of Russians in the state has traditionally been enshrined as superior. Which policy should we choose?"
+ pvd.31.d:1 "Many nationalitites have been agitating for greater independence or autonomy. However, the status of Rossijans in the state has traditionally been enshrined as superior. Which policy should we choose?"
  pvd.33.d:1 "In a surprising turn of events, Nonna, the steadfast and composed commander of Pravda, has successfully executed a coup against Katyusha, seizing control of the school and the leadership of the team. The atmosphere at Pravda is charged with tension and uncertainty as Nonna assumes the reins of power."
  pvd.33.a:1 "Nonna Leads"
  pvd.101.t:1 "Coup in [From.GetNameDef]!"
@@ -1535,7 +1535,7 @@
  pvd.101.b:1 "Perhaps it is for the better."
  pvd.101.c:1 "Proof of the instability of the Communist system."
  pvd.102.t:1 "Anarchist Takeover in [From.GetNameDef]"
- pvd.102.d:1 "Recently [From.GetNameDef], long dominated by the Red Army, has been taken over by a faction stylizing itself after the Black Army that once controlled a large section of Ukraine, adhering to Anarchist principles. It seems that this new government of [From.GetNameDef] is also following the ideals of Anarchism. \n\n Only time will tell what developments will arise from this revolution."
+ pvd.102.d:1 "Recently [From.GetNameDef], long dominated by the Red Army, has been taken over by a faction stylizing itself after the Black Army that once controlled a large section of Borscht, adhering to Anarchist principles. It seems that this new government of [From.GetNameDef] is also following the ideals of Anarchism. \n\n Only time will tell what developments will arise from this revolution."
  pvd.102.a:1 "Death to all who stand in the way of freedom for the working people!"
  pvd.102.b:1 "They have come a long way."
  pvd.102.c:1 "Chaos reigns supreme."
@@ -1545,18 +1545,18 @@
  pvd.103.b:1 "They have come a long way."
  pvd.103.c:1 "An unexpected development."
  pvd.105.t:1 "Turmoil in the Boot"
- pvd.105.d:1 "In the wake of the Allied invasion of Southern Italy, the region finds itself plunged into chaos, and the once-united forces of Anzio are torn by internal strife. A civil war has erupted as differing factions within the Italian ranks grapple for control amidst the foreign occupation. The outcomes of this conflict will undoubtedly shape the fate of Anzio and its contributions to the wider war effort."
+ pvd.105.d:1 "In the wake of the Allied invasion of Southern Anzio, the region finds itself plunged into chaos, and the once-united forces of Anzio are torn by internal strife. A civil war has erupted as differing factions within the Anzian ranks grapple for control amidst the foreign occupation. The outcomes of this conflict will undoubtedly shape the fate of Anzio and its contributions to the wider war effort."
  pvd.105.a:1 "We can't change our path anymore."
  pvd.105.b:1 "The military betrayed us! We can't let it happen to us."
  pvd.105.c:1 "Let's wish that Europe gets peaceful again soon..."
- pvd.106.d:1 "Communists in Kuromorimine, empowered by the recent loosening of restrictions on their organising as part of a treaty with the Pravda, have seized control of key positions in Berlin and killed Maho. \n\n Erika has taken charge of the Nazi Party and secured most of the country, promising to bring ruin to all 'Traitorious Judeo-Bolsheviks who murdered the Great Fuhrer'."
+ pvd.106.d:1 "Communists in Kuromorimine, empowered by the recent loosening of restrictions on their organising as part of a treaty with the Pravda, have seized control of key positions in Berlin and killed Maho. \n\n Erika has taken charge of the Nishizumi Party and secured most of the country, promising to bring ruin to all 'Traitorious Judeo-Bolsheviks who murdered the Great Fuhrer'."
  pvd.221.t:1 "Nonna Asserts to Pravda"
  pvd.221.d:1 "[SOV.GetNameDefCap] has seen a great upset, as Alina has been deposed by a faction supporting her new political rival [SOV.GetLeader]!\nAs for where the old Marshal is now, or exactly how the transition took place, details are still scarce.\nEverything indicates that it was not a peaceful transition however, as some Alina loyalists have hoisted their banners in revolt against Nonna's new regime."
 
  ## SCHIZO ##
  
  sdf.6.t:0 "Fuhrer and her Lackey"
- sdf.6.d:0 "With the Kuro army in ruins and Berlin's defenses breached, the thundering booms of the Empire’s artillery closed in on the city. The German Revolution had finally reached the illustrious capital, a culmination of the school’s dissatisfaction with its commander’s decisions during the river incident, and had left the wrecks of Kuromorimine Armor in its path. Kuome Abakoshi, commander of the military junta, had previously declared that their goal was to form a new administration, based on the common safety of the school’s students. Thousands fled the city, hoping to reach Bonple and Gregor before Berlin was surrounded. \n \n Despite her firm belief that “There is no running away in the Nishizumi-style,” Maho, fearing the wrath of her former comrade and subordinate, was forced to retreat as the first imperial forces entered the city. The remaining brave Kuro soldiers embarked on a final stand against the Empire, destroying the bridges across the Havel river, and plunging numerous tanks into the water. Amidst the fighting, Maho slipped out of the capital with her advisors on a dangerous journey to unite with Miho, whose charismatic and benevolent leadership had protected Oorai from revolutionary fervor. Maho sent a single messenger to bring her request for support to Miho. Taking a single motorized division, Kuro leaders headed south, navigating around Koume’s troops to avoid the fighting.  \n \n After numerous days of dodging imperial forces, the Kuromormine high command reached the border, and were welcomed by Miho, who had received Maho’s message. When asked why she had decided to provide her sister with a safe haven, Miho only answered 'This too is part of Sensha-do.'"
+ sdf.6.d:0 "With the Kuro army in ruins and Berlin's defenses breached, the thundering booms of the Empire’s artillery closed in on the city. The Kuro Revolution had finally reached the illustrious capital, a culmination of the school’s dissatisfaction with its commander’s decisions during the river incident, and had left the wrecks of Kuromorimine Armor in its path. Kuome Abakoshi, commander of the military junta, had previously declared that their goal was to form a new administration, based on the common safety of the school’s students. Thousands fled the city, hoping to reach Bonple and Gregor before Berlin was surrounded. \n \n Despite her firm belief that “There is no running away in the Nishizumi-style,” Maho, fearing the wrath of her former comrade and subordinate, was forced to retreat as the first imperial forces entered the city. The remaining brave Kuro soldiers embarked on a final stand against the Empire, destroying the bridges across the Havel river, and plunging numerous tanks into the water. Amidst the fighting, Maho slipped out of the capital with her advisors on a dangerous journey to unite with Miho, whose charismatic and benevolent leadership had protected Oorai from revolutionary fervor. Maho sent a single messenger to bring her request for support to Miho. Taking a single motorized division, Kuro leaders headed south, navigating around Koume’s troops to avoid the fighting.  \n \n After numerous days of dodging imperial forces, the Kuromormine high command reached the border, and were welcomed by Miho, who had received Maho’s message. When asked why she had decided to provide her sister with a safe haven, Miho only answered 'This too is part of Sensha-do.'"
  sdf.6.a:0 "They are useful, for now"
  sdf.6.b:0 "Turn them away!"
  
@@ -1565,7 +1565,7 @@
  sdf.2.a:0 "To the North!"
  
  sdf.4.t:0 "Kuromormine Strikes South"
- sdf.4.d:0 "It seems with much of the civil war proper ending the victorious faction now turns its eyes upon the southern experiment led by the SDF. \n \nThough many are wary due to the amount of blood already spilt there is hope that the SDF with the sheer amount of exiles flowing into it that they will be able to rally enough support to seize control of the nation from them \n \nHeavy fighting has erupted across ghettos front with both sides Reportedly even resorting to child soldiers to fill the line of contact as it seems peace has not yet fallen upon the Germanic state."
+ sdf.4.d:0 "It seems with much of the civil war proper ending the victorious faction now turns its eyes upon the southern experiment led by the SDF. \n \nThough many are wary due to the amount of blood already spilt there is hope that the SDF with the sheer amount of exiles flowing into it that they will be able to rally enough support to seize control of the nation from them \n \nHeavy fighting has erupted across ghettos front with both sides Reportedly even resorting to child soldiers to fill the line of contact as it seems peace has not yet fallen upon the Kuroic state."
  sdf.4.a:0 "Our Experiment has failed?"
  
  sdf.7.t:0 "From Zhongguo to Kurmormine"
@@ -1626,7 +1626,7 @@
  sdf.22.b:0 "No, the West!"
  
  sdf.23.t:0 "Grand Strategy Pt.1"
- sdf.23.d:0 "Saori didn’t particularly enjoy these conferences, all too often they’d devolve into pissing contests between the different branch’s, thankfully this conference was mostly just involving the Heer, although she had decided to involve a singular Luftwaffe commander Victoria Heimirich, partially to have a Luftwaffe representative but also as a way to perhaps push back on a few ambitious officers. \nAnd having them all in the same room she could feel the degree of annoyance with her decision after all the Luftwaffe was meant to support the Heer not go over the wider strategy. \n \nMeg Katsuya Stands up as she says bowing to Myself as she begins a short speech she had pre prepared.“Thank you all for coming here today, now this conference is to go over the broad strategic plans for the coming years, we will discuss our policy’s in regards to pacifying gregor bonole and eventually Pravda along with our policy regarding Bc freedom and ST Gloriana, now let us begin.” \n \nEveryone begins to clap except for well predictably herself, and one other Victoria clearly not in the particular mood for speeches it would seem, though Meg clearly noticed the lack of clapping she doesn’t say a word in regards to it. \n \nMeg holds up is hand calmly motioning to stop clapping before she continues saying in a tone as if speaking in regards to a small petulant child. \n“Now first course of action Gregor, Hida and I have come up with a rather simple solution to this matter, we will as you can see here position troops in these positions.” \nA projector turns on showing images of the map of Gregor with symbols along where units out be placed. \n \nMeg stands up taking out a pointer as she points at a group of symbols next to the projection as she says. “Now this plan is on the assumption that diplomacy ultimately fails, now the main policy we will have is to not fight the majority of the Gregor army instead our forces will launch a series of Panzer attacks in these areas and drive through both north eastern and south eastern Gregor before linking up in Trencin, once our forces link up the nation will be all but in disarray as they won’t be able to withstand a attack from the rear in these areas.” \n \nShe motions along the map as the other officers observe nodding along as she does so with herself nodding with them all. \n“Once reaching there any further defence will be utterly untenable for Gregor and we can assume they will seek terms following this.” \n \nShe sits down and the projector turns off as she says calmly: “Now whilst if the western powers decide to not bow to our demands, however should they not the plan will work as intended the only possible problem is if the Czechoslovakian army goes underground and protracts the conflict which could be very undesirable.” \nThe whole room nods in agreement and Saori has to hold back a sigh of relief as she wouldn’t need to listen to is generals bickering with one another."
+ sdf.23.d:0 "Saori didn’t particularly enjoy these conferences, all too often they’d devolve into pissing contests between the different branch’s, thankfully this conference was mostly just involving the Heer, although she had decided to involve a singular Luftwaffe commander Victoria Heimirich, partially to have a Luftwaffe representative but also as a way to perhaps push back on a few ambitious officers. \nAnd having them all in the same room she could feel the degree of annoyance with her decision after all the Luftwaffe was meant to support the Heer not go over the wider strategy. \n \nMeg Katsuya Stands up as she says bowing to Myself as she begins a short speech she had pre prepared.“Thank you all for coming here today, now this conference is to go over the broad strategic plans for the coming years, we will discuss our policy’s in regards to pacifying gregor bonole and eventually Pravda along with our policy regarding Bc freedom and ST Gloriana, now let us begin.” \n \nEveryone begins to clap except for well predictably herself, and one other Victoria clearly not in the particular mood for speeches it would seem, though Meg clearly noticed the lack of clapping she doesn’t say a word in regards to it. \n \nMeg holds up is hand calmly motioning to stop clapping before she continues saying in a tone as if speaking in regards to a small petulant child. \n“Now first course of action Gregor, Hida and I have come up with a rather simple solution to this matter, we will as you can see here position troops in these positions.” \nA projector turns on showing images of the map of Gregor with symbols along where units out be placed. \n \nMeg stands up taking out a pointer as she points at a group of symbols next to the projection as she says. “Now this plan is on the assumption that diplomacy ultimately fails, now the main policy we will have is to not fight the majority of the Gregor army instead our forces will launch a series of Panzer attacks in these areas and drive through both north eastern and south eastern Gregor before linking up in Trencin, once our forces link up the nation will be all but in disarray as they won’t be able to withstand a attack from the rear in these areas.” \n \nShe motions along the map as the other officers observe nodding along as she does so with herself nodding with them all. \n“Once reaching there any further defence will be utterly untenable for Gregor and we can assume they will seek terms following this.” \n \nShe sits down and the projector turns off as she says calmly: “Now whilst if the western powers decide to not bow to our demands, however should they not the plan will work as intended the only possible problem is if the Gregor army goes underground and protracts the conflict which could be very undesirable.” \nThe whole room nods in agreement and Saori has to hold back a sigh of relief as she wouldn’t need to listen to is generals bickering with one another."
  sdf.23.a:0 "Good Arguments?"
  
  sdf.24.t:0 "Grand Strategy Pt.2"
@@ -1634,7 +1634,7 @@
  sdf.24.a:0 "Why can't we just get along?"
  
  sdf.25.t:0 "Einheitsfrontilied"
- sdf.25.d:0 "Meg and Hida cowers under their desks as MP-40 machine gun rounds were fired by their guards out at Soviet militias it was absolute chaos in the streets the coup had worked so perfectly, with all the major strikes being undertaken with such speed they had knocked out the loyalists, but it was a false belief as the two hide underneath the desk their failure made this whole affair far worse for them, the Fallschirmjäger were the first to rise up, rallying the people against their actions, months of planning gone to waste now all was lost. \n \nA explosion echoed through the building as the chandler falls from the roof smashing against the hardened stone as the two crawl from underneath the desk towards several guards clearing the hallway, a soldier runs in the room and yells before a sniper blows out her eye socket. \n“Let’s go the left wing has been overrun.” \n \nThey both crouch as they hurry overtop the now dead guard following just behind two guards as continued gunfire and grenades go off outside as before they hurry down some stairs only to freeze upon seeing Fallschirmjäger soldiers shooting the wounded as they climb through a hole in the wall, realizing their mistake they begin climbing back up the stairs case and running as the pair push through a door into a firing line as the two throw up their hands. \n \nA short moment follows as the pair look at one another before hearing the sounds of clicks before Maschinengewehr fire tears through their bodies splattering the walls and tearing off Meg’s head, the two being plastered against the walls as Fallschirmjägers approach to pick off valuables."
+ sdf.25.d:0 "Meg and Hida cowers under their desks as MP-40 machine gun rounds were fired by their guards out at Pravda militias it was absolute chaos in the streets the coup had worked so perfectly, with all the major strikes being undertaken with such speed they had knocked out the loyalists, but it was a false belief as the two hide underneath the desk their failure made this whole affair far worse for them, the Fallschirmjäger were the first to rise up, rallying the people against their actions, months of planning gone to waste now all was lost. \n \nA explosion echoed through the building as the chandler falls from the roof smashing against the hardened stone as the two crawl from underneath the desk towards several guards clearing the hallway, a soldier runs in the room and yells before a sniper blows out her eye socket. \n“Let’s go the left wing has been overrun.” \n \nThey both crouch as they hurry overtop the now dead guard following just behind two guards as continued gunfire and grenades go off outside as before they hurry down some stairs only to freeze upon seeing Fallschirmjäger soldiers shooting the wounded as they climb through a hole in the wall, realizing their mistake they begin climbing back up the stairs case and running as the pair push through a door into a firing line as the two throw up their hands. \n \nA short moment follows as the pair look at one another before hearing the sounds of clicks before Maschinengewehr fire tears through their bodies splattering the walls and tearing off Meg’s head, the two being plastered against the walls as Fallschirmjägers approach to pick off valuables."
  sdf.25.a:0 "So begins the second Kuromormine civil war"
  
  sdf.26.t:0 "Trial of Four "
@@ -1691,7 +1691,7 @@
  
  sdf.39.t:0 "A Grand Dinner"
  sdf.39.d:0 "Anchovy sat at the table slightly overwhelmed to say the least the table was adorned by such a large collection of cutlery, many of which she had never seen in her life, the two guards present as well were of particular note, rather than the regular Guards like on previous occasions, these were Fallschirmjäger, the elite of the army. \n \nThe door knocks and one such member opens the door with a banquet being rolled in along with her hostess Saori, she almost coughed out the wine she was sipping, she was rather shocked by the amount of food being rolled in by her, she would have been rather pompous in her attitude but felt somewhat lacking as the idea of bringing a gift had slipped the mind. \n \nSaori whilst walking rather calmly as she approached her anchovy could make out the obvious redness on her face as she was suddenly hugged rather warmly by her. \n“Saori, you seem quite pleased to see me.” \n \n*Saori chuckles lightly as she shoos the guards to leave which they promptly do.* \n“Oh but I do, it’s been quite some time anchovy, and well to be honest I’ve missed you very dearly.” \n \nAnchovy stutters her words as she hugs back as she smells the rather intoxicating cherry shampoo as the hug painfully ends for her as Saori says rather calmly. \n“Now why don’t we have our dinner.” \n \nAnchovy breathes out deeply as Saori pulls away her, somewhat longing for her to come back as Saori clears her throat as she says. \n“I’ve prepared many dishes for us today which I hope you enjoy.” \n \nAnchovy looks at the food with hungerous intent digging in to the heavenly food before her eating with great enthusiasm as unlike many others she cared little in regards to the fact Saori was eating very little in regards to herself \n \nAs the minutes drag on as Anchovy finishes a great deal of food and wine she lets out a deep sigh as she looks over at Saori who calmly smiles at her. \n“I’m glad you enjoyed it.” \n \n*She nods ecstatic as she cries out* \n“Now where is the dessert!?” \n \nSaori simply chuckles to herself as she motions towards some smaller dessert plates. \n“Here you are, ever hungerous for sweets.” \n*Anchovy laughs herself as she slides one of them over to herself and a second to Saori.*“Well you do make the best I’ve tasted.”"
- sdf.39.a:0 "Classic Italians"
+ sdf.39.a:0 "Classic Anzians"
  
  sdf.40.t:0 "Dessert"
  sdf.40.d:0 "*Saori leans in as she says.* \n“I’m sure there are a few more things you’d like to taste during your trip” \n \n*The two share a laugh before Saori says clearing her throat* \n“Now regarding the meeting as we are already alone more or less I wanted to ask you, Anchovy if you’re willing to consider it.” \n \n*Anchovy nods as she slides a piece of the dessert into her mouth as she motions to go on* \n \nSaori smiles before saying \n“I’d like for you to stay here for some time as my deputy or at the very least an assistant, I’d help accommodate you as best as possible and I know it could be a major ask for you but i feel it’s the right choice.” \n \nAnchovy stops eating her dessert for a moment before casually nonchalantly says: \n“Sure why not I was getting a bit bored with being prime minister of Anzio anyways, might as well be with someone who won’t whine about not having the right crackers.” \n \nSaori, taken aback, slightly slides a few cliff notes back into her pocket as she smiles before saying. \n“Well I can’t say I’m exactly surprised but I’m excited to work with you on this, I can have Victoria clear out a room in the chancellery building next to mine and we could almost certainly get to work on making the world a better place for our people.” \n \nAnchovy holds out a glass of red wine to her and the two clink their glasses whilst giving rather flattering looks at one another as they both sip before Saori says. \n“Now why don’t we finish our desserts then we can deal with the finer details.”"
@@ -1726,11 +1726,11 @@
  sdf.47.a:0 "Kuromorimine Supremacy"
  
  sdf.48.t:0 "Peace in Western Europe?"
- sdf.48.d:0 "Kuromorimine signed the Treaty of Friendship with the Western Coalition in Paris today, affirming amicable trade and diplomatic relations with Western Europe’s greatest powers including France and the United Kingdom. \n \nLeaders Darjeeling, Marie, and Saori have all remarked that the treaty provides all signatories with lasting peace and stability on the continent that her conducive to international growth. \n \nCritics have stated that the treaty provides far too many concessions to Kuromorimine but national polls have indicated the treaty to be widely popular among the signatories."
+ sdf.48.d:0 "Kuromorimine signed the Treaty of Friendship with the Western Coalition in Paris today, affirming amicable trade and diplomatic relations with Western Europe’s greatest powers including BC Freedom and St Gloriana. \n \nLeaders Darjeeling, Marie, and Saori have all remarked that the treaty provides all signatories with lasting peace and stability on the continent that her conducive to international growth. \n \nCritics have stated that the treaty provides far too many concessions to Kuromorimine but national polls have indicated the treaty to be widely popular among the signatories."
  sdf.48.a:0 "Peace in our time -Darjeeling"
  
  sdf.50.t:0 "The Conference"
- sdf.50.d:0 "Anchovy adjusts her uniform nervously as she stands just outside the door, the conference had already begun which was rather unfortunate it’s terrible to be late especially on the first day of attending such conferences. \n \nPushing aside her anxiety at embarrassing herself she barges into the conference room and all eyes land on her walking semi confidently to a empty seat besides Saori she sits down as the other officers return to their ongoing discussions. \n \nVictoria seemed to be leading this moment of the discussion she was a newer general, though despite her relative time in the enlisted ranks, she had it seems gotten a bit more adjusted to conferences then could be imagined, she spoke and people listened a bit like anchovy during her own conferences. \n“So I think it would be deeply prudent for our Fallschirmjägers to be equipped with much heavier weapons for combatting enemy armoured units and larger enemy formations.” \n \nAnchovy parks up as the ideas back to her this was a chance to show her worth so she proudly and bluntly states. \n“What if we paradropped Heavy Tanks in larger jet Aircraft:” \n \nThere was a moment of silent as a few individuals hold down snickering and smiles, before Victoria responds calmly and to the point. \n“Whilst I don’t know about heavy tanks I do agree having airborne tanks would be a great idea, though maybe not heavy tanks, maybe something along the line of Italian tankettes albeit they’d likely need a recoiless rifle or a small caliber main gun or even a autocannon." \n \nA few of the generals nodded along with this which had thankfully spared her from the majority of the embarrassment she now felt as despite her own desires to speak up she largely remained silent besides a rather short written message on a scrap of paper from Victoria nearing the end that simply read. \n“Don’t worry about it.” \n \nThe slight amount of reassurance hits her as she feels a slight ounce of confidence return to herself, she may be new but at least someone was not laughing her off"
+ sdf.50.d:0 "Anchovy adjusts her uniform nervously as she stands just outside the door, the conference had already begun which was rather unfortunate it’s terrible to be late especially on the first day of attending such conferences. \n \nPushing aside her anxiety at embarrassing herself she barges into the conference room and all eyes land on her walking semi confidently to a empty seat besides Saori she sits down as the other officers return to their ongoing discussions. \n \nVictoria seemed to be leading this moment of the discussion she was a newer general, though despite her relative time in the enlisted ranks, she had it seems gotten a bit more adjusted to conferences then could be imagined, she spoke and people listened a bit like anchovy during her own conferences. \n“So I think it would be deeply prudent for our Fallschirmjägers to be equipped with much heavier weapons for combatting enemy armoured units and larger enemy formations.” \n \nAnchovy parks up as the ideas back to her this was a chance to show her worth so she proudly and bluntly states. \n“What if we paradropped Heavy Tanks in larger jet Aircraft:” \n \nThere was a moment of silent as a few individuals hold down snickering and smiles, before Victoria responds calmly and to the point. \n“Whilst I don’t know about heavy tanks I do agree having airborne tanks would be a great idea, though maybe not heavy tanks, maybe something along the line of Anzian tankettes albeit they’d likely need a recoiless rifle or a small caliber main gun or even a autocannon." \n \nA few of the generals nodded along with this which had thankfully spared her from the majority of the embarrassment she now felt as despite her own desires to speak up she largely remained silent besides a rather short written message on a scrap of paper from Victoria nearing the end that simply read. \n“Don’t worry about it.” \n \nThe slight amount of reassurance hits her as she feels a slight ounce of confidence return to herself, she may be new but at least someone was not laughing her off"
  sdf.50.a:0 "A New Age of Warfare"
  
  sdf.51.t:0 "Logistics Will Run on Time"
