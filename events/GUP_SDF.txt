@@ -724,6 +724,12 @@ country_event = {
 		
 		set_country_flag = SDF_ECONOMIC_DECLINE
 		custom_effect_tooltip = SDF_economics_decline
+		
+		add_power_balance_value = {
+				id = SDF_power_balance
+				value = -0.15
+				tooltip_side = SDF_democratic_side
+			}
 	}
 }
 
@@ -742,6 +748,12 @@ country_event = {
 			base = 1
 		}
 		complete_national_focus = SDF_east_priority
+		
+		add_power_balance_value = {
+				id = SDF_power_balance
+				value = 0.15
+				tooltip_side = SDF_army_side_side
+			}
 	}
 	
 	option = {
@@ -750,6 +762,12 @@ country_event = {
 			base = 1
 		}
 		complete_national_focus = SDF_west_priority
+		
+		add_power_balance_value = {
+				id = SDF_power_balance
+				value = -0.15
+				tooltip_side = SDF_democratic_side
+			}
 	}
 }
 
@@ -843,6 +861,12 @@ country_event = {
 			retire_character = AUS_hana_isuzu
 			retire_character = AUS_mako_reizei
 		}
+		
+		add_power_balance_value = {
+				id = SDF_power_balance
+				value = -0.15
+				tooltip_side = SDF_democratic_side
+			}
 	}
 	
 	option = {
@@ -853,6 +877,12 @@ country_event = {
 		
 		retire_character = AUS_hana_isuzu
 		add_ideas = sdf_ooarai_resistance
+		
+		add_power_balance_value = {
+				id = SDF_power_balance
+				value = 0.15
+				tooltip_side = SDF_army_side_side
+			}
 	}	
 }
 
@@ -1010,11 +1040,6 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 		
 		hidden_effect = {
-			country_event = {
-				id = sdf.39
-				days = 7
-			}
-			
 			complete_national_focus = SDF_anzai_one
 		}
 	}
@@ -1042,6 +1067,42 @@ country_event = { ##PT.1
 	}
 }
 
+country_event = {
+	id = sdf.56
+	title = sdf.56.t
+	desc = sdf.56.d
+	##picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.56.a
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				SDF = {
+					has_government = neutrality
+				}
+			}
+			
+			##hidden_effect = {
+				retire_country_leader = yes
+			##}
+			
+			promote_character = SDF_duel_leadership
+			
+			else = {
+				add_stability = 0.05
+			}
+		}
+		
+	}
+}
+
 country_event = { ##PT.2
 	id = sdf.40
 	title = sdf.40.t
@@ -1055,10 +1116,6 @@ country_event = { ##PT.2
 		name = sdf.40.a
 		ai_chance = {
 			base = 1
-		}
-		
-		country_event = {
-		
 		}
 	}
 }
@@ -1764,4 +1821,147 @@ country_event = {
 	}
 }
 
+country_event = { ##BALANCE OF POWER STUFF
+	id = sdf.57
+	title = sdf.57.t
+	desc = sdf.57.d
+	##picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.57.a
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				SDF = {
+					NOT = {
+						has_completed_focus = SDF_heer_no_fear
+					}
+				}
+			}
+				
+				random_list = {
+					20 = {
+						add_power_balance_value = {
+							id = SDF_power_balance
+							value = 0.30
+							tooltip_side = SDF_army_side_side
+						}
+					}
+					
+					75 = {
+						add_power_balance_value = {
+							id = SDF_power_balance
+							value = 0.15
+							tooltip_side = SDF_army_side_side
+						}
+					}
+					
+					5 = {
+						add_power_balance_value = {
+							id = SDF_power_balance
+							value = 0.50
+							tooltip_side = SDF_army_side_side
+						}
+					}
+				}
+				
+				random_list = {
+					50 = {
+						country_event = {
+							id = sdf.57
+							days = 30
+						}
+					}
+					
+					50 = {
+						country_event = {
+							id = sdf.58
+							days = 30
+						}
+					}
+				}
+				
+				else = {
+				
+				}
+			}
+		}
+	}
+
+country_event = { ##BALANCE OF POWER STUFF
+	id = sdf.58
+	title = sdf.58.t
+	desc = sdf.58.d
+	##picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.58.a
+		ai_chance = {
+			base = 1
+		}
+		
+				if = {
+			limit = {
+				SDF = {
+					NOT = {
+						has_completed_focus = SDF_heer_no_fear
+					}
+				}
+			}
+				
+				random_list = {
+					20 = {
+						add_power_balance_value = {
+							id = SDF_power_balance
+							value = -0.30
+							tooltip_side = SDF_democratic_side
+						}
+					}
+					
+					75 = {
+						add_power_balance_value = {
+							id = SDF_power_balance
+							value = -0.15
+							tooltip_side = SDF_democratic_side
+						}
+					}
+					
+					5 = {
+						add_power_balance_value = {
+							id = SDF_power_balance
+							value = -0.50
+							tooltip_side = SDF_democratic_side
+						}
+					}
+				}
+				
+				random_list = {
+					50 = {
+						country_event = {
+							id = sdf.57
+							days = 30
+						}
+					}
+					
+					50 = {
+						country_event = {
+							id = sdf.58
+							days = 30
+						}
+					}
+				}
+				
+				else = {
+				
+				}
+			}
+	}
+}
 

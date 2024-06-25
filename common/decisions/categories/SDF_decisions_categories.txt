@@ -32,6 +32,21 @@ SDF_core_states = {
 	
 }
 
+SDF_power_balance_decisions = {
+	icon = GFX_decision_ger_reichskommissariats
+	
+	priority = 10000
+	allowed = {
+		tag = SDF
+	}
+	
+	visible = {
+		SDF = {
+			controls_state = 64
+		}
+	}
+}
+
 SDF_officer_revolt = {
 	
 	icon = GFX_decision_ger_reichskommissariats

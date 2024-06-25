@@ -929,8 +929,152 @@ SDF_core_states = {
 	
 }
 
-SDF_officer_revolt = {
+SDF_power_balance_decisions = {
+
+	SDF_military_crackdown = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 75
+		
+		days_remove = 30
+		remove_effect = {
+			add_power_balance_value = {
+				id = SDF_power_balance
+				value = -0.15
+				tooltip_side = SDF_democratic_side
+			}
+		}
+	}
 	
+	SDF_extra_funding = {
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 75
+		
+		days_remove = 30
+		remove_effect = {
+			add_power_balance_value = {
+				id = SDF_power_balance
+				value = 0.15
+				tooltip_side = SDF_army_side_side
+			}
+		}
+	}
+	
+	SDF_military_factory = {
+		icon = GFX_decision_ger_mefo_bills
+		
+		available = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 150
+		fire_only_once = yes
+		days_remove = 50
+		
+		remove_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			add_power_balance_value = {
+				id = SDF_power_balance
+				value = 0.25
+				tooltip_side = SDF_army_side_side
+			}
+			
+		}
+	}
+	
+	SDF_civilian_efforts = {
+		icon = GFX_decision_ger_mefo_bills
+		
+		available = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 125
+		fire_only_once = yes
+		days_remove = 50
+		
+		remove_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				limit = {
+					NOT = {
+						is_core_of = SDF
+					}
+				}
+				
+				add_resistance = -15
+				add_compliance = 15
+			}
+			
+			random_owned_state = {
+				limit = {
+					NOT = {
+						is_core_of = SDF
+					}
+				}
+				
+				add_resistance = -15
+				add_compliance = 15
+			}
+			
+			add_power_balance_value = {
+				id = SDF_power_balance
+				value = -0.15
+				tooltip_side = SDF_democratic_side
+			}
+		}
+	}
+
 }
 
 SDF_economic_crisis = {

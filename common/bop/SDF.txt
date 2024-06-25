@@ -2,6 +2,7 @@ SDF_power_balance = {
 	initial_value = 0
 	left_side = SDF_democratic_side
 	right_side = SDF_army_side
+	decision_category = SDF_power_balance_decisions
 	
 	##DEMOCRATIC##
 	side = {

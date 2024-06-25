@@ -2913,6 +2913,10 @@
  SDF_army_side_high_control_range:0 "SDF Coup"
  SDF_democratic_side:0 "Pro Democracy"
  SDF_army_side:0 "Military Support"
+ SDF_extra_funding:0 "Extra Military Funding"
+ SDF_military_crackdown:0 "Crackdown on the Military"
+ SDF_military_factory:0 "Expand Military Factories"
+ SDF_civilian_efforts:0 "Improving the Situation"
  
  ##TRAITS##
  SDF_saori_takebe:0 "Heerfuhrer Saori Takebe"

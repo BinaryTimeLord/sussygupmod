@@ -1863,15 +1863,11 @@ focus_tree = {
 			
 			hidden_effect = {
 				random_list = {
-					25 = {
+					100 = {
 						country_event = {
 							id = sdf.32
 							days = 5
 						}
-					}
-					
-					75 = {
-					
 					}
 				}
 			}
@@ -3608,7 +3604,6 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			always = no
 			has_completed_focus = SDF_keep_nishizumists
 		}
 		
@@ -3913,7 +3908,7 @@ focus_tree = {
 		}	
 		
 		available = {
-			always = no
+			has_completed_focus = SDF_purge_generals
 		}
 		
 		prerequisite = { focus = SDF_military_buildup }
@@ -4405,7 +4400,7 @@ focus_tree = {
 		relative_position_id = SDF_victory_civil
 		
 		available = {
-			always = no 
+			always = no
 		}	
 		
 		allow_branch = {
@@ -4431,7 +4426,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			always = no
+			
 		}
 		
 		x = 0
@@ -4440,10 +4435,13 @@ focus_tree = {
 		prerequisite = { focus = SDF_anzai_one }
 		mutually_exclusive = {}
 		
-		cost = 0
+		cost = 1
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.39
+				days = 3
+			}
 		}
 	}
 	
@@ -4479,7 +4477,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_anzai_four
-		##icon = 
+		icon = GFX_goal_anzai_ruck
 		relative_position_id = SDF_anzai_one
 		
 		available = {
@@ -4505,7 +4503,7 @@ focus_tree = {
 	
 	focus = { ##NO
 		id = SDF_anzai_three2
-		##icon = 
+		icon = GFX_goal_anzai_building
 		relative_position_id = SDF_anzai_one
 		
 		available = {
@@ -4532,7 +4530,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_anzai_four2
-		##icon = 
+		icon = GFX_goal_anzai_expansion
 		relative_position_id = SDF_anzai_one
 		
 		available = {
@@ -4559,7 +4557,7 @@ focus_tree = {
 	
 	focus = {
 		id = SDF_anzai_five
-		##icon = 
+		icon = GFX_goal_anzai_house
 		relative_position_id = SDF_anzai_one 
 		
 		available = {
@@ -4575,7 +4573,10 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-		
+			country_event = {
+				id = sdf.56
+				days = 3
+			}
 		}
 	}
 	

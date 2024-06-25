@@ -109,6 +109,46 @@ characters = { ##fuck this shit it wont work##
 	
 	}
 	
+	SDF_duel_leadership = {
+		name = "Heerfuhrer Saori/Anzai"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/SDF/GFX_dual.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/Kuromorimine/idea_ger_saori_takebe_high_command.dds"
+			}
+			
+			army={
+				large="gfx/leaders/SDF/GFX_dual.dds"
+			}
+			
+		}
+		
+		field_marshal={
+			traits={ media_personality war_hero trickster logistics_wizard }
+			skill=6
+			attack_skill=1
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=7
+		}
+		
+		country_leader={
+			desc=""
+			ideology=centrism
+			traits={ sdf_nationalist sdf_underrated_politician il_duce }
+			expire="1965.1.1.1"
+		}
+	
+	}
+	
 	##POLITICAL ADVISORS/GENERALS/HIGHCOMMAND##
 	
 	SDF_maria_suzuki = {
@@ -805,7 +845,4 @@ characters = { ##fuck this shit it wont work##
 			}
 		}
 	}
-	
-	
-
 }

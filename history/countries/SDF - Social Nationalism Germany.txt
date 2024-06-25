@@ -124,6 +124,7 @@ recruit_character = SDF_maho
 recruit_character = SDF_erika
 recruit_character = SDF_anzai
 recruit_character = SDF_victoria
+recruit_character = SDF_duel_leadership
 
 ##EQUIPMENT##
 if = {
