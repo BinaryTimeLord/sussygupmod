@@ -1314,9 +1314,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SOV_no_time_for_peace
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = nuclear
+			}
+			add_tech_bonus = {
+				name = SOV_no_time_for_peace
+				bonus = 0.5
+				uses = 2
 				category = rocketry
 			}
 
@@ -2092,7 +2097,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SOV_found_the_jet_institute
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = jet_technology
 			}
@@ -3298,7 +3303,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_offensive_maritime_strategy
-					bonus = 3.0
+					bonus = 2.0
 					uses = 1
 					category = bc_tech	
 				}
@@ -3391,7 +3396,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_an_oceangoing_navy
-					bonus = 3.0
+					bonus = 2.0
 					uses = 1
 					category = shbb_tech	
 				}
@@ -10013,6 +10018,18 @@ focus_tree = {
 						}
 						remove_ideas = SOV_anti_soviet_military_thinking_banned_army
 					} 
+					if = {
+						limit = {
+							has_idea = SOV_anti_soviet_military_thinking_banned_navy
+						}
+						remove_ideas = SOV_anti_soviet_military_thinking_banned_navy
+					}
+					if = {
+						limit = {
+							has_idea = SOV_anti_soviet_military_thinking_banned_airforce
+						}
+						remove_ideas = SOV_anti_soviet_military_thinking_banned_airforce
+					}
 					country_event = {
 						id = NSB_soviet_communist_civil_war.002
 						hours = 1
@@ -13921,6 +13938,10 @@ ai_will_do = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
+			any_country = {
+				owns_state = 78
+				controls_state = 78
+			}
 		}
 
 		bypass = {
@@ -17983,11 +18004,10 @@ ai_will_do = {
 				}
 				create_faction = NPTO
 			}
-			effect_tooltip = {
-				every_other_country = {
-					limit = {
-						any_owned_state = {
-							is_capital = yes
+			
+			every_other_country = {
+				limit = {
+					capital_scope = {
 							is_on_continent = south_america
 						}
 						NOT = {
@@ -17999,13 +18019,12 @@ ai_will_do = {
 						days = 730
 					}
 				}
-			}
+			
 			custom_effect_tooltip = SOV_intervention_in_the_americas_tt
 			hidden_effect = {
 				every_other_country = {
 					limit = {
-						any_owned_state = {
-							is_capital = yes
+						capital_scope = {
 							is_on_continent = south_america
 						}
 						NOT = {
@@ -18019,10 +18038,10 @@ ai_will_do = {
 					set_country_flag = SOV_political_influence_americas_flag
 				}
 			}
+			
 			every_other_country = {
 				limit = {
-					any_owned_state = {
-						is_capital = yes
+					capital_scope = {
 						is_on_continent = south_america
 					}
 					has_government = fascism

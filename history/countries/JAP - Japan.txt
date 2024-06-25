@@ -588,13 +588,22 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_operative_leader = {
-		name = "Tomiko Teramoto"
-		GFX = GFX_portrait_tomiko_teramoto
-		traits = { operative_master_interrogator }
+		name = "Yoshiko Kawashima"
+		GFX = GFX_portrait_yoshiko_kawashima
+		traits = { }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
 		nationalities = { MAN JAP CHI }
+	}
+
+	create_operative_leader = {
+		name = "Takeo Yoshikawa"
+		GFX = GFX_portrait_takeo_yoshikawa
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { JAP }
 	}
 }
 if = {

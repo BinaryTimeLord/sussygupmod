@@ -200,6 +200,12 @@ check_has_focus_tree_to_switch_to_communism = {
 	}
 	NOT = {
 		AND = {
+			original_tag = NOR
+			has_dlc =  "Arms Against Tyranny"
+		}
+	}
+	NOT = {
+		AND = {
 			original_tag = ARG
 			has_dlc =  "Trial of Allegiance"
 		}

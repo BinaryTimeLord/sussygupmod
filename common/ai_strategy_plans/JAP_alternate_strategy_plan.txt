@@ -24,6 +24,11 @@ JAP_manchukuo_player_plan = {
 
 	focus_factors = {
 		JAP_the_manchurian_project = 5
+		JAP_expand_manchurian_railways = 5
+		JAP_light_industry_development = 5
+		JAP_heavy_industry_development = 5
+		JAP_expand_the_showa_steel_works = 5
+		JAP_japanese_settlement = 5
 		JAP_build_up_the_manchurian_army = 5
 		JAP_create_a_manchurian_imperial_air_force = 5
 	}

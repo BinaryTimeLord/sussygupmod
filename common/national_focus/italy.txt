@@ -2814,7 +2814,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_industria_della_gomma_sintetica
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = cat_synth_oil
 			}
@@ -3920,7 +3920,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_increase_artillery_production
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = artillery
 			}
@@ -4157,7 +4157,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = ITA_a_bandits_war
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 2
 				category = cat_mobile_warfare
 			}
@@ -4165,7 +4165,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_a_bandits_war
 				uses = 2
-				bonus = 0.75
+				bonus = 0.5
 				category = motorized_equipment
 				category = recon_tech
 			}
@@ -4176,7 +4176,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = ITA_a_bandits_war
-					bonus = 1.5
+					bonus = 1
 					uses = 1
 					category = cat_armored_cars
 				}
@@ -4338,7 +4338,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_italian_tankettes
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = cat_light_armor
 			}
@@ -4478,7 +4478,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_divisioni_alpine
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -4592,7 +4592,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_fanti_dell_aria
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = para_tech
 			}
@@ -4628,7 +4628,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_self_propelled_guns
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 				category = artillery
 			}
@@ -5720,14 +5720,14 @@ focus_tree = {
 				add_tech_bonus = {
 					name = ITA_intensify_torpedo_manufacturing
 					bonus = 1.0
-					uses = 2
+					uses = 1
 					category = cat_torpedoes
 				}
 			}
 			else = {
 				add_doctrine_cost_reduction = {
 					name = ITA_intensify_torpedo_manufacturing
-					cost_reduction = 0.75
+					cost_reduction = 0.5
 					uses = 2
 					category = cat_trade_interdiction
 				}
@@ -6544,7 +6544,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_forza_navale_especiale
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = marine_tech
 				category = tp_tech
 			}
@@ -6678,7 +6678,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_incrociatori_leggeri
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = cl_tech
 			}
@@ -6723,7 +6723,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_incrociatori_pesanti
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = ca_tech
 			}
@@ -7319,7 +7319,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_navi_da_battaglia
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = bb_tech
 			}
@@ -12980,7 +12980,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ITA_new_forms_of_weaponry
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = nuclear
 			}
@@ -15789,7 +15789,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_secret_weapons
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = electronics
 				category = rocketry
@@ -15844,7 +15844,7 @@ focus_tree = {
 				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
-					bonus = 1.0
+					bonus = 0.5
 					uses = 2
 					category = armor
 				}
@@ -16491,7 +16491,10 @@ focus_tree = {
 				}
 				OR = {
 					has_global_flag = scw_over
-					NOT = { country_exists = SPA }
+					AND = {
+						has_global_flag = spanish_civil_war
+						NOT = { country_exists = SPA }
+					}
 				}
 			}
 			else = {
@@ -20718,7 +20721,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_bring_back_exiled_intellectuals
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = industry
 				category = electronics
@@ -21426,7 +21429,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_military_agreements
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = armor 
 				category = artillery

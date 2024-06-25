@@ -507,6 +507,9 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			has_dlc = "La Resistance"
 			original_tag = SPR
 			has_completed_focus = SPR_masters_of_our_own_fate
+			NOT = {
+				has_completed_focus = SPR_the_anti_fascist_workers_revolution
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP

@@ -1057,7 +1057,7 @@ NOR_cw_communism = {
 	color_ui = rgb { 122 145 93 }
 }
 
-NOR_neutrality = {
+NOR_neutrality_purple_flag = {
 	color = rgb { 92 6 67 }
 	color_ui = rgb { 92 6 67 }
 
