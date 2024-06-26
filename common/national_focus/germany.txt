@@ -5064,78 +5064,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_demand_slovenia
-		prerequisite = { focus = GER_demand_sudetenland }
-		icon = GFX_goal_generic_political_pressure
-		available = {
-			is_subject = no
-			controls_state = 4
-			controls_state = 152
-			has_army_manpower = { size > 749999 } #ca 80 div
-		}
-		bypass = {
-			OR = {
-				NOT = {
-					AND = {
-						OR = {
-							YUG = { owns_state = 102 }
-							102 = { owner = { is_subject_of = YUG } }
-						}
-						OR = {
-							YUG = { owns_state = 853 }
-							853 = { owner = { is_subject_of = YUG } }
-						}
-					}
-				}
-				has_war_with = YUG
-				is_in_faction_with = YUG
-				YUG = { is_subject_of = GER }
-				YUG = { has_non_aggression_pact_with = GER }
-				YUG = { has_opinion_modifier = tripartite_pact_opinion }
-			}
-		}
-		cancel_if_invalid = yes
-		x = 4
-		y = 1
-		relative_position_id = GER_demand_sudetenland
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			add_named_threat = { threat = 2 name = GER_demand_slovenia_threat }
-			YUG = { add_opinion_modifier = { target = GER modifier = GER_demand_slovenia_YUG } }
-			if = {
-				limit = {
-					NOT = { has_war_with = ENG }
-					YUG = { 
-						is_subject = no
-						NOT = { has_war_with = ENG }
-					}
-				}
-				ENG = {
-					country_event = { id = britain.14 }
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						YUG = { is_puppet = yes }
-						YUG = { has_war_with = ENG }
-						has_war_with = ENG
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = YUG
-					expire = 0
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = GER_first_ljubljana_award
 		prerequisite = { focus = GER_demand_slovenia }
 		icon = GFX_goal_generic_military_deal
@@ -5235,9 +5163,9 @@ focus_tree = {
 			}
 		}
 
-		x = 0
-		y = 1
-		relative_position_id = GER_demand_slovenia
+		x = 4
+		y = 3
+		relative_position_id = GER_anschluss
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -5436,7 +5364,6 @@ focus_tree = {
 
 	focus = {
 		id = GER_second_ljubljana_award
-		mutually_exclusive = { focus = GER_war_with_greece } 
 		prerequisite = { focus = GER_fate_of_yugoslavia }
 		icon = GFX_goal_generic_forceful_treaty
 		available = {
@@ -6393,6 +6320,78 @@ focus = {
 					}
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_demand_slovenia
+		prerequisite = { focus = GER_demand_sudetenland }
+		icon = GFX_goal_generic_political_pressure
+		available = {
+			is_subject = no
+			controls_state = 4
+			controls_state = 152
+			has_army_manpower = { size > 749999 } #ca 80 div
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					AND = {
+						OR = {
+							YUG = { owns_state = 102 }
+							102 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							YUG = { owns_state = 853 }
+							853 = { owner = { is_subject_of = YUG } }
+						}
+					}
+				}
+				has_war_with = YUG
+				is_in_faction_with = YUG
+				YUG = { is_subject_of = GER }
+				YUG = { has_non_aggression_pact_with = GER }
+				YUG = { has_opinion_modifier = tripartite_pact_opinion }
+			}
+		}
+		cancel_if_invalid = yes
+		x = 4
+		y = 1
+		relative_position_id = GER_demand_sudetenland
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			add_named_threat = { threat = 2 name = GER_demand_slovenia_threat }
+			YUG = { add_opinion_modifier = { target = GER modifier = GER_demand_slovenia_YUG } }
+			if = {
+				limit = {
+					NOT = { has_war_with = ENG }
+					YUG = { 
+						is_subject = no
+						NOT = { has_war_with = ENG }
+					}
+				}
+				ENG = {
+					country_event = { id = britain.14 }
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						YUG = { is_puppet = yes }
+						YUG = { has_war_with = ENG }
+						has_war_with = ENG
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = YUG
+					expire = 0
+				}
 			}
 		}
 	}

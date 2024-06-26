@@ -383,11 +383,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			SOV_power_struggle_increase_party_influence_low = yes
-			
-			unlock_decision_tooltip = SOV_relocate_industry_from_moscow
-			unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
-			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk		
+			SOV_power_struggle_increase_party_influence_low = yes	
 		}
 	}
 

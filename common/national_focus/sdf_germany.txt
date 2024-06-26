@@ -3313,7 +3313,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = sdf_volksturm_act
-				load_oob = SDF_volksturm
+				load_oob = SDF_volksturms
 				random_owned_controlled_state = {
 				create_unit = { 
 					division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
@@ -4534,7 +4534,7 @@ focus_tree = {
 		relative_position_id = SDF_anzai_one
 		
 		available = {
-			has_manpower = 40000
+			has_manpower > 40000
 			has_war_with = SOV
 		}
 		

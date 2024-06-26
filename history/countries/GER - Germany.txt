@@ -575,14 +575,6 @@ recruit_character = ger_miho_armychief
 recruit_character = ger_mauko_navychief
 recruit_character = ger_emi_kojima_navychief
 
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	recruit_character = GER_carl_friedrich_goerdeler
-}
-
 if = {
 	limit = {
 		has_dlc = "La Resistance"

@@ -356,7 +356,6 @@
  GER_expatriate_legionnaires_desc: "With assimilation taken into action, we may see fit that they may serve on the Kaiserin's side."
  GER_bundesrat: "Establish the Bundesrat"
  GER_bundesrat_desc: "In steps to move away from the stigma of the past, we must allow for more liberty in political affairs."
- GER_four_year_plan:0 "Kuromorimine's rearmament will have to start now. Koume has a plan to execute a series of actions and policies to further boost our industrial status."
 
  #DEMOCRACY
  GER_victory_for_emi: "Victory for Emi!"
@@ -2034,8 +2033,6 @@
  ITA_create_mediterranean_entente_desc:0 "The cooperation of democratic nations in the Mediterranean will help us protect each other against authoritarian threats around the world."
  ITA_mediterranean_research:0 "Mediterranean Research"
  ITA_mediterranean_research_desc:0 "Pulling together our research and combining efforts with the other members of our alliance we shall yield bigger results than working alone in this world."
- ITA_befriend_greece:0 "Befriend Hoplite"
- ITA_befriend_greece_desc:0 "The differences we have with Hoplite are minor in comparison to what happens around the world currently. We shall send a diplomatic convoy to help bury all grudges and seek peace between our nations."
  ITA_protect_albania:0 "Protect Kruja"
  ITA_protect_albania_desc:0 "Kruja is a small nation under threat by other balkan nations. We consider of utmost importance that we protect them by giving them our full support and guiding their government into a peaceful, prosper nation."
  ITA_release_ethiopia:0 "Release Konjo"
@@ -2947,7 +2944,7 @@
  sdf_bayonet_strength:0 "Bayonet Strength"
  sdf_50cm_cannon:0 "50cm Cannon"
  sdf_chemical_warfare:0 "Chemical Warfare"
- SDF_volksturm:0 "Volkssturm"
+ SDF_volksturms:0 "Volkssturm"
  sdf_army_w_state:0 "Army With a State"
  sdf_army_w_state_desc:0 "Like the Kuromormine of old, we are a people that are centred around one goal Total Victory, all shall fight for it no matter the cost"
  sdf_revolutionary_fevor:0 "Revolutionary Fervor"

@@ -696,7 +696,7 @@ bookmarks = {
 			focuses = {
 				NOR_continue_nygaardsvold_government
 				NOR_the_stumbling_storting
-				NOR_arrest_quisling			
+				NOR_drobak_coastal_fort			
 			}
 		}
 		"DEN"={

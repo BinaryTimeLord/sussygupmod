@@ -607,9 +607,9 @@
 		prerequisite = { focus = JAP_finish_the_fight }
 		prerequisite = { focus = JAP_tokyo_aluminum_plant }
 		mutually_exclusive = { focus = JAP_asian_communist_solidarity }
-		x = -1
+		x = 1
 		y = 1
-		relative_position_id = JAP_smash_the_imperialists
+		relative_position_id = JAP_finish_the_fight
 
 		cost = 10
 
@@ -6792,11 +6792,11 @@
 	focus = {
 		id = JAP_stimulate_mongol_traditions
 		icon = GFX_goal_generic_cavalry
-		x = 1
-		y = 1
+		x = 4
+		y = 0
 		prerequisite = { focus = JAP_german_rocketry }
 
-		relative_position_id = JAP_german_rocketry
+		relative_position_id = JAP_establish_the_northern_resource_area
 		cost = 10
 
 		ai_will_do = {
@@ -6912,9 +6912,9 @@
 		prerequisite = {
 
 		}
-		x = 9
+		x = 35
 		y = 0
-		relative_position_id = JAP_chihatan_armed_forces
+		relative_position_id = JAP_waking_the_tiger
  
 		cost = 0.2
 
@@ -7437,9 +7437,9 @@
 	focus = {
 		id = JAP_ikeda_section_3
 		icon = GFX_goal_ikeda_section_3
-		x = 2
-		y = 1
-		relative_position_id = JAP_strategic_engineering
+		x = 10
+		y = 0
+		relative_position_id = JAP_valdivostok_treaty
 
 		cost = 10
 
@@ -8122,9 +8122,9 @@
 	focus = {
 		id = JAP_strategic_engineering
 		icon = GFX_goal_strategic_engineering
-		x = 1
-		y = 1
-		relative_position_id = JAP_trans_pacific_alliance
+		x = 8
+		y = -1
+		relative_position_id = JAP_valdivostok_treaty
 
 		cost = 10
 
@@ -9490,9 +9490,9 @@
 		id = JAP_crush_chinese_communists
 		icon = GFX_goal_JAP_crush_chinese_communists
 		prerequisite = { focus = JAP_liberate_manchuria }
-		x = 1
-		y = 2
-		relative_position_id = JAP_liberate_manchuria
+		x = 4
+		y = 0
+		relative_position_id = JAP_preemptive_strike_soviet
 
 		cost = 10
 
