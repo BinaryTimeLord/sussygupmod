@@ -66,4 +66,10 @@ defined_text = {
 		}
 		localization_key = "GFX_MEN_focus_background"
 	}
+	text = {
+		trigger = {
+			check_variable = { show_background = 12 }
+		}
+		localization_key = "GFX_SDF_focus_background"
+	}
 }

@@ -52,6 +52,10 @@ spriteTypes = {
 		name = "GFX_MEN_focus_background"
 		texturefile = "gfx/interface/Focus_Tree_BG/JAP.dds"
 	}
+	spriteType = {
+		name = "GFX_SDF_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/SDF.dds"
+	}
 	
 	#IDEOLOGIES
 	spriteType = {

@@ -34,6 +34,9 @@ on_actions = {
 			MEN = {
 				set_variable = { show_background = 11 }
 			}
+			SDF = {
+				set_variable = { show_background = 12 }
+			}
 		}
 	}
 }
