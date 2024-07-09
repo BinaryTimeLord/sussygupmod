@@ -361,7 +361,6 @@ country_event = { ##VICTORY IN THE CIVIL WAR##
 		
 		hidden_effect = {
 			set_cosmetic_tag = SDF_UNI
-			add_ideas = sdf_failing_loyalty
 			add_ideas = sdf_anarchy_3
 			
 			
@@ -1695,13 +1694,26 @@ country_event = {
 		
 		if = {
 			limit = {
-				check_variable = { SDF.good_deeds_counter > 3 } 
+				check_variable = { SDF.good_deeds_counter > 3 } '
+				SDF = {
+					has_government = neutrality
+				}
 			}
 			
 			complete_national_focus = SDF_outright_majority
 			
+			country_event = {
+				id = sdf.59
+				days = 3
+			}
+			
 			else = {
 				complete_national_focus = SDF_coalition_form
+				
+				country_event = {
+					id = sdf.60
+					days = 3
+				}
 			}
 		}
 		
@@ -1811,6 +1823,8 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
+		
+		complete_national_focus = SDF_rhinemetal_contracts
 	}
 	
 	option = {
@@ -1818,6 +1832,8 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
+		
+		complete_national_focus = SDF_messerschhmitt_contracts
 	}
 }
 
@@ -1962,6 +1978,72 @@ country_event = { ##BALANCE OF POWER STUFF
 				
 				}
 			}
+	}
+}
+
+country_event = {
+	id = sdf.59
+	title = sdf.59.t
+	desc = sdf.59.d
+	##picture =
+	
+	is_triggered_only = yes 
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.59.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = sdf.60
+	title = sdf.60.t
+	desc = sdf.60.d
+	##picture =
+	
+	is_triggered_only = yes 
+	fire_only_once = yes
+	
+	option = {
+		name = sdf.60.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = sdf.61
+	title = sdf.61.t
+	desc = sdf.61.d
+	##picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = sdf.61.a
+		ai_chance = {
+			base = 1
+		}
+		
+		kill_country_leader = SDF_saori_takebe
+		kill_country_leader = SDF_anzai
+		
+		
+		
+		hidden_effect = {
+			kill_country_leader = SDF_duel_leadership
+			
+		}
+		
+		promote_character = {
+			character = SDF_erwin
+			ideology = centrism
+		}	
 	}
 }
 

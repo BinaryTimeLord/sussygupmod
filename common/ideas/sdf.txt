@@ -287,7 +287,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 0.8
+				political_power_cost = 0.2 
 				stability_factor = -0.25
 				surrender_limit = -0.50
 				war_support_factor = 0.15'
@@ -617,7 +617,7 @@ ideas = {
 				recruitable_population = 0.05
 				opinion_gain_monthly_factor = 0.075
 				democratic_acceptance = 50
-				stability_factor = -0.1
+				stability_factor = -0.05
 			}
 		}
 		

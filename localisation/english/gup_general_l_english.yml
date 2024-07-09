@@ -2900,6 +2900,8 @@
  SDF_into_future_tooltip:0 "§CWhen you finish the focus it will add a custom Economy law§!"
  SDF_timed_idea_tooltip:0 "Adds §C60§! Days to "§RClock is Ticking§!""
  SDF_eastern_allies_tooltip:0 "§CEnables§! you to Convince Eastern Nations to join you"   
+ SDF_coalition_form_tooltip:0 "§CDepending on the governments actions the people will either vote for a coalition or the ruling party will get a outright majority§!"
+ SDF_COUP_FAILSTATE:0 "§RThe Miliary has Coup detat the government§!"
  ##BALANCE OF POWER##
  SDF_power_balance:0 "Balance of Power"
  SDF_democratic_side_low_control_range:0 "Low Pro Democratic Support"
@@ -3268,6 +3270,15 @@
  SDF_rhinemetal_contracts_desc:0 "Through several backdoor deals and lobbying by the Heer for a expansion of the nations Panzer force, the decision to award quite generous contracts to Rhinemetall and by extension Krupp, whilst they will certainly enjoy the extra pay we expect results and we shall have them if the companies wish to continue their work."
  SDF_messerschmitt_contracts:0 "Messerschmitt Contracts"
  SDF_messerschmitt_contracts_desc:0 "Through a very strong push by the Luftwaffle and Fallschirmjäger, and through the advice by Victoria Chief of the Fallschirmjäger, the decision to provide contracts to the Messerschmitt and IG Farben corporations have made. \n \nThe move is slightly controversial in the Heer due to the resources allocated but it’s hoped with this increased funding to aircraft production the nation will be more suited towards the eventual war against Pravda."   
+ SDF_consitution_secured:0 "Consitution Secured"
+ SDF_consitution_secured_desc:0 ""
+ 
+ ##MILIARY##
+ SDF_military_buildup:0 "Military Buildup"
+ SDF_military_buildup_desc:0 ""
+ SDF_war_plan_n:0 "War Plan N"
+ SDF_war_plan_n_desc:0 ""
+ 
  ##SDF TECH LOC##
   
  ##TANKS

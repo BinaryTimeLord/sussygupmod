@@ -1090,8 +1090,10 @@ SDF_economic_crisis = {
 		}
 		
 		available = {
-			SDF = {
-				has_idea = sdf_economic_downturn4
+			NOT = {
+				SDF = {
+					has_idea = sdf_economic_downturn4
+				}
 			}
 		}
 		
