@@ -2030,20 +2030,25 @@ country_event = {
 			base = 1
 		}
 		
-		kill_country_leader = SDF_saori_takebe
-		kill_country_leader = SDF_anzai
+		retire_character = SDF_saori_takebe
+		retire_character = SDF_anzai
 		
 		
 		
 		hidden_effect = {
-			kill_country_leader = SDF_duel_leadership
+			retire_character = SDF_duel_leadership
 			
 		}
 		
-		promote_character = {
+		add_country_leader_role = {
 			character = SDF_erwin
-			ideology = centrism
-		}	
+			promote_leader = yes
+			country_leader = {
+				ideology = centrism
+				expire = "1965.1.1.1"
+				traits = { war_industrialist }
+			}
+		}
 	}
 }
 
