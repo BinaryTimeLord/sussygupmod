@@ -1694,7 +1694,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				check_variable = { SDF.good_deeds_counter > 3 } '
+				check_variable = { SDF.good_deeds_counter > 3 }
 				SDF = {
 					has_government = neutrality
 				}
