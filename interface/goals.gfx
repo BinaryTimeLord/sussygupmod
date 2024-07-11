@@ -1359,7 +1359,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_eng_the_kings_party"
-		texturefile = "gfx/interface/goals/focus_eng_the_kings_party.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_the_kings_party.dds"
 	}
 
 	SpriteType = { 
@@ -1394,7 +1394,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_eng_organise_the_blackshirts"
-		texturefile = "gfx/interface/goals/focus_eng_organise_the_blackshirts.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_organise_the_blackshirts.dds"
 	}
 
 	SpriteType = { 
@@ -1409,7 +1409,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_eng_god_save_the_king"
-		texturefile = "gfx/interface/goals/focus_eng_god_save_the_king.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_god_save_the_king.dds"
 	}
 
 	SpriteType = { 
@@ -1849,7 +1849,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_fra_french_union"
-		texturefile = "gfx/interface/goals/focus_fra_french_union.dds"
+		texturefile = "gfx/interface/goals/BC Freedom/focus_fra_french_union.dds"
 	}
 
 	SpriteType = { 

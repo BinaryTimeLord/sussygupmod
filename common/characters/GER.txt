@@ -1285,9 +1285,6 @@ characters={
 					has_country_flag = kmm_sudeten_erika
 					has_completed_focus = GER_mobilization
 				}
-				NOT = {
-					has_idea = geshiko
-			 	}
 			}
 			
 			traits = { armaments_organizer economist }

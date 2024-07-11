@@ -125,8 +125,8 @@
  AUS_karl_eglseer:0 "Karl Eglseer"
  
  #BULGARIA
- BUL_boris_iii:0 "Boris III"
- BUL_boris_iii_desc:0 "Tsar Boris III"
+ BUL_boris_iii:0 "Sofia"
+ BUL_boris_iii_desc:0 "Tsar Sofia"
  BUL_ferdinand_i:0 "Ferdinand I"
  BUL_regency_council:0 "Regency Council"
  BUL_georgi_dimitrov:0 "Georgi Dimitrov"
@@ -241,7 +241,7 @@
  SPR_niceto_alcala_zamora:0 "Niceto Alcalá-Zamora"
  SPR_jose_diaz:0 "José Díaz"
  SPR_alejandro_lerroux:0 "Alejandro Lerroux"
- SPA_francisco_franco:0 "Francisco Franco"
+ SPA_francisco_franco:0 "El"
  SPR_manuel_fal_conde:0 "Manuel Fal Conde"
  SPR_vicente_rojo_lluch:0 "Vicente Rojo Lluch"
  SPR_jose_asensio_torrado:0 "José Asensio Torrado"
@@ -603,16 +603,16 @@
  GER_august_von_mackensen:0 "August von Mackensen"
 
  #ROMANIA
- ROM_gheorghe_tatarescu:0 "Gheorghe Tatarescu"
+ ROM_gheorghe_tatarescu:0 "Noemi Kohiyama"
  ROM_constantin_ion_parhon:0 "Constantin Ion Parhon"
- ROM_king_michael:0 "Michael I"
+ ROM_king_michael:0 "Marina Constantinescu"
  ROM_octavian_goga:0 "Octavian Goga"
  ROM_corneliu_codreanu:0 "Corneliu Codreanu"
  ROM_petre_dumitrescu:0 "Petre Dumitrescu"
  ROM_ioan_mihail_racovita:0 "Ioan Mihail Racovita"
 
  #TURKEY
- TUR_mustafa_kemal_ataturk:0 "Mustafa Kemal Atatürk"
+ TUR_mustafa_kemal_ataturk:0 "Bosporus"
  TUR_mehmet_recep_peker:0 "Mehmet Recep Peker"
  TUR_izzettin_chalishlar:0 "İzzettin Çalışlar"
  TUR_mustafa_muglali:0 "Mustafa Muğlalı"
@@ -721,7 +721,7 @@
  POL_vladislav_korchits:0 "Vladislav Korchits"
  POL_maria_koszutska:0 "Maria Koszutska"
  POL_wladyslaw_gomulka:0 "Władysław Gomułka"
- POL_wladyslaw_raczkiewicz:0 "Władysław Raczkiewicz"
+ POL_wladyslaw_raczkiewicz:0 "Jajka"
  POL_wincenty_witos:0 "Wincenty Witos"
  POL_stanislaw_mikolajczyk:0 "Stanisław Mikołajczyk"
  POL_pavel_bermondt_avalov:0 "Pavel Bermondt-Avalov"
@@ -780,7 +780,7 @@
  LIT_petras_schatz:0 "Petras Schatz"
 
  #SWEDEN 
- SWE_per_albin_hansson:0 "Per Albin Hansson"
+ SWE_per_albin_hansson:0 "Semla"
  SWE_sven_olov_lindholm:0 "Sven Olov Lindholm"
  SWE_sven_linderot:0 "Sven Linderot"
  SWE_axel_pehrssonbramstorp:0 "Axel Pehrsson-Bramstorp"
@@ -811,7 +811,7 @@
  GRE_panagiotis_demestichas:1 "Panagiotis Demestichas"
 
  #CANADA
- CAN_mackenzie_king:0 "Mackenzie King"
+ CAN_mackenzie_king:0 "Trout"
  CAN_adrien_arcand:0 "Adrien Arcand"
  CAN_tim_buck:0 "Tim Buck"
  CAN_j_s_woodsworth:0 "J. S. Woodsworth"
@@ -871,7 +871,7 @@
  RAJ_jayanto_nath_chaudhuri:0 "Jayanto Nath Chaudhuri"
 
  #AUSTRALIA
- AST_john_curtin:0 "John Curtin"
+ AST_john_curtin:0 "Wallaby"
  AST_eric_campbell:0 "Eric Campbell"
  AST_richard_dixon:0 "Richard Dixon"
  AST_earle_page:0 "Earle Page"
@@ -925,7 +925,7 @@
  BRA_augusto_rademaker:0 "Augusto Rademaker"
 
  #BELGIUM
- BEL_hubert_pierlot:0 "Hubert Pierlot"
+ BEL_hubert_pierlot:0 "Yuko"
  BEL_joseph_jacquemotte:0 "Joseph Jacquemotte"
  BEL_mcl_keyaerts:0 "M.C.L. Keyaerts"
  BEL_georges_timmermans:0 "Georges Timmermans"
@@ -939,8 +939,8 @@
  PER_sohrab_tahmasebi:0 "Sohrab Tahmasebi"
  
  #SWITZERLAND
- SWI_federal_council:0 "Federal Council"
- SWI_federal_assembly:0 "Federal Assembly"
+ SWI_federal_council:0 "Senjyu"
+ SWI_federal_assembly:0 "Senjyu"
  SWI_ernest_beuin:0 "Ernest Béuin"
  SWI_max_leo_keller:1 "Max Leo Keller"
  SWI_fritz_platten:0 "Fritz Platten"

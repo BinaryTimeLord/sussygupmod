@@ -8173,10 +8173,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_focus_eng_the_kings_party_shine"
-		texturefile = "gfx/interface/goals/focus_eng_the_kings_party.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_the_kings_party.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_the_kings_party.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_the_kings_party.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8189,7 +8189,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_the_kings_party.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_the_kings_party.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8397,10 +8397,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_focus_eng_organise_the_blackshirts_shine"
-		texturefile = "gfx/interface/goals/focus_eng_organise_the_blackshirts.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_organise_the_blackshirts.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_organise_the_blackshirts.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_organise_the_blackshirts.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8413,7 +8413,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_organise_the_blackshirts.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_organise_the_blackshirts.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8493,10 +8493,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_focus_eng_god_save_the_king_shine"
-		texturefile = "gfx/interface/goals/focus_eng_god_save_the_king.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_god_save_the_king.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_god_save_the_king.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_god_save_the_king.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8509,7 +8509,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_god_save_the_king.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_god_save_the_king.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -10578,10 +10578,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_fra_french_union_shine"
-		texturefile = "gfx/interface/goals/focus_fra_french_union.dds"
+		texturefile = "gfx/interface/goals/BC Freedom/focus_fra_french_union.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_fra_french_union.dds"
+			animationmaskfile = "gfx/interface/goals/BC Freedom/focus_fra_french_union.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -10594,7 +10594,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_fra_french_union.dds"
+			animationmaskfile = "gfx/interface/goals/BC Freedom/focus_fra_french_union.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

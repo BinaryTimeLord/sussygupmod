@@ -540,6 +540,22 @@ spriteTypes = {
 		name = "GFX_ideology_DEN_neutrality_group"
 		texturefile = "gfx/interface/ideologies/Gilbert.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_SWI_communism_group"
+		texturefile = "gfx/interface/ideologies/Neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SWI_fascism_group"
+		texturefile = "gfx/interface/ideologies/Neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SWI_democratic_group"
+		texturefile = "gfx/interface/ideologies/Neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_SWI_neutrality_group"
+		texturefile = "gfx/interface/ideologies/Neutral.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_decision_cat_picture_eurounion"

@@ -148,8 +148,22 @@ if = {
     recruit_character = SOV_mina
 }
 
-
 #Initialize character flags Part I (aka who's safe)
+SOV_iosif_stalin = { 
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nonna = { 
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_klara = { 
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nina = { 
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_alina = { 
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_mikhail_kalinin = {
 	set_character_flag = SOV_safe_from_purge_flag
 }

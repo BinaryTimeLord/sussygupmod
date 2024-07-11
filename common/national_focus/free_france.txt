@@ -14,7 +14,7 @@
 	default = no
 	focus = {
 		id = FRA_appeal_to_the_french_nation
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_fra_appeal_french_nation
 		x = 18
 		y = 0
 		offset = {
@@ -325,7 +325,7 @@
 	}
 	focus = {
 		id = FRA_form_the_national_committee
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_fra_form_national_committee
 		x = 0
 		y = 3
 		offset = {
