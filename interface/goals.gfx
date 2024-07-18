@@ -1354,7 +1354,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_eng_motion_of_no_confidence"
-		texturefile = "gfx/interface/goals/focus_eng_motion_of_no_confidence.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_motion_of_no_confidence.dds"
 	}
 
 	SpriteType = { 
@@ -1364,7 +1364,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_eng_unite_the_anglosphere"
-		texturefile = "gfx/interface/goals/focus_eng_unite_the_anglosphere.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_unite_the_anglosphere.dds"
 	}
 
 	SpriteType = { 
@@ -1399,6 +1399,11 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_eng_concessions_to_the_trade_unions"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_concessions_to_the_trade_unions.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_focus_eng_concessions_to_the_trade_unions"
 		texturefile = "gfx/interface/goals/focus_eng_concessions_to_the_trade_unions.dds"
 	}
 
@@ -1615,7 +1620,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_focus_fra_third_empire"
-		texturefile = "gfx/interface/goals/focus_focus_fra_third_empire.dds"
+		texturefile = "gfx/interface/goals/BC Freedom/focus_focus_fra_third_empire.dds"
 	}
 
 	SpriteType = { 
@@ -1630,7 +1635,7 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_focus_focus_fra_orleans_restoration"
-		texturefile = "gfx/interface/goals/focus_focus_fra_orleans_restoration.dds"
+		texturefile = "gfx/interface/goals/BC Freedom/focus_focus_fra_orleans_restoration.dds"
 	}
 
 	SpriteType = { 

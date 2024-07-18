@@ -8141,10 +8141,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_focus_eng_motion_of_no_confidence_shine"
-		texturefile = "gfx/interface/goals/focus_eng_motion_of_no_confidence.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_motion_of_no_confidence.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_motion_of_no_confidence.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_motion_of_no_confidence.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8157,7 +8157,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_motion_of_no_confidence.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_motion_of_no_confidence.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8205,10 +8205,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_focus_eng_unite_the_anglosphere_shine"
-		texturefile = "gfx/interface/goals/focus_eng_unite_the_anglosphere.dds"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_unite_the_anglosphere.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_unite_the_anglosphere.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_unite_the_anglosphere.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8221,7 +8221,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_eng_unite_the_anglosphere.dds"
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_unite_the_anglosphere.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8365,6 +8365,38 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_focus_eng_concessions_to_the_trade_unions_shine"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_concessions_to_the_trade_unions.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_concessions_to_the_trade_unions.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/St. Gloriana/focus_eng_concessions_to_the_trade_unions.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_focus_eng_concessions_to_the_trade_unions_shine"
 		texturefile = "gfx/interface/goals/focus_eng_concessions_to_the_trade_unions.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -9778,10 +9810,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_focus_fra_third_empire_shine"
-		texturefile = "gfx/interface/goals/focus_focus_fra_third_empire.dds"
+		texturefile = "gfx/interface/goals/BC Freedom/focus_focus_fra_third_empire.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_focus_fra_third_empire.dds"
+			animationmaskfile = "gfx/interface/goals/BC Freedom/focus_focus_fra_third_empire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -9794,7 +9826,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_focus_fra_third_empire.dds"
+			animationmaskfile = "gfx/interface/goals/BC Freedom/focus_focus_fra_third_empire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -9874,10 +9906,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_focus_fra_orleans_restoration_shine"
-		texturefile = "gfx/interface/goals/focus_focus_fra_orleans_restoration.dds"
+		texturefile = "gfx/interface/goals/BC Freedom/focus_focus_fra_orleans_restoration.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_focus_fra_orleans_restoration.dds"
+			animationmaskfile = "gfx/interface/goals/BC Freedom/focus_focus_fra_orleans_restoration.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -9890,7 +9922,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_focus_fra_orleans_restoration.dds"
+			animationmaskfile = "gfx/interface/goals/BC Freedom/focus_focus_fra_orleans_restoration.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

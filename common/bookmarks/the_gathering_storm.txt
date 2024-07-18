@@ -32,9 +32,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_invite_communist_ministers
-				FRA_utilize_the_leagues
-				FRA_je_suis_la_deluge
+				VIC_emergency_powers_to_petain
+				FRA_french_union
+				FRA_form_the_national_committee
 			}
 		}
 		"USA"={
@@ -46,9 +46,9 @@ bookmarks = {
 				undisturbed_isolation
 			}
 			focuses = {
-				USA_war_plan_black
 				USA_limited_intervention
-				USA_reestablish_the_gold_standard
+				USA_neutrality_act
+                USA_ally_with_the_silver_shirts
 			}
 		}
 		"ENG"={
@@ -61,8 +61,8 @@ bookmarks = {
 				george_v
 			}
 			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
+				ENG_god_save_the_king
+				ENG_motion_of_no_confidence
 				ENG_organize_the_blackshirts
 			}
 		}

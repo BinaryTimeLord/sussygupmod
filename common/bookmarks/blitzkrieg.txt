@@ -15,9 +15,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_strengthen_government_support
-				FRA_arms_purchases_in_the_us
+				VIC_emergency_powers_to_petain
 				FRA_french_union
+				FRA_form_the_national_committee
 			}
 		}
 		USA = {
@@ -31,9 +31,9 @@ bookmarks = {
 				new_deal
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_arsenal_of_democracy
-				USA_selective_training_act
+				USA_limited_intervention
+				USA_neutrality_act
+                USA_ally_with_the_silver_shirts
 			}
 		}
 		ENG = {
@@ -47,9 +47,9 @@ bookmarks = {
 				ENG_colonial_elite
 			}
 			focuses = {
-				ENG_war_with_japan
-				bomber_command_focus
-				maud_focus
+				ENG_god_save_the_king
+				ENG_motion_of_no_confidence
+				ENG_organize_the_blackshirts
 			}
 			
 		}

@@ -285,7 +285,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_democratic_socialism
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_usa_democratic_socialism
 		x = 1
 		y = 1
 		prerequisite = { focus = USA_desegregate_the_armed_forces }
@@ -1330,7 +1330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_fair_labour_standards_act
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_focus_eng_concessions_to_the_trade_unions
 		x = 0
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
@@ -1540,7 +1540,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_limited_intervention
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_usa_limited_intervention
 		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
 		mutually_exclusive = { focus = USA_neutrality_act }
 		continue_if_invalid = yes
@@ -2030,7 +2030,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_neutrality_act
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_usa_neutrality_act
 		x = 4
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
@@ -3390,7 +3390,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_ally_with_the_silver_shirts
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_usa_ally_silver_shirts
 		x = 5
 		y = 1
 		prerequisite = { focus = USA_america_first }
@@ -3591,7 +3591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_send_lindbergh_to_germany
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_focus_send_lindbergh_germany
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_invite_foreign_support }

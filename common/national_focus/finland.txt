@@ -1812,7 +1812,7 @@ focus_tree = {
 
 	focus = {
 		id = FIN_social_democracy
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_focus_fin_social_democracy
 		prerequisite = { focus = FIN_suomalainen_sosialismi }
 		mutually_exclusive = { focus = FIN_towards_a_red_government }
 
