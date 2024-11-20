@@ -168,6 +168,108 @@ characters={
 		}
 	}
 
+	NOR_eivind_heiberg = {  
+		name = NOR_eivind_heiberg
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NOR_eivind_heiberg_small
+			}
+		}
+		allowed_civil_war = {
+			OR = {
+				NOR_char_cw_labor_only = yes 
+				NOR_char_cw_trotskyist = yes 
+				NOR_char_cw_stalinist = yes
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = NOR_eivind_heiberg
+			allowed  = {
+				NOR_AAT = yes
+			}
+			available = {
+				OR = {
+					has_government = democratic	
+					has_government = communism	
+				}		
+			}
+			traits  = {
+				NOR_unionist_railway_director
+			}
+		}
+	}
+
+	NOR_christopher_hornsrud = {  
+		name = NOR_christopher_hornsrud
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NOR_christopher_hornsrud_small
+			}
+		}
+		allowed_civil_war = {
+			OR = {
+				NOR_char_cw_labor_only = yes 
+				NOR_char_cw_trotskyist = yes 
+				NOR_char_cw_stalinist = yes
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = NOR_christopher_hornsrud
+			allowed  = {
+				NOR_AAT = yes
+			}
+			available = {
+				OR = {
+					has_government = democratic	
+					has_government = communism	
+				}		
+			}
+			traits  = {
+				NOR_supplies_commisioner
+			}
+		}
+	}
+
+	NOR_kirsten_hansteen = {  
+		name = NOR_kirsten_hansteen
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NOR_kirsten_hansteen_small
+			}
+		}
+		allowed_civil_war = {
+			OR = {
+				NOR_char_cw_labor_only = yes 
+				NOR_char_cw_stalinist = yes
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = NOR_kirsten_hansteen
+			allowed  = {
+				NOR_AAT = yes
+			}
+			available = {
+				OR = {
+					has_government = democratic	
+					has_government = communism	
+				}		
+				OR = {
+					has_completed_focus = NOR_compromise_with_the_nkp
+					has_completed_focus = NOR_social_incrementalism
+				}
+			}
+			traits  = {
+				NOR_the_womens_front
+			}
+		}
+	}
+
 	NOR_peder_anker_wedel_jarlsberg = { # Monarchist Leader
 		name = NOR_peder_anker_wedel_jarlsberg
 		portraits = {
@@ -502,6 +604,14 @@ characters={
 			allowed  = {
 				NOR_aat = yes 
 			}
+			visible = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
 			available = {
 				has_government = neutrality
 			}
@@ -699,7 +809,7 @@ characters={
 		name=NOR_birger_meidell
 		portraits={
 			civilian={
-				small=GFX_portrait_NOR_birger_meidell_small
+				small = GFX_portrait_NOR_birger_oivind_meidell_small
 			}
 		}
 
@@ -720,7 +830,7 @@ characters={
 				}
 			}
 			traits  = {
-				NOR_fascist_advocate
+				NOR_commisary_minister
 			}
 		}
 	}
@@ -748,6 +858,61 @@ characters={
 			}
 			traits  = {
 				NOR_callous_engineer
+			}
+		}
+	}
+
+	NOR_rolf_fuglesang = {
+		name = NOR_rolf_fuglesang
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NOR_rolf_fuglesang_small
+			}
+		}
+		
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = NOR_rolf_fuglesang
+			allowed  = {
+				NOR_AAT = yes
+			}
+			available = {
+				has_government = fascism 
+				has_completed_focus = NOR_crackdown_on_civilian_life
+			}
+			traits  = {
+				NOR_pan_germanist_minister
+			}
+		}
+	}
+
+	NOR_eivind_blehr = {
+		name = NOR_eivind_blehr
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NOR_eivind_blehr_small
+			}
+		}
+		
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = NOR_eivind_blehr
+			allowed  = {
+				NOR_AAT = yes
+			}
+			available = {
+				has_government = fascism 
+			}
+			traits  = {
+				NOR_fascist_minister_of_supplies
 			}
 		}
 	}
@@ -802,11 +967,9 @@ characters={
 				NOR_AAT = yes 
 			}
 			visible = {
-				NOT = {
-					OR = {
-						has_government = democratic
-						has_completed_focus = NOR_prosecute_the_nkp
-					}
+				OR = {
+					has_government = democratic
+					has_completed_focus = NOR_prosecute_the_nkp
 				}
 			}
 			available = { 

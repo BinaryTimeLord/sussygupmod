@@ -203,6 +203,11 @@ GER_german_monarchy = {
 	color_ui = rgb { 115 115 115 }
 }
 
+GER_german_kaiserreich = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
 CHI_warlord_leader = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
@@ -219,11 +224,6 @@ JAP_showa_restoration = {
 GER_greater_german_reich = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
-}
-
-ADU = {
-	color = rgb { 240 230 155 }
-	color_ui = rgb { 240 230 155 }
 }
 
 CAT_aragon = {
@@ -362,18 +362,22 @@ SPR_nationalist_castille = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
 }
+
 SPR_carlist_castille = {
 	color = rgb { 255 128 0 }
 	color_ui = rgb { 255 255 122 }
 }
+
 SPR_anarchist_castille = {
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 35 35 35 }
 }
+
 SPR_republican_castille = {
 	color = rgb { 242 205 94 }
 	color_ui = rgb { 255 255 122 }
 }
+
 KOP_kingdom_portugal = {
 	color = rgb { 0  80  152 }
 	color_ui = rgb { 220  105  70 }
@@ -393,7 +397,6 @@ POR_empire = {
 	color = rgb { 128  160  15 }
 	color_ui = rgb { 19  83  180 }
 }
-
 
 
 GRE_dem_monarchy = {
@@ -636,6 +639,11 @@ UBF_united_balkan_federation_communism = {
 	color_ui = rgb { 11 11 11 }
 }
 
+UBF_united_balkan_federation = {
+	color = rgb { 11 11 11 }
+	color_ui = rgb { 11 11 11 }
+}
+
 UBF_united_balkan_federation_democratic = {
 	color = rgb { 11 11 11 }
 	color_ui = rgb { 11 11 11 }
@@ -818,7 +826,7 @@ ETH_African_Union_communism = {
 	color = rgb { 186 46 46 }
 	color_ui = rgb { 255 73 121 }
 }
-ETH_Ethiopian_Federation = {
+ETH_ethiopian_federation = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
@@ -1101,6 +1109,7 @@ DEN_greater_denmark = {
 	color = rgb { 218 41 28 }
 	color_ui = rgb { 218 41 28 }
 }
+
 ENE = {
 	color = rgb { 46 80 144 }
 	color_ui = rgb { 46 80 144 }
@@ -1135,6 +1144,7 @@ kingdom_of_araucania_and_patagonia = {
 	color = rgb { 51 204 51 }
 	color_ui = rgb { 25 102 25 }
 }
+
 CHL_new_fatherland = {
 	color = rgb { 255 224 102 }
 	color_ui = rgb { 204 163 0 }
@@ -1145,18 +1155,22 @@ true_plurinational_bolivia = {
 	color = rgb { 179 0 179 }
 	color_ui = rgb { 77 0 77 }
 }
+
 indigenous_brazil = {
 	color = rgb { 0 77 0 }
 	color_ui = rgb { 0 26 0 }
 }
+
 indigenous_mexico = {
 	color = rgb { 51 102 0 }
 	color_ui = rgb { 13 26 0 }
 }
+
 native_american_usa = {
 	color = rgb { 153 153 102 }
 	color_ui = rgb { 46 46 31 }
 }
+
 first_nations_canada = {
 	color = rgb { 255 153 153 }
 	color_ui = rgb { 102 0 0 }
@@ -1251,6 +1265,256 @@ URG_is_unaligned_URG_but_has_normal_URG_flag = {
 LGF_UNIFIED = {
 	color = rgb { 205 69 69 }
 	color_ui = rgb { 205 69 69 }
+}
+
+COG_belgian_congo = {
+	color = rgb { 0 71 179 }
+	color_ui = rgb { 0 31 77 }
+}
+
+HUN_GREATER = {
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 128 64 0 }
+}
+
+HUN_GREATER_COMMUNIST_STATE = {
+	color = rgb { 230 0 0 }
+	color_ui = rgb { 128 0 0 }
+}
+
+AUS_liechtenstein = {
+	color = rgb { 39 46 160 }
+	color_ui = rgb { 39 46 160 }
+}
+
+AUS_true_liechtenstein = {
+	color = rgb { 39 46 160 }
+	color_ui = rgb { 39 46 160 }
+}
+
+FRA_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+TUR_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+GRE_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+HOL_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+LUX_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+BEL_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+MNT_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+MAC_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+HUN_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+CZE_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+SLO_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+TRA_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+CRO_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+LBV_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+SIL_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+BOS_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+SLV_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+YUG_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+ROM_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+BUL_AUS_danubian_state = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
+}
+
+antilles = {
+	color = rgb { 51 153 255 }
+	color_ui = rgb { 0 89 179 }
+}
+
+latin_africa = {
+	color = rgb { 0 45 179 }
+	color_ui = rgb { 0 19 77 }
+}
+
+COG_peoples_republic_of_congo = {
+	color = rgb { 179 0 0 }
+	color_ui = rgb { 77 0 0 }
+}
+
+COG_kingdom_of_kongo = {
+	color = rgb { 255 179 179 }
+	color_ui = rgb { 179 0 0 }
+}
+
+COG_kingdom_of_kuba = {
+	color = rgb { 204 153 0 }
+	color_ui = rgb { 102 77 0 }
+}
+
+COG_kingdom_of_loango = {
+	color = rgb { 0 153 255 }
+	color_ui = rgb { 0 77 128 }
+}
+
+COG_kingdom_of_burundi = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 77 26 }
+}
+
+COG_kingdom_of_rwanda = {
+	color = rgb { 0 179 89 }
+	color_ui = rgb { 0 102 51 }
+}
+
+COG_mittelafrikan_kingdom = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 51 51 51 }
+}
+
+reunified_germany = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
+BEL_vnv_dominant =  {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 179 143 0 }
+}
+
+BEL_greater_netherlands = {
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 245 118 0 }
+}
+
+BEL_burgundy = {
+	color = rgb { 128 0 32 }
+	color_ui = rgb { 118 0 22 }
+}
+
+BEL_beligca = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 143 0 0 }
+}
+
+GER_german_monarchy_liberal = {
+	color = rgb { 160 160 160 }
+	color_ui = rgb { 115 115 115 }
+}
+
+GER_german_monarchy_conservative = {
+	color = rgb { 160 160 160 }
+	color_ui = rgb { 115 115 115 }
+}
+
+GER_german_monarchy_democratic = {
+	color = rgb { 160 160 160 }
+	color_ui = rgb { 115 115 115 }
+}
+
+GER_strasserite_state = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+
+GER_communism = {
+	color = rgb { 175 20 60 }
+	color_ui = rgb { 175 20 60 }
+}
+
+GER_peoples_republic = {
+	color = rgb { 175 20 60 }
+	color_ui = rgb { 175 20 60 }
+}
+
+GER_german_socialist_union = {
+	color = rgb { 125 20 50 }
+	color_ui = rgb { 125 20 50 }
+}
+
+GER_greater_proletarian_german_state = {
+	color = rgb { 90 0 0 }
+	color_ui = rgb { 90 0 0 }
+}
+
+BEL_flanders = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 179 143 0 }
+}
+
+BEL_european_union_leader = {
+	color = rgb { 0 51 153 }
+	color_ui = rgb { 0 51 153 }
+}
+
+AUS_european_union_leader = {
+	color = rgb { 0 51 153 }
+	color_ui = rgb { 0 51 153 }
 }
 
 ITP = {

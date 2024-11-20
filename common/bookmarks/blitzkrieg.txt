@@ -56,7 +56,7 @@ bookmarks = {
 		GER = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = fascism
-			ideas = {
+			ideas = { #TODO_Danne Make sure these spirits display the proper numbers!
 				sour_loser
 				general_staff
 				GER_mefo_bills_15
@@ -200,10 +200,12 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-		"HUN"={
+
+		HUN = {
 			minor = yes
 			history = "HUN_BLITZKRIEG_DESC"
 			ideology = neutrality
+			available = {  NOT = { has_dlc = "Gotterdammerung" } }
 			ideas = {
 				HUN_treaty_of_triannon_3
 				HUN_interventionism
@@ -581,22 +583,23 @@ bookmarks = {
 				SWE_coalition_war_cabinet
 			}
 		}
-		"NOR"={
+		NOR={
 			minor = yes
 			history = "NOR_BLITZKRIEG_DESC"
 			ideology = democratic
+			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
 				NOR_defensive_rearmament_ns
 				NOR_crumbling_fortifications_ns
 				NOR_fake_independent_norway_ns
 			}
 			focuses = {
-				NOR_quislings_coup
-				NOR_norwegian_reichsprotectorate
+				NOR_preparing_the_return_to_norway
+				NOR_nortraship
 				NOR_the_kings_no
 			}
 		}
-		"DEN"={
+		DEN={
 			minor = yes
 			history = DEN_BLITZKRIEG_DESC
 			ideology = democratic
@@ -612,7 +615,7 @@ bookmarks = {
 				DEN_create_danforce
 			}
 		}
-		"DEN"={
+		DEN={
 			minor = yes
 			history = DEN_BLITZKRIEG_DESC
 			ideology = democratic
@@ -628,7 +631,23 @@ bookmarks = {
 				DEN_create_danforce
 			}
 		}	
-		"BRA"={
+		ICE = {
+			minor = yes
+			history = ICE_BLITZKRIEG_DESC
+			ideology = democratic
+			available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				ICE_christian_x
+				ICE_fishing_industry
+				neutrality_idea
+			}
+			focuses = {
+				ICE_american_protection
+				ICE_iceland_defense_force
+				ICE_modernizing_the_coast_guard
+			}
+		}
+		BRA = {
 			minor = yes
 			history = BRA_BLITZKRIEG_DESC
 			ideology = neutrality
@@ -644,7 +663,7 @@ bookmarks = {
 				BRA_senta_a_pua
 			}
 		}
-		"CHL"={
+		CHL = {
 			minor = yes
 			history = CHL_BLITZKRIEG_DESC
 			ideology = democratic
@@ -652,7 +671,7 @@ bookmarks = {
 			ideas = {
 				idea_CHL_the_Hacienda_inquilinaje_system
 				CHL_the_mapuche_conflict
-				SMB_MTG_naval_arms_race_legacy
+				CHL_national_falange
 			}
 			focuses = {
 				CHL_development_inwards
@@ -660,7 +679,7 @@ bookmarks = {
 				CHL_protect_the_easter_island
 			}
 		}
-		"ARG"={
+		ARG = {
 			minor = yes
 			history = ARG_BLITZKRIEG_DESC
 			ideology = neutrality
@@ -674,6 +693,54 @@ bookmarks = {
 				ARG_towards_a_greater_argentina
 				ARG_end_operation_bolivar
 				ARG_the_american_push
+			}
+		}
+		HUN = {
+			minor = yes
+			history = "HUN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				HUN_gombos_trade_treaty
+				HUN_hungarian_national_defense_association_horthyist
+				HUN_levente_associations_act_of_defense_and_secret_rearmament
+			}
+			focuses = {
+				wuw_HUN_demand_carpathian_ruthenia # could also be wuw_HUN_promote_hungarianism
+				wuw_HUN_the_turan
+				wuw_HUN_proclaim_greater_hungary
+			}
+		}
+		BEL = {
+			minor = yes
+			history = BEL_BLITZKRIEG_DESC
+			ideology = democratic
+			available = { has_dlc = "Gotterdammerung" } 
+			ideas = {
+				BEL_chasseurs_ardennais_ns
+				BEL_scars_of_ww1_ns_fake
+				BEL_corruption_ns_fake
+			}
+			focuses = {
+				BEL_free_belgian_forces
+				BEL_early_helicopters
+				BEL_belgian_miracle
+			}
+		}
+		COG = {
+			minor = yes
+			history = COG_BLITZKRIEG_DESC
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" } 
+			ideas = {
+				COG_banque_du_congo_belge_idea
+				COG_vast_decentralized_state_idea_4
+				COG_the_invisible_roof
+			}
+			focuses = {
+				COG_emergency_powers_for_pierre_ryckmans
+				COG_the_intore_lion_dancers
+				CONGO_chefs_coutumiers
 			}
 		}
 		effect = {

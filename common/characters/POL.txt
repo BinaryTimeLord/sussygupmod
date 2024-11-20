@@ -564,7 +564,10 @@ characters = {
 			logistics_skill = 4
 			legacy_id=-1
 			visible = {
-				has_completed_focus = POL_restore_bermontians
+				OR = {
+					has_completed_focus = POL_restore_bermontians
+					has_completed_focus = GER_subduing_the_baltic_states
+				}			
 			}
 		}
 	}
@@ -1093,6 +1096,35 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+		}
+	}
+
+	POL_jan_zumbach = {
+		name = POL_jan_zumbach
+		portraits = {
+			army = {
+				small = GFX_portrait_POL_jan_zumbach_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_jan_zumbach
+			ledger = air
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = ENG
+					original_tag = COG
+					original_tag = KAT
+				}
+			}
+			traits = {
+				air_air_combat_training_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
 			}
 		}
 	}

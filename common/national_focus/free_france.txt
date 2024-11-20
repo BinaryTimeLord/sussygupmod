@@ -403,6 +403,12 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = FRA_defeatism
+				}
+				remove_ideas = { FRA_defeatism }
+			}
 			load_focus_tree = french_focus
 			#TODO_GABRIEL: Make scripted effect to give correct focuses depending on left/right
 		}
@@ -609,15 +615,19 @@
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			OR = {
+				IF = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_legitimacy > 40
 				}
-				has_legitimacy > 40
+				ELSE = {
+					num_of_factories > 14
+				}
+				has_war = no
 			}
-			else = {
-				num_of_factories > 14
-			}
+			
 		}
 		
 		bypass = {

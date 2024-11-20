@@ -1,4 +1,5 @@
-characters={
+characters = {
+
 	### The King of Bohemia
 	CZE_karl_albrecht = {
 		name=POL_karl_albrecht
@@ -8,6 +9,7 @@ characters={
 			}
 		}
 	}
+
 	CZE_edvard_benesh={
 		name="Kafka"
 		portraits={
@@ -23,6 +25,9 @@ characters={
 			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
+			traits = {
+				skillful_diplomat
+			}
 		}
 		field_marshal={
 			traits={ defensive_doctrine infantry_leader organisational_leader }
@@ -61,6 +66,21 @@ characters={
 			traits={ eager_collaborator captain_of_industry }
 			expire="1942.1.1.12"
 			id=-1
+		}
+	}
+
+	CZE_albrecht_franz = {
+		name = CZE_albrecht_franz
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CZE_albrecht_franz_von_habsburg
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { duke_of_teschen_king_of_bohemia }
 		}
 	}
 

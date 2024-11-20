@@ -308,7 +308,7 @@ characters={
 				has_completed_focus = SWE_infrastructure
 			}
 			visible = {
-				has_completed_focus = SWE_infrastructure
+
 			}
 		}
 		name=SWE_frans_severin
@@ -2161,6 +2161,33 @@ characters={
 			civilian={
 				#large="GFX_portrait_SWE_hugo_silen_large"
 				small="GFX_portrait_SWE_hugo_silen_small"
+			}
+		}
+	}
+
+
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+
+  SWE_lise_meitner = {
+		name = SWE_lise_meitner
+		portraits = {
+			army = {
+				large = GFX_portrait_SWE_lise_meitner
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist }
+			skills = {
+				specialization_nuclear = 2
 			}
 		}
 	}

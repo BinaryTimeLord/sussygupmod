@@ -31,7 +31,7 @@
 #		}
 
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
-DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME_TRIGGER = {
 	NOT = {
 		has_game_rule = {
 			rule = allow_guarantees
@@ -258,7 +258,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = RAP } }
 		}
 	}
-	if = {
+	IF = {
 		limit = {
 			OR = {
 				has_game_rule = {
@@ -299,6 +299,40 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					option = PEACE_ONLY
 				}
 			}
+			original_tag = GER
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_GERMAN_CONSTITUENT_STATES_TOOLTIP
+			NOT = { 
+				FROM = {
+					OR = {
+						tag = PRE 
+						tag = MEK
+						tag = BAY
+						tag = SAX
+						tag = HAN
+						tag = WUR
+						tag = SHL
+						tag = THU
+						tag = HES
+						tag = RHI
+					}
+				} 
+			}
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_game_rule = {
+					rule = allow_release_nations
+					option = FREE
+				}
+				has_game_rule = {
+					rule = allow_release_nations
+					option = PEACE_ONLY
+				}
+			}
 			OR = {
 				original_tag = ROM
 				original_tag = HUN
@@ -307,6 +341,28 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_TRANSYLVANIA_TOOLTIP
 			NOT = { FROM = { tag = TRA } }
+		}
+	}
+	IF = {
+		limit = {
+			OR = {
+				has_game_rule = {
+					rule = allow_release_nations
+					option = FREE
+				}
+				has_game_rule = {
+					rule = allow_release_nations
+					option = PEACE_ONLY
+				}
+			}
+			OR = {
+				original_tag = HUN
+				original_tag = CZE
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NO_SLOVAKIA_TOOLTIP
+			NOT = { FROM = { tag = SLO } }
 		}
 	}
 	if = {
@@ -522,13 +578,15 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
-			has_dlc = "La Resistance"
 			original_tag = SOV
 			has_completed_focus = SOV_anarchist_revolution
 		}
 		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP
-			NOT = { original_tag = SOV }
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_SOVIET_TOOLTIP
+			OR = {
+				has_completed_focus = SOV_autonomous_soviet_republics
+				has_completed_focus = SOV_reconvene_the_zemsky_sobor
+			}
 		}
 	}
 	if = {
@@ -632,7 +690,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_SOVIET_TOOLTIP
-			has_completed_focus = SOV_autonomous_soviet_republics
+			OR = {
+				has_completed_focus = SOV_autonomous_soviet_republics
+				has_completed_focus = SOV_reconvene_the_zemsky_sobor
+			}
 		}
 	}
 	if = {
@@ -1428,7 +1489,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Katyusha in charge) (with No Step Back)
+		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Stalin in charge) (with No Step Back)
 			limit = {
 				has_dlc = "No Step Back"
 				has_dlc = "La Resistance"
@@ -1809,3 +1870,5 @@ DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
+
+

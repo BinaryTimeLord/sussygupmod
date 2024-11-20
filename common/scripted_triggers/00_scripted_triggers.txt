@@ -116,6 +116,12 @@ check_has_focus_tree_to_switch_to_fascism = {
 			has_dlc = "La Resistance"
 		}
 	}
+	NOT = {
+		AND = {
+			tag = HUN
+			has_dlc = "Gotterdammerung"
+		}
+	}
 }
 
 check_has_focus_tree_to_switch_to_democratic = {
@@ -210,6 +216,12 @@ check_has_focus_tree_to_switch_to_communism = {
 			has_dlc =  "Trial of Allegiance"
 		}
 	}
+	NOT = {
+		AND = {
+			original_tag = GER
+			has_dlc =  "Gotterdammerung"
+		}
+	}
 }
 
 #State scope
@@ -220,6 +232,20 @@ is_controlled_by_ROOT_or_subject = {
 			OR = {
 				tag = ROOT
 				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+is_not_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_controlled_by_ROOT_or_subject
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -398,6 +424,23 @@ HUN_is_on_historical_plan_trigger = {
 		}
 	}
 }
+COG_is_on_historical_plan_trigger = {
+	has_dlc = "Gotterdammerung"
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = COG_AI_BEHAVIOR
+				option = DEFAULT
+			}
+		}
+		has_country_flag = COG_AI_RANDOM_HISTORICAL
+		has_game_rule = {
+			rule = COG_AI_BEHAVIOR
+			option = HISTORICAL
+		}
+	}
+}
 ENG_is_on_historical_plan_trigger = {
 	OR = {
 		AND = {
@@ -510,47 +553,38 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 				ROOT = {
 					has_tech = radio_detection
 					NOT = {
-						has_tech = decimetric_radar
+						has_tech = cavity_magnatron
 					}
 				}
 			}
 			FROM = {
 				OR = {
 					has_tech = radio_detection
-					has_tech = decimetric_radar
+					has_tech = cavity_magnatron
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = {
-					has_tech = decimetric_radar
-					NOT = {
-						has_tech = improved_decimetric_radar
-					}
+					has_tech = cavity_magnatron
+
 				}
 			}
 			FROM = {
-				OR = {
-					has_tech = decimetric_radar
-					has_tech = improved_decimetric_radar
-				}
+				has_tech = cavity_magnatron
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = {
-					has_tech = improved_decimetric_radar
 					NOT = {
 						has_tech = centimetric_radar
 					}
 				}
 			}
 			FROM = {
-				OR = {
-					has_tech = improved_decimetric_radar
-					has_tech = centimetric_radar
-				}
+				has_tech = centimetric_radar
 			}
 		}
 		else_if = {
@@ -558,30 +592,30 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 				ROOT = {
 					has_tech = centimetric_radar
 					NOT = {
-						has_tech = improved_centimetric_radar
+						has_tech = phased_array
 					}
 				}
 			}
 			FROM = {
 				OR = {
 					has_tech = centimetric_radar
-					has_tech = improved_centimetric_radar
+					has_tech = phased_array
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = {
-					has_tech = improved_centimetric_radar
+					has_tech = phased_array
 					NOT = {
-						has_tech = advanced_centimetric_radar
+						has_tech = monopulse_radar
 					}
 				}
 			}
 			FROM = {
 				OR = {
-					has_tech = improved_centimetric_radar
-					has_tech = advanced_centimetric_radar
+					has_tech = phased_array
+					has_tech = monopulse_radar
 				}
 			}
 		}
@@ -749,7 +783,6 @@ state_is_in_the_mediterranean_sea = {
 			state = 851
 			state = 911
 			state = 735
-			state = 771
 			state = 162
 			state = 2
 			state = 117
@@ -934,6 +967,23 @@ state_is_fully_controlled_by_ROOT_or_subject = {
 	}
 }
 
+#State scope
+state_is_fully_controlled_by_ROOT_subject_or_faction_member = {
+	custom_trigger_tooltip = {
+		tooltip = state_is_fully_controlled_by_ROOT_subject_or_faction_member_tt
+		OR = {
+			is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+				has_full_control_of_state = PREV
+			}
+		}
+	}
+}
+
 is_alpine_state = {
 	custom_trigger_tooltip = {
 		tooltip = is_alpine_TT
@@ -1054,6 +1104,18 @@ is_unlikely_country_tag = {
 		tag = YUC
 		tag = RIG
 		tag = WLA
+		tag = GRN
+		tag = EVE
+		tag = SHL
+		tag = MEK
+		tag = HAN
+		tag = SAX
+		tag = PRE
+		tag = BAY
+		tag = WUR
+		tag = THU
+		tag = HES
+		tag = RHI
 	}
 }
 
@@ -1394,6 +1456,11 @@ is_fascist_seller_trigger = {
 is_democracy_seller_trigger = {
 	NOT = { has_war_with = ROOT	}
 	has_government = democratic 
+}
+
+is_communist_seller_trigger = {
+	NOT = { has_war_with = ROOT }
+	has_government = communism
 }
 
 is_allied_seller_trigger = {

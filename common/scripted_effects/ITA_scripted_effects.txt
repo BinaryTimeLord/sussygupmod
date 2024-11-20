@@ -75,7 +75,7 @@ ITA_missiolinis_initialize_missiolinis_system = {
 }
 
 ITA_missiolinis_manage_next_mission = {
-	#log = "Managing next Anchovy, please hang on. Tack!"
+	#log = "Managing next Mussolini, please hang on. Tack!"
 
 	#Check for pre-scripted vs randomized missions
 	if = {
@@ -1801,7 +1801,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			keep_completed = yes
 		}
 
-		if = { #Anchovy BRANCH
+		if = { #MUSSOLINI BRANCH
 			limit = {
 				has_completed_focus = ITA_culto_del_duce
 			}
@@ -3286,7 +3286,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 			set_nationality = RSI
 		}
 		RSI = {
-			retire_country_leader = yes #Retire random auto-generated character attempting to supplant Anchovy
+			retire_country_leader = yes #Retire random auto-generated character attempting to supplant Mussolini
 		}
 	}
 }
@@ -3553,6 +3553,7 @@ ITA_manage_national_spirits_in_civil_war = {
 	set_variable = { ITA_re_supply_consumption_factor = ITA.ITA_re_supply_consumption_factor }
 	set_variable = { ITA_re_acclimatization_hot_climate_gain_factor = ITA.ITA_re_acclimatization_hot_climate_gain_factor }
 	set_variable = { ITA_re_heat_attrition_factor = ITA.ITA_re_heat_attrition_factor }
+	set_variable = { ITA_re_sp_land_land_cruiser_speed_factor = ITA.ITA_re_sp_land_land_cruiser_speed_factor }
 
 	#Copy REGIA AERONAUTICA vars
 	set_variable = { ITA_ra_air_ace_generation_chance_factor = ITA.ITA_ra_air_ace_generation_chance_factor }
@@ -3569,6 +3570,8 @@ ITA_manage_national_spirits_in_civil_war = {
 	set_variable = { ITA_ra_air_range_factor = ITA.ITA_ra_air_range_factor }
 	set_variable = { ITA_ra_air_superiority_efficiency = ITA.ITA_ra_air_superiority_efficiency }
 	set_variable = { ITA_ra_air_intercept_efficiency = ITA.ITA_ra_air_intercept_efficiency }
+	set_variable = { ITA_ra_sp_air_intercontinental_bomber_speed_factor = ITA.ITA_ra_sp_air_intercontinental_bomber_speed_factor }
+	set_variable = { ITA_ra_sp_air_mothership_aircraft_speed_factor = ITA.ITA_ra_sp_air_mothership_aircraft_speed_factor }
 
 	#Copy REGIA MARINA vars
 	set_variable = { ITA_rm_naval_has_potf_in_combat_attack = ITA.ITA_rm_naval_has_potf_in_combat_attack }
@@ -3593,6 +3596,7 @@ ITA_manage_national_spirits_in_civil_war = {
 	set_variable = { ITA_rm_decryption_factor = ITA.ITA_rm_decryption_factor }
 	set_variable = { ITA_rm_navy_intel_factor = ITA.ITA_rm_navy_intel_factor }
 	set_variable = { ITA_rm_naval_invasion_prep_speed = ITA.ITA_rm_naval_invasion_prep_speed }
+	set_variable = { ITA_rm_sp_naval_ice_carrier_speed_factor = ITA.ITA_rm_sp_naval_ice_carrier_speed_factor }
 
 	#Copy INTERNATIONAL AID (Commie) vars
 	set_variable = { ITA_infantry_equipment_from_leftist_aid = ITA.ITA_infantry_equipment_from_leftist_aid }
@@ -3612,7 +3616,6 @@ ITA_manage_national_spirits_in_civil_war = {
 	set_variable = { ITA_ra_air_cas_present_factor = ITA.ITA_ra_air_cas_present_factor }
 	set_variable = { ITA_ra_air_mission_efficiency = ITA.ITA_ra_air_mission_efficiency }
 	set_variable = { ITA_ra_air_attack = ITA.ITA_ra_air_attack }
-	set_variable = { ITA_ra_air_interception = ITA.ITA_ra_air_interception }
 }
 
 
@@ -3654,7 +3657,7 @@ ITA_remove_king_vittorio_emanuele_as_idea = {
 	set_country_flag = ITA_deposed_the_king
 }
 
-ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed her
+ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
 	if = {
 		limit = {
 			has_completed_focus = ITA_the_new_emperor_of_ethiopia
@@ -4122,69 +4125,72 @@ ITA_add_correct_mafia_rising_modifier_version = {
 
 
 #Change name of States and VPs when appropriate. Expected to be used inside on_state_control_changed. FROM.FROM is state / ROOT is new controller / FROM is former controller
-ITA_change_name_of_state_or_vp = {
-	if = { # Fiume / Rijeka
-		limit = {
-			FROM.FROM = {
-				state = 852 #ISTRIA
-			}
-		}
-		if = { #ITALY CONTROLLER
-			limit = {
-				ROOT = { original_tag = ITA }
-			}
-			set_province_name = { id = 11564 name = VICTORY_POINTS_11564_ITA }
-		}
-		else_if = { #OTHER CONTROLLER
-			limit = {
-				FROM = { original_tag = ITA }
-			}
-			reset_province_name = 11564
-		}
-	}
-	else_if = { # ZARA / ZADAR // Zara / Zadar
-		limit = {
-			FROM.FROM = {
-				state = 163 #ZARA
-			}
-		}
-		if = { #ITALY CONTROLLER
-			limit = {
-				ROOT = { original_tag = ITA }
-			}
-			FROM.FROM = { set_state_name = STATE_163_ITA }
-			set_province_name = { id = 3943 name = VICTORY_POINTS_3943_ITA }
-		}
-		else_if = { #OTHER CONTROLLER
-			limit = {
-				FROM = { original_tag = ITA }
-			}
-			FROM.FROM = { reset_state_name = yes }
-			reset_province_name = 3943
-		}
-	}
-	else_if = { # DODECANESO / DODECANESE // Rodi / Rhodes
-		limit = {
-			FROM.FROM = {
-				state = 164 #DODECANESO
-			}
-		}
-		if = { #ITALY CONTROLLER
-			limit = {
-				ROOT = { original_tag = ITA }
-			}
-			FROM.FROM = { set_state_name = VICTORY_POINTS_10007_ITA }
-			set_province_name = { id = 10007 name = VICTORY_POINTS_10007_ITA }
-		}
-		else_if = { #OTHER CONTROLLER
-			limit = {
-				FROM = { original_tag = ITA }
-			}
-			FROM.FROM = { reset_state_name = yes }
-			reset_province_name = 10007
-		}
-	}
-}
+
+### CHANGED TO A MORE ROBUST SYSTEM
+
+#ITA_change_name_of_state_or_vp = {
+#	if = { # Fiume / Rijeka
+#		limit = {
+#			FROM.FROM = {
+#				state = 852 #ISTRIA
+#			}
+#		}
+#		if = { #ITALY CONTROLLER
+#			limit = {
+#				ROOT = { original_tag = ITA }
+#			}
+#			set_province_name = { id = 11564 name = VICTORY_POINTS_11564_ITA }
+#		}
+#		else_if = { #OTHER CONTROLLER
+#			limit = {
+#				FROM = { original_tag = ITA }
+#			}
+#			reset_province_name = 11564
+#		}
+#	}
+#	else_if = { # ZARA / ZADAR // Zara / Zadar
+#		limit = {
+#			FROM.FROM = {
+#				state = 163 #ZARA
+#			}
+#		}
+#		if = { #ITALY CONTROLLER
+#			limit = {
+#				ROOT = { original_tag = ITA }
+#			}
+#			FROM.FROM = { set_state_name = STATE_163_ITA }
+#			set_province_name = { id = 3943 name = VICTORY_POINTS_3943_ITA }
+#		}
+#		else_if = { #OTHER CONTROLLER
+#			limit = {
+#				FROM = { original_tag = ITA }
+#			}
+#			FROM.FROM = { reset_state_name = yes }
+#			reset_province_name = 3943
+#		}
+#	}
+#	else_if = { # DODECANESO / DODECANESE // Rodi / Rhodes
+#		limit = {
+#			FROM.FROM = {
+#				state = 164 #DODECANESO
+#			}
+#		}
+#		if = { #ITALY CONTROLLER
+#			limit = {
+#				ROOT = { original_tag = ITA }
+#			}
+#			FROM.FROM = { set_state_name = VICTORY_POINTS_10007_ITA }
+#			set_province_name = { id = 10007 name = VICTORY_POINTS_10007_ITA }
+#		}
+#		else_if = { #OTHER CONTROLLER
+#			limit = {
+#				FROM = { original_tag = ITA }
+#			}
+#			FROM.FROM = { reset_state_name = yes }
+#			reset_province_name = 10007
+#		}
+#	}
+#}
 
 #Sets flag for characters to be purged
 ITA_characters_to_purge_effect = {
@@ -5466,22 +5472,47 @@ ITA_add_the_king_of_the_skies_template_production_and_wing = {
 
 
 ITA_add_basic_light_flamethrower_template = {
-	create_equipment_variant = {
-		name = "L3 Lf"
-		type = light_tank_flame_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = flamethrower
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
+	if = {
+		limit = {
+			has_dlc = "Gotterdammerung"
 		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
+		create_equipment_variant = {
+			name = "L3 Lf"
+			type = light_tank_flame_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = flamethrower
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_light_flame_tank_medium"
+			model = ITA_light_flame_tank_entity
 		}
-		icon = "GFX_ITA_basic_light_tank_medium"
+	}
+	else = {
+		create_equipment_variant = {
+			name = "L3 Lf"
+			type = light_tank_flame_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = flamethrower
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_tank_medium"
+		}
 	}
 }
 
@@ -6691,7 +6722,7 @@ ITA_bop_very_low_increase_grandi_side_effect = {
 
 ITA_replace_stuff_based_on_ideology_effect = {
 	ROOT = {
-		if = { # No queen
+		if = { # No king
 			limit = {
 				ITA_has_rejected_monarchy = yes
 			}
@@ -6764,7 +6795,7 @@ ITA_replace_stuff_based_on_ideology_effect = {
 				add_dynamic_modifier = { modifier = ITA_regia_marina_3_alt_dynamic_modifier }
 			}
 		}
-		else = { #queen
+		else = { #KING
 			if = {
 				limit = {
 					has_dynamic_modifier = { modifier = ITA_regio_esercito_alt_dynamic_modifier }

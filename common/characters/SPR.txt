@@ -802,6 +802,7 @@ characters={
 			name=SPA_emilio_mola_vidal
 			portraits={
 				army={
+					large="GFX_portrait_SPA_emilio_mola"
 					small="GFX_idea_generic_army_europe_5"
 				}
 			}
@@ -1174,6 +1175,21 @@ characters={
 				}
 			}
 		}
+	}
+
+	SPA_karl_pius_von_habsburg = {
+		name = SPA_karl_pius_von_habsburg
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SPR_karl_pius_von_habsburg
+			}
+		}
+		#country_leader = {
+		#	ideology = despotism
+		#	traits = { carlist_habsburg_pretender }
+		#	expire="1965.1.1.1"
+		#	id = -1
+		#}
 	}
 
 	SPA_miguel_cabanellas={ # Carlist

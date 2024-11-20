@@ -1,4 +1,4 @@
-characters={ #IGNORE FOR NOW - MEN WON'T EXIST INDEFINITELY
+characters={ 
 	MEN_mayuka_teramoto={
 		name="Mayuka Teramoto"
 		portraits={

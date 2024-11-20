@@ -42,6 +42,7 @@ if = {
 			basic_medium_airframe = 1
 			basic_small_airframe = 1
 			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"
@@ -52,8 +53,15 @@ if = {
 			naval_bomber1 = 1
 			early_bomber = 1
 			CAS1 = 1
+			early_transport_plane = 1
 		}
 	}
+}
+if = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	give_guarantee = BEL
 }
 
 load_oob = "ENG_Motorized"
@@ -80,9 +88,22 @@ set_technology = {
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
-	radio_detection = 1
 	fuel_silos = 1
 	fuel_refining = 1
+}
+
+complete_special_project = {
+	project = sp:sp_air_radar
+	scientist = ENG_robert_watson_watt
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.6
+}
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.5
 }
 
 if = {
@@ -276,8 +297,12 @@ if = {
 	complete_national_focus = uk_mediterranean_focus
 	complete_national_focus = uk_asia_focus
 	complete_national_focus = uk_commonwealth_focus
+	complete_national_focus = uk_industrial_focus
+	complete_national_focus = ENG_vickers_experimental_facility_focus
+	complete_national_focus = ENG_steady_as_she_goes
 
 	give_guarantee = POL
+
 	if = {
 		limit = {
 			NOT = {
@@ -330,7 +355,24 @@ if = {
 		cv_fighter1 = 1
 			}
 		}
-}
+    }
+	if = {
+		limit = {
+			has_dlc = "Gotterdammerung"
+			has_guaranteed = BEL
+		}
+		diplomatic_relation = { 
+			country = BEL
+			relation = guarantee 
+			active = no
+		}
+	}
+
+	complete_special_project = {
+		project = sp:sp_naval_torpedo_cruiser
+		scientist = ENG_charles_goodeve
+		state = 127
+	}
 
 	set_technology = {
 		
@@ -359,8 +401,8 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
+		cavity_magnatron = 1
+		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -499,7 +541,7 @@ recruit_character = ENG_peach
 recruit_character = ENG_cranberry
 recruit_character = ENG_alice
 
-# Order matters - here Darjeeling becomes starting leader
+# Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_winston_churchill
@@ -594,6 +636,11 @@ recruit_character = ENG_sylvia_pankhurst
 recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_thomas_moore
+
+recruit_character = ENG_john_cockcroft
+recruit_character = ENG_charles_goodeve
+recruit_character = ENG_nevil_shute
+recruit_character = ENG_robert_watson_watt
 
 
 
@@ -1510,7 +1557,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Queen Orange Pekoe Class"
+			name = "King George V Class"
 			type = ship_hull_heavy_2
 			name_group = ENG_BB_HISTORICAL
 			parent_version = 0
@@ -1586,7 +1633,7 @@ if = {
 			has_dlc = "No Step Back"
 		}
 		create_equipment_variant = {
-			name = "Mathilda I"
+			name = "Matilda I"
 			type = light_tank_chassis_2
 			parent_version = 0
 			modules = {
@@ -1605,7 +1652,7 @@ if = {
 		}
 
 		create_equipment_variant = {
-			name = "Mathilda II"
+			name = "Matilda II"
 			type = heavy_tank_chassis_1
 			parent_version = 0
 			modules = {

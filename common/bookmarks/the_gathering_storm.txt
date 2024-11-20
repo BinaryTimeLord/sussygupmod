@@ -81,10 +81,11 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
-		"GER"={
+
+		GER = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
+			available = { has_dlc = "Gotterdammerung" }
 			ideas = {
 				sour_loser
 				general_staff
@@ -96,10 +97,11 @@ bookmarks = {
 				GER_river_incident
 			}
 		}
-		"GER"={
+
+		GER = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			available = { NOT = { has_dlc = "Gotterdammerung" } }
 			ideas = {
 				sour_loser
 				general_staff
@@ -111,6 +113,7 @@ bookmarks = {
 				GER_river_incident
 			}
 		}
+
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -269,18 +272,20 @@ bookmarks = {
 				CZE_divided_nation
 			}
 			focuses = {
-				CZE_sudeten_1
+				CZE_an_entente_of_our_own
 				CZE_industrial_legacy
-				CZE_military_research_institute
+				CZE_czechoslovak_legion
 			}
 		}
 
-		"HUN"={
+		HUN = {
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
+			available = {  NOT = { has_dlc = "Gotterdammerung" } }
 			ideas = {
 				HUN_treaty_of_triannon
+				HUN_gombos_trade_treaty
 			}
 			focuses = {
 				HUN_proclaim_the_restoration_of_austria_hungary
@@ -622,7 +627,7 @@ bookmarks = {
 				ETH_military_communism
 			}
 		}
-		"SWI"={
+		SWI = {
 			minor = yes
 			history = "SWI_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -636,7 +641,7 @@ bookmarks = {
 				SWI_the_new_eidgenossenschaft
 			}
 		}
-		FIN={
+		FIN = {
 			minor = yes
 			history = FIN_GATHERING_STORM_DESC
 			ideology = neutrality
@@ -652,7 +657,7 @@ bookmarks = {
 				FIN_New_Finland
 			}
 		}
-		FIN={
+		FIN = {
 			minor = yes
 			history = FIN_GATHERING_STORM_DESC
 			ideology = neutrality
@@ -668,9 +673,9 @@ bookmarks = {
 				FIN_New_Finland
 			}
 		}
-		SWE={
+		SWE = {
 			minor = yes
-			history = "SWE_GATHERING_STORM_DESC"
+			history = SWE_GATHERING_STORM_DESC
 			ideology = democratic
 			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
@@ -684,9 +689,9 @@ bookmarks = {
 				SWE_king_in_council
 			}
 		}
-		"NOR"={
+		NOR = {
 			minor = yes
-			history = "NOR_GATHERING_STORM_DESC"
+			history = NOR_GATHERING_STORM_DESC
 			ideology = democratic
 			ideas = {
 				NOR_complacent_cabinet_ns
@@ -696,10 +701,10 @@ bookmarks = {
 			focuses = {
 				NOR_continue_nygaardsvold_government
 				NOR_the_stumbling_storting
-				NOR_drobak_coastal_fort			
+				NOR_drobak_coastal_fort		
 			}
 		}
-		"DEN"={
+		DEN = {
 			minor = yes
 			history = DEN_GATHERING_STORM_DESC
 			ideology = democratic
@@ -714,7 +719,22 @@ bookmarks = {
 				DEN_pan_scandinavianism
 			}
 		}	
-		"BRA"={
+		ICE = {
+			minor = yes
+			history = ICE_GATHERING_STORM_DESC
+			ideology = democratic
+			available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				ICE_christian_x
+				ICE_the_icelandic_economy_modifier_fake_idea
+			}
+			focuses = {
+				ICE_the_kingdom_of_iceland
+				ICE_the_viking_spirit
+				ICE_republicanism
+			}
+		}
+		BRA = {
 			minor = yes
 			history = BRA_GATHERING_STORM_DESC
 			ideology = democratic
@@ -733,7 +753,7 @@ bookmarks = {
 				BRA_end_the_state_of_emergency
 			}
 		}
-		"CHL"={
+		CHL = {
 			minor = yes
 			history = CHL_GATHERING_STORM_DESC
 			ideology = democratic
@@ -749,7 +769,7 @@ bookmarks = {
 				CHL_avenge_the_pacification_of_araucania
 			}
 		}
-		"ARG"={
+		ARG = {
 			minor = yes
 			history = ARG_GATHERING_STORM_DESC
 			ideology = neutrality
@@ -763,6 +783,70 @@ bookmarks = {
 				ARG_islas_del_atlantico_sur
 				ARG_a_red_south_america
 				ARG_south_american_unity
+			}
+		}
+		AUS = {
+			minor = yes
+			history = AUS_GATHERING_STORM_DESC #might need an edit because it is not very good at the moment.
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				AUS_treaty_of_saint_germain_en_laye
+				AUS_austrofascism_fake_ns
+				AUS_widespread_unemployment
+			}
+			focuses = {
+				AUS_legacy_of_the_empire
+				AUS_repeal_the_may_constitution
+				AUS_second_brothers_war
+			}
+		}
+		HUN = {
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				HUN_treaty_of_triannon_wuw
+				HUN_gombos_trade_treaty
+				HUN_hungarian_national_defense_association
+			}
+			focuses = {
+				wuw_HUN_renovato_imperii
+				wuw_HUN_strengthen_horthys_reign
+				wuw_HUN_reviving_the_spirit_of_1848
+			}
+		}
+		BEL = {
+			minor = yes
+			history = BEL_GATHERING_STORM_DESC
+			ideology = democratic
+			available = { has_dlc = "Gotterdammerung" } 
+			ideas = {
+				BEL_chasseurs_ardennais_ns
+				BEL_scars_of_ww1_ns_fake
+				BEL_corruption_ns_fake
+			}
+			focuses = {
+				BEL_v_for_victory
+				BEL_belgica
+				BEL_legacy_of_the_great_war
+			}
+		}
+		COG = {
+			minor = yes
+			history = COG_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				COG_the_invisible_roof
+				COG_vast_decentralized_state_idea
+				COG_force_publique_fake_idea
+			}
+			focuses = {
+				COG_governor_general_pierre_ryckmans
+				COG_national_committee_for_liberation
+				COG_the_kingdom_of_kongo_focus
 			}
 		}
 		effect = {

@@ -198,11 +198,13 @@ if = {
 				basic_medium_airframe = 1
 				engines_2 = 1
 				improved_small_airframe = 1
+				bba_early_transport_plane = 1
 			}
 		else = {
 			set_air_oob = "POL_1939_air_legacy"
 			set_technology = {
 				tactical_bomber1 = 1
+				early_transport_plane = 1
 			}
 		}
 	}
@@ -223,7 +225,6 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -243,6 +244,9 @@ if = {
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
 		concentrated_industry4 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = {
@@ -437,13 +441,19 @@ if = {
 	recruit_character = POL_henryk_floyar_rajchman
 	recruit_character = POL_sejmik_regency
 }
+if = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	recruit_character = POL_jan_zumbach
+}
 
 if = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_operative_leader = {
-		name = "Roman Czerniawski"
+		name = POL_roman_czerniawsi
 		GFX = GFX_portrait_roman_czerniawski
 		traits = { }
 		bypass_recruitment = no
@@ -452,7 +462,7 @@ if = {
 	}
 
 	create_operative_leader = {
-		name = "Krystyna Skarbek"
+		name = POL_krystyna_skarbek
 		GFX = GFX_portrait_krystyna_skarbek
 		traits = { operative_commando operative_seducer }
 		bypass_recruitment = no
@@ -461,6 +471,7 @@ if = {
 		nationalities = { POL }
 	}
 }
+
 if = {
 	limit = {
 		NOT = {

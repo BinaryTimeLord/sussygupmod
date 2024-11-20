@@ -695,12 +695,12 @@ on_actions = {
 						exists = yes 
 						date > 1938.10.29 # 20 days before Queen Maud death. 
 					}
-					if = { # The Queen Dies
+					if = { # The King Dies
 						limit = {
 							has_country_flag = NOR_has_a_rikstanken
 							has_completed_focus = NOR_the_chamberlains_overture
 						}
-						if = { # The Queen Dies
+						if = { # The King Dies
 							limit = {
 								has_completed_focus = NOR_shield_of_the_north
 								has_war = yes
@@ -1376,7 +1376,7 @@ on_actions = {
 					ROOT = { original_tag = SOV }
 					FROM = { original_tag = GER }
 					FIN = {
-						country_exists = yes
+						exists = yes
 						has_country_flag = FIN_pact_for_continuation_war_flag
 						is_subject = no
 						NOT = {
@@ -1630,25 +1630,25 @@ on_actions = {
 			}
 		}
 
-		#RENAME STATES/VPs
-		effect = {
-			IF = {
-				limit = {
-					FIN_state_or_vp_name_should_change = yes
-				}
-				FIN_change_name_of_state_or_vp = yes
-			}
-		}
+		##RENAME STATES/VPs
+		#effect = {
+		#	IF = {
+		#		limit = {
+		#			FIN_state_or_vp_name_should_change = yes
+		#		}
+		#		FIN_change_name_of_state_or_vp = yes
+		#	}
+		#}
 
-		#RENAME STATES/VPs
-		effect = {
-			IF = {
-				limit = {
-					SWE_state_or_vp_name_should_change = yes
-				}
-				SWE_change_name_of_state_or_vp = yes
-			}
-		}
+		##RENAME STATES/VPs
+		#effect = {
+		#	IF = {
+		#		limit = {
+		#			SWE_state_or_vp_name_should_change = yes
+		#		}
+		#		SWE_change_name_of_state_or_vp = yes
+		#	}
+		#}
 
 		# FINNISH WEAPON CACHES - Communicate new controller about Finnish Weapon Caches if first time controlling state with this modifier
 		effect = { #	ROOT is new controller, FROM is old controller, FROM.FROM is state ID.
@@ -1822,159 +1822,159 @@ on_actions = {
 					clr_state_flag = DEN_home_guard_deployed_flag
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				if = { 
-					limit = {
-						FROM.FROM = {
-							state = 110
-						}
-					}
-					if = { #Oslo to Christiania
-						limit = {
-							ROOT = {
-								original_tag = DEN
-							}
-						}	
-						set_province_name = { id = 6115 name = VICTORY_POINTS_6115_DEN }
-					}
-					else_if = { #Christiania back to Oslo
-						limit = {
-							FROM = {
-								original_tag = DEN
-							}
-						}
-						reset_province_name = 6115
-					}
-				}
-				if = {
-					limit = {
-						FROM.FROM = {
-							state = 138
-						}
-					}
-					if = { #Skåne to Skaanelandene
-						limit = {
-							ROOT = {
-								original_tag = DEN
-							}
-						}	
-						FROM.FROM = { set_state_name = STATE_138_DEN }
-						set_province_name = { id = 9279 name = VICTORY_POINTS_9279_DEN }
-					}
-					if = { #Skaanelandene back to Skåne
-						limit = {
-							FROM = {
-								original_tag = DEN
-							}
-						}
-						FROM.FROM = { reset_state_name = yes }
-						reset_province_name = 9279
-					}
-				}
-				if = {
-					limit = {
-						FROM.FROM = {
-							state = 909
-						}
-					}
-					if = { #Schleswig to Sydslesvig
-						limit = {
-							ROOT = {
-								original_tag = DEN
-							}
-						}	
-						FROM.FROM = { set_state_name = STATE_909_DEN }
-					}
-					if = { #Sydslesvig back to Schleswig
-						limit = {
-							FROM = {
-								original_tag = DEN
-							}
-						}
-						FROM.FROM = { reset_state_name = yes }
-					}
-				}
-				if = {
-					limit = {
-						FROM.FROM = {
-							state = 58
-						}
-					}
-					if = { #Holstein to Holsten
-						limit = {
-							ROOT = {
-								original_tag = DEN
-							}
-						}	
-						FROM.FROM = { set_state_name = STATE_58_DEN }
-					}
-					if = { #Holsten back to Holstein
-						limit = {
-							FROM = {
-								original_tag = DEN
-							}
-						}
-						FROM.FROM = { reset_state_name = yes }
-					}
-				}
-				if = {
-					limit = {
-						FROM.FROM = {
-							state = 113
-						}
-					}
-					if = { #From Dublin to Dyflin
-						limit = {
-							OR = {
-								ROOT = { original_tag = ICE }
-								ROOT = { original_tag = NOR	}
-								ROOT = { original_tag = DEN }
-							}
-						}	
-						set_province_name = { id = 11293 name = VICTORY_POINTS_11293_DEN }
-					}
-					if = { #From Dyflin back to Dublin
-						limit = {
-							OR = {
-								FROM = { original_tag = ICE }
-								FROM = { original_tag = NOR }
-								FROM = { original_tag = DEN }
-							}
-						}	
-						reset_province_name = 11293
-					}
-				}
-				if = {
-					limit = {
-						FROM.FROM = {
-							state = 130
-						}
-					}
-					if = { #From Yorkshire to Jorvik
-						limit = {
-							OR = {
-								ROOT = { original_tag = ICE }
-								ROOT = { original_tag = NOR	}
-								ROOT = { original_tag = DEN }
-							}
-						}	
-						FROM.FROM = { set_state_name = STATE_130_DEN }
-					}
-					if = { #From Jorvik back to Yorkshire
-						limit = {
-							OR = {
-								FROM = { original_tag = ICE }
-								FROM = { original_tag = NOR }
-								FROM = { original_tag = DEN }
-							}
-						}	
-						FROM.FROM = { reset_state_name = yes }
-					}
-				}
-			}
+			#if = {
+			#	limit = {
+			#		has_dlc = "Arms Against Tyranny"
+			#	}
+			#	if = { 
+			#		limit = {
+			#			FROM.FROM = {
+			#				state = 110
+			#			}
+			#		}
+			#		if = { #Oslo to Christiania
+			#			limit = {
+			#				ROOT = {
+			#					original_tag = DEN
+			#				}
+			#			}	
+			#			set_province_name = { id = 6115 name = VICTORY_POINTS_6115_DEN }
+			#		}
+			#		else_if = { #Christiania back to Oslo
+			#			limit = {
+			#				FROM = {
+			#					original_tag = DEN
+			#				}
+			#			}
+			#			reset_province_name = 6115
+			#		}
+			#	}
+			#	#if = {
+			#	#	limit = {
+			#	#		FROM.FROM = {
+			#	#			state = 138
+			#	#		}
+			#	#	}
+			#	#	if = { #Skåne to Skaanelandene
+			#	#		limit = {
+			#	#			ROOT = {
+			#	#				original_tag = DEN
+			#	#			}
+			#	#		}	
+			#	#		FROM.FROM = { set_state_name = STATE_138_DEN }
+			#	#		set_province_name = { id = 9279 name = VICTORY_POINTS_9279_DEN }
+			#	#	}
+			#	#	if = { #Skaanelandene back to Skåne
+			#	#		limit = {
+			#	#			FROM = {
+			#	#				original_tag = DEN
+			#	#			}
+			#	#		}
+			#	#		FROM.FROM = { reset_state_name = yes }
+			#	#		reset_province_name = 9279
+			#	#	}
+			#	#}
+			#	#if = {
+			#	#	limit = {
+			#	#		FROM.FROM = {
+			#	#			state = 909
+			#	#		}
+			#	#	}
+			#	#	if = { #Schleswig to Sydslesvig
+			#	#		limit = {
+			#	#			ROOT = {
+			#	#				original_tag = DEN
+			#	#			}
+			#	#		}	
+			#	#		FROM.FROM = { set_state_name = STATE_909_DEN }
+			#	#	}
+			#	#	if = { #Sydslesvig back to Schleswig
+			#	#		limit = {
+			#	#			FROM = {
+			#	#				original_tag = DEN
+			#	#			}
+			#	#		}
+			#	#		FROM.FROM = { reset_state_name = yes }
+			#	#	}
+			#	#}
+			#	#if = {
+			#	#	limit = {
+			#	#		FROM.FROM = {
+			#	#			state = 58
+			#	#		}
+			#	#	}
+			#	#	if = { #Holstein to Holsten
+			#	#		limit = {
+			#	#			ROOT = {
+			#	#				original_tag = DEN
+			#	#			}
+			#	#		}	
+			#	#		FROM.FROM = { set_state_name = STATE_58_DEN }
+			#	#	}
+			#	#	if = { #Holsten back to Holstein
+			#	#		limit = {
+			#	#			FROM = {
+			#	#				original_tag = DEN
+			#	#			}
+			#	#		}
+			#	#		FROM.FROM = { reset_state_name = yes }
+			#	#	}
+			#	#}
+			#	#if = {
+			#	#	limit = {
+			#	#		FROM.FROM = {
+			#	#			state = 113
+			#	#		}
+			#	#	}
+			#	#	if = { #From Dublin to Dyflin
+			#	#		limit = {
+			#	#			OR = {
+			#	#				ROOT = { original_tag = ICE }
+			#	#				ROOT = { original_tag = NOR	}
+			#	#				ROOT = { original_tag = DEN }
+			#	#			}
+			#	#		}	
+			#	#		set_province_name = { id = 11293 name = VICTORY_POINTS_11293_DEN }
+			#	#	}
+			#	#	if = { #From Dyflin back to Dublin
+			#	#		limit = {
+			#	#			OR = {
+			#	#				FROM = { original_tag = ICE }
+			#	#				FROM = { original_tag = NOR }
+			#	#				FROM = { original_tag = DEN }
+			#	#			}
+			#	#		}	
+			#	#		reset_province_name = 11293
+			#	#	}
+			#	#}
+			#	#if = {
+			#	#	limit = {
+			#	#		FROM.FROM = {
+			#	#			state = 130
+			#	#		}
+			#	#	}
+			#	#	if = { #From Yorkshire to Jorvik
+			#	#		limit = {
+			#	#			OR = {
+			#	#				ROOT = { original_tag = ICE }
+			#	#				ROOT = { original_tag = NOR	}
+			#	#				ROOT = { original_tag = DEN }
+			#	#			}
+			#	#		}	
+			#	#		FROM.FROM = { set_state_name = STATE_130_DEN }
+			#	#	}
+			#	#	if = { #From Jorvik back to Yorkshire
+			#	#		limit = {
+			#	#			OR = {
+			#	#				FROM = { original_tag = ICE }
+			#	#				FROM = { original_tag = NOR }
+			#	#				FROM = { original_tag = DEN }
+			#	#			}
+			#	#		}	
+			#	#		FROM.FROM = { reset_state_name = yes }
+			#	#	}
+			#	#}
+			#}
 		}
 		effect = { #Greenland's new Controller gets all of Greenland
 			if = {

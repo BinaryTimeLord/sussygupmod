@@ -101,7 +101,6 @@ recruit_character = SLO_momoga
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -111,6 +110,9 @@ recruit_character = SLO_momoga
 		fuel_silos = 1
 		construction1 = 1
 		concentrated_industry = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = {

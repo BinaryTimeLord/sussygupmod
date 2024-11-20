@@ -468,7 +468,7 @@
  DIPLOMACY_NOFACTION:1 "§T$TARGET|UH$ is not a member of any faction.§!"
  DIPLOMACY_FACTION_DESC:0 "A faction is a coalition of nation states that are allied to each other. If someone declares war on a faction member, all other faction members will automatically join the war. Faction members can be asked to join offensive wars, but they may refuse.\n\nOnly the faction leader may invite new members to the faction."
  anti_comintern_pact_opinion:0 "Anti-Comintern Pact Signatory"
- anti_soviet_pact_call_refused:0 "Refused To Honor Anti-Soviet Pact"
+ anti_soviet_pact_call_refused: "Refused To Honor Anti-[SOV.GetAdjective] Pact"
  refused_anti_comintern_pact_opinion:0 "Rejected Anti-Comintern Pact"
  tripartite_pact_opinion:1 "Anti-Soviet Pact Signatory"
  refused_tripartite_pact_opinion:1 "Rejected Anti-Soviet Pact"
@@ -621,6 +621,7 @@
  ger_cze_diplomatic_focus:0 "Kuro-Gregor Diplomacy Focus"
  ger_ita_alliance_focus:0 "Kuro-Anzio Alliance Focus"
  ger_spa_alliance_focus:0 "Kuro-Blue Divison Alliance Focus"
+ ger_por_alliance_focus: "German-Portuguese Alliance Focus"
  ger_pol_diplomacy_focus:0 "Kuro-Bonple Diplomacy Focus"
  ger_naval_intimidation_focus:0 "Kuro Naval Intimidation Focus"
  GER_anschluss_rejected:0 "Ooarai refused Anschluss"
@@ -880,7 +881,7 @@
  small_increase:0 "Increase in opinion"
  medium_increase:0 "Increase in opinion"
  large_increase:0 "Increase in opinion"
- FRA_ban_communism:0 "Banned Communism"
+ FRA_ban_communism: "Ban Communism"
  FRA_leftist_rhetoric_communism:0 "Leftist Rhetoric"
  FRA_leftist_rhetoric_democratic:0 "Leftist Rhetoric"
  FRA_leftist_rhetoric_fascism:0 "Leftist Rhetoric"
@@ -1277,6 +1278,7 @@
  POR_portuguese_trade_minor:0 "Portuguese trade"
  POR_rejected_the_royal_iberian_alliance:0 "Rejected the Royal Iberian Alliance"
  POR_the_fifth_empire_has_threatening_ambitions:0 "The Fifth Empire has threatening ambitions"
+ HUN_has_threatening_ambitions: "Hungary has threatening ambitions"
  POR_iberian_communism:0 "Iberian Communism"
  GRE_discarded_the_schachtplan:0 "Discarded the Schachtplan"
  GRE_reneged_on_debt:0 "Reneged on Debt"
@@ -1303,6 +1305,7 @@
  TUR_clodius_agreement:0 "The Clodius Agreement"
  TUR_imperialist_puppets:0 "Imperialist Puppet"
  TUR_aiding_our_enemies:0 "Aiding our Enemies"
+ BUL_hindered_planned_expansion: "Hindered Planned Expansion"
  TUR_likeminded_ultranationalists:0 "Likeminded Ultranationalists"
  TUR_righteous_traditionalists:0 "Righteous Traditionalists"
  TUR_assertive_regional_defender:0 "Assertive Regional Defender"
@@ -1357,7 +1360,7 @@
  BFTB_incongruous_neighbors:0 "Incongruous Neighbors"
  BFTB_balkan_pact_ally:0 "The Balkan Pact"
  BFTB_balkan_pact_enemy:0 "The Balkan Pact"
-  BFTB_ROM_abandoned_us:0 "Abandoned Us"
+ BFTB_ROM_abandoned_us:0 "Abandoned Us"
  BFTB_ROM_stood_by_us:0 "Stood By Us"
  DIPLOMACY_JOINED_WAR_EXTRA_CALLED_SINGLE:0 "\n$COUNTRY|UY$ also joins the war along with them."
  DIPLOMACY_JOINED_WAR_EXTRA_CALLED_ENTRY:0 "$COUNTRY|Y$"
@@ -1595,7 +1598,7 @@
 
 #### Shared Military Branch ####
 
-SMB_naval_arms_race: "Trigered South American Naval Arms Race"
+SMB_naval_arms_race: "Triggered South American Naval Arms Race"
 
 #### ARGENTINA ####
 
@@ -1608,3 +1611,7 @@ ARG_close_ties_with_america_idea: "Mutually Beneficial Support"
 ARG_close_ties_with_america_idea_desc: "A symbol of closer ties between [USA.GetNameDef] and [ARG.GetNameDef]."
 ARG_embargoed_us: "[ARG.GetNameDefCap] Embargoed Us"
 ARG_embargoed_us_desc: "[ARG.GetNameDefCap] embargoed us due to pressure from [USA.GetNameDef]."
+
+#Belgium
+
+BEL_embargoed_us: "Belgium embargoed us"

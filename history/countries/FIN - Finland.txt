@@ -509,7 +509,6 @@ set_convoys = 5
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -537,6 +536,10 @@ set_convoys = 5
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		submarine_operations = 1
+	}
+
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 
 	# TECH ADJUSTMENTS

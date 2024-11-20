@@ -153,7 +153,7 @@ news_event = {
 	}
 }
 
-# Anchovy Assassinated/Italian Coup
+# Mussolini Assassinated/Italian Coup
 news_event = {
 	id = wtt_news.5
 	title = wtt_news.5.t
@@ -1929,7 +1929,7 @@ news_event = {
 	}
 }
 
-# Manchukuo - Empress declares herself Empress
+# Manchukuo - Emperor declares himself Emperor
 news_event = {
 	id = wtt_news.44
 	title = wtt_news.44.t
@@ -2143,7 +2143,7 @@ news_event = {
 	}
 }
 
-# Germany - Maho assassinated by Wehrmacht officers
+# Germany - Hitler assassinated by Wehrmacht officers
 news_event = {
 	id = wtt_news.50
 	title = wtt_news.50.t
@@ -2189,7 +2189,7 @@ news_event = {
 		}
 	}
 }
-# Germany - assassination attempt on Maho by Wehrmacht officers
+# Germany - assassination attempt on Hitler by Wehrmacht officers
 news_event = {
 	id = wtt_news.51
 	title = wtt_news.51.t
@@ -2236,7 +2236,7 @@ news_event = {
 	}
 }
 
-# Germany - Maho assassinated by SS
+# Germany - Hitler assassinated by SS
 news_event = {
 	id = wtt_news.52
 	title = wtt_news.51.t
@@ -2642,37 +2642,14 @@ news_event = {
 	option = {
 		name = wtt_news.62.a
 		trigger = {
-			OR = {
-				original_tag = HOL
-				original_tag = BEL
-				original_tag = LUX
-				original_tag = FRA
-				original_tag = ITA
-				original_tag = GER
-				original_tag = WGR
-				AND = {
-					original_tag = ENG
-					has_government = fascism
-				}
-			}
-			NOT = { has_war_with = FROM }
+			original_tag = FROM
 		}
 	}
 	option = {
 		name = wtt_news.62.b
 		trigger = {
-			NOT = { original_tag = HOL }
-			NOT = { original_tag = BEL }
-			NOT = { original_tag = LUX }
-			NOT = { original_tag = FRA }
-			NOT = { original_tag = ITA }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = WGR }
-			NOT = { 
-				AND = {
-					original_tag = ENG
-					has_government = fascism
-				}
+			NOT = {
+				original_tag = FROM
 			}
 			NOT = { has_war_with = FROM }
 		}
@@ -2680,6 +2657,9 @@ news_event = {
 	option = {
 		name = wtt_news.53.c
 		trigger = {
+			NOT = {
+				original_tag = FROM
+			}
 			has_war_with = FROM
 		}
 	}

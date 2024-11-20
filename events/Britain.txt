@@ -21,17 +21,15 @@ country_event = {
 				modifier = tizard_relations
 			}
 		}
-		add_tech_bonus = {
-			name = tizard_mission_focus
-			uses = 1
-			bonus = 1.0
-			category = light_fighter
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.75
 		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
-			bonus = 1.0
-			uses = 2
-			category = radar_tech
+			uses = 1
+			bonus = 1
+			category = light_fighter
 		}
 	}
 	
@@ -71,15 +69,19 @@ country_event = {
 	
 	option = {
 		name = britain.2.a
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.75
+		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
-			bonus = 1.0
+			bonus = 0.5 # was 1
 			category = light_fighter
 		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
-			bonus = 1.0
-			uses = 2
+			bonus = 0.5 # was 1
+			uses = 1 # was 2
 			category = radar_tech
 		}
 		USA = {
@@ -223,7 +225,7 @@ country_event = {
 	}
 }
 
-# Darjeeling Resigns
+# Chamberlain Resigns
 country_event = {
 	id = britain.9
 	title = britain.9.t
@@ -277,7 +279,7 @@ country_event = {
 }
 
 
-# Darjeeling Passes Away
+# Chamberlain Passes Away
 country_event = {
 	id = britain.10
 	title = britain.10.t
@@ -556,7 +558,7 @@ country_event = {
 		YUG = {
 			add_ai_strategy = {
 				type = alliance
-				id = "ENG"
+				id = ENG
 				value = 200
 			}
 		}
@@ -592,7 +594,7 @@ country_event = {
 	}
 }
 
-# Queen dies
+# King dies
 #country_event = {
 #	id = britain.16
 #	title = britain.16.t
@@ -626,7 +628,7 @@ country_event = {
 #	}
 #}
 
-# Queen abdicates
+# King abdicates
 #country_event = {
 #	id = britain.17
 #	title = britain.17.t
@@ -660,7 +662,7 @@ country_event = {
 #	}
 #}
 
-# Return of the Nazi Queen
+# Return of the Nazi King
 country_event = {
 	id = britain.18
 	title = britain.18.t
@@ -822,7 +824,7 @@ country_event = {
 	}
 }
 
-# Darjeeling Resigns
+# Stanley Baldwin Resigns
 country_event = {
     id = britain.22
     title = britain.22.t

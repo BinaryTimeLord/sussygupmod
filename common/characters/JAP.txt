@@ -904,25 +904,33 @@ characters={
 		}
 	}
 
-	JAP_isoroku_yamamoto={
-		name=JAP_isoroku_yamamoto
-		portraits={
-			navy={
-				small="GFX_idea_isoroku_yamamoto"
+	JAP_isoroku_yamamoto = {
+		name = JAP_isoroku_yamamoto
+		portraits = {
+			navy = {
+				large = GFX_portrait_JAP_isoroku_yamamoto
+				small = GFX_idea_isoroku_yamamoto
 			}
-			army={
-				large=GFX_portrait_JAP_isoroku_yamamoto
+			civilian = {
+				large = GFX_portrait_JAP_isoroku_yamamoto_scientist
 			}
 		}
 		
-		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager }
-			skill=5
-			attack_skill=5
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=6
-			legacy_id=0
+		navy_leader = {
+			traits = { bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 6
+			legacy_id = 0
+		}
+
+		scientist = {
+			traits = { scientist_trait_submarine_specialist }
+			skills = {
+				specialization_naval = 2
+			}
 		}
 	}
 
@@ -1135,6 +1143,612 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=2
 			legacy_id=0
+		}
+	}
+
+
+	### THEORISTS ###
+
+	# Yamashita up there
+
+	# Terauchi up there
+
+	# Yamamoto up there
+
+	JAP_minoru_genda={
+		name=JAP_minoru_genda
+		portraits={
+			army={
+				small="GFX_idea_minoru_genda"
+			}
+		}
+		advisor={
+		cost = 100
+		slot = theorist
+		idea_token = minoru_genda
+		ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { naval_theorist }
+		}
+	}
+
+	JAP_yoshitoshi_tokugawa={
+		name=JAP_yoshitoshi_tokugawa
+		portraits={
+			army={
+				small="GFX_idea_yoshitoshi_tokugawa"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = yoshitoshi_tokugawa
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				assault_avaition
+			}
+		}
+	}
+
+	JAP_hino_kumazo={
+		name=JAP_hino_kumazo
+		portraits={
+			army={
+				small="GFX_idea_hino_kumazo"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = hino_kumazo
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	### ARMY CHIEFS ###
+
+	JAP_kanin_kotohito={
+		name=JAP_kanin_kotohito
+		portraits={
+			army={
+				small="GFX_idea_kanin_kotohito"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = kanin_kotohito
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost =  50
+			ai_will_do = {
+				base = 5
+			}
+		}
+	}
+
+	JAP_hajime_sugiyama={
+		name=JAP_hajime_sugiyama
+		portraits={
+			army={
+				small="GFX_idea_hajime_sugiyama"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = hajime_sugiyama
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_completed_focus = JAP_army_expansion
+			}
+			traits = {
+				army_chief_drill_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	JAP_hideki_tojo={
+		name=JAP_hideki_tojo
+		portraits={
+			army={
+				small="GFX_idea_hideki_tojo"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = hideki_tojo
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 5
+			}
+		}
+	}
+
+	### NAVY CHIEFS ###
+
+	JAP_fushimi_hiroyasu={
+		name=JAP_fushimi_hiroyasu
+		portraits={
+			army={
+				small="GFX_idea_fushimi_hiroyasu"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = fushimi_hiroyasu
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.200
+			}
+		}
+	}
+
+	JAP_osami_nagano={
+		name=JAP_osami_nagano
+		portraits={
+			army={
+				small="GFX_idea_osami_nagano"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = osami_nagano
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 0.200
+			}
+		}
+	}
+
+	JAP_shigetaro_shimada={
+		name=JAP_shigetaro_shimada
+		portraits={
+			army={
+				small="GFX_idea_shigetaro_shimada"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = shigetaro_shimada
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.200
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Doihara up there
+
+	JAP_torashiro_kawabe={
+		name=JAP_torashiro_kawabe
+		portraits={
+			army={
+				small="GFX_idea_torashiro_kawabe"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = torashiro_kawabe
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				air_chief_night_operations_1
+			}
+			cost =  50
+			ai_will_do = {
+				base = 10
+			}
+		}
+	}
+
+	JAP_korechika_anami={
+		name=JAP_korechika_anami
+		portraits={
+			army={
+				small="GFX_idea_korechika_anami"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = korechika_anami
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost =  50
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Hata up there
+
+	# Okamura up there
+
+	# Imamura up there
+
+	# Toyoda up there
+
+	JAP_mitsuo_fuchida={
+		name=JAP_mitsuo_fuchida
+		portraits={
+			army={
+				small="GFX_idea_mitsuo_fuchida"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = mitsuo_fuchida
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				air_tactical_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_nishizo_tsukahara={
+		name=JAP_nishizo_tsukahara
+		portraits={
+			army={
+				small="GFX_idea_nishizo_tsukahara"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = nishizo_tsukahara
+			ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				air_naval_strike_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	JAP_tateo_kato={
+		name=JAP_tateo_kato
+		portraits={
+			army={
+				small="GFX_idea_tateo_kato"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = tateo_kato
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				air_air_combat_training_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 0.800
+			}
+		}
+	}
+	
+	JAP_matome_ugaki={
+		name=JAP_matome_ugaki
+		portraits={
+			army={
+				small="GFX_idea_matome_ugaki"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = matome_ugaki
+			ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	JAP_chuichi_nagumo={
+		name=JAP_chuichi_nagumo
+		portraits={
+			army={
+				small="GFX_idea_chuichi_nagumo"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = chuichi_nagumo
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_carrier_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	JAP_sanzo_nosaka={
+		name=JAP_sanzo_nosaka
+		portraits={
+			army={
+				small="GFX_idea_sanzo_nosaka"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = sanzo_nosaka
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_the_unthinkable_option 
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	JAP_kijuro_shidehara={
+		name=JAP_kijuro_shidehara
+		portraits={
+			army={
+				small="GFX_idea_kijuro_shidehara"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kijuro_shidehara
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_strengthen_civilian_government 
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	JAP_kingoro_hashimoto={
+		name=JAP_kingoro_hashimoto
+		portraits={
+			army={
+				small="GFX_idea_kingoro_hashimoto"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kingoro_hashimoto
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	JAP_mitsumasa_yonai={
+		name=JAP_mitsumasa_yonai
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_mitsumasa_yonai
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+
+	JAP_hiroshi_oshima={
+		name=JAP_hiroshi_oshima
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_hiroshi_oshima
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				prince_of_terror 
+			}
+			ai_will_do = {
+				base = 0.300
+			}
+		}
+	}
+
+	JAP_chiune_sugihara={
+		name=JAP_chiune_sugihara
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_chiune_sugihara
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+			ai_will_do = {
+				base = 0.100
+			}
+		}		
+	}
+
+	JAP_takuo_godo={
+		name=JAP_takuo_godo
+		portraits={
+			army={
+				small="GFX_idea_takuo_godo"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = takuo_godo
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				base = 4
+			}
 		}
 	}
 
@@ -1923,4 +2537,173 @@ characters={
 			}
 		}
 	}
+	
+	# Illusive Gentleman auto-generated
+
+
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+	#JAP_isoroku_yamamoto up there
+
+	JAP_yoshio_nishina = {
+		name = JAP_yoshio_nishina
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_yoshio_nishina
+				small = GFX_idea_yoshio_nishina
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+
+		#advisor = {
+		#	cost = 100
+		#	slot = theorist
+		#	idea_token = yoshio_nishina
+		#	ledger = army
+		#	allowed = {
+		#		original_tag = JAP
+		#	}
+		#	research_bonus = {
+		#		nuclear = 0.150
+		#	}
+		#	traits = {
+		#		nuclear_scientist
+		#	}
+		#}
+	}
+
+	JAP_hideo_itokawa = {
+		name = JAP_hideo_itokawa
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_hideo_itokawa
+				small = GFX_idea_hideo_itokawa
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+
+		#advisor = {
+		#	cost = 100
+		#	slot = theorist
+		#	idea_token = hideo_itokawa
+		#	ledger = air
+		#	allowed = {
+		#		original_tag = JAP
+		#	}
+		#	research_bonus = {
+		#		rocketry = 0.150
+		#	}
+		#	traits = {
+		#		rocket_scientist
+		#	}
+		#}
+	}
+
+	JAP_kijiro_nambu = {
+		name = JAP_kijiro_nambu
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_kijiro_nambu
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+
+	JAP_keiji_fukuda = {
+		name = JAP_keiji_fukuda
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_keiji_fukuda
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_surface_ship_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
+	JAP_jiro_horikoshi = {
+		name = JAP_jiro_horikoshi
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_jiro_horikoshi
+			}
+		}
+
+		scientist = {
+
+			traits = { scientist_trait_aircraft_specialist }
+
+			skills = {
+				specialization_air = 2
+			}
+
+			visible = {
+				owner = {
+					has_completed_focus = JAP_agility_focus
+				}
+			}
+		}
+	}
+
+	JAP_hideki_yukawa = {
+		name = JAP_hideki_yukawa
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_hideki_yukawa
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_power_expert }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+
+	JAP_yoji_ito = {
+		name = JAP_yoji_ito
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_yoji_ito
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_electronics_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+
 }

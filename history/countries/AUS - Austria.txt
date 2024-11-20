@@ -1,6 +1,20 @@
-﻿capital = 4
+﻿capital = 4 # Vienna
 
-oob = "AUS_1936"
+IF = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	set_oob = "AUS_ww_1936"
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_dlc = "Gotterdammerung"
+			}
+		}
+		set_oob = "AUS_1936"
+	}
+}
+
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "AUS_1936_air_bba"
@@ -18,6 +32,15 @@ if = {
 		}
 	}
 }
+
+
+### Store Austrian initial states - Used for removing German cores in Austria when German capitulates after having done successful Anschluss
+every_owned_state = {
+	limit = {
+		is_core_of = ROOT
+	}
+	add_to_array = { ROOT.AUS_initial_states = THIS }
+}
 set_research_slots = 3
 
 set_technology = {
@@ -29,7 +52,30 @@ set_technology = {
 	tech_mountaineers = 1
 	tech_trucks = 1
 	basic_train = 1
+	gw_artillery = 1
 }
+
+IF = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+	}
+
+	ELSE = {
+		set_technology = {
+			gwtank = 1
+		}
+	}
+}
+
+IF = {
+	limit = { has_dlc = "La Resistance" }
+		set_technology = {
+			armored_car1 = 1
+		}
+}
+
+
 
 recruit_character = AUS_miho_nishizumi
 recruit_character = AUS_saori_takebe
@@ -71,7 +117,7 @@ recruit_character = AUS_rum
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1930.11.9"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -84,3 +130,6 @@ set_popularities = {
 }
 
 set_stability = 0.50
+
+
+
