@@ -3836,9 +3836,6 @@ country_event = { #miho invite - nakasauga
 				set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
 			}
 			custom_effect_tooltip = anschluss_mefo_bills_tt
-			hidden_effect = { # Having it appear twice might be confusing
-				GER_mefo_bills_level_down = yes
-			}
 			add_to_variable = { var = GER_mefo_bill_counter value = -10 }
 			
 			if = {

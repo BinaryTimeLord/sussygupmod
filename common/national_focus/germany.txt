@@ -8665,7 +8665,6 @@ focus = {
 		relative_position_id = GER_absolve_koume_debt
 		
 		completion_reward = {
-			GER_mefo_bills_level_down = yes
 			add_stability = -0.05 #financial department blackmails student council
 			swap_ideas = {
 				remove_idea = kmm_absolve_debtI
@@ -8691,7 +8690,6 @@ focus = {
 		relative_position_id = GER_absolve_koume_debt
 		
 		completion_reward = {
-			GER_mefo_bills_level_down = yes
 			add_war_support = 0.1
 			add_popularity = { ideology = communism popularity = 0.1 }
 			add_popularity = { ideology = democratic popularity = 0.1 }
@@ -9481,7 +9479,6 @@ focus = {
 		relative_position_id = GER_open_the_economy
 		
 		completion_reward = {
-			GER_mefo_bills_level_down = yes
 			add_political_power = 75
 			if = {
 				limit = {
@@ -9530,7 +9527,6 @@ focus = {
 		relative_position_id = GER_open_the_economy
 		
 		completion_reward = {
-			GER_mefo_bills_level_down = yes
 			add_stability = 0.05
 			random_owned_controlled_state = {
 				limit = {
@@ -9574,7 +9570,6 @@ focus = {
 		relative_position_id = GER_open_the_economy
 		
 		completion_reward = {
-			GER_mefo_bills_level_down = yes
 			if = {
 				limit = {
 					NOT = {

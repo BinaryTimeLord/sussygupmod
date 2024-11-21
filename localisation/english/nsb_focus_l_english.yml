@@ -16,7 +16,7 @@
  BALTIC_supported_fascism:0 "Supported Baltic Nationalism"
  accepted_catholics:0 "Accepted Catholics"
  annex_liberia_opinion:0 "Annexed Liberia"
- #Hestia
+ #Estonia
  EST_era_of_silence:0 "The Era of Silence"
  EST_era_of_silence_desc:0 "With the violent ultra-nationalist Vaps movement sweeping from Saaremaa to Võrumaa, the State Elder must usher in a new era for Hestia; an era with no elections, no dissent, and no resistance. The nation must enter an era of silence."
  EST_ismaaliit:0 "Isamaaliit"
@@ -1038,6 +1038,7 @@
  SOV_expand_the_aircraft_industry_desc:0 "In the wars to come, our air force will have to secure the skies against enemies equipped with the most modern equipment. We must ensure that they not only have comparable planes, but also that they have enough of them."
  SOV_modernize_aircraft_facilities:0 "Modernize Aircraft Facilities"
  SOV_modernize_aircraft_facilities_desc:0 "The best plane in the world will soon become useless if it has to take off from bumpy runways and be maintained in leaky sheds. To ensure the best possible performance, we must also have the best possible infrastructure."
+ SOV_modernize_aircraft_facilities_tt: "If there are no other §YExperimental Facilities§! in §Y[260.GetName]§!, we will gain §G1§! §YAerodynamics and Avionics Facility§! in §Y[260.GetName]§!."
  SOV_merge_aircraft_plants:0 "Merge Aircraft Plants"
  SOV_merge_aircraft_plants_desc:0 "While competition between designers creates a natural incentive to constantly improve, it also saps resources on duplicate efforts that we can ill-afford. We should merge our design bureaus to eliminate this waste."
  SOV_found_the_jet_institute:0 "Found the Jet Institute"
@@ -1138,6 +1139,7 @@
  SOV_leningrad_polytechnical_institute_desc:0 "As our foremost engineering school, the [195.GetName] Polytechnical Institute has long provided our country with engineers and industrial designers. We should expand it further to ensure that we will always have the best people available to fill any new positions in our growing industries."
  SOV_soviet_atomic_bomb_project:0 "[ROOT.GetAdjective] Atomic Bomb Project"
  SOV_soviet_atomic_bomb_project_desc:0 "We know that scientists in other countries are hard at work to develop methods to turn the most fundamental forces in the universe into a new form of weapon. While we are behind, we can use their work to advance our own, and ensure the parity of destruction remains."
+ SOV_soviet_atomic_bomb_project_tt: "If there are no other §YExperimental Facilities§! in §Y[588.GetName]§!, we will gain §G1§! §YNuclear Research Facility§! in §Y[588.GetName]§!."
  SOV_move_industry_to_the_urals:0 "Move Industry To the Urals"
  SOV_move_industry_to_the_urals_desc:0 "War has come to us, and the homeland is under threat. While our forces will fight to the last bullet without giving a foot of ground, we can not ensure that this will be enough, given the forces arrayed against us. We must evacuate factories to safety before they are overrun."
  SOV_the_road_of_life:0 "The Road of Life"
@@ -1931,6 +1933,8 @@
  SOV_the_third_rome_tt:0 "§Y$SOV_metropolitan_meletius$§! will no longer be available as an advisor."
  SOV_vengeance_for_the_yoke:0 "Vengeance for the Yoke"
  SOV_vengeance_for_the_yoke_desc:0 "Many centuries ago the Mongols launched their brutal invasion of the Rossijan lands. They remain the only people who could ever be said to have truly conquered Rossija. They may seem weak now, but we must make sure that they never return to their former strength so that we may never again feel the Tatar Yoke."
+ SOV_reclaim_uryankhay_krai: "Reclaim Uryankhay Krai"
+ SOV_reclaim_uryankhay_krai_desc: "In the Mongolian Revolution of 1911 the Uryankhay Republic and the Bogd Khanate of Mongolia broke off from the Qing Empire, and we stepped in to protect them, turning the Uryankhay region into a [ROOT.GetAdjective] territory. With the recent turmoil of civil war however, it seems that they seek independence from us, something which we must not grant them, lest the world powers look down upon us for centuries to come!"
  SOV_westward_bound:0 "Westward Bound"
  SOV_westward_bound_desc:0 "Much of our western possessions were lost with the collapse of our empire, caused by the revolution. The time has come to build up our infrastructure in preparation for reclaiming our rightful possessions."
  SOV_the_old_enemy:0 "The Old Enemy"

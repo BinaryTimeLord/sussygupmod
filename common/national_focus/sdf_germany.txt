@@ -1879,7 +1879,7 @@ focus_tree = {
 			}
 			
 			remove_ideas = sdf_anarchy_1
-			remove_ideas sdf_army_w_state
+			remove_ideas = sdf_army_w_state
 			
 			hidden_effect = {
 				random_list = {
@@ -3532,7 +3532,7 @@ focus_tree = {
 		y = 4
 		
 		available = {
-			always = false
+			always = no
 		}	
 		
 		prerequisite = { focus = SDF_corperations }
@@ -3557,7 +3557,7 @@ focus_tree = {
 		y = 4
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		prerequisite = { focus = SDF_corperations }

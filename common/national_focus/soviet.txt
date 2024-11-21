@@ -3700,7 +3700,6 @@ focus_tree = {
 					category = ss_tech
 					category = dd_tech
 				}
-				}
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3762,7 +3761,7 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-		IF = {
+			IF = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}

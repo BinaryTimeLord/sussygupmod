@@ -1,7 +1,7 @@
 ﻿l_english:
  #Opinion modifiers
  
- ### Konjo
+ ### Ethiopia
  # triggers 
  has_war_escalation_level_1_tt:0 "War Escalation at least 1"
  has_war_escalation_level_2_tt:0 "War Escalation at least 2"
@@ -703,7 +703,7 @@
  ETH_seize_assets_default_title:0 "Taxing the Nobility"
 
 
- # Anzio
+ # ITALY
  ITA_italian_highways_bba:0 "Anzian Highways"
  ITA_italian_highways_bba_desc:0 "The ancient Romans built roads that were the envy of the entire world. Now the upstart Kuros believe that their Autobahn is far superior than anything we could build. We will prove them wrong."
  ITA_develop_libya:0 "Develop Libya"
@@ -1818,7 +1818,7 @@
  SWI_rig_infrastructure_to_blow_TT:0 "When one of our core states is taken by the enemy, all §YInfrastructure§!, §YRailways§!, §YSupply Hubs§! and §YBunkers§! will be fully damaged. §YMilitary§! and §YCivilian Factories§! will be partially damaged."
  SWI_create_anti_tank_template_TT:0 "A template for §YSwiss Militia anti-Tank§! will be created"
 
-##### Submit to Kuromorimine #####
+##### Submit to Germany #####
 
  SWI_closer_ties_with_germany:0 "Closer Ties with [SWI_get_fascist_neighbor_cap]"
  SWI_closer_ties_with_germany_desc:0 "We have a powerful and dangerous neighbor to the North. If we want to survive it might be a good idea to stay on their good side, so approaching them in search of better relations, while keeping our neutral stance, would prove vital."

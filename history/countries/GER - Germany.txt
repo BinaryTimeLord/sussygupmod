@@ -441,16 +441,6 @@ set_war_support = 0.3
 
 		# Concern
 		ig_faben
-		
-		# Political Advisors
-		walther_funk
-		GER_reinhard_heydrich
-		GER_franz_seldte
-
-		# Military Advisors
-		ludwig_beck
-		gerd_von_rundstedt
-		goering
 
 		# Laws
 		war_economy
@@ -491,8 +481,6 @@ set_war_support = 0.3
 		create_intelligence_agency = yes
 	}
 
-	# Molotov-Ribbentrop pact effect, also has a part scripted in soviet history file, since it cannot be completed in a normal way
-	unlock_national_focus = GER_molotov_ribbentrop_pact 
 	every_other_country = {
 		limit = {
 			has_government = fascism 
@@ -502,48 +490,6 @@ set_war_support = 0.3
 	diplomatic_relation = { country = SOV relation = non_aggression_pact }
 	add_opinion_modifier = { target = SOV modifier = MR_pact }
 	# Molotov-Ribbentrop pact end :0 
-	
-	# COMPLETING FOCUSES
-
-	# ONES THAT CAN JUST BE COMPLETED NORMALLY
-	complete_national_focus = GER_construct_the_reichsautobahn
-	complete_national_focus = GER_institute_price_controls
-	complete_national_focus = GER_fuhrerprinzip
-	complete_national_focus = GER_party_chancellor_bormann
-	complete_national_focus = GER_accelerate_the_rearmament_program
-	complete_national_focus = GER_kdf_wagen_factories
-	complete_national_focus = GER_develop_modern_maneuver_warfare
-	complete_national_focus = GER_adopt_new_panzer_doctrine
-	complete_national_focus = GER_coal_liquefaction
-	#complete_national_focus = GER_ascension_of_todt #He is getting kicked by Speer anyways
-	complete_national_focus = GER_ascension_of_speer #Since Speer kicks Todt out might as well complete his focus here
-	complete_national_focus = GER_establish_buna_werke
-	complete_national_focus = GER_expanding_the_luftwaffe
-	complete_national_focus = GER_aeronautical_research_institute
-	complete_national_focus = GER_concentrated_armament_program
-	complete_national_focus = GER_panzer_troops_school
-	complete_national_focus = GER_ascension_of_goebbels
-	complete_national_focus = GER_reorganize_the_wehrmacht
-	complete_national_focus = GER_advanced_panzer_research
-	complete_national_focus = GER_bribe_senior_officers
-	complete_national_focus = GER_befriend_japan
-
-	# ONES THAT HAVE TO BE HANDELED MANUALLY
-	unlock_national_focus = GER_remilitarize_the_rhineland
-	unlock_national_focus = GER_anti_comintern_pact
-	unlock_national_focus = GER_fortify_the_vaterland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_fate_of_czechoslovakia
-	unlock_national_focus = GER_reassert_eastern_claims
-	unlock_national_focus = GER_danzig_or_war
-	unlock_national_focus = GER_the_four_year_plan
-	unlock_national_focus = GER_develop_heraeus_facilities
-	unlock_national_focus = GER_legion_condor
-
-	# Autarkic economy 
-	unlock_national_focus = GER_autarky_efforts
 
 	add_ideas = autarkic_economy
 
@@ -565,10 +511,6 @@ set_war_support = 0.3
 		}
 	}
 	# END OF AUTARKIC ECONOMY
-
-	# Establish the Reichswerke 
-
-	unlock_national_focus = GER_establish_the_reichswerke
 
 	#Germany's rearmament program is tanking the economy - must correspond with the Fake MEFO Bills NS for the 1939 Bookmark
 	set_variable = { GER_industrial_consumer_goods_factor = 0.71 }
@@ -595,7 +537,6 @@ set_war_support = 0.3
 	# DEAL WITH INNER CIRCLE STUFF
 	# Todt completes stuff and gets kicked later
 	set_country_flag = GER_todt_was_ascended_flag #Flag to prevent AI from taking the focus again after advisor has been replaced
-	complete_national_focus = GER_form_organization_todt
 
 	# Speer takes over
 	clr_country_flag = GER_speer_was_ascended_flag #Remove flag set by the focus to start over and set a new Days value below
@@ -604,7 +545,6 @@ set_war_support = 0.3
 		days = 1095 # Clear after ~3 years
 		value = 1
 	}
-	complete_national_focus = GER_employ_philipp_holzmann
 	#Leave the ME focus open so player can choose
 
 	#Goebbels completes everything
@@ -614,18 +554,10 @@ set_war_support = 0.3
 		days = 900 # Clear after ~2.5 years 
 		value = 1
 	}
-	complete_national_focus = GER_ministry_of_public_enlightenment
-	complete_national_focus = GER_fund_the_film_department
-	complete_national_focus = GER_propaganda_master
 	#Remove too much stability and WS
 	add_stability = -0.05
 	add_war_support = -0.05
 
-	#Bormann completes all three focuses (will be replaced by Himmler soon)
-	#Bormann's flag is already set by his focus, and on Historical the flag should be set permanently
-	complete_national_focus = GER_optimize_reich_labour_service
-	complete_national_focus = GER_glorify_party_rallies
-	complete_national_focus = GER_total_control_over_domestic_affairs
 	#Remove too much PP from focuses
 	add_political_power = -150
 
@@ -725,7 +657,6 @@ set_war_support = 0.3
 		}
 		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
 	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
 	add_opinion_modifier = { target = SOV modifier = MR_pact }
 	#MR pact end
 
@@ -1062,7 +993,7 @@ recruit_character = GER_oswald_lutz
 recruit_character = GER_walther_nehring
 recruit_character = GER_hans_krebs
 recruit_character = GER_rolf_carls
-rrecruit_character = GER_alfred_rosenberg
+recruit_character = GER_alfred_rosenberg
 
 recruit_character = GER_wilhelm_iv
 recruit_character = GER_eva_braun

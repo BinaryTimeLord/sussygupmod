@@ -554,8 +554,6 @@
  GER_bellwall_gvt_democratic:0 "Kuromorimine Bellwall Government"
  GER_german_empire_neutrality:0 "Kuromorimine Empire"
  GER_german_empire_neutrality_DEF:0 "Kuromoriminen Empire"
- GER_german_monarchy_democratic:0 "Kuromorimine"
- GER_german_monarchy_democratic_DEF:0 "Kuromorimine"
  GER_german_kaiserreich_neutrality: "German Kaiserreich"
  GER_german_kaiserreich_neutrality_DEF: "the German Kaiserreich"
  GER_german_monarchy_democratic: "Kingdom of Germany"

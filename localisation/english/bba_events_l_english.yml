@@ -4,7 +4,7 @@
  bba_news.0.desc:0 "With the declaration of war on [?global.LoN_defender_country.GetNameDef] by [?global.LoN_attacker_country.GetNameDef], the League of Nations has failed in its attempts to preserve peace. [?global.LoN_attacker_country.GetLeader] openly mocked the League's inability to do anything, and with that took [?global.LoN_attacker_country.GetHerHis] country out of the League. With other world leaders also questioning the point of the League of Nations if it can't prevent conflicts, the days of the League are de facto over. \nWhile the council continues to meet, no-one expects it to actually accomplish anything anymore. Whatever authority the council once had is long lost now."
  bba_news.0.a:0 "Not totally unexpected"
 
- # Anzi-Konjon War events 
+ # Italo-Ethiopian War events 
  BBA_italo_ethiopian_war_events.01.t:0 "End the Christmas Offensive"
  BBA_italo_ethiopian_war_events.01.desc:0 "Our troops have stalled in the war against Abyssinia, and have even been pushed back in certain places. This “Christmas Offensive” has Anchovy privately berating the military high command for their incompetencies. The Duce wants results. Now. \n\n she has therefore authorized any means necessary to repel the Abyssinians and to end this war swiftly - whatever it takes."
  BBA_italo_ethiopian_war_events.01.a:0 "By any means necessary"
@@ -784,7 +784,7 @@
 
 
 
-#Communist Konjo
+#Communist Ethiopia
  BBA_ethiopia_communist_events.01.t:0 "[ETH.GetAdjective] Communists Request Aid"
  BBA_ethiopia_communist_events.01.desc:0 "The communist leadership of [ETH.GetName] has reached out to us for aid in their struggle against the Anzian fascists. The new regime in [ETH.Capital.GetCapitalVictoryPointName] is still consolidating power and may be open to aligning themselves with our foreign policy ambitions if we offer them our support. However, we risk escalating the war and we will certainly anger [ITA.GetName] in the process."
  BBA_ethiopia_communist_events.01.a:0 "We will support our fellow communists in their struggle."
@@ -2012,7 +2012,7 @@
  bba_news.100.t_none_purged:0 "The Purge that Never Was"
  bba_news.100.desc_none_purged:0 "Rumors of a great purge to oust members loyal to Anchovy from Partito Nazionale Fascista have been swirling around as of late, but it seems a party-wide amnesty was offered instead. This might leave the Party stronger but has weakened [ROOT.GetLeader]'s position as its leader."
  bba_news.100.a_none_purged:0 "[ROOT.GetLeader] the Merciful has a nice ring to it."
- #FATE OF Anchovy
+ #FATE OF MUSSOLINI
  bba_news.101.t:0 "Ex-Anzian Leader Anchovy Executed"
  bba_news.101.desc:0 "After being ousted from power in Anzio, Anchovy was put under house arrest for criminal incompetence and treason by inaction, awaiting her fate - which finally caught up with her. Early this morning, the former leader of Anzio faced a firing squad in front of a small group of representatives from the government and was buried the same day in a private ceremony attended by her closest family."
  bba_news.101.a:0 "And so ends the life of Anchovy."
@@ -2054,10 +2054,10 @@
 
 
 ##########################################################################
-###############       Neutrality       ##################################
+###############       Switzerland       ##################################
 ##########################################################################
 
- #Triggered by focus "Neutral Guiding Principles" 
+ #Triggered by focus "Swiss Guiding Principles" 
  BBA_switzerland.1.t:0 "[ROOT.GetAdjective] Guiding Principles"
  BBA_switzerland.1.desc:0 "The political situation inside and around [ROOT.GetNameDefCap] is deteriorating quickly. There is a growing movement advocating for guiding principles to steer the ship in the right direction during the impending storm, but the question is, which one?. \n\n We do not know what our neighbors will do, but we must decide now what course of action will allow [ROOT.GetName] to survive."
  BBA_switzerland.1.a:0 "We must protect our democratic and neutral values"
@@ -2081,12 +2081,12 @@
  BBA_switzerland.3.b:0 "she will be an asset for our intelligence efforts"
  BBA_switzerland.3.c:0 "On second thought, she is clearly guilty"
 
-#Kuroy thanks Neutrality for swift action
+#Germany thanks Switzerland for swift action
  BBA_switzerland.4.t:1 "[?SWI.SWI_fascist_germany.GetLeader] pleased with [SWI.GetName]'s decision"
  BBA_switzerland.4.desc:1 "The leader of [?SWI.SWI_fascist_germany.GetNameDef], [?SWI.SWI_fascist_germany.Getleader] has expressed [?SWI.SWI_fascist_germany.Getleader.GetHerHis] gratitude towards [SWI.GetNameDef] for swiftly dealing with Wilhelm Gustloff's killer, so there is no doubt where [SWI.GetName] stands on matters like these. This omission of human rights and democratic values will certainly improve [?SWI.SWI_fascist_germany.GetName]'s attitude towards us. \n\nDespite [?SWI.SWI_fascist_germany.Getleader.GetHerHis] positive remarks, it was made clear that the ideal outcome for the Nazi Party would've been extradition to [?SWI.SWI_fascist_germany.GetNameDef], even if, for now, that is out of the question for [SWI.GetNameDef]."
  BBA_switzerland.4.a:0 "It is done now"
 
- #Germany is notified Neutrality decides to continue with the trial. 
+ #Germany is notified Switzerland decides to continue with the trial. 
  BBA_switzerland.5.t:0 "[SWI.GetName] decides to continue with the trial of Gustloff's killer"
  BBA_switzerland.5.desc:0 "Authorities in [SWI.GetName] have announced that David Frankfurter, who confessed to the killing of the Nazi Party Foreign Organization in Davos, will have a fair and balanced trial under Graubünden laws like any other murder case.\n\nConsidering Gustloff was an officer of the Nazi Party, and our influence on our defenseless neighbor, we could send a lawyer to represent Gustloff's widow and push for our ideal outcome. This way, we can ensure her punishment is befitting her crime. \n\nSpeaking more pragmatically, this could also force [SWI.GetNameDef] to take a side, finally breaking that flimsy facade of neutrality they always like to boast about."
  BBA_switzerland.5.a:0 "She deserves justice for this heinous crime!"
@@ -2337,7 +2337,7 @@
  BBA_switzerland_fascist.7.desc:0 "In a rally in [ROOT.GetCapitalVictoryPointName], [ROOT.GetLeader] announced [FROM.GetName]'s promise of very tight cooperation between our countries, and of protecting [ROOT.GetName] from our enemies, and theirs. \n\nFriendly officers and functionaries from [FROM.GetNameDef], our friends, are streaming into our nation as we speak, to help us develop our military strength and be ready for putting it to their service."
  BBA_switzerland_fascist.7.a:0 "Helpful!"
 
- ##########  Neutral EXPANSION EVENTS #######
+ ##########  SWISS EXPANSION EVENTS #######
 
  BBA_swiss_expansion.1.t:0 "We did not influence [SWI_influenced_state] enough"
  BBA_swiss_expansion.1.desc:0 "Despite the best efforts of our propagandists, Democracy did not spread as much as we expected in the cantons of [?SWI.SWI_influence_target_state.GetName], so unfortunately we don't think a referendum to join us would be successful.\n\nThis does not mean that we should quit, we have planted a seed that can be nurtured further, making us more likely to succeed next time."
@@ -2363,7 +2363,7 @@
  BBA_swiss_expansion.6.t:0 "[FROM.GetNameDefCap] Wants [848.GetName] as a Canton"
  BBA_swiss_expansion.6.desc:0 "It seems that [FROM.GetName] is demanding that the state of [848.GetName] join their confederation. They cite a referendum in 1919 where the state overwhelmingly voted to join as a canton of [FROM.GetNameDef], but were rejected by the [FROM.GetAdjective] themselves. It appears they've now changed their minds.\n\nWhether we accept or not, it is obvious they have their sights set on expansion, so we should thread carefully, and be ready to defend our territory even if we accept their demands."
  BBA_swiss_expansion.6.a:0 "The risk is not worth such a small state"
- BBA_swiss_expansion.6.b:0 "[ROOT.GetName] will never cede any territory!"
+ BBA_swiss_expansion.6.b: "[ROOT.GetNameDefCap] will never cede any territory!"
  BBA_swiss_expansion.6.c:0 "We will not be bullied by the pimple on the face of Europe"
  BBA_swiss_expansion.6.d:0 "Good riddance"
 

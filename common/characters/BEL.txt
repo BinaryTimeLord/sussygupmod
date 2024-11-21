@@ -5,17 +5,7 @@ characters={
 
 
 	BEL_hubert_pierlot = {
-		field_marshal={
-			traits={ aggressive_assaulter panzer_leader trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
 		instance = {
-
 			allowed = {
 				has_dlc = "Gotterdammerung"
 			}
@@ -55,6 +45,15 @@ characters={
 					JUNO_minister_of_foreign_affairs 
 				}
 			}
+		field_marshal={
+			traits={ aggressive_assaulter panzer_leader trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
 		}
 		instance = {
 			allowed = {
@@ -73,6 +72,15 @@ characters={
 				expire=1965.1.1.1
 				id=-1
 			}
+		field_marshal={
+			traits={ aggressive_assaulter panzer_leader trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
 		}
 
 	}

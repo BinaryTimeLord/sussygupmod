@@ -3522,46 +3522,6 @@ characters = {
 		}
 	}
 
-	GER_rudolf_hess = {
-		name = GER_rudolf_hess
-		portraits = {
-			army = {
-				large = GFX_portrait_GER_rudolf_hess
-				small = GFX_portrait_GER_rudolf_hess_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = rudolf_hess
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				NOT = {
-					has_country_flag = flight_of_hess 
-					GER_martin_bormann = {
-						is_hired_as_advisor  = yes 
-					}
-					has_completed_focus = GER_party_chancellor_hess
-				}
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
-			}
-			visible = {
-				always = no #TODO_Manu: Part of Inner Circle. REMOVE COMPLETELY IF NOT USED BY ALT-HIST
-				has_government = fascism
-				NOT = {
-					has_completed_focus = GER_oppose_hitler_ww
-				}
-			}
-			traits = {
-				GER_first_among_equals #TODO_Manu: Maybe change trait
-			}
-		}
-	}
-
 	GER_heinrich_himmler = {
 		name = GER_heinrich_himmler
 		portraits = {

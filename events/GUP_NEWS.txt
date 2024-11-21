@@ -294,9 +294,6 @@ news_event = { #news event for schwarzburg visit to birmingham #crashes
 			add_war_support = 0.1
 			add_stability = 0.05
 			custom_effect_tooltip = anschluss_mefo_bills_tt
-			hidden_effect = { # Having it appear twice might be confusing
-				GER_mefo_bills_level_down = yes
-			}
 		}
 	}
 	option = { #condolences

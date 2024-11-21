@@ -791,14 +791,8 @@ bookmarks = {
 			ideology = neutrality
 			available = { has_dlc = "Gotterdammerung" }
 			ideas = {
-				AUS_treaty_of_saint_germain_en_laye
-				AUS_austrofascism_fake_ns
-				AUS_widespread_unemployment
 			}
 			focuses = {
-				AUS_legacy_of_the_empire
-				AUS_repeal_the_may_constitution
-				AUS_second_brothers_war
 			}
 		}
 		HUN = {
