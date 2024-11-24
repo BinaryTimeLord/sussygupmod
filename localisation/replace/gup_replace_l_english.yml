@@ -160,3 +160,4 @@
  end_of_czechoslovakia_mefo_bills_tt:0 "Uses Gregor Sensha-Do Budget to reduce the cost of §Y[GetMilitaryProductionModifierName]§!.\n"
  anschluss_mefo_bills_tt:0 "Uses Ooarai's tourism revenue to reduce the cost of §Y[GetMilitaryProductionModifierName]§!.\n"
  yugoslavia_mefo_bills_tt:0 "Uses Brazava gold to reduce the cost of §Y[GetMilitaryProductionModifierName]§!.\n"
+GER_replace_mefo_bills_with_recovering_economy_tt:0 ""
