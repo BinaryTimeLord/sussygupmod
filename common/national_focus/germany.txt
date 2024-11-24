@@ -4234,6 +4234,7 @@ focus_tree = {
 		bypass = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
+			978 = { is_demilitarized_zone = no }
 		}
 		ai_will_do = {
 			base = 10
