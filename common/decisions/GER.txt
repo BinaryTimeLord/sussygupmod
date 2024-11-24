@@ -199,7 +199,7 @@ GER_mefo_bills_category = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			
+			GER_stop_rearmament = yes
 		}
 	}
 
