@@ -4344,10 +4344,6 @@ GER_reichskommissariats = {
 
 		available = {
 			is_subject = no
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				192 = {
@@ -4454,10 +4450,7 @@ GER_reichskommissariats = {
 			RKC = {
 				exists = no
 			}
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
+
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				766 = {

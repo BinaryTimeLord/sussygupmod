@@ -8945,10 +8945,16 @@ country_event = {
 					}
 				}
 				RKN = {
-					set_nationality = {
-					    target_country = HOL
-					    character = HOL_anton_mussert
+					create_country_leader = {
+						name = "Momo Kawashima"
+						desc = "POLITICS_MOMO_KAWASHIMA_DESC"
+						picture = "gfx/leaders/AUS/Portrait_AUS_Momo.dds"
+						expire = "1965.1.1"
+						ideology = german_idealism3
+						traits = {
+						}
 					}
+					set_cosmetic_tag = HOL_reichskommissariat
 				}
 			}
 		}
@@ -9092,9 +9098,14 @@ country_event = {
 					}
 				}
 				RKG = {
-					set_nationality = {
-					    target_country = NOR
-					    character = NOR_vidkun_quisling
+					create_country_leader = {
+						name = "Azusa Sawa"
+						desc = "POLITICS_AZUSA_SAWA_DESC"
+						picture = "gfx/leaders/AUS/Portrait_AUS_Azusa.dds"
+						expire = "1965.1.1"
+						ideology = german_idealism3
+						traits = {
+						}
 					}
 				}
 			}
@@ -9174,10 +9185,16 @@ country_event = {
 					}
 				}
 				RKU = {
-					set_nationality = {
-					    target_country = UKR
-					    character = UKR_mykhailo_omelianovych_pavlenko
+					create_country_leader = {
+					name = "Rera Nakajima"
+					desc = "POLITICS_RERA_NAKAJIMA_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Satoko.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism3
+					traits = {
 					}
+				}
+
 				}
 			}
 		}
@@ -9268,10 +9285,15 @@ country_event = {
 					}
 				}
 				RKO = {
-					set_nationality = {
-					    target_country = BLR
-					    character = BLR_radislau_astrouski
+					create_country_leader = {
+					name = "Noriko Isobe"
+					desc = "POLITICS_NORIKO_ISOBE_DESC"
+					picture = "gfx/leaders/AUS/Portrait_AUS_Noriko.dds"
+					expire = "1965.1.1"
+					ideology = german_idealism3
+					traits = {
 					}
+				}
 				}
 			}
 		}
