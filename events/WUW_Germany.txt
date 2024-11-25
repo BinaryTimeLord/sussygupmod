@@ -8785,9 +8785,14 @@ country_event = {
 					}
 				}
 				RKB = {
-					set_nationality = {
-					    target_country = BEL
-					    character = BEL_leon_degrelle
+					create_country_leader = {
+						name = "Takako Suzuki"
+						desc = "POLITICS_TAKAKO_SUZUKI_DESC"
+						picture = "gfx/leaders/AUS/Portrait_AUS_Caesar.dds"
+						expire = "1965.1.1"
+						ideology = german_idealism3
+						traits = {
+						}
 					}
 				}
 			}

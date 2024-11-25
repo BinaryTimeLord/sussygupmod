@@ -123,7 +123,7 @@ GER_reichskommissariats = {
 	}
 
 	visible = {
-		has_completed_focus = GER_uplift_the_rosenberg_office
+		has_completed_focus = GER_form_the_reichskommissariats
 		has_government = fascism
 	}
 
