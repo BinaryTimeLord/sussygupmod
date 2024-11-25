@@ -4131,6 +4131,9 @@ country_event = {
 			add_war_support = 0.1
 		}
 		puppet = SLO
+		SLO = {
+			set_cosmetic_tag = SLO_GER
+		}
 
 		if = {
 			limit = {

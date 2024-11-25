@@ -1566,3 +1566,8 @@ SDF_reichskommissariat_colour = {
 	color = rgb { 204  82  0 }
 	color_ui = rgb { 204  82  0 }
 }
+
+SLO_GER = {
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
