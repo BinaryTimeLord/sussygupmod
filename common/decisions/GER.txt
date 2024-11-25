@@ -3369,10 +3369,6 @@ GER_reichskommissariats = {
 					has_completed_focus = NOR_quislings_coup
 				}
 			}
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				110 = {
