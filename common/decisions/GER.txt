@@ -3554,10 +3554,6 @@ GER_reichskommissariats = {
 
 		available = {
 			is_subject = no
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				7 = {
@@ -3711,10 +3707,6 @@ GER_reichskommissariats = {
 
 		available = {
 			is_subject = no
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				6 = {
@@ -3875,10 +3867,6 @@ GER_reichskommissariats = {
 
 		available = {
 			is_subject = no
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				94 = {
@@ -4124,10 +4112,6 @@ GER_reichskommissariats = {
 
 		available = {
 			is_subject = no
-			OR = {
-				has_completed_focus = GER_heed_von_neuraths_concerns
-				has_completed_focus = GER_reorganize_the_wehrmacht
-			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
 				93 = {
