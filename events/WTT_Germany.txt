@@ -1259,27 +1259,19 @@ country_event = {
 			name = GER_black_front
 		}	
 		hidden_effect = {
-			GER_otto_strasser = {
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = nazism
-						expire = "1974.1.1.1"
-						traits = { GER_revolutionary_nationalist } 
-					}
-				}	
+			create_country_leader = {
+				name = GER_Maho_Nishizumi
+				picture = "gfx/leaders/GER/Portrait_GER_Maho.dds"
+				expire = "9999.1.1.1"
+				ideology = nazism
+				traits = {
+					GER_revolutionary_nationalist experienced_fuhrer
+				}
 			}
 			set_country_flag = GER_strasserism_relevant_in_germany_flag 
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		country_event = {
-			id = wuw_GER_civil_war.9
-			hours = 12
-			random_hours = 24
-		}	
-
 	}
 
 	# Imprison the head nazis for life
@@ -1314,13 +1306,6 @@ country_event = {
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		country_event = {
-			id = wuw_GER_civil_war.9
-			hours = 12
-			random_hours = 24
-		}	
-
 	}
 }
 

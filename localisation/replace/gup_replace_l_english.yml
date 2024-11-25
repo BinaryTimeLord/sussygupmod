@@ -162,3 +162,4 @@
  yugoslavia_mefo_bills_tt:0 "Uses Brazava gold to reduce the cost of §Y[GetMilitaryProductionModifierName]§!.\n"
  GER_replace_mefo_bills_with_recovering_economy_tt:0 ""
  GER_anschluss_eq_trigger_tt:0 "At least 40000 infantry equipment in the army"
+ GER_revolutionary_nationalist:0 "Neo-Nishizumist"
