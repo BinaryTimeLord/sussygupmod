@@ -402,6 +402,9 @@ characters = {
 			
 			available = {
 				has_completed_focus = GER_four_year_plan
+				GER_hjalmar_schacht = {
+						is_hired_as_advisor = no
+					}
 				NOT = {
 					has_idea = geshiko
 					OR = {
@@ -3383,7 +3386,7 @@ characters = {
 		name = GER_hjalmar_schacht
 		portraits = {
 			army = {
-				small = GFX_idea_hjalmar_schacht
+				small = "gfx/interface/ideas/Kuromorimine/idea_ger_koume_akaboshi.dds"
 			}
 		}
 		advisor = {
@@ -3395,8 +3398,9 @@ characters = {
 			cost = 75 #as soon as the MEFO Bills are gone, so is Schacht
 			available = {
 				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+				has_completed_focus = GER_four_year_plan
 				NOT = { has_government = communism }
-				GER_walther_funk = {
+				ger_koume_akaboushi_pol = {
 					is_hired_as_advisor  = no 
 				}
 			}
