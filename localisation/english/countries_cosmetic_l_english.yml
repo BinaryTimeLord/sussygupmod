@@ -2702,8 +2702,8 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  ITA_MEDUN:0 "Socialist Union of Mediterranean Countries"
  ITA_MEDUN_DEF:0 "the Socialist Union of Mediterranean Countries"
 
- GER_strasserite_state_fascism:0 "Kuromorimine"
- GER_strasserite_state_fascism_ADJ:0 "Kuromorimine"
- GER_strasserite_state_fascism_DEF:0 "Kuromorimine"
+ GER_strasserite_state_fascism: "Kuromorimine"
+ GER_strasserite_state_fascism_ADJ: "Kuromorimine"
+ GER_strasserite_state_fascism_DEF: "Kuromorimine"
  
  
