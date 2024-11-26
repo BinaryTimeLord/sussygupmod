@@ -1265,7 +1265,7 @@ country_event = {
 				expire = "9999.1.1.1"
 				ideology = nazism
 				traits = {
-					GER_revolutionary_nationalist experienced_fuhrer
+					GER_revolutionary_nationalist experienced_fuhrer experienced_panzer_leader
 				}
 			}
 			set_country_flag = GER_strasserism_relevant_in_germany_flag 
