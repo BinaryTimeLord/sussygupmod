@@ -12973,6 +12973,111 @@ country_event = {
 
 ### CIVIL WAR EVENTS ###
 
+# Expatriated Communists Returning Home - event for GER (the non-fascist side)
+country_event = {
+	id = wuw_GER_civil_war.1
+	title = wuw_GER_civil_war.1.t
+	desc = wuw_GER_civil_war.1.desc 
+	picture = GFX_report_event_communists_in_riga
+
+	is_triggered_only = yes
+
+	option = { # They will prove very helpeful
+		name = wuw_GER_civil_war.1.a
+		ai_chance = {
+			base = 85
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = GER_AI_RANDOM_KAISER
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = KAISER
+					}
+				}
+			}
+		}
+		
+		add_timed_idea = {
+			idea = GER_expatriated_communists_return_home_ns
+			days = 365
+		}
+
+		hidden_effect = { 
+			country_event = { 
+				id = wuw_GER_civil_war.2
+				days = 14
+				random_days = 16
+			}
+		}
+		
+	}
+	option = { # Someone needs to keep an eye on them!
+		name = wuw_GER_civil_war.1.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = GER_COMMUNIST_STALINIST
+					}
+					has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = GER_COMMUNIST_SPARTACUS
+					}
+				}
+			}
+		}
+
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}	
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		add_timed_idea = {
+			idea = GER_expatriated_communists_return_home_supressed_ns
+			days = 365
+		}
+		
+	}
+}
+
+# Ernst Thälmann Liberated from Prison - event for GER (the non-fascist side)
+country_event = {
+	id = wuw_GER_civil_war.2
+	title = wuw_GER_civil_war.2.t
+	desc = wuw_GER_civil_war.2.desc 
+	picture = GFX_report_event_ITA_partisans
+
+	is_triggered_only = yes
+
+	option = { # An Intersting Development
+		name = wuw_GER_civil_war.2.a
+		ai_chance = {
+			base = 100
+		}
+		
+		custom_effect_tooltip = GER_thalmann_freed_from_prison_tt
+		hidden_effect = {
+			set_country_flag = GER_thalmann_freed_from_prison_flag
+			GER_ernst_thalmann = {
+				set_portraits = {
+					civilian = {
+						small = GFX_portrait_GER_ernst_thalmann_small
+					}
+				}
+			}
+		}
+		
+	}
+}
+
 # The Fourth Silesian Uprising - event for GER (the non-fascist side)
 country_event = {
 	id = wuw_GER_civil_war.5

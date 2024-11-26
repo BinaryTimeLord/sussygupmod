@@ -1024,7 +1024,7 @@ if = {
 	recruit_character = GER_heinrich_brandler
 	recruit_character = GER_vincenz_muller
 	recruit_character = GER_arno_von_lenski
-	recruit_character = GER_otto_strasser
+	recruit_character = GER_Maho_Nishizumi #Strasserist Maho
 	recruit_character = GER_otto_grotewohl
 
 	recruit_character = GER_henrich_focke #Heli Scientist

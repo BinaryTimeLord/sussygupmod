@@ -1514,16 +1514,9 @@ characters = {
 				small = "gfx/interface/ideas/Kuromorimine/idea_ger_maho_armychief.dds"
 			}
 		}
-		#country_leader = {
-		#	ideology = nazism
-		#	traits = { }
-		#	expire = "1954.1.1.1"
-		#	id = -1
-		#}
-
 		advisor = {
 			slot = political_advisor
-			idea_token = GER_otto_strasser
+			idea_token = maho_returns
 			allowed = {
 				original_tag = GER
 			}
