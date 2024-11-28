@@ -1,0 +1,5 @@
+music = {
+	name = "golden_spatulas"
+	file = "golden_spatulas.ogg"
+	volume = 1.00
+}
