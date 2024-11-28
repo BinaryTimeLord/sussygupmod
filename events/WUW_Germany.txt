@@ -55,12 +55,9 @@ country_event = { #MEFO Bills have been cancelled
 		name = germany_mefo_bills.1.a
 		ai_chance = {
 			base = 10
-		}		
-		
-		custom_effect_tooltip = GER_replace_mefo_with_economy_of_conquest_tt
+		}
 		hidden_effect = {
-			remove_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-			add_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+			
 		}
 		#effect_tooltip = {
 		#	custom_effect_tooltip = GER_industrial_consumer_goods_factor_tt
@@ -87,15 +84,8 @@ country_event = { #MEFO Bills have been cancelled
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		custom_effect_tooltip = GER_unlock_seize_gold_reserves_tt	
 		
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		effect_tooltip = {
-			retire_character = GER_hjalmar_schacht
-			show_ideas_tooltip = hjalmar_schacht
-		}
 	}
 	option = { #Stop rearmaming and receive Recovering Economy or Wirtschaftswunder
 		name = germany_mefo_bills.1.b
@@ -110,6 +100,7 @@ country_event = { #MEFO Bills have been cancelled
 			retire_character = GER_hjalmar_schacht
 			show_ideas_tooltip = hjalmar_schacht
 		}
+		retire_character = GER_hjalmar_schacht
 	}
 }
 
