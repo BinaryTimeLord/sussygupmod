@@ -1549,9 +1549,13 @@
  sdf.6.a:0 "They are useful, for now"
  sdf.6.b:0 "Turn them away!"
  
- sdf.2.t:0 "Southern Expansion"
+ sdf.2.t:0 "Northern Expansion"
  sdf.2.d:0 ""
  sdf.2.a:0 "To the North!"
+
+ sdf.3.t:0 "Southern Expansion"
+ sdf.3.d:0 ""
+ sdf.3.a:0 "To the South!"
  
  sdf.4.t:0 "Kuromormine Strikes South"
  sdf.4.d:0 "It seems with much of the civil war proper ending the victorious faction now turns its eyes upon the southern experiment led by the SDF. \n \nThough many are wary due to the amount of blood already spilt there is hope that the SDF with the sheer amount of exiles flowing into it that they will be able to rally enough support to seize control of the nation from them \n \nHeavy fighting has erupted across ghettos front with both sides Reportedly even resorting to child soldiers to fill the line of contact as it seems peace has not yet fallen upon the Kuroic state."

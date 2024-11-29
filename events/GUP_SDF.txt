@@ -99,12 +99,17 @@ country_event = {
 		
 			53 = {
 				add_core_of = SDF
+			}
+
+			978 = {
+				add_core_of = SDF
 			}	
 		}
 		
 		SDF = {
 			transfer_state = 50
 			transfer_state = 53
+			transfer_state = 978
 		}
 		
 		hidden_effect = {

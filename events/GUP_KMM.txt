@@ -5842,6 +5842,221 @@ country_event = { ##MAHO ESCAPES TO THE SOUTH##
 		ai_chance = {
 			base = 1
 		}
+		
+		hidden_effect = {
+			52 = {
+				add_core_of = SDF
+			}
+		
+			55 = {
+				add_core_of = SDF
+			}
+
+			release = SDF
+		
+			SDF = {
+			}
+		
+		}
+		
+		hidden_effect = {
+		SDF = {
+			inherit_technology = GER
+			
+		delete_unit_template_and_units = { division_template = "Infanterie-Division" }
+		delete_unit_template_and_units = { division_template = "Panzer-Division" }
+		delete_unit_template_and_units = { division_template = "Infanterie-Division (mot.)" }
+		delete_unit_template_and_units = { division_template = "Gebirgs-Brigade" }
+		delete_unit_template_and_units = { division_template = "Kavallerie-Brigade" }
+		delete_unit_template_and_units = { division_template = "Landsturmregiment" }
+		
+			
+			create_field_marshal = {
+				name = "Heerfuhrer Saori Takebe"
+				portrait_path = "gfx/leaders/SDF/GFX_saori.dds"
+				traits={ media_personality war_hero }
+				skill=4
+				attack_skill=1
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=5
+			}
+			
+			
+			
+			
+			create_corps_commander = { 
+				name = "Kiyomi Sugiyama"
+				portrait_path = "gfx/leaders/SDF/GFX_saemonza.dds"
+				traits={ media_personality bold swamp_fox }
+				skill=3
+				attack_skill=5
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=6
+			}
+			
+			create_corps_commander = {
+				name = "Maria Suzuki"
+				portrait_path = "gfx/leaders/SDF/GFX_suzuki.dds"
+				traits={ media_personality armor_officer }
+				skill=3
+				attack_skill=3
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=4
+			}
+			
+			create_corps_commander = { ##CAN BE PURGED##
+				name = "Ayumi Yamagou"
+				portrait_path = "gfx/leaders/SDF/GFX_ayumi.dds"
+				traits={  }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			
+			create_corps_commander = { ##CAN BE PURGED##
+				name = "Yuuki Utsugi"
+				portrait_path = "gfx/leaders/SDF/GFX_yuuki.dds"
+				traits={  }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			
+			create_corps_commander = { ##CAN BE PURGED##
+				name = "Aya Oono"
+				portrait_path = "gfx/leaders/SDF/GFX_aya.dds"
+				traits={  }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			
+			create_corps_commander = {
+				name = "Riko Matsumoto"
+				portrait_path = "gfx/leaders/SDF/GFX_erwin.dds"
+				traits={ brilliant_strategist panzer_leader desert_fox }
+				skill=4
+				attack_skill=3
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+			}
+			
+			create_corps_commander = {
+				name = "Keiko Hoshino"
+				portrait_path = "gfx/leaders/SDF/GFX_hoshino.dds"
+				traits={ trait_cautious armor_officer }
+				skill=3
+				attack_skill=3
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=2
+			}
+			
+			create_corps_commander = {
+				name = "Noriko Isobe"
+				portrait_path = "gfx/leaders/SDF/GFX_noriko.dds"
+				traits={ inflexible_strategist trait_reckless }
+				skill=4
+				attack_skill=5
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=2
+			}
+			
+			create_corps_commander = {
+				name = "Shinobu Kawanishi"
+				portrait_path = "gfx/leaders/SDF/GFX_shinobu.dds"
+				traits={ trait_reckless }
+				skill=4
+				attack_skill=2
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=1
+			}
+			
+			create_corps_commander = {
+				name = "Muuton Tsuchiya"
+				portrait_path = "gfx/leaders/SDF/GFX_tsuchiya.dds"
+				traits={ trait_reckless }
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=1
+				logistics_skill=2
+			}
+			
+			create_corps_commander = { ##CAN BE PURGED##
+				name = "Yukari Akiyama"
+				portrait_path = "gfx/leaders/SDF/GFX_yukari.dds"
+				traits={ armor_officer panzer_leader commando winter_specialist adaptable }
+				skill=5
+				attack_skill=3
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=4
+			}
+			
+			load_oob = "SDF_1936"
+	
+		}
+			52 = {
+				create_unit = {
+					division = "division_template = \"37th Mixed Brigade\" start_experience_factor = 1" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
+			
+			55 = {
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+				
+				create_unit = {
+					division = "division_template = \"SDF Infantry\" start_experience_factor = 0.3" 
+					owner = SDF
+				}
+			}
 		}
 		
 	}
