@@ -7888,7 +7888,7 @@ focus_tree = {
 		}
 	}
 	available = {
-
+		date > 1937.1.1
 	}
 	x = 55
 	y = 0
@@ -7914,7 +7914,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			country_event = {
+				id = GLO_choice.1
+				days = 3
+			}
 		}
 	}
 	focus = {
@@ -7940,14 +7943,18 @@ focus_tree = {
 			focus = ENG_tea_is_poured
 		}
 		available = {
-
+			always = no
 		}
 		relative_position_id = ENG_tea_is_poured
 		x = -4
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = chose_darj
+				days = 180
+			}
 		}
 	}
 	focus = {
@@ -7973,7 +7980,7 @@ focus_tree = {
 			focus = ENG_tea_is_poured
 		}
 		available = {
-
+			always = no
 		}
 		relative_position_id = ENG_tea_is_poured
 		x = 4
@@ -8000,7 +8007,28 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			RAJ = {
+				release = BRM
+			}
+			puppet = BRM
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = RAJ
+					autonomous_state = autonomy_integrated_puppet
+				}
+				set_autonomy = {
+					target = BRM
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+			RAJ = {
+				add_autonomy_score = {
+					value = 100
+				}
+			}
 		}
 	}
 	focus = {
@@ -8017,7 +8045,17 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_stability = 0.2
+			add_war_support = -0.3
+			GER = {
+				add_war_support = 0.2
+			}
+			ITA = {
+				add_war_support = 0.2
+			}
+			JAP = {
+				add_war_support = 0.2
+			}
 		}
 	}
 	focus = {
@@ -8034,7 +8072,21 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = BEL
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = HOL
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = LUX
+			}
 		}
 	}
 	focus = {
@@ -8051,7 +8103,36 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			CAN = {
+				add_timed_idea = {
+					idea = GLO_economy_commonwealth
+					years = 1
+				}
+			}
+			MAL = {
+				add_timed_idea = {
+					idea = GLO_economy_commonwealth
+					years = 1
+				}
+			}
+			AST = {
+				add_timed_idea = {
+					idea = GLO_economy_commonwealth
+					years = 1
+				}
+			}
+			NZL = {
+				add_timed_idea = {
+					idea = GLO_economy_commonwealth
+					years = 1
+				}
+			}
+			SAF = {
+				add_timed_idea = {
+					idea = GLO_economy_commonwealth
+					years = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -8068,7 +8149,23 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			ITA = {
+				add_ai_strategy = {
+					if = {
+						limit = {
+							date < 1940.1.1
+						}
+						type = alliance
+						id = GER
+						value = -100
+					}
+					else = {
+						type =  alliance 
+						id = GER
+						value = 100
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -8119,7 +8216,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			
 		}
 	}
 	focus = {

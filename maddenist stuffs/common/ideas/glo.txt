@@ -1,0 +1,35 @@
+ideas = {
+    country = {
+        GLO_chose_darj =  {
+            name = chose_darj
+
+            #picture =
+
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+        }
+        GLO_economy_commonwealth = {
+            name = GLO_economy_commonwealth
+
+            #picture = 
+            
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.3
+                autonomy_gain = 0.5
+            }
+        }
+    }
+}
