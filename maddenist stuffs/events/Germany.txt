@@ -2609,6 +2609,12 @@ country_event = {
 	option = { # Support the Czechs
 		name = germany.40.b
 		
+		trigger = {
+			NOT = {
+				has_completed_focus = ENG_appease_kmm
+			}
+		}
+
 		ai_chance = {
 			base = 10	
 			modifier = {

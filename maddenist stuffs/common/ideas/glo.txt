@@ -31,5 +31,36 @@ ideas = {
                 autonomy_gain = 0.5
             }
         }
+        CHI_chiglo_treaty = {
+            name = CHI_chiglo_treaty
+
+            #picture =
+
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                industrial_capacity_dockyard = -0.1
+            }
+        }
+        ENG_peace = {
+            name = ENG_peace
+
+            #picture = 
+
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                add_stability = 0.2
+                add_war_support = -1
+            }
+        }
     }
 }

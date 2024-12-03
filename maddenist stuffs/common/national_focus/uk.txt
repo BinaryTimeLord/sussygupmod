@@ -8150,7 +8150,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			ITA = {
-				add_ai_strategy = {
+				add_ai_strategy = {    ### NOT SURE IF THIS WORKS ###
 					if = {
 						limit = {
 							date < 1940.1.1
@@ -8182,7 +8182,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			JAP = {
+				country_event = {
+					id = GLO_darj.1
+					hours = 12
+				}
+			}
 		}
 	}
 	focus = {
@@ -8199,7 +8204,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			
 		}
 	}
 	focus = {
@@ -8226,14 +8231,21 @@ focus_tree = {
 			focus = ENG_chi_glo_navy
 		}
 		available = {
-
+			JAP = {
+				has_war_with = CHI
+			}
 		}
 		relative_position_id = ENG_chi_glo_navy
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			JAP = {
+				country_event = {
+					id = GLO_darj.7
+					hours = 12
+				}
+			}
 		}
 	}
 	focus = {
@@ -8253,7 +8265,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER = {
+				country_event = {
+					id = GLO_darj.4
+					hours = 12
+				}
+			}
 		}
 	}
 	focus = {
@@ -8266,14 +8283,17 @@ focus_tree = {
 			focus = ENG_peace_in_our_time
 		}
 		available = {
-
+			always = no
 		}
 		relative_position_id = ENG_negotiate_kmm
 		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
 		}
 	}
 	focus = {
@@ -8286,14 +8306,77 @@ focus_tree = {
 			focus = ENG_war_in_our_time
 		}
 		available = {
-
+			always = no
 		}
 		relative_position_id = ENG_negotiate_kmm
 		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_ideas = ENG_peace
+			add_threat = -50
+			GER = {
+				diplomatic_relation = {
+					country = POL
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = LUX
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = FRA
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = ITa
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = HUN
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = SWI
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = LUX
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = BEL
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = HOL
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = DEN
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = LIT
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = ROM
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
 		}
 	}
 

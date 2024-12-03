@@ -1,20 +1,283 @@
 add_namespace = GLO_choice
+add_namespace = GLO_darj
+
+### Template ###
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+	#}
+#}
+
 
 country_event = { 
 	id = GLO_choice.1
 	title = GLO_choice.1.t
 	desc = GLO_choice.1.d
-	picture = 
+	#picture = 
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { 
 		name = GLO_choice.1.a
+		ai_chance = {
+			base = 50
+		}
         complete_national_focus = ENG_choose_darj
 	}
     option = {
         name = GLO_choice.1.b
+		ai_chance = {
+			base = 50
+		}
         complete_national_focus = ENG_choose_rose
     }
+}
+country_event = {
+	id = GLO_darj.1
+	title = GLO_darj.1.t
+	desc = GLO_darj.1.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GLO_darj.1.a
+		GLO = {
+			country_event = {
+				id = GLO_darj.2
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = GLO_darj.1.b
+		GLO = {
+			country_event = {
+				id = GLO_darj.3
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = GLO_darj.2
+	title = GLO_darj.2.t
+	desc = GLO_darj.2.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.2.a
+		JAP = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = CHI_chiglo_treaty_op
+			}
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = CHI_chiglo_treaty_op
+			}
+			add_ideas = {
+				CHI_chiglo_treaty
+			}
+			transfer_state = 643
+			transfer_state = 639
+			transfer_state = 636
+			transfer_state = 725
+			add_state_core = 643
+			add_state_core = 639
+			add_state_core = 636
+			add_state_core = 725
+			add_ai_strategy = {
+				target = MAL
+				type = conquer
+				value = -200
+			}
+			add_ai_strategy = {
+				target = AST
+				type = conquer
+				value = -200
+			}
+			add_ai_strategy = {
+				target = NZL
+				type = conquer
+				value = -200
+			}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.3
+	title = GLO_darj.3.t
+	desc = GLO_darj.3.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.3.a
+		add_war_support = 0.1
+		navy_experience = 20
+	}
+}
+country_event = { 
+	id = GLO_darj.4
+	title = GLO_darj.4.t
+	desc = GLO_darj.4.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.4.a
+		ENG = {
+			country_event = {
+			id = GLO_darj.5
+			days = 2
+			}
+		}
+	}
+	option = {
+		name = GLO_darj.4.b
+		ENG = {
+			country_event = {
+			id = GLO_darj.6
+			days = 2
+		}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.5
+	title = GLO_darj.5.t
+	desc = 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.5.a
+		complete_national_focus = ENG_peace_in_our_time
+	}
+}
+country_event = { 
+	id = GLO_darj.6
+	title = GLO_darj.6.t
+	desc = GLO_darj.6.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.6.a
+		complete_national_focus = ENG_war_in_our_time
+	}
+}
+country_event = { 
+	id = GLO_darj.7
+	title = GLO_darj.7.t
+	desc = GLO_darj.7.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.7.a
+		GLO = {
+			country_event = {
+				id = GLO_darj.8
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = GLO_darj.7.b
+		GLO = {
+			country_event = {
+				id = GLO_darj.9
+				days = 2
+			}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.8
+	title = GLO_darj.8.t
+	desc = GLO_darj.8.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.8.a
+		JAP = {
+			white_peace = {
+				tag = CHI
+				message = "Chi-ha-tan agreed to withdraw from Zhongguo"
+			}
+			if = {
+				limit = {
+					608 = {
+						is_owned_by = CHI
+					}
+				}
+				transfer_state = 608
+			}
+			if = {
+				limit = {
+					614 = {
+						is_owned_by = CHI
+					}
+				}
+				transfer_state = 614
+			}
+			if = {
+				limit = {
+					597 = {
+						is_owned_by = CHI
+					}
+				}
+				transfer_state = 597
+			}
+			if = {
+				limit = {
+					743 = {
+						is_owned_by = CHI
+					}
+				}
+				transfer_state = 743
+			}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.9
+	title = GLO_darj.9.t
+	desc = GLO_darj.9d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.9.a
+	}
 }
