@@ -62,5 +62,58 @@ ideas = {
                 add_war_support = -1
             }
         }
+        GLO_wartime_defense_ban = {
+            name = GLO_wartime_defense_ban
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                communism_drift = -0.05
+                fascism_drift = -0.05
+            }
+        }
+        GLO_fight = {
+            name = GLO_fight
+
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                justify_war_goal_time = -0.5
+                generate_wargoal_tension = -0.5
+            }
+        }
+        GLO_fight_authority = {
+            name = GLO_fight_authority
+
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                lend_lease_tension = -0.3
+                send_volunteers_tension = -0.3
+            }
+        }
+        GLO_over_the_top_mod = {
+            name = GLO_over_the_top_mod
+
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                conscription_factor = 0.1
+            }
+        }
     }
 }

@@ -10,6 +10,7 @@
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_fascist_civil_war }
+			NOT = { has_country_flag = ENG_combatting_boers}
 			OR = {
 				has_idea_with_trait = fascist_demagogue
 				has_idea_with_trait = syncretic_revanchist
@@ -475,6 +476,7 @@
 			}
 			NOT = { has_country_flag = open_up_political_discourse_fascism }
 			NOT = { has_government = fascism }
+			NOT = { has_country_flag = ENG_combatting_boers}
 			OR = {
 				AND = {
 					original_tag = GER
@@ -1227,6 +1229,7 @@ communism_on_the_rise = {
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_communism_civil_war }
+			NOT = { has_country_flag = ENG_combatting_boers }
 			OR = {
 				has_idea_with_trait = communist_revolutionary
 				has_idea_with_trait = ambitious_union_boss
@@ -1658,6 +1661,7 @@ communism_on_the_rise = {
 				has_idea_with_trait = ambitious_union_boss
 			}
 			NOT = { has_government = communism }
+			NOT = { has_country_flag = ENG_combatting_boers }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
 		
