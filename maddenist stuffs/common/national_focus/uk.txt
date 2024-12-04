@@ -7950,9 +7950,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			retire_country_leader = yes #will work when we have earl gray
+			add_country_leader_role = {
+				character = ENG_darjeeling
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "9999.1.1.1"
+					traits = { war_industrialist }
+				}
+			}
 			add_stability = 0.05
 			add_timed_idea = {
-				idea = chose_darj
+				idea = GLO_chose_darj
 				days = 180
 			}
 		}
@@ -7987,7 +7997,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			retire_country_leader = yes #will work when we have earl gray
+			add_country_leader_role = {
+				character = ENG_rosehip
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "9999.1.1.1"
+					traits = { war_industrialist }
+				}
+			}
 		}
 	}
 
@@ -8398,7 +8417,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -8415,7 +8434,31 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			ENG = {
+				add_equipment_production = {
+				equipment = {
+					type = battle_cruiser_1
+					creator = ENG
+				}
+				progress = 0.50
+				amount = 1
+			}
+				add_equipment_production = {
+				equipment = {
+					type = battle_cruiser_1
+					creator = ENG
+				}
+				progress = 0.50
+			}
+				add_equipment_production = {
+				equipment = {
+					type = battle_cruiser_1
+					creator = ENG
+				}
+				progress = 0.50
+			}
+			}
+			
 		}
 	}
 	focus = {

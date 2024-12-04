@@ -142,9 +142,9 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_HARRY_POLLITT_DESC"
-			ideology=british_idealism2
-			traits={ staunch_stalinist }
-			expire="1965.1.1.1"
+			ideology=conservatism
+			traits={  }
+			expire="9999.1.1.1"
 			id=-1
 		}
 		corps_commander={

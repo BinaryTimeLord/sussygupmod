@@ -1,7 +1,7 @@
 ideas = {
     country = {
         GLO_chose_darj =  {
-            name = chose_darj
+            name = GLO_chose_darj
 
             #picture =
 
