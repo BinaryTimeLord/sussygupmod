@@ -8455,7 +8455,33 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			RAJ = {
+				add_resource = {
+					type = oil
+					amount = 10
+					state = 288
+				}
+				add_resource = {
+					type = rubber
+					amount = 10
+					state = 288
+				}
+				add_ideas = {
+					GLO_RAJ_autonomy_change
+				}
+			}
+			MAL = {
+				add_resource = {
+					type = oil
+					amount = 10
+					state = 336
+				}
+				add_resource = {
+					type = rubber
+					amount = 10
+					state 336
+				}
+			}
 		}
 	}
 	focus = {
@@ -8793,7 +8819,16 @@ focus_tree = {
 		y = 8
 		cost = 5
 		completion_reward = {
-
+			release_puppet = EGY
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = EGY
+					autonomous_state = autonomy_dominion
+				}
+			}
 		}
 	}
 	focus = {
@@ -8829,7 +8864,9 @@ focus_tree = {
 		y = 9
 		cost = 5
 		completion_reward = {
-
+			add_ideas = {
+				GLO_deffensive_effort_mod
+			}
 		}
 	}
 	focus = {

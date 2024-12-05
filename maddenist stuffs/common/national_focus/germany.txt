@@ -3911,6 +3911,12 @@ focus_tree = {
 			set_technology = {
 				paratroopers = 1
 			}
+			SDF = {
+				set_nationality = {
+					target_country = GER
+					character = SDF_victoria
+				}
+			}
 			hidden_effect = {
 				division_template = { 						
 					name = "Fallschirmjäger-Division"

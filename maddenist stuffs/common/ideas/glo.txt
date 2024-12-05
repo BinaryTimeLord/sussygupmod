@@ -69,6 +69,8 @@ ideas = {
                 always = no
             }
 
+            removal_cost = -1
+
             modifier = {
                 communism_drift = -0.05
                 fascism_drift = -0.05
@@ -82,6 +84,8 @@ ideas = {
             allowed = {
                 always = no
             }
+
+            removal_cost = -1
 
             modifier = {
                 justify_war_goal_time = -0.5
@@ -97,6 +101,8 @@ ideas = {
                 always = no
             }
 
+            removal_cost = -1
+
             modifier = {
                 lend_lease_tension = -0.3
                 send_volunteers_tension = -0.3
@@ -111,8 +117,39 @@ ideas = {
                 always = no
             }
 
+            removal_cost = -1
+
             modifier = {
                 conscription_factor = 0.1
+            }
+        }
+        GLO_deffensive_effort_mod = {
+            name = GLO_deffensive_effort_mod
+
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_bunker_factor = 0.5
+            }
+        }
+         GLO_RAJ_autonomy_change = {
+            name = GLO_RAJ_autonomy_change
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                autonomy_gain = -2
             }
         }
     }
