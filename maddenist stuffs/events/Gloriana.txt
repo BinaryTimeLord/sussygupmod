@@ -52,7 +52,7 @@ country_event = {
 
 	option = {
 		name = GLO_darj.1.a
-		GLO = {
+		ENG = {
 			country_event = {
 				id = GLO_darj.2
 				days = 2
@@ -61,7 +61,7 @@ country_event = {
 	}
 	option = {
 		name = GLO_darj.1.b
-		GLO = {
+		ENG = {
 			country_event = {
 				id = GLO_darj.3
 				days = 2
@@ -164,7 +164,7 @@ country_event = {
 country_event = { 
 	id = GLO_darj.5
 	title = GLO_darj.5.t
-	desc = 
+	desc = GLO_darj.5.d
 	#picture = 
 
 	fire_only_once = yes
@@ -200,7 +200,7 @@ country_event = {
 
 	option = { 
 		name = GLO_darj.7.a
-		GLO = {
+		ENG = {
 			country_event = {
 				id = GLO_darj.8
 				days = 2
@@ -209,7 +209,7 @@ country_event = {
 	}
 	option = {
 		name = GLO_darj.7.b
-		GLO = {
+		ENG = {
 			country_event = {
 				id = GLO_darj.9
 				days = 2
