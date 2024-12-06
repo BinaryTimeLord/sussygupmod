@@ -399,7 +399,7 @@ country_event = {
 
 	option = { 
 		name = GLO_darj.14.a
-		puppet = AFG
+		puppet = PER
 		if = {
 			limit = {
 				has_dlc = "Together for Victory"
