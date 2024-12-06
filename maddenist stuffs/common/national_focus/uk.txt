@@ -8839,14 +8839,28 @@ focus_tree = {
 			focus = ENG_war_in_our_time
 		}
 		available = {
-
+			any_country = {
+				is_major = yes
+				has_war_with = ENG
+			}
 		}
 		relative_position_id = ENG_tea_is_poured
 		x = 6
 		y = 9
 		cost = 5
 		completion_reward = {
-
+			AFG = {
+				country_event = {
+					id = GLO_darj.9
+					hours = 12
+				}
+			}
+			PER = {
+				country_event = {
+					id = GLO_darj.10
+					hours = 12
+				}
+			}
 		}
 	}
 	focus = {
@@ -8883,9 +8897,88 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			269 = { 	#British Somaliland
+				add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 12814
+				}
+			}
+			452 = {		#Matrouh
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 10061
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 7079
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 5078
+			}
+		}
+		447 = { 	#Alexandria
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 4076
+			}
+		}	
+		446 = {		#Suez
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 12049
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 4073
+			}	
+		}
+		183 = {		#Cyprus
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 11984
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 7193
+			}
+		}
+		118 = {		#Gibraltar
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 4135
+			}
+		}
+		116 = {		#Malta
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 12003
+			}
 		}
 	}
+}	
 	focus = {
 		id = ENG_gloriana_beachheads
 		#icon = 
@@ -8900,7 +8993,71 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			127 = { 	# Sussex
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9458
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3501
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11446
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6489
+				}
+			}
+			123 = {		# Cornwall
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 9562
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 11406
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 6526
+			
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 540
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 3463
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 3422
+			}
+			}
 		}
 	}
 	focus = {
@@ -8917,7 +9074,60 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			336 = {		#Malaysia
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 12299
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 10297
+				}
+			}
+			284 = {		#North Zealand
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 1814
+				}
+			}
+			723 = {		#South Zealand
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 2197
+				}
+			}
+			285 = {		#Sydney
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 12406
+				}
+			}
+			521 = {		#Brisbane
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 7564
+				}
+			}
+			517 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 7798
+				}
+			}
 		}
 	}
 

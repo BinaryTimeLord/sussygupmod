@@ -271,7 +271,7 @@ country_event = {
 country_event = { 
 	id = GLO_darj.9
 	title = GLO_darj.9.t
-	desc = GLO_darj.9d
+	desc = GLO_darj.9.d
 	#picture = 
 
 	fire_only_once = yes
@@ -279,5 +279,138 @@ country_event = {
 
 	option = { 
 		name = GLO_darj.9.a
+		ENG = {
+			country_event = {
+				id = GLO_darj.11
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = GLO_darj.9.b
+		ENG = {
+			country_event = {
+				id = GLO_darj.12
+				days = 2
+			}
+		}
 	}
 }
+country_event = { 
+	id = GLO_darj.10
+	title = GLO_darj.10.t
+	desc = GLO_darj.10.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.10.a
+		ENG = {
+			country_event = {
+				id = GLO_darj.13
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = GLO_darj.10.b
+		ENG = {
+			country_event = {
+				id = GLO_darj.14
+				days = 2
+			}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.11
+	title = GLO_darj.11.t
+	desc = GLO_darj.11.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.11.a
+
+		ENG = {
+			create_wargoal = {
+				target = AFG
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.12
+	title = GLO_darj.12.t
+	desc = GLO_darj.12.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.12.a
+		puppet = AFG
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = AFG
+				autonomous_state = autonomy_dominion
+			}
+		} 
+		
+	}
+}
+country_event = { 
+	id = GLO_darj.13
+	title = GLO_darj.13.t
+	desc = GLO_darj.13.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.13.a
+
+		ENG = {
+			create_wargoal = {
+				target = PER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+country_event = { 
+	id = GLO_darj.14
+	title = GLO_darj.14.t
+	desc = GLO_darj.14.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_darj.14.a
+		puppet = AFG
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = PER
+				autonomous_state = autonomy_dominion
+			}
+		} 
+		
+	}
+}
+
+
