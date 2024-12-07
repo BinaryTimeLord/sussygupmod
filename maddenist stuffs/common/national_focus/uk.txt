@@ -7866,6 +7866,185 @@ focus_tree = {
 		}
 	}
 
+	### Economy ###
+
+	focus = {
+		id = ENG_railways_act
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+
+		}
+		x = 43
+		y = 0
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_Commonwealth_Economic
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_railways_act
+		}
+		relative_position_id = ENG_railways_act
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_Royal_Infrastructure
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Commonwealth_Economic
+		}
+		relative_position_id = ENG_Commonwealth_Economic
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_Garden_Shears
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Royal_Infrastructure
+		}
+		relative_position_id = ENG_Royal_Infrastructure
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_The_Green_Flow
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Royal_Infrastructure
+		}
+		relative_position_id = ENG_Royal_Infrastructure
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Cheese_Gromit
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Royal_Infrastructure
+		}
+		relative_position_id = ENG_Royal_Infrastructure
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Commonwealth_Investments
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_The_Green_Flow
+		}
+		relative_position_id = ENG_The_Green_Flow
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Prospecting_Metal
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Commonwealth_Investments
+		}
+		relative_position_id = ENG_Commonwealth_Investments
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Expanding_Harvard
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Commonwealth_Investments
+		}
+		relative_position_id = ENG_Commonwealth_Investments
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_Ending_Repayments
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_Prospecting_Metal
+		}
+		relative_position_id = ENG_Prospecting_Metal
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+
+	### END OF ECONOMY BRANCH
+
 	### GLORIANA HISTORICAL - POLITICS ###
 
 	focus = {
@@ -7890,7 +8069,7 @@ focus_tree = {
 	available = {
 		date > 1937.1.1
 	}
-	x = 55
+	x = 56
 	y = 0
 	cost = 5
 	completion_reward = {
@@ -8384,15 +8563,35 @@ focus_tree = {
 	### ROSEHIP BRANCH ###
 
 	focus = {
+		id = ENG_love_is_war
+		#icon = 
+		available = {
+
+		}
+		prerequisite = {
+			focus = ENG_choose_rose
+		}
+		relative_position_id = ENG_choose_rose
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			ENG = {
+				add_to_faction = USA
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_tackling_kmm
 		#icon = 
 		prerequisite = {
-			focus = ENG_choose_rose
+			focus = ENG_love_is_war
 		}
 		available = {
 
 		}
-		relative_position_id = ENG_choose_rose
+		relative_position_id = ENG_love_is_war
 		x = 0
 		y = 1
 		cost = 5
@@ -8671,7 +8870,7 @@ focus_tree = {
 
 		}
 		relative_position_id = ENG_tackling_kmm
-		x = 2
+		x = 3
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -8845,7 +9044,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_tea_is_poured
-		x = 6
+		x = 7
 		y = 9
 		cost = 5
 		completion_reward = {
@@ -8874,7 +9073,7 @@ focus_tree = {
 
 		}
 		relative_position_id = ENG_tea_is_poured
-		x = 8
+		x = 9
 		y = 9
 		cost = 5
 		completion_reward = {
