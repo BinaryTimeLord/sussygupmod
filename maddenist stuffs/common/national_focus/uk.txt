@@ -29,7 +29,7 @@ focus_tree = {
 		available = {
 	 
 		}
-		x = 10
+		x = 14
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -260,6 +260,7 @@ focus_tree = {
 	 
 			}
 		}
+
 		focus = {
 			id = ENG_chain_home
 			#icon = 
@@ -277,6 +278,7 @@ focus_tree = {
 	 
 			}
 		}
+
 		focus = {
 			id = ENG_air_ministry
 			#icon = 
@@ -287,6 +289,129 @@ focus_tree = {
 	 
 			}
 			relative_position_id = ENG_shadow_factories
+			x = 2
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+
+		focus = {
+			id = ENG_Long_Way_Mukumbura
+			#icon = 
+			prerequisite = {
+				focus = ENG_Captain_Best
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_Captain_Best
+			x = 0
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+
+		focus = {
+			id = ENG_Recruiting_Sargents
+			#icon = 
+			prerequisite = {
+				focus = ENG_Long_Way_Mukumbura
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_Long_Way_Mukumbura
+			x = -1
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+
+		focus = {
+			id = ENG_A_Rather_Light_Horse
+			#icon = 
+			prerequisite = {
+				focus = ENG_Recruiting_Sargents
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_Recruiting_Sargents
+			x = 0
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+
+		focus = {
+			id = ENG_Special_Operations_Divison
+			#icon = 
+			prerequisite = {
+				focus = ENG_air_ministry
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_air_ministry
+			x = 0
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+		focus = {
+			id = ENG_Operation_Vegetarian
+			#icon = 
+			prerequisite = {
+				focus = ENG_Special_Operations_Divison
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_Special_Operations_Divison
+			x = -2
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+		focus = {
+			id = ENG_Operation_Rice_Bowl
+			#icon = 
+			prerequisite = {
+				focus = ENG_Special_Operations_Divison
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_Special_Operations_Divison
+			x = 0
+			y = 1
+			cost = 5
+			completion_reward = {
+	 
+			}
+		}
+		focus = {
+			id = ENG_Race_For_Bomb
+			#icon = 
+			prerequisite = {
+				focus = ENG_Special_Operations_Divison
+			}
+			available = {
+	 
+			}
+			relative_position_id = ENG_Special_Operations_Divison
 			x = 2
 			y = 1
 			cost = 5
@@ -322,7 +447,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_national_unity
-		x = 29
+		x = 35
 		y = 0
 		offset = {
 			x = -2
@@ -1193,7 +1318,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		x = 34
+		x = 39
 		y = 0
 
 		offset = {
@@ -6115,7 +6240,7 @@ focus_tree = {
 		prerequisite = {
 
 		}
-		x = 43
+		x = 48
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -6307,7 +6432,7 @@ focus_tree = {
 	available = {
 		date > 1937.1.1
 	}
-	x = 56
+	x = 61
 	y = 0
 	cost = 5
 	completion_reward = {
@@ -7591,4 +7716,208 @@ focus_tree = {
 
 		}
 	}
+
+	### END OF GLORIANA ALT-HIST BRANCH ###
+
+	### ANOTHER LOUSY WAR ###
+
+	focus = {
+		id = ENG_Another_Lousy_War
+		#icon = 
+		prerequisite = {
+			
+		}
+		available = {
+ 
+		}
+		x = 73
+		y = 0
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Across_the_Atlantic
+		#icon = 
+		prerequisite = {
+			focus = ENG_Another_Lousy_War
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Another_Lousy_War
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_War_Against_Tyranny
+		#icon = 
+		prerequisite = {
+			focus = ENG_Across_the_Atlantic
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Across_the_Atlantic
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Rally_the_Yanks
+		#icon = 
+		prerequisite = {
+			focus = ENG_War_Against_Tyranny
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_War_Against_Tyranny
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_The_Free_World
+		#icon = 
+		prerequisite = {
+			focus = ENG_Rally_the_Yanks
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Rally_the_Yanks
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Stay_in_the_Ring
+		#icon = 
+		prerequisite = {
+			focus = ENG_Another_Lousy_War
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Another_Lousy_War
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Opening_Home_Office
+		#icon = 
+		prerequisite = {
+			focus = ENG_Another_Lousy_War
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Another_Lousy_War
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Battle_of_Logistics
+		#icon = 
+		prerequisite = {
+			focus = ENG_Opening_Home_Office
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Opening_Home_Office
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Certain_Eventuality
+		#icon = 
+		prerequisite = {
+			focus = ENG_Opening_Home_Office
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Opening_Home_Office
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Battle_of_Logistics
+		#icon = 
+		prerequisite = {
+			focus = ENG_Opening_Home_Office
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Opening_Home_Office
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+	focus = {
+		id = ENG_Like_Beans_on_Toast
+		#icon = 
+		prerequisite = {
+			focus = ENG_Certain_Eventuality
+		}
+		available = {
+ 
+		}
+		relative_position_id = ENG_Certain_Eventuality
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+ 
+		}
+	}
+
+		### END ANOTHER LOUSY WAR ###
 }
+
