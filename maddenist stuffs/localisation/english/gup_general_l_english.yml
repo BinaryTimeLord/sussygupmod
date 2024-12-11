@@ -3481,7 +3481,7 @@
  SDF_transport_plane_equipment_1:0 "Ju 52"
 
 
-##GLORIANA##
+##GLORIANA
 
 ##MILITARY FOCUSES##
  ENG_sorry_state:0 "A Sorry State"
@@ -3522,11 +3522,13 @@
  ENG_Recruiting_Sargents_desc:0 "Maple has potential leaders that may rise the ranks for their respective school. We shall test their mettle on the battlefield for when the next tournament begins."
  ENG_A_Rather_Light_Horse:0 "A Rather Light Horse"
  ENG_A_Rather_Light_Horse_desc:0 "Our friends at the Orient seem keen to be bringing their horses to combat. We need all the help we can get and we shall put train them under our supervision."
- ENG_Special_Operations_Division:0 "Special Operations Division"
- ENG_Special_Operations_Division_desc:0 "The Rapid Pace of Science in the 20th century has only accelerated with the tournament. New studies in Nuclear and Biological Sciences may turn the tide of this war."
+ ENG_Special_Operations_Divison:0 "Special Operations Division"
+ ENG_Special_Operations_Divison_desc:0 "The Rapid Pace of Science in the 20th century has only accelerated with the tournament. New studies in Nuclear and Biological Sciences may turn the tide of this war."
  ENG_Operation_Vegetarian:0 "Operation Vegetarian"
  ENG_Operation_Vegetarian_desc:0 "Anthrax, one of Earth's deadliest diseases, might prove to be useful against Kuromorimine."
  ENG_Operation_Rice_Bowl:0 "Operation Rice Bowl"
  ENG_Operation_Rice_Bowl_desc:0 "Rice - Asia's primary grain of cultivation. Its destruction might halt Chi-Ha-Tan's advance."
  ENG_Race_For_Bomb:0 "Race For The Bomb"
  ENG_Race_For_Bomb_desc:0 "Our spies have informed us that Kuromorimine is researching a destructive weapon. We must be the first to develop this weapon"
+
+ ##END OF MILITARY BRANCH##
