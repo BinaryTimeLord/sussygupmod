@@ -3479,3 +3479,30 @@
  SDF_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
  SDF_cv_fighter_equipment_3_short:0 "BV 155"
  SDF_transport_plane_equipment_1:0 "Ju 52"
+
+
+##GLORIANA##
+
+##MILITARY FOCUSES##
+ ENG_sorry_state:0 "A Sorry State"
+ ENG_sorry_state_desc:0 "The Empire's victory in the last tournament has nonetheless left our team in a dire condition."
+ ENG_defence_spending:0 "Defense Spending Increases"
+ ENG_defence_spending_desc:0 "The school is noswhere prepared to mount its own self-protection. WIth Kuromorimine's aggressive actions, it is time to invest in our defense."
+ ENG_global_sorties:0 "Expanding Global Sorties"
+ ENG_global_sorties_desc:0 "The Royal Navy remains our strongest tool and the envy of the world. Global exercises of its strength may cow those who doubt our capabilities."
+ ENG_limited_liability:0 "Limited Liability"
+ ENG_limited_liability_desc:0 "The surest way to risk national security is to send our forces to Europe. A home defense strategy of airborne control to assist our men at home shall prove to be much more effective."
+ ENG_royal_navy_budget:0 "Royal Navy Budget Injection"
+ ENG_royal_navy_budget_desc:0 "In light of Kuromorimine's investments to her navy, additional funding must be given to modernize our own ships."
+ ENG_shadow_factories:0 "Shadow Factories"
+ ENG_shadow_factories_desc:0 "With war looming in the distnace, it is necessary we increase our manufacturing capacity. Constructing new factories will be untimely and slow. Using current ones may prove to be fruitful."
+ ENG_royal_navy_requisition:0 "Royal Navy Requisition Service"
+ ENG_royal_navy_requisition_desc:0 "The current navy is not enough for even an adequete defense. Turning to the public may prove beneficial for us."
+ ENG_heart_of_oak:0 "Heart of Oak"
+ ENG_heart_of_oak_desc:0 "The strength of our navy shall now be put to the test. WIth the citizens mobilized and the academy ready, the inevitable war will hasten the production of our vessels."
+ ENG_finalize_commonwealth:0 "Finalize Commonwealth Rearmament"
+ ENG_finalize_commonwealth_desc:0 "The Empire's strength comes from its size. Yet its greatest weakness comes from its sparsely defended territories. All parts of our Epmire must answer our call to arms."
+ ENG_Remembered_Not_Forgotten:0 "Remembered But Not Forgotten"
+ ENG_Remembered_Not_Forgotten_desc:0 "Those who gave their lives in the last tournament will not have been in vain when conflict breaks out again. Gloriana must learn from its past lessons."
+ ENG_Over_the_Hills:0 "Over the Hills and Far Away"
+ ENG_Over_the_Hills_desc:0 "The war may not be on our home island, but it certrainly has reached our homes"
