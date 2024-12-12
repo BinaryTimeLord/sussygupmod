@@ -309,7 +309,7 @@ focus_tree = {
 			relative_position_id = ENG_Captain_Best
 			x = 1
 			y = 1
-			cos = 5
+			cost = 5
 			completion_reward {
 
 			}
@@ -6518,7 +6518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_choose_darj
-		#icon = 
+		icon = GFX_focus_eng_motion_of_no_confidence
 		mutually_exclusive = {
 			focus = ENG_choose_rose
 		}
@@ -6565,8 +6565,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_choose_rose
-		#icon = 
-		mutually_exclusive = {
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		mutually_exclusive = {`
 			focus = ENG_choose_darj
 		}
 		allow_branch = {
@@ -7772,7 +7772,7 @@ focus_tree = {
 	### GLORIANA ALT-HIST BRANCH ###
 	focus = {
 		id = ENG_cups_are_shattered
-		#icon = 
+		icon = GFX_focus_eng_unite_the_anglosphere
 		prerequisite = {
 			focus = ENG_meeting_with_tea
 		}
