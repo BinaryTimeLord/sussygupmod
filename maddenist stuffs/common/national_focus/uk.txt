@@ -7802,7 +7802,7 @@ focus_tree = {
 			
 		}
 		available = {
- 
+			has_war_with_major = yes
 		}
 		x = 73
 		y = 0
@@ -7819,14 +7819,20 @@ focus_tree = {
 			focus = ENG_Another_Lousy_War
 		}
 		available = {
- 
+
 		}
 		relative_position_id = ENG_Another_Lousy_War
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			USA = {
+				add_war_support = 0.05
+				add_opinion_modifier = {
+					target = ENG
+					modifier = huge_increase
+				}
+			}
 		}
 	}
 
@@ -7844,7 +7850,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			GER = {
+				add_threat = 5
+			}
+			USA = {
+				add_idea = USA_lend_lease_act_na
+			}
 		}
 	}
 
@@ -7862,7 +7873,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			add_war_support = 0.2
 		}
 	}
 
@@ -7873,14 +7884,25 @@ focus_tree = {
 			focus = ENG_Rally_the_Yanks
 		}
 		available = {
- 
+			is_in_faction_with = USA
 		}
 		relative_position_id = ENG_Rally_the_Yanks
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			ENG {
+				add_to_faction = BRA
+				add_to_faction = VEN 
+				add_to_faction = COL 
+				add_to_faction = ECU 
+				add_to_faction = PRU 
+				add_to_faction = BOL 
+				add_to_faction = PAR 
+				add_to_faction = ARG 
+				add_to_faction = URG 
+				add_to_faction = CHL 
+			}
 		}
 	}
 
