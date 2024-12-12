@@ -298,6 +298,60 @@ focus_tree = {
 		}
 
 		focus = {
+			id = ENG_dad_army
+			#icon =
+			prerequisite = {
+				focus = ENG_Captain_Best
+			}
+			available = {
+
+			}
+			relative_position_id = ENG_Captain_Best
+			x = 1
+			y = 1
+			cos = 5
+			completion_reward {
+
+			}
+		}
+
+		focus = {
+			id = ENG_royal_bugger
+			#icon =
+			prerequisite {
+				focus = ENG_dad_army
+			}
+			available {
+
+			}
+			relative_position_id = ENG_dad_army
+			x = 0
+			y = 1
+			cost = 5
+			completion_reward {
+
+			}
+		}
+
+		focus = {
+			id = ENG_hms_service
+			#icon =
+			prerequisite {
+				focus = ENG_royal_bugger
+			}
+			available {
+
+			}
+			relative_position_id = ENG_royal_bugger
+			x = 0
+			y = 1
+			cost = 5
+			completion_reward {
+
+			}
+		}
+
+		focus = {
 			id = ENG_Long_Way_Mukumbura
 			#icon = 
 			prerequisite = {
@@ -307,7 +361,7 @@ focus_tree = {
 	 
 			}
 			relative_position_id = ENG_Captain_Best
-			x = 0
+			x = -1
 			y = 1
 			cost = 5
 			completion_reward = {
@@ -325,7 +379,7 @@ focus_tree = {
 	 
 			}
 			relative_position_id = ENG_Long_Way_Mukumbura
-			x = -1
+			x = 0
 			y = 1
 			cost = 5
 			completion_reward = {
@@ -6769,6 +6823,23 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ENG_grant_agree
+		#icon =
+		prerequisite = {
+			focus = ENG_spaghetti_pledge
+		}
+		available {
+
+		}
+		relative_position_id = ENG_spaghetti_pledge
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward {
+
+		}
+	}
+	focus = {
 		id = ENG_zhongguo_withdraw
 		#icon = 
 		prerequisite = {
@@ -6797,6 +6868,9 @@ focus_tree = {
 		#icon = 
 		prerequisite = {
 			focus = ENG_appease_kmm
+		}
+		prerequisite = {
+			focus = ENG_grant_agree
 		}
 		available = {
 
