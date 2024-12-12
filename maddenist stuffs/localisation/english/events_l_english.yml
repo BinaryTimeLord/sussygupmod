@@ -3382,3 +3382,25 @@ soviet.28.d:1 "The world may never know if Katyusha's purges were targeting the 
 
  #This loc string is used for when Germany pressures Sweden to give up resource rights:
  AAT_germany.10.desc: "With the recent occupation of [144.GetName] by [FROM.GetNameDef] and its lackeys, [GER.GetLeader] has increased his pressure on us to trade more resources with them to fuel their war machines. The deal offered isn't entirely one-sided, and rejecting it might see us dragged into the war..."
+
+ ##GLORIANA EVENTS##
+   GLO_choice.1.t:0 "Earl Grey Retires as Gloriana's Commander!"
+   GLO_choice.1.d:0 "Earl Grey, our commandant, has officially stepped down from her position. Her way of Tankery was the key to our victory in the 62nd Tournament. Though not so elegant, it has proven effective, and as such, we mourn the loss of our great commandant. All is not lost however as two candidates have risen up to take the mantle - Earl Grey's student herself, Darjeeling, who had been under her wing for two years, and Rosehip, a 1st year student who shares the boldness of our former commandant."
+   GLO_choice.1.a:0 "Darjeeling has been her student her entire stay. She is our best candidate."
+   GLO_choice.1.b:0 "Rosehip follows Earl Grey's Way of Tankery. She will lead us to glory!"
+   GLO_darj.1.t:0 "Chi-Ha-Tan-Gloriana Naval Treaty"
+   GLO_darj.1.d:0 "Our naval prowess grows stronger by the second! Gloriana is well aware of our ever increasing power, and has sent us a proposal for us to reduce our naval power in exchange for their islands."
+   GLO_darj.1.a:0 "It will not be wise to make more enemies."
+   GLO_darj.1.b:0 "A tempting offer, but we will not bow to anybody."
+   GLO_darj.2.t:0 "Chi-Ha-Tan Signs the Treaty!"
+   GLO_darj.2.d:0 "Chi-Ha-Tan has agreed to our terms that they will decrease their naval capacity in exchange for our islands. With this treaty, the threat of war on the East should not be as prevelant, however we must still remain vigilant against them."
+   GLO_darj.2.a:0 "To friendship between the two schools!"
+   GLO_darj.3.t:0 "Chi-Ha-Tan Rejects the Treaty!"
+   GLO_darj.3.d:0 "Chi-Ha-Tan has decided to reject our fair terms and continue to build up their power in the Orient! This act of defiance against our power proves their lack of will to negotiate any form of concessions or peace what so ever. We must prepare ourselves in the future should they attack us."
+   GLO_darj.3.a:0 "Chi-Ha-Tan has brought this upon themselves."
+   GLO_war.1.t:0 "Rosehip Secures Alisa's Endorsement"
+   GLO_war.1.d:0 "In Rosehip's trip to Saunders, during a speech at the All Stars' Academy, Alisa stepped onto the stage and announced her endorsement to the St. Gloriana war effort. Despite the sudden interruption, the endorsement has spread positively throughout Saunders due to Alisa's boldness, and public opinion to Saunders' interventionism has increased dramatically."
+   GLO_war.1.a:0 "Saunders will be our key to victory!"
+   GLO_war.2.t:0 "Rosehip Visits Saunders, Alisa Secures Endorsement"
+   GLO_war.2.d:0 "During Rosehip's visit to our school at a speech in the All Stars' Academy, Alisa stepped onto the stage and announced her endorsement to the St. Gloriana war effort. Despite the sudden interruption, the endorsement has spread positively throughout our students due her boldness. The students calling for interventionism has increased dramatically."
+   GLO_war.2.a:0 "Let us not abandon our allies in their time of need!"

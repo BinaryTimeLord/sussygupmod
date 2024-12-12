@@ -7826,16 +7826,18 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			USA = {
-				add_war_support = 0.05
-				add_opinion_modifier = {
-					target = ENG
-					modifier = huge_increase
+				country_event = {
+				id = GLO_war.1
+				days = 2
 				}
-			}
+				USA = {
+				country_event = {
+				id = GLO_war.2
+				days = 2
+				}
 		}
 	}
-
+}
 	focus = {
 		id = ENG_War_Against_Tyranny
 		#icon = 
