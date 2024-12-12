@@ -3539,7 +3539,7 @@
 
     ##END OF MILITARY BRANCH##
  
- ##ECONOMY BRANCH##
+ ##ECONOMY FOCUSES##
     ENG_railways_act:0 "1936 Railways Act"
     ENG_railways_act_desc:0 "At present our nations railways are operated by a consortium of railway corporations, enboldened by previous pro railway legistation of the railways act of 1924, making all cargo over 4 tonnes has to travel by rail, though a boon for railways it has meant truck manufacturing is rather lacking it may be time to adjust our rules in this regard."
     ENG_Commonwealth_Economic:0 "Commonwealth Economic Council"
@@ -3576,7 +3576,7 @@
     ##DARJEELING BRANCH##
 
        ENG_a_gentle_touch:0 "A Gentle Touch"
-       ENG_a_gentle_touch_desc:0 "We must seek to integrate Tigress into our school, by starting with taking over their council with our own. Many students in the Raj also wish to become integrated into our school. We may allow them to form their own school within' the borders of the Raj, however, this will anger the Raj, and stray even further from us."
+       ENG_a_gentle_touch_desc:0 "The Raj has been one of our strongest dominions in the Orient. Recently however, they had been disloyal to our cause, and many students in their eastern territories seek to establish their own school. To strengthen our grip, we will grant these students their wish, and replace the council of Raj with our own. This in turn will anger the Raj, where they may become much more autonomous and rebellious."
        ENG_words_not_swords:0 "Words, Not Swords"
        ENG_words_not_swords_desc:0 "The horrors of the last war still haunt us to this day. We must do everything in our power to prevent such tragedy from happening again. Our words shall be sharper than blades!"
        ENG_benelux_neutrality:0 "Support Benelux Neutrality"
@@ -3604,3 +3604,55 @@
     ##ROSEHIP BRANCH##
        ENG_love_is_war:0 "Love Is War"
        ENG_love_is_war_desc:0 "As we in Gloriana say - All is far in love and war. Today is different. Today love is war, and to help us, we shall begin negotiations with Saunders in an alliance, to prepare against our enemies!"
+       ENG_tackling_kmm:0 "Tackling Kuromorimine Aggression"
+       ENG_tackling_kmm_desc:0 "The unjust aggression of Kuromorimine poses a threat not just to our security, but a challenge to the very ideals we stand for. To rally our people and secure international sympathy, we must launch a powerful propaganda campaign that highlight the perils of Kuromorimine's expansionist ambitions."
+       ENG_across_seven_seas:0 "Across the Seven Seas"
+       ENG_across_seven_seas_desc:0 "St. Gloriana once ruled the seas, now we are an aging superpower. While Pravda has yet to reach our potential, Saunders has long surpassed us economically. With proper funding, however, we can get a few more modern battlecruisers into the line."
+       ENG_expand_colonial_exploits:0 "Expand Colonial Exploits"
+       ENG_expand_colonial_exploits_desc:0 "Our colonies are a vital part of our school's prosperity, and their untapped resources hold the key to our continued growth and power. To secure our place as a dominant force, we must expand our colonial operations and fully exploit these rich territories."
+       ENG_wartime_defense_regulation:0 "Wartime Defense Regulations"
+       ENG_wartime_defense_regulation_desc:0 "Numerous voices shout in the streets. Whether they be communsit or fascist, they represent a direct challenge to our shared values and the legacy of our instituions which call for unity, loyalty, and the common good. For the good of the academy, we cannot allow these voices to continue during wartime."
+       ENG_zhongguo_assistance:0 "Zhongguo Assistance"
+       ENG_zhongguo_asssitance_desc:0 "Zhongguo is fighitng with all its strength against the CHi-Ha-Tan menace. Though direct involvement will not be possible, it's time we begin offering indirect military assistance to help undermine the Chi-Ha-Tan's power projection in the region."
+       ENG_combatting_authoritarianism_abroad:0 "Combatting Authoritarianism Abroad"
+       ENG_combatting_authoritarianism_abroad_desc:0 "The Purple Division civil war has shown us what occurs when we sit on the sidlines. If we are to prevent such radicals from growing across the globe, we must see it fit to itnervene in foreign conflicts when needed. It's time to draft a plan for such an eventuality."
+       ENG_combatting_mzansi_boers:0 "Combatting Mzansi Boers"
+       ENG_combatting_mzansi_boers_desc:0 "Mzansi has been the more troublesome of the dominions, with a strong contingent of the white population being Anti-Gloriana. Through targetted arrests and other matter, we can help reduce the likelihood of it going rogue during wartime."
+       ENG_no_tea_for_bullies:0 "No Tea for Bullies"
+       ENG_no_tea_for_bullies_desc:0 "Kuromorimine, Anzio and CHi-Ha-Tan have proven to us they are unwilling to negotiate, nor comrpomise with us. We must cut them off from all trade and see themselves starve."
+       ENG_fight_the_enemy:0 "Taking the Fight to the Enemy"
+       ENG_fight_the_enemy_desc:0 "Our enemies care not for whom they invade. Why should we care for those that undermine our interests."
+       ENG_send_the_skiis:0 "Send the Skiis"
+       ENG_send_the_skiis_desc:0 "Jatkosota is in a fight for its very own survival. After significant public pressure, we must send them some degree of support. Though no boots on the ground, we can still send them some limited support."
+       ENG_prepare_for_war:0 "Prepare for the Next War"
+       ENG_prepare_for_war_desc:0 "If we are to be in a position to resist foreign aggression, we must do our best to ready the public for the possibility of war, and if necessary, whip them into nationalistic fear."
+       ENG_over_the_top:0 "Over the Top"
+       ENG_over_the_top_desc:0 "Let the story of St. Gloriana remind us that true strength comes not only from arms, but the courage ot stand together in the face of any storm."
+       ENG_cavalry_is_here:0 "The Cavalry is Here"
+       ENG_cavalry_is_here_desc:0 "If war ought to come to our empire, everyone will need to do their bit. Though some may be more unwilling than others, it is necessary that everyone does their duty. For our school and empire!"
+
+       ##END OF ROSEHIP BRANCH
+
+    ##WARTIME BRANCH##
+       ENG_securing_north_african_stability:0 "Securing North African Stability"
+       ENG_securing_north_african_stability_desc:0 "Sphinx has been difficult to hold onto since our first days of occupation, and wit hthe growing threat of war, we may need to take the initiative and prevent an ANti-Gloriana revolt from taking place and overthrowing our regime. By granting some token concessions, we can maintain the Suez while keeping order."
+       ENG_world_war_oil:0 "World War Oil"
+       ENG_world_war_oil_desc:0 "Ashur and Khatam have shown sympathy for our adverseries in the past. It's time we ensure our interests aren't threatened by these dangers."
+       ENG_grand_deffensive_effort:0 "Grand Defensive Effort"
+       ENG_grand_deffensive_effort_desc:0 "During these trying times, the survival of our academy hinges on our ability to withstand the relentless onslaught of our enemies. We must commit to an all-encompassing defensive construction campaign that mobilizes every aspect of our military, economy, and civilian infastructure."
+       ENG_anti_anzio_preparations:0 "Anti Anzio Preparations"
+       ENG_anti_anzio_preparations_desc:0 "Through Operation Trashbin, which was conducted by one of our agents simply checking the trash bins of Anzio diplomatic service, we have reason to believe Anzio has desired on our territory. Why not leave a lovely surprise for them then."
+       ENG_gloriana_beachheads:0 "Gloriana Beachheads"
+       ENG_gloriana_beachheads_desc:0 "Who needs a good beach when a bunker is all we need. Better than some lodging and better yet, our lads can cut down anyone foolish enough to land on our shores."
+       ENG_fortify_koala_kiwi:0 "Fortress Koala and Kiwi"
+       ENG_fortify_koala_kiwi_desc:0 "Chi-Ha-Tan may not endanger our beaches, but both Koala and Kiwi are right on the frontline of any eventual war with them. Perhaps a few shovels are in order."
+       ##END OF WARTIME BRANCH##
+    
+    ##END OF GLORIANA HISTORICAL BRANCH##
+ 
+ ##POLITICAL AHISTORICAL FOCUSES##
+    ENG_cups_are_shattered:0 "Cups are Shattered"
+    ENG_cups_are_shattered_desc:0 "Earl Grey is the one true commandant destined to lead St. Gloriana! She has decided she will maintain her role as the commander, even if this may upset many of our own students!                                                 §RWARNING:THE AHISTORICAL PATH IS STILL IN DEVELOPMENT. THE FOCUS WILL DO NOTHING AS OF RIGHT NOW§R "
+    ##END OF AHISTORICAL FOCUSES
+
+ ##ANOTHER LOUSY WAR FOCUSES##
