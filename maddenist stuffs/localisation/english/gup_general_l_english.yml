@@ -3532,3 +3532,26 @@
  ENG_Race_For_Bomb_desc:0 "Our spies have informed us that Kuromorimine is researching a destructive weapon. We must be the first to develop this weapon"
 
  ##END OF MILITARY BRANCH##
+ 
+ ##ECONOMY BRANCH##
+ ENG_railways_act:0 "1936 Railways Act"
+ ENG_railways_act_desc:0 "At present our nations railways are operated by a consortium of railway corporations, enboldened by previous pro railway legistation of the railways act of 1924, making all cargo over 4 tonnes has to travel by rail, though a boon for railways it has meant truck manufacturing is rather lacking it may be time to adjust our rules in this regard."
+ ENG_Commonwealth_Economic:0 "Commonwealth Economic Council"
+ ENG_Commonwealth_Economic_desc:0 "The imperial federation may be a fantasy but empire wide trade is not, if our empire is to last a thousand years we must make decisive action to ensure trade remains within the empire as a whole, and a upside of this policy is that its quite popular with voters."
+ ENG_Royal_Infrastructure:0 "Royal Infrastructure Fund"
+ ENG_Royal_Infrastructure_desc:0 "A rather novel idea has been proposed by the home office, that being a slight reallocation of funds towards our colonial and dominion holdings to boost resource extraction, though negligable in terms of our own benefit, it would make the locals quite happy as would the extra extraction capacity"
+ ENG_Garden_Shears:0 "Garden Shears"
+ ENG_Garden_Shears_desc:0 "A nice trimming of the bushes in the countryside ought help with land clearances, who knows we may even find the round table."
+ ENG_The_Green_Flow:0 "The Green must flow"
+ ENG_The_Green_Flow_desc:0 "If war were declared today we'd be occupied within the week, such stirring words from the esteemed rosehip has somewhat stirred the home office into authorizing additional funds away from debt repayment and instead towards the neccessary defence fund."
+ ENG_Cheese_Gromit:0 "Cheese Gromit"
+ ENG_Cheese_Gromit_desc:0 "The fresh, clean and milk flavour of Wensleydale cheese makes it a favourite amongst cheese lovers. The creamy texture melts smoothly on the palate, while the crumbly consistency adds a pleasant and rich contrast, Darjeeling is a particular lover of it and has stated that it is vital to national sovereignty."
+ ENG_Commonwealth_Investments:0 "Commonwealth Investments"
+ ENG_Commonwealth_Investments_desc:0 "The Commonwealth Investment commission is a newly proposed programme to help boost economical development across the empire, by no means designed to undermine our place as its leader, the plan involves some limited internal shuffling of resources to help our empire grow domestic production in preparation for wartime needs."
+ ENG_Prospecting_Metal:0 "Prospecting for Metal."
+ ENG_Prospecting_Metal_desc:0 "For many years our colonial investment strategy has been lacking, with minimal reinvestment into areas of not immediate return, we have effectively squandered our empires resources, though we can quickly rectify parts of this issue through investment."
+ ENG_Expanding_Harvard:0 "Expanding Harvard"
+ ENG_Expanding_Harvard_desc:0 "Through an exchange program with Cambridge we can expect a degree of mutual cooperation between the two institutions, and allow us to expand our own military research and development capabilities in-house."
+ ENG_Ending_Repayments:0 "Ending Repayments."
+ ENG_Ending_Repayments_desc:0 "Finally through economic realization of debt repayments, and financial markets rebalancing we can free ourselves from any concerns of maintaining debt repayments, while post war we will likely lead to near complete economic ruin we must forgo sustainability for total victory."
+ ##END OF ECONOMY BRANCH##
