@@ -7808,7 +7808,7 @@ focus_tree = {
 		y = 0
 		cost = 5
 		completion_reward = {
- 
+			add_threat = 10
 		}
 	}
 
@@ -7893,20 +7893,68 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			ENG {
-				add_to_faction = BRA
-				add_to_faction = VEN 
-				add_to_faction = COL 
-				add_to_faction = ECU 
-				add_to_faction = PRU 
-				add_to_faction = BOL 
-				add_to_faction = PAR 
-				add_to_faction = ARG 
-				add_to_faction = URG 
-				add_to_faction = CHL 
+				BRA = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				VEN = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				COL = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				ECU = {
+					country_event = {
+						id =GLO_war.3
+						days = 2
+					}
+				}
+				PRU = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				BOL = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				PAR = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				ARG = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				URG = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
+				CHL = {
+					country_event = {
+						id = GLO_war.3
+						days = 2
+					}
+				}
 			}
 		}
-	}
 
 	focus = {
 		id = ENG_Stay_in_the_Ring

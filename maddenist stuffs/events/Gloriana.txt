@@ -414,7 +414,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = { ## ACROSS ATLANTIC GLORIANA VER. ##
 	id = GLO_war.1
 	title = GLO_war.1.t
 	desc = GLO_war.1.d 
@@ -435,7 +435,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = { ## ACROSS ATLANTIC SAUNDERS VER. ##
 	id = GLO_war.2
 	title = GLO_war.2.t
 	desc = GLO_war.2.d
@@ -452,5 +452,68 @@ country_event = {
 				modifier = huge_increase
 			}
 		}
+	}
+}
+
+country_event = { ## GLORIANA INVITES SOUTH AMERICA EVENT ##
+	id = GLO_war.3
+	title = GLO_war.3.t
+	desc = GLO_war.3.d 
+	#picture = 
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_war.3.a 
+		ENG = {
+			add_to_faction = ROOT
+			country_event = {
+				id = GLO_war.4
+				hours = 5
+			}
+		}
+	}
+
+	option = { 
+		name = GLO_war.3.b
+		add_opinion_modifier = {
+			target = ENG
+			modifier = large_decrease
+		}
+		ENG = {
+			country_event = {
+				id = GLO_war.5
+				hours = 5
+			}
+		}
+	}
+}
+
+country_event = { ## INVITATION ACCEPTED ##
+	id = GLO_war.4
+	title = GLO_war.4.t
+	desc = GLO_war.4.d 
+	#picture = 
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_war.4.a 
+	}
+}
+
+country_event = { ## INVITATION DENIED ##
+	id = GLO_war.5
+	title = GLO_war.5.t
+	desc = GLO_war.5.d 
+	#picture = 
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_war.5.a 
 	}
 }
