@@ -7993,7 +7993,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_Battle_of_Logistics
+		id = ENG_Battle_of_Air
 		#icon = 
 		prerequisite = {
 			focus = ENG_Opening_Home_Office
@@ -8042,7 +8042,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			
 		}
 	}
 
@@ -8060,7 +8060,18 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			IRQ = {
+				country_event = {
+					id = GLO_war.6
+					days = 2
+				}
+			}
+			PER = {
+				countrY_event = {
+					id = GLO_war.6
+					days = 2
+				}
+			}
 		}
 	}
 

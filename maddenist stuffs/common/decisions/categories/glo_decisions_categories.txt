@@ -1,0 +1,23 @@
+GLO_air_battle = {
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		has_completed_focus = ENG_Battle_of_Air
+	}
+    #icon = 
+    priority = 10
+}
+
+GLO_log_battle = {
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		has_completed_focus = ENG_Battle_of_Logistics
+	}
+    #icon =
+    priority = 9
+}

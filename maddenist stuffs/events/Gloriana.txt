@@ -517,3 +517,69 @@ country_event = { ## INVITATION DENIED ##
 		name = GLO_war.5.a 
 	}
 }
+
+country_event = {
+	id = GLO_war.6
+	title = GLO_war.6.t 
+	desc = GLO_war.6.d 
+	#picture 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = GLO_war.6.a 
+
+		ENG = {
+			country_event = {
+				id = GLO_war.7
+				days = 2
+			}
+		}	
+	}
+
+	option = {
+		name = GLO_war.6.b 
+
+		ENG = {
+			country_event = {
+				id = GLO_war.8
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GLO_war.7
+	title = GLO_war.7.t 
+	desc = GLO_war.7.d 
+	#picture 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = GLO_war.7.a 
+		
+		puppet = FROM 
+		
+		}	
+}
+
+country_event = {
+	id = GLO_war.8
+	title = GLO_war.8.t 
+	desc = GLO_war.8.d 
+	#picture 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = GLO_war.8.a 
+
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = from
+		}
+
+		}	
+}

@@ -1,0 +1,83 @@
+GLO_air_battle = {
+	GLO_airatk_increase = {
+        cost = 100
+        #icon = 
+
+        available = {
+            NOT = {
+                has_country_flag = GLO_air_increase
+            }
+        }
+
+        complete_effect = { 
+        set_country_flag = GLO_air_increase
+        }
+
+        modifier = {
+            air_attack_factor = 0.1
+        }
+
+        days_remove = 60
+
+        remove_effect = {
+        clr_country_flag = GLO_air_increase
+        }
+}
+
+    GLO_airdef_increase = {
+        cost = 100
+        #icon =
+
+        available = {
+            NOT = {
+                has_country_flag = GLO_air_increase
+            }
+        }
+
+        complete_effect = { 
+        set_country_flag = GLO_air_increase
+        }
+
+        modifier = {
+            air_defence_factor = 0.1
+        }
+        
+        days_remove = 60
+
+        remove_effect = {
+        clr_country_flag = GLO_air_increase
+        }
+    }
+}
+
+
+GLO_log_battle = {
+    GLO_tea = {
+        cost = 100
+        #icon = 
+
+        available = {
+            NOT = {
+                has_country_flag = GLO_tea_increase
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = {
+                flag = GLO_tea_increase
+                days = 365
+                value = 1
+            }
+        }
+        modifier = {
+            army_attack_factor = 0.2
+            army_defence_factor = 0.2
+            supply_consumption_factor = -0.3
+        }
+
+        days_remove = 60
+
+    }
+
+}
+
