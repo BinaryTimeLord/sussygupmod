@@ -1228,7 +1228,14 @@ AUS_intervention = {
 		selectable_mission = no
 		complete_effect = {
 			GER = {
-				complete_national_focus = GER_river_incident
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = GER_river_incident
+						}
+					}
+					complete_national_focus = GER_river_incident
+				}
 			}	
 		}
 	}
