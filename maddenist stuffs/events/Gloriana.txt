@@ -559,8 +559,19 @@ country_event = { ## ACCEPT ##
 
 	option = {
 		name = GLO_war.7.a 
-		
-		puppet = FROM 
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = FROM
+				autonomous_state = autonomy_dominion
+			}
+		} 
+
+		else = {
+			puppet = FROM 
+		}
 		
 		}	
 }
