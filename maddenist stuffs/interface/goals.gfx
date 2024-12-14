@@ -9152,6 +9152,14 @@ spriteTypes = {
 	 name = "GFX_remember_forgot"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_remember_forgot.tga"
 	 }
+ SpriteType = {
+	 name = "GFX_chain_home"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_chain_home.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_finalize_commonwealth"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_finalize_commonwealth.tga"
+	 }
 
 }
 
