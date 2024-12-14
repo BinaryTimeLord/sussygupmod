@@ -9108,4 +9108,51 @@ spriteTypes = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
 	}
+
+
+# Gloriana Icons 
+
+ SpriteType = {
+	 name = "GFX_sorry_state"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_sorry_state.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_global_sortie"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_global_sortie.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_heart_oak"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_heart_oak.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_limited_liability"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_limited_liability.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_navy_budget"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_navy_budget.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_navy_requisition"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_navy_requisition.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_shadow_factory"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_shadow_factory.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_defense_spending"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_defense_spending.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_ministry_reshuffle"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_ministry_reshuffle.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_remember_forgot"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_remember_forgot.tga"
+	 }
+
 }
+
+

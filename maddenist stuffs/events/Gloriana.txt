@@ -518,7 +518,7 @@ country_event = { ## INVITATION DENIED ##
 	}
 }
 
-country_event = {
+country_event = { ## PUPPET MIDDLE EAST ##
 	id = GLO_war.6
 	title = GLO_war.6.t 
 	desc = GLO_war.6.d 
@@ -549,7 +549,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { ## ACCEPT ##
 	id = GLO_war.7
 	title = GLO_war.7.t 
 	desc = GLO_war.7.d 
@@ -565,7 +565,7 @@ country_event = {
 		}	
 }
 
-country_event = {
+country_event = { ## DECLINE ##
 	id = GLO_war.8
 	title = GLO_war.8.t 
 	desc = GLO_war.8.d 
