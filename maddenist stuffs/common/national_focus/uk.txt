@@ -22,6 +22,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_sorry_state
+		icon = GFX_sorry_state
 		mutually_exclusive = {
 			focus = ENG_a_change_in_course
 		}
@@ -38,7 +39,7 @@ focus_tree = {
 	}
 		focus = {
 			id = ENG_defence_spending
-			#icon = 
+			icon = GFX_defense_spending
 			prerequisite = {
 				focus = ENG_sorry_state
 			}
@@ -55,7 +56,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_limited_liability
-			#icon = 
+			icon = GFX_limited_liability
 			prerequisite = {
 				focus = ENG_defence_spending
 			}
@@ -72,7 +73,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_global_sorties
-			#icon = 
+			icon = GFX_global_sortie
 			prerequisite = {
 				focus = ENG_defence_spending
 			}
@@ -89,7 +90,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_royal_navy_budget
-			#icon = 
+			icon = GFX_navy_budget
 			prerequisite = {
 				focus = ENG_global_sorties
 			}
@@ -106,7 +107,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_shadow_factories
-			#icon = 
+			icon = GFX_shadow_factory
 			prerequisite = {
 				focus = ENG_limited_liability
 			}
@@ -123,7 +124,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_royal_navy_requisition
-			#icon = 
+			icon = GFX_navy_requisition
 			prerequisite = {
 				focus = ENG_royal_navy_budget
 			}
@@ -140,7 +141,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_heart_of_oak
-			#icon = 
+			icon = GFX_heart_oak
 			prerequisite = {
 				focus = ENG_royal_navy_budget
 			}
@@ -177,7 +178,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Remembered_Not_Forgotten
-			#icon = 
+			icon = GFX_remember_forgot
 			prerequisite = {
 				focus = ENG_finalize_commonwealth
 			}
@@ -281,7 +282,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_air_ministry
-			#icon = 
+			icon = GFX_ministry_reshuffle
 			prerequisite = {
 				focus = ENG_shadow_factories
 			}
