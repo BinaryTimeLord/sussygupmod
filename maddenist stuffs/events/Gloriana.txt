@@ -589,6 +589,157 @@ country_event = { ## DECLINE ##
 		}	
 }
 
+country_event = {##Certain Eventuality Chain##
+	id = GLO_war.9
+	title = GLO_war.9.t 
+	desc = GLO_war.9.d 
+	#picture =
+
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {##Ask to Cede Fleet##
+		name = GLO_war.9.a 
+		every_country = {
+			limit = {
+			has_cosmetic_tag = FRA_VICHY
+			}
+			country_event = {
+				id = GLO_war.10
+				days = 2
+			}
+		}
+		
+	}
+
+	option = {##Destroy Fleet##
+		name = GLO_war.9.b
+		every_country = {
+		limit = {
+			has_cosmetic_tag = FRA_VICHY
+		}
+		destroy_ships = {
+			type = ship_hull_heavy
+			count = 3 
+		}
+		country_event = {
+			id = GLO_war.12
+			days = 2
+		}
+	}
+	}
+}
+
+country_event = {##Vichy France asked to Cede Fleet##
+	id = GLO_war.10
+	title = GLO_war.10.t 
+	desc = GLO_war.10.d 
+	#picture = 
+
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {##Cede Fleet##
+		name = GLO_war.10.a
+		transfer_navy = {
+			target = ENG
+		}
+		ENG = {
+			country_event = {
+				id = GLO_war.13
+				days = 2
+			}
+			add_opinion_modifier = {
+				modifier = large_decrease
+				target = GER
+			}
+		}
+	}
+
+	option = {##Refuse##
+		name = GLO_war.10.b
+		ENG = {
+		country_event = {
+
+				id = GLO_war.11
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {##Vichy refused to Cede Fleet##
+	id = GLO_war.11
+	title = GLO_war.11.t 
+	desc = GLO_war.11.d 
+	#picture = 
+
+	fire_only_once = yes 
+	is_triggered_only = yes 
+
+	option = {##Destroy Fleet##
+		name = GLO_war.11.a 
+		FROM = {
+
+		destroy_ships = {
+			type = ship_hull_heavy
+			count = 3 
+		}
+		country_event = {
+			id = GLO_war.12
+			days = 2
+		}
+		}
+	}
+
+	option = {
+		name = GLO_war.11.b 
+	}
+}
+
+country_event = {##Vichy France fleet destroyed##
+	id = GLO_war.12
+	title = GLO_war.12.t 
+	desc = GLO_war.12.d 
+	#picture =
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {##War against Gloriana##
+		name = GLO_war.12.a
+		declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+		add_opinion_modifier = {
+			modifier = large_decrease
+			target = FROM
+		}
+		GER = {
+			add_to_faction = ROOT
+		}
+	}
+
+	option = {##Do Nothing##
+		name = GLO_war.12.b
+	}
+}
+
+country_event = {##Vichy France fleet ceded##
+	id = GLO_war.13
+	title = GLO_war.13.t 
+	desc = GLO_war.13.d 
+	#picture =
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GLO_war.13.a
+		}
+}
+
 country_event = { ##Sorry State if Earl Grey is in Charge
 	id = GLO_mil.1
 	title = GLO_mil.1.t

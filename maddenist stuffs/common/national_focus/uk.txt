@@ -8062,7 +8062,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+				country_event = {
+				id = GLO_war.9
+				hours = 2
+			}
 		}
 	}
 
