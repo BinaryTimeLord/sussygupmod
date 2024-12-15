@@ -152,5 +152,19 @@ ideas = {
                 autonomy_gain = -2
             }
         }
+        GLO_railways_act = {
+            name = GLO_railways_act
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+
+            modifier = {
+                
+            }
+        }
     }
 }

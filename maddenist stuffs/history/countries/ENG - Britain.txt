@@ -197,6 +197,7 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
+	GLO_railways_act
 }
 	
 
@@ -274,9 +275,9 @@ if = {
 	}
 
         create_country_leader = {
-	        name = "Darjeeling"
+	        name = "Earl Gray"
 	        desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-	        picture = "Portrait_ENG_Darjeeling.dds"
+	        #picture = "Portrait_ENG_Darjeeling.dds"
 	        expire = "1965.1.1"
 	        ideology = liberalism
 	        traits = {
@@ -299,7 +300,9 @@ if = {
 	complete_national_focus = uk_commonwealth_focus
 	complete_national_focus = uk_industrial_focus
 	complete_national_focus = ENG_vickers_experimental_facility_focus
-	complete_national_focus = ENG_steady_as_she_goes
+	complete_national_focus = ENG_meeting_with_tea
+	complete_national_focus = ENG_tea_is_poured
+	complete_national_focus = ENG_choose_darj
 
 	give_guarantee = POL
 

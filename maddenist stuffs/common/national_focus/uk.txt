@@ -6591,7 +6591,7 @@ focus_tree = {
 				country_leader = {
 					ideology = conservatism
 					expire = "9999.1.1.1"
-					traits = { war_industrialist }
+					traits = { elegant_and_wise diplomatic_tongue }
 				}
 			}
 			add_stability = 0.05
