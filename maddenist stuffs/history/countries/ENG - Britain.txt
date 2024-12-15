@@ -275,9 +275,9 @@ if = {
 	}
 
         create_country_leader = {
-	        name = "Earl Gray"
+	        name = "Darjeeling"
 	        desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-	        #picture = "Portrait_ENG_Darjeeling.dds"
+	        picture = "Portrait_ENG_Darjeeling.dds"
 	        expire = "1965.1.1"
 	        ideology = liberalism
 	        traits = {
@@ -520,9 +520,9 @@ add_to_faction = MAL
 #give_guarantee = CZE
 
 create_country_leader = {
-	name = "Darjeeling"
+	name = "Earl Gray"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_ENG_Darjeeling.dds"
+	picture = "gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -531,7 +531,7 @@ create_country_leader = {
 	}
 }
 
-
+recruit_character = ENG_earl_gray
 recruit_character = ENG_darjeeling
 recruit_character = ENG_dajirin
 recruit_character = ENG_orange_pekoe

@@ -1,4 +1,19 @@
 characters={
+	ENG_earl_gray={
+		name="Earl Gray"
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Earl_Gray.tga"
+			}
+		}
+		country_leader={
+			desc="POLITICS_STANLEY_BALDWIN_DESC"
+			ideology=british_idealism
+			traits={ elegant_and_wise diplomatic_tongue }
+			expire="1938.1.1.1"
+			id=-1
+		}
+	}
 	ENG_darjeeling={
 		name="Darjeeling"
 		portraits={
@@ -17,13 +32,6 @@ characters={
 			ideology=conservatism
 			traits={ elegant_and_wise diplomatic_tongue }
 			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="POLITICS_STANLEY_BALDWIN_DESC"
-			ideology=british_idealism
-			traits={ elegant_and_wise diplomatic_tongue }
-			expire="1938.1.1.1"
 			id=-1
 		}
 		country_leader={
