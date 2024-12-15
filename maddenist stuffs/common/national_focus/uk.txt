@@ -6585,6 +6585,9 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			retire_country_leader = yes #will work when we have earl gray
+			hidden_effect = {
+				retire_country_leader = yes
+			}
 			add_country_leader_role = {
 				character = ENG_darjeeling
 				promote_leader = yes
@@ -6632,6 +6635,9 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			retire_country_leader = yes #will work when we have earl gray
+			hidden_effect = {
+				retire_country_leader = yes
+			}
 			add_country_leader_role = {
 				character = ENG_rosehip
 				promote_leader = yes
