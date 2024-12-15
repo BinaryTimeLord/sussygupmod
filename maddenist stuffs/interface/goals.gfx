@@ -9160,6 +9160,30 @@ spriteTypes = {
 	 name = "GFX_finalize_commonwealth"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_finalize_commonwealth.tga"
 	 }
+ SpriteType = {
+	 name = "GFX_lion_roars"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_lion_roars.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_on_beaches"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_on_beaches.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_op_ricebowl"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_op_ricebowl.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_op_vegetarian"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_op_vegetarian.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_over_hills"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_over_hills.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_spec_ops"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_spec_ops.tga"
+	 }
 
 }
 

@@ -1,6 +1,7 @@
 add_namespace = GLO_choice
 add_namespace = GLO_darj
 add_namespace = GLO_war
+add_namespace = GLO_mil
 
 ### Template ###
 #country_event = { 
@@ -280,20 +281,10 @@ country_event = {
 
 	option = { 
 		name = GLO_darj.9.a
-		ENG = {
-			country_event = {
-				id = GLO_darj.11
-				days = 2
-			}
-		}
-	}
-	option = {
-		name = GLO_darj.9.b
-		ENG = {
-			country_event = {
-				id = GLO_darj.12
-				days = 2
-			}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = JAP
+			expire = 0
 		}
 	}
 }
@@ -341,6 +332,7 @@ country_event = {
 			create_wargoal = {
 				target = AFG
 				type = puppet_wargoal_focus
+				expire = 0
 			}
 		}
 	}
@@ -385,6 +377,7 @@ country_event = {
 			create_wargoal = {
 				target = PER
 				type = puppet_wargoal_focus
+				expire = 0
 			}
 		}
 	}
@@ -590,7 +583,36 @@ country_event = { ## DECLINE ##
 		create_wargoal = {
 			type = puppet_wargoal_focus
 			target = from
+			expire = 0
 		}
 
 		}	
+}
+
+country_event = { ##Sorry State if Earl Grey is in Charge
+	id = GLO_mil.1
+	title = GLO_mil.1.t
+	desc = GLO_mil.1.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_mil.1.a
+	}
+}
+
+country_event = { ##Sorry State if anyone else is in charge
+	id = GLO_mil.2
+	title = GLO_mil.2.t
+	desc = GLO_mil.2.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_mil.2.a
+	}
 }

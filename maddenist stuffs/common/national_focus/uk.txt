@@ -28,13 +28,30 @@ focus_tree = {
 		}
 
 		available = {
-	 
+			
 		}
 		x = 14
 		y = 0
 		cost = 5
 		completion_reward = {
-	 
+			if = {
+				limit = {
+					has_country_leader = { 
+						character = ENG_darjeeling
+						ruling_only = yes
+					}
+				}
+				country_event = {
+					id = GLO_mil.1
+					hours = 2
+				}
+			}
+			else = {
+				country_event = {
+					id = GLO_mil.2
+					hours = 2
+				}
+			}
 		}
 	}
 		focus = {
@@ -195,7 +212,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Over_the_Hills
-			#icon = 
+			icon = GFX_over_hills
 			prerequisite = {
 				focus = ENG_Remembered_Not_Forgotten
 			}
@@ -212,7 +229,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_On_the_Beaches
-			#icon = 
+			icon = GFX_on_beaches
 			prerequisite = {
 				focus = ENG_Over_the_Hills
 			}
@@ -229,7 +246,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Lion_Roars
-			#icon = 
+			icon = GFX_lion_roars
 			prerequisite = {
 				focus = ENG_On_the_Beaches
 			}
@@ -246,7 +263,27 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Captain_Best
-			#icon = 
+			dynamic = yes
+			icon = {
+				trigger = { has_country_leader = {
+					character = ENG_darjeeling
+					ruling_only = yes
+				}
+				}
+				value = GFX_focus_eng_the_kings_party
+			}
+			icon = {
+				trigger = { has_country_leader = {
+					character = ENG_rosehip
+					ruling_only = yes
+				}
+				}
+				value = GFX_focus_eng_motion_of_no_confidence
+			}
+			icon = {
+				value = GFX_focus_eng_unite_the_anglosphere
+			}
+
 			prerequisite = {
 				focus = ENG_royal_navy_requisition
 			}
@@ -408,7 +445,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_Special_Operations_Divison
-			#icon = 
+			icon = GFX_spec_ops
 			prerequisite = {
 				focus = ENG_air_ministry
 			}
@@ -425,7 +462,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Operation_Vegetarian
-			#icon = 
+			icon = GFX_op_vegetarian
 			prerequisite = {
 				focus = ENG_Special_Operations_Divison
 			}
@@ -442,7 +479,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Operation_Rice_Bowl
-			#icon = 
+			icon = GFX_op_ricebowl
 			prerequisite = {
 				focus = ENG_Special_Operations_Divison
 			}
@@ -6567,7 +6604,7 @@ focus_tree = {
 	focus = {
 		id = ENG_choose_rose
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		mutually_exclusive = {`
+		mutually_exclusive = {
 			focus = ENG_choose_darj
 		}
 		allow_branch = {

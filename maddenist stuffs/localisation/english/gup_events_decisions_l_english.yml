@@ -1778,6 +1778,15 @@
 ### GLORIANA ###
  ##GLORIANA EVENTS##
 
+   ##MIL BRANCH##
+   GLO_mil.1.t:0 "The Team's Sorry State"
+   GLO_mil.1.d:0 "Earl Grey! While we are pleased to have been under your leadership and have won in the 62nd Tournament thanks to you, we admittedly have come to a conclusion that our team is currently in a poor state of affairs. Our tactics are outdated and our equipment could be better. We must improve the team's capabilities and equipment first before you are to pass the reigns to anyone!"
+   GLO_mil.1.a:0 "This will be my final act as Gloriana's Commander!"
+   GLO_mil.2.t:0 "The Team's Sorry State"
+   GLO_mil.2.d:0 "[ROOT.GetLeader]! We regret to inform you that, despite Earl Grey's excellent leadership, our team has seen better days after the 62nd Tournament. Our tactics are outdated and our equipment could be better. While we admire Earl Grey's leadership, she has unfortunately failed to address the state she left the team in, and it has now fallen under your responsibility to fix this."
+   GLO_mil.2.a:0 "St. Gloriana will be reborn anew!"
+
+   
    ##CHOOSING LEADER##
      GLO_choice.1.t:0 "Earl Grey Retires as Gloriana's Commander!"
      GLO_choice.1.d:0 "Earl Grey, our commandant, has officially stepped down from her position. Her way of Tankery was the key to our victory in the 62nd Tournament. Though not so elegant, it has proven effective, and as such, we mourn the loss of our great commandant. All is not lost however as two candidates have risen up to take the mantle - Earl Grey's student herself, Darjeeling, who had been under her wing for two years, and Rosehip, a 1st year student who shares the boldness of our former commandant."
@@ -1806,7 +1815,15 @@
      GLO_darj.6.d:0 "Terrible news, [ROOT.GetLeader]! We have recieved an official response from Kuromorimine, where they have refused to agree to the terms of the treaty! This is a clear sign they refuse to negotiate what so ever!"
      GLO_darj.6.a:0 "They leave us no choice, then!"
      GLO_darj.7.t:0 "St. Gloriana requests we withdraw from Zhongguo!"
-     GLO_darj.7.d:0 ""
+     GLO_darj.7.d:0 "It has come to our attention that the St. Gloriana Girls College has issued a statement to us that we should withdraw our forces from Zhongguo, less we face their wrath. They have agreed that we will be compensated Beijing."
+     GLO_darj.7.a:0 "It's best we do not make them angry."
+     GLO_darj.7.b:0 "All of Zhongguo must be ours!"
+     GLO_darj.8.t:0 "Chi-Ha-Tan withdraws from Zhongguo!"
+     GLO_darj.8.d:0 "Chi-Ha-Tan has heeded our warning and has officially withdrawn from Zhongguo! Peace has been re-established in the East!"
+     GLO_darj.8.a:0 "We can divert our attention elsewhere."
+     GLO_darj.9.t:0 "Chi-Ha-Tan continues their war on Zhongguo!"
+     GLO_darj.9.d:0 "Chi-Ha-Tan has ignored our warning and continued their war in Zhongguo. It is finally clear that Chi-Ha-Tan seeks to undermine our power in the orient!"
+     GLO_darj.9.a:0 "They brought this upon themselves."
    
    ##LOUSY WAR
      GLO_war.1.t:0 "Rosehip Secures Alisa's Endorsement"
