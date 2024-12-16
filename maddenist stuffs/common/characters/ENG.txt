@@ -3,7 +3,7 @@ characters={
 		name="Earl Grey"
 		portraits={
 			civilian={
-				large="gfx/leaders/ENG/Portrait_ENG_Earl_Gray.tga"
+				large="gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
 			}
 		}
 		country_leader={

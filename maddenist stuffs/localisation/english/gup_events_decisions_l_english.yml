@@ -1853,6 +1853,27 @@
      GLO_war.8.d:0 "[From.GetName] has refused our ultimatum and has rallied against us! We cannot let them collude against our enemies!"
      GLO_war.8.a:0 "[From.GetName] has left us with no other choice!"
 
+     ##CERTAIN EVENTUALITY CHAIN
+       GLO_war.9.t:0 "The B.C Freedom Navy"
+       GLO_war.9.d:0 "B.C Freedom has fallen, and with it, their navy now is vulnerable in the hands of our enemies! With a student governemnt loyal to Kuromorimine installed at the academy, we cannot guarantee they will not assist our enemies with their strong fleet. We must do something about it!"
+       GLO_war.9.a:0 "Let us request they cede their fleet to us"
+       GLO_war.9.b:0 "We cannot risk anything, destroy their fleet!"
+       GLO_war.10.t:0 "Gloriana requests we surrender our fleet."
+       GLO_war.10.d:0 "We have received a message from St. Gloriana Girls' College that they demand we cede our fleet to them. They state that our fleet is in dangerous hands, with Kuromorimine capable of stealing it from us."
+       GLO_war.10.a:0 "Our brave sailors will continue on the fight under Gloriana!"
+       GLO_war.10.b:0 "The fleet is loyal to B.C Freedom, and only B.C Freedom!"
+       GLO_war.11.t:0 "[FROM.GetName] refuses to cede their fleet!"
+       GLO_war.11.d:0 "[Root.GetLeader]! We have received news that [FROM.GetLeader] has refused to co-operate with us and has decided to keep their fleet within' their docks. This can only possibly mean they wish to collude with our enemies to topple us! We must destroy their fleet!"
+       GLO_war.11.a:0 "Commence the operation at once! We must destroy their fleet!"
+       GLO_war.11.b:0 "It is too big of a risk to undertake."
+       GLO_war.12.t:0 "Gloriana Attacks Our Fleet!"
+       GLO_war.12.d:0 "This is a betrayal most foul by [ENG.GetLeader]! In the dead of night, our fleet stationed at our base was attacked, and while we have only lost a few ships, many of our own were injured. We must condem the school of St. Gloriana for this act of betrayal!"
+       GLO_war.12.a:0 "Action is required, to arms!"
+       GLO_war.12.b:0 "Let all our students know this act of betrayal!"
+       GLO_war.13.t:0 "[FROM.GetName] has transferred their fleet!"
+       GLO_war.13.d:0 "[Root.GetLeader]! We have received news that [FROM.GetLeader] has decided to cede their fleet to us. Now the might of BC Freedom's fleet has joined us!"
+       GLO_war.13.a:0 "This is a glorious day!"
+
 
  ##GLORIANA DECISIONS##
    GLO_air_battle:0 "The Battle in the Air"

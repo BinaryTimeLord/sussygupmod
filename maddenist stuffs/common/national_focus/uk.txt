@@ -6652,10 +6652,7 @@ focus_tree = {
 			}	
 			hidden_effect = {
 				retire_country_leader = yes
-			}	
-			hidden_effect = {
-				retire_country_leader = yes
-			}	
+			}		
 			add_country_leader_role = {
 				character = ENG_rosehip
 				promote_leader = yes
@@ -8079,7 +8076,16 @@ focus_tree = {
 			focus = ENG_Opening_Home_Office
 		}
 		available = {
- 
+			OR = {
+			FRA = {
+				has_capitulated = yes
+			}
+
+			FRA = {
+				is_puppet_of = GER
+			}
+
+			}
 		}
 		relative_position_id = ENG_Opening_Home_Office
 		x = 0

@@ -600,7 +600,14 @@ country_event = {##Certain Eventuality Chain##
 
 	option = {##Ask to Cede Fleet##
 		name = GLO_war.9.a 
-		every_country = {
+		if ={ 
+			limit = {##Check if Vichy France##
+				every_country = {
+					limit = {has_cosmetic_tag = FRA_VICHY}
+				}
+			}
+
+			every_country = {
 			limit = {
 			has_cosmetic_tag = FRA_VICHY
 			}
@@ -609,11 +616,29 @@ country_event = {##Certain Eventuality Chain##
 				days = 2
 			}
 		}
+		}
+
+		else = {
+			FRA = {
+				country_event = {
+				id = GLO_war.10
+				days = 2
+				}
+			}
+		}
 		
 	}
 
 	option = {##Destroy Fleet##
 		name = GLO_war.9.b
+
+		if = {##Check if Vichy France##
+			limit = {
+				every_country = {
+				limit = {has_cosmetic_tag = FRA_VICHY}
+			}
+		}
+
 		every_country = {
 		limit = {
 			has_cosmetic_tag = FRA_VICHY
@@ -627,6 +652,22 @@ country_event = {##Certain Eventuality Chain##
 			days = 2
 		}
 	}
+	}
+
+	else = {
+
+		FRA = {
+			destroy_ships = {
+				type = ship_hull_heavy
+				count = 3
+			}
+			country_event = {
+				id = GLO_war.12
+				days = 2
+			}
+		}
+	}
+
 	}
 }
 
@@ -692,7 +733,7 @@ country_event = {##Vichy refused to Cede Fleet##
 		}
 	}
 
-	option = {
+	option = {##Do Nothing##
 		name = GLO_war.11.b 
 	}
 }

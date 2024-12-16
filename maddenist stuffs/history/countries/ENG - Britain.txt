@@ -520,7 +520,7 @@ add_to_faction = MAL
 #give_guarantee = CZE
 
 create_country_leader = {
-	name = "Earl Gray"
+	name = "Earl Grey"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 	picture = "gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
 	expire = "1965.1.1"
