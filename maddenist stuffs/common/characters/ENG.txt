@@ -1,5 +1,5 @@
 characters={
-	ENG_earl_gray={
+	ENG_earl_grey={
 		name="Earl Grey"
 		portraits={
 			civilian={

@@ -37,7 +37,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = { 
-						character = ENG_earl_gray
+						character = ENG_earl_grey
 						ruling_only = yes
 					}
 				}
@@ -285,7 +285,7 @@ focus_tree = {
 			icon = {
 				trigger = { 
 					has_country_leader = {
-					character = ENG_earl_gray
+					character = ENG_earl_grey
 					ruling_only = yes
 				}
 				}
@@ -6596,10 +6596,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			retire_country_leader = yes #will work when we have earl gray
-			hidden_effect = {
-				retire_country_leader = yes
-			}	
+			retire_country_leader = yes
 			add_country_leader_role = {
 				character = ENG_darjeeling
 				promote_leader = yes
@@ -6649,10 +6646,10 @@ focus_tree = {
 			retire_country_leader = yes
 			hidden_effect = {
 				retire_country_leader = yes
-			}	
+			}
 			hidden_effect = {
 				retire_country_leader = yes
-			}		
+			}
 			add_country_leader_role = {
 				character = ENG_rosehip
 				promote_leader = yes
