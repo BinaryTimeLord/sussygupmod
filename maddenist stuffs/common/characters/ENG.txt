@@ -1,6 +1,6 @@
 characters={
 	ENG_earl_gray={
-		name="Earl Gray"
+		name="Earl Grey"
 		portraits={
 			civilian={
 				large="gfx/leaders/ENG/Portrait_ENG_Earl_Gray.tga"
@@ -151,7 +151,7 @@ characters={
 		country_leader={
 			desc="POLITICS_HARRY_POLLITT_DESC"
 			ideology=conservatism
-			traits={  }
+			traits={ war_industrialist }
 			expire="9999.1.1.1"
 			id=-1
 		}

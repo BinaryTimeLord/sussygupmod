@@ -37,7 +37,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = { 
-						character = ENG_darjeeling
+						character = ENG_earl_gray
 						ruling_only = yes
 					}
 				}
@@ -263,9 +263,9 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Captain_Best
-			dynamic = yes
 			icon = {
-				trigger = { has_country_leader = {
+				trigger = { 
+					has_country_leader = {
 					character = ENG_darjeeling
 					ruling_only = yes
 				}
@@ -273,15 +273,26 @@ focus_tree = {
 				value = GFX_focus_eng_the_kings_party
 			}
 			icon = {
-				trigger = { has_country_leader = {
+				trigger = { 
+					has_country_leader = {
 					character = ENG_rosehip
 					ruling_only = yes
 				}
 				}
-				value = GFX_focus_eng_motion_of_no_confidence
+				value = GFX_focus_eng_concessions_to_the_trade_unions
+			}
+
+			icon = {
+				trigger = { 
+					has_country_leader = {
+					character = ENG_earl_gray
+					ruling_only = yes
+				}
+				}
+				value = GFX_focus_eng_unite_the_anglosphere
 			}
 			icon = {
-				value = GFX_focus_eng_unite_the_anglosphere
+				value = GFX_focus_generic_farmland
 			}
 
 			prerequisite = {
@@ -297,6 +308,7 @@ focus_tree = {
 			completion_reward = {
 	 
 			}
+			dynamic = yes
 		}
 
 		focus = {
@@ -6587,7 +6599,7 @@ focus_tree = {
 			retire_country_leader = yes #will work when we have earl gray
 			hidden_effect = {
 				retire_country_leader = yes
-			}
+			}	
 			add_country_leader_role = {
 				character = ENG_darjeeling
 				promote_leader = yes
@@ -6634,10 +6646,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			retire_country_leader = yes #will work when we have earl gray
+			retire_country_leader = yes
 			hidden_effect = {
 				retire_country_leader = yes
-			}
+			}	
+			hidden_effect = {
+				retire_country_leader = yes
+			}	
+			hidden_effect = {
+				retire_country_leader = yes
+			}	
 			add_country_leader_role = {
 				character = ENG_rosehip
 				promote_leader = yes
@@ -7529,7 +7547,7 @@ focus_tree = {
 		y = 9
 		cost = 5
 		completion_reward = {
-			AFG = {
+			IRQ = {
 				country_event = {
 					id = GLO_war.6
 					hours = 12
