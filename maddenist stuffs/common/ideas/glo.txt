@@ -159,12 +159,27 @@ ideas = {
             allowed = {
                 always = no
             }
+
+            
             
             removal_cost = -1
 
             modifier = {
                 consumer_goods_factor = -0.05
-                
+            }
+            equipment_bonus = {
+                motorized_equipment = {
+                    instant = yes
+                    build_cost_ic = 0.2
+                }
+                medium_tank_equipment = {
+                    instant = yes
+                    build_cost_ic = 0.2
+                }
+                train_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.4
+                }
             }
         }
     }
