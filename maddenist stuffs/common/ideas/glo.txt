@@ -182,5 +182,37 @@ ideas = {
                 }
             }
         }
+
+        GLO_commonwealth_economy_council = {
+            name = GLO_commonwealth_economy_council
+
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.02
+            }
+
+        }
+        GLO_Harvard = {
+            name = GLO_Harvard
+
+            #picture = 
+            
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                research_speed_factor = 0.1
+            }
+        }
     }
 }

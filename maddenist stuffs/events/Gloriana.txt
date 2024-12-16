@@ -2,6 +2,7 @@ add_namespace = GLO_choice
 add_namespace = GLO_darj
 add_namespace = GLO_war
 add_namespace = GLO_mil
+add_namespace = GLO_eco
 
 ### Template ###
 #country_event = { 
@@ -806,5 +807,27 @@ country_event = { ##Sorry State if anyone else is in charge
 
 	option = { 
 		name = GLO_mil.2.a
+	}
+}
+
+country_event = {
+	id = GLO_eco.1
+	title = GLO_eco.1.t
+	desc = GLO_eco.1.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GLO_eco.1.a
+		remove_ideas = {
+			GLO_railways_act
+		}
+	}
+
+	option = {
+		name = GLO_eco.1.b
+
 	}
 }
