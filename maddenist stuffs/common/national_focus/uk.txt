@@ -6644,12 +6644,6 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			retire_country_leader = yes
-			hidden_effect = {
-				retire_country_leader = yes
-			}
-			hidden_effect = {
-				retire_country_leader = yes
-			}
 			add_country_leader_role = {
 				character = ENG_rosehip
 				promote_leader = yes

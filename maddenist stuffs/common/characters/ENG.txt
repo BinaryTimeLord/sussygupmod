@@ -5,45 +5,31 @@ characters={
 			civilian={
 				large="gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
 			}
+			army={
+				small="gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
+			}
 		}
 		country_leader={
 			desc="POLITICS_STANLEY_BALDWIN_DESC"
-			ideology=british_idealism
+			ideology=conservatism
 			traits={ elegant_and_wise diplomatic_tongue }
 			expire="1938.1.1.1"
 			id=-1
 		}
+		field_marshal={
+			traits={ panzer_leader logistics_wizard infantry_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
 	}
 	ENG_darjeeling={
-		name="Darjeeling"
-		portraits={
-			civilian={
-				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling.dds"
-			}
-			army={
-				small="gfx/interface/ideas/St. Gloriana/idea_eng_darjeeling.dds"
-			}
-			army={
-				large="gfx/leaders/ENG/Portrait_ENG_Darjeeling1.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_WINSTON_CHURCHILL_DESC"
-			ideology=conservatism
-			traits={ elegant_and_wise diplomatic_tongue }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-			ideology=liberalism
-			traits={ elegant_and_wise diplomatic_tongue }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	ENG_dajirin={
 		name="Darjeeling"
 		portraits={
 			civilian={
@@ -147,13 +133,6 @@ characters={
 			army={
 				large="gfx/leaders/ENG/Portrait_ENG_Rosehip1.dds"
 			}
-		}
-		country_leader={
-			desc="POLITICS_HARRY_POLLITT_DESC"
-			ideology=conservatism
-			traits={ war_industrialist }
-			expire="9999.1.1.1"
-			id=-1
 		}
 		corps_commander={
 			traits={ aggressive_assaulter fast_planner panzer_leader }

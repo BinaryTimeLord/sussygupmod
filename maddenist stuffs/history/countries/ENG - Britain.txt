@@ -274,18 +274,6 @@ if = {
 		ENG_george_vi
 	}
 
-        create_country_leader = {
-	        name = "Darjeeling"
-	        desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-	        picture = "Portrait_ENG_Darjeeling.dds"
-	        expire = "1965.1.1"
-	        ideology = liberalism
-	        traits = {
-		          elegant_and_wise 
-                          diplomatic_tongue 
-	                 } 
-        }
-
 	remove_ideas = george_v #Dead
 
 	complete_national_focus = limited_rearmament_focus
@@ -519,24 +507,11 @@ add_to_faction = MAL
 
 #give_guarantee = CZE
 
-create_country_leader = {
-	name = "Earl Grey"
-	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "gfx/leaders/ENG/Portrait_ENG_Earl_Grey.tga"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		elegant_and_wise 
-                diplomatic_tongue 
-	}
-}
-
 recruit_character = ENG_earl_grey
 recruit_character = ENG_darjeeling
-recruit_character = ENG_dajirin
+recruit_character = ENG_rosehip
 recruit_character = ENG_orange_pekoe
 recruit_character = ENG_assam
-recruit_character = ENG_rosehip
 recruit_character = ENG_rukuriri
 recruit_character = ENG_nilgiri
 recruit_character = ENG_vanilla
