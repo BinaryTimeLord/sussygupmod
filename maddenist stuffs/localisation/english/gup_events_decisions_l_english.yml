@@ -1785,7 +1785,6 @@
    GLO_mil.2.t:0 "The Team's Sorry State"
    GLO_mil.2.d:0 "[ROOT.GetLeader]! We regret to inform you that, despite Earl Grey's excellent leadership, our team has seen better days after the 62nd Tournament. Our tactics are outdated and our equipment could be better. While we admire Earl Grey's leadership, she has unfortunately failed to address the state she left the team in, and it has now fallen under your responsibility to fix this."
    GLO_mil.2.a:0 "St. Gloriana will be reborn anew!"
-
    
    ##CHOOSING LEADER##
      GLO_choice.1.t:0 "Earl Grey Retires as Gloriana's Commander!"
@@ -1874,6 +1873,12 @@
        GLO_war.13.d:0 "[Root.GetLeader]! We have received news that [FROM.GetLeader] has decided to cede their fleet to us. Now the might of BC Freedom's fleet has joined us!"
        GLO_war.13.a:0 "This is a glorious day!"
 
+   ##ECO BRANCH##
+     GLO_eco.1.t:0 "Removal of the Railways Act"
+     GLO_eco.1.d:0 "While the 1936 Railways Act allows us to produce our trains and effectively bring all our cargo via railways much easier, it has become apparent that our motor industry has been lacking, which may not be beneficial in the long term. Though it has served us well, the times are changing, and perhaps we must go back to using motor vehicles over trains."
+     GLO_eco.1.a:0 "it has served us well these past years."
+     GLO_eco.1.b:0 "Let us think of an alternative in the future."
+
 
  ##GLORIANA DECISIONS##
    GLO_air_battle:0 "The Battle in the Air"
@@ -1886,3 +1891,9 @@
    GLO_tea_desc:0 "Nothing like a good cup of tea for everyone to enjoy. Tea is our pride and joy!"
    GLO_air_increase:0 " Agenda not yet promoted"
    GLO_tea_increase:0 " Tea Restocked"
+ 
+ ##GLORIANA IDEAS/MODIFIERS
+   GLO_chose_darj:0 "Earl Grey's Apprentince"
+   GLO_railways_act:0 "1936 Railways Act"
+   GLO_Harvard:0 "Harvard Research"
+   CHI_chiglo_treaty:0 "Chi-Ha-Tan-Gloriana Treaty"

@@ -214,5 +214,44 @@ ideas = {
                 research_speed_factor = 0.1
             }
         }
+        GLO_liability = {
+            name = GLO_liability
+
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                small_plane_airframe = {
+                    instant = yes
+                    build_cost_ic = -0.12
+                }
+            }
+
+            research_bonus = {
+                air_techs = 0.15
+            }
+        }
+        GLO_shad_fac = {
+            name = GLO_shad_fac 
+
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.1
+                conversion_cost_civ_to_mil_factor = 0.2
+                conversion_cost_mil_to_civ_factor = 0.2
+            }
+        }
     }
 }

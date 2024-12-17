@@ -85,7 +85,17 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_timed_idea = {
+					idea = GLO_liability
+					days = 365
+				} 
+				132 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -136,7 +146,15 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				126 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				}
+				add_ideas = GLO_shad_fac
 			}
 		}
 		focus = {
@@ -325,7 +343,37 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				set_technology = {
+					cavity_magnatron = 1
+				}
+				127 = {
+						add_building_construction = {
+							type = radar_station
+							level = 2
+							instant_build = yes
+						}
+					}
+				126 = {
+						add_building_construction = {
+							type = radar_station
+							level = 2
+							instant_build = yes
+						}
+					}
+				125 = {
+						add_building_construction = {
+							type = radar_station
+							level = 2
+							instant_build = yes
+						}
+					}
+				123 = {
+						add_building_construction = {
+							type = radar_station
+							level = 2
+							instant_build = yes
+						}
+					}
 			}
 		}
 
@@ -343,10 +391,18 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
-			}
-		}
+				air_experience = 100
+				set_technology = {
+					paratroopers = 1
+				}
 
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = air_doctrine
+			} 
+		}
+	}
 		focus = {
 			id = ENG_dad_army
 			#icon =
@@ -6707,7 +6763,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			retire_country_leader = yes
+			retire_character = ENG_earl_grey
 			add_country_leader_role = {
 				character = ENG_darjeeling
 				promote_leader = yes
@@ -6754,7 +6810,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			retire_country_leader = yes
+			retire_character = ENG_earl_grey
 			add_country_leader_role = {
 				character = ENG_rosehip
 				promote_leader = yes

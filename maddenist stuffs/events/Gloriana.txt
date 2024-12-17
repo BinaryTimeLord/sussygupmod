@@ -601,11 +601,12 @@ country_event = {##Certain Eventuality Chain##
 
 	option = {##Ask to Cede Fleet##
 		name = GLO_war.9.a 
-		if ={ 
+		if = { 
 			limit = {##Check if Vichy France##
-				every_country = {
-					limit = {has_cosmetic_tag = FRA_VICHY}
-				}
+				any_country = {
+				has_cosmetic_tag = FRA_VICHY
+				exists = yes
+			}
 			}
 
 			every_country = {
@@ -635,8 +636,9 @@ country_event = {##Certain Eventuality Chain##
 
 		if = {##Check if Vichy France##
 			limit = {
-				every_country = {
-				limit = {has_cosmetic_tag = FRA_VICHY}
+				any_country = {
+				has_cosmetic_tag = FRA_VICHY
+				exists = yes
 			}
 		}
 
