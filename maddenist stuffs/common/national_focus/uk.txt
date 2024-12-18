@@ -6510,6 +6510,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			128 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6517,6 +6518,7 @@ focus_tree = {
 				}
 			}
 			129 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6566,6 +6568,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			130 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -6594,6 +6597,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			470 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6601,6 +6605,7 @@ focus_tree = {
 				}
 			}
 			907 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6608,6 +6613,7 @@ focus_tree = {
 				}
 			}
 			275 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6615,6 +6621,7 @@ focus_tree = {
 				}
 			}
 			522 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6622,6 +6629,7 @@ focus_tree = {
 				}
 			}
 			723 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -6703,6 +6711,39 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = {
 				GLO_Inflation_3
+			}
+
+			132 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			123 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			122 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
