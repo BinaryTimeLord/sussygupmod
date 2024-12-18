@@ -1,0 +1,28 @@
+scripted_gui = {
+	GUP_superevents_gui = {
+		window_name = "superevents"
+		context_type = player_context
+
+		visible = {
+			OR = {
+				has_global_flag = GUP_SuperEvents_Visible
+				has_country_flag = GUP_SuperEvents_Visible_Local
+			}
+		}
+
+		triggers = {
+			GUP_SuperEvents_Test_Visible = {
+				has_global_flag = GUP_superevents_test
+			}
+			#super events themselves
+		}
+
+		effects = {
+			superevents_button_click = {
+				clr_country_flag = GUP_SuperEvents_Visible_Local
+				clr_global_flag = GUP_SuperEvents_Visible
+				#super events themselves
+			}
+		}
+	}
+}

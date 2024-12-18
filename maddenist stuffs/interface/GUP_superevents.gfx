@@ -1,0 +1,26 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_supereventsbg"
+		textureFile = "/gfx/superevents_gui/supereventsbg.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbg_test"
+		textureFile = "/gfx/superevents_gui/supereventsbg_test.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbutton"
+		textureFile = "/gfx/superevents_gui/supereventsbutton.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsoverlay"
+		textureFile = "/gfx/superevents_gui/supereventsoverlay.dds"
+	}
+
+	#actual pictures
+
+	
+	spriteType = {
+		name = "GFX_SuperEvents_Test_Visible"
+		textureFile = "/gfx/superevents_pictures/glocky.dds"
+	}
+}
