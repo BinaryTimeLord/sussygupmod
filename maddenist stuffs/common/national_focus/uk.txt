@@ -181,14 +181,16 @@ focus_tree = {
 				focus = ENG_royal_navy_budget
 			}
 			available = {
-	 
+				has_war_with_major = yes
 			}
 			relative_position_id = ENG_royal_navy_budget
 			x = 0
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_ideas = {
+					GLO_heart_oak
+				}
 			}
 		}
 		focus = {
@@ -471,7 +473,12 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				create_unit = {
+					division = "name = \"Gloriana Mukumbura Expedition Force\" division_template = \"Cavalry Brigade\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					owner = ENG
+					count = 1
+					prioritize_location = 2151
+				}
 			}
 		}
 

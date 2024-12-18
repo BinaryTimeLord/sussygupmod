@@ -253,5 +253,35 @@ ideas = {
                 conversion_cost_mil_to_civ_factor = 0.2
             }
         }
+        GLO_underfunded_navy ={ 
+            name = GLO_underfunded_navy
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = { 
+                naval_doctrine_cost_factor = 1
+                production_speed_dockyard_factor = -0.3
+            }
+        }
+        GLO_heart_oak = {
+            name = GLO_heart_oak
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_dockyard_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+            }
+        }
     }
 }

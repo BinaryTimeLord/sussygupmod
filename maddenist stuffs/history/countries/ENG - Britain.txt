@@ -198,6 +198,7 @@ add_ideas = {
 	ENG_the_war_to_end_all_wars
 	george_v
 	GLO_railways_act
+	GLO_underfunded_navy
 }
 	
 
