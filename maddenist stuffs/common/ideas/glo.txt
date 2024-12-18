@@ -283,5 +283,49 @@ ideas = {
 				industrial_capacity_dockyard = 0.2
             }
         }
+        GLO_Inflation = {
+            name = GLO_Inflation
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.3
+            }
+        }
+
+        GLO_Inflation_2 = {
+            name = GLO_Inflation_2
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.3
+            }
+        }
+
+        GLO_Inflation_3 = {
+            name = GLO_Inflation_3
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+        }
     }
 }

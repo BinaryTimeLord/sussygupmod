@@ -199,6 +199,7 @@ add_ideas = {
 	george_v
 	GLO_railways_act
 	GLO_underfunded_navy
+	GLO_Inflation
 }
 	
 

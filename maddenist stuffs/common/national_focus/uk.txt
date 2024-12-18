@@ -6540,7 +6540,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = GLO_Inflation
+				add_idea = GLO_Inflation_2
+			}
 		}
 	}
 
@@ -6642,7 +6645,25 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			771 = {
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
 
+			swap_ideas = {
+				remove_idea = GLO_Inflation_2
+				add_idea = GLO_Inflation_3
+			}
 		}
 	}
 
@@ -6680,7 +6701,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			remove_ideas = {
+				GLO_Inflation_3
+			}
 		}
 	}
 
