@@ -68,7 +68,11 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_timed_idea = {
+					idea = GLO_defence_increase
+					days = 100
+				}
+				unlock_decision_category_tooltip = GLO_build_mil
 			}
 		}
 		focus = {
@@ -112,7 +116,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				
 			}
 		}
 		focus = {
@@ -129,7 +133,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				remove_ideas = GLO_underfunded_navy
 			}
 		}
 		focus = {
@@ -171,7 +175,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				unlock_decision_category_tooltip = GLO_requisition_ship
 			}
 		}
 		focus = {
@@ -210,7 +214,46 @@ focus_tree = {
 			y = 4
 			cost = 5
 			completion_reward = {
-	 
+				466 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant = yes
+					}
+				}
+				437 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant = yes
+					}
+				}
+				895 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant = yes
+					}
+				}
+				871 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant = yes
+					}
+				}
+				723 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -227,7 +270,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+	 			remove_ideas = GLO_lousy_war
 			}
 		}
 		focus = {
@@ -244,7 +287,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_ideas = GLO_over_hills
 			}
 		}
 		focus = {
@@ -261,7 +304,8 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_ideas = GLO_bitterness
+				unlock_decision_category_tooltip = GLO_maple_annex
 			}
 		}
 		focus = {
@@ -278,7 +322,41 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_ideas = GLO_army_reborn
+			}
+		}
+		focus = {
+			id = ENG_dominion_recruit
+			#icon =
+
+			prerequisite = {
+				focus = ENG_Captain_Best
+			}
+
+			available = {
+
+			}
+			relative_position_id = ENG_Captain_Best
+			x = 0
+			y = 1
+			cost = 5
+
+			completion_reward = {
+				every_country = {
+				limit = {
+					OR = {
+						is_puppet_of = ENG
+						AND = {
+							has_autonomy_state = autonomy_dominion
+							is_ally_with = ENG
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = GLO_dominions_recruited
+					years = 1
+				}
+				}
 			}
 		}
 		focus = {
@@ -326,7 +404,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_manpower = 20000
 			}
 			dynamic = yes
 		}
@@ -409,17 +487,69 @@ focus_tree = {
 			id = ENG_dad_army
 			#icon =
 			prerequisite = {
-				focus = ENG_Captain_Best
+				focus = ENG_dominion_recruit
 			}
 			available = {
 
 			}
-			relative_position_id = ENG_Captain_Best
+			relative_position_id = ENG_dominion_recruit
 			x = 1
 			y = 1
 			cost = 5
-			completion_reward {
+			completion_reward = {
+				division_template = {
+					name = "Gloriana Alumni"
+					is_locked = yes
+					division_names_group = ENG_DEM_01
+					priority = 0
+					regiments = {
+						militia = {x = 0 y = 0}
+						militia = {x = 0 y = 1}
+						militia = {x = 0 y = 2}
+					}
+				}
 
+				division_template = {
+					name = "Ragged Tanks Brigade"
+					is_locked = yes
+					division_names_group = ENG_ARM_02
+					priority = 0
+					regiments = {
+						medium_armor = {x = 0 y = 0}
+						medium_armor = {x = 0 y = 1}
+						infantry = {x = 1 y = 0}
+						infantry = {x = 1 y = 1}
+						infantry = {x = 1 y = 2}
+					}
+					support = {
+						artillery = {x = 0 y = 0}
+					}
+				}
+
+				131 = {
+					create_unit = {
+						division = "division_template = \"Gloriana Alumni\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = ENG
+						count = 10
+					}
+				}
+
+				132 = {
+					create_unit = {
+						division = "division_template = \"Gloriana Alumni\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = ENG
+						count = 10
+					}
+				}
+
+				126 = {
+					create_unit = {
+						division = "division_template = \"Ragged Tanks Brigade\" start_experience_factor = 0-.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = ENG
+						count = 2
+						prioritize_location = 6103
+					}
+				}
 			}
 		}
 
@@ -436,7 +566,7 @@ focus_tree = {
 			x = 0
 			y = 1
 			cost = 5
-			completion_reward {
+			completion_reward = {
 
 			}
 		}
@@ -454,8 +584,20 @@ focus_tree = {
 			x = 0
 			y = 1
 			cost = 5
-			completion_reward {
-
+			completion_reward = {
+				create_intelligence_agency = {
+					name = "MI6"
+					icon = GFX_intelligence_agency_logo_uk
+				}
+				create_operative_leader = {
+					name = "Bond Forger"
+					GFX = GFX_operative_portrait_bond
+					traits = {operative_commando operative_infiltrator operative_escape_artist}
+					bypass_recruitment = yes
+					gender = male
+					nationalities = {ENG GER}
+				}
+				add_ideas = GLO_hms_service
 			}
 		}
 
@@ -463,25 +605,57 @@ focus_tree = {
 			id = ENG_Long_Way_Mukumbura
 			#icon = 
 			prerequisite = {
-				focus = ENG_Captain_Best
+				focus = ENG_dominion_recruit
 			}
 			available = {
 	 
 			}
-			relative_position_id = ENG_Captain_Best
+			relative_position_id = ENG_dominion_recruit
 			x = -1
 			y = 1
 			cost = 5
 			completion_reward = {
+			SAF = {
+			division_template = {
+				name = "Gloriana Expedition Force"
+				is_locked = no
+				division_names_group = ENG_INF_01
+				priority = 1
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 0 y = 3}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}
+					infantry = {x = 1 y = 3}
+					infantry = {x = 2 y = 0}
+					infantry = {x = 2 y = 1}
+					infantry = {x = 2 y = 2}
+					infantry = {x = 2 y = 3}
+				}
+			}
+			}
+
+			545 = {
 				create_unit = {
-					division = "name = \"Gloriana Mukumbura Expedition Force\" division_template = \"Cavalry Brigade\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					division= "name = \"Gloriana Rhodesian Expedition Force\" division_template = \"Cavalry Brigade\" start_experience_factor = 0.5 start_manpower_factor = 1 start_equipment_factor = 1" 
 					owner = ENG
 					count = 1
 					prioritize_location = 2151
 				}
 			}
-		}
 
+				275 = {
+				create_unit = {
+					division = "name = \"Gloriana Expedition Force\" division_template = \"Gloriana Expedition Force\" start_experience_factor = 0.5 start_manpower_factor = 1 start_equipment_factor = 1"
+					owner = SAF
+					count = 5
+				}
+			}
+		}
+		}
 		focus = {
 			id = ENG_Recruiting_Sargents
 			#icon = 
@@ -496,10 +670,33 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				CAN = {
+				division_template = {
+					name = "Sargent-in-Training"
+					is_locked = yes
+					division_names_group = ENG_INF_01
+					priority = 1
+					regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 0 y = 3}
+					infantry = {x = 1 y = 0}
+								}		
+					support = {
+						artillery = {x = 0 y = 0}
+							}
+					}
+					}	
+				276 = {
+					create_unit = {
+						division = "name = \"Sargents-in-Training\" division_template = \"Sargent-in-Training\" start_experience_factor 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = CAN
+						count = 2
+					}
+				}
 			}
 		}
-
 		focus = {
 			id = ENG_A_Rather_Light_Horse
 			#icon = 
@@ -514,7 +711,57 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = AST
+							original_tag = SAF
+							original_tag = NZL
+						}
+					}
+				
+					division_template = {
+						name = "Gloriana's Light Horse"
+						is_locked = yes
+						division_names_group = ENG_CAV_02
+						priority = 1
+						regiments = {
+							cavalry = {x = 0 y = 0}
+							cavalry = {x = 0 y = 1}
+							cavalry = {x = 0 y = 2}
+							cavalry = {x = 0 y = 3}
+							cavalry = {x = 1 y = 0}
+						}
+						support = {
+							artillery = {x = 0 y = 0}
+							armored_car = {x = 0 y = 1}
+						}
+					}
+				}
+
+				522 = {
+					create_unit = {
+						division = "name = \"Gloriana Finest Horses\" division_template = \"Gloriana's Light Horse\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = AST
+						count = 4
+					}
+				}
+
+				284 = {
+					create_unit = {
+						division = "name = \"Gloriana Finest Horses\" division_template = \"Gloriana's Light Horse\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = NZL
+						count = 4
+					}
+				}
+
+				893 = {
+					create_unit = {
+						division = "name = \"Gloriana's Finest Horses\" division_template = \"Gloriana's Light Horse\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = SAF
+						count = 4
+					}
+				}
 			}
 		}
 
@@ -542,14 +789,19 @@ focus_tree = {
 				focus = ENG_Special_Operations_Divison
 			}
 			available = {
-	 
+				has_war_with = GER
 			}
 			relative_position_id = ENG_Special_Operations_Divison
 			x = -2
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				GER = {
+					country_event = {
+						id = GLO_mil.3
+						days = 7
+					}
+				}
 			}
 		}
 		focus = {
@@ -559,14 +811,14 @@ focus_tree = {
 				focus = ENG_Special_Operations_Divison
 			}
 			available = {
-	 
+	 			has_war_with = JAP
 			}
 			relative_position_id = ENG_Special_Operations_Divison
 			x = 0
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				
 			}
 		}
 		focus = {
@@ -8294,7 +8546,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			unlock_decision_category_tooltip = GLO_air_battle
 		}
 	}
 
@@ -8342,7 +8594,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = GLO_log_battle
 		}
 	}
 

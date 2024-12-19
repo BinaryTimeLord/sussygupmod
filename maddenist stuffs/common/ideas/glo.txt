@@ -309,7 +309,7 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                consumer_goods_factor = 0.3
+                consumer_goods_factor = 0.2
             }
         }
 
@@ -325,6 +325,138 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = 0.1
+            }
+        }
+        GLO_dominions_recruited = {
+            name = GLO_dominions_recruited
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                recruitable_population_factor = 0.2
+            }
+        }
+        GLO_lousy_war = {
+            name = GLO_lousy_war
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            on_remove = {
+                country_lock_all_division_template = no
+            }
+            
+            modifier = {
+                recruitable_population_factor = -0.5
+                industrial_capacity_factory = -0.5
+                production_speed_buildings_factor = -0.5
+                war_support_factor = -0.3
+            }
+        }
+        GLO_over_hills = {
+            name = GLO_over_hills
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_org_factor = 0.05
+                acclimatization_cold_climate_gain_factor = 0.1
+                acclimatization_hot_climate_gain_factor = 0.1
+                war_support_factor = 0.05
+            }
+        }
+        GLO_bitterness = {
+            name = GLO_bitterness
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_core_attack_factor = 0.3
+                forced_surrender_limit = 0.8
+            }
+        }
+
+        GLO_army_reborn = {
+            name = GLO_army_reborn
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_speed_factor = 0.1
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_morale_factor = 0.1
+            }
+        }
+
+        KMM_anthrax_outbreak = {
+            name = KMM_anthrax_outbreak
+            #picture = 
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                attrition = 0.15
+            }
+        }
+
+        GLO_hms_service = {
+            name = GLO_hms_service
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                agency_upgrade_time = -0.2
+            }
+        }
+
+        GLO_defence_increase = {
+            name = GLO_defence_increase
+            #picture =
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.15
             }
         }
     }
