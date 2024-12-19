@@ -11,11 +11,11 @@ scripted_gui = {
 		}
 
 		triggers = {
-			GUP_SuperEvents_Test_Visible = {
+			GUP_SE_SuperEvents_Test_visible = {
 				has_global_flag = GUP_superevents_test
 			}
 			#super events themselves
-			GUP_63rd_Tournament_Visible = {
+			GUP_SE_63rd_Tournament_visible = {
 				has_global_flag = GUP_63rd_Tournament
 			}
 		}
