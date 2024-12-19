@@ -1,0 +1,54 @@
+add_namespace = superevent
+
+country_event = { ### TEST SUPEREVENT
+	id = superevent.1 
+	title = superevent.1.t
+	desc = superevent.1.d
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option =  {
+		name = superevent.1.a
+
+		set_global_flag = GUP_SuperEvents_Visible
+		set_global_flag = GUP_SuperEvents_Test
+
+		sound_effect = "superevents_war_begins"
+	}
+}
+
+news_event = {
+	id = superevent.2
+	title = superevent.2.t 
+	desc = superevent.2.d 
+
+
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		GER = {
+			OR = {
+				has_war_with = FRA
+				has_war_with = ENG
+				has_war_with = SOV
+				has_war_with = USA
+			}
+		}
+	}
+
+	immediate = {
+		set_global_flag = GUP_SuperEvents_Visible
+		set_global_flag = GUP_63rd_Tournament
+
+		sound_effect = "superevents_war_begins"
+	}
+
+	option = {
+		name = superevent.2.a 
+	}
+
+}

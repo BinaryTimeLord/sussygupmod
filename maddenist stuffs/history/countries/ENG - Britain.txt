@@ -195,10 +195,11 @@ set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
 	stiff_upper_lip
-	ENG_the_war_to_end_all_wars
+	GLO_lousy_war
 	george_v
 	GLO_railways_act
 	GLO_underfunded_navy
+	GLO_Inflation
 }
 	
 

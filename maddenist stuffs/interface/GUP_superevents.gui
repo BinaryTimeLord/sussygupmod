@@ -1,0 +1,77 @@
+guiTypes = {
+	containerWindowType = {
+		name = "superevents"
+		position = { x = 0 y = 0 }	
+		size = { width = 1000 height= 893 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_supereventsbg"
+		}
+
+
+		iconType = {
+			name = "GUP_SE_Superevents_Test"		
+			quadTextureSprite ="GFX_SuperEvents_Test_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GUP_SE_63rd_Tournament"		
+			quadTextureSprite ="GFX_63rd_Tournament_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		buttonType ={
+			name ="superevents_button"
+			spriteType = "GFX_supereventsbutton"
+			position = { x= 225 y = 766 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+
+		instantTextboxType = {
+			name = "superevents_title"
+			position = { x = 0 y = 78 }
+			font = "hoi_36header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSuperEventsTitle]"
+			maxWidth = 1000
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_quote"
+			position = { x = 125 y = 535 }
+			font = "hoi_18mbs"
+			format = RIGHT
+			borderSize = {x = 0 y = 0}
+			text = "[GetSuperEventsBody]"
+			maxWidth = 800
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_remark"
+			position = { x = 250 y = 785 }
+			font = "hoi_30header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSuperEventsRemark]"
+			maxWidth = 500
+			maxHeight = 893
+			fixedsize = yes
+		}
+	}
+}

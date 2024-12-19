@@ -1,0 +1,24 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+defined_text = {
+	name = GetSuperEventsRemark
+	text = {
+		trigger = {
+			has_global_flag = GUP_SuperEvents_Test
+		}
+		localization_key = GUP_SuperEvents_Test_Remark
+	}
+	text = {
+		trigger = {
+			has_global_flag = GUP_63rd_Tournament
+		}
+		localization_key = GUP_SuperEvents_63rd_Remark
+	}
+}

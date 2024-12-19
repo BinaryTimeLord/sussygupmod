@@ -867,4 +867,15 @@ on_actions = {
 			WRRFTangle_calcXY = yes
 		}
 	}
+
+### Gloriana [ENG]
+
+	 on_startup = {
+		effect = {
+			ENG = {
+				country_lock_all_division_template = yes
+			}
+		}
+	 }
+
 }

@@ -9184,6 +9184,10 @@ spriteTypes = {
 	 name = "GFX_spec_ops"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_spec_ops.tga"
 	 }
+ SpriteType = {
+	 name = "GFX_operative_portrait_bond"
+	 texturefile = "gfx/leaders/ENG/Portrait_ENG_Bond.tga"
+	 }
 
 }
 

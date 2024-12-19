@@ -21,3 +21,39 @@ GLO_log_battle = {
     #icon =
     priority = 9
 }
+
+GLO_maple_annex = {
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		has_completed_focus = ENG_On_the_Beaches
+	}
+	#icon =
+	priority = 6
+}
+
+GLO_requisition_ship = {
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		has_completed_focus = ENG_royal_navy_requisition
+	}
+	#icon =
+	priority = 1
+}
+
+GLO_build_mil = {
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		has_idea = GLO_defence_increase
+	}
+	#icon =
+	priority = 5
+}

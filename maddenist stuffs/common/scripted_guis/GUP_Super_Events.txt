@@ -1,0 +1,33 @@
+scripted_gui = {
+	GUP_superevents_gui = {
+		window_name = "superevents"
+		context_type = player_context
+
+		visible = {
+			OR = {
+				has_global_flag = GUP_SuperEvents_Visible
+				has_country_flag = GUP_SuperEvents_Visible_Local
+			}
+		}
+
+		triggers = {
+			GUP_SE_SuperEvents_Test_visible = {
+				has_global_flag = GUP_superevents_test
+			}
+			#super events themselves
+			GUP_SE_63rd_Tournament_visible = {
+				has_global_flag = GUP_63rd_Tournament
+			}
+		}
+
+		effects = {
+			superevents_button_click = {
+				clr_country_flag = GUP_SuperEvents_Visible_Local
+				clr_global_flag = GUP_SuperEvents_Visible
+				#super events themselves
+				clr_global_flag = GUP_superevents_test
+				clr_global_flag = GUP_63rd_Tournament
+			}
+		}
+	}
+}

@@ -812,6 +812,24 @@ country_event = { ##Sorry State if anyone else is in charge
 	}
 }
 
+country_event = { ##Op Vegetarian
+	id = GLO_mil.3
+	title = GLO_mil.3.t
+	desc = GLO_mil.3.d
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = GLO_mil.3.a
+		add_timed_idea = {
+			idea = KMM_anthrax_outbreak
+			years = 1
+		}
+	}
+}
+
 country_event = {
 	id = GLO_eco.1
 	title = GLO_eco.1.t
