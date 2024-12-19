@@ -16,3 +16,40 @@ country_event = { ### TEST SUPEREVENT
 		set_global_flag = GUP_SuperEvents_Test
 	}
 }
+
+news_event = {
+	id = superevent.2
+	title = superevent.2.t 
+	desc = superevent.2.d 
+
+	major = yes
+
+	trigger = {
+		GER = {
+			OR = {
+			has_war_with = FRA
+			has_war_with = ENG
+			has_war_with = SOV
+			has_war_with_major = yes
+			}
+		}
+	}
+
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		set_global_flag = GUP_SuperEvents_Visible
+		set_global_flag = GUP_63rd_Tournament
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = superevent.2.a 
+	}
+
+}

@@ -15,6 +15,9 @@ scripted_gui = {
 				has_global_flag = GUP_superevents_test
 			}
 			#super events themselves
+			GUP_63rd_Tournament_Visible = {
+				has_global_flag = GUP_63rd_Tournament
+			}
 		}
 
 		effects = {
@@ -22,6 +25,8 @@ scripted_gui = {
 				clr_country_flag = GUP_SuperEvents_Visible_Local
 				clr_global_flag = GUP_SuperEvents_Visible
 				#super events themselves
+				clr_global_flag = GUP_superevents_test
+				clr_global_flag = GUP_63rd_Tournament
 			}
 		}
 	}

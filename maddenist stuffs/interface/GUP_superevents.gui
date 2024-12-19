@@ -16,9 +16,17 @@ guiTypes = {
 			quadTextureSprite = "GFX_supereventsbg"
 		}
 
+
 		iconType = {
-			name = "GFX_SuperEvents_Test_Visible"		
+			name = "GFX_SuperEvents_Test"		
 			quadTextureSprite ="GFX_SuperEvents_Test_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_63rd_Tournament"		
+			quadTextureSprite ="GFX_63rd_Tournament_Visible"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}

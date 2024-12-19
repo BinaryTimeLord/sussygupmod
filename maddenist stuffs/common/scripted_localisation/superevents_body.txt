@@ -16,4 +16,10 @@ defined_text = {
 		}
 		localization_key = GUP_SuperEvents_Test_Body
 	}
+	text = {
+		trigger = {
+			has_global_flag = GUP_63rd_Tournament
+		}
+		localization_key = GUP_SuperEvents_63rd_Body
+	}
 }

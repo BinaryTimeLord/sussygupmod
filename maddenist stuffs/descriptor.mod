@@ -8,6 +8,6 @@ tags={
 	"Sound"
 	"Gameplay"
 }
-name="Girls und Panzer"
+name="Girls und Panzer - Test"
 supported_version="1.15.*"
-remote_file_id="2844411050"
+remote_file_id="3386019947"

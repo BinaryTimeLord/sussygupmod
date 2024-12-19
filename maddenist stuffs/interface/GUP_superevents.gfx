@@ -23,4 +23,9 @@ SpriteTypes = {
 		name = "GFX_SuperEvents_Test_Visible"
 		textureFile = "/gfx/superevents_pictures/glocky.dds"
 	}
+
+	spriteType = {
+		name = "GFX_63rd_Tournament_Visible"
+		textureFile = "/gfx/superevents_pictures/fighting.dds"
+	}
 }
