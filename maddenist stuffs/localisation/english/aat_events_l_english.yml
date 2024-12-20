@@ -67,7 +67,7 @@
  AAT_norway.2.a: "It's the best we can do for now"
   
  AAT_norway.3.t: "[ROOT.GetLeader.GetName]'s general crackdown on dissent"
- AAT_norway.3.desc: "After the altercation at Knudsen's villa, it became clear that the political situation is fraught with peril thanks to Communists and Fascists being at each other's throats.\n\nThe bickering and political turmoil must be dealt with. Trotskij's presence risks bringing the ire of the [SOU.GetNameDef] upon us and at the same time, the Nasjonal Samling is sure to hand over the country to [FGR.GetLeader] at the first opportunity, so their influence needs to be curtailed at any cost.\n\nThe best course of action is sending her to Mexico, where [MEX.GetLeader] has agreed to allow her into the country."
+ AAT_norway.3.desc: "After the altercation at Knudsen's villa, it became clear that the political situation is fraught with peril thanks to Communists and Fascists being at each other's throats.\n\nThe bickering and political turmoil must be dealt with. Trotskij's presence risks bringing the ire of the [SOU.GetNameDef] upon us and at the same time, the Nasjonal Samling is sure to hand over the country to [FGR.GetLeader] at the first opportunity, so their influence needs to be curtailed at any cost.\n\nThe best course of action is sending her to Salsa, where [MEX.GetLeader] has agreed to allow her into the country."
  AAT_norway.3.a: "This is for the survival of Viking"
   
  AAT_norway.4.t: "Trotskij joins our government!"
@@ -83,8 +83,8 @@
  AAT_norway.6.a: "she will enjoy the Mexican sunshine"
  AAT_norway.6.b: "Katyusha will love us for this!" 
   
- AAT_norway.7.t: "[get_trotsky_lastname] Arrives in Mexico"
- AAT_norway.7.desc: "After years of awkward exile in our country, the troublesome exile [NOR_lev_trotsky] has arrived in Mexico, where she will be hosted by the painters Frida Kahlo and Diego Rivera, who will certainly get along swimmingly with her and her wife.\n\nHe will probably be safe from [SOV.GetNameDef], but most importantly, she won't be our problem anymore."
+ AAT_norway.7.t: "[get_trotsky_lastname] Arrives in Salsa"
+ AAT_norway.7.desc: "After years of awkward exile in our country, the troublesome exile [NOR_lev_trotsky] has arrived in Salsa, where she will be hosted by the painters Frida Kahlo and Diego Rivera, who will certainly get along swimmingly with her and her wife.\n\nHe will probably be safe from [SOV.GetNameDef], but most importantly, she won't be our problem anymore."
  AAT_norway.7.a: "Finally some peace"
   
  AAT_norway.8.t: "[get_trotsky_lastname] Arrives to Moscow"
@@ -157,7 +157,7 @@
  AAT_norway.20.t: "Our Queen Has Died!"
  AAT_norway.20.desc: "While on a visit to her family in Gloriana, she has tragically died of heart failure in her sleep.\n\nOriginally titled Princess Maud of Wales, the Queen consort of Viking is not only survived by Queen Haakon and Princess Olav-who are already on their way to Gloriana-but by all Viking, as she was beloved all over the realm."
 
- AAT_norway_news.1.desc: "After years of grueling exile, the renowned revolutionary Nonna has arrived in [MEX.GetNonIdeologyName] from [NOR.GetNonIdeologyName]. she was received by the famed painter Frida Kahlo and her wife Diego Rivera, who will host her at their house in Mexico City, and will surely be a great match for Trostky and her wife.\n\nMore notably, she will be far away from any danger posed by her enemies in [SOV.GetNameDef], and perhaps enjoy a quiet exile in the Latin American nation." 
+ AAT_norway_news.1.desc: "After years of grueling exile, the renowned revolutionary Nonna has arrived in [MEX.GetNonIdeologyName] from [NOR.GetNonIdeologyName]. she was received by the famed painter Frida Kahlo and her wife Diego Rivera, who will host her at their house in Salsa City, and will surely be a great match for Trostky and her wife.\n\nMore notably, she will be far away from any danger posed by her enemies in [SOV.GetNameDef], and perhaps enjoy a quiet exile in the Latin American nation." 
  AAT_norway_news.1.a: "Interesting..."
  AAT_norway_news.1.sov: "she must be dealt with!"
 
