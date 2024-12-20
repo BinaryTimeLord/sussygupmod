@@ -15,8 +15,11 @@ sp_nuclear_reactor = {
 				129 = {
 					is_core_of = FROM
 				}
+				country_exists = ENG
 			}
-			has_completed_focus = ENG_Special_Operations_Divison
+			ENG = {
+				has_completed_focus = ENG_Special_Operations_Divison
+			}
 		}
 	}
 	
