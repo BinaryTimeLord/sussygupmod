@@ -1776,26 +1776,45 @@
  sdf.61.a:0 "The End of a Experiment"
 
 ### GLORIANA ###
- ##GLORIANA EVENTS##
+ ##GLORIANA EVENTS
 
-   ##MIL BRANCH##
-   GLO_mil.1.t:0 "The Team's Sorry State"
-   GLO_mil.1.d:0 "Earl Grey! While we are pleased to have been under your leadership and have won in the 62nd Tournament thanks to you, we admittedly have come to a conclusion that our team is currently in a poor state of affairs. Our tactics are outdated and our equipment could be better. We must improve the team's capabilities and equipment first before you are to pass the reigns to anyone!"
-   GLO_mil.1.a:0 "This will be my final act as Gloriana's Commander!"
-   GLO_mil.2.t:0 "The Team's Sorry State"
-   GLO_mil.2.d:0 "[ROOT.GetLeader]! We regret to inform you that, despite Earl Grey's excellent leadership, our team has seen better days after the 62nd Tournament. Our tactics are outdated and our equipment could be better. While we admire Earl Grey's leadership, she has unfortunately failed to address the state she left the team in, and it has now fallen under your responsibility to fix this."
-   GLO_mil.2.a:0 "St. Gloriana will be reborn anew!"
-   GLO_mil.3.t:0 "Antrhax Outbreak!"
-   GLO_mil.3.d:0 "[ROOT.GETLeader]! We have bad news! It turns out a new shipment of food has been infected with Anthrax! Not only is our team suffering because of it, but it seems the rest of the academy has officially fallen ill and a massive outbreak has broken out within' the school! Quarantine measure are already in place. We have discovered that Gloriana were the ones behind this outbreak, poisoning the very food we eat!"
-   GLO_mil.3.a:0 "Has [FROM.GetLeader] no regard for life? We will not be so kind to them when we get there!"
+   ##MIL BRANCH
+     GLO_mil.1.t:0 "The Team's Sorry State"
+     GLO_mil.1.d:0 "Earl Grey! While we are pleased to have been under your leadership and have won in the 62nd Tournament thanks to you, we admittedly have come to a conclusion that our team is currently in a poor state of affairs. Our tactics are outdated and our equipment could be better. We must improve the team's capabilities and equipment first before you are to pass the reigns to anyone!"
+     GLO_mil.1.a:0 "This will be my final act as Gloriana's Commander!"
+     GLO_mil.2.t:0 "The Team's Sorry State"
+     GLO_mil.2.d:0 "[ROOT.GetLeader]! We regret to inform you that, despite Earl Grey's excellent leadership, our team has seen better days after the 62nd Tournament. Our tactics are outdated and our equipment could be better. While we admire Earl Grey's leadership, she has unfortunately failed to address the state she left the team in, and it has now fallen under your responsibility to fix this."
+     GLO_mil.2.a:0 "St. Gloriana will be reborn anew!"
+     GLO_mil.3.t:0 "Antrhax Outbreak!"
+     GLO_mil.3.d:0 "[ROOT.GETLeader]! We have bad news! It turns out a new shipment of food has been infected with Anthrax! Not only is our team suffering because of it, but it seems the rest of the academy has officially fallen ill and a massive outbreak has broken out within' the school! Quarantine measure are already in place. We have discovered that Gloriana were the ones behind this outbreak, poisoning the very food we eat!"
+     GLO_mil.3.a:0 "Has [FROM.GetLeader] no regard for life? We will not be so kind to them when we get there!"
    
-   ##CHOOSING LEADER##
+     ##RICE FAMINE CHAIN
+       GLO_mil.4.t:0 "Chi-Ha-Tan's Rice"
+       GLO_mil.4.d:0 "With the war against Chi-Ha-Tan, we have come up with an operation that may put a dent to their main food supply - Rice. If we are capable of burning their rice fields with our own operatives, the school should undergo a wide-spread famine. We have no hope of this operation being successful however given the large distance and the heavily defended home island, so to undergo this operation would be risky."
+       GLO_mil.4.a:0 "Proceed with the Operation!"
+       GLO_mil.4.b:0 "It is too risky."
+       GLO_mil.5.t:0 "Operation Ricebowl Failure!"
+       GLO_mil.5.d:0 "[ROOT.GetLeader]! We regret to inform you of the failure of Operation Ricebowl! our infiltrators had been killed and Chi-Ha-Tan was not happy with our foiled attempt. Our operatives were captured and their actions had been broadcasted throughout the Chi-Ha-Tan school, which allowed their team to grow even further and rally the student body to their cause!"
+       GLO_mil.5.a:0 "Bollocks."
+       GLO_mil.6.t:0 "Operation Ricebowl Success!"
+       GLO_mil.6.d:0 "Intel indicates our operatives in Chi-Ha-Tan had been successful with Operation Ricebowl, and that a famine has now struck Chi-Ha-Tan! With this, the war effort in the East will become much easier against them!"
+       GLO_mil.6.a:0 "We did what we had to do..."
+       GLO_mil.7.t:0 "Rice Famine!"
+       GLO_mil.7.d:0 "To all students of Chi-Ha-Tan, breaking news! A rice famine has struck our school, and our food supplies are now beginning to dwindle! Many of our own students reported other students who they were unfamiliar with, and we have reason to suspect it was Gloriana. They were reported to have gotten to our ricefields and burnt everything to the ground. With this famine, we may struggle against our enemies in the theatre!"
+       GLO_mil.7.a:0 "We must find alternative food ASAP!"
+       GLO_mil.8.t:0 "Attempted Gloriana Sabotage!"
+       GLO_mil.8.d:0 "Students of Chi-Ha-Tan! [ROOT.GetLeader] calls upon you to take up arms and join the Senshadou Team ASAP! Our own brave students had found multiple St. Gloriana operatives who had attempted to sabotage our rice fields, forcing us to starve due to it. We cannot allow this treachery to continue. Rise up, and join us in our fight against our enemies, who dare to destroy the good name of Chi-Ha-Tan!"
+       GLO_mil.8.a:0 "Rise up!"
+       
+   
+   ##CHOOSING LEADER
      GLO_choice.1.t:0 "Earl Grey Retires as Gloriana's Commander!"
      GLO_choice.1.d:0 "Earl Grey, our commandant, has officially stepped down from her position. Her way of Tankery was the key to our victory in the 62nd Tournament. Though not so elegant, it has proven effective, and as such, we mourn the loss of our great commandant. All is not lost however as two candidates have risen up to take the mantle - Earl Grey's student herself, Darjeeling, who had been under her wing for two years, and Rosehip, a 1st year student who shares the boldness of our former commandant."
      GLO_choice.1.a:0 "Darjeeling has been her student her entire stay. She is our best candidate."
      GLO_choice.1.b:0 "Rosehip follows Earl Grey's Way of Tankery. She will lead us to glory!"
 
-   ##DARJEELING CHOICES##
+   ##DARJEELING CHOICES
      GLO_darj.1.t:0 "Chi-Ha-Tan-Gloriana Naval Treaty"
      GLO_darj.1.d:0 "Our naval prowess grows stronger by the second! Gloriana is well aware of our ever increasing power, and has sent us a proposal for us to reduce our naval power in exchange for their islands."
      GLO_darj.1.a:0 "It will not be wise to make more enemies."
@@ -1854,6 +1873,7 @@
      GLO_war.8.t:0 "[From.GetName] has defied us!"
      GLO_war.8.d:0 "[From.GetName] has refused our ultimatum and has rallied against us! We cannot let them collude against our enemies!"
      GLO_war.8.a:0 "[From.GetName] has left us with no other choice!"
+     
 
      ##CERTAIN EVENTUALITY CHAIN
        GLO_war.9.t:0 "The B.C Freedom Navy"
@@ -1876,14 +1896,14 @@
        GLO_war.13.d:0 "[Root.GetLeader]! We have received news that [FROM.GetLeader] has decided to cede their fleet to us. Now the might of BC Freedom's fleet has joined us!"
        GLO_war.13.a:0 "This is a glorious day!"
 
-   ##ECO BRANCH##
+   ##ECO BRANCH
      GLO_eco.1.t:0 "Removal of the Railways Act"
      GLO_eco.1.d:0 "While the 1936 Railways Act allows us to produce our trains and effectively bring all our cargo via railways much easier, it has become apparent that our motor industry has been lacking, which may not be beneficial in the long term. Though it has served us well, the times are changing, and perhaps we must go back to using motor vehicles over trains."
      GLO_eco.1.a:0 "it has served us well these past years."
      GLO_eco.1.b:0 "Let us think of an alternative in the future."
 
 
- ##GLORIANA DECISIONS##
+ ##GLORIANA DECISIONS
    GLO_air_battle:0 "The Battle in the Air"
    GLO_airatk_increase:0 "Promote Aggression"
    GLO_airatk_increase_desc:0 "Aggression in the air allows us to keep up with our enemies, and ensure we are able to deal much more damage to them."
@@ -1908,25 +1928,50 @@
    GLO_build_london:0 "Construct a Military Factory in London"
    GLO_build_ni:0 "Construct a Military Factory in Northern Ireland"
    GLO_build_scot:0 "Construct a Military Factory in Scotland"
+   GLO_saunders_purchase:0 "Purchase Equipment from Saunders"
+   GLO_saunders_purchase_desc:0 "We will need all the help we can get. Saunders will surely have a pence or two to spare."
+   GLO_buy_inf:0 "Purchase Infantry Equipment"
+   GLO_buy_sup:0 "Purchase Support Equipment"
+   #RING IN WAR DECISIONS
+     
  
  ##GLORIANA IDEAS/MODIFIERS
    GLO_chose_darj:0 "Earl Grey's Apprentince"
+   GLO_chose_darj_desc:0 "Darjeeling has been under Earl Grey's wing since her 1st year, and as such, has learned many things studying under her mentor. This has made her a popular candidate as a commander for our team."
    GLO_railways_act:0 "1936 Railways Act"
+   GLO_railways_act_desc:0 "The Railways Act allows our cargo to be transported via railways, which promoted the usage of railway industries in the construction of more trains. In turn however, our motor industries takes a blow thanks to increased efforts to make trains over trucks."
    GLO_Harvard:0 "Harvard Research"
+   GLO_Harvard_desc:0 "The institution in Harvard has allowed our research to make astounding progress!"
    CHI_chiglo_treaty:0 "Chi-Ha-Tan-Gloriana Treaty"
+   CHI_chiglo_treaty_desc:0 "The Chi-Ha-Tan Gloriana Treaty dictates that we should decrease our effective naval capacities. Though it hinders our progress, we were rewarded with Gloriana's islands, and we are still capable of building our own navy. If we are to pursue our goals, we will have a better chance without the rest of their islands in the theatre."
    GLO_dominions_recruited:0 "Commonwealth Recruitment Program"
+   GLO_dominions_recruited_desc:0 "St. Gloriana has made it very clear that we need to increase our team's effective size. They have agreed to boost our recruitment by directly assisting us in promotion within' our own school."
    GLO_lousy_war:0 "A Lousy War"
    GLO_lousy_war_desc:0 "The 62nd Senshadou tournament was a lot far more terrible than anyone could have imagined. None of the former tournaments have been as bloody and brutal as this one. Many of our own students have thus become disillusioned with joining the team, and we must make sure to never allow something like this to happen again."
    GLO_over_hills:0 "Over the Hills"
+   GLO_over_hills_desc:0 "The war has reached the hearts of our students, and we will do everything it takes to end it!"
    GLO_bitterness:0 "Gloriana Bitterness"
+   GLO_bitterness_desc:0 "We cannot simply stand idly by as our enemies march on the very soil that we call our home. We will do everything it takes to make sure they will never land."
    GLO_army_reborn:0 "Gloriana's Team Reborn"
    GLO_army_reborn_desc:0 "Gloriana's Team has been remade, where the faults Earl Grey failed to mention have not only been fixed, but also vastly improved upon. It's time for the rest of the world to the elegance of St. Gloriana GIrls College!"
    KMM_anthrax_outbreak:0 "Anthrax Outbreak"
    KMM_anthrax_outbreak_desc:0 "Recent food shipments had been infected with a deadly spore disease known as 'Anthrax'. Many of our own students have fallen ill and even died because of this, and Gloriana is all we have to blame!"
    GLO_hms_service:0 "Secret Service Improvement Program"
+   GLO_hms_service_desc:0 "[ROOT.GetLeader] has decided to employ an improvement program for our secret service. With it, we can ensure that improvements are much faster and efficient in our secret service."
    GLO_underfunded_navy:0 "Underfunded Navy"
+   GLO_underfunded_navy_desc:0 "Despite our pride in our navy, we have decided to cut down our spendings on it after the 62nd Tournament. With our navy already in its finest position, we do not have a need to improve upon it."
    GLO_Inflation:0 "Unapid Debts"
    GLO_Inflation_desc:0 "The 62nd Senshadou Tournament has caused problems in our funding, where we had to gather debts in order to continue the fight. Our school now has to take top priority to repay our debts, unless we succumb to many issues that may come."
    GLO_Inflation_2:0 "Partial Debt Payments"
+   GLO_Inflation_2_desc:0 "Our debts have been partially paid, but the effects still stand. Still, we can atleast divert some of our factories to helping the war effort."
    GLO_Inflation_3:0 "Near Complete Debt Payments"
+   GLO_Inflation_3_desc:0 "We are nearing the payment of our debts and we can dedicate more of our own factories to the war effort."
    GLO_defence_increase:0 "Funding Increase"
+   GLO_defence_increase_desc:0 "Our funding increases temporarily only, and we must do everything we can to make the best out of it. We can purchase factories to fuel our industry in London or our outer lands, but once we have exhausted the budget, we must ensure to pay off any issues afterwards."
+   GLO_race_bomb:0 "The Race for the bomb"
+   GLO_race_bomb_desc:0 "With Kuromorimine beginning their own research in a destructive weapon, we need to make sure we are first in constructing this weapon, less we lose the fight against them."
+   CHI_rice_famine:0 "Rice Famine"
+   CHI_rice_famine_desc:0 "Our rice fields had recently been destroyed by St. Gloriana, and because of this, our own students can't even eat properly! We must find ways to alleviate this ASAP."
+   GLO_liability:0 "Limited Liability"
+   GLO_liability_desc:0 "The Gloriana Airforce is in constant need of renovations, and with this new strategy, we can ensure to construct much more to supply our needs."
+

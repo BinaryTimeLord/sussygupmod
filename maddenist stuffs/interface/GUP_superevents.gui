@@ -18,7 +18,7 @@ guiTypes = {
 
 
 		iconType = {
-			name = "GUP_SE_Superevents_Test"		
+			name = "GUP_SE_SuperEvents_Test"		
 			quadTextureSprite ="GFX_SuperEvents_Test_Visible"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes

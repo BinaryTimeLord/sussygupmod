@@ -327,7 +327,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_dominion_recruit
-			#icon =
+			icon = GFX_dominion_recruit
 
 			prerequisite = {
 				focus = ENG_Captain_Best
@@ -368,7 +368,7 @@ focus_tree = {
 					ruling_only = yes
 				}
 				}
-				value = GFX_focus_eng_the_kings_party
+				value = GFX_captain_darj
 			}
 			icon = {
 				trigger = { 
@@ -377,7 +377,7 @@ focus_tree = {
 					ruling_only = yes
 				}
 				}
-				value = GFX_focus_eng_concessions_to_the_trade_unions
+				value = GFX_captain_rose
 			}
 
 			icon = {
@@ -387,7 +387,7 @@ focus_tree = {
 					ruling_only = yes
 				}
 				}
-				value = GFX_focus_eng_unite_the_anglosphere
+				value = GFX_captain_earl
 			}
 			icon = {
 				value = GFX_focus_generic_farmland
@@ -485,7 +485,7 @@ focus_tree = {
 	}
 		focus = {
 			id = ENG_dad_army
-			#icon =
+			icon = GFX_dad_army
 			prerequisite = {
 				focus = ENG_dominion_recruit
 			}
@@ -555,7 +555,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_royal_bugger
-			#icon =
+			icon = GFX_royal_bugger
 			prerequisite {
 				focus = ENG_dad_army
 			}
@@ -567,7 +567,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				unlock_decision_category_tooltip = GLO_saunders_purchase
 			}
 		}
 
@@ -603,7 +603,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_Long_Way_Mukumbura
-			#icon = 
+			icon = GFX_long_mukumbura
 			prerequisite = {
 				focus = ENG_dominion_recruit
 			}
@@ -658,7 +658,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Recruiting_Sargents
-			#icon = 
+			icon = GFX_recruit_sgt
 			prerequisite = {
 				focus = ENG_Long_Way_Mukumbura
 			}
@@ -699,7 +699,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_A_Rather_Light_Horse
-			#icon = 
+			icon = GFX_light_horse
 			prerequisite = {
 				focus = ENG_Recruiting_Sargents
 			}
@@ -818,12 +818,12 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				country_event = GLO_mil.4
 			}
 		}
 		focus = {
 			id = ENG_Race_For_Bomb
-			#icon = 
+			icon = GFX_race_bomb 
 			prerequisite = {
 				focus = ENG_Special_Operations_Divison
 			}
@@ -835,7 +835,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-	 
+				add_ideas = GLO_race_bomb
 			}
 		}
 
@@ -852,17 +852,7 @@ focus_tree = {
 		} 
 
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = ENG_revisit_colonial_policy
-				}
-			}
+			always = no
 		}
 
 		icon = GFX_goal_generic_national_unity
@@ -1713,17 +1703,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = uk_empire_focus
-				}
-			}
+			always = no
 		}
 
 		available = { 
@@ -5869,17 +5849,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = ENG_revisit_colonial_policy
-				}
-			}
+			always = no
 		}
 
 		available = { 	
@@ -5921,18 +5891,7 @@ focus_tree = {
 		prerequisite = { focus = uk_south_africa_focus }
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = ENG_revisit_colonial_policy
-				}
-			}
+			always = no
 		}
 
 		available = {
@@ -6659,7 +6618,7 @@ focus_tree = {
 		prerequisite = {
 
 		}
-		x = 48
+		x = 44.3
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -7026,7 +6985,7 @@ focus_tree = {
 	available = {
 		date > 1937.1.1
 	}
-	x = 61
+	x = 35
 	y = 0
 	cost = 5
 	completion_reward = {
@@ -7303,7 +7262,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		completion_reward = {
+		completion_reward = { 
+			custom_effect_tooltip = spaghet_pledge_tt
 			ITA = {
 				add_ai_strategy = {    ### NOT SURE IF THIS WORKS ###
 					if = {
@@ -7359,7 +7319,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			custom_effect_tooltip = appeasement_kuro_tt
 		}
 	}
 	focus = {
@@ -7375,8 +7335,8 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		completion_reward {
-
+		completion_reward = {
+			custom_effect_tooltip = grant_appease_tt
 		}
 	}
 	focus = {
@@ -8344,8 +8304,8 @@ focus_tree = {
 		available = {
 			has_war_with_major = yes
 		}
-		x = 73
-		y = 0
+		x = 20
+		y = 10
 		cost = 5
 		completion_reward = {
 			add_threat = 10
@@ -8510,7 +8470,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+			unlock_decision_category_tooltip = GLO_ring_lease
 		}
 	}
 
@@ -8521,14 +8481,15 @@ focus_tree = {
 			focus = ENG_Another_Lousy_War
 		}
 		available = {
- 
+
 		}
 		relative_position_id = ENG_Another_Lousy_War
 		x = -4
 		y = 1
 		cost = 5
 		completion_reward = {
- 
+ 			add_political_power = 100
+			add_command_power = 10
 		}
 	}
 

@@ -9188,6 +9188,47 @@ spriteTypes = {
 	 name = "GFX_operative_portrait_bond"
 	 texturefile = "gfx/leaders/ENG/Portrait_ENG_Bond.tga"
 	 }
+ SpriteType = {
+	 name = "GFX_captain_darj"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_captain_darj.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_captain_earl"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_captain_earl.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_captain_rose"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_captain_rose.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_dad_army"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_dad_army.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_dominion_recruit"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_dominion_recruit.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_long_mukumbura"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_long_mukumbura.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_race_bomb"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_race_bomb.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_light_horse"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_light_horse.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_recruit_sgt"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_recruit_sgt.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_royal_bugger"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_royal_bugger.tga"
+	 }
+ 
 
 }
 

@@ -300,3 +300,217 @@ GLO_build_mil = {
     }
 }
 
+GLO_ring_lease = {
+    GLO_lease_sov = {
+        cost = 50
+        #icon = 
+
+        available = {
+            SOV = {
+                has_war_with_major = yes
+                NOT = {
+                    has_war_with = ENG
+                }
+            }
+            NOT = {
+                has_country_flag = leased_sov
+            }
+        }
+        complete_effect = {
+        set_country_flag = {
+            flag = leased_sov
+            days = 30
+            value = 1
+        }
+
+        send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = SOV
+			}
+
+    }
+    }
+
+    GLO_lease_ben = {
+        cost = 50
+        #icon = 
+
+        available = {
+            OR = {
+            BEL = {
+                has_war_with_major = yes
+                NOT = {
+                    has_war_with = ENG
+                }
+            }
+            LUX = {
+                has_war_with_major = yes
+                NOT = {
+                    has_war_with = ENG
+                }
+            }
+            HOL = {
+                has_war_with_major = yes
+                NOT = {
+                    has_war_with = ENG
+                }
+            }
+            }
+            NOT = {
+                has_country_flag = leased_ben
+            }
+        }
+        complete_effect = {
+        set_country_flag = {
+            flag = leased_ben
+            days = 30
+            value = 1
+        }
+        if = {
+            limit = {HOL = {has_capitulated = no}}
+            send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = HOL
+			}
+        }
+        if = {
+            limit = {LUX = {has_capitulated = no}}
+            send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = LUX
+			}
+        }
+        if = {
+            limit = {BEL = {has_capitulated = no}}
+            send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = BEL
+			}
+        }
+    }
+    }
+
+    GLO_lease_fra = {
+        cost = 50
+        #icon = 
+
+        available = {
+            FRA = {
+                has_war_with_major = yes
+                NOT = {
+                    has_war_with = ENG
+                }
+            }
+            NOT = {
+                has_country_flag = leased_fra
+            }
+        }
+        complete_effect = {
+        set_country_flag = {
+            flag = leased_fra
+            days = 30
+            value = 1
+        }
+
+        send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = FRA
+			}
+
+    }
+    }
+
+    GLO_lease_POL = {
+        cost = 50
+        #icon = 
+
+        available = {
+            POL = {
+                has_war_with_major = yes
+                NOT = {
+                    has_war_with = ENG
+                }
+            }
+            NOT = {
+                has_country_flag = leased_pol
+            }
+        }
+        complete_effect = {
+        set_country_flag = {
+            flag = leased_pol
+            days = 30
+            value = 1
+        }
+
+        send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = POL
+			}
+
+    }
+    }
+
+}
+
+GLO_saunders_purchase = {
+    GLO_buy_inf = {
+        cost = 100
+        #icon =
+
+        available = {
+            NOT = {
+                has_country_flag = bought_equipment
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = {
+                flag = bought_equipment
+                days = 60
+                value = 1
+            }
+
+        USA = {
+            send_equipment = {
+                equipment = infantry_equipment
+                amount = 2000
+                target = ENG
+            }
+        }
+        }
+    }
+
+    GLO_buy_sup = {
+        cost = 100
+        #icon =
+
+        available = {
+            NOT = {
+                has_country_flag = bought_equipment
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = {
+                flag = bought_equipment
+                days = 60
+                value = 1
+            }
+
+            USA = {
+                send_equipment = {
+                    equipment = support_equipment
+                    amount = 1000
+                    target = ENG
+                }
+            }
+        }
+    }
+
+}
