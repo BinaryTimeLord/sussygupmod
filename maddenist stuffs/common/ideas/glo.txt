@@ -58,8 +58,8 @@ ideas = {
             }
 
             modifier = {
-                add_stability = 0.2
-                add_war_support = -1
+                stability_factor = 0.2
+                war_support_factor = -1
             }
         }
         GLO_wartime_defense_ban = {

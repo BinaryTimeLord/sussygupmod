@@ -1,4 +1,4 @@
 sound = {
-	name = "superevents_war_begins"
+	name = "war_begins"
 	file = "superevents/war_begins.wav"
 }

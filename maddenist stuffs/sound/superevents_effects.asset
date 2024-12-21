@@ -1,5 +1,5 @@
 soundeffect = {
-	name = superevents_war_begins
+	name = "superevents_war_begins"
 	loop = no
 	sounds = {
 		sound = war_begins
@@ -7,5 +7,5 @@ soundeffect = {
 	is3d = no
 	max_audible = 1
 	max_audible_behaviour = fail
-	volume = 1.0
+	volume = 0.7
 }

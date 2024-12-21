@@ -3685,3 +3685,12 @@
     ENG_Rally_the_Yanks_desc:0 "To help bolster Saunders' support to St. Gloriana, Darjeeling has decided to travel to the school and woo their leaders, strengthening our relations!"
     
     ##END OF LOUSY WAR FOCUSES##
+
+ ##TRAITS##
+    gale_earl_grey:0 "Gale Earl Grey"
+    earl_navy:0 "Naval Neglector"
+    elegant_tankery:0 "The Symbol of Elegance"
+    glo_appeaser:0 "The Appeaser"
+    darj_wartime:0 "War Advisor"
+    speed_queen:0 "The Queen of Speed"
+    glo_aggressor:0 "The Aggressor"

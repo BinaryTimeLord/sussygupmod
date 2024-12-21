@@ -1,0 +1,90 @@
+leader_traits = {
+
+    ##EARL GREY##
+
+    gale_earl_grey = {
+        random = no
+
+        army_speed_factor = 0.25
+        army_attack_factor = 0.1
+        army_org_regain = 0.2
+        army_org_factor = 0.15
+        max_planning_factor = 0.2
+        army_defence_factor = -0.05
+        army_strength_factor = -0.1
+    }
+
+    earl_navy = {
+        random = no
+
+        naval_coordination = -0.2
+        navy_anti_air_attack_factor = -0.1
+        naval_damage_factor = -0.35
+        naval_defense_factor = -0.35
+        naval_decetion = -0.3
+        naval_hit_chance - -0.6
+        naval_morale_factor = -0.8
+        naval_retreat_speed = -0.8
+        navy_org_factor = -0.8
+    }
+
+    ##DARJEELING## 
+
+    elegant_tankery = {
+        random = no
+
+        army_defence_factor = 0.2
+        army_org_factor 0.15
+        army_attack_factor = 0.05
+        breakthrough_factor = 0.05
+        army_speed_factor = -0.2
+    }
+
+    glo_appeaser = {
+        random = no
+
+        political_power_factor = 0.012
+        stability_factor = 0.1
+        war_support = -0.1
+        request_lease_tension = 1
+        lend_lease_tension = 1
+        guarantee_tension = 0.7
+    }
+
+    darj_wartime = {
+        random = no
+
+        political_power_factor = 0.02
+        war_support_factor = 0.15
+        command_power_gain_mult = 0.1
+        conscription_factor = 0.25
+        production_speed_industrial_complex_factor = -0.5
+
+    }
+
+    ##ROSEHIP##
+
+    speed_queen = {
+        random = no
+
+        army_speed_factor = 0.25
+        army_morale_factor = 0.15
+        army_attack_factor = 0.1
+        recon_factor = 0.1
+        army_defence_factor = -0.1
+        dig_in_speed_factor = -0.2
+        max_planning_factor = -0.15 
+    }
+
+    glo_aggressor = {
+        random = no
+
+        production_speed_buildings_factor = 0.2
+        conscription_factor = 0.6
+        war_support_factor = 0.15
+        consumer_goods_factor = -0.1
+        industrial_capacity_factory = 0.15
+        stability_factor = -0.15
+    }
+
+}

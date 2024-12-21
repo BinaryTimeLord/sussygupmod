@@ -15,7 +15,7 @@ characters={
 		country_leader={
 			desc="POLITICS_STANLEY_BALDWIN_DESC"
 			ideology=conservatism
-			traits={ elegant_and_wise diplomatic_tongue }
+			traits={ gale_earl_grey earl_navy }
 			expire="1938.1.1.1"
 			id=-1
 		}
@@ -157,15 +157,6 @@ characters={
 				large="gfx/leaders/ENG/Portrait_ENG_Rukuriri1.dds"
 			}
 		}
-		corps_commander={
-			traits={ logistics_wizard infantry_leader organisational_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
 	}
 	ENG_nilgiri={
 		name="Nilgiri"
@@ -176,15 +167,6 @@ characters={
 			army={
 				large="gfx/leaders/ENG/Portrait_ENG_Nilgiri.dds"
 			}
-		}
-		corps_commander={
-			traits={ cavalry_leader fast_planner trickster }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=-1
 		}
 	}
 	ENG_vanilla={

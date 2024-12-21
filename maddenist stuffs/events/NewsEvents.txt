@@ -5244,6 +5244,12 @@ news_event = {
 
 	immediate = {
 		set_global_flag = rhineland_militarized_war
+		hidden_effect = {
+		news_event = {
+			id = superevent.2
+			days = 2
+		}
+		}
 	}
 	
 
@@ -5420,8 +5426,13 @@ news_event = {
 
 	immediate = {
 		set_global_flag = rhineland_militarized_war
+		hidden_effect = {
+		news_event = {
+			id = superevent.2
+			days = 2
+		}
 	}
-	
+	}
 
 	mean_time_to_happen = {
 		days = 2

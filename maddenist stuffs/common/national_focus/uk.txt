@@ -23,9 +23,6 @@ focus_tree = {
 	focus = {
 		id = ENG_sorry_state
 		icon = GFX_sorry_state
-		mutually_exclusive = {
-			focus = ENG_a_change_in_course
-		}
 
 		available = {
 			
@@ -219,7 +216,7 @@ focus_tree = {
 					add_building_construction = {
 						type = arms_factory
 						level = 2
-						instant = yes
+						instant_build = yes
 					}
 				}
 				437 = {
@@ -227,7 +224,7 @@ focus_tree = {
 					add_building_construction = {
 						type = arms_factory
 						level = 2
-						instant = yes
+						instant_build = yes
 					}
 				}
 				895 = {
@@ -235,7 +232,7 @@ focus_tree = {
 					add_building_construction = {
 						type = arms_factory
 						level = 2
-						instant = yes
+						instant_build = yes
 					}
 				}
 				871 = {
@@ -243,7 +240,7 @@ focus_tree = {
 					add_building_construction = {
 						type = arms_factory
 						level = 2
-						instant = yes
+						instant_build = yes
 					}
 				}
 				723 = {
@@ -251,7 +248,7 @@ focus_tree = {
 					add_building_construction = {
 						type = arms_factory
 						level = 2
-						instant = yes
+						instant_build = yes
 					}
 				}
 			}
@@ -326,40 +323,6 @@ focus_tree = {
 			}
 		}
 		focus = {
-			id = ENG_dominion_recruit
-			icon = GFX_dominion_recruit
-
-			prerequisite = {
-				focus = ENG_Captain_Best
-			}
-
-			available = {
-
-			}
-			relative_position_id = ENG_Captain_Best
-			x = 0
-			y = 1
-			cost = 5
-
-			completion_reward = {
-				every_country = {
-				limit = {
-					OR = {
-						is_puppet_of = ENG
-						AND = {
-							has_autonomy_state = autonomy_dominion
-							is_ally_with = ENG
-						}
-					}
-				}
-				add_timed_idea = {
-					idea = GLO_dominions_recruited
-					years = 1
-				}
-				}
-			}
-		}
-		focus = {
 			id = ENG_Captain_Best
 			icon = {
 				trigger = { 
@@ -404,9 +367,62 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
+				add_corps_commander_role = {
+					Character = ENG_rukuriri
+					traits={ logistics_wizard infantry_leader organisational_leader }
+					skill=3
+					attack_skill=2
+					defense_skill=4
+					planning_skill=3
+					logistics_skill=3
+				}
+				add_corps_commander_role = {
+					character = ENG_nilgiri
+					traits={ cavalry_leader fast_planner trickster }
+					skill=3
+					attack_skill=3
+					defense_skill=3
+					planning_skill=2
+					logistics_skill=4
+					
+				}
 				add_manpower = 20000
 			}
 			dynamic = yes
+		}
+		focus = {
+			id = ENG_dominion_recruit
+			icon = GFX_dominion_recruit
+
+			prerequisite = {
+				focus = ENG_Captain_Best
+			}
+
+			available = {
+
+			}
+			relative_position_id = ENG_Captain_Best
+			x = 0
+			y = 1
+			cost = 5
+
+			completion_reward = {
+				every_country = {
+				limit = {
+					OR = {
+						is_puppet_of = ENG
+						AND = {
+							has_autonomy_state = autonomy_dominion
+							is_ally_with = ENG
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = GLO_dominions_recruited
+					years = 1
+				}
+				}
+			}
 		}
 
 		focus = {
@@ -559,7 +575,7 @@ focus_tree = {
 			prerequisite {
 				focus = ENG_dad_army
 			}
-			available {
+			available = {
 
 			}
 			relative_position_id = ENG_dad_army
@@ -577,7 +593,7 @@ focus_tree = {
 			prerequisite {
 				focus = ENG_royal_bugger
 			}
-			available {
+			available = {
 
 			}
 			relative_position_id = ENG_royal_bugger
@@ -6970,9 +6986,7 @@ focus_tree = {
 	focus = {
 	id = ENG_meeting_with_tea
 	#icon = 
-	mutually_exclusive = {
-		focus = ENG_a_change_in_course
-	}
+
 	allow_branch = {
 		if = {
 			limit = {
@@ -7056,7 +7070,7 @@ focus_tree = {
 				country_leader = {
 					ideology = conservatism
 					expire = "9999.1.1.1"
-					traits = { elegant_and_wise diplomatic_tongue }
+					traits = { elegant_tankery glo_appeaser }
 				}
 			}
 			add_stability = 0.05
@@ -7103,7 +7117,7 @@ focus_tree = {
 				country_leader = {
 					ideology = conservatism
 					expire = "9999.1.1.1"
-					traits = { war_industrialist }
+					traits = { speed_queen glo_aggressor }
 				}
 			}
 		}
@@ -7324,6 +7338,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = appeasement_kuro_tt
+			set_country_flag = appeasing_kmm
 		}
 	}
 	focus = {
@@ -7451,7 +7466,7 @@ focus_tree = {
 					active = yes
 				}
 				diplomatic_relation = {
-					country = ITa
+					country = ITA
 					relation = non_aggression_pact
 					active = yes
 				}
@@ -7619,7 +7634,7 @@ focus_tree = {
 				add_resource = {
 					type = rubber
 					amount = 10
-					state 336
+					state = 336
 				}
 			}
 		}
@@ -8313,7 +8328,28 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_threat = 10
-		}
+
+			if = {
+				limit = {
+					has_country_leader = {
+						character = ENG_darjeeling
+						ruling_only = yes
+					}
+				}
+
+					remove_trait = {
+						character = ENG_darjeeling
+						ideology = conservatism
+						trait = glo_appeaser
+					}
+
+					add_trait = {
+						character = ENG_darjeeling
+						ideology = conservatism
+						trait = darj_wartime
+					}
+				}
+			}
 	}
 
 	focus = {
@@ -8360,7 +8396,7 @@ focus_tree = {
 				add_threat = 5
 			}
 			USA = {
-				add_idea = USA_lend_lease_act_na
+				add_ideas = USA_lend_lease_act_na
 			}
 		}
 	}
@@ -8590,7 +8626,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 
-		 if {
+		 if = {
 
 			limit = {
 				IRQ = {
