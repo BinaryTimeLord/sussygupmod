@@ -16,6 +16,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_supereventsbg"
 		}
 
+		###IMPORTANT!!! ALWAYS PLACE NEW ICONTYPES IN FRONT OF OTHER COMPONENTS!!!
 
 		iconType = {
 			name = "GUP_SE_SuperEvents_Test"		
@@ -27,6 +28,20 @@ guiTypes = {
 		iconType = {
 			name = "GUP_SE_63rd_Tournament"		
 			quadTextureSprite ="GFX_63rd_Tournament_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "GUP_SE_Darjeeling"		
+			quadTextureSprite ="GFX_Darjeeling_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "GUP_SE_Rosehip"		
+			quadTextureSprite ="GFX_Rosehip_Visible"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}

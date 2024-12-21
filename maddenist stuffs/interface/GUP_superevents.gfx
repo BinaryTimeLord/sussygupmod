@@ -28,4 +28,14 @@ SpriteTypes = {
 		name = "GFX_63rd_Tournament_Visible"
 		textureFile = "/gfx/superevents_pictures/fighting.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Darjeeling_Visible"
+		textureFile = "/gfx/superevents_pictures/darjeeling.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Rosehip_Visible"
+		textureFile = "/gfx/superevents_pictures/rosehip.dds"
+	}
 }

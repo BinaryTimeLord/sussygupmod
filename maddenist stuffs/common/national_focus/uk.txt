@@ -7083,6 +7083,13 @@ focus_tree = {
 				idea = GLO_chose_darj
 				days = 180
 			}
+			ENG = {
+				set_country_flag = GUP_Darjeeling_Event
+				set_country_flag = GUP_SuperEvents_Visible_Local
+				hidden_effect = {
+					play_song = Gloriana_Super_Event
+				}
+			}
 		}
 	}
 	focus = {
@@ -7123,6 +7130,13 @@ focus_tree = {
 					ideology = conservatism
 					expire = "9999.1.1.1"
 					traits = { speed_queen glo_aggressor }
+				}
+			}
+			ENG = {
+				set_country_flag = GUP_Rosehip_Event
+				set_country_flag = GUP_SuperEvents_Visible_Local
+				hidden_effect = {
+					play_song = Gloriana_Super_Event
 				}
 			}
 		}
