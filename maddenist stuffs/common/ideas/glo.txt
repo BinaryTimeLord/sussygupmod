@@ -3,7 +3,7 @@ ideas = {
         GLO_chose_darj =  {
             name = GLO_chose_darj
 
-            #picture =
+            picture = apprentice
 
             removal_cost = -1
 
@@ -34,7 +34,7 @@ ideas = {
         CHI_chiglo_treaty = {
             name = CHI_chiglo_treaty
 
-            #picture =
+            picture = chiglo
 
             removal_cost = -1
 
@@ -64,6 +64,8 @@ ideas = {
         }
         GLO_wartime_defense_ban = {
             name = GLO_wartime_defense_ban
+
+            #picture =
 
             allowed = {
                 always = no
@@ -217,7 +219,7 @@ ideas = {
         GLO_liability = {
             name = GLO_liability
 
-            #picture =
+            picture = lim_liabil
 
             allowed = {
                 always = no
@@ -329,7 +331,7 @@ ideas = {
         }
         GLO_dominions_recruited = {
             name = GLO_dominions_recruited
-            #picture = 
+            picture = recruit
 
             allowed = {
                 always = no
@@ -415,7 +417,7 @@ ideas = {
 
         KMM_anthrax_outbreak = {
             name = KMM_anthrax_outbreak
-            #picture = 
+            picture = anthrax_break
 
             allowed = {
                 always = no
@@ -432,7 +434,7 @@ ideas = {
 
         GLO_hms_service = {
             name = GLO_hms_service
-            #picture =
+            picture = hms
 
             allowed = {
                 always = no
@@ -461,7 +463,7 @@ ideas = {
         }
         GLO_race_bomb = {
             name = GLO_race_bomb
-            #picture = 
+            picture = bombing_race
 
             allowed = {
                 always = no
@@ -477,7 +479,7 @@ ideas = {
 
         CHI_rice_famine = {
             name = CHI_rice_famine
-            #picture =
+            picture = rice_famine
 
             allowed = {
                 always = no

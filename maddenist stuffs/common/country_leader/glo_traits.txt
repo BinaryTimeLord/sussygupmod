@@ -21,8 +21,8 @@ leader_traits = {
         navy_anti_air_attack_factor = -0.1
         naval_damage_factor = -0.35
         naval_defense_factor = -0.35
-        naval_decetion = -0.3
-        naval_hit_chance - -0.6
+        naval_detection = -0.3
+        naval_hit_chance = -0.6
         naval_morale_factor = -0.8
         naval_retreat_speed = -0.8
         navy_org_factor = -0.8
@@ -34,7 +34,7 @@ leader_traits = {
         random = no
 
         army_defence_factor = 0.2
-        army_org_factor 0.15
+        army_org_factor = 0.15
         army_attack_factor = 0.05
         breakthrough_factor = 0.05
         army_speed_factor = -0.2
@@ -45,7 +45,7 @@ leader_traits = {
 
         political_power_factor = 0.012
         stability_factor = 0.1
-        war_support = -0.1
+        war_support_factor = -0.1
         request_lease_tension = 1
         lend_lease_tension = 1
         guarantee_tension = 0.7

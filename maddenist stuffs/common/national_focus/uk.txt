@@ -589,7 +589,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_hms_service
-			#icon =
+			icon = GFX_hms_service
 			prerequisite {
 				focus = ENG_royal_bugger
 			}
@@ -6631,7 +6631,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_railways_act
-		#icon = 
+		icon = GFX_railway_act
 		available = {
 
 		}
@@ -6651,7 +6651,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_Commonwealth_Economic
-		#icon = 
+		icon = GFX_common_council
 		available = {
 
 		}
@@ -7007,12 +7007,17 @@ focus_tree = {
 	y = 0
 	cost = 5
 	completion_reward = {
-
+		custom_effect_tooltip = ENG_tea_meeting_tt
+		hidden_effect = {
+		country_event = {
+			id = GLO_choice.2
+		}
+	}
 	}
 }
 	focus = {
 		id = ENG_tea_is_poured
-		#icon = 
+		icon = GFX_tea_poured
 		prerequisite = {
 			focus = ENG_meeting_with_tea
 		}
@@ -7283,21 +7288,24 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = spaghet_pledge_tt
 			ITA = {
-				add_ai_strategy = {    ### NOT SURE IF THIS WORKS ###
+		  ### NOT SURE IF THIS WORKS ###
 					if = {
 						limit = {
 							date < 1940.1.1
 						}
+						add_ai_strategy = {
 						type = alliance
 						id = GER
 						value = -100
+						}
 					}
 					else = {
+						add_ai_strategy = {
 						type =  alliance 
 						id = GER
 						value = 100
+						}
 					}
-				}
 			}
 		}
 	}
@@ -7347,7 +7355,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_spaghetti_pledge
 		}
-		available {
+		available = {
 
 		}
 		relative_position_id = ENG_spaghetti_pledge
