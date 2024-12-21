@@ -44,6 +44,21 @@ country_event = {
         complete_national_focus = ENG_choose_rose
     }
 }
+
+country_event = {
+	id = GLO_choice.2
+	title = GLO_choice.2.t 
+	desc = GLO_choice.2.d 
+	#picture =
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GLO_choice.2.a 
+	}
+}
+
 country_event = {
 	id = GLO_darj.1
 	title = GLO_darj.1.t
@@ -601,6 +616,9 @@ country_event = {##Certain Eventuality Chain##
 
 	option = {##Ask to Cede Fleet##
 		name = GLO_war.9.a 
+		ai_chance = {
+			base = 50
+		}
 		if = { 
 			limit = {##Check if Vichy France##
 				any_country = {
@@ -633,7 +651,9 @@ country_event = {##Certain Eventuality Chain##
 
 	option = {##Destroy Fleet##
 		name = GLO_war.9.b
-
+		ai_chance = {
+			base = 50
+		}
 		if = {##Check if Vichy France##
 			limit = {
 				any_country = {
@@ -685,6 +705,9 @@ country_event = {##Vichy France asked to Cede Fleet##
 
 	option = {##Cede Fleet##
 		name = GLO_war.10.a
+		ai_chance = {
+			base = 20
+		}
 		transfer_navy = {
 			target = ENG
 		}
@@ -702,6 +725,9 @@ country_event = {##Vichy France asked to Cede Fleet##
 
 	option = {##Refuse##
 		name = GLO_war.10.b
+		ai_chance = {
+			base = 80
+		}
 		ENG = {
 		country_event = {
 
@@ -723,6 +749,9 @@ country_event = {##Vichy refused to Cede Fleet##
 
 	option = {##Destroy Fleet##
 		name = GLO_war.11.a 
+		ai_chance = {
+			base = 90
+		}
 		FROM = {
 
 		destroy_ships = {
@@ -738,6 +767,9 @@ country_event = {##Vichy refused to Cede Fleet##
 
 	option = {##Do Nothing##
 		name = GLO_war.11.b 
+		ai_chance = {
+			base = 10
+		}
 	}
 }
 
@@ -752,13 +784,12 @@ country_event = {##Vichy France fleet destroyed##
 
 	option = {##War against Gloriana##
 		name = GLO_war.12.a
+		ai_chance = {
+			base = 20
+		}
 		declare_war_on = {
 			target = ENG
 			type = annex_everything
-		}
-		add_opinion_modifier = {
-			modifier = large_decrease
-			target = FROM
 		}
 		GER = {
 			add_to_faction = ROOT
@@ -767,6 +798,13 @@ country_event = {##Vichy France fleet destroyed##
 
 	option = {##Do Nothing##
 		name = GLO_war.12.b
+		ai_chance = {
+			base = 80
+		}
+		add_opinion_modifier = {
+			modifier = large_decrease
+			target = FROM
+		}
 	}
 }
 

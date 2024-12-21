@@ -3568,6 +3568,7 @@
 
     ENG_meeting_with_tea:0 "Meeting With Tea"
     ENG_meeting_with_tea_desc:0 "As the time for Earl Grey's leadership is almost coming to its end, she called for the student council on her next move as the commander."
+    ENG_tea_meeting_tt:0 "Decide whether to keep Earl Grey, or let her step down.\n§RThe future of Gloriana awaits her decision!§R"
     ENG_tea_is_poured:0 "Tea is Poured"
     ENG_tea_is_poured_desc:0 "Earl Grey has decided that she will be stepping down. We await only who she enacts as the next commandant for our Sensha-dou Team"
     ENG_choose_darj:0 "Choose Darjeeling"
@@ -3657,7 +3658,7 @@
  
  ##POLITICAL AHISTORICAL FOCUSES##
     ENG_cups_are_shattered:0 "Cups are Shattered"
-    ENG_cups_are_shattered_desc:0 "Earl Grey is the one true commandant destined to lead St. Gloriana! She has decided she will maintain her role as the commander, even if this may upset many of our own students!                                                 §RWARNING:THE AHISTORICAL PATH IS STILL IN DEVELOPMENT. THE FOCUS WILL DO NOTHING AS OF RIGHT NOW§R "
+    ENG_cups_are_shattered_desc:0 "Earl Grey is the one true commandant destined to lead St. Gloriana! She has decided she will maintain her role as the commander, even if this may upset many of our own students!\n§RWARNING:THE AHISTORICAL PATH IS STILL IN DEVELOPMENT. THE FOCUS WILL DO NOTHING AS OF RIGHT NOW§R "
     ##END OF AHISTORICAL FOCUSES
 
  ##ANOTHER LOUSY WAR FOCUSES##

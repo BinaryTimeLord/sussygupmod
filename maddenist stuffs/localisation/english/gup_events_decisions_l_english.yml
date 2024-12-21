@@ -1813,6 +1813,9 @@
      GLO_choice.1.d:0 "Earl Grey, our commandant, has officially stepped down from her position. Her way of Tankery was the key to our victory in the 62nd Tournament. Though not so elegant, it has proven effective, and as such, we mourn the loss of our great commandant. All is not lost however as two candidates have risen up to take the mantle - Earl Grey's student herself, Darjeeling, who had been under her wing for two years, and Rosehip, a 1st year student who shares the boldness of our former commandant."
      GLO_choice.1.a:0 "Darjeeling has been her student her entire stay. She is our best candidate."
      GLO_choice.1.b:0 "Rosehip follows Earl Grey's Way of Tankery. She will lead us to glory!"
+     GLO_choice.2.t:0 "What to do next..."
+     GLO_choice.2.d:0 "Earl Grey! It has been an honour to work under you, especially as you have led us to our victory in the 62nd Tournament! By tradition however, it is time that you are to step down from your position as the commandant of the Senshadou team and let someone new take the reigns. Some of us however, do not think we can find another commandant as capable as you, and will be supporting you if you choose to remain. Be warned however that many of our own students will not be happy if you choose to stay, and you may be forced to pacify their aggression."
+     GLO_choice.2.a:0 "I know what's right for this school!"
 
    ##DARJEELING CHOICES
      GLO_darj.1.t:0 "Chi-Ha-Tan-Gloriana Naval Treaty"

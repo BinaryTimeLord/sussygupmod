@@ -9228,7 +9228,56 @@ spriteTypes = {
 	 name = "GFX_royal_bugger"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_royal_bugger.tga"
 	 }
- 
+ SpriteType = {
+	 name = "GFX_tea_poured"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_tea_poured.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_railway_act"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_railway_act.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_hms_service"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_hms_service.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_common_council"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_common_council.tga"
+	 }
+ ##IDEAS
+	 SpriteType = {
+	 name = "GFX_idea_chiglo"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_chiglo.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_recruit"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_recruit.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_apprentice"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_apprentice.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_bombing_race"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_bombing_race.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_anthrax_break"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_anthrax_break.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_rice_famine"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_rice_famine.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_hms"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_hms.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_lim_liabil"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_lim_liabil.tga"
+	 }
+	 
 
 }
 
