@@ -1,0 +1,20 @@
+
+music_station = "super_events"
+
+music = {
+	song = "Crevojeb_Super_Event"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+		
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}
+	}
+}

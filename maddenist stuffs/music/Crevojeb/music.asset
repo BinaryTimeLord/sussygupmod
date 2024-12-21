@@ -1,0 +1,5 @@
+music = {
+	name = "Crevojeb_Super_Event"
+	file = "Crevojeb.ogg"
+	volume = 1.00
+}
