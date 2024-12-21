@@ -21,7 +21,7 @@ SpriteTypes = {
 	
 	spriteType = {
 		name = "GFX_SuperEvents_Test_Visible"
-		textureFile = "/gfx/superevents_pictures/glocky.dds"
+		textureFile = "/gfx/superevents_pictures/pepa.dds"
 	}
 
 	spriteType = {
