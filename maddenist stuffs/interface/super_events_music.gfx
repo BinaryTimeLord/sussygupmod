@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_Nook"
+		texturefile = "gfx//interface//topbar//musicplayer//super_events.dds"
+		noOfFrames = 2
+	}
+}
