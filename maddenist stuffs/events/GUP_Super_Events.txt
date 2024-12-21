@@ -15,7 +15,7 @@ country_event = { ### TEST SUPEREVENT
 		set_global_flag = GUP_SuperEvents_Visible
 		set_global_flag = GUP_SuperEvents_Test
 
-		sound_effect = "superevents_war_begins"
+		play_song = "Crevojeb_Super_Event"
 	}
 }
 
