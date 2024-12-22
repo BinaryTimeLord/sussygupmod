@@ -46,6 +46,27 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "GUP_SE_Pravda_Fascist_CW"
+			quadTextureSprite = "GFX_Pravda_Fascist_CW_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "GUP_SE_Pravda_Leftist_CW"
+			quadTextureSprite = "GFX_Pravda_Leftist_CW_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "GUP_SE_Pravda_Rightist_CW"
+			quadTextureSprite = "GFX_Pravda_Rightist_CW_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
 		buttonType ={
 			name ="superevents_button"
 			spriteType = "GFX_supereventsbutton"

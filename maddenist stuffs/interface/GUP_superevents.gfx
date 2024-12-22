@@ -38,4 +38,19 @@ SpriteTypes = {
 		name = "GFX_Rosehip_Visible"
 		textureFile = "/gfx/superevents_pictures/rosehip.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Pravda_Fascist_CW_Visible"
+		textureFile = "/gfx/superevents_pictures/pravda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Pravda_Leftist_CW_Visible"
+		textureFile = "/gfx/superevents_pictures/pravda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Pravda_Rightist_CW_Visible"
+		textureFile = "/gfx/superevents_pictures/pravda.dds"
+	}
 }

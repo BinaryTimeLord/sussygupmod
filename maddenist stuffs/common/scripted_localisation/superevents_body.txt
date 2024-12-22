@@ -34,4 +34,22 @@ defined_text = {
 		}
 		localization_key = GUP_SuperEvents_Rosehip_Body
 	}
+	text = {
+		trigger = {
+			has_global_flag = GUP_Pravda_Fascist_CW
+		}
+		localization_key = GUP_SuperEvents_Pravda_Fascist_CW_Body
+	}
+	text = {
+		trigger = {
+			has_global_flag = GUP_Pravda_Leftist_CW
+		}
+		localization_key = GUP_SuperEvents_Pravda_Leftist_CW_Body
+	}
+	text = {
+		trigger = {
+			has_global_flag = GUP_Pravda_Rightist_CW
+		}
+		localization_key = GUP_SuperEvents_Pravda_Rightist_CW_Body
+	}
 }

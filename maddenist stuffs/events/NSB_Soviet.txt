@@ -8076,6 +8076,11 @@ country_event = {
 				clr_global_flag = NOR_trotsky_in_norway
 				NOR = { country_event = { id = mexico.22 hours = 1} }
 			}
+
+			set_global_flag = GUP_SuperEvents_Visible
+			set_global_flag = GUP_Pravda_Leftist_CW
+
+			play_song = "Katyusha_Super_Event"
 		}
 	}
 	option = {
@@ -8105,6 +8110,11 @@ country_event = {
 
 			# LEFT Opposition Specific Stuff 
 			SOV_left_opposition_civil_war_start = yes 	
+
+			set_global_flag = GUP_SuperEvents_Visible
+			set_global_flag = GUP_Pravda_Leftist_CW
+
+			play_song = "Katyusha_Super_Event"
 		}
 	}
 
@@ -8479,6 +8489,11 @@ country_event = {
 
 			# RIGHT Opposition Specific Stuff 
 			SOV_right_opposition_civil_war_start = yes 
+
+			set_global_flag = GUP_SuperEvents_Visible
+			set_global_flag = GUP_Pravda_Rightist_CW
+
+			play_song = "Katyusha_Super_Event"
 		}
 	}
 	option = {
@@ -8505,6 +8520,11 @@ country_event = {
 
 			# LEFT Opposition Specific Stuff 
 			SOV_right_opposition_civil_war_start = yes 	
+
+			set_global_flag = GUP_SuperEvents_Visible
+			set_global_flag = GUP_Pravda_Rightist_CW
+
+			play_song = "Katyusha_Super_Event"
 		}
 	}
 
@@ -9108,6 +9128,8 @@ country_event = {
 		ai_chance = { 
 			base = 10
 		}
+		set_global_flag = GUP_SuperEvents_Visible
+		set_global_flag = GUP_Pravda_Fascist_CW
 
 		# SET UP NEW CAPITAL - This is where the player will launch the uprising from
 		SOV_set_up_civil_war_capital = yes 
@@ -9124,6 +9146,8 @@ country_event = {
 			
 			# Exiles stuff set up
 			SOV_exiles_civil_war_start = yes 
+
+			play_song = "Katyusha_Super_Event"
 
 		}
 	}

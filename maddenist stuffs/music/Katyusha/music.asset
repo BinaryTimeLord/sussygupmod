@@ -1,0 +1,5 @@
+music = {
+	name = "Katyusha_Super_Event"
+	file = "Katyusha.ogg"
+	volume = 1.00
+}

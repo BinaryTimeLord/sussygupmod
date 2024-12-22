@@ -24,6 +24,16 @@ scripted_gui = {
 			GUP_SE_Rosehip_visible = {
 				has_country_flag = GUP_Rosehip_Event
 			}
+			GUP_SE_Pravda_Fascist_CW_visible = {
+				has_global_flag = GUP_Pravda_Fascist_CW
+			}
+			GUP_SE_Pravda_Leftist_CW_visible = {
+				has_global_flag = GUP_Pravda_Leftist_CW
+			}
+			GUP_SE_Pravda_Rightist_CW_visible = {
+				has_global_flag = GUP_Pravda_Rightist_CW
+			}
+			
 		}
 
 		effects = {
@@ -34,6 +44,9 @@ scripted_gui = {
 				clr_global_flag = GUP_superevents_test
 				clr_global_flag = GUP_63rd_Tournament
 				clr_country_flag = GUP_Darjeeling_Event
+				clr_global_flag = GUP_Pravda_Fascist_CW
+				clr_global_flag = GUP_Pravda_Leftist_CW
+				clr_global_flag = GUP_Pravda_Rightist_CW
 			}
 		}
 	}
