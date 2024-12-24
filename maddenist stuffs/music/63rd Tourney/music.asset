@@ -1,0 +1,5 @@
+music = {
+	name = "war_begins_superevent"
+	file = "war_begins.ogg"
+	volume = 1.00
+}

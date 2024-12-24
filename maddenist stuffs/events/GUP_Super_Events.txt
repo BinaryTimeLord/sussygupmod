@@ -39,7 +39,7 @@ news_event = {
 		set_global_flag = GUP_SuperEvents_Visible
 		set_global_flag = GUP_63rd_Tournament
 
-		sound_effect = "superevents_war_begins"
+		play_song = "war_begins_superevent"
 	}
 
 	option = {
