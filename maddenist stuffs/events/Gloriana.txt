@@ -119,17 +119,17 @@ country_event = {
 			add_state_core = 636
 			add_state_core = 725
 			add_ai_strategy = {
-				target = MAL
+				id = MAL
 				type = conquer
 				value = -200
 			}
 			add_ai_strategy = {
-				target = AST
+				id = AST
 				type = conquer
 				value = -200
 			}
 			add_ai_strategy = {
-				target = NZL
+				id = NZL
 				type = conquer
 				value = -200
 			}

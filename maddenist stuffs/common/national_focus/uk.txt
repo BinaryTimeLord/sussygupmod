@@ -7753,6 +7753,7 @@ focus_tree = {
 			SAF = {
 				set_country_flag = ENG_combatting_boers
 			}
+			custom_tooltip = "Will make Fascists in SAF unable to get a hold of power without outside help"
 		}
 	}
 	focus = {
