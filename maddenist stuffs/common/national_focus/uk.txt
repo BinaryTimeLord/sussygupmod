@@ -7378,25 +7378,27 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = grant_appease_tt
-			every_country = {
-				limit = {
-					AND = {
-						is_major = no
-						has_government = democratic
+			hidden_effect = {
+				every_country = {
+					limit = {
+						AND = {
+							is_major = no
+							has_government = democratic
+						}
+					}
+					add_ideas = {
+						GLO_Grant_Agreement
 					}
 				}
-				add_ideas = {
-					GLO_Grant_Agreement
+				ENG = {
+					add_ideas = {
+						GLO_Grant_Agreement
+					}
 				}
-			}
-			ENG = {
-				add_ideas = {
-					GLO_Grant_Agreement
+				set_party_rule = {
+					ideology = democratic
+					join_faction_tension = -0.8
 				}
-			}
-			set_party_rule = {
-				ideology = democratic
-				join_faction_tension = -0.8
 			}
 		}
 	}
