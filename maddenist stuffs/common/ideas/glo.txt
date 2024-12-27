@@ -366,7 +366,7 @@ ideas = {
         }
         GLO_over_hills = {
             name = GLO_over_hills
-            #picture =
+            picture = over_hills
 
             allowed = {
                 always = no
@@ -383,7 +383,7 @@ ideas = {
         }
         GLO_bitterness = {
             name = GLO_bitterness
-            #picture =
+            picture = bitterness
 
             allowed = {
                 always = no
@@ -399,7 +399,7 @@ ideas = {
 
         GLO_army_reborn = {
             name = GLO_army_reborn
-            #picture =
+            picture = reborn
 
             allowed = {
                 always = no

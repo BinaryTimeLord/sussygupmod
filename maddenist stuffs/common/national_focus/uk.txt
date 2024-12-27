@@ -106,14 +106,19 @@ focus_tree = {
 				focus = ENG_defence_spending
 			}
 			available = {
-	 
+				
 			}
 			relative_position_id = ENG_defence_spending
 			x = -1
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				navy_experience = 100
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 3
+					category = naval_doctrine
+				}
 			}
 		}
 		focus = {
@@ -6799,15 +6804,15 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			130 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 12
 				}
 			}
 		}
@@ -7030,7 +7035,7 @@ focus_tree = {
 		relative_position_id = ENG_meeting_with_tea
 		x = -5
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			country_event = {
 				id = GLO_choice.1
@@ -7576,8 +7581,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			ENG = {
-				add_to_faction = USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = huge_increase
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = ENG_imperial_trade 
+			}
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = huge_increase
+				}
 			}
 		}
 	}

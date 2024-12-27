@@ -1936,6 +1936,11 @@
    GLO_buy_inf:0 "Purchase Infantry Equipment"
    GLO_buy_sup:0 "Purchase Support Equipment"
    #RING IN WAR DECISIONS
+   GLO_ring_lease:0 "School Lend Lease"
+   GLO_lease_sov:0 "Lease to [SOV.GetName]"
+   GLO_lease_ben:0 "Lease to Benelux"
+   GLO_lease_fra:0 "Lease to [FRA.GetName]"
+   GLO_lease_POL:0 "Lease to [POL.GetName]"
      
  
  ##GLORIANA IDEAS/MODIFIERS

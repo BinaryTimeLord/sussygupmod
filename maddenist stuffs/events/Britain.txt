@@ -235,31 +235,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ENG
-		has_war = yes
-		has_government = democratic
-		NOT = {
-			has_completed_focus = uk_scandinavian_focus
-		}
-		POL = { has_capitulated = yes }
-		OR = {
-			has_global_flag = fall_of_france
-			FRA = { surrender_progress > 0.1 }
-			HOL = { surrender_progress > 0.1 }
-			BEL = { surrender_progress > 0.1 }
-			LUX = { surrender_progress > 0.1 }
-			DEN = { surrender_progress > 0.1 }
-			NOR = { surrender_progress > 0.1 }
-			AND = {
-				110 = { is_controlled_by = GER }
-				NOT = { is_in_faction_with = GER }
-			}
-		}
-		NOT = { has_country_flag = chamberlain_died }
-		has_country_leader = {
-			character = ENG_neville_chamberlain
-			ruling_only = yes
-		}
+		always = no # PREVENTS EVENT FROM FIRING
 	}
 
 	mean_time_to_happen = {
@@ -289,13 +265,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ENG
-		has_government = democratic
-		date > 1940.9.11
-		has_country_leader = {
-			character = ENG_darjeeling
-			ruling_only = yes
-		}
+		always = no # PREVENTS EVENT FROM FIRING 
 	}	
 
 	mean_time_to_happen = {
