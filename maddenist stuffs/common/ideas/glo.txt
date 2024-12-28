@@ -235,7 +235,7 @@ ideas = {
             }
 
             research_bonus = {
-                air_techs = 0.15
+                air_equipment = 0.15
             }
         }
         GLO_shad_fac = {
