@@ -1398,40 +1398,20 @@ ENG_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_ENG_AI_DESC"
+		name = CHOOSE_DARJEELING
+		text = "GLO_RULE_OPTION_DARJ"
+		desc = "GLO_RULE_OPTION_DARJ_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT"
-		desc = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT_ENG_AI_DESC"
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = COMMUNIST
-		text = "RULE_OPTION_TRADE_UNIONS"
-		desc = "RULE_OPTION_TRADE_UNIONS_ENG_AI_DESC"
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = NEUTRALITY
-		text = "RULE_OPTION_THE_KINGS_PARTY"
-		desc = "RULE_OPTION_THE_KINGS_PARTY_ENG_AI_DESC"
-		required_dlc = "Man the Guns"
-	}
-	option = {
-		name = FASCIST
-		text = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS"
-		desc = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS_ENG_AI_DESC"
-		required_dlc = "Man the Guns"
+		name = CHOOSE_ROSEHIP
+		text = "GLO_RULE_OPTION_ROSEHIP"
+		desc = "GLO_RULE_OPTION_ROSEHIP_DESC"
 	}
 	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
-		required_dlc = "Man the Guns"
 	}
 }
 

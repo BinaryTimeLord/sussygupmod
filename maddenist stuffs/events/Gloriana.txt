@@ -33,6 +33,24 @@ country_event = {
 		name = GLO_choice.1.a
 		ai_chance = {
 			base = 50
+			modifier = {
+				factor = 100
+				has_game_rule = {
+				rule = ENG_ai_behavior
+				option = CHOOSE_DARJEELING
+			}
+			}
+
+			modifier = {
+				factor = 100
+				AND = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = CHOOSE_DARJEELING
+					}
+				}
+			}
 		}
         complete_national_focus = ENG_choose_darj
 	}
@@ -40,7 +58,17 @@ country_event = {
         name = GLO_choice.1.b
 		ai_chance = {
 			base = 50
+
+			modifier = {
+				has_game_rule = {
+				rule = ENG_ai_behavior
+				option = CHOOSE_ROSEHIP
+				}
+			factor = 100
+			}
 		}
+
+		
         complete_national_focus = ENG_choose_rose
     }
 }

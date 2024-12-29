@@ -1,0 +1,60 @@
+ENG_historical_plan = {
+    name = "Gloriana Historical Plan"
+    desc = "Historical Behaviour for Gloriana"
+
+    allowed = {
+        original_tag = ENG
+    }
+    enable = {
+            OR = {
+            has_game_rule = {
+                rule = ENG_ai_behavior
+                option = CHOOSE_DARJEELING
+            }
+            AND = {
+            is_historical_focus_on = yes
+            has_game_rule = {
+                rule = ENG_ai_behavior
+                option = DEFAULT
+            }
+            }
+            }
+        
+    }
+
+    ai_national_focuses = {
+        ENG_sorry_state
+        ENG_defence_spending
+        ENG_global_sorties
+        ENG_limited_liability
+        ENG_finalize_commonwealth
+        ENG_Remembered_Not_forgotten
+        ENG_railways_act
+        ENG_Commonwealth_Economic
+        ENG_Royal_Infrastructure
+        ENG_meeting_with_tea
+        ENG_tea_is_poured
+        ENG_a_gentle_touch
+        ENG_words_not_swords
+        ENG_The_Green_Flow
+        ENG_Commonwealth_Investments
+        ENG_prospecting_metal
+        ENG_Ending_Repayments
+        ##DARJEELING DECIDES FROM HERE ON OUT##
+    }
+
+    research = {
+
+    }
+
+    ideas = {
+
+    }
+
+    weight = {
+        factor = 1.0
+        modifier = {
+            factor = 1.0
+        }
+    }
+}

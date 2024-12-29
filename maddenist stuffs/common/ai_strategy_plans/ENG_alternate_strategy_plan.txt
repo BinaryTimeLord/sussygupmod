@@ -1,0 +1,53 @@
+ENG_Rosehip_plan = {
+    name = "Gloriana Rosehip Plan"
+    desc = "Rosehip being chosen"
+
+    allowed = {
+        original_tag = ENG
+    }
+    enable = {
+            has_game_rule = {
+                rule = ENG_ai_behavior
+                option = CHOOSE_ROSEHIP
+            }
+    }
+
+    ai_national_focuses = {
+        ENG_sorry_state
+        ENG_defence_spending
+        ENG_global_sorties
+        ENG_limited_liability
+        ENG_finalize_commonwealth
+        ENG_Remembered_Not_Forgotten
+        ENG_railways_act
+        ENG_Commonwealth_Economic
+        ENG_Royal_Infrastructure
+        ENG_meeting_with_tea
+        ENG_tea_is_poured
+        ENG_love_is_war
+        ENG_tackling_kmm
+        ENG_prepare_for_war
+        ENG_over_the_top
+        ENG_royal_navy_budget
+        ENG_royal_navy_requisition
+        ENG_Captain_Best
+        ENG_shadow_factories
+        ENG_air_ministry
+        ##ROSEHIP DECIDES FROM HERE ON OUT##
+    }
+
+    research = {
+
+    }
+
+    ideas = {
+
+    }
+
+    weight = {
+        factor = 1.0
+        modifier = {
+            factor = 1.0
+        }
+    }
+}
