@@ -9244,6 +9244,14 @@ spriteTypes = {
 	 name = "GFX_common_council"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_common_council.tga"
 	 }
+ SpriteType = {
+	 name = "GFX_choose_darj"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_choose_darj.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_choose_rose"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_choose_rose.tga"
+	 }
  ##IDEAS
 	 SpriteType = {
 	 name = "GFX_idea_chiglo"
@@ -9289,6 +9297,35 @@ spriteTypes = {
 	 name = "GFX_idea_over_hills"
 	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_over_hills.tga"
 	 }
+	 SpriteType = {
+	 name = "GFX_idea_railways_act"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_railways_act.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_under_navy"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_under_navy.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_inflation_glo"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_inflation_glo.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_heart_oak"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_heart_oak.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_har_research"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_har_research.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_col_exploit"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_col_exploit.tga"
+	 }
+	 SpriteType = {
+	 name = "GFX_idea_eco_council"
+	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_eco_council.tga"
+	 }
+	 
 	 
 
 }

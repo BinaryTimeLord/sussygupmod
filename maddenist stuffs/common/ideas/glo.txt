@@ -142,7 +142,7 @@ ideas = {
         }
          GLO_RAJ_autonomy_change = {
             name = GLO_RAJ_autonomy_change
-            #picture = 
+            picture = col_exploit
 
             allowed = {
                 always = no
@@ -156,7 +156,7 @@ ideas = {
         }
         GLO_railways_act = {
             name = GLO_railways_act
-            #picture = 
+            picture = railways_act
 
             allowed = {
                 always = no
@@ -188,7 +188,7 @@ ideas = {
         GLO_commonwealth_economy_council = {
             name = GLO_commonwealth_economy_council
 
-            #picture = 
+            picture = eco_council
 
             allowed = {
                 always = no
@@ -204,7 +204,7 @@ ideas = {
         GLO_Harvard = {
             name = GLO_Harvard
 
-            #picture = 
+            picture = har_research
             
             allowed = {
                 always = no
@@ -257,7 +257,7 @@ ideas = {
         }
         GLO_underfunded_navy ={ 
             name = GLO_underfunded_navy
-            #picture = 
+            picture = under_navy
 
             allowed = {
                 always = no
@@ -272,7 +272,7 @@ ideas = {
         }
         GLO_heart_oak = {
             name = GLO_heart_oak
-            #picture = 
+            picture = heart_oak
 
             allowed = {
                 always = no
@@ -287,7 +287,7 @@ ideas = {
         }
         GLO_Inflation = {
             name = GLO_Inflation
-            #picture = 
+            picture = inflation_glo
 
             allowed = {
                 always = no
@@ -302,7 +302,7 @@ ideas = {
 
         GLO_Inflation_2 = {
             name = GLO_Inflation_2
-            #picture = 
+            picture = inflation_glo
 
             allowed = {
                 always = no
@@ -317,7 +317,7 @@ ideas = {
 
         GLO_Inflation_3 = {
             name = GLO_Inflation_3
-            #picture = 
+            picture = inflation_glo
 
             allowed = {
                 always = no
