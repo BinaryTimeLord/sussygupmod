@@ -21,11 +21,11 @@ characters={
 		}
 		field_marshal={
 			traits={ panzer_leader logistics_wizard infantry_leader }
-			skill=6
-			attack_skill=5
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=4
+			skill=8
+			attack_skill=7
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
