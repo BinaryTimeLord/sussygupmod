@@ -6983,7 +6983,7 @@ focus_tree = {
 
 	focus = {
 	id = ENG_meeting_with_tea
-	#icon = 
+	icon = GFX_meeting_tea
 
 	allow_branch = {
 		if = {
@@ -8014,7 +8014,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_securing_north_african_stability
-		#icon = 
+		icon = GFX_secure_nastab
 		prerequisite = {
 			focus = ENG_combatting_mzansi_boers
 			focus = ENG_a_gentle_touch

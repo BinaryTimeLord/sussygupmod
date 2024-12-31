@@ -9252,6 +9252,15 @@ spriteTypes = {
 	 name = "GFX_choose_rose"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_choose_rose.tga"
 	 }
+ SpriteType = {
+	 name = "GFX_meeting_tea"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_meeting_tea.tga"
+	 }
+ SpriteType = {
+	 name = "GFX_secure_nastab"
+	 texturefile = "gfx/interface/goals/St. Gloriana/focus_secure_nastab.tga"
+	 }
+ 
  ##IDEAS
 	 SpriteType = {
 	 name = "GFX_idea_chiglo"
