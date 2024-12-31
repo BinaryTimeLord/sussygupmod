@@ -9338,6 +9338,26 @@ spriteTypes = {
 		name = "GFX_idea_lousy_war"
 		texturefile = "gfx/interface/ideas/St. Gloriana/idea_lousy_war.dds"
 	 }
+	 SpriteType = {
+		name = "GFX_ENG_another_lousy_war"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_attack_allies.tga"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Across_the_Atlantic"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_molotov_ribbentrop_pact.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_War_Against_Tyranny"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_anti_fascist_diplomacy.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Rally_The_Yanks"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_befriend_usa.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_The_Free_World"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_democratic_europe.dds"
+	 }
 	 
 	 
 

@@ -8378,7 +8378,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Another_Lousy_War
-		#icon = 
+		icon = GFX_ENG_another_lousy_war 
 		prerequisite = {
 			
 		}
@@ -8408,7 +8408,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Across_the_Atlantic
-		#icon = 
+		icon = GFX_ENG_Across_the_Atlantic
 		prerequisite = {
 			focus = ENG_Another_Lousy_War
 		}
@@ -8434,7 +8434,7 @@ focus_tree = {
 }
 	focus = {
 		id = ENG_War_Against_Tyranny
-		#icon = 
+		icon = GFX_ENG_War_Against_Tyranny
 		prerequisite = {
 			focus = ENG_Across_the_Atlantic
 		}
@@ -8457,7 +8457,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Rally_the_Yanks
-		#icon = 
+		icon = GFX_ENG_Rally_The_Yanks 
 		prerequisite = {
 			focus = ENG_War_Against_Tyranny
 		}
@@ -8475,7 +8475,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Free_World
-		#icon = 
+		icon = GFX_ENG_The_Free_World
 		prerequisite = {
 			focus = ENG_Rally_the_Yanks
 		}
