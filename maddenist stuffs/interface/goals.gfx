@@ -9334,6 +9334,10 @@ spriteTypes = {
 	 name = "GFX_idea_eco_council"
 	 texturefile = "gfx/interface/ideas/St. Gloriana/idea_eco_council.tga"
 	 }
+	 SpriteType = {
+		name = "GFX_idea_lousy_war"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_lousy_war.dds"
+	 }
 	 
 	 
 

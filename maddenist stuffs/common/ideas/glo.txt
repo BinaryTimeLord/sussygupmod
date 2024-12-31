@@ -345,7 +345,7 @@ ideas = {
         }
         GLO_lousy_war = {
             name = GLO_lousy_war
-            #picture =
+            picture = lousy_war
 
             allowed = {
                 always = no
