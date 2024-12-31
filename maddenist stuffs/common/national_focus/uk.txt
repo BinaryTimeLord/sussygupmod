@@ -8552,7 +8552,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Stay_in_the_Ring
-		#icon = 
+		icon = GFX_ENG_Stay_in_the_ring
 		prerequisite = {
 			focus = ENG_Another_Lousy_War
 		}
@@ -8570,7 +8570,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Opening_Home_Office
-		#icon = 
+		icon = GFX_ENG_Opening_Home_Office 
 		prerequisite = {
 			focus = ENG_Another_Lousy_War
 		}
@@ -8589,7 +8589,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Battle_of_Air
-		#icon = 
+		icon = GFX_ENG_Battle_of_Air
 		prerequisite = {
 			focus = ENG_Opening_Home_Office
 		}
@@ -8607,7 +8607,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Certain_Eventuality
-		#icon = 
+		icon = GFX_ENG_Certain_Eventuality
 		prerequisite = {
 			focus = ENG_Opening_Home_Office
 		}
@@ -8637,7 +8637,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Battle_of_Logistics
-		#icon = 
+		icon = GFX_ENG_Battle_of_Logistics
 		prerequisite = {
 			focus = ENG_Opening_Home_Office
 		}
@@ -8655,7 +8655,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Like_Beans_on_Toast
-		#icon = 
+		icon = GFX_ENG_Like_Beans_on_Toast
 		prerequisite = {
 			focus = ENG_Certain_Eventuality
 		}

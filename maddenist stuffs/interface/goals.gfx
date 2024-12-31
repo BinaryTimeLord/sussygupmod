@@ -9358,6 +9358,30 @@ spriteTypes = {
 		name = "GFX_ENG_The_Free_World"
 		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_democratic_europe.dds"
 	 }
+	 SpriteType = {
+		name = "GFX_ENG_Stay_in_the_ring"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_imperial_federation.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Opening_Home_Office"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_improve_the_administration.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Battle_of_Air"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_cas_aircraft.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Certain_Eventuality"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_destroyer.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Battle_of_Logistics"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_truck.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Like_Beans_on_Toast"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_influence_middle_east.dds"
+	 }
 	 
 	 
 
