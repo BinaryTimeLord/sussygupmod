@@ -57,7 +57,7 @@ bookmarks = {
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
 				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
+				GLO_lousy_war
 				GLO_Inflation
 			}
 			focuses = {
@@ -72,7 +72,7 @@ bookmarks = {
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
+				GLO_lousy_war
 				GLO_Inflation
 			}
 			focuses = {
