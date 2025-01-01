@@ -7190,7 +7190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_words_not_swords
-		#icon = 
+		icon = GFX_ENG_Words_not_Swords
 		prerequisite = {
 			focus = ENG_a_gentle_touch
 		}
@@ -7217,7 +7217,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_benelux_neutrality
-		#icon = 
+		icon = GFX_ENG_benelux_neutrality
 		prerequisite = {
 			focus = ENG_words_not_swords
 		}
@@ -7294,7 +7294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_spaghetti_pledge
-		#icon = 
+		icon = GFX_ENG_spaghetti_pledge
 		prerequisite = {
 			focus = ENG_benelux_neutrality
 		}
@@ -7434,7 +7434,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_negotiate_kmm
-		#icon = 
+		icon = GFX_ENG_negotiate_kmm
 		prerequisite = {
 			focus = ENG_appease_kmm
 		}
