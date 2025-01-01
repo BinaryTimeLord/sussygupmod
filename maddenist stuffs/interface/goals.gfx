@@ -9097,6 +9097,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_COG_force_publique_mutiny.dds"
 	}
 
+	
+
 
 
 	#################
@@ -9108,6 +9110,111 @@ spriteTypes = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_ENG_another_lousy_war"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_attack_allies.tga"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Across_the_Atlantic"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_molotov_ribbentrop_pact.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_War_Against_Tyranny"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_anti_fascist_diplomacy.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Rally_The_Yanks"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_befriend_usa.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_The_Free_World"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_democratic_europe.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Stay_in_the_ring"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_imperial_federation.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Opening_Home_Office"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_improve_the_administration.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Battle_of_Air"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_cas_aircraft.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Certain_Eventuality"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_destroyer.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Battle_of_Logistics"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_truck.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Like_Beans_on_Toast"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_influence_middle_east.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_spaghetti_pledge"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_ITA_italian_irredentism.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_benelux_neutrality"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_influence_benelux.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Words_not_Swords"
+		texturefile = "gfx/interface/goals/St. Gloriana/words_not_swords.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_negotiate_kmm"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_chi_mission_to_germany.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_a_gentle_touch"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_RAJ_all_india_forward_bloc.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_fortify_koala_kiwi"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_coastal_fort.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_anti_anzio_preparations"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_ITA_depose_mussolini.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_gloriana_beachheads"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_construct_military.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_world_war_oil"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_major_war.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_war_in_our_time"
+		texturefile = "gfx/interface/goals/St. Gloriana/generic_forceful_treaty.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_peace_in_our_time"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_improve_relations.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_grant_agree"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_major_alliance.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_appease_kmm"
+		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_more_territorial_claims.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_chi_glo_navy"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_chi_collaboration_with_the_japanese.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_zhongguo_withdraw"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_chi_british_cooperation.dds"
+	 }
 
 
 # Gloriana Icons 
@@ -9338,50 +9445,7 @@ spriteTypes = {
 		name = "GFX_idea_lousy_war"
 		texturefile = "gfx/interface/ideas/St. Gloriana/idea_lousy_war.dds"
 	 }
-	 SpriteType = {
-		name = "GFX_ENG_another_lousy_war"
-		texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_attack_allies.tga"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Across_the_Atlantic"
-		texturefile = "gfx/interface/goals/St. Gloriana/goal_molotov_ribbentrop_pact.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_War_Against_Tyranny"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_anti_fascist_diplomacy.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Rally_The_Yanks"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_befriend_usa.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_The_Free_World"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_democratic_europe.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Stay_in_the_ring"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_eng_imperial_federation.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Opening_Home_Office"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_improve_the_administration.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Battle_of_Air"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_cas_aircraft.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Certain_Eventuality"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_destroyer.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Battle_of_Logistics"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_truck.dds"
-	 }
-	 SpriteType = {
-		name = "GFX_ENG_Like_Beans_on_Toast"
-		texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_influence_middle_east.dds"
-	 }
+	 
 	 
 	 
 
