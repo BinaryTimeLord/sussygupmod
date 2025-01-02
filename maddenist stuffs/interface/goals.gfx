@@ -9193,7 +9193,7 @@ spriteTypes = {
 	 }
 	 SpriteType = {
 		name = "GFX_ENG_war_in_our_time"
-		texturefile = "gfx/interface/goals/St. Gloriana/generic_forceful_treaty.dds"
+		texturefile = "gfx/interface/goals/goal_generic_forceful_treaty.dds"
 	 }
 	 SpriteType = {
 		name = "GFX_ENG_peace_in_our_time"
@@ -9214,6 +9214,46 @@ spriteTypes = {
 	 SpriteType = {
 		name = "GFX_ENG_zhongguo_withdraw"
 		texturefile = "gfx/interface/goals/St. Gloriana/focus_chi_british_cooperation.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Ending_Repayments"
+		texturefile = "gfx/interface/goals/goal_generic_positive_trade_relations.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Prospecting_Metals"
+		texturefile = "gfx/interface/goals/focus_generic_aluminum.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_The_Green_Flow"
+		texturefile = "gfx/interface/goals/focus_mex_privatisation.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Expanding_Harvard"
+		texturefile = "gfx/interface/goals/goal_generic_scientific_exchange.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Cheese_Gromit"
+		texturefile = "gfx/interface/goals/goal_generic_production2.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Garden_Shears"
+		texturefile = "gfx/interface/goals/focus_GER_autarky_ambitions.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Royal_Infrastructure"
+		texturefile = "gfx/interface/goals/focus_generic_improve_roads.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Commonwealth_Investments"
+		texturefile = "gfx/interface/goals/focus_generic_economic_recovery.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_Economy_on_Economy"
+		texturefile = "gfx/interface/goals/focus_usa_reestablish_the_gold_standard.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_grand_deffensive_effort"
+		texturefile = "gfx/interface/goals/goal_generic_defence.dds"
 	 }
 
 

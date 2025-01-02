@@ -6690,7 +6690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_Royal_Infrastructure
-		#icon = 
+		icon = GFX_ENG_Royal_Infrastructure
 		available = {
 
 		}
@@ -6735,7 +6735,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_Garden_Shears
-		#icon = 
+		icon = GFX_ENG_Garden_Shears
 		available = {
 
 		}
@@ -6768,7 +6768,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Green_Flow
-		#icon = 
+		icon = GFX_ENG_The_Green_Flow
 		available = {
 
 		}
@@ -6789,7 +6789,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Cheese_Gromit
-		#icon = 
+		icon = GFX_ENG_Cheese_Gromit
 		available = {
 			OR = {
 				has_completed_focus = ENG_choose_darj
@@ -6822,7 +6822,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Commonwealth_Investments
-		#icon = 
+		icon = GFX_ENG_Commonwealth_Investments
 		available = {
 
 		}
@@ -6879,7 +6879,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prospecting_Metal
-		#icon = 
+		icon = GFX_ENG_Prospecting_Metals
 		available = {
 
 		}
@@ -6915,7 +6915,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Expanding_Harvard
-		#icon = 
+		icon = GFX_ENG_Expanding_Harvard
 		available = {
 
 		}
@@ -6935,7 +6935,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_Ending_Repayments
-		#icon = 
+		icon = GFX_ENG_Ending_Repayments
 		available = {
 
 		}
@@ -7152,7 +7152,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_a_gentle_touch
-		#icon = 
+		icon = GFX_ENG_a_gentle_touch
 		prerequisite = {
 			focus = ENG_choose_darj
 		}
@@ -7248,7 +7248,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_economy_on_economy
-		#icon = 
+		icon = GFX_ENG_Economy_on_Economy
 		prerequisite = {
 			focus = ENG_benelux_neutrality
 		}
@@ -7331,7 +7331,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_chi_glo_navy
-		#icon = 
+		icon = GFX_ENG_chi_glo_navy
 		prerequisite = {
 			focus = ENG_spaghetti_pledge
 		}
@@ -7353,7 +7353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_appease_kmm
-		#icon = 
+		icon = GFX_ENG_appease_kmm
 		prerequisite = {
 			focus = ENG_spaghetti_pledge
 		}
@@ -7371,7 +7371,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_grant_agree
-		#icon =
+		icon = GFX_ENG_grant_agree
 		prerequisite = {
 			focus = ENG_spaghetti_pledge
 		}
@@ -7410,7 +7410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_zhongguo_withdraw
-		#icon = 
+		icon = GFX_ENG_zhongguo_withdraw
 		prerequisite = {
 			focus = ENG_chi_glo_navy
 		}
@@ -7459,7 +7459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_war_in_our_time
-		#icon = 
+		icon = GFX_ENG_war_in_our_time
 		prerequisite = {
 			focus = ENG_negotiate_kmm
 		}
@@ -7482,7 +7482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_peace_in_our_time
-		#icon = 
+		icon = GFX_ENG_peace_in_our_time
 		prerequisite = {
 			focus = ENG_negotiate_kmm
 		}
@@ -8050,7 +8050,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_world_war_oil
-		#icon = 
+		icon = GFX_ENG_world_war_oil
 		prerequisite = {
 			focus = ENG_cavalry_is_here
 			focus = ENG_war_in_our_time
@@ -8082,7 +8082,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_grand_deffensive_effort
-		#icon = 
+		icon = GFX_ENG_grand_deffensive_effort
 		prerequisite = {
 			focus = ENG_cavalry_is_here
 			focus = ENG_war_in_our_time
@@ -8102,7 +8102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_anti_anzio_preparations
-		#icon = 
+		icon = GFX_ENG_anti_anzio_preparations
 		prerequisite = {
 			focus = ENG_grand_deffensive_effort
 		}
@@ -8198,7 +8198,7 @@ focus_tree = {
 }	
 	focus = {
 		id = ENG_gloriana_beachheads
-		#icon = 
+		icon = GFX_ENG_gloriana_beachheads
 		prerequisite = {
 			focus = ENG_grand_deffensive_effort
 		}
@@ -8279,7 +8279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_fortify_koala_kiwi
-		#icon = 
+		icon = GFX_ENG_fortify_koala_kiwi
 		prerequisite = {
 			focus = ENG_grand_deffensive_effort
 		}
