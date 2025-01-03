@@ -7570,7 +7570,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_love_is_war
-		#icon = 
+		icon = GFX_love_is_war
 		available = {
 
 		}
@@ -7601,7 +7601,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_tackling_kmm
-		#icon = 
+		icon = GFX_tackling_kmm_agression 
 		prerequisite = {
 			focus = ENG_love_is_war
 		}
@@ -7618,7 +7618,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_across_seven_seas
-		#icon = 
+		icon = GFX_across_seven_seas
 		prerequisite = {
 			focus = ENG_tackling_kmm
 		}
@@ -7659,7 +7659,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_expand_colonial_exploits
-		#icon = 
+		icon = GFX_expand_colonial_exploits
 		prerequisite = {
 			focus = ENG_across_seven_seas
 		}
@@ -7702,7 +7702,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_wartime_defense_regulation
-		#icon = 
+		icon = GFX_wartime_defense_regulations
 		prerequisite = {
 			focus = ENG_across_seven_seas
 		}
@@ -7723,7 +7723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_zhongguo_assistance
-		#icon = 
+		icon = GFX_zhongguo_assistance
 		prerequisite = {
 			focus = ENG_wartime_defense_regulation
 		}
@@ -7758,7 +7758,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_combatting_authoritarianism_abroad
-		#icon = 
+		icon = GFX_combatting_authoritarianism_abroad
 		prerequisite = {
 			focus = ENG_zhongguo_assistance
 		}
@@ -7777,7 +7777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_combatting_mzansi_boers
-		#icon = 
+		icon = GFX_combatting_mzansi_boers
 		prerequisite = {
 			focus = ENG_combatting_authoritarianism_abroad
 		}
@@ -7797,7 +7797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_no_tea_for_bullies
-		#icon = 
+		icon = GFX_no_tea_for_bullies
 		prerequisite = {
 			focus = ENG_combatting_authoritarianism_abroad
 		}
@@ -7837,7 +7837,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_fight_the_enemy
-		#icon = 
+		icon = GFX_taking_fight_enemy
 		prerequisite = {
 			focus = ENG_no_tea_for_bullies
 		}
@@ -7856,7 +7856,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_send_the_skiis
-		#icon = 
+		icon = GFX_send_the_skiis
 		prerequisite = {
 			focus = ENG_no_tea_for_bullies
 		}
@@ -7880,7 +7880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_prepare_for_war
-		#icon = 
+		icon = GFX_prepare_next_war
 		prerequisite = {
 			focus = ENG_tackling_kmm
 		}
@@ -7908,7 +7908,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_over_the_top
-		#icon = 
+		icon = GFX_over_the_top
 		prerequisite = {
 			focus = ENG_prepare_for_war
 		}
@@ -7928,7 +7928,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_cavalry_is_here
-		#icon = 
+		icon = GFX_cavalry_is_here
 		prerequisite = {
 			focus = ENG_over_the_top
 		}

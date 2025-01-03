@@ -287,4 +287,60 @@ spriteTypes = {
 	 name = "GFX_choose_rose"
 	 texturefile = "gfx/interface/goals/St. Gloriana/focus_choose_rose.tga"
 	 }
+ SpriteType = {
+	name = "GFX_zhongguo_assistance"
+	texturefile = "gfx/interface/goals/St. Gloriana/zhongguo_assistance.tga"
+ }
+ SpriteType = {
+	name = "GFX_over_the_top"
+	texturefile = "gfx/interface/goals/St. Gloriana/over_the_top.tga"
+ }
+ SpriteType = {
+	name = "GFX_expand_colonial_exploits"
+	texturefile = "gfx/interface/goals/St. Gloriana/expand_colonial_exploits.tga"
+ }
+ SpriteType = {
+	name = "GFX_across_seven_seas"
+	texturefile = "gfx/interface/goals/St. Gloriana/seven_seas.tga"
+ }
+ SpriteType = {
+	name = "GFX_cavalry_is_here"
+	texturefile = "gfx/interface/goals/St. Gloriana/cavalry_is_here.tga"
+ }
+ SpriteType = {
+	name = "GFX_love_is_war"
+	texturefile = "gfx/interface/goals/St. Gloriana/love_is_war.tga"
+ }
+ SpriteType = {
+	name = "GFX_tackling_kmm_agression"
+	texturefile = "gfx/interface/goals/St. Gloriana/tackling_kmm_agression.tga"
+ }
+ SpriteType = {
+	name = "GFX_prepare_next_war"
+	texturefile = "gfx/interface/goals/St. Gloriana/prepare_next_war.tga"
+ }
+ SpriteType = {
+	name = "GFX_taking_fight_enemy"
+	texturefile = "gfx/interface/goals/St. Gloriana/taking_fight_enemy.tga"
+ }
+ SpriteType = {
+	name = "GFX_send_the_skiis"
+	texturefile = "gfx/interface/goals/St. Gloriana/focus_FIN_weapon_caches.dds"
+ }
+ SpriteType = {
+	name = "GFX_combatting_mzansi_boers"
+	texturefile = "gfx/interface/goals/St. Gloriana/focus_SAF_secure_africa.dds"
+ }
+ SpriteType = {
+	name = "GFX_combatting_authoritarianism_abroad"
+	texturefile = "gfx/interface/goals/St. Gloriana/focus_SAF_colonialist_crusade.dds"
+ }
+ SpriteType = {
+	name = "GFX_wartime_defense_regulations"
+	texturefile = "gfx/interface/goals/St. Gloriana/focus_generic_military_mission.dds"
+ }
+ SpriteType = {
+	name = "GFX_no_tea_for_bullies"
+	texturefile = "gfx/interface/goals/St. Gloriana/goal_generic_trade.dds"
+ }
 }
