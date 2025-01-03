@@ -23,6 +23,11 @@ spriteTypes = {
 		name = "GFX_idea_ger_mauko_pol"
 		texturefile = "gfx/interface/ideas/Kuromorimine/idea_ger_mauko_pol.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_hess"
+		texturefile = "gfx/interface/ideas/idea_rudolf_hess.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_ger_mauko_navychief"

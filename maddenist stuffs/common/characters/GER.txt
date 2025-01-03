@@ -1454,7 +1454,10 @@ characters = {
 		name=GER_rudolf_hess
 		portraits={
 			army={
-				small="GFX_idea_rudolf_hess"
+				small="GFX_idea_hess"
+			}
+			civilian = {
+				small="GFX_idea_hess"
 			}
 		}
 		advisor={
