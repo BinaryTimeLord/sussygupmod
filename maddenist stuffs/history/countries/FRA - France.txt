@@ -235,6 +235,19 @@ if = {
 	give_guarantee = POL
 	ENG = { add_to_faction = FRA }
 
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = IND
+			autonomous_state = autonomy_protectorate
+		}
+	}
+	else = {
+		puppet = IND
+	}
+
 	
 	if = {
 		limit = { has_dlc = "Man the Guns" }

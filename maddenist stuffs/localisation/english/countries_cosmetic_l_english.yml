@@ -2705,5 +2705,7 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  GER_strasserite_state_fascism: "Kuromorimine"
  GER_strasserite_state_fascism_ADJ: "Kuromorimine"
  GER_strasserite_state_fascism_DEF: "Kuromorimine"
- 
- 
+
+ IND_BC:0 "BC Indochina"
+ IND_BC_ADJ:0 "BC Indochina"
+ IND_BC_DEF:0 "BC Indochina"
