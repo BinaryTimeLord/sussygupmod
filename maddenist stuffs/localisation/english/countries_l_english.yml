@@ -5026,4 +5026,8 @@
  RAA_DEF: "the Reichskommissariat Australasien"
  RAA_ADJ: "Australasian"
 
+IND:0 "Indochina"
+IND_DEF:0 "the Indochina"
+ID_ADJ:0 "Indochinese"
+
   

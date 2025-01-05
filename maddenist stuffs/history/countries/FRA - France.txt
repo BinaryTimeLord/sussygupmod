@@ -198,6 +198,21 @@ if = {
 	}
 	give_guarantee = BEL
 }
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = IND
+		autonomous_state = autonomy_colony
+		freedom_level = 0.1
+	}
+	else = {
+		puppet = IND
+	}
+}
+
 1939.1.1 = {
 
 	add_political_power = 899
@@ -234,19 +249,7 @@ if = {
 
 	give_guarantee = POL
 	ENG = { add_to_faction = FRA }
-
-	if = {
-		limit = {
-			has_dlc = "Together for Victory"
-		}
-		set_autonomy = {
-			target = IND
-			autonomous_state = autonomy_protectorate
-		}
-	}
-	else = {
-		puppet = IND
-	}
+	
 
 	
 	if = {
