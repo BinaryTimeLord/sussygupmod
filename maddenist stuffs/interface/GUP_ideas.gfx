@@ -1,0 +1,79 @@
+spriteTypes = {
+	##IDEAS
+	SpriteType = {
+		name = "GFX_idea_chiglo"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_chiglo.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_recruit"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_recruit.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_apprentice"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_apprentice.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_bombing_race"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_bombing_race.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_anthrax_break"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_anthrax_break.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_rice_famine"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_rice_famine.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_hms"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_hms.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_lim_liabil"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_lim_liabil.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_bitterness"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_bitterness.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_reborn"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_reborn.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_over_hills"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_over_hills.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_railways_act"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_railways_act.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_under_navy"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_under_navy.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_inflation_glo"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_inflation_glo.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_heart_oak"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_heart_oak.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_har_research"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_har_research.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_col_exploit"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_col_exploit.tga"
+		}
+		SpriteType = {
+		name = "GFX_idea_eco_council"
+		texturefile = "gfx/interface/ideas/St. Gloriana/idea_eco_council.tga"
+		}
+		SpriteType = {
+		   name = "GFX_idea_lousy_war"
+		   texturefile = "gfx/interface/ideas/St. Gloriana/idea_lousy_war.dds"
+		}
+}
