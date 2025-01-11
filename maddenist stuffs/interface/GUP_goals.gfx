@@ -458,7 +458,7 @@ SpriteType = {
  }
  SpriteType = {
 	name = "GFX_ENG_Ending_Repayments"
-	texturefile = "gfx/interface/goals/goal_generic_positive_trade_relations.dds"
+	texturefile = "gfx/interface/goals/St. Gloriana/ending_repayments.tga"
  }
  SpriteType = {
 	name = "GFX_ENG_Prospecting_Metals"
