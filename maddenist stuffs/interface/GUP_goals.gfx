@@ -109,7 +109,7 @@ spriteTypes = {
 	 }
 	 SpriteType = {
 		name = "GFX_ENG_Prospecting_Metals"
-		texturefile = "gfx/interface/goals/St. Gloriana/prospecting_for_metal.tga"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_prospecting_metal.tga"
 	 }
 	 SpriteType = {
 		name = "GFX_ENG_The_Green_Flow"
@@ -117,7 +117,7 @@ spriteTypes = {
 	 }
 	 SpriteType = {
 		name = "GFX_ENG_Expanding_Harvard"
-		texturefile = "gfx/interface/goals/St. Gloriana/expanding_harvard.tga"
+		texturefile = "gfx/interface/goals/St. Gloriana/focus_expanding_harvard.tga"
 	 }
 	 SpriteType = {
 		name = "GFX_ENG_Cheese_Gromit"
@@ -458,7 +458,7 @@ SpriteType = {
  }
  SpriteType = {
 	name = "GFX_ENG_Ending_Repayments"
-	texturefile = "gfx/interface/goals/St. Gloriana/ending_repayments.tga"
+	texturefile = "gfx/interface/goals/St. Gloriana/focus_ending_repayments.tga"
  }
  SpriteType = {
 	name = "GFX_ENG_Prospecting_Metals"
@@ -466,15 +466,11 @@ SpriteType = {
  }
  SpriteType = {
 	name = "GFX_ENG_The_Green_Flow"
-	texturefile = "gfx/interface/goals/focus_green_flow.dds"
- }
- SpriteType = {
-	name = "GFX_ENG_Expanding_Harvard"
-	texturefile = "gfx/interface/goals/goal_generic_scientific_exchange.dds"
+	texturefile = "gfx/interface/goals/focus_green_flow.tga"
  }
  SpriteType = {
 	name = "GFX_ENG_Cheese_Gromit"
-	texturefile = "gfx/interface/goals/goal_generic_production2.dds"
+	texturefile = "gfx/interface/goals/focus_cheese_grommit.tga"
  }
  SpriteType = {
 	name = "GFX_ENG_Garden_Shears"
@@ -482,11 +478,11 @@ SpriteType = {
  }
  SpriteType = {
 	name = "GFX_ENG_Royal_Infrastructure"
-	texturefile = "gfx/interface/goals/focus_generic_improve_roads.dds"
+	texturefile = "gfx/interface/goals/focus_infrastructure_fund.tga"
  }
  SpriteType = {
 	name = "GFX_ENG_Commonwealth_Investments"
-	texturefile = "gfx/interface/goals/focus_generic_economic_recovery.dds"
+	texturefile = "gfx/interface/goals/focus_common_investment.tga"
  }
  SpriteType = {
 	name = "GFX_ENG_Economy_on_Economy"
