@@ -28,7 +28,584 @@ focus_tree = {
 
 	continuous_focus_position = { x = 55 y = 1500 }
 
+
+	##MILITARY BRANCH
+		focus = {
+		id = SOV_purge_third_years
+		#icon =
+
+		available = {
+			
+		}
+		x = 10
+		y = 0
+		cost = 5
+		completion_reward = {
+				add_political_power = -100
+				add_ideas = PRV_crippled_officer_corp
+			}
+		}
+
+	 ##LAND BRANCH 
+	 	focus = {
+		id = SOV_reappoint_ministers
+		#icon =
+
+		prerequisite = {
+			focus = SOV_purge_third_years
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_purge_third_years
+		x = -6
+		y = 1
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PRV_crippled_officer_corp
+				add_idea = PRV_crippled_officer_corp2
+				}
+			}
+		}
+
+		focus = {
+		id = SOV_form_vdv
+		#icon =
+
+		prerequisite = {
+			focus = SOV_reappoint_ministers
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_reappoint_ministers
+		x = 2
+		y = 0
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_expand_pioneer
+		#icon =
+
+		prerequisite = {
+			focus = SOV_reappoint_ministers
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_reappoint_ministers
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+				add_ideas = PRV_pravda_pioneers
+			}
+		}
+
+		focus = {
+		id = SOV_women_gunners
+		#icon =
+
+		prerequisite = {
+			focus = SOV_expand_pioneer
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_expand_pioneer
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+				add_ideas = PRV_auxiliary_units
+			}
+		}
 		
+		focus = {
+		id = SOV_training_priorities
+		#icon =
+
+		prerequisite = {
+			focus = SOV_reappoint_ministers
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_reappoint_ministers
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_officer_camps
+		#icon =
+
+		prerequisite = {
+			focus = SOV_training_priorities
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_training_priorities
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+				army_experience = 30
+				swap_ideas = {
+					remove_idea = PRV_crippled_officer_corp2
+					add_idea = PRV_crippled_officer_corp3
+				}
+			}
+		}
+
+		focus = {
+		id = SOV_naval_inf
+		#icon =
+
+		prerequisite = {
+			focus = SOV_reappoint_ministers
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_reappoint_ministers
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_navalinf_dev
+		#icon =
+
+		prerequisite = {
+			focus = SOV_naval_inf
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_naval_inf
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_radio_effort
+		#icon =
+
+		prerequisite = {
+			focus = SOV_navalinf_dev
+		}
+
+		prerequisite = {
+			focus = SOV_women_gunners
+		}
+
+		prerequisite = {
+			focus = SOV_officer_camps
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_officer_camps
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+				set_technology = {
+					radio = 1
+				}
+			}
+		}
+
+		focus = {
+		id = SOV_army_confidence
+		#icon =
+
+		prerequisite = {
+			focus = SOV_radio_effort
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_radio_effort
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+				remove_ideas = PRV_crippled_officer_corp3
+				add_ideas = PRV_restored_corp
+			}
+		}
+
+	 ##AIR BRANCH
+		focus = {
+		id = SOV_training_maintenance
+		#icon =
+
+		prerequisite = {
+			focus = SOV_purge_third_years
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_purge_third_years
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_standard_maintenance
+		#icon =
+
+		prerequisite = {
+			focus = SOV_training_maintenance
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_training_maintenance
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_expanded_program
+		#icon =
+
+		prerequisite = {
+			focus = SOV_standard_maintenance
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_standard_maintenance
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_unground_airforce
+		#icon =
+
+		prerequisite = {
+			focus = SOV_expanded_program
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_expanded_program
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_fighter_adventurers
+		#icon =
+
+		prerequisite = {
+			focus = SOV_training_maintenance
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_training_maintenance
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_aviation_manufacturing
+		#icon =
+
+		prerequisite = {
+			focus = SOV_fighter_adventurers
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_unground_airforce
+		x = -2
+		y = 0
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_heavy_manufacturing
+		#icon =
+
+		prerequisite = {
+			focus = SOV_training_maintenance
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_training_maintenance
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_auxilary_development
+		#icon =
+
+		prerequisite = {
+			focus = SOV_heavy_manufacturing
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_unground_airforce
+		x = 2
+		y = 0
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_modern_airforce
+		#icon =
+
+		prerequisite = {
+			focus = SOV_auxilary_development
+		}
+		prerequisite = {
+			focus = SOV_unground_airforce
+		}
+		prerequisite = {
+			focus = SOV_aviation_manufacturing
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_unground_airforce
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+	 ##NAVY BRANCH
+	 	focus = {
+		id = SOV_underfunded_navy
+		#icon =
+
+		prerequisite = {
+			focus = SOV_purge_third_years
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_purge_third_years
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_naval_buildup
+		#icon =
+
+		prerequisite = {
+			focus = SOV_underfunded_navy
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_underfunded_navy
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_battleship_priority
+		#icon =
+
+		mutually_exclusive = {
+			focus = SOV_lcruiser_priority
+			focus = SOV_carrier_priority
+		}
+		prerequisite = {
+			focus = SOV_naval_buildup
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_naval_buildup
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_lcruiser_priority
+		#icon =
+
+		mutually_exclusive = {
+			focus = SOV_battleship_priority
+			focus = SOV_carrier_priority
+		}
+		prerequisite = {
+			focus = SOV_naval_buildup
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_naval_buildup
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_carrier_priority
+		#icon =
+
+		mutually_exclusive = {
+			focus = SOV_lcruiser_priority
+			focus = SOV_battleship_priority
+		}
+		prerequisite = {
+			focus = SOV_naval_buildup
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_naval_buildup
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_mandatory_regiments
+		#icon =
+
+		prerequisite = {
+			focus = SOV_lcruiser_priority
+			focus = SOV_battleship_priority
+			focus = SOV_carrier_priority
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_battleship_priority
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = SOV_grand_navy
+		#icon =
+
+		prerequisite = {
+			focus = SOV_mandatory_regiments
+		}
+
+		available = {
+			
+		}
+		relative_position_id = SOV_mandatory_regiments
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+			}
+		}
 
 
 }
