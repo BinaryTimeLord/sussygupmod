@@ -32,6 +32,22 @@ ideas = {
 	}
 	country = {
 
+		PVD_Woman_Artillery = {
+
+			#picture = 
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				
+			}
+
+		}
+
 		soviet_power_struggle_decisions_gui = {
 		
 			picture = power_struggle

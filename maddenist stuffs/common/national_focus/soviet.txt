@@ -127,6 +127,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 				add_ideas = PRV_auxiliary_units
+				add_ideas = PVD_Woman_Artillery
 			}
 		}
 		
@@ -606,6 +607,546 @@ focus_tree = {
 			
 			}
 		}
+##ECONOMICS BRANCH
+	focus = {
+		id = SOV_5_year_plan
+		#icon = 
+		x = 30
+		y = 0
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_literacy_campaign
+		#icon = 
+		prerequisite = {
+			focus = SOV_5_year_plan
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_5_year_plan
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_TransSiberian
+		#icon = 
+		cost = 5
+		prerequisite = {
+			focus = SOV_literacy_campaign
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_literacy_campaign
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+		##OIL
+	focus = {
+		id = SOV_Grozny_Oil
+		#icon = 
+		prerequisite = {
+			focus = SOV_TransSiberian
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_TransSiberian
+		x = -10
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Siberian_Oil
+		#icon = 
+		prerequisite = {
+			focus = SOV_Grozny_Oil
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Grozny_Oil
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Military_Synthetic
+		#icon = 
+		prerequisite = {
+			focus = SOV_Grozny_Oil
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Grozny_Oil
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Expand_Oil
+		#icon = 
+		prerequisite = {
+			focus = SOV_Military_Synthetic
+		}
+		prerequisite = {
+			focus = SOV_Siberian_Oil
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Grozny_Oil
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Oil_Flow
+		#icon = 
+		prerequisite = {
+			focus = SOV_Expand_Oil
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Expand_Oil
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	##Population
+	focus = {
+		id = SOV_Resetlement
+		#icon = 
+		prerequisite = {
+			focus = SOV_TransSiberian
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_TransSiberian
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Katyusha_Tractor
+		#icon = 
+		prerequisite = {
+			focus = SOV_Resetlement
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Resetlement
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Gaz_Ops
+		#icon = 
+		prerequisite = {
+			focus = SOV_Resetlement
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Resetlement
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Modern_Agriculture
+		#icon = 
+		prerequisite = {
+			focus = SOV_Resetlement
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Resetlement
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Import_Experts
+		#icon = 
+		prerequisite = {
+			focus = SOV_Resetlement
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Resetlement
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_3_Year_Plan
+		#icon = 
+		prerequisite = {
+			focus = SOV_Import_Experts
+		}
+		prerequisite = {
+			focus = SOV_Modern_Agriculture
+		}
+		prerequisite = {
+			focus = SOV_Gaz_Ops
+		}
+		prerequisite = {
+			focus = SOV_Katyusha_Tractor
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Resetlement
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Oil_Flow
+		#icon = 
+		prerequisite = {
+			focus = SOV_Expand_Oil
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Expand_Oil
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	##POWER WORKERS
+	focus = {
+		id = SOV_Power_Workers
+		#icon = 
+		prerequisite = {
+			focus = SOV_TransSiberian
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_TransSiberian
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Communist_Edu
+		#icon = 
+		prerequisite = {
+			focus = SOV_Power_Workers
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Power_Workers
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Katyushagrad_Uni
+		#icon = 
+		prerequisite = {
+			focus = SOV_Power_Workers
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Power_Workers
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Vladivostok_Navy
+		#icon = 
+		prerequisite = {
+			focus = SOV_Power_Workers
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Power_Workers
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Modern_Soviet
+		#icon = 
+		prerequisite = {
+			focus = SOV_Vladivostok_Navy
+		}
+		prerequisite = {
+			focus = SOV_Katyushagrad_Uni
+		}
+		prerequisite = {
+			focus = SOV_Communist_Edu
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Power_Workers
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Katyusha_Rockets
+		#icon = 
+		prerequisite = {
+			focus = SOV_Modern_Soviet
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Modern_Soviet
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Palace_Rev
+		#icon = 
+		prerequisite = {
+			focus = SOV_Modern_Soviet
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Modern_Soviet
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Weapon_Develop
+		#icon = 
+		prerequisite = {
+			focus = SOV_Modern_Soviet
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Modern_Soviet
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	##Aggressive Industrial Expansion
+	focus = {
+		id = SOV_Aggr_Ind_Exp
+		#icon = 
+		prerequisite = {
+			focus = SOV_TransSiberian
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_TransSiberian
+		x = 10
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Develop_Far_East
+		#icon = 
+		prerequisite = {
+			focus = SOV_Aggr_Ind_Exp
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Aggr_Ind_Exp
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Vladivostok_Ports
+		#icon = 
+		prerequisite = {
+			focus = SOV_Develop_Far_East
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Develop_Far_East
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Collective_Exp
+		#icon = 
+		prerequisite = {
+			focus = SOV_Aggr_Ind_Exp
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Aggr_Ind_Exp
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_End_Ration
+		#icon = 
+		prerequisite = {
+			focus = SOV_Collective_Exp
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Collective_Exp
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Land_Clear
+		#icon = 
+		prerequisite = {
+			focus = SOV_Aggr_Ind_Exp
+		}
+
+		available = {
+
+		}
+		relative_position_id = SOV_Aggr_Ind_Exp
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	##END OF ECONOMICS BRANCH
+
 
 
 }
