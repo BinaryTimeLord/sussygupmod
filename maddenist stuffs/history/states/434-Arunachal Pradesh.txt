@@ -6,7 +6,7 @@ state={
 	
 	state_category = wasteland
 	resources={
-		# tungsten=49 # was: 54
+		 tungsten=49 # was: 54
 	}
 
 	history={
@@ -18,8 +18,8 @@ state={
 	}
 
 	provinces={
-		1116 1996 10810 12322 12730 
+		1116 1996 10810 12730
 	}
 
-	local_supplies=3.0 
+	local_supplies=0.0 
 }

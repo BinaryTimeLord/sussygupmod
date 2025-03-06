@@ -2,7 +2,7 @@
 state={
 	id=441
 	name="STATE_441"
-	manpower = 2123700
+	manpower = 2598027
 	
 	state_category = rural
 
@@ -11,8 +11,14 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = RAJ
+		add_claim_by = RAJ
 		add_claim_by = PAK
+		add_core_of = KAS
+		add_core_of = KHL 
+
+		victory_points = {
+			12754 1
+		}
 	}
 
 	provinces={

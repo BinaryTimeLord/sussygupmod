@@ -6,7 +6,7 @@ state = {
 	state_category = rural
 	
 	resources = {
-		oil = 2 # was: 2
+		oil = 1 # was: 2
 	}
 
 	history = {
@@ -26,15 +26,11 @@ state = {
 		victory_points = {
 			10760 3 # Muscat
 		}
-
-		victory_points = {
-			5049 1 # Nizwa
-		}
 		
 	}
 
 	provinces = {
-		1947 2018 2059 2103 4993 5049 8002 8020 10760 
+		1947 4993 8002 8020 10760 
 	}
 
 	local_supplies = 0.0 

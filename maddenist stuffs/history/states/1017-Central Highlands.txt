@@ -1,6 +1,6 @@
 state={
-	id=982
-	name="STATE_982"
+	id=1017
+	name="STATE_1017"
 	history = {
 		add_core_of = VIN
 		add_core_of = IND
