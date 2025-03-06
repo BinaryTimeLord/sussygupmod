@@ -9,7 +9,7 @@ tags={
 	"Gameplay"
 }
 name="Girls und Panzer"
-supported_version="1.15.*"
+supported_version="1.16.*"
 replace_path="history/states"
 replace_path="map/strategicregions"
 remote_file_id="2844411050"
