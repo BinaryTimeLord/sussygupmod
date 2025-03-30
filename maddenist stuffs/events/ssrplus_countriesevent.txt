@@ -310,20 +310,30 @@ country_event = {
 		name = ssrpluscountry.4.a
 		
 		trigger = { }
-		
+		GER = {
+			set_nationality = {
+				target_country = SGD
+				character = GER_neko
+			}
+		}
 		SGD = {
 			add_stability = 0.1
 		
 			set_cosmetic_tag = SGD_german
-		
-			create_country_leader = {
-				name = "Wilhelm Pieck"
-				desc = ""
-				picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds"
-				expire = "1965.1.1"
-				ideology = leninism
-				traits = { }
+			hidden_effect = {
+				
 			}
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = GER_neko
+				promote_leader = yes
+				country_leader = {
+					ideology = german_idealism2
+					expire = "9999.1.1.1"
+					traits = { war_industrialist }
+				}
+			}
+			
 		}
 		
 	}

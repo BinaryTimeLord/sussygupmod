@@ -317,6 +317,9 @@ SOV_ssrplus_categories_europe = {
 				42 = { is_controlled_by_ROOT_or_subject = yes }
 				53 = { is_controlled_by_ROOT_or_subject = yes }
 				978 = { is_controlled_by_ROOT_or_subject = yes }
+				54 = { is_controlled_by_ROOT_or_subject = yes }
+				53 = { is_controlled_by_ROOT_or_subject = yes }
+				52 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 
 		}
@@ -348,6 +351,9 @@ SOV_ssrplus_categories_europe = {
 						state = 42
 						state = 50
 						state = 978
+						state = 52
+						state = 53
+						state = 54
 				    }
 			    }
 
@@ -742,6 +748,9 @@ SOV_ssrplus_categories_europe = {
 				928 = { is_controlled_by_ROOT_or_subject = yes }
 				929 = { is_controlled_by_ROOT_or_subject = yes }
 
+				
+				
+
 			}
 
 		}
@@ -758,6 +767,8 @@ SOV_ssrplus_categories_europe = {
 		fire_only_once = yes
 
 		complete_effect = {
+			
+
 		    if = {
 				add_political_power = 25
 				add_stability = 0.01
@@ -791,7 +802,28 @@ SOV_ssrplus_categories_europe = {
 					}
 		
 			    }
+			
+					
+				
 		    }
+			FIN = {
+				set_nationality = {
+					target_country = SFN
+					character = FIN_aki
+				}
+			}
+			SFN = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+					character = FIN_aki
+					promote_leader = yes
+					country_leader = {
+						ideology = marxism
+						expire = "9999.1.1.1"
+						traits = { committed_anti_fascist }
+					}
+				}
+			}
 		}
 	}
 	

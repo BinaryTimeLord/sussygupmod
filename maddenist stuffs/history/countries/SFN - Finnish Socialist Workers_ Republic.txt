@@ -22,7 +22,6 @@ set_technology = {
 	basic_fortification_tech = 1
 }
 
-recruit_character = SFN_Otto_Wille_Kuusinen
 
 set_convoys = 300
 
