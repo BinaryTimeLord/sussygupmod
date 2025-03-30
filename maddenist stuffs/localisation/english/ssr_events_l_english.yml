@@ -1,0 +1,265 @@
+﻿l_english:
+ #### SOVIET SOCIALIST REPUBLIC PLUS #### FORMERLY OWNED BY GOAT AKA THECYCLOP #### NOW OWNED BY THESECONDB ###
+ 
+ ssrplus.1.t:0 "The Fate of West Prussia"
+ ssrplus.1.d:0 "West Prussia has always been historically German, though with their defeat and the Polish demands for new lands after our annexation of the previously eastern Polish territories, we could either let the Germans keep it or the Poles have it."
+ ssrplus.1.a:0 "Transfer ownership to [SGD.GetNameDef]"
+ ssrplus.1.b:0 "Transfer ownership to [SPL.GetNameDef]"
+ 
+ ssrplus.2.t:0 "The Fate of East Prussia"
+ ssrplus.2.d:0 "Our troops have marched into German territories and successfully liberated it from the grasp of Berlin. Now with the war over, we can either give it back to Germany, give it instead to Poland or split it between Poland."
+ ssrplus.2.a:0 "Transfer to [SPL.GetNameDef]"
+ ssrplus.2.b:0 "Transfer to [SGD.GetNameDef]"
+ ssrplus.2.c:0 "Split the land"
+ 
+ ssrplus.3.t:0 "The Fate of Transylvania"
+ ssrplus.3.d:0 "Our troops have marched into the region of Transylvania, and now with the transition of power to local communists, we can either give everything to Romania or the Hungarian majority land to Hungary and the rest to Romania"
+ ssrplus.3.a:0 "Transfer all to [SRO.GetNameDef]"
+ ssrplus.3.b:0 "Split the land"
+ 
+ ssrplus.4.t:0 "The Fate of Dobrudja"
+ ssrplus.4.d:0 "After the capture of Dobrudja, our garrison has been stationed there ever since. Now with the new collaborative administration in place, we can either give the territory back to Romania or Bulgaria."
+ ssrplus.4.a:0 "Give it to [SRO.GetNameDef]"
+ ssrplus.4.b:0 "Give it to [SBL.GetNameDef]"
+ 
+ ssrplus.5.t:0 "The Fate of Northern Epirus"
+ ssrplus.5.d:0 "Soviet troops have entered the state of Northern Epirus, which we occupied soon after. Now that peace is present there, we must decide who will adminster the region."
+ ssrplus.5.a:0 "Give it to [SAL.GetNameDef]"
+ ssrplus.5.b:0 "Give it to [SGR.GetNameDef]"
+ 
+ ssrplus.6.t:0 "The Fate of Istria"
+ ssrplus.6.d:0 "The region of Istria was captured and occupied by our valiant forces, successfully drove the enemies out. It is time however to decide the future of Istria in this post-war time."
+ ssrplus.6.a:0 "Transfer all to [SYG.GetNameDef]"
+ ssrplus.6.b:0 "Transfer all to [SIT.GetNameDef]"
+ ssrplus.6.c:0 "Split the land"
+ 
+ ssrplus.7.t:0 "The Fate of South Tyrok"
+ ssrplus.7.d:0 "The march to the west continues as our troops have entered the Italian province of Alto Aldige with an iron fist, showing our enemies what the Soviet might can truly become in its greatest form. *EHMMM* Enough rambling, perhaps it is time to decide the local administration for the region?"
+ ssrplus.7.a:0 "Transfer all to [SIT.GetNameDef]"
+ ssrplus.7.b:0 "Transfer all to [SAS.GetNameDef]"
+ ssrplus.7.c:0 "Split the land"
+ 
+ ssrplus.8.t:0 "The Fate of Alsace-Lorraine"
+ ssrplus.8.d:0 "The region of Alsace-Lorraine has always been a contested region since forever but with the Red Army capturing the major cities and towns, we can finally settle this issue with our own terms."
+ ssrplus.8.a:0 "Transfer to [SFR.GetNameDef]"
+ ssrplus.8.b:0 "Transfer to [SGD.GetNameDef]"
+ 
+ ssrplus.9.t:0 "The Fate of Savoy"
+ ssrplus.9.d:0 "Our brave troops have entered the city of Nice, thus securing the region of Savoy. Currently our troops are stationed there to preserve peace and order however that will ultimately change with time flowing by. Therefore, we must make a decision to whether hand the territory to the French or the Italian."
+ ssrplus.9.a:0 "Transfer to [SFR.GetNameDef]"
+ ssrplus.9.b:0 "Transfer to [SIT.GetNameDef]"
+ 
+ ssrplus.10.t:0 "The Fate of Northern Ireland"
+ ssrplus.10.d:0 "Our troops have managed to capture the entirety of Northern Ireland, securing it at last. What should we do with the territory?"
+ ssrplus.10.a:0 "Transfer to [SEG.GetNameDef]"
+ ssrplus.10.b:0 "Transfer to [SIR.GetNameDef]"
+ 
+ ssrplus.11.t:0 "The Fate of Gibraltar"
+ ssrplus.11.d:0 "The entrance to the Mediterranean has been reached as the Red Army ends their advancement to the territory. We must decide to whether transfer the land to Spain or keep it as a naval base."
+ ssrplus.11.a:0 "Transfer to [SSP.GetNameDef]"
+ ssrplus.11.b:0 "The Mediterranean Gate must be secured!"
+ 
+ ssrplus.12.t:0 "The Fate of Rhodes"
+ ssrplus.12.d:0 "The brave Soviet army has entered the island of Rhodes and now we must decide its future."
+ ssrplus.12.a:0 "Transfer to [SGR.GetNameDef]"
+ ssrplus.12.b:0 "Transfer to [STR.GetNameDef]"
+ 
+ ssrplus.13.t:0 "The Fate of Hatay"
+ ssrplus.13.d:0 "The territory of Hatay is now secured and it is up to us to decide its future."
+ ssrplus.13.a:0 "Transfer to [STR.GetNameDef]"
+ ssrplus.13.b:0 "Give it to [SSR.GetNameDef]"
+ ssrplus.13.c:0 "Give it to [SIQ.GetNameDef]"
+ 
+ ssrplus.14.t:0 "The Fate of Istanbul"
+ ssrplus.14.d:0 "The eternal city of Istanbul has been captured by our valiant troops. Its importance in securing the Bosphorus strait as well as the Black Sea makes it a great strategic city. We must transfer it back to Turkey or occupy it and turn it into a naval stronghold."
+ ssrplus.14.a:0 "Transfer to [STR.GetNameDef]"
+ ssrplus.14.b:0 "It's too important to be given away."
+ 
+ ssrplus.15.t:0 "The Fate of Malta"
+ ssrplus.15.d:0 "Malta, the fortress of the Mediterranean sea has been captured and secured by our valiant navy and marines. Thanks to their efforts, we now have uncontested control over the islands. What is the future of Malta?"
+ ssrplus.15.a:0 "Transfer to [SIT.GetNameDef]"
+ ssrplus.15.b:0 "Malta must be secured"
+ 
+ ssrplus.16.t:0 "Fate of the Kuril Islands"
+ ssrplus.16.d:0 "The Kuril Islands were so brutally ripped from our great nation 40 years ago by the Japanese Empire, and now we have found retribution. Following the San Fransisco treaty, we are now in control of the islands, and it is now time to decide it's fate"
+ ssrplus.16.a:0 "Transfer to [SJA.GetNameDef]"
+ ssrplus.16.b:0 "We will reclaim all lost land!"
+ 
+ ssrplus.17.t:0 "A New Japanese Capital?"
+ ssrplus.17.d:0 "Tokyo has been the capital of Japan for nearly 200 years, ever since the Meiji Restoration, and now we must decide. Should we keep the JPRs capital in Hokkaido, or should we move it to Tokyo? \n\nMoving it to Tokyo would make administration of Japan easier, however Tokyo is still destroyed from the Second World War. Keeping it in Hokkaido would mean communication between Vladivostok and the Red Navy easier, and it would be easier to defend in case of war."
+ ssrplus.17.a:0 "Moving it to Tokyo is a better idea"
+ ssrplus.17.b:0 "No! We shall keep it in Sapporo!"
+ 
+ ssrplus.18.t:0 "The North Malay Question"
+ ssrplus.18.d:0 "The Malay Peninsula, despite being named after the former British Colony, has been in the hands of Thailand for many years, and now people are starting to fight over the area, what should we do?"
+ ssrplus.18.a:0 "Give it to [STH.GetNameDef]!"
+ ssrplus.18.b:0 "Give it to [SML.GetNameDef]!"
+ 
+ ssrplus.19.t:0 "The Fate of West Indochina"
+ ssrplus.19.d:0 "Indochina, once ruled by the French, is now liberated by the glourious Red Revolution. Vietnam is calling to annex Laos and Cambodia, however that might not be the best option"
+ ssrplus.19.a:0 "Unify it under one state"
+ ssrplus.19.b:0 "No, we shall split it"
+ 
+ ssrplus.20.t:0 "The Fate of Greater Tibet"
+ ssrplus.20.d:0 "Greater Tibet has been disputed by the two powers of the Plateu for many years. Now, we decide once and for all."
+ ssrplus.20.a:0 "Give it to [SCH.GetNameDef]!"
+ ssrplus.20.b:0 "Give it to [STI.GetNameDef]"
+ 
+ ssrplus.21.t:0 "The Fate of Chinese Mongolia"
+ ssrplus.21.d:0 "With Chinese Inner Mongolia now under our control, we must decide the future of this vital and strategic region. Long sought after by both Mongolia and China, its population is a mix of ethnic Mongols and Han Chinese, making the question of who should rightfully govern it contentious. Should we integrate the region into the Mongolian heartland, creating a united Mongolia, or return it to Chinese administration to avoid future conflicts?"
+ ssrplus.21.a:0 "Give it all to [SCH.GetNameDef]!"
+ ssrplus.21.b:0 "Give it all to [SMO.GetNameDef]!"
+ ssrplus.21.c:0 "Give it all to the [SIM.GetNameDef]"
+ ssrplus.21.e:0 "Split it!"
+
+ ssrplus.22.t:0 "The Fate of Manchuria"
+ ssrplus.22.d:0 "For the last 40 years, Manchuria has been one of the most heavily contested areas on the Asian continent. Between the Chinese, Japanese, Russians, and independence fighters, much war of the last 40 years has been because of this region. Today, we decide the fate, once and for all!"
+ ssrplus.22.a:0 "Give it to [SCH.GetNameDef]!"
+ ssrplus.22.b:0 "Form its own state!"
+ ssrplus.22.c:0 "We will reclaim what we lost!"
+
+ ssrplus.23.t:0 "The Fate of North Korea"
+ ssrplus.23.d:0 "North Korea is currently in the process of being integrated into our glourious communist empir- country. However, multiple factions have started demanding control of the Region, what should we do?"
+ ssrplus.23.a:0 "Give it to [SCH.GetNameDef]!"
+ ssrplus.23.b:0 "Give it to [SMN.GetNameDef]!"
+ ssrplus.23.c:0 "We will take it for ourselves!"
+ ssrplus.23.e:0 "Establish A New Government in Pyongyang!"
+
+ ssrplus.24.t:0 "The Fate of Kashmir"
+ ssrplus.24.d:0 "We have now captured Kashmir, and we can decide who gets it"
+ ssrplus.24.a:0 "Give it to [SRG.GetNameDef]"
+ ssrplus.24.b:0 "Give it to [SPK.GetNameDef]"
+
+ ssrplus.25.t:0 "The Fate of Calcutta"
+ ssrplus.25.d:0 "We have now captured Calcutta, and we can decide who gets it"
+ ssrplus.25.a:0 "Give it to [SRG.GetNameDef]"
+ ssrplus.25.b:0 "Give it to [SBN.GetNameDef]"
+
+ ssrplus.26.t:0 "The Fate of Assam"
+ ssrplus.26.d:0 "We have now captured Assam, and we can decide who gets it"
+ ssrplus.26.a:0 "Give it to [SRG.GetNameDef]"
+ ssrplus.26.b:0 "Give it to [SBN.GetNameDef]"
+
+ ssrplus.28.t:0 "The Fate of Pradesh"
+ ssrplus.28.d:0 "We have now captured Pradesh, and we can decide who gets it"
+ ssrplus.28.a:0 "Give it to [STI.GetNameDef]"
+ ssrplus.28.b:0 "Give it to [SCH.GetNameDef]"
+ ssrplus.28.c:0 "Give it to [SRG.GetNameDef]"
+
+ ssrplus.29.t:0 "The Fate of Port Arthur"
+ ssrplus.29.d:0 "Port Arthur was once ours, but after the Russo-Japanese war, it was stripped from us by the Empire of Japan. Now we can decide the fate of it!"
+ ssrplus.29.a:0 "Give it to [SMN.GetNameDef]"
+ ssrplus.29.b:0 "Give it to [SCH.GetNameDef]"
+ ssrplus.29.c:0 "We will reclaim all lost land!"
+
+ ssrplus.30.t:0 "The Fate of East Hebei"
+ ssrplus.30.d:0 "We have now captured East Hebei, and we can decide who gets it"
+ ssrplus.30.a:0 "Give it to [SMN.GetNameDef]"
+ ssrplus.30.b:0 "Give it to [SCH.GetNameDef]"
+
+ ssrplus.32.t:0 "The Fate of Bavaria"
+ ssrplus.32.d:0 "Bavaria once had a glourious revolution of it's own, in the closing days of the Great War. However, it was put down by the evil germans. Now, we decide what happens to them, once and for all!"
+ ssrplus.32.a:0 "Give it to [SGD.GetNameDef]"
+ ssrplus.32.b:0 "Form it's own state! Long Live Bavaria!"
+ ssrplus.32.c:0 "Form the West Danubian Soviet Republic!"
+
+ ssrplus.33.t:0 "The Fate of Iraq"
+ ssrplus.33.d:0 "We have captured Iraq, and we can now decide what to do with it"
+ ssrplus.33.a:0 "Establish an Iraqi State"
+
+ ssrplus.34.t:0 "The Fate of Syria"
+ ssrplus.34.d:0 "We have captured Syria, and we can now decide what to do with it"
+ ssrplus.34.a:0 "Unite Syria with Iraq to form a Levant State!"
+ ssrplus.34.b:0 "Establish a Syrian State"
+ ssrplus.34.c:0 "Split it between [SKR.GetNameDef] and Syria"
+
+ ssrplus.35.t:0 "The Fate of Damascus"
+ ssrplus.35.d:0 "We have captured Damascus, and we can now decide what to do with it"
+ ssrplus.35.a:0 "Give it to [SSR.GetNameDef]"
+ ssrplus.35.b:0 "Give it to [SIQ.GetNameDef]"
+ ssrplus.35.c:0 "Give it to [SPI.GetNameDef]"
+
+ ssrplus.36.t:0 "The Fate of Erbil"
+ ssrplus.36.d:0 "We have captured Erbil, and we can now decide what to do with it"
+ ssrplus.36.a:0 "Form a Kurdish State"
+ ssrplus.36.b:0 "Give it to the Baghdad Administration"
+
+ ssrplus.37.t:0 "The Fate of Lebanon"
+ ssrplus.37.d:0 "We have captured Lebanon, and we can now decide what to do with it"
+ ssrplus.37.a:0 "Give it to [SSR.GetNameDef]"
+ ssrplus.37.b:0 "Give it to the Baghdad Administration"
+ ssrplus.37.c:0 "Give it to [SPI.GetNameDef]"
+ ssrplus.37.e:0 "Form a Lebanese State"
+
+ ssrplus.38.t:0 "The Fate of Palestine"
+ ssrplus.38.d:0 "We have captured Palestine, and we can now decide what to do with it"
+ ssrplus.38.a:0 "Form a Palestinian State"
+
+ ssrplus.39.t:0 "The Fate of Yemen"
+ ssrplus.39.d:0 "We have captured Yemen, and we can now decide what to do with it"
+ ssrplus.39.a:0 "Form a Yemeni State"
+
+ ssrplus.40.t:0 "The Fate of Oman"
+ ssrplus.40.d:0 "We have captured Oman, and we can now decide what to do with it"
+ ssrplus.40.a:0 "Form an Omani State"
+ 
+ ssrplus.41.t:0 "The Fate of Sinai"
+ ssrplus.41.d:0 "We have captured Sinai, and we can now decide what to do with it"
+ ssrplus.41.a:0 "Give it to [SPI.GetNameDef]"
+
+ ssrplus.42.t:0 "The Fate of Kurdistan"
+ ssrplus.42.d:0 "We have captured Kurdistan, and we can now decide what to do with it"
+ ssrplus.42.a:0 "Give it to [STR.GetNameDef]"
+ ssrplus.42.b:0 "Split it"
+ ssrplus.42.c:0 "Give it to [SKR.GetNameDef]"
+
+ ssrpluscountry.1.t:0 "Choose the Leader"
+ ssrpluscountry.1.d:0 "You are allowed to choose between one of the leaders listed below, all up to your taste. The AI will always go historical unless the developer decided to go through the effort of making it able to choose when certain conditions are met, idk ask him i guess"
+ ssrpluscountry.1.a:0 "Bolesław Bierut (Historical)"
+ ssrpluscountry.1.b:0 "Maria Koszutska (Alternative)"
+ 
+ ssrpluscountry.2.t:0 "The Fate of the British Isle"
+ ssrpluscountry.2.d:0 "It seems as the revolutionary words has reached London as our troops entered the city after a fierce battle against the defenders. With Britain secured, it is perhaps time that we allow collaborators and sympathisers to adminster over their people. But how will that be applied? We have two options, first being to unite the island under one administration and second is to allow the autonomy of Scotland and Wales, prompting a 3 Nations Solution."
+ ssrpluscountry.2.a:0 "Unite the workers of Britain!"
+ ssrpluscountry.2.b:0 "3 Nations Solution!"
+ 
+ ssrpluscountry.3.t:0 "Choose the Leader"
+ ssrpluscountry.3.d:0 "You are allowed to choose between one of the leaders listed below, all up to your taste. The AI will always go historical unless the developer decided to go through the effort of making it able to choose when certain conditions are met, idk ask him i guess"
+ ssrpluscountry.3.a:0 "Harry Pollitt"
+ ssrpluscountry.3.b:0 "Palme Dutt"
+ 
+ ssrpluscountry.4.t:0 "Local German Administration?"
+ ssrpluscountry.4.d:0 "A year has passed since the capitulation of the Germans, our collaborators and sympathisers have suggested us to hand over control to the Soviet-aligned government. What should we do?"
+ ssrpluscountry.4.a:0 "Splendid idea!"
+ ssrpluscountry.4.b:0 "A thousand-year occupation must commence!"
+ 
+ ssrpluscountry.5.t:0 "Choose the Leader"
+ ssrpluscountry.5.d:0 "You are allowed to choose between one of the leaders listed below, all up to your taste. The AI will always go historical unless the developer decided to go through the effort of making it able to choose when certain conditions are met, idk ask him i guess"
+ ssrpluscountry.5.a:0 "Mao Zedong"
+ ssrpluscountry.5.b:0 "Wang Ming (more likely since he was a Stalinist)"
+
+ ssrpluscountry.6.t:0 "Fate of the Raj"
+ ssrpluscountry.6.d:0 "We have finally captured the Jewel of the British Empire, and now we must decide what to do with it. We have three options: \n\n1. Unite the Raj under one single Communist Ally \n\n2. Give independence to Burma, Bangladesh, and Pakistan, while keeping India intact \n\n3. Completely disolve India into multiple states"
+ ssrpluscountry.6.a:0 "We will keep the Raj intact!"
+ ssrpluscountry.6.b:0 "We will keep India intact!"
+ ssrpluscountry.6.c:0 "No! It is best to give independence to everyone!"
+
+ ssrpluscountry.7.t:0 "Fate of Menjiang"
+ ssrpluscountry.7.d:0 "With the region of Menjiang firmly in Soviet hands, we can now decide what to do with it."
+ ssrpluscountry.7.a:0 "Give it to [SCH.GetNameDef]"
+ ssrpluscountry.7.b:0 "Give it to [SMO.GetNameDef]"
+ ssrpluscountry.7.c:0 "We'll take it"
+ ssrpluscountry.7.e:0 "Establish [SIM.GetNameDef]"
+ 
+ ssrplus_redcrab.1.t:0 "Shots ring out.."
+ ssrplus_redcrab.1.d:0 "While sorting out the future of the Christmas Island, a strange looking being, dressed in what seemed to be a crab outfit, burst in the room, and fired 3 shots into the chest of a delegate. \n\nBefore the Red Bodyguards could raise their weapons, Georgy Zhukov shouted for them to stop. He quickly ran to [From.From.GetLeader] and demanded to speak with him in private. The man was apprehended, and the two went into a private conference room. \n\nZhukov explained that the man, under the alias “The Red Crab”, was not someone to mess with, and could destroy the world with the stroke of a pen. \n\n“His demands are simple”, Zhukov said, “Give him his own country in Christmas Island, or the Kremlin will be wiped off the earth in 3 hours.” \n\n[From.From.GetLeader] agreed, and a puppet state has now been setup, and The Red Crab has been released from custody. The three shook hands, with The Red Crab explaining he wanted to “Liberate my people, and bring the Red Revolution to them”"
+ ssrplus_redcrab.1.a:0 "This is.. interesting"
+
+ ssrplus_FDR.1.t:0 "Terrorist Attacks in Arabia!"
+ ssrplus_FDR.1.d:0 "Following the unification of the Arabian Soviet Republics, multiple terrorist attacks have started in Riyadah, Bahgdad, and Jerusalem. These attacks have killed multiple people, and the cities have been devastated. We have not found the leader of these attacks, and we might never find them."
+ ssrplus_FDR.1.a:0 "§RFind this man..§!"
+ ssrplus_FDR.1.b:0 "Find this man!"
+
+ ssrplus_FDR.2.t:0 "What. The. Fuck"
+ ssrplus_FDR.2.d:0 "Okay yeah so apparently, Fucking D. Roosevelt is behind the attacks in Arabia. He came to us, and now wants to lead Arabia, because a legendary god named 'Coos' said he is destined to establish a Roosevelt Republic in Arabia"
+ ssrplus_FDR.2.a:0 "Why not, right?"

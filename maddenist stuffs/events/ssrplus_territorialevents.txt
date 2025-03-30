@@ -1,0 +1,2512 @@
+add_namespace = ssrplus
+
+country_event = {
+	id = ssrplus.1
+	title = ssrplus.1.t
+	desc = ssrplus.1.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.1.a
+		
+		trigger = { country_exists = SGD }
+		
+		SGD = {
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 66
+			transfer_state = 67
+			
+			hidden_effect = {
+			add_state_core = 63
+			add_state_core = 68
+			add_state_core = 66
+			add_state_core = 67
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_westprussia_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.1.b
+		
+		trigger = { country_exists = SPL }
+
+		SPL = {
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 66
+			transfer_state = 67
+			
+			hidden_effect = {
+			add_state_core = 63
+			add_state_core = 68
+			add_state_core = 66
+			add_state_core = 67
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_westprussia_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.2
+	title = ssrplus.2.t
+	desc = ssrplus.2.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.2.a
+		
+		trigger = { country_exists = SPL }
+		
+		SPL = {
+			transfer_state = 5
+			transfer_state = 763
+			
+			hidden_effect = {
+			add_state_core = 5
+			add_state_core = 763
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_eastprussia_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.2.b
+		
+		trigger = { country_exists = SGD }
+
+		SGD = {
+			transfer_state = 5
+			transfer_state = 763
+			
+			hidden_effect = {
+			add_state_core = 5
+			add_state_core = 763
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_eastprussia_territorial_decision
+		}
+	}
+	
+	option = {
+		name = ssrplus.2.c
+		
+		trigger = { country_exists = SPL }
+
+		SPL = {
+			transfer_state = 5
+			
+			hidden_effect = {
+			add_state_core = 5
+			}
+		}
+		
+		SOV = {
+			transfer_state = 763
+			
+			hidden_effect = {
+			add_state_core = 763
+			}
+		
+		    set_country_flag = SOV_eastprussia_territorial_decision
+			
+			
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.3
+	title = ssrplus.3.t
+	desc = ssrplus.3.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.3.a
+		
+		trigger = { country_exists = SRO }
+		
+		SRO = {
+			transfer_state = 76
+			transfer_state = 84
+			transfer_state = 83
+			transfer_state = 82
+			
+			hidden_effect = {
+			add_state_core = 76
+			add_state_core = 84
+			add_state_core = 83
+			add_state_core = 82
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_transylvania_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.3.b
+		
+		trigger = { 
+			country_exists = SRO
+			country_exists = SHG
+		}
+		
+		SHG = {
+			transfer_state = 76
+			
+			hidden_effect = {
+			add_state_core = 76
+			}
+		}
+
+		SRO = {
+			transfer_state = 84
+			transfer_state = 83
+			transfer_state = 82
+			
+			hidden_effect = {
+			add_state_core = 84
+			add_state_core = 83
+			add_state_core = 82
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_transylvania_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.4
+	title = ssrplus.4.t
+	desc = ssrplus.4.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.4.a
+		
+		trigger = { country_exists = SRO }
+		
+		SRO = {
+			transfer_state = 77
+			
+			hidden_effect = {
+			add_state_core = 77
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_dobrudja_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.4.b
+		
+		trigger = { 
+			country_exists = SBL
+		}
+		
+		SBL = {
+			transfer_state = 77
+			
+			hidden_effect = {
+			add_state_core = 77
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_dobrudja_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.5
+	title = ssrplus.5.t
+	desc = ssrplus.5.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.5.a
+		
+		trigger = { country_exists = SAL }
+		
+		SAL = {
+			transfer_state = 805
+			
+			hidden_effect = {
+			add_state_core = 805
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_northernepirus_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.5.b
+		
+		trigger = { 
+			country_exists = SGR
+		}
+		
+		SGR = {
+			transfer_state = 805
+			
+			hidden_effect = {
+			add_state_core = 805
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_northernepirus_territorial_decision
+		}
+	}
+}	
+
+country_event = {
+	id = ssrplus.6
+	title = ssrplus.6.t
+	desc = ssrplus.6.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.6.a
+		
+		trigger = { country_exists = SYG }
+		
+		SYG = {
+			transfer_state = 736
+			transfer_state = 852
+			
+			hidden_effect = {
+			add_state_core = 736
+			add_state_core = 852
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_istria_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.6.b
+		
+		trigger = { 
+			country_exists = SIT
+		}
+		
+		SIT = {
+			transfer_state = 736
+			transfer_state = 852
+			
+			hidden_effect = {
+			add_state_core = 736
+			add_state_core = 852
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_istria_territorial_decision
+		}
+	}
+	option = {
+		name = ssrplus.6.c
+		
+		trigger = { 
+			country_exists = SYG
+			country_exists = SIT
+		}
+		
+		SIT = {
+			transfer_state = 736
+			
+			hidden_effect = {
+			add_state_core = 736
+			}
+		}
+		
+		SYG = {
+			transfer_state = 852
+			
+			hidden_effect = {
+			add_state_core = 852
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_istria_territorial_decision
+		}
+	}
+}	
+
+country_event = {
+	id = ssrplus.7
+	title = ssrplus.7.t
+	desc = ssrplus.7.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.7.a
+		
+		trigger = { country_exists = SIT }
+		
+		SIT = {
+			transfer_state = 39
+			transfer_state = 850
+			
+			hidden_effect = {
+			add_state_core = 39
+			add_state_core = 850
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_southalps_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.7.b
+		
+		trigger = { 
+			country_exists = SAS
+		}
+		
+		SAS = {
+			transfer_state = 39
+			transfer_state = 850
+			
+			hidden_effect = {
+			add_state_core = 39
+			add_state_core = 850
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_southalps_territorial_decision
+		}
+	}
+	option = {
+		name = ssrplus.7.c
+		
+		trigger = { 
+			country_exists = SAS
+			country_exists = SIT
+		}
+		
+		SIT = {
+			transfer_state = 850
+			
+			hidden_effect = {
+			add_state_core = 850
+			}
+		}
+		
+		SAS = {
+			transfer_state = 39
+			
+			hidden_effect = {
+			add_state_core = 39
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_southalps_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.8
+	title = ssrplus.8.t
+	desc = ssrplus.8.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.8.a
+		
+		trigger = { country_exists = SFR }
+		
+		SFR = {
+			transfer_state = 28
+			
+			hidden_effect = {
+			add_state_core = 28
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_alsacelorraine_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.8.b
+		
+		trigger = { 
+			country_exists = SGD
+		}
+		
+		SGD = {
+			transfer_state = 28
+			
+			hidden_effect = {
+			add_state_core = 28
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_alsacelorraine_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.9
+	title = ssrplus.9.t
+	desc = ssrplus.9.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.9.a
+		
+		trigger = { country_exists = SFR }
+		
+		SFR = {
+			transfer_state = 735
+			
+			hidden_effect = {
+			add_state_core = 735
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_savoy_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.9.b
+		
+		trigger = { 
+			country_exists = SIT
+		}
+		
+		SIT = {
+			transfer_state = 735
+			
+			hidden_effect = {
+			add_state_core = 735
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_savoy_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.10
+	title = ssrplus.10.t
+	desc = ssrplus.10.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.10.a
+		
+		trigger = {
+			country_exists = SEG
+			SEG = {
+				NOT = {
+					has_cosmetic_tag = SEG_england
+				}
+			}
+		}
+		
+		SEG = {
+			transfer_state = 119
+			
+			hidden_effect = {
+			add_state_core = 119
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_northernireland_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.10.b
+		
+		trigger = { 
+			country_exists = SIR
+		}
+		
+		SIR = {
+			transfer_state = 119
+			
+			hidden_effect = {
+			add_state_core = 119
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_northernireland_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.11
+	title = ssrplus.11.t
+	desc = ssrplus.11.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.11.a
+		
+		trigger = { country_exists = SSP }
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SSP = {
+			transfer_state = 118
+			
+			hidden_effect = {
+			add_state_core = 118
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_gibraltar_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.11.b
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		SOV = {
+			transfer_state = 118
+			
+			hidden_effect = {
+			add_state_core = 118
+			}
+			 
+		    set_country_flag = SOV_gibraltar_territorial_decision
+		
+		}
+
+	}
+}
+
+country_event = {
+	id = ssrplus.12
+	title = ssrplus.12.t
+	desc = ssrplus.12.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.12.a
+		
+		trigger = { country_exists = SGR }
+		
+		SGR = {
+			transfer_state = 164
+			
+			hidden_effect = {
+			add_state_core = 164
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_rhodes_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.12.b
+		
+		trigger = { country_exists = STR
+		}
+		
+		STR = {
+			transfer_state = 164
+			
+			hidden_effect = {
+			add_state_core = 164
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_rhodes_territorial_decision
+		}
+
+	}
+}
+	
+country_event = {
+	id = ssrplus.13
+	title = ssrplus.13.t
+	desc = ssrplus.13.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.13.a
+		
+		trigger = { country_exists = STR }
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		STR = {
+			transfer_state = 799
+			
+			hidden_effect = {
+			add_state_core = 799
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_hatay_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.13.b
+		
+		trigger = {
+			country_exists = SSR
+		}
+
+		SSR = {
+			transfer_state = 799
+			
+			hidden_effect = {
+				add_state_core = 799
+			}
+		}
+
+		SOV = { 
+		    set_country_flag = SOV_hatay_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.13.c
+		
+		trigger = {
+			country_exists = SIQ
+			has_global_flag = SIQ_SSR_union
+		}
+
+		SIQ = {
+			transfer_state = 799
+			
+			hidden_effect = {
+				add_state_core = 799
+			}
+		}
+
+		SOV = { 
+		    set_country_flag = SOV_hatay_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.14
+	title = ssrplus.14.t
+	desc = ssrplus.14.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.14.a
+		
+		trigger = { country_exists = STR }
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		STR = {
+			transfer_state = 797
+			
+			hidden_effect = {
+			add_state_core = 797
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_istanbul_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.14.b
+		
+		trigger = {
+		
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		SOV = {
+			transfer_state = 797
+			
+			hidden_effect = {
+			add_state_core = 797
+			}
+			 
+		    set_country_flag = SOV_istanbul_territorial_decision
+		
+		}
+
+	}
+}
+
+country_event = {
+	id = ssrplus.15
+	title = ssrplus.15.t
+	desc = ssrplus.15.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.15.a
+		
+		trigger = { country_exists = SIT }
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SIT = {
+			transfer_state = 116
+			
+			hidden_effect = {
+			add_state_core = 116
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_malta_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.15.b
+		
+		trigger = {
+		
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		SOV = {
+			transfer_state = 116
+			
+			hidden_effect = {
+			add_state_core = 116
+			}
+			 
+		    set_country_flag = SOV_malta_territorial_decision
+		
+		}
+
+	}
+}
+
+country_event = {
+	id = ssrplus.16
+	title = ssrplus.16.t
+	desc = ssrplus.16.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.16.a
+		
+		trigger = { country_exists = SJA }
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		SJA = {
+			transfer_state = 555
+			
+			hidden_effect = {
+				add_state_core = 555
+			}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_kuril_islands_territorial_decision
+		}
+
+	}
+	option = {
+		name = ssrplus.16.b
+		
+		trigger = {
+		
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SOV = {
+			transfer_state = 555
+			
+			hidden_effect = {
+				add_state_core = 555
+			}
+			 
+		    set_country_flag = SOV_kuril_islands_territorial_decision
+		
+		}
+
+	}
+}
+
+country_event = {
+	id = ssrplus.17
+	title = ssrplus.17.t
+	desc = ssrplus.17.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.17.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SJA = {
+			set_capital = {state = 282}
+		}
+		
+		SOV = { 
+		    set_country_flag = SOV_SJA_tokyo_capital
+		}
+
+	}
+	option = {
+	
+		name = ssrplus.17.b
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		SOV = {
+		    set_country_flag = SOV_SJA_hokkaido_capital
+		}
+
+	}
+}
+
+country_event = {
+	id = ssrplus.18
+	title = ssrplus.18.t
+	desc = ssrplus.18.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.18.a
+		
+		trigger = {
+			country_exists = STH
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		STH = {
+			transfer_state = 724
+			
+			hidden_effect = {
+				add_state_core = 724
+			}
+			 
+		    set_country_flag = SOV_northern_malay_territorial_decision
+		
+		}
+
+	}
+	option = {
+	
+		name = ssrplus.18.b
+		
+		trigger = {
+			country_exists = SML
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SML = {
+			transfer_state = 724
+			
+			hidden_effect = {
+				add_state_core = 724
+			}
+			 
+		    set_country_flag = SOV_northern_malay_territorial_decision
+			set_cosmetic_tag = SML_united
+		
+		}
+
+	}
+}
+
+country_event = {
+	id = ssrplus.19
+	title = ssrplus.19.t
+	desc = ssrplus.19.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.19.a
+		
+		trigger = {
+			country_exists = SVT
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SVT = {
+			transfer_state = 741
+			transfer_state = 670
+			
+			hidden_effect = {
+				add_state_core = 741
+				add_state_core = 670
+			}
+			 
+		    set_country_flag = SOV_western_indochina_territorial_decision
+			set_cosmetic_tag = SOV_indochina_united
+			
+		}
+
+	}
+	option = {
+	
+		name = ssrplus.19.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		set_country_flag = SOV_western_indochina_territorial_decision
+		
+		SKA = {
+			transfer_state = 741
+			
+			hidden_effect = {
+				add_state_core = 741
+			}
+			 
+		    set_country_flag = SOV_western_indochina_territorial_decision
+		}
+
+		SLA = {
+			transfer_state = 670
+			
+			hidden_effect = {
+				add_state_core = 670
+			}
+			 
+		    set_country_flag = SOV_western_indochina_territorial_decision
+		}
+
+		set_autonomy = { target = SKA autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SLA autonomy_state = autonomy_puppet }
+	}
+}
+
+country_event = {
+	id = ssrplus.20
+	title = ssrplus.20.t
+	desc = ssrplus.20.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.20.a
+		
+		trigger = {
+			country_exists = SCH
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 601
+			transfer_state = 604
+			
+			hidden_effect = {
+				add_state_core = 601
+				add_state_core = 604
+			}
+		    set_country_flag = SOV_greater_tibet_territorial_decision
+		}
+
+	}
+	option = {
+	
+		name = ssrplus.20.b
+
+		trigger = {
+			country_exists = STI
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		STI = {
+			transfer_state = 601
+			transfer_state = 604
+			
+			hidden_effect = {
+				add_state_core = 601
+				add_state_core = 604
+			}
+		    set_country_flag = SOV_greater_tibet_territorial_decision
+		}
+		
+	}
+}
+
+country_event = {
+	id = ssrplus.21
+	title = ssrplus.21.t
+	desc = ssrplus.21.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus.21.a
+		
+		trigger = {
+			country_exists = SCH
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 756
+			transfer_state = 616
+			transfer_state = 621
+			transfer_state = 746
+			
+			hidden_effect = {
+				add_state_core = 756
+				add_state_core = 616
+				add_state_core = 621
+				add_state_core = 746
+			}
+		    set_country_flag = SOV_chinese_mongolia_territorial_decision
+		}
+
+	}
+	option = {
+	
+		name = ssrplus.21.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SMO = {
+			transfer_state = 756
+			transfer_state = 616
+			transfer_state = 621
+			transfer_state = 746
+			
+			hidden_effect = {
+				add_state_core = 756
+				add_state_core = 616
+				add_state_core = 621
+				add_state_core = 746
+			}
+		    set_country_flag = SOV_chinese_mongolia_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.21.c
+		
+		trigger = {
+			country_exists = SIM
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SIM = {
+			transfer_state = 756
+			transfer_state = 616
+			transfer_state = 746
+			transfer_state = 621
+			
+			hidden_effect = {
+				add_state_core = 756
+				add_state_core = 616
+				add_state_core = 746
+				add_state_core = 621
+			}
+		}
+	}
+	
+	option = {
+		name = ssrplus.21.e
+		
+		trigger = {
+			country_exists = SCH
+			country_exists = SMO
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 756
+			transfer_state = 616
+			transfer_state = 746
+			
+			hidden_effect = {
+				add_state_core = 756
+				add_state_core = 616
+				add_state_core = 746
+			}
+		}
+		
+		SMO = {
+			transfer_state = 621
+			
+			hidden_effect = {
+				add_state_core = 621
+			}
+		    set_country_flag = SOV_chinese_mongolia_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.22
+	title = ssrplus.22.t
+	desc = ssrplus.22.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.22.a
+		
+		trigger = {
+			country_exists = SCH
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 714
+			transfer_state = 761
+			
+			hidden_effect = {
+				add_state_core = 717
+				add_state_core = 328
+				add_state_core = 716
+				add_state_core = 610
+				add_state_core = 715
+				add_state_core = 714
+				add_state_core = 761
+			}
+		}
+		
+		set_country_flag = SOV_manchuria_territorial_decision
+		set_country_flag = SCH_annexes_manchuria_territorial
+	}
+	
+	option = {
+		name = ssrplus.22.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SMN = {
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 714
+			transfer_state = 761
+			
+			hidden_effect = {
+				add_state_core = 717
+				add_state_core = 328
+				add_state_core = 716
+				add_state_core = 610
+				add_state_core = 715
+				add_state_core = 714
+				add_state_core = 761
+			}
+		}
+		
+		set_country_flag = SOV_manchuria_puppet_territorial_decision
+		
+		set_autonomy = { target = SMN autonomy_state = autonomy_puppet }
+	}
+	
+	option = {
+		name = ssrplus.22.c
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SOV = {
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 714
+			transfer_state = 761
+			
+		    set_country_flag = SOV_manchuria_territorial_decision
+			set_country_flag = SOV_annexes_manchuria_territorial
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.24
+	title = ssrplus.24.t
+	desc = ssrplus.24.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.24.a
+		
+		trigger = {
+			country_exists = SRG
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SRG = {
+			transfer_state = 441
+			
+			hidden_effect = {
+				add_state_core = 441
+			}
+		}
+		
+		set_country_flag = SOV_kasmir_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.24.b
+		
+		trigger = {
+			country_exists = SPK
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SPK = {
+			transfer_state = 441
+			
+			hidden_effect = {
+				add_state_core = 441
+			}
+		}
+		
+		set_country_flag = SOV_kasmir_territorial_decision
+	}
+}
+
+country_event = {
+	id = ssrplus.25
+	title = ssrplus.25.t
+	desc = ssrplus.25.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.25.a
+		
+		trigger = {
+			country_exists = SRG
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SRG = {
+			transfer_state = 431
+			transfer_state = 985
+			
+			hidden_effect = {
+				add_state_core = 431
+				add_state_core = 985
+			}
+		}
+		
+		set_country_flag = SOV_calcutta_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.25.b
+		
+		trigger = {
+			country_exists = SBN
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SBN = {
+			transfer_state = 431
+			transfer_state = 985
+			
+			hidden_effect = {
+				add_state_core = 431
+				add_state_core = 985
+			}
+		}
+		
+		set_country_flag = SOV_calcutta_territorial_decision
+	}
+}
+
+country_event = {
+	id = ssrplus.26
+	title = ssrplus.26.t
+	desc = ssrplus.26.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.26.a
+		
+		trigger = {
+			country_exists = SRG
+			431 = {
+				is_owned_by = SRG
+			}
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SRG = {
+			transfer_state = 432
+			transfer_state = 990
+			
+			hidden_effect = {
+				add_state_core = 432
+				add_state_core = 990
+			}
+		}
+		
+		set_country_flag = SOV_assad_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.26.b
+		
+		trigger = {
+			country_exists = SBN
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SBN = {
+			transfer_state = 432
+			transfer_state = 990
+			
+			hidden_effect = {
+				add_state_core = 432
+				add_state_core = 990
+			}
+		}
+		
+		set_country_flag = SOV_assad_territorial_decision
+	}
+}
+
+country_event = {
+	id = ssrplus.28
+	title = ssrplus.28.t
+	desc = ssrplus.28.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.28.a
+		
+		trigger = {
+			country_exists = STI
+			601 = {
+				is_owned_by = STI
+			}
+			604 = {
+				is_owned_by = STI
+			}
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		STI = {
+			transfer_state = 434
+			
+			hidden_effect = {
+				add_state_core = 434
+			}
+		}
+		
+		set_country_flag = SOV_pradesh_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.28.a
+		
+		trigger = {
+			country_exists = SCH
+			601 = {
+				is_owned_by = SCH
+			}
+			604 = {
+				is_owned_by = SCH
+			}
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 434
+			
+			hidden_effect = {
+				add_state_core = 434
+			}
+		}
+		
+		set_country_flag = SOV_pradesh_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.28.c
+		
+		trigger = {
+			country_exists = SRG
+			432 = {
+				is_owned_by = SRG
+			}
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SRG = {
+			transfer_state = 434
+			
+			hidden_effect = {
+				add_state_core = 434
+			}
+		}
+		
+		set_country_flag = SOV_pradesh_territorial_decision
+	}
+}
+
+country_event = {
+	id = ssrplus.29
+	title = ssrplus.29.t
+	desc = ssrplus.29.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.29.a
+		
+		trigger = {
+			country_exists = SMN
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SMN = {
+			transfer_state = 745
+			
+			hidden_effect = {
+				add_state_core = 745
+			}
+		}
+		
+		set_country_flag = SOV_dalian_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.29.b
+		
+		trigger = {
+			country_exists = SCH
+			has_country_flag = SCH_annexes_manchuria_territorial
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 745
+			
+			hidden_effect = {
+				add_state_core = 745
+			}
+		}
+		
+		set_country_flag = SOV_dalian_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.29.c
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SOV = {
+			transfer_state = 745
+		}
+		
+		set_country_flag = SOV_dalian_territorial_decision
+	}
+}
+
+country_event = {
+	id = ssrplus.30
+	title = ssrplus.30.t
+	desc = ssrplus.30.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.30.a
+		
+		trigger = {
+			country_exists = SMN
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SMN = {
+			transfer_state = 609
+			
+			hidden_effect = {
+				add_state_core = 609
+			}
+		}
+		
+		set_country_flag = SOV_heibei_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.30.b
+		
+		trigger = {
+			country_exists = SCH
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SCH = {
+			transfer_state = 609
+			
+			hidden_effect = {
+				add_state_core = 609
+			}
+		}
+		
+		set_country_flag = SOV_heibei_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.30.b
+		
+		trigger = {
+			610 = {
+				is_owned_by = SOV
+			}
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SOV = {
+			transfer_state = 609
+			
+			hidden_effect = {
+				add_state_core = 609
+			}
+		}
+		
+		set_country_flag = SOV_heibei_territorial_decision
+	}
+}
+
+country_event = {
+	id = ssrplus.32
+	title = ssrplus.32.t
+	desc = ssrplus.32.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.32.a
+		
+		trigger = {
+			country_exists = SGD
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SGD = {
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			
+			hidden_effect = {
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+			}
+		}
+		
+		set_country_flag = SOV_bavaria_territorial_decision
+	}
+
+	option = {
+		name = ssrplus.32.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SBV = {
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			
+			hidden_effect = {
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+			}
+		}
+
+		set_autonomy = { target = SBV autonomy_state = autonomy_puppet }
+		
+		set_country_flag = SOV_bavaria_territorial_decision
+	}
+	option = {
+		name = ssrplus.32.c
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			country_exists = SAS
+		}
+		
+		SAS = {
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			
+			hidden_effect = {
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+			}
+
+			set_cosmetic_tag = SAS_SBV_union
+		}
+		
+		SOV = {
+			set_country_flag = SSR_territorial_bavaria
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.33
+	title = ssrplus.33.t
+	desc = ssrplus.33.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.33.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SIQ = {
+			transfer_state = 675
+			transfer_state = 291
+			transfer_state = 1010
+			transfer_state = 1011
+			
+			hidden_effect = {
+				add_state_core = 675
+				add_state_core = 291
+				add_state_core = 1010
+				add_state_core = 1011
+			}
+		}
+
+		set_autonomy = { target = SIQ autonomy_state = autonomy_puppet }
+
+		SOV = {
+			set_country_flag = SOV_iraq_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.34
+	title = ssrplus.34.t
+	desc = ssrplus.34.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.34.a
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			country_exists = SIQ
+		}
+		
+		SIQ = {
+			transfer_state = 677
+			transfer_state = 680
+			
+			hidden_effect = {
+				add_state_core = 677
+				add_state_core = 680
+			}
+
+			set_cosmetic_tag = SIQ_SSR_union
+		}
+		
+		set_country_flag = SIQ_SSR_union
+		set_country_flag = SOV_syria_territorial_decision
+	}
+	option = {
+		name = ssrplus.34.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SSR = {
+			transfer_state = 677
+			transfer_state = 680
+			
+			hidden_effect = {
+				add_state_core = 677
+				add_state_core = 680
+			}
+		}
+
+		set_autonomy = { target = SSR autonomy_state = autonomy_puppet }
+		
+		SOV = {
+			set_country_flag = SOV_syria_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.34.c
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = SKR
+		}
+
+		SSR = {
+			transfer_state = 677
+			
+			hidden_effect = {
+				add_state_core = 677
+			}
+		}
+
+		SKR = {
+			transfer_state = 680
+			
+			hidden_effect = {
+				add_state_core = 680
+			}
+		}
+
+		set_autonomy = { target = SSR autonomy_state = autonomy_puppet }
+		
+		SOV = {
+			set_country_flag = SOV_syria_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.35
+	title = ssrplus.35.t
+	desc = ssrplus.35.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.35.a
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			country_exists = SSR
+		}
+		
+		SSR = {
+			transfer_state = 554
+			
+			hidden_effect = {
+				add_state_core = 554
+			}
+		}
+		SOV = {
+			set_country_flag = SOV_damascus_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.35.b
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			SOV = {
+				has_country_flag = SIQ_SSR_union
+			}
+		}
+		
+		SIQ = {
+			transfer_state = 554
+			
+			hidden_effect = {
+				add_state_core = 554
+			}
+		}
+		SOV = {
+			set_country_flag = SOV_damascus_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.35.c
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			country_exists = SPI
+		}
+		
+		SPI = {
+			transfer_state = 554
+			
+			hidden_effect = {
+				add_state_core = 554
+			}
+		}
+		SOV = {
+			set_country_flag = SOV_damascus_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.36
+	title = ssrplus.36.t
+	desc = ssrplus.36.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.36.a
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			NOT = {
+				has_global_flag = SIQ_SSR_union
+			}
+		}
+		
+		SKR = {
+			transfer_state = 676
+			
+			hidden_effect = {
+				add_state_core = 676
+			}
+		}
+
+		set_autonomy = { target = SKR autonomy_state = autonomy_puppet }
+
+		add_victory_points = {
+			province = 3916
+			value = 5
+		}
+		
+		SOV = {
+			set_country_flag = SOV_kurdistan_territorial_decision
+		}
+	}
+	option = {
+		name = ssrplus.36.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SIQ = {
+			transfer_state = 676
+			
+			hidden_effect = {
+				add_state_core = 676
+			}
+		}
+		
+		SOV = {
+			set_country_flag = SOV_kurdistan_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.37
+	title = ssrplus.37.t
+	desc = ssrplus.37.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.37.a
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			country_exists = SSR
+		}
+		
+		SSR = {
+			transfer_state = 553
+			
+			hidden_effect = {
+				add_state_core = 553
+			}
+		}
+		SOV = {
+			set_country_flag = SOV_lebanon_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.37.b
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			SIQ = {
+				has_cosmetic_tag = SIQ_SSR_union
+			}
+		}
+		
+		SIQ = {
+			transfer_state = 553
+			
+			hidden_effect = {
+				add_state_core = 553
+			}
+		}
+		SOV = {
+			set_country_flag = SOV_lebanon_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.37.c
+		
+		ai_chance = {
+			base = 5
+		}
+
+		trigger = {
+			country_exists = SPI
+		}
+		
+		SPI = {
+			transfer_state = 553
+			
+			hidden_effect = {
+				add_state_core = 553
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_lebanon_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.37.e
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SLE = {
+			transfer_state = 553
+			
+			hidden_effect = {
+				add_state_core = 553
+			}
+		}
+
+		set_autonomy = { target = SLE autonomy_state = autonomy_puppet }
+
+		SOV = {
+			set_country_flag = SOV_lebanon_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.38
+	title = ssrplus.38.t
+	desc = ssrplus.38.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.38.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SPI = {
+			transfer_state = 454
+			transfer_state = 455
+			
+			hidden_effect = {
+				add_state_core = 454
+				add_state_core = 454
+			}
+		}
+
+		set_autonomy = { target = SPI autonomy_state = autonomy_puppet }
+
+		add_victory_points = {
+			province = 1086
+			value = 10
+		}
+
+		SOV = {
+			set_country_flag = SOV_palestine_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.39
+	title = ssrplus.39.t
+	desc = ssrplus.39.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.39.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SYE = {
+			transfer_state = 293
+			transfer_state = 659
+			transfer_state = 992
+			
+			hidden_effect = {
+				add_state_core = 293
+				add_state_core = 659
+				add_state_core = 992
+			}
+		}
+
+		set_autonomy = { target = SYE autonomy_state = autonomy_puppet }
+
+		SOV = {
+			set_country_flag = SOV_yemen_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.40
+	title = ssrplus.40.t
+	desc = ssrplus.40.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.40.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		SMA = {
+			transfer_state = 294
+			transfer_state = 1015
+			transfer_state = 1016
+			
+			hidden_effect = {
+				add_state_core = 294
+				add_state_core = 1015
+				add_state_core = 1016
+			}
+		}
+
+		set_autonomy = { target = SMA autonomy_state = autonomy_puppet }
+
+		SOV = {
+			set_country_flag = SOV_oman_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.41
+	title = ssrplus.41.t
+	desc = ssrplus.41.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.41.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = SPI
+		}
+
+		SPI = {
+			transfer_state = 453
+			
+			hidden_effect = {
+				add_state_core = 453
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_sinai_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus.42
+	title = ssrplus.42.t
+	desc = ssrplus.42.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.42.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = STR
+		}
+
+		STR = {
+			transfer_state = 350
+			transfer_state = 352
+			transfer_state = 353
+			transfer_state = 800
+			
+			hidden_effect = {
+				add_state_core = 350
+				add_state_core = 352
+				add_state_core = 353
+				add_state_core = 800
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_kurdistan_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.42.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = STR
+			country_exists = SKR
+		}
+
+		STR = {
+			transfer_state = 353
+			transfer_state = 800
+			
+			hidden_effect = {
+				add_state_core = 353
+				add_state_core = 800
+			}
+		}
+
+		SKR = {
+			transfer_state = 350
+			transfer_state = 352
+			
+			hidden_effect = {
+				add_state_core = 350
+				add_state_core = 352
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_kurdistan_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.42.c
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = SKR
+		}
+
+		SKR = {
+			transfer_state = 350
+			transfer_state = 352
+			transfer_state = 353
+			transfer_state = 800
+			
+			hidden_effect = {
+				add_state_core = 350
+				add_state_core = 352
+				add_state_core = 353
+				add_state_core = 800
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_kurdistan_territorial_decision
+		}
+	}
+}

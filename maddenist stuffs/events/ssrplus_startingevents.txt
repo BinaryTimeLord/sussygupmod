@@ -1,0 +1,101 @@
+add_namespace = ssrplus_starting_events
+
+country_event = {
+	id = ssrplus_starting_events.1
+	title = ssrplus_starting_events.1.t
+	desc = ssrplus_starting_events.1.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus_starting_events.1.a
+	}
+
+	option = {
+		name = ssrplus_starting_events.1.b
+		
+		country_event = ssrplus_starting_events.2
+	}
+}
+
+country_event = {
+	id = ssrplus_starting_events.2
+	title = ssrplus_starting_events.2.t
+	desc = ssrplus_starting_events.2.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus_starting_events.2.a
+
+		every_country = {
+			limit = {
+				OR = {
+					tag = SGR
+					tag = SAL
+					tag = SBL
+					tag = SYG
+					tag = SHG
+					tag = SRO
+					tag = SAS
+					tag = SCZ
+					tag = SPL
+					tag = SGD
+				}
+			}
+
+			set_cosmetic_tag = SSR_eastern_europe_red
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					tag = SLX
+					tag = SBG
+					tag = SNT
+					tag = SPT
+					tag = SSP
+					tag = SFR
+					tag = SSZ
+					tag = SIT
+				}
+			}
+
+			set_cosmetic_tag = SSR_western_europe_red
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					tag = SWL
+					tag = SEG
+					tag = SSC
+					tag = SIR
+				}
+			}
+
+			set_cosmetic_tag = SSR_britannia_red
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					tag = SFN
+					tag = SSW
+					tag = SNW
+					tag = SDN
+				}
+			}
+
+			set_cosmetic_tag = SSR_nordic_red
+		}
+	}
+
+	option = {
+		name = ssrplus_starting_events.2.b
+	}
+}

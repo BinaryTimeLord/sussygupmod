@@ -1,0 +1,66 @@
+ideas = {
+	country = {
+		SSR_our_new_government_idea = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			#picture = 
+			
+			modifier = {
+				stability_factor = -0.10
+				stability_weekly = 0.001
+				communism_drift = 0.05
+			}
+		}
+		
+		SSR_workers_rights_idea = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			#picture = 
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		SSR_military_buildup_idea = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			#picture = 
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+		
+		SSR_defense_against_the_west_idea = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			#picture = 
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+	}
+}

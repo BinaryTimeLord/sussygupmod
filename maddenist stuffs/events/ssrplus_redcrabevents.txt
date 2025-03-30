@@ -1,0 +1,36 @@
+add_namespace = ssrplus_redcrab
+
+country_event = {
+	id = ssrplus_redcrab.1
+	title = ssrplus_redcrab.1.t
+	desc = ssrplus_redcrab.1.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus_redcrab.1.a
+		
+		SRC = {
+			transfer_state = 711
+		}
+		
+		set_autonomy = { target = SRC autonomy_state = autonomy_puppet }
+		
+		SOV = { 
+		    set_country_flag = SOV_the_red_crab
+		}
+		
+		custom_effect_tooltip = ssrplus.redcrab.tooltip.2
+		
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_claim_by = SRC
+			}
+		}
+	}
+}

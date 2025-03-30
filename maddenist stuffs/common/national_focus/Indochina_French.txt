@@ -1,0 +1,12 @@
+focus_tree = {
+	id = indochina_frech #Initial focus tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			TAG = IND
+		}
+	}
+}

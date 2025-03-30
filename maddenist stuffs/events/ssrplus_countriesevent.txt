@@ -1,0 +1,899 @@
+add_namespace = ssrpluscountry
+
+country_event = {
+	id = ssrpluscountry.1
+	title = ssrpluscountry.1.t
+	desc = ssrpluscountry.1.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.1.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+
+			set_autonomy = { target = SPL autonomy_state = autonomy_puppet }
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 10
+					state = 87
+					state = 98
+					state = 97
+					state = 92
+					state = 88
+					state = 762
+					state = 86
+					state = 807
+					state = 90
+					state = 85
+				}
+			}
+
+			SPL = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+	}
+	option = {
+		name = ssrpluscountry.1.b
+		
+		trigger = { }
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+
+			set_autonomy = { target = SPL autonomy_state = autonomy_puppet }
+		}
+		
+		
+		ai_chance = {
+			base = 0
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 10
+					state = 87
+					state = 98
+					state = 97
+					state = 92
+					state = 88
+					state = 762
+					state = 86
+					state = 807
+					state = 90
+					state = 85
+				}
+			}
+
+			SPL = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+				
+				create_country_leader = {
+					name = "Maria Koszutska"
+					desc = "TEST"
+					picture = "gfx/leaders/SOV/Portrait_SPL_Maria_Koszutska.dds"
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = { }
+				}
+
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = ssrpluscountry.2
+	title = ssrpluscountry.2.t
+	desc = ssrpluscountry.2.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.2.a
+		
+		trigger = { }
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+
+			set_autonomy = { target = SEG autonomy_state = autonomy_puppet }
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 123
+					state = 338
+					state = 127
+					state = 126
+					state = 125
+					state = 122	
+					state = 128
+					state = 129
+					state = 130
+					state = 132
+					state = 131
+					state = 121	
+					state = 133
+					state = 120
+					state = 136
+					state = 931
+				}
+			}
+
+			SEG = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+		
+		SOV = { 
+		
+		    country_event = ssrpluscountry.3
+		
+		    set_country_flag = SOV_britain_decision_united
+		}
+	}
+	option = {
+		name = ssrpluscountry.2.b
+		
+		trigger = { }
+
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+
+			set_autonomy = { target = SEG autonomy_state = autonomy_puppet }
+			set_autonomy = { target = SSC autonomy_state = autonomy_puppet }
+			set_autonomy = { target = SWL autonomy_state = autonomy_puppet }
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 123
+					state = 338
+					state = 127
+					state = 126
+					state = 125
+					state = 128
+					state = 129
+					state = 130
+					state = 132
+					state = 131
+					state = 931
+				}
+			}
+
+			SEG = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+				
+				set_cosmetic_tag = SEG_england
+
+			}
+		}
+		
+		every_state = {
+			limit = {
+				OR = {
+					state = 121	
+					state = 133
+					state = 120
+					state = 136
+				}
+			}
+
+			SSC = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+		
+		every_state = {
+			limit = {
+				OR = {
+					state = 122
+				}
+			}
+
+			SWL = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+		
+		SOV = { 
+			country_event = ssrpluscountry.3
+		
+		    set_country_flag = SOV_britain_decision_seperation
+		}
+		
+	}
+}
+
+country_event = {
+	id = ssrpluscountry.3
+	title = ssrpluscountry.3.t
+	desc = ssrpluscountry.3.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.3.a
+		
+		trigger = { }
+		
+	}
+	option = {
+		name = ssrpluscountry.3.b
+		
+		trigger = { }
+
+		SEG = {
+			create_country_leader = {
+				name = "Palme Dutt"
+				desc = ""
+				picture = "gfx/leaders/ENG/Portrait_Britain_Palme_Dutt.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = { }
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = ssrpluscountry.4
+	title = ssrpluscountry.4.t
+	desc = ssrpluscountry.4.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.4.a
+		
+		trigger = { }
+		
+		SGD = {
+			add_stability = 0.1
+		
+			set_cosmetic_tag = SGD_german
+		
+			create_country_leader = {
+				name = "Wilhelm Pieck"
+				desc = ""
+				picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = { }
+			}
+		}
+		
+	}
+	option = {
+		name = ssrpluscountry.4.b
+		
+		trigger = { }
+
+		add_political_power = -50
+		
+	}
+}
+
+country_event = {
+	id = ssrpluscountry.5
+	title = ssrpluscountry.5.t
+	desc = ssrpluscountry.5.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.5.a
+		
+		trigger = { }
+		
+		SCH = {
+			add_stability = 0.1
+		
+			set_cosmetic_tag = SCH_mao
+		}	
+	}
+	
+	option = {
+		name = ssrpluscountry.5.b
+		
+		trigger = { }
+		
+		ai_chance = {
+			factor = 2
+		}
+		
+		SCH = {
+			add_stability = 0.1
+		
+			set_cosmetic_tag = SCH_ming
+			
+			create_country_leader = {
+				name = "Wang Ming"
+				desc = ""
+				picture = "gfx/leaders/SOV/portrait_prc_wang_ming.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = { }
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = ssrpluscountry.6
+	title = ssrpluscountry.6.t
+	desc = ssrpluscountry.6.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.6.a
+		
+		trigger = { }
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+
+			set_autonomy = { target = SRG autonomy_state = autonomy_puppet }
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 444
+					state = 445
+					state = 443
+					state = 442
+					state = 440
+					state = 787
+					state = 428
+					state = 433
+					state = 439
+					state = 438
+					state = 437
+					state = 429
+					state = 427
+					state = 425
+					state = 424
+					state = 423
+					state = 426
+					state = 435
+					state = 430
+					state = 288
+					state = 640
+					state = 436
+					state = 1012
+					state = 982
+					state = 983
+					state = 984
+					state = 986
+					state = 987
+					state = 988
+					state = 989
+					state = 990
+					state = 991
+					state = 993
+					state = 994
+					state = 995
+					state = 996
+					state = 997
+					state = 998
+					state = 999
+				}
+			}
+
+			SRG = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}	
+	}
+
+	option = {
+		name = ssrpluscountry.6.b
+		
+		trigger = { }
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+
+			set_autonomy = { target = SPK autonomy_state = autonomy_puppet }
+			set_autonomy = { target = SBN autonomy_state = autonomy_puppet }
+			set_autonomy = { target = SBR autonomy_state = autonomy_puppet }
+			set_autonomy = { target = SRG autonomy_state = autonomy_puppet }
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 428
+					state = 433
+					state = 439
+					state = 438
+					state = 437
+					state = 429
+					state = 427
+					state = 425
+					state = 424
+					state = 423
+					state = 426
+					state = 435
+					state = 436
+					state = 984
+					state = 982
+					state = 983
+					state = 989
+					state = 986
+					state = 991
+				}
+			}
+
+			SRG = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 444
+					state = 445
+					state = 443
+					state = 442
+					state = 440
+					state = 787
+					state = 988
+					state = 987
+					state = 1012
+				}
+			}
+
+			SPK = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 430
+				}
+			}
+
+			SBN = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 993
+					state = 994
+					state = 995
+					state = 996
+					state = 997
+					state = 998
+					state = 999
+				}
+			}
+
+			SBR = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}	
+	}
+
+	option = {
+		name = ssrpluscountry.6.c
+		
+		trigger = { }
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 433
+					state = 439
+					state = 438
+					state = 437
+					state = 429
+					state = 426
+					state = 435
+					state = 436
+					state = 989
+					state = 986
+					state = 984
+					state = 991
+				}
+			}
+
+			SRG = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 444
+					state = 445
+					state = 443
+					state = 442
+					state = 440
+					state = 787
+					state = 988
+					state = 987
+					state = 1012
+				}
+			}
+
+			SPK = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 430
+				}
+			}
+
+			SBN = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 423
+					state = 982
+				}
+			}
+
+			STN = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 424
+				}
+			}
+
+			SMD = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 427
+				}
+			}
+
+			SHY = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 425
+					state = 983
+				}
+			}
+
+			SMY = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 428
+				}
+			}
+
+			SGU = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 640
+					state = 288
+					state = 993
+					state = 994
+					state = 995
+					state = 996
+					state = 997
+					state = 998
+					state = 999
+				}
+			}
+
+			SBR = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 429
+				}
+			}
+
+			SBO = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
+
+		set_autonomy = { target = SPK autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SBN autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SBR autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SRG autonomy_state = autonomy_puppet }
+		set_autonomy = { target = STN autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SMY autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SMD autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SHY autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SGU autonomy_state = autonomy_puppet }
+		set_autonomy = { target = SBO autonomy_state = autonomy_puppet }	
+	}
+}
+
+country_event = {
+	id = ssrpluscountry.7
+	title = ssrpluscountry.7.t
+	desc = ssrpluscountry.7.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrpluscountry.7.a
+		
+		trigger = { 
+			country_exists = SCH
+		}
+		
+		every_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 612
+				}
+			}
+			transfer_state_to = SCH
+			add_core_of = SCH
+		}
+	}
+
+	option = {
+		name = ssrpluscountry.7.b
+		
+		trigger = { 
+			country_exists = SMO
+		}
+		
+		every_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 612
+				}
+			}
+			transfer_state_to = SMO
+			add_core_of = SMO
+		}
+	}
+
+	option = {
+		name = ssrpluscountry.7.c
+		
+		trigger = { 
+			owns_state = 610
+		}
+		
+		every_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 612
+				}
+			}
+			transfer_state_to = SOV
+		}
+	}
+
+	option = {
+		name = ssrpluscountry.7.e
+		
+		every_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 612
+				}
+			}
+			transfer_state_to = SIM
+			add_core_of = SIM
+		}
+
+		set_autonomy = { target = SIM autonomy_state = autonomy_puppet }
+	}
+}

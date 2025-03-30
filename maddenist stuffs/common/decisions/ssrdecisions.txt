@@ -1,0 +1,7993 @@
+SOV_ssrplus_categories_europe = {
+
+	SOV_ssrplus_poland = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SPL
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.1
+			    10 = { is_controlled_by_ROOT_or_subject = yes }
+				87 = { is_controlled_by_ROOT_or_subject = yes }
+				98 = { is_controlled_by_ROOT_or_subject = yes }
+				97 = { is_controlled_by_ROOT_or_subject = yes }
+				92 = { is_controlled_by_ROOT_or_subject = yes }
+				88 = { is_controlled_by_ROOT_or_subject = yes }
+				762 = { is_controlled_by_ROOT_or_subject = yes }
+				86 = { is_controlled_by_ROOT_or_subject = yes }
+				807 = { is_controlled_by_ROOT_or_subject = yes }
+				90 = { is_controlled_by_ROOT_or_subject = yes }
+				85 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrpluscountry.1
+		}
+		timeout_effect = {
+			country_event = ssrpluscountry.1
+		}
+	}
+	
+	SOV_ssrplus_hungary = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SHG
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.2
+			    43 = { is_controlled_by_ROOT_or_subject = yes }
+				155 = { is_controlled_by_ROOT_or_subject = yes }
+				154 = { is_controlled_by_ROOT_or_subject = yes }
+				974 = { is_controlled_by_ROOT_or_subject = yes }
+				973 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SHG autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 43
+						state = 154
+						state = 155
+						state = 973
+						state = 974
+				    }
+			    }
+
+			    SHG = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_czechoslovakia = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SCZ
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.3
+			    9 = { is_controlled_by_ROOT_or_subject = yes }
+				69 = { is_controlled_by_ROOT_or_subject = yes }
+				75 = { is_controlled_by_ROOT_or_subject = yes }
+				74 = { is_controlled_by_ROOT_or_subject = yes }
+				72 = { is_controlled_by_ROOT_or_subject = yes }
+				70 = { is_controlled_by_ROOT_or_subject = yes }
+				71 = { is_controlled_by_ROOT_or_subject = yes }
+				664 = { is_controlled_by_ROOT_or_subject = yes }
+				972 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SCZ autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 9
+						state = 69
+						state = 75
+						state = 74
+						state = 72
+						state = 70
+						state = 71
+						state = 664
+						state = 972
+				    }
+			    }
+
+			    SCZ = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_eastgermany = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SGD
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.4
+			    64 = { is_controlled_by_ROOT_or_subject = yes }
+				61 = { is_controlled_by_ROOT_or_subject = yes }
+				62 = { is_controlled_by_ROOT_or_subject = yes }
+				65 = { is_controlled_by_ROOT_or_subject = yes }
+				60 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SGD autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 64
+						state = 61
+						state = 62
+						state = 65
+						state = 60
+				    }
+			    }
+
+			    SGD = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_german_administration = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SGD
+			
+			SGD = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 365
+
+		visible = {
+			has_government = communism
+			country_exists = SGD
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+			country_event = ssrpluscountry.4
+		}
+	}
+	
+	SOV_ssrplus_unitegermany = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SGD
+			
+			SGD = {
+				is_puppet_of = SOV
+			}
+		
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.10
+
+				58 = { is_controlled_by_ROOT_or_subject = yes }
+				909 = { is_controlled_by_ROOT_or_subject = yes }
+				59 = { is_controlled_by_ROOT_or_subject = yes }
+				56 = { is_controlled_by_ROOT_or_subject = yes }
+				57 = { is_controlled_by_ROOT_or_subject = yes }
+				55 = { is_controlled_by_ROOT_or_subject = yes }
+				51 = { is_controlled_by_ROOT_or_subject = yes }
+				42 = { is_controlled_by_ROOT_or_subject = yes }
+				53 = { is_controlled_by_ROOT_or_subject = yes }
+				978 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			country_exists = SGD
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 58
+						state = 909
+						state = 59
+						state = 56
+						state = 57
+						state = 55
+						state = 51
+						state = 42
+						state = 50
+						state = 978
+				    }
+			    }
+
+			    SGD = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_unitegermany_territorial_decision
+			}
+		}
+	}
+	
+	SOV_ssrplus_romania = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SRO
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.5
+			    46 = { is_controlled_by_ROOT_or_subject = yes }
+				81 = { is_controlled_by_ROOT_or_subject = yes }
+				79 = { is_controlled_by_ROOT_or_subject = yes }
+				971 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SRO autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 46
+						state = 81
+						state = 79
+						state = 971
+				    }
+			    }
+
+			    SRO = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+
+    SOV_ssrplus_bulgaria = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SBL
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.6
+			    48 = { is_controlled_by_ROOT_or_subject = yes }
+				212 = { is_controlled_by_ROOT_or_subject = yes }
+				801 = { is_controlled_by_ROOT_or_subject = yes }
+				211 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SBL autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 48
+						state = 212
+						state = 801
+						state = 211
+				    }
+			    }
+
+			    SBL = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_greece = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SGR
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.8
+			    182 = { is_controlled_by_ROOT_or_subject = yes }
+				186 = { is_controlled_by_ROOT_or_subject = yes }
+				47 = { is_controlled_by_ROOT_or_subject = yes }
+				185 = { is_controlled_by_ROOT_or_subject = yes }
+				731 = { is_controlled_by_ROOT_or_subject = yes }
+				184 = { is_controlled_by_ROOT_or_subject = yes }
+				187 = { is_controlled_by_ROOT_or_subject = yes }
+				
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SGR autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 182
+						state = 186
+						state = 47
+						state = 185
+						state = 731
+						state = 184
+						state = 187
+				    }
+			    }
+
+			    SGR = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_albania = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SAL
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.9
+			    44 = { is_controlled_by_ROOT_or_subject = yes }
+				934 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SAL autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 44
+						state = 934
+				    }
+			    }
+
+			    SAL = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_yugoslavia = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SYG
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.11
+				102 = { is_controlled_by_ROOT_or_subject = yes }
+				853 = { is_controlled_by_ROOT_or_subject = yes }
+				103 = { is_controlled_by_ROOT_or_subject = yes }
+				109 = { is_controlled_by_ROOT_or_subject = yes }
+				104 = { is_controlled_by_ROOT_or_subject = yes }
+				804 = { is_controlled_by_ROOT_or_subject = yes }
+				105 = { is_controlled_by_ROOT_or_subject = yes }
+				45 = { is_controlled_by_ROOT_or_subject = yes }
+				764 = { is_controlled_by_ROOT_or_subject = yes }
+				107 = { is_controlled_by_ROOT_or_subject = yes }
+				108 = { is_controlled_by_ROOT_or_subject = yes }
+				802 = { is_controlled_by_ROOT_or_subject = yes }
+				803 = { is_controlled_by_ROOT_or_subject = yes }
+				106 = { is_controlled_by_ROOT_or_subject = yes }
+				970 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SYG autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 102
+						state = 853
+						state = 103
+						state = 109
+						state = 104
+						state = 804
+						state = 105
+						state = 45
+						state = 764
+						state = 107
+						state = 108
+						state = 802
+						state = 803
+						state = 106
+						state = 970
+				    }
+			    }
+
+			    SYG = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_finland = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SFN
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.7
+				
+				111 = { is_controlled_by_ROOT_or_subject = yes }
+				149 = { is_controlled_by_ROOT_or_subject = yes }
+				150 = { is_controlled_by_ROOT_or_subject = yes }
+				148 = { is_controlled_by_ROOT_or_subject = yes }
+				145 = { is_controlled_by_ROOT_or_subject = yes }
+				
+				926 = { is_controlled_by_ROOT_or_subject = yes }
+				927 = { is_controlled_by_ROOT_or_subject = yes }
+				930 = { is_controlled_by_ROOT_or_subject = yes }
+				928 = { is_controlled_by_ROOT_or_subject = yes }
+				929 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SFN autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 111
+						state = 149
+						state = 150
+						state = 148
+						state = 145
+						
+						state = 926
+						state = 927
+						state = 930
+						state = 928
+						state = 929
+				    }
+			    }
+
+			    SFN = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_sweden = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SSW
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.12
+			    138 = { is_controlled_by_ROOT_or_subject = yes }
+				139 = { is_controlled_by_ROOT_or_subject = yes }
+				140 = { is_controlled_by_ROOT_or_subject = yes }
+				141 = { is_controlled_by_ROOT_or_subject = yes }
+				38 = { is_controlled_by_ROOT_or_subject = yes }
+				666 = { is_controlled_by_ROOT_or_subject = yes }
+				124 = { is_controlled_by_ROOT_or_subject = yes }
+				
+				918 = { is_controlled_by_ROOT_or_subject = yes }
+				917 = { is_controlled_by_ROOT_or_subject = yes }
+				916 = { is_controlled_by_ROOT_or_subject = yes }
+				919 = { is_controlled_by_ROOT_or_subject = yes }
+				915 = { is_controlled_by_ROOT_or_subject = yes }
+				913 = { is_controlled_by_ROOT_or_subject = yes }
+			
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SSW autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 138
+						state = 139
+						state = 140
+						state = 141
+						state = 38
+						state = 666
+						state = 124
+						
+						state = 918
+						state = 917
+						state = 916
+						state = 919
+						state = 915
+						state = 913
+				    }
+			    }
+
+			    SSW = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_norway = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SNW
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.13
+			    110 = { is_controlled_by_ROOT_or_subject = yes }
+				142 = { is_controlled_by_ROOT_or_subject = yes }
+				143 = { is_controlled_by_ROOT_or_subject = yes }
+				144 = { is_controlled_by_ROOT_or_subject = yes }
+				
+				925 = { is_controlled_by_ROOT_or_subject = yes }
+				924 = { is_controlled_by_ROOT_or_subject = yes }
+				923 = { is_controlled_by_ROOT_or_subject = yes }
+				920 = { is_controlled_by_ROOT_or_subject = yes }
+				921 = { is_controlled_by_ROOT_or_subject = yes }
+				922 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SNW autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 110
+						state = 142
+						state = 143
+						state = 144
+						
+						state = 925
+						state = 924
+						state = 923
+						state = 920
+						state = 921
+						state = 922
+				    }
+			    }
+
+			    SNW = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_denmark = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SDN
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.14
+			    99 = { is_controlled_by_ROOT_or_subject = yes }
+				37 = { is_controlled_by_ROOT_or_subject = yes }
+				912 = { is_controlled_by_ROOT_or_subject = yes }
+				911 = { is_controlled_by_ROOT_or_subject = yes }
+				910 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SDN autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 99
+						state = 37
+						state = 912
+						state = 911
+						state = 910
+				    }
+			    }
+
+			    SDN = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_austria = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SAS
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.15
+			    4 = { is_controlled_by_ROOT_or_subject = yes }
+				975 = { is_controlled_by_ROOT_or_subject = yes } 
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SAS autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 4
+						state = 975
+				    }
+			    }
+
+			    SAS = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+
+	SOV_ssrplus_uniteaustria = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.44
+			    4 = { is_controlled_by_ROOT_or_subject = yes }
+				975 = { is_controlled_by_ROOT_or_subject = yes } 
+				976 = { is_controlled_by_ROOT_or_subject = yes }
+				152 = { is_controlled_by_ROOT_or_subject = yes }
+				153 = { is_controlled_by_ROOT_or_subject = yes }
+				848 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			country_exists = SAS
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 4
+						state = 975
+						state = 976
+						state = 152
+						state = 153
+						state = 848
+				    }
+			    }
+
+			    SAS = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_netherlands = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SNT
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.16
+			    36 = { is_controlled_by_ROOT_or_subject = yes }
+				35 = { is_controlled_by_ROOT_or_subject = yes }
+				7 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SNT autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 36
+						state = 35
+						state = 7
+				    }
+			    }
+
+			    SNT = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_belgium = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SBG
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.18
+			    6 = { is_controlled_by_ROOT_or_subject = yes }
+				34 = { is_controlled_by_ROOT_or_subject = yes }
+				977 = { is_controlled_by_ROOT_or_subject = yes }
+				980 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SBG autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 6
+						state = 34
+						state = 977
+						state = 980
+				    }
+			    }
+
+			    SBG = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_luxembourg = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SLX
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.20
+			    8 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SLX autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 8
+				    }
+			    }
+
+			    SLX = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_france = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SFR
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.19
+			    14 = { is_controlled_by_ROOT_or_subject = yes }
+				30 = { is_controlled_by_ROOT_or_subject = yes }
+				15 = { is_controlled_by_ROOT_or_subject = yes }
+				785 = { is_controlled_by_ROOT_or_subject = yes }
+				29 = { is_controlled_by_ROOT_or_subject = yes }
+				16 = { is_controlled_by_ROOT_or_subject = yes }
+				24 = { is_controlled_by_ROOT_or_subject = yes }
+				27 = { is_controlled_by_ROOT_or_subject = yes }
+				18 = { is_controlled_by_ROOT_or_subject = yes }
+				23 = { is_controlled_by_ROOT_or_subject = yes }
+				33 = { is_controlled_by_ROOT_or_subject = yes }
+				17 = { is_controlled_by_ROOT_or_subject = yes }
+				20 = { is_controlled_by_ROOT_or_subject = yes }
+				26 = { is_controlled_by_ROOT_or_subject = yes }
+				25 = { is_controlled_by_ROOT_or_subject = yes }
+				19 = { is_controlled_by_ROOT_or_subject = yes }
+				806 = { is_controlled_by_ROOT_or_subject = yes }
+				31 = { is_controlled_by_ROOT_or_subject = yes }
+				22 = { is_controlled_by_ROOT_or_subject = yes }
+				32 = { is_controlled_by_ROOT_or_subject = yes }
+				21 = { is_controlled_by_ROOT_or_subject = yes }
+				851 = { is_controlled_by_ROOT_or_subject = yes }
+				
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SFR autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 14
+						state = 30
+						state = 15
+						state = 785
+						state = 29
+						state = 16
+						state = 24
+						state = 27
+						state = 18
+						state = 23
+						state = 33
+						state = 17
+						state = 20
+						state = 26
+						state = 25
+						state = 19
+						state = 806
+						state = 31
+						state = 22
+						state = 32
+						state = 21
+						state = 851
+				    }
+			    }
+
+			    SFR = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_italy = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SIT
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.17
+			    158 = { is_controlled_by_ROOT_or_subject = yes }
+				159 = { is_controlled_by_ROOT_or_subject = yes }
+				161 = { is_controlled_by_ROOT_or_subject = yes }
+				160 = { is_controlled_by_ROOT_or_subject = yes }
+				162 = { is_controlled_by_ROOT_or_subject = yes }
+				157 = { is_controlled_by_ROOT_or_subject = yes }
+				2 = { is_controlled_by_ROOT_or_subject = yes }
+				117 = { is_controlled_by_ROOT_or_subject = yes }
+				849 = { is_controlled_by_ROOT_or_subject = yes }
+				156 = { is_controlled_by_ROOT_or_subject = yes }
+				115 = { is_controlled_by_ROOT_or_subject = yes }
+				114 = { is_controlled_by_ROOT_or_subject = yes }
+				
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SIT autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+					    state = 158
+						state = 159
+						state = 161
+						state = 160
+						state = 162
+						state = 157
+						state = 2
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+						state = 114
+				    }
+			    }
+
+			    SIT = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_switzerland = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SSZ
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.22
+			    845 = { is_controlled_by_ROOT_or_subject = yes }
+				3 = { is_controlled_by_ROOT_or_subject = yes }
+				847 = { is_controlled_by_ROOT_or_subject = yes }
+				151 = { is_controlled_by_ROOT_or_subject = yes }
+				846 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SSZ autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 845
+						state = 3
+						state = 847
+						state = 151
+						state = 846
+				    }
+			    }
+
+			    SSZ = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_britain = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			OR = {
+				NOT = {
+					country_exists = SEG
+				}
+				
+				NOT = {
+					country_exists = SEG
+					country_exists = SSC
+					country_exists = SWL
+				}
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.24
+			    123 = { is_controlled_by_ROOT_or_subject = yes }
+				338 = { is_controlled_by_ROOT_or_subject = yes }
+				127 = { is_controlled_by_ROOT_or_subject = yes }
+				126 = { is_controlled_by_ROOT_or_subject = yes }
+				125 = { is_controlled_by_ROOT_or_subject = yes }
+				122 = { is_controlled_by_ROOT_or_subject = yes }	
+				128 = { is_controlled_by_ROOT_or_subject = yes }
+				129 = { is_controlled_by_ROOT_or_subject = yes }
+				130 = { is_controlled_by_ROOT_or_subject = yes }
+				132 = { is_controlled_by_ROOT_or_subject = yes }
+				131 = { is_controlled_by_ROOT_or_subject = yes }
+				121 = { is_controlled_by_ROOT_or_subject = yes }	
+				133 = { is_controlled_by_ROOT_or_subject = yes }
+				120 = { is_controlled_by_ROOT_or_subject = yes }
+				136 = { is_controlled_by_ROOT_or_subject = yes }
+				931 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrpluscountry.2
+		}
+		timeout_effect = {
+			country_event = ssrpluscountry.2
+		}
+	}
+	
+	SOV_ssrplus_ireland = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SIR
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.21
+			    134 = { is_controlled_by_ROOT_or_subject = yes }
+				113 = { is_controlled_by_ROOT_or_subject = yes }
+				135 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SIR autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 134
+						state = 113
+						state = 135
+				    }
+			    }
+
+			    SIR = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_spain = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SSP
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.25
+				169 = { is_controlled_by_ROOT_or_subject = yes }
+				173 = { is_controlled_by_ROOT_or_subject = yes }
+				789 = { is_controlled_by_ROOT_or_subject = yes }
+				170 = { is_controlled_by_ROOT_or_subject = yes }
+				175 = { is_controlled_by_ROOT_or_subject = yes }
+				168 = { is_controlled_by_ROOT_or_subject = yes }
+				788 = { is_controlled_by_ROOT_or_subject = yes }	
+				41 = { is_controlled_by_ROOT_or_subject = yes }
+				793 = { is_controlled_by_ROOT_or_subject = yes }
+				167 = { is_controlled_by_ROOT_or_subject = yes }
+				171 = { is_controlled_by_ROOT_or_subject = yes }
+				174 = { is_controlled_by_ROOT_or_subject = yes }
+				791 = { is_controlled_by_ROOT_or_subject = yes }
+				790 = { is_controlled_by_ROOT_or_subject = yes }	
+				176 = { is_controlled_by_ROOT_or_subject = yes }
+				792 = { is_controlled_by_ROOT_or_subject = yes }
+				172 = { is_controlled_by_ROOT_or_subject = yes }
+				166 = { is_controlled_by_ROOT_or_subject = yes }
+				794 = { is_controlled_by_ROOT_or_subject = yes }
+				165 = { is_controlled_by_ROOT_or_subject = yes }
+				177 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SSP autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 169
+						state = 173
+						state = 789
+						state = 170
+						state = 175
+						state = 168
+						state = 788	
+						state = 41
+						state = 793
+						state = 167
+						state = 171
+						state = 174
+						state = 791
+						state = 790	
+						state = 176
+						state = 792
+						state = 172
+						state = 166
+						state = 794
+						state = 165
+						state = 177
+				    }
+			    }
+
+			    SSP = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_portugal = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SPT
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.21
+				180 = { is_controlled_by_ROOT_or_subject = yes }
+				112 = { is_controlled_by_ROOT_or_subject = yes }
+				181 = { is_controlled_by_ROOT_or_subject = yes }
+				795 = { is_controlled_by_ROOT_or_subject = yes }
+				179 = { is_controlled_by_ROOT_or_subject = yes }
+				698 = { is_controlled_by_ROOT_or_subject = yes }
+				697 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SPT autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 180
+						state = 112
+						state = 181
+						state = 795
+						state = 179
+						state = 698
+						state = 697
+				    }
+			    }
+
+			    SPT = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+
+	
+	SOV_ssrplus_territorial_westprussia = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.1
+			    63 = { is_controlled_by_ROOT_or_subject = yes }
+				68 = { is_controlled_by_ROOT_or_subject = yes }
+				66 = { is_controlled_by_ROOT_or_subject = yes }
+				67 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SPL
+				country_exists = SGD
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.1
+		}
+		timeout_effect = {
+			country_event = ssrplus.1
+		}
+	}
+	
+	SOV_ssrplus_territorial_eastprussia = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.2
+			    763 = { is_controlled_by_ROOT_or_subject = yes }
+				5 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = SPL
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.2
+		}
+		timeout_effect = {
+			country_event = ssrplus.2
+		}
+	}
+	
+	SOV_ssrplus_territorial_transylvania = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.3
+			    76 = { is_controlled_by_ROOT_or_subject = yes }
+				84 = { is_controlled_by_ROOT_or_subject = yes }
+				83 = { is_controlled_by_ROOT_or_subject = yes }
+				82 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = SRO
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.3
+		}
+		timeout_effect = {
+			country_event = ssrplus.3
+		}
+	}
+	
+	SOV_ssrplus_territorial_dobrudja = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.4
+			    77 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SRO
+				country_exists = SBL
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.4
+		}
+		timeout_effect = {
+			country_event = ssrplus.4
+		}
+	}
+	
+	SOV_ssrplus_territorial_northernepirus = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.5
+			    805 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SAL
+				country_exists = SGR
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.5
+		}
+		timeout_effect = {
+			country_event = ssrplus.5
+		}
+	}
+	
+	SOV_ssrplus_territorial_istria = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.7
+			    736 = { is_controlled_by_ROOT_or_subject = yes }
+				852 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SYG
+				country_exists = SIT
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.6
+		}
+		timeout_effect = {
+			country_event = ssrplus.6
+		}
+	}
+	
+	SOV_ssrplus_territorial_southalps = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.8
+			    39 = { is_controlled_by_ROOT_or_subject = yes }
+				850 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SAS
+				country_exists = SIT
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.7
+		}
+		timeout_effect = {
+			country_event = ssrplus.7
+		}
+	}
+	
+	SOV_ssrplus_territorial_alsacelorraine = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.10
+			    28 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SFR
+				country_exists = SGD
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.8
+		}
+		timeout_effect = {
+			country_event = ssrplus.8
+		}
+	}
+	
+	SOV_ssrplus_territorial_savoy = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.11
+			    735 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SFR
+				country_exists = SIT
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.9
+		}
+		timeout_effect = {
+			country_event = ssrplus.9
+		}
+	}
+	
+	SOV_ssrplus_territorial_northernireland = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.12
+			    119 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = SIR
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.10
+		}
+		timeout_effect = {
+			country_event = ssrplus.10
+		}
+	}
+	
+	SOV_ssrplus_territorial_gibraltar = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.13
+			    118 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = SSP
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.11
+		}
+		timeout_effect = {
+			country_event = ssrplus.11
+		}
+	}
+	
+	SOV_ssrplus_territorial_istanbul = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.16
+			    797 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = STR
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.14
+		}
+		timeout_effect = {
+			country_event = ssrplus.14
+		}
+	}
+	
+	SOV_ssrplus_territorial_rhodes = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.14
+			    164 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SGR
+				country_exists = STR
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.12
+		}
+		timeout_effect = {
+			country_event = ssrplus.12
+		}
+	}
+	
+	SOV_ssrplus_territorial_malta = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.17
+			    116 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = SIT
+			
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.15
+		}
+		timeout_effect = {
+			country_event = ssrplus.15
+		}
+	}
+
+	SOV_ssrplus_territorial_bavaria = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.47
+			    52 = { is_controlled_by_ROOT_or_subject = yes }
+				53 = { is_controlled_by_ROOT_or_subject = yes }
+				54 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			
+			country_exists = SGD
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.32
+		}
+		timeout_effect = {
+			country_event = ssrplus.32
+		}
+	}
+}
+
+SOV_ssrplus_categories_asia = {
+	
+	SOV_ssrplus_turkey = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = STR
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.26
+				341 = { is_controlled_by_ROOT_or_subject = yes }
+				340 = { is_controlled_by_ROOT_or_subject = yes }
+				347 = { is_controlled_by_ROOT_or_subject = yes }
+				49 = { is_controlled_by_ROOT_or_subject = yes }
+				343 = { is_controlled_by_ROOT_or_subject = yes }
+				339 = { is_controlled_by_ROOT_or_subject = yes }
+				342 = { is_controlled_by_ROOT_or_subject = yes }
+				346 = { is_controlled_by_ROOT_or_subject = yes }
+				345 = { is_controlled_by_ROOT_or_subject = yes }
+				356 = { is_controlled_by_ROOT_or_subject = yes }
+				798 = { is_controlled_by_ROOT_or_subject = yes }
+				348 = { is_controlled_by_ROOT_or_subject = yes }
+				344 = { is_controlled_by_ROOT_or_subject = yes }
+				355 = { is_controlled_by_ROOT_or_subject = yes }
+				349 = { is_controlled_by_ROOT_or_subject = yes }
+				354 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		    if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = STR autonomy_state = autonomy_puppet }
+			}
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 341
+						state = 340
+						state = 347
+						state = 49
+						state = 343
+						state = 339
+						state = 342
+						state = 346
+						state = 345
+						state = 356
+						state = 798
+						state = 348
+						state = 344
+						state = 355
+						state = 349
+						state = 354
+				    }
+			    }
+
+			    STR = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+		    }
+		}
+	}
+	
+	SOV_ssrplus_ceylon = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SSL
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.27
+				422 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SSL autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 422
+					}
+				}
+
+				SSL = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_nepal = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SNL
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.28
+				323 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SNL autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 323
+					}
+				}
+
+				SNL = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_tibet = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = STI
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.29
+				322 = { is_controlled_by_ROOT_or_subject = yes }
+				757 = { is_controlled_by_ROOT_or_subject = yes }
+				758 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = STI autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 322
+						state = 757
+						state = 758
+					}
+				}
+
+				STI = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_thailand = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = STH
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.30
+				289 = { is_controlled_by_ROOT_or_subject = yes }
+				868 = { is_controlled_by_ROOT_or_subject = yes }
+				869 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = STH autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 289
+						state = 868
+						state = 869
+					}
+				}
+
+				STH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_malay = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SML
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.33
+				336 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SML autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 336
+					}
+				}
+
+				SML = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_north_japan = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SJA
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.31
+				536 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SJA autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 536
+					}
+				}
+
+				SJA = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_unitejapan = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			country_exists = SJA
+			
+			SJA = {
+				is_puppet_of = SOV
+			}
+		
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.32
+
+				528 = { is_controlled_by_ROOT_or_subject = yes }
+				530 = { is_controlled_by_ROOT_or_subject = yes }
+				529 = { is_controlled_by_ROOT_or_subject = yes }
+				531 = { is_controlled_by_ROOT_or_subject = yes }
+				532 = { is_controlled_by_ROOT_or_subject = yes }
+				535 = { is_controlled_by_ROOT_or_subject = yes }
+				534 = { is_controlled_by_ROOT_or_subject = yes }
+				282 = { is_controlled_by_ROOT_or_subject = yes }
+				533 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			country_exists = SJA
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+
+			every_state = {
+			    limit = {
+				    OR = {
+						state = 528
+						state = 530
+						state = 529
+						state = 531
+						state = 532
+						state = 535
+						state = 534
+						state = 282
+						state = 533
+				    }
+			    }
+
+			    SJA = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+						set_cosmetic_tag = SJA_united
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_unitejapan_territorial_decision
+			}
+		}
+	}
+	
+	SOV_ssrplus_a_new_SJA_capital = {
+
+		icon = GFX_decision_SOV_place_hq
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SJA
+			
+			SJA = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			country_exists = SJA
+			has_country_flag = SOV_unitejapan_territorial_decision
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+
+			country_event = ssrplus.17
+		}
+	}
+	
+	SOV_ssrplus_vietnam = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SVT
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.34
+				671 = { is_controlled_by_ROOT_or_subject = yes }
+				286 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SVT autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 671
+						state = 286
+					}
+				}
+
+				SVT = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+		
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_china = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SCH
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.35
+				622 = { is_controlled_by_ROOT_or_subject = yes }
+				747 = { is_controlled_by_ROOT_or_subject = yes }
+				325 = { is_controlled_by_ROOT_or_subject = yes }
+				599 = { is_controlled_by_ROOT_or_subject = yes }
+				594 = { is_controlled_by_ROOT_or_subject = yes }
+				592 = { is_controlled_by_ROOT_or_subject = yes }
+				591 = { is_controlled_by_ROOT_or_subject = yes }
+				593 = { is_controlled_by_ROOT_or_subject = yes }
+				752 = { is_controlled_by_ROOT_or_subject = yes }
+				751 = { is_controlled_by_ROOT_or_subject = yes }
+				603 = { is_controlled_by_ROOT_or_subject = yes }
+				602 = { is_controlled_by_ROOT_or_subject = yes }
+				600 = { is_controlled_by_ROOT_or_subject = yes }
+				595 = { is_controlled_by_ROOT_or_subject = yes }
+				755 = { is_controlled_by_ROOT_or_subject = yes }
+				754 = { is_controlled_by_ROOT_or_subject = yes }
+				753 = { is_controlled_by_ROOT_or_subject = yes }
+				283 = { is_controlled_by_ROOT_or_subject = yes }
+				750 = { is_controlled_by_ROOT_or_subject = yes }
+				748 = { is_controlled_by_ROOT_or_subject = yes }
+				605 = { is_controlled_by_ROOT_or_subject = yes }
+				744 = { is_controlled_by_ROOT_or_subject = yes }
+				596 = { is_controlled_by_ROOT_or_subject = yes }
+				749 = { is_controlled_by_ROOT_or_subject = yes }
+				620 = { is_controlled_by_ROOT_or_subject = yes }
+				613 = { is_controlled_by_ROOT_or_subject = yes }
+				606 = { is_controlled_by_ROOT_or_subject = yes }
+				607 = { is_controlled_by_ROOT_or_subject = yes }
+				598 = { is_controlled_by_ROOT_or_subject = yes }
+				597 = { is_controlled_by_ROOT_or_subject = yes }
+				614 = { is_controlled_by_ROOT_or_subject = yes }
+				615 = { is_controlled_by_ROOT_or_subject = yes }
+				608 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SCH autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 622
+						state = 747
+						state = 325
+						state = 599
+						state = 594
+						state = 592
+						state = 591
+						state = 593
+						state = 752
+						state = 751
+						state = 603
+						state = 602
+						state = 600
+						state = 595
+						state = 755
+						state = 754
+						state = 753
+						state = 283
+						state = 750
+						state = 748
+						state = 605
+						state = 744
+						state = 596
+						state = 749
+						state = 620
+						state = 613
+						state = 606
+						state = 607
+						state = 598
+						state = 597
+						state = 614
+						state = 615
+						state = 608
+					}
+				}
+
+				SCH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+			}
+			country_event = ssrpluscountry.5
+		}
+	}
+	
+	SOV_ssrplus_afghanistan = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SFG
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.37
+				415 = { is_controlled_by_ROOT_or_subject = yes }
+				267 = { is_controlled_by_ROOT_or_subject = yes }
+				1005 = { is_controlled_by_ROOT_or_subject = yes }
+				1006 = { is_controlled_by_ROOT_or_subject = yes }
+				1007 = { is_controlled_by_ROOT_or_subject = yes }
+				1008 = { is_controlled_by_ROOT_or_subject = yes }
+				1009 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SFG autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 415
+						state = 267
+						state = 1005
+						state = 1006
+						state = 1007
+						state = 1008
+						state = 1009
+					}
+				}
+
+				SFG = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_east_turkestan = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SET
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.38
+				619 = { is_controlled_by_ROOT_or_subject = yes }
+				287 = { is_controlled_by_ROOT_or_subject = yes }
+				759 = { is_controlled_by_ROOT_or_subject = yes }
+				760 = { is_controlled_by_ROOT_or_subject = yes }
+				618 = { is_controlled_by_ROOT_or_subject = yes }
+				617 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SET autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 619
+						state = 287
+						state = 759
+						state = 760
+						state = 618
+						state = 617
+					}
+				}
+
+				SET = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_mongolia = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SMO
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.39
+				818 = { is_controlled_by_ROOT_or_subject = yes }
+				820 = { is_controlled_by_ROOT_or_subject = yes }
+				330 = { is_controlled_by_ROOT_or_subject = yes }
+				817 = { is_controlled_by_ROOT_or_subject = yes }
+				819 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SMO autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 818
+						state = 820
+						state = 330
+						state = 817
+						state = 819
+					}
+				}
+
+				SMO = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+			}
+		}
+	}
+	
+	SOV_ssrplus_iran = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SPE
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.40
+				419 = { is_controlled_by_ROOT_or_subject = yes }
+				420 = { is_controlled_by_ROOT_or_subject = yes }
+				266 = { is_controlled_by_ROOT_or_subject = yes }
+				416 = { is_controlled_by_ROOT_or_subject = yes }
+				418 = { is_controlled_by_ROOT_or_subject = yes }
+				410 = { is_controlled_by_ROOT_or_subject = yes }
+				414 = { is_controlled_by_ROOT_or_subject = yes }
+				417 = { is_controlled_by_ROOT_or_subject = yes }
+				411 = { is_controlled_by_ROOT_or_subject = yes }
+				418 = { is_controlled_by_ROOT_or_subject = yes }
+				413 = { is_controlled_by_ROOT_or_subject = yes }
+				412 = { is_controlled_by_ROOT_or_subject = yes }
+				421 = { is_controlled_by_ROOT_or_subject = yes }
+				1000 = { is_controlled_by_ROOT_or_subject = yes }
+				1001 = { is_controlled_by_ROOT_or_subject = yes }
+				1002 = { is_controlled_by_ROOT_or_subject = yes }
+				1003 = { is_controlled_by_ROOT_or_subject = yes }
+				1004 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SPE autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 419
+						state = 420
+						state = 266
+						state = 416
+						state = 418
+						state = 410
+						state = 414
+						state = 417
+						state = 411
+						state = 418
+						state = 413
+						state = 412
+						state = 421
+						state = 1000
+						state = 1001
+						state = 1002
+						state = 1003
+						state = 1004
+					}
+				}
+
+				SPE = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+			}
+		}
+	}
+
+	SOV_ssrplus_raj = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SRG
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.41
+				288 = { is_controlled_by_ROOT_or_subject = yes }
+				640 = { is_controlled_by_ROOT_or_subject = yes }
+				434 = { is_controlled_by_ROOT_or_subject = yes }
+				430 = { is_controlled_by_ROOT_or_subject = yes }
+				432 = { is_controlled_by_ROOT_or_subject = yes }
+				431 = { is_controlled_by_ROOT_or_subject = yes }
+				435 = { is_controlled_by_ROOT_or_subject = yes }
+				426 = { is_controlled_by_ROOT_or_subject = yes }
+				436 = { is_controlled_by_ROOT_or_subject = yes }
+				438 = { is_controlled_by_ROOT_or_subject = yes }
+				439 = { is_controlled_by_ROOT_or_subject = yes }
+				441 = { is_controlled_by_ROOT_or_subject = yes }
+				433 = { is_controlled_by_ROOT_or_subject = yes }
+				428 = { is_controlled_by_ROOT_or_subject = yes }
+				437 = { is_controlled_by_ROOT_or_subject = yes }
+				429 = { is_controlled_by_ROOT_or_subject = yes }
+				425 = { is_controlled_by_ROOT_or_subject = yes }
+				424 = { is_controlled_by_ROOT_or_subject = yes }
+				423 = { is_controlled_by_ROOT_or_subject = yes }
+				444 = { is_controlled_by_ROOT_or_subject = yes }
+				443 = { is_controlled_by_ROOT_or_subject = yes }
+				445 = { is_controlled_by_ROOT_or_subject = yes }
+				440 = { is_controlled_by_ROOT_or_subject = yes }
+				442 = { is_controlled_by_ROOT_or_subject = yes }
+				787 = { is_controlled_by_ROOT_or_subject = yes }
+				427 = { is_controlled_by_ROOT_or_subject = yes }
+				972 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrpluscountry.6
+		}
+	}
+
+	SOV_ssrplus_DPRK = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SKO
+			}
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.tooltip.42
+				527 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SKO autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 527
+					}
+				}
+
+				SKO = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+			}
+		}
+	}
+
+	SOV_ssrplus_arabia = {
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			NOT = {
+				country_exists = SAB
+			}
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.tooltip.43
+				858 = { is_controlled_by_ROOT_or_subject = yes }
+				678 = { is_controlled_by_ROOT_or_subject = yes }
+				658 = { is_controlled_by_ROOT_or_subject = yes }
+				856 = { is_controlled_by_ROOT_or_subject = yes }
+				292 = { is_controlled_by_ROOT_or_subject = yes }
+				765 = { is_controlled_by_ROOT_or_subject = yes }
+				859 = { is_controlled_by_ROOT_or_subject = yes }
+				679 = { is_controlled_by_ROOT_or_subject = yes }
+				855 = { is_controlled_by_ROOT_or_subject = yes }
+				854 = { is_controlled_by_ROOT_or_subject = yes }
+				656 = { is_controlled_by_ROOT_or_subject = yes }
+				455 = { is_controlled_by_ROOT_or_subject = yes }
+				454 = { is_controlled_by_ROOT_or_subject = yes }
+				680 = { is_controlled_by_ROOT_or_subject = yes }
+				554 = { is_controlled_by_ROOT_or_subject = yes }
+				677 = { is_controlled_by_ROOT_or_subject = yes }
+				553 = { is_controlled_by_ROOT_or_subject = yes }
+				857 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				add_political_power = 25
+				add_stability = 0.01
+
+				set_autonomy = { target = SAB autonomy_state = autonomy_puppet }
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 858
+						state = 678
+						state = 658
+						state = 856
+						state = 292
+						state = 765
+						state = 859
+						state = 679
+						state = 855
+						state = 854
+						state = 857
+					}
+				}
+
+				SAB = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+			    }
+
+				SOV = {
+					set_country_flag = SSR_arabia
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_territorial_hatay = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.15
+			    799 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = STR
+			
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.13
+		}
+		timeout_effect = {
+			country_event = ssrplus.13
+		}
+	}
+	
+	SOV_ssrplus_territorial_kuril_islands = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.18
+			    555 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = SJA
+			
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.16
+		}
+		timeout_effect = {
+			country_event = ssrplus.16
+		}
+	}
+	
+	SOV_ssrplus_territorial_northern_malay = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.19
+			    724 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			country_exists = STH
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.18
+		}
+		timeout_effect = {
+			country_event = ssrplus.18
+		}
+	}
+	
+	SOV_ssrplus_territorial_west_indochina = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.20
+			    670 = { is_controlled_by_ROOT_or_subject = yes }
+				741 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			country_exists = SVT
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.19
+		}
+		timeout_effect = {
+			country_event = ssrplus.19
+		}
+	}
+	
+	SOV_ssrplus_territorial_greater_tibet = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.21
+			    601 = { is_controlled_by_ROOT_or_subject = yes }
+				604 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			country_exists = SCH
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.20
+		}
+		timeout_effect = {
+			country_event = ssrplus.20
+		}
+	}
+	
+	SOV_ssrplus_territorial_chinese_mongolia = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.22
+			    756 = { is_controlled_by_ROOT_or_subject = yes }
+				616 = { is_controlled_by_ROOT_or_subject = yes }
+				621 = { is_controlled_by_ROOT_or_subject = yes }
+				746 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			country_exists = SMO
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.21
+		}
+		timeout_effect = {
+			country_event = ssrplus.21
+		}
+	}
+
+	SOV_ssrplus_territorial_inner_mongolia = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.32
+			    611 = { is_controlled_by_ROOT_or_subject = yes }
+				612 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrpluscountry.7
+		}
+		timeout_effect = {
+			country_event = ssrpluscountry.7
+		}
+	}
+	
+	SOV_ssrplus_territorial_manchuria = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.23
+			    717 = { is_controlled_by_ROOT_or_subject = yes }
+				328 = { is_controlled_by_ROOT_or_subject = yes }
+				716 = { is_controlled_by_ROOT_or_subject = yes }
+				610 = { is_controlled_by_ROOT_or_subject = yes }
+				715 = { is_controlled_by_ROOT_or_subject = yes }
+				714 = { is_controlled_by_ROOT_or_subject = yes }
+				761 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.22
+		}
+		timeout_effect = {
+			country_event = ssrplus.22
+		}
+	}
+
+	SOV_ssrplus_territorial_kashmir = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.25
+			    441 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.24
+		}
+		timeout_effect = {
+			country_event = ssrplus.24
+		}
+	}
+
+	SOV_ssrplus_territorial_calcutta = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.26
+			    431 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.25
+		}
+		timeout_effect = {
+			country_event = ssrplus.25
+		}
+	}
+
+	SOV_ssrplus_territorial_assam = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.27
+			    432 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.26
+		}
+		timeout_effect = {
+			country_event = ssrplus.26
+		}
+	}
+
+	SOV_ssrplus_territorial_pradesh = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.46
+			    434 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.28
+		}
+		timeout_effect = {
+			country_event = ssrplus.28
+		}
+	}
+
+	SOV_ssrplus_territorial_port_arthur = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.29
+			    745 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.29
+		}
+		timeout_effect = {
+			country_event = ssrplus.29
+		}
+	}
+
+	SOV_ssrplus_territorial_east_hebei = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.30
+			    609 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.30
+		}
+		timeout_effect = {
+			country_event = ssrplus.30
+		}
+	}
+
+	SOV_ssrplus_territorial_iraq = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.48
+			    675 = { is_controlled_by_ROOT_or_subject = yes }
+				291 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.33
+		}
+		timeout_effect = {
+			country_event = ssrplus.33
+		}
+	}
+
+	SOV_ssrplus_territorial_syria = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.49
+			    680 = { is_controlled_by_ROOT_or_subject = yes }
+				677 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.34
+		}
+		timeout_effect = {
+			country_event = ssrplus.34
+		}
+	}
+
+	SOV_ssrplus_territorial_kurdistan = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.59
+			    350 = { is_controlled_by_ROOT_or_subject = yes }
+				352 = { is_controlled_by_ROOT_or_subject = yes }
+				353 = { is_controlled_by_ROOT_or_subject = yes }
+				800 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.42
+		}
+		timeout_effect = {
+			country_event = ssrplus.42
+		}
+	}
+
+	SOV_ssrplus_territorial_damascus = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.50
+			    554 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.35
+		}
+		timeout_effect = {
+			country_event = ssrplus.35
+		}
+	}
+
+	SOV_ssrplus_territorial_erbil = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.51
+			    676 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.36
+		}
+		timeout_effect = {
+			country_event = ssrplus.36
+		}
+	}
+
+	SOV_ssrplus_territorial_beirut = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.52
+			    553 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.37
+		}
+		timeout_effect = {
+			country_event = ssrplus.37
+		}
+	}
+
+	SOV_ssrplus_territorial_palestine = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.53
+			    454 = { is_controlled_by_ROOT_or_subject = yes }
+				455 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.38
+		}
+		timeout_effect = {
+			country_event = ssrplus.38
+		}
+	}
+
+	SOV_ssrplus_territorial_yemen = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.54
+			    293 = { is_controlled_by_ROOT_or_subject = yes }
+				659 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.39
+		}
+		timeout_effect = {
+			country_event = ssrplus.39
+		}
+	}
+
+	SOV_ssrplus_territorial_oman = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.55
+			    294 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.40
+		}
+		timeout_effect = {
+			country_event = ssrplus.40
+		}
+	}
+
+	SOV_ssrplus_territorial_sinai = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.56
+			    453 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.41
+		}
+		timeout_effect = {
+			country_event = ssrplus.41
+		}
+	}
+	
+	SOV_ssrplus_a_mysterious_figure_arrives = {
+
+		icon = GFX_decision_onmap_recruit_operative
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.redcrab.tooltip.1
+			    711 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			711 = { is_controlled_by_ROOT_or_subject = yes }
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus_redcrab.1
+		}
+		timeout_effect = {
+			country_event = ssrplus_redcrab.1
+		}
+	}
+	
+}
+
+SOV_ssrplus_categories_territorial_ceding = {
+
+	SOV_ssrplus_ceding_zara = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SYG
+			
+			SYG = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.6
+			    163 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 163
+				    }
+			    }
+
+			    SYG = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_zadar_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_ceding_corsica = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SFR
+			
+			SFR = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.9
+			    1 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 1
+				    }
+			    }
+
+			    SFR = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_corsica_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_ceding_qingdao = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SCH
+			
+			SCH = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.34
+			    743 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 743
+				    }
+			    }
+
+			    SCH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_qingdao_territorial_decision
+			}
+		}
+	}
+	
+	SOV_ssrplus_unite_korea = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SKO
+			
+			SKO = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.35
+			    525 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 525
+				    }
+			    }
+
+			    SKO = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_unite_korea_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_cede_taiwan = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SCH
+			
+			SCH = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.36
+			    524 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 524
+				    }
+			    }
+
+			    SCH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_taiwan_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_cede_hong_kong = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SCH
+			
+			SCH = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.37
+			    326 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 326
+				    }
+			    }
+
+			    SCH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_hong_kong_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_cede_macau = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SCH
+			
+			SCH = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.38
+			    729 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 729
+				    }
+			    }
+
+			    SCH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_macau_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_cede_guangzhouwan = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SCH
+			
+			SCH = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.39
+			    728 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 728
+				    }
+			    }
+
+			    SCH = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_guangzhouwan_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_cede_japanese_pacific_islands = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SJA
+			
+			SJA = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.40
+			    526 = { is_controlled_by_ROOT_or_subject = yes }
+				645 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 526
+						state = 645
+				    }
+			    }
+
+			    SJA = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_japanese_pacific_islands_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_cede_bhutan = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = STI
+			
+			STI = {
+				is_puppet_of = SOV
+			}
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.41
+			    324 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    every_state = {
+			    limit = {
+				    OR = {
+					   	state = 324
+				    }
+			    }
+
+			    STI = {
+
+				    transfer_state = PREV
+					
+					hidden_effect = {
+				        add_state_core = PREV
+					}
+
+			    }
+		    }
+			
+			SOV = {
+				set_global_flag = SOV_bhutan_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_ceding_french_india = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.42
+			    320 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			custom_trigger_tooltip = {
+				tooltip = ssrplus.territorialtooltip.43
+				OR = {
+					423 = {
+						is_owned_by = STN
+					}
+					423 = {
+						is_owned_by = SRG
+					}
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    if = {
+				limit = {
+					423 = {
+						is_owned_by = STN
+					}
+				}
+
+				320 = {
+					transfer_state_to = STN
+					add_core_of = STN
+				}
+			}
+
+			if = {
+				limit = {
+					423 = {
+						is_owned_by = SRG
+					}
+				}
+
+				320 = {
+					transfer_state_to = SRG
+					add_core_of = SRG
+				}
+			}
+
+			set_global_flag = SOV_french_india_territorial_decision
+		}
+	}
+
+	SOV_ssrplus_ceding_goa = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.44
+			    321 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			custom_trigger_tooltip = {
+				tooltip = ssrplus.territorialtooltip.45
+				OR = {
+					425 = {
+						is_owned_by = SMY
+					}
+					425 = {
+						is_owned_by = SRG
+					}
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+	   
+		    if = {
+				limit = {
+					425 = {
+						is_owned_by = SMY
+					}
+				}
+
+				321 = {
+					transfer_state_to = SMY
+					add_core_of = SMY
+				}
+			}
+
+			if = {
+				limit = {
+					425 = {
+						is_owned_by = SRG
+					}
+				}
+
+				321 = {
+					transfer_state_to = SRG
+					add_core_of = SRG
+				}
+			}
+
+			set_global_flag = SOV_goa_territorial_decision
+		}
+	}
+
+	SOV_ssrplus_ceding_kuwait = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SIQ
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.57
+			    656 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			656 = {
+				transfer_state_to = SIQ
+				add_core_of = SIQ
+			}
+
+			SOV = {
+				set_country_flag = SOV_kuwait_territorial_decision
+			}
+		}
+	}
+
+	SOV_ssrplus_ceding_socotra = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SYE
+			
+			custom_trigger_tooltip = {
+			    tooltip = ssrplus.territorialtooltip.58
+			    906 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			906 = {
+				transfer_state_to = SYE
+				add_core_of = SYE
+			}
+
+			SOV = {
+				set_country_flag = SOV_socotra_territorial_decision
+			}
+		}
+	}
+}
+
+SOV_ssrplus_categories_integration = {
+	
+	SOV_ssrplus_integrate_eastpoland = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+		
+				controls_state = 784
+				controls_state = 96
+				controls_state = 95
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+
+			}
+
+		}
+
+		cost = 150
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 784
+				add_state_core = 96
+				add_state_core = 95
+				add_state_core = 94
+				add_state_core = 93
+				add_state_core = 91
+				add_state_core = 89
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_karjala = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+		
+				controls_state = 146
+
+			}
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 146
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_petsamosalla = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 722
+				controls_state = 147
+
+			}
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 722
+				add_state_core = 147
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_estonia = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 813
+				controls_state = 191
+				controls_state = 13
+				controls_state = 812
+				controls_state = 811
+
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 813
+				add_state_core = 191
+				add_state_core = 13
+				add_state_core = 812
+				add_state_core = 811
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_latvia = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 12
+				controls_state = 810
+				controls_state = 808
+				controls_state = 809
+				controls_state = 190
+
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 12
+				add_state_core = 810
+				add_state_core = 808
+				add_state_core = 809
+				add_state_core = 190
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_lithuania = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 189
+				controls_state = 815
+				controls_state = 11
+				controls_state = 814
+				controls_state = 188
+
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 189
+				add_state_core = 815
+				add_state_core = 11
+				add_state_core = 814
+				add_state_core = 188
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_konigsberg = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 763
+
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 763
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_carpathyrus = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 73
+
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 73
+			}
+		}
+	}
+	
+	SOV_ssrplus_integrate_bessarabia = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+	
+				controls_state = 80
+				controls_state = 78
+				controls_state = 766
+
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 80
+				add_state_core = 78
+				add_state_core = 766
+			}
+		}
+	}
+
+	SOV_ssrplus_integrate_manchuria = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+				controls_state = 717
+				controls_state = 328
+				controls_state = 716
+				controls_state = 610
+				controls_state = 715
+				controls_state = 714
+				controls_state = 761
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 717
+				add_state_core = 328
+				add_state_core = 716
+				add_state_core = 610
+				add_state_core = 715
+				add_state_core = 714
+				add_state_core = 761
+			}
+		}
+	}
+
+	SOV_ssrplus_integrate_port_arthur = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+				controls_state = 745
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 745
+			}
+		}
+	}
+
+	SOV_ssrplus_integrate_south_sakhalin = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+				controls_state = 537
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 537
+			}
+		}
+	}
+
+	SOV_ssrplus_integrate_kuril_islands = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+				controls_state = 555
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 555
+			}
+		}
+	}
+
+	SOV_ssrplus_integrate_alaska = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			SOV = {
+				controls_state = 650
+				controls_state = 463
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = -0.01
+
+			SOV = {
+				add_state_core = 650
+				add_state_core = 463
+			}
+		}
+	}
+}
+
+SOV_ssrplus_categories_integration_supremesoviet = {
+	
+	SOV_ssrplus_supreme_integrate_poland = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SPL
+			
+			SPL = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_westprussia_territorial_decision
+				has_country_flag = SOV_eastprussia_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 180
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SPL = { controls_state = 763 }
+						}
+						763 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SPL = { controls_state = 5 }
+						}
+						5 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SPL = { controls_state = 63 }
+						}
+						63 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SPL = { controls_state = 68 }
+						}
+						68 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SPL = { controls_state = 66 }
+						}
+						66 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SPL = { controls_state = 67 }
+						}
+						67 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 10
+					add_state_core = 87
+					add_state_core = 98
+					add_state_core = 97
+					add_state_core = 92
+					add_state_core = 88
+					add_state_core = 762
+					add_state_core = 86
+					add_state_core = 807
+					add_state_core = 90
+					add_state_core = 85
+				}
+			
+				annex_country = {
+					target = SPL
+					transfer_troops = yes
+				}
+				SPL = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_hungary = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SHG
+			
+			SHG = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+			    add_state_core = 43
+				add_state_core = 154
+				add_state_core = 155
+				}
+			}
+			
+			annex_country = {
+                target = SHG
+                transfer_troops = yes
+            }
+			SHG = {
+				every_unit_leader = {
+					set_nationality = SOV
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_czechoslovakia = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SCZ
+			
+			SCZ = {
+				is_puppet_of = SOV
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+				add_state_core = 9
+				add_state_core = 69
+				add_state_core = 75
+				add_state_core = 74
+				add_state_core = 72
+				add_state_core = 70
+				add_state_core = 71
+				add_state_core = 664
+				}
+			
+				annex_country = {
+					target = SCZ
+					transfer_troops = yes
+				}
+				SCZ = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_germany = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SGD
+			
+			SGD = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_westprussia_territorial_decision
+				has_country_flag = SOV_eastprussia_territorial_decision
+				has_country_flag = SOV_unitegermany_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SGD = { controls_state = 763 }
+						}
+						763 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SGD = { controls_state = 5 }
+						}
+						5 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SGD = { controls_state = 63 }
+						}
+						63 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SGD = { controls_state = 68 }
+						}
+						68 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SGD = { controls_state = 66 }
+						}
+						66 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SGD = { controls_state = 67 }
+						}
+						67 = { add_core_of = SOV }
+					}
+					
+					add_state_core = 64
+					add_state_core = 61
+					add_state_core = 62
+					add_state_core = 65
+					add_state_core = 60
+					add_state_core = 58
+					add_state_core = 59
+					add_state_core = 56
+					add_state_core = 57
+					add_state_core = 55
+					add_state_core = 51
+					add_state_core = 42
+					add_state_core = 50
+					add_state_core = 54
+					add_state_core = 52
+					add_state_core = 53
+				}
+			
+				annex_country = {
+					target = SGD
+					transfer_troops = yes
+				}
+				SGD = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_romania = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SRO
+			
+			SRO = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_transylvania_territorial_decision
+				has_country_flag = SOV_dobrudja_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SRO = { controls_state = 77 }
+						}
+						77 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SRO = { controls_state = 76 }
+						}
+						76 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SRO = { controls_state = 84 }
+						}
+						84 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SRO = { controls_state = 83 }
+						}
+						83 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SRO = { controls_state = 82 }
+						}
+						82 = { add_core_of = SOV }
+					}
+					
+					add_state_core = 46
+					add_state_core = 81
+					add_state_core = 79
+				}
+			
+				annex_country = {
+					target = SRO
+					transfer_troops = yes
+				}
+				SRO = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_bulgaria = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SBL
+			
+			SBL = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_dobrudja_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SBL = { controls_state = 77 }
+						}
+						77 = { add_core_of = SOV }
+					}
+	
+					
+					add_state_core = 48
+					add_state_core = 212
+					add_state_core = 801
+					add_state_core = 211
+				}
+			
+				annex_country = {
+					target = SBL
+					transfer_troops = yes
+				}
+				SBL = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_greece = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SGR
+			
+			SGR = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_dobrudja_territorial_decision
+				has_country_flag = SOV_rhodes_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SGR = { controls_state = 805 }
+						}
+						805 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SGR = { controls_state = 164 }
+						}
+						164 = { add_core_of = SOV }
+					}
+	
+					
+					add_state_core = 182
+					add_state_core = 186
+					add_state_core = 47
+					add_state_core = 185
+					add_state_core = 731
+					add_state_core = 184
+					add_state_core = 187
+				}
+			
+				annex_country = {
+					target = SGR
+					transfer_troops = yes
+				}
+				SGR = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_albania = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SAL
+			
+			SAL = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_northernepirus_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SGR = { controls_state = 805 }
+						}
+						805 = { add_core_of = SOV }
+					}
+	
+					
+					add_state_core = 44
+				}
+			
+				annex_country = {
+					target = SAL
+					transfer_troops = yes
+				}
+				SAL = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_yugoslavia = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SYG
+			
+			SYG = {
+				is_puppet_of = SOV
+			}
+
+			
+			SOV = { 
+				has_country_flag = SOV_istria_territorial_decision
+				has_country_flag = SOV_zadar_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					if = {
+						limit = {
+							SYG = { controls_state = 852 }
+						}
+						852 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SYG = { controls_state = 736 }
+						}
+						736 = { add_core_of = SOV }
+					}
+	
+					add_state_core = 102
+					add_state_core = 853
+					add_state_core = 103
+					add_state_core = 109
+					add_state_core = 104
+					add_state_core = 804
+					add_state_core = 105
+					add_state_core = 45
+					add_state_core = 764
+					add_state_core = 107
+					add_state_core = 108
+					add_state_core = 802
+					add_state_core = 803
+					add_state_core = 106
+					add_state_core = 163
+				}
+			
+				annex_country = {
+					target = SYG
+					transfer_troops = yes
+				}
+				SYG = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_finland = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SFN
+			
+			SFN = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+	
+					add_state_core = 111
+					add_state_core = 149
+					add_state_core = 148
+					add_state_core = 145
+					add_state_core = 150
+					
+					add_state_core = 926
+					add_state_core = 927
+					add_state_core = 930
+					add_state_core = 928
+					add_state_core = 929
+				}
+			
+				annex_country = {
+					target = SFN
+					transfer_troops = yes
+				}
+				SFN = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_sweden = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SSW
+			
+			SSW = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+					add_state_core = 138
+					add_state_core = 139
+					add_state_core = 140
+					add_state_core = 141
+					add_state_core = 38
+					add_state_core = 666
+					add_state_core = 124
+					
+					add_state_core = 918
+					add_state_core = 917
+					add_state_core = 916
+					add_state_core = 919
+					
+					add_state_core = 915
+					add_state_core = 913
+
+				}
+			
+				annex_country = {
+					target = SSW
+					transfer_troops = yes
+				}
+				SSW = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_norway = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SNW
+			
+			SNW = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+					add_state_core = 110
+					add_state_core = 142
+					add_state_core = 143
+					add_state_core = 144
+					
+					add_state_core = 922
+					add_state_core = 921
+					add_state_core = 920
+					add_state_core = 923
+					
+					add_state_core = 924
+					add_state_core = 925
+				}
+			
+				annex_country = {
+					target = SNW
+					transfer_troops = yes
+				}
+				SNW = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_denmark = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SDN
+			
+			SDN = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+					add_state_core = 99
+					add_state_core = 37
+					add_state_core = 911
+					add_state_core = 912
+					add_state_core = 910
+				}
+			
+				annex_country = {
+					target = SDN
+					transfer_troops = yes
+				}
+				SDN = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_austria = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SAS
+			
+			SAS = {
+				is_puppet_of = SOV
+			}
+			
+			SOV = { 
+				has_country_flag = SOV_southalps_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+					if = {
+						limit = {
+							SAS = { controls_state = 39 }
+						}
+						39 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SAS = { controls_state = 850 }
+						}
+						850 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 4
+					add_state_core = 152
+					add_state_core = 153
+					add_state_core = 848
+				}
+			
+				annex_country = {
+					target = SAS
+					transfer_troops = yes
+				}
+				SAS = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_netherlands = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SNT
+			
+			SNT = {
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					add_state_core = 36
+					add_state_core = 7
+					add_state_core = 35
+				}
+			
+				annex_country = {
+					target = SNT
+					transfer_troops = yes
+				}
+				SNT = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_belgium = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SBG
+			
+			SBG = {
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					add_state_core = 6
+					add_state_core = 34
+				}
+			
+				annex_country = {
+					target = SBG
+					transfer_troops = yes
+				}
+				SBG = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_luxembourg = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SLX
+			
+			SLX = {
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					add_state_core = 8
+				}
+			
+				annex_country = {
+					target = SLX
+					transfer_troops = yes
+				}
+				SLX = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_france = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SFR
+			
+			SFR = {
+				is_puppet_of = SOV
+			}
+			
+			SOV = { 
+				has_country_flag = SOV_alsacelorraine_territorial_decision
+				has_country_flag = SOV_savoy_territorial_decision
+				has_country_flag = SOV_corsica_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+					if = {
+						limit = {
+							SFR = { controls_state = 735 }
+						}
+						735 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SFR = { controls_state = 28 }
+						}
+						28 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 1
+					add_state_core = 14
+					add_state_core = 30
+					add_state_core = 15
+					add_state_core = 785
+					add_state_core = 29
+					add_state_core = 16
+					add_state_core = 24
+					add_state_core = 27
+					add_state_core = 18
+					add_state_core = 23
+					add_state_core = 33
+					add_state_core = 17
+					add_state_core = 20
+					add_state_core = 26
+					add_state_core = 25
+					add_state_core = 19
+					add_state_core = 806
+					add_state_core = 31
+					add_state_core = 22
+					add_state_core = 32
+					add_state_core = 21
+					add_state_core = 851
+				}
+			
+				annex_country = {
+					target = SFR
+					transfer_troops = yes
+				}
+				SFR = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_italy = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SIT
+			
+			SIT = {
+				is_puppet_of = SOV
+			}
+			
+			SOV = { 
+				has_country_flag = SOV_savoy_territorial_decision
+				has_country_flag = SOV_southalps_territorial_decision
+				has_country_flag = SOV_malta_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+					if = {
+						limit = {
+							SIT = { controls_state = 39 }
+						}
+						39 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SIT = { controls_state = 850 }
+						}
+						850 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SIT = { controls_state = 735 }
+						}
+						735 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							SIT = { controls_state = 116 }
+						}
+						116 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 158
+					add_state_core = 159
+					add_state_core = 161
+					add_state_core = 160
+					add_state_core = 162
+					add_state_core = 157
+					add_state_core = 2
+					add_state_core = 117
+					add_state_core = 849
+					add_state_core = 156
+					add_state_core = 115
+					add_state_core = 114
+				}
+			
+				annex_country = {
+					target = SIT
+					transfer_troops = yes
+				}
+				SIT = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_switzerland = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SSZ
+			
+			SSZ = {
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					add_state_core = 845
+					add_state_core = 847
+					add_state_core = 3
+					add_state_core = 151
+					add_state_core = 846
+				}
+			
+				annex_country = {
+					target = SSZ
+					transfer_troops = yes
+				}
+				SSZ = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_britain = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			OR = {
+				AND = {
+				
+					country_exists = SEG
+					
+					SEG = {
+						is_puppet_of = SOV
+					}
+				}
+				
+				AND = {
+					
+					country_exists = SEG
+					country_exists = SWL
+					country_exists = SSC
+					
+					SEG = {
+						is_puppet_of = SOV
+					}
+					
+					SSC = {
+						is_puppet_of = SOV
+					}
+					
+					SWL = {
+						is_puppet_of = SOV
+					}
+				}
+			}
+			
+			SOV = { 
+				has_country_flag = SOV_northernireland_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					if = {
+						limit = {
+							SEG = { controls_state = 119 }
+						}
+						119 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 123
+					add_state_core = 338
+					add_state_core = 127
+					add_state_core = 126
+					add_state_core = 125
+					add_state_core = 122	
+					add_state_core = 128
+					add_state_core = 129
+					add_state_core = 130
+					add_state_core = 132
+					add_state_core = 131
+					add_state_core = 121	
+					add_state_core = 133
+					add_state_core = 120
+					add_state_core = 136
+					
+					add_state_core = 931
+					add_state_core = 932
+					add_state_core = 933
+				}
+			
+				annex_country = {
+					target = SEG
+					transfer_troops = yes
+				}
+				SEG = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+				
+				if = {
+					limit = {
+						country_exists = SSC
+					}
+					annex_country = {
+						target = SSC
+						transfer_troops = yes
+					}
+					SSC = {
+						every_unit_leader = {
+							set_nationality = SOV
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						country_exists = SWL
+					}
+					annex_country = {
+						target = SWL
+						transfer_troops = yes
+					}
+					SWL = {
+						every_unit_leader = {
+							set_nationality = SOV
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_ireland = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SIR
+			
+			SIR = {
+				is_puppet_of = SOV
+			}
+
+			SOV = { 
+				has_country_flag = SOV_northernireland_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					if = {
+						limit = {
+							SIR = { controls_state = 119 }
+						}
+						119 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 134
+					add_state_core = 135
+					add_state_core = 113
+				}
+			
+				annex_country = {
+					target = SIR
+					transfer_troops = yes
+				}
+				SIR = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+				
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_spain = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SSP
+			
+			SSP = {
+				is_puppet_of = SOV
+			}
+
+			SOV = { 
+				has_country_flag = SOV_gibraltar_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					if = {
+						limit = {
+							SSP = { controls_state = 118 }
+						}
+						118 = { add_core_of = SOV }
+					}
+				
+					add_state_core = 169
+					add_state_core = 173
+					add_state_core = 789
+					add_state_core = 170
+					add_state_core = 175
+					add_state_core = 168
+					add_state_core = 788	
+					add_state_core = 41
+					add_state_core = 793
+					add_state_core = 167
+					add_state_core = 171
+					add_state_core = 174
+					add_state_core = 791
+					add_state_core = 790	
+					add_state_core = 176
+					add_state_core = 792
+					add_state_core = 172
+					add_state_core = 166
+					add_state_core = 794
+					add_state_core = 165
+					add_state_core = 177
+				}
+			
+				annex_country = {
+					target = SSP
+					transfer_troops = yes
+				}
+				SSP = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+				
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_portugal = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = SPT
+			
+			SPT = {
+				is_puppet_of = SOV
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+			
+					add_state_core = 180
+					add_state_core = 112
+					add_state_core = 181
+					add_state_core = 795
+					add_state_core = 179
+					add_state_core = 698
+					add_state_core = 697
+				}
+			
+				annex_country = {
+					target = SPT
+					transfer_troops = yes
+				}
+				SPT = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+				
+			}
+		}
+	}
+	
+	SOV_ssrplus_supreme_integrate_turkey = {
+	
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+			is_subject = no
+			
+			country_exists = STR
+			
+			STR = {
+				is_puppet_of = SOV
+			}
+			
+			SOV = { 
+				has_country_flag = SOV_rhodes_territorial_decision
+				has_country_flag = SOV_hatay_territorial_decision
+				has_country_flag = SOV_istanbul_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = SOV_the_supreme_soviet
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+
+		remove_effect = {
+		    
+			SOV = {
+				hidden_effect = {
+				
+					if = {
+						limit = {
+							STR = { controls_state = 347 }
+						}
+						347 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							STR = { controls_state = 799 }
+						}
+						799 = { add_core_of = SOV }
+					}
+					
+					if = {
+						limit = {
+							STR = { controls_state = 164 }
+						}
+						164 = { add_core_of = SOV }
+					}
+			
+					add_state_core = 180
+					add_state_core = 112
+					add_state_core = 181
+					add_state_core = 795
+					add_state_core = 179
+					add_state_core = 698
+					add_state_core = 697
+				}
+			
+				annex_country = {
+					target = STR
+					transfer_troops = yes
+				}
+				STR = {
+					every_unit_leader = {
+						set_nationality = SOV
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+SOV_ssrplus_categories_uniting_SSRs = {
+	SOV_ssrplus_unite_arabia = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SAB
+			
+			SAB = {
+				is_puppet_of = SOV
+			}
+		
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.uniting.1
+
+				has_country_flag = SOV_iraq_territorial_decision
+				has_country_flag = SOV_syria_territorial_decision
+				has_country_flag = SOV_lebanon_territorial_decision
+				has_country_flag = SOV_kurdistan_territorial_decision
+				has_country_flag = SOV_hatay_territorial_decision
+				has_country_flag = SOV_palestine_territorial_decision
+				has_country_flag = SOV_sinai_territorial_decision
+				has_country_flag = SOV_kuwait_territorial_decision
+				has_country_flag = SOV_socotra_territorial_decision
+				has_country_flag = SOV_yemen_territorial_decision
+				has_country_flag = SOV_oman_territorial_decision
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			SAB = {
+				if = {
+					limit = {
+						NOT = {
+							SIQ = {
+								has_cosmetic_tag = SIQ_SSR_union
+							}
+						}
+					}
+					annex_country = {
+						target = SIQ
+						transfer_troops = yes
+					}
+				}
+			}
+			SAB = {
+				annex_country = {
+					target = SSR
+					transfer_troops = yes
+				}
+			}
+			SAB = {
+				annex_country = {
+					target = SKR
+					transfer_troops = yes
+				}
+			}
+			SAB = {
+				annex_country = {
+					target = SLE
+					transfer_troops = yes
+				}
+			}
+			SAB = {
+				annex_country = {
+					target = SPI
+					transfer_troops = yes
+				}
+			}
+			SAB = {
+				annex_country = {
+					target = SYE
+					transfer_troops = yes
+				}
+			}
+			SAB = {
+				annex_country = {
+					target = SMA
+					transfer_troops = yes
+				}
+
+				set_cosmetic_tag = SAB_united
+			}
+			hidden_effect = {
+				country_event = {
+					id = ssrplus_FDR.1
+					days = 7
+				}
+			}
+		}
+	}
+}

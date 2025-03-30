@@ -1,0 +1,64 @@
+add_namespace = ssrplus_FDR
+
+country_event = {
+	id = ssrplus_FDR.1
+	title = ssrplus_FDR.1.t
+	desc = ssrplus_FDR.1.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus_FDR.1.a
+
+		SAB = {
+			add_stability = -0.2
+			add_war_support = 0.50
+		}
+
+		hidden_effect = {
+			SOV = {
+				country_event = {
+					id = ssrplus_FDR.2
+					days = 200
+					random_days = 165
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ssrplus_FDR.1.b
+
+		SAB = {
+			add_stability = -0.2
+			add_war_support = 0.50
+		}
+	}
+}
+
+country_event = {
+	id = ssrplus_FDR.2
+	title = ssrplus_FDR.2.t
+	desc = ssrplus_FDR.2.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = ssrplus_FDR.2.a
+
+		SAB = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Comrade Roosevelt"
+				picture = GFX_portrait_SAB_comrade_FDR
+				expire = "1965.1.1"
+				ideology = marxism
+			}
+			set_cosmetic_tag = SAB_FDR
+		}
+	}
+}
