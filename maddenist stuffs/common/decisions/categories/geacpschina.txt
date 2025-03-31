@@ -1,0 +1,18 @@
+JAP_geacpsplus_categories_china_integration = {
+	icon = GFX_decision_category_generic_crisis
+
+	priority = 36
+
+	allowed = {
+		OR = {
+			original_tag = JCH
+			original_tag = JSX
+			original_tag = JXM
+			original_tag = JGZ
+			original_tag = JXK
+			original_tag = JYN
+			original_tag = JGX
+			original_tag = JGD
+		}
+	}
+}

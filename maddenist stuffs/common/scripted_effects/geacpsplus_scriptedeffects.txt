@@ -1,0 +1,242 @@
+geacpsplus_chinapeacedeal_effect = {
+
+	every_country = {
+		limit = {
+			OR = {
+				AND = {
+					has_war_with = CHI
+					is_in_faction_with = JAP
+				}
+				original_tag = JAP
+			}
+		}
+		
+		white_peace = CHI
+		white_peace = YUN
+		white_peace = XSM
+		white_peace = GXC
+		white_peace = PRC
+		white_peace = SHX
+		white_peace = TIB
+		white_peace = SIK
+	}
+
+	CHI = {
+		dismantle_faction = yes 
+	}
+
+	JAP = {
+		transfer_state = 607
+		transfer_state = 744	
+		transfer_state = 620
+		transfer_state = 749
+		transfer_state = 596
+		transfer_state = 595
+		transfer_state = 600
+		transfer_state = 602		
+		transfer_state = 750
+		transfer_state = 605
+		transfer_state = 748
+		transfer_state = 603
+		transfer_state = 593
+		transfer_state = 592
+		transfer_state = 599
+		transfer_state = 594
+		transfer_state = 591
+		transfer_state = 753
+		transfer_state = 283
+		transfer_state = 616
+		transfer_state = 756
+		transfer_state = 621
+		transfer_state = 746
+		transfer_state = 615
+		transfer_state = 622
+		transfer_state = 325
+		transfer_state = 747
+		if = {
+			limit = {
+				622 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 743
+			}
+		}
+		if = {
+			limit = {
+				622 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 622
+			}
+		}
+		if = {
+			limit = {
+				608 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+				614 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+				597 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+			}
+		}
+		
+		if = {
+			limit = {
+				598 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+				613 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+				606 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 598
+				transfer_state = 613
+				transfer_state = 606
+			}
+		}
+		
+		if = {
+			limit = {
+				326 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 326
+			}
+		}
+		
+		if = {
+			limit = {
+				729 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 729
+			}
+		}
+		
+		if = {
+			limit = {
+				728 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 728
+			}
+		}
+		
+		if = {
+			limit = {
+				743 = { CHI_is_owned_by_CHI_or_puppet_trigger = yes }
+			}
+			
+			JAP = {
+				transfer_state = 743
+			}
+		}
+	}
+	
+	CHI = {
+		set_capital = {
+			state = 752
+			remember_old_capital = yes
+		}
+	
+	
+		hidden_effect = {
+			country_event = {
+				id = geacpspluschina.1
+				days = 7
+			}
+		}
+		
+		add_timed_idea = { idea = geacps_greatest_defeat days = 365 }
+	}
+	
+	SIK = {
+		
+		SIK = {	leave_faction = yes }
+				
+		SIK = {
+			if = {
+				limit = {
+					NOT = { has_rule = can_create_factions }
+				}
+				set_rule = { can_create_factions = yes }
+			}
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = "sinkiang_geacpsplus_faction"
+			}
+			
+			add_ideas = geacps_ai_notjoin_idea
+		}
+		
+		add_timed_idea = { idea = geacps_greatest_defeat days = 180 }
+	}
+	
+	XSM = {
+		add_timed_idea = { idea = geacps_greatest_defeat days = 365 }
+	}
+	
+	hidden_effect = {
+		news_event = { days = 1 id = geacpsnews.3 }
+	}
+}
+
+geacpsplus_debug_warchina_effect = {
+	JAP = {
+		declare_war_on = {
+			target = CHI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = YUN
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SHX
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = XSM
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = GXC
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TIB
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SIK
+			type = annex_everything
+		}
+	}
+}
+
+geacpsplus_debug_factionchina_effect = {
+	CHI = {
+		create_faction = "Goat's Pen"
+		
+		add_to_faction = GXC
+		add_to_faction = PRC
+		add_to_faction = SIK
+		add_to_faction = XSM
+		add_to_faction = TIB
+		add_to_faction = YUN
+		add_to_faction = SHX
+	}
+}

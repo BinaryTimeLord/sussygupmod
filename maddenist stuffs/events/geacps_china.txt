@@ -1,0 +1,233 @@
+add_namespace = geacpspluschina
+
+country_event = {
+	id = geacpspluschina.1
+	title = geacpspluschina.1.t
+	desc = geacpspluschina.1.d
+	picture = GFX_report_event_china_chiang_kai_shek
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpspluschina.1.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		kill_country_leader = yes
+		
+		add_country_leader_role = {
+			character = CHI_tu_yuming
+			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = geacpsnews.5 }
+			
+			country_event = {
+				id = geacpspluschina.2
+				days = 35
+			}
+			
+			country_event = {
+				id = geacpspluschina.3
+				days = 21
+			}
+			
+			JAP = {
+				country_event = {
+					id = geacpspluschina.6
+					days = 1
+				}
+				country_event = {
+					id = geacpspluschina.5
+					days = 35
+				}
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = geacpspluschina.2
+	title = geacpspluschina.2.t
+	desc = geacpspluschina.2.d
+	picture = GFX_report_event_chinese_army_training
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpspluschina.2.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		JXK = {
+			transfer_state = 752
+			transfer_state = 751
+			
+			add_state_core = 752
+			add_state_core = 751
+			
+			add_timed_idea = { idea = geacps_greatest_defeat days = 365 }
+		}
+		
+		JAP = {
+			add_opinion_modifier = { 
+				target = ROOT
+				modifier = CHI_eternal_enemy_geacpsplus
+			}
+		}
+		
+		JCH = {
+			add_opinion_modifier = { 
+				target = ROOT
+				modifier = CHI_eternal_enemy_geacpsplus
+			}
+		}
+		
+		MAN = {
+			add_opinion_modifier = { 
+				target = ROOT
+				modifier = CHI_eternal_enemy_geacpsplus
+			}
+		}
+		
+		MEN = {
+			add_opinion_modifier = { 
+				target = ROOT
+				modifier = CHI_eternal_enemy_geacpsplus
+			}
+		}
+		
+		JXK = {
+			change_tag_from = CHI
+	    }
+	}
+}
+
+country_event = {
+	id = geacpspluschina.3
+	title = geacpspluschina.3.t
+	desc = geacpspluschina.3.d
+	picture = GFX_report_event_chinese_soldiers_01
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpspluschina.3.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		if = {
+			limit = {
+				country_exists = TIB
+			}
+			TIB = {
+				transfer_state = 604
+				transfer_state = 601
+				
+				add_state_core = 604
+				add_state_core = 601
+			}
+		}
+		
+		if = {
+			limit = {
+				country_exists = JTB
+			}
+			JTB = {
+				transfer_state = 604
+				transfer_state = 601
+				
+				add_state_core = 604
+				add_state_core = 601
+			}
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = geacpsnews.4 }
+		}
+	}
+}
+
+country_event = {
+	id = geacpspluschina.5
+	title = geacpspluschina.5.t
+	desc = geacpspluschina.5.d
+	picture = GFX_report_event_japanese_reply
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpspluschina.5.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		add_stability = 0.01
+		
+		hidden_effect = {
+			PRC = {	
+				kill_country_leader = yes
+				
+				add_country_leader_role = {
+					character = PRC_zhu_de
+					promote_leader = yes
+					country_leader = {
+						ideology = leninism
+						expire = "1965.1.1.1"
+						traits = {  }
+					}
+				}
+			}
+			
+			news_event = { days = 1 id = geacpsnews.6 }
+		}
+	}
+}
+
+country_event = {
+	id = geacpspluschina.6
+	title = geacpspluschina.6.t
+	desc = geacpspluschina.6.d
+	picture = GFX_report_event_japanese_reply
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpspluschina.6.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		add_stability = 0.01
+	}
+}

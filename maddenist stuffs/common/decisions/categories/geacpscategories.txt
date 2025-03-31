@@ -1,0 +1,23 @@
+JAP_geacpsplus_categories_asia = {
+	icon = GFX_decision_category_jap_southern_expansion
+
+	allowed = {
+		original_tag = JAP
+	}
+}
+
+JAP_geacpsplus_categories_collaboration = {
+	icon = GFX_decision_category_jap_southern_expansion
+
+	allowed = {
+		original_tag = JAP
+	}
+}
+
+JAP_geacpsplus_categories_territorial_ceding = {
+	icon = GFX_decision_category_jap_southern_expansion
+
+	allowed = {
+		original_tag = JAP
+	}
+}

@@ -1,0 +1,33 @@
+CHI_is_owned_by_CHI_or_puppet_trigger = {
+
+	custom_trigger_tooltip = {
+		tooltip = CHI_is_owned_by_CHI_or_puppet_trigger
+		
+		owner = {
+			OR = {
+				tag = CHI
+				is_subject_of = CHI
+				tag = PRC
+				tag = XSM
+				tag = GXC
+				tag = YUN
+				tag = SHX
+			}
+		}
+	}
+}
+
+CHI_geacpsplus_peacedeal_tags_trigger = {
+	
+	OR = { 
+		original_tag = CHI
+		original_tag = PRC
+		original_tag = XSM
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = SHX
+		original_tag = TIB
+		original_tag = SIK
+	}
+}
+	

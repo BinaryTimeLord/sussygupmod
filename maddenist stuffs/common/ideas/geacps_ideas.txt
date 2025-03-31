@@ -1,0 +1,119 @@
+ideas = { 
+	
+	country = {
+
+        geacps_imperial_subject = {
+            picture = jap_militarism_showa
+			
+			allowed = {
+			}
+			
+			available = {
+                always = yes
+			}
+			
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+				master_ideology_drift = 0.03
+				consumer_goods_factor = 0.1
+				
+			}
+		}
+		
+		geacps_unpopular_regime = {
+            picture = generic_disjointed_gov
+			
+			allowed = {
+				original_tag = JCH
+			}
+			
+			available = {
+                always = yes
+			}
+			
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+				political_power_gain = 0.03
+				stability_factor = -0.25
+				war_support_factor = -0.10
+				surrender_limit = -0.15
+			}
+		}
+		
+		geacps_daulat_tuanku = {
+            picture = generic_monarchist_uprising
+			
+			allowed = {
+				original_tag = JMY
+			}
+			
+			available = {
+                always = yes
+			}
+			
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {	
+				stability_factor = 0.05
+			}
+		}
+		
+		geacps_greatest_defeat = {
+            picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+			}
+			
+			available = {
+                always = yes
+			}
+			
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {	
+				stability_factor = -0.15
+				war_support_factor = -0.1
+			}
+		}
+		
+		geacps_ai_notjoin_idea = {
+			picture = generic_prisoner
+
+			allowed = {
+				tag = SIK
+			}
+			
+			available = {
+
+			}
+			
+            allowed_civil_war = {
+                always = yes
+            }
+
+			
+			modifier = {
+				ai_get_ally_desire_factor = -5000
+				join_faction_tension = 1000
+			}
+		}
+	}
+}

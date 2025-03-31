@@ -1,0 +1,1211 @@
+### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+### Operations
+# Operations will randomly pick from national pools until exhausted
+# You can specify a strategic region for which an order name will be drawn
+# if any enemy province along the frontline matches this strategic region, this sub-pool will be considered and used in preference to default. 
+# Whether this 'historical' name pool is exhausted is dependent on the define: HISTORICAL_ORDER_NAME_EXHAUSTION
+# Strategic region index '0' is the generic national pool.
+# You can specify the same name in several regions, though I would suggest not doing this too often, for performance reasons.
+# After this, a first and second will be randomly picked from the default pool
+# The prefix must be provided for all pools
+
+default = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
+		surnames = { }
+		callsigns = { }
+	}
+	#female = {
+	#	names = { "Juliette" "Anna" }
+	#	surnames = { }
+	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
+	#}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+	
+	
+	#Operations - treat these as keys, not strings.
+	prefix = o_operation
+	
+	operation = {
+		0 = { o_default_operation }
+	}
+	
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+	
+}
+JMY = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JMY_malaya = {
+	male = {
+		names = { Najib Muhammad Tengku Kadir "Tengku Kadir" Embok Eunos Ibrahim Pak Pandir Rashid Ahmad Nordin Abdul Amin Lokman Yaacob Elyas Mazlan }
+	}
+	female = {
+		names = {
+			Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		}
+	}
+	surnames = { Razak Yusof Ali Suloh Abdullah Yaacob Sako Maidin Boestamam Aziz Latiff Omar }
+	callsigns = { }
+}
+
+JPH = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JPH_filipina = {
+	male = {
+		names = { Emilio Apolinario Andrés José Hermano Jacinto Mariano Deodato Ladislao Teodoro Valentíne Antonio León Simeón Arcadio Artemio Manuel  }
+	}
+	female = {
+		names = {
+			Ana Consolación Graciela Imelda Ineng Isabella Lemy María Nina Vilma Raquel Yasmin Zenaida
+		}
+	}
+	surnames = {
+		Aguainaldo Mabini Bonifacio Jacinto Rizal Díaz Plata Diwa Arellano
+	}
+	callsigns = { }
+}
+
+JID = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JID_indonesia = {
+	male = {
+		names = { Joko Fauzi Prabowo Ali Soemarno Henk Widji Teuku Hadi Azwar Mustafa Zaini Abdul Anak Ida Dewa }
+	}
+	female = {
+		names = { Diah Siti }
+	}
+	surnames = { Widodo Bowo Subianto Sadikin Sosroatmodjo Ngantung Permatasari Damono Wibowo Thukul Hartinah Gunawan Haryanto Suprianto Sabara Abubakar "Bagus Oka" "Bagus Mantra" Martha}
+	callsigns = { }
+}
+
+JNB = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JNB_borneo = {
+	male = {
+		names = { Najib Muhammad Tengku Kadir "Tengku Kadir" Embok Eunos Ibrahim Pak Pandir Rashid Ahmad Nordin Abdul Amin Lokman Yaacob Elyas Mazlan }
+	}
+	female = {
+		names = {
+			Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		}
+	}
+	surnames = { Razak Yusof Ali Suloh Abdullah Yaacob Sako Maidin Boestamam Aziz Latiff Omar }
+	callsigns = { }
+}
+
+JVN = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JLS = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JCM = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JTH = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JTH_thailand = {
+	male = {
+		names = { 
+			Nangklao Mongkut Rama Chulalongkorn Chao Vajiravudh Prajadhipok Naritsaranuwatiwong Phya Plaek
+		  }
+	}
+	female = {
+		names = { "Amporn" "Chanarong" "Sri Suriyothai" "Panjapapee" "Komol" }
+	}
+	surnames = {
+		Suriyawongse Saovabha Chichalerm Nitithada Phonphayuhasena
+	
+	 }
+	callsigns = { }
+}
+
+JBR = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JBR_burma = {
+	male = {
+		names = { 
+			Abraham Alexander Aung Aye Ba Binnya Chan Eike Hla Hsinbyushin Hso Htay Htein Htin Ka Kan Kawleikgyin Khun Kin Kyaw Lu Luda Ludu Lun Lwin Maha Mahn Maung May Min Mindon Moe Moethee Mun Mya Myawaddy Myo Myoma Nanda 
+			Nandawshay Narameikhla Nay Ne Ngwe Nyi Ohn Pakokku Paw Peter Pe Po Sanda Sao Saw Saya Sein Shwebomin Sin Sitt Soe Tabinshwehti Taw Than Tharyarwaddy Thaung Thein Thibaw Thu Tin Tun U Wareru Win Ye Yei Zaw Zayar
+			
+		}
+	}
+	female = {
+		names = { 
+			Aung Aye Charm Cynthia Dagon Khet Khin Kyi Ludu Minfong Ma May "Ma Ma" Mi "Mi Mi" Mie Mo "Mo Mo" Myint "Myint Myint" Nilar Rebecca San Su "Su Su" Swe Wai Wendy Yan "Yan Yan" Zoya
+		}
+	}
+	surnames = {
+		Amar Aris Aung Awng Aye Bandoola Bayinnaung Bedu Chan Chit Chun Dala Gaing Gambira Gordeno Gyan Gyaw Gyi Gywe Han Hein Hla Hlaing Ho HHtaik Htay Htoo Htoon Htun Khaing Khin Ko Koko Kyi Kyi Kywe Lai Latt "Law-Yone" Lay
+		Loo Lwin Lin Mar Maung May Mg Mie Min Mindon Moe Myint Naing Naung Nu Nway Nyan Nyein Nyunt Ohmar Oo Pe Pha Phan Pu Pwint Sa San Sein Shin Shwe Soe Sofaer Suukyi Swe Sweet Tein Thaik Than Thant Thaung Thaw Thein Thet
+		Tin Thon Thu Thura Tin Toe Tong Tun U Uttla Wa Win Yin Yoe Yu Zarni Zaw Zun
+	}
+	callsigns = { }
+}
+
+JKK = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Hoelun Tamulun Sorghaghtani Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Goland Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JTB = {
+	male = {
+		names = { Tsarong Chamba Trimon Penor Gendün Jamphel Norbhu Mipham Tsepon Andruk Namgang   }
+	}
+	female = {
+		names = { Kamala Indira Dawa Dechen Diki Choden Dohna Dolkar Karma Sonam Sangmu }
+	}
+	surnames = { Dzasa Wangyal Shatra Lungshar Rinpoche Chöphel Shakabpa Tashi  }
+	callsigns = { }
+}
+
+
+JCH = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JGW = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JSX = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JGX = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JGD = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JYN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JXM = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JAH = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira Aditi Amita Anasuya Kavita Puja Rani Rashmi Sania Dusha Neha Neetu Deepti Deepa Bipasha Preeti Padmavati Uma Vibha }
+	}
+	surnames = { 
+		Neru Gandhi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+JSL = {
+	male = {
+		names = {
+			Ahlad Aish Aishik Akhed Amith Amul Aneech Arag Arjan Arosha Aruddh Asela Asisri Asith Avan Avilop Awadh Bis Bisala Chak Chaminda Chandika Chathura Dahuk Dammika Davith Dewil Dilen Dimbh Dimuth Dishan Dith Divyae Dorak
+			Dushmantha Elaay Esh Evayavan Ishan Isht Jayalath Jyani Khadyot Kharat Khasfatik Khyapan Khyat Kosala Kshiti Kulinak Kusal Lasith Lav Maahin Malinga Manovir Marvan Meedhvas Midhush Mukhari Muttiah Nandana Niluka
+			Nishantha Nishkrodh Niyan Nuwan Odav Odma Ojasvin Ojasya Ojayit Ojo Osh Priyantha Rajin Rangana Richik Ruvindu Ruwan Sachithra Sanjeeva Sanura Sauri Seekkuge Shardul Shiwin Supur Supurush Suranga Sushim Svaksh
+			Tharindu Thisara Thusitha Tillakaratne Ujjayan Upul Vaaj Vikhed Vimukhti Vipashyan Viraji Vishad Widura
+		}
+	}
+	female = {
+		names = { 
+			Aahlada Adasi Ahani Ahinsra Ahlada Aila Akopini Akroori Akruddha Arna Arosha Atteesha Awadha Bisa Bisala Bodhani Bodhila Chakasti Chakori Chandrika Damaruki Dikkaria Dilshani Dodahi Dombuli Dora Edha Eha Ema Ena 
+			Eshani Faleesha Fena Fulli Gairi Ghora Homini Ishini Ishta Jami Japa Jayani Khyatini Kshipra Kshiti Kulika Kulini Maduwanthi Maheshani Maheshi Mahie Mahika Malinthi Mehana Methuli Mriduna Mridva Mukhari Mura Nandana
+			Nilakshi Niluka Nilukshi Nimani Oha Ojasini Ojmana Ojoda Okaja Omakshi Omesha Oni Osha Oshthi Pinya Rami Richeyu Riddhida Rumeshika Sachithra Sana Sauriki Sharduli Shesha Sriyani Sunara Susanthika Thiduki Thilin
+			Thusitha Uri Urvasha Vajada Valgas Vihangi Vipashyana Viraji Visha Vishoki Warsha Widura
+		}
+	}
+	surnames = {
+		Abayakoon Abeynaike Appuhamy Balasuriya Bandara Bandaranaike Buddhika Chandrasiri Cooray Dahanayake Dassanayake "De Abrew" "De Alwis" Devapriya Dinuk Dissanayake Ekanayake Fernando Fonseca Gamage Gemunu Gunaratne 
+		Gunasekera Gunawardena Hathurusingha Hemantha Herath Jagath Jayakody Jayaratne Jayasinghe Jayatilleka Jayatissa Jayawickrama Jayewardene Karunaratne Madugalle Mendis Nandasiri Niroshan Pathirana Peiris Perea Prasanna
+		Premaratne Priyantha Rajapaksa Rajasekara Ramanayake Ranaweera Ratnayake Samarasekera Samarasinghe Senanayake Senasinghe Seneviratne Shantha Silva Sirisena Subasinghe Udawatte Vimukthi Warakagoda Weeraratne Weerasekara
+		Weerawansa Wickremasinghe Wijeratne Wijesuriya Wijewardene Wikramanayake
+	}
+	callsigns = { }
+}
+
+JNP = {
+	male = {
+		names = { Bhimsen Amar Ranjur Bhakti Jang Renaudip Shamsher "Bir Shamsher" "Deva Shamsher" "Chandra Shamsher" "Bhim Shamsher"  }
+	}
+	female = {
+		names = { Devaladevi Kaushalyawati Rajendralakshmi Maiya Nanu Nani Maya Pragya Anu Chameli Nirmala Anushka Sarmila Komal }
+	}
+	surnames = { Thapa "Singh Thapa" Singh Rana "Bahadur Rana"  }
+	callsigns = { }
+}
+
+JBH = {
+	male = {
+		names = { Tsarong Chamba Trimon Penor Gendün Jamphel Norbhu Mipham Tsepon Andruk Namgang   }
+	}
+	female = {
+		names = { Kamala Indira Dawa Dechen Diki Choden Dohna Dolkar Karma Sonam Sangmu }
+	}
+	surnames = { Dzasa Wangyal Shatra Lungshar Rinpoche Chöphel Shakabpa Tashi  }
+	callsigns = { }
+}
+
+JBY = {
+	male = {
+		names = {  
+			Agvan Aldar Arya Ayur Azarga Badma Badmazhep Bair Baldan Balzhinima Bashiila Bayan Belikto Bidia Borogshon Bukha Bulud Bulgan Damba Dashi “Dashi-dorzho” Dorzho Ekhin Ekir Eshegen Eshi Guluun Galsan Khermen Mergen Nima Osor Rinchin Sambuu Shono Solbon Tekhe Tsydenzhap Urzhin Yeshinhorlo Zhargal Zorikto
+		}
+	}
+	female = {
+		names = { 
+			Adyana Altana Amgalan Aryuna Badma Bairma Bayarma Bilduu Dariima Duunai Erzhena Galnai Galsan Gerelma Jantraa Khanda Oyuna Sanzhima Sekhuunee Uyakhan 
+ }
+	}
+	surnames = { 
+		Rinchen Tsybikov Zhamtsarano Erdene Inkijinoff Panaeva Vampilov Briner Lhasaranov Byambasyren Dorzhiev Elbegdorj Yekhanurov Buryatsky Dandaron Itgilov Adushnayeva Alekseev Badenov Baglayev Balzhinimaev Barannikov Bazarguruev Bogomoev Budayev Ologanova Dagbaaeva Dambaev Dashidorzhiev Erdyniyev Khalmakshinov Vankeev Yesheyev Satoshi
+	}
+	callsigns = {  }
+}
+
+JYK = {
+	male = {
+		names = {  
+			Aysen Nyurgen Elley Aytal Manchaary Ayaal Michil Kaskil Ayhal Georgiy Uygulaan Yegor Vasili Kjurgej Semyon Tygyn Aldyn Archyn Dayan Bobun Dögüör Nahaap Nurgun Nuolan Öktöm Talygyr Taragay 
+		}
+	}
+	female = {
+		names = { 
+			Tuyaara Künney Saylina Ayta Kaskilaane Evgenia Aita Zoya Aldaana Talbaana
+ }
+	}
+	surnames = { 
+		Alekseyev Arbugaev Basharin Borisov Egorov Kharlampiev Kuzmin Argunov Nikolaev Novgorodov Oyunsky Pinigin Stroev Darkhan Zakharov Tuya 
+	}
+	callsigns = {  }
+}
+
+JES = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+JES_whiterussia = {
+	male = {
+		names = { 
+			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+            Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+            Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+            Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		}
+	}
+	female = {
+		names = { Jelena Ludmila Ella Svetlana Margarita Elena Natalya Lydia Valentina Olga Alexandra Sofia Albina }
+	}
+	surnames = { 
+		Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
+        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
+        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
+        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+        Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+	
+	}
+	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+}
+
+JES_fasciststate = {
+	male = {
+		names = { 
+			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+            Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+            Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+            Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		}
+	}
+	female = {
+		names = { Jelena Ludmila Ella Svetlana Margarita Elena Natalya Lydia Valentina Olga Alexandra Sofia Albina }
+	}
+	surnames = { 
+		Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
+        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
+        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
+        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+        Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+	
+	}
+	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+}
+
+JES_republic = {
+	male = {
+		names = { 
+			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+            Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+            Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+            Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		}
+	}
+	female = {
+		names = { Jelena Ludmila Ella Svetlana Margarita Elena Natalya Lydia Valentina Olga Alexandra Sofia Albina }
+	}
+	surnames = { 
+		Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
+        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
+        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
+        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+        Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+	
+	}
+	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+}
+
+JPF = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}
+
+JPZ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}
+
+JAZ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}
+
+JNZ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}
+
+JBK = {
+	male = {
+		names = {
+			Abbos "Abdug'ani" Abdulla Abdurahmin Abdurahmon Abdurashid Abdusalom Abduseit Ahamdjon Anvar Arslon Azamat Azizbek Bahodir Bakhretdin "Bo'ri" Botir Dilshod Djavohir Elshod Ergash Farhod Fathullo Habibullo Ibrohim
+			Ilhom Ishoq Ismoil Jahon Jahongir Jiyan "Jo'ra" Jurabek Mamur Mirzo Muhammadjon Muhammadkarim Mukhammad Murod Nosir Nuriddin Odil "Po'lat" Rahmatillo Rakhim Ravshan Ravshanbek Rishod "Sa'dulla" Samandar Sayfuddin
+			Sayfullo Shavkat Sherzod Shuhrat Sobir Suhrob Tohir Tursunmurod "Ulug'bek" Utkirbek Yoqub Yunusbek Zokir
+		}
+	}
+	female = {
+		names = {
+			Adolat Akgul Anora Azaliya Chinara Gulchekhra Gulya Guylchekhra Jamola Jiyan Lola Muhabbat Munisa Nigina Nigora Nozima Olma Oltingul Ravshana Ruhsora Tomyris Yulduza Zamira Ziroatkhon Ziyoda Zuhro Zulfiya
+		}
+	}
+	surnames = { 
+		Abaev Abbasov Abdulatipov Abdulin Abdullaev Abdulov Abdurakhmanov Abdurashidov Akbarov Akhtaov Akhmadiev Aliev Alimor Amirov Atoev Azamatov Azizov Babaev Boqiev Burkhanov Cheryazov Choriev Ergashev Hamidov Haydarov
+		Ibragimov Idrisov Isaev Islambekov Islamov Jalilov "Jo'rayev" Jumaniyozov Juraev Kadyrov Karimov Kasymov Khasanov Kurbanov Majidov Mamurov Murodov Musaev Mustafin Niyazov Nuraliev Qurbonov Rakhimonv Ramazon Rasulov
+		Ravshanov Sadykov Saidov Saipov Salamov Samandarov Sharipov Sheraliev Sobirov Sulaymanov Sultanbekov Sultanov Umarov Usmanov Yoldoshov Yunusov Yusufov Yusupov
+	}
+}
+
+JWS = {
+	male = {
+		names = { 
+			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+            Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+            Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+            Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		}
+	}
+	female = {
+		names = { Jelena Ludmila Ella Svetlana Margarita Elena Natalya Lydia Valentina Olga Alexandra Sofia Albina }
+	}
+	surnames = { 
+		Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
+        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
+        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
+        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+        Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+	
+	}
+	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+}
+
+JKZ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}
+
+JPR = {
+	male = {
+		names = {
+			Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Afshin Ahmad Ali Amir Ammar
+			Arash Ardashir Aria Arman Armand Arshad Arvin Atash Aziz Babak Bahram Bardia
+			Basir Bijan Dalir Dariush Derafsh Ebrahim Ehsan Ervin Esmail Farbod Farhad
+			Farrokh Farshid Fazlollah Hamid Hamzeh Hasan Hassan Hormuzd Hossein Iman Izad
+			Jamshid Kamran Karim Kasra Khashayar Khosrow Kourosh Mahmoud Manuchehr Marzban
+			Massoud Mazdak Mazdan Maziar Mehdi Mehran Mehrdad Milad Mir Mohammad Muhsin Murad
+			Nosret Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Reza Rostam
+			Sadegh Sassan Sepehr Shahin Shahryar Shams Shapour Shervin Sohrab Soroush Turan
+			Vahid Vandad Yousef Zand Zartosh Zurvan
+		}
+	}
+	female = {
+		names = { Mehrnaz Farnaz Afsaneh Ahu Arghavan Azarmidokht Asa Azadeh Bahar Banafsheh Behnaz Burandokht Darya Delaram
+			Delbar Dinah Donya Elham Elnaz Farah Fareedeh Farnaz Farrin Farva Furuzan Ghamze Ghazal
+			Ghoncheh Ghoncheh Golbahar Golbahar Golnaz Golnaz Golpari Golshan Hamdam Hurmat Irandokht
+			Jamileh Javaneh Leila Mahdokht Mahtab Mariam Mariam Navvaba Nazgol Nazgol Nazilla Noor Parvaneh
+			Parvaneh Parvin Pertevniyal Pourandokht Pourandokht Roshanora Roxana Salomeh Shahrzad Shahzadeh
+			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya }
+	}
+	surnames = {
+		Abed Ahura Airom Ansari Ayrum Buzarjomehri Davallu Ebrahimi Esfahani Esfandiari
+		Faghihinejad Farahmand Farhani Farrokhzad Ghademi Ghorbani Homayoun Hooshang
+		Jahanbani Jahandar Jahandideh Jahangir Jahanshah Jamshidi Jorjani Kashani Kavoosi
+		Khadem Khiabni Khorasani Khorram-din Khuzai Lajani Madani Mazandarani Mazdaki
+		Mazdani Mehregan Meshhedi Mohsen Mokri Nakhchevani Paria Parsi Pesyan Pouran
+		Rahbar Rajavi Rezaei Rokni Rostamian Sassani Shafaei Shahbakhti Shamshiri
+		Shir-Del Shirazi Tabrizi Tahmasebi Tehrani Turani Zahedi
+	}
+	callsigns = { }
+}
+
+JFG = {
+	male = {
+		names = {
+			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram   Ayyub
+			Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil
+			Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar
+			Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
+
+		 }
+	}
+	female = {
+		names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Badil Bahar Bawan Baziyan Befraw Belqis
+			Bihar Binar Binav Biyan Bohar Burandoxt Pourandokht
+			Derav Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber Dilcan Dildar Dilgerm
+			Esmerxan Nawal Ezcan Felek Fener Gerdengaz Gozel
+		}
+	}
+	surnames = { Khan Nuristani Sattari Sherkhanzai Yasin Abdul Ahmadi Aziz Karzai Nawabi Poya Shahnawaz }
+	callsigns = { }
+}
+
+JXJ = {
+	male = {
+		names = {
+			Aibek Alikhan Alisher Arman Aslan Aybek Azat Bolat Bulat Erasyl Islam Makhmud Mukhamed Mukhammed Nurasyl Nurislam Nurzhan Ramazan Ruslan Rustam Serik Shamil Sukhrab Talgat Temir Timur
+		}
+	}
+
+	female = {
+		names = {
+			Aiday Aiman Aina Aliya Anar Anara Anargul Aruzhan Ayaulym Ayna Aynur Bibigul Gulnar Gulnara Gulnaz Inkar Inzhu Madina Saltanat Sezim Zhuldyz
+		}
+	}
+
+	surnames = {
+		Abaev Abdulayev Abdulin Adelzhanov Aibekov Aitmukhambetov Akhmetov Aliev Alikhanov Alimov Aliyev Almatyev Amangeldiev Amirov Aruzhanov Astana Asylmuratov Aubakirov Aybekov Azizov Babaev Baizhanov Bolatov Erjanov Erzhanov
+		Ibragimov Idrisov Isaev Iskakov Islamov Ismailov Kadyrov Karimov Kasymov Khasanov Kudaibergenov Kurbanov Kusainov Maksatov Malzagov Mendygaliev Musaev Mustafin Nazarbayev Niyazov Niyazymbetov Nurasylov Nurgaliev Nurislamov
+		Nursultanov Nurzhanov Omarov Ospan Rakhimov Ramadanov Ramazanov Rasulov Salimov Sapiyev Sarsenbaev Sarsenov Serikbaev Serikov Sharipov Shumenov Sultanbekov Sultanov Sydykov Talgatov Tazhibaev Temirov Tursynbekov Umarov
+		Usmanov Yuldashev Ynusov Yusupov Zhanibekov Zhaparov Zhumabekov Zhunusov Zhusupov
+	}
+}
+
+JGZ = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JXK = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+JCH_colony = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}
+
+JTN = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+}

@@ -1,0 +1,1037 @@
+
+JAP_geacpsplus_categories_china_integration = {
+
+	JCH_geacpsplus_integrate_shandong = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 614
+				state = 597
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 614
+			controls_state = 597
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 614
+			controls_state = 597
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 614
+			add_state_core = 597
+		}
+	}
+	
+	JCH_geacpsplus_integrate_qingdao = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 743
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 743
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 743
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 743
+		}
+	}
+	
+	JCH_geacpsplus_integrate_anhui = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 598
+				state = 606
+				state = 607
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 598
+			controls_state = 606
+			controls_state = 607
+
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 598
+			controls_state = 606
+			controls_state = 607
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 598
+			add_state_core = 606
+			add_state_core = 607
+		}
+	}
+	
+	JCH_geacpsplus_integrate_fujian = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 595
+				state = 600
+				state = 749
+				state = 596
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 595
+			controls_state = 600
+			controls_state = 749
+			controls_state = 596
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 595
+			controls_state = 600
+			controls_state = 749
+			controls_state = 596
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 749
+			add_state_core = 596
+		}
+	}
+	
+	JCH_geacpsplus_integrate_wuhan = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 620
+				state = 602
+				state = 750
+				state = 605
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 620
+			controls_state = 602
+			controls_state = 750
+			controls_state = 605
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 150
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 620
+			controls_state = 602
+			controls_state = 750
+			controls_state = 605
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 620
+			add_state_core = 602
+			add_state_core = 750
+			add_state_core = 605
+		}
+	}
+	
+	JCH_geacpsplus_integrate_shanxi = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 615
+				state = 622
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 615
+			controls_state = 622
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 615
+			controls_state = 622
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 615
+			add_state_core = 622
+		}
+	}
+	
+	JCH_geacpsplus_integrate_xian = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 744
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 744
+
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 60
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 744
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 744
+		}
+	}
+	
+	JCH_geacpsplus_integrate_guizhou = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 748
+				state = 603
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 748
+			controls_state = 603
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 748
+			controls_state = 603
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 748
+			add_state_core = 603
+		}
+	}
+	
+	JCH_geacpsplus_integrate_guangxi = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 594
+				state = 599
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 594
+			controls_state = 599
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 594
+			controls_state = 599
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 594
+			add_state_core = 599
+		}
+	}
+	
+	JCH_geacpsplus_integrate_canton = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 592
+				state = 593
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 592
+			controls_state = 593
+
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 592
+			controls_state = 593
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 592
+			add_state_core = 593
+		}
+	}
+	
+	JCH_geacpsplus_integrate_hongkong = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 326
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 326
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 326
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 326
+		}
+	}
+	
+	JCH_geacpsplus_integrate_macau = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 729
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 729
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 729
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 729
+		}
+	}
+	
+	JCH_geacpsplus_integrate_guangzhouwan = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 728
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 728
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 728
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 728
+		}
+	}
+	
+	JCH_geacpsplus_integrate_hainan = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 591
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 591
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 591
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 591
+		}
+	}
+	
+	JCH_geacpsplus_integrate_yunnan = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 325
+				state = 747
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 325
+			controls_state = 747
+
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 325
+			controls_state = 747
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 325
+			add_state_core = 747
+		}
+	}
+	
+	JCH_geacpsplus_integrate_liangshan = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 751
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 751
+
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 751
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 751
+		}
+	}
+	
+	JCH_geacpsplus_integrate_ganzi = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 752
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 752
+
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 752
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 752
+		}
+	}
+	
+	JCH_geacpsplus_integrate_xbs = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 753
+				state = 283
+				state = 616
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 753
+			controls_state = 283
+			controls_state = 616
+
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 753
+			controls_state = 283
+			controls_state = 616
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 753
+			add_state_core = 283
+			add_state_core = 616
+		}
+	}
+	
+	JCH_geacpsplus_integrate_golog = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 754
+				state = 755
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 754
+			controls_state = 755
+
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 754
+			controls_state = 755
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 754
+			add_state_core = 755
+		}
+	}
+	
+	JCH_geacpsplus_integrate_ordos = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 746
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 746
+
+		}
+
+		cost = 30
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 746
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 746
+		}
+	}
+	
+	JCH_geacpsplus_integrate_jiuquan = {
+	
+		icon = GFX_decision_generic_nationalism
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 756
+			} 
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 756
+
+		}
+
+		cost = 30
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			controls_state = 756
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+		    
+			add_stability = 0.01
+
+			add_state_core = 756
+		}
+	}
+}

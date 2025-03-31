@@ -1,0 +1,206 @@
+﻿l_english:
+#### GREATER EAST ASIAN CO-PROSPERITY SPHERE PLUS #### MADE BY GOAT AKA THECYCLOP ####
+#### ZETTON..... ZETTON..... ####
+
+ #### CATEGORIES ####
+
+ JAP_geacpsplus_categories_asia:0 "Form Japanese-Aligned Puppets"
+ JAP_geacpsplus_categories_collaboration:0 "Collaborations in Puppet States?"
+ JAP_geacpsplus_categories_territorial_ceding:0 "Territorial Ceding to Allies"
+ JAP_geacpsplus_categories_integration:0 "Imperial Integration Program"
+ JAP_customization_category:0 "Customization Menu"
+
+ #### PUPPET DECISIONS ####
+ 
+ JAP_geacpsplus_malaya:0 "Establish §Y[JMY.GetName]§!"
+ JAP_geacpsplus_philippine:0 "Establish §Y[JPH.GetName]§!"
+ JAP_geacpsplus_indonesia:0 "Establish §Y[JID.GetName]§!"
+ JAP_geacpsplus_northborneo:0 "Establish §Y[JNB.GetName]§!"
+ JAP_geacpsplus_indochina:0 "The Fate of §YIndochina§!"
+ JAP_geacpsplus_indochina_coup:0 "Commence §YOperation Bright Moon (Indochina)§!"
+ JAP_geacpsplus_indochina_division:0 "Establish the §YThree Kingdoms§! in §YIndochina§!"
+ JAP_geacpsplus_thailand:0 "Establish Japanese-aligned §YThailand§!"
+ JAP_geacpsplus_burma:0 "Establish §Y[JBR.GetName]§!"
+ JAP_geacpsplus_tibet:0 "Establish Japanese-aligned §Y[JTB.GetName]§!"
+ JAP_geacpsplus_eastturkestan:0 "Establish §Y[JXJ.GetName]§!"
+ JAP_geacpsplus_kumulkhanate:0 "The Fate of §YKumul§!"
+ JAP_geacpsplus_mengkukuo_proclamation:0 "[MEN.GetName]'s proclamation of the creation of §YMongol State§!"
+ JAP_geacpsplus_china:0 "Establish §Y[JCH.GetName]§!"
+ JAP_geacpsplus_china_beijing:0 "Establish the §YProvincial Government of China§!"
+ JAP_geacpsplus_greatwayshanghai:0 "Establish the §YGreat Way Government§!"
+ JAP_geacpsplus_shanghai_reformed:0 "Establish the §YReformed Government of China§!"
+ JAP_geacpsplus_wangjingwei_proclamation:0 "Establish the §YReorganized Government of China§!"
+ JAP_geacpsplus_xikangclique:0 "Establish the §YProvincial Government of Xikang§!"
+ 
+ 
+ JAP_geacpsplus_fateofchina:0 "The Fate of §YChina§!"
+ JAP_geacpsplus_shaanxi:0 "The Fate of §YShanxi§!"
+ JAP_geacpsplus_qinghaixbs:0 "The Fate of §YWestern China Region (XBS)§!"
+ JAP_geacpsplus_guangxi:0 "The Fate of §YGuangxi§!"
+ JAP_geacpsplus_guangdong:0 "The Fate of §YGuangdong§!"
+ JAP_geacpsplus_guizhou:0 "The Fate of §YGuizhou§!"
+ JAP_geacpsplus_yunnan:0 "The Fate of §YYunnan§!"
+ JAP_geacpsplus_azadhind:0 "Establish Japanese-aligned §Y[JAH.GetName]§!"
+ JAP_geacpsplus_azadhind_expand:0 "Expand the control of §Y[JAH.GetName]§!"
+ JAP_geacpsplus_madurai:0 "The Fate of §YMadurai§!"
+ JAP_geacpsplus_ceylon:0 "The Fate of §YCeylon§!"
+ JAP_geacpsplus_nepal:0 "The Fate of §YNepal§!"
+ JAP_geacpsplus_bhutan:0 "The Fate of §YBhutan§!"
+ JAP_geacpsplus_siberia:0 "Establish §Y[JES.GetName]§!"
+ JAP_geacpsplus_siberianfate:0 "The Fate of §YEast Siberia§!"
+ JAP_geacpsplus_kamchatka:0 "The Fate of §YKamchatka§!"
+ JAP_geacpsplus_australia:0 "Establish §Y[JAZ.GetName]§!"
+ JAP_geacpsplus_newzealand:0 "Establish §Y[JNZ.GetName]§!"
+ JAP_geacpsplus_pacificstates:0 "Establish §Y[JPZ.GetName]§!"
+ JAP_geacpsplus_turkestan:0 "Establish §Y[JKZ.GetName]§!"
+ JAP_geacpsplus_persia:0 "Establish §Y[JPR.GetName]§!"
+ JAP_geacpsplus_iraq:0 "Establish §Y[JIQ.GetName]§!"
+ JAP_geacpsplus_afghanistan:0 "Establish §Y[JFG.GetName]§!"
+ JAP_geacpsplus_westsiberia:0 "The Fate of §YWest Siberia§!"
+ 
+ #### TERRITORIAL QUESTION ####
+ 
+ JAP_geacpsplus_territorial_xian:0 "§YXian§! Question"
+ JAP_geacpsplus_territorial_ordos:0 "§YOrdos§! Question"
+ JAP_geacpsplus_territorial_jiuquan:0 "§YJiuquan§! Question"
+ JAP_geacpsplus_territorial_easthebei:0 "§YEast Hebei§! Question"
+ JAP_geacpsplus_territorial_dalian:0 "§YDalian§! Question"
+ JAP_geacpsplus_territorial_qingdao:0 "§YQingdao§! Question"
+ JAP_geacpsplus_territorial_hongkong:0 "§YHong Kong§! Question"
+ JAP_geacpsplus_territorial_macau:0 "§YMacau§! Question"
+ JAP_geacpsplus_territorial_guangzhouwan:0 "§YGuangzhouwan§! Question"
+ JAP_geacpsplus_territorial_hainan:0 "§YHainan§! Question"
+ JAP_geacpsplus_territorial_andaman:0 "§YAndaman§! Question"
+ JAP_geacpsplus_territorial_frenchindia:0 "§YFrench India§! Question"
+ JAP_geacpsplus_territorial_indiagoa:0 "§YGoa§! Question"
+ JAP_geacpsplus_territorial_maldives:0 "§YMaldives§! Question"
+ JAP_geacpsplus_territorial_pakistan:0 "§YPakistan§! Question"
+ JAP_geacpsplus_territorial_kuwait:0 "§YKuwait§! Question"
+ 
+ 
+ 
+ #### COLLABORATION ####
+ 
+ JAP_geacpsplus_china_collab:0 "Collaborations with the §YChinese?§!"
+ JAP_geacpsplus_philippine_collab:0 "Collaborations with the §YFilipinos?§!"
+ JAP_geacpsplus_malaya_collab:0 "Collaborations with the §YMalays?§!"
+ JAP_geacpsplus_northborneo_collab:0 "The Fate of §YNorth Borneo§!"
+ JAP_geacpsplus_indonesia_collab:0 "Collaborations with the §YIndonesian?§!"
+ JAP_geacpsplus_burma_collab:0 "Collaborations with the §YBurmese?§!"
+ JAP_geacpsplus_australia_collab:0 "Collaborations with the §YAustralian?§!"
+ JAP_geacpsplus_newzealand_collab:0 "Collaborations with the §YKiwis?§!"
+ JAP_geacpsplus_vietnam_collab:0 "Collaborations with the §YVietnamese?§!"
+ JAP_geacpsplus_afghanistan_collab:0 "Collaborations with the §YAfghans?§!"
+ JAP_geacpsplus_persia_collab:0 "Collaborations with the §YPersian?§!"
+ JAP_geacpsplus_iraq_collab:0 "Collaborations with the §YIraqis?§!"
+ JAP_geacpsplus_turkestan_collab:0 "The Fate of §YCentral Asia§!"
+ JAP_geacpsplus_centralasia_collab:0 "Integrate §YEast Turkestan§! into §Y[JKZ.GetName]§!?"
+ 
+ #### TERRITORIAL TRANSFER ####
+ 
+ JAP_geacps_territorial_manchuria_outermanchuria:0 "Transfer §YOuter Manchuria§! to §Y[MAN.GetName]§!"
+ JAP_geacps_territorial_manchuria_amur:0 "Transfer §YAmur§! to §Y[MAN.GetName]§!"
+ 
+ JAP_geacps_territorial_mengkukuo_mongolia:0 "Transfer §YMongolia§! to Mengkukuo"
+ JAP_geacps_territorial_mengkukuo_tannutuva:0 "Transfer §YTannu Tuva§! to Mengkukuo"
+ JAP_geacps_territorial_mengkukuo_suiyuan:0 "Transfer §YSuiyuan§! to Mengkukuo"
+ JAP_geacps_territorial_mengkukuo_ordos:0 "Transfer §YOrdos§! to Mengkukuo"
+ JAP_geacps_territorial_mengkukuo_jiuquan:0 "Transfer §YJiuquan§! to Mengkukuo"
+ 
+ JAP_geacps_territorial_siam_laos:0 "Transfer §YLaos§! to Siam"
+ JAP_geacps_territorial_siam_cambodia:0 "Transfer §YCambodia§! to Siam"
+ 
+ JAP_geacps_territorial_thailand_laos:0 "Transfer §YLaos§! to Thailand"
+ JAP_geacps_territorial_thailand_cambodia:0 "Transfer §YCambodia§! to Thailand"
+ JAP_geacps_territorial_indonesia_easttimor:0 "Transfer §YEast Timor§! to §Y[JID.GetName]§!"
+ JAP_geacps_territorial_indonesia_papua:0 "Transfer §YPapua§! to §Y[JID.GetName]§!"
+ 
+ JAP_geacps_territorial_gologhaixi_xsm:0 "Transfer §YGolog & Haixi§! to §Y[JXM.GetName]§!"
+ JAP_geacps_territorial_gologhaixi_china:0 "Transfer §YGolog & Haixi§! to §Y[JCH.GetName]§!"
+ 
+ JAP_geacps_territorial_tibet_qinghai:0 "Transfer §YQinghai§! to §Y[JTB.GetName]§!"
+ JAP_geacps_territorial_tibet_xikang:0 "Transfer §YXikang§! to §Y[JTB.GetName]§!"
+ JAP_geacps_territorial_kazakhstan_uralsk:0 "Transfer §YUral'sk Region§! to §Y[JKZ.GetName]§!"
+
+ JAP_geacps_territorial_bajacalifornia:0 "Transfer §YBaja California§! to §Y[JPZ.GetName]§!"
+ JAP_geacps_territorial_pacificcanada:0 "Transfer §YPacific Canada§! to §Y[JPZ.GetName]§!"
+ JAP_geacps_territorial_alaska:0 "Transfer §YAlaska§! to §Y[JPZ.GetName]§!"
+ 
+ 
+ 
+ #### INTEGRATION ####
+ 
+ JAP_geacpsplus_integrate_korea:0 "Integrate §YKorea§!"
+ JAP_geacpsplus_integrate_taiwan:0 "Integrate §YTaiwan§!"
+ JAP_geacpsplus_integrate_beijing:0 "Integrate §YBeijing§!"
+ JAP_geacpsplus_integrate_hebei:0 "Integrate §YHebei§!"
+ JAP_geacpsplus_integrate_shandong:0 "Integrate §YShandong§!"
+ JAP_geacpsplus_integrate_jiangsu:0 "Integrate §YJiangsu§!"
+ JAP_geacpsplus_integrate_shanghai:0 "Integrate §YShanghai§!"
+ JAP_geacpsplus_integrate_zhejiang:0 "Integrate §YZhejiang§!"
+ JAP_geacpsplus_integrate_fujian:0 "Integrate §YFujian§!"
+ JAP_geacpsplus_integrate_northsakhalin:0 "Integrate §YNorth Sakhalin§!"
+ 
+ JAP_geacpsplus_integrate_saipan:0 "Integrate §YSaipan§!"
+ JAP_geacpsplus_integrate_guam:0 "Integrate §YGuam§!"
+ JAP_geacpsplus_integrate_palau:0 "Integrate §YPalau§!"
+ JAP_geacpsplus_integrate_carolineisles:0 "Integrate §YCaroline Isles§!"
+ JAP_geacpsplus_integrate_marshallisles:0 "Integrate §YMarshall Isles§!"
+ JAP_geacpsplus_integrate_marcusisland:0 "Integrate §YMarcus Island§!"
+ JAP_geacpsplus_integrate_wakeisland:0 "Integrate §YWake Island§!"
+ JAP_geacpsplus_integrate_midwayisland:0 "Integrate §YMidway Island§!"
+ JAP_geacpsplus_integrate_johnsonatoll:0 "Integrate §YJohnson Atoll§!"
+ JAP_geacpsplus_integrate_gilbertislands:0 "Integrate §YGilbert Islands§!"
+ JAP_geacpsplus_integrate_nauru:0 "Integrate §YNauru§!"
+ JAP_geacpsplus_integrate_elliceisland:0 "Integrate §YEllice Islands§!"
+ JAP_geacpsplus_integrate_phoenixisland:0 "Integrate §YPhoenix Island§!"
+ JAP_geacpsplus_integrate_lineislands:0 "Integrate §YLine Islands§!"
+ JAP_geacpsplus_integrate_hawaii:0 "Integrate §YHawaii§!"
+ JAP_geacpsplus_integrate_bismarck:0 "Integrate §YBismarck§!"
+ JAP_geacpsplus_integrate_solomonislands:0 "Integrate §YSolomon Islands§!"
+ JAP_geacpsplus_integrate_nendo:0 "Integrate §YNendo§!"
+ JAP_geacpsplus_integrate_newcaledonia:0 "Integrate §YNew Caledonia§!"
+ JAP_geacpsplus_integrate_fiji:0 "Integrate §YFiji§!"
+ JAP_geacpsplus_integrate_samoa:0 "Integrate §YSamoa§!"
+ JAP_geacpsplus_integrate_tahiti:0 "Integrate §YTahiti§!"
+ JAP_geacpsplus_integrate_pitcairnisland:0 "Integrate §YPitcairn Island§!"
+ JAP_geacpsplus_integrate_attuisland:0 "Integrate §YAttu Island§!"
+ 
+ #### CHINESE PUPPET INTEGRATION ####
+ 
+ JCH_geacpsplus_integrate_shandong:0 "Integrate §YShandong Region§!"
+ JCH_geacpsplus_integrate_qingdao:0 "Integrate §YQingdao§!"
+ JCH_geacpsplus_integrate_anhui:0 "Integrate §YAnhui Region§!"
+ JCH_geacpsplus_integrate_fujian:0 "Integrate §YFujian Region§!"
+ JCH_geacpsplus_integrate_wuhan:0 "Integrate §YCentral China§!"
+ JCH_geacpsplus_integrate_shanxi:0 "Integrate §YShanxi Region§!"
+ JCH_geacpsplus_integrate_xian:0 "Integrate §YXian§!"
+ JCH_geacpsplus_integrate_guizhou:0 "Integrate §YGuizhou§!"
+ JCH_geacpsplus_integrate_guangxi:0 "Integrate §YGuangxi§!"
+ JCH_geacpsplus_integrate_canton:0 "Integrate §YGuangdong§!"
+ JCH_geacpsplus_integrate_hongkong:0 "Integrate §YHong Kong§!"
+ JCH_geacpsplus_integrate_macau:0 "Integrate §YMacau§!"
+ JCH_geacpsplus_integrate_guangzhouwan:0 "Integrate §YGuangzhouwan§!"
+ JCH_geacpsplus_integrate_hainan:0 "Integrate §YHainan§!"
+ JCH_geacpsplus_integrate_yunnan:0 "Integrate §YYunnan§!"
+ JCH_geacpsplus_integrate_liangshan:0 "Integrate §YLiangshan§!"
+ JCH_geacpsplus_integrate_ganzi:0 "Integrate §YGanzi§!"
+ JCH_geacpsplus_integrate_xbs:0 "Integrate §YGansu Region§!"
+ JCH_geacpsplus_integrate_golog:0 "Integrate §YGolog & Haixi§!"
+ JCH_geacpsplus_integrate_ordos:0 "Integrate §YOrdos§!"
+ JCH_geacpsplus_integrate_jiuquan:0 "Integrate §YJiuquan§!"
+ 
+ #### CUSTOMIZATION ####
+ 
+ JAP_customization_reset:0 "Reset Japan's customization"
+ JAP_customization_default_alternate:0 "Customize to §YDefault Japan (Japanese Name)§!"
+ JAP_customization_nisshoki:0 "Customize to §YNisshoki/Hinomaru Flag§!"
+ JAP_customization_nisshoki_alternate:0 "Customize to §YNisshoki/Hinomaru Flag (Japanese Name)§!"
+ JAP_customization_risingsun:0 "Customize to §YThe Empire of the Rising Sun (Red Alert)§!"
+ JAP_customization_risingsun_alternate:0 "Customize to §YThe Empire of the Rising Sun (Red Alert - Japanese Name)§!"
+ JAP_customization_naval:0 "Customize to §YThe Naval Ensign of the Japanese Empire§!"
+ JAP_customization_naval_alternate:0 "Customize to §YThe Naval Ensign of the Japanese Empire (Japanese Name)§!"
+ JAP_customization_royalty:0 "Customize to §YThe Flag of the Royal Familty of Japan§!"
+ JAP_customization_royalty_alternate:0 "Customize to §YThe Flag of the Royal Familty of Japan (Japanese Name)§!"
+ 
+ 

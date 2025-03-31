@@ -1538,3 +1538,196 @@ SIM = {
 	color_ui = rgb { 153 0 0 }
 }
 
+### GEACPS+ ###
+
+JMY = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JPH = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JID = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JNB = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JVN = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JCM = {
+	color = rgb { 239 119 119 }
+	color_ui = rgb { 239 119 119 }
+}
+
+JLS = {
+	color = rgb { 21 0 86 }
+	color_ui = rgb { 21 0 86 }
+}
+
+JBR = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JTH = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
+
+JKK = {	
+	color = rgb { 160 82 45 }
+	color_ui = rgb { 160 82 45 }
+}
+
+JTB = {	
+	color = rgb { 80 115 45 }
+	color_ui = rgb { 80 115 45 }
+}
+
+JCH = {
+	color = rgb { 180 110 140 }
+	color_ui = rgb { 180 110 140 }
+}
+
+JSX = {
+	color = rgb { 180 120 100 }
+	color_ui = rgb { 180 120 100 }
+}
+
+JGX = {
+	color = rgb { 180 110 130 }
+	color_ui = rgb { 180 110 130 }
+}
+
+JGD = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JXM = {
+	color = rgb { 180 110 110 }
+	color_ui = rgb { 180 110 110 }
+}
+
+JYN = {
+	color = rgb { 170 110 120 }
+	color_ui = rgb { 170 110 120 }
+}
+
+JAH = {
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
+}
+
+JSL = {
+	color = rgb { 204 0 102 }
+	color_ui = rgb { 204 0 102 }
+}
+
+JNP = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
+}
+
+JBH = {
+	color = rgb { 172 122 88 }
+	color_ui = rgb { 172 122 88 }
+}
+
+JES = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JBY = {
+	color = rgb { 0 64 255 }
+	color_ui = rgb { 0 45 179 }
+}
+
+JYK = {
+	color = rgb { 0 255 255 }
+	color_ui = rgb { 0 179 179 }
+}
+
+JPF = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JPZ = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JAZ = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JNZ = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+#### AOZORA UPDATE ####
+
+JKZ = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JIQ	= { 
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JPR = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JFG = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JBK = {
+	color = rgb { 109 61 29 }
+	color_ui = rgb { 109 61 29 }
+}
+
+JGW = {
+	color = rgb { 180 110 100 }
+	color_ui = rgb { 180 110 100 }
+}
+
+JWS = {
+	color = rgb { 46 109 21 }
+	color_ui = rgb { 46 109 21 }
+}
+
+JXJ = {
+	color = rgb { 64 148 221 }
+	color_ui = rgb { 64 148 221 }
+}
+
+JGZ = {
+	color = rgb { 180 110 130 }
+	color_ui = rgb { 180 110 130 }
+}
+
+JXK = {
+	color = rgb { 83 122 115 }
+	color_ui = rgb { 83 122 115 }
+}

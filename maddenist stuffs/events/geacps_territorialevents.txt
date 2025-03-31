@@ -1,0 +1,1245 @@
+add_namespace = geacpsplusterritorial
+
+country_event = {
+	id = geacpsplusterritorial.1
+	title = geacpsplusterritorial.1.t
+	desc = geacpsplusterritorial.1.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpsplusterritorial.1.a
+		
+		trigger = { country_exists = JSX }
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JSX = {
+			transfer_state = 744
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_xian_territorial_decision
+		}
+
+	}
+	option = {
+		name = geacpsplusterritorial.1.b
+		
+		trigger = { country_exists = JCH }
+		
+		ai_chance = {
+			base = 5
+		}
+
+		JCH = {
+			transfer_state = 744
+			
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_xian_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.2
+	title = geacpsplusterritorial.2.t
+	desc = geacpsplusterritorial.2.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpsplusterritorial.2.a
+		
+		trigger = { 
+			country_exists = JCH
+			NOT = {
+				has_country_flag = JAP_geacps_china_coastal
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JCH = {
+			transfer_state = 609
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_easthebei_territorial_decision
+		}
+
+	}
+	option = {
+		name = geacpsplusterritorial.2.b
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+
+		MAN = {
+			transfer_state = 609
+			
+			hidden_effect = {
+			add_state_core = 609
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_easthebei_territorial_decision
+		}
+	}
+	
+	option = {
+		name = geacpsplusterritorial.2.c
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 10
+		}
+
+		JAP = {
+			add_stability = -0.01
+			
+			transfer_state = 609
+		
+			hidden_effect = {
+			add_state_core = 609
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_easthebei_territorial_decision
+		}
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.3
+	title = geacpsplusterritorial.3.t
+	desc = geacpsplusterritorial.3.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = geacpsplusterritorial.3.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		MAN = {
+			transfer_state = 745
+			
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_dalian_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.3.b
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			add_stability = -0.01
+			
+			transfer_state = 745
+		
+			hidden_effect = {
+			add_state_core = 745
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_dalian_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.4
+	title = geacpsplusterritorial.4.t
+	desc = geacpsplusterritorial.4.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.4.a
+		
+		trigger = {
+			country_exists = JCH
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JCH = {
+			transfer_state = 743
+
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_qingdao_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.4.b
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			add_stability = -0.01
+			
+			transfer_state = 743
+			
+			hidden_effect = {
+			add_state_core = 743
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_qingdao_territorial_decision
+		}
+
+	}
+	
+}
+
+country_event = {
+	id = geacpsplusterritorial.5
+	title = geacpsplusterritorial.5.t
+	desc = geacpsplusterritorial.5.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.5.a
+		
+		trigger = { 
+			country_exists = JGD
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JGD = {
+			transfer_state = 326
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hongkong_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.5.b
+		
+		trigger = { 
+			JAP = { has_country_flag = JAP_geacps_china_guangxi_guangdong }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JGX = {
+			transfer_state = 326
+			
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hongkong_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.5.c
+		
+		trigger = { 
+			JAP = { has_country_flag = JAP_geacps_china_roc_guangdong }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JCH = {
+			transfer_state = 326
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hongkong_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.5.e
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			add_stability = -0.01
+			
+			transfer_state = 326
+			
+			hidden_effect = {
+			add_state_core = 326
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hongkong_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.6
+	title = geacpsplusterritorial.6.t
+	desc = geacpsplusterritorial.6.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.6.a
+		
+		trigger = { 
+			country_exists = JGD
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JGD = {
+			transfer_state = 729
+			
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_macau_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.6.b
+		
+		trigger = { 
+			JAP = { has_country_flag = JAP_geacps_china_guangxi_guangdong }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JGX = {
+			transfer_state = 729
+
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_macau_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.6.c
+		
+		trigger = { 
+			JAP = { has_country_flag = JAP_geacps_china_roc_guangdong }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JCH = {
+			transfer_state = 729
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_macau_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.6.e
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			add_stability = -0.01
+		
+			transfer_state = 729
+			
+			hidden_effect = {
+			add_state_core = 729
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_macau_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.7
+	title = geacpsplusterritorial.7.t
+	desc = geacpsplusterritorial.7.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.7.a
+		
+		trigger = { 
+			country_exists = JGX
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JGX = {
+			transfer_state = 728
+
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_guangzhouwan_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.7.b
+		
+		trigger = { 
+			JAP = { has_country_flag = JAP_geacps_roc_guangxi }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JCH = {
+			transfer_state = 728
+
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_guangzhouwan_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.7.c
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			transfer_state = 728
+			
+			hidden_effect = {
+			add_state_core = 728
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_guangzhouwan_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.8
+	title = geacpsplusterritorial.8.t
+	desc = geacpsplusterritorial.8.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.8.a
+		
+		trigger = { 
+			country_exists = JGX
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JGX = {
+			transfer_state = 591
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hainan_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.8.b
+		
+		trigger = { 
+			JAP = { has_country_flag = JAP_geacps_roc_guangxi }
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JCH = {
+			transfer_state = 591
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hainan_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.8.c
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			transfer_state = 591
+			
+			hidden_effect = {
+			add_state_core = 591
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_hainan_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.9
+	title = geacpsplusterritorial.9.t
+	desc = geacpsplusterritorial.9.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.9.a
+		
+		trigger = { 
+			country_exists = JAH
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAH = {
+			transfer_state = 733
+			
+			hidden_effect = {
+			add_state_core = 733
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_andaman_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.9.b
+		
+		trigger = { 
+			country_exists = JBR
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JBR = {
+			transfer_state = 733
+			
+			hidden_effect = {
+			add_state_core = 733
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_andaman_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.9.c
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JAP = {
+			transfer_state = 733
+			
+			hidden_effect = {
+			add_state_core = 733
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_andaman_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.10
+	title = geacpsplusterritorial.10.t
+	desc = geacpsplusterritorial.10.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.10.a
+		
+		trigger = { 
+			country_exists = JAH
+			NOT = {
+				country_exists = JTN
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAH = {
+			transfer_state = 320
+			
+			hidden_effect = {
+			add_state_core = 320
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_frenchindia_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.10.b
+		
+		trigger = { 
+			country_exists = JTN
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JTN = {
+			transfer_state = 320
+			
+			hidden_effect = {
+			add_state_core = 320
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_frenchindia_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.10.c
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JAP = {
+			transfer_state = 320
+			
+			hidden_effect = {
+			add_state_core = 320
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_frenchindia_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.11
+	title = geacpsplusterritorial.11.t
+	desc = geacpsplusterritorial.11.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.11.a
+		
+		trigger = { 
+			country_exists = JAH
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAH = {
+			transfer_state = 321
+			
+			hidden_effect = {
+			add_state_core = 321
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_goa_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.11.b
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JAP = {
+			transfer_state = 321
+			
+			hidden_effect = {
+			add_state_core = 321
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_goa_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.12
+	title = geacpsplusterritorial.12.t
+	desc = geacpsplusterritorial.12.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.12.a
+		
+		trigger = { 
+			country_exists = JAH
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAH = {
+			transfer_state = 281
+			
+			hidden_effect = {
+			add_state_core = 281
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_maldives_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.12.b
+		
+		trigger = { 
+			country_exists = JSL
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JSL = {
+			transfer_state = 281
+			
+			hidden_effect = {
+			add_state_core = 281
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_maldives_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.12.c
+		
+		trigger = { 
+			country_exists = JTN
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		JTN = {
+			transfer_state = 281
+			
+			hidden_effect = {
+			add_state_core = 281
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_maldives_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.12.e
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAP = {
+			transfer_state = 281
+			
+			hidden_effect = {
+			add_state_core = 281
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_maldives_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.13
+	title = geacpsplusterritorial.13.t
+	desc = geacpsplusterritorial.13.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.13.a
+		
+		trigger = { 
+			country_exists = JAH
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JAH = {
+			transfer_state = 444
+			transfer_state = 445
+			transfer_state = 442
+			transfer_state = 987
+			transfer_state = 988
+			transfer_state = 1012
+			
+			hidden_effect = {
+				add_state_core = 442
+				add_state_core = 445
+				add_state_core = 444
+				add_state_core = 987
+				add_state_core = 988
+				add_state_core = 1012
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_pakistan_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.13.b
+		
+		trigger = { 
+			country_exists = JFG
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JFG = {
+			transfer_state = 444
+			transfer_state = 445
+			transfer_state = 442
+			transfer_state = 987
+			transfer_state = 988
+			transfer_state = 1012
+			
+			hidden_effect = {
+				add_state_core = 442
+				add_state_core = 445
+				add_state_core = 444
+				add_state_core = 987
+				add_state_core = 988
+				add_state_core = 1012
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_pakistan_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.14
+	title = geacpsplusterritorial.14.t
+	desc = geacpsplusterritorial.14.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = geacpsplusterritorial.14.a
+		
+		trigger = { 
+			country_exists = JIQ
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JIQ = {
+			transfer_state = 656
+
+			hidden_effect = {
+			add_state_core = 656
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_kuwait_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.14.b
+		
+		trigger = { 
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		JAP = {
+			transfer_state = 656
+			
+			hidden_effect = {
+			add_state_claim = 656
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_kuwait_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.15
+	title = geacpsplusterritorial.15.t
+	desc = geacpsplusterritorial.15.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geacpsplusterritorial.15.a
+		
+		trigger = { 
+			country_exists = MEN
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		MEN = {
+			transfer_state = 746
+			
+			hidden_effect = {
+			add_state_core = 746
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_ordos_territorial_decision
+		}
+
+	}
+
+	option = {
+		name = geacpsplusterritorial.15.b
+		
+		trigger = { 
+			country_exists = JSX
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JSX = {
+			transfer_state = 746
+			
+			hidden_effect = {
+			add_state_claim = 746
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_ordos_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.15.c
+		
+		trigger = { 
+			NOT = {
+				country_exists = JSX
+			}
+			country_exists = JCH
+		}
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_country_flag = JAP_geacps_china_colony
+				add = 20
+			}
+		}
+		
+		JCH = {
+			transfer_state = 746
+			
+			hidden_effect = {
+			add_state_claim = 746
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_ordos_territorial_decision
+		}
+
+	}
+}
+
+country_event = {
+	id = geacpsplusterritorial.16
+	title = geacpsplusterritorial.16.t
+	desc = geacpsplusterritorial.16.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geacpsplusterritorial.16.a
+		
+		trigger = { 
+			country_exists = MEN
+		}
+		
+		ai_chance = {
+			base = 3
+		}
+		
+		MEN = {
+			transfer_state = 756
+			
+			hidden_effect = {
+			add_state_core = 756
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_jiuquan_territorial_decision
+		}
+
+	}
+
+	option = {
+		name = geacpsplusterritorial.16.b
+		
+		trigger = { 
+			country_exists = JXM
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		JXM = {
+			transfer_state = 756
+			
+			hidden_effect = {
+			add_state_claim = 756
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_jiuquan_territorial_decision
+		}
+
+	}
+	
+	option = {
+		name = geacpsplusterritorial.16.c
+		
+		trigger = { 
+			NOT = {
+				country_exists = JXM
+			}
+			country_exists = JCH
+		}
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_country_flag = JAP_geacps_china_colony
+				add = 20
+			}
+		}
+		
+		JCH = {
+			transfer_state = 756
+			
+			hidden_effect = {
+			add_state_claim = 756
+			}
+		}
+		
+		JAP = { 
+		    set_country_flag = JAP_jiuquan_territorial_decision
+		}
+
+	}
+}
