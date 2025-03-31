@@ -224,6 +224,14 @@ SOV_ssrplus_categories_europe = {
 		fire_only_once = yes
 
 		complete_effect = {
+			SGD = {
+				create_country_leader = {
+					name = "Klara"
+					picture = "gfx/leaders/SOV/Portrait_SOV_Klara.dds"
+					expire = "9999.1.1.1"
+					ideology=marxism
+				}
+			}
 		    if = {
 				add_political_power = 25
 				add_stability = 0.01
@@ -680,6 +688,14 @@ SOV_ssrplus_categories_europe = {
 		fire_only_once = yes
 
 		complete_effect = {
+			SYG = {
+				create_country_leader = {
+					name = "Nonna"
+					picture = "gfx/leaders/SOV/Portrait_SOV_Nonna.dds"
+					expire = "9999.1.1.1"
+					ideology=marxism
+				}
+			}
 		    if = {
 				add_political_power = 25
 				add_stability = 0.01
@@ -1400,6 +1416,10 @@ SOV_ssrplus_categories_europe = {
 				32 = { is_controlled_by_ROOT_or_subject = yes }
 				21 = { is_controlled_by_ROOT_or_subject = yes }
 				851 = { is_controlled_by_ROOT_or_subject = yes }
+				28 = { is_controlled_by_ROOT_or_subject = yes }
+				735 = { is_controlled_by_ROOT_or_subject = yes }
+				1 = { is_controlled_by_ROOT_or_subject = yes }
+
 				
 
 			}
@@ -1418,6 +1438,14 @@ SOV_ssrplus_categories_europe = {
 		fire_only_once = yes
 
 		complete_effect = {
+			SFR = {
+				create_country_leader = {
+					name = "Isabe"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Isabe.dds"
+					expire = "9999.1.1.1"
+					ideology=marxism
+				}
+			}
 		    if = {
 				add_political_power = 25
 				add_stability = 0.01
@@ -1450,6 +1478,9 @@ SOV_ssrplus_categories_europe = {
 						state = 32
 						state = 21
 						state = 851
+						state = 1
+						state = 735
+						state = 28
 				    }
 			    }
 
@@ -1510,6 +1541,14 @@ SOV_ssrplus_categories_europe = {
 		fire_only_once = yes
 
 		complete_effect = {
+			SIT = {
+				create_country_leader = {
+					name = "Panetonne"
+					picture = GFX_portrait_ita_palmiro_togliatti
+					expire = "9999.1.1.1"
+					ideology=marxism
+				}
+			}
 		    if = {
 				add_political_power = 25
 				add_stability = 0.01
@@ -1669,10 +1708,46 @@ SOV_ssrplus_categories_europe = {
 		fire_only_once = yes
 
 		complete_effect = {
-			country_event = ssrpluscountry.2
+			every_state = {
+				limit = {
+					OR = {
+						state = 123
+						state = 338
+						state = 127
+						state = 126
+						state = 125
+						state = 122	
+						state = 128
+						state = 129
+						state = 130
+						state = 132
+						state = 131
+						state = 121	
+						state = 133
+						state = 120
+						state = 136
+						state = 931
+					}
+				}
+	
+				SEG = {
+	
+					transfer_state = PREV
+					create_country_leader = {
+						name = "Assam"
+						picture = "gfx/leaders/ENG/Portrait_ENG_Assam.dds"
+						expire = "9999.1.1.1"
+						ideology=marxism
+					}
+					hidden_effect = {
+						add_state_core = PREV
+					}
+	
+				}
+			}
 		}
 		timeout_effect = {
-			country_event = ssrpluscountry.2
+			
 		}
 	}
 	
@@ -2605,121 +2680,7 @@ SOV_ssrplus_categories_asia = {
 		}
 	}
 	
-	SOV_ssrplus_ceylon = {
-		icon = GFX_decision_category_generic_communism
-
-		available = {
-			has_government = communism
-			is_subject = no
-			
-			NOT = {
-				country_exists = SSL
-			}
-			
-			custom_trigger_tooltip = { 
-			    tooltip = ssrplus.tooltip.27
-				422 = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			has_government = communism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			if = {
-				add_political_power = 25
-				add_stability = 0.01
-
-				set_autonomy = { target = SSL autonomy_state = autonomy_puppet }
-			}
-			
-			every_state = {
-				limit = {
-					OR = {
-						state = 422
-					}
-				}
-
-				SSL = {
-
-				    transfer_state = PREV
-					
-					hidden_effect = {
-				        add_state_core = PREV
-					}
-		
-			    }
-			}
-		}
-	}
 	
-	SOV_ssrplus_nepal = {
-		icon = GFX_decision_category_generic_communism
-
-		available = {
-			has_government = communism
-			is_subject = no
-			
-			NOT = {
-				country_exists = SNL
-			}
-			
-			custom_trigger_tooltip = { 
-			    tooltip = ssrplus.tooltip.28
-				323 = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			has_government = communism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			if = {
-				add_political_power = 25
-				add_stability = 0.01
-
-				set_autonomy = { target = SNL autonomy_state = autonomy_puppet }
-			}
-			
-			every_state = {
-				limit = {
-					OR = {
-						state = 323
-					}
-				}
-
-				SNL = {
-
-				    transfer_state = PREV
-					
-					hidden_effect = {
-				        add_state_core = PREV
-					}
-		
-			    }
-			}
-		}
-	}
 	
 	SOV_ssrplus_tibet = {
 		icon = GFX_decision_category_generic_communism

@@ -29,33 +29,3 @@ SOV_ssrplus_categories_territorial_ceding = {
 		original_tag = SOV
 	}
 }
-
-SOV_ssrplus_categories_integration = {
-	icon = GFX_decision_category_SOV_permanent_revolution
-
-	allowed = {
-		original_tag = SOV
-	}
-}
-
-SOV_ssrplus_categories_integration_supremesoviet = {
-	icon = GFX_decision_category_SOV_permanent_revolution
-
-	allowed = {
-		original_tag = SOV
-		
-		
-	}
-	
-	visible = {
-		has_completed_focus = SOV_the_supreme_soviet
-	}
-}
-
-SOV_ssrplus_categories_uniting_SSRs = {
-	icon = GFX_decision_category_SOV_permanent_revolution
-
-	allowed = {
-		original_tag = SOV
-	}
-}
