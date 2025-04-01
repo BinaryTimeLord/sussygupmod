@@ -3433,6 +3433,13 @@ JAP_geacpsplus_categories_asia = {
 					
 					hidden_effect = {
 				        add_state_core = PREV
+						retire_country_leader = yes
+						create_country_leader = {
+							name = "Noriyo Hamada"
+							picture = "gfx/leaders/JAP/Hamada.dds"
+							expire = "9999.1.1.1"
+							ideology = fascism_ideology
+						}
 					}
 
 			    }
