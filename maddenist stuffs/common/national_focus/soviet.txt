@@ -1119,6 +1119,217 @@ focus_tree = {
 
 			}
 		}
+		focus = {
+			id = SOV_Great_Liberation_Mobilization
+			#icon = 
+
+			available = {
+
+			}
+			x = 50
+			y = 0
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_like_waves
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Great_Liberation_Mobilization
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Great_Liberation_Mobilization
+			x = -6
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Emergency_Uni_Mob
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Great_Liberation_Mobilization
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Great_Liberation_Mobilization
+			x = -4
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Mobilize_First_Years
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Emergency_Uni_Mob
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Emergency_Uni_Mob
+			x = 0
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_First_Year_Reserve
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Great_Liberation_Mobilization
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Great_Liberation_Mobilization
+			x = 4
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Nonna_Temporary
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Great_Liberation_Mobilization
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Great_Liberation_Mobilization
+			x = 0
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_First_Year_Reserve
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Great_Liberation_Mobilization
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Great_Liberation_Mobilization
+			x = 8
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Hold_Fast
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Nonna_Temporary
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Nonna_Temporary
+			x = 0
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Student_Guard	
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Hold_Fast
+			}
+			mutually_exclusive = {
+				focus = SOV_Curtail_Student_Guard
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Hold_Fast
+			x = -2
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Curtail_Student_Guard
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Hold_Fast
+			}
+			mutually_exclusive = {
+				focus = SOV_Student_Guard
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Hold_Fast
+			x = 0
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = SOV_Student_Punishment
+			#icon = 
+
+			prerequisite = {
+				focus = SOV_Hold_Fast
+			}
+			available = {
+
+			}
+			relative_position_id = SOV_Hold_Fast
+			x = 2
+			y = 1
+
+			cost = 5
+			completion_reward = {
+
+			}
+		}
+		
 		
 
 

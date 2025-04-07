@@ -3023,6 +3023,12 @@ SOV_ssrplus_categories_asia = {
 				}
 
 				SCH = {
+					create_country_leader = {
+						name = "Nonna"
+						picture = "gfx/leaders/SOV/Portrait_SOV_Nonna.dds"
+						expire = "9999.1.1.1"
+						ideology = marxism
+					}
 
 				    transfer_state = PREV
 					
@@ -3031,7 +3037,7 @@ SOV_ssrplus_categories_asia = {
 					}
 			    }
 			}
-			country_event = ssrpluscountry.5
+			#country_event = ssrpluscountry.5
 		}
 	}
 	

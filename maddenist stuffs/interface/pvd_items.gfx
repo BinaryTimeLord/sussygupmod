@@ -92,4 +92,9 @@ spriteTypes = {
 		name = "GFX_SOV_katyusha_angry"
 		texturefile = "gfx/event_pictures/Pravda/SOV_katyusha_angry.dds"
 	}
+	#autonomy state
+	spriteType = {
+		name = "GFX_autonomy_soviet_socialist_republic_icon"
+		texturefile = "gfx/interface/autonomy/autonomy_soviet_socialist_republic.dds"
+	}
 }
