@@ -876,11 +876,7 @@ if = {
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
 add_ideas = {	
-	home_of_revolution
-	trotskyite_plot_nsb
-	SOV_politicized_military
-
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+	PRV_bad_army
 }
 
 1939.1.1 = {
@@ -892,11 +888,6 @@ add_ideas = {
 	
 	#DESIGNERS AND LAWS
 	add_ideas = {
-		stalingrad_tractor_factory
-		SOV_tula_arms_plant
-		#laws
-		war_economy
-		extensive_conscription
 	}
 
 
@@ -920,20 +911,12 @@ add_ideas = {
 	#ADVISORS
 	#Yagoda and Yezhov get purged -> Beriya is new Head of NKVD
 	remove_ideas = SOV_genrikh_yagoda
-	add_ideas = SOV_lavrenty_beriya #Chars cannot be added using a single add_ideas effect for all of them
-	add_ideas = vladimir_kasatonov
+	add_ideas = S
+	add_ideas = 
 
 	#PURGE NSs
-	add_timed_idea = {
-		idea = SOV_understaffed_bureaucracy
-		days = 365
-	}
 	add_ideas = {
-		SOV_anti_soviet_military_thinking_banned_army
-		SOV_purged_junior_army_officers_2
-		SOV_anti_soviet_military_thinking_banned_navy
-		SOV_purged_junior_navy_officers_1
-		SOV_anti_soviet_military_thinking_banned_airforce
+		
 	}
 
 	SOV_remove_paranoia_effect = yes

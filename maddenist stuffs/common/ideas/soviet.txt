@@ -1647,23 +1647,7 @@ ideas = {
 				send_volunteer_divisions_required = -1.0
 			}
 		}
-		trotskyite_plot = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				military_leader_cost_factor = 1.0
-				war_support_factor = -0.2
-				stability_factor = -0.2
-			}
-		}
+	
 
 		officers_purged = {
 			removal_cost = -1
