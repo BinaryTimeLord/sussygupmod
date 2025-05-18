@@ -160,4 +160,37 @@ spriteTypes = {
 		name = "GFX_choose_rose"
 		texturefile = "gfx/interface/goals/St. Gloriana/focus_choose_rose.tga"
 	 }
+	 ##PRAVDA
+	 SpriteType = {
+		name = "GFX_purge_disloyalty"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_purge_disloyalty.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_doctrine_mind"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_doctrine_mind.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_power_struggle_aftermath"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_power_struggle_aftermath.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_power_struggle_aftermath"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_power_struggle_aftermath.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_dealing_klara"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_dealing_klara.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_pawns_on_board"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_pawns_on_board.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_firm_hand"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_firm_hand.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_katyusha_cult"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_katyusha_cult.dds" 
+	 }
  }
