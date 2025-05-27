@@ -198,3 +198,37 @@
  COG_belgian_congo: "[BEL.GetAdective] Mamba"
  COG_belgian_congo_DEF: "The [BEL.GetAdective] Mamba"
  COG_belgian_congo_ADJ: "Mambese"
+
+ #Soviet
+
+ SOV_complete_5_year: "The 5 Year Plan"
+ SOV_literacy_campaign: "Pravda Literacy Campaign"
+ SOV_trans_siberian: "The Trans-Siberian Railway"
+ SOV_develop_grozny_fields: "Developed Fields"
+ SOV_siberian_exports: "Exports from Pravda"
+ SOV_expanding_synthetic: "Expand Pravda's Synthetic Refineries"
+ SOV_expanded_refinement: "Pravda's Refineries Expanded"
+ SOV_the_oil_must_flow: "Pravda's Oil Must Flow"
+ 
+ SOV_expanding_resettlement: "Expand Resettlement"
+ SOV_katyusha_tractor: "Develop Katyusha Tractor"
+ SOV_expanding_GAZ: "Expand GAZ"
+ SOV_modernize_agriculture: "Modernize Agriculture Technology"
+ SOV_import_technical_experts: "Invite Technical Experts"
+ SOV_new_3_year: "The 3 Year Plan"
+
+ SOV_power_to_the_workers: "Worker's Rights"
+ SOV_katyushagrad_university: "Katyushagrad University"
+ SOV_expand_communist_education: "Expand Communist Education"
+ SOV_vladivostok_naval_academy: "Pravda Naval Academy"
+ SOV_modern_soviet: "Modern Pravda"
+ SOV_katyusha_rockets: "Katyusha Rockets"
+ SOV_palace_revolution: "The Palace Revolution"
+ SOV_weapons_development: "Develop New Weapons"
+
+ SOV_aggressive_industrial_expansion: "Aggressive Industrial Expansion"
+ SOV_develop_east: "Develop The East"
+ SOV_expand_vladivostok_artic: "Expand Vladivostok Artic" #I really don't know what you meant by this for now
+ SOV_collective_expansion: "Pravda Collective Expansion"
+ SOV_end_peacetime_rationing: "End Peacetime Rationing"
+ SOV_land_clearances: "Pravda Land Clearances"
