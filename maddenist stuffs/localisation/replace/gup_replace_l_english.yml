@@ -198,3 +198,18 @@
  COG_belgian_congo: "[BEL.GetAdective] Mamba"
  COG_belgian_congo_DEF: "The [BEL.GetAdective] Mamba"
  COG_belgian_congo_ADJ: "Mambese"
+
+ #Soviet
+
+ SOV_complete_5_year: "The 5 Year Plan"
+ SOV_literacy_campaign: "Pravda Literacy Campaign"
+ SOV_trans_siberian: "The Trans-Siberian Railway"
+ SOV_develop_grozny_fields: "Developed Fields"
+ SOV_siberian_exports: "Exports from Pravda"
+ SOV_expanding_synthetic: "Expand Pravda's Synthetic Refineries"
+ SOV_expanded_refinement: "Pravda's Refineries Expanded"
+ SOV_the_oil_must_flow: "Pravda's Oil Must Flow"
+
+ SOV_expanding_resettlement: "Expand Resettlement"
+ SOV_katyusha_tractor: "Develop Katyusha Tractor"
+ SOV_expanding_GAZ: "Expand GAZ"
