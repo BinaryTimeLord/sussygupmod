@@ -232,3 +232,18 @@
  SOV_collective_expansion: "Pravda Collective Expansion"
  SOV_end_peacetime_rationing: "End Peacetime Rationing"
  SOV_land_clearances: "Pravda Land Clearances"
+
+ SOV_Great_Liberation_Mobilization: "The Great Liiberation Mobilization"
+ SOV_Nonna_Temporary: "Nonna Holds Power"
+ SOV_Hold_Fast: "Hold Fast" #I also don't know what this means
+ SOV_Student_Guard: "Support The Sutdent Guard"
+ SOV_Curtail_Student_Guard: "Restrict The Student Guard"
+ SOV_Student_Punishment: "Punish Students"
+
+ SOV_Emergency_Uni_Mob: "Mobilize Units"
+ SOV_Mobilize_First_Years: "Mobilize First Years"
+
+ SOV_purge_third_years: "Purge The Third Years"
+
+ SOV_reappoint_ministers: "Reappoint Ministers"
+ SOV_expand_pioneer: "Expand The Pioneers"
