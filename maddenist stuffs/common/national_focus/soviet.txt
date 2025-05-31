@@ -32,7 +32,7 @@ focus_tree = {
 	##MILITARY BRANCH
 		focus = {
 		id = SOV_purge_third_years
-		#icon =
+		icon = GFX_purge_third_years
 
 		available = {
 			
@@ -49,7 +49,7 @@ focus_tree = {
 	 ##LAND BRANCH 
 	 	focus = {
 		id = SOV_reappoint_ministers
-		#icon =
+		icon = GFX_reappoint_ministers
 
 		prerequisite = {
 			focus = SOV_purge_third_years
@@ -72,7 +72,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_form_vdv
-		#icon =
+		icon = GFX_form_vdv
 
 		prerequisite = {
 			focus = SOV_reappoint_ministers
@@ -92,7 +92,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_expand_pioneer
-		#icon =
+		icon = GFX_expand_pioneers
 
 		prerequisite = {
 			focus = SOV_reappoint_ministers
@@ -112,7 +112,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_women_gunners
-		#icon =
+		icon = GFX_women_gunners
 
 		prerequisite = {
 			focus = SOV_expand_pioneer
@@ -132,7 +132,7 @@ focus_tree = {
 		
 		focus = {
 		id = SOV_training_priorities
-		#icon =
+		icon = GFX_training_priorities
 
 		prerequisite = {
 			focus = SOV_reappoint_ministers
@@ -152,7 +152,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_officer_camps
-		#icon =
+		icon = GFX_focus_generic_military_academy
 
 		prerequisite = {
 			focus = SOV_training_priorities
@@ -176,7 +176,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_naval_inf
-		#icon =
+		icon = GFX_naval_inf_1
 
 		prerequisite = {
 			focus = SOV_reappoint_ministers
@@ -207,7 +207,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_navalinf_dev
-		#icon =
+		icon = GFX_naval_inf_2
 
 		prerequisite = {
 			focus = SOV_naval_inf
@@ -233,7 +233,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_radio_effort
-		#icon =
+		icon = GFX_focus_generic_radio_communication
 
 		prerequisite = {
 			focus = SOV_navalinf_dev
@@ -263,7 +263,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_army_confidence
-		#icon =
+		icon = GFX_army_confidence
 
 		prerequisite = {
 			focus = SOV_radio_effort
@@ -290,7 +290,7 @@ focus_tree = {
 	 ##AIR BRANCH
 		focus = {
 		id = SOV_training_maintenance
-		#icon =
+		icon = GFX_goal_generic_air_production
 
 		prerequisite = {
 			focus = SOV_purge_third_years
@@ -310,7 +310,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_standard_maintenance
-		#icon =
+		icon = GFX_focus_generic_copy_plane_designs
 
 		prerequisite = {
 			focus = SOV_training_maintenance
@@ -330,7 +330,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_expanded_program
-		#icon =
+		icon = GFX_SOV_found_the_jet_institute_ccp_2d_sov_compatibility
 
 		prerequisite = {
 			focus = SOV_standard_maintenance
@@ -350,7 +350,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_unground_airforce
-		#icon =
+		icon = GFX_focus_generic_air_bases
 
 		prerequisite = {
 			focus = SOV_expanded_program
@@ -370,7 +370,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_fighter_adventurers
-		#icon =
+		icon = GFX_goal_generic_air_fighter2
 
 		prerequisite = {
 			focus = SOV_training_maintenance
@@ -390,7 +390,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_aviation_manufacturing
-		#icon =
+		icon = GFX_goal_generic_construct_mil_factory
 
 		prerequisite = {
 			focus = SOV_fighter_adventurers
@@ -417,7 +417,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_heavy_manufacturing
-		#icon =
+		icon = GFX_focus_generic_aircraft_production
 
 		prerequisite = {
 			focus = SOV_training_maintenance
@@ -437,7 +437,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_auxilary_development
-		#icon =
+		icon = GFX_focus_generic_air_research_boost
 
 		prerequisite = {
 			focus = SOV_heavy_manufacturing
@@ -457,7 +457,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_modern_airforce
-		#icon =
+		icon = GFX_focus_PER_the_peoples_airforce
 
 		prerequisite = {
 			focus = SOV_auxilary_development
@@ -484,7 +484,7 @@ focus_tree = {
 	 ##NAVY BRANCH
 	 	focus = {
 		id = SOV_underfunded_navy
-		#icon =
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 
 		prerequisite = {
 			focus = SOV_purge_third_years
@@ -504,7 +504,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_naval_buildup
-		#icon =
+		icon = GFX_focus_generic_refit_civilian_ships
 
 		prerequisite = {
 			focus = SOV_underfunded_navy
@@ -524,7 +524,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_battleship_priority
-		#icon =
+		icon = GFX_focus_generic_navy_battleship2
 
 		mutually_exclusive = {
 			focus = SOV_lcruiser_priority
@@ -548,7 +548,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_lcruiser_priority
-		#icon =
+		icon = GFX_focus_generic_cruiser2
 
 		mutually_exclusive = {
 			focus = SOV_battleship_priority
@@ -572,7 +572,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_carrier_priority
-		#icon =
+		icon = GFX_goal_generic_navy_carrier
 
 		mutually_exclusive = {
 			focus = SOV_lcruiser_priority
@@ -596,7 +596,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_mandatory_regiments
-		#icon =
+		icon = GFX_focus_generic_naval_discipline
 
 		prerequisite = {
 			focus = SOV_lcruiser_priority
@@ -618,7 +618,7 @@ focus_tree = {
 
 		focus = {
 		id = SOV_grand_navy
-		#icon =
+		icon = GFX_focus_PER_the_peoples_navy
 
 		prerequisite = {
 			focus = SOV_mandatory_regiments
@@ -638,7 +638,7 @@ focus_tree = {
 
 		focus = {
 			id = SOV_complete_5_year
-			#icon = 
+			icon = GFX_focus_generic_communist_industry
 
 			available = {
 				always = no
@@ -652,7 +652,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_literacy_campaign
-			#icon = 
+			icon = GFX_focus_NOR_moscows_education_centers
 
 			prerequisite = {
 				focus = SOV_complete_5_year
@@ -670,7 +670,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_trans_siberian
-			#icon = 
+			icon = GFX_focus_generic_railroad
 
 			prerequisite = {
 				focus = SOV_literacy_campaign
@@ -688,7 +688,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_develop_grozny_fields
-			#icon = 
+			icon = GFX_goal_generic_oil_refinery
 
 			prerequisite = {
 				focus = SOV_trans_siberian
@@ -706,7 +706,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_siberian_exports
-			#icon = 
+			icon = GFX_goal_generic_trade
 
 			prerequisite = {
 				focus = SOV_develop_grozny_fields
@@ -724,7 +724,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_expanding_synthetic
-			#icon = 
+			icon = GFX_focus_PER_increase_oil_sales
 
 			prerequisite = {
 				focus = SOV_develop_grozny_fields
@@ -742,7 +742,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_expanded_refinement
-			#icon = 
+			icon = GFX_focus_generic_stockpile_fuel
 
 			prerequisite = {
 				focus = SOV_expanding_synthetic
@@ -763,7 +763,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_the_oil_must_flow
-			#icon = 
+			icon = GFX_focus_PER_invite_oil_nations
 
 			prerequisite = {
 				focus = SOV_expanded_refinement
@@ -781,7 +781,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_expanding_resettlement
-			#icon = 
+			icon = GFX_focus_generic_low_cost_housing
 
 			prerequisite = {
 				focus = SOV_trans_siberian
@@ -799,7 +799,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_katyusha_tractor
-			#icon = 
+			icon = GFX_focus_generic_farmland
 
 			prerequisite = {
 				focus = SOV_expanding_resettlement
@@ -817,7 +817,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_expanding_GAZ
-			#icon = 
+			icon = GFX_focus_generic_military_industry
 
 			prerequisite = {
 				focus = SOV_expanding_resettlement
@@ -835,7 +835,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_modernize_agriculture
-			#icon = 
+			icon = GFX_focus_generic_agricultural_subsidies
 
 			prerequisite = {
 				focus = SOV_expanding_resettlement
@@ -853,7 +853,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_import_technical_experts
-			#icon = 
+			icon = GFX_focus_generic_whispers
 
 			prerequisite = {
 				focus = SOV_expanding_resettlement
@@ -871,7 +871,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_new_3_year
-			#icon = 
+			icon = GFX_focus_prc_agrarian_socialism
 
 			prerequisite = {
 				focus = SOV_import_technical_experts
@@ -898,7 +898,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_power_to_the_workers
-			#icon = 
+			icon = GFX_focus_generic_workers
 
 			prerequisite = {
 				focus = SOV_trans_siberian
@@ -916,7 +916,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_expand_communist_education
-			#icon = 
+			icon = GFX_focus_NOR_moscows_education_centers
 
 			prerequisite = {
 				focus = SOV_power_to_the_workers
@@ -934,7 +934,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_katyushagrad_university
-			#icon = 
+			icon = GFX_focus_generic_university_1
 
 			prerequisite = {
 				focus = SOV_power_to_the_workers
@@ -952,7 +952,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_vladivostok_naval_academy
-			#icon = 
+			icon = GFX_focus_generic_military_academy
 
 			prerequisite = {
 				focus = SOV_power_to_the_workers
@@ -970,7 +970,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_modern_soviet
-			#icon = 
+			icon = GFX_goal_support_communism
 
 			prerequisite = {
 				focus = SOV_expand_communist_education
@@ -988,7 +988,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_katyusha_rockets
-			#icon = 
+			icon = GFX_focus_rocketry
 
 			prerequisite = {
 				focus = SOV_modern_soviet
@@ -1006,7 +1006,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_palace_revolution
-			#icon = 
+			icon = GFX_focus_generic_spur_communist_revolutions
 
 			prerequisite = {
 				focus = SOV_modern_soviet
@@ -1024,7 +1024,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_weapons_development
-			#icon = 
+			icon = GFX_goal_generic_army_artillery
 
 			prerequisite = {
 				focus = SOV_modern_soviet
@@ -1042,7 +1042,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_aggressive_industrial_expansion
-			#icon = 
+			icon = GFX_focus_generic_industry_1
 
 			prerequisite = {
 				focus = SOV_trans_siberian
@@ -1060,7 +1060,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_collective_expansion
-			#icon = 
+			icon = GFX_focus_generic_modernize_industry
 
 			prerequisite = {
 				focus = SOV_aggressive_industrial_expansion
@@ -1078,7 +1078,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_develop_east
-			#icon = 
+			icon = GFX_focus_SWE_urbanization
 
 			prerequisite = {
 				focus = SOV_aggressive_industrial_expansion
@@ -1096,7 +1096,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_expand_vladivostok_arctic
-			#icon = 
+			icon = GFX_goal_generic_construct_naval_dockyard
 
 			prerequisite = {
 				focus = SOV_develop_east
@@ -1114,7 +1114,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_end_peacetime_rationing
-			#icon = 
+			icon = GFX_focus_SWE_rations
 
 			prerequisite = {
 				focus = SOV_collective_expansion
@@ -1132,7 +1132,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_land_clearances
-			#icon = 
+			icon = GFX_focus_SWE_hygienic_housing
 
 			prerequisite = {
 				focus = SOV_aggressive_industrial_expansion
@@ -1150,7 +1150,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Great_Liberation_Mobilization
-			#icon = 
+			icon = GFX_focus_generic_spur_communist_revolutions
 
 			available = {
 
@@ -1164,7 +1164,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_like_waves
-			#icon = 
+			icon = GFX_focus_SOV_builder_of_the_red_army
 
 			prerequisite = {
 				focus = SOV_Great_Liberation_Mobilization
@@ -1183,7 +1183,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Emergency_Uni_Mob
-			#icon = 
+			icon = GFX_focus_SOV_mobilization_plan
 
 			prerequisite = {
 				focus = SOV_Great_Liberation_Mobilization
@@ -1202,7 +1202,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Mobilize_First_Years
-			#icon = 
+			icon = GFX_focus_SOV_mobilization_plan
 
 			prerequisite = {
 				focus = SOV_Emergency_Uni_Mob
@@ -1221,7 +1221,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_First_Year_Reserve
-			#icon = 
+			icon = GFX_focus_SOV_mobilization_plan
 
 			prerequisite = {
 				focus = SOV_Great_Liberation_Mobilization
@@ -1240,7 +1240,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Nonna_Temporary
-			#icon = 
+			icon = GFX_focus_generic_military_mission
 
 			prerequisite = {
 				focus = SOV_Great_Liberation_Mobilization
@@ -1259,7 +1259,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_First_Year_Reserve
-			#icon = 
+			icon = GFX_focus_SOV_mobilization_plan
 
 			prerequisite = {
 				focus = SOV_Great_Liberation_Mobilization
@@ -1278,7 +1278,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Hold_Fast
-			#icon = 
+			icon = GFX_focus_SOV_builder_of_the_red_army
 
 			prerequisite = {
 				focus = SOV_Nonna_Temporary
@@ -1297,7 +1297,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Student_Guard	
-			#icon = 
+			icon = GFX_SOV_the_new_soviet_woman_ccp_2d_sov_compatibility
 
 			prerequisite = {
 				focus = SOV_Hold_Fast
@@ -1319,7 +1319,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Curtail_Student_Guard
-			#icon = 
+			icon = GFX_focus_GER_end_european_communism
 
 			prerequisite = {
 				focus = SOV_Hold_Fast
@@ -1341,7 +1341,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SOV_Student_Punishment
-			#icon = 
+			icon = GFX_focus_SOV_penal_battalions
 
 			prerequisite = {
 				focus = SOV_Hold_Fast
