@@ -193,4 +193,40 @@ spriteTypes = {
 		name = "GFX_katyusha_cult"
 		texturefile = "gfx/interface/goals/pravda/focus_SOV_katyusha_cult.dds" 
 	 }
+	 SpriteType = {
+		name = "GFX_purge_third_years"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_purge_3rd_years.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_reappoint_ministers"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_reappoint_ministers.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_form_vdv"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_form_VDV.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_expand_pioneers"
+		texturefile = "gfx/interface/goals/pravda/focus_SOV_expand_pioneers.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_women_gunners"
+		texturefile = "gfx/interface/goals/pravda/focus_women_gunners.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_training_priorities"
+		texturefile = "gfx/interface/goals/pravda/focus_training_priorities.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_naval_inf_1"
+		texturefile = "gfx/interface/goals/pravda/focus_naval_inf.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_naval_inf_2"
+		texturefile = "gfx/interface/goals/pravda/focus_naval_inf_2.dds" 
+	 }
+	 SpriteType = {
+		name = "GFX_army_confidence"
+		texturefile = "gfx/interface/goals/pravda/focus_army_confidence.dds" 
+	 }
  }
