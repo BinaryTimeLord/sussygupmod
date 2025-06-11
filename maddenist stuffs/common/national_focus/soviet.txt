@@ -4992,6 +4992,9 @@ ai_will_do = {
 		relative_position_id = SOV_purge_disloyalty
 		x = 1
 		y = 1
+completion_reward = {
+#country_event
+}
 	}
 	focus = {
 		id = SOV_doctrine_mind
@@ -5007,7 +5010,11 @@ ai_will_do = {
 		x = -1
 		y = 1
 		completion_reward = {
-
+add_stability = 0.05
+add_popularity = {
+ideology = communism
+popularity = 0.1
+}
 		}
 	}
 	focus = {
@@ -5024,7 +5031,7 @@ ai_will_do = {
 		x = 1
 		y = 1
 		completion_reward = {
-
+add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -5041,10 +5048,11 @@ ai_will_do = {
 		x = -1
 		y = 1
 		completion_reward = {
-
+  add_stability = 0.05
+#add Nonna trait
 		}
 	}
-	##isolate nonna focus was hidden behind dealing klara, fixed it, caution with that to whoever did this##
+	##isolate nonna focus was hidden behind dealing #klara, fixed it, caution with that to whoever #did this##
 	
 	focus = {
 		id = SOV_pawns_on_board
@@ -5063,7 +5071,7 @@ ai_will_do = {
 		x = -1
 		y = 3
 		completion_reward = {
-
+add_political_power = 200
 		}
 	}
 	focus = {
