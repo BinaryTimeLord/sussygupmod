@@ -1478,22 +1478,18 @@ news_event = {
 		}
 	}
 
+country_event = {
+	id = pvd.222
+	title = pvd.222.t
+	desc = pvd.222.d
+	#picture = GFX_SOV_pravda_party
+		
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = news.221.b
-		trigger = {
-			NOT = {
-				has_government = communism 
-			}
-			NOT = {
-				tag = MEX
-			}
-		}
-	}
-
-	option = {
-		name = news.221.c
-		trigger = {
-			tag = MEX
-		}
+		name = pvd.222.a
+		
 	}
 }
