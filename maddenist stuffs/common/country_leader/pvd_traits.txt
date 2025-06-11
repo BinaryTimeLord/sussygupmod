@@ -109,5 +109,12 @@ leader_traits = {
 		monthly_population = 1.0
 		sprite = 13
 	}
+
+#PRAVDA TREE TRAITS
+
+dictatorship_of_mind = {
+random = no
+war_support_weekly = 0.01
+}
 	
 }
