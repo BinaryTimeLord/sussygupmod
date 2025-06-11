@@ -1,3 +1,5 @@
 leader_traits = {
-
+communist_loyalist = {
+random = no
+}
 }
