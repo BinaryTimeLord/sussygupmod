@@ -22,7 +22,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_sorry_state
-		icon = GFX_sorry_state
+		icon = GFX_focus_eng_decolonization
 
 		available = {
 			
@@ -53,7 +53,7 @@ focus_tree = {
 	}
 		focus = {
 			id = ENG_defence_spending
-			icon = GFX_defense_spending
+			icon = GFX_focus_RAJ_special_economic_zones
 			prerequisite = {
 				focus = ENG_sorry_state
 			}
@@ -74,7 +74,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_limited_liability
-			icon = GFX_limited_liability
+			icon = GFX_focus_generic_aircraft_production
 			prerequisite = {
 				focus = ENG_defence_spending
 			}
@@ -110,7 +110,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_global_sorties
-			icon = GFX_global_sortie
+			icon = GFX_goal_generic_navy_battleship
 			prerequisite = {
 				focus = ENG_defence_spending
 			}
@@ -132,7 +132,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_royal_navy_budget
-			icon = GFX_navy_budget
+			icon = GFX_goal_generic_navy_doctrines_tactics
 			prerequisite = {
 				focus = ENG_global_sorties
 			}
@@ -149,7 +149,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_shadow_factories
-			icon = GFX_shadow_factory
+			icon = GFX_goal_generic_construct_mil_factory
 			prerequisite = {
 				focus = ENG_limited_liability
 			}
@@ -174,7 +174,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_royal_navy_requisition
-			icon = GFX_navy_requisition
+			icon = GFX_goal_generic_construct_naval_dockyard
 			prerequisite = {
 				focus = ENG_royal_navy_budget
 			}
@@ -191,7 +191,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_heart_of_oak
-			icon = GFX_heart_oak
+			icon = GFX_focus_eng_the_sun_never_sets
 			prerequisite = {
 				focus = ENG_royal_navy_budget
 			}
@@ -210,7 +210,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_finalize_commonwealth
-			icon = GFX_finalize_commonwealth
+			icon = GFX_focus_eng_imperial_federation
 			prerequisite = {
 				focus = ENG_global_sorties
 			}
@@ -269,7 +269,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Remembered_Not_Forgotten
-			icon = GFX_remember_forgot
+			icon = GFX_focus_generic_limited_social_mobilization
 			prerequisite = {
 				focus = ENG_finalize_commonwealth
 			}
@@ -287,7 +287,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Over_the_Hills
-			icon = GFX_over_hills
+			icon = GFX_focus_RAJ_mountain_guns
 			prerequisite = {
 				focus = ENG_Remembered_Not_Forgotten
 			}
@@ -304,7 +304,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_On_the_Beaches
-			icon = GFX_on_beaches
+			icon = GFX_focus_generic_naval_invasion
 			prerequisite = {
 				focus = ENG_Over_the_Hills
 			}
@@ -322,7 +322,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Lion_Roars
-			icon = GFX_lion_roars
+			icon = GFX_focus_SWE_the_lion_of_the_north
 			prerequisite = {
 				focus = ENG_On_the_Beaches
 			}
@@ -407,7 +407,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_dominion_recruit
-			icon = GFX_dominion_recruit
+			icon = GFX_focus_SOV_mobilization_plan
 
 			prerequisite = {
 				focus = ENG_Captain_Best
@@ -442,7 +442,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_chain_home
-			icon = GFX_chain_home
+			icon = GFX_goal_generic_radar
 			prerequisite = {
 				focus = ENG_shadow_factories
 			}
@@ -490,7 +490,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_air_ministry
-			icon = GFX_ministry_reshuffle
+			icon = GFX_focus_eng_special_air_service
 			prerequisite = {
 				focus = ENG_shadow_factories
 			}
@@ -516,7 +516,7 @@ focus_tree = {
 	}
 		focus = {
 			id = ENG_dad_army
-			icon = GFX_dad_army
+			icon = GFX_focus_generic_commonwealth_build_infantry
 			prerequisite = {
 				focus = ENG_dominion_recruit
 			}
@@ -586,7 +586,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_royal_bugger
-			icon = GFX_royal_bugger
+			icon = GFX_focus_chi_mission_to_the_us
 			prerequisite {
 				focus = ENG_dad_army
 			}
@@ -604,7 +604,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_hms_service
-			icon = GFX_hms_service
+			icon = GFX_focus_generic_secret_service_agency
 			prerequisite {
 				focus = ENG_royal_bugger
 			}
@@ -626,7 +626,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_Long_Way_Mukumbura
-			icon = GFX_long_mukumbura
+			icon = GFX_goal_tfv_saf_secure_interests_in_africa
 			prerequisite = {
 				focus = ENG_dominion_recruit
 			}
@@ -681,7 +681,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Recruiting_Sargents
-			icon = GFX_recruit_sgt
+			icon = GFX_focus_generic_military_mission
 			prerequisite = {
 				focus = ENG_Long_Way_Mukumbura
 			}
@@ -722,7 +722,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_A_Rather_Light_Horse
-			icon = GFX_light_horse
+			icon = GFX_goal_generic_cavalry
 			prerequisite = {
 				focus = ENG_Recruiting_Sargents
 			}
@@ -790,7 +790,7 @@ focus_tree = {
 
 		focus = {
 			id = ENG_Special_Operations_Divison
-			icon = GFX_spec_ops
+			icon = GFX_goal_generic_special_forces
 			prerequisite = {
 				focus = ENG_air_ministry
 			}
@@ -811,7 +811,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Operation_Vegetarian
-			icon = GFX_op_vegetarian
+			icon = GFX_focus_attack_germany
 			prerequisite = {
 				focus = ENG_Special_Operations_Divison
 			}
@@ -833,7 +833,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Operation_Rice_Bowl
-			icon = GFX_op_ricebowl
+			icon = GFX_focus_attack_japan
 			prerequisite = {
 				focus = ENG_Special_Operations_Divison
 			}
@@ -850,7 +850,7 @@ focus_tree = {
 		}
 		focus = {
 			id = ENG_Race_For_Bomb
-			icon = GFX_race_bomb 
+			icon = GFX_focus_generic_nuclear_development
 			prerequisite = {
 				focus = ENG_Special_Operations_Divison
 			}
@@ -6638,7 +6638,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_railways_act
-		icon = GFX_railway_act
+		icon = GFX_focus_generic_railroad
 		available = {
 
 		}
@@ -6992,7 +6992,7 @@ focus_tree = {
 
 	focus = {
 	id = ENG_meeting_with_tea
-	icon = GFX_meeting_tea
+	icon = GFX_focus_RAJ_tea_exports
 
 	allow_branch = {
 		if = {
@@ -7024,7 +7024,7 @@ focus_tree = {
 }
 	focus = {
 		id = ENG_tea_is_poured
-		icon = GFX_tea_poured
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = {
 			focus = ENG_meeting_with_tea
 		}
@@ -7190,7 +7190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_words_not_swords
-		icon = GFX_ENG_Words_not_Swords
+		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = {
 			focus = ENG_a_gentle_touch
 		}
@@ -7570,7 +7570,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_love_is_war
-		icon = GFX_love_is_war
+		icon = GFX_focus_generic_befriend_usa
 		available = {
 
 		}
@@ -7601,7 +7601,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_tackling_kmm
-		icon = GFX_tackling_kmm_agression 
+		icon = GFX_focus_attack_germany
 		prerequisite = {
 			focus = ENG_love_is_war
 		}
@@ -7618,7 +7618,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_across_seven_seas
-		icon = GFX_across_seven_seas
+		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = {
 			focus = ENG_tackling_kmm
 		}
@@ -7659,7 +7659,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_expand_colonial_exploits
-		icon = GFX_expand_colonial_exploits
+		icon = GFX_focus_generic_resource_extraction
 		prerequisite = {
 			focus = ENG_across_seven_seas
 		}
@@ -7702,7 +7702,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_wartime_defense_regulation
-		icon = GFX_wartime_defense_regulations
+		icon = GFX_focus_AUS_lawmaking_leniency
 		prerequisite = {
 			focus = ENG_across_seven_seas
 		}
@@ -7723,7 +7723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_zhongguo_assistance
-		icon = GFX_zhongguo_assistance
+		icon = GFX_focus_generic_china1
 		prerequisite = {
 			focus = ENG_wartime_defense_regulation
 		}
@@ -7758,7 +7758,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_combatting_authoritarianism_abroad
-		icon = GFX_combatting_authoritarianism_abroad
+		icon = GFX_goal_support_democracy
 		prerequisite = {
 			focus = ENG_zhongguo_assistance
 		}
@@ -7777,7 +7777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_combatting_mzansi_boers
-		icon = GFX_combatting_mzansi_boers
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = {
 			focus = ENG_combatting_authoritarianism_abroad
 		}
@@ -7797,7 +7797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_no_tea_for_bullies
-		icon = GFX_no_tea_for_bullies
+		icon = GFX_focus_generic_german_trade
 		prerequisite = {
 			focus = ENG_combatting_authoritarianism_abroad
 		}
@@ -7837,7 +7837,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_fight_the_enemy
-		icon = GFX_taking_fight_enemy
+		icon = GFX_focus_generic_total_war
 		prerequisite = {
 			focus = ENG_no_tea_for_bullies
 		}
@@ -7856,7 +7856,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_send_the_skiis
-		icon = GFX_send_the_skiis
+		icon = GFX_focus_generic_winter_warfare
 		prerequisite = {
 			focus = ENG_no_tea_for_bullies
 		}
@@ -7880,7 +7880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_prepare_for_war
-		icon = GFX_prepare_next_war
+		icon = GFX_SOV_swap_to_political_advisors_ccp_2d_sov_compatibility
 		prerequisite = {
 			focus = ENG_tackling_kmm
 		}
@@ -7908,7 +7908,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_over_the_top
-		icon = GFX_over_the_top
+		icon = GFX_focus_RAJ_a_private_military
 		prerequisite = {
 			focus = ENG_prepare_for_war
 		}
@@ -7928,7 +7928,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_cavalry_is_here
-		icon = GFX_cavalry_is_here
+		icon = GFX_focus_generic_horse_studs
 		prerequisite = {
 			focus = ENG_over_the_top
 		}
@@ -8023,7 +8023,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_securing_north_african_stability
-		icon = GFX_secure_nastab
+		icon = GFX_focus_generic_africa_defense
 		prerequisite = {
 			focus = ENG_combatting_mzansi_boers
 			focus = ENG_a_gentle_touch
