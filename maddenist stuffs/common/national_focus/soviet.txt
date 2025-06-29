@@ -4994,8 +4994,8 @@ ai_will_do = {
 		y = 1
 completion_reward = {
 country_event = {
-id = pvd.222
-hours = 12
+	id = pvd.222
+	hours = 12
 }
 }
 	}

@@ -1477,6 +1477,7 @@ news_event = {
 			}
 		}
 	}
+}
 
 country_event = {
 	id = pvd.222
