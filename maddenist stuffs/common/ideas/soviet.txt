@@ -912,7 +912,31 @@ ideas = {
 				weekly_manpower = 1000
 			}
 		}
-		
+
+		SOV_first_year_mob = {
+			allowed = {
+				always = no
+			}
+			
+		removal_cost = -1
+
+		#picture = 
+		modifier = {
+			research_speed_factor = 0.05
+		}
+
+		}
+		SOV_Nonna_Temp = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				pocket_penalty = -0.2
+				dig_in_speed_factor = 0.05
+			}
+		}
 		
 		SOV_authoritarianism_banned = {
 

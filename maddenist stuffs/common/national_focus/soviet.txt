@@ -1251,7 +1251,9 @@ focus_tree = {
 
 			cost = 5
 			completion_reward = {
-
+				add_manpower = 100000
+				add_research_slot = 1
+				army_experience = 30
 			}
 		}
 		focus = {
@@ -1270,7 +1272,7 @@ focus_tree = {
 
 			cost = 5
 			completion_reward = {
-
+				add_ideas = SOV_first_year_mob
 			}
 		}
 		focus = {
@@ -1308,7 +1310,9 @@ focus_tree = {
 
 			cost = 5
 			completion_reward = {
-
+				add_stability = 0.2
+				add_war_support = 0.2
+				add_ideas = SOV_Nonna_Temp
 			}
 		}
 		focus = {
