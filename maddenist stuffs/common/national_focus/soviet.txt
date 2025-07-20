@@ -1331,7 +1331,21 @@ focus_tree = {
 
 			cost = 5
 			completion_reward = {
-
+				if = {
+					limit = {
+						has_idea = PRV_bad_army1
+					}
+					swap_ideas = {
+						remove_idea = PRV_bad_army1
+						add_idea = PRV_bad_army2
+					}
+				}
+				hidden_effect = {
+					country_event = {
+						id = pvd.223
+						days = 60
+					}
+				}
 			}
 		}
 		focus = {
@@ -5130,13 +5144,13 @@ add_political_power = 200
 		x = 0
 		y = 1
 		completion_reward = {
-add_stability = 0.1
-add_war_support = 0.0
-add_popularity = {
-ideology = communism
-popularity = 0.1
-}
-#add_idea = SOV_Firm_Hand
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		#add_idea = SOV_Firm_Hand
 		}
 	}
 	focus = {
@@ -5153,7 +5167,11 @@ popularity = 0.1
 		x = 0
 		y = 1
 		completion_reward = {
-
+			add_trait = {
+				character = SOV_iosif_stalin
+				ideology = stalinism
+				trait = dictatorship_of_mind
+			}
 		}
 	}
 }

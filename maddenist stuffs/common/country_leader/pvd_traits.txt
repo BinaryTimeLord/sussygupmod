@@ -113,8 +113,8 @@ leader_traits = {
 #PRAVDA TREE TRAITS
 
 dictatorship_of_mind = {
-random = no
-war_support_weekly = 0.01
+	random = no
+	war_support_weekly = 0.01
 }
 	
 }

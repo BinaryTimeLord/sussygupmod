@@ -1494,3 +1494,18 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = pvd.223
+	title = pvd.223.t
+	desc = pvd.223.d
+	#picture = 
+
+	fire_only_once = yes
+
+	option = {
+		name = pvd.223.a
+
+		remove_idea = PRV_bad_army2
+	}
+}
