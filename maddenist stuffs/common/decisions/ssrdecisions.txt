@@ -229,7 +229,7 @@ SOV_ssrplus_categories_europe = {
 					name = "Klara"
 					picture = "gfx/leaders/SOV/Portrait_SOV_Klara.dds"
 					expire = "9999.1.1.1"
-					ideology=marxism
+					ideology = stalinism
 				}
 			}
 		    if = {
@@ -693,7 +693,7 @@ SOV_ssrplus_categories_europe = {
 					name = "Nonna"
 					picture = "gfx/leaders/SOV/Portrait_SOV_Nonna.dds"
 					expire = "9999.1.1.1"
-					ideology=marxism
+					ideology=stalinism
 				}
 			}
 		    if = {
@@ -822,19 +822,11 @@ SOV_ssrplus_categories_europe = {
 					
 				
 		    }
-			FIN = {
-				set_nationality = {
-					target_country = SFN
-					character = FIN_aki
-				}
-			}
 			SFN = {
-				retire_country_leader = yes
-				add_country_leader_role = {
-					character = FIN_aki
-					promote_leader = yes
-					country_leader = {
-						ideology = marxism
+					create_country_leader = {
+						name = "Aki"
+						picture = "gfx/leaders/FIN/Portrait_FIN_Aki.dds"
+						ideology = stalinism
 						expire = "9999.1.1.1"
 						traits = { committed_anti_fascist }
 					}
@@ -1443,7 +1435,7 @@ SOV_ssrplus_categories_europe = {
 					name = "Isabe"
 					picture = "gfx/leaders/FRA/Portrait_FRA_Isabe.dds"
 					expire = "9999.1.1.1"
-					ideology=marxism
+					ideology = stalinism
 				}
 			}
 		    if = {
@@ -1546,7 +1538,7 @@ SOV_ssrplus_categories_europe = {
 					name = "Panetonne"
 					picture = GFX_portrait_ita_palmiro_togliatti
 					expire = "9999.1.1.1"
-					ideology=marxism
+					ideology = stalinism
 				}
 			}
 		    if = {
@@ -1737,7 +1729,7 @@ SOV_ssrplus_categories_europe = {
 						name = "Assam"
 						picture = "gfx/leaders/ENG/Portrait_ENG_Assam.dds"
 						expire = "9999.1.1.1"
-						ideology=marxism
+						ideology = stalinism
 					}
 					hidden_effect = {
 						add_state_core = PREV
@@ -2713,6 +2705,14 @@ SOV_ssrplus_categories_asia = {
 		fire_only_once = yes
 
 		complete_effect = {
+			SJA = {
+				create_country_leader = {
+						name = "Shizuko Hosomi"
+						picture = "gfx/leaders/JAP/Hosomi.dds"
+						expire = "9999.1.1.1"
+						ideology = stalinism
+					}
+			}
 			if = {
 				add_political_power = 25
 				add_stability = 0.01
@@ -3027,7 +3027,7 @@ SOV_ssrplus_categories_asia = {
 						name = "Nonna"
 						picture = "gfx/leaders/SOV/Portrait_SOV_Nonna.dds"
 						expire = "9999.1.1.1"
-						ideology = marxism
+						ideology = stalinism
 					}
 
 				    transfer_state = PREV
