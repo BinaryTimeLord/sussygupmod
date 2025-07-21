@@ -3382,3 +3382,13 @@ soviet.28.d:1 "The world may never know if Katyusha's purges were targeting the 
 
  #This loc string is used for when Germany pressures Sweden to give up resource rights:
  AAT_germany.10.desc: "With the recent occupation of [144.GetName] by [FROM.GetNameDef] and its lackeys, [GER.GetLeader] has increased his pressure on us to trade more resources with them to fuel their war machines. The deal offered isn't entirely one-sided, and rejecting it might see us dragged into the war..."
+
+#GUP First Post-Pravda Update Events for Organization Purposes
+
+prv_bda.1.t = "The Great Restoration"
+prv_bda.1.d = "Ever since the Great Purge of the Military, its remnants and the leaders of Pravda have reconvened multiple times in order to bring its current state back to previous levels and surpass it. It was only with the growing tensions in the World Sensha-do Federation that enough motivation was given to the military leaders of Pravda that it was to be completed within a small amount of time. The rest of its redevelopment can only be done through enough experience in conflicts that would refine the Pravda Military into one of competence befitting the visions of General Secretary Katyusha herself. As of this announcement, however, Pravda has finally finished its first wave of reforms that shall soon see it compete with the School’s rivals in the west and east. It is up to the commanders of Pravda to see to the realization of the visions of Katyusha."
+prv_bda.1.a = "Glory to Pravda!"
+
+prv_lib.1.t = "The Great Liberation War"
+prv_lib.1.d = "The Great Liberation War has arrived on the doorstep of Pravda, disrupting the peaceful transformation of the School from the previous regime to the current administration. At this moment, the Great Industrial Complexes developed by the school have begun the transition from necessary industrial goods to military hardware. Since the first reports of the war had begun, many students throughout the Union of Sensha-do School Regions have joined the military in order to do their duty to defeat the foe. If Pravda were to fall, who knows what the oppressors will do to exploit the students for monetary, resource, and status gains?"
+prv_lib.1.a = "Not a single step of land shall be given!"
