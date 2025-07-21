@@ -1342,7 +1342,7 @@ focus_tree = {
 				}
 				hidden_effect = {
 					country_event = {
-						id = pvd.223
+						id = prv_bda.1
 						days = 60
 					}
 				}

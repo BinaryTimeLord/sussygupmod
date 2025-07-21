@@ -27,9 +27,7 @@ country_event = {
 
     option = {
         name = prv_bda.1.a
-        remove_ideas = {
-            PRV_bad_army2
-            }
+        remove_ideas = PRV_bad_army2
     }
 }
 
@@ -46,13 +44,12 @@ country_event = {
 
     option = {
         name = prv_lib.1.a
-       # SOMEONE MAKE THE SUPER EVENT FOR LIBERATION WAR THANK YOU
-       # SOV = { 
-				#set_country_flag = GUP_Darjeeling_Event
-				#set_country_flag = GUP_SuperEvents_Visible_Local
-				#hidden_effect = {
-				#	scoped_play_song = Gloriana_Super_Event
-				#}
-			#}
+       
+		complete_national_focus = SOV_Great_Liberation_Mobilization
+
+		set_country_flag = GUP_SuperEvents_Visible_Local
+		set_country_flag = GUP_Great_Lib_War
+
+		play_song = "Katyusha_Super_Event"
     }
 }

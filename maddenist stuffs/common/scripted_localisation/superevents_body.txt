@@ -54,7 +54,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_global_flag = GUP_Great_Lib_War
+			has_country_flag = GUP_Great_Lib_War
 		}
 		localization_key = GUP_SuperEvents_Great_Lib_War_Body
 	}

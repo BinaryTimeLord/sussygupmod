@@ -867,20 +867,19 @@ on_actions = {
 			WRRFTangle_calcXY = yes
 		}
 	}
-	on_war = {
+	on_war_relation_added = {  #have to fix, doesn't work yet
 		effect = {
 			if = {
-			limit = {
-				AND = {
-					original_tag = SOV
+				limit = {
+					tag = SOV
 					any_country = {
-						is_major = yes
-						has_war_with = SOV
+							is_major = yes
+							has_war_with = SOV
 						}
 					}
-				}
+				
 				country_event = {
-					event = pvd.224
+					event = prv_lib.1
 					hours = 3
 				}
 			}
