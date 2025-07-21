@@ -51,4 +51,10 @@ defined_text = {
 		}
 		localization_key = GUP_SuperEvents_Pravda_Rightist_CW_Remark
 	}
+	text = {
+		trigger = {
+			has_global_flag = GUP_Great_Lib_War
+		}
+		localization_key = GUP_SuperEvents_Great_Lib_War_Remark
+	}
 }

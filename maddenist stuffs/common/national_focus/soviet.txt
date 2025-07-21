@@ -1153,7 +1153,7 @@ focus_tree = {
 			icon = GFX_focus_generic_spur_communist_revolutions
 
 			available = {
-
+				always = no
 			}
 			x = 50
 			y = 0

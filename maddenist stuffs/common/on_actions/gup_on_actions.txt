@@ -867,6 +867,25 @@ on_actions = {
 			WRRFTangle_calcXY = yes
 		}
 	}
+	on_war = {
+		effect = {
+			if = {
+			limit = {
+				AND = {
+					original_tag = SOV
+					any_country = {
+						is_major = yes
+						has_war_with = SOV
+						}
+					}
+				}
+				country_event = {
+					event = pvd.224
+					hours = 3
+				}
+			}
+		}
+	}
 
 ### Gloriana [ENG]
 

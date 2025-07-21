@@ -33,6 +33,9 @@ scripted_gui = {
 			GUP_SE_Pravda_Rightist_CW_visible = {
 				has_global_flag = GUP_Pravda_Rightist_CW
 			}
+			GUP_SE_Great_Lib_War_visible = {
+				has_global_flag = GUP_Great_Lib_War
+			}
 			
 		}
 
@@ -48,6 +51,7 @@ scripted_gui = {
 				clr_global_flag = GUP_Pravda_Fascist_CW
 				clr_global_flag = GUP_Pravda_Leftist_CW
 				clr_global_flag = GUP_Pravda_Rightist_CW
+				clr_global_flag = GUP_Great_Lib_War
 			}
 		}
 	}

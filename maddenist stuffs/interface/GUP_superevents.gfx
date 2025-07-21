@@ -53,4 +53,9 @@ SpriteTypes = {
 		name = "GFX_Pravda_Rightist_CW_Visible"
 		textureFile = "/gfx/superevents_pictures/pravda.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Great_Lib_War_Visible"
+		textureFile = "/gfx/superevents_pictures/pravda.dds"
+	}
 }
