@@ -1,0 +1,58 @@
+add_namespace = prv_lib
+add_namespace = prv_bda
+
+### Template ###
+#country_event = { 
+	#id = 
+	#title = 
+	#desc = 
+	#picture = 
+
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	#option = { 
+		#name = 
+	#}
+#}
+
+country_event = {
+    id = prv_bda.1
+    title = prv_bda.1.t
+    desc = prv_bda.1.d
+    #picutre =
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = prv_bda.1.a
+        remove_ideas = {
+            PRV_bad_army2
+            }
+    }
+}
+
+country_event = {
+    id = prv_lib.1
+    title = prv_lib.1.t
+    desc = prv_lib.1.d
+    #picutre =
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    trigger = {  has_war_with_major = yes }
+
+    option = {
+        name = prv_lib.1.a
+       # SOMEONE MAKE THE SUPER EVENT FOR LIBERATION WAR THANK YOU
+       # SOV = { 
+				#set_country_flag = GUP_Darjeeling_Event
+				#set_country_flag = GUP_SuperEvents_Visible_Local
+				#hidden_effect = {
+				#	scoped_play_song = Gloriana_Super_Event
+				#}
+			#}
+    }
+}
