@@ -647,7 +647,10 @@ focus_tree = {
 			y = 0
 			cost = 5
 			completion_reward = {
-
+				add_stability = 0.1
+			}
+			bypass = {
+				has_country_flag = 5_year_x
 			}
 		}
 		focus = {
@@ -1153,7 +1156,9 @@ focus_tree = {
 			icon = GFX_focus_generic_spur_communist_revolutions
 
 			available = {
-				always = no
+				any_enemy_country = {
+					is_major = yes
+				}
 			}
 			x = 50
 			y = 0
@@ -1166,6 +1171,10 @@ focus_tree = {
                         }
                     }
                     add_ideas = tot_economic_mobilisation
+					country_event = {
+						id = prv_lib.1
+						hours = 3
+					}
                 }
 			}
 		}

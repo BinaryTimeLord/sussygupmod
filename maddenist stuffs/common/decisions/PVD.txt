@@ -54,3 +54,40 @@ PVD_training_decisions = {
 	}
 
 }
+
+PVD_5_year_plan = {
+	PVD_5_year_plan = {
+		activation = {
+			NOT = {
+				OR = {
+					has_country_flag = 5_year_v
+					has_country_flag = 5_year_x
+				}
+				
+			}
+			date > 1936.1.1.1
+		}
+		available = {
+				AND = {
+					date > 1937.1.1
+					num_of_factories > 120
+				}
+		}
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 365
+		is_good = no
+		complete_effect = {
+			complete_national_focus = SOV_complete_5_year
+		}
+		timeout_effect = {
+			SOV = {
+				country_event = {
+				id = prv_year.1
+				hours = 6
+				}
+			}
+		}
+	}
+}

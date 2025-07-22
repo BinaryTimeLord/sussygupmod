@@ -33,13 +33,6 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
-
-		iconType = {
-			name = "GUP_SE_Great_Lib_War_visible"
-			quadTextureSprite = "GFX_Great_Lib_War_Visible"
-			position = { x = 0 y = 0 }
-			alwaystransparent = yes
-		}
 		##Gloriana
 		iconType = {
 			name = "GUP_SE_Darjeeling"		
@@ -74,6 +67,13 @@ guiTypes = {
 		iconType = {
 			name = "GUP_SE_Pravda_Rightist_CW"
 			quadTextureSprite = "GFX_Pravda_Rightist_CW_Visible"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "GUP_SE_Great_Lib_War_visible"
+			quadTextureSprite = "GFX_Great_Lib_War_Visible"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}

@@ -1,5 +1,6 @@
 add_namespace = prv_lib
 add_namespace = prv_bda
+add_namespace = prv_year
 
 ### Template ###
 #country_event = { 
@@ -40,16 +41,32 @@ country_event = {
     fire_only_once = yes
     is_triggered_only = yes
 
-    trigger = {  has_war_with_major = yes }
-
     option = {
         name = prv_lib.1.a
        
 		complete_national_focus = SOV_Great_Liberation_Mobilization
-
-		set_country_flag = GUP_SuperEvents_Visible_Local
-		set_country_flag = GUP_Great_Lib_War
-
+        SOV = {
+            set_country_flag = GUP_SuperEvents_Visible_Local
+		    set_country_flag = GUP_Great_Lib_War
+        }
 		play_song = "Katyusha_Super_Event"
+    }
+}
+
+country_event = {
+    id = prv_year.1
+    title = prv_year.1.t
+    desc = prv_year.1.d
+    #picture =
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = prv_year.1.a
+
+        SOV = {
+				set_country_flag = 5_year_x
+			}
     }
 }

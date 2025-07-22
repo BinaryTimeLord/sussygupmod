@@ -10,3 +10,22 @@ PVD_training_decisions = {
 	priority = 10
 
 }
+
+PVD_5_year_plan = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		NOT = {
+			or = {
+				has_country_flag = 5_year_v
+				has_country_flag = 5_year_x
+			}
+			
+		}
+	}
+
+	#icon = 
+	priority = 20
+}
