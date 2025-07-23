@@ -648,6 +648,7 @@ focus_tree = {
 			cost = 5
 			completion_reward = {
 				add_stability = 0.1
+				#remove_ideas =   #Please someone find what key does 5 year plan have
 			}
 			bypass = {
 				has_country_flag = 5_year_x
@@ -668,7 +669,13 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_political_power = 100
+				add_stability =0.02
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = electronics
+				}
 			}
 		}
 		focus = {
@@ -679,14 +686,27 @@ focus_tree = {
 				focus = SOV_literacy_campaign
 			}
 			available = {
-				
+				has_equipment = {
+					train_equipment > 39
+				}
 			}
 			relative_position_id = SOV_literacy_campaign
 			x = 0
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				build_railway = {
+					level = 1
+					path = { 10696 12679 1297 1733 1860 7825 7274 4866 7757 12631 7886 10712 10639 12691 12621 1876 1813 10549 10661 12540 4797 1762 4837 10528 4766 12507 7860 10683 7786 4677 7725 10559 12543 7851 10678 12657 7763 4725 10655 7801 12678 12261 4805 12189 10466 11643 6686 664 6684 11750 6989 957 }
+					start_province = 10696
+					target_province = 957
+				}
+				408 = {
+					add_resource = {
+						type = steel
+						amount = 16
+					}
+				}
 			}
 		}
 		focus = {
@@ -704,7 +724,29 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = synth_resources
+				}
+				821 = {
+					add_resource = {
+						type = oil
+						amount = 16
+					}
+				}
+				229 = {
+					add_resource = {
+						type = oil
+						amount = 16
+					}
+				}
+				232 = {
+					add_resource = {
+						type = oil
+						amount = 16
+					}
+				}
 			}
 		}
 		focus = {
@@ -722,7 +764,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				add_ideas = PRV_exports1
 			}
 		}
 		focus = {
@@ -740,7 +782,14 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				248 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -761,7 +810,12 @@ focus_tree = {
 			y = 2
 			cost = 5
 			completion_reward = {
-				
+				590 = {
+					add_resource = {
+						type = oil
+						amount = 10
+					}
+				}
 			}
 		}
 		focus = {
@@ -779,7 +833,10 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				swap_ideas = {
+					remove_idea = PRV_exports1
+					add_idea = PRV_exports2
+				}
 			}
 		}
 		focus = {
@@ -797,7 +854,24 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				226 = {
+					set_state_category = urban
+				}
+				408 = {
+					set_state_category = urban
+				}
+				241 = {
+					set_state_category = urban
+				}
+				204 = {
+					set_state_category = urban
+				}
+				201 = {
+					set_state_category = urban
+				}
+				563 = {
+					set_state_category = urban
+				}
 			}
 		}
 		focus = {
@@ -815,7 +889,19 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				217 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -833,7 +919,24 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-				
+				195 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = motorized_equipment
+				}
 			}
 		}
 		focus = {
@@ -846,12 +949,21 @@ focus_tree = {
 			available = {
 				
 			}
+			select_effect = {
+				set_variable = {
+					name = uncancellable_focus
+					value = yes
+				}
+			}
 			relative_position_id = SOV_expanding_resettlement
 			x = 1
 			y = 1
-			cost = 5
+			cost = 14.4
 			completion_reward = {
-				
+				swap_ideas = {
+					remove_idea = PRV_famines1
+					add_idea = PRV_famines2
+				}
 			}
 		}
 		focus = {
@@ -869,7 +981,10 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				swap_ideas = {
+					remove_idea = PRV_outdated_industry1
+					add_idea = PRV_outdated_industry2
+				}
 			}
 		}
 		focus = {
@@ -894,9 +1009,12 @@ focus_tree = {
 			relative_position_id = SOV_expanding_resettlement
 			x = 0
 			y = 2
-			cost = 5
+			cost = 10
 			completion_reward = {
-
+				swap_ideas = {
+					remove_idea = PRV_outdated_industry2
+					add_idea = PRV_outdated_industry3
+				}
 			}
 		}
 		focus = {
@@ -948,9 +1066,9 @@ focus_tree = {
 			relative_position_id = SOV_power_to_the_workers
 			x = -2
 			y = 1
-			cost = 5
+			cost = 10
 			completion_reward = {
-
+				add_research_slot = 1
 			}
 		}
 		focus = {
@@ -979,14 +1097,14 @@ focus_tree = {
 				focus = SOV_expand_communist_education
 			}
 			available = {
-
+				num_of_civilian_factories > 100
 			}
 			relative_position_id = SOV_expand_communist_education
 			x = 0
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				remove_ideas = PRV_illiteracy
 			}
 		}
 		focus = {

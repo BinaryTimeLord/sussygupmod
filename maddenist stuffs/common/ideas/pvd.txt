@@ -164,7 +164,113 @@ ideas = {
 
 		}
 
+		PRV_exports1 = {
+			name = PRV_exports
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
 
+		PRV_exports2 = {
+			name = PRV_exports
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
 		
+		PRV_famines1 = {
+			name = PRV_famines
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				monthly_population = -0.4
+			}
+		}
+		PRV_famines2 = {
+			name = PRV_famines
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				monthly_population = -0.2
+			}
+		}
+		PRV_illiteracy = {
+			name = PRV_illiteracy
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+		PRV_outdated_industry1 = {
+			name = PRV_outdated_industry
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.5
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = -0.2
+				}
+			}
+		}
+		PRV_outdated_industry2 = {
+			name = PRV_outdated_industry
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.25
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = -0.2
+				}
+			}
+		}
+		PRV_outdated_industry3 = {
+			name = PRV_outdated_industry
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.2
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = -0.2
+				}
+			}
+		}
 	}
 }
