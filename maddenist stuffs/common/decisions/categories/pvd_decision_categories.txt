@@ -11,14 +11,14 @@ PVD_training_decisions = {
 
 }
 
-PVD_5_year_plan = {
+PVD_5_year_plan_cat = {
 	allowed = {
 		original_tag = SOV
 	}
 
 	visible = {
 		NOT = {
-			or = {
+			OR = {
 				has_country_flag = 5_year_v
 				has_country_flag = 5_year_x
 			}
@@ -28,4 +28,30 @@ PVD_5_year_plan = {
 
 	#icon = 
 	priority = 20
+}
+PVD_palace_cat = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_palace_revolution
+		NOT = {
+			has_country_flag = SOV_constructed_palace
+		}
+	}
+
+	#icon =
+	priority = 20
+}
+PVD_collective_expansion_cat = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_collective_expansion
+	}
+	#icon = 
+	priority = 5
 }

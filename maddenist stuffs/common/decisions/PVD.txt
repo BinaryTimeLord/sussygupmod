@@ -55,7 +55,7 @@ PVD_training_decisions = {
 
 }
 
-PVD_5_year_plan = {
+PVD_5_year_plan_cat = {
 	PVD_5_year_plan = {
 		activation = {
 			NOT = {
@@ -86,6 +86,55 @@ PVD_5_year_plan = {
 				country_event = {
 				id = prv_year.1
 				hours = 6
+				}
+			}
+		}
+	}
+}
+
+PVD_palace_cat = {
+	PVD_palace = {
+		cost = 500
+		days_remove = 180
+		available = {
+			has_completed_focus = SOV_palace_revolution
+		}
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 19
+		}
+		custom_cost_text = decision_cost_civ_factory_20
+		modifier = {
+			civilian_factory_use = 20
+		}
+		remove_effect = {
+			add_ideas = PVD_Glory
+			set_country_flag = SOV_constructed_palace
+		}
+	}
+}
+
+PVD_collective_expansion_cat = {
+	PVD_collective_expansion = {
+		days_remove = 30
+		available = {
+			has_completed_focus = SOV_collective_expansion
+		}
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		custom_cost_text = decision_cost_civ_factory_1
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			SOV = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}

@@ -1,0 +1,5 @@
+﻿l_english:
+
+ decision_cost_civ_factory_20:0 "£GFX_civ_factory §W20§!"
+ decision_cost_civ_factory_20_blocked:0 "£GFX_civ_factory §R20§"
+ decision_cost_civ_factory_20_tooltip:0 "We need £GFX_civ_factory §W20§  to take the decision"

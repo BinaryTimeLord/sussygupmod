@@ -146,7 +146,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			unlock_decision_tooltip = PRV_training_decisions
+				unlock_decision_tooltip = PRV_training_decisions
 			}
 		}
 
@@ -960,10 +960,19 @@ focus_tree = {
 			y = 1
 			cost = 14.4
 			completion_reward = {
-				swap_ideas = {
-					remove_idea = PRV_famines1
-					add_idea = PRV_famines2
-				}
+					if = {
+						limit = {
+							has_idea = PRV_famines1
+						}
+						swap_ideas = {
+							remove_idea = PRV_famines1
+							add_idea = PRV_famines2
+						}
+					}
+					else = {
+						remove_ideas = PRV_famines2
+					}
+				
 			}
 		}
 		focus = {
@@ -1032,7 +1041,7 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				custom_effect_tooltip = "Will unlock propaganda decisions"
 			}
 		}
 		focus = {
@@ -1050,7 +1059,8 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_stability = 0.02
+				add_ideas = PRV_communist_education
 			}
 		}
 		focus = {
@@ -1086,7 +1096,12 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = naval_equipment
+				}
+				navy_experience = 100
 			}
 		}
 		focus = {
@@ -1097,7 +1112,7 @@ focus_tree = {
 				focus = SOV_expand_communist_education
 			}
 			available = {
-				num_of_civilian_factories > 100
+				num_of_civilian_factories > 99
 			}
 			relative_position_id = SOV_expand_communist_education
 			x = 0
@@ -1122,7 +1137,16 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_breakthrough_points = {
+					specialization = specialization_air
+					value = 2
+				}
+				set_technology = {
+					rocket_artillery = 1
+					motorized_rocket_unit = 1
+				}
+				set_technology = motorized_equipment
+				add_ideas = PRV_rockets
 			}
 		}
 		focus = {
@@ -1133,14 +1157,14 @@ focus_tree = {
 				focus = SOV_modern_soviet
 			}
 			available = {
-
+				num_of_civilian_factories > 199
 			}
 			relative_position_id = SOV_modern_soviet
 			x = 0
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				unlock_decision_tooltip = PVD_palace
 			}
 		}
 		focus = {
@@ -1158,7 +1182,25 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_research_slot = 1
+				566 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = land_facility
+						level = 1
+						instant_build = yes
+						province = 4797
+					}
+				}
+				409 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+						province = 409
+					}
+				}
 			}
 		}
 		focus = {
@@ -1169,14 +1211,18 @@ focus_tree = {
 				focus = SOV_trans_siberian
 			}
 			available = {
-
+				has_completed_focus = SOV_new_3_year
 			}
 			relative_position_id = SOV_trans_siberian
 			x = 10
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = industry
+				}
 			}
 		}
 		focus = {
@@ -1192,9 +1238,9 @@ focus_tree = {
 			relative_position_id = SOV_aggressive_industrial_expansion
 			x = 0
 			y = 1
-			cost = 5
+			cost = 14.3
 			completion_reward = {
-
+				unlock_decision_tooltip = PVD_collective_expansion
 			}
 		}
 		focus = {
@@ -1212,7 +1258,30 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				574 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				576 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				516 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -1230,7 +1299,19 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = 100
+					producer = SOV
+				}
+				408 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -1248,7 +1329,18 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				if = {
+					limit = {
+						has_idea = PRV_famines1
+					}
+					swap_ideas = {
+						remove_idea = PRV_famines1
+						add_idea = PRV_famines2
+					}
+				}
+				else = {
+					remove_ideas = PRV_famines2
+				}
 			}
 		}
 		focus = {
@@ -1266,7 +1358,16 @@ focus_tree = {
 			y = 1
 			cost = 5
 			completion_reward = {
-
+				every_owned_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				213 = {
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 		focus = {
@@ -5299,6 +5400,427 @@ add_political_power = 200
 				ideology = stalinism
 				trait = dictatorship_of_mind
 			}
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = SOV_addressing_internal_affairs
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
+		x = -5
+		y = 0
+		offset = {
+			x = -7
+			y = 0
+			trigger = { #Basic offset to compensate for missing Bukharinist branch
+				NOT = { has_dlc = "No Step Back" }
+			}
+		}
+		offset = {
+			x = -19
+			y = 0
+			trigger = { #Trotskyist branch hides
+				NOT = { has_dlc = "No Step Back" }
+				has_completed_focus = SOV_the_centre 
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		offset = {
+			x = -7
+			y = 0
+			trigger = { # Stalinist branch hides
+				NOT = { has_dlc = "No Step Back" }
+				AND = {
+					has_completed_focus = SOV_left_opposition_coup
+					has_completed_focus = SOV_the_left_opposition
+				}
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		offset = {
+			x = -26
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = SOV_the_centre
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		offset = {
+			x = -7
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				OR = {
+					AND = {
+						has_completed_focus = SOV_the_left_opposition
+						has_completed_focus = SOV_left_opposition_coup
+					}
+					AND = {
+						has_completed_focus = SOV_the_right_opposition
+						has_completed_focus = SOV_coup_detat
+					}
+				}
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		relative_position_id = SOV_the_path_of_marxism_leninism
+		cost = 5
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+			}
+		}
+
+		available = {
+			has_completed_focus = SOV_power_to_the_workers
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = SOV_nkvd_primacy
+		icon = GFX_SOV_nkvd_primacy_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_addressing_internal_affairs }
+		x = -2
+		y = 1
+		relative_position_id = SOV_addressing_internal_affairs
+		cost = 5
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+
+		completion_reward = {
+			add_ideas = SOV_nkvd_nsb
+			SOV_paranoia_medium_increase_effect = yes
+		}
+	}
+
+	focus = {
+		id = SOV_the_new_soviet_woman
+		icon = GFX_SOV_the_new_soviet_woman_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_addressing_internal_affairs }
+		x = 2
+		y = 1
+		relative_position_id = SOV_addressing_internal_affairs
+		cost = 5
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_political_power = 70
+			add_stability = 0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_expand_the_agitprop
+		icon = GFX_SOV_expand_the_agitprop_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_addressing_internal_affairs }
+		x = 0
+		y = 1
+		relative_position_id = SOV_addressing_internal_affairs
+		cost = 5
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA}
+
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+
+			hidden_effect = {
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+			}
+			unlock_decision_category_tooltip = SOV_propaganda_campaigns
+		}
+	}
+
+	focus = {
+		id = SOV_positive_heroism
+		icon = GFX_SOV_positive_heroism_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_agitprop }
+		x = -2
+		y = 1
+		relative_position_id = SOV_expand_the_agitprop
+		cost = 10
+
+		mutually_exclusive = { focus = SOV_collectivist_propaganda }
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_PROPAGANDA}
+
+		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = konstantin_rokossovsky 
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = georgy_zhukov
+
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_heroes_forward
+			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
+			SOV_unlock_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	focus = {
+		id = SOV_revive_the_stakhanovite_movement
+		icon = GFX_SOV_revive_the_stakhanovite_movement_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_positive_heroism }
+		x = 0
+		y = 1
+		relative_position_id = SOV_positive_heroism
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = SOV_stakhanovite_movement
+		}
+	}
+
+	focus = {
+		id = SOV_war_heroes
+		icon = GFX_SOV_war_heroes_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_revive_the_stakhanovite_movement }
+		x = 0
+		y = 1
+		relative_position_id = SOV_revive_the_stakhanovite_movement
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_war_heroes_ns
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					SOV_georgy_zhukov = {
+						NOT = { has_character_flag = SOV_character_purged_flag }
+						is_corps_commander = yes
+					}
+				}
+				SOV_georgy_zhukov = {
+					promote_leader = yes
+				}
+			}
+			else = {
+				random_army_leader = {
+					limit = {
+						NOT = { has_character_flag = SOV_potential_target_flag }
+						is_corps_commander = yes
+						NOT = { is_character = SOV_konstantin_rokossovsky }
+						NOT = { is_character = SOV_ivan_konev }
+					}
+					promote_leader = yes
+				}
+			}
+			if = {
+				limit = {
+					SOV_konstantin_rokossovsky = {
+						NOT = { has_character_flag = SOV_character_purged_flag }
+						is_corps_commander = yes
+					}
+				}
+				SOV_konstantin_rokossovsky = {
+					promote_leader = yes
+				}
+			}
+			else = {
+				random_army_leader = {
+					limit = {
+						NOT = { has_character_flag = SOV_potential_target_flag }
+						is_corps_commander = yes
+						NOT = { is_character = SOV_georgy_zhukov }
+						NOT = { is_character = SOV_ivan_konev }
+					}
+					promote_leader = yes
+				}
+			}
+			if = {
+				limit = {
+					SOV_ivan_konev = {
+						NOT = { has_character_flag = SOV_character_purged_flag }
+						is_corps_commander = yes
+					}
+				}
+				SOV_ivan_konev = {
+					promote_leader = yes
+				}
+			}
+			else = {
+				random_army_leader = {
+					limit = {
+						NOT = { has_character_flag = SOV_potential_target_flag }
+						is_corps_commander = yes
+						NOT = { is_character = SOV_georgy_zhukov }
+						NOT = { is_character = SOV_konstantin_rokossovsky }
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_collectivist_propaganda
+		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_agitprop }
+		x = 0
+		y = 1
+		relative_position_id = SOV_expand_the_agitprop
+		cost = 10
+
+		mutually_exclusive = { focus = SOV_positive_heroism }
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_PROPAGANDA}
+
+		completion_reward = {
+			add_political_power = 25
+			add_ideas = SOV_collectivist_propaganda_ns
+
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
+			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
+			SOV_unlock_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	focus = {
+		id = SOV_socialist_emulation
+		icon = GFX_SOV_socialist_emulation_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_collectivist_propaganda }
+		x = 0
+		y = 1
+		relative_position_id = SOV_collectivist_propaganda
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_ideas = SOV_socialist_emulation_1_ns
+		}
+	}
+
+	focus = {
+		id = SOV_socialist_realism
+		icon = GFX_SOV_socialist_realism_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_socialist_emulation }
+		x = 0
+		y = 1
+		relative_position_id = SOV_socialist_emulation
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_socialist_emulation_1_ns
+				add_idea = SOV_socialist_emulation_2_ns
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_the_komsomol
+		icon = GFX_SOV_the_komsomol_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_agitprop }
+		x = 2
+		y = 1
+		relative_position_id = SOV_expand_the_agitprop
+		cost = 5
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA}
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_knowledge
+			unlock_decision_tooltip = SOV_propaganda_builders_of_communism
+			unlock_decision_tooltip = SOV_propaganda_sweep_scum_out
+			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
+			SOV_unlock_propaganda_campaign_slot_effect = yes
 		}
 	}
 }
