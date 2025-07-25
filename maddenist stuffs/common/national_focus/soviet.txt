@@ -86,7 +86,9 @@ focus_tree = {
 		y = 0
 		cost = 5
 		completion_reward = {
-			
+				set_technology = {
+					paratroopers = 1
+				}
 			}
 		}
 
@@ -190,6 +192,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			set_technology = {
+				marines = 1
+			}
 			division_template = {
 					name = "Pravda Naval Infantry"
 					is_locked = yes
