@@ -1855,295 +1855,257 @@ focus_tree = {
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"38. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"39. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"40. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"41. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"42. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"43. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"44. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"45. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"46. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"47. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"48. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"49. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"50. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"51. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"52. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"53. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"54. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"55. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"56. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"57. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"58. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"59. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"60. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"61. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"62. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"63. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"64. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"65. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"66. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"67. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"68. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"69. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"70. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"71. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"72. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"73. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"74. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"75. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"76. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"77. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"78. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"79. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"80. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"81. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"82. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"83. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"84. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"85. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"86. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"87. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"88. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"89. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"90. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"91. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"92. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"93. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"94. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"95. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"96. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"97. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"98. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"99. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
 						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
+    						division = "name = \"100. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
     						owner = SOV
 						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						create_unit = {
-    						division = "name = \"1. 1st year\" division_template = \"1st year soldiers\" start_experience_factor = 0.5"
-    						owner = SOV
-						}
-						
-
 					}
 				}
 			}
