@@ -144,7 +144,7 @@ ideas = {
 			}
 		}
 
-		PRV_grounded_air = {
+		PRV_grounded_air1 = {
 			name = PRV_grounded_air
 			#picture =
 
@@ -162,6 +162,56 @@ ideas = {
 			}
 
 
+		}
+		PRV_grounded_air2 = {
+			name = PRV_grounded_air
+			#picture =
+
+			allowed_to_remove = {
+				has_war = yes
+			}
+
+			removal_cost = 100
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_agility_factor = -0.5
+			}
+
+
+		}
+		PRV_grounded_air3 = {
+			name = PRV_grounded_air
+			#picture =
+
+			allowed_to_remove = {
+				has_war = yes
+			}
+
+			removal_cost = 100
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_agility_factor = -0.25
+			}
+
+
+		}
+		PRV_new_air = {
+			name = PRV_new_air
+			#picture = 
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_attack_factor = 0.1
+			}
 		}
 
 		PRV_exports1 = {
