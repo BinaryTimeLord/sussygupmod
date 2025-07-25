@@ -880,6 +880,7 @@ add_ideas = {
 	PRV_famines1
 	PRV_illiteracy
 	PRV_outdated_industry1
+	PRV_bad_navy1
 }
 
 1939.1.1 = {
