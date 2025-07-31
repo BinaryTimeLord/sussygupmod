@@ -382,6 +382,7 @@ country_event = {
 					state = 286
 					state = 741
 					state = 670
+					state = 1017
 				}
 			}
 			
@@ -441,6 +442,7 @@ country_event = {
 					state = 286
 					state = 741
 					state = 670
+					state = 1017
 				}
 			}
 			
@@ -501,6 +503,7 @@ country_event = {
 					state = 286
 					state = 741
 					state = 670
+					state = 1017
 				}
 			}
 			
