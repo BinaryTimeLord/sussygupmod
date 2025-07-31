@@ -690,8 +690,8 @@ SOV_ssrplus_categories_europe = {
 		complete_effect = {
 			SYG = {
 				create_country_leader = {
-					name = "Nonna"
-					picture = "gfx/leaders/SOV/Portrait_SOV_Nonna.dds"
+					name = "Nina"
+					picture = "gfx/leaders/SOV/Portrait_SOV_Nina.dds"
 					expire = "9999.1.1.1"
 					ideology=stalinism
 				}

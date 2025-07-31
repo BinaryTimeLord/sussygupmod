@@ -7,6 +7,7 @@
  SPL_democratic_DEF:0 "the Republic of Poland"
  SPL_neutrality:0 "Poland"
  SPL_neutrality_DEF:0 "the Republic of Poland"
+ SPL_DEF:0 "the Polish People's Republic"
 
  SRO_communism:0 "Romanian People's Republic"
  SRO_communism_DEF:0 "the Romanian People's Republic"
@@ -16,6 +17,7 @@
  SRO_democratic_DEF:0 "the Republic of Romania"
  SRO_neutrality:0 "Romania"
  SRO_neutrality_DEF:0 "the Kingdom of Romania"
+ SRO_DEF:0 "the Romanian People's Republic"
  
  SBL_communism:0 "People's Republic of Bulgaria"
  SBL_communism_DEF:0 "the People's Republic of Bulgaria"
@@ -25,6 +27,7 @@
  SBL_democratic_DEF:0 "the Republic of Bulgaria"
  SBL_neutrality:0 "Bulgaria"
  SBL_neutrality_DEF:0 "the Kingdom of Bulgaria"
+ SBL_DEF:0 "the People's Republic of Bulgaria"
  
  SHG_communism:0 "Hungarian People's Republic"
  SHG_communism_DEF:0 "the Hungarian People's Republic"
@@ -34,6 +37,7 @@
  SHG_democratic_DEF:0 "the Republic of Hungary"
  SHG_neutrality:0 "Hungary"
  SHG_neutrality_DEF:0 "the Kingdom of Hungary"
+ SHG_DEF:0 "the Hungarian People's Republic"
  
  SCZ_communism:0 "Czechoslovak Socialist Republic"
  SCZ_communism_DEF:0 "the Czechoslovak Socialist Republic"
@@ -43,6 +47,7 @@
  SCZ_democratic_DEF:0 "the Republic of Czechoslovakia"
  SCZ_neutrality:0 "Czechoslovakia"
  SCZ_neutrality_DEF:0 "the Czechoslovakian State"
+ SCZ_DEF:0 "Czechoslovak Socialist Republic"
  
  SGD_communism:0 "Zona Okkupacii Germanii"
  SGD_communism_DEF:0 "the Zona Okkupacii Germanii"
@@ -52,6 +57,7 @@
  SGD_democratic_DEF:0 "the Zona Okkupacii Germanii"
  SGD_neutrality:0 "Zona Okkupacii Germanii"
  SGD_neutrality_DEF:0 "the Zona Okkupacii Germanii"
+ SGD_DEF:0 ""the Zona Okkupacii Germanii"
  
  SGD_german_communism:0 "German Democratic Republic"
  SGD_german_communism_DEF:0 "the German Democratic Republic"
@@ -61,6 +67,7 @@
  SGD_german_democratic_DEF:0 "the Republic of Germany"
  SGD_german_neutrality:0 "German Empire"
  SGD_german_neutrality_DEF:0 "the German Empire"
+ SGD_DEF:0 "the German Democratic Republic"
  
  SFN_communism:0 "Finnish Democratic Republic"
  SFN_communism_DEF:0 "the Finnish Democratic Republic"
@@ -70,7 +77,7 @@
  SFN_democratic_DEF:0 "the Republic of Finland"
  SFN_neutrality:0 "Finland"
  SFN_neutrality_DEF:0 "the Kingdom of Finland"
- 
+ SFN_DEF:0 "the Finnish Democratic Republic"
  
  
  SGR_fascism:0 "Hellenic State"
@@ -81,6 +88,7 @@
  SGR_neutrality_DEF:0 "the Kingdom of Greece"
  SGR_communism:0 "Democratic People's Republic of Greece"
  SGR_communism_DEF:0 "Democratic People's Republic of Greece"
+ SGR_DEF:0 "the Democratic People's Republic of Greece"
  
  SAL_fascism:0 "Greater Albania"
  SAL_fascism_DEF:0 "the Greater Albania"
@@ -90,6 +98,7 @@
  SAL_neutrality_DEF:0 "the Kingdom of Albania"
  SAL_communism:0 "People's Republic of Albania"
  SAL_communism_DEF:0 "People's Republic of Albania"
+ SAL_DEF:0 "the People's Republic of Albania"
  
  SYG_fascism:0 "Grand Order of Yugoslavia"
  SYG_fascism_DEF:0 "the Grand Order of Yugoslavia"
@@ -97,8 +106,9 @@
  SYG_democratic_DEF:0 "the Republic of Yugoslavia"
  SYG_neutrality:0 "Yugoslavia"
  SYG_neutrality_DEF:0 "the Kingdom of Yugoslavia"
- SYG_communism:0 "SFR Yugoslavia"
- SYG_communism_DEF:0 "SFR Yugoslavia"
+ SYG_communism:0 "SFR Brazava"
+ SYG_communism_DEF:0 "SFR Brazava"
+ SYG_DEF:0 "the SFR Brazava"
  
  SSW_fascism:0 "Svea Rike"
  SSW_fascism_DEF:0 "Svea Rike"
@@ -108,6 +118,7 @@
  SSW_neutrality_DEF:0 "the Kingdom of Sweden"
  SSW_communism:0 "Democratic Socialist Republic of Sweden"
  SSW_communism_DEF:0 "Democratic Socialist Republic of Sweden"
+ SSW_DEF:0 "the Democratic Socialist Republic of Sweden"
  
  SNW_fascism:0 "Norgesveldet"
  SNW_fascism_DEF:0 "Norgesveldet"
@@ -117,6 +128,7 @@
  SNW_neutrality_DEF:0 "the Kingdom of Norway"
  SNW_communism:0 "Norwegian People's Republic"
  SNW_communism_DEF:0 "Norwegian People's Republic"
+ SNW_DEF:0 "the Norwegian People's Republic"
  
  SDN_fascism:0 "North Sea Empire"
  SDN_fascism_DEF:0 "the North Sea Empire"
@@ -126,6 +138,7 @@
  SDN_neutrality_DEF:0 "the Kingdom of Denmark"
  SDN_communism:0 "Danish Socialist State"
  SDN_communism_DEF:0 "the Danish Socialist State"
+ SDN_DEF:0 "the Danish Socialist State"
  
  SAS_fascism:0 "Deutschsozialen Austria"
  SAS_fascism_DEF:0 "Deutschsozialen Austria"
@@ -135,6 +148,7 @@
  SAS_neutrality_DEF:0 "Austria"
  SAS_communism:0 "Austrian People's Republic"
  SAS_communism_DEF:0 "the Austrian People's Republic"
+ SAS_DEF:0 "the AUstrian People's Republic"
 
  SBV_fascism:0 "Bavarian State"
  SBV_fascism_DEF:0 "the Bavarian State"
@@ -156,6 +170,7 @@
  SNT_neutrality_DEF:0 "the Kingdom of Netherlands"
  SNT_communism:0 "Dutch People's Republic"
  SNT_communism_DEF:0 "the Dutch People's Republic"
+ SNT_DEF:0 "the Dutch People's Republic"
  
  SIT_fascism:0 "Anzio High School"
  SIT_fascism_DEF:0 "the Anzio High School"
@@ -165,6 +180,7 @@
  SIT_neutrality_DEF:0 "the Royal School of Anzio"
  SIT_communism:0 "Anzio Student's High School"
  SIT_communism_DEF:0 "the Anzio Student's High School"
+ SIT_DEF:0 "the Anzio Student's Highs School"
  
  SBG_fascism:0 "Rexist Belgium"
  SBG_fascism_DEF:0 "Rexist Belgium"
@@ -174,6 +190,7 @@
  SBG_neutrality_DEF:0 "Leopoldian Belgium"
  SBG_communism:0 "Belgian Soviet Republic"
  SBG_communism_DEF:0 "the Belgian Soviet Republic"
+ SBG_DEF:0 "the Belgian Sovier Republic"
  
  SFR_fascism:0 "Nation Française"
  SFR_fascism_DEF:0 "Nation Française"
@@ -181,8 +198,9 @@
  SFR_democratic_DEF:0 "France"
  SFR_neutrality:0 "Military Governance of France"
  SFR_neutrality_DEF:0 "Military Governance of France"
- SFR_communism:0 "French Socialist Republic"
- SFR_communism_DEF:0 "the French Socialist Republic"
+ SFR_communism:0 "BC Socialist Republic"
+ SFR_communism_DEF:0 "the BC Socialist Republic"
+ SFR_DEF:0 "the BC Socialist Republic"
  
  SLX_fascism:0 "Luxembourg"
  SLX_fascism_DEF:0 "Luxembourg"
@@ -192,6 +210,7 @@
  SLX_neutrality_DEF:0 "Royalist Luxembourg"
  SLX_communism:0 "Rosa Luxembourg"
  SLX_communism_DEF:0 "Rosa Luxembourg"
+ SLX_DEF:0 "Rosa Luxembourg"
  
  SIR_fascism:0 "Resurrectionist Ireland"
  SIR_fascism_DEF:0 "Resurrectionist Ireland"
@@ -210,6 +229,7 @@
  SSZ_neutrality_DEF:0 "The Helvetic Junta"
  SSZ_communism:0 "Union of Swiss Socialist Cantons"
  SSZ_communism_DEF:0 "the Union of Swiss Socialist Cantons"
+ SSZ_DEF:0 "the Union of Swiss Socialist Cantons"
  
  SPT_fascism:0 "Greater Portugal"
  SPT_fascism_DEF:0 "Greater Portugal"
@@ -226,8 +246,9 @@
  SEG_democratic_DEF:0 "the United Kingdom"
  SEG_neutrality:0 "Great Britain"
  SEG_neutrality_DEF:0 "Great Britain"
- SEG_communism:0 "Union of British Socialist Republics"
- SEG_communism_DEF:0 "the Union of British Socialist Republics"
+ SEG_communism:0 "Union of Gloriana Socialist Republics"
+ SEG_communism_DEF:0 "the Union of Gloriana Socialist Republics"
+ SEG_DEF:0 "the Union of Gloriana Socialist Republics"
  
  SEG_england_fascism:0 "Anglo-Saxon Empire"
  SEG_england_fascism_DEF:0 "the Anglo-Saxon Empire"
@@ -264,6 +285,7 @@
  SSP_neutrality_DEF:0 "the Royal School of Blue Division"
  SSP_communism:0 "Red Division"
  SSP_communism_DEF:0 "the Red Division"
+ SSP_DEF:0 "the Red Division"
  
  STR_fascism:1 "Turkish Empire"
  STR_fascism_DEF:1 "the Turkish Empire"
@@ -271,8 +293,9 @@
  STR_democratic_DEF:0 "the Republic of Turkey"
  STR_neutrality:0 "Turkey"
  STR_neutrality_DEF:0 "Turkey"
- STR_communism:0 "Turkish Socialist Republic"
- STR_communism_DEF:0 "the Turkish Socialist Republic"
+ STR_communism:0 "Kebab Socialist Republic"
+ STR_communism_DEF:0 "the Kebab Socialist Republic"
+ STR_DEF:0 "the Kebab Socialist Republic"
  
  
  SPL_ADJ:0 "Polish"
@@ -327,11 +350,11 @@
  STH_DEF:0 "Thai People's Republic"
  STH_ADJ:0 "Thai"
  
- SJA:0 "North Japan"
- SJA_DEF:0 "People's Republic of North Japan"
+ SJA:0 "North Chihatan"
+ SJA_DEF:0 "People's Republic of North Chihatan"
  SJA_ADJ:0 "Japanese"
- SJA_united:0 "Japanese People's Republic"
- SJA_united_DEF:0 "the Japanese People's Republic"
+ SJA_united:0 "Chihatan People's Republic"
+ SJA_united_DEF:0 "the Chihatan People's Republic"
  SJA_united_ADJ:0 "Japanese"
  
  SML:0 "Democratic Republic of South Malay"
