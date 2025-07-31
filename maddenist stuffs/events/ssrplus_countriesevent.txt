@@ -889,21 +889,4 @@ country_event = {
 			transfer_state_to = SOV
 		}
 	}
-
-	option = {
-		name = ssrpluscountry.7.e
-		
-		every_state = {
-			limit = {
-				OR = {
-					state = 611
-					state = 612
-				}
-			}
-			transfer_state_to = SIM
-			add_core_of = SIM
-		}
-
-		set_autonomy = { target = SIM autonomy_state = autonomy_puppet }
-	}
 }
