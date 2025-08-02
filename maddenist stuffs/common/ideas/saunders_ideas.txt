@@ -1,0 +1,208 @@
+ideas = {
+	country {
+		saunders_the_kay_deal_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_cost = 0.8
+				consumer_goods_factor = 0.50
+				conscription_factor = -0.45
+				local_resources_factor = -0.18
+				join_faction_tension = 0.18
+			}
+		}
+		saunders_the_kay_deal_2 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_cost = 0.6
+				consumer_goods_factor = 0.40
+				conscription_factor = -0.40
+				local_resources_factor = -0.16
+				join_faction_tension = 0.16
+			}
+		}
+		saunders_the_kay_deal_3 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_cost = 0.4
+				consumer_goods_factor = 0.20
+				conscription_factor = -0.20
+				local_resources_factor = -0.14
+				join_faction_tension = 0.14
+			}
+		}
+		saunders_the_kay_deal_4 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_cost = 0.2
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.10
+				local_resources_factor = -0.12
+				join_faction_tension = 0.12
+			}
+		}
+		saunders_the_kay_deal_5 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				local_resources_factor = -0.1
+				join_faction_tension = 0.1
+			}
+		}
+		saunders_the_kay_deal_laissez_faire = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				local_resources_factor = 0.1
+				join_faction_tension = -0.1
+				consumer_goods_factor = -0.10
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}	
+		saunders_the_kay_deal_school_intervention_in_the_market = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				local_resources_factor = 0.1
+				join_faction_tension = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		public_works_initiative = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.50
+				production_speed_industrial_complex_factor = 0.50
+			}
+		}
+		opening_up_the_school_system_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = 0.01
+				compliance_growth = 0.1
+			}
+		}
+		opening_up_the_school_system_2 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				compliance_growth = 0.2
+			}
+		}
+		opening_up_the_school_system_3 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = 0.25
+				compliance_growth = 0.3
+			}
+		}
+		opening_up_the_school_system_4 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = 0.40
+				compliance_growth = 0.4
+				compliance_gain = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		opening_up_the_school_system_5 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = 0.5
+				compliance_growth = 0.5
+				compliance_gain = 0.25
+				resistance_growth = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		closing_off_the_school_system_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = -0.01
+				compliance_growth = -0.1
+			}
+		}
+		closing_off_the_school_system_2 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = -0.1
+				compliance_growth = -0.2
+			}
+		}
+		closing_off_the_school_system_3 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription_factor = -0.2
+				compliance_growth = -0.25
+			}
+		}
+		closing_off_the_school_system_4 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				conscription_factor = -0.4
+				resistance_decay = 0.2
+				compliance_growth = -0.5
+			}
+		}
+		the_kaynesian_welfare_school_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				local_resources_factor = 0.1
+				join_faction_tension = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				conscription_factor = 0.5
+				compliance_growth = 0.5
+				compliance_gain = 0.25
+				consumer_goods_factor = 0.1	
+			}
+		}
+		on_land_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				experience_gain_army = 0.10
+			}
+		}
+		on_sea_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				experience_gain_navy = 0.10
+			}
+		}
+		on_air_1 = {
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				experience_gain_air = 0.10
+			}
+		}
+		saunders_education_reform_1 = {
+			picture = generic_pp_unity_bonus #Needs Research/Industry bonus
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

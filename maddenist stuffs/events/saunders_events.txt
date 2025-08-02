@@ -1,0 +1,147 @@
+add_namespace = saunders
+
+country_event = {
+	id = saunders.1
+	title = saunders.1.t
+	desc = saunders.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saunders.1.a
+		ai_chance = {
+				base = 10
+		}
+		add_political_power = -100
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+country_event = {
+	id = saunders.2
+	title = saunders.2.t
+	desc = saunders.2.d
+	picture =
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saunders.2.a
+		ai_chance = {
+				base = 10
+		}
+		add_political_power = 25
+	}
+}
+country_event = {
+	id = saunders.3
+	title = saunders.3.t
+	desc = saunders.3.d
+	picture =
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saunders.3.a
+		ai_chance = {
+				base = 10
+		}
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = saunders.4
+	title = saunders.4.t
+	desc = saunders.4.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saunders.4.a #Kay becomes Party Leader, taking over from Stundent Council.
+		ai_chance = {
+				base = 34
+		}
+		set_political_party = {
+			ideology = democratic
+			popularity = 0.10
+		}
+		set_politics = {
+			ideology = democratic
+			elections_allowed = yes
+			last_election = "1932.11.8"
+			election_frequency = 48
+		}
+	}
+	
+	option = {
+		name = saunders.4.b #Alisa becomes Party Leader, taking over from Stundent Council.
+		ai_chance = {
+				base = 33
+		}
+		set_political_party = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+	
+	option = {
+		name = saunders.4.c #Helmet-Chan becomes Party Leader, taking over from Stundent Council.
+		ai_chance = {
+				base = 33
+		}
+		set_political_party = {
+			ideology = communism
+			popularity = 0.10
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = saunders.5
+	title = saunders.5.t
+	desc = saunders.5.d
+	picture =
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saunders.5.a
+		ai_chance = {
+				base = 100
+		}
+		add_ideas = saunders_education_reform_1
+	}
+}
+
+country_event = {
+	id = kayxdarjeeling.1
+	title = kayxdarjeeling.1.t
+	desc = kayxdarjeeling.1.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = kayxdarjeeling.1.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}

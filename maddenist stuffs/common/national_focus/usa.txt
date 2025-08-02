@@ -7,10 +7,10 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 ### search_filters = {FOCUS_FILTER_USA_CONGRESS}
 
-focus_tree = {
+#focus_tree = {
 	id = usa_focus
 	
-	country = {
+	#country = {
 		factor = 0
 		
 		modifier = {
