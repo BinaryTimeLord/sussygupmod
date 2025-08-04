@@ -309,7 +309,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_ideas = PRV_grounded_air
+			add_ideas = PRV_grounded_air1
 			}
 		}
 
@@ -627,7 +627,7 @@ focus_tree = {
 					add_idea = PRV_crippled_officer_corp3
 				}
 				add_timed_idea = {
-					idea = PVD_naval_buildup
+					idea = PVD_naval_buildup_1
 					days = 365
 				}
 				195 = {
@@ -665,7 +665,7 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					remove_ideas = PVD_naval_buildup
+					remove_ideas = PVD_naval_buildup_1
 					add_timed_idea = {
 						idea = PVD_naval_buildup_battle
 						days = 365
@@ -673,7 +673,7 @@ focus_tree = {
 				}
 				else = {
 					modify_timed_idea = {
-						idea = PVD_naval_buildup
+						idea = PVD_naval_buildup_1
 						days = 180
 					}
 				}
@@ -704,7 +704,7 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					remove_ideas = PVD_naval_buildup
+					remove_ideas = PVD_naval_buildup_1
 					add_timed_idea = {
 						idea = PVD_naval_buildup_cruiser
 						days = 365
@@ -712,7 +712,7 @@ focus_tree = {
 				}
 				else = {
 					modify_timed_idea = {
-						idea = PVD_naval_buildup
+						idea = PVD_naval_buildup_1
 						days = 180
 					}
 				}
@@ -743,7 +743,7 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					remove_ideas = PVD_naval_buildup
+					remove_ideas = PVD_naval_buildup_1
 					add_timed_idea = {
 						idea = PVD_naval_buildup_carrier
 						days = 365
@@ -751,7 +751,7 @@ focus_tree = {
 				}
 				else = {
 					modify_timed_idea = {
-						idea = PVD_naval_buildup
+						idea = PVD_naval_buildup_1
 						days = 180
 					}
 				}

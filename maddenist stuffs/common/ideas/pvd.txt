@@ -386,7 +386,7 @@ ideas = {
 				army_core_defence_factor = 0.2
 			}
 		}
-		PVD_naval_buildup_ = {
+		PVD_naval_buildup_1 = {
 			name = PVD_naval_buildup
 			#picture = 
 			removal_cost = -1
