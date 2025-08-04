@@ -145,6 +145,8 @@
  SOV_mandatory_regiments_desc:0 "Currently, there are no official marine regiments in the Navy. This must be changed through mandatory recruitmnts for students familiar with swiming to form the first Pravda Marine Regiments with proper training and equipment for amphibious invasions."
  SOV_grand_navy:0 "The Grand Navy"
  SOV_grand_navy_desc:0 "The Navy Club has grown considerably since the beginning of the recent sets of reforms as ordered by General Secretary Katyusha. However, that does not mean that the Navy has finished evolving, and will continue developing into The Grand Navy of Pravda."
+ SOV_officer_camps:0 "Pravda Officer Camps"
+ SOV_officer_camps_desc:0 "With General Secretary Katyusha's recent actions, many students in the Pravda Military Clubs at a standstill - with the remaining officers overworked as many of their collegues were recently fired. With Katyusha's permission, the remainig Officer Corps decides to begin hosting a series of workshops to entice and promote soldiers to become officers of Pravda."
  
  SOV_annex_tannu_tuva:0 "Annex Tannu Tuva"
  SOV_annex_tannu_tuva_desc:0 "While it hardly matters economically, for political reasons we should formally annex the People's Republic of Tannu Tuva as an autonomous oblast within the Pravda Union."
