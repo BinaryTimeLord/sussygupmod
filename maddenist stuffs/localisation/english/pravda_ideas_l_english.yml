@@ -1,0 +1,78 @@
+﻿l_english:
+ #Pravda Update Ideas
+ 
+ PRV_bad_army1:0 "Bad Army"
+ PRV_bad_army1_desc:0 "Ever since the Pravda Civil War, the Tankery Club of Pravda had grown exhausted and weakened from the constant battles. Making the problem worse, Katyusha had ordered purges to be done on the Tankery members that have shown the worse performances. It will take a total overhaul of the Tankery Team and its sub-clubs in order to compete with enemy schools, especially against Kuromorimine."
+ PRV_bad_army2:0 "Bad Army"
+ PRV_bad_army2_desc:0 "Ever since the Pravda Civil War, the Tankery Club of Pravda had grown exhausted and weakened from the constant battles. Making the problem worse, Katyusha had ordered purges to be done on the Tankery members that have shown the worse performances. It will take a total overhaul of the Tankery Team and its sub-clubs in order to compete with enemy schools, especially against Kuromorimine."
+ PRV_bad_navy1:0 "Bad Navy"
+ PRV_bad_navy1_desc:0 "The Pravda Navy Club is the least promising branches of the Military Clubs of Pravda in comparison to the Tankery and Aviation Clubs. It would take numerous investments and reforms in order to protect the warm and cold waters surrounding the school."
+ PRV_bad_navy2:0 "Bad Navy"
+ PRV_bad_navy2_desc:0 "The Pravda Navy Club is the least promising branches of the Military Clubs of Pravda in comparison to the Tankery and Aviation Clubs. It would take numerous investments and reforms in order to protect the warm and cold waters surrounding the school."
+ PRV_good_navy:0 "Good Navy"
+ PRV_good_navy_desc:0 "After considerable time and effort, the Pravda Navy Club has finally begin to improve and perform better than it was previously."
+ PRV_crippled_officer_corp1:0 "Crippled Officer Corps"
+ PRV_crippled_officer_corp1_desc:0 "As a result of General Secretary Katyusha's purging of the Officer Corps of Pravda, the Military Clubs of the school had become disorganized, overworked, and unable perform actions as a cohesive force."
+ PRV_crippled_officer_corp2:0 "Crippled Officer Corps"
+ PRV_crippled_officer_corp2_desc:0 "As a result of General Secretary Katyusha's purging of the Officer Corps of Pravda, the Military Clubs of the school had become disorganized, overworked, and unable perform actions as a cohesive force."
+ PRV_crippled_officer_corp3:0 "Crippled Officer Corps"
+ PRV_crippled_officer_corp3_desc:0 "As a result of General Secretary Katyusha's purging of the Officer Corps of Pravda, the Military Clubs of the school had become disorganized, overworked, and unable perform actions as a cohesive force."
+ PRV_restored_corp:0 "Restored Officer Corps"
+ PRV_restored_corp_desc:0 "Recent reforms by General Secretary Katyusha has allowed for the Officer Corps of the Pravda Military Clubs to be restored and noted to have improved from the 62nd Sensha-do Tournament."
+ 
+ PRV_pravda_pioneers:0 "Pravdite Pioneers"
+ PRV_pravda_pioneers_desc:0
+ 
+ PRV_auxiliary_units:0 "Pravda Auxiliary Units"
+ PRV_auxiliary_units_desc:0
+ 
+ PRV_grounded_air1:0 "Grounded Airforce"
+ PRV_grounded_air1_desc:0
+ 
+ PRV_grounded_air2:0 "Grounded Airforce"
+ PRV_grounded_air2_desc:0
+ 
+ PRV_grounded_air3:0 "Grounded Airforce"
+ PRV_grounded_air3_desc:0 
+ 
+ PRV_new_air:0 "The New Airforce"
+ PRV_new_air_desc:0
+ 
+ PRV_exports1:0 "Pravda Exports"
+ PRV_exports1_desc:0
+ 
+ PRV_exports2:0 "Pravda Exports"
+ PRV_exports2_desc:0
+ 
+ PRV_famines1:0 "Famines"
+ PRV_famines1_desc:0
+ 
+ PRV_famines2:0 "Famines"
+ PRV_famines2_desc:0
+ 
+ PRV_illiteracy:0 "Illiteracy"
+ PRV_illiteracy_desc:0 "If there is one problem that have been noticed throughout Pravda and its predecessors since the First Sensha-do Tournament, it is illiteracy."
+ PRV_outdated_industry1:0 "Outdated Industry"
+ PRV_outdated_industry1_desc:0 "Despite being one of the major schools in the World Sensha-do Federation, Pravda's predecessors had been unable to develop the foundations compared to the school's rivals in the West."
+ PRV_outdated_industry2:0 "Outdated Industry"
+ PRV_outdated_industry2_desc:0 "Despite being one of the major schools in the World Sensha-do Federation, Pravda's predecessors had been unable to develop the foundations compared to the school's rivals in the West."
+ PRV_outdated_industry3:0 "Outdated Industry"
+ PRV_outdated_industry3_desc:0 "Despite being one of the major schools in the World Sensha-do Federation, Pravda's predecessors had been unable to develop the foundations compared to the school's rivals in the West."
+ PRV_communist_education:0 "Pravdite Education"
+ PRV_communist_education_desc:0 "Education has been improved since General Secretary Katyusha took notice of the problem that has been undealt with by the previous administrations. Now, everyone in the Union of Sensha-do School Regions is aware of the logic and theories of which Katyusha prescribes to in addition to the sciences and other subjects that may interest the growing student body."
+ 
+ PRV_rockets:0 "Pravda Rocketry Program"
+ PRV_rockets_desc:0
+ 
+ PVD_Glory:0 "Glory"
+ PVD_Glory_desc:0
+ 
+ PVD_naval_buildup_1:0 "Pravda Naval Buil-up Program"
+ PVD_naval_buildup_1_desc:0
+ 
+ PVD_naval_buildup_cruiser:0 "Pravda Cruiser Build-up"
+ PVD_naval_buildup_cruiser_desc:0 "After looking at a selection of which ships to focus on, the General Secretary Katyusha decided on focusing on the production of cruisers as a way to strengthen the Pravda Navy."
+ PVD_naval_buildup_battle:0 "Pravda Battleship Build-up"
+ PVD_naval_buildup_battle_desc:0 "After looking at a selection of which ships to focus on, the General Secretary Katyusha decided on focusing on the production of battleships as a way to project the power of the new Pravda Navy."
+ PVD_naval_buildup_carrier:0 "Pravda Carrier Build-up"
+ PVD_naval_buildup_carrier_desc:0 "After looking at a selection of which ships to focus on, the General Secretary Katyusha decided on focusing on the production of carriers as Pravda enters the new era of Naval Warfare."
