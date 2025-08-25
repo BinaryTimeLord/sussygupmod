@@ -1,0 +1,119 @@
+music = {
+	name = "grandsymphony"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "newarmoredparadise"
+	file = "newarmoredparadise.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "greatkatyusha"
+	file = "greatkatyusha.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ifoundmyway"
+	file = "ifoundmyway.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "mywayandyourway"
+	file = "mywayandyourway.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "themostimportantinlife"
+	file = "themostimportantinlife.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "okgoahead"
+	file = "okgoahead.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "queenofquality"
+	file = "queenofquality.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "wonderlandgoaround"
+	file = "wonderlandgoaround.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "bombardmentquest"
+	file = "bombardmentquest.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "imaschoolgirlnow"
+	file = "imaschoolgirlnow.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "infinityorbit"
+	file = "infinityorbit.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "koiniloveshite"
+	file = "koiniloveshite.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "sunnygirl"
+	file = "sunnygirl.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "saitahana"
+	file = "saitahana.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "nantesutekinarisouzou"
+	file = "nantesutekinarisouzou.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "koiuta"
+	file = "koiuta.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "1pldk"
+	file = "1pldk.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "melancholic"
+	file = "melancholic.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "itsthemorningfightnow"
+	file = "itsthemorningfightnow.ogg"
+	volume = 0.65
+}

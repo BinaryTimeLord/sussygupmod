@@ -1,0 +1,199 @@
+music_station = "GUP"
+
+music = {
+	song = "grandsymphony"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+
+music = {
+	song = "newarmoredparadise"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = ITA
+		}		
+	}
+}
+
+music = {
+	song = "greatkatyusha"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = SOV
+		}		
+	}
+}
+
+music = {
+	song = "ifoundmyway"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "mywayandyourway"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = GER
+		}		
+	}
+}
+
+music = {
+	song = "themostimportantinlife"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = FIN
+		}		
+	}
+}
+
+music = {
+	song = "okgoahead"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = USA
+		}		
+	}
+}
+
+music = {
+	song = "queenofquality"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = ENG
+		}		
+	}
+}
+
+music = {
+	song = "wonderlandgoaround"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "bombardmentquest"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = JAP
+		}		
+	}
+}
+
+music = {
+	song = "imaschoolgirlnow"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "infinityorbit"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "koiniloveshite"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "sunnygirl"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "saitahana"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "nantesutekinarisouzou"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "koiuta"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "1pldk"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "melancholic"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
+
+music = {
+	song = "itsthemorningfightnow"
+	chance = {
+		modifier = {
+			factor = 0.5
+                        TAG = AUS
+		}		
+	}
+}
