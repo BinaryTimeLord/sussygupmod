@@ -2976,6 +2976,26 @@ spriteTypes = {
 		name = "GFX_focus_SOV_approach_semyonov"
 		texturefile = "gfx/interface/goals/focus_SOV_approach_semyonov.dds"
 	}
+
+	SpriteType = { 
+		name = "GFX_focus_SOV_modern_airforce"
+		texturefile = "gfx/interface/goals/SOV_modern_airforce.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_SOV_grand_navy"
+		texturefile = "gfx/interface/goals/SOV_grand_navy.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_SOV_expanding_synthetic"
+		texturefile = "gfx/interface/goals/SOV_expanding_synthetic.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_SOV_the_oil_must_flow"
+		texturefile = "gfx/interface/goals/SOV_the_oil_must_flow.dds"
+	}
 	
 		   ##   ##    ##
 		   # #  # #  #  #
