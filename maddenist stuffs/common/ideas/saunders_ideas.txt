@@ -660,5 +660,36 @@ ideas = {
 				}
 			}
 		}
+		
+		saunders_logistic_corps = {
+			name = saunders_logistic_corps
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				supply_factor = 0.1
+				attrition = -0.05
+				supply_node_range = 0.1
+			}
+		}
+
+		saunders_logistic_corps_1 = {
+			name = saunders_logistic_corps
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				supply_factor = 0.2
+				attrition = -0.15
+				supply_node_range = 0.3
+			}
+		}
+
 	}
 }

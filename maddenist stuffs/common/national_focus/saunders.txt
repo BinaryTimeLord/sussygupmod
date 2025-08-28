@@ -688,6 +688,9 @@
 		y = 3
 		cost = 5
 		prerequisite = { focus = on_land }
+		completion_reward = {
+			add_ideas = saunders_logistic_corps
+		}
 		}
 	
 		focus = {
@@ -696,6 +699,15 @@
 		y = 3
 		cost = 5
 		prerequisite = { focus = on_land }
+		completion_reward = {
+			create_intelligence_agency = {
+					name = "SSA"
+					icon = GFX_intelligence_agency_logo_usa
+				}
+			upgrade_intelligence_agency = upgrade_economy_civilian
+			upgrade_intelligence_agency = upgrade_army_department
+			upgrade_intelligence_agency = upgrade_form_department
+		}
 		}
 	
 		focus = {
@@ -758,6 +770,12 @@
 		y = 4
 		cost = 5
 		prerequisite = { focus = saunders_logistical_corps }
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = saunders_logistic_corps
+			add_idea = saunders_logistic_corps_1
+				}
+			}
 		}
 	
 		focus = {
@@ -766,6 +784,10 @@
 		y = 4
 		cost = 5
 		prerequisite = { focus = all_for_colonel_saunders }
+		completion_reward = {
+			upgrade_intelligence_agency = upgrade_interrogation_techniques
+			upgrade_intelligence_agency = upgrade_decryption_boost
+		}
 		}
 		## Alisa Plan
 			focus = {
@@ -1092,40 +1114,40 @@
 				}
 			  }
 	
-	focus = {
-		id = the_creation_of_the_saunders_engineer_club
-		x = 43
-		y = 11
-		cost = 5
-		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
-		completion_reward = {
-			add_ideas = saunders_engineer_club
-		}
-	}
+		focus = {
+			id = the_creation_of_the_saunders_engineer_club
+			x = 43
+			y = 11
+			cost = 5
+			prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+			completion_reward = {
+				add_ideas = saunders_engineer_club
+			}
+		 }
 
-	focus = {
-		id = defender_of_democratic_schools
-		x = 40
-		y = 11
-		cost = 5
-		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
-	}
+		focus = {
+			id = defender_of_democratic_schools
+			x = 40
+			y = 11
+			cost = 5
+			prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+		 }
 	
-	focus = {
-		id = arsenal_of_democracy
-		x = 40
-		y = 12
-		cost = 5
-		prerequisite = { focus = defender_of_democratic_schools }
-	}
+		focus = {
+			id = arsenal_of_democracy
+			x = 40
+			y = 12
+			cost = 5
+			prerequisite = { focus = defender_of_democratic_schools }
+		 }
 	
-	focus = {
-		id = school_strategic_deployment_highway_network
-		x = 46
-		y = 11
-		cost = 5
-		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
-	}
+		focus = {
+			id = school_strategic_deployment_highway_network
+			x = 46
+			y = 11
+			cost = 5
+			prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+		 }
 	
 	#Navy Branch
 	
