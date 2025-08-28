@@ -869,54 +869,81 @@
 		prerequisite = { focus = investments_in_automation }
 		}
 
-		focus = {
-		id = re_organize_the_command_structure
-		x = 42
-		y = 5
-		cost = 5
-		prerequisite = { focus = kay_plan }
-		}
+		## Kay Plan
+
+			focus = {
+				id = re_organize_the_command_structure
+				x = 42
+				y = 5
+				cost = 5
+				prerequisite = { focus = kay_plan }
+				completion_reward = {
+					add_ideas = saunders_new_officers
+				}
+			 }
 	
-		focus = {
-		id = better_unity_amongst_military_clubs
-		x = 44
-		y = 5
-		cost = 5
-		prerequisite = { focus = kay_plan }
-		}
+			focus = {
+				id = better_unity_amongst_military_clubs
+				x = 44
+				y = 5
+				cost = 5
+				prerequisite = { focus = kay_plan }
+				completion_reward = {
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.5
+						uses = 2
+						category = cat_grand_battle_plan
+				}
+				}
+			 }
 	
-		focus = {
-		id = new_methods_in_commander_training
-		x = 43
-		y = 6
-		cost = 5
-		prerequisite { focus = re_organize_the_command_structure }
-		prerequisite { focus = better_unity_amongst_military_clubs }
-		}
+			focus = {
+				id = new_methods_in_commander_training
+				x = 43
+				y = 6
+				cost = 5
+				prerequisite { focus = re_organize_the_command_structure }
+				prerequisite { focus = better_unity_amongst_military_clubs }
+				completion_reward = {
+					add_ideas = saunders_commanders_trained
+				}
+			 }
 	
-		focus = {
-		id = cheaper_but_reliable_weapons
-		x = 43
-		y = 7
-		cost = 5
-		prerequisite = { focus = new_methods_in_commander_training }
-		}
+			focus = {
+				id = cheaper_but_reliable_weapons
+				x = 43
+				y = 7
+				cost = 5
+				prerequisite = { focus = new_methods_in_commander_training }
+				completion_reward = {
+					add_ideas = saunders_cheap_reliable
+				}
+			 }
 	
-		focus = {
-		id = expand_the_mechanics_club
-		x = 43
-		y = 8
-		cost = 5
-		prerequisite = { focus = cheaper_but_reliable_weapons }
-		}
+			focus = {
+				id = expand_the_mechanics_club
+				x = 43
+				y = 8
+				cost = 5
+				prerequisite = { focus = cheaper_but_reliable_weapons }
+				completion_reward = {
+					add_ideas = saunders_mechanics_expanded
+				}
+			 }
 	
-		focus = {
-		id = the_art_of_preparation_planning_and_command
-		x = 43
-		y = 9
-		cost = 5
-		prerequisite = { focus = expand_the_mechanics_club }
-		}
+			focus = {
+				id = the_art_of_preparation_planning_and_command
+				x = 43
+				y = 9
+				cost = 5
+				prerequisite = { focus = expand_the_mechanics_club }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_new_officers
+						add_idea = saunders_new_officers_1
+					}
+				}
+			 }
 	
 		focus = {
 		id = expand_the_role_of_self_propelled_artillery

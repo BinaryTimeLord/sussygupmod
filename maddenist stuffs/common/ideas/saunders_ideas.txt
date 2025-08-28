@@ -259,7 +259,116 @@ ideas = {
 					build_cost_ic = -0.15
 				}
 			}
-			
+		}
+
+		saunders_cheap_reliable = {
+			name = saunders_cheap_reliable
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+					reliability = 0.2
+					soft_attack = -0.2
+					hard_attack = -0.1
+				}
+			}
+		}
+
+		saunders_mechanics_expanded = {
+			name = saunders_mechanics_expanded
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					reliability = 0.15
+				}
+				light_armor = {
+					instant = yes
+					reliability = 0.15
+				}
+				medium_armor = {
+					instant = yes
+					reliability = 0.15
+				}
+				heavy_armor = {
+					instant = yes
+					reliability = 0.15
+				}
+				support_tech = {
+					instant = yes
+					reliability = 0.15
+				}
+				motorized_equipment = {
+					instant = yes
+					reliability = 0.15
+				}
+				mechanized_equipment = {
+					instant = yes
+					reliability = 0.15
+				}
+			}
+		}
+
+		saunders_new_officers = {
+			name = saunders_new_officers
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning_factor = 0.5
+				planning_speed = -0.2
+				max_dig_in_factor = 0.2
+				army_org_factor = 0.05
+			}
+		}
+
+		saunders_new_officers_1 = {
+			name = saunders_new_officers
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning_factor = 1
+				planning_speed = 0.1
+				army_org_factor = 0.1
+				max_dig_in_factor = 0.2
+				army_attack_factor = 0.1
+				supply_node_range = 0.15
+				supply_factor = 0.2
+				max_fuel_factor = 0.15
+			}
+		}
+
+		saunders_commanders_trained = {
+			name = saunders_commanders_trained
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.05
+				army_org_factor = 0.05
+				attrition = -0.2
+			}
 		}
 
 	}
