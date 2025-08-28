@@ -1,4 +1,5 @@
 add_namespace = saunders
+add_namespace = saundersmil
 
 country_event = {
 	id = saunders.1
@@ -115,7 +116,7 @@ country_event = {
 	id = saunders.5
 	title = saunders.5.t
 	desc = saunders.5.d
-	picture =
+	#picture =
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -126,6 +127,79 @@ country_event = {
 				base = 100
 		}
 		add_ideas = saunders_education_reform_1
+	}
+}
+
+country_event = {
+	id = saundersmil.1
+	title = saundersmil.1.t
+	desc = saundersmil.1.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmil1.a
+		ai_chance = {
+				base = 100
+		}
+		USA = {
+		country_event {
+			id = saundersmil.2
+			days = 1
+		}
+		}
+	}
+}
+
+country_event = {
+	id = saundersmil.2
+	title = saundersmil.2.t
+	desc = saundersmil.2.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmil2.a
+		ai_chance = {
+				base = 100
+		}
+	}
+}
+
+country_event = {
+	id = saundersmil.3
+	title = saundersmil.3.t
+	desc = saundersmil.3.d 
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmil.3.a
+		ai_chance = {
+				base = 30
+		}
+		complete_national_focus = alisa_plan
+	}
+
+	option = {
+		name = saundersmil.3.b
+		ai_chance = {
+				base = 40
+		}
+		complete_national_focus = kay_plan
+	}
+
+	option = {
+		name = saundersmil.3.c
+		ai_chance = {
+				base = 30
+		}
+		complete_national_focus = naomi_plan
 	}
 }
 
