@@ -17,7 +17,7 @@ SDR_regain_morale = {
 
         #icon
         is_good = no
-        days_mission_timeout = 365
+        days_mission_timeout = 730
         selectable_mission = no
         complete_effect = {
             USA = {
