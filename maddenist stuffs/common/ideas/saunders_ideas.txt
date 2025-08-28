@@ -230,10 +230,26 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_speed_factor = 0.2
-				army_attack_factor = 0.1
+				army_speed_factor = 0.25
+				army_attack_factor = 0.15
 				army_org_factor = 0.1
-				army_defence_factor = 0.02
+				army_defence_factor = 0.1
+				
+			}
+
+			equipment_bonus = {
+				light_armor = {
+					instant = yes
+					breakthrough = 0.2
+				}
+				medium_armor = {
+					instant = yes
+					breakthrough = 0.2
+				}
+				heavy_armor = {
+					instant = yes
+					breakthrough = 0.2
+				}
 			}
 		}
 
@@ -368,6 +384,124 @@ ideas = {
 				planning_speed = 0.05
 				army_org_factor = 0.05
 				attrition = -0.2
+			}
+		}
+
+		saunders_weapon_quality = {
+			name = saunders_weapon_quality
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.2
+					soft_attack = 0.15
+					hard_attack = 0.05
+					build_cost_ic = 0.2
+				}
+			}
+		}
+
+		saunders_arty_training = {
+			name = saunders_arty_training
+			#picture = 
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					soft_attack = 0.15
+					hard_attack = 0.05
+					breakthrough = 0.1
+				}
+			}
+		}
+
+		saunders_shock_and_awe = {
+			name = saunders_shock_and_awe
+			#picture =
+
+			allowed = {always = no}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					soft_attack = 0.2
+					hard_attack = 0.1
+					breakthrough = 0.2
+				}
+			}
+		}
+
+		saunders_arty_production = {
+			name = saunders_arty_production
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery ={
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+
+		saunders_arty_focus = {
+			name = saunders_arty_focus
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant_yes
+					soft_attack = 0.05
+				}
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.2
+				army_speed_factor = -0.2
+				supply_factor = -0.1
+			}
+		}
+
+		saunders_arty_focus_1 = {
+			name = saunders_arty_focus
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant_yes
+					soft_attack = 0.05
+				}
+			}
+
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.3
+				army_speed_factor = -0.1
 			}
 		}
 

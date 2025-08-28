@@ -964,63 +964,96 @@
 		prerequisite = { focus = expand_the_role_of_self_propelled_artillery }
 		}
 	
-		focus = {
-		id = board_of_reform_examination_committee
-		x = 48
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_plan }
-		}
+		## Naomi Plan
+
+			focus = {
+				id = board_of_reform_examination_committee
+				x = 48
+				y = 5
+				cost = 5
+				prerequisite = { focus = naomi_plan }
+				completion_reward = {
+					add_ideas = saunders_arty_focus
+				}
+			 }
 	
-		focus = {
-		id = weapons_quality_quota
-		x = 50
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_plan }
-		}
+			focus = {
+				id = weapons_quality_quota
+				x = 50
+				y = 5
+				cost = 5
+				prerequisite = { focus = naomi_plan }
+				completion_reward = {
+					add_ideas = saunders_weapon_quality
+				}
+			 }
 	
-	focus = {
-		id = artillery_as_king_of_the_battlefield
-		x = 49
-		y = 6
-		cost = 5
-		prerequisite = { focus = weapons_quality_quota }
-		prerequisite = { focus = board_of_reform_examination_committee }
-	}
+			focus = {
+				id = artillery_as_king_of_the_battlefield
+				x = 49
+				y = 6
+				cost = 5
+				prerequisite = { focus = weapons_quality_quota }
+				prerequisite = { focus = board_of_reform_examination_committee }
+				completion_reward = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 3
+						category = artillery
+					}
+				}
+			 }
 	
-	focus = {
-		id = increased_artillery_training
-		x = 48
-		y = 7
-		cost = 5
-		prerequisite = { focus = artillery_as_king_of_the_battlefield }
-	}
+			focus = {
+				id = increased_artillery_training
+				x = 48
+				y = 7
+				cost = 5
+				prerequisite = { focus = artillery_as_king_of_the_battlefield }
+				completion_reward = {
+					add_ideas = saunders_arty_training
+				}
+			 }
 	
-	focus = {
-		id = higher_artillery_production_efficiency
-		x = 50
-		y = 7
-		cost = 5
-		prerequisite = { focus = artillery_as_king_of_the_battlefield }
-	}
+			focus = {
+				id = higher_artillery_production_efficiency
+				x = 50
+				y = 7
+				cost = 5
+				prerequisite = { focus = artillery_as_king_of_the_battlefield }
+				completion_reward = {
+					add_ideas = saunders_arty_production
+				}
+			 }
 	
-	focus = {
-		id = shock_and_awe_as_a_conduit_of_saunders
-		x = 49
-		y = 8
-		cost = 5
-		prerequisite = { focus = increased_artillery_training }
-		prerequisite = { focus = higher_artillery_production_efficiency }
-	}
+			focus = {
+				id = shock_and_awe_as_a_conduit_of_saunders
+				x = 49
+				y = 8
+				cost = 5
+				prerequisite = { focus = increased_artillery_training }
+				prerequisite = { focus = higher_artillery_production_efficiency }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_arty_training
+						add_idea = saunders_shock_and_awe
+					}
+				}
+			 }
 	
-	focus = {
-		id = embodiment_of_superior_firepower
-		x = 49
-		y = 9
-		cost = 5
-		prerequisite = { focus = shock_and_awe_as_a_conduit_of_saunders }
-	}
+			focus = {
+				id = embodiment_of_superior_firepower
+				x = 49
+				y = 9
+				cost = 5
+				prerequisite = { focus = shock_and_awe_as_a_conduit_of_saunders }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_arty_focus
+						add_idea = saunders_arty_focus_1
+					}
+				}
+			 }		
 	
 	focus = {
 		id = the_final_stages_of_saunders_tankery_club_reforms
