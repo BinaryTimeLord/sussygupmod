@@ -1,0 +1,37 @@
+SDR_regain_morale = {
+    SDR_morale_mission = {
+	    available = {
+                AND = {
+                OR = {
+                    has_completed_focus = kay_plan
+                    has_completed_focus = alisa_plan
+                    has_completed_focus = naomi_plan
+                }
+                                OR = {
+                    has_completed_focus = expand_the_automation_club
+                    has_completed_focus = better_supplied_and_trained_support_battalions
+                }
+                has_completed_focus = saunders_department_of_logistics
+                }
+            }
+
+        #icon
+        is_good = no
+        days_mission_timeout = 365
+        selectable_mission = no
+        complete_effect = {
+            USA = {
+                country_event = {
+                    id = saundersmorale.1
+                }
+            }
+        }
+        timeout_effect = {
+            USA = {
+                country_event = {
+                    id = saundersmorale.2
+                }
+            }
+        }
+    }
+}

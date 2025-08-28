@@ -859,6 +859,9 @@
 			focus = alisa_plan
 			focus = kay_plan
 		}
+		completion_reward = {
+			add_ideas = saunders_automation_club
+		}
 		}
 	
 		focus = {
@@ -867,6 +870,12 @@
 		y = 7
 		cost = 5
 		prerequisite = { focus = investments_in_automation }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = saunders_automation_club
+				add_idea = saunders_automation_club_1
+			}
+		}
 		}
 
 		## Kay Plan
@@ -954,6 +963,9 @@
 			focus = kay_plan 
 			focus = naomi_plan
 		}
+		completion_reward = {
+			add_ideas = saunders_spg
+		}
 		}
 	
 		focus = {
@@ -962,6 +974,9 @@
 		y = 7
 		cost = 5
 		prerequisite = { focus = expand_the_role_of_self_propelled_artillery }
+		completion_reward = {
+			add_ideas = saunders_supply_battalion
+		}
 		}
 	
 		## Naomi Plan
@@ -1055,17 +1070,27 @@
 				}
 			 }		
 	
-	focus = {
-		id = the_final_stages_of_saunders_tankery_club_reforms
-		x = 43
-		y = 10
-		cost = 5
-		prerequisite = {
-			focus = superior_senshado_spirit
-			focus = the_art_of_preparation_planning_and_command
-			focus = embodiment_of_superior_firepower
-		}
-	}
+			focus = {
+				id = the_final_stages_of_saunders_tankery_club_reforms
+				x = 43
+				y = 10
+				cost = 5
+				prerequisite = {
+					focus = superior_senshado_spirit
+					focus = the_art_of_preparation_planning_and_command
+					focus = embodiment_of_superior_firepower
+				}
+				available = {
+					NOT = {
+						has_active_mission = SDR_morale_mission
+					}
+				}
+				completion_reward = {
+					country_event = {
+						id = saundersmil.4
+					}	
+				}
+			  }
 	
 	focus = {
 		id = the_creation_of_the_saunders_engineer_club
@@ -1073,6 +1098,9 @@
 		y = 11
 		cost = 5
 		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+		completion_reward = {
+			add_ideas = saunders_engineer_club
+		}
 	}
 
 	focus = {

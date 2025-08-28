@@ -1,5 +1,6 @@
 add_namespace = saunders
 add_namespace = saundersmil
+add_namespace = saundersmorale
 
 country_event = {
 	id = saunders.1
@@ -136,7 +137,6 @@ country_event = {
 	desc = saundersmil.1.d 
 	#picture = 
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
@@ -159,13 +159,52 @@ country_event = {
 	desc = saundersmil.2.d 
 	#picture = 
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = saundersmil2.a
 		ai_chance = {
 				base = 100
+		}
+		USA = {
+			activate_mission = SDR_morale_mission
+		}
+	}
+}
+
+country_event = {
+	id = saundersmorale.1
+	title = saundersmorale.1.t
+	desc = saundersmorale.1.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmorale.1.a
+		USA = {
+			swap_ideas = {
+              remove_idea = saunders_demoralised_army
+              add_idea = saunders_recovering_army
+            }
+		}
+	}
+}
+
+country_event = {
+	id = saundersmorale.2
+	title = saundersmorale.2.t
+	desc = saundersmorale.2.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmorale.2.a
+		USA = {
+			add_ideas = saunders_failed_morale
 		}
 	}
 }
@@ -200,6 +239,41 @@ country_event = {
 				base = 30
 		}
 		complete_national_focus = naomi_plan
+	}
+}
+
+country_event = {
+	id = saundersmil.4
+	title = saundersmil.4.t
+	desc = saundersmil.4.d 
+	#picture =
+
+	is_triggered_only = yes
+	option = {
+		name = saundersmil.4.a
+		
+		trigger = {
+			USA = {has_idea = saunders_recovering_army}
+		}
+
+		swap_ideas = {
+			remove_idea = saunders_recovering_army
+			add_idea = saunders_new_army
+		}
+	}
+
+	option = {
+		name = saundersmil.4.b 
+
+		trigger = {
+			USA = {has_idea = saunders_demoralised_army}
+		}
+
+		swap_ideas = {
+			remove_idea = saunders_demoralised_army
+			add_idea = saunders_new_army
+		}
+
 	}
 }
 

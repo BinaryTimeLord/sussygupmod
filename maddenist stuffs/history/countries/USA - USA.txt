@@ -381,6 +381,7 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	saunders_demoralised_army
 }
 
 
