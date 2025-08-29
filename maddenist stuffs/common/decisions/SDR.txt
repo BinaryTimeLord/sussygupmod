@@ -1,24 +1,14 @@
 SDR_regain_morale = {
     SDR_morale_mission = {
 	    available = {
-                AND = {
-                OR = {
-                    has_completed_focus = kay_plan
-                    has_completed_focus = alisa_plan
-                    has_completed_focus = naomi_plan
-                }
-                                OR = {
-                    has_completed_focus = expand_the_automation_club
-                    has_completed_focus = better_supplied_and_trained_support_battalions
-                }
-                has_completed_focus = saunders_department_of_logistics
-                }
+                has_country_flag = morale_finished
             }
 
         #icon
         is_good = no
-        days_mission_timeout = 730
+        days_mission_timeout = 365
         selectable_mission = no
+        activation = {always = no}
         complete_effect = {
             USA = {
                 country_event = {
@@ -34,4 +24,126 @@ SDR_regain_morale = {
             }
         }
     }
+
+    SDR_rally_students = {
+        cost = 10
+        visible = {
+            has_completed_focus = saunders_unified_military_clubs_redevelopment_plan
+            has_active_mission = SDR_morale_mission
+        }
+
+        fire_only_once = yes
+        days_remove = 10
+        remove_effect = {
+            set_country_flag = sdr_morale_1
+        }
+    }
+
+    SDR_promise_change = {
+        cost = 50
+        available = {
+            has_country_flag = sdr_morale_1
+        }
+        visible = {
+            has_completed_focus = saunders_unified_military_clubs_redevelopment_plan
+            has_active_mission = SDR_morale_mission
+        }
+
+        fire_only_once = yes
+        days_remove = 10
+        remove_effect = {
+            set_country_flag = sdr_morale_2
+            add_stability = 0.05
+        }
+    }
+
+    SDR_new_production = {
+        cost = 100
+        available = {
+            has_country_flag = sdr_morale_2
+        }
+        visible = {
+            has_completed_focus = saunders_unified_military_clubs_redevelopment_plan
+            has_active_mission = SDR_morale_mission
+        }
+
+        fire_only_once = yes
+        days_remove = 10
+        remove_effect = {
+            set_country_flag = sdr_morale_3
+            364 = {
+                add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+            }
+            361 = {
+                add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+            }
+
+        }
+    }
+
+    SDR_organize_club = {
+        cost = 200
+        available = {
+            has_country_flag = sdr_morale_3
+        }
+        visible = {
+            has_completed_focus = saunders_unified_military_clubs_redevelopment_plan
+            has_active_mission = SDR_morale_mission
+        }
+
+        fire_only_once = yes
+        days_remove = 90
+        remove_effect = {
+            set_country_flag = morale_finished
+            add_war_support = 0.05
+        }
+    }
+
+    SDR_extend_time_frame = {
+        cost = 100
+        visible = {
+            has_completed_focus = saunders_unified_military_clubs_redevelopment_plan
+            has_active_mission = SDR_morale_mission
+        }
+        
+        days_re_enable = 80
+        days_remove = 10
+        modifier = {
+            weekly_stability = -0.05
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = SDR_morale_mission
+                days = 90
+            }
+            add_stability = -0.05
+        }
+    }
+
+    SDR_gather_power = {
+        visible = {
+            has_completed_focus = saunders_unified_military_clubs_redevelopment_plan
+            has_active_mission = SDR_morale_mission
+        }
+
+        days_re_enable = 14
+        days_remove = 30
+        modifier = {
+            weekly_stability = -0.03
+        }
+        remove_effect = {
+            add_political_power = 100
+        }
+    }
+
 }

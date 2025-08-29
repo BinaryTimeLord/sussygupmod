@@ -640,6 +640,11 @@
 		y = 2
 		cost = 10
 		prerequisite = { focus = saunders_unified_military_clubs_redevelopment_plan }
+			available = {
+				NOT = {
+					has_idea = saunders_demoralised_army
+				}
+			}
 		completion_reward = {
 			add_ideas = on_land_1
 		}

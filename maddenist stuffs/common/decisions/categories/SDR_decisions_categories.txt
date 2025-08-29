@@ -5,7 +5,7 @@ SDR_regain_morale = {
 
 	visible = {
         USA = {
-		has_country_flag = sdr_morale
+        	has_active_mission = SDR_morale_mission
         }
 	}
     #icon = 

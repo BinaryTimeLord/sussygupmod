@@ -188,6 +188,7 @@ country_event = {
               remove_idea = saunders_demoralised_army
               add_idea = saunders_recovering_army
             }
+			remove_ideas = saunders_62nd_humilitation
 		}
 	}
 }
@@ -205,6 +206,10 @@ country_event = {
 		name = saundersmorale.2.a
 		USA = {
 			add_ideas = saunders_failed_morale
+			swap_ideas = {
+              remove_idea = saunders_demoralised_army
+              add_idea = saunders_broken_promise
+            }
 		}
 	}
 }
@@ -266,11 +271,11 @@ country_event = {
 		name = saundersmil.4.b 
 
 		trigger = {
-			USA = {has_idea = saunders_demoralised_army}
+			USA = {has_idea = saunders_broken_promise}
 		}
 
 		swap_ideas = {
-			remove_idea = saunders_demoralised_army
+			remove_idea = saunders_broken_promise
 			add_idea = saunders_new_army
 		}
 
