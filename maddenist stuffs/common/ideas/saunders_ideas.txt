@@ -743,5 +743,73 @@ ideas = {
 			}
 		}
 
+		saunders_naval_tradition = {
+			name = saunders_naval_tradition
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = 0.05
+				navy_capital_ship_attack_factor = 0.3
+				navy_capital_ship_defence_factor = 0.2
+				naval_has_potf_in_combat_attack = 0.2
+				naval_has_potf_in_combat_defense = 0.2
+				naval_hit_chance = 0.1
+				naval_retreat_chance = -0.5
+			}
+		}
+
+		saunders_naval_firepower = {
+			name = saunders_naval_firepower
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+
+		saunders_trade_life = {
+			name = saunders_trade_life
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				convoy_escort_efficiency = 0.3
+				convoy_retreat_speed = 0.1
+				naval_detection = 0.15
+				naval_mine_hit_chance = -0.2
+				naval_retreat_chance = 50
+				naval_morale = 20
+			}
+		}
+
+		saunders_unrestricted_subs = {
+			name = saunders_unrestricted_subs
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				navy_submarine_attack_factor = 0.35
+				navy_submarine_defence_factor = 0.2
+				sub_retreat_speed = -0.3
+			}
+		}
+
 	}
 }

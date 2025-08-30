@@ -1156,92 +1156,175 @@
 	
 	#Navy Branch
 	
-	focus = {
-		id = reform_ship_modeling_club_doctrine
-		x = 69
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_sea }
-	}
+		focus = {
+			id = reform_ship_modeling_club_doctrine
+			x = 69
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_sea }
+			completion_reward = {
+				country_event = {
+					id = saundersnavy.1
+				}
+			}
+		 }
 	
-	focus = {
-		id = naomi_battle_fleet
-		x = 66
-		y = 4
-		cost = 5
-		prerequisite = { focus = reform_ship_modeling_club_doctrine }
-		mutually_exclusive = { focus = kays_carrier_gamble }
-		mutually_exclusive = { focus = alisa_trade_protection_protocols }
-	}
+		focus = {
+			id = naomi_battle_fleet
+			x = 66
+			y = 4
+			cost = 5
+			prerequisite = { focus = reform_ship_modeling_club_doctrine }
+			mutually_exclusive = { focus = kays_carrier_gamble }
+			mutually_exclusive = { focus = alisa_trade_protection_protocols }
+			completion_reward = {
+					if = {
+						limit = {
+							has_DLC = "Man the Guns"
+						}
+						set_technology = {basic_ship_hull_heavy = 1}
+					}
+					else = {
+						set_technology = {basic_battleship = 1}
+					}
+					
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_fleet_in_being
+				}
+			}
+		 }
 	
-	focus = {
-		id = alisa_trade_protection_protocols
-		x = 71
-		y = 4
-		cost = 5
-		prerequisite = { focus = reform_ship_modeling_club_doctrine }
-		mutually_exclusive = { focus = kays_carrier_gamble }
-		mutually_exclusive = { focus = naomi_battle_fleet }
-	}
+		focus = {
+			id = alisa_trade_protection_protocols
+			x = 71
+			y = 4
+			cost = 5
+			prerequisite = { focus = reform_ship_modeling_club_doctrine }
+			mutually_exclusive = { focus = kays_carrier_gamble }
+			mutually_exclusive = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_trade_interdiction
+				}
+				set_technology = {
+					improved_ship_torpedo_launcher = 1
+				}
+			}
+		 }
 	
-	focus = {
-		id = kays_carrier_gamble
-		x = 76
-		y = 4
-		cost = 5
-		prerequisite = { focus = reform_ship_modeling_club_doctrine }
-		mutually_exclusive = { focus = alisa_trade_protection_protocols }
-		mutually_exclusive = { focus = naomi_battle_fleet }
-	}
+		focus = {
+			id = kays_carrier_gamble
+			x = 76
+			y = 4
+			cost = 5
+			prerequisite = { focus = reform_ship_modeling_club_doctrine }
+			mutually_exclusive = { focus = alisa_trade_protection_protocols }
+			mutually_exclusive = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.6
+					uses = 3
+					category = cat_base_strike
+				}
+			}
+		 }
 	
-	focus = {
-		id = the_importance_of_navy_tradition
-		x = 65
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_battle_fleet }
-	}
+	##FLEET IN BEING
+
+		focus = {
+			id = the_importance_of_navy_tradition
+			x = 65
+			y = 5
+			cost = 5
+			prerequisite = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_ideas = saunders_naval_tradition
+			}
+		 }
 	
-	focus = {
-		id = superior_planning_and_firepower
-		x = 67
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_battle_fleet }
-	}
+		focus = {
+			id = superior_planning_and_firepower
+			x = 67
+			y = 5
+			cost = 5
+			prerequisite = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_ideas = saunders_naval_firepower
+			}
+		 }
 	
-	focus = {
-		id = the_role_of_destroyers_and_cruisers_in_the_modeling_club
-		x = 66
-		y = 6
-		cost = 5
-		prerequisite = { focus = the_importance_of_navy_tradition }
-		prerequisite = { focus = superior_planning_and_firepower }
-	}
+		focus = {
+			id = the_role_of_destroyers_and_cruisers_in_the_modeling_club
+			x = 66
+			y = 6
+			cost = 5
+			prerequisite = { focus = the_importance_of_navy_tradition }
+			prerequisite = { focus = superior_planning_and_firepower }
+			completion_reward = {
+				
+					add_tech_bonus = {
+   						 bonus = 0.5
+    					 uses = 1
+    					 category = dd_tech
+					  }
+					add_tech_bonus = {
+   						 bonus = 0.5
+    					 uses = 1
+    					 category = ca_tech
+					  }
+			}
+	 	 }
 	
-	focus = {
-		id = battleship_development_project
-		x = 66
-		y = 7
-		cost = 5
-		prerequisite = { focus = the_role_of_destroyers_and_cruisers_in_the_modeling_club }
-	}
+		focus = {
+			id = battleship_development_project
+			x = 66
+			y = 7
+			cost = 5
+			prerequisite = { focus = the_role_of_destroyers_and_cruisers_in_the_modeling_club }
+			completion_reward = {
+				if = {
+					limit = {
+						has_dlc = "Gotterdammerung"
+					}
+					complete_special_project = sp:sp_naval_super_heavy_battleship
+				}
+				else = {
+					set_technology = {
+						ship_hull_super_heavy = 1
+					}
+				}
+			}
+		 }
 	
-	focus = {
-		id = trade_the_life_blood_of_saunders
-		x = 70
-		y = 5
-		cost = 5
-		prerequisite = { focus = alisa_trade_protection_protocols }
-	}
+		focus = {
+			id = trade_the_life_blood_of_saunders
+			x = 70
+			y = 5
+			cost = 5
+			prerequisite = { focus = alisa_trade_protection_protocols }
+			completion_reward = {
+				add_ideas = saunders_trade_life
+			}
+		 }
 	
-	focus = {
-		id = new_torpedoes_development_plan
-		x = 72
-		y = 5
-		cost = 5
-		prerequisite = { focus = alisa_trade_protection_protocols }
-	}
+		focus = {
+			id = new_torpedoes_development_plan
+			x = 72
+			y = 5
+			cost = 5
+			prerequisite = { focus = alisa_trade_protection_protocols }
+			completion_reward = {
+				add_tech_bonus = {
+   						 bonus = 0.25
+    					 uses = 3
+    					 category = cat_torpedoes
+					  }
+			}
+		 }
 	
 	focus = {
 		id = unrestricted_submarine_warfare
@@ -1250,6 +1333,9 @@
 		cost = 5
 		prerequisite = { focus = trade_the_life_blood_of_saunders }
 		prerequisite = { focus = new_torpedoes_development_plan }
+		completion_reward = {
+			add_ideas = saunders_unrestricted_subs
+		}
 	}
 	
 	focus = { 
@@ -1258,6 +1344,13 @@
 		y = 7
 		cost = 5
 		prerequisite = { focus = unrestricted_submarine_warfare }
+		completion_reward = {
+			add_tech_bonus = {
+   						 bonus = 0.8
+    					 uses = 1
+    					 category = ss_tech
+					  }
+		}
 	}
 
 	focus = {
