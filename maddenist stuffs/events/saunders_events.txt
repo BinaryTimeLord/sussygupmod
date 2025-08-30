@@ -1,10 +1,15 @@
 add_namespace = saunders
+add_namespace = saundersmil
+add_namespace = saundersmorale
+add_namespace = saundersnavy
+add_namespace = saundersair
+add_namespace = kayxdarjeeling
 
 country_event = {
 	id = saunders.1
 	title = saunders.1.t
 	desc = saunders.1.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -23,7 +28,7 @@ country_event = {
 	id = saunders.2
 	title = saunders.2.t
 	desc = saunders.2.d
-	picture =
+	#picture =
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -40,7 +45,7 @@ country_event = {
 	id = saunders.3
 	title = saunders.3.t
 	desc = saunders.3.d
-	picture =
+	#picture =
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -58,7 +63,7 @@ country_event = {
 	id = saunders.4
 	title = saunders.4.t
 	desc = saunders.4.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -68,54 +73,57 @@ country_event = {
 		ai_chance = {
 				base = 34
 		}
-		set_political_party = {
-			ideology = democratic
-			popularity = 0.10
+		unlock_national_focus = the_victory_of_kays_saunders_redevelopment_party
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = USA_kay
+			promote_leader = yes
+			country_leader = {
+				desc="POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+				ideology=liberalism
+				traits={ natural_socializer }
+				expire="999.1.1.1"
+				id=-1
 		}
-		set_politics = {
-			ideology = democratic
-			elections_allowed = yes
-			last_election = "1932.11.8"
-			election_frequency = 48
-		}
-	}
-	
-	option = {
-		name = saunders.4.b #Alisa becomes Party Leader, taking over from Stundent Council.
-		ai_chance = {
-				base = 33
-		}
-		set_political_party = {
-			ideology = fascism
-			popularity = 0.10
-		}
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
 		}
 	}
 	
-	option = {
-		name = saunders.4.c #Helmet-Chan becomes Party Leader, taking over from Stundent Council.
-		ai_chance = {
-				base = 33
-		}
-		set_political_party = {
-			ideology = communism
-			popularity = 0.10
-		}
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
-	}
+	#option = {
+	#	name = saunders.4.b #Alisa becomes Party Leader, taking over from Stundent Council.
+	#	ai_chance = {
+	#			base = 33
+	#	}
+	#	set_political_party = {
+	#		ideology = fascism
+	#		popularity = 0.10
+	#	}
+	#	set_politics = {
+	#		ruling_party = fascism
+	#		elections_allowed = no
+	#	}
+	#}
+	
+	#option = {
+	#	name = saunders.4.c #Helmet-Chan becomes Party Leader, taking over from Stundent Council.
+	#	ai_chance = {
+	#			base = 33
+	#	}
+	#	set_political_party = {
+	#		ideology = communism
+	#		popularity = 0.10
+	#	}
+	#	set_politics = {
+	#		ruling_party = communism
+	#		elections_allowed = no
+	#	}
+	#}
 }
 
 country_event = {
 	id = saunders.5
 	title = saunders.5.t
 	desc = saunders.5.d
-	picture =
+	#picture =
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -130,10 +138,162 @@ country_event = {
 }
 
 country_event = {
+	id = saundersmil.1
+	title = saundersmil.1.t
+	desc = saundersmil.1.d 
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmil1.a
+		ai_chance = {
+				base = 100
+		}
+		USA = {
+		country_event = {
+			id = saundersmil.2
+			days = 1
+		}
+		}
+	}
+}
+
+country_event = {
+	id = saundersmil.2
+	title = saundersmil.2.t
+	desc = saundersmil.2.d 
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmil2.a
+		ai_chance = {
+				base = 100
+		}
+		USA = {
+			activate_mission = SDR_morale_mission
+		}
+	}
+}
+
+country_event = {
+	id = saundersmorale.1
+	title = saundersmorale.1.t
+	desc = saundersmorale.1.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmorale.1.a
+		USA = {
+			swap_ideas = {
+              remove_idea = saunders_demoralised_army
+              add_idea = saunders_recovering_army
+            }
+			remove_ideas = saunders_62nd_humilitation
+		}
+	}
+}
+
+country_event = {
+	id = saundersmorale.2
+	title = saundersmorale.2.t
+	desc = saundersmorale.2.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmorale.2.a
+		USA = {
+			add_ideas = saunders_failed_morale
+			swap_ideas = {
+              remove_idea = saunders_demoralised_army
+              add_idea = saunders_broken_promise
+            }
+		}
+	}
+}
+
+country_event = {
+	id = saundersmil.3
+	title = saundersmil.3.t
+	desc = saundersmil.3.d 
+	#picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saundersmil.3.a
+		ai_chance = {
+				base = 30
+		}
+		complete_national_focus = alisa_plan
+	}
+
+	option = {
+		name = saundersmil.3.b
+		ai_chance = {
+				base = 40
+		}
+		complete_national_focus = kay_plan
+	}
+
+	option = {
+		name = saundersmil.3.c
+		ai_chance = {
+				base = 30
+		}
+		complete_national_focus = naomi_plan
+	}
+}
+
+country_event = {
+	id = saundersmil.4
+	title = saundersmil.4.t
+	desc = saundersmil.4.d 
+	#picture =
+
+	is_triggered_only = yes
+	option = {
+		name = saundersmil.4.a
+		
+		trigger = {
+			USA = {has_idea = saunders_recovering_army}
+		}
+
+		swap_ideas = {
+			remove_idea = saunders_recovering_army
+			add_idea = saunders_new_army
+		}
+	}
+
+	option = {
+		name = saundersmil.4.b 
+
+		trigger = {
+			USA = {has_idea = saunders_broken_promise}
+		}
+
+		swap_ideas = {
+			remove_idea = saunders_broken_promise
+			add_idea = saunders_new_army
+		}
+
+	}
+}
+
+country_event = {
 	id = kayxdarjeeling.1
 	title = kayxdarjeeling.1.t
 	desc = kayxdarjeeling.1.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -144,4 +304,71 @@ country_event = {
 			base = 100
 		}
 	}
+}
+	country_event = {
+		id = saundersnavy.1
+		title = saundersnavy.1.t 
+		desc = saundersnavy.1.d 
+		#picture =
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = saundersnavy.1.a 
+			ai_chance = {
+				base = 20
+			}
+			complete_national_focus = naomi_battle_fleet
+		}
+
+		option = {
+			name = saundersnavy.1.b 
+			ai_chance = {
+				base = 20
+			}
+			complete_national_focus = alisa_trade_protection_protocols
+		}
+
+		option = {
+			name = saundersnavy.1.c
+			ai_chance = {
+				base = 60
+			}
+			complete_national_focus = kays_carrier_gamble
+		}	
+}
+
+	country_event = {
+		id = saundersair.1
+		title = saundersair.1.t 
+		desc = saundersair.1.d 
+		#picture =
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = saundersair.1.a 
+			ai_chance = {
+				base = 20
+			}
+			complete_national_focus = kay_air_reform
+		}
+
+		option = {
+			name = saundersair.1.b 
+			ai_chance = {
+				base = 20
+			}
+			complete_national_focus = naomi_medium_reform_plan
+		}
+
+		option = {
+			name = saundersair.1.c
+			ai_chance = {
+				base = 60
+			}
+			complete_national_focus = alisas_absolute_destruction_plan
+		}	
 }

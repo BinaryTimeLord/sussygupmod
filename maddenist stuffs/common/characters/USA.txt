@@ -1,4 +1,19 @@
 characters={
+	USA_student_council = {
+		name = "Student Council"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/portrait_POL_the_sejm.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+			ideology=american_idealism
+			traits={ unstable_council }
+			expire="999.1.1.1"
+			id=-1
+		}
+	}
 	USA_kay={
 		name="Kay"
 		portraits={
@@ -20,20 +35,6 @@ characters={
 			planning_skill=5
 			logistics_skill=4
 			legacy_id=-1
-		}
-		country_leader={
-			desc="POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-			ideology=american_idealism
-			traits={ natural_socializer }
-			expire="1947.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="POLITICS_CARNOY_WHEELER_DESC"
-			ideology=american_idealism4
-			traits={ financial_expert }
-			expire="1953.1.1.12"
-			id=-1
 		}
 	}
 

@@ -1,5 +1,94 @@
 ideas = {
 	country {
+
+		saunders_62nd_humilitation = {
+			name = 62nd_humilitation
+			#picture =
+
+			allowed = {always = no} 
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.4
+				stability_weekly = -0.02
+				war_support_factor = -0.2
+				war_support_weekly = -0.02
+			}
+		}
+
+		saunders_demoralised_army = {
+			name = saunders_demoralised_army
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.9
+				army_defence_factor = -0.6
+				army_speed_factor = -0.8
+				supply_factor = -1
+				army_org_factor = -0.5
+				max_planning_factor = -1
+				planning_speed = -0.5
+			}
+		}
+
+		saunders_recovering_army = {
+			name = saunders_recovering_army
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.45
+				army_defence_factor = -0.3
+				army_speed_factor = -0.5
+				supply_factor = -0.55
+				army_org_factor = -0.3
+				max_planning_factor = -0.45
+				planning_speed = -0.1
+			}
+		}
+		
+		saunders_broken_promise = {
+			name = saunders_broken_promise
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -1.2
+				army_defence_factor = -0.8
+				army_speed_factor = -1
+				supply_factor = -1.2
+				army_org_factor = -0.8
+				max_planning_factor = -1
+				planning_speed = -0.6
+			}
+		}
+
+
+		saunders_failed_morale = {
+			name = saunders_failed_morale
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.5
+			}
+		}
+
 		saunders_the_kay_deal_1 = {
 			picture = generic_pp_unity_bonus
 			
@@ -204,5 +293,766 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+
+		saunders_tankery_all_cost = {
+			name = saunders_tankery_all_cost
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.15
+				army_attack_factor = 0.05
+				army_org_factor = 0.02
+				army_defence_factor = -0.05
+			}
+		}
+
+		saunders_tankery_all_cost_1 = {
+			name = saunders_tankery_all_cost
+			#picture = 
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.25
+				army_attack_factor = 0.15
+				army_org_factor = 0.1
+				army_defence_factor = 0.1
+				
+			}
+
+			equipment_bonus = {
+				light_armor = {
+					instant = yes
+					breakthrough = 0.2
+				}
+				medium_armor = {
+					instant = yes
+					breakthrough = 0.2
+				}
+				heavy_armor = {
+					instant = yes
+					breakthrough = 0.2
+				}
+			}
+		}
+
+		saunders_tank_production = {
+			name = saunders_tank_production
+			#picture = 
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				Light_armor = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				medium_armor = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				heavy_armor = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+
+		saunders_cheap_reliable = {
+			name = saunders_cheap_reliable
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+					reliability = 0.2
+					soft_attack = -0.2
+					hard_attack = -0.1
+				}
+			}
+		}
+
+		saunders_mechanics_expanded = {
+			name = saunders_mechanics_expanded
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					reliability = 0.15
+				}
+				light_armor = {
+					instant = yes
+					reliability = 0.15
+				}
+				medium_armor = {
+					instant = yes
+					reliability = 0.15
+				}
+				heavy_armor = {
+					instant = yes
+					reliability = 0.15
+				}
+				support_tech = {
+					instant = yes
+					reliability = 0.15
+				}
+				motorized_equipment = {
+					instant = yes
+					reliability = 0.15
+				}
+				mechanized_equipment = {
+					instant = yes
+					reliability = 0.15
+				}
+			}
+		}
+
+		saunders_new_officers = {
+			name = saunders_new_officers
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning_factor = 0.5
+				planning_speed = -0.2
+				max_dig_in_factor = 0.2
+				army_org_factor = 0.05
+			}
+		}
+
+		saunders_new_officers_1 = {
+			name = saunders_new_officers
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning_factor = 1
+				planning_speed = 0.1
+				army_org_factor = 0.1
+				max_dig_in_factor = 0.2
+				army_attack_factor = 0.1
+				supply_node_range = 0.15
+				supply_factor = 0.2
+				max_fuel_factor = 0.15
+			}
+		}
+
+		saunders_commanders_trained = {
+			name = saunders_commanders_trained
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.05
+				army_org_factor = 0.05
+				attrition = -0.2
+			}
+		}
+
+		saunders_weapon_quality = {
+			name = saunders_weapon_quality
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.2
+					soft_attack = 0.15
+					hard_attack = 0.05
+					build_cost_ic = 0.2
+				}
+			}
+		}
+
+		saunders_arty_training = {
+			name = saunders_arty_training
+			#picture = 
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					soft_attack = 0.15
+					hard_attack = 0.05
+					breakthrough = 0.1
+				}
+			}
+		}
+
+		saunders_shock_and_awe = {
+			name = saunders_shock_and_awe
+			#picture =
+
+			allowed = {always = no}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					soft_attack = 0.2
+					hard_attack = 0.1
+					breakthrough = 0.2
+				}
+			}
+		}
+
+		saunders_arty_production = {
+			name = saunders_arty_production
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery ={
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+
+		saunders_arty_focus = {
+			name = saunders_arty_focus
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant_yes
+					soft_attack = 0.05
+				}
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.2
+				army_speed_factor = -0.2
+				supply_factor = -0.1
+			}
+		}
+
+		saunders_arty_focus_1 = {
+			name = saunders_arty_focus
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					instant_yes
+					soft_attack = 0.05
+				}
+			}
+
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.3
+				army_speed_factor = -0.1
+			}
+		}
+
+		saunders_spg = {
+			name = saunders_spg 
+			#picture = 
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				heavy_tank_artillery_equipment = {
+					instant = yes 
+					soft_attack = 0.25
+					hard_attack = 0.1
+					build_cost_ic = -0.3
+				}
+				medium_tank_artillery_equipment = {
+					instant = yes 
+					soft_attack = 0.25
+					hard_attack = 0.1
+					build_cost_ic = -0.3
+				}
+				light_tank_artillery_equipment = {
+					instant = yes 
+					soft_attack = 0.25
+					hard_attack = 0.1
+					build_cost_ic = -0.3
+				}
+			}
+		}
+
+		saunders_supply_battalion = {
+			name = saunders_supply_battalion
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					reliability = 0.2
+					build_cost_ic = -0.3
+				}
+				support_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+			}
+		}
+
+		saunders_automation_club = {
+			name = saunders_automation_club
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes 
+					reliability = 0.1
+					build_cost_ic = -0.2
+				}
+			}
+		}
+
+		saunders_automation_club_1 = {
+			name = saunders_automation_club
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes 
+					reliability = 0.25
+					build_cost_ic = -0.3
+					maximum_speed = 0.25
+				}
+			}
+		}
+
+		saunders_engineer_club = {
+			name = saunders_engineer_club
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				support_equipment = {
+					instant = yes
+					reliability = 0.2
+					build_cost_ic = -0.3
+				}
+			}
+		}
+		
+		saunders_logistic_corps = {
+			name = saunders_logistic_corps
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				supply_factor = 0.1
+				attrition = -0.05
+				supply_node_range = 0.1
+			}
+		}
+
+		saunders_logistic_corps_1 = {
+			name = saunders_logistic_corps
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				supply_factor = 0.2
+				attrition = -0.15
+				supply_node_range = 0.3
+			}
+		}
+
+		saunders_new_army = {
+			name = saunders_new_army
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+
+		saunders_naval_tradition = {
+			name = saunders_naval_tradition
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = 0.05
+				navy_capital_ship_attack_factor = 0.3
+				navy_capital_ship_defence_factor = 0.2
+				naval_has_potf_in_combat_attack = 0.2
+				naval_has_potf_in_combat_defense = 0.2
+				naval_hit_chance = 0.1
+				naval_retreat_chance = -0.5
+			}
+		}
+
+		saunders_naval_firepower = {
+			name = saunders_naval_firepower
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+
+		saunders_trade_life = {
+			name = saunders_trade_life
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				convoy_escort_efficiency = 0.3
+				convoy_retreat_speed = 0.1
+				naval_detection = 0.15
+				naval_mine_hit_chance = -0.2
+				naval_retreat_chance = 50
+				naval_morale = 20
+			}
+		}
+
+		saunders_unrestricted_subs = {
+			name = saunders_unrestricted_subs
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				navy_submarine_attack_factor = 0.35
+				navy_submarine_defence_factor = 0.2
+				sub_retreat_speed = -0.3
+			}
+		}
+
+		saunders_carrier_warfare = {
+			name = saunders_carrier_warfare
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				navy_carrier_air_agility_factor = 0.15
+				navy_carrier_air_attack = 0.1
+				navy_carrier_air_targetting_factor = 0.3
+				air_carrier_night_penalty_reduction_factor = 0.2
+				carrier_night_traffic = 0.3
+				fighter_sortie_efficiency = 0.5
+				naval_retreat_speed = -0.5
+			}
+		}
+
+		saunders_dev_final = {
+			name = saunders_dev_final
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				repair_speed_factor = 0.3
+				industrial_capacity_dockyard = 0.5
+
+			}
+		}
+
+		saunders_air_quality = {
+			name = saunders_air_quality
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+					reliability = 0.15
+					air_superiority = 0.2
+					naval_strike_attack = 0.1
+					air_agility = 0.3
+					air_defence = 0.2
+				}
+			}
+		}
+
+		saunders_air_quality_1 = {
+			name = saunders_air_quality
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+					reliability = 0.15
+					air_superiority = 0.2
+					naval_strike_attack = 0.1
+					air_agility = 0.3
+					air_defence = 0.5
+				}
+			}
+		}
+
+		saunders_air_quality_2 = {
+			name = saunders_air_quality
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+					reliability = 0.15
+					air_superiority = 0.2
+					naval_strike_attack = 0.1
+					air_agility = 0.3
+					air_defence = 0.5
+				}
+			}
+		}
+
+		saunders_airweapon_quality = {
+			name = saunders_airweapon_quality
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_attack_factor = 0.2
+				air_superiority_efficiency = 0.15
+				ground_attack_factor = 0.15
+			}
+		}
+
+		saunders_medium_multirole = {
+			name = saunders_medium_multirole
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				medium_plane_airframe = {
+					instant = yes
+					air_superiority = 0.45
+					air_agility = 0.2
+					air_defence = 0.3
+					build_cost_ic = 0.5
+				}
+			}
+		}
+
+		saunders_air_atkdef = {
+			name = saunders_air_atkdef
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_attack_factor = 0.20
+				air_defence_factor = 0.15
+			}
+		}
+
+		saunders_strat_bombing = {
+			name = saunders_strat_bombing
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.3
+					air_defence = 0.1
+				}
+			}
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.3
+				strategic_bomb_visibility = -0.2
+			}
+		}
+
+		saunders_strat_bombing_1 = {
+			name = saunders_strat_bombing
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.3
+					air_defence = 0.1
+				}
+			}
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.35
+				air_strategic_bomber_night_penalty = -0.2
+				strategic_bomb_visibility = -0.25
+				air_bombing_targetting = 0.2
+			}
+		}
+
+		saunders_strat_bombing_2 = {
+			name = saunders_strat_bombing
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.5
+					air_defence = 0.3
+				}
+			}
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.6
+				air_strategic_bomber_night_penalty = -0.35
+				strategic_bomb_visibility = -0.25
+				air_bombing_targetting = 0.3
+			}
+		}
+
+		saunders_total_aircoord = {
+			name = saunders_total_aircoord
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_superiority_efficiency = 0.35
+				air_night_penalty = -0.2
+				air_mission_efficiency = 0.3
+				air_cas_efficiency = 0.6
+				air_ace_generation_chance_factor = 0.2
+			}
+		}
+
+		saunders_air_training = {
+			name = saunders_air_training
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_training_xp_gain_factor = 0.3
+				air_untrained_pilots_penalty_factor = -0.2
+			}
+		}
+
 	}
 }

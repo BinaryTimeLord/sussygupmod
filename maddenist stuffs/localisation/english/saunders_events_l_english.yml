@@ -30,10 +30,19 @@
  
  saunders.5.t:0 "The Education Budget Prioritizaztion Act"
  saunders.5.d:0 "Education is simply one of the most essential opportunities for all Students around the world. It would make sense, therefore, that the education budget shall receive an enormous boost that rivals the Saunders Unified Military Clubs and the Saunders Agriculture Club. This would ensure proper structure, the best tutors, and needed equipment and other roles to support Saunder's students to receive the best education amongst all Sensha-do Schools."
- saunders.5.a:0
+ saunders.5.a:0 "Test"
  
  #Kay x Darjeeling Fluff Event
  
  kayxdarjeeling.1.t:0 "A Meeting with Darjeeling"
- kayxdarjeeling.1.d:0 "
- kayxdarjeeling.1.a:0 "
+ kayxdarjeeling.1.d:0 ""
+ kayxdarjeeling.1.a:0 ""
+
+ #Military
+
+   #Reformation
+   saundersmil.3.t:0 "Reformation of Saunders Tankery"
+   saundersmil.3.d:0 "The Way of Tankery for Saunders has always been all about superior firepower and domination of the battlefield with superior numbers and artillery. However, with recent defeats in the Senshadou Tournaments and the domination of Kuromorimine, possibly Pravda in the coming future, and with the state of the team, changes are being called upon to our way of Tankery. Naomi proposes a continuation of our current doctrine, bringing innovative ideas to improve upon it. Alisa proposes a new form where we prioritize speed and tank production while Kay offers the idea of meticulous and careful planning in order to bog down the enemy and ensure minimal losses."
+   saundersmil.3.a:0 "Alisa's way of speed and mass production is our way to go!"
+   saundersmil.3.b:0 "Kay's battle planning shall lead us to triumph!"
+   saundersmil.3.c:0 "The old ways must be improved, Naomi will show us how!"

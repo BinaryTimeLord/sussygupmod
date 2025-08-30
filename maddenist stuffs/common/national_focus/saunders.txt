@@ -71,7 +71,7 @@
 		}
 	}
 
-	#Coders, make sure to entangle the first focus path for each party with party leader (Kay: Leader
+	#Coders, make sure to entangle the first focus path for each party with party leader Kay: Leader
 	
 
 	focus = {
@@ -79,8 +79,9 @@
 		icon = GFX_goal_generic_national_unity
 		x = 25
 		y = 4
-		cost = 0
+		cost = 1
 		prerequisite = { focus = announce_snap_elections } #Addition Requirement: Kay is Party Leader
+		available = {always = no}
 		completion_reward = {
 		}
 	}
@@ -617,7 +618,7 @@
 		cost = 1
 		completion_reward = {
 			country_event = {
-				id = saunders.x
+				id = saundersmil.1
 				days = 1
 			}
 		}
@@ -639,6 +640,11 @@
 		y = 2
 		cost = 10
 		prerequisite = { focus = saunders_unified_military_clubs_redevelopment_plan }
+			available = {
+				NOT = {
+					has_idea = saunders_demoralised_army
+				}
+			}
 		completion_reward = {
 			add_ideas = on_land_1
 		}
@@ -668,126 +674,210 @@
 	
 	#Army Branch
 	
-	focus = {
-		id = questions_on_doctrine_treatises_and_reform
-		x = 41
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_land }
-	}
+		focus = {
+			id = questions_on_doctrine_treatises_and_reform
+			x = 41
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_land }
+			completion_reward = {
+				country_event = {
+					id = saundersmil.3
+				}
+			}
+		}
 	
-	focus = {
+		focus = {
 		id = saunders_logistical_corps
 		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = on_land }
-	}
+		completion_reward = {
+			add_ideas = saunders_logistic_corps
+		}
+		}
 	
-	focus = {
+		focus = {
 		id = all_for_colonel_saunders
 		x = 54
 		y = 3
 		cost = 5
 		prerequisite = { focus = on_land }
-	}
+		completion_reward = {
+			create_intelligence_agency = {
+					name = "SSA"
+					icon = GFX_intelligence_agency_logo_usa
+				}
+			upgrade_intelligence_agency = upgrade_economy_civilian
+			upgrade_intelligence_agency = upgrade_army_department
+			upgrade_intelligence_agency = upgrade_form_department
+		}
+		}
 	
-	focus = {
-		id = alisa_plan
-		x = 37
-		y = 4
-		cost = 5
-		prerequisite = { focus = questions_on_doctrine_treatises_and_reform }
-		mutually_exclusive = { focus = kay_plan }
-		mutually_exclusive = { focus = naomi_plan }
-	}
+		focus = {
+			id = alisa_plan
+			x = 37
+			y = 4
+			cost = 1
+			prerequisite = { focus = questions_on_doctrine_treatises_and_reform }
+			mutually_exclusive = { focus = kay_plan }
+			mutually_exclusive = { focus = naomi_plan }
+			available = {always = no}
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_mobile_warfare
+				}
+			}
+			}
 
-	focus = {
-		id = kay_plan
-		x = 43
-		y = 4
-		cost = 5
-		prerequisite = { focus = questions_on_doctrine_treatises_and_reform }
-		mutually_exclusive = { focus = alisa_plan }
-		mutually_exclusive = { focus = naomi_plan }
-	}
+		focus = {
+			id = kay_plan
+			x = 43
+			y = 4
+			cost = 1
+			prerequisite = { focus = questions_on_doctrine_treatises_and_reform }
+			mutually_exclusive = { focus = alisa_plan }
+			mutually_exclusive = { focus = naomi_plan }
+			available = {always = no}
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_grand_battle_plan
+					}
+				}
+			}
 
-	focus = {
-		id = naomi_plan
-		x = 49
-		y = 4
-		cost = 5
-		prerequisite = { focus = questions_on_doctrine_treatises_and_reform }
-		mutually_exclusive = { focus = alisa_plan }
-		mutually_exclusive = { focus = kay_plan }
-	}
+		focus = {
+			id = naomi_plan
+			x = 49
+			y = 4
+			cost = 1
+			prerequisite = { focus = questions_on_doctrine_treatises_and_reform }
+			mutually_exclusive = { focus = alisa_plan }
+			mutually_exclusive = { focus = kay_plan }
+			available = {always = no}
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = cat_superior_firepower
+				}
+			}
+		}
 	
-	focus = {
+		focus = {
 		id = saunders_department_of_logistics
 		x = 52
 		y = 4
 		cost = 5
 		prerequisite = { focus = saunders_logistical_corps }
-	}
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = saunders_logistic_corps
+			add_idea = saunders_logistic_corps_1
+				}
+			}
+		}
 	
-	focus = {
+		focus = {
 		id = mens_service_integration_act
 		x = 54
 		y = 4
 		cost = 5
 		prerequisite = { focus = all_for_colonel_saunders }
-	}
+		completion_reward = {
+			upgrade_intelligence_agency = upgrade_interrogation_techniques
+			upgrade_intelligence_agency = upgrade_decryption_boost
+		}
+		}
+		## Alisa Plan
+			focus = {
+				id = tankery_at_all_cost
+				x = 36
+				y = 5
+				cost = 5
+				prerequisite = { focus = alisa_plan }
+				completion_reward = {
+					add_ideas = saunders_tankery_all_cost
+				}
+			 }
 	
-	focus = {
-		id = tankery_at_all_cost
-		x = 36
-		y = 5
-		cost = 5
-		prerequisite = { focus = alisa_plan }
-	}
-	
-	focus = {
-		id = re_develop_tank_tactics
-		x = 38
-		y = 5
-		cost = 5
-		prerequisite = { focus = alisa_plan }
-	}
+			focus = {
+				id = re_develop_tank_tactics
+				x = 38
+				y = 5
+				cost = 5
+				prerequisite = { focus = alisa_plan }
+				completion_reward = {
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.5
+						uses = 2
+						category = cat_mobile_warfare
+				}
+				}
+			 }
 
-	focus = {
-		id = new_tankery_war_games
-		x = 37
-		y = 6
-		cost = 5
-		prerequisite = { focus = tankery_at_all_cost }
-		prerequisite = { focus = re_develop_tank_tactics }
-	}
+			focus = {
+				id = new_tankery_war_games
+				x = 37
+				y = 6
+				cost = 5
+				prerequisite = { focus = tankery_at_all_cost }
+				prerequisite = { focus = re_develop_tank_tactics }
+				completion_reward = {
+					add_tech_bonus = {
+						bonus = 0.25
+						uses = 3
+						category = cat_anti_tank
+					}
+				}
+			 }
 	
-	focus = {
-		id = the_saunders_tank_competition
-		x = 37
-		y = 7
-		cost = 5
-		prerequisite = { focus = new_tankery_war_games }
-	}
+			focus = {
+				id = the_saunders_tank_competition
+				x = 37
+				y = 7
+				cost = 5
+				prerequisite = { focus = new_tankery_war_games }
+				completion_reward = {
+					add_tech_bonus = {
+						bonus = 0.25
+						uses = 3
+						category = armor
+					}
+				}
+			 }
 	
-	focus = {
-		id = bolster_tank_production
-		x = 37
-		y = 8
-		cost = 5
-		prerequisite = { focus = the_saunders_tank_competition }
-	}
+			focus = {
+				id = bolster_tank_production
+				x = 37
+				y = 8
+				cost = 5
+				prerequisite = { focus = the_saunders_tank_competition }
+				completion_reward = {
+					add_ideas = saunders_tank_production
+				}
+			 }
 	
-	focus = {
-		id = superior_senshado_spirit
-		x = 37
-		y = 9
-		cost = 5
-		prerequisite = { focus = bolster_tank_production }
-	}
+			focus = {
+				id = superior_senshado_spirit
+				x = 37
+				y = 9
+				cost = 5
+				prerequisite = { focus = bolster_tank_production }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_tankery_all_cost
+						add_idea = saunders_tankery_all_cost_1
+					}
+				}
+			 }
 	
-	focus = {
+		focus = {
 		id = investments_in_automation
 		x = 40
 		y = 6
@@ -796,66 +886,102 @@
 			focus = alisa_plan
 			focus = kay_plan
 		}
-	}
+		completion_reward = {
+			add_ideas = saunders_automation_club
+		}
+		}
 	
-	focus = {
+		focus = {
 		id = expand_the_automation_club
 		x = 40
 		y = 7
 		cost = 5
 		prerequisite = { focus = investments_in_automation }
-	}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = saunders_automation_club
+				add_idea = saunders_automation_club_1
+			}
+		}
+		}
+
+		## Kay Plan
+
+			focus = {
+				id = re_organize_the_command_structure
+				x = 42
+				y = 5
+				cost = 5
+				prerequisite = { focus = kay_plan }
+				completion_reward = {
+					add_ideas = saunders_new_officers
+				}
+			 }
 	
-	focus = {
-		id = re_organize_the_command_structure
-		x = 42
-		y = 5
-		cost = 5
-		prerequisite = { focus = kay_plan }
-	}
+			focus = {
+				id = better_unity_amongst_military_clubs
+				x = 44
+				y = 5
+				cost = 5
+				prerequisite = { focus = kay_plan }
+				completion_reward = {
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.5
+						uses = 2
+						category = cat_grand_battle_plan
+				}
+				}
+			 }
 	
-	focus = {
-		id = better_unity_amongst_military_clubs
-		x = 44
-		y = 5
-		cost = 5
-		prerequisite = { focus = kay_plan }
-	}
+			focus = {
+				id = new_methods_in_commander_training
+				x = 43
+				y = 6
+				cost = 5
+				prerequisite { focus = re_organize_the_command_structure }
+				prerequisite { focus = better_unity_amongst_military_clubs }
+				completion_reward = {
+					add_ideas = saunders_commanders_trained
+				}
+			 }
 	
-	focus = {
-		id = new_methods_in_commander_training
-		x = 43
-		y = 6
-		cost = 5
-		prerequisite { focus = re_organize_the_command_structure }
-		prerequisite { focus = better_unity_amongst_military_clubs }
-	}
+			focus = {
+				id = cheaper_but_reliable_weapons
+				x = 43
+				y = 7
+				cost = 5
+				prerequisite = { focus = new_methods_in_commander_training }
+				completion_reward = {
+					add_ideas = saunders_cheap_reliable
+				}
+			 }
 	
-	focus = {
-		id = cheaper_but_reliable_weapons
-		x = 43
-		y = 7
-		cost = 5
-		prerequisite = { focus = new_methods_in_commander_training }
-	}
+			focus = {
+				id = expand_the_mechanics_club
+				x = 43
+				y = 8
+				cost = 5
+				prerequisite = { focus = cheaper_but_reliable_weapons }
+				completion_reward = {
+					add_ideas = saunders_mechanics_expanded
+				}
+			 }
 	
-	focus = {
-		id = expand_the_mechanics_club
-		x = 43
-		y = 8
-		cost = 5
-		prerequisite = { focus = cheaper_but_reliable_weapons }
-	}
+			focus = {
+				id = the_art_of_preparation_planning_and_command
+				x = 43
+				y = 9
+				cost = 5
+				prerequisite = { focus = expand_the_mechanics_club }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_new_officers
+						add_idea = saunders_new_officers_1
+					}
+				}
+			 }
 	
-	focus = {
-		id = the_art_of_preparation_planning_and_command
-		x = 43
-		y = 9
-		cost = 5
-		prerequisite = { focus = expand_the_mechanics_club }
-	}
-	
-	focus = {
+		focus = {
 		id = expand_the_role_of_self_propelled_artillery
 		x = 46
 		y = 6
@@ -864,484 +990,835 @@
 			focus = kay_plan 
 			focus = naomi_plan
 		}
-	}
+		completion_reward = {
+			add_ideas = saunders_spg
+		}
+		}
 	
-	focus = {
+		focus = {
 		id = better_supplied_and_trained_support_battalions
 		x = 46
 		y = 7
 		cost = 5
 		prerequisite = { focus = expand_the_role_of_self_propelled_artillery }
-	}
-	
-	focus = {
-		id = board_of_reform_examination_committee
-		x = 48
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_plan }
-	}
-	
-	focus = {
-		id = weapons_quality_quota
-		x = 50
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_plan }
-	}
-	
-	focus = {
-		id = artillery_as_king_of_the_battlefield
-		x = 49
-		y = 6
-		cost = 5
-		prerequisite = { focus = weapons_quality_quota }
-		prerequisite = { focus = board_of_reform_examination_committee }
-	}
-	
-	focus = {
-		id = increased_artillery_training
-		x = 48
-		y = 7
-		cost = 5
-		prerequisite = { focus = artillery_as_king_of_the_battlefield }
-	}
-	
-	focus = {
-		id = higher_artillery_production_efficiency
-		x = 50
-		y = 7
-		cost = 5
-		prerequisite = { focus = artillery_as_king_of_the_battlefield }
-	}
-	
-	focus = {
-		id = shock_and_awe_as_a_conduit_of_saunders
-		x = 49
-		y = 8
-		cost = 5
-		prerequisite = { focus = increased_artillery_training }
-		prerequisite = { focus = higher_artillery_production_efficiency }
-	}
-	
-	focus = {
-		id = embodiment_of_superior_firepower
-		x = 49
-		y = 9
-		cost = 5
-		prerequisite = { focus = shock_and_awe_as_a_conduit_of_saunders }
-	}
-	
-	focus = {
-		id = the_final_stages_of_saunders_tankery_club_reforms
-		x = 43
-		y = 10
-		cost = 5
-		prerequisite = {
-			focus = superior_senshado_spirit
-			focus = the_art_of_preparation_planning_and_command
-			focus = embodiment_of_superior_firepower
+		completion_reward = {
+			add_ideas = saunders_supply_battalion
 		}
-	}
+		}
 	
-	focus = {
-		id = the_creation_of_the_saunders_engineer_club
-		x = 43
-		y = 11
-		cost = 5
-		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
-	}
+		## Naomi Plan
 
-	focus = {
-		id = defender_of_democratic_schools
-		x = 40
-		y = 11
-		cost = 5
-		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
-	}
+			focus = {
+				id = board_of_reform_examination_committee
+				x = 48
+				y = 5
+				cost = 5
+				prerequisite = { focus = naomi_plan }
+				completion_reward = {
+					add_ideas = saunders_arty_focus
+				}
+			 }
 	
-	focus = {
-		id = arsenal_of_democracy
-		x = 40
-		y = 12
-		cost = 5
-		prerequisite = { focus = defender_of_democratic_schools }
-	}
+			focus = {
+				id = weapons_quality_quota
+				x = 50
+				y = 5
+				cost = 5
+				prerequisite = { focus = naomi_plan }
+				completion_reward = {
+					add_ideas = saunders_weapon_quality
+				}
+			 }
 	
-	focus = {
-		id = school_strategic_deployment_highway_network
-		x = 46
-		y = 11
-		cost = 5
-		prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
-	}
+			focus = {
+				id = artillery_as_king_of_the_battlefield
+				x = 49
+				y = 6
+				cost = 5
+				prerequisite = { focus = weapons_quality_quota }
+				prerequisite = { focus = board_of_reform_examination_committee }
+				completion_reward = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 3
+						category = artillery
+					}
+				}
+			 }
+	
+			focus = {
+				id = increased_artillery_training
+				x = 48
+				y = 7
+				cost = 5
+				prerequisite = { focus = artillery_as_king_of_the_battlefield }
+				completion_reward = {
+					add_ideas = saunders_arty_training
+				}
+			 }
+	
+			focus = {
+				id = higher_artillery_production_efficiency
+				x = 50
+				y = 7
+				cost = 5
+				prerequisite = { focus = artillery_as_king_of_the_battlefield }
+				completion_reward = {
+					add_ideas = saunders_arty_production
+				}
+			 }
+	
+			focus = {
+				id = shock_and_awe_as_a_conduit_of_saunders
+				x = 49
+				y = 8
+				cost = 5
+				prerequisite = { focus = increased_artillery_training }
+				prerequisite = { focus = higher_artillery_production_efficiency }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_arty_training
+						add_idea = saunders_shock_and_awe
+					}
+				}
+			 }
+	
+			focus = {
+				id = embodiment_of_superior_firepower
+				x = 49
+				y = 9
+				cost = 5
+				prerequisite = { focus = shock_and_awe_as_a_conduit_of_saunders }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_arty_focus
+						add_idea = saunders_arty_focus_1
+					}
+				}
+			 }		
+	
+			focus = {
+				id = the_final_stages_of_saunders_tankery_club_reforms
+				x = 43
+				y = 10
+				cost = 5
+				prerequisite = {
+					focus = superior_senshado_spirit
+					focus = the_art_of_preparation_planning_and_command
+					focus = embodiment_of_superior_firepower
+				}
+				available = {
+					NOT = {
+						has_active_mission = SDR_morale_mission
+					}
+				}
+				completion_reward = {
+					country_event = {
+						id = saundersmil.4
+					}	
+				}
+			  }
+	
+		focus = {
+			id = the_creation_of_the_saunders_engineer_club
+			x = 43
+			y = 11
+			cost = 5
+			prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+			completion_reward = {
+				add_ideas = saunders_engineer_club
+			}
+		 }
+
+		focus = {
+			id = defender_of_democratic_schools
+			x = 40
+			y = 11
+			cost = 5
+			prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+		 }
+	
+		focus = {
+			id = arsenal_of_democracy
+			x = 40
+			y = 12
+			cost = 5
+			prerequisite = { focus = defender_of_democratic_schools }
+		 }
+	
+		focus = {
+			id = school_strategic_deployment_highway_network
+			x = 46
+			y = 11
+			cost = 5
+			prerequisite = { focus = the_final_stages_of_saunders_tankery_club_reforms }
+		 }
 	
 	#Navy Branch
 	
-	focus = {
-		id = reform_ship_modeling_club_doctrine
-		x = 69
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_sea }
-	}
+		focus = {
+			id = reform_ship_modeling_club_doctrine
+			x = 69
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_sea }
+			completion_reward = {
+				country_event = {
+					id = saundersnavy.1
+				}
+			}
+		 }
 	
-	focus = {
-		id = naomi_battle_fleet
-		x = 66
-		y = 4
-		cost = 5
-		prerequisite = { focus = reform_ship_modeling_club_doctrine }
-		mutually_exclusive = { focus = kays_carrier_gamble }
-		mutually_exclusive = { focus = alisa_trade_protection_protocols }
-	}
+		focus = {
+			id = naomi_battle_fleet
+			x = 66
+			y = 4
+			cost = 5
+			prerequisite = { focus = reform_ship_modeling_club_doctrine }
+			mutually_exclusive = { focus = kays_carrier_gamble }
+			mutually_exclusive = { focus = alisa_trade_protection_protocols }
+			completion_reward = {
+					if = {
+						limit = {
+							has_DLC = "Man the Guns"
+						}
+						set_technology = {basic_ship_hull_heavy = 1}
+					}
+					else = {
+						set_technology = {basic_battleship = 1}
+					}
+					
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_fleet_in_being
+				}
+			}
+		 }
 	
-	focus = {
-		id = alisa_trade_protection_protocols
-		x = 71
-		y = 4
-		cost = 5
-		prerequisite = { focus = reform_ship_modeling_club_doctrine }
-		mutually_exclusive = { focus = kays_carrier_gamble }
-		mutually_exclusive = { focus = naomi_battle_fleet }
-	}
+		focus = {
+			id = alisa_trade_protection_protocols
+			x = 71
+			y = 4
+			cost = 5
+			prerequisite = { focus = reform_ship_modeling_club_doctrine }
+			mutually_exclusive = { focus = kays_carrier_gamble }
+			mutually_exclusive = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_trade_interdiction
+				}
+				set_technology = {
+					improved_ship_torpedo_launcher = 1
+				}
+			}
+		 }
 	
-	focus = {
-		id = kays_carrier_gamble
-		x = 76
-		y = 4
-		cost = 5
-		prerequisite = { focus = reform_ship_modeling_club_doctrine }
-		mutually_exclusive = { focus = alisa_trade_protection_protocols }
-		mutually_exclusive = { focus = naomi_battle_fleet }
-	}
+		focus = {
+			id = kays_carrier_gamble
+			x = 76
+			y = 4
+			cost = 5
+			prerequisite = { focus = reform_ship_modeling_club_doctrine }
+			mutually_exclusive = { focus = alisa_trade_protection_protocols }
+			mutually_exclusive = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.6
+					uses = 3
+					category = cat_base_strike
+				}
+			}
+		 }
 	
-	focus = {
-		id = the_importance_of_navy_tradition
-		x = 65
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_battle_fleet }
-	}
-	
-	focus = {
-		id = superior_planning_and_firepower
-		x = 67
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_battle_fleet }
-	}
-	
-	focus = {
-		id = the_role_of_destroyers_and_cruisers_in_the_modeling_club
-		x = 66
-		y = 6
-		cost = 5
-		prerequisite = { focus = the_importance_of_navy_tradition }
-		prerequisite = { focus = superior_planning_and_firepower }
-	}
-	
-	focus = {
-		id = battleship_development_project
-		x = 66
-		y = 7
-		cost = 5
-		prerequisite = { focus = the_role_of_destroyers_and_cruisers_in_the_modeling_club }
-	}
-	
-	focus = {
-		id = trade_the_life_blood_of_saunders
-		x = 70
-		y = 5
-		cost = 5
-		prerequisite = { focus = alisa_trade_protection_protocols }
-	}
-	
-	focus = {
-		id = new_torpedoes_development_plan
-		x = 72
-		y = 5
-		cost = 5
-		prerequisite = { focus = alisa_trade_protection_protocols }
-	}
-	
-	focus = {
-		id = unrestricted_submarine_warfare
-		x = 71
-		y = 6
-		cost = 5
-		prerequisite = { focus = trade_the_life_blood_of_saunders }
-		prerequisite = { focus = new_torpedoes_development_plan }
-	}
-	
-	focus = { 
-		id = submarine_development_program
-		x = 71
-		y = 7
-		cost = 5
-		prerequisite = { focus = unrestricted_submarine_warfare }
-	}
+		##FLEET IN BEING
 
-	focus = {
-		id = creation_of_carrier_escort_groups
-		x = 75
-		y = 5
-		cost = 5
-		prerequisite = { focus = kays_carrier_gamble }
-	}
+		focus = {
+			id = the_importance_of_navy_tradition
+			x = 65
+			y = 5
+			cost = 5
+			prerequisite = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_ideas = saunders_naval_tradition
+			}
+		 }
 	
-	focus = {
-		id = carrier_warfare_training_scheme
-		x = 77
-		y = 5
-		cost = 5
-		prerequisite = { focus = kays_carrier_gamble }
-	}
+		focus = {
+			id = superior_planning_and_firepower
+			x = 67
+			y = 5
+			cost = 5
+			prerequisite = { focus = naomi_battle_fleet }
+			completion_reward = {
+				add_ideas = saunders_naval_firepower
+			}
+		 }
 	
-	focus = {
-		id = carrier_enhancement_development_program
-		x = 76
-		y = 6
-		cost = 5
-		prerequisite = { focus = creation_of_carrier_escort_groups }
-		prerequisite = { focus = carrier_warfare_training_scheme }
-	}
+		focus = {
+			id = the_role_of_destroyers_and_cruisers_in_the_modeling_club
+			x = 66
+			y = 6
+			cost = 5
+			prerequisite = { focus = the_importance_of_navy_tradition }
+			prerequisite = { focus = superior_planning_and_firepower }
+			completion_reward = {
+				
+					add_tech_bonus = {
+   						 bonus = 0.5
+    					 uses = 1
+    					 category = dd_tech
+					  }
+					add_tech_bonus = {
+   						 bonus = 0.5
+    					 uses = 1
+    					 category = ca_tech
+					  }
+			}
+	 	 }
 	
-	focus = {
-		id = ship_electronics_and_radio_development_program
-		x = 76
-		y = 7
-		cost = 5
-		prerequisite = { focus = carrier_warfare_training_scheme }
-	}
+		focus = {
+			id = battleship_development_project
+			x = 66
+			y = 7
+			cost = 5
+			prerequisite = { focus = the_role_of_destroyers_and_cruisers_in_the_modeling_club }
+			completion_reward = {
+				if = {
+					limit = {
+						has_dlc = "Gotterdammerung"
+					}
+					complete_special_project = sp:sp_naval_super_heavy_battleship
+				}
+				else = {
+					set_technology = {
+						ship_hull_super_heavy = 1
+					}
+				}
+			}
+		 }
 	
-	focus = {
-		id = the_ship_modeling_club_research_and_development_division
-		x = 71
-		y = 8
-		cost = 5
-		prerequisite = {
-			focus = battleship_development_project
-			focus = submarine_development_program
-			focus = ship_electronics_and_radio_development_program
-		}
-	}
+		##TRADE INTERDECTION
+
+		focus = {
+			id = trade_the_life_blood_of_saunders
+			x = 70
+			y = 5
+			cost = 5
+			prerequisite = { focus = alisa_trade_protection_protocols }
+			completion_reward = {
+				add_ideas = saunders_trade_life
+			}
+		 }
 	
-	focus = {
-		id = collaboration_with_the_aircraft_history_club
-		x = 76
-		y = 9
-		cost = 5
-		prerequisite = {
-			focus = ship_electronics_and_radio_development_program
-		}
-	}
+		focus = {
+			id = new_torpedoes_development_plan
+			x = 72
+			y = 5
+			cost = 5
+			prerequisite = { focus = alisa_trade_protection_protocols }
+			completion_reward = {
+				add_tech_bonus = {
+   						 bonus = 0.25
+    					 uses = 3
+    					 category = cat_torpedoes
+					  }
+			}
+		 }
 	
-	focus = {
-		id = the_saunders_ship_modeling_club_retrofit_and_shipmaking_division
-		x = 68
-		y = 9
-		cost = 5
-		prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
-	}
+		focus = {
+			id = unrestricted_submarine_warfare
+			x = 71
+			y = 6
+			cost = 5
+			prerequisite = { focus = trade_the_life_blood_of_saunders }
+			prerequisite = { focus = new_torpedoes_development_plan }
+			completion_reward = {
+				add_ideas = saunders_unrestricted_subs
+			}
+		 }
 	
-	focus = {
-		id = new_shipyards_sponsors
-		x = 71
-		y = 9
-		cost = 5
-		prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
-	}
+		focus = { 
+			id = submarine_development_program
+			x = 71
+			y = 7
+			cost = 5
+			prerequisite = { focus = unrestricted_submarine_warfare }
+			completion_reward = {
+				add_tech_bonus = {
+   							 bonus = 0.8
+    						 uses = 1
+    						 category = ss_tech
+						  }
+			}
+		 }
+
+		##BASE STRIKE 
+		focus = {
+			id = creation_of_carrier_escort_groups
+			x = 75
+			y = 5
+			cost = 5
+			prerequisite = { focus = kays_carrier_gamble }
+			completion_reward = {
+				hidden_effect = {
+					USA = {
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+					}
+				}
+				USA = {
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+				}
+			}
+		 }
 	
-	focus = {
-		id = establish_the_saunders_coastal_morals_committee
-		x = 74
-		y = 9
-		cost = 5
-		prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
-	}
+		focus = {
+			id = carrier_warfare_training_scheme
+			x = 77
+				y = 5
+			cost = 5
+			prerequisite = { focus = kays_carrier_gamble }
+			completion_reward = {
+				add_ideas = saunders_carrier_warfare
+			}
+		 }
 	
-	focus = {
-		id = the_naomi_ship_convoy_plan
-		x = 58
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_sea }
-	}
+		focus = {
+			id = carrier_enhancement_development_program
+			x = 76
+			y = 6
+			cost = 5
+			prerequisite = { focus = creation_of_carrier_escort_groups }
+			prerequisite = { focus = carrier_warfare_training_scheme }
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 0.8
+					uses = 1
+					category = cv_tech
+				}
+			}
+		 }
 	
-	focus = {
-		id = saunders_shipyards_development_scheme
-		x = 61
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_sea }
-	}
+		focus = {
+			id = ship_electronics_and_radio_development_program
+			x = 76
+			y = 7
+			cost = 5
+			prerequisite = { focus = carrier_warfare_training_scheme }
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 0.6
+					uses = 2
+					category = electronics
+				}
+				if = {
+					limit = {
+						has_dlc = "Gotterdammerung"
+					}
+					complete_special_project = sp:sp_air_radar
+				}
+			}
+		 }
 	
-	focus = {
-		id = saunders_west_coast
-		x = 60
-		y = 4
-		cost = 5
-		prerequisite = { focus = saunders_shipyards_development_scheme }
-	}
+		 focus = {
+			id = the_ship_modeling_club_research_and_development_division
+			x = 71
+			y = 8
+			cost = 5
+			prerequisite = {
+				focus = battleship_development_project
+				focus = submarine_development_program
+				focus = ship_electronics_and_radio_development_program
+			}
+			completion_reward = {
+				add_ideas = saunders_dev_final
+				add_tech_bonus = {
+					bonus = 0.6
+					uses = 3
+					category = ship_modules_tech
+				}
+			}
+	 	 }
 	
-	focus = {
-		id = saunders_east_coast
-		x = 62
-		y = 4
-		cost = 5
-		prerequisite = { focus = saunders_shipyards_development_scheme }
-	}
+		focus = {
+			id = collaboration_with_the_aircraft_history_club
+			x = 76
+			y = 9
+			cost = 5
+			prerequisite = {
+				focus = ship_electronics_and_radio_development_program
+			}
+		 }
 	
-	focus = { 
-		id = saunders_south_coast
-		x = 60
-		y = 5
-		cost = 5
-		prerequisite = { focus = saunders_west_coast }
-	}
+		focus = {
+			id = the_saunders_ship_modeling_club_retrofit_and_shipmaking_division
+			x = 68
+			y = 9
+			cost = 5
+			prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
+	 	 }
 	
-	focus = {
-		id = saunders_pineapple_islands
-		x = 62
-		y = 5
-		cost = 5
-		prerequisite = { focus = saunders_east_coast }
-	}
+		focus = {
+			id = new_shipyards_sponsors
+			x = 71
+			y = 9
+			cost = 5
+			prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
+		 }
 	
-	focus = {
-		id = final_shipyards_construction
-		x = 61
-		y = 6
-		cost = 5
-		prerequisite = { focus = saunders_south_coast }
-		prerequisite = { focus = saunders_pineapple_islands }
-	}
+		focus = {
+			id = establish_the_saunders_coastal_morals_committee
+			x = 74
+			y = 9
+			cost = 5
+			prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
+		 }
+	
+		focus = {
+			id = the_naomi_ship_convoy_plan
+			x = 58
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_sea }
+		 }
+	
+		focus = {
+			id = saunders_shipyards_development_scheme
+			x = 61
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_sea }
+		 }
+	
+		focus = {
+			id = saunders_west_coast
+			x = 60
+			y = 4
+			cost = 5
+			prerequisite = { focus = saunders_shipyards_development_scheme }
+		 }
+	
+		focus = {
+			id = saunders_east_coast
+			x = 62
+			y = 4
+			cost = 5
+			prerequisite = { focus = saunders_shipyards_development_scheme }
+		 }
+	
+		focus = { 
+			id = saunders_south_coast
+			x = 60
+			y = 5
+			cost = 5
+			prerequisite = { focus = saunders_west_coast }
+		 }
+	
+		focus = {
+			id = saunders_pineapple_islands
+			x = 62
+			y = 5
+			cost = 5
+			prerequisite = { focus = saunders_east_coast }
+		 }
+	
+		focus = {
+			id = final_shipyards_construction
+			x = 61
+			y = 6
+			cost = 5
+			prerequisite = { focus = saunders_south_coast }
+			prerequisite = { focus = saunders_pineapple_islands }
+		 }
 	
 	#Air Branch
 	
-	focus = {
-		id = the_aircraft_history_club_committee
-		x = 84
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_air }
-	}
+		focus = {
+			id = the_aircraft_history_club_committee
+			x = 84
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_air }
+			completion_reward = {
+				country_event = {
+					id = saundersair.1
+				}
+			}
+		 }
 	
-	focus = {
-		id = kay_air_reform
-		x = 82
-		y = 4
-		cost = 5
-		prerequisite = { focus = the_aircraft_history_club_committee }
-		mutually_exclusive = { focus = naomi_medium_reform_plan }
-		mutually_exclusive = { focus = alisas_absolute_destruction_plan }
-	}
+		focus = {
+			id = kay_air_reform
+			x = 82
+			y = 4
+			cost = 5
+			prerequisite = { focus = the_aircraft_history_club_committee }
+			mutually_exclusive = { focus = naomi_medium_reform_plan }
+			mutually_exclusive = { focus = alisas_absolute_destruction_plan }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_battlefield_support
+				}
+			}
+		 }
 	
-	focus = {
-		id = naomi_medium_reform_plan
-		x = 88
-		y = 4
-		cost = 5
-		prerequisite = { focus = the_aircraft_history_club_committee }
-		mutually_exclusive = { focus = kay_air_reform }
-		mutually_exclusive = { focus = alisas_absolute_destruction_plan }
-	}
+		focus = {
+			id = naomi_medium_reform_plan
+			x = 88
+			y = 4
+			cost = 5
+			prerequisite = { focus = the_aircraft_history_club_committee }
+			mutually_exclusive = { focus = kay_air_reform }
+			mutually_exclusive = { focus = alisas_absolute_destruction_plan }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_operational_integrity
+				}
+			}
+		 }
 	
-	focus = {
-		id = alisas_absolute_destruction_plan
-		x = 94
-		y = 4
-		cost = 5
-		prerequisite = { focus = the_aircraft_history_club_committee }
-		mutually_exclusive = { focus = kay_air_reform }
-		mutually_exclusive = { focus = naomi_medium_reform_plan }
-	}
+		focus = {
+			id = alisas_absolute_destruction_plan
+			x = 94
+			y = 4
+			cost = 5
+			prerequisite = { focus = the_aircraft_history_club_committee }
+			mutually_exclusive = { focus = kay_air_reform }
+			mutually_exclusive = { focus = naomi_medium_reform_plan }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = strategic_destruction_tree
+				}
+			}
+		 }
 	
-	focus = {
-		id = plane_quality_control_program
-		x = 82
-		y = 5
-		cost = 5
-		prerequisite = { focus = kay_air_reform }
-	}
+
+		##KAY PATH
+
+			focus = {
+				id = plane_quality_control_program
+				x = 82
+				y = 5
+				cost = 5
+				prerequisite = { focus = kay_air_reform }
+				completion_reward = {
+						add_ideas = saunders_air_quality
+
+				}
+			 }
 	
-	focus = {
-		id = better_weaponry_and_ammunition
-		x = 82
-		y = 6
-		cost = 5
-		prerequisite = { focus = plane_quality_control_program }
-	}
+			focus = {
+				id = better_weaponry_and_ammunition
+				x = 82
+				y = 6
+				cost = 5
+				prerequisite = { focus = plane_quality_control_program }
+				completion_reward = {
+					add_ideas = saunders_airweapon_quality
+				}
+			 }
 	
-	focus = {
-		id = better_developed_plane_armour
-		x = 82
-		y = 7
-		cost = 5
-		prerequisite = { focus = better_weaponry_and_ammunition }
-		prerequisite = { focus = plane_parts_research_grant }
-	}
+			focus = {
+				id = better_developed_plane_armour
+				x = 82
+				y = 7
+				cost = 5
+				prerequisite = { focus = better_weaponry_and_ammunition }
+				prerequisite = { focus = plane_parts_research_grant }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_air_quality
+						add_idea = saunders_air_quality_1
+					}
+				}
+			 }
 	
-	focus = {
-		id = air_frame_research_grant_program
-		x = 85
-		y = 5
-		cost = 5
-		prerequisite {
-			focus = kay_air_reform
-			focus = naomi_medium_reform_plan
-		}
-	}
+			focus = {
+				id = air_frame_research_grant_program
+				x = 85
+				y = 5
+				cost = 5
+				prerequisite {
+					focus = kay_air_reform
+					focus = naomi_medium_reform_plan
+				}
+				completion_reward = {
+					if = {
+						limit = {has_completed_focus = kay_air_reform}
+						add_Tech_bonus = {
+							bonus = 0.6
+							uses = 1
+							category = light_air
+							 }
+						 }
+					else if = {
+						limit = {has_completed_focus = naomi_medium_reform_plan}
+						add_Tech_bonus = {
+							bonus = 0.6
+							uses = 1
+							category = medium_air
+							  }
+						 }
+					else = {
+						custom_effect_tooltip = USA_airframe_choice_tt
+					}
+				}
+			 }
 	
-	focus = {
-		id = plane_parts_research_grant
-		x = 85
-		y = 6
-		cost = 5 
-		prerequisite = { focus = air_frame_research_grant_program }
-	}
+			focus = {
+				id = plane_parts_research_grant
+				x = 85
+				y = 6
+				cost = 5 
+				prerequisite = { focus = air_frame_research_grant_program }
+				completion_reward = {
+						add_tech_bonus = {
+						bonus = 0.25
+						uses = 3
+						category = cat_air_guns
+					}
+				}
+			}
 	
-	focus = {
-		id = mixed_mass_production_concept
-		x = 82
-		y = 8
-		cost = 5
-		prerequisite = { focus = better_developed_plane_armour }
-	}
+			focus = {
+				id = mixed_mass_production_concept
+				x = 82
+				y = 8
+				cost = 5
+				prerequisite = { focus = better_developed_plane_armour }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_air_quality_1
+						add_idea = saunders_air_quality_2
+					}
+				}
+		     }
 	
-	focus = {
-		id = bombers_fighters_multiroles
-		x = 88
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_medium_reform_plan }
-	}
+
+		##Medium Air
+
+			focus = {
+				id = bombers_fighters_multiroles
+				x = 88
+				y = 5
+				cost = 5
+				prerequisite = { focus = naomi_medium_reform_plan }
+				completion_reward = {
+					add_ideas = saunders_medium_multirole
+				}
+			}
 	
-	focus = {
-		id = defence_and_attack
-		x = 88
-		y = 6
-		cost = 5
-		prerequisite = { focus = bombers_fighters_multiroles }
-	}
+			focus = {
+				id = defence_and_attack
+				x = 88
+				y = 6
+				cost = 5
+				prerequisite = { focus = bombers_fighters_multiroles }
+				completion_reward = {
+					add_ideas = saunders_air_atkdef
+				}
+			}
 	
-	focus = {
-		id = radar_research_development_grant
-		x = 88
-		y = 7
-		cost = 5
-		prerequisite = { focus = defence_and_attack }
-		prerequisite = { focus = plane_parts_research_grant }
-	}
+			focus = {
+				id = radar_research_development_grant
+				x = 88
+				y = 7
+				cost = 5
+				prerequisite = { focus = defence_and_attack }
+				prerequisite = { focus = plane_parts_research_grant }
+				completion_reward = {
+					add_tech_bonus = {
+					bonus = 0.8
+					uses = 1
+					category = radar_tech
+				}
+				}
+			}
 	
-	focus = {
-		id = negotiate_better_deals_with_aircraft_sponsors
-		x = 88
-		y = 8
-		cost = 5
-		prerequisite = { focus = radar_research_development_grant }
-	}
+			focus = {
+				id = negotiate_better_deals_with_aircraft_sponsors
+				x = 88
+				y = 8
+				cost = 5
+				prerequisite = { focus = radar_research_development_grant }
+			}
 	
 	focus = {
 		id = cross_divisions_bombing_drills
@@ -1360,51 +1837,91 @@
 		y = 6
 		prerequisite { focus = cross_divisions_bombing_drills }
 	}
+
+	##Alisa Path
 	
-	focus = {
-		id = the_importance_of_strategic_bombers
-		x = 94
-		y = 5
-		prerequisite = { focus = alisas_absolute_destruction_plan }
-	}
+			focus = {
+				id = the_importance_of_strategic_bombers
+				x = 94
+				y = 5
+				cost = 5
+				prerequisite = { focus = alisas_absolute_destruction_plan }
+				completion_reward = {
+					set_technology = {
+						iw_large_airframe = 1
+					}
+					add_tech_bonus = {
+						bonus = 1
+						uses = 1
+						category = cat_strategic_bomber
+					}
+				}
+		 	 }
 	
-	focus = {
-		id = search_and_destroy_tactics
-		x = 94
-		y = 6
-		prerequisite = { focus = the_importance_of_strategic_bombers }
-	}
+			focus = {
+				id = search_and_destroy_tactics
+				x = 94
+				y = 6
+				cost = 5
+				prerequisite = { focus = the_importance_of_strategic_bombers }
+				completion_reward = {
+					add_ideas = saunders_strat_bombing
+				}
+			 }
 	
-	focus = {
-		id = anti_stealth_radar_detection_research
-		x = 91
-		y = 7
-		prerequisite = { focus = bomber_drills_over_the_desert }
-	}
+			focus = {
+				id = anti_stealth_radar_detection_research
+				x = 91
+				y = 7
+				cost = 5
+				prerequisite = { focus = bomber_drills_over_the_desert }
+				completion_reward = {
+
+				}
+			 }
 	
-	focus = {
-		id = targeting_strategic_and_tactical_points
-		x = 94
-		y = 7
-		prerequisite = { focus = search_and_destroy_tactics	}
-	}
+			focus = {
+				id = targeting_strategic_and_tactical_points
+				x = 94
+				y = 7
+				cost = 5
+				prerequisite = { focus = search_and_destroy_tactics	}
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_strat_bombing
+						add_idea = saunders_strat_bombing_1
+					}
+
+				}
+			 }
 	
-	focus = {
-		id = absolute_destruction_front
-		x = 94
-		y = 8
-		prerequisite = { focus = anti_stealth_radar_detection_research }
-		prerequisite = { focus = targeting_strategic_and_tactical_points }
-	}
+			focus = {	
+				id = absolute_destruction_front
+				x = 94
+				y = 8
+				cost = 5
+				prerequisite = { focus = anti_stealth_radar_detection_research }
+				prerequisite = { focus = targeting_strategic_and_tactical_points }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_strat_bombing_1
+						add_idea = saunders_strat_bombing_2
+					}
+				}
+			 }
 	
 	focus = {
 		id = land_air_cooperation_training_scheme
 		x = 88
 		y = 9
+		cost = 10
 		prerequisite = {
 			focus = mixed_mass_production_concept
 			focus = negotiate_better_deals_with_aircraft_sponsors
 			focus = absolute_destruction_front
+		}
+		completion_reward = {
+			add_ideas = saunders_total_aircoord
 		}
 	}
 	
@@ -1414,6 +1931,9 @@
 		y = 10
 		cost = 5
 		prerequisite = { focus = land_air_cooperation_training_scheme }
+		completion_reward = {
+			add_ideas = saunders_air_training
+		}
 	}
 	
 	focus = {

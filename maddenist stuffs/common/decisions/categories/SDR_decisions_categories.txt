@@ -1,0 +1,13 @@
+SDR_regain_morale = {
+	allowed = {
+		original_tag = USA
+	}
+
+	visible = {
+        USA = {
+        	has_active_mission = SDR_morale_mission
+        }
+	}
+    #icon = 
+    priority = 100
+}
