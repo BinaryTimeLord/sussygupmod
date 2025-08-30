@@ -845,5 +845,214 @@ ideas = {
 			}
 		}
 
+		saunders_air_quality = {
+			name = saunders_air_quality
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+					reliability = 0.15
+					air_superiority = 0.2
+					naval_strike_attack = 0.1
+					air_agility = 0.3
+					air_defence = 0.2
+				}
+			}
+		}
+
+		saunders_air_quality_1 = {
+			name = saunders_air_quality
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+					reliability = 0.15
+					air_superiority = 0.2
+					naval_strike_attack = 0.1
+					air_agility = 0.3
+					air_defence = 0.5
+				}
+			}
+		}
+
+		saunders_air_quality_2 = {
+			name = saunders_air_quality
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+					reliability = 0.15
+					air_superiority = 0.2
+					naval_strike_attack = 0.1
+					air_agility = 0.3
+					air_defence = 0.5
+				}
+			}
+		}
+
+		saunders_airweapon_quality = {
+			name = saunders_airweapon_quality
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_attack_factor = 0.2
+				air_superiority_efficiency = 0.15
+				ground_attack_factor = 0.15
+			}
+		}
+
+		saunders_medium_multirole = {
+			name = saunders_medium_multirole
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				medium_plane_airframe = {
+					instant = yes
+					air_superiority = 0.45
+					air_agility = 0.2
+					air_defence = 0.3
+					build_cost_ic = 0.5
+				}
+			}
+		}
+
+		saunders_air_atkdef = {
+			name = saunders_air_atkdef
+			#picture =
+
+			allowed = {always =no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_attack_factor = 0.20
+				air_defence_factor = 0.15
+			}
+		}
+
+		saunders_strat_bombing = {
+			name = saunders_strat_bombing
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.3
+					air_defence = 0.1
+				}
+			}
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.3
+				strategic_bomb_visibility = -0.2
+			}
+		}
+
+		saunders_strat_bombing_1 = {
+			name = saunders_strat_bombing
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.3
+					air_defence = 0.1
+				}
+			}
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.35
+				air_strategic_bomber_night_penalty = -0.2
+				strategic_bomb_visibility = -0.25
+				air_bombing_targetting = 0.2
+			}
+		}
+
+		saunders_strat_bombing_2 = {
+			name = saunders_strat_bombing
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_range = 0.5
+					air_defence = 0.3
+				}
+			}
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.6
+				air_strategic_bomber_night_penalty = -0.35
+				strategic_bomb_visibility = -0.25
+				air_bombing_targetting = 0.3
+			}
+		}
+
+		saunders_total_aircoord = {
+			name = saunders_total_aircoord
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_superiority_efficiency = 0.35
+				air_night_penalty = -0.2
+				air_mission_efficiency = 0.3
+				air_cas_efficiency = 0.6
+				air_ace_generation_chance_factor = 0.2
+			}
+		}
+
+		saunders_air_training = {
+			name = saunders_air_training
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				air_training_xp_gain_factor = 0.3
+				air_untrained_pilots_penalty_factor = -0.2
+			}
+		}
+
 	}
 }

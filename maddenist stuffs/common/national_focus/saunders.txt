@@ -1626,6 +1626,13 @@
 			prerequisite = { focus = the_aircraft_history_club_committee }
 			mutually_exclusive = { focus = naomi_medium_reform_plan }
 			mutually_exclusive = { focus = alisas_absolute_destruction_plan }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_battlefield_support
+				}
+			}
 		 }
 	
 		focus = {
@@ -1636,6 +1643,13 @@
 			prerequisite = { focus = the_aircraft_history_club_committee }
 			mutually_exclusive = { focus = kay_air_reform }
 			mutually_exclusive = { focus = alisas_absolute_destruction_plan }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = cat_operational_integrity
+				}
+			}
 		 }
 	
 		focus = {
@@ -1646,92 +1660,165 @@
 			prerequisite = { focus = the_aircraft_history_club_committee }
 			mutually_exclusive = { focus = kay_air_reform }
 			mutually_exclusive = { focus = naomi_medium_reform_plan }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.9
+					uses = 1
+					category = strategic_destruction_tree
+				}
+			}
 		 }
 	
-	focus = {
-		id = plane_quality_control_program
-		x = 82
-		y = 5
-		cost = 5
-		prerequisite = { focus = kay_air_reform }
-	}
+
+		##KAY PATH
+
+			focus = {
+				id = plane_quality_control_program
+				x = 82
+				y = 5
+				cost = 5
+				prerequisite = { focus = kay_air_reform }
+				completion_reward = {
+						add_ideas = saunders_air_quality
+
+				}
+			 }
 	
-	focus = {
-		id = better_weaponry_and_ammunition
-		x = 82
-		y = 6
-		cost = 5
-		prerequisite = { focus = plane_quality_control_program }
-	}
+			focus = {
+				id = better_weaponry_and_ammunition
+				x = 82
+				y = 6
+				cost = 5
+				prerequisite = { focus = plane_quality_control_program }
+				completion_reward = {
+					add_ideas = saunders_airweapon_quality
+				}
+			 }
 	
-	focus = {
-		id = better_developed_plane_armour
-		x = 82
-		y = 7
-		cost = 5
-		prerequisite = { focus = better_weaponry_and_ammunition }
-		prerequisite = { focus = plane_parts_research_grant }
-	}
+			focus = {
+				id = better_developed_plane_armour
+				x = 82
+				y = 7
+				cost = 5
+				prerequisite = { focus = better_weaponry_and_ammunition }
+				prerequisite = { focus = plane_parts_research_grant }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_air_quality
+						add_idea = saunders_air_quality_1
+					}
+				}
+			 }
 	
-	focus = {
-		id = air_frame_research_grant_program
-		x = 85
-		y = 5
-		cost = 5
-		prerequisite {
-			focus = kay_air_reform
-			focus = naomi_medium_reform_plan
-		}
-	}
+			focus = {
+				id = air_frame_research_grant_program
+				x = 85
+				y = 5
+				cost = 5
+				prerequisite {
+					focus = kay_air_reform
+					focus = naomi_medium_reform_plan
+				}
+				completion_reward = {
+					if = {
+						limit = {has_completed_focus = kay_air_reform}
+						add_Tech_bonus = {
+							bonus = 0.6
+							uses = 1
+							category = light_air
+							 }
+						 }
+					else if = {
+						limit = {has_completed_focus = naomi_medium_reform_plan}
+						add_Tech_bonus = {
+							bonus = 0.6
+							uses = 1
+							category = medium_air
+							  }
+						 }
+					else = {
+						custom_effect_tooltip = USA_airframe_choice_tt
+					}
+				}
+			 }
 	
-	focus = {
-		id = plane_parts_research_grant
-		x = 85
-		y = 6
-		cost = 5 
-		prerequisite = { focus = air_frame_research_grant_program }
-	}
+			focus = {
+				id = plane_parts_research_grant
+				x = 85
+				y = 6
+				cost = 5 
+				prerequisite = { focus = air_frame_research_grant_program }
+				completion_reward = {
+						add_tech_bonus = {
+						bonus = 0.25
+						uses = 3
+						category = cat_air_guns
+					}
+				}
+			}
 	
-	focus = {
-		id = mixed_mass_production_concept
-		x = 82
-		y = 8
-		cost = 5
-		prerequisite = { focus = better_developed_plane_armour }
-	}
+			focus = {
+				id = mixed_mass_production_concept
+				x = 82
+				y = 8
+				cost = 5
+				prerequisite = { focus = better_developed_plane_armour }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_air_quality_1
+						add_idea = saunders_air_quality_2
+					}
+				}
+		     }
 	
-	focus = {
-		id = bombers_fighters_multiroles
-		x = 88
-		y = 5
-		cost = 5
-		prerequisite = { focus = naomi_medium_reform_plan }
-	}
+
+		##Medium Air
+
+			focus = {
+				id = bombers_fighters_multiroles
+				x = 88
+				y = 5
+				cost = 5
+				prerequisite = { focus = naomi_medium_reform_plan }
+				completion_reward = {
+					add_ideas = saunders_medium_multirole
+				}
+			}
 	
-	focus = {
-		id = defence_and_attack
-		x = 88
-		y = 6
-		cost = 5
-		prerequisite = { focus = bombers_fighters_multiroles }
-	}
+			focus = {
+				id = defence_and_attack
+				x = 88
+				y = 6
+				cost = 5
+				prerequisite = { focus = bombers_fighters_multiroles }
+				completion_reward = {
+					add_ideas = saunders_air_atkdef
+				}
+			}
 	
-	focus = {
-		id = radar_research_development_grant
-		x = 88
-		y = 7
-		cost = 5
-		prerequisite = { focus = defence_and_attack }
-		prerequisite = { focus = plane_parts_research_grant }
-	}
+			focus = {
+				id = radar_research_development_grant
+				x = 88
+				y = 7
+				cost = 5
+				prerequisite = { focus = defence_and_attack }
+				prerequisite = { focus = plane_parts_research_grant }
+				completion_reward = {
+					add_tech_bonus = {
+					bonus = 0.8
+					uses = 1
+					category = radar_tech
+				}
+				}
+			}
 	
-	focus = {
-		id = negotiate_better_deals_with_aircraft_sponsors
-		x = 88
-		y = 8
-		cost = 5
-		prerequisite = { focus = radar_research_development_grant }
-	}
+			focus = {
+				id = negotiate_better_deals_with_aircraft_sponsors
+				x = 88
+				y = 8
+				cost = 5
+				prerequisite = { focus = radar_research_development_grant }
+			}
 	
 	focus = {
 		id = cross_divisions_bombing_drills
@@ -1750,51 +1837,91 @@
 		y = 6
 		prerequisite { focus = cross_divisions_bombing_drills }
 	}
+
+	##Alisa Path
 	
-	focus = {
-		id = the_importance_of_strategic_bombers
-		x = 94
-		y = 5
-		prerequisite = { focus = alisas_absolute_destruction_plan }
-	}
+			focus = {
+				id = the_importance_of_strategic_bombers
+				x = 94
+				y = 5
+				cost = 5
+				prerequisite = { focus = alisas_absolute_destruction_plan }
+				completion_reward = {
+					set_technology = {
+						iw_large_airframe = 1
+					}
+					add_tech_bonus = {
+						bonus = 1
+						uses = 1
+						category = cat_strategic_bomber
+					}
+				}
+		 	 }
 	
-	focus = {
-		id = search_and_destroy_tactics
-		x = 94
-		y = 6
-		prerequisite = { focus = the_importance_of_strategic_bombers }
-	}
+			focus = {
+				id = search_and_destroy_tactics
+				x = 94
+				y = 6
+				cost = 5
+				prerequisite = { focus = the_importance_of_strategic_bombers }
+				completion_reward = {
+					add_ideas = saunders_strat_bombing
+				}
+			 }
 	
-	focus = {
-		id = anti_stealth_radar_detection_research
-		x = 91
-		y = 7
-		prerequisite = { focus = bomber_drills_over_the_desert }
-	}
+			focus = {
+				id = anti_stealth_radar_detection_research
+				x = 91
+				y = 7
+				cost = 5
+				prerequisite = { focus = bomber_drills_over_the_desert }
+				completion_reward = {
+
+				}
+			 }
 	
-	focus = {
-		id = targeting_strategic_and_tactical_points
-		x = 94
-		y = 7
-		prerequisite = { focus = search_and_destroy_tactics	}
-	}
+			focus = {
+				id = targeting_strategic_and_tactical_points
+				x = 94
+				y = 7
+				cost = 5
+				prerequisite = { focus = search_and_destroy_tactics	}
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_strat_bombing
+						add_idea = saunders_strat_bombing_1
+					}
+
+				}
+			 }
 	
-	focus = {
-		id = absolute_destruction_front
-		x = 94
-		y = 8
-		prerequisite = { focus = anti_stealth_radar_detection_research }
-		prerequisite = { focus = targeting_strategic_and_tactical_points }
-	}
+			focus = {	
+				id = absolute_destruction_front
+				x = 94
+				y = 8
+				cost = 5
+				prerequisite = { focus = anti_stealth_radar_detection_research }
+				prerequisite = { focus = targeting_strategic_and_tactical_points }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = saunders_strat_bombing_1
+						add_idea = saunders_strat_bombing_2
+					}
+				}
+			 }
 	
 	focus = {
 		id = land_air_cooperation_training_scheme
 		x = 88
 		y = 9
+		cost = 10
 		prerequisite = {
 			focus = mixed_mass_production_concept
 			focus = negotiate_better_deals_with_aircraft_sponsors
 			focus = absolute_destruction_front
+		}
+		completion_reward = {
+			add_ideas = saunders_total_aircoord
 		}
 	}
 	
@@ -1804,6 +1931,9 @@
 		y = 10
 		cost = 5
 		prerequisite = { focus = land_air_cooperation_training_scheme }
+		completion_reward = {
+			add_ideas = saunders_air_training
+		}
 	}
 	
 	focus = {
