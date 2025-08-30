@@ -830,5 +830,20 @@ ideas = {
 			}
 		}
 
+		saunders_dev_final = {
+			name = saunders_dev_final
+			#picture =
+
+			allowed = {always = no}
+
+			removal_cost = -1
+
+			modifier = {
+				repair_speed_factor = 0.3
+				industrial_capacity_dockyard = 0.5
+
+			}
+		}
+
 	}
 }

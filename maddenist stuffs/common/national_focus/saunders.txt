@@ -1233,7 +1233,7 @@
 			}
 		 }
 	
-	##FLEET IN BEING
+		##FLEET IN BEING
 
 		focus = {
 			id = the_importance_of_navy_tradition
@@ -1300,7 +1300,7 @@
 			}
 		 }
 	
-	##TRADE INTERDECTION
+		##TRADE INTERDECTION
 
 		focus = {
 			id = trade_the_life_blood_of_saunders
@@ -1355,7 +1355,7 @@
 			}
 		 }
 
-	##BASE STRIKE 
+		##BASE STRIKE 
 		focus = {
 			id = creation_of_carrier_escort_groups
 			x = 75
@@ -1363,77 +1363,79 @@
 			cost = 5
 			prerequisite = { focus = kays_carrier_gamble }
 			completion_reward = {
+				hidden_effect = {
+					USA = {
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+					}
+				}
 				USA = {
 					create_ship = {
 						type = ship_hull_light_1
 						equipment_variant = "Farragut Class"
 					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-					
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-					
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_light_1
-						equipment_variant = "Farragut Class"
-					}
-
-					create_ship = {
-						type = ship_hull_cruiser_2
-						equipment_variant = "Wichita Class"
-					}
-
-					create_ship = {
-						type = ship_hull_cruiser_2
-						equipment_variant = "Wichita Class"
-					}
-
-					create_ship = {
-						type = ship_hull_cruiser_2
-						equipment_variant = "Wichita Class"
-					}
-					
-					create_ship = {
-						type = ship_hull_cruiser_2
-						equipment_variant = "Wichita Class"
-					}
-
 					create_ship = {
 						type = ship_hull_cruiser_2
 						equipment_variant = "Wichita Class"
@@ -1490,148 +1492,161 @@
 			}
 		 }
 	
-	focus = {
-		id = the_ship_modeling_club_research_and_development_division
-		x = 71
-		y = 8
-		cost = 5
-		prerequisite = {
-			focus = battleship_development_project
-			focus = submarine_development_program
-			focus = ship_electronics_and_radio_development_program
-		}
-	}
+		 focus = {
+			id = the_ship_modeling_club_research_and_development_division
+			x = 71
+			y = 8
+			cost = 5
+			prerequisite = {
+				focus = battleship_development_project
+				focus = submarine_development_program
+				focus = ship_electronics_and_radio_development_program
+			}
+			completion_reward = {
+				add_ideas = saunders_dev_final
+				add_tech_bonus = {
+					bonus = 0.6
+					uses = 3
+					category = ship_modules_tech
+				}
+			}
+	 	 }
 	
-	focus = {
-		id = collaboration_with_the_aircraft_history_club
-		x = 76
-		y = 9
-		cost = 5
-		prerequisite = {
-			focus = ship_electronics_and_radio_development_program
-		}
-	}
+		focus = {
+			id = collaboration_with_the_aircraft_history_club
+			x = 76
+			y = 9
+			cost = 5
+			prerequisite = {
+				focus = ship_electronics_and_radio_development_program
+			}
+		 }
 	
-	focus = {
-		id = the_saunders_ship_modeling_club_retrofit_and_shipmaking_division
-		x = 68
-		y = 9
-		cost = 5
-		prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
-	}
+		focus = {
+			id = the_saunders_ship_modeling_club_retrofit_and_shipmaking_division
+			x = 68
+			y = 9
+			cost = 5
+			prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
+	 	 }
 	
-	focus = {
-		id = new_shipyards_sponsors
-		x = 71
-		y = 9
-		cost = 5
-		prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
-	}
+		focus = {
+			id = new_shipyards_sponsors
+			x = 71
+			y = 9
+			cost = 5
+			prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
+		 }
 	
-	focus = {
-		id = establish_the_saunders_coastal_morals_committee
-		x = 74
-		y = 9
-		cost = 5
-		prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
-	}
+		focus = {
+			id = establish_the_saunders_coastal_morals_committee
+			x = 74
+			y = 9
+			cost = 5
+			prerequisite = { focus = the_ship_modeling_club_research_and_development_division }
+		 }
 	
-	focus = {
-		id = the_naomi_ship_convoy_plan
-		x = 58
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_sea }
-	}
+		focus = {
+			id = the_naomi_ship_convoy_plan
+			x = 58
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_sea }
+		 }
 	
-	focus = {
-		id = saunders_shipyards_development_scheme
-		x = 61
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_sea }
-	}
+		focus = {
+			id = saunders_shipyards_development_scheme
+			x = 61
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_sea }
+		 }
 	
-	focus = {
-		id = saunders_west_coast
-		x = 60
-		y = 4
-		cost = 5
-		prerequisite = { focus = saunders_shipyards_development_scheme }
-	}
+		focus = {
+			id = saunders_west_coast
+			x = 60
+			y = 4
+			cost = 5
+			prerequisite = { focus = saunders_shipyards_development_scheme }
+		 }
 	
-	focus = {
-		id = saunders_east_coast
-		x = 62
-		y = 4
-		cost = 5
-		prerequisite = { focus = saunders_shipyards_development_scheme }
-	}
+		focus = {
+			id = saunders_east_coast
+			x = 62
+			y = 4
+			cost = 5
+			prerequisite = { focus = saunders_shipyards_development_scheme }
+		 }
 	
-	focus = { 
-		id = saunders_south_coast
-		x = 60
-		y = 5
-		cost = 5
-		prerequisite = { focus = saunders_west_coast }
-	}
+		focus = { 
+			id = saunders_south_coast
+			x = 60
+			y = 5
+			cost = 5
+			prerequisite = { focus = saunders_west_coast }
+		 }
 	
-	focus = {
-		id = saunders_pineapple_islands
-		x = 62
-		y = 5
-		cost = 5
-		prerequisite = { focus = saunders_east_coast }
-	}
+		focus = {
+			id = saunders_pineapple_islands
+			x = 62
+			y = 5
+			cost = 5
+			prerequisite = { focus = saunders_east_coast }
+		 }
 	
-	focus = {
-		id = final_shipyards_construction
-		x = 61
-		y = 6
-		cost = 5
-		prerequisite = { focus = saunders_south_coast }
-		prerequisite = { focus = saunders_pineapple_islands }
-	}
+		focus = {
+			id = final_shipyards_construction
+			x = 61
+			y = 6
+			cost = 5
+			prerequisite = { focus = saunders_south_coast }
+			prerequisite = { focus = saunders_pineapple_islands }
+		 }
 	
 	#Air Branch
 	
-	focus = {
-		id = the_aircraft_history_club_committee
-		x = 84
-		y = 3
-		cost = 5
-		prerequisite = { focus = on_air }
-	}
+		focus = {
+			id = the_aircraft_history_club_committee
+			x = 84
+			y = 3
+			cost = 5
+			prerequisite = { focus = on_air }
+			completion_reward = {
+				country_event = {
+					id = saundersair.1
+				}
+			}
+		 }
 	
-	focus = {
-		id = kay_air_reform
-		x = 82
-		y = 4
-		cost = 5
-		prerequisite = { focus = the_aircraft_history_club_committee }
-		mutually_exclusive = { focus = naomi_medium_reform_plan }
-		mutually_exclusive = { focus = alisas_absolute_destruction_plan }
-	}
+		focus = {
+			id = kay_air_reform
+			x = 82
+			y = 4
+			cost = 5
+			prerequisite = { focus = the_aircraft_history_club_committee }
+			mutually_exclusive = { focus = naomi_medium_reform_plan }
+			mutually_exclusive = { focus = alisas_absolute_destruction_plan }
+		 }
 	
-	focus = {
-		id = naomi_medium_reform_plan
-		x = 88
-		y = 4
-		cost = 5
-		prerequisite = { focus = the_aircraft_history_club_committee }
-		mutually_exclusive = { focus = kay_air_reform }
-		mutually_exclusive = { focus = alisas_absolute_destruction_plan }
-	}
+		focus = {
+			id = naomi_medium_reform_plan
+			x = 88
+			y = 4
+			cost = 5
+			prerequisite = { focus = the_aircraft_history_club_committee }
+			mutually_exclusive = { focus = kay_air_reform }
+			mutually_exclusive = { focus = alisas_absolute_destruction_plan }
+		 }
 	
-	focus = {
-		id = alisas_absolute_destruction_plan
-		x = 94
-		y = 4
-		cost = 5
-		prerequisite = { focus = the_aircraft_history_club_committee }
-		mutually_exclusive = { focus = kay_air_reform }
-		mutually_exclusive = { focus = naomi_medium_reform_plan }
-	}
+		focus = {
+			id = alisas_absolute_destruction_plan
+			x = 94
+			y = 4
+			cost = 5
+			prerequisite = { focus = the_aircraft_history_club_committee }
+			mutually_exclusive = { focus = kay_air_reform }
+			mutually_exclusive = { focus = naomi_medium_reform_plan }
+		 }
 	
 	focus = {
 		id = plane_quality_control_program

@@ -2,6 +2,7 @@ add_namespace = saunders
 add_namespace = saundersmil
 add_namespace = saundersmorale
 add_namespace = saundersnavy
+add_namespace = saundersair
 add_namespace = kayxdarjeeling
 
 country_event = {
@@ -335,7 +336,39 @@ country_event = {
 				base = 60
 			}
 			complete_national_focus = kays_carrier_gamble
+		}	
+}
+
+	country_event = {
+		id = saundersair.1
+		title = saundersair.1.t 
+		desc = saundersair.1.d 
+		#picture =
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = saundersair.1.a 
+			ai_chance = {
+				base = 20
+			}
+			complete_national_focus = kay_air_reform
 		}
 
+		option = {
+			name = saundersair.1.b 
+			ai_chance = {
+				base = 20
+			}
+			complete_national_focus = naomi_medium_reform_plan
+		}
 
+		option = {
+			name = saundersair.1.c
+			ai_chance = {
+				base = 60
+			}
+			complete_national_focus = alisas_absolute_destruction_plan
+		}	
 }
