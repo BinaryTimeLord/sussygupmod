@@ -1300,6 +1300,8 @@
 			}
 		 }
 	
+	##TRADE INTERDECTION
+
 		focus = {
 			id = trade_the_life_blood_of_saunders
 			x = 70
@@ -1326,65 +1328,167 @@
 			}
 		 }
 	
-	focus = {
-		id = unrestricted_submarine_warfare
-		x = 71
-		y = 6
-		cost = 5
-		prerequisite = { focus = trade_the_life_blood_of_saunders }
-		prerequisite = { focus = new_torpedoes_development_plan }
-		completion_reward = {
-			add_ideas = saunders_unrestricted_subs
-		}
-	}
+		focus = {
+			id = unrestricted_submarine_warfare
+			x = 71
+			y = 6
+			cost = 5
+			prerequisite = { focus = trade_the_life_blood_of_saunders }
+			prerequisite = { focus = new_torpedoes_development_plan }
+			completion_reward = {
+				add_ideas = saunders_unrestricted_subs
+			}
+		 }
 	
-	focus = { 
-		id = submarine_development_program
-		x = 71
-		y = 7
-		cost = 5
-		prerequisite = { focus = unrestricted_submarine_warfare }
-		completion_reward = {
-			add_tech_bonus = {
-   						 bonus = 0.8
-    					 uses = 1
-    					 category = ss_tech
-					  }
-		}
-	}
+		focus = { 
+			id = submarine_development_program
+			x = 71
+			y = 7
+			cost = 5
+			prerequisite = { focus = unrestricted_submarine_warfare }
+			completion_reward = {
+				add_tech_bonus = {
+   							 bonus = 0.8
+    						 uses = 1
+    						 category = ss_tech
+						  }
+			}
+		 }
 
-	focus = {
-		id = creation_of_carrier_escort_groups
-		x = 75
-		y = 5
-		cost = 5
-		prerequisite = { focus = kays_carrier_gamble }
-	}
+	##BASE STRIKE 
+		focus = {
+			id = creation_of_carrier_escort_groups
+			x = 75
+			y = 5
+			cost = 5
+			prerequisite = { focus = kays_carrier_gamble }
+			completion_reward = {
+				USA = {
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_light_1
+						equipment_variant = "Farragut Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+					
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+
+					create_ship = {
+						type = ship_hull_cruiser_2
+						equipment_variant = "Wichita Class"
+					}
+				}
+			}
+		 }
 	
-	focus = {
-		id = carrier_warfare_training_scheme
-		x = 77
-		y = 5
-		cost = 5
-		prerequisite = { focus = kays_carrier_gamble }
-	}
+		focus = {
+			id = carrier_warfare_training_scheme
+			x = 77
+				y = 5
+			cost = 5
+			prerequisite = { focus = kays_carrier_gamble }
+			completion_reward = {
+				add_ideas = saunders_carrier_warfare
+			}
+		 }
 	
-	focus = {
-		id = carrier_enhancement_development_program
-		x = 76
-		y = 6
-		cost = 5
-		prerequisite = { focus = creation_of_carrier_escort_groups }
-		prerequisite = { focus = carrier_warfare_training_scheme }
-	}
+		focus = {
+			id = carrier_enhancement_development_program
+			x = 76
+			y = 6
+			cost = 5
+			prerequisite = { focus = creation_of_carrier_escort_groups }
+			prerequisite = { focus = carrier_warfare_training_scheme }
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 0.8
+					uses = 1
+					category = cv_tech
+				}
+			}
+		 }
 	
-	focus = {
-		id = ship_electronics_and_radio_development_program
-		x = 76
-		y = 7
-		cost = 5
-		prerequisite = { focus = carrier_warfare_training_scheme }
-	}
+		focus = {
+			id = ship_electronics_and_radio_development_program
+			x = 76
+			y = 7
+			cost = 5
+			prerequisite = { focus = carrier_warfare_training_scheme }
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 0.6
+					uses = 2
+					category = electronics
+				}
+				if = {
+					limit = {
+						has_dlc = "Gotterdammerung"
+					}
+					complete_special_project = sp:sp_air_radar
+				}
+			}
+		 }
 	
 	focus = {
 		id = the_ship_modeling_club_research_and_development_division
