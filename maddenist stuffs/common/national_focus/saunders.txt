@@ -71,7 +71,7 @@
 		}
 	}
 
-	#Coders, make sure to entangle the first focus path for each party with party leader (Kay: Leader
+	#Coders, make sure to entangle the first focus path for each party with party leader Kay: Leader
 	
 
 	focus = {
@@ -79,7 +79,7 @@
 		icon = GFX_goal_generic_national_unity
 		x = 25
 		y = 4
-		cost = 0
+		cost = 1
 		prerequisite = { focus = announce_snap_elections } #Addition Requirement: Kay is Party Leader
 		available = {always = no}
 		completion_reward = {

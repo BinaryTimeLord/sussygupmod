@@ -401,6 +401,7 @@ set_autonomy = {
 	}
 }
 
+recruit_character = USA_student_council
 recruit_character = USA_kay
 recruit_character = USA_alisa
 recruit_character = USA_naomi

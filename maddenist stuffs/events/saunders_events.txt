@@ -1,12 +1,13 @@
 add_namespace = saunders
 add_namespace = saundersmil
 add_namespace = saundersmorale
+add_namespace = kayxdarjeeling
 
 country_event = {
 	id = saunders.1
 	title = saunders.1.t
 	desc = saunders.1.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -25,7 +26,7 @@ country_event = {
 	id = saunders.2
 	title = saunders.2.t
 	desc = saunders.2.d
-	picture =
+	#picture =
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -42,7 +43,7 @@ country_event = {
 	id = saunders.3
 	title = saunders.3.t
 	desc = saunders.3.d
-	picture =
+	#picture =
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -60,7 +61,7 @@ country_event = {
 	id = saunders.4
 	title = saunders.4.t
 	desc = saunders.4.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -70,47 +71,50 @@ country_event = {
 		ai_chance = {
 				base = 34
 		}
-		set_political_party = {
-			ideology = democratic
-			popularity = 0.10
+		unlock_national_focus = the_victory_of_kays_saunders_redevelopment_party
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = USA_kay
+			promote_leader = yes
+			country_leader={
+				desc="POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+				ideology=american_idealism
+				traits={ natural_socializer }
+				expire="999.1.1.1"
+				id=-1
 		}
-		set_politics = {
-			ideology = democratic
-			elections_allowed = yes
-			last_election = "1932.11.8"
-			election_frequency = 48
-		}
-	}
-	
-	option = {
-		name = saunders.4.b #Alisa becomes Party Leader, taking over from Stundent Council.
-		ai_chance = {
-				base = 33
-		}
-		set_political_party = {
-			ideology = fascism
-			popularity = 0.10
-		}
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
 		}
 	}
 	
-	option = {
-		name = saunders.4.c #Helmet-Chan becomes Party Leader, taking over from Stundent Council.
-		ai_chance = {
-				base = 33
-		}
-		set_political_party = {
-			ideology = communism
-			popularity = 0.10
-		}
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
-	}
+	#option = {
+	#	name = saunders.4.b #Alisa becomes Party Leader, taking over from Stundent Council.
+	#	ai_chance = {
+	#			base = 33
+	#	}
+	#	set_political_party = {
+	#		ideology = fascism
+	#		popularity = 0.10
+	#	}
+	#	set_politics = {
+	#		ruling_party = fascism
+	#		elections_allowed = no
+	#	}
+	#}
+	
+	#option = {
+	#	name = saunders.4.c #Helmet-Chan becomes Party Leader, taking over from Stundent Council.
+	#	ai_chance = {
+	#			base = 33
+	#	}
+	#	set_political_party = {
+	#		ideology = communism
+	#		popularity = 0.10
+	#	}
+	#	set_politics = {
+	#		ruling_party = communism
+	#		elections_allowed = no
+	#	}
+	#}
 }
 
 country_event = {
@@ -145,7 +149,7 @@ country_event = {
 				base = 100
 		}
 		USA = {
-		country_event {
+		country_event = {
 			id = saundersmil.2
 			days = 1
 		}
@@ -286,7 +290,7 @@ country_event = {
 	id = kayxdarjeeling.1
 	title = kayxdarjeeling.1.t
 	desc = kayxdarjeeling.1.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
